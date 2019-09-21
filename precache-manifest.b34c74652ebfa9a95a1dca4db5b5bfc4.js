@@ -1,22 +1,26 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bb4afdaf7a7241d70a30c696ca36b7a9",
+    "revision": "17a0fe967a5abe9b253690889ec56a87",
     "url": "/tedzvid/index.html"
   },
   {
-    "revision": "6eaa12730fd691345c3c",
-    "url": "/tedzvid/static/css/main.198c75a3.chunk.css"
+    "revision": "77c79fbc154f2c6d4bf4",
+    "url": "/tedzvid/static/css/main.1c64b7c1.chunk.css"
   },
   {
     "revision": "b7898553557a5e513615",
     "url": "/tedzvid/static/js/2.8afb9953.chunk.js"
   },
   {
-    "revision": "6eaa12730fd691345c3c",
+    "revision": "77c79fbc154f2c6d4bf4",
     "url": "/tedzvid/static/js/main.68b87994.chunk.js"
   },
   {
     "revision": "6038425b23784e662bdc",
     "url": "/tedzvid/static/js/runtime~main.c894e1fc.js"
+  },
+  {
+    "revision": "c5109a1c3ff7281895bc99f534c12ebd",
+    "url": "/tedzvid/static/media/KuranKerimFontHamdullah.c5109a1c.ttf"
   }
 ]);
