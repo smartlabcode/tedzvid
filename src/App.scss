@@ -1,5 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Amiri');
+@import url('https://fonts.googleapis.com/css?family=KuranKerimFontHamdullah');
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,700&subset=latin-ext');
+
+@font-face {
+  font-family: 'KuranKerimFontHamdullah';
+  font-style: normal;
+  font-weight: 900;
+  src: url('./fonts/KuranKerimFontHamdullah.ttf');
+  /* IE9 Compat Modes */
+}
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -14,7 +22,7 @@ body {
 }
 
 .underLine {
-  font-family: 'Amiri', serif;
+  font-family: 'KuranKerimFontHamdullah', serif;
 }
 
 span.ne-svira {
@@ -26,7 +34,7 @@ span.ne-svira {
 }
 
 span.svira {
-  font-family: 'Amiri', serif;
+  font-family: 'KuranKerimFontHamdullah', serif;
   /* display: inline-block; */
   /* border: 1px solid #ddd; */
   /* padding: 0 .25em; */
@@ -47,18 +55,18 @@ span.svira {
 }
 
 span.arapski {
-  font-family: 'Amiri', serif;
+  font-family: 'KuranKerimFontHamdullah', serif;
   padding: 0 .25em;
   border-radius: .15em;
   line-height: 2.5em;
 }
 
-.text-center.col > span {
+.text-center.col>span {
   display: inline-block;
 }
 
 span.arap-red {
-  font-family: 'Amiri', serif;
+  font-family: 'KuranKerimFontHamdullah', serif;
   color: red;
 }
 
@@ -70,7 +78,10 @@ span.arap-red {
 
 .lekcije-wrapper {
   border: 20px solid;
-  border-image-slice: 24 33 25 34; border-image-width: 20px 20px 20px 20px; border-image-outset: 0px 0px 0px 0px; border-image-repeat: repeat repeat;
+  border-image-slice: 24 33 25 34;
+  border-image-width: 20px 20px 20px 20px;
+  border-image-outset: 0px 0px 0px 0px;
+  border-image-repeat: repeat repeat;
   border-image-source: url("https://i.imgur.com/t6U68wJ.jpg");
   padding: .5em 1em;
   position: relative;
@@ -85,9 +96,9 @@ footer.mainfooter {
 .homearea {
   font-size: initial;
 
-    a:hover {
-      text-decoration: none;
-    }
+  a:hover {
+    text-decoration: none;
+  }
 
 }
 
@@ -124,7 +135,10 @@ ul.mainmenulist {
     color: white;
     padding: .25em 0;
 
-    &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4) {
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4) {
       border-right: 1px solid white;
     }
 
@@ -140,16 +154,18 @@ ul.bottomMenu {
   background: #f2f2f2;
 
   li {
-      padding: 0.25em;
+    padding: 0.25em;
 
-      &:nth-child(1), &:nth-child(2), &:nth-child(3) {
-        border-right: 1px solid white;
-        border-bottom: 1px solid white;
-      }
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3) {
+      border-right: 1px solid white;
+      border-bottom: 1px solid white;
+    }
   }
 
   a.menulink {
-      color: #666;
+    color: #666;
   }
 }
 
