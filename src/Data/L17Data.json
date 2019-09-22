@@ -76,85 +76,223 @@
         }
     ],
     "vjezba": {
-        "kolona1": [
-            {
-                "id": 4,
-                "url": "./assets/audio/l17/4.mp3",
-                "highlight": "",
-                "word": "وَكَانَ اللّٰهُ عَزِيزًا حَكِيمًا ",
-                "after": null
-            }
-        ],
-        "kolona2": [
-            {
-                "id": 6,
-                "url": "./assets/audio/l17/3.mp3",
-                "highlight": "لْ رَ",
-                "word": " بَلْ رَفَعَهُ اللّٰهُ إِلَيْهِ ۚ",
-                "after": " ۞ "
-            }
-        ],
-        "kolona3": [
-            {
-                "id": 5,
-                "url": "./assets/audio/l16/5.mp3",
-                "highlight": "لْ رَ",
-                "word": "وَقُلْ رَبِّ زِدْنِي عِلْمًا ",
-                "after": null
-            }
-        ],
-        "kolona5": [
-            {
-                "id": 8,
-                "url": "./assets/audio/l16/8.mp3",
-                "highlight": "لْ رَ",
-                "word": " إِنْ كَذَّبُوكَ فَقُلْ رَبُّكُمْ ذُو رَحْمَةٍ وَاسِعَةٍ ",
-                "after": " ۞ "
-            }
-        ],
-        "kolona4": [
-            {
-                "id": 9,
-                "url": "./assets/audio/l16/9.mp3",
-                "highlight": "قْكُ",
-                "word": " أَلَمْ نَخْلُـقْكُمْ مِنْ مَٓاءٍ مَهِينٍ",
-                "after": " ۞ "
-            }
-        ],
-        "kolona6": [
-            {
-                "id": 10,
-                "url": "./assets/audio/l16/10.mp3",
-                "highlight": "لْ رَ",
-                "word": "وَاخْفِضْ لَهُمَا جَنَاحَ الذُّلِّ مِنَ الرَّحْمَةِ وَقُلْ رَبِّ ارْحَمْهُمَا كَمَا رَبَّـيَانِي صَغِيرًا",
-                "after": " ۞ "
-            }
-        ],
         "broj11": [
             {
                 "id": 11,
-                "url": "./assets/audio/l16/11.mp3",
-                "highlight": "لْ رَ",
-                "word": " وَقُلْ رَبِّ اغْفِرْ وَارْحَمْ ",
-                "after": " ۞ "
+                "url": "./assets/audio/l17/11.mp3",
+                "highlight": "دُو",
+                "word": "تُفْسِدُوا فِي الْأَرْضِ ",
+                "after": null
+            },
+            {
+                "id": 111,
+                "highlight": "لَا",
+                "word": "لَهُمْ لَا ",
+                "after": null
+            },
+            {
+                "id": 112,
+                "highlight": "ذَا قِـيـ",
+                "word": "وَإِذَا قِـيـلَ",
+                "after": null
             }
         ],
         "broj12": [
             {
                 "id": 12,
-                "url": "./assets/audio/l16/12.mp3",
-                "highlight": "لْ رَ",
-                "word": "قَالَ بَـلْ رَبُّـكُمْ رَبُّ السَّمَاوَاتِ وَالْأَرْضِ ",
-                "after": " ۞ "
+                "url": "./assets/audio/l17/12.mp3",
+                "highlight": "لَا",
+                "word": " لَا رَيْبَفِيهِ",
+                "after": "۞"
+            },
+            {
+                "id": 121,
+                "highlight": "",
+                "word": " الْكِتَابُ",
+                "after": null
+            },
+            {
+                "id": 122,
+                "highlight": "ذٰ",
+                "word": "ذٰلِكَ",
+                "after": null
             }
         ],
         "broj13": [
             {
                 "id": 13,
-                "url": "./assets/audio/l16/13.mp3",
-                "highlight": "لْ رَ",
-                "word": "وَقُلْ رَبِّ أَدْخِلْن۪ي مُدْخَلَ صِدْقٍ ",
+                "url": "./assets/audio/l17/13.mp3",
+                "highlight": "قِيمُو",
+                "word": "وَيُـقِيمُونَ الصَّلَاةَ ",
+                "after": "۞"
+            },
+            {
+                "id": 131,
+                "highlight": "نُو",
+                "word": " يُؤْمِنُونَ بِالْغَيْبِ ",
+                "after": null
+            }
+        ],
+        "broj14": [
+            {
+                "id": 14,
+                "url": "./assets/audio/l17/14.mp3",
+                "highlight": "كَانَا",
+                "word": "كَانَا فِيهِ ",
+                "after": "۞"
+            },
+            {
+                "id": 141,
+                "highlight": "مَّا",
+                "word": " مِمَّا",
+                "after": null
+            },
+            {
+                "id": 142,
+                "highlight": "مَا",
+                "word": "فَأَخْرَجَهُمَا",
+                "after": null
+            }
+        ],
+        "broj15": [
+            {
+                "id": 15,
+                "url": "./assets/audio/l17/15.mp3",
+                "highlight": "يَا",
+                "word": "يَا قَوْمِ إِنَّكُمْ ظَلَمْتُمْ أَنفُسَكُم ",
+                "after": "۞"
+            },
+            {
+                "id": 151,
+                "highlight": "مُوسٰى",
+                "word": " مُوسٰى لِقَوْمِهِ ",
+                "after": null
+            },
+            {
+                "id": 152,
+                "highlight": "قَا",
+                "word": "وَإِذْ قَالَ ",
+                "after": null
+            }
+        ],
+        "broj16": [
+            {
+                "id": 16,
+                "url": "./assets/audio/l17/16.mp3",
+                "highlight": "دُو",
+                "word": "يُبْدُونَ لَكَ ",
+                "after": "۞"
+            },
+            {
+                "id": 161,
+                "highlight": "مَا لَا",
+                "word": "مَا لَا",
+                "after": null
+            }
+        ],
+        "broj17": [
+            {
+                "id": 172,
+                "url": "./assets/audio/l17/17.mp3",
+                "highlight": "نَا",
+                "word": "هُـنَا",
+                "after":null
+            },
+            {
+                "id": 171,
+                "highlight": "هَا",
+                "word": "هَا",
+                "after":null
+            },
+            {
+                "id": 17,
+                "highlight": "ـنَا",
+                "word": "قُـتِـلْـنَا",
+                "after":null
+            },
+            {
+                "id": 173,
+                "highlight": "مَا",
+                "word": "مِنَ الْأَمْرِ شَيْءٌ مَا",
+                "after": null
+            },
+            {
+                "id": 174,
+                "highlight": "نَا",
+                "word": "لَـنَا",
+                "after": null
+            },
+            {
+                "id": 175,
+                "highlight": "كَا",
+                "word": "كَانَ ",
+                "after": null
+            },
+            {
+                "id": 176,
+                "highlight": "قُولُو",
+                "word": "يَقُولُونَ لَوْ ",
+                "after": null
+            }
+        ],
+        "broj18": [
+            {
+                "id": 18,
+                "url": "./assets/audio/l17/18.mp3",
+                "highlight": "وٰى",
+                "word": "الْقُوٰى",
                 "after": " ۞ "
+            },{
+                "id": 181,
+                "highlight": "دِي",
+                "word": "عَلَّمَهُ شَدِيدُ",
+                "after":null
+            }
+
+        ],
+        "broj19": [
+            {
+                "id": 19,
+                "url": "./assets/audio/l17/19.mp3",
+                "highlight": "نَّا",
+                "word": "مَنَّا",
+                "after":"۞"
+            },
+            {
+                "id": 171,
+                "highlight": "ا",
+                "word": "لُـوٓا اٰ",
+                "after":null
+            },
+            {
+                "id": 17,
+                "highlight": "قَا",
+                "word": "ا قَا",
+                "after":null
+            },
+            {
+                "id": 173,
+                "highlight": "نُو",
+                "word": "ََنُو",
+                "after": null
+            },
+            {
+                "id": 174,
+                "highlight": "ا",
+                "word": "نَ اٰم",
+                "after": null
+            },
+            {
+                "id": 175,
+                "highlight": "ذِي",
+                "word": " لَقُوا الَّذِي",
+                "after": null
+            },
+            {
+                "id": 176,
+                "highlight": "ذَا",
+                "word": "وَإِذَا",
+                "after": null
             }
         ]
     }

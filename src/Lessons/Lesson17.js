@@ -39,51 +39,61 @@ function L17() {
         </Row>
 
         <Row>
-          <Col className="opisLekcije my-3">
-            <strong>2.</strong>	Kada poslije harfa L sa sukunom (لْ) dođe harf R (ر) sa hareketom:
+          <Col>
+          <br></br>
           </Col>
         </Row>
 
         <Row>
           <Col>
-            { PlayerRow(data, 'row2') }
+            <br></br>
           </Col>
         </Row>
+
+        <Row>
+          <Col>
+            <br></br>
+          </Col>
+        </Row>
+
 
         <h2 className="text-center">Vježbe</h2>
         <hr/>
 
-        <Row className="text-center">
-          <Col>
-            { VjezbeRow(data, 'vjezba', 'kolona1') }
-            { VjezbeRow(data, 'vjezba', 'kolona2') }
-            { VjezbeRow(data, 'vjezba', 'kolona3') }
-          </Col>
-        </Row>
-        <Row className="text-center">
-          <Col>
-            { VjezbeRow(data, 'vjezba', 'kolona4') }
-            { VjezbeRow(data, 'vjezba', 'kolona5') }
-          </Col>
-        </Row>
-        <Row className="text-center">
-          <Col>
-            { VjezbeRow(data, 'vjezba', 'kolona6') }
-          </Col>
-        </Row>
-
-        <Row className="text-center">
+        <Row>
           <Col>
             { VjezbeRow(data, 'vjezba', 'broj12') }
             { VjezbeRow(data, 'vjezba', 'broj11') }
           </Col>
         </Row>
 
-        <Row className="text-center">
+        <Row>
           <Col>
+            { VjezbeRow(data, 'vjezba', 'broj14') }
             { VjezbeRow(data, 'vjezba', 'broj13') }
           </Col>
         </Row>
+
+        <Row>
+          <Col>
+            { VjezbeRow(data, 'vjezba', 'broj15') }
+          </Col>
+        </Row>
+
+        <Row>
+          <Col>
+            { VjezbeRow(data, 'vjezba', 'broj17') }
+            { VjezbeRow(data, 'vjezba', 'broj16') }
+          </Col>
+        </Row>
+
+        <Row>
+          <Col>
+            { VjezbeRow(data, 'vjezba', 'broj19') }
+            { VjezbeRow(data, 'vjezba', 'broj18') }
+          </Col>
+        </Row>
+
         <hr/>
 
         <Footer prev="/lekcija16" next="/lekcija18" />
