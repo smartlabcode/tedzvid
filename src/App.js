@@ -2,11 +2,7 @@ import React from 'react';
 import Home from './Body/HomePage';
 import Header from './Body/MainHeader';
 
-<<<<<<< HEAD
-import { L1, L2, L3, L4, L5, L6, L7, L8, L9, L10, L11, L12, L13, L14, L14_2, L15, L16,L18 } from './Helpers/LessonsHelper';
-=======
-import { L1, L2, L3, L4, L5, L6, L7, L8, L9, L10, L11, L12, L13, L14, L14_2, L15, L16,L17 } from './Helpers/LessonsHelper';
->>>>>>> 9082e8e44c075092df85608341754a1c95cb7521
+import { L1, L2, L3, L4, L5, L6, L7, L8, L9, L10, L11, L12, L13, L14, L14_2, L15, L16,L17,L18 } from './Helpers/LessonsHelper';
 
 import Container from 'react-bootstrap/Container';
 import { BrowserRouter, Route } from 'react-router-dom';
@@ -35,12 +31,9 @@ function App() {
         <Route path="/lekcija14_2" component={L14_2}/>
         <Route path="/lekcija15" component={L15}/>
         <Route path="/lekcija16" component={L16}/>
-<<<<<<< HEAD
-        <Route path="/lekcija18" component={L18}/>
-=======
         <Route path="/lekcija17" component={L17}/>
+        <Route path="/lekcija18" component={L18}/>
         
->>>>>>> 9082e8e44c075092df85608341754a1c95cb7521
       </Container>
     </BrowserRouter>
   );
