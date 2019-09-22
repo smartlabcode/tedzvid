@@ -1,43 +1,58 @@
 {
     "row1": [{
-            "id": 1,
-            "url": "./assets/audio/l16/1.mp3",
-            "highlight": "قْكَُ",
-            "word": "أَلَـمْ نَـخْلُـقْكُمْ",
-            "after": " čita se: "
-        },
-        {
-            "id": 2,
-            "url": "./assets/audio/l16/2.mp3",
-            "highlight": "كُّ",
-            "word": "أَلَـمْ نَـخْلُكُّـمْ",
-            "after": null
-        }
-    ],
+        "id": 1,
+        "url": "./assets/audio/l18/1.mp3",
+        "highlight": "جَٓاءَ",
+        "word": "جَٓاءَ",
+        "after": "."
+    }],
     "row2": [{
-            "id": 3,
-            "url": "./assets/audio/l16/3.mp3",
-            "highlight": "لْ ر",
-            "word": "وَقُلْ رَبِّ",
-            "after": " čita se: "
-        }, {
+        "id": 2,
+        "url": "./assets/audio/l18/2.mp3",
+        "highlight": " جَٓاءَ",
+        "word": "إِذَا جَٓاءَ نَصْرُ اللّٰهِ وَالْفَتْحُ",
+        "after": null
+    }],
+    "row3": [{
             "id": 4,
-            "url": "./assets/audio/l16/4.mp3",
-            "highlight": "رَّ",
-            "word": "وَقُـرَّبِّ",
+            "url": "./assets/audio/l18/4.mp3",
+            "highlight": "لٰٓـئِ",
+            "word": " وَ أُولٰٓـئِكَ هُمُ الْمُفْلِحُونَ",
+            "after": null
+        }, {
+            "id": 3,
+            "url": "./assets/audio/l18/3.mp3",
+            "highlight": "لٰٓـئِ",
+            "word": "أُولٰٓـئِكَ عَلٰى هُدًى مِنْ رَبِـهِمْ ۖ",
             "after": null
         }
 
     ],
+    "multirow": {
+        "row4": [{
+                "id": 5,
+                "url": "./assets/audio/l18/5.mp3",
+                "highlight": "شَٓاءََ",
+                "word": "الْفَحْشَٓاءَ",
+                "after": null
+            },
+            {
+                "id": 51,
+                "highlight": "سُّٓوءَ",
+                "word": "كَذٰلِكَ لِنَصْرِفَ عَنْهُ السُّٓوءَ وَ",
+                "after": null
+            }
+        ]
+    },
     "vjezba": {
-        "broj7": [{
+        "broj6": [{
             "id": 7,
             "url": "./assets/audio/l16/7.mp3",
             "highlight": "",
             "word": "وَكَانَ اللّٰهُ عَزِيزًا حَكِيمًا ",
             "after": null
         }],
-        "broj6": [{
+        "broj7": [{
             "id": 6,
             "url": "./assets/audio/l16/6.mp3",
             "highlight": "لْ رَ",
