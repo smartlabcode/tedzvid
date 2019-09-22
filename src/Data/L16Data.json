@@ -30,35 +30,35 @@
 
     ],
     "vjezba": {
-        "kolona1": [{
+        "broj7": [{
             "id": 7,
             "url": "./assets/audio/l16/7.mp3",
             "highlight": "",
             "word": "وَكَانَ اللّٰهُ عَزِيزًا حَكِيمًا ",
             "after": null
         }],
-        "kolona2": [{
+        "broj6": [{
             "id": 6,
             "url": "./assets/audio/l16/6.mp3",
             "highlight": "لْ رَ",
             "word": " بَلْ رَفَعَهُ اللّٰهُ إِلَيْهِ ۚ",
             "after": " ۞ "
         }],
-        "kolona3": [{
+        "broj5": [{
             "id": 5,
             "url": "./assets/audio/l16/5.mp3",
             "highlight": "لْ رَ",
             "word": "وَقُلْ رَبِّ زِدْنِي عِلْمًا ",
             "after": null
         }],
-        "kolona5": [{
+        "broj8": [{
             "id": 8,
             "url": "./assets/audio/l16/8.mp3",
             "highlight": "لْ رَ",
             "word": " إِنْ كَذَّبُوكَ فَقُلْ رَبُّكُمْ ذُو رَحْمَةٍ وَاسِعَةٍ ",
             "after": " ۞ "
         }],
-        "kolona4": [{
+        "broj9": [{
             "id": 9,
             "url": "./assets/audio/l16/9.mp3",
             "highlight": "قْكُ",
@@ -66,7 +66,7 @@
             "after": " ۞ "
         }],
 
-        "kolona6": [{
+        "broj10": [{
             "id": 10,
             "url": "./assets/audio/l16/10.mp3",
             "highlight": "لْ رَ",
