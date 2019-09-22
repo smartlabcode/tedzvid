@@ -50,38 +50,44 @@ Kada poslije dugog vokala A ـــــَـــــ ا , Iــــــِــــ 
 
         <Row className="text-center">
           <Col>
-            { VjezbeRow(data, 'vjezba', 'broj7') }
+
+          { VjezbeRow(data, 'vjezba', 'znak') }
             { VjezbeRow(data, 'vjezba', 'broj6') }
-            { VjezbeRow(data, 'vjezba', 'broj5') }
           </Col>
         </Row>
         <Row className="text-center">
           <Col>
-            { VjezbeRow(data, 'vjezba', 'broj9') }
+
+          { VjezbeRow(data, 'vjezba', 'znak') }
             { VjezbeRow(data, 'vjezba', 'broj8') }
+            { VjezbeRow(data, 'vjezba', 'broj7') }
           </Col>
         </Row>
         <Row className="text-center">
           <Col>
+
+          { VjezbeRow(data, 'vjezba', 'znak') }
+            { VjezbeRow(data, 'vjezba', 'broj9') }
+          </Col>
+        </Row>
+
+        <Row className="text-center">
+          <Col>
+
+          { VjezbeRow(data, 'vjezba', 'znak') }
             { VjezbeRow(data, 'vjezba', 'broj10') }
           </Col>
         </Row>
-
         <Row className="text-center">
           <Col>
-            { VjezbeRow(data, 'vjezba', 'broj12') }
-            { VjezbeRow(data, 'vjezba', 'broj11') }
-          </Col>
-        </Row>
 
-        <Row className="text-center">
-          <Col>
-            { VjezbeRow(data, 'vjezba', 'broj13') }
+          { VjezbeRow(data, 'vjezba', 'znak') }
+          { VjezbeRow(data, 'vjezba', 'broj11') }
           </Col>
         </Row>
         <hr/>
 
-        <Footer prev="/lekcija15" next="/lekcija17" />
+        <Footer prev="/lekcija17" next="/lekcija19" />
 
         </React.Fragment>
     );
