@@ -1,0 +1,161 @@
+{
+    "row1": [
+        {
+            "id": 1,
+            "url": "./assets/audio/l17/1.mp3",
+            "highlight": "ءَا تُـو نِـي ",
+            "word": "ءَا تُـو نِـي ",
+            "after": "."
+        }
+    ],
+    "row2": [
+        {
+            "id": 6,
+            "url": "./assets/audio/l17/6.mp3",
+            "highlight": "وَي",
+            "word": "ْذَوَي",
+            "after": "؛"
+        },
+        {
+            "id": 5,
+            "url": "./assets/audio/l17/5.mp3",
+            "highlight": "قَا",
+            "word": "قَالَ ",
+            "after": "؛"
+        },
+        {
+            "id": 4,
+            "url": "./assets/audio/l17/4.mp3",
+            "highlight": "دَا",
+            "word": "دَارَ",
+            "after": "؛"
+        },
+        {
+            "id": 3,
+            "url": "./assets/audio/l17/3.mp3",
+            "highlight": "اٰ",
+            "word": "اٰوَوْ",
+            "after": "؛"
+        },
+        {
+            "id": 2,
+            "url": "./assets/audio/l17/2.mp3",
+            "highlight": "اٰ",
+            "word": "اٰزَرُ ",
+            "after": null
+        }
+    ],
+    "row3": [
+        {
+            "id": 10,
+            "url": "./assets/audio/l17/10.mp3",
+            "highlight": "رِي",
+            "word": "ْ يُـرِيدُ ؛",
+            "after": "؛"
+        },
+        {
+            "id": 9,
+            "url": "./assets/audio/l17/9.mp3",
+            "highlight": "بِّــي",
+            "word": "رَبِّــي ",
+            "after": "؛"
+        },
+        {
+            "id": 8,
+            "url": "./assets/audio/l17/8.mp3",
+            "highlight": "دُو",
+            "word": "صُدُورِ",
+            "after": "؛"
+        },
+        {
+            "id": 7,
+            "url": "./assets/audio/l17/7.mp3",
+            "highlight": "ذُو",
+            "word": "ذُو",
+            "after": null
+        }
+    ],
+    "vjezba": {
+        "kolona1": [
+            {
+                "id": 4,
+                "url": "./assets/audio/l17/4.mp3",
+                "highlight": "",
+                "word": "وَكَانَ اللّٰهُ عَزِيزًا حَكِيمًا ",
+                "after": null
+            }
+        ],
+        "kolona2": [
+            {
+                "id": 6,
+                "url": "./assets/audio/l17/3.mp3",
+                "highlight": "لْ رَ",
+                "word": " بَلْ رَفَعَهُ اللّٰهُ إِلَيْهِ ۚ",
+                "after": " ۞ "
+            }
+        ],
+        "kolona3": [
+            {
+                "id": 5,
+                "url": "./assets/audio/l16/5.mp3",
+                "highlight": "لْ رَ",
+                "word": "وَقُلْ رَبِّ زِدْنِي عِلْمًا ",
+                "after": null
+            }
+        ],
+        "kolona5": [
+            {
+                "id": 8,
+                "url": "./assets/audio/l16/8.mp3",
+                "highlight": "لْ رَ",
+                "word": " إِنْ كَذَّبُوكَ فَقُلْ رَبُّكُمْ ذُو رَحْمَةٍ وَاسِعَةٍ ",
+                "after": " ۞ "
+            }
+        ],
+        "kolona4": [
+            {
+                "id": 9,
+                "url": "./assets/audio/l16/9.mp3",
+                "highlight": "قْكُ",
+                "word": " أَلَمْ نَخْلُـقْكُمْ مِنْ مَٓاءٍ مَهِينٍ",
+                "after": " ۞ "
+            }
+        ],
+        "kolona6": [
+            {
+                "id": 10,
+                "url": "./assets/audio/l16/10.mp3",
+                "highlight": "لْ رَ",
+                "word": "وَاخْفِضْ لَهُمَا جَنَاحَ الذُّلِّ مِنَ الرَّحْمَةِ وَقُلْ رَبِّ ارْحَمْهُمَا كَمَا رَبَّـيَانِي صَغِيرًا",
+                "after": " ۞ "
+            }
+        ],
+        "broj11": [
+            {
+                "id": 11,
+                "url": "./assets/audio/l16/11.mp3",
+                "highlight": "لْ رَ",
+                "word": " وَقُلْ رَبِّ اغْفِرْ وَارْحَمْ ",
+                "after": " ۞ "
+            }
+        ],
+        "broj12": [
+            {
+                "id": 12,
+                "url": "./assets/audio/l16/12.mp3",
+                "highlight": "لْ رَ",
+                "word": "قَالَ بَـلْ رَبُّـكُمْ رَبُّ السَّمَاوَاتِ وَالْأَرْضِ ",
+                "after": " ۞ "
+            }
+        ],
+        "broj13": [
+            {
+                "id": 13,
+                "url": "./assets/audio/l16/13.mp3",
+                "highlight": "لْ رَ",
+                "word": "وَقُلْ رَبِّ أَدْخِلْن۪ي مُدْخَلَ صِدْقٍ ",
+                "after": " ۞ "
+            }
+        ]
+    }
+}

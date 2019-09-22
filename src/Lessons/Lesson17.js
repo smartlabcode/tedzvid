@@ -1,5 +1,5 @@
 import React from 'react';
-import data from '../Data/L16Data.json';
+import data from '../Data/L17Data.json';
 import PlayerRow from '../Helpers/PlayerHelper';
 import VjezbeRow from '../Helpers/VjezbeHelper';
 import Footer from '../Body/MainFooter';
@@ -10,31 +10,31 @@ import {Row, Col, Table} from 'react-bootstrap';
 // Other
 import '../App.scss';
 
-function L16() {
+function L17() {
     return (
         <React.Fragment>
         <Row>
           <Col>
-            <h2 className="text-center font-weight-bold text-uppercase">IDGAM MUTEKARIBEJN</h2>
-            <h4 className="text-center">uklapanje bliskih harfova</h4>
+            <h2 className="text-center font-weight-bold text-uppercase">MEDD TABIJJ - obična dužina</h2>
+            <h4 className="text-center"></h4>
             <hr/>
           </Col>
         </Row>
 
         <Row>
-          <Col className="opisLekcije">Kada dođu jedan do drugog bliski harfovi, prvi sa <bold>sukunom</bold>, a drugi sa <bold>hareketom</bold>, onda se prvi uklapa u drugi iz iste grupe:
+          <Col className="opisLekcije" >Kada poslije <strong>dugog vokala </strong>A ـــــَـــــ ا , Iــــــِــــ ى  , Uـــــُـــــ و   nema ni <strong>hemzeta</strong> ni <strong>sukuna,</strong>bit će medd tabijj.Traje 2 haraketa, npr.:{ PlayerRow(data, 'row1') } 
           </Col>
         </Row>
 
         <Row>
-          <Col className="opisLekcije my-3">
-            <strong>1.</strong>	Kada poslije harfa Q sa <bold>sukunom</bold> <span class="arapski">(قْ)</span> dođe harf K  (ك) sa <bold>hareketom</bold>:
+          <Col className="text-center">
+          { PlayerRow(data, 'row2') } 
           </Col>
         </Row>
         
         <Row>
-          <Col>
-          { PlayerRow(data, 'row1') }
+          <Col className="text-center">
+          { PlayerRow(data, 'row3') } 
           </Col>
         </Row>
 
@@ -86,10 +86,10 @@ function L16() {
         </Row>
         <hr/>
 
-        <Footer prev="/lekcija15" next="/lekcija17" />
+        <Footer prev="/lekcija16" next="/lekcija18" />
 
         </React.Fragment>
     );
   }
 
-  export default L16;
+  export default L17;
