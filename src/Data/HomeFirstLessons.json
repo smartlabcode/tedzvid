@@ -1,0 +1,63 @@
+{
+    "lekcije": [
+        [{
+                "title": "VAKF",
+                "subtitle": "Stajanje prilikom učenja"
+            },
+            {
+                "title": "DAMIR",
+                "subtitle": "Izgovaranje zamjenice HU (هُ)"
+            }
+        ],
+        [{
+                "title": "LAFZATULLAH",
+                "subtitle": "Izgovaranje riječi Allah اللّٰه"
+            },
+            {
+                "title": "IDGAM MISLEJN ",
+                "subtitle": "Uklapanje istih harfova"
+            }
+        ],
+        [{
+                "title": "IDGAM MISLEJN MEAL-GUNNEH",
+                "subtitle": "Uklapanje istih harfova sa propuštanjem zraka kroz nos"
+            },
+            {
+                "title": "IDGAM MEAL-GUNNEH ",
+                "subtitle": "Uklapanje sa propuštanjem zraka kroz nos"
+            }
+        ],
+        [{
+                "title": " IDGAM BILA GUNNEH ",
+                "subtitle": "Uklapanje bez propuštanja zraka kroz nos"
+            },
+            {
+                "title": "IKLAB",
+                "subtitle": "Pretvaranje harfa N (ن) u harf M (م)"
+            }
+        ],
+        [{
+                "title": "IZHAR HALLKIJ ",
+                "subtitle": "Čisto izgovaranje harfa N (ن) ili tenvina"
+            },
+
+            {
+                "title": "IZHAR ŠEFEVIJJ ",
+                "subtitle": "Čisto izgovaranje harfa M (م)"
+            }
+        ],
+        [{
+                "title": "IHFA",
+                "subtitle": "Skrivanje harfa N (ن)"
+            },
+
+            {
+
+                "title": "IHFA SEVIJJ",
+                "subtitle": "Skrivanje harfa M (م)"
+
+            }
+        ]
+
+    ]
+}
