@@ -57,6 +57,42 @@
                 "subtitle": "Skrivanje harfa M (م)"
 
             }
+        ],
+        [{
+                "title": "KALKALA",
+                "subtitle": "Odskakanje harfova"
+            },
+
+            {
+
+                "title": "HUKMURRA",
+                "subtitle": "Izgovaranje harfa R (ر)"
+
+            }
+        ],
+        [{
+                "title": "IDGAM MUTEDŽANISEJN",
+                "subtitle": "Uklapanje srodnih harfova"
+            },
+
+            {
+
+                "title": "IDGAM MUTEKARIBEJN",
+                "subtitle": "Uklapanje bliskih harfova"
+
+            }
+        ],
+        [{
+                "title": "MEDD TABI'IJJ ",
+                "subtitle": "Obična dužina"
+            },
+
+            {
+
+                "title": "MEDD MUTTESIL",
+                "subtitle": "Spojena dužina"
+
+            }
         ]
 
     ]

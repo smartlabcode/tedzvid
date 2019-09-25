@@ -1,7 +1,7 @@
 import React from 'react';
 import { Row, Col, Card, Badge } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import data from '../Data/HomeFirstLessons.json';
+import data from '../Data/lessons.json';
 
 
 function HomeFirst() {
