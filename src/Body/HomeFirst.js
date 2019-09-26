@@ -4,14 +4,14 @@ import { Link } from 'react-router-dom';
 import data from '../Data/lessons.json';
 
 
-function HomeFirst() {
-    let lekcije = data['lekcije']
+function HomeFirst(props) {
+    let lekcije = data['lekcije'].slice(props.start,props.stop)
    
    return  (<React.Fragment> 
    
    {lekcije.map(
         (lekcija,index)=>{
-            let number = index*2+1;
+            let number = (props.start+index)*2+1;
             return (<Row className="homearea mt-4">
                 <Col>
                     <Link to={"/lekcija"+number} style={{ color: 'inherit' }}><Card>
@@ -23,9 +23,9 @@ function HomeFirst() {
                 </Col>
                 
                 <Col>
-                    <Link to={"/lekcija"+number+1} style={{ color: 'inherit' }}><Card>
+                    <Link to={"/lekcija"+(number+1)} style={{ color: 'inherit' }}><Card>
                         <Card.Body>
-                            <Card.Title>{lekcija[1].title} <Badge className="imelekcije" variant="light">Lekcija {number+1}</Badge></Card.Title>
+                            <Card.Title>{lekcija[1].title} <Badge className="imelekcije" variant="light">Lekcija {number+1}</Badge> </Card.Title>
                             <Card.Subtitle className="mb-2 text-muted">{lekcija[1].subtitle}</Card.Subtitle>
                         </Card.Body>
                     </Card></Link>

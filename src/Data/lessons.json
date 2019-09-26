@@ -92,9 +92,10 @@
                 "title": "MEDD MUTTESIL",
                 "subtitle": "Spojena dužina"
 
-            },
+            }
+        ],
 
-            {
+        [{
 
                 "title": "MEDD MUNFESIL",
                 "subtitle": "rastavljena dužina"
@@ -105,8 +106,9 @@
                 "title": "MEDD LAZIM",
                 "subtitle": "stalna dužina"
 
-            },
-            {
+            }
+        ],
+        [{
 
                 "title": "MEDD ARID",
                 "subtitle": "nestalna dužina"

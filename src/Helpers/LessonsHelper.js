@@ -17,6 +17,10 @@ import L15 from '../Lessons/Lesson15';
 import L16 from '../Lessons/Lesson16';
 import L17 from '../Lessons/Lesson17';
 import L18 from '../Lessons/Lesson18';
+import L19 from '../Lessons/Lesson19';
+import L20 from '../Lessons/Lesson20';
+import L21 from '../Lessons/Lesson21';
+import L22 from '../Lessons/Lesson22';
 
 
-export { L1, L2, L3, L4, L5, L6, L7, L8, L9, L10, L11, L12, L13, L14, L14_2, L15, L16,L17, L18 }
+export { L1, L2, L3, L4, L5, L6, L7, L8, L9, L10, L11, L12, L13, L14, L14_2, L15, L16,L17, L18, L19, L20, L21, L22 }

@@ -1,8 +1,7 @@
 import React from 'react';
 import Home from './Body/HomePage';
-import Header from './Body/MainHeader';
 
-import { L1, L2, L3, L4, L5, L6, L7, L8, L9, L10, L11, L12, L13, L14, L14_2, L15, L16,L17,L18 } from './Helpers/LessonsHelper';
+import { L1, L2, L3, L4, L5, L6, L7, L8, L9, L10, L11, L12, L13, L14, L14_2, L15, L16,L17,L18,L19,L20,L21,L22 } from './Helpers/LessonsHelper';
 
 import Container from 'react-bootstrap/Container';
 import { BrowserRouter, Route } from 'react-router-dom';
@@ -11,7 +10,7 @@ function App() {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Container className="lekcije-wrapper my-auto">
-        <Header/>
+        
 
         <Route path="/" exact component={Home}/>
         <Route path="/lekcija1" component={L1}/>
@@ -33,6 +32,10 @@ function App() {
         <Route path="/lekcija16" component={L16}/>
         <Route path="/lekcija17" component={L17}/>
         <Route path="/lekcija18" component={L18}/>
+        <Route path="/lekcija19" component={L19}/>
+        <Route path="/lekcija20" component={L20}/>
+        <Route path="/lekcija21" component={L21}/>
+        <Route path="/lekcija22" component={L22}/>
         
       </Container>
     </BrowserRouter>

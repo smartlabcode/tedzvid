@@ -1,0 +1,139 @@
+{
+    "row1": [{
+        "id": 1,
+        "url": "./assets/audio/l18/1.mp3",
+        "highlight": "جَٓاءَ",
+        "word": "جَٓاءَ",
+        "after": "."
+    }],
+    "row2": [{
+        "id": 2,
+        "url": "./assets/audio/l18/2.mp3",
+        "highlight": " جَٓاءَ",
+        "word": "إِذَا جَٓاءَ نَصْرُ اللّٰهِ وَالْفَتْحُ",
+        "after": null
+    }],
+    "row3": [{
+            "id": 4,
+            "url": "./assets/audio/l18/4.mp3",
+            "highlight": "لٰٓـئِ",
+            "word": " وَ أُولٰٓـئِكَ هُمُ الْمُفْلِحُونَ",
+            "after": null
+        }, {
+            "id": 3,
+            "url": "./assets/audio/l18/3.mp3",
+            "highlight": "لٰٓـئِ",
+            "word": "أُولٰٓـئِكَ عَلٰى هُدًى مِنْ رَبِـهِمْ ۖ",
+            "after": null
+        }
+
+    ],
+    "multirow": {
+        "row4": [{
+                "id": 51,
+                "url": "./assets/audio/l18/5.mp3",
+                "highlight": "شَٓاءَ",
+                "word": "الْفَحْشَٓاءَ",
+                "after": null
+            },
+            {
+                "id": 52,
+                "highlight": "سُّٓوءَ",
+                "word": "كَذٰلِكَ لِنَصْرِفَ عَنْهُ السُّٓوءَ وَ",
+                "after": null
+            }
+        ]
+    },
+    "vjezba": {
+        "broj6": [{
+            "id": 6,
+            "url": "./assets/audio/l18/6.mp3",
+            "highlight": "دَٓاءِ",
+            "word": "بِالنَّبِـيِّـينَ وَالشُّهَدَٓاءِ وَقُضِيَ بَيْنَهُمْ بِالْحَـقِّ",
+            "after": null
+        }, {
+            "id": 61,
+            "highlight": "َجِٓيءَ",
+            "word": "وَوُضِعَ الْكِتَابُ وَجِٓيءَ",
+            "after": null
+        }],
+        "znak": [{
+            "id": 7,
+            "url": "./assets/audio/l18/7.mp3",
+            "highlight": "",
+            "word": "",
+            "after": " ۞ "
+        }],
+        "broj7": [{
+            "id": 7,
+            "url": "./assets/audio/l18/7.mp3",
+            "highlight": "جَٓاءَ",
+            "word": " مِنْ بَعْدِ مَا جَٓاءَهُمُ الْبَـيِّــنَاتُ ۚ",
+            "after": null
+        }],
+        "broj8": [{
+            "id": 8,
+            "url": "./assets/audio/l18/8.mp3",
+            "highlight": "لٰٓـئِ",
+            "word": "وَأُولٰٓـئِكَ لَهُمْ عَذَابٌ عَظِيمٌ",
+            "after": null
+        }],
+        "broj9": [{
+                "id": 9,
+                "url": "./assets/audio/l18/9.mp3",
+                "highlight": "جَٓاءَ",
+                "word": "جَٓاءَكَ مِنَ الْـحَـقِّ ",
+                "after": null
+            },
+            {
+                "id": 91,
+                "highlight": "وَٓاءَ",
+                "word": "وَلَا تَتَّبِعْ أَهْوَٓاءَهُمْ عَمَّا",
+                "after": null
+            }
+
+        ],
+        "broj10": [{
+            "id": 10,
+            "url": "./assets/audio/l18/10.mp3",
+            "highlight": "مَٓاءِ مَٓاءً",
+            "word": "السَّمَٓاءِ مَٓاءً فَأَخْرَجَ بِهِ مِنَ الثَّمَرَاتِ رِزْقًا لَكُمْ",
+            "after": null
+        }, {
+            "id": 101,
+            "highlight": "نَٓاءً",
+            "word": " بِنَٓاءً وَأَنْـزَلَ مِنَ",
+            "after": null
+        }, {
+            "id": 102,
+            "highlight": "مَٓاءَ",
+            "word": " وَالسَّمَٓاءَ",
+            "after": null
+        }],
+        "broj11": [{
+                "id": 11,
+                "url": "./assets/audio/l18/11.mp3",
+                "highlight": "لَٓائِ",
+                "word": "أَنَّ عَلَيْهِمْ لَعْنَةَ اللّٰهِ وَالْمَلَٓائِكَةِ وَالنَّاسِ أَجْمَعِينَ",
+                "after": null
+            },
+
+            {
+                "id": 111,
+                "url": "./assets/audio/l18/11.mp3",
+                "highlight": "زَٓاؤُ",
+                "word": "جَزَٓاؤُهُمْ",
+                "after": null
+            },
+
+            {
+                "id": 112,
+                "url": "./assets/audio/l18/11.mp3",
+                "highlight": "لٰٓـئِ",
+                "word": " أُولٰٓـئِكَ",
+                "after": null
+            }
+
+        ]
+    }
+}
