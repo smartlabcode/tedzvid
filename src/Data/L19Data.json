@@ -1,136 +1,184 @@
 {
-    "row1": [{
-        "id": 1,
-        "url": "./assets/audio/l18/1.mp3",
-        "highlight": "جَٓاءَ",
-        "word": "جَٓاءَ",
-        "after": "."
-    }],
-    "row2": [{
-        "id": 2,
-        "url": "./assets/audio/l18/2.mp3",
-        "highlight": " جَٓاءَ",
-        "word": "إِذَا جَٓاءَ نَصْرُ اللّٰهِ وَالْفَتْحُ",
-        "after": null
-    }],
-    "row3": [{
-            "id": 4,
-            "url": "./assets/audio/l18/4.mp3",
-            "highlight": "لٰٓـئِ",
-            "word": " وَ أُولٰٓـئِكَ هُمُ الْمُفْلِحُونَ",
+    "row1": [
+        {
+            "id": 1,
+            "url": "./assets/audio/l19/1.mp3",
+            "highlight": "مَآ أَ",
+            "word": " وَمَآ أَنْـــتُـمْ ",
+            "after": "."
+        }
+    ],
+    "row2lijevi": [
+        {
+            "id": 2,
+            "url": "./assets/audio/l19/2.mp3",
+            "highlight": "مَٓا اَ",
+            "word": "اَنْتُمْ عَابِدُونَ مَٓا اَعْبُدُ",
             "after": null
-        }, {
+        },
+        {
+            "id": 21,
+            "highlight": "لَٓا ا",
+            "word": "وَلَٓا اَ",
+            "after": "-"
+        }
+    ],
+    "row2desni": [
+        {
             "id": 3,
-            "url": "./assets/audio/l18/3.mp3",
-            "highlight": "لٰٓـئِ",
-            "word": "أُولٰٓـئِكَ عَلٰى هُدًى مِنْ رَبِـهِمْ ۖ",
+            "url": "./assets/audio/l19/2.mp3",
+            "highlight": "مَآ أَ",
+            "word": "نْـتُمْ عَابِدُونَ مَآ أَعْبُدُ ",
+            "after": null
+        },
+        {
+            "id": 31,
+            "highlight": "لَٓا أَ",
+            "word": "وَلَٓا أَ",
             "after": null
         }
-
     ],
-    "multirow": {
-        "row4": [{
-                "id": 51,
-                "url": "./assets/audio/l18/5.mp3",
-                "highlight": "شَٓاءَ",
-                "word": "الْفَحْشَٓاءَ",
-                "after": null
-            },
+    "row3lijevi": [
+        {
+            "id": 4,
+            "url": "./assets/audio/l19/3.mp3",
+            "highlight": "لَٓا اَ",
+            "word": "وَلَٓا اَنَا۬ عَابِدٌ مَا عَبَدْتُمْ",
+            "after": "-"
+        }
+    ],
+    "row3desni": [
+        {
+            "id": 5,
+            "url": "./assets/audio/l19/3.mp3",
+            "highlight": "لَآ أَ",
+            "word": "وَلَآ أَنَا عَابِدٌ مَا عَبَدْتُمْ ",
+            "after": null
+        }
+    ],
+    "row4lijevi": [
+        {
+            "id": 6,
+            "url": "./assets/audio/l19/4.mp3",
+            "highlight": "مَٓا اَ",
+            "word": " مَٓا اَغْنٰى عَنْهُ مَالُهُ",
+            "after":"-"
+        }
+    ],
+    "row4desni": [
+        {
+            "id": 7,
+            "url": "./assets/audio/l19/4.mp3",
+            "highlight": "مَٓا أَ",
+            "word": "مَٓا أَغْنٰى عَنْهُ مَالُهُ",
+            "after": null
+        }
+    ],
+
+    "vjezba": {
+        "broj13": [
             {
-                "id": 52,
-                "highlight": "سُّٓوءَ",
-                "word": "كَذٰلِكَ لِنَصْرِفَ عَنْهُ السُّٓوءَ وَ",
+                "id": 13,
+                "url": "./assets/audio/l19/13.mp3",
+                "highlight": "مَآ أَ",
+                "word": "مَآ أَصَابَكَ مِنْ حَسَنَةٍ فَمِنَ اللّٰ",
+                "after": "۞"
+            }
+        ],
+        "broj12": [
+            {
+                "id": 12,
+                "url": "./assets/audio/l19/12.mp3",
+                "highlight": "هُٓ اَ",
+                "word": "يَحْسَبُ أَنَّ مَالَـهُٓ اَخْلَدَهُ",
+                "after": "۞"
+            }
+        ],
+        "broj5": [
+            {
+                "id": 6,
+                "url": "./assets/audio/l19/5.mp3",
+                "highlight": "يَٓا اَ",
+                "word": "قُلْ يَٓا اَيُّهَا الْكَافِرُونَ ",
                 "after": null
             }
-        ]
-    },
-    "vjezba": {
-        "broj6": [{
-            "id": 6,
-            "url": "./assets/audio/l18/6.mp3",
-            "highlight": "دَٓاءِ",
-            "word": "بِالنَّبِـيِّـينَ وَالشُّهَدَٓاءِ وَقُضِيَ بَيْنَهُمْ بِالْحَـقِّ",
-            "after": null
-        }, {
-            "id": 61,
-            "highlight": "َجِٓيءَ",
-            "word": "وَوُضِعَ الْكِتَابُ وَجِٓيءَ",
-            "after": null
-        }],
-        "znak": [{
-            "id": 7,
-            "url": "./assets/audio/l18/7.mp3",
-            "highlight": "",
-            "word": "",
-            "after": " ۞ "
-        }],
-        "broj7": [{
-            "id": 7,
-            "url": "./assets/audio/l18/7.mp3",
-            "highlight": "جَٓاءَ",
-            "word": " مِنْ بَعْدِ مَا جَٓاءَهُمُ الْبَـيِّــنَاتُ ۚ",
-            "after": null
-        }],
-        "broj8": [{
-            "id": 8,
-            "url": "./assets/audio/l18/8.mp3",
-            "highlight": "لٰٓـئِ",
-            "word": "وَأُولٰٓـئِكَ لَهُمْ عَذَابٌ عَظِيمٌ",
-            "after": null
-        }],
-        "broj9": [{
-                "id": 9,
-                "url": "./assets/audio/l18/9.mp3",
-                "highlight": "جَٓاءَ",
-                "word": "جَٓاءَكَ مِنَ الْـحَـقِّ ",
+        ],
+        "broj6": [
+            {
+                "id": 6,
+                "url": "./assets/audio/l19/6.mp3",
+                "highlight": "َٓلَٓا اَ",
+                "word": "َٓلَٓا اَعْبُدُ مَا تَعْبُدُونَ",
+                "after":"۞"
+            }
+        ],
+        "broj7": [
+            {
+                "id": 7,
+                "url": "./assets/audio/l19/7.mp3",
+                "highlight": "مَآ اَ",
+                "word": "وَمَآ اَرْسَلْنَاكإِلَّا مُبَـشِّـرًا وَنَذِيرًا َ",
+                "after": "۞"
+            }
+        ],
+        "broj8": [
+            {
+                "id": 8,
+                "url": "./assets/audio/l19/8.mp3",
+                "highlight": "قُٓـوا أَ",
+                "word": "ُّيُّهَا الَّذِينَ اٰمَنُوا قُٓـوا أَنْـفُسَكُمْ وَأَهْلِيكُمْ نَارًا ",
+                "after": "۞"
+            },
+            {
+                "id": 81,
+                "highlight": " يَآ أَ",
+                "word": "ُّ يَآ أَ",
                 "after": null
+            }
+        ],
+        "broj9": [
+            {
+                "id": 9,
+                "url": "./assets/audio/l19/9.mp3",
+                "highlight": "لُٓـوا أَ",
+                "word": "لٰى بَارِئِكُمْ فَاقْـتُـلُٓـوا أَنْفُسَكُمْ ",
+                "after":"۞"
             },
             {
                 "id": 91,
-                "highlight": "وَٓاءَ",
-                "word": "وَلَا تَتَّبِعْ أَهْوَٓاءَهُمْ عَمَّا",
+                "highlight": "بُٓـوا إِ",
+                "word": "فَتُوبُٓـوا إِ",
+                "after": null
+            }
+        ],
+        "broj10": [
+            {
+                "id": 10,
+                "url": "./assets/audio/l19/10.mp3",
+                "highlight": "فِٓـي أَ",
+                "word": "نَّ اللّٰهَ يَعْلَمُ مَا فِٓـي أَنْـفُسِكُمْ ",
+                "after": "۞"
+            },
+            {
+                "id": 101,
+                "highlight": "مُٓوا أَ",
+                "word": " وَاعْلَمُٓوا أَ",
                 "after": null
             }
 
         ],
-        "broj10": [{
-            "id": 10,
-            "url": "./assets/audio/l18/10.mp3",
-            "highlight": "مَٓاءِ مَٓاءً",
-            "word": "السَّمَٓاءِ مَٓاءً فَأَخْرَجَ بِهِ مِنَ الثَّمَرَاتِ رِزْقًا لَكُمْ",
-            "after": null
-        }, {
-            "id": 101,
-            "highlight": "نَٓاءً",
-            "word": " بِنَٓاءً وَأَنْـزَلَ مِنَ",
-            "after": null
-        }, {
-            "id": 102,
-            "highlight": "مَٓاءَ",
-            "word": " وَالسَّمَٓاءَ",
-            "after": null
-        }],
-        "broj11": [{
+        "broj11": [
+            {
                 "id": 11,
-                "url": "./assets/audio/l18/11.mp3",
-                "highlight": "لَٓائِ",
-                "word": "أَنَّ عَلَيْهِمْ لَعْنَةَ اللّٰهِ وَالْمَلَٓائِكَةِ وَالنَّاسِ أَجْمَعِينَ",
-                "after": null
+                "url": "./assets/audio/l19/11.mp3",
+                "highlight": "مَآ أَ",
+                "word": "يُّهَا النَّبِيُّ لِمَ تُـحَـرِّمُ مَآ أَحَلَّ اللّٰهُ لَكَ ",
+                "after": "۞"
             },
-
             {
                 "id": 111,
-                "url": "./assets/audio/l18/11.mp3",
-                "highlight": "زَٓاؤُ",
-                "word": "جَزَٓاؤُهُمْ",
-                "after": null
-            },
-
-            {
-                "id": 112,
-                "url": "./assets/audio/l18/11.mp3",
-                "highlight": "لٰٓـئِ",
-                "word": " أُولٰٓـئِكَ",
+                "highlight": "يَآ أَ",
+                "word": "يَآ أَ",
                 "after": null
             }
 
