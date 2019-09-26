@@ -28,6 +28,15 @@ function L19() {
 
         <Row className="text-center">
           <Col>
+          „turska štampa“     
+          </Col>
+          <Col>
+          „medinska štampa“
+          </Col>
+        </Row>
+
+        <Row className="text-center">
+          <Col>
             { PlayerRow(data, 'row2lijevi') }
           </Col>
           <Col>
