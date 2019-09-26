@@ -22,7 +22,7 @@ function L19() {
 
         <Row>
           <Col className="opisLekcije">
-              Kada poslije dugog vokala A ـــــَـــــ ا , Iــــــِــــ ى  , Uـــــُـــــ و   dođe <strong>hemze</strong> u <u>istoj</u> riječi, bit će medd muttesil. Traje obavezno 4-5 hareketa, npr.: { PlayerRow(data, 'row1') }
+          Kada poslije <strong>dugog vokala</strong> A ـــــَـــــ ا , Iــــــِــــ ى  , Uـــــُـــــ و   dođe <strong>hemze</strong> ili <strong>elif</strong> na početku sljedeće riječi, bit će medd munfesil. Traje 4-5 hareketa,npr.: { PlayerRow(data, 'row1') }
           </Col>
         </Row>
 
