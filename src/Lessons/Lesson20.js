@@ -15,33 +15,49 @@ function L20() {
         <React.Fragment>
         <Row>
           <Col>
-            <h2 className="text-center font-weight-bold text-uppercase">MEDD MUTTESIL</h2>
-            <h4 className="text-center">spojena dužina</h4>
-            <hr/>
+            <h2 className="text-center font-weight-bold text-uppercase">MEDD LAZIM</h2>
+            <h4 className="text-center">stalna dužina</h4>
           </Col>
-        </Row>
-
-        <Row>
-          <Col className="opisLekcije">
-            
-Kada poslije dugog vokala A ـــــَـــــ ا , Iــــــِــــ ى  , Uـــــُـــــ و   dođe <strong>hemze</strong> u <u>istoj</u> riječi, bit će medd muttesil. Traje obavezno 4-5 hareketa, npr.: { PlayerRow(data, 'row1') }
-        </Col>
         </Row>
 
         <Row>
           <Col>
+          <br></br>
+          </Col>
+        </Row>          
+
+        <Row>
+          <Col className="opisLekcije">  
+          Kada poslije <strong>dugog vokala</strong>  A ـــــَـــــ ا , Iــــــِــــ ى  , Uـــــُـــــ و   dođe harf sa <strong>stalnim sukunom ـــــْـــــ</strong> <strong>ili tešdidom ـــــّـــــ </strong>, bit će medd lazim . Traje obavezno 6 hareketa, npr.:{ PlayerRow(data, 'row1') }
+        </Col>
+        </Row>
+
+        <Row className="text-center">
+          <Col>
             { PlayerRow(data, 'row2') }
           </Col>
         </Row>
-        <Row>
+        <Row className="text-center">
           <Col>
             { PlayerRow(data, 'row3') }
           </Col>
         </Row>
 
+        <Row className="text-center">
+          <Col>
+            { PlayerRow(data, 'row4') }
+          </Col>
+        </Row>
+
         <Row>
           <Col>
-            { VjezbeRow(data, 'multirow', 'row4') }
+          <br></br>
+          </Col>
+        </Row>
+
+        <Row>
+          <Col>
+            <br></br>
           </Col>
         </Row>
 
@@ -50,39 +66,33 @@ Kada poslije dugog vokala A ـــــَـــــ ا , Iــــــِــــ 
 
         <Row className="text-center">
           <Col>
-
-          { VjezbeRow(data, 'vjezba', 'znak') }
-            { VjezbeRow(data, 'vjezba', 'broj6') }
-          </Col>
-        </Row>
-        <Row className="text-center">
-          <Col>
-
-          { VjezbeRow(data, 'vjezba', 'znak') }
-            { VjezbeRow(data, 'vjezba', 'broj8') }
-            { VjezbeRow(data, 'vjezba', 'broj7') }
-          </Col>
-        </Row>
-        <Row className="text-center">
-          <Col>
-
-          { VjezbeRow(data, 'vjezba', 'znak') }
+            { VjezbeRow(data, 'vjezba', 'broj10') }
             { VjezbeRow(data, 'vjezba', 'broj9') }
           </Col>
         </Row>
-
         <Row className="text-center">
           <Col>
-
-          { VjezbeRow(data, 'vjezba', 'znak') }
-            { VjezbeRow(data, 'vjezba', 'broj10') }
+            { VjezbeRow(data, 'vjezba', 'broj13') }
+            { VjezbeRow(data, 'vjezba', 'broj12') }
+            { VjezbeRow(data, 'vjezba', 'broj11') }
           </Col>
         </Row>
         <Row className="text-center">
           <Col>
+            { VjezbeRow(data, 'vjezba', 'broj15') }
+            { VjezbeRow(data, 'vjezba', 'broj14') }
+          </Col>
+        </Row>
 
-          { VjezbeRow(data, 'vjezba', 'znak') }
-          { VjezbeRow(data, 'vjezba', 'broj11') }
+        <Row className="text-center">
+          <Col>
+            { VjezbeRow(data, 'vjezba', 'broj17') }
+            { VjezbeRow(data, 'vjezba', 'broj16') }
+          </Col>
+        </Row>
+        <Row className="text-center">
+          <Col>
+          { VjezbeRow(data, 'vjezba', 'broj18') }
           </Col>
         </Row>
         <hr/>

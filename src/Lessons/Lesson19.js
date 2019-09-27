@@ -21,46 +21,49 @@ function L19() {
         </Row>
 
         <Row>
+          <Col>
+          <br></br>
+          </Col>
+        </Row>
+
+        <Row>
           <Col className="opisLekcije">
           Kada poslije <strong>dugog vokala</strong> A ـــــَـــــ ا , Iــــــِــــ ى  , Uـــــُـــــ و   dođe <strong>hemze</strong> ili <strong>elif</strong> na početku sljedeće riječi, bit će medd munfesil. Traje 4-5 hareketa,npr.: { PlayerRow(data, 'row1') }
           </Col>
         </Row>
 
         <Row className="text-center">
-          <Col>
-          „turska štampa“     
-          </Col>
-          <Col>
-          „medinska štampa“
-          </Col>
+        <pre>                 </pre>„turska štampa“<pre>         </pre>„medinska štampa“       
         </Row>
 
         <Row className="text-center">
           <Col>
-            { PlayerRow(data, 'row2lijevi') }
-          </Col>
-          <Col>
-            { PlayerRow(data, 'row2desni') }
+            { PlayerRow(data, 'row2lijevi') }{ PlayerRow(data, 'row2desni') }
           </Col>
         </Row>
         <Row className="text-center">
           <Col>
-            { PlayerRow(data, 'row3lijevi') }
-          </Col>
-          <Col>
-            { PlayerRow(data, 'row3desni') }
+            { PlayerRow(data, 'row3lijevi') }{ PlayerRow(data, 'row3desni') }
           </Col>
         </Row>
         <Row className="text-center">
           <Col>
-            { PlayerRow(data, 'row4lijevi') }
-          </Col>
-          <Col>
-            { PlayerRow(data, 'row4desni') }
+            { PlayerRow(data, 'row4lijevi') }{ PlayerRow(data, 'row4desni') }
           </Col>
         </Row>
 
-      
+        <Row>
+          <Col>
+          <br></br>
+          </Col>
+        </Row>
+
+        <Row>
+          <Col>
+            <br></br>
+          </Col>
+        </Row>
+
 
         <h2 className="text-center">Vježbe</h2>
         <hr/>
