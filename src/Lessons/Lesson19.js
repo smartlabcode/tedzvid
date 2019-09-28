@@ -33,7 +33,7 @@ function L19() {
         </Row>
 
         <Row className="text-center">
-        <pre>                 </pre>„turska štampa“<pre>         </pre>„medinska štampa“       
+        <pre>                  </pre>„turska štampa“<pre>        </pre>„medinska štampa“       
         </Row>
 
         <Row className="text-center">

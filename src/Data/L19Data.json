@@ -20,7 +20,7 @@
             "id": 21,
             "highlight": "لَٓا ا",
             "word": "وَلَٓا اَ",
-            "after": "-"
+            "after": " -  "
         }
     ],
     "row2desni": [
@@ -44,7 +44,7 @@
             "url": "./assets/audio/l19/3.mp3",
             "highlight": "لَٓا اَ",
             "word": "وَلَٓا اَنَا۬ عَابِدٌ مَا عَبَدْتُمْ",
-            "after": "-"
+            "after": "- "
         }
     ],
     "row3desni": [
@@ -62,7 +62,7 @@
             "url": "./assets/audio/l19/4.mp3",
             "highlight": "مَٓا اَ",
             "word": " مَٓا اَغْنٰى عَنْهُ مَالُهُ",
-            "after":"-"
+            "after":"- "
         }
     ],
     "row4desni": [
