@@ -185,27 +185,54 @@ function L1() {
 
         <Row className="text-center">
           <Col>
-            { VjezbeRow(data, 'vjezba', 'red1') }
-            { VjezbeRow(data, 'vjezba', 'red2') }
+            { VjezbeRow(data, 'vjezba', 'red19') }
+            { VjezbeRow(data, 'vjezba', 'red18') }
           </Col>
         </Row>
         <Row className="text-center">
           <Col>
-            { VjezbeRow(data, 'vjezba', 'red3') }
-            { VjezbeRow(data, 'vjezba', 'red4') }
+            ۞
+            { VjezbeRow(data, 'vjezba', 'red21') }
+            ۞
+            { VjezbeRow(data, 'vjezba', 'red20') }
           </Col>
         </Row>
         <Row className="text-center"> 
           <Col>
-            { VjezbeRow(data, 'vjezba', 'red5') }
-            { VjezbeRow(data, 'vjezba', 'red6') }
-            { VjezbeRow(data, 'vjezba', 'red7') }
+            ۞
+            { VjezbeRow(data, 'vjezba', 'red24') }
+            { VjezbeRow(data, 'vjezba', 'red23') }
+            ۞
+            { VjezbeRow(data, 'vjezba', 'red22') }
           </Col>
         </Row>
         <Row className="text-center">
           <Col>
-            { VjezbeRow(data, 'vjezba', 'red8') }
-            { VjezbeRow(data, 'vjezba', 'red9') }
+            ۞
+            { VjezbeRow(data, 'vjezba', 'red26') }
+            { VjezbeRow(data, 'vjezba', 'red25') }
+          </Col>
+        </Row>
+        <Row className="text-center">
+          <Col>
+            ۞
+            { VjezbeRow(data, 'vjezba', 'red27') }
+          </Col>
+        </Row>
+        <Row className="text-center">
+          <Col>
+            ۞
+            { VjezbeRow(data, 'vjezba', 'red29') }
+            ۞
+            { VjezbeRow(data, 'vjezba', 'red28') }
+          </Col>
+        </Row>
+        <Row className="text-center">
+          <Col>
+            ۞
+            { VjezbeRow(data, 'vjezba', 'red31') }
+            ۞
+            { VjezbeRow(data, 'vjezba', 'red30') }
           </Col>
         </Row>
 
