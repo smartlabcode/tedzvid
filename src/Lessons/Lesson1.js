@@ -216,12 +216,6 @@ function L1() {
         <Row className="text-center">
           <Col>
             ۞
-            { VjezbeRow(data, 'vjezba', 'red27') }
-          </Col>
-        </Row>
-        <Row className="text-center">
-          <Col>
-            ۞
             { VjezbeRow(data, 'vjezba', 'red29') }
             ۞
             { VjezbeRow(data, 'vjezba', 'red28') }
