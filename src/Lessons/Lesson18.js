@@ -28,20 +28,33 @@ Kada poslije dugog vokala A ـــــَـــــ ا , Iــــــِــــ 
         </Col>
         </Row>
 
-        <Row>
+        <Row className="text-center">
           <Col>
             { PlayerRow(data, 'row2') }
           </Col>
         </Row>
-        <Row>
+        
+        <Row className="text-center">
           <Col>
             { PlayerRow(data, 'row3') }
           </Col>
         </Row>
 
-        <Row>
+        <Row className="text-center">
           <Col>
             { VjezbeRow(data, 'multirow', 'row4') }
+          </Col>
+        </Row>
+
+        <Row>
+          <Col>
+          <br></br>
+          </Col>
+        </Row>
+
+        <Row>
+          <Col>
+            <br></br>
           </Col>
         </Row>
 

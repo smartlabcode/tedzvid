@@ -15,76 +15,93 @@ function L21() {
         <React.Fragment>
         <Row>
           <Col>
-            <h2 className="text-center font-weight-bold text-uppercase">MEDD MUTTESIL</h2>
-            <h4 className="text-center">spojena dužina</h4>
+            <h2 className="text-center font-weight-bold text-uppercase">MEDD ARID</h2>
+            <h4 className="text-center">nestalna dužina</h4>
             <hr/>
           </Col>
         </Row>
 
         <Row>
+          <Col>
+          <br></br>
+          </Col>
+        </Row> 
+
+        <Row>
           <Col className="opisLekcije">
-            
-Kada poslije dugog vokala A ـــــَـــــ ا , Iــــــِــــ ى  , Uـــــُـــــ و   dođe <strong>hemze</strong> u <u>istoj</u> riječi, bit će medd muttesil. Traje obavezno 4-5 hareketa, npr.: { PlayerRow(data, 'row1') }
-        </Col>
+          Kada poslije <strong>dugog vokala</strong> A ـــــَـــــ ا , Iــــــِــــ ى  , U <strong>ـــــُـــــ و</strong> dođe <strong>nestalni sukun</strong>, bit će medd arid. Traje 2-4-6 hareketa.
+          </Col>
         </Row>
 
         <Row>
-          <Col>
-            { PlayerRow(data, 'row2') }
+          <Col className="text-center">
+            { PlayerRow(data, 'row1') }
           </Col>
         </Row>
         <Row>
-          <Col>
+          <Col className="text-center">
+            { PlayerRow(data, 'row2') }
+          </Col>
+        </Row>
+
+        <Row>
+          <Col className="text-center">
             { PlayerRow(data, 'row3') }
           </Col>
         </Row>
 
         <Row>
           <Col>
-            { VjezbeRow(data, 'multirow', 'row4') }
+          <br></br>
           </Col>
-        </Row>
+        </Row> 
+
+        <Row>
+          <Col>
+          <br></br>
+          </Col>
+        </Row> 
 
         <h2 className="text-center">Vježbe</h2>
         <hr/>
 
         <Row className="text-center">
           <Col>
-
-          { VjezbeRow(data, 'vjezba', 'znak') }
+            { VjezbeRow(data, 'vjezba', 'broj7') }
             { VjezbeRow(data, 'vjezba', 'broj6') }
           </Col>
         </Row>
-        <Row className="text-center">
-          <Col>
-
-          { VjezbeRow(data, 'vjezba', 'znak') }
-            { VjezbeRow(data, 'vjezba', 'broj8') }
-            { VjezbeRow(data, 'vjezba', 'broj7') }
-          </Col>
-        </Row>
-        <Row className="text-center">
-          <Col>
-
-          { VjezbeRow(data, 'vjezba', 'znak') }
-            { VjezbeRow(data, 'vjezba', 'broj9') }
-          </Col>
-        </Row>
 
         <Row className="text-center">
           <Col>
-
-          { VjezbeRow(data, 'vjezba', 'znak') }
             { VjezbeRow(data, 'vjezba', 'broj10') }
+            { VjezbeRow(data, 'vjezba', 'broj9') }
+            { VjezbeRow(data, 'vjezba', 'broj8') }
           </Col>
         </Row>
+
         <Row className="text-center">
           <Col>
-
-          { VjezbeRow(data, 'vjezba', 'znak') }
-          { VjezbeRow(data, 'vjezba', 'broj11') }
+            { VjezbeRow(data, 'vjezba', 'broj13') }
+            { VjezbeRow(data, 'vjezba', 'broj12') }
+            { VjezbeRow(data, 'vjezba', 'broj11') }
           </Col>
         </Row>
+
+        <Row className="text-center">
+          <Col>
+            { VjezbeRow(data, 'vjezba', 'broj15') }
+            { VjezbeRow(data, 'vjezba', 'broj14') }
+          </Col>
+        </Row>
+        
+        <Row className="text-center">
+          <Col>
+          { VjezbeRow(data, 'vjezba', 'broj17') }
+          { VjezbeRow(data, 'vjezba', 'broj16') }
+          </Col>
+        </Row>
+        
         <hr/>
 
         <Footer prev="/lekcija20" next="/lekcija22" />

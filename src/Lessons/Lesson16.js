@@ -32,7 +32,7 @@ function L16() {
           </Col>
         </Row>
         
-        <Row>
+        <Row className="text-center">
           <Col>
           { PlayerRow(data, 'row1') }
           </Col>
@@ -44,11 +44,26 @@ function L16() {
           </Col>
         </Row>
 
-        <Row>
+        <Row className="text-center">
           <Col>
             { PlayerRow(data, 'row2') }
           </Col>
         </Row>
+
+        <Row>
+          <Col>
+          <br></br>
+          </Col>
+        </Row>
+
+        <Row>
+          <Col>
+            <br></br>
+          </Col>
+        </Row>
+
+       
+       
 
         <h2 className="text-center">Vježbe</h2>
         <hr/>
