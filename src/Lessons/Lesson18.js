@@ -64,14 +64,14 @@ Kada poslije dugog vokala A ـــــَـــــ ا , Iــــــِــــ 
         <Row className="text-center">
           <Col>
 
-          { VjezbeRow(data, 'vjezba', 'znak') }
+          ۞ 
             { VjezbeRow(data, 'vjezba', 'broj6') }
           </Col>
         </Row>
         <Row className="text-center">
           <Col>
 
-          { VjezbeRow(data, 'vjezba', 'znak') }
+          ۞ 
             { VjezbeRow(data, 'vjezba', 'broj8') }
             { VjezbeRow(data, 'vjezba', 'broj7') }
           </Col>
@@ -79,7 +79,7 @@ Kada poslije dugog vokala A ـــــَـــــ ا , Iــــــِــــ 
         <Row className="text-center">
           <Col>
 
-          { VjezbeRow(data, 'vjezba', 'znak') }
+          ۞ 
             { VjezbeRow(data, 'vjezba', 'broj9') }
           </Col>
         </Row>
@@ -87,7 +87,7 @@ Kada poslije dugog vokala A ـــــَـــــ ا , Iــــــِــــ 
         <Row className="text-center">
           <Col>
 
-          { VjezbeRow(data, 'vjezba', 'znak') }
+            { VjezbeRow(data, 'vjezba', 'znak') }
             { VjezbeRow(data, 'vjezba', 'broj10') }
           </Col>
         </Row>
