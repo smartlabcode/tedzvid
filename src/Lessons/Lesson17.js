@@ -50,13 +50,6 @@ function L17() {
           </Col>
         </Row>
 
-        <Row>
-          <Col>
-            <br></br>
-          </Col>
-        </Row>
-
-
         <h2 className="text-center">Vježbe</h2>
         <hr/>
 

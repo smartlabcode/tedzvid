@@ -1,17 +1,25 @@
 {
-    "row1": [
+    "row1lijevi": [
         {
             "id": 1,
             "url": "./assets/audio/l22/1.mp3",
             "highlight": "ـوْ",
             "word": "خَـوْفْ( ـــــْـــــ وْ ـــــَـــــ)",
             "after": " ; "
-        },
+        }
+    ],
+    "row1desni": [
         {
             "id": 2,
-            "url": "./assets/audio/l22/2.mp3",
+            "url": "./assets/audio/l22/1.mp3",
+            "highlight": null,
+            "word": "( ـــــْـــــ ي ـــــَـــــ) ",
+            "after": null
+        },
+        {
+            "id": 21,
             "highlight": "يْ",
-            "word": "خَـيْـــرْ( ـــــْـــــ يْ ـــــَـــــ)",
+            "word": "خَـيْـــرْ",
             "after": "."
         }
     ],

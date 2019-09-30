@@ -35,7 +35,7 @@ function L22() {
 
         <Row className="text-center">
           <Col>
-          { PlayerRow(data, 'row1') }
+          { PlayerRow(data, 'row1lijevi') }{ PlayerRow(data, 'row1desni') }
           </Col>
         </Row>
 
