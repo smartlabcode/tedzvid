@@ -18,6 +18,7 @@
         },
         {
             "id": 21,
+            "url": "./assets/audio/l19/2.mp3",
             "highlight": "لَٓا ا",
             "word": "وَلَٓا اَ",
             "after": " -  "
@@ -33,6 +34,7 @@
         },
         {
             "id": 31,
+            "url": "./assets/audio/l19/2.mp3",
             "highlight": "لَٓا أَ",
             "word": "وَلَٓا أَ",
             "after": null
