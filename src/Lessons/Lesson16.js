@@ -22,6 +22,12 @@ function L16() {
         </Row>
 
         <Row>
+          <Col>
+          <br></br>
+          </Col>
+        </Row> 
+
+        <Row>
           <Col className="opisLekcije">Kada dođu jedan do drugog bliski harfovi, prvi sa <bold>sukunom</bold>, a drugi sa <bold>hareketom</bold>, onda se prvi uklapa u drugi iz iste grupe:
           </Col>
         </Row>
@@ -61,9 +67,6 @@ function L16() {
             <br></br>
           </Col>
         </Row>
-
-       
-       
 
         <h2 className="text-center">Vježbe</h2>
         <hr/>
