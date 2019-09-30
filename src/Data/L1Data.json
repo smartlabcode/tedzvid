@@ -129,14 +129,14 @@
     "vjezba": {
         "red19": [
             {
-                "id": 191,
+                "id": 19,
                 "url": "./assets/audio/l1/19.mp3",
                 "highlight": "نَاۚ",
                 "word": "بِّنَاۚ ",
                 "after": null
             },
             {
-                "id": 19,
+                "id": 191,
                 "highlight": "ه۪ۙ",
                 "word": "وَالرَّاسِخُونَ فِي الْعِلْمِ يَقُولُونَ اٰمَنَّا بِه۪ۙ كُلٌّ مِنْ عِنْدِ رَ",
                 "after": null
@@ -220,25 +220,10 @@
                 "after": null
             }
         ],
-        "red27": [
-            {
-                "id": 27,
-                "url": "./assets/audio/l1/27.mp3",
-                "highlight": "نُ",
-                "word": "هٰذَا مَا وَعَدَ الرَّحْمٰنُ",
-                "after": null
-            },
-            {
-                "id": 271,
-                "highlight": "نَاۢ ۔",
-                "word": "قَالُوا يَا وَيْلَنَا مَنْ بَعَثَنَا مِنْ مَرْقَدِنَاۢ ۔",
-                "after": null
-            }
-        ],
         "red28": [
             {
                 "id": 28,
-                "url": "./assets/audio/l1/27.mp3",
+                "url": "./assets/audio/l1/28.mp3",
                 "highlight": "دُوا",
                 "word": "فَقَالَ يَا قَوْمِ اعْبُدُوا ",
                 "after": null
@@ -247,6 +232,7 @@
         "red29": [
             {
                 "id": 29,
+                "url": "./assets/audio/l1/29.mp3",
                 "highlight": "ن۪ي",
                 "word": " قَالَ عَسٰى رَبّ۪ٓي أَنْ يَهْدِيَن۪ي",
                 "after": null
@@ -255,6 +241,7 @@
         "red30": [
             {
                 "id": 30,
+                "url": "./assets/audio/l1/30.mp3",
                 "highlight": "ءًۖ",
                 "word": "وَالسَّمَٓاءَ بِنَٓاءًۖ",
                 "after": null
@@ -262,7 +249,8 @@
         ],
         "red31": [
             {
-                "id": 30,
+                "id": 31,
+                "url": "./assets/audio/l1/31.mp3",
                 "highlight": "وَ",
                 "word": "اَللّٰهُ لَٓا إِلٰهَ إِلَّا هُوَ ",
                 "after": null
