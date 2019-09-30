@@ -38,17 +38,17 @@ function L19() {
 
         <Row className="text-center">
           <Col>
-            { PlayerRow(data, 'row2lijevi') }{ PlayerRow(data, 'row2desni') }
+          { VjezbeRow(data, 'rows', 'row2lijevi') } { VjezbeRow(data, 'rows', 'row2desni') }
           </Col>
         </Row>
         <Row className="text-center">
-          <Col>
-            { PlayerRow(data, 'row3lijevi') }{ PlayerRow(data, 'row3desni') }
+        <Col>
+          { VjezbeRow(data, 'rows', 'row3lijevi') } { VjezbeRow(data, 'rows', 'row3desni') }
           </Col>
         </Row>
         <Row className="text-center">
-          <Col>
-            { PlayerRow(data, 'row4lijevi') }{ PlayerRow(data, 'row4desni') }
+        <Col>
+          { VjezbeRow(data, 'rows', 'row4lijevi') } { VjezbeRow(data, 'rows', 'row4desni') }
           </Col>
         </Row>
 

@@ -1,130 +1,107 @@
 {
-    "row1": [
-        {
-            "id": 1,
-            "url": "./assets/audio/l19/1.mp3",
-            "highlight": "مَآ أَ",
-            "word": " وَمَآ أَنْـــتُـمْ ",
-            "after": "."
-        }
-    ],
-    "row2lijevi": [
-        {
-            "id": 2,
-            "url": "./assets/audio/l19/2.mp3",
-            "highlight": "مَٓا اَ",
-            "word": "اَنْتُمْ عَابِدُونَ مَٓا اَعْبُدُ",
-            "after": null
-        },
-        {
-            "id": 21,
-            "url": "./assets/audio/l19/2.mp3",
-            "highlight": "لَٓا ا",
-            "word": "وَلَٓا اَ",
-            "after": " -  "
-        }
-    ],
-    "row2desni": [
-        {
-            "id": 3,
-            "url": "./assets/audio/l19/2.mp3",
-            "highlight": "مَآ أَ",
-            "word": "نْـتُمْ عَابِدُونَ مَآ أَعْبُدُ",
-            "after": null
-        },
-        {
-            "id": 31,
-            "url": "./assets/audio/l19/2.mp3",
-            "highlight": "لَٓا أَ",
-            "word": "وَلَٓا أَ",
-            "after": null
-        }
-    ],
-    "row3lijevi": [
-        {
+    "row1": [{
+        "id": 1,
+        "url": "./assets/audio/l19/1.mp3",
+        "highlight": "مَآ أَ",
+        "word": " وَمَآ أَنْـــتُـمْ ",
+        "after": "."
+    }],
+    "rows": {
+        "row2lijevi": [{
+                "id": 21,
+                "url": "./assets/audio/l19/2.mp3",
+                "highlight": "مَٓا اَ",
+                "word": "اَنْتُمْ عَابِدُونَ مَٓا اَعْبُدُ",
+                "after": null
+            },
+            {
+                "id": 22,
+                "highlight": "لَٓا ا",
+                "word": "وَلَٓا اَ",
+                "after": " -  "
+            }
+        ],
+        "row2desni": [{
+                "id": 3,
+                "url": "./assets/audio/l19/2.mp3",
+                "highlight": "مَآ أَ",
+                "word": "نْـتُمْ عَابِدُونَ مَآ أَعْبُدُ",
+                "after": null
+            },
+            {
+                "id": 31,
+                "highlight": "لَٓا أَ",
+                "word": "وَلَٓا أَ",
+                "after": null
+            }
+        ],
+        "row3lijevi": [{
             "id": 4,
             "url": "./assets/audio/l19/3.mp3",
             "highlight": "لَٓا اَ",
             "word": "وَلَٓا اَنَا۬ عَابِدٌ مَا عَبَدْتُمْ",
             "after": "- "
-        }
-    ],
-    "row3desni": [
-        {
+        }],
+        "row3desni": [{
             "id": 5,
             "url": "./assets/audio/l19/3.mp3",
             "highlight": "لَآ أَ",
             "word": "وَلَآ أَنَا عَابِدٌ مَا عَبَدْتُمْ",
             "after": null
-        }
-    ],
-    "row4lijevi": [
-        {
+        }],
+        "row4lijevi": [{
             "id": 6,
             "url": "./assets/audio/l19/4.mp3",
             "highlight": "مَٓا اَ",
             "word": " مَٓا اَغْنٰى عَنْهُ مَالُهُ",
-            "after":"- "
-        }
-    ],
-    "row4desni": [
-        {
+            "after": "- "
+        }],
+        "row4desni": [{
             "id": 7,
             "url": "./assets/audio/l19/4.mp3",
             "highlight": "مَٓا أَ",
             "word": "مَٓا أَغْنٰى عَنْهُ مَالُهُ",
             "after": null
-        }
-    ],
+        }]
+    },
 
     "vjezba": {
-        "broj13": [
-            {
-                "id": 13,
-                "url": "./assets/audio/l19/13.mp3",
-                "highlight": "مَآ أَ",
-                "word": "مَآ أَصَابَكَ مِنْ حَسَنَةٍ فَمِنَ اللّٰ",
-                "after": "۞"
-            }
-        ],
-        "broj12": [
-            {
-                "id": 12,
-                "url": "./assets/audio/l19/12.mp3",
-                "highlight": "هُٓ اَ",
-                "word": "يَحْسَبُ أَنَّ مَالَـهُٓ اَخْلَدَهُ",
-                "after": "۞"
-            }
-        ],
-        "broj5": [
-            {
-                "id": 6,
-                "url": "./assets/audio/l19/5.mp3",
-                "highlight": "يَٓا اَ",
-                "word": "قُلْ يَٓا اَيُّهَا الْكَافِرُونَ ",
-                "after": null
-            }
-        ],
-        "broj6": [
-            {
-                "id": 6,
-                "url": "./assets/audio/l19/6.mp3",
-                "highlight": "َٓلَٓا اَ",
-                "word": "َٓلَٓا اَعْبُدُ مَا تَعْبُدُونَ",
-                "after":"۞"
-            }
-        ],
-        "broj7": [
-            {
-                "id": 7,
-                "url": "./assets/audio/l19/7.mp3",
-                "highlight": "مَآ اَ",
-                "word": "وَمَآ اَرْسَلْنَاكإِلَّا مُبَـشِّـرًا وَنَذِيرًا َ",
-                "after": "۞"
-            }
-        ],
-        "broj8": [
-            {
+        "broj13": [{
+            "id": 13,
+            "url": "./assets/audio/l19/13.mp3",
+            "highlight": "مَآ أَ",
+            "word": "مَآ أَصَابَكَ مِنْ حَسَنَةٍ فَمِنَ اللّٰ",
+            "after": "۞"
+        }],
+        "broj12": [{
+            "id": 12,
+            "url": "./assets/audio/l19/12.mp3",
+            "highlight": "هُٓ اَ",
+            "word": "يَحْسَبُ أَنَّ مَالَـهُٓ اَخْلَدَهُ",
+            "after": "۞"
+        }],
+        "broj5": [{
+            "id": 6,
+            "url": "./assets/audio/l19/5.mp3",
+            "highlight": "يَٓا اَ",
+            "word": "قُلْ يَٓا اَيُّهَا الْكَافِرُونَ ",
+            "after": null
+        }],
+        "broj6": [{
+            "id": 6,
+            "url": "./assets/audio/l19/6.mp3",
+            "highlight": "َٓلَٓا اَ",
+            "word": "َٓلَٓا اَعْبُدُ مَا تَعْبُدُونَ",
+            "after": "۞"
+        }],
+        "broj7": [{
+            "id": 7,
+            "url": "./assets/audio/l19/7.mp3",
+            "highlight": "مَآ اَ",
+            "word": "وَمَآ اَرْسَلْنَاكإِلَّا مُبَـشِّـرًا وَنَذِيرًا َ",
+            "after": "۞"
+        }],
+        "broj8": [{
                 "id": 8,
                 "url": "./assets/audio/l19/8.mp3",
                 "highlight": "قُٓـوا أَ",
@@ -138,13 +115,12 @@
                 "after": null
             }
         ],
-        "broj9": [
-            {
+        "broj9": [{
                 "id": 9,
                 "url": "./assets/audio/l19/9.mp3",
                 "highlight": "لُٓـوا أَ",
                 "word": "لٰى بَارِئِكُمْ فَاقْـتُـلُٓـوا أَنْفُسَكُمْ ",
-                "after":"۞"
+                "after": "۞"
             },
             {
                 "id": 91,
@@ -153,8 +129,7 @@
                 "after": null
             }
         ],
-        "broj10": [
-            {
+        "broj10": [{
                 "id": 10,
                 "url": "./assets/audio/l19/10.mp3",
                 "highlight": "فِٓـي أَ",
@@ -169,8 +144,7 @@
             }
 
         ],
-        "broj11": [
-            {
+        "broj11": [{
                 "id": 11,
                 "url": "./assets/audio/l19/11.mp3",
                 "highlight": "مَآ أَ",
