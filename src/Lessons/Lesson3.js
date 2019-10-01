@@ -65,9 +65,8 @@ function L3() {
 				</Col>
 			</Row>
 
-			<hr />
-			<h2 className="text-center">Vježbe</h2>
-			<hr />
+        <h2 className="text-center">Vježbe</h2>
+        <hr/>
 
 			<Row className="text-center">
 				<Col>
