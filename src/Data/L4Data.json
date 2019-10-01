@@ -1,6 +1,5 @@
 {
-    "row1": [
-        {
+    "row1": [{
             "id": 1,
             "url": "./assets/audio/l4/1.mp3",
             "highlight": "ذْ ذَ",
@@ -12,7 +11,7 @@
             "url": "./assets/audio/l4/2.mp3",
             "highlight": "ذَّ",
             "word": "إِذَّهَبَ",
-            "after": " ; "
+            "after": " ;    "
         },
         {
             "id": 3,
@@ -29,8 +28,7 @@
             "after": null
         }
     ],
-    "row2": [
-        {
+    "row2": [{
             "id": 5,
             "url": "./assets/audio/l4/5.mp3",
             "highlight": "هْهُ",
@@ -52,8 +50,7 @@
             "after": null
         }
     ],
-    "row3": [
-        {
+    "row3": [{
             "id": 9,
             "url": "./assets/audio/l4/9.mp3",
             "highlight": "رْ رَ",
@@ -67,5 +64,77 @@
             "word": "إِذْهَـبْ بِـكِـتَابِي هٰـذَا",
             "after": null
         }
-    ]
+    ],
+    "vjezba": {
+        "broj10": [{
+            "id": 10,
+            "url": "./assets/audio/l4/10.mp3",
+            "highlight": "لْ لَ",
+            "word": "بَلْ لَهُ مَا فِي السَّمَاوَاتِ وَالْأَرْضِ",
+            "after": null
+        }],
+        "broj11": [{
+            "id": 11,
+            "url": "./assets/audio/l4/11.mp3",
+            "highlight": "بْ بِـ",
+            "word": " أَنِ اضْـرِبْ بِـعَصَاكَ الْبَـحْـرَ",
+            "after": null
+        }],
+        "broj12": [{
+            "id": 12,
+            "url": "./assets/audio/l4/12.mp3",
+            "highlight": "لْ لَ",
+            "word": " قُلْ لَوْ كُـنْـتُمْ فِي بُـيُـوتِكُمْ",
+            "after": null
+        }],
+        "broj13": [{
+            "id": 13,
+            "url": "./assets/audio/l4/13.mp3",
+            "highlight": "لْ لَ",
+            "word": " يَقُولُونَ هَلْ لَـنَا مِنَ الْأَمْرِ مِنْ شَيْءٍ",
+            "after": null
+        }],
+        "broj14": [{
+            "id": 14,
+            "url": "./assets/audio/l4/14.mp3",
+            "highlight": "دْ د",
+            "word": " وَقَـدْ دَخَلُوا بِالْكُفْرِ وَهُمْ قَدْ خَرَجُوا بِهِ",
+            "after": null
+        }],
+        "broj15": [{
+            "id": 15,
+            "url": "./assets/audio/l4/15.mp3",
+            "highlight": "عْ عَ",
+            "word": " مَا لَمْ تَسْطِـعْ عَـلَيْهِ صَبْرًا",
+            "after": null
+        }],
+        "broj16": [{
+            "id": 16,
+            "url": "./assets/audio/l4/16.mp3",
+            "highlight": "كْـكُ",
+            "word": "أَيْـنَمَا تَكُونُوا يُدْرِكْـكُمُ الْمَوْتُ",
+            "after": null
+        }],
+        "broj17": [{
+            "id": 17,
+            "url": "./assets/audio/l4/17.mp3",
+            "highlight": "تْ تِ",
+            "word": " فَمَا رَبِحَتْ تِجَارَتُهُمْ وَمَا كَانُوا مُهْتَدِينَ",
+            "after": null
+        }],
+        "broj18": [{
+            "id": 18,
+            "url": "./assets/audio/l4/18.mp3",
+            "highlight": "فْ فِـ",
+            "word": "فَلَا يُسْرِفْ فِـي الْقَتْلِ",
+            "after": null
+        }],
+        "broj19": [{
+            "id": 19,
+            "url": "./assets/audio/l4/19.mp3",
+            "highlight": "لْ لِ",
+            "word": "وَقُلْ لِـلَّـذِينَ أُوتُوا الْكِتَابَ",
+            "after": null
+        }]
+    }
 }
