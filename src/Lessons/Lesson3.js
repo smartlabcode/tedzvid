@@ -41,7 +41,7 @@ function L3() {
 
         <Row>
           <Col>
-            { VjezbeRow(data, 'broj18') }
+            { VjezbeRow(data,"vjezba", 'broj18') }
           </Col>
         </Row>
 
