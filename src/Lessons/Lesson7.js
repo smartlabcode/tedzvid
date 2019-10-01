@@ -22,6 +22,12 @@ function L7() {
         </Row>
 
         <Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
+
+        <Row>
           <Col className="opisLekcije">
           Kada poslije harfa N sa sukunom (نْ) ili tenvina EN  ــــــًــــــ, IN ـــــٍــــــ , UN  ــــــٌـــــ dođe harf L (ل) ili R (ر), dolazi do potpunog uklapanja harfa N (ن) u harf L (ل), odnosno, R (ر), tj. N (ن) se nikako ne uči, npr.:
           </Col>
@@ -46,17 +52,65 @@ function L7() {
           </Col>
         </Row>
 
-        <h2 className="text-center">Vježbe</h2>
+        <Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
 
+			<Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
+
+        <h2 className="text-center">Vježbe</h2>
         <hr/>
 
-        <Row className="text-center">
-          <Col>
-            VJEŽBE 7
-          </Col>
-        </Row>
+			<Row className="text-center">
+				<Col>
+					۞
+          {VjezbeRow(data, 'vjezba', 'broj9')}
+          ۞
+					{VjezbeRow(data, 'vjezba', 'broj8')}
+				</Col>
+			</Row>
 
-        <Footer prev="/lekcija6" next="/lekcija8" />
+			<Row className="text-center">
+				<Col>
+					۞
+					{VjezbeRow(data, 'vjezba', 'broj11')}
+					۞
+					{VjezbeRow(data, 'vjezba', 'broj10')}
+				</Col>
+			</Row>
+
+			<Row className="text-center">
+				<Col>
+          ۞
+          {VjezbeRow(data, 'vjezba', 'broj13')}
+					۞
+          {VjezbeRow(data, 'vjezba', 'broj12')}
+				</Col>
+			</Row>
+			<Row className="text-center">
+				<Col>
+					۞
+          {VjezbeRow(data, 'vjezba', 'broj14')}
+				</Col>
+			</Row>
+      <Row className="text-center">
+				<Col>
+					۞
+					{VjezbeRow(data, 'vjezba', 'broj15')}
+				</Col>
+			</Row>
+      <Row className="text-center">
+				<Col>
+					۞
+					{VjezbeRow(data, 'vjezba', 'broj16')}
+				</Col>
+			</Row>
 
         </React.Fragment>
     );
