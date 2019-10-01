@@ -1,6 +1,5 @@
 {
-    "row1": [
-        {
+    "row1": [{
             "id": 1,
             "url": "./assets/audio/l8/1.mp3",
             "highlight": "نْ بَ",
@@ -29,8 +28,7 @@
             "after": null
         }
     ],
-    "row2": [
-        {
+    "row2": [{
             "id": 6,
             "url": "./assets/audio/l8/6.mp3",
             "highlight": "نْ بَـ",
@@ -45,18 +43,15 @@
             "after": null
         }
     ],
-    "row3": [
-        {
-            "id": 7,
-            "url": "./assets/audio/l8/7.mp3",
-            "highlight": "مٌّ بُ",
-            "word": "صُمٌّ بُـكْمٌ عُمْيٌ فَهُمْ لَا يَرْجِعُونَ",
-            "after": null
-        }
-    ],
+    "row3": [{
+        "id": 7,
+        "url": "./assets/audio/l8/7.mp3",
+        "highlight": "مٌّ بُ",
+        "word": "صُمٌّ بُـكْمٌ عُمْيٌ فَهُمْ لَا يَرْجِعُونَ",
+        "after": null
+    }],
     "multirow": {
-        "word1": [
-            {
+        "word1": [{
                 "id": 6,
                 "url": "./assets/audio/l7/4.mp3",
                 "highlight": "نْ لَ",
@@ -70,5 +65,90 @@
                 "after": null
             }
         ]
+    },
+    "vjezba": {
+        "broj8": [{
+            "id": 8,
+            "url": "./assets/audio/l8/8.mp3",
+            "highlight": "مٌ بِ",
+            "word": "وَاللّٰهُ عَلِيمٌ بِالْمُتَّقِينَ ",
+            "after": null
+        }],
+        "broj9": [{
+            "id": 9,
+            "url": "./assets/audio/l8/9.mp3",
+            "highlight": "مًّا بِ",
+            "word": "فَأَثَابَكُمْ غَمًّا بِغَـمٍّ",
+            "after": null
+        }],
+        "broj10": [{
+            "id": 10,
+            "url": "./assets/audio/l8/10.mp3",
+            "highlight": "رٌ بِ",
+            "word": " وَاللّٰهُ خَبِيرٌ بِمَا تَعْمَلُونَ",
+            "after": null
+        }],
+        "broj11": [{
+            "id": 11,
+            "url": "./assets/audio/l8/11.mp3",
+            "highlight": "ـنْبَ",
+            "word": "كَلَّا ۖ لَيُـنْبَذَنَّ فِي الْحُطَمَةِ",
+            "after": null
+        }],
+        "broj12": [{
+            "id": 12,
+            "url": "./assets/audio/l8/12.mp3",
+            "highlight": "نْبِ",
+            "word": "قُلْ فَلِمَ تَقْتُلُونَ أَنْبِيَٓاءَ اللّٰهِ ",
+            "after": null
+        }],
+        "broj13": [{
+            "id": 13,
+            "url": "./assets/audio/l8/13.mp3",
+            "highlight": "نْ بَـ",
+            "word": " مِنْ بَـعْدِ مَا تَبَيَّنَ لَهُمُ الْحَقُّ",
+            "after": null
+        }],
+        "broj14": [{
+            "id": 14,
+            "url": "./assets/audio/l8/14.mp3",
+            "highlight": "نْـبَـ",
+            "word": " لَا الشَّمْسُ يَـنْـبَـغِي لَهَا",
+            "after": null
+        }],
+        "broj15": [{
+            "id": 15,
+            "url": "./assets/audio/l8/15.mp3",
+            "highlight": "عًا بَ",
+            "word": " إِنَّ اللّٰهَ كَانَ سَمِيعًا بَصِيرًا",
+            "after": null
+        }],
+        "broj16": [{
+            "id": 16,
+            "url": "./assets/audio/l8/16.mp3",
+            "highlight": "نْـبِـ",
+            "word": "فَاعْتَرَفُوا بِذَنْـبِـهِمْ فَسُحْقًا لِأَصْحَابِ السَّعِيرِ",
+            "after": null
+        }],
+        "broj17": [{
+            "id": 17,
+            "url": "./assets/audio/l8/17.mp3",
+            "highlight": "نْـبِ",
+            "word": "فَادْعُ لَنَا رَبَّكَ يُخْرِجْ لَنَا مِمَّا تُـنْـبِتُ الْأَرْضُ",
+            "after": null
+        }],
+        "broj18": [{
+            "id": 18,
+            "url": "./assets/audio/l8/18.mp3",
+            "highlight": "نْ بَ",
+            "word": " إِسْرَٓائِيلَ مِنْ بَـعْدِ مُوسٰى",
+            "after": null
+        },
+    {
+        "id": 181,
+        "highlight": "نْ بَـ",
+        "word": "  أَلَمْ تَرَ إِلَى الْمَلَإِ مِنْ بَـنِٓي",
+        "after": null
+    }]
     }
 }
