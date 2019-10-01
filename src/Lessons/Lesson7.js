@@ -20,13 +20,11 @@ function L7() {
 					<hr />
 				</Col>
 			</Row>
-
 			<Row>
 				<Col>
 					<br />
 				</Col>
 			</Row>
-
 			<Row>
 				<Col className="opisLekcije">
 					Kada poslije harfa N sa sukunom (نْ) ili tenvina EN ــــــًــــــ, IN ـــــٍــــــ , UN ــــــٌـــــ
@@ -34,37 +32,30 @@ function L7() {
 					tj. N (ن) se nikako ne uči, npr.:
 				</Col>
 			</Row>
-
 			<Row>
 				<Col>{PlayerRow(data, 'row1')}</Col>
 			</Row>
-
 			<Row>
 				<Col>
 					{VjezbeRow(data, 'multirow', 'word1')}
 					{PlayerRow(data, 'row2')}
 				</Col>
 			</Row>
-
 			<Row>
 				<Col>{VjezbeRow(data, 'multirow', 'word2')}</Col>
 			</Row>
-
 			<Row>
 				<Col>
 					<br />
 				</Col>
 			</Row>
-
 			<Row>
 				<Col>
 					<br />
 				</Col>
 			</Row>
-
 			<h2 className="text-center">Vježbe</h2>
 			<hr />
-
 			<Row className="text-center">
 				<Col>
 					۞
@@ -73,7 +64,6 @@ function L7() {
 					{VjezbeRow(data, 'vjezba', 'broj8')}
 				</Col>
 			</Row>
-
 			<Row className="text-center">
 				<Col>
 					۞
@@ -82,7 +72,6 @@ function L7() {
 					{VjezbeRow(data, 'vjezba', 'broj10')}
 				</Col>
 			</Row>
-
 			<Row className="text-center">
 				<Col>
 					۞
@@ -108,7 +97,8 @@ function L7() {
 					۞
 					{VjezbeRow(data, 'vjezba', 'broj16')}
 				</Col>
-			</Row>
+			</Row>{' '}
+			<Footer prev="/lekcija6" next="/lekcija8" />
 		</React.Fragment>
 	);
 }
