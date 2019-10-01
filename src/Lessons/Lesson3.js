@@ -31,7 +31,7 @@ function L3() {
 				<Col className="opisLekcije">
 					Kada prije riječi Allah اللّٰه dođe vokal E ــــــَــــــ ili vokal U ــــــُــــــ , riječ Allah
 					اللّٰه se uči krupno, npr.:
-					{PlayerRow(data, 'row1')}
+					<span class='arapski'>{PlayerRow(data, 'row1')}</span>
 				</Col>
 			</Row>
 
