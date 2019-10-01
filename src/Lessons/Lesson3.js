@@ -36,7 +36,7 @@ function L3() {
 			</Row>
 
 			<Row>
-				<Col>{VjezbeRow(data, 'vjezba', 'broj18')}</Col>
+				<Col>{VjezbeRow(data, 'multirow', 'row2')}</Col>
 			</Row>
 
 			<Row>
@@ -46,11 +46,11 @@ function L3() {
 			</Row>
 
 			<Row>
-				<Col>{PlayerRow(data, 'row2')}</Col>
+				<Col>{PlayerRow(data, 'row3')}</Col>
 			</Row>
 
 			<Row>
-				<Col>{PlayerRow(data, 'row3')}</Col>
+				<Col>{PlayerRow(data, 'row4')}</Col>
 			</Row>
 
 			<Row>
