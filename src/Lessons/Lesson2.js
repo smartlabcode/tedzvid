@@ -22,6 +22,12 @@ function L2() {
 			</Row>
 
 			<Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
+
+			<Row>
 				<Col className="opisLekcije">
 					Kada prije zamjenice HU (هُ) dođe dugi vokal A ـــــَـــــ ا , Iــــــِــــ ى , Uـــــُـــــ و ili
 					sukun ــــــْــــــ , zamjenica HU (هُ) se uči kratko:
@@ -50,6 +56,18 @@ function L2() {
 			<Row className="text-center">
 				<Col>{PlayerRow(data, 'row4')}</Col>
 			</Row>
+
+			<Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
+			<Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
+
 			<hr />
 			<h2 className="text-center">Vježbe</h2>
 			<hr />

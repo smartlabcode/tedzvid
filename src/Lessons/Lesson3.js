@@ -22,6 +22,12 @@ function L3() {
         </Row>
 
         <Row>
+				  <Col>
+					<br />
+				  </Col>
+			  </Row>
+
+        <Row>
           <Col className="opisLekcije">
             Kada prije riječi Allah اللّٰه dođe vokal E  ــــــَــــــ ili vokal U  ــــــُــــــ , riječ Allah اللّٰه se uči krupno, npr.:
           </Col>
@@ -35,7 +41,7 @@ function L3() {
 
         <Row>
           <Col>
-            { VjezbeRow(data, 'multirow', 'row2') }
+            { VjezbeRow(data, 'broj18') }
           </Col>
         </Row>
 
@@ -57,19 +63,68 @@ function L3() {
           </Col>
         </Row>
 
-        <h2 className="text-center">Vježbe</h2>
+        <Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
+
+      <Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
 
         <hr/>
+        <h2 className="text-center">Vježbe</h2>
+        <hr/>
 
-        <Row className="text-center">
-          <Col>
-            VJEŽBE 3
-          </Col>
-        </Row>
+      <Row className="text-center">
+				<Col>
+					۞
+					{VjezbeRow(data, 'vjezba', 'broj9')}
+					۞
+					{VjezbeRow(data, 'vjezba', 'broj8')}
+				</Col>
+			</Row>
 
-        <Footer prev="/lekcija2" next="/lekcija4" />
+			<Row className="text-center">
+				<Col>
+					۞
+					{VjezbeRow(data, 'vjezba', 'broj11')}
+					۞
+					{VjezbeRow(data, 'vjezba', 'broj10')}
+				</Col>
+			</Row>
 
-        </React.Fragment>
+			<Row className="text-center">
+				<Col>
+          ۞
+          {VjezbeRow(data, 'vjezba', 'broj13')}
+          ۞
+					{VjezbeRow(data, 'vjezba', 'broj12')}
+				</Col>
+			</Row>
+
+			<Row className="text-center">
+				<Col>
+					{VjezbeRow(data, 'vjezba', 'broj15')}
+					۞
+					{VjezbeRow(data, 'vjezba', 'broj14')}
+				</Col>
+			</Row>
+			<Row className="text-center">
+				<Col>
+					۞
+					{VjezbeRow(data, 'vjezba', 'broj17')}
+					۞
+					{VjezbeRow(data, 'vjezba', 'broj16')}
+				</Col>
+			</Row>
+
+			<Footer prev="/lekcija1" next="/lekcija3" />
+		</React.Fragment>
+
     );
   }
 

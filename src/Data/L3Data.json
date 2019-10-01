@@ -47,26 +47,130 @@
             "after": null
         }
     ],
-    "multirow": {
-        "row2": [
+    "vjezba": {
+        "broj8": [
             {
-                "id": 3,
-                "url": "./assets/audio/l3/3.mp3",
-                "highlight": "نَّ اللّٰهَ",
-                "word": "لرَّسُولَ فَإِنْ تَوَلَّوْا فَإِنَّ اللّٰهَ لَا يُحِبُّ الْكَافِرِينَ",
-                "after": " ; "
-            },
-            {
-                "id": 31,
-                "highlight": "اللّٰ",
-                "word": "اللّٰهَ وَا",
+                "id": 8,
+                "url": "./assets/audio/l3/8.mp3",
+                "highlight": "اللّٰه",
+                "word": "اللّٰهَ شَدِيدُ الْعِقَابِ",
                 "after": null
             },
             {
-                "id": 32,
+                "id": 81,
+                "highlight": "اللّٰهَ",
+                "word": "وَاتَّقُوا اللّٰهَ إِنَّ ",
+                "after": null
+            }
+        ],
+        "broj9": [
+            {
+                "id": 9,
+                "url": "./assets/audio/l3/9.mp3",
+                "highlight": "اللّٰهَ",
+                "word": "إِعْلَمُٓوا أَنَّ اللّٰهَ شَدِيدُ الْعِقَابِ ",
+                "after": null
+            }
+        ],
+        "broj10": [
+            {
+                "id": 10,
+                "url": "./assets/audio/l3/10.mp3",
+                "highlight": "اللّٰهِ",
+                "word": "كِتَابَ اللّٰهِ وَرَآءَ ظُهُورِهِمْ ",
+                "after": null
+            }
+        ],
+        "broj11": [
+            {
+                "id": 11,
+                "url": "./assets/audio/l3/11.mp3",
+                "highlight": "لِلّٰه",
+                "word": "وَ لِلّٰهِ مُلْكُ السَّمَاوَاتِ وَالْأَرْضِ",
+                "after": null
+            }
+        ],
+        "broj12": [
+            {
+                "id": 12,
+                "url": "./assets/audio/l3/12.mp3",
+                "highlight": "اللّٰه",
+                "word": "لٰـكِنِ اللّٰهُ يَشْهَدُ بِمَٓا أَنْـزَلَ إِلَيْكَ ",
+                "after": null
+            }
+        ],
+        "broj13": [
+            {
+                "id": 13,
+                "url": "./assets/audio/l3/13.mp3",
+                "highlight": "اللّٰهِ",
+                "word": "وَكَـفٰى بِاللّٰهِ شَهِيدًا",
+                "after": null
+            }
+        ],
+        "broj14": [
+            {
+                "id": 14,
+                "url": "./assets/audio/l3/14.mp3",
+                "highlight": "اللّٰهِ",
+                "word": "نَاقَةَ اللّٰهِ وَسُقْيَاهَا ",
+                "after": null
+            },
+            {
+                "id": 141,
+                "highlight": "اللّٰهِ",
+                "word": "قَالَ لَهُمْ رَسُولُ اللّٰهِ",
+                "after": null
+            }
+        ],
+        "broj15": [
+            {
+                "id": 15,
+                "url": "./assets/audio/l3/15.mp3",
+                "highlight": "اللّٰهِ",
+                "word": "وَيَقُولُونَ هُوَ مِنْ عِنْدِ اللّٰهِ وَمَا هُوَ مِنْ عِنْدِ اللّٰهِ ",
+                "after": null
+            }
+        ],
+        "broj16": [
+            {
+                "id": 16,
+                "url": "./assets/audio/l3/16.mp3",
+                "highlight": "اللّٰهِ",
+                "word": "وَيَقُولُونَ عَلَى اللّٰهِ الْكَذِبَ وَهُمْ يَعْلَمُونَ",
+                "after": null
+            }
+        ],
+        "broj17": [
+            {
+                "id": 17,
+                "url": "./assets/audio/l3/17.mp3",
+                "highlight": "اللّٰهِ",
+                "word": "فَأَيْـنَمَا تُوَلُّوا فَـثَمَّ وَجْهُ اللّٰهِ إِنَّ اللّٰهَ وَاسِعٌ عَلِيمٌ",
+                "after": null
+            }
+        ],
+        "broj18": [
+            {
+                "id": 18,
+                "url": "./assets/audio/l3/3.mp3",
+                "highlight": "نَّ اللّٰهَ",
+                "word": "تَوَلَّوْا فَإِنَّ اللّٰهَ لَا يُحِبُّ الْكَافِرِينَ",
+                "after": null
+            },
+            {
+                "id": 18,
+                "url": "./assets/audio/l3/3.mp3",
+                "highlight": "اللّٰهَ",
+                "word": "وا اللّٰهَ وَالرَّسُولَ فَإِنْ ",
+                "after": null
+            },
+            {
+                "id": 18,
+                "url": "./assets/audio/l3/3.mp3",
                 "highlight": "عُ",
-                "word": "قُلْ أَطِيعُوا",
-                "after": " ; "
+                "word": "قُلْ أَطِيعُ",
+                "after": null
             }
         ]
     }
