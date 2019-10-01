@@ -1,6 +1,5 @@
 {
-    "row1": [
-        {
+    "row1": [{
             "id": 1,
             "url": "./assets/audio/l6/1.mp3",
             "highlight": "نْ نَ‍‍",
@@ -29,8 +28,7 @@
             "after": null
         }
     ],
-    "row2": [
-        {
+    "row2": [{
             "id": 6,
             "url": "./assets/audio/l6/6.mp3",
             "highlight": "لٌ مِنْ مَ",
@@ -45,8 +43,7 @@
             "after": null
         }
     ],
-    "row3": [
-        {
+    "row3": [{
             "id": 7,
             "url": "./assets/audio/l6/7.mp3",
             "highlight": "فًا مُـ",
@@ -66,137 +63,99 @@
             "after": null
         }
     ],
-    "vj1": [
-        {
-            "id": 9,
-            "url": "./assets/audio/l6/9.mp3",
-            "highlight": "لًا",
-            "word": "وَقَالُوا نَحْنُ أَكْثَرُ أَمْـوَالًا  ",
-            "after": " ۞ "
-        }
-    ],
-    "vj2": [
-        {
-            "id": 8,
-            "url": "./assets/audio/l6/8.mp3",
-            "highlight": "رًا يَ",
-            "word": "مِثْقَالَ ذَرَّةٍ خَيْـرًا يَرَهُ",
-            "after": null
-        },
-        {
-            "id": 8000,
-            "highlight": "نْ يَـ",
-            "word": "فَمَنْ يَـعْمَلْ",
-            "after": null
-        }
-    ],
-    "vj3": [
-        {
+    "vjezba": {
+        "broj8": [{
+                "id": 8,
+                "url": "./assets/audio/l6/8.mp3",
+                "highlight": "رًا يَ",
+                "word": " مِثْقَالَ ذَرَّةٍ خَيْـرًا يَرَهُ",
+                "after": null
+            }, {
+                "id": 81,
+                "highlight": "نْ يَـ",
+                "word": "فَمَنْ يَـعْمَلْ",
+                "after": null
+            }
+
+        ],
+        "broj9": [{
+                "id": 9,
+                "url": "./assets/audio/l6/9.mp3",
+                "highlight": "دًا وَ",
+                "word": "دًا وَمَا نَحْنُ بِمُعَذَّبِينَ",
+                "after": null
+            }, {
+                "id": 91,
+                "highlight": "لًا  وَ",
+                "word": "وَقَالُوا نَحْنُ أَكْثَرُ أَمْـوَالًا  وَأَوْلَا",
+                "after": null
+            }
+
+        ],
+        "broj10": [{
             "id": 10,
             "url": "./assets/audio/l6/10.mp3",
-            "highlight": "شًا",
-            "word": "اَلَّذِي جَعَلَ لَكُمُ الْأَرْضَ فِرَاشًا",
-            "after": " ۞ "
-        }
-    ],
-    "vj4": [
-        {
+            "highlight": "ءً وَ",
+            "word": " بِنَٓاءً وَأَنْـزَلَ مِنَ السَّمَٓاءِ مَٓاءً",
+            "after": null
+        }, {
+            "id": 101,
+            "highlight": "شًا وَ",
+            "word": "اَلَّذِي جَعَلَ لَكُمُ الْأَرْضَ فِرَاشًا وَالسَّمَٓاءَ",
+            "after": null
+        }],
+        "broj11": [{
             "id": 11,
             "url": "./assets/audio/l6/11.mp3",
-            "highlight": "دًا وَ",
-            "word": "لَادًا وَمَا نَحْنُ بِمُعَذَّبِينَ",
-            "after": " ۞ "
-        },
-        {
-            "id": 11000,
             "highlight": "لًا وَ",
-            "word": "اَلَّذِي جَمَعَ مَالًا وَأَوْ",
+            "word": " اَلَّذِي جَمَعَ مَالًا وَعَدَّدَهُ",
             "after": null
-        }
-    ],
-    "vj5": [
-        {
-            "id": 11001,
-            "highlight": "ءً وَ",
-            "word": "بِنَٓاءً وَأَنْـزَلَ مِنَ السَّمَٓاءِ مَٓاءً",
-            "after": null
-        },
-        {
-            "id": 11002,
-            "highlight": "وَ",
-            "word": "وَالسَّمَٓاءَ",
-            "after": null
-        }
-    ],
-    "vj6": [
-        {
+        }],
+        "broj12": [{
             "id": 12,
             "url": "./assets/audio/l6/12.mp3",
             "highlight": "دٌ وَ",
             "word": "عْدٌ وَبَرْقٌ",
-            "after": " ۞ "
-        },
-        {
-            "id": 12000,
+            "after": null
+        }, {
+            "id": 121,
             "highlight": "تٌ وَ",
-            "word": "السَّمَٓاءِ فِيهِ ظُلُمَاتٌ وَرَ",
+            "word": "فِيهِ ظُلُمَاتٌ وَرَ",
             "after": null
-        },
-        {
-            "id": 12001,
+        }, {
+            "id": 122,
             "highlight": "بٍ مِ",
-            "word": "أَوْ كَصَيِّبٍ مِنَ",
+            "word": " أَوْ كَصَيِّبٍ مِنَ السَّمَٓاءِ",
             "after": null
-        }
-    ],
-    "vj7": [
-        {
-            "id": 14,
-            "url": "./assets/audio/l6/14.mp3",
-            "highlight": "وَ",
-            "word": "إِلَىوَعَدَّدَهُ",
-            "after": " ۞ "
-        },
-        {
-            "id": 14000,
-            "highlight": "ةٌ يَ",
-            "word": "أُمَّةٌ يَدْعُونَ",
-            "after": null
-        },
-        {
-            "id": 14001,
-            "highlight": "ـنْ مِ",
-            "word": "وَلْتَكُـنْ مِنْكُمْ",
-            "after": null
-        }
-    ],
-    "vj8": [
-        {
+        }],
+        "broj13": [{
             "id": 13,
             "url": "./assets/audio/l6/13.mp3",
             "highlight": "نٌ مِ",
-            "word": "ضْوَانٌ مِنَ اللّٰهِ",
-            "after": " ۞ "
-        },
-        {
-            "id": 13000,
+            "word": "ضْوَانٌ مِنَ اللّٰهِ ",
+            "after": null
+        }, {
+            "id": 131,
             "highlight": "ةٌ وَ",
-            "word": "طَهَّرَةٌ وَرِ",
+            "word": "ةٌ وَرِ",
             "after": null
-        },
-        {
-            "id": 13001,
+        }, {
+            "id": 132,
             "highlight": "جٌ مُ",
-            "word": "وَأَزْوَاجٌ مُ",
+            "word": "وَأَزْوَاجٌ مُطَهَّرَ",
             "after": null
-        }
-    ],
-    "vj9": [
-        {
-            "id": 15,
-            "highlight": "",
-            "word": "الْخَيْرِ",
-            "after": " ۞ "
-        }
-    ]
+        }],
+        "broj14": [{
+            "id": 14,
+            "url": "./assets/audio/l6/14.mp3",
+            "highlight": "ةٌ يَ",
+            "word": " أُمَّةٌ يَدْعُونَ إِلَى الْخَيْرِ",
+            "after": null
+        }, {
+            "id": 141,
+            "highlight": "ـنْ مِ",
+            "word": "وَلْتَكُـنْ مِنْكُمْ",
+            "after": null
+        }]
+    }
 }

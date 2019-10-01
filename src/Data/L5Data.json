@@ -1,6 +1,5 @@
 {
-    "row1": [
-        {
+    "row1": [{
             "id": 1,
             "url": "./assets/audio/l5/1.mp3",
             "highlight": "مْ  مِ",
@@ -15,8 +14,7 @@
             "after": null
         }
     ],
-    "row2": [
-        {
+    "row2": [{
             "id": 5,
             "url": "./assets/audio/l5/5.mp3",
             "highlight": "مْ م",
@@ -38,8 +36,7 @@
             "after": null
         }
     ],
-    "row3": [
-        {
+    "row3": [{
             "id": 7,
             "url": "./assets/audio/l5/7.mp3",
             "highlight": "مْ مَ",
@@ -55,109 +52,91 @@
         }
     ],
     "vjezba": {
-        "broj8": [
-            {
-                "id": 8,
-                "url": "./assets/audio/l3/8.mp3",
-                "highlight": "مْ مَـ",
-                "word": "مِنْ بَعْدِ مَآ أَرَاكُـمْ مَـا تُحِبُّونَ",
-                "after": null
-            }
-        ],
-        "broj9": [
-            {
+        "broj8": [{
+            "id": 8,
+            "url": "./assets/audio/l5/8.mp3",
+            "highlight": "مْ مَـ",
+            "word": "مِنْ بَعْدِ مَآ أَرَاكُـمْ مَـا تُحِبُّونَ",
+            "after": null
+        }],
+        "broj9": [{
                 "id": 9,
-                "url": "./assets/audio/l3/9.mp3",
+                "url": "./assets/audio/l5/9.mp3",
                 "highlight": "مْ مِـ",
                 "word": "ـصِيبَةٌ قَدْ أَصَبْتُـمْ مِـثْلَيْهَا قُـلْـتُمْ أَنّٰى هٰـذَا ",
                 "after": null
             },
             {
                 "id": 91,
-              
+
                 "highlight": "مْ مِـ",
                 "word": "أَوَلَمَّآ أَصَابَتْكُمْ مُ",
                 "after": null
             }
         ],
-        "broj10": [
-            {
+        "broj10": [{
                 "id": 10,
-                "url": "./assets/audio/l3/10.mp3",
+                "url": "./assets/audio/l5/10.mp3",
                 "highlight": "مْ مِـ",
                 "word": "ـنْ اٰمَنَ بِهِ وَمِنْهُمْ مَـنْ صَدَّ عَـنْـهُ ",
                 "after": null
             },
             {
                 "id": 101,
-     
+
                 "highlight": "مْ مِـ",
                 "word": "فَمِنْهُمْ مَ",
                 "after": null
             }
         ],
-        "broj11": [
-            {
-                "id": 11,
-                "url": "./assets/audio/l3/11.mp3",
-                "highlight": "مْ مـِ",
-                "word": "بِـإِذْنِ رَبِّهِـمْ مـِنْ كُـلِّ أَمْرٍ ",
-                "after": null
-            }
-        ],
-        "broj12": [
-            {
-                "id": 12,
-                "url": "./assets/audio/l3/12.mp3",
-                "highlight": "ـمْ مِـ",
-                "word": "لَهُـمْ مِـمَّا يَكْسِبُونَ ",
-                "after": null
-            }
-        ],
-        "broj13": [
-            {
-                "id": 13,
-                "url": "./assets/audio/l3/13.mp3",
-                "highlight": "ـمْ مُ",
-                "word": "إِنْ كُـنْـتُـمْ مُـؤْمِنِينَ ",
-                "after": null
-            }
-        ],
-        "broj14": [
-            {
-                "id": 14,
-                "url": "./assets/audio/l3/14.mp3",
-                "highlight": "ـمْ مُ",
-                "word": "فَـتَرَى الَّذِينَ فِي قُلُوبِهِمْ مَـرَضٌ",
-                "after": null
-            }
-        ],
-        "broj15": [
-            {
-                "id": 15,
-                "url": "./assets/audio/l3/15.mp3",
-                "highlight": "ـمْ مُـ",
-                "word": "إِنَّهَا عَلَيْهِـمْ مُـؤْصَدَةٌ",
-                "after": null
-            }
-        ],
-        "broj16": [
-            {
-                "id": 16,
-                "url": "./assets/audio/l3/16.mp3",
-                "highlight": "مْ مَ",
-                "word": "هُوَ الَّذِي خَلَقَ لَكُمْ مَا فِي الْأَرْضِ جَمِيعًا",
-                "after": null
-            }
-        ],
-        "broj17": [
-            {
-                "id": 17,
-                "url": "./assets/audio/l3/17.mp3",
-                "highlight": "مْ مَ",
-                "word": "وَيُـعَـلِّـمُـكُـمْ مَا لَمْ تَكُونُوا تَعْلَمُونَ",
-                "after": null
-            }
-        ]
+        "broj11": [{
+            "id": 11,
+            "url": "./assets/audio/l5/11.mp3",
+            "highlight": "مْ مـِ",
+            "word": "بِـإِذْنِ رَبِّهِـمْ مـِنْ كُـلِّ أَمْرٍ ",
+            "after": null
+        }],
+        "broj12": [{
+            "id": 12,
+            "url": "./assets/audio/l5/12.mp3",
+            "highlight": "ـمْ مِـ",
+            "word": "لَهُـمْ مِـمَّا يَكْسِبُونَ ",
+            "after": null
+        }],
+        "broj13": [{
+            "id": 13,
+            "url": "./assets/audio/l5/13.mp3",
+            "highlight": "ـمْ مُ",
+            "word": "إِنْ كُـنْـتُـمْ مُـؤْمِنِينَ ",
+            "after": null
+        }],
+        "broj14": [{
+            "id": 14,
+            "url": "./assets/audio/l5/14.mp3",
+            "highlight": "ـمْ مُ",
+            "word": "فَـتَرَى الَّذِينَ فِي قُلُوبِهِمْ مَـرَضٌ",
+            "after": null
+        }],
+        "broj15": [{
+            "id": 15,
+            "url": "./assets/audio/l5/15.mp3",
+            "highlight": "ـمْ مُـ",
+            "word": "إِنَّهَا عَلَيْهِـمْ مُـؤْصَدَةٌ",
+            "after": null
+        }],
+        "broj16": [{
+            "id": 16,
+            "url": "./assets/audio/l5/16.mp3",
+            "highlight": "مْ مَ",
+            "word": "هُوَ الَّذِي خَلَقَ لَكُمْ مَا فِي الْأَرْضِ جَمِيعًا",
+            "after": null
+        }],
+        "broj17": [{
+            "id": 17,
+            "url": "./assets/audio/l5/17.mp3",
+            "highlight": "مْ مَ",
+            "word": "وَيُـعَـلِّـمُـكُـمْ مَا لَمْ تَكُونُوا تَعْلَمُونَ",
+            "after": null
+        }]
     }
 }
