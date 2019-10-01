@@ -23,6 +23,12 @@ function L9() {
         </Row>
 
         <Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
+
+        <Row>
           <Col className="opisLekcije">
           Kada poslije harfa N sa sukunom (نْ) ili tenvina EN  ــــــًــــــ, IN ـــــٍــــــ , UN  ــــــٌــــــdođe jedan od šest grlenih harfova:<Arabic arabic="ه خ  غ  ح  ع أ" key="a01"> ه خ  غ  ح  ع أ</Arabic>, onda se harf N (ن) izgovara čisto, tj. bez uklapanja, npr.:
           </Col>
@@ -53,15 +59,79 @@ function L9() {
           </Col>
         </Row>
 
-        <h2 className="text-center">Vježbe</h2>
 
+        <Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
+
+			<Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
+
+        <h2 className="text-center">Vježbe</h2>
         <hr/>
 
-        <Row className="text-center">
-          <Col>
-            VJEŽBE 9
-          </Col>
-        </Row>
+			<Row className="text-center">
+				<Col>
+					۞
+          {VjezbeRow(data, 'vjezba', 'broj10')}
+          ۞
+					{VjezbeRow(data, 'vjezba', 'broj9')}
+				</Col>
+			</Row>
+
+			<Row className="text-center">
+				<Col>
+					۞
+					{VjezbeRow(data, 'vjezba', 'broj12')}
+					۞
+					{VjezbeRow(data, 'vjezba', 'broj11')}
+				</Col>
+			</Row>
+
+			<Row className="text-center">
+				<Col>
+          ۞
+          {VjezbeRow(data, 'vjezba', 'broj15')}
+					۞
+          {VjezbeRow(data, 'vjezba', 'broj14')}
+          ۞
+          {VjezbeRow(data, 'vjezba', 'broj13')}
+				</Col>
+			</Row>
+
+			<Row className="text-center">
+				<Col>
+					۞
+          {VjezbeRow(data, 'vjezba', 'broj17')}
+          ۞
+          {VjezbeRow(data, 'vjezba', 'broj16')}
+				</Col>
+			</Row>
+      <Row className="text-center">
+				<Col>
+					۞
+          {VjezbeRow(data, 'vjezba', 'broj20')}
+          ۞
+          {VjezbeRow(data, 'vjezba', 'broj19')}
+          ۞
+          {VjezbeRow(data, 'vjezba', 'broj18')}
+				</Col>
+			</Row>
+      <Row className="text-center">
+				<Col>
+					۞
+          {VjezbeRow(data, 'vjezba', 'broj22')}
+          ۞
+					{VjezbeRow(data, 'vjezba', 'broj21')}
+				</Col>
+			</Row>
+
+        
 
         <Footer prev="/lekcija8" next="/lekcija10" />
 
