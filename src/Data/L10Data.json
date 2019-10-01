@@ -1,6 +1,5 @@
 {
-    "row1": [
-        {
+    "row1": [{
             "id": 2,
             "url": "./assets/audio/l10/2.mp3",
             "highlight": "مْ دِ",
@@ -16,8 +15,7 @@
         }
     ],
     "multirow": {
-        "word1": [
-            {
+        "word1": [{
                 "id": 3,
                 "url": "./assets/audio/l10/3.mp3",
                 "highlight": "مْ فِ",
@@ -31,8 +29,7 @@
                 "after": null
             }
         ],
-        "word2": [
-            {
+        "word2": [{
                 "id": 4,
                 "url": "./assets/audio/l10/4.mp3",
                 "highlight": "مْ وَ",
@@ -46,8 +43,7 @@
                 "after": null
             }
         ],
-        "word3": [
-            {
+        "word3": [{
                 "id": 5,
                 "url": "./assets/audio/l10/5.mp3",
                 "highlight": "مْ يُ",
@@ -61,5 +57,143 @@
                 "after": null
             }
         ]
+    },
+    "vjezba": {
+        "broj6": [{
+            "id": 6,
+            "url": "./assets/audio/l10/6.mp3",
+            "highlight": "مْ",
+            "word": "وَقَالَ لَهُمْ نَـبِيُّهُمْ",
+            "after": null
+        }],
+        "broj7": [{
+            "id": 7,
+            "url": "./assets/audio/l10/7.mp3",
+            "highlight": "مْ",
+            "word": " وَلَٓاأَنْـتُمْ عَابِدُونَ مَٓا أَعْبُدُ",
+            "after": null
+        }],
+        "broj8": [{
+            "id": 8,
+            "url": "./assets/audio/l10/8.mp3",
+            "highlight": "مْ",
+            "word": "إِيلَافِهِمْ رِحْلَةَ الشِّـتَٓاءِ وَالصَّيْفِ",
+            "after": null
+        }],
+        "broj9": [{
+            "id": 9,
+            "url": "./assets/audio/l10/9.mp3",
+            "highlight": "مْ",
+            "word": " كَيْدَهُمْ فِي تَضْلِيلٍ",
+            "after": null
+        }, {
+            "id": 91,
+            "highlight": "مْ",
+            "word": "  أَلَمْ يَجْعَلْ",
+            "after": null
+        }],
+        "broj10": [{
+                "id": 10,
+                "url": "./assets/audio/l10/10.mp3",
+                "highlight": "مْ",
+                "word": "هُمْ لَا يُؤْمِنُونَ",
+                "after": null
+            },
+            {
+                "id": 101,
+                "highlight": "مْ",
+                "word": " لَمْ تُنْذِرْ",
+                "after": null
+            },
+            {
+                "id": 102,
+                "highlight": "مْ",
+                "word": " أَمْ",
+                "after": null
+            },
+            {
+                "id": 103,
+                "highlight": "مْ",
+                "word": "أَأَنْذَرْتَهُمْ",
+                "after": null
+            },
+            {
+                "id": 104,
+                "highlight": "مْ",
+                "word": "وَسَوَٓاءٌ عَلَيْهِمْ",
+                "after": null
+            }
+
+        ],
+        "broj11": [{
+                "id": 11,
+                "url": "./assets/audio/l10/11.mp3",
+                "highlight": "مْ",
+                "word": "وَأَبْصَارَكُمْ وَخَتَمَ عَلٰى قُلُوبِكُمْ",
+                "after": null
+            },
+            {
+                "id": 111,
+                "highlight": "مْ",
+                "word": "اللّٰهُ سَمْعَكُمْ",
+                "after": null
+            },
+            {
+                "id": 112,
+                "highlight": "مْ",
+                "word": "قُلْ أَرَأَيْتُمْ إِنْ أَخَذَ",
+                "after": null
+            }
+        ],
+        "broj12": [{
+                "id": 12,
+                "url": "./assets/audio/l10/12.mp3",
+                "highlight": "مْ",
+                "word": "أَمْوَالَهُمْ فَأَشْهِدُوا عَلَيْهِمْ",
+                "after": null
+            },
+            {
+                "id": 121,
+                "highlight": "مْ",
+                "word": " إِلَيْهِمْ",
+                "after": null
+            },
+            {
+                "id": 122,
+                "highlight": "مْ",
+                "word": " فَإِذَا دَفَعْتُمْ",
+                "after": null
+            }
+
+        ],
+        "broj13": [{
+                "id": 13,
+                "url": "./assets/audio/l10/13.mp3",
+                "highlight": "مْ",
+                "word": "وَعَلٰٓى أَبْصَارِهِمْ غِشَاوَةٌ",
+                "after": null
+            },
+            {
+                "id": 131,
+                "highlight": "مْ",
+                "word": "وَعَلٰى سَمْعِهِمْ",
+                "after": null
+            },
+            {
+                "id": 132,
+                "highlight": "مْ",
+                "word": "خَتَمَ اللّٰهُ عَلٰى قُلُوبِهِمْ",
+                "after": null
+            }
+        ],
+        "broj14": [{
+            "id": 14,
+            "url": "./assets/audio/l10/14.mp3",
+            "highlight": "مْ",
+            "word": " فَلَا خَوْفٌ عَلَيْهِمْ وَلَا هُمْ يَحْزَنُونَ",
+            "after": null
+        }]
+
+
     }
 }
