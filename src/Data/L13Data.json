@@ -112,7 +112,6 @@
             },
             {
                 "id": 112,
-                "url": "./assets/audio/l13/11.mp3",
                 "highlight": "بْـ",
                 "word": "لَا تُفَتَّحُ لَهُمْ أَبْـ",
                 "after": null
@@ -128,7 +127,6 @@
             },
             {
                 "id": 121,
-                "url": "./assets/audio/l13/12.mp3",
                 "highlight": "جْ",
                 "word": "كَذٰلِكَ يَجْعَ",
                 "after": null
@@ -144,7 +142,6 @@
             },
             {
                 "id": 131,
-                "url": "./assets/audio/l13/13.mp3",
                 "highlight": "دْ",
                 "word": "قِيلَ ادْ",
                 "after": null
