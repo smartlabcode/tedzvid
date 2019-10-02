@@ -21,10 +21,23 @@ function L12() {
 				</Col>
 			</Row>
 
+			      
+			<Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
+
 			<Row>
 				<Col className="opisLekcije">
 					Kada poslije harfa M sa sukunom (مْ) dođe harf B (ب), produžava se izgovor harfa M (م) u trajanju od
 					2 hareketa, npr.:
+				</Col>
+			</Row>
+			      
+			<Row>
+				<Col>
+					<br />
 				</Col>
 			</Row>
 
@@ -38,6 +51,20 @@ function L12() {
 
 			<Row className="text-center">
 				<Col>{PlayerRow(data, 'row3')}</Col>
+			</Row>
+
+			      
+			<Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
+
+			      
+			<Row>
+				<Col>
+					<br />
+				</Col>
 			</Row>
 
 			<h2 className="text-center">Vježbe</h2>
@@ -61,9 +88,13 @@ function L12() {
 			<Row className="text-center">
 				<Col>
 					۞
-					{VjezbeRow(data, 'vjezba', 'broj12')}
-					۞
 					{VjezbeRow(data, 'vjezba', 'broj11')}
+				</Col>
+			</Row>
+			<Row className="text-center">
+				<Col>
+					۞
+					{VjezbeRow(data, 'vjezba', 'broj12')}
 				</Col>
 			</Row>
 			<Row className="text-center">
