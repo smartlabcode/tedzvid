@@ -1,24 +1,19 @@
 {
-    "row1": [
-        {
-            "id": 1,
-            "url": "./assets/audio/l14/1.mp3",
-            "highlight": "رَ",
-            "word": "رَ",
-            "after": null
-        }
-    ],
-    "row2": [
-        {
-            "id": 2,
-            "url": "./assets/audio/l14/2.mp3",
-            "highlight": "رُ",
-            "word": "رُ",
-            "after": null
-        }
-    ],
-    "row3": [
-        {
+    "row1": [{
+        "id": 1,
+        "url": "./assets/audio/l14/1.mp3",
+        "highlight": "رَ",
+        "word": "رَ",
+        "after": null
+    }],
+    "row2": [{
+        "id": 2,
+        "url": "./assets/audio/l14/2.mp3",
+        "highlight": "رُ",
+        "word": "رُ",
+        "after": null
+    }],
+    "row3": [{
             "id": 3,
             "url": "./assets/audio/l14/3.mp3",
             "highlight": "رَ",
@@ -33,8 +28,7 @@
             "after": null
         }
     ],
-    "row4": [
-        {
+    "row4": [{
             "id": 5,
             "url": "./assets/audio/l14/5.mp3",
             "highlight": "تَرْ",
@@ -49,8 +43,7 @@
             "after": null
         }
     ],
-    "row5": [
-        {
+    "row5": [{
             "id": 7,
             "url": "./assets/audio/l14/7.mp3",
             "highlight": "قَــدْرْ",
@@ -65,17 +58,14 @@
             "after": null
         }
     ],
-    "row6": [
-        {
-            "id": 9,
-            "url": "./assets/audio/l14/9.mp3",
-            "highlight": "ارْ",
-            "word": "لِمَنِ ارْتَضٰى",
-            "after": " ; "
-        }
-    ],
-    "row7": [
-        {
+    "row6": [{
+        "id": 9,
+        "url": "./assets/audio/l14/9.mp3",
+        "highlight": "ارْ",
+        "word": "لِمَنِ ارْتَضٰى",
+        "after": " ; "
+    }],
+    "row7": [{
             "id": 10,
             "url": "./assets/audio/l14/10.mp3",
             "highlight": "رْطَا",
@@ -90,54 +80,43 @@
             "after": null
         }
     ],
-    "row8": [
-        {
-            "id": 24,
-            "url": "./assets/audio/l14/24.mp3",
-            "highlight": "رِ",
-            "word": "مِنْ شَـرِّ مَا خَلَقَ",
-            "after": null
-        }
-    ],
-    "row9": [
-        {
-            "id": 23,
-            "url": "./assets/audio/l14/23.mp3",
-            "highlight": "رِ",
-            "word": "رِ",
-            "after": null
-        }
-    ],
-    "row10": [
-        {
-            "id": 25,
-            "url": "./assets/audio/l14/25.mp3",
-            "highlight": "ذِر",
-            "word": "أَنْ أَنْـذِرْ قَـوْمَكَ مِنْ قَـبْلْ",
-            "after": null
-        }
-    ],
-    "row11": [
-        {
-            "id": 26,
-            "url": "./assets/audio/l14/26.mp3",
-            "highlight": "حِجْرْ",
-            "word": "هَلْ فِي ذٰلِكَ قَسَمٌ لِـذِي حِجْرْ",
-            "after": null
-        }
-    ],
-    "row12": [
-        {
-            "id": 27,
-            "url": "./assets/audio/l14/27.mp3",
-            "highlight": "خَيْرْ",
-            "word": "فَهُوَ خَيْرْ",
-            "after": null
-        }
-    ],
+    "row8": [{
+        "id": 24,
+        "url": "./assets/audio/l14/24.mp3",
+        "highlight": "رِ",
+        "word": "مِنْ شَـرِّ مَا خَلَقَ",
+        "after": null
+    }],
+    "row9": [{
+        "id": 23,
+        "url": "./assets/audio/l14/23.mp3",
+        "highlight": "رِ",
+        "word": "رِ",
+        "after": null
+    }],
+    "row10": [{
+        "id": 25,
+        "url": "./assets/audio/l14/25.mp3",
+        "highlight": "ذِر",
+        "word": "أَنْ أَنْـذِرْ قَـوْمَكَ مِنْ قَـبْلْ",
+        "after": null
+    }],
+    "row11": [{
+        "id": 26,
+        "url": "./assets/audio/l14/26.mp3",
+        "highlight": "حِجْرْ",
+        "word": "هَلْ فِي ذٰلِكَ قَسَمٌ لِـذِي حِجْرْ",
+        "after": null
+    }],
+    "row12": [{
+        "id": 27,
+        "url": "./assets/audio/l14/27.mp3",
+        "highlight": "خَيْرْ",
+        "word": "فَهُوَ خَيْرْ",
+        "after": null
+    }],
     "multirow": {
-        "row2": [
-            {
+        "row2": [{
                 "id": 6,
                 "url": "./assets/audio/l13/6.mp3",
                 "highlight": "ـقْ",
@@ -151,5 +130,206 @@
                 "after": null
             }
         ]
+    },
+    "vjezba": {
+
+        "broj12": [{
+            "id": 12,
+            "url": "./assets/audio/l14/12.mp3",
+            "highlight": "رَ",
+            "word": "رَبَّنَا وَابْعَثْ فِيهِمْ رَسُولًا",
+            "after": null
+        }],
+        "broj13": [{
+            "id": 13,
+            "url": "./assets/audio/l14/13.mp3",
+            "highlight": "رُّ",
+            "word": "وَيَسْأَلُونَكَ عَنِ الرُّوحِ",
+            "after": null
+        }],
+        "broj14": [{
+            "id": 14,
+            "url": "./assets/audio/l14/14.mp3",
+            "highlight": "أَرْ",
+            "word": "الْـأَرْضُ وَالْجِبَالُ",
+            "after": null
+        }, {
+            "id": 141,
+            "highlight": "تَرْ",
+            "word": " يَوْمَ تَرْجُفُ",
+            "after": null
+        }],
+        "broj15": [{
+            "id": 15,
+            "url": "./assets/audio/l14/15.mp3",
+            "highlight": "مُرْ",
+            "word": "وَلَنَسْأَلَنَّ الْمُرْسَلِينَ",
+            "after": null
+        }],
+        "broj16": [{
+            "id": 16,
+            "url": "./assets/audio/l14/16.mp3",
+            "highlight": "رْقَ",
+            "word": "فِرْقَةٍ مِنْهُمْ طَٓائِفَةٌ",
+            "after": null
+        }, {
+            "id": 161,
+            "highlight": "رَ",
+            "word": " فَلَوْلَا نَفَرَ مِنْ كُـلِّ",
+            "after": null
+        }],
+        "broj17": [{
+            "id": 17,
+            "url": "./assets/audio/l14/17.mp3",
+            "highlight": "رْصَ",
+            "word": "لَبِالْمِرْصَادِ",
+            "after": null
+        }, {
+            "id": 171,
+            "highlight": "رَ",
+            "word": " إِنَّ رَبَّكَ",
+            "after": null
+        }],
+        "broj18": [{
+            "id": 18,
+            "url": "./assets/audio/l14/18.mp3",
+            "highlight": "نِ ارْ",
+            "word": "وَلَا يَشْفَعُونَ إِلَّا لِمَنِ ارْتَضٰى",
+            "after": null
+        }],
+        "broj19": [{
+            "id": 19,
+            "url": "./assets/audio/l14/19.mp3",
+            "highlight": "قَدْرِ",
+            "word": " إِنَّـآ أَنْـزَلْنَاهُ فِي لَيْلَةِ الْقَدْرِ",
+            "after": null
+        }],
+        "broj20": [{
+            "id": 20,
+            "url": "./assets/audio/l14/20.mp3",
+            "highlight": "قَدْرِ",
+            "word": "لَيْلَةُ الْقَدْرِ",
+            "after": null
+        }, {
+            "id": 201,
+            "highlight": "رَا",
+            "word": " وَمَآ أَدْرَاكَ مَا",
+            "after": null
+        }],
+        "broj21": [{
+            "id": 21,
+            "url": "./assets/audio/l14/21.mp3",
+            "highlight": "مْـرُ",
+            "word": "جَعُ الْأَمْـرُ",
+            "after": null
+        }, {
+            "id": 211,
+            "highlight": " يُـرْ",
+            "word": " وَإِلَيْهِ يُـرْ",
+            "after": null
+        }],
+        "broj22": [{
+            "id": 22,
+            "url": "./assets/audio/l14/22.mp3",
+            "highlight": "دُورِ",
+            "word": "إِنَّـهُ عَلِيمٌ بِذَاتِ الصُّدُورِ",
+            "after": null
+        }],
+        "broj28": [{
+            "id": 28,
+            "url": "./assets/audio/l14/28.mp3",
+            "highlight": "رِ",
+            "word": "أَمْ تُرِيدُونَ أَنْ تَسْأَلُوا رَسُولَكُمْ",
+            "after": null
+        }],
+        "broj29": [{
+            "id": 29,
+            "url": "./assets/audio/l14/29.mp3",
+            "highlight": "رِّ",
+            "word": " وَتَنَاجَوْا بِالْـبِـرِّ وَالتَّقْوٰى",
+            "after": null
+        }],
+        "broj30": [{
+            "id": 30,
+            "url": "./assets/audio/l14/30.mp3",
+            "highlight": "رِ",
+            "word": "وَالْغَارِمِينَ",
+            "after": null
+        }, {
+            "id": 301,
+            "highlight": "رِّ",
+            "word": "وَفِي الـرِّقَابِ",
+            "after": null
+        }],
+        "broj31": [{
+            "id": 31,
+            "url": "./assets/audio/l14/31.mp3",
+            "highlight": "دِيرٌ",
+            "word": " إِنَّ اللّٰهَ عَلٰى كُـلِّ شَيْءٍ قَدِيرٌ ",
+            "after": null
+        }],
+        "broj32": [{
+            "id": 32,
+            "url": "./assets/audio/l14/32.mp3",
+            "highlight": "رِ",
+            "word": "وَالْمَغْرِبِ",
+            "after": null
+        }, {
+            "id": 321,
+            "highlight": "رِ",
+            "word": "قِـبَلَ الْمَشْرِقِ",
+            "after": null
+        }],
+        "broj33": [{
+            "id": 33,
+            "url": "./assets/audio/l14/33.mp3",
+            "highlight": "رِ",
+            "word": "وَفَرِحُوا بِهَا جَآءَتْهَا رِيحٌ عَاصِفٌ",
+            "after": null
+        }],
+        "broj34": [{
+            "id": 34,
+            "url": "./assets/audio/l14/34.mp3",
+            "highlight": "ذِرْ",
+            "word": " وَأَنْـذِرْ عَشِـيرَتَكَ الْأَقْرَبِينَ",
+            "after": null
+        }],
+        "broj35": [{
+            "id": 35,
+            "url": "./assets/audio/l14/35.mp3",
+            "highlight": "بِرْ",
+            "word": "وَأْمُرْ أَهْلَكَ بِالصَّلَاةِ وَاصْطَبِرْ عَلَيْهَا",
+            "after": null
+        }],
+        "broj36": [{
+            "id": 36,
+            "url": "./assets/audio/l14/36.mp3",
+            "highlight": "فِرْ",
+            "word": "فَاغْفِرْ لَنَا ذُنُوبَنَا",
+            "after": null
+        }],
+        "broj37": [{
+            "id": 37,
+            "url": "./assets/audio/l14/37.mp3",
+            "highlight": "سَّيْرَ",
+            "word": " وَقَدَّرْنَا فِيهَا السَّيْرَ",
+            "after": null
+        }],
+        "broj38": [{
+            "id": 38,
+            "url": "./assets/audio/l14/38.mp3",
+            "highlight": "ضَيْرَ",
+            "word": " قَالُوا لَا ضَيْرَ",
+            "after": null
+        }],
+        "broj39": [{
+            "id": 39,
+            "url": "./assets/audio/l14/39.mp3",
+            "highlight": "خَيْرٌ",
+            "word": " هُوَ أَدْنٰى بِالَّذِي هُوَ خَيْرٌ",
+            "after": null
+        }]
+
+
     }
 }
