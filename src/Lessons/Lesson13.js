@@ -23,6 +23,12 @@ function L13() {
         </Row>
 
         <Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>  
+
+        <Row>
           <Col className="opisLekcije">
           Kada sa sukunom (ـــــْــــــ) dođe jedan od pet harfova: <Arabic key="ar1l13" arabic="د ج ب ط ق">د ج ب ط ق</Arabic> (sadržanih u izrazu kutbu džeddin - قُطْبُ جَدٍّ), dolazi do odskakanja navedenih harfova, npr.:
           </Col>
@@ -47,15 +53,64 @@ function L13() {
           </Col>
         </Row>
 
-        <h2 className="text-center">Vježbe</h2>
 
+        <Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>  
+      
+      <Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
+
+
+      <h2 className="text-center">Vježbe</h2>
         <hr/>
 
-        <Row className="text-center">
-          <Col>
-            VJEŽBE 13
-          </Col>
-        </Row>
+			<Row className="text-center">
+				<Col>
+					۞
+          {VjezbeRow(data, 'vjezba', 'broj10')}
+          ۞
+          {VjezbeRow(data, 'vjezba', 'broj9')}
+				</Col>
+			</Row>
+
+			<Row className="text-center">
+				<Col>
+					۞
+					{VjezbeRow(data, 'vjezba', 'broj11')}
+				</Col>
+			</Row>
+
+			<Row className="text-center">
+				<Col>
+          ۞
+          {VjezbeRow(data, 'vjezba', 'broj12')}
+				</Col>
+			</Row>
+
+			<Row className="text-center">
+				<Col>
+					۞
+          {VjezbeRow(data, 'vjezba', 'broj14')}
+          ۞
+          {VjezbeRow(data, 'vjezba', 'broj13')}
+				</Col>
+			</Row>
+      <Row className="text-center">
+				<Col>
+					۞
+          {VjezbeRow(data, 'vjezba', 'broj17')}
+          ۞
+          {VjezbeRow(data, 'vjezba', 'broj16')}
+          ۞
+          {VjezbeRow(data, 'vjezba', 'broj15')}
+				</Col>
+			</Row>
 
         <Footer prev="/lekcija12" next="/lekcija14" />
 

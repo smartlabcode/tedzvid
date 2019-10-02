@@ -76,5 +76,115 @@
                 "after": null
             }
         ]
+    },
+    "vjezba": {
+        "broj9": [
+            {
+                "id": 9,
+                "url": "./assets/audio/l13/9.mp3",
+                "highlight": "قْـ",
+                "word": "وَهُوَ الَّذِي يَـقْـبَلُ التَّوْبَةَ عَنْ عِبَادِهِ ",
+                "after": null
+            }
+        ],
+        "broj10": [
+            {
+                "id": 10,
+                "url": "./assets/audio/l13/10.mp3",
+                "highlight": "طْـ",
+                "word": "أَلَّذِٓي أَطْـعَمَهُمْ مِنْ جُوعٍ ",
+                "after": null
+            }
+        ],
+        "broj11": [
+            {
+                "id": 11,
+                "url": "./assets/audio/l13/11.mp3",
+                "highlight": "طِ",
+                "word": "خُلُونَ الْجَنَّةَ حَتّٰى يَلِجَ الْجَمَلُ فِي سَـمِّ الْخِيَاطِ ",
+                "after": null
+            },
+            {
+                "id": 111,
+                "highlight": "دْ",
+                "word": "وَابُ السَّمَٓاءِ وَلَا يَدْ",
+                "after": null
+            },
+            {
+                "id": 112,
+                "url": "./assets/audio/l13/11.mp3",
+                "highlight": "بْـ",
+                "word": "لَا تُفَتَّحُ لَهُمْ أَبْـ",
+                "after": null
+            }
+        ],
+        "broj12": [
+            {
+                "id": 12,
+                "url": "./assets/audio/l13/12.mp3",
+                "highlight": "جْ",
+                "word": "َلُ اللّٰهُ الرِّجْسَ عَلَى الَّذِينَ لَا يُؤْمِنُونَ",
+                "after": null
+            },
+            {
+                "id": 121,
+                "url": "./assets/audio/l13/12.mp3",
+                "highlight": "جْ",
+                "word": "كَذٰلِكَ يَجْعَ",
+                "after": null
+            }
+        ],
+        "broj13": [
+            {
+                "id": 13,
+                "url": "./assets/audio/l13/13.mp3",
+                "highlight": "بْـ",
+                "word": "خُلُٓوا أَبْـوَابَ جَهَنَّمَ خَالِدِينَ فِيهَا ",
+                "after": null
+            },
+            {
+                "id": 131,
+                "url": "./assets/audio/l13/13.mp3",
+                "highlight": "دْ",
+                "word": "قِيلَ ادْ",
+                "after": null
+            }
+        ],
+        "broj14": [
+            {
+                "id": 14,
+                "url": "./assets/audio/l13/14.mp3",
+                "highlight": "دٌ",
+                "word": "قُلْ هُوَ اللّٰهُ أَحَدٌ",
+                "after": null
+            }
+        ],
+        "broj15": [
+            {
+                "id": 15,
+                "url": "./assets/audio/l13/15.mp3",
+                "highlight": "دُ",
+                "word": "اَللّٰهُ الصَّمَدُ",
+                "after": null
+            }
+        ],
+        "broj16": [
+            {
+                "id": 16,
+                "url": "./assets/audio/l13/16.mp3",
+                "highlight": "دْ",
+                "word": "لَمْ يَلِدْ وَلَمْ يُولَدْ",
+                "after": null
+            }
+        ],
+        "broj17": [
+            {
+                "id": 17,
+                "url": "./assets/audio/l13/17.mp3",
+                "highlight": "دٌ",
+                "word": "وَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ",
+                "after": null
+            }
+        ]
     }
 }
