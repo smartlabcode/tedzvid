@@ -117,9 +117,9 @@ function L22() {
 			<Row className="text-center">
 				<Col>
 				۞
-					{VjezbeRow(data, 'vjezba', 'broj14')}
-					۞
 					{VjezbeRow(data, 'vjezba', 'broj15')}
+					۞
+					{VjezbeRow(data, 'vjezba', 'broj14')}
 				</Col>
 			</Row>
 
