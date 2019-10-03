@@ -29,8 +29,8 @@ function L2() {
 
 			<Row>
 				<Col className="opisLekcije">
-					Kada prije zamjenice HU (هُ) dođe dugi vokal A ـــــَـــــ ا , Iــــــِــــ ى , Uـــــُـــــ و ili
-					sukun ــــــْــــــ , zamjenica HU (هُ) se uči kratko:
+					Kada prije zamjenice <strong>HU (<span className="arapski-lekcija">هُ</span>)</strong> dođe <strong>dugi vokal A</strong> <span className="arapski-lekcija">ـــــَـــــ ا</span>  , I<span className="arapski-lekcija">ــــــِــــ ى</span> , U <strong><span className="arapski-lekcija">ـــــُـــــ و</span></strong> ili
+					<strong> sukun <span className="arapski-lekcija">ــــــْــــــ</span></strong>  , zamjenica <strong>HU (<span className="arapski-lekcija">هُ</span>)</strong> se uči kratko:
 				</Col>
 			</Row>
 
@@ -44,8 +44,10 @@ function L2() {
 
 			<Row>
 				<Col className="opisLekcije">
-					Kada prije zamjenice HU (هُ) dođe kratki vokal E ــــــَــــــ , I ـــــــِـــــ ili U ــــــُــــــ
-					, zamjenica HU (هُ) se uči dugo:
+					Kada prije zamjenice <strong>HU (<span className="arapski-lekcija">هُ</span>)</strong> dođe  
+					<strong> kratki vokal</strong> E<span className="arapski-lekcija">ــــــَــــــ</span>  , I <strong><span className="arapski-lekcija">ـــــــِـــــ </span></strong>  
+					 ili U <strong><span className="arapski-lekcija">ــــــُــــــ</span></strong> 
+					, zamjenica <strong>HU (<span className="arapski-lekcija">هُ</span>)</strong> se uči dugo:
 				</Col>
 			</Row>
 
