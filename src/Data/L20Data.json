@@ -91,7 +91,7 @@
                 "url": "./assets/audio/l20/18.mp3",
                 "highlight": "ٰٓللّ",
                 "word": "آٰللّٰهُ خَيْرٌ أَمَّا يُشْرِكُونَ",
-                "after": "۞"
+                "after": null
             }
         ],
         "broj13": [
@@ -100,7 +100,7 @@
                 "url": "./assets/audio/l20/13.mp3",
                 "highlight": "ضَـآرِّ",
                 "word": " وَمَا هُمْ بِضَـآرِّينَ بِهِ مِنْ أَحَدٍ إِلَّا بِإِذْنِ اللّٰهِ ",
-                "after": "۞"
+                "after": null
             }
         ],
         "broj12": [
@@ -109,7 +109,7 @@
                 "url": "./assets/audio/l20/12.mp3",
                 "highlight": "حَـآ قَّـ",
                 "word": "مَا الْحَـآ قَّـةُ",
-                "after": "۞"
+                "after": null
             }
         ],
         "broj17": [
@@ -118,7 +118,7 @@
                 "url": "./assets/audio/l20/17.mp3",
                 "highlight": "آٰلذَّ",
                 "word": "قُلْ آٰلذَّكَرَيْنِ حَرَّمَ أَمِ الْأُ نْـثَيَيْنِ ",
-                "after": "۞"
+                "after": null
             }
         ],
         "broj16": [
@@ -127,7 +127,7 @@
                 "url": "./assets/audio/l20/16.mp3",
                 "highlight": "َٓطَّـآ مَّ",
                 "word": "َٓفَإِذَا جَآءَتِ الطَّـآ مَّـةُ الْكُبْرٰى ",
-                "after": "۞"
+                "after": null
             }
         ],
         "broj15": [
@@ -136,7 +136,7 @@
                 "url": "./assets/audio/l20/15.mp3",
                 "highlight": "صَّـآخَّ",
                 "word": "فَإِذَا جَآءَتِ الصَّـآخَّةُ ",
-                "after": "۞"
+                "after": null
             }
         ],
         "broj14": [
@@ -145,7 +145,7 @@
                 "url": "./assets/audio/l20/14.mp3",
                 "highlight": "رَآ دَّ",
                 "word": "ُّ وَإِنْ يُرِدْكَ بِخَيْرٍ فَلَا رَآ دَّ لِفَضْلِهِ ",
-                "after": "۞"
+                "after": null
             }
         ],
         "broj9": [
@@ -163,7 +163,7 @@
                 "url": "./assets/audio/l20/10.mp3",
                 "highlight": "ضَّـآلُّ",
                 "word": " ثُمَّ إِنَّكُمْ أَيُّهَا الضَّـآلُّونَ الْـمُـكَـذِّبُونَ ",
-                "after": "۞"
+                "after": null
             }
         ],
         "broj11": [
@@ -172,7 +172,7 @@
                 "url": "./assets/audio/l20/11.mp3",
                 "highlight": "حَـآ قَّـ",
                 "word": "أَلْحَـآ قَّـةُ ",
-                "after": "۞"
+                "after": null
             }
         ]
     }

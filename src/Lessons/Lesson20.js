@@ -62,32 +62,41 @@ function L20() {
 
 			<Row className="text-center">
 				<Col>
+				۞
 					{VjezbeRow(data, 'vjezba', 'broj10')}
+					۞
 					{VjezbeRow(data, 'vjezba', 'broj9')}
 				</Col>
 			</Row>
 			<Row className="text-center">
 				<Col>
+				۞
 					{VjezbeRow(data, 'vjezba', 'broj13')}
+					۞
 					{VjezbeRow(data, 'vjezba', 'broj12')}
+					۞
 					{VjezbeRow(data, 'vjezba', 'broj11')}
 				</Col>
 			</Row>
 			<Row className="text-center">
 				<Col>
+				۞
 					{VjezbeRow(data, 'vjezba', 'broj15')}
+					۞
 					{VjezbeRow(data, 'vjezba', 'broj14')}
 				</Col>
 			</Row>
 
 			<Row className="text-center">
 				<Col>
+				۞
 					{VjezbeRow(data, 'vjezba', 'broj17')}
+					۞
 					{VjezbeRow(data, 'vjezba', 'broj16')}
 				</Col>
 			</Row>
 			<Row className="text-center">
-				<Col>{VjezbeRow(data, 'vjezba', 'broj18')}</Col>
+				<Col>۞{VjezbeRow(data, 'vjezba', 'broj18')}</Col>
 			</Row>
 			<hr />
 

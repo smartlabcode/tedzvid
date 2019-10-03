@@ -91,6 +91,7 @@ function L22() {
 				<Col>
 					۞
 					{VjezbeRow(data, 'vjezba', 'broj9')}
+					۞
 					{VjezbeRow(data, 'vjezba', 'broj8')}
 				</Col>
 			</Row>
@@ -99,6 +100,7 @@ function L22() {
 				<Col>
 					۞
 					{VjezbeRow(data, 'vjezba', 'broj11')}
+					۞
 					{VjezbeRow(data, 'vjezba', 'broj10')}
 				</Col>
 			</Row>
@@ -107,13 +109,16 @@ function L22() {
 				<Col>
 					۞
 					{VjezbeRow(data, 'vjezba', 'broj13')}
+					۞
 					{VjezbeRow(data, 'vjezba', 'broj12')}
 				</Col>
 			</Row>
 
 			<Row className="text-center">
 				<Col>
+				۞
 					{VjezbeRow(data, 'vjezba', 'broj14')}
+					۞
 					{VjezbeRow(data, 'vjezba', 'broj15')}
 				</Col>
 			</Row>

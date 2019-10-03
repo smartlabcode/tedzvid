@@ -58,24 +58,29 @@ function L17() {
 
 			<Row className="text-center">
 				<Col>
+				۞
 					{VjezbeRow(data, 'vjezba', 'broj12')}
+					۞
 					{VjezbeRow(data, 'vjezba', 'broj11')}
 				</Col>
 			</Row>
 
 			<Row className="text-center">
 				<Col>
+				۞
 					{VjezbeRow(data, 'vjezba', 'broj14')}
+					۞
 					{VjezbeRow(data, 'vjezba', 'broj13')}
 				</Col>
 			</Row>
 
 			<Row className="text-center">
-				<Col>{VjezbeRow(data, 'vjezba', 'broj15')}</Col>
+				<Col>۞{VjezbeRow(data, 'vjezba', 'broj15')}</Col>
 			</Row>
 
 			<Row className="text-center">
 				<Col>
+				۞
 					{VjezbeRow(data, 'vjezba', 'broj17')}
 					{VjezbeRow(data, 'vjezba', 'broj16')}
 				</Col>
@@ -83,7 +88,9 @@ function L17() {
 
 			<Row className="text-center">
 				<Col>
+				۞
 					{VjezbeRow(data, 'vjezba', 'broj19')}
+					۞
 					{VjezbeRow(data, 'vjezba', 'broj18')}
 				</Col>
 			</Row>

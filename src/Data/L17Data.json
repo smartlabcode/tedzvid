@@ -103,7 +103,7 @@
                 "url": "./assets/audio/l17/12.mp3",
                 "highlight": "لَا",
                 "word": " لَا رَيْبَفِيهِ",
-                "after": "۞"
+                "after": null
             },
             {
                 "id": 121,
@@ -124,7 +124,7 @@
                 "url": "./assets/audio/l17/13.mp3",
                 "highlight": "قِيمُو",
                 "word": "وَيُـقِيمُونَ الصَّلَاةَ ",
-                "after": "۞"
+                "after": null
             },
             {
                 "id": 131,
@@ -139,7 +139,7 @@
                 "url": "./assets/audio/l17/14.mp3",
                 "highlight": "كَانَا",
                 "word": "كَانَا فِيهِ ",
-                "after": "۞"
+                "after": null
             },
             {
                 "id": 141,
@@ -160,7 +160,7 @@
                 "url": "./assets/audio/l17/15.mp3",
                 "highlight": "يَا",
                 "word": "يَا قَوْمِ إِنَّكُمْ ظَلَمْتُمْ أَنفُسَكُم ",
-                "after": "۞"
+                "after": null
             },
             {
                 "id": 151,
@@ -181,7 +181,7 @@
                 "url": "./assets/audio/l17/16.mp3",
                 "highlight": "دُو",
                 "word": "يُبْدُونَ لَكَ ",
-                "after": "۞"
+                "after": null
             },
             {
                 "id": 161,
@@ -241,7 +241,7 @@
                 "url": "./assets/audio/l17/18.mp3",
                 "highlight": "وٰى",
                 "word": "الْقُوٰى",
-                "after": " ۞ "
+                "after": null
             },{
                 "id": 181,
                 "highlight": "دِي",
@@ -256,7 +256,7 @@
                 "url": "./assets/audio/l17/19.mp3",
                 "highlight": "نَّا",
                 "word": "مَنَّا",
-                "after":"۞"
+                "after":null
             },
             {
                 "id": 171,

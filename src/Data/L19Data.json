@@ -71,14 +71,14 @@
             "url": "./assets/audio/l19/13.mp3",
             "highlight": "مَآ أَ",
             "word": "مَآ أَصَابَكَ مِنْ حَسَنَةٍ فَمِنَ اللّٰ",
-            "after": "۞"
+            "after": null
         }],
         "broj12": [{
             "id": 12,
             "url": "./assets/audio/l19/12.mp3",
             "highlight": "هُٓ اَ",
             "word": "يَحْسَبُ أَنَّ مَالَـهُٓ اَخْلَدَهُ",
-            "after": "۞"
+            "after": null
         }],
         "broj5": [{
             "id": 6,
@@ -92,14 +92,14 @@
             "url": "./assets/audio/l19/6.mp3",
             "highlight": "َٓلَٓا اَ",
             "word": "َٓلَٓا اَعْبُدُ مَا تَعْبُدُونَ",
-            "after": "۞"
+            "after": null
         }],
         "broj7": [{
             "id": 7,
             "url": "./assets/audio/l19/7.mp3",
             "highlight": "مَآ اَ",
             "word": "وَمَآ اَرْسَلْنَاكإِلَّا مُبَـشِّـرًا وَنَذِيرًا َ",
-            "after": "۞"
+            "after": null
         }],
         "broj8": [{
                 "id": 8,
@@ -120,7 +120,7 @@
                 "url": "./assets/audio/l19/9.mp3",
                 "highlight": "لُٓـوا أَ",
                 "word": "لٰى بَارِئِكُمْ فَاقْـتُـلُٓـوا أَنْفُسَكُمْ ",
-                "after": "۞"
+                "after": null
             },
             {
                 "id": 91,
@@ -134,7 +134,7 @@
                 "url": "./assets/audio/l19/10.mp3",
                 "highlight": "فِٓـي أَ",
                 "word": "نَّ اللّٰهَ يَعْلَمُ مَا فِٓـي أَنْـفُسِكُمْ ",
-                "after": "۞"
+                "after": null
             },
             {
                 "id": 101,
@@ -149,7 +149,7 @@
                 "url": "./assets/audio/l19/11.mp3",
                 "highlight": "مَآ أَ",
                 "word": "يُّهَا النَّبِيُّ لِمَ تُـحَـرِّمُ مَآ أَحَلَّ اللّٰهُ لَكَ ",
-                "after": "۞"
+                "after": null
             },
             {
                 "id": 111,

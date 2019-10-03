@@ -42,7 +42,7 @@
             "url": "./assets/audio/l16/6.mp3",
             "highlight": "لْ رَ",
             "word": " بَلْ رَفَعَهُ اللّٰهُ إِلَيْهِ ۚ",
-            "after": " ۞ "
+            "after": null
         }],
         "broj5": [{
             "id": 5,
@@ -56,14 +56,14 @@
             "url": "./assets/audio/l16/8.mp3",
             "highlight": "لْ رَ",
             "word": " إِنْ كَذَّبُوكَ فَقُلْ رَبُّكُمْ ذُو رَحْمَةٍ وَاسِعَةٍ ",
-            "after": " ۞ "
+            "after": null
         }],
         "broj9": [{
             "id": 9,
             "url": "./assets/audio/l16/9.mp3",
             "highlight": "قْكُ",
             "word": " أَلَمْ نَخْلُـقْكُمْ مِنْ مَٓاءٍ مَهِينٍ",
-            "after": " ۞ "
+            "after": null
         }],
 
         "broj10": [{
@@ -71,7 +71,7 @@
             "url": "./assets/audio/l16/10.mp3",
             "highlight": "لْ رَ",
             "word": "وَاخْفِضْ لَهُمَا جَنَاحَ الذُّلِّ مِنَ الرَّحْمَةِ وَقُلْ رَبِّ ارْحَمْهُمَا كَمَا رَبَّـيَانِي صَغِيرًا",
-            "after": " ۞ "
+            "after": null
         }],
 
         "broj11": [{
@@ -79,7 +79,7 @@
             "url": "./assets/audio/l16/11.mp3",
             "highlight": "لْ رَ",
             "word": " وَقُلْ رَبِّ اغْفِرْ وَارْحَمْ ",
-            "after": " ۞ "
+            "after": null
         }],
 
         "broj12": [{
@@ -87,7 +87,7 @@
             "url": "./assets/audio/l16/12.mp3",
             "highlight": "لْ رَ",
             "word": "قَالَ بَـلْ رَبُّـكُمْ رَبُّ السَّمَاوَاتِ وَالْأَرْضِ ",
-            "after": " ۞ "
+            "after": null
         }],
 
         "broj13": [{
@@ -95,7 +95,7 @@
             "url": "./assets/audio/l16/13.mp3",
             "highlight": "لْ رَ",
             "word": "وَقُلْ رَبِّ أَدْخِلْن۪ي مُدْخَلَ صِدْقٍ ",
-            "after": " ۞ "
+            "after": null
         }]
     }
 }
