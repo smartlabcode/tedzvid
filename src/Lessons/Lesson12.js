@@ -20,7 +20,6 @@ function L12() {
 					<hr />
 				</Col>
 			</Row>
-
 			      
 			<Row>
 				<Col>
@@ -35,11 +34,7 @@ function L12() {
 				</Col>
 			</Row>
 			      
-			<Row>
-				<Col>
-					<br />
-				</Col>
-			</Row>
+		
 
 			<Row className="text-center">
 				<Col>{PlayerRow(data, 'row1')}</Col>
@@ -52,20 +47,13 @@ function L12() {
 			<Row className="text-center">
 				<Col>{PlayerRow(data, 'row3')}</Col>
 			</Row>
-
 			      
 			<Row>
 				<Col>
 					<br />
 				</Col>
 			</Row>
-
-			      
-			<Row>
-				<Col>
-					<br />
-				</Col>
-			</Row>
+		
 
 			<h2 className="text-center">Vježbe</h2>
 			<hr />

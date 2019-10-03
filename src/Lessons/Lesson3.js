@@ -35,7 +35,7 @@ function L3() {
 				</Col>
 			</Row>
 
-			<Row>
+			<Row className="text-center">
 				<Col>{VjezbeRow(data, 'multirow', 'row2')}</Col>
 			</Row>
 
@@ -45,11 +45,11 @@ function L3() {
 				</Col>
 			</Row>
 
-			<Row>
+			<Row className="text-center"> 
 				<Col>{PlayerRow(data, 'row3')}</Col>
 			</Row>
 
-			<Row>
+			<Row className="text-center">
 				<Col>{PlayerRow(data, 'row4')}</Col>
 			</Row>
 

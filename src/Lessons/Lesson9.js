@@ -34,13 +34,13 @@ function L9() {
           </Col>
         </Row>
 
-        <Row>
+        <Row className="text-center">
           <Col>
             { PlayerRow(data, 'row1') }
           </Col>
         </Row>
 
-        <Row>
+        <Row className="text-center">
           <Col>
             { PlayerRow(data, 'row2') }
             { VjezbeRow(data, 'multirow', 'word1') }
@@ -53,12 +53,11 @@ function L9() {
           </Col>
         </Row>
 
-        <Row>
+        <Row className="text-center">
           <Col>
             { PlayerRow(data, 'row3') }
           </Col>
         </Row>
-
 
         <Row>
 				<Col>
@@ -66,7 +65,7 @@ function L9() {
 				</Col>
 			</Row>
 
-			<Row>
+        <Row>
 				<Col>
 					<br />
 				</Col>

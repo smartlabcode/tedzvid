@@ -58,12 +58,12 @@ function L19() {
           </Col>
         </Row>
 
-        <Row>
-          <Col>
-            <br></br>
-          </Col>
-        </Row>
-
+              
+      <Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
 
         <h2 className="text-center">Vježbe</h2>
         <hr/>

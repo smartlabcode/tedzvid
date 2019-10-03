@@ -34,37 +34,37 @@ function L15() {
         </Row>
 
         <Row>
-          <Col className="opisLekcije">
+          <Col className="opisLekcije text-center">
             <strong>1.</strong> ط  د  ت npr.: { PlayerRow(data, 'row1') }
           </Col>
         </Row>
         
         <Row>
-          <Col className="opisLekcije">
+          <Col className="opisLekcije text-center">
             { PlayerRow(data, 'row2') }
           </Col>
         </Row>
 
         <Row>
-          <Col className="opisLekcije">
+          <Col className="opisLekcije text-center">
             <strong>2.</strong> ظ  ذ  ث npr.: { PlayerRow(data, 'row3') }
           </Col>
         </Row>
 
-        <Row>
-          <Col className="opisLekcije">
+        <Row >
+          <Col className="opisLekcije text-center">
             { PlayerRow(data, 'row4') }
           </Col>
         </Row>
 
-        <Row>
-          <Col className="opisLekcije">
+        <Row >
+          <Col className="opisLekcije text-center">
             <strong>3.</strong> ب  م npr.: { PlayerRow(data, 'row5') }
           </Col>
         </Row>
 
         <Row>
-          <Col className="opisLekcije">
+          <Col className="opisLekcije text-center">
             { PlayerRow(data, 'row6') }
           </Col>
         </Row>
@@ -73,13 +73,13 @@ function L15() {
 				<Col>
 					<br />
 				</Col>
-			</Row>  
-      
-      <Row>
+			</Row>
+
+       <Row>
 				<Col>
 					<br />
 				</Col>
-			</Row>
+			</Row>    
 
       <h2 className="text-center">Vježbe</h2>
         <hr/>

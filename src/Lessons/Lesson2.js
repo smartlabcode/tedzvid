@@ -62,11 +62,7 @@ function L2() {
 					<br />
 				</Col>
 			</Row>
-			<Row>
-				<Col>
-					<br />
-				</Col>
-			</Row>
+	
 
 			<hr />
 			<h2 className="text-center">Vježbe</h2>

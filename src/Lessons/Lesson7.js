@@ -32,16 +32,23 @@ function L7() {
 					tj. N (ن) se nikako ne uči, npr.:
 				</Col>
 			</Row>
-			<Row>
+
+      <Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
+
+			<Row className="text-center">
 				<Col>{PlayerRow(data, 'row1')}</Col>
 			</Row>
-			<Row>
+			<Row className="text-center">
 				<Col>
 					{VjezbeRow(data, 'multirow', 'word1')}
 					{PlayerRow(data, 'row2')}
 				</Col>
 			</Row>
-			<Row>
+			<Row className="text-center">
 				<Col>{VjezbeRow(data, 'multirow', 'word2')}</Col>
 			</Row>
 			<Row>

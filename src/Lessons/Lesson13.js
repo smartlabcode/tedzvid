@@ -34,20 +34,27 @@ function L13() {
           </Col>
         </Row>
 
-        <Row>
+              
+      <Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
+
+        <Row className="text-center">
           <Col>
             { PlayerRow(data, 'row1') }
           </Col>
         </Row>
 
-        <Row>
+        <Row className="text-center">
           <Col>
             { PlayerRow(data, 'row2') }
             { VjezbeRow(data, 'multirow', 'row2') }
           </Col>
         </Row>
 
-        <Row>
+        <Row className="text-center">
           <Col>
             { VjezbeRow(data, 'multirow', 'row3') }
           </Col>
@@ -64,8 +71,7 @@ function L13() {
 				<Col>
 					<br />
 				</Col>
-			</Row>
-
+			</Row>  
 
       <h2 className="text-center">Vježbe</h2>
         <hr/>

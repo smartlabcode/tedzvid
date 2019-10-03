@@ -22,6 +22,12 @@ function L17() {
         </Row>
 
         <Row>
+          <Col>
+          <br></br>
+          </Col>
+        </Row> 
+
+        <Row>
           <Col className="opisLekcije" >Kada poslije <strong>dugog vokala </strong>A ـــــَـــــ ا , Iــــــِــــ ى  , Uـــــُـــــ و   nema ni <strong>hemzeta</strong> ni <strong>sukuna,</strong>bit će medd tabijj.Traje 2 haraketa, npr.:{ PlayerRow(data, 'row1') } 
           </Col>
         </Row>

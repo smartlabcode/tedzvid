@@ -20,12 +20,26 @@ function L10() {
 					<hr />
 				</Col>
 			</Row>
+
+			<Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
+
 			<Row>
 				<Col className="opisLekcije">
 					Kada harf M sa sukunom (مْ) dođe ispred bilo kojeg harfa, osim harfova B (ب) i M (م), onda se harf M
 					(م) izgovara čisto, tj. bez uklapanja, npr.:
 				</Col>
 			</Row>
+
+			<Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
+
 			<Row className="text-center">
 				<Col>
 					{VjezbeRow(data, 'multirow', 'word1')}
@@ -38,6 +52,19 @@ function L10() {
 			<Row className="text-center">
 				<Col>{VjezbeRow(data, 'multirow', 'word3')}</Col>
 			</Row>
+			
+			<Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
+
+			<Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
+
 			<h2 className="text-center">Vježbe</h2>
 			<hr />
 			<Row className="text-center">

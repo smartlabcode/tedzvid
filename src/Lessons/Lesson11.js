@@ -35,18 +35,24 @@ function L11() {
         </Row>
 
         <Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
+
+        <Row className="text-center">
           <Col>
             { PlayerRow(data, 'row1') }
           </Col>
         </Row>
 
-        <Row>
+        <Row className="text-center">
           <Col>
             { PlayerRow(data, 'row2') }
           </Col>
         </Row>
 
-        <Row>
+        <Row className="text-center">
           <Col>
             { PlayerRow(data, 'row3') }
             { VjezbeRow(data, 'multirow', 'word1') }

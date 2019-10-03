@@ -22,6 +22,12 @@ function L18() {
         </Row>
 
         <Row>
+          <Col>
+          <br></br>
+          </Col>
+        </Row> 
+
+        <Row>
           <Col className="opisLekcije">
             
 Kada poslije dugog vokala A ـــــَـــــ ا , Iــــــِــــ ى  , Uـــــُـــــ و   dođe <strong>hemze</strong> u <u>istoj</u> riječi, bit će medd muttesil. Traje obavezno 4-5 hareketa, npr.: { PlayerRow(data, 'row1') }
@@ -52,11 +58,12 @@ Kada poslije dugog vokala A ـــــَـــــ ا , Iــــــِــــ 
           </Col>
         </Row>
 
-        <Row>
-          <Col>
-            <br></br>
-          </Col>
-        </Row>
+             
+      <Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
 
         <h2 className="text-center">Vježbe</h2>
         <hr/>
@@ -64,14 +71,14 @@ Kada poslije dugog vokala A ـــــَـــــ ا , Iــــــِــــ 
         <Row className="text-center">
           <Col>
 
-          ۞ 
+          { VjezbeRow(data, 'vjezba', 'znak') }
             { VjezbeRow(data, 'vjezba', 'broj6') }
           </Col>
         </Row>
         <Row className="text-center">
           <Col>
 
-          ۞ 
+          { VjezbeRow(data, 'vjezba', 'znak') }
             { VjezbeRow(data, 'vjezba', 'broj8') }
             { VjezbeRow(data, 'vjezba', 'broj7') }
           </Col>
@@ -79,7 +86,7 @@ Kada poslije dugog vokala A ـــــَـــــ ا , Iــــــِــــ 
         <Row className="text-center">
           <Col>
 
-          ۞ 
+          { VjezbeRow(data, 'vjezba', 'znak') }
             { VjezbeRow(data, 'vjezba', 'broj9') }
           </Col>
         </Row>
@@ -87,7 +94,7 @@ Kada poslije dugog vokala A ـــــَـــــ ا , Iــــــِــــ 
         <Row className="text-center">
           <Col>
 
-            { VjezbeRow(data, 'vjezba', 'znak') }
+          { VjezbeRow(data, 'vjezba', 'znak') }
             { VjezbeRow(data, 'vjezba', 'broj10') }
           </Col>
         </Row>

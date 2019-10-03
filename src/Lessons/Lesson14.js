@@ -21,6 +21,12 @@ function L14() {
 				</Col>
 			</Row>
 
+      <Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
+
 			<Row>
 				<Col className="opisLekcije">Harf R (ر) se uči krupno u sljedećim situacijama:</Col>
 			</Row>
@@ -60,6 +66,13 @@ function L14() {
 					{PlayerRow(data, 'row7')}
 				</Col>
 			</Row>
+
+      <Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
+
 			<h2 className="text-center">Vježbe</h2>
 			<hr />
 			<Row className="text-center">

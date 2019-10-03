@@ -34,6 +34,13 @@ function L21() {
         </Row>
 
         <Row>
+          <Col>
+          <br></br>
+          </Col>
+        </Row> 
+
+
+        <Row>
           <Col className="text-center">
             { PlayerRow(data, 'row1') }
           </Col>
@@ -56,11 +63,12 @@ function L21() {
           </Col>
         </Row> 
 
-        <Row>
-          <Col>
-          <br></br>
-          </Col>
-        </Row> 
+              
+      <Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
 
         <h2 className="text-center">Vježbe</h2>
         <hr/>

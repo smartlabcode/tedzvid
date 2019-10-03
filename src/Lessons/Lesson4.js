@@ -22,11 +22,23 @@ function L4() {
 			</Row>
 
 			<Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
+
+			<Row>
 				<Col className="opisLekcije">
 					Kada poslije bilo kojeg harfa sa sukunom ــــــْــــــ dođe isti harf sa hareketom, dolazi do
 					potpunog uklapanja, tj. prvi harf se ne uči, a drugi se uči sa tešdidom, npr.:
 				</Col>
 			</Row>
+			
+			<Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>			
 
       <Row className="text-center">
 				<Col>{PlayerRow(data, 'row1')}</Col>
@@ -40,7 +52,12 @@ function L4() {
 				<Col>{PlayerRow(data, 'row3')}</Col>
 			</Row>
 
-
+			<Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
+	
 			<h2 className="text-center">Vježbe</h2>
 			<hr />
 

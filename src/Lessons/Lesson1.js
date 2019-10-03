@@ -22,6 +22,12 @@ function L1() {
         </Row>
 
         <Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
+
+        <Row>
           <Col className="opisLekcije">
             Prilikom učenja Kur'ana, učač može stati u sljedećim situacijama: ako je kraj ajeta, ako postoji znak za stajanje i kada mu ponestane daha. To čini na sljedeći način:
           </Col>
@@ -33,7 +39,7 @@ function L1() {
           </Col>
         </Row>
         
-        <Row>
+        <Row className="text-center">
           <Col>
           { PlayerRow(data, 'row1') }
           </Col>
@@ -45,7 +51,7 @@ function L1() {
           </Col>
         </Row>
 
-        <Row>
+        <Row className="text-center">
           <Col>
             { PlayerRow(data, 'row2') }
           </Col>
@@ -57,7 +63,7 @@ function L1() {
           </Col>
         </Row>
 
-        <Row>
+        <Row className="text-center">
           <Col>
             { PlayerRow(data, 'row3') }
           </Col>
@@ -69,7 +75,7 @@ function L1() {
           </Col>
         </Row>
 
-        <Row>
+        <Row className="text-center">
           <Col>
             { PlayerRow(data, 'row4') }
           </Col>
@@ -179,6 +185,12 @@ function L1() {
           </p>
           </Col>
         </Row>
+
+        <Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
 
         <h2 className="text-center">Vježbe</h2>
         <hr/>

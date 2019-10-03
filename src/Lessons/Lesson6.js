@@ -57,11 +57,23 @@ function L6() {
 			</Row>
 
 			<Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
+
+			<Row>
 				<Col className="opisLekcije">
 					Kada poslije harfa N sa sukunom (نْ) ili tenvina EN ــــــًــــــ, IN ـــــٍــــــ , UN ــــــٌـــــ
 					dođe jedan od četiri harfa: <Arabic bold={true}>ي م ن و</Arabic> (sadržana u riječi jemnu –
 					يَمْنُو), dolazi do uklapanja harfa N (ن) u jedan od spomenuta četiri harfa, propuštajući zrak kroz
 					nos u trajanju od 2 hareketa, npr.:
+				</Col>
+			</Row>
+
+			<Row>
+				<Col>
+					<br />
 				</Col>
 			</Row>
 
@@ -81,6 +93,18 @@ function L6() {
 						</Player>
 					</span>{' '}
 					{data.row3[0].after}
+				</Col>
+			</Row>
+
+			<Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
+
+			<Row>
+				<Col>
+					<br />
 				</Col>
 			</Row>
 
