@@ -5,100 +5,94 @@ import VjezbeRow from '../Helpers/VjezbeHelper';
 import Footer from '../Body/MainFooter';
 
 // Bootstrap
-import {Row, Col, Table} from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 
 // Other
 import '../App.scss';
 
 function L17() {
-    return (
-        <React.Fragment>
-        <Row>
-          <Col>
-            <h2 className="text-center font-weight-bold text-uppercase">MEDD TABIJJ - obična dužina</h2>
-            <h4 className="text-center"></h4>
-            <hr/>
-          </Col>
-        </Row>
+	return (
+		<React.Fragment>
+			<Row>
+				<Col>
+					<h2 className="text-center font-weight-bold text-uppercase">MEDD TABIJJ - obična dužina</h2>
+					<hr />
+				</Col>
+			</Row>
 
-        <Row>
-          <Col>
-          <br></br>
-          </Col>
-        </Row> 
+			<Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
 
-        <Row>
-          <Col className="opisLekcije" >Kada poslije <strong>dugog vokala </strong>A ـــــَـــــ ا , Iــــــِــــ ى  , Uـــــُـــــ و   nema ni <strong>hemzeta</strong> ni <strong>sukuna,</strong>bit će medd tabijj.Traje 2 haraketa, npr.:{ PlayerRow(data, 'row1') } 
-          </Col>
-        </Row>
+			<Row>
+				<Col className="opisLekcije">
+					Kada poslije <strong>dugog vokala </strong>A ـــــَـــــ ا , Iــــــِــــ ى , Uـــــُـــــ و nema ni{' '}
+					<strong>hemzeta</strong> ni <strong>sukuna,</strong>bit će medd tabijj.Traje 2 haraketa, npr.:{PlayerRow(data, 'row1')}
+				</Col>
+			</Row>
 
-        <Row>
-          <Col className="text-center">
-          { PlayerRow(data, 'row2') } 
-          </Col>
-        </Row>
-        
-        <Row>
-          <Col className="text-center">
-          { PlayerRow(data, 'row3') } 
-          </Col>
-        </Row>
+			<Row>
+				<Col className="text-center">{PlayerRow(data, 'row2')}</Col>
+			</Row>
 
-        <Row>
-          <Col>
-          <br></br>
-          </Col>
-        </Row>
+			<Row>
+				<Col className="text-center">{PlayerRow(data, 'row3')}</Col>
+			</Row>
 
-        <Row>
-          <Col>
-            <br></br>
-          </Col>
-        </Row>
+			<Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
 
-        <h2 className="text-center">Vježbe</h2>
-        <hr/>
+			<Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
 
-        <Row className="text-center">
-          <Col>
-            { VjezbeRow(data, 'vjezba', 'broj12') }
-            { VjezbeRow(data, 'vjezba', 'broj11') }
-          </Col>
-        </Row>
+			<h2 className="text-center">Vježbe</h2>
+			<hr />
 
-        <Row className="text-center">
-          <Col>
-            { VjezbeRow(data, 'vjezba', 'broj14') }
-            { VjezbeRow(data, 'vjezba', 'broj13') }
-          </Col>
-        </Row>
+			<Row className="text-center">
+				<Col>
+					{VjezbeRow(data, 'vjezba', 'broj12')}
+					{VjezbeRow(data, 'vjezba', 'broj11')}
+				</Col>
+			</Row>
 
-        <Row className="text-center">
-          <Col>
-            { VjezbeRow(data, 'vjezba', 'broj15') }
-          </Col>
-        </Row>
+			<Row className="text-center">
+				<Col>
+					{VjezbeRow(data, 'vjezba', 'broj14')}
+					{VjezbeRow(data, 'vjezba', 'broj13')}
+				</Col>
+			</Row>
 
-        <Row className="text-center">
-          <Col>
-            { VjezbeRow(data, 'vjezba', 'broj17') }
-            { VjezbeRow(data, 'vjezba', 'broj16') }
-          </Col>
-        </Row>
+			<Row className="text-center">
+				<Col>{VjezbeRow(data, 'vjezba', 'broj15')}</Col>
+			</Row>
 
-        <Row className="text-center">
-          <Col>
-            { VjezbeRow(data, 'vjezba', 'broj19') }
-            { VjezbeRow(data, 'vjezba', 'broj18') }
-          </Col>
-        </Row>
+			<Row className="text-center">
+				<Col>
+					{VjezbeRow(data, 'vjezba', 'broj17')}
+					{VjezbeRow(data, 'vjezba', 'broj16')}
+				</Col>
+			</Row>
 
-        <hr/>
+			<Row className="text-center">
+				<Col>
+					{VjezbeRow(data, 'vjezba', 'broj19')}
+					{VjezbeRow(data, 'vjezba', 'broj18')}
+				</Col>
+			</Row>
 
-        <Footer prev="/lekcija16" next="/lekcija18" />
+			<hr />
 
-        </React.Fragment>
-    );
-  }
+			<Footer prev="/lekcija16" next="/lekcija18" />
+		</React.Fragment>
+	);
+}
 
-  export default L17;
+export default L17;

@@ -5,7 +5,7 @@ import VjezbeRow from '../Helpers/VjezbeHelper';
 import Footer from '../Body/MainFooter';
 
 // Bootstrap
-import { Row, Col, Table } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 
 // Other
 import '../App.scss';
@@ -88,8 +88,8 @@ function L22() {
 			<hr />
 
 			<Row className="text-center">
-				<Col>   
-        ۞ 
+				<Col>
+					۞
 					{VjezbeRow(data, 'vjezba', 'broj9')}
 					{VjezbeRow(data, 'vjezba', 'broj8')}
 				</Col>
@@ -97,7 +97,7 @@ function L22() {
 
 			<Row className="text-center">
 				<Col>
-        ۞
+					۞
 					{VjezbeRow(data, 'vjezba', 'broj11')}
 					{VjezbeRow(data, 'vjezba', 'broj10')}
 				</Col>
@@ -105,7 +105,7 @@ function L22() {
 
 			<Row className="text-center">
 				<Col>
-        ۞
+					۞
 					{VjezbeRow(data, 'vjezba', 'broj13')}
 					{VjezbeRow(data, 'vjezba', 'broj12')}
 				</Col>
