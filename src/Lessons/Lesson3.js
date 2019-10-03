@@ -16,7 +16,9 @@ function L3() {
 			<Row>
 				<Col>
 					<h2 className="text-center font-weight-bold text-uppercase">LAFZATULLAH</h2>
-					<h4 className="text-center">izgovaranje riječi Allah اللّٰه</h4>
+					<h4 className="text-center">
+						izgovaranje riječi Allah <span className="arapski-lekcija"> اللّٰه </span>
+					</h4>
 					<hr />
 				</Col>
 			</Row>
@@ -29,9 +31,20 @@ function L3() {
 
 			<Row>
 				<Col className="opisLekcije">
-					Kada prije riječi Allah اللّٰه dođe vokal E ــــــَــــــ ili vokal U ــــــُــــــ , riječ Allah
-					اللّٰه se uči krupno, npr.:
-					<span class='arapski'>{PlayerRow(data, 'row1')}</span>
+					Kada prije riječi Allah<span className="arapski-lekcija" style={{ fontSize: '2em' }}>
+						{' '}
+						اللّٰه{' '}
+					</span>dođe <strong>vokal</strong> E{' '}
+					<span className="arapski-lekcija" style={{ fontSize: '2.2em' }}>
+						{' '}
+						ــــــَــــــ{' '}
+					</span>ili <strong>vokal</strong> U<span className="arapski-lekcija" style={{ fontSize: '2.2em' }}>
+						ــــــُــــــ{' '}
+					</span>, riječ Allah
+					<span className="arapski-lekcija" style={{ fontSize: '2em' }}>
+						اللّٰه{' '}
+					</span>se uči <u>krupno</u>, npr.:
+					{PlayerRow(data, 'row1')}
 				</Col>
 			</Row>
 
@@ -41,11 +54,22 @@ function L3() {
 
 			<Row>
 				<Col className="opisLekcije">
-					Kada prije riječi Allah اللّٰه dođe vokal I ـــــــِـــــ, riječ Allah اللّٰه se uči tanko, npr.:
+					Kada prije riječi Allah<span className="arapski-lekcija" style={{ fontSize: '2em' }}>
+						{' '}
+						اللّٰه
+					</span>{' '}
+					dođe <strong>vokal</strong> I<span className="arapski-lekcija" style={{ fontSize: '2.2em' }}>
+						{' '}
+						ـــــــِـــــ
+					</span>, riječ Allah<span className="arapski-lekcija" style={{ fontSize: '2em' }}>
+						{' '}
+						اللّٰه
+					</span>{' '}
+					se uči <u>tanko</u>, npr.:
 				</Col>
 			</Row>
 
-			<Row className="text-center"> 
+			<Row className="text-center">
 				<Col>{PlayerRow(data, 'row3')}</Col>
 			</Row>
 
@@ -65,8 +89,8 @@ function L3() {
 				</Col>
 			</Row>
 
-        <h2 className="text-center">Vježbe</h2>
-        <hr/>
+			<h2 className="text-center">Vježbe</h2>
+			<hr />
 
 			<Row className="text-center">
 				<Col>
