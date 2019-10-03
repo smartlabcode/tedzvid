@@ -228,20 +228,17 @@ function L1() {
 			</Row>
 			<Row className="text-center">
 				<Col>
+				۞
+					{VjezbeRow(data, 'vjezba', 'red31')}
+					۞
+					{VjezbeRow(data, 'vjezba', 'red30')}
 					۞
 					{VjezbeRow(data, 'vjezba', 'red29')}
 					۞
 					{VjezbeRow(data, 'vjezba', 'red28')}
 				</Col>
 			</Row>
-			<Row className="text-center">
-				<Col>
-					۞
-					{VjezbeRow(data, 'vjezba', 'red31')}
-					۞
-					{VjezbeRow(data, 'vjezba', 'red30')}
-				</Col>
-			</Row>
+	
 			<Footer prev="/" next="/lekcija2" />
 		</React.Fragment>
 	);
