@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/tedzvid/static/css/main.a05bfbec.chunk.css",
-    "main.js": "/tedzvid/static/js/main.76a69ba1.chunk.js",
-    "main.js.map": "/tedzvid/static/js/main.76a69ba1.chunk.js.map",
+    "main.css": "/tedzvid/static/css/main.a83d4d73.chunk.css",
+    "main.js": "/tedzvid/static/js/main.34a11aae.chunk.js",
+    "main.js.map": "/tedzvid/static/js/main.34a11aae.chunk.js.map",
     "runtime~main.js": "/tedzvid/static/js/runtime~main.c894e1fc.js",
     "runtime~main.js.map": "/tedzvid/static/js/runtime~main.c894e1fc.js.map",
     "static/js/2.8987ace4.chunk.js": "/tedzvid/static/js/2.8987ace4.chunk.js",
     "static/js/2.8987ace4.chunk.js.map": "/tedzvid/static/js/2.8987ace4.chunk.js.map",
     "index.html": "/tedzvid/index.html",
-    "precache-manifest.919a89f73437d7ec49446fa5c6c83811.js": "/tedzvid/precache-manifest.919a89f73437d7ec49446fa5c6c83811.js",
+    "precache-manifest.1557deafc20a1abb7d4373875b9a3da0.js": "/tedzvid/precache-manifest.1557deafc20a1abb7d4373875b9a3da0.js",
     "service-worker.js": "/tedzvid/service-worker.js",
-    "static/css/main.a05bfbec.chunk.css.map": "/tedzvid/static/css/main.a05bfbec.chunk.css.map",
+    "static/css/main.a83d4d73.chunk.css.map": "/tedzvid/static/css/main.a83d4d73.chunk.css.map",
     "static/media/App.scss": "/tedzvid/static/media/KuranKerimFontHamdullah.c5109a1c.ttf"
   }
 }
