@@ -89,6 +89,7 @@ function L20() {
 
 			<Row className="text-center">
 				<Col>
+				۞{VjezbeRow(data, 'vjezba', 'broj18')}
 				۞
 					{VjezbeRow(data, 'vjezba', 'broj17')}
 					۞
@@ -96,7 +97,7 @@ function L20() {
 				</Col>
 			</Row>
 			<Row className="text-center">
-				<Col>۞{VjezbeRow(data, 'vjezba', 'broj18')}</Col>
+				<Col></Col>
 			</Row>
 			<hr />
 
