@@ -129,9 +129,9 @@ function L3() {
 			<Row className="text-center">
 				<Col>
 					۞
-					{VjezbeRow(data, 'vjezba', 'broj16')}
-					۞
 					{VjezbeRow(data, 'vjezba', 'broj17')}
+					۞
+					{VjezbeRow(data, 'vjezba', 'broj16')}
 				</Col>
 			</Row>
 
