@@ -1,6 +1,5 @@
 {
-    "row1": [
-        {
+    "row1": [{
             "id": 1,
             "url": "./assets/audio/l1/1.wav",
             "highlight": "قَ",
@@ -29,12 +28,11 @@
             "after": null
         }
     ],
-    "row2": [
-        {
+    "row2": [{
             "id": 5,
             "url": "./assets/audio/l1/5.wav",
-            "highlight": "حَا",
-            "word": "ضَبْحَا",
+            "highlight": "جًا",
+            "word": "أَفْوَاجًا",
             "after": " čita se: "
         },
         {
@@ -47,20 +45,19 @@
         {
             "id": 7,
             "url": "./assets/audio/l1/7.wav",
-            "highlight": "حَا",
-            "word": "ضَبْحَا",
+            "highlight": "حًا",
+            "word": " ضَبْحًا",
             "after": " čita se: "
         },
         {
             "id": 8,
             "url": "./assets/audio/l1/8.wav",
-            "highlight": "حًا",
-            "word": "ضَبْحًا",
+            "highlight": "حَا",
+            "word": "ضَبْحَا",
             "after": null
         }
     ],
-    "row3": [
-        {
+    "row3": [{
             "id": 9,
             "url": "./assets/audio/l1/9.wav",
             "highlight": "مُو",
@@ -96,12 +93,11 @@
             "after": null
         }
     ],
-    "row4": [
-        {
+    "row4": [{
             "id": 14,
             "url": "./assets/audio/l1/14.wav",
-            "highlight": "هْ",
-            "word": "أَفْئِدَهْ",
+            "highlight": "ةُ",
+            "word": "أَلْقَارِعَةُ ",
             "after": " čita se: "
         },
         {
@@ -114,8 +110,8 @@
         {
             "id": 16,
             "url": "./assets/audio/l1/16.wav",
-            "highlight": "ة",
-            "word": "أَفْئِدَة",
+            "highlight": "ةً",
+            "word": " أَفْئِدَةً",
             "after": " čita se: "
         },
         {
@@ -127,8 +123,7 @@
         }
     ],
     "vjezba": {
-        "red19": [
-            {
+        "red19": [{
                 "id": 19,
                 "url": "./assets/audio/l1/19.mp3",
                 "highlight": "نَاۚ",
@@ -142,26 +137,21 @@
                 "after": null
             }
         ],
-        "red18": [
-            {
-                "id": 18,
-                "url": "./assets/audio/l1/18.mp3",
-                "highlight": "للّٰهُۢ",
-                "word": "وَمَا يَعْلَمُ تَأْو۪يلَهُٓ إِلَّا اللّٰهُۢ ",
-                "after": null
-            }
-        ],
-        "red21": [
-            {
-                "id": 21,
-                "url": "./assets/audio/l1/21.mp3",
-                "highlight": "حًا",
-                "word": "وَالْعَادِيَاتِ ضَبْحًا",
-                "after": null
-            }
-        ],
-        "red20": [
-            {
+        "red18": [{
+            "id": 18,
+            "url": "./assets/audio/l1/18.mp3",
+            "highlight": "للّٰهُۢ",
+            "word": "وَمَا يَعْلَمُ تَأْو۪يلَهُٓ إِلَّا اللّٰهُۢ ",
+            "after": null
+        }],
+        "red21": [{
+            "id": 21,
+            "url": "./assets/audio/l1/21.mp3",
+            "highlight": "حًا",
+            "word": "وَالْعَادِيَاتِ ضَبْحًا",
+            "after": null
+        }],
+        "red20": [{
                 "id": 201,
                 "url": "./assets/audio/l1/20.mp3",
                 "highlight": "بِ ۜ ",
@@ -175,86 +165,68 @@
                 "after": null
             }
         ],
-        "red24": [
-            {
-                "id": 24,
-                "url": "./assets/audio/l1/24.mp3",
-                "highlight": "نَ",
-                "word": "هُدًى لِلْمُتَّق۪ينَ",
-                "after": null
-            }
-        ],
-        "red23": [
-            {
-                "id": 23,
-                "url": "./assets/audio/l1/23.mp3",
-                "highlight": null,
-                "word": "ذٰلِكَ الْكِتَابُ لَا رَيْبَۚۛ ف۪يهِۚۛ ",
-                "after": null
-            }
-        ],
-        "red22": [
-            {
-                "id": 22,
-                "url": "./assets/audio/l1/22.mp3",
-                "highlight": "ةُ",
-                "word": "وَمَٓا أَدْرٰيكَ مَا الْقَارِعَةُ ",
-                "after": null
-            }
-        ],
-        "red26": [
-            {
-                "id": 26,
-                "url": "./assets/audio/l1/27.mp3",
-                "highlight": null,
-                "word": "قَالُوا يَا وَيْلَنَا مَنْ بَعَثَنَا",
-                "after": null
-            }
-        ],
-        "red25": [
-            {
-                "id": 25,
-                "url": "./assets/audio/l1/25.mp3",
-                "highlight": "مُ۠",
-                "word": " إِنَّ الدّ۪ينَ عِنْدَ اللّٰهِ الْإِسْلَامُ۠",
-                "after": null
-            }
-        ],
-        "red28": [
-            {
-                "id": 28,
-                "url": "./assets/audio/l1/28.mp3",
-                "highlight": "دُوا",
-                "word": "فَقَالَ يَا قَوْمِ اعْبُدُوا ",
-                "after": null
-            }
-        ],
-        "red29": [
-            {
-                "id": 29,
-                "url": "./assets/audio/l1/29.mp3",
-                "highlight": "ن۪ي",
-                "word": " قَالَ عَسٰى رَبّ۪ٓي أَنْ يَهْدِيَن۪ي",
-                "after": null
-            }
-        ],
-        "red30": [
-            {
-                "id": 30,
-                "url": "./assets/audio/l1/30.mp3",
-                "highlight": "ءًۖ",
-                "word": "وَالسَّمَٓاءَ بِنَٓاءًۖ",
-                "after": null
-            }
-        ],
-        "red31": [
-            {
-                "id": 31,
-                "url": "./assets/audio/l1/31.mp3",
-                "highlight": "وَ",
-                "word": "اَللّٰهُ لَٓا إِلٰهَ إِلَّا هُوَ ",
-                "after": null
-            }
-        ]
+        "red24": [{
+            "id": 24,
+            "url": "./assets/audio/l1/24.mp3",
+            "highlight": "نَ",
+            "word": "هُدًى لِلْمُتَّق۪ينَ",
+            "after": null
+        }],
+        "red23": [{
+            "id": 23,
+            "url": "./assets/audio/l1/23.mp3",
+            "highlight": null,
+            "word": "ذٰلِكَ الْكِتَابُ لَا رَيْبَۚۛ ف۪يهِۚۛ ",
+            "after": null
+        }],
+        "red22": [{
+            "id": 22,
+            "url": "./assets/audio/l1/22.mp3",
+            "highlight": "ةُ",
+            "word": "وَمَٓا أَدْرٰيكَ مَا الْقَارِعَةُ ",
+            "after": null
+        }],
+        "red26": [{
+            "id": 26,
+            "url": "./assets/audio/l1/27.mp3",
+            "highlight": null,
+            "word": "قَالُوا يَا وَيْلَنَا مَنْ بَعَثَنَا",
+            "after": null
+        }],
+        "red25": [{
+            "id": 25,
+            "url": "./assets/audio/l1/25.mp3",
+            "highlight": "مُ۠",
+            "word": " إِنَّ الدّ۪ينَ عِنْدَ اللّٰهِ الْإِسْلَامُ۠",
+            "after": null
+        }],
+        "red28": [{
+            "id": 28,
+            "url": "./assets/audio/l1/28.mp3",
+            "highlight": "دُوا",
+            "word": "فَقَالَ يَا قَوْمِ اعْبُدُوا ",
+            "after": null
+        }],
+        "red29": [{
+            "id": 29,
+            "url": "./assets/audio/l1/29.mp3",
+            "highlight": "ن۪ي",
+            "word": " قَالَ عَسٰى رَبّ۪ٓي أَنْ يَهْدِيَن۪ي",
+            "after": null
+        }],
+        "red30": [{
+            "id": 30,
+            "url": "./assets/audio/l1/30.mp3",
+            "highlight": "ءًۖ",
+            "word": "وَالسَّمَٓاءَ بِنَٓاءًۖ",
+            "after": null
+        }],
+        "red31": [{
+            "id": 31,
+            "url": "./assets/audio/l1/31.mp3",
+            "highlight": "وَ",
+            "word": "اَللّٰهُ لَٓا إِلٰهَ إِلَّا هُوَ ",
+            "after": null
+        }]
     }
 }

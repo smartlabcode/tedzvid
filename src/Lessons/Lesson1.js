@@ -35,7 +35,7 @@ function L1() {
 
         <Row>
           <Col className="opisLekcije my-3">
-            <strong>1.</strong>	Kada riječ na kojoj staje završava kratkim vokalom E  ــــــَــــــ , I   ـــــــِـــــ, U  ــــــُــــــ ili tenvinom IN ـــــٍــــــ ,  UN  ــــــٌــــــ, stat će kao da je na riječi sukun  ــــــْــــــ, npr.:
+            <strong>1.</strong>	Kada riječ na kojoj staje završava kratkim vokalom E <span className="arapski-lekcija "> ــــــَــــــ</span> , I <span className="arapski-lekcija ">   ـــــــِـــــ</span>, U <span className="arapski-lekcija ">  ــــــُــــــ </span>ili tenvinom IN <span className="arapski-lekcija "> ـــــٍــــــ </span>,  UN <span className="arapski">  ــــــٌــــــ</span>, stat će kao da je na riječi sukun <span className="arapski-lekcija ">  ــــــْــــــ</span>, npr.:
           </Col>
         </Row>
         
@@ -47,7 +47,7 @@ function L1() {
 
         <Row>
           <Col className="opisLekcije my-3">
-            <strong>2.</strong>	Kada riječ završava tenvinom EN  ــــــًــــــ, stat će kao da je dugo  A ـــــَــــــ ا , npr.:
+            <strong>2.</strong>	Kada riječ završava tenvinom EN <span className="arapski-lekcija "> ــــــًــــــ</span>, stat će kao da je dugo  A <span className="arapski-lekcija "> ـــــَــــــ ا </span>, npr.:
           </Col>
         </Row>
 
@@ -94,16 +94,16 @@ function L1() {
             <tbody>
               <tr>
                 <td>
-                E ــــــَــــــ , I  ـــــــِـــــ, U ــــــُــــــ , IN ـــــٍــــــ , UN  ــــــٌـــــ
-                </td>
+                E <span class="arapski-lekcija ">ــــــَــــــ</span> , I <span className="arapski-lekcija "> ـــــــِـــــ</span> , U <span className="arapski-lekcija"> ــــــُــــــ</span> , IN <span className="arapski-lekcija"> ـــــٍــــــ </span>, UN <span className="arapski-lekcija">  ــــــٌـــــ</span>
+               </td>
                 <td>
-                kao da je sukun  ــــــْــــــ
-                </td>
+                kao da je sukun <span className="arapski-lekcija ">  ــــــْــــــ
+                </span></td>
               </tr>
               <tr>
                 <td>
-                EN  ــــــًــــــ
-                </td>
+                EN <span className="arapski-lekcija "> ــــــًــــــ
+                </span></td>
                 <td>
                 kao da je dugo A ــــــَــــــ ا
                 </td>
@@ -147,9 +147,9 @@ function L1() {
                 <td>
                 م
                 </td>
-                <td>
+                <td><span className="arapksi-lekcija">
                 قف ؛ قلي ؛ ج ؛ ط
-                </td>
+                </span></td>
                 <td>
                 صلي ؛ ق ؛ ص ؛ ز
                 </td>
@@ -174,7 +174,7 @@ function L1() {
                 <br/>Pauzira se bez prekidanja daha.
                 </td>
                 <td>
-                رَيْبَۚۛ ف۪يهِۚۛ   
+                رَيْبَۚۛ ف۪يهِۚۛ 
                 <br/>Ukoliko se pauzira na prvom znaku, onda je na drugom obavezno preći i obrnuto.
                 </td>
               </tr>
