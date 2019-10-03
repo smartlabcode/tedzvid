@@ -27,18 +27,20 @@ function L7() {
 			</Row>
 			<Row>
 				<Col className="opisLekcije">
-					Kada poslije harfa N sa sukunom (نْ) ili tenvina EN ــــــًــــــ, IN ـــــٍــــــ , UN ــــــٌـــــ
-					dođe harf L (ل) ili R (ر), dolazi do potpunog uklapanja harfa N (ن) u harf L (ل), odnosno, R (ر),
-					tj. N (ن) se nikako ne uči, npr.:
+					Kada poslije harfa N sa sukunom <span className="arapski-lekcija">(نْ)</span> ili tenvina EN<span className="arapski-lekcija"> ــــــًــــــ</span>,
+					IN<span className="arapski-lekcija" /> ـــــٍــــــ , UN<span className="arapski-lekcija"> ــــــٌـــــ</span>dođe
+					harf L <span className="arapski-lekcija">(ل) </span>ili R{' '}
+					<span className="arapski-lekcija">(ر)</span>, dolazi do potpunog uklapanja harfa N<span className="arapski-lekcija"> (ن)</span>{' '}
+					u harf L <span className="arapski-lekcija">(ل)</span>, odnosno, R{' '}
+					<span className="arapski-lekcija">(ر)</span>, tj. N <span className="arapski-lekcija">(ن)</span>se
+					nikako ne uči, npr.:
 				</Col>
 			</Row>
-
-      <Row>
+			<Row>
 				<Col>
 					<br />
 				</Col>
 			</Row>
-
 			<Row className="text-center">
 				<Col>{PlayerRow(data, 'row1')}</Col>
 			</Row>
