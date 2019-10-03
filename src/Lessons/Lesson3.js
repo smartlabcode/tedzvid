@@ -129,13 +129,13 @@ function L3() {
 			<Row className="text-center">
 				<Col>
 					۞
-					{VjezbeRow(data, 'vjezba', 'broj17')}
-					۞
 					{VjezbeRow(data, 'vjezba', 'broj16')}
+					۞
+					{VjezbeRow(data, 'vjezba', 'broj17')}
 				</Col>
 			</Row>
 
-			<Footer prev="/lekcija1" next="/lekcija4" />
+			<Footer prev="/lekcija2" next="/lekcija4" />
 		</React.Fragment>
 	);
 }
