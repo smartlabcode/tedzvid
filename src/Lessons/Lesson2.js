@@ -29,7 +29,7 @@ function L2() {
 
 			<Row>
 				<Col className="opisLekcije">
-					Kada prije zamjenice <strong>HU (<span className="arapski-lekcija "> هُ</span>)</strong> dođe <strong>dugi vokal A</strong> <span className="arapski-lekcija">ـــــَـــــ ا</span>  , I<span className="arapski-lekcija">ــــــِــــ ى</span> , U <strong><span className="arapski-lekcija ">ـــــُـــــ و</span></strong> ili
+					Kada prije zamjenice <strong>HU (<span className="arapski-lekcija "> هُ</span>)</strong> dođe <strong>dugi vokal A</strong> <span className="arapski-lekcija">ـــــَـــــ ا</span>  , I<span className="arapski-lekcija">ــــــِــــ ى</span> , U <strong><span className="arapski-lekcija " style={{ fontSize: '2.5em' }}>ـــــُـــــ و</span></strong> ili
 					<strong> sukun <span className="arapski-lekcija">ــــــْــــــ</span></strong>  , zamjenica <strong>HU (<span className="arapski-lekcija">هُ</span>)</strong> se uči kratko:
 				</Col>
 			</Row>
@@ -46,7 +46,7 @@ function L2() {
 				<Col className="opisLekcije">
 					Kada prije zamjenice <strong>HU (<span className="arapski-lekcija">هُ</span>)</strong> dođe  
 					<strong> kratki vokal</strong> E<span className="arapski-lekcija">ــــــَــــــ</span>  , I <strong><span className="arapski-lekcija">ـــــــِـــــ </span></strong>  
-					 ili U <strong><span className="arapski-lekcija">ــــــُــــــ</span></strong> 
+					 ili U <strong><span className="arapski-lekcija" style={{ fontSize: '2.5em' }}>ــــــُــــــ</span></strong> 
 					, zamjenica <strong>HU (<span className="arapski-lekcija">هُ</span>)</strong> se uči dugo:
 				</Col>
 			</Row>

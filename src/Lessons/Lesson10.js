@@ -29,8 +29,8 @@ function L10() {
 
 			<Row>
 				<Col className="opisLekcije">
-					Kada harf M sa sukunom (مْ) dođe ispred bilo kojeg harfa, osim harfova B (ب) i M (م), onda se harf M
-					(م) izgovara čisto, tj. bez uklapanja, npr.:
+					Kada harf <strong>M</strong> sa <strong>sukunom</strong> (<span className="arapski-lekcija">مْ</span>) dođe ispred bilo kojeg harfa, osim harfova <strong>B</strong> (<span className="arapski-lekcija">ب</span>) i <strong>M (<span className="arapski-lekcija" style={{ fontSize: '2em' }}>م</span>) </strong>, onda se harf 
+					<strong> M (<span className="arapski-lekcija" style={{ fontSize: '2em' }}>م</span>) </strong> izgovara čisto, tj. bez uklapanja, npr.:
 				</Col>
 			</Row>
 

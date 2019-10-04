@@ -30,7 +30,7 @@ function L9() {
 
         <Row>
           <Col className="opisLekcije">
-          Kada poslije harfa N sa sukunom (نْ) ili tenvina EN  ــــــًــــــ, IN ـــــٍــــــ , UN  ــــــٌــــــdođe jedan od šest grlenih harfova:<Arabic arabic="ه خ  غ  ح  ع أ" key="a01"> ه خ  غ  ح  ع أ</Arabic>, onda se harf N (ن) izgovara čisto, tj. bez uklapanja, npr.:
+          Kada poslije harfa <strong>N</strong> sa <strong>sukunom</strong> (<span className="arapski-lekcija">نْ</span>) ili <strong>tenvina</strong>  EN <span className="arapski-lekcija" style={{ fontSize: '2em' }}>ــــــًــــــ</span> , IN <span className="arapski-lekcija" style={{ fontSize: '2em' }}>ـــــٍــــــ</span>, UN <span className="arapski-lekcija" style={{ fontSize: '2em' }}>ــــــٌـــــ</span> dođe jedan od šest grlenih harfova:<Arabic arabic="ه خ  غ  ح  ع أ" key="a01"> ه خ  غ  ح  ع أ</Arabic>, onda se harf <strong>N</strong> (<span className="arapski-lekcija">ن</span>) izgovara čisto, tj. bez uklapanja, npr.:
           </Col>
         </Row>
 
@@ -49,7 +49,7 @@ function L9() {
 
         <Row>
           <Col className="opisLekcije">
-          <strong>IZHAR MUTLAK</strong> – kada poslije harfa N sa sukunom (نْ) u istoj riječi dođu harf V (و) ili J (ي), harf N (ن) se izgovara čisto, tj. bez uklapanja, npr.:
+          <strong>IZHAR MUTLAK</strong> – kada poslije harfa <strong>N</strong> sa sukunom (<span className="arapski-lekcija">نْ</span>) u istoj riječi dođu harf <strong>V</strong> (<span className="arapski-lekcija">و</span>) ili <strong>J</strong> (<span className="arapski-lekcija">ي</span>), harf <strong>N</strong> (<span className="arapski-lekcija">ن</span>) se izgovara čisto, tj. bez uklapanja, npr.:
           </Col>
         </Row>
 

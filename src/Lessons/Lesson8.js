@@ -29,8 +29,8 @@ function L8() {
 
 			<Row>
 				<Col className="opisLekcije">
-					Kada poslije harfa N sa sukunom (نْ) ili tenvina EN ــــــًــــــ, IN ـــــٍــــــ , UN ــــــٌـــــ
-					dođe harf B (ب), onda se harf N (ن) pretvara u harf M (م) u trajanju od 2 hareketa:
+					Kada poslije harfa <strong>N</strong> sa <strong>sukunom</strong> (<span className="arapski-lekcija">نْ</span>) ili <strong>tenvina</strong> EN <span className="arapski-lekcija">ــــــًــــــ</span> , IN <span className="arapski-lekcija">ـــــٍــــــ</span>  , UN <span className="arapski-lekcija">ــــــٌـــــ</span> 
+					dođe harf <strong>B</strong> (<span className="arapski-lekcija">ب</span>), onda se harf <strong>N</strong> (<span className="arapski-lekcija">ن</span>) pretvara u harf <strong>M (<span className="arapski-lekcija">م</span>) </strong>u trajanju od 2 hareketa:
 				</Col>
 			</Row>
 

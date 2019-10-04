@@ -29,10 +29,10 @@ function L5() {
 
 			<Row>
 				<Col className="opisLekcije">
-					Kada poslije harfa M <span className="arapski-lekcija">(م)</span> sa sukunom dođe harf M{' '}
-					<span className="arapski-lekcija">(م) </span>sa hareketom, dolazi do uklapanja harfa M{' '}
-					<span className="arapski-lekcija">(م)</span> sa sukunom u harf M{' '}
-					<span className="arapski-lekcija">(م)</span> sa hareketom, uz propuštanje zraka kroz nos u trajanju
+					Kada poslije harfa <strong>M</strong> <span className="arapski-lekcija" style={{ fontSize: '2em' }}>(م)</span> sa <strong>sukunom</strong> dođe harf <strong>M</strong>
+					<span className="arapski-lekcija" style={{ fontSize: '2em' }}> (م) </span>sa <strong>hareketom</strong>, dolazi do uklapanja harfa <strong>M</strong>
+					<span className="arapski-lekcija" style={{ fontSize: '2em' }}> (م)</span> sa <strong>sukunom</strong> u harf <strong>M</strong>
+					<span className="arapski-lekcija" style={{ fontSize: '2em' }}> (م)</span> sa <strong>hareketom</strong>, uz propuštanje zraka kroz nos u trajanju
 					od 2 hareketa, npr.:
 				</Col>
 			</Row>
