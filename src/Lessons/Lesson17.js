@@ -15,7 +15,8 @@ function L17() {
 		<React.Fragment>
 			<Row>
 				<Col>
-					<h2 className="text-center font-weight-bold text-uppercase">MEDD TABIJJ - obična dužina</h2>
+					<h2 className="text-center font-weight-bold text-uppercase">MEDD TABIJJ</h2>
+					<h4 className="text-center font-weight-bold">obična dužina</h4>
 					<hr />
 				</Col>
 			</Row>
@@ -56,6 +57,12 @@ function L17() {
 			<h2 className="text-center"><strong>VJEŽBA</strong></h2>
 			<hr />
 
+			<Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
+
 			<Row className="text-center">
 				<Col>
 				<span className='tacka'>۞</span>
@@ -94,8 +101,6 @@ function L17() {
 					{VjezbeRow(data, 'vjezba', 'broj18')}
 				</Col>
 			</Row>
-
-			<hr />
 
 			<Footer prev="/lekcija16" next="/lekcija18" />
 		</React.Fragment>

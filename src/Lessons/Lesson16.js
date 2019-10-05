@@ -16,7 +16,7 @@ function L16() {
 			<Row>
 				<Col>
 					<h2 className="text-center font-weight-bold text-uppercase">IDGAM MUTEKARIBEJN</h2>
-					<h4 className="text-center">uklapanje bliskih harfova</h4>
+					<h4 className="text-center"><strong>uklapanje bliskih harfova</strong></h4>
 					<hr />
 				</Col>
 			</Row>
@@ -29,15 +29,15 @@ function L16() {
 
 			<Row>
 				<Col className="opisLekcije">
-					Kada dođu jedan do drugog bliski harfovi, prvi sa <bold>sukunom</bold>, a drugi sa{' '}
-					<bold>hareketom</bold>, onda se prvi uklapa u drugi iz iste grupe:
+					Kada dođu jedan do drugog <u>bliski</u> harfovi, prvi sa <strong>sukunom</strong>, a drugi sa{' '}
+					<strong>hareketom</strong>, onda se prvi uklapa u drugi iz <u>iste grupe</u>:
 				</Col>
 			</Row>
 
 			<Row>
 				<Col className="opisLekcije my-3">
-					<strong>1.</strong> Kada poslije harfa Q sa <bold>sukunom</bold> <span class="arapski">(قْ)</span>{' '}
-					dođe harf K <span class="arapski">(ك)</span> sa <bold>hareketom</bold>:
+					1. Kada poslije harfa <strong>Q</strong> sa <strong>sukunom</strong> <span class="arapski">(قْ)</span>{' '}
+					dođe harf <strong>K</strong> <span class="arapski">(ك)</span> sa <strong>hareketom</strong>:
 				</Col>
 			</Row>
 
@@ -47,7 +47,7 @@ function L16() {
 
 			<Row>
 				<Col className="opisLekcije my-3">
-					<strong>2.</strong> Kada poslije harfa L sa sukunom <span class="arapski">(لْ)</span> dođe harf R <span class="arapski">(ر)</span> sa hareketom:
+					2.  Kada poslije harfa <strong>L</strong> sa <strong>sukunom</strong> <span class="arapski">(لْ)</span> dođe harf <strong>R</strong> <span class="arapski">(ر)</span> sa <strong>hareketom</strong>:
 				</Col>
 			</Row>
 
@@ -69,6 +69,12 @@ function L16() {
 
 			<h2 className="text-center"><strong>VJEŽBA</strong></h2>
 			<hr />
+
+			<Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
 
 			<Row className="text-center">
 				<Col>
@@ -103,7 +109,6 @@ function L16() {
 			<Row className="text-center">
 				<Col><span className='tacka'>۞</span>{VjezbeRow(data, 'vjezba', 'broj13')}</Col>
 			</Row>
-			<hr />
 
 			<Footer prev="/lekcija15" next="/lekcija17" />
 		</React.Fragment>
