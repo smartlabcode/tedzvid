@@ -29,16 +29,16 @@ function L22() {
 
 			<Row>
 				<Col className="opisLekcije">
-					Kada harfovi <strong>V</strong> ili <strong>J</strong> budu sa <strong>sukunom (يْ/وْ)</strong>,
-					prije njih <strong>kratki vokal</strong> E ـــــَـــــ , a poslije njih harf sa{' '}
+					Kada harfovi <strong>V</strong> ili <strong>J</strong> budu sa <strong>sukunom <span className="arapski-lekcija" style={{fontSize:"1.4em"}}>(يْ / وْ)</span></strong>,
+					prije njih <strong>kratki vokal</strong> E<span className="arapski-lekcija"> ـــــَـــــ </span>, a poslije njih harf sa{' '}
 					<strong>sukunom</strong>, bit će medd lin, npr.:
 				</Col>
 			</Row>
 
 			<Row className="text-center">
 				<Col>
-					<span class="arapski">( ـــــْـــــ وْ ـــــَـــــ)</span> {PlayerRow(data, 'row1lijevi')}
-					<span class="arapski">( ـــــْـــــ يْ ـــــَـــــ)</span> {PlayerRow(data, 'row1desni')}
+					<span class="arapski">(  ـــــَـــــ وْ ـــــْـــــ )</span> {PlayerRow(data, 'row1lijevi')}
+					<span class="arapski">(  ـــــَـــــ يْ ـــــْـــــ ) </span> {PlayerRow(data, 'row1desni')}
 				</Col>
 			</Row>
 
@@ -49,8 +49,8 @@ function L22() {
 			</Row>
 
 			<Row>
-				<Col>
-					Ta dužina na harfu <strong>V</strong> (و) ili <strong>J</strong> (ى) traje 2-4-6 hareketa.
+				<Col  className="opisLekcije">
+					Ta dužina na harfu <strong>V</strong> <span className="arapski-lekcija"> (و)</span> ili <strong>J</strong> <span className="arapski-lekcija"> (ى)</span> traje 2-4-6 hareketa.
 				</Col>
 			</Row>
 
@@ -84,7 +84,7 @@ function L22() {
 				</Col>
 			</Row>
 
-			<h2 className="text-center">Vježbe</h2>
+			<h2 className="text-center"><strong>VJEŽBA</strong></h2>
 			<hr />
 
 			<Row className="text-center">

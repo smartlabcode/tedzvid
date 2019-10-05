@@ -59,7 +59,7 @@ function L18() {
 				</Col>
 			</Row>
 
-			<h2 className="text-center">Vježbe</h2>
+			<h2 className="text-center"><strong>VJEŽBA</strong></h2>
 			<hr />
 
 			<Row className="text-center">
