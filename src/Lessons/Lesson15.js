@@ -16,7 +16,7 @@ function L15() {
         <Row>
           <Col>
             <h2 className="text-center font-weight-bold text-uppercase">IDGAM MUTEDŽANISEJN</h2>
-            <h4 className="text-center">Uklapanje srodnih harfova</h4>
+            <h4 className="text-center"><strong>Uklapanje srodnih harfova</strong></h4>
             <hr/>
           </Col>
         </Row>
@@ -29,7 +29,7 @@ function L15() {
 
         <Row>
           <Col className="opisLekcije">
-          Kada dođu jedan do drugog srodni harfovi od kojih je prvi sa <strong>sukunom</strong>, a drugi sa <strong>hareketom</strong>, onda se prvi uklapa u drugi iz iste grupe:
+          Kada dođu jedan do drugog <u>srodni</u> harfovi od kojih je prvi sa <strong>sukunom</strong>, a drugi sa <strong>hareketom</strong>, onda se prvi uklapa u drugi iz <u>iste grupe</u>:
           </Col>
         </Row>
 
@@ -85,6 +85,12 @@ function L15() {
 
       <h2 className="text-center"><strong>VJEŽBA</strong></h2>
         <hr/>
+
+        <Row>
+				<Col>
+					<br />
+				</Col>
+			</Row> 
 
 			<Row className="text-center">
 				<Col>
