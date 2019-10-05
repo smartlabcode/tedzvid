@@ -6,7 +6,11 @@ function Vjezbe(data, mainrow, rows) {
     const VjezbeRow = (dat, rowmain, rows) => {
         const data =  dat[rowmain][rows];
         let ar = [];
-
+        var specialCharacters = ['؛',';', "-"];
+        let myClassName ='';
+        if(!!data[0].after && specialCharacters.includes(data[0].after.trim())){
+            myClassName='after'
+        }
         data.forEach((el, ind) => {
             ar.push(<Arabic
                 arabic={el.highlight}
@@ -17,7 +21,7 @@ function Vjezbe(data, mainrow, rows) {
         return <span key={'key' + data[0].id}>
             <Player url={data[0].url} key={'p' + data[0].id}>
                 { ar }
-            </Player> {data[0].after === 'break' ? <br/> : data[0].after}
+              </Player> <span className={myClassName}> {data[0].after === 'break' ? <br/> : data[0].after}</span>
         </span>;
     }
 

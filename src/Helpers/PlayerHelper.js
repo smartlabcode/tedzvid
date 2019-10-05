@@ -10,6 +10,7 @@ function PRow(data, rowname) {
         var specialCharacters = ['؛',';', "-"];
         const row = datarr[rowname].map((dat) => {
             let myClassName ='';
+            console.log("SPEC:",dat.after)
             if(!!dat.after && specialCharacters.includes(dat.after.trim())){
                 myClassName='after'
             }

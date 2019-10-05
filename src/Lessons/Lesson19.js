@@ -28,7 +28,7 @@ function L19() {
 
 			<Row>
 				<Col className="opisLekcije text-center">
-					Kada poslije <strong>dugog vokala</strong> A  <span className="arapski-lekcija">ـــَــ ا</span> , Iـــِـ ى , U <span className="arapski-lekcija">ـــُــ و</span> dođe{' '}
+					Kada poslije <strong>dugog vokala</strong> A  <span className="arapski-lekcija">ـــَــ ا</span> , I <span className="arapski-lekcija"> ـــِـ ى</span> , U <span className="arapski-lekcija">ـــُــ و</span> dođe{' '}
 					<strong>hemze</strong> ili <strong>elif</strong> na početku sljedeće riječi, bit će medd munfesil.
 					Traje 4-5 hareketa,npr.:<span style={{lineHeight:"1.5em"}}>{PlayerRow(data, 'row1')}</span>
 				</Col>
