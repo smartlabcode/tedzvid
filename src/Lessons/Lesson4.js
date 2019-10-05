@@ -29,8 +29,8 @@ function L4() {
 
 			<Row>
 				<Col className="opisLekcije">
-					Kada poslije bilo kojeg harfa sa <strong>sukunom <span className="arapski-lekcija">ــــْـــ</span></strong>  dođe <u>isti</u> harf sa <strong>hareketom</strong>, dolazi do
-					<u>potpunog</u> uklapanja, tj. prvi harf se ne uči, a drugi se uči sa <strong>tešdidom</strong>, npr.:
+					Kada poslije bilo kojeg harfa sa <strong>sukunom <span className="arapski-lekcija">ـــْــ</span></strong>  dođe <u>isti</u> harf sa <strong>hareketom</strong>, 
+					dolazi do <u>potpunog</u> uklapanja, tj. prvi harf se ne uči, a drugi se uči sa <strong>tešdidom</strong>, npr.:
 				</Col>
 			</Row>
 			
