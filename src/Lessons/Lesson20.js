@@ -28,7 +28,7 @@ function L20() {
 
 			<Row>
 				<Col className="opisLekcije">
-					Kada poslije <strong>dugog vokala</strong> A ـــــَـــــ ا , Iــــــِــــ ى , Uـــــُـــــ و dođe
+					Kada poslije <strong>dugog vokala</strong> A  <span className="arapski-lekcija">ـــَــ ا</span> , Iـــِـ ى , U <span className="arapski-lekcija">ـــُــ و</span> dođe
 					harf sa <strong>stalnim sukunom ـــــْـــــ</strong> <strong>ili tešdidom ـــــّـــــ </strong>, bit
 					će medd lazim . Traje obavezno 6 hareketa, npr.:{PlayerRow(data, 'row1')}
 				</Col>
@@ -62,37 +62,37 @@ function L20() {
 
 			<Row className="text-center">
 				<Col>
-				۞
+				<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj10')}
-					۞
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj9')}
 				</Col>
 			</Row>
 			<Row className="text-center">
 				<Col>
-				۞
+				<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj13')}
-					۞
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj12')}
-					۞
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj11')}
 				</Col>
 			</Row>
 			<Row className="text-center">
 				<Col>
-				۞
+				<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj15')}
-					۞
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj14')}
 				</Col>
 			</Row>
 
 			<Row className="text-center">
 				<Col>
-				۞{VjezbeRow(data, 'vjezba', 'broj18')}
-				۞
+				<span className='tacka'>۞</span>{VjezbeRow(data, 'vjezba', 'broj18')}
+				<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj17')}
-					۞
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj16')}
 				</Col>
 			</Row>

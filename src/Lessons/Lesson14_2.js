@@ -56,50 +56,50 @@ function L14_2() {
 			<hr />
 			<Row className="text-center">
 				<Col>
-					۞
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj29')}
-					۞
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj28')}
 				</Col>
 			</Row>
 			<Row className="text-center">
 				<Col>
-					۞
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj31')}
-					۞
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj30')}
 				</Col>
 			</Row>
 			<Row className="text-center">
 				<Col>
-					۞
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj33')}
-					۞
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj32')}
 				</Col>
 			</Row>
 			<Row className="text-center">
 				<Col>
-					۞
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj35')}
-					۞
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj34')}
 				</Col>
 			</Row>
 			<Row className="text-center">
 				<Col>
-					۞
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj38')}
-					۞
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj37')}
-					۞
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj36')}
 				</Col>
 			</Row>
 
 			<Row className="text-center">
 				<Col>
-					۞
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj39')}
 				</Col>
 			</Row>

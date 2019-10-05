@@ -63,44 +63,44 @@ function L4() {
 
 			<Row className="text-center">
 				<Col>
-					۞
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj11')}
-					۞
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj10')}
 				</Col>
 			</Row>
 
 			<Row className="text-center">
 				<Col>
-					۞
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj13')}
-					۞
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj12')}
 				</Col>
 			</Row>
 
 			<Row className="text-center">
 				<Col>
-					۞
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj15')}
-					۞
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj14')}
 				</Col>
 			</Row>
 
 			<Row className="text-center">
 				<Col>
-					۞
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj17')}
-					۞
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj16')}
 				</Col>
 			</Row>
 			<Row className="text-center">
 				<Col>
-					۞
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj19')}
-					۞
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj18')}
 				</Col>
 			</Row>

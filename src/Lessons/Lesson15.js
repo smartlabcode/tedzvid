@@ -86,38 +86,38 @@ function L15() {
 
 			<Row className="text-center">
 				<Col>
-					۞
+					<span className='tacka'>۞</span>
           {VjezbeRow(data, 'vjezba', 'broj13')}
-          ۞
+          <span className='tacka'>۞</span>
           {VjezbeRow(data, 'vjezba', 'broj12')}
 				</Col>
 			</Row>
 
 			<Row className="text-center">
 				<Col>
-					۞
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj14')}
 				</Col>
 			</Row>
 
 			<Row className="text-center">
 				<Col>
-          ۞
+          <span className='tacka'>۞</span>
           {VjezbeRow(data, 'vjezba', 'broj16')}
-          ۞
+          <span className='tacka'>۞</span>
           {VjezbeRow(data, 'vjezba', 'broj15')}
 				</Col>
 			</Row>
 
 			<Row className="text-center">
 				<Col>
-					۞
+					<span className='tacka'>۞</span>
           {VjezbeRow(data, 'vjezba', 'broj17')}
 				</Col>
 			</Row>
       <Row className="text-center">
 				<Col>
-					۞
+					<span className='tacka'>۞</span>
           {VjezbeRow(data, 'vjezba', 'broj18')}
 				</Col>
 			</Row>

@@ -34,9 +34,9 @@ function L1() {
 			<Row>
 				<Col className="opisLekcije my-3">
 					<strong>1.</strong> Kada riječ na kojoj staje završava <strong>kratkim vokalom</strong>  E{' '}
-					<span className="arapski-lekcija "> ــــــَــــــ</span> , I{' '}
-					<span className="arapski-lekcija "> ـــــــِـــــ</span>, U{' '}
-					<span className="arapski-lekcija "  style={{ fontSize: '2.5em' }}> ــــــُــــــ </span>ili <strong>tenvinom</strong> IN{' '}
+					<span className="arapski-lekcija "> ــــَـــ</span> , I{' '}
+					<span className="arapski-lekcija "> ــــِــ</span>, U{' '}
+					<span className="arapski-lekcija "  style={{ fontSize: '2.5em' }}> ــــُـــ </span>ili <strong>tenvinom</strong> IN{' '}
 					<span className="arapski-lekcija "> ـــــٍــــــ </span>, UN{' '}
 					<span className="arapski-lekcija"> ــــــٌــــــ</span>, stat će kao da je na riječi <strong>sukun</strong>{' '}
 					<span className="arapski-lekcija "> ــــــْــــــ</span>, npr.:
@@ -49,7 +49,7 @@ function L1() {
 				<Col className="opisLekcije my-3">
 					<strong>2.</strong> Kada riječ završava <strong>tenvinom</strong> EN{' '}
 					<span className="arapski-lekcija "> ــــــًــــــ</span>, stat će kao da je <strong>dugo</strong> A{' '}
-					<span className="arapski-lekcija "> ـــــَــــــ ا </span>, npr.:
+					<span className="arapski-lekcija "> ـــَـــ ا </span>, npr.:
 				</Col>
 			</Row>
 			<Row className="text-center">
@@ -58,9 +58,9 @@ function L1() {
 			<Row>
 				<Col className="opisLekcije my-3">
 					<strong>3.</strong> Kada riječ završava <strong>dugim vokalom</strong> A{' '}
-					<span className="arapski-lekcija"> ــــــَــــــ ا </span>, <strong>dugim vokalom</strong> I{' '}
-					<span className="arapski-lekcija">ــــــِـــــ ى</span> ili <strong>dugim vokalom</strong> U{' '}
-					<span className="arapski-lekcija"  style={{ fontSize: '2.5em' }}>ــــــُـــــ و</span>, stat će bez ikakve promjene, npr.:
+					<span className="arapski-lekcija"> ــــَـــ ا </span>, <strong>dugim vokalom</strong> I{' '}
+					<span className="arapski-lekcija">ـــِــ ى</span> ili <strong>dugim vokalom</strong> U{' '}
+					<span className="arapski-lekcija"  style={{ fontSize: '2.5em' }}>ـ <span className="arapski-lekcija">ـــُــ و</span></span>, stat će bez ikakve promjene, npr.:
 				</Col>
 			</Row>
 			<Row className="text-center">
@@ -89,9 +89,9 @@ function L1() {
 						<tbody>
 							<tr>
 								<td>
-									E <span class="arapski-lekcija ">ــــــَــــــ</span> , I{' '}
-									<span className="arapski-lekcija "> ـــــــِـــــ</span> , U{' '}
-									<span className="arapski-lekcija"> ــــــُــــــ</span> , IN{' '}
+									E <span class="arapski-lekcija ">ــــَـــ</span> , I{' '}
+									<span className="arapski-lekcija "> ــــِــ</span> , U{' '}
+									<span className="arapski-lekcija"> ــــُـــ</span> , IN{' '}
 									<span className="arapski-lekcija"> ـــــٍــــــ </span>, UN{' '}
 									<span className="arapski-lekcija"> ــــــٌـــــ</span>
 								</td>
@@ -104,14 +104,14 @@ function L1() {
 									EN <span className="arapski-lekcija "> ــــــًــــــ</span>
 								</td>
 								<td>
-									kao da je dugo A <span className="arapski-lekcija"> ــــــَــــــ ا</span>
+									kao da je dugo A <span className="arapski-lekcija"> ــــَـــ ا</span>
 								</td>
 							</tr>
 							<tr>
 								<td>
-									dugo A <span className="arapski-lekcija"> ـــــَـــــ ا </span>, dugo I{' '}
-									<span className="arapski lekcija">ــــــِــــ ى</span> , dugo U{' '}
-									<span className="arapski-lekcija" style={{ fontSize: '2.2em' }}>ـــــُـــــ و</span> bez ikakve promjene
+									dugo A <span className="arapski-lekcija">  <span className="arapski-lekcija">ـــَــ ا</span> </span>, dugo I{' '}
+									<span className="arapski lekcija">ـــِـ ى</span> , dugo U{' '}
+									<span className="arapski-lekcija" style={{ fontSize: '2.2em' }}> <span className="arapski-lekcija">ـــُــ و</span></span> bez ikakve promjene
 								</td>
 								<td>bez ikakve promjene</td>
 							</tr>
@@ -210,37 +210,37 @@ function L1() {
 			</Row>
 			<Row className="text-center">
 				<Col>
-					۞
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'red21')}
-					۞
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'red20')}
 				</Col>
 			</Row>
 			<Row className="text-center">
 				<Col>
-					۞
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'red24')}
 					{VjezbeRow(data, 'vjezba', 'red23')}
-					۞
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'red22')}
 				</Col>
 			</Row>
 			<Row className="text-center">
 				<Col>
-					۞
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'red26')}
 					{VjezbeRow(data, 'vjezba', 'red25')}
 				</Col>
 			</Row>
 			<Row className="text-center">
 				<Col>
-				۞
+				<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'red31')}
-					۞
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'red30')}
-					۞
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'red29')}
-					۞
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'red28')}
 				</Col>
 			</Row>

@@ -28,7 +28,7 @@ function L17() {
 
 			<Row>
 				<Col className="opisLekcije">
-					Kada poslije <strong>dugog vokala </strong>A ـــــَـــــ ا , Iــــــِــــ ى , Uـــــُـــــ و nema ni{' '}
+					Kada poslije <strong>dugog vokala </strong>A  <span className="arapski-lekcija">ـــَــ ا</span> , Iـــِـ ى , U <span className="arapski-lekcija">ـــُــ و</span> nema ni{' '}
 					<strong>hemzeta</strong> ni <strong>sukuna,</strong>bit će medd tabijj.Traje 2 haraketa, npr.:{PlayerRow(data, 'row1')}
 				</Col>
 			</Row>
@@ -58,29 +58,29 @@ function L17() {
 
 			<Row className="text-center">
 				<Col>
-				۞
+				<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj12')}
-					۞
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj11')}
 				</Col>
 			</Row>
 
 			<Row className="text-center">
 				<Col>
-				۞
+				<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj14')}
-					۞
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj13')}
 				</Col>
 			</Row>
 
 			<Row className="text-center">
-				<Col>۞{VjezbeRow(data, 'vjezba', 'broj15')}</Col>
+				<Col><span className='tacka'>۞</span>{VjezbeRow(data, 'vjezba', 'broj15')}</Col>
 			</Row>
 
 			<Row className="text-center">
 				<Col>
-				۞
+				<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj17')}
 					{VjezbeRow(data, 'vjezba', 'broj16')}
 				</Col>
@@ -88,9 +88,9 @@ function L17() {
 
 			<Row className="text-center">
 				<Col>
-				۞
+				<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj19')}
-					۞
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj18')}
 				</Col>
 			</Row>

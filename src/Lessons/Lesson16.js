@@ -72,36 +72,36 @@ function L16() {
 
 			<Row className="text-center">
 				<Col>
-				۞
+				<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj7')}
 					{VjezbeRow(data, 'vjezba', 'broj6')}
-					۞
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj5')}
 				</Col>
 			</Row>
 			<Row className="text-center">
 				<Col>
-				۞
+				<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj9')}
-					۞
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj8')}
 				</Col>
 			</Row>
 			<Row className="text-center">
-				<Col>۞{VjezbeRow(data, 'vjezba', 'broj10')}</Col>
+				<Col><span className='tacka'>۞</span>{VjezbeRow(data, 'vjezba', 'broj10')}</Col>
 			</Row>
 
 			<Row className="text-center">
 				<Col>
-				۞
+				<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj12')}
-					۞
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj11')}
 				</Col>
 			</Row>
 
 			<Row className="text-center">
-				<Col>۞{VjezbeRow(data, 'vjezba', 'broj13')}</Col>
+				<Col><span className='tacka'>۞</span>{VjezbeRow(data, 'vjezba', 'broj13')}</Col>
 			</Row>
 			<hr />
 

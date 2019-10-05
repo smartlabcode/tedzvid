@@ -29,7 +29,7 @@ function L18() {
 
 			<Row>
 				<Col className="opisLekcije">
-					Kada poslije dugog vokala A ـــــَـــــ ا , Iــــــِــــ ى , Uـــــُـــــ و dođe{' '}
+					Kada poslije dugog vokala A  <span className="arapski-lekcija">ـــَــ ا</span> , Iـــِـ ى , U <span className="arapski-lekcija">ـــُــ و</span> dođe{' '}
 					<strong>hemze</strong> u <u>istoj</u> riječi, bit će medd muttesil. Traje obavezno 4-5 hareketa,
 					npr.: {PlayerRow(data, 'row1')}
 				</Col>
@@ -64,33 +64,33 @@ function L18() {
 
 			<Row className="text-center">
 				<Col>
-				۞
+				<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj6')}
 				</Col>
 			</Row>
 			<Row className="text-center">
 				<Col>
-				۞
+				<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj8')}
 					{VjezbeRow(data, 'vjezba', 'broj7')}
 				</Col>
 			</Row>
 			<Row className="text-center">
 				<Col>
-				۞
+				<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj9')}
 				</Col>
 			</Row>
 
 			<Row className="text-center">
 				<Col>
-				۞
+				<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj10')}
 				</Col>
 			</Row>
 			<Row className="text-center">
 				<Col>
-				۞
+				<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj11')}
 				</Col>
 			</Row>

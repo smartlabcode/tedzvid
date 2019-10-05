@@ -28,7 +28,7 @@ function L19() {
 
 			<Row>
 				<Col className="opisLekcije">
-					Kada poslije <strong>dugog vokala</strong> A ـــــَـــــ ا , Iــــــِــــ ى , Uـــــُـــــ و dođe{' '}
+					Kada poslije <strong>dugog vokala</strong> A  <span className="arapski-lekcija">ـــَــ ا</span> , Iـــِـ ى , U <span className="arapski-lekcija">ـــُــ و</span> dođe{' '}
 					<strong>hemze</strong> ili <strong>elif</strong> na početku sljedeće riječi, bit će medd munfesil.
 					Traje 4-5 hareketa,npr.: {PlayerRow(data, 'row1')}
 				</Col>
@@ -71,37 +71,37 @@ function L19() {
 
 			<Row className="text-center">
 				<Col>
-				۞
+				<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj7')}
-				۞
+				<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj6')}
-				۞
+				<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj5')}
 				</Col>
 			</Row>
 
 			<Row className="text-center">
-				<Col>۞{VjezbeRow(data, 'vjezba', 'broj8')}</Col>
+				<Col><span className='tacka'>۞</span>{VjezbeRow(data, 'vjezba', 'broj8')}</Col>
 			</Row>
 
 			<Row className="text-center">
 				<Col>
-				۞
+				<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj10')}
-				۞
+				<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj9')}
 				</Col>
 			</Row>
 
 			<Row className="text-center">
-				<Col>۞{VjezbeRow(data, 'vjezba', 'broj11')}</Col>
+				<Col><span className='tacka'>۞</span>{VjezbeRow(data, 'vjezba', 'broj11')}</Col>
 			</Row>
 
 			<Row className="text-center">
 				<Col>
-				۞
+				<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj13')}
-				۞
+				<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj12')}
 				</Col>
 			</Row>

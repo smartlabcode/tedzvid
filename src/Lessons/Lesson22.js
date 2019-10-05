@@ -37,8 +37,8 @@ function L22() {
 
 			<Row className="text-center">
 				<Col>
-					<span class="arapski">(  ـــــَـــــ وْ ـــــْـــــ )</span> {PlayerRow(data, 'row1lijevi')}
-					<span class="arapski">(  ـــــَـــــ يْ ـــــْـــــ ) </span> {PlayerRow(data, 'row1desni')}
+					<span class="arapski">(  ـــَــ وْ ـــــْـــــ )</span> {PlayerRow(data, 'row1lijevi')}
+					<span class="arapski">(  ـــَــ يْ ـــــْـــــ ) </span> {PlayerRow(data, 'row1desni')}
 				</Col>
 			</Row>
 
@@ -89,36 +89,36 @@ function L22() {
 
 			<Row className="text-center">
 				<Col> 	
-					<span className='tacka'>۞</span>
+					<span className='tacka'><span className='tacka'>۞</span></span>
 					{VjezbeRow(data, 'vjezba', 'broj9')}
-					<span className='tacka'>۞</span>
+					<span className='tacka'><span className='tacka'>۞</span></span>
 					{VjezbeRow(data, 'vjezba', 'broj8')}
 				</Col>
 			</Row>
 
 			<Row className="text-center">
 				<Col>
-					<span className='tacka'>۞</span>
+					<span className='tacka'><span className='tacka'>۞</span></span>
 					{VjezbeRow(data, 'vjezba', 'broj11')}
-					<span className='tacka'>۞</span>
+					<span className='tacka'><span className='tacka'>۞</span></span>
 					{VjezbeRow(data, 'vjezba', 'broj10')}
 				</Col>
 			</Row>
 
 			<Row className="text-center">
 				<Col>
-					<span className='tacka'>۞</span>
+					<span className='tacka'><span className='tacka'>۞</span></span>
 					{VjezbeRow(data, 'vjezba', 'broj13')}
-					<span className='tacka'>۞</span>
+					<span className='tacka'><span className='tacka'>۞</span></span>
 					{VjezbeRow(data, 'vjezba', 'broj12')}
 				</Col>
 			</Row>
 
 			<Row className="text-center">
 				<Col>
-				<span className='tacka'>۞</span>
+				<span className='tacka'><span className='tacka'>۞</span></span>
 					{VjezbeRow(data, 'vjezba', 'broj15')}
-					<span className='tacka'>۞</span>
+					<span className='tacka'><span className='tacka'>۞</span></span>
 					{VjezbeRow(data, 'vjezba', 'broj14')}
 				</Col>
 			</Row>
