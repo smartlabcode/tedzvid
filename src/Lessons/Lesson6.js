@@ -114,15 +114,19 @@ function L6() {
 				</Col>
 			</Row>
 
+		
 			<Row className="text-center">
 				<Col>
-					<span className='tacka'>۞</span>
-					{VjezbeRow(data, 'vjezba', 'broj9')}
 					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj8')}
 				</Col>
 			</Row>
-
+			<Row className="text-center">
+				<Col>
+					<span className='tacka'>۞</span>
+					{VjezbeRow(data, 'vjezba', 'broj9')}
+					</Col>
+			</Row>
 			<Row className="text-center">
 				<Col>
 					<span className='tacka'>۞</span>
