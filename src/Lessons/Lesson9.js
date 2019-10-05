@@ -30,7 +30,9 @@ function L9() {
 
         <Row>
           <Col className="opisLekcije">
-          Kada poslije harfa <strong>N</strong> sa <strong>sukunom</strong> (<span className="arapski-lekcija" >نْ</span>) ili <strong>tenvina</strong> EN <span className="arapski-lekcija" >ـــًـــ</span> , IN <span className="arapski-lekcija">ـــٍــ</span>  , UN <span className="arapski-lekcija" >ــٌــ</span> dođe jedan od šest grlenih harfova:<Arabic arabic="ه خ  غ  ح  ع أ" key="a01"> ه خ  غ  ح  ع أ</Arabic>, onda se harf <strong>N</strong> (<span className="arapski-lekcija">ن</span>) izgovara <u>čisto</u>, tj. bez uklapanja, npr.:
+
+          Kada poslije harfa <strong>N</strong> sa <strong>sukunom</strong> (<span className="arapski-lekcija" >نْ</span>) ili <strong>tenvina</strong> EN <span className="arapski-lekcija" >ـــًـــ</span> , IN <span className="arapski-lekcija">ـــٍــ</span>  , UN <span className="arapski-lekcija" >ــٌــ</span> dođe jedan od šest grlenih harfova:<span className="arapski-lekcija" style={{color:"red"}} >   أ</span><span className="arapski-lekcija" style={{color:"red"}} >   ع</span><span className="arapski-lekcija" style={{color:"red"}} >   ح</span><span className="arapski-lekcija" style={{color:"red"}} >   غ</span><span className="arapski-lekcija" style={{color:"red"}} >   خ</span><span className="arapski-lekcija" style={{color:"red"}} >   ه</span>         onda se harf <strong>N</strong> (<span className="arapski-lekcija">ن</span>) izgovara <u>čisto</u>, tj. bez uklapanja, npr.:
+
           </Col>
         </Row>
 

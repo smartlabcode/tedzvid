@@ -29,8 +29,10 @@ function L10() {
 
 			<Row>
 				<Col className="opisLekcije">
-					Kada harf <strong>M</strong> sa <strong>sukunom</strong> (<span className="arapski-lekcija">مْ</span>) dođe ispred <u>bilo kojeg</u> harfa, <u>osim</u> harfova <strong>B</strong> (<span className="arapski-lekcija">ب</span>) i <strong>M (<span className="arapski-lekcija" style={{ fontSize: '2em' }}>م</span>) </strong>, onda se harf 
-					<strong> M (<span className="arapski-lekcija" style={{ fontSize: '2em' }}>م</span>) </strong> izgovara <u>čisto</u>, tj. bez uklapanja, npr.:
+
+					Kada harf <strong>M</strong> sa <strong>sukunom</strong> (<span className="arapski-lekcija">مْ</span>) dođe ispred <u>bilo kojeg</u> harfa, <u>osim</u> harfova <strong>B</strong> (<span className="arapski-lekcija">ب</span>) i <strong>M (<span className="arapski-lekcija" >م</span>) </strong>, onda se harf
+					<strong> M (<span className="arapski-lekcija">م</span>) </strong> izgovara <u>čisto</u>, tj. bez uklapanja, npr.:
+
 				</Col>
 			</Row>
 
@@ -52,7 +54,7 @@ function L10() {
 			<Row className="text-center">
 				<Col>{VjezbeRow(data, 'multirow', 'word3')}</Col>
 			</Row>
-			
+
 			<Row>
 				<Col>
 					<br />
@@ -98,8 +100,7 @@ function L10() {
 			</Row>
 			<Row className="text-center">
 				<Col>
-					<span className='tacka'>۞</span>
-					{VjezbeRow(data, 'vjezba', 'broj14')}
+
 					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj12')}
 				</Col>
@@ -107,7 +108,12 @@ function L10() {
 			<Row className="text-center">
 				<Col>
 					<span className='tacka'>۞</span>
-					{VjezbeRow(data, 'vjezba', 'broj13')}
+					{VjezbeRow(data, 'vjezba', 'broj13')}</Col>
+			</Row>
+			<Row className="text-center">
+				<Col>
+					<span className='tacka'>۞</span>
+					{VjezbeRow(data, 'vjezba', 'broj14')}
 				</Col>
 			</Row>
 			<Footer prev="/lekcija9" next="/lekcija11" />
