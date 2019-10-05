@@ -16,7 +16,7 @@ function L10() {
 			<Row>
 				<Col>
 					<h2 className="text-center font-weight-bold text-uppercase">IZHAR ŠEFEVIJJ</h2>
-					<h4 className="text-center">čisto izgovaranje harfa M (م)</h4>
+					<h4 className="text-center"><strong>čisto izgovaranje harfa M (م)</strong></h4>
 					<hr />
 				</Col>
 			</Row>
@@ -29,8 +29,10 @@ function L10() {
 
 			<Row>
 				<Col className="opisLekcije">
-					Kada harf <strong>M</strong> sa <strong>sukunom</strong> (<span className="arapski-lekcija">مْ</span>) dođe ispred bilo kojeg harfa, osim harfova <strong>B</strong> (<span className="arapski-lekcija">ب</span>) i <strong>M (<span className="arapski-lekcija" >م</span>) </strong>, onda se harf
-					<strong> M (<span className="arapski-lekcija">م</span>) </strong> izgovara čisto, tj. bez uklapanja, npr.:
+
+					Kada harf <strong>M</strong> sa <strong>sukunom</strong> (<span className="arapski-lekcija">مْ</span>) dođe ispred <u>bilo kojeg</u> harfa, <u>osim</u> harfova <strong>B</strong> (<span className="arapski-lekcija">ب</span>) i <strong>M (<span className="arapski-lekcija" >م</span>) </strong>, onda se harf
+					<strong> M (<span className="arapski-lekcija">م</span>) </strong> izgovara <u>čisto</u>, tj. bez uklapanja, npr.:
+
 				</Col>
 			</Row>
 
@@ -67,6 +69,11 @@ function L10() {
 
 			<h2 className="text-center"><strong>VJEŽBA</strong></h2>
 			<hr />
+			<Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
 			<Row className="text-center">
 				<Col>
 					<span className='tacka'>۞</span>

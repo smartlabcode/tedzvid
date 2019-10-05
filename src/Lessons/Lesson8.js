@@ -16,7 +16,7 @@ function L8() {
 			<Row>
 				<Col>
 					<h2 className="text-center font-weight-bold text-uppercase">IKLAB</h2>
-					<h4 className="text-center">pretvaranje harfa N (ن) u harf M (م)</h4>
+					<h4 className="text-center"><strong>pretvaranje harfa N (ن) u harf M (م)</strong></h4>
 					<hr />
 				</Col>
 			</Row>
@@ -30,7 +30,7 @@ function L8() {
 			<Row>
 				<Col className="opisLekcije">
 					 
-				Kada poslije harfa <strong>N</strong> sa <strong>sukunom</strong> (<span className="arapski-lekcija" >نْ</span>) ili <strong>tenvina</strong> EN <span className="arapski-lekcija" >ـــًـــ</span> , IN <span className="arapski-lekcija">ـــٍــ</span>  , UN <span className="arapski-lekcija" >ــٌــ</span> dođe harf <strong>B</strong> (<span className="arapski-lekcija">ب</span>), onda se harf <strong>N</strong> (<span className="arapski-lekcija">ن</span>) pretvara u harf <strong>M (<span className="arapski-lekcija">م</span>) </strong>u trajanju od 2 hareketa:
+				Kada poslije harfa <strong>N</strong> sa <strong>sukunom</strong> (<span className="arapski-lekcija" >نْ</span>) ili <strong>tenvina</strong> EN <span className="arapski-lekcija" >ـــًـــ</span> , IN <span className="arapski-lekcija">ـــٍــ</span>  , UN <span className="arapski-lekcija" >ــٌــ</span> dođe harf <strong>B</strong> (<span className="arapski-lekcija">ب</span>), onda se harf <strong>N</strong> (<span className="arapski-lekcija">ن</span>) <u>pretvara</u> u harf <strong>M (<span className="arapski-lekcija">م</span>) </strong>u trajanju od 2 hareketa:
 				</Col>
 			</Row>
 
@@ -64,6 +64,11 @@ function L8() {
 
 			<h2 className="text-center"><strong>VJEŽBA</strong></h2>
 			<hr />
+			<Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
 			<Row className="text-center">
 				<Col>
 					<span className='tacka'>۞</span>

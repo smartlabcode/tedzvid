@@ -17,7 +17,7 @@ function L3() {
 				<Col>
 					<h2 className="text-center font-weight-bold text-uppercase">LAFZATULLAH</h2>
 					<h4 className="text-center">
-						izgovaranje riječi Allah <span className="arapski-lekcija"> اللّٰه </span>
+					<strong>izgovaranje riječi Allah <span className="arapski-lekcija" style={{fontSize:"1.8em"}}> اللّٰه </span></strong>
 					</h4>
 					<hr />
 				</Col>
@@ -91,6 +91,11 @@ function L3() {
 
 			<h2 className="text-center"><strong>VJEŽBA</strong></h2>
 			<hr />
+			<Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
 
 			<Row className="text-center">
 				<Col>

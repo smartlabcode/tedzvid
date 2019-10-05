@@ -14,35 +14,41 @@ function L14_2() {
 	return (
 		<React.Fragment>
 			<Row>
-				<Col className="opisLekcije">Harf R <span className="arapski-lekcija" >(ر)</span> se uči tanko u sljedećim situacijama:</Col>
+				<Col className="opisLekcije">Harf<strong> R </strong><span className="arapski-lekcija" >(ر)</span> se uči <u>tanko</u> u sljedećim situacijama:</Col>
 			</Row>
 
 			<Row>
 				<Col className="opisLekcije">
-					<strong>1.</strong> kada je harf R sa vokalom I ( {PlayerRow(data, 'row9')} ), npr.:{' '}
+					<strong>1.</strong> kada je harf<strong> R </strong>sa <strong>vokalom</strong> I ( {PlayerRow(data, 'row9')} ), npr.:{' '}
 					{PlayerRow(data, 'row8')}
 				</Col>
 			</Row>
 
 			<Row>
 				<Col className="opisLekcije">
-					<strong>2.</strong> kada je harf R sa sukunom, a prije njeg harf sa vokalom I (<span className="arapski-lekcija" style={{color:"red"}}>ــــِـــ رْ </span>), npr.:<br />
+					<strong>2.</strong> kada je harf<strong> R </strong>sa <strong>sukunom</strong>, a prije njeg harf sa <strong>vokalom</strong> I (<span className="arapski-lekcija" style={{color:"red"}}>ــــِـــ رْ </span>), npr.:<br />
 					{PlayerRow(data, 'row10')}
 				</Col>
 			</Row>
 
 			<Row>
 				<Col className="opisLekcije">
-					<strong>3.</strong> kada je harf R sa sukunom, prije njeg harf sa sukunom, a prije toga harf sa
-					vokalom I (<span className="arapski-lekcija" style={{color:"red"}}> ــِـ  ــْـ رْ  </span>), npr.:
+					<strong>3.</strong> kada je harf<strong> R </strong>sa <strong>sukunom</strong>, prije njeg harf sa <strong>sukunom</strong>, a prije toga harf sa
+					<strong>vokalom</strong> I (<span className="arapski-lekcija" style={{color:"red"}}> ــِـ  ــْـ رْ  </span>), npr.:
 					{PlayerRow(data, 'row11')}
 				</Col>
 			</Row>
 
 			<Row>
 				<Col className="opisLekcije">
-					<strong>4.</strong>  kada je harf R sa sukunom, a prije njeg harf J također sa sukunom, a prije
-					toga harf sa vokalom E (<span className="arapski-lekcija" style={{color:"red"}}> ــــَـــ يْـــرْ </span>), npr.: {PlayerRow(data, 'row12')}
+					<strong>4.</strong>  kada je harf<strong> R </strong>sa <strong>sukunom</strong>, a prije njeg harf <strong>J</strong> također sa <strong>sukunom</strong>, a prije
+					toga harf sa <strong>vokalom</strong> E (<span className="arapski-lekcija" style={{color:"red"}}> ــــَـــ يْـــرْ </span>), npr.: {PlayerRow(data, 'row12')}
+				</Col>
+			</Row>
+
+			<Row>
+				<Col>
+					<br />
 				</Col>
 			</Row>
 
@@ -54,6 +60,13 @@ function L14_2() {
 
 			<h2 className="text-center"><strong>VJEŽBA</strong></h2>
 			<hr />
+
+			<Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
+
 			<Row className="text-center">
 				<Col>
 					<span className='tacka'>۞</span>

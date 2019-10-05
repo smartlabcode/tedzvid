@@ -16,7 +16,7 @@ function L1() {
 			<Row>
 				<Col>
 					<h2 className="text-center font-weight-bold text-uppercase">Vakf</h2>
-					<h4 className="text-center">stajanje prilikom učenja</h4>
+					<h4 className="text-center"><strong>stajanje prilikom učenja</strong></h4>
 					<hr />
 				</Col>
 			</Row>
@@ -60,7 +60,7 @@ function L1() {
 					<strong>3.</strong> Kada riječ završava <strong>dugim vokalom</strong> A{' '}
 					<span className="arapski-lekcija"> ــــَـــ ا </span>, <strong>dugim vokalom</strong> I{' '}
 					<span className="arapski-lekcija">ـــِــ ى</span> ili <strong>dugim vokalom</strong> U{' '}
-					<span className="arapski-lekcija"  style={{ fontSize: '2.5em' }}>ـ <span className="arapski-lekcija">ـــُــ و</span></span>, stat će bez ikakve promjene, npr.:
+					<span className="arapski-lekcija"  style={{ fontSize: '2.5em' }}>ـ <span className="arapski-lekcija">ـــُــ و</span></span>, stat će <u>bez ikakve promjene</u>, npr.:
 				</Col>
 			</Row>
 			<Row className="text-center">
@@ -190,8 +190,8 @@ function L1() {
 
 					<p>
 						<strong>NAPOMENA</strong>: Znak <span className="arapski-lekcija"> قصر</span> ispod riječi je
-						znak da se vokal ispod kojeg se nalazi uči kratko, a{' '}
-						<span className="arapski-lekcija"> مد </span>je znak da se vokal uči dugo.
+						znak da se vokal ispod kojeg se nalazi uči <u>kratko</u>, a{' '}
+						<span className="arapski-lekcija"> مد </span>je znak da se vokal uči <u>dugo</u>.
 					</p>
 				</Col>
 			</Row>
@@ -202,6 +202,11 @@ function L1() {
 			</Row>
 			<h2 className="text-center"><strong>VJEŽBA</strong></h2>
 			<hr />
+			<Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
 			<Row className="text-center">
 				<Col>
 					{VjezbeRow(data, 'vjezba', 'red19')}

@@ -51,7 +51,7 @@ function L6() {
 			<Row>
 				<Col>
 					<h2 className="text-center font-weight-bold">IDGAM MEAL-GUNNEH</h2>
-					<h4 className="text-center">uklapanje sa propuštanjem zraka kroz nos</h4>
+					<h4 className="text-center"><strong>uklapanje sa propuštanjem zraka kroz nos</strong></h4>
 					<hr />
 				</Col>
 			</Row>
@@ -108,6 +108,11 @@ function L6() {
 
 			<h2 className="text-center"><strong>VJEŽBA</strong></h2>
 			<hr />
+			<Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
 
 			<Row className="text-center">
 				<Col>

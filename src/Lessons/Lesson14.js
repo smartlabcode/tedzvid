@@ -16,31 +16,31 @@ function L14() {
 			<Row>
 				<Col>
 					<h2 className="text-center font-weight-bold text-uppercase">HUKMURRA</h2>
-					<h4 className="text-center">izgovor harfa R <span className="arapski-lekcija">(ر)</span></h4>
+					<h4 className="text-center"><strong>izgovor harfa R <span className="arapski-lekcija">(ر)</span></strong></h4>
 					<hr />
 				</Col>
 			</Row>
 
-      <Row>
+            <Row>
 				<Col>
 					<br />
 				</Col>
 			</Row>
 
 			<Row>
-				<Col className="opisLekcije">Harf R <span className="arapski-lekcija">(ر)</span>	 se uči krupno u sljedećim situacijama:</Col>
+				<Col className="opisLekcije">Harf<strong> R </strong><span className="arapski-lekcija">(ر)</span>	 se uči <u>krupno</u> u sljedećim situacijama:</Col>
 			</Row>
 
 			<Row>
 				<Col className="opisLekcije text-center">
-					<strong>1.</strong> kada je harf R sa vokalom E ( {PlayerRow(data, 'row1')}) ili vokalom U ({' '}
+					<strong>1.</strong> kada je harf<strong> R </strong>sa <strong>vokalom</strong> E ( {PlayerRow(data, 'row1')}) ili <strong>vokalom</strong> U ({' '}
 					{PlayerRow(data, 'row2')}), npr.:{PlayerRow(data, 'row3')}
 				</Col>
 			</Row>
 
 			<Row>
 				<Col className="opisLekcije">
-					<strong>2.</strong> kada je harf R sa sukunom, a prije njeg harf sa vokalom E (<span className="arapski-lekcija" style={{color:"red"}}> ــَـ رْ </span>) ili U
+					<strong>2.</strong> kada je harf<strong> R </strong>sa <strong>sukunom</strong>, a prije njeg harf sa <strong>vokalom</strong> E (<span className="arapski-lekcija" style={{color:"red"}}> ــَـ رْ </span>) ili U
 					(<span className="arapski-lekcija" style={{color:"red"}}>ــُـ رْ</span>), npr.:
 					{PlayerRow(data, 'row4')}
 				</Col>
@@ -48,26 +48,26 @@ function L14() {
 
 			<Row>
 				<Col className="opisLekcije">
-					<strong>3.</strong> kada je harf R sa sukunom, prije njeg harf sa sukunom, a prije toga harf sa
-					vokalom E (<span className="arapski-lekcija" style={{color:"red"}}> ــَـ ــْـ رْ  </span>) ili U (<span className="arapski-lekcija" style={{color:"red"}}> ــُـ ــْـ رْ   </span>), npr.: {PlayerRow(data, 'row5')}
+					<strong>3.</strong> kada je harf<strong><strong> R </strong></strong>sa <strong>sukunom</strong>, prije njeg harf sa <strong>sukunom</strong>, a prije toga harf sa
+					<strong>vokalom</strong> E (<span className="arapski-lekcija" style={{color:"red"}}> ــَـ ــْـ رْ  </span>) ili U (<span className="arapski-lekcija" style={{color:"red"}}> ــُـ ــْـ رْ   </span>), npr.: {PlayerRow(data, 'row5')}
 				</Col>
 			</Row>
 
 			<Row>
 				<Col className="opisLekcije">
-					<strong>4.</strong> kada je harf R sa sukunom (<span className="arapski-lekcija" style={{color:"red"}}>رْ</span>), a prije njeg glas sa nestalnom kesrom, npr.:{' '}
+					<strong>4.</strong> kada je harf<strong> R </strong>sa <strong>sukunom</strong> (<span className="arapski-lekcija" style={{color:"red"}}>رْ</span>), a prije njeg glas sa nestalnom kesrom, npr.:{' '}
 					{PlayerRow(data, 'row6')}
 				</Col>
 			</Row>
 
 			<Row>
 				<Col className="opisLekcije">
-					<strong>5.</strong> kada je harf R sa sukunom (<span className="arapski-lekcija" style={{color:"red"}}>رْ</span>), a poslije njeg jedan od krupnih harfova, npr.:{' '}
+					<strong>5.</strong> kada je harf<strong> R </strong>sa <strong>sukunom</strong> (<span className="arapski-lekcija" style={{color:"red"}}>رْ</span>), a poslije njeg jedan od krupnih harfova, npr.:{' '}
 					{PlayerRow(data, 'row7')}
 				</Col>
 			</Row>
 
-      <Row>
+            <Row>
 				<Col>
 					<br />
 				</Col>
@@ -75,6 +75,13 @@ function L14() {
 
 			<h2 className="text-center"><strong>VJEŽBA</strong></h2>
 			<hr />
+			
+			<Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
+
 			<Row className="text-center">
 				<Col>
 					<span className='tacka'>۞</span>

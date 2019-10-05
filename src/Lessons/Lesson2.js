@@ -16,7 +16,7 @@ function L2() {
 			<Row>
 				<Col>
 					<h2 className="text-center font-weight-bold text-uppercase">Damir</h2>
-					<h4 className="text-center">izgovaranje zamjenice HU (هُ)</h4>
+					<h4 className="text-center"><strong>izgovaranje zamjenice HU (هُ)</strong></h4>
 					<hr />
 				</Col>
 			</Row>
@@ -30,7 +30,7 @@ function L2() {
 			<Row>
 				<Col className="opisLekcije">
 					Kada prije zamjenice <strong>HU (<span className="arapski-lekcija "> هُ</span>)</strong> dođe <strong>dugi vokal A</strong> <span className="arapski-lekcija"> <span className="arapski-lekcija">ـــَــ ا</span></span>  , I<span className="arapski-lekcija">ـــِـ ى</span> , U <strong><span className="arapski-lekcija " style={{ fontSize: '2.5em' }}> <span className="arapski-lekcija">ـــُــ و</span></span></strong> ili
-					<strong> sukun <span className="arapski-lekcija">ــــْـــ</span></strong>  , zamjenica <strong>HU (<span className="arapski-lekcija">هُ</span>)</strong> se uči kratko:
+					<strong> sukun <span className="arapski-lekcija">ــــْـــ</span></strong>  , zamjenica <strong>HU (<span className="arapski-lekcija">هُ</span>)</strong> se uči <u>kratko</u>:
 				</Col>
 			</Row>
 
@@ -47,7 +47,7 @@ function L2() {
 					Kada prije zamjenice <strong>HU (<span className="arapski-lekcija">هُ</span>)</strong> dođe  
 					<strong> kratki vokal</strong> E<span className="arapski-lekcija">ــــَـــ</span>  , I <strong><span className="arapski-lekcija">ــــِــ </span></strong>  
 					 ili U <strong><span className="arapski-lekcija" style={{ fontSize: '2.5em' }}>ــــُـــ</span></strong> 
-					, zamjenica <strong>HU (<span className="arapski-lekcija">هُ</span>)</strong> se uči dugo:
+					, zamjenica <strong>HU (<span className="arapski-lekcija">هُ</span>)</strong> se uči <u>dugo</u>:
 				</Col>
 			</Row>
 
@@ -66,9 +66,14 @@ function L2() {
 			</Row>
 	
 
-			<hr />
+			
 			<h2 className="text-center"><strong>VJEŽBA</strong></h2>
 			<hr />
+			<Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
 
 			<Row className="text-center">
 				<Col>

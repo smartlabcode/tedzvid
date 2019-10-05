@@ -16,7 +16,7 @@ function L5() {
 			<Row>
 				<Col>
 					<h2 className="text-center font-weight-bold text-uppercase">IDGAM MISLEJN MEAL-GUNNEH</h2>
-					<h4 className="text-center">uklapanje istih harfova sa propuštanjem zraka kroz nos</h4>
+					<h4 className="text-center"><strong>uklapanje istih harfova sa propuštanjem zraka kroz nos</strong></h4>
 					<hr />
 				</Col>
 			</Row>
@@ -30,7 +30,7 @@ function L5() {
 			<Row>
 				<Col className="opisLekcije">
 					Kada poslije harfa <strong>M</strong> <span className="arapski-lekcija" style={{ fontSize: '2em' }}>(م)</span> sa <strong>sukunom</strong> dođe harf <strong>M</strong>
-					<span className="arapski-lekcija" style={{ fontSize: '2em' }}> (م) </span>sa <strong>hareketom</strong>, dolazi do uklapanja harfa <strong>M</strong>
+					<span className="arapski-lekcija" style={{ fontSize: '2em' }}> (م) </span>sa <strong>hareketom</strong>, dolazi do <u>uklapanja</u> harfa <strong>M</strong>
 					<span className="arapski-lekcija" style={{ fontSize: '2em' }}> (م)</span> sa <strong>sukunom</strong> u harf <strong>M</strong>
 					<span className="arapski-lekcija" style={{ fontSize: '2em' }}> (م)</span> sa <strong>hareketom</strong>, uz propuštanje zraka kroz nos u trajanju
 					od 2 hareketa, npr.:
@@ -63,6 +63,11 @@ function L5() {
 
 			<h2 className="text-center"><strong>VJEŽBA</strong></h2>
 			<hr />
+			<Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
 
 			<Row className="text-center">
 				<Col>
