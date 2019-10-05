@@ -17,7 +17,7 @@ function L3() {
 				<Col>
 					<h2 className="text-center font-weight-bold text-uppercase">LAFZATULLAH</h2>
 					<h4 className="text-center">
-					<strong>izgovaranje riječi Allah <span className="arapski-lekcija" style={{fontSize:"1.8em"}}> اللّٰه </span></strong>
+					<strong>izgovaranje riječi Allah <span className="arapski-lekcija"> اللّٰه </span></strong>
 					</h4>
 					<hr />
 				</Col>
@@ -31,19 +31,19 @@ function L3() {
 
 			<Row>
 				<Col className="opisLekcije">
-					Kada prije riječi Allah<span className="arapski-lekcija" style={{ fontSize: '2em' }}>
+					Kada prije riječi Allah <span className="arapski-lekcija" >
 						{' '}
 						اللّٰه{' '}
 					</span>dođe <strong>vokal</strong> E{' '}
-					<span className="arapski-lekcija" style={{ fontSize: '2.2em' }}>
+					<span className="arapski-lekcija" >
 						{' '}
 						ــــَـــ{' '}
-					</span>ili <strong>vokal</strong> U<span className="arapski-lekcija" style={{ fontSize: '2.2em' }}>
+					</span>ili <strong>vokal</strong> U<span className="arapski-lekcija">
 						ــــُـــ{' '}
 					</span>, riječ Allah
-					<span className="arapski-lekcija" style={{ fontSize: '2em' }}>
+					<span className="arapski-lekcija" >
 						اللّٰه{' '}
-					</span>se uči <u>krupno</u>, npr.:
+					</span>se uči <u>krupno</u>, npr.: {' '}
 					{PlayerRow(data, 'row1')}
 				</Col>
 			</Row>
@@ -54,14 +54,14 @@ function L3() {
 
 			<Row>
 				<Col className="opisLekcije">
-					Kada prije riječi Allah<span className="arapski-lekcija" style={{ fontSize: '2em' }}>
+					Kada prije riječi Allah<span className="arapski-lekcija" >
 						{' '}
 						اللّٰه
 					</span>{' '}
-					dođe <strong>vokal</strong> I<span className="arapski-lekcija" style={{ fontSize: '2.2em' }}>
+					dođe <strong>vokal</strong> I<span className="arapski-lekcija">
 						{' '}
 						ــــِــ
-					</span>, riječ Allah<span className="arapski-lekcija" style={{ fontSize: '2em' }}>
+					</span>, riječ Allah<span className="arapski-lekcija" >
 						{' '}
 						اللّٰه
 					</span>{' '}

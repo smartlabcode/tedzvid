@@ -36,9 +36,9 @@ function L1() {
 					<strong>1.</strong> Kada riječ na kojoj staje završava <strong>kratkim vokalom</strong>  E{' '}
 					<span className="arapski-lekcija "> ــــَـــ</span> , I{' '}
 					<span className="arapski-lekcija "> ــــِــ</span>, U{' '}
-					<span className="arapski-lekcija "  style={{ fontSize: '2.5em' }}> ــــُـــ </span>ili <strong>tenvinom</strong> IN{' '}
-					<span className="arapski-lekcija "> ـــــٍــــــ </span>, UN{' '}
-					<span className="arapski-lekcija"> ــــــٌــــــ</span>, stat će kao da je na riječi <strong>sukun</strong>{' '}
+					<span className="arapski-lekcija "  > ــــُـــ </span>ili <strong>tenvinom</strong> IN{' '}
+					<span className="arapski-lekcija "> ــــٍــ </span>, UN{' '}
+					<span className="arapski-lekcija">  ـــٌـــ</span>, stat će kao da je na riječi <strong>sukun</strong>{' '}
 					<span className="arapski-lekcija "> ــــْـــ</span>, npr.:
 				</Col>
 			</Row>
@@ -48,7 +48,7 @@ function L1() {
 			<Row>
 				<Col className="opisLekcije my-3">
 					<strong>2.</strong> Kada riječ završava <strong>tenvinom</strong> EN{' '}
-					<span className="arapski-lekcija "> ــــــًــــــ</span>, stat će kao da je <strong>dugo</strong> A{' '}
+					<span className="arapski-lekcija "> ــــًــ</span>, stat će kao da je <strong>dugo</strong> A{' '}
 					<span className="arapski-lekcija "> ـــَـــ ا </span>, npr.:
 				</Col>
 			</Row>
@@ -60,7 +60,7 @@ function L1() {
 					<strong>3.</strong> Kada riječ završava <strong>dugim vokalom</strong> A{' '}
 					<span className="arapski-lekcija"> ــــَـــ ا </span>, <strong>dugim vokalom</strong> I{' '}
 					<span className="arapski-lekcija">ـــِــ ى</span> ili <strong>dugim vokalom</strong> U{' '}
-					<span className="arapski-lekcija"  style={{ fontSize: '2.5em' }}>ـ <span className="arapski-lekcija">ـــُــ و</span></span>, stat će <u>bez ikakve promjene</u>, npr.:
+					 <span className="arapski-lekcija">ـــُــ و</span>, stat će <u>bez ikakve promjene</u>, npr.:
 				</Col>
 			</Row>
 			<Row className="text-center">
@@ -68,8 +68,8 @@ function L1() {
 			</Row>
 			<Row>
 				<Col className="opisLekcije my-3">
-					<strong>4.</strong> Kada riječ završava okruglim <strong>T</strong> <span className="arapski-lekcija"  style={{ fontSize: '2.5em' }}>(ة/ـة)</span>,
-					stat će kao da je napisano slovo <strong>H </strong><span className="arapski-lekcija"  style={{ fontSize: '2.5em' }}>(ه)</span>, bez obzira koji je
+					<strong>4.</strong> Kada riječ završava okruglim <strong>T</strong> <span className="arapski-lekcija"  >(ة/ـة)</span>,
+					stat će kao da je napisano slovo <strong>H </strong><span className="arapski-lekcija" >(ه)</span>, bez obzira koji je
 					vokal ili tenvin napisan na njemu, npr.:
 				</Col>
 			</Row>
