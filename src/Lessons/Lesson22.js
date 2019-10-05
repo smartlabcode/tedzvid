@@ -16,7 +16,7 @@ function L22() {
 			<Row>
 				<Col>
 					<h2 className="text-center font-weight-bold text-uppercase">MEDD LIN</h2>
-					<h4 className="text-center">poluvokalna dužina</h4>
+					<h4 className="text-center font-weight-bold ">poluvokalna dužina</h4>
 					<hr />
 				</Col>
 			</Row>
@@ -30,7 +30,7 @@ function L22() {
 			<Row>
 				<Col className="opisLekcije">
 					Kada harfovi <strong>V</strong> ili <strong>J</strong> budu sa <strong>sukunom <span className="arapski-lekcija" style={{fontSize:"1.4em"}}>(يْ / وْ)</span></strong>,
-					prije njih <strong>kratki vokal</strong> E<span className="arapski-lekcija"> ـــــَـــــ </span>, a poslije njih harf sa{' '}
+					prije njih <strong>kratki vokal</strong> E <span className="arapski-lekcija">ـــَـــ </span> a poslije njih harf sa{' '}
 					<strong>sukunom</strong>, bit će medd lin, npr.:
 				</Col>
 			</Row>
@@ -88,37 +88,37 @@ function L22() {
 			<hr />
 
 			<Row className="text-center">
-				<Col>
-					۞
+				<Col> 	
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj9')}
-					۞
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj8')}
 				</Col>
 			</Row>
 
 			<Row className="text-center">
 				<Col>
-					۞
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj11')}
-					۞
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj10')}
 				</Col>
 			</Row>
 
 			<Row className="text-center">
 				<Col>
-					۞
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj13')}
-					۞
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj12')}
 				</Col>
 			</Row>
 
 			<Row className="text-center">
 				<Col>
-				۞
+				<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj15')}
-					۞
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj14')}
 				</Col>
 			</Row>
