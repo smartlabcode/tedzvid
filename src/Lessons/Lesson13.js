@@ -17,7 +17,7 @@ function L13() {
         <Row>
           <Col>
             <h2 className="text-center font-weight-bold text-uppercase">KALKALA</h2>
-            <h4 className="text-center">odskakanje harfova</h4>
+            <h4 className="text-center"><strong>odskakanje harfova</strong></h4>
             <hr/>
           </Col>
         </Row>
@@ -30,7 +30,7 @@ function L13() {
 
         <Row>
           <Col className="opisLekcije">
-          Kada sa <strong>sukunom</strong> (<span className="arapski-lekcija">ـــْـــ</span>) dođe jedan od pet harfova: <Arabic key="ar1l13" arabic="د ج ب ط ق">د ج ب ط ق</Arabic> (sadržanih u izrazu <strong>kutbu džeddin</strong> - <span className="arapski-lekcija" >قُطْبُ جَدٍّ</span> ), dolazi do odskakanja navedenih harfova, npr.:
+          Kada sa <strong>sukunom</strong> (<span className="arapski-lekcija">ـــْـــ</span>) dođe jedan od pet harfova: <Arabic key="ar1l13" arabic="د ج ب ط ق">د ج ب ط ق</Arabic> (sadržanih u izrazu <strong>kutbu džeddin</strong> - <span className="arapski-lekcija" style={{fontSize:"1.675em"}}>قُطْبُ جَدٍّ</span> ), dolazi do <u>odskakanja</u> navedenih harfova, npr.:
           </Col>
         </Row>
 
@@ -75,6 +75,12 @@ function L13() {
 
       <h2 className="text-center"><strong>VJEŽBA</strong></h2>
         <hr/>
+
+        <Row>
+				<Col>
+					<br />
+				</Col>
+			</Row> 
 
 			<Row className="text-center">
 				<Col>
