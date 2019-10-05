@@ -29,7 +29,7 @@ function L12() {
 
 			<Row>
 				<Col className="opisLekcije">
-					Kada poslije harfa <strong>M</strong> sa <strong>sukunom</strong> (<span className="arapski-lekcija" style={{ fontSize: '2em' }}>مْ</span>) dođe harf <strong>B</strong> (<span className="arapski-lekcija" style={{ fontSize: '2em' }}>ب</span>), produžava se izgovor harfa <strong>M</strong> (<span className="arapski-lekcija" style={{ fontSize: '2em' }}>م</span>) u trajanju od
+					Kada poslije harfa <strong>M</strong> sa <strong>sukunom</strong> (<span className="arapski-lekcija" >مْ</span>) dođe harf <strong>B</strong> (<span className="arapski-lekcija">ب</span>), produžava se izgovor harfa <strong>M</strong> (<span className="arapski-lekcija" >م</span>) u trajanju od
 					2 hareketa, npr.:
 				</Col>
 			</Row>

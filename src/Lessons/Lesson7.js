@@ -27,8 +27,7 @@ function L7() {
 			</Row>
 			<Row>
 				<Col className="opisLekcije">
-					Kada poslije harfa <strong>N</strong> sa <strong>sukunom</strong> <span className="arapski-lekcija">(نْ)</span> ili <strong>tenvina</strong> EN<span className="arapski-lekcija"> ــــــًــــــ</span>,
-					IN<span className="arapski-lekcija" /> ـــــٍــــــ , UN<span className="arapski-lekcija"> ــــــٌـــــ</span>dođe
+				Kada poslije harfa <strong>N</strong> sa <strong>sukunom</strong> (<span className="arapski-lekcija" >نْ</span>) ili <strong>tenvina</strong> EN <span className="arapski-lekcija" >ـــًـــ</span> , IN <span className="arapski-lekcija">ـــٍــ</span>  , UN <span className="arapski-lekcija" >ــٌــ</span> dođe
 					harf <strong>L</strong> <span className="arapski-lekcija">(ل) </span>ili <strong>R</strong>{' '}
 					<span className="arapski-lekcija">(ر)</span>, dolazi do potpunog uklapanja harfa <strong>N </strong><span className="arapski-lekcija"> (ن)</span>{' '}
 					u harf <strong>L</strong> <span className="arapski-lekcija">(ل)</span>, odnosno, <strong>R</strong>{' '}

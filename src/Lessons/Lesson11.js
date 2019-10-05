@@ -30,7 +30,7 @@ function L11() {
 
         <Row>
           <Col className="opisLekcije">
-          Kada poslije harfa <strong>N</strong> sa <strong>sukunom</strong> (<span className="arapski-lekcija" style={{ fontSize: '2em' }}>نْ</span>) ili <strong>tenvina</strong> EN <span className="arapski-lekcija" style={{ fontSize: '2em' }}>ــــــًــــــ</span> , IN <span className="arapski-lekcija" style={{ fontSize: '2em' }}>ـــــٍــــــ</span>  , UN <span className="arapski-lekcija" style={{ fontSize: '2em' }}>ــــــٌـــــ</span>  dođe jedan od 15 harfova: <Arabic arabic="ت ث ج د ذ ز س ش ص ض ط ظ ف ق ك" key="arL11"> ت ث ج د ذ ز س ش ص ض ط ظ ف ق ك </Arabic>, onda se harf <strong>N</strong> (<span className="arapski-lekcija" style={{ fontSize: '2em' }}>ن</span>) uči kroz nos u trajanju od 2 hareketa, s tim  da jezik ne dotakne nepce, npr.:
+          Kada poslije harfa <strong>N</strong> sa <strong>sukunom</strong> (<span className="arapski-lekcija" >نْ</span>) ili <strong>tenvina</strong> EN <span className="arapski-lekcija" >ـــًـــ</span> , IN <span className="arapski-lekcija">ـــٍــ</span>  , UN <span className="arapski-lekcija" >ــٌــ</span>  dođe jedan od 15 harfova: <Arabic arabic="ت ث ج د ذ ز س ش ص ض ط ظ ف ق ك" key="arL11"> ت ث ج د ذ ز س ش ص ض ط ظ ف ق ك </Arabic>, onda se harf <strong>N</strong> (<span className="arapski-lekcija" >ن</span>) uči kroz nos u trajanju od 2 hareketa, s tim  da jezik ne dotakne nepce, npr.:
           </Col>
         </Row>
 

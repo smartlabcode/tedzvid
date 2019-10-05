@@ -64,8 +64,7 @@ function L6() {
 
 			<Row>
 				<Col className="opisLekcije">
-					Kada poslije harfa N sa <strong>sukunom</strong> <span className="arapski-lekcija">(نْ)</span> ili <strong>tenvina</strong> EN<span className="arapski-lekcija" >ــــــًــــــ</span> , IN<span className="arapski-lekcija">ـــــٍــــــ</span>  ,UN <span className="arapski-lekcija">ــــــٌـــــ</span>  
-					dođe jedan od četiri harfa: <Arabic bold={true}>ي م ن و</Arabic> (sadržana u riječi <strong>jemnu</strong> –
+				Kada poslije harfa <strong>N</strong> sa <strong>sukunom</strong> (<span className="arapski-lekcija" >نْ</span>) ili <strong>tenvina</strong> EN <span className="arapski-lekcija" >ـــًـــ</span> , IN <span className="arapski-lekcija">ـــٍــ</span>  , UN <span className="arapski-lekcija" >ــٌــ</span> dođe jedan od četiri harfa: <Arabic bold={true}>ي م ن و</Arabic> (sadržana u riječi <strong>jemnu</strong> –
 					<span className="arapski-lekcija" style={{ fontSize: '2.25em' }}>يَمْنُو</span>), dolazi do uklapanja harfa <strong>N</strong>(<span className="arapski-lekcija">ن</span>) u jedan 
 				</Col>
 			</Row>
