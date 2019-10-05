@@ -2,6 +2,7 @@ import React from 'react';
 import data from '../Data/L6Data.json';
 import Footer from '../Body/MainFooter';
 import VjezbeRow from '../Helpers/VjezbeHelper';
+import PlayerRow from '../Helpers/PlayerHelper';
 
 // Bootstrap
 import { Row, Col } from 'react-bootstrap';
@@ -81,11 +82,11 @@ function L6() {
 			</Row>
 
 			<Row className="text-center">
-				<Col>{r1}</Col>
+				<Col>{PlayerRow(data, 'row1')}</Col>
 			</Row>
 
 			<Row className="text-center">
-				<Col>{r2}</Col>
+				<Col>{PlayerRow(data, 'row2')}</Col>
 			</Row>
 
 			<Row className="text-center">
