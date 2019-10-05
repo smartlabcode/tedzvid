@@ -64,7 +64,7 @@ function L1() {
 				</Col>
 			</Row>
 			<Row className="text-center">
-				<Col>{PlayerRow(data, 'row3')}</Col>
+				<Col>{VjezbeRow(data, 'row3',"broj1")}{VjezbeRow(data, 'row3',"broj2")}{VjezbeRow(data, 'row3',"broj3")}{VjezbeRow(data, 'row3',"broj4")}{VjezbeRow(data, 'row3',"broj5")}</Col>
 			</Row>
 			<Row>
 				<Col className="opisLekcije my-3">

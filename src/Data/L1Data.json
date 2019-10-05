@@ -57,42 +57,52 @@
             "after": null
         }
     ],
-    "row3": [{
+    "row3": {"broj1":[{
             "id": 9,
             "url": "./assets/audio/l1/9.wav",
             "highlight": "مُو",
             "word": "قَامُوا",
             "after": " ; "
-        },
+        }],
+        "broj2":[
         {
             "id": 10,
             "url": "./assets/audio/l1/10.wav",
             "highlight": "ا",
-            "word": "ٰمَنَّا",
+            "word": "مَنَّا",
             "after": " ; "
         },
+        {
+            "id": 101,
+            "highlight": null,
+            "word": "اٰ",
+            "after": null
+        }],
+        "broj3":[
         {
             "id": 11,
             "url": "./assets/audio/l1/11.wav",
             "highlight": "نِى",
             "word": "دِينِى",
             "after": " ; "
-        },
+        }],
+        "broj4":[
         {
             "id": 12,
             "url": "./assets/audio/l1/12.wav",
             "highlight": "نَى",
             "word": "حُسْنَى",
             "after": " ; "
-        },
+        }],
+        "broj5":[
         {
             "id": 13,
             "url": "./assets/audio/l1/13.wav",
             "highlight": "دُو",
             "word": "وَعْبُدُوا",
             "after": null
-        }
-    ],
+        }]
+        },
     "row4": [{
             "id": 14,
             "url": "./assets/audio/l1/14.wav",
