@@ -34,8 +34,10 @@ function L15() {
         </Row>
 
         <Row>
-          <Col className="opisLekcije text-center">
-            <strong>1.</strong> ط  د  ت npr.: { PlayerRow(data, 'row1') }
+          
+          <Col className="opisLekcije text-left">
+          <strong className="">1.</strong>
+             <span className="arapski-lekcija">  ط  د  ت  </span> npr.: { PlayerRow(data, 'row1') }
           </Col>
         </Row>
         
@@ -46,8 +48,8 @@ function L15() {
         </Row>
 
         <Row>
-          <Col className="opisLekcije text-center">
-            <strong>2.</strong> ظ  ذ  ث npr.: { PlayerRow(data, 'row3') }
+          <Col className="opisLekcije text-left">
+            <strong>2.</strong> <span className="arapski-lekcija">  ظ  ذ  ث </span> npr.: { PlayerRow(data, 'row3') }
           </Col>
         </Row>
 
@@ -58,8 +60,8 @@ function L15() {
         </Row>
 
         <Row >
-          <Col className="opisLekcije text-center">
-            <strong>3.</strong> ب  م npr.: { PlayerRow(data, 'row5') }
+          <Col className="opisLekcije text-left">
+            <strong>3.</strong> <span className="arapski-lekcija"> ب  م </span> npr.: { PlayerRow(data, 'row5') }
           </Col>
         </Row>
 
