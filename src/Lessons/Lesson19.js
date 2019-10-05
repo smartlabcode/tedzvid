@@ -15,10 +15,11 @@ function L19() {
 		<React.Fragment>
 			<Row>
 				<Col>
-					<h2 className="text-center font-weight-bold text-uppercase">MEDD MUNFESIL-</h2>
-					<h4 className="text-center">rastavljena dužina</h4>
+					<h2 className="text-center font-weight-bold text-uppercase">MEDD MUNFESIL</h2>
+					<h4 className="text-center"><strong>rastavljena dužina</strong></h4>
 				</Col>
 			</Row>
+			<hr />
 
 			<Row>
 				<Col>
@@ -28,9 +29,15 @@ function L19() {
 
 			<Row>
 				<Col className="opisLekcije text-center">
-					Kada poslije <strong>dugog vokala</strong> A  <span className="arapski-lekcija">ـــَــ ا</span> , I <span className="arapski-lekcija"> ـــِـ ى</span> , U <span className="arapski-lekcija">ـــُــ و</span> dođe{' '}
-					<strong>hemze</strong> ili <strong>elif</strong> na početku sljedeće riječi, bit će medd munfesil.
+					Kada poslije <strong>dugog vokala</strong> A  <span className="arapski-lekcija">ـــَــ ا</span> , I <span className="arapski-lekcija"> ـــِـ ى</span> , U <span className="arapski-lekcija" style={{lineHeight:"1.8em"}}>ـــُــ و</span> dođe{' '}
+					<strong>hemze</strong> ili <strong>elif</strong> <u>na početku sljedeće</u> riječi , bit će medd munfesil.
 					Traje 4-5 hareketa,npr.:<span style={{lineHeight:"1.5em"}}>{PlayerRow(data, 'row1')}</span>
+				</Col>
+			</Row>
+
+			<Row>
+				<Col>
+					<br />
 				</Col>
 			</Row>
 
@@ -69,6 +76,12 @@ function L19() {
 			<h2 className="text-center"><strong>VJEŽBA</strong></h2>
 			<hr />
 
+			<Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
+
 			<Row className="text-center">
 				<Col>
 				<span className='tacka'>۞</span>
@@ -105,7 +118,6 @@ function L19() {
 					{VjezbeRow(data, 'vjezba', 'broj12')}
 				</Col>
 			</Row>
-			<hr />
 
 			<Footer prev="/lekcija18" next="/lekcija20" />
 		</React.Fragment>

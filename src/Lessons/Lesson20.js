@@ -16,9 +16,10 @@ function L20() {
 			<Row>
 				<Col>
 					<h2 className="text-center font-weight-bold text-uppercase">MEDD LAZIM</h2>
-					<h4 className="text-center">stalna dužina</h4>
+					<h4 className="text-center"><strong>stalna dužina</strong></h4>
 				</Col>
 			</Row>
+			<hr />
 
 			<Row>
 				<Col>
@@ -60,6 +61,12 @@ function L20() {
 			<h2 className="text-center"><strong>VJEŽBA</strong></h2>
 			<hr />
 
+			<Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
+
 			<Row className="text-center">
 				<Col>
 				<span className='tacka'>۞</span>
@@ -99,7 +106,6 @@ function L20() {
 			<Row className="text-center">
 				<Col></Col>
 			</Row>
-			<hr />
 
 			<Footer prev="/lekcija19" next="/lekcija21" />
 		</React.Fragment>

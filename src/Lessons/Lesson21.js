@@ -30,7 +30,7 @@ function L21() {
 			<Row>
 				<Col className="opisLekcije">
 					Kada poslije <strong>dugog vokala</strong> A  <span className="arapski-lekcija">ـــَــ ا</span> , I  <span className="arapski-lekcija"> ـــِـ ى </span>, U{' '}
-					<strong>  <span className="arapski-lekcija">ـــُــ و</span></strong> dođe <strong>nestalni sukun</strong>, bit će medd arid. Traje 2-4-6
+					<strong>  <span className="arapski-lekcija" style={{fontSize:"1.9em"}}>ـــُــ و</span></strong> dođe <strong>nestalni sukun</strong>, bit će medd arid. Traje 2-4-6
 					hareketa.
 				</Col>
 			</Row>

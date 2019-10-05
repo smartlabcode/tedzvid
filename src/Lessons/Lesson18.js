@@ -16,7 +16,7 @@ function L18() {
 			<Row>
 				<Col>
 					<h2 className="text-center font-weight-bold text-uppercase">MEDD MUTTESIL</h2>
-					<h4 className="text-center">spojena dužina</h4>
+					<h4 className="text-center"><strong>spojena dužina</strong></h4>
 					<hr />
 				</Col>
 			</Row>
@@ -29,7 +29,7 @@ function L18() {
 
 			<Row>
 				<Col className="opisLekcije">
-					Kada poslije dugog vokala A  <span className="arapski-lekcija">ـــَــ ا</span> , I <span className="arapski-lekcija">ـــِـ ى </span>, U <span className="arapski-lekcija">ـــُــ و</span> dođe{' '}
+					Kada poslije <strong>dugog vokala</strong> A  <span className="arapski-lekcija">ـــَــ ا</span> , I <span className="arapski-lekcija">ـــِـ ى </span>, U <span className="arapski-lekcija">ـــُــ و</span> dođe{' '}
 					<strong>hemze</strong> u <u>istoj</u> riječi, bit će medd muttesil. Traje obavezno 4-5 hareketa,
 					npr.: {PlayerRow(data, 'row1')}
 				</Col>
@@ -61,6 +61,12 @@ function L18() {
 
 			<h2 className="text-center"><strong>VJEŽBA</strong></h2>
 			<hr />
+
+			<Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
 
 			<Row className="text-center">
 				<Col>
@@ -94,7 +100,7 @@ function L18() {
 					{VjezbeRow(data, 'vjezba', 'broj11')}
 				</Col>
 			</Row>
-			<hr />
+			
 
 			<Footer prev="/lekcija17" next="/lekcija19" />
 		</React.Fragment>

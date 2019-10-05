@@ -16,7 +16,7 @@ function L22() {
 			<Row>
 				<Col>
 					<h2 className="text-center font-weight-bold text-uppercase">MEDD LIN</h2>
-					<h4 className="text-center font-weight-bold ">poluvokalna dužina</h4>
+					<h4 className="text-center font-weight-bold "><strong>poluvokalna dužina</strong></h4>
 					<hr />
 				</Col>
 			</Row>
@@ -29,7 +29,7 @@ function L22() {
 
 			<Row>
 				<Col className="opisLekcije">
-					Kada harfovi <strong>V</strong> ili <strong>J</strong> budu sa <strong>sukunom <span className="arapski-lekcija" style={{fontSize:"1.4em"}}>(يْ / وْ)</span></strong>,
+					Kada harfovi <strong>V</strong> ili <strong>J</strong> budu sa <strong>sukunom <span className="arapski-lekcija">(يْ/وْ)</span></strong>,
 					prije njih <strong>kratki vokal</strong> E <span className="arapski-lekcija">ـــَـــ </span> a poslije njih harf sa{' '}
 					<strong>sukunom</strong>, bit će medd lin, npr.:
 				</Col>
