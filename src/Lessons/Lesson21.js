@@ -63,9 +63,9 @@ function L21() {
 					<br />
 				</Col>
 			</Row>
-
-			<h2 className="text-center"><strong>VJEŽBA</strong></h2>
 			<hr />
+			<h2 className="text-center"><strong>VJEŽBA</strong></h2>
+			
 
 			<Row className="text-center">
 				<Col>
@@ -116,7 +116,7 @@ function L21() {
 				</Col>
 			</Row>
 
-			<hr />
+		
 
 			<Footer prev="/lekcija20" next="/lekcija22" />
 		</React.Fragment>

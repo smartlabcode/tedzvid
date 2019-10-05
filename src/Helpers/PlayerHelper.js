@@ -7,14 +7,19 @@ function PRow(data, rowname) {
     const toggle = () => setPlaying(!playing);
     
     const PlayerRow = (datarr, rowname) => {
+        var specialCharacters = ['؛',';'];
         const row = datarr[rowname].map((dat) => {
+            let myClassName ='';
+            if(!!dat.after && specialCharacters.includes(dat.after.trim())){
+                myClassName='after'
+            }
         return <span key={'key' + dat.id} onClick={toggle}>
             <Player url={dat.url} key={'p' + dat.id} playr={playing ? true : false}>
                 <Arabic
                 arabic={dat.highlight}
                 key={'a' + dat.id}
                 >{dat.word}</Arabic>
-            </Player> {dat.after === 'break' ? <br/> : dat.after}
+            </Player> <span className={myClassName}> {dat.after === 'break' ? <br/> : dat.after}</span>
         </span>
         });
     

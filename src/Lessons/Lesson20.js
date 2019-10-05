@@ -29,7 +29,7 @@ function L20() {
 			<Row>
 				<Col className="opisLekcije">
 					Kada poslije <strong>dugog vokala</strong> A  <span className="arapski-lekcija">ـــَــ ا</span> , Iـــِـ ى , U <span className="arapski-lekcija">ـــُــ و</span> dođe
-					harf sa <strong>stalnim sukunom ـــــْـــــ</strong> <strong>ili tešdidom ـــــّـــــ </strong>, bit
+					harf sa <strong>stalnim sukunom ـــْــ</strong> <strong>ili tešdidom ـــــّـــــ </strong>, bit
 					će medd lazim . Traje obavezno 6 hareketa, npr.:{PlayerRow(data, 'row1')}
 				</Col>
 			</Row>

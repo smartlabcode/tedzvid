@@ -30,7 +30,7 @@ function L13() {
 
         <Row>
           <Col className="opisLekcije">
-          Kada sa <strong>sukunom</strong> (<span className="arapski-lekcija" style={{ fontSize: '1.7em' }}>ـــــْــــــ</span>) dođe jedan od pet harfova: <Arabic key="ar1l13" arabic="د ج ب ط ق">د ج ب ط ق</Arabic> (sadržanih u izrazu <strong>kutbu džeddin</strong> - <span className="arapski-lekcija" style={{ fontSize: '2.35em' }}>قُطْبُ جَدٍّ</span> ), dolazi do odskakanja navedenih harfova, npr.:
+          Kada sa <strong>sukunom</strong> (<span className="arapski-lekcija" style={{ fontSize: '1.7em' }}>ـــْـــ</span>) dođe jedan od pet harfova: <Arabic key="ar1l13" arabic="د ج ب ط ق">د ج ب ط ق</Arabic> (sadržanih u izrazu <strong>kutbu džeddin</strong> - <span className="arapski-lekcija" style={{ fontSize: '2.35em' }}>قُطْبُ جَدٍّ</span> ), dolazi do odskakanja navedenih harfova, npr.:
           </Col>
         </Row>
 

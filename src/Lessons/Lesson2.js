@@ -30,7 +30,7 @@ function L2() {
 			<Row>
 				<Col className="opisLekcije">
 					Kada prije zamjenice <strong>HU (<span className="arapski-lekcija "> هُ</span>)</strong> dođe <strong>dugi vokal A</strong> <span className="arapski-lekcija"> <span className="arapski-lekcija">ـــَــ ا</span></span>  , I<span className="arapski-lekcija">ـــِـ ى</span> , U <strong><span className="arapski-lekcija " style={{ fontSize: '2.5em' }}> <span className="arapski-lekcija">ـــُــ و</span></span></strong> ili
-					<strong> sukun <span className="arapski-lekcija">ــــــْــــــ</span></strong>  , zamjenica <strong>HU (<span className="arapski-lekcija">هُ</span>)</strong> se uči kratko:
+					<strong> sukun <span className="arapski-lekcija">ــــْـــ</span></strong>  , zamjenica <strong>HU (<span className="arapski-lekcija">هُ</span>)</strong> se uči kratko:
 				</Col>
 			</Row>
 

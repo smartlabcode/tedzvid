@@ -39,7 +39,7 @@ function L1() {
 					<span className="arapski-lekcija "  style={{ fontSize: '2.5em' }}> ــــُـــ </span>ili <strong>tenvinom</strong> IN{' '}
 					<span className="arapski-lekcija "> ـــــٍــــــ </span>, UN{' '}
 					<span className="arapski-lekcija"> ــــــٌــــــ</span>, stat će kao da je na riječi <strong>sukun</strong>{' '}
-					<span className="arapski-lekcija "> ــــــْــــــ</span>, npr.:
+					<span className="arapski-lekcija "> ــــْـــ</span>, npr.:
 				</Col>
 			</Row>
 			<Row className="text-center">
@@ -96,7 +96,7 @@ function L1() {
 									<span className="arapski-lekcija"> ــــــٌـــــ</span>
 								</td>
 								<td>
-									kao da je sukun <span className="arapski-lekcija "> ــــــْــــــ</span>
+									kao da je sukun <span className="arapski-lekcija "> ــــْـــ</span>
 								</td>
 							</tr>
 							<tr>

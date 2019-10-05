@@ -37,8 +37,8 @@ function L22() {
 
 			<Row className="text-center">
 				<Col>
-					<span class="arapski">(  ـــَــ وْ ـــــْـــــ )</span> {PlayerRow(data, 'row1lijevi')}
-					<span class="arapski">(  ـــَــ يْ ـــــْـــــ ) </span> {PlayerRow(data, 'row1desni')}
+					<span class="arapski">( ـــَــ وْ ـــْــ )</span> {PlayerRow(data, 'row1lijevi')}
+					<span class="arapski">(  ـــَــ يْ ـــْــ ) </span> {PlayerRow(data, 'row1desni')}
 				</Col>
 			</Row>
 
@@ -83,9 +83,9 @@ function L22() {
 					<br />
 				</Col>
 			</Row>
-
-			<h2 className="text-center"><strong>VJEŽBA</strong></h2>
 			<hr />
+			<h2 className="text-center"><strong>VJEŽBA</strong></h2>
+			
 
 			<Row className="text-center">
 				<Col> 	
@@ -123,7 +123,7 @@ function L22() {
 				</Col>
 			</Row>
 
-			<hr />
+	
 
 			<Footer prev="/lekcija21" next="/lekcija1" />
 		</React.Fragment>
