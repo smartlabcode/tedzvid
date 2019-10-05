@@ -84,6 +84,8 @@ function L11() {
 
 			<Row className="text-center">
 				<Col>
+        <span className='tacka'>۞</span>
+          {VjezbeRow(data, 'vjezba', 'broj9')}
 					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj8')}
 				</Col>
@@ -91,27 +93,22 @@ function L11() {
 
 			<Row className="text-center">
 				<Col>
+         
           <span className='tacka'>۞</span>
+          {VjezbeRow(data, 'vjezba', 'broj11')} 
           {VjezbeRow(data, 'vjezba', 'broj10')}
-					<span className='tacka'>۞</span>
-          {VjezbeRow(data, 'vjezba', 'broj9')}
 				</Col>
 			</Row>
 
-			<Row className="text-center">
-				<Col>
-					<span className='tacka'>۞</span>
-          {VjezbeRow(data, 'vjezba', 'broj12')}
-          <span className='tacka'>۞</span>
-          {VjezbeRow(data, 'vjezba', 'broj11')}
-				</Col>
-			</Row>
+		
       <Row className="text-center">
 				<Col>
 					<span className='tacka'>۞</span>
           {VjezbeRow(data, 'vjezba', 'broj14')}
           <span className='tacka'>۞</span>
           {VjezbeRow(data, 'vjezba', 'broj13')}
+          <span className='tacka'>۞</span>
+          {VjezbeRow(data, 'vjezba', 'broj12')}
 				</Col>
 			</Row>
       <Row className="text-center">
