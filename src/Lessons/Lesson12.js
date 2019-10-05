@@ -16,7 +16,7 @@ function L12() {
 			<Row>
 				<Col>
 					<h2 className="text-center font-weight-bold text-uppercase">IHFA ŠEFEVIJJ</h2>
-					<h4 className="text-center">skrivanje harfa M (م)</h4>
+					<h4 className="text-center"><strong>skrivanje harfa M (م)</strong></h4>
 					<hr />
 				</Col>
 			</Row>
@@ -57,6 +57,11 @@ function L12() {
 
 			<h2 className="text-center"><strong>VJEŽBA</strong></h2>
 			<hr />
+			<Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
 			<Row className="text-center">
 				<Col>
 					<span className='tacka'>۞</span>

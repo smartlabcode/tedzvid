@@ -16,7 +16,7 @@ function L7() {
 			<Row>
 				<Col>
 					<h2 className="text-center font-weight-bold text-uppercase">IDGAM BILA GUNNEH</h2>
-					<h4 className="text-center">uklapanje bez propuštanja zraka kroz nos</h4>
+					<h4 className="text-center"><strong>uklapanje bez propuštanja zraka kroz nos</strong></h4>
 					<hr />
 				</Col>
 			</Row>
@@ -29,7 +29,7 @@ function L7() {
 				<Col className="opisLekcije">
 				Kada poslije harfa <strong>N</strong> sa <strong>sukunom</strong> (<span className="arapski-lekcija" >نْ</span>) ili <strong>tenvina</strong> EN <span className="arapski-lekcija" >ـــًـــ</span> , IN <span className="arapski-lekcija">ـــٍــ</span>  , UN <span className="arapski-lekcija" >ــٌــ</span> dođe
 					harf <strong>L</strong> <span className="arapski-lekcija">(ل) </span>ili <strong>R</strong>{' '}
-					<span className="arapski-lekcija">(ر)</span>, dolazi do potpunog uklapanja harfa <strong>N </strong><span className="arapski-lekcija"> (ن)</span>{' '}
+					<span className="arapski-lekcija">(ر)</span>, dolazi do <u>potpunog</u> uklapanja harfa <strong>N </strong><span className="arapski-lekcija"> (ن)</span>{' '}
 					u harf <strong>L</strong> <span className="arapski-lekcija">(ل)</span>, odnosno, <strong>R</strong>{' '}
 					<span className="arapski-lekcija">(ر)</span>, tj. <strong>N</strong> <span className="arapski-lekcija">(ن)</span>se
 					nikako ne uči, npr.:
@@ -64,6 +64,11 @@ function L7() {
 			</Row>
 			<h2 className="text-center"><strong>VJEŽBA</strong></h2>
 			<hr />
+			<Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
 			<Row className="text-center">
 				<Col>
 					<span className='tacka'>۞</span>

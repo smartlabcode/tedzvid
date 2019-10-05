@@ -51,7 +51,7 @@ function L6() {
 			<Row>
 				<Col>
 					<h2 className="text-center font-weight-bold">IDGAM MEAL-GUNNEH</h2>
-					<h4 className="text-center">uklapanje sa propuštanjem zraka kroz nos</h4>
+					<h4 className="text-center"><strong>uklapanje sa propuštanjem zraka kroz nos</strong></h4>
 					<hr />
 				</Col>
 			</Row>
@@ -65,7 +65,7 @@ function L6() {
 			<Row>
 				<Col className="opisLekcije">
 				Kada poslije harfa <strong>N</strong> sa <strong>sukunom</strong> (<span className="arapski-lekcija" >نْ</span>) ili <strong>tenvina</strong> EN <span className="arapski-lekcija" >ـــًـــ</span> , IN <span className="arapski-lekcija">ـــٍــ</span>  , UN <span className="arapski-lekcija" >ــٌــ</span> dođe jedan od četiri harfa: <Arabic bold={true}>ي م ن و</Arabic> (sadržana u riječi <strong>jemnu</strong> –
-					<span className="arapski-lekcija" style={{ fontSize: '2.25em' }}>يَمْنُو</span>), dolazi do uklapanja harfa <strong>N</strong>(<span className="arapski-lekcija">ن</span>) u jedan 
+					<span className="arapski-lekcija" style={{ fontSize: '2.25em' }}>يَمْنُو</span>), dolazi do <u>uklapanja</u> harfa <strong>N</strong>(<span className="arapski-lekcija">ن</span>) u jedan 
 				</Col>
 			</Row>
 
@@ -113,6 +113,11 @@ function L6() {
 
 			<h2 className="text-center"><strong>VJEŽBA</strong></h2>
 			<hr />
+			<Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
 
 			<Row className="text-center">
 				<Col>

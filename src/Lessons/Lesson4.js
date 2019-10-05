@@ -16,7 +16,7 @@ function L4() {
 			<Row>
 				<Col>
 					<h2 className="text-center font-weight-bold text-uppercase">IDGAM MISLEJN</h2>
-					<h4 className="text-center">uklapanje istih harfova</h4>
+					<h4 className="text-center"><strong>uklapanje istih harfova</strong></h4>
 					<hr />
 				</Col>
 			</Row>
@@ -29,8 +29,8 @@ function L4() {
 
 			<Row>
 				<Col className="opisLekcije">
-					Kada poslije bilo kojeg harfa sa <strong>sukunom <span className="arapski-lekcija">ــــْـــ</span></strong>  dođe isti harf sa <strong>hareketom</strong>, dolazi do
-					potpunog uklapanja, tj. prvi harf se ne uči, a drugi se uči sa <strong>tešdidom</strong>, npr.:
+					Kada poslije bilo kojeg harfa sa <strong>sukunom <span className="arapski-lekcija">ــــْـــ</span></strong>  dođe <u>isti</u> harf sa <strong>hareketom</strong>, dolazi do
+					<u>potpunog</u> uklapanja, tj. prvi harf se ne uči, a drugi se uči sa <strong>tešdidom</strong>, npr.:
 				</Col>
 			</Row>
 			
@@ -60,6 +60,11 @@ function L4() {
 	
 			<h2 className="text-center"><strong>VJEŽBA</strong></h2>
 			<hr />
+			<Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
 
 			<Row className="text-center">
 				<Col>
