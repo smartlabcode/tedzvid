@@ -65,14 +65,9 @@ function L6() {
 
 			<Row>
 				<Col className="opisLekcije">
-				Kada poslije harfa <strong>N</strong> sa <strong>sukunom</strong> (<span className="arapski-lekcija" >نْ</span>) ili <strong>tenvina</strong> EN <span className="arapski-lekcija" >ـــًـــ</span> , IN <span className="arapski-lekcija">ـــٍــ</span>  , UN <span className="arapski-lekcija" >ــٌــ</span> dođe jedan od četiri harfa: <Arabic bold={true}>ي م ن و</Arabic> (sadržana u riječi <strong>jemnu</strong> –
-					<span className="arapski-lekcija" style={{ fontSize: '2.25em' }}>يَمْنُو</span>), dolazi do <u>uklapanja</u> harfa <strong>N</strong>(<span className="arapski-lekcija">ن</span>) u jedan 
-				</Col>
-			</Row>
-
-			
-
-			<Row><Col className="opisLekcije">od spomenuta četiri harfa, propuštajući zrak kroz
+				Kada poslije harfa <strong>N</strong> sa <strong>sukunom</strong> (<span className="arapski-lekcija" >نْ</span>) ili <strong>tenvina</strong> EN <span className="arapski-lekcija" >ـــًـــ</span> , IN <span className="arapski-lekcija">ـــٍــ</span>  , UN <span className="arapski-lekcija" >ــٌــ</span> dođe jedan od četiri harfa: <span className="arapski-lekcija" style={{color:"red"}}>ي م ن و</span> (sadržana u riječi <strong>jemnu</strong> –
+					<span className="arapski-lekcija" >يَمْنُو</span>), dolazi do uklapanja harfa <strong>N</strong>(<span className="arapski-lekcija">ن</span>) u jedan 
+			 od spomenuta četiri harfa, propuštajući zrak kroz
 					nos u trajanju od 2 hareketa, npr.:</Col></Row>
 
 			<Row>
@@ -120,15 +115,19 @@ function L6() {
 				</Col>
 			</Row>
 
+		
 			<Row className="text-center">
 				<Col>
-					<span className='tacka'>۞</span>
-					{VjezbeRow(data, 'vjezba', 'broj9')}
 					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj8')}
 				</Col>
 			</Row>
-
+			<Row className="text-center">
+				<Col>
+					<span className='tacka'>۞</span>
+					{VjezbeRow(data, 'vjezba', 'broj9')}
+					</Col>
+			</Row>
 			<Row className="text-center">
 				<Col>
 					<span className='tacka'>۞</span>

@@ -30,9 +30,7 @@ function L9() {
 
         <Row>
           <Col className="opisLekcije">
-
-          Kada poslije harfa <strong>N</strong> sa <strong>sukunom</strong> (<span className="arapski-lekcija" >نْ</span>) ili <strong>tenvina</strong> EN <span className="arapski-lekcija" >ـــًـــ</span> , IN <span className="arapski-lekcija">ـــٍــ</span>  , UN <span className="arapski-lekcija" >ــٌــ</span> dođe jedan od šest grlenih harfova:<span className="arapski-lekcija" style={{color:"red"}} >   أ</span><span className="arapski-lekcija" style={{color:"red"}} >   ع</span><span className="arapski-lekcija" style={{color:"red"}} >   ح</span><span className="arapski-lekcija" style={{color:"red"}} >   غ</span><span className="arapski-lekcija" style={{color:"red"}} >   خ</span><span className="arapski-lekcija" style={{color:"red"}} >   ه</span>         onda se harf <strong>N</strong> (<span className="arapski-lekcija">ن</span>) izgovara <u>čisto</u>, tj. bez uklapanja, npr.:
-
+          Kada poslije harfa <strong>N</strong> sa <strong>sukunom</strong> (<span className="arapski-lekcija" >نْ</span>) ili <strong>tenvina</strong> EN <span className="arapski-lekcija" >ـــًـــ</span> , IN <span className="arapski-lekcija">ـــٍــ</span>  , UN <span className="arapski-lekcija" >ــٌــ</span> dođe jedan od šest grlenih harfova:<pre style={{display:"inline"}}> </pre><span className="arapski-lekcija" style={{color:"red"}} >   خ</span><pre style={{display:"inline"}}> </pre><span className="arapski-lekcija" style={{color:"red"}} >   غ</span><pre style={{display:"inline"}}> </pre><span className="arapski-lekcija" style={{color:"red"}} >   ح</span><pre style={{display:"inline"}}> </pre><span className="arapski-lekcija" style={{color:"red"}} >   ع</span><pre style={{display:"inline"}}> </pre><span className="arapski-lekcija" style={{color:"red"}} >   ه</span> <pre style={{display:"inline"}}> </pre><span className="arapski-lekcija" style={{color:"red"}} >   أ  </span>        <pre style={{display:"inline"}}> </pre>onda se harf <strong>N</strong> (<span className="arapski-lekcija">ن</span>) izgovara <u>čisto</u>, tj. bez uklapanja, npr.:
           </Col>
         </Row>
 
