@@ -63,9 +63,15 @@ function L21() {
 					<br />
 				</Col>
 			</Row>
-			<hr />
-			<h2 className="text-center"><strong>VJEŽBA</strong></h2>
 			
+			<h2 className="text-center"><strong>VJEŽBA</strong></h2>
+			<hr />
+
+			<Row>
+				<Col>
+					<br />
+				</Col>
+			</Row>
 
 			<Row className="text-center">
 				<Col>
