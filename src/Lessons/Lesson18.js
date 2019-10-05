@@ -29,7 +29,7 @@ function L18() {
 
 			<Row>
 				<Col className="opisLekcije">
-					Kada poslije dugog vokala A  <span className="arapski-lekcija">ـــَــ ا</span> , Iـــِـ ى , U <span className="arapski-lekcija">ـــُــ و</span> dođe{' '}
+					Kada poslije dugog vokala A  <span className="arapski-lekcija">ـــَــ ا</span> , I <span className="arapski-lekcija">ـــِـ ى </span>, U <span className="arapski-lekcija">ـــُــ و</span> dođe{' '}
 					<strong>hemze</strong> u <u>istoj</u> riječi, bit će medd muttesil. Traje obavezno 4-5 hareketa,
 					npr.: {PlayerRow(data, 'row1')}
 				</Col>

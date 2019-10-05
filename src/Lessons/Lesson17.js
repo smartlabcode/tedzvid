@@ -28,7 +28,7 @@ function L17() {
 
 			<Row>
 				<Col className="opisLekcije">
-					Kada poslije <strong>dugog vokala </strong>A  <span className="arapski-lekcija">ـــَــ ا</span> , Iـــِـ ى , U <span className="arapski-lekcija">ـــُــ و</span> nema ni{' '}
+					Kada poslije <strong>dugog vokala </strong>A  <span className="arapski-lekcija">ـــَــ ا</span> , I <span className="arapski-lekcija">ـــِـ ى </span>, U <span className="arapski-lekcija">ـــُــ و</span> nema ni{' '}
 					<strong>hemzeta</strong> ni <strong>sukuna,</strong>bit će medd tabijj.Traje 2 haraketa, npr.:{PlayerRow(data, 'row1')}
 				</Col>
 			</Row>
