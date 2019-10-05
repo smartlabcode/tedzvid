@@ -12,13 +12,12 @@
                 "url": "./assets/audio/l19/2.mp3",
                 "highlight": "مَٓا اَ",
                 "word": "اَنْتُمْ عَابِدُونَ مَٓا اَعْبُدُ",
-                "after": null
+                "after": " - "
             },
             {
                 "id": 22,
                 "highlight": "لَٓا ا",
-                "word": "وَلَٓا اَ",
-                "after": " -  "
+                "word": "وَلَٓا اَ"
             }
         ],
         "row2desni": [{

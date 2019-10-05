@@ -7,7 +7,7 @@ function PRow(data, rowname) {
     const toggle = () => setPlaying(!playing);
     
     const PlayerRow = (datarr, rowname) => {
-        var specialCharacters = ['؛',';'];
+        var specialCharacters = ['؛',';', "-"];
         const row = datarr[rowname].map((dat) => {
             let myClassName ='';
             if(!!dat.after && specialCharacters.includes(dat.after.trim())){
