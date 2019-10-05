@@ -92,35 +92,35 @@ function L1() {
 									E <span class="arapski-lekcija ">ــــَـــ</span> , I{' '}
 									<span className="arapski-lekcija "> ــــِــ</span> , U{' '}
 									<span className="arapski-lekcija"> ــــُـــ</span> , IN{' '}
-									<span className="arapski-lekcija"> ـــــٍــــــ </span>, UN{' '}
-									<span className="arapski-lekcija"> ــــــٌـــــ</span>
+									<span className="arapski-lekcija"> ـــٍـــ </span>, UN{' '}
+									<span className="arapski-lekcija"> ـــٌــ</span>
 								</td>
 								<td>
-									kao da je sukun <span className="arapski-lekcija "> ــــْـــ</span>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									EN <span className="arapski-lekcija "> ــــــًــــــ</span>
-								</td>
-								<td>
-									kao da je dugo A <span className="arapski-lekcija"> ــــَـــ ا</span>
+									kao da je sukun <span className="arapski-lekcija "> ـــْــ</span>
 								</td>
 							</tr>
 							<tr>
 								<td>
-									dugo A <span className="arapski-lekcija">  <span className="arapski-lekcija">ـــَــ ا</span> </span>, dugo I{' '}
+									EN <span className="arapski-lekcija "> ـــًــ</span>
+								</td>
+								<td>
+									kao da je dugo A <span className="arapski-lekcija"> ــَــ ا</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									dugo A   <span className="arapski-lekcija">ـــَــ ا</span> , dugo I{' '}
 									<span className="arapski lekcija">ـــِـ ى</span> , dugo U{' '}
-									<span className="arapski-lekcija" style={{ fontSize: '2.2em' }}> <span className="arapski-lekcija">ـــُــ و</span></span> bez ikakve promjene
+									 <span className="arapski-lekcija">ـــُــ و</span> 
 								</td>
 								<td>bez ikakve promjene</td>
 							</tr>
 							<tr>
 								<td>
-									okruglo T <span className="arapski-lekcija" style={{ fontSize: '2.2em' }}> (ة/ـة)</span>
+									okruglo T <span className="arapski-lekcija" > (ة/ـة)</span>
 								</td>
 								<td>
-									kao da je H <span className="arapski-lekcija" style={{ fontSize: '2.2em' }}> (ه)</span>
+									kao da je H <span className="arapski-lekcija" > (ه)</span>
 								</td>
 							</tr>
 						</tbody>
@@ -175,7 +175,7 @@ function L1() {
 						<tbody>
 							<tr>
 								<td>
-									<span className="arapski-lekcija"> سكتة ؛س</span>
+									<span className="arapski-lekcija"> سكتة ؛ س</span>
 									<br />Pauzira se bez prekidanja daha.
 								</td>
 								<td>
@@ -234,6 +234,7 @@ function L1() {
 				<Col>
 					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'red26')}
+					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'red25')}
 				</Col>
 			</Row>
