@@ -14,7 +14,7 @@ function L14_2() {
 	return (
 		<React.Fragment>
 			<Row>
-				<Col className="opisLekcije">Harf R (ر) se uči tanko u sljedećim situacijama:</Col>
+				<Col className="opisLekcije">Harf R <span className="arapski-lekcija" >(ر)</span> se uči tanko u sljedećim situacijama:</Col>
 			</Row>
 
 			<Row>
@@ -26,7 +26,7 @@ function L14_2() {
 
 			<Row>
 				<Col className="opisLekcije">
-					<strong>2.</strong> kada je harf R sa sukunom, a prije njeg harf sa vokalom I (ــــِـــ رْ), npr.:<br />
+					<strong>2.</strong> kada je harf R sa sukunom, a prije njeg harf sa vokalom I (<span className="arapski-lekcija" style={{color:"red"}}>ــــِـــ رْ </span>), npr.:<br />
 					{PlayerRow(data, 'row10')}
 				</Col>
 			</Row>
@@ -34,15 +34,15 @@ function L14_2() {
 			<Row>
 				<Col className="opisLekcije">
 					<strong>3.</strong> kada je harf R sa sukunom, prije njeg harf sa sukunom, a prije toga harf sa
-					vokalom I (رْ ــــِـــ ــــْـــ), npr.:
+					vokalom I (<span className="arapski-lekcija" style={{color:"red"}}> ــِـ  ــْـ رْ  </span>), npr.:
 					{PlayerRow(data, 'row11')}
 				</Col>
 			</Row>
 
 			<Row>
 				<Col className="opisLekcije">
-					<strong>4.</strong> 4. kada je harf R sa sukunom, a prije njeg harf J također sa sukunom, a prije
-					toga harf sa vokalom E (ــــَـــ يْـــرْ), npr.: {PlayerRow(data, 'row12')}
+					<strong>4.</strong>  kada je harf R sa sukunom, a prije njeg harf J također sa sukunom, a prije
+					toga harf sa vokalom E (<span className="arapski-lekcija" style={{color:"red"}}> ــــَـــ يْـــرْ </span>), npr.: {PlayerRow(data, 'row12')}
 				</Col>
 			</Row>
 

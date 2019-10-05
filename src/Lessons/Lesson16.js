@@ -37,7 +37,7 @@ function L16() {
 			<Row>
 				<Col className="opisLekcije my-3">
 					<strong>1.</strong> Kada poslije harfa Q sa <bold>sukunom</bold> <span class="arapski">(قْ)</span>{' '}
-					dođe harf K (ك) sa <bold>hareketom</bold>:
+					dođe harf K <span class="arapski">(ك)</span> sa <bold>hareketom</bold>:
 				</Col>
 			</Row>
 
@@ -47,7 +47,7 @@ function L16() {
 
 			<Row>
 				<Col className="opisLekcije my-3">
-					<strong>2.</strong> Kada poslije harfa L sa sukunom (لْ) dođe harf R (ر) sa hareketom:
+					<strong>2.</strong> Kada poslije harfa L sa sukunom <span class="arapski">(لْ)</span> dođe harf R <span class="arapski">(ر)</span> sa hareketom:
 				</Col>
 			</Row>
 
