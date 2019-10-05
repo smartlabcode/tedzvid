@@ -27,14 +27,14 @@ function L19() {
 			</Row>
 
 			<Row>
-				<Col className="opisLekcije">
+				<Col className="opisLekcije text-center">
 					Kada poslije <strong>dugog vokala</strong> A  <span className="arapski-lekcija">ـــَــ ا</span> , Iـــِـ ى , U <span className="arapski-lekcija">ـــُــ و</span> dođe{' '}
 					<strong>hemze</strong> ili <strong>elif</strong> na početku sljedeće riječi, bit će medd munfesil.
-					Traje 4-5 hareketa,npr.: {PlayerRow(data, 'row1')}
+					Traje 4-5 hareketa,npr.:{PlayerRow(data, 'row1')}
 				</Col>
 			</Row>
 
-			<Row className="text-center">
+			<Row className="opisLekcije text-center">
 				<pre> </pre>„turska štampa“<pre> </pre>„medinska štampa“
 			</Row>
 
