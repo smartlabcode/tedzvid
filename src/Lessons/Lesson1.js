@@ -251,7 +251,7 @@ function L1() {
 				</Col>
 			</Row>
 	
-			<Footer prev="/" next="/lekcija2" />
+			<Footer prev="/lekcija22" next="/lekcija2" />
 		</React.Fragment>
 	);
 }
