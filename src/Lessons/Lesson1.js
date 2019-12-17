@@ -5,14 +5,14 @@ import VjezbeRow from '../Helpers/VjezbeHelper';
 import Footer from '../Body/MainFooter';
 
 // Bootstrap
-import { Row, Col, Table } from 'react-bootstrap';
+import { Row, Col, Table,Container } from 'react-bootstrap';
 
 // Other
 import '../App.scss';
 
 function L1() {
 	return (
-		<React.Fragment>
+		<Container>
 			<Row>
 				<Col>
 					<h2 className="text-center font-weight-bold text-uppercase">Vakf</h2>
@@ -252,7 +252,7 @@ function L1() {
 			</Row>
 	
 			<Footer prev="/lekcija22" next="/lekcija2" />
-		</React.Fragment>
+			</Container>
 	);
 }
 
