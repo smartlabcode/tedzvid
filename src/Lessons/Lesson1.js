@@ -7,7 +7,7 @@ import Footer from '../Body/MainFooter';
 // Bootstrap
 import { Row, Col, Table,Container } from 'react-bootstrap';
 
-// Other
+// Other 
 import '../App.scss';
 
 function L1() {
@@ -41,7 +41,7 @@ function L1() {
 					<span className="arapski-lekcija">  ـــٌـــ</span>, stat će kao da je na riječi <strong>sukun</strong>{' '}
 					<span className="arapski-lekcija "> ــــْـــ</span>, npr.:
 				</Col>
-			</Row>
+			</Row> 
 			<Row className="text-center">
 				<Col>{PlayerRow(data, 'row1')}</Col>
 			</Row>
@@ -50,7 +50,7 @@ function L1() {
 					<strong>2.</strong> Kada riječ završava <strong>tenvinom</strong> EN{' '}
 					<span className="arapski-lekcija "> ــــًــ</span>, stat će kao da je <strong>dugo</strong> A{' '}
 					<span className="arapski-lekcija "> ـــَـــ ا </span>, npr.:
-				</Col>
+				</Col> 
 			</Row>
 			<Row className="text-center">
 				<Col>{PlayerRow(data, 'row2')}</Col>
