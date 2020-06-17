@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Row, Col, Button } from 'react-bootstrap';
-import First from '../Body/HomeFirst';
+import HomeFirst from '../Body/HomeFirst';
 
 
 function Home() {
@@ -11,7 +11,7 @@ function Home() {
     }
 
     return <React.Fragment>
-            { !otherpage ? <First start={0} stop={6} /> : <First start={6} stop={11}/> } 
+            { !otherpage ? <HomeFirst start={0} stop={6} /> : <HomeFirst start={6} stop={11}/> } 
         <Row className="homearea mt-4">
             <Col className="text-right">
                 <Button onClick={pageClickHandler} variant="light" size="md" block>
