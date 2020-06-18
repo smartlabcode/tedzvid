@@ -16,7 +16,7 @@ function Footer(props) {
                 <Button variant="secondary" block>
                 Na početak
                 </Button>
-            </Link>
+            </Link> 
             </Col>
             <Col className="text-right">
             <Link to={props.next} className="text-white">
