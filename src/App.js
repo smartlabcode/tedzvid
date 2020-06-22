@@ -35,7 +35,6 @@ function App() {
 		<BrowserRouter basename={process.env.PUBLIC_URL}>
 			<Container className="lekcije-wrapper my-auto">
 				<Route path="/" exact component={Home} />
-				<Route path="/demo" exact component={Demo} />
 				<Route path="/lekcija1" component={L1} />
 				<Route path="/lekcija2" component={L2} />
 				<Route path="/lekcija3" component={L3} />
