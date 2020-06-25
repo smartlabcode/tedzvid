@@ -3,9 +3,11 @@ import data from '../Data/L14Data.json';
 import PlayerRow from '../Helpers/PlayerHelper';
 import VjezbeRow from '../Helpers/VjezbeHelper';
 import Footer from '../Body/MainFooter';
+import { Link } from 'react-router-dom';
+import LekcijaMenu from '../Body/LekcijaMenu';
 
 // Bootstrap
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, Container } from 'react-bootstrap';
 
 // Other
 import '../App.scss';
@@ -13,6 +15,8 @@ import '../App.scss';
 function L14_2() {
 	return (
 		<React.Fragment>
+			<LekcijaMenu broj="14.2" naziv="HUKMURRA"></LekcijaMenu>
+			<Container>
 			<Row>
 				<Col className="opisLekcije">Harf<strong> R </strong><span className="arapski-lekcija" >(ر)</span> se uči <u>tanko</u> u sljedećim situacijama:</Col>
 			</Row>
@@ -118,6 +122,7 @@ function L14_2() {
 			</Row>
 
 			<Footer prev="/lekcija14" next="/lekcija15" />
+			</Container>
 		</React.Fragment>
 	);
 }

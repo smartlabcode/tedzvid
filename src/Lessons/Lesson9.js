@@ -4,9 +4,11 @@ import PlayerRow from '../Helpers/PlayerHelper';
 import VjezbeRow from '../Helpers/VjezbeHelper';
 import Footer from '../Body/MainFooter';
 import Arabic from '../Letters/Arabic';
+import { Link } from 'react-router-dom';
+import LekcijaMenu from '../Body/LekcijaMenu';
 
 // Bootstrap
-import {Row, Col} from 'react-bootstrap';
+import { Row, Col, Container } from 'react-bootstrap';
 
 // Other
 import '../App.scss';
@@ -14,9 +16,16 @@ import '../App.scss';
 function L9() {
     return (
         <React.Fragment>
+        <LekcijaMenu broj="9" naziv="IZHAR HALKIJJ"></LekcijaMenu>
+        <Container>
         <Row>
           <Col>
-            <h2 className="text-center font-weight-bold text-uppercase">IZHAR HALKIJJ</h2>
+            <div className="mobileTop">
+              <center>
+                <img src={process.env.PUBLIC_URL + '/assets/svg/Group 61.svg'} /> 
+              </center>
+              <h2 className="text-center font-weight-bold text-uppercase">IZHAR HALKIJJ</h2>
+            </div>
             <h4 className="text-center"><strong>čisto izgovaranje harfa N (ن) ili tenvina</strong></h4>
             <hr/>
           </Col>
@@ -138,7 +147,7 @@ function L9() {
         
 
         <Footer prev="/lekcija8" next="/lekcija10" />
-
+        </Container>
         </React.Fragment>
     );
   }

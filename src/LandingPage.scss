@@ -2,7 +2,9 @@
 body{
     font-family: 'Roboto', sans-serif;
     background-image: url('/tedzvid/assets/svg/bgpattern.png');
-    
+}
+#root{
+    display: unset !important;
 }
 .wrapper{
     width: 100%;
@@ -148,9 +150,9 @@ body{
 .logoUrl{
     width: 110px;
     margin-left: 45%;
-    margin-top: 10px;
+    margin-top: 22px;
 }
-footer{
+.footerLanding{
     margin-top: 1156px;
     background-color: #92623C;
     width: 100%;
@@ -168,18 +170,18 @@ footer{
 .topMobileNav{
     width: 100%;
     height: 70px;
-    background-color: #92623C;
+    background-color: #8A552B;
 }
 /*Mobile optimization*/
 .fullMenu{
-    width: 100vh;
+    width: 100%;
     height: 100vh;
     z-index: 1000;
-    background-color: #92623C;
+    background-color: #8A552B;
     position: fixed;
     ul{
         position: absolute;
-        width: 50vh;
+        width: 100%;
         text-align: center;
         /* text-decoration: none; */
         list-style: none;
@@ -197,8 +199,14 @@ footer{
         margin-left: 30px;
     }
 }
+/*Lekcije*/
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    .mobNavArrow{
+        float: right;
+        margin-top: 30px;
+        margin-right: 10%;
+    }
     .topNav{
         display: none;
         
@@ -243,10 +251,10 @@ footer{
     }
     footer .contentLeft {
         position: relative;
-        top: 40px;
+        top: 40px !important;
         margin-left: 10%;
         margin-right: 10%;
-        width: unset;
+        width: unset !important;
         color: white;
     }
 }

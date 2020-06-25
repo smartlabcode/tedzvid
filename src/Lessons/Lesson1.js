@@ -3,6 +3,8 @@ import data from '../Data/L1Data.json';
 import PlayerRow from '../Helpers/PlayerHelper';
 import VjezbeRow from '../Helpers/VjezbeHelper';
 import Footer from '../Body/MainFooter';
+import { Link } from 'react-router-dom';
+import LekcijaMenu from '../Body/LekcijaMenu';
 
 // Bootstrap
 import { Row, Col, Table,Container } from 'react-bootstrap';
@@ -12,18 +14,22 @@ import '../App.scss';
 
 function L1() {
 	return (
+		<React.Fragment>
+		<LekcijaMenu broj="1" naziv="VAKF"></LekcijaMenu>
 		<Container>
-			<Row>
-				<Col>
+		<Row>
+			<Col>
+				<div className="mobileTop">
+					<center>
+						<img src={process.env.PUBLIC_URL + '/assets/svg/Group 61.svg'} /> 
+					</center>
+					
 					<h2 className="text-center font-weight-bold text-uppercase">Vakf</h2>
-					<h4 className="text-center"><strong>stajanje prilikom učenja</strong></h4>
-					<hr />
-				</Col>
-			</Row>
-			<Row>
-				<Col>
-					<br />
-				</Col>
+					
+				</div>
+				<h4 className="text-center">stajanje prilikom učenja</h4>
+				<hr />
+			</Col>
 			</Row>
 			<Row>
 				<Col className="opisLekcije">
@@ -253,6 +259,7 @@ function L1() {
 	
 			<Footer prev="/lekcija22" next="/lekcija2" />
 			</Container>
+			</React.Fragment>
 	);
 }
 

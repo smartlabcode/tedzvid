@@ -3,9 +3,11 @@ import data from '../Data/L8Data.json';
 import PlayerRow from '../Helpers/PlayerHelper';
 import VjezbeRow from '../Helpers/VjezbeHelper';
 import Footer from '../Body/MainFooter';
+import { Link } from 'react-router-dom';
+import LekcijaMenu from '../Body/LekcijaMenu';
 
 // Bootstrap
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, Container } from 'react-bootstrap';
 
 // Other
 import '../App.scss';
@@ -13,9 +15,16 @@ import '../App.scss';
 function L8() {
 	return (
 		<React.Fragment>
+		<LekcijaMenu broj="8" naziv="IKLAB"></LekcijaMenu>
+		<Container>
 			<Row>
 				<Col>
-					<h2 className="text-center font-weight-bold text-uppercase">IKLAB</h2>
+					<div className="mobileTop">
+						<center>
+							<img src={process.env.PUBLIC_URL + '/assets/svg/Group 61.svg'} /> 
+						</center>
+						<h2 className="text-center font-weight-bold text-uppercase">IKLAB</h2>
+					</div>
 					<h4 className="text-center"><strong>pretvaranje harfa N (ن) u harf M (م)</strong></h4>
 					<hr />
 				</Col>
@@ -116,6 +125,7 @@ function L8() {
 				</Col>
 			</Row>
 			<Footer prev="/lekcija7" next="/lekcija9" />
+			</Container>
 		</React.Fragment>
 	);
 }

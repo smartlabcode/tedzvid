@@ -114,7 +114,7 @@ span.arap-red {
 }
 
 footer.mainfooter {
-  padding-top: .8em;
+  padding-top: 3.5em;
   border-top: 1px solid #ddd;
   margin-top: .5em;
 }
@@ -133,11 +133,31 @@ footer.mainfooter {
     background: #f6f6f6;
   }
 }
+.container{
+  margin-top: 50px;
+  box-shadow: 0px 4px 7px 0px rgba(214,214,214,1);
+  padding: 30px !important;
+  background-color: white !important;
+}
+.card-title {
+    color: #AB752F !important;
+  
+}
+.card{
+    border: unset !important;
+    height: 100% !important;
+    border-bottom: 1px solid beige !important;
+}
 
 span.imelekcije {
-  float: right;
-  font-size: 1rem;
-  font-weight: 400;
+  float: left;
+    font-size: 27px;
+    font-weight: 400;
+    color: #AB752F;
+    display: inline-block;
+    width: 2em;
+    padding-right: 1rem;
+    margin-right: 1em;
 }
 
 /* MENI */
@@ -224,7 +244,139 @@ ul.bottomMenu {
   height: 123px;
   background-color: blue;
 }
+.pristupiBtn{
+  position: absolute;
+    right: 45px;
+    top: 45px;
+    width: 103px;
+    height: 30px;
+    background-color: white;
+    border: 2px slolid #AB752F;
+    border-radius: 40px;
+    border: 2px solid #AB752F;
+}
+.height50px{
+  height: 50px;
+}
+h3{
+  font-size: 17px;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container{
+    width: 90% !important;
+    padding: 0px !important;
+    margin-bottom: 90px;
+  }
+  span.imelekcije{
+    font-size: 38px !important;
+    margin-right: unset !important;
+    margin-left: unset !important;
+  }
+  .pristupiBtn{
+    position: unset;
+    right: 45px;
+    top: 45px;
+    width: 103px;
+    height: 30px;
+    background-color: white;
+    border: 2px slolid #AB752F;
+    border-radius: 40px;
+    border: 2px solid #AB752F;
+    margin-top: 15px;
+  }
+  .card{
+    height: 100% !important;
+  }
+  .card-subtitle{
+    
+  }
+  .sectonRight{
+    float: right;
+    width: 69% !important;
+  }
+  .col{
+    padding-right: unset !important;
+    padding-left: unset !important;
+  }
+  .row{
+    width: 90% !important;
+    margin: auto !important;
+    margin-top: -19px !important;
+  }
+}
+.lekcijaTop{
+  margin-top: -18px;
+  color: #92623C;
+  h2{
+    font-size: 27px;
+  }
+}
+h2 strong{
+  font-size: 27px;
+}
+.btnRight{
+  width: 30px;
+  margin-top: 0px;
+  /* left: 0; */
+  float: left;
+  margin-left: 0;
+  /* offset-rotate: reverse; */
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.mobileTop{
+  display: none;
+}
+.mobilefooter{
+  display: none;
+}
+.hide{
+  display: none;
+}
 
+@media only screen and (max-width: 600px) {
+  h4{
+    font-size: 15px !important;
+  }
+  .height50px{
+    display: none;
+  }
+  .mobileTop{
+    display: unset;
+    margin-top: 15px;
+    h2{
+      font-size: 15px;
+    }
+    img{
+      margin: auto;
+    }
+    
+  }
+  .mainfooter{
+    display: none;
+  }
+  .mobilefooter{
+    display: unset;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #8A552B;
+    .mobileNavButtons{
+      position: relative;
+    /* bottom: 10px; */
+    margin-top: 20px !important;
+    justify-content: center;
+    }
+  }
+  .mobNavSearch{
+    float: right;
+    margin-top: 28px;
+    margin-right: 10%;
+  }
+}
 
 /* MENI */
 /* nav.mainmenu {

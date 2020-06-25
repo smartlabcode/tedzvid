@@ -3,9 +3,11 @@ import data from '../Data/L3Data.json';
 import PlayerRow from '../Helpers/PlayerHelper';
 import VjezbeRow from '../Helpers/VjezbeHelper';
 import Footer from '../Body/MainFooter';
+import { Link } from 'react-router-dom';
+import LekcijaMenu from '../Body/LekcijaMenu';
 
 // Bootstrap
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, Table, Container } from 'react-bootstrap';
 
 // Other
 import '../App.scss';
@@ -13,9 +15,16 @@ import '../App.scss';
 function L3() {
 	return (
 		<React.Fragment>
+		<LekcijaMenu broj="3" naziv="LAFZATULLAH"></LekcijaMenu>	
+		<Container>
 			<Row>
 				<Col>
-					<h2 className="text-center font-weight-bold text-uppercase">LAFZATULLAH</h2>
+					<div className="mobileTop">
+						<center>
+							<img src={process.env.PUBLIC_URL + '/assets/svg/Group 61.svg'} /> 
+						</center>
+						<h2 className="text-center font-weight-bold text-uppercase">LAFZATULLAH</h2>
+					</div>
 					<h4 className="text-center">
 					<strong>izgovaranje riječi Allah <span className="arapski-lekcija"> اللّٰه </span></strong>
 					</h4>
@@ -139,8 +148,8 @@ function L3() {
 					{VjezbeRow(data, 'vjezba', 'broj16')}
 				</Col>
 			</Row>
-
-			<Footer prev="/lekcija2" next="/lekcija4" />
+				<Footer prev="/lekcija2" next="/lekcija4" />
+			</Container>
 		</React.Fragment>
 	);
 }

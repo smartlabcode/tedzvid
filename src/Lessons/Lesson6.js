@@ -3,9 +3,11 @@ import data from '../Data/L6Data.json';
 import Footer from '../Body/MainFooter';
 import VjezbeRow from '../Helpers/VjezbeHelper';
 import PlayerRow from '../Helpers/PlayerHelper';
+import { Link } from 'react-router-dom';
+import LekcijaMenu from '../Body/LekcijaMenu';
 
 // Bootstrap
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, Container } from 'react-bootstrap';
 
 // Other
 import '../App.scss';
@@ -49,9 +51,16 @@ function L6() {
 
 	return (
 		<React.Fragment>
+			<LekcijaMenu broj="6" naziv="IDGAM MEAL-GUNNEH"></LekcijaMenu>
+			<Container>
 			<Row>
 				<Col>
-					<h2 className="text-center font-weight-bold">IDGAM MEAL-GUNNEH</h2>
+					<div className="mobileTop">
+						<center>
+							<img src={process.env.PUBLIC_URL + '/assets/svg/Group 61.svg'} /> 
+						</center>
+						<h2 className="text-center font-weight-bold text-uppercase">IDGAM MEAL-GUNNEH</h2>
+					</div>
 					<h4 className="text-center"><strong>uklapanje sa propuštanjem zraka kroz nos</strong></h4>
 					<hr />
 				</Col>
@@ -154,6 +163,7 @@ function L6() {
 			</Row>
 
 			<Footer prev="/lekcija5" next="/lekcija7" />
+			</Container>
 		</React.Fragment>
 	);
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import Home from './Body/HomePage';
-import Demo from './Body/Demo';
+import Demo from './Body/LandingPage';
 import {
 	L1,
 	L2,
@@ -33,8 +33,9 @@ import { BrowserRouter, Route } from 'react-router-dom';
 function App() {
 	return (
 		<BrowserRouter basename={process.env.PUBLIC_URL}>
-			<Container className="lekcije-wrapper my-auto">
-				<Route path="/" exact component={Home} />
+			
+				<Route path="/" exact component={Demo} />
+				<Route path="/lekcije" exact component={Home} />
 				<Route path="/lekcija1" component={L1} />
 				<Route path="/lekcija2" component={L2} />
 				<Route path="/lekcija3" component={L3} />
@@ -58,7 +59,6 @@ function App() {
 				<Route path="/lekcija20" component={L20} />
 				<Route path="/lekcija21" component={L21} />
 				<Route path="/lekcija22" component={L22} />
-			</Container>
 		</BrowserRouter>
 	);
 }
