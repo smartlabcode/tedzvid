@@ -1,3 +1,5 @@
+/* Kenan Babačić - SmartLab.ba */
+
 import React from 'react';
 import Home from './Body/HomePage';
 import Demo from './Body/LandingPage';
@@ -33,7 +35,6 @@ import { BrowserRouter, Route } from 'react-router-dom';
 function App() {
 	return (
 		<BrowserRouter basename={process.env.PUBLIC_URL}>
-			
 				<Route path="/" exact component={Demo} />
 				<Route path="/lekcije" exact component={Home} />
 				<Route path="/lekcija1" component={L1} />
