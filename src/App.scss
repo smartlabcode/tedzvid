@@ -79,14 +79,14 @@ span.arapski {
   //padding: 0 .25em;
   border-radius: .15em;
   line-height: 50px;
-  font-size: 17px;
+  font-size: 27px;
 }
 
 span.arapski-lekcija {
   font-family: 'KuranKerimFontHamdullah', serif;
   //padding: 0 .25em;
   border-radius: .15em;
-  font-size: 20px;
+  font-size: 27px;
 }
 
 .text-center.col>span {
@@ -377,6 +377,12 @@ h2 strong{
     float: right;
     margin-top: 28px;
     margin-right: 10%;
+  }
+  .arapski{
+    font-size: 19px !important;
+  }
+  .arapski-lekcija{
+    font-size: 19px !important;
   }
 }
 
