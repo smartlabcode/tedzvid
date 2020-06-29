@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/tedzvid/precache-manifest.68218e4e65468bdb92ddecbb4be76738.js"
+  "/tedzvid/precache-manifest.142fc1e817f7b548974f649c607becf6.js"
 );
 
 self.addEventListener('message', (event) => {
@@ -35,5 +35,5 @@ workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
 workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/tedzvid/index.html"), {
   
-  blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
+  blacklist: [/^\/_/,/\/[^/?]+\.[^/]+$/],
 });
