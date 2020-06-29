@@ -265,7 +265,7 @@ body {
 		width: 90%;
 	}
 	.sectionTwo {
-		margin-top: 150px;
+		margin-top: 150px !important;
 		position: absolute;
 	}
 	.innerWrapper .sectionOne {
@@ -306,7 +306,7 @@ body {
 	}
 }
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
     .footerLanding .contentLeft {
         position: relative;
         top: 43px;
