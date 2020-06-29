@@ -7,8 +7,10 @@ function LekcijaMenu(props) {
     return(
         <React.Fragment>
                 <div className="topNav">
-                    <div className="logoNavBox">
-                    <img className="logoUrl" src={process.env.PUBLIC_URL + '/assets/svg/logoUrl.png'} /> 
+                        <div className="logoNavBox">
+                        <Link to="/">
+                            <img className="logoUrl" src={process.env.PUBLIC_URL + '/assets/svg/logoUrl.png'} /> 
+                        </Link>    
                     </div>
                     <div className="nav">
                         <ul>
@@ -43,9 +45,8 @@ function LekcijaMenu(props) {
                         </ul>
                         </center>
                     </div>
-
                 </div>
-            <Container className="height50px">
+            <Container className="height50px"> 
                 <div className="lekcijaTop">
                     <h2 style={{float: "left", marginRight: "20px"}} className="text-uppercase">{props.broj}</h2>
                     <h2 style={{float: "left"}} className="text-uppercase">{props.naziv}</h2>

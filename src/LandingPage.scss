@@ -2,19 +2,22 @@
 
 
 /*FRONT PAGE*/
-
+html {
+    scroll-behavior: smooth;
+    scroll-snap-align: center;
+}
 body {
 	font-family: 'Roboto', sans-serif;
-	background-image: url('/assets/svg/bgpattern.png');
+    background-image: url('/assets/svg/bgpattern.png');
 }
 
 #root {
-	display: unset !important;
+    display: unset !important;
 }
 
 .wrapper {
 	width: 100%;
-	overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 /*TOP NAV*/
@@ -62,7 +65,16 @@ body {
 		background-color: #AB772E;
 		border-radius: 20px;
 		color: white;
-	}
+    }
+    a { 
+        color: inherit;
+    }
+    a:hover 
+    {
+        color:#AB772E; 
+        text-decoration:none; 
+        cursor:pointer;  
+    }
 }
 
 .sideHr {
@@ -213,7 +225,16 @@ body {
 		color: wheat;
 		margin-top: 30px;
 		margin-left: 30px;
-	}
+    }
+    a { 
+        color: inherit;
+    }
+    a:hover 
+    {
+        color:#AB772E; 
+        text-decoration:none; 
+        cursor:pointer;  
+    }
 }
 
 

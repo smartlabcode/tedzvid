@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { BrowserRouter, Route } from 'react-router-dom';
+import { IconContext } from "react-icons";
+import { AiOutlineCloseCircle } from "react-icons/ai";
+
 function LandingPage(props){
     return (
         <React.Fragment>
@@ -12,9 +15,15 @@ function LandingPage(props){
                     <div className="nav">
                         <ul>
                             <Link to={"/lekcije"}><li className="selectedBtn">LEKCIJE</li></Link>
-                            <li>KONTAKT</li>
-                            <li className="sideHr">IMPRESUM</li>
+                            <a href="#contact">
+                                <li>KONTAKT</li>
+                            </a>
+                            <a href="#impresum">
+                                <li>IMPRESUM</li>
+                            </a>
+                            <a href="#">
                             <li className="sideHr"> NASLOVNA</li>
+                            </a>
                         </ul>
                     </div>
                 </div>
@@ -33,11 +42,13 @@ function LandingPage(props){
                     </div>
                     
                     <div className="fullMenu" style={{display: "none"}}>
-                        <h3 className="closeBTN">X</h3>
+                        <h3 className="closeBTN"><AiOutlineCloseCircle /></h3>
                         <center>
                         <ul>
                             <li className="selectedBtn">NASLOVNA</li>
-                            <li>IMPRESUM</li>
+                            <a href="#impresum">
+                                <li>IMPRESUM</li>
+                            </a>
                             <li>KONTAKT</li>
                             <li>LEKCIJE</li>
                         </ul>
@@ -53,13 +64,13 @@ function LandingPage(props){
                         <p>Priručnik za učenje tedžvidskih pravila</p>
                     </div>
                         <img className="quran" src={process.env.PUBLIC_URL + '/assets/svg/quran03.png'} /> 
-                        <center className="description">
+                        <center className="description" id="impresum">
                             <h2 className="white"><b>Lorem</b></h2>
                             <br/>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure quisquam quam optio, incidunt, amet in sed, harum autem sunt repellat dicta aperiam ab tempora reiciendis facere doloribus. Perferendis, sequi nihil? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque qui omnis labore voluptate, dignissimos incidunt nulla explicabo nihil odio non vero distinctio exercitationem pariatur aspernatur rerum nostrum. Eveniet, fuga alias.</p>
                         </center>
                 
-                <div className="sectionTwo">
+                <div className="sectionTwo" id="contact">
                         <center>
                             <h2><b>Kontakt</b></h2>
                             <br/>

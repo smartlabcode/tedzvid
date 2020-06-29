@@ -14,7 +14,9 @@ function Home() {
     return <React.Fragment>
         <div className="topNav">
                 <div className="logoNavBox">
-                <img className="logoUrl" src={process.env.PUBLIC_URL + '/assets/svg/logoUrl.png'} /> 
+                <Link to="/">
+                    <img className="logoUrl" src={process.env.PUBLIC_URL + '/assets/svg/logoUrl.png'} /> 
+                </Link>    
                 </div>
                 <div className="nav">
                     <ul>
