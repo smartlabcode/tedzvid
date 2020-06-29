@@ -305,3 +305,22 @@ body {
 		display: none;
 	}
 }
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .footerLanding .contentLeft {
+        position: relative;
+        top: 43px;
+        margin-left: 8%;
+        width: 40%;
+        color: white;
+    }
+    .sectionTwo {
+        margin-top: 280px;
+        position: absolute;
+    }
+    .logoUrl {
+        width: 110px;
+        margin-left: 25%;
+        margin-top: 22px;
+    }
+}
