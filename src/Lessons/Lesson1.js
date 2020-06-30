@@ -26,7 +26,10 @@ function L1() {
 
 							<h2 className="text-center font-weight-bold text-uppercase">Vakf</h2>
 						</div>
-						<h4 className="text-center">stajanje prilikom učenja</h4>
+
+						<h4 className="text-center">
+							<strong>Stajanje prilikom učenja</strong>
+						</h4>
 						<hr />
 					</Col>
 				</Row>
@@ -262,8 +265,8 @@ function L1() {
 						<span className="tacka">۞</span>
 						{VjezbeRow(data, 'vjezba', 'red26')}
 						<span className="mobile-row">
-							{VjezbeRow(data, 'vjezba', 'red25')}
 							<span className="tacka">۞</span>
+							{VjezbeRow(data, 'vjezba', 'red25')}
 						</span>
 					</Col>
 				</Row>

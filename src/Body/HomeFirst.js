@@ -16,24 +16,26 @@ function HomeFirst(props) {
 				return (
 					<Row className="">
 						<Col>
-							<Card>
-								<Card.Body>
-									<Badge style={{ paddingLeft: '0' }} className="imelekcije">
-										{number}
-									</Badge>
-									<div className="sectonRight">
-										<Card.Title>{lekcija.title} </Card.Title>
-										<Card.Subtitle className="mb-2 text-muted">{lekcija.subtitle}</Card.Subtitle>
-										<Link to={'/lekcija' + number} style={{ color: 'inherit' }}>
+							<Link to={'/lekcija' + number} style={{ color: 'inherit' }}>
+								<Card>
+									<Card.Body>
+										<Badge style={{ paddingLeft: '0' }} className="imelekcije">
+											{number}
+										</Badge>
+										<div className="sectonRight">
+											<Card.Title>{lekcija.title} </Card.Title>
+											<Card.Subtitle className="mb-2 text-muted">
+												{lekcija.subtitle}
+											</Card.Subtitle>
 											<IconContext.Provider value={{ color: '#92623C' }}>
 												<button className="pristupiBtn">
 													Pristupi <IoIosArrowForward />
 												</button>
 											</IconContext.Provider>
-										</Link>
-									</div>
-								</Card.Body>
-							</Card>
+										</div>
+									</Card.Body>
+								</Card>
+							</Link>
 						</Col>
 
 						{/* <Col>

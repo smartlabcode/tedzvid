@@ -17,9 +17,14 @@
   box-sizing: border-box;
 }
 
+h4 strong {
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+
 body {
-  font-family: Palatino, "Palatino Linotype";
-  font-size: 1.6rem;
+  font-family: Palatino, "Palatino Linotype" !important;
+  font-size: 1.3rem !important;
 }
 
 #root {
@@ -27,6 +32,10 @@ body {
   grid-template-columns: 1fr;
   place-items: center center;
   height: 100vh;
+}
+
+#rijeciAudio {
+  cursor: pointer;
 }
 
 .underLine {
@@ -78,15 +87,16 @@ span.arapski {
   font-family: 'KuranKerimFontHamdullah', serif;
   //padding: 0 .25em;
   border-radius: .15em;
-  line-height: 50px;
-  font-size: 27px;
+  line-height: 3.7rem;
+  font-size: 2rem;
+  margin-right: 0.5rem;
 }
 
 span.arapski-lekcija {
   font-family: 'KuranKerimFontHamdullah', serif;
   //padding: 0 .25em;
   border-radius: .15em;
-  font-size: 27px;
+  font-size: 2.5rem;
 }
 
 .text-center.col>span {
@@ -255,10 +265,9 @@ ul.bottomMenu {
   position: absolute;
   right: 45px;
   top: 45px;
-  width: 103px;
-  height: 30px;
+  width: 150px;
+  height: 40px;
   background-color: white;
-  border: 2px slolid #AB752F;
   border-radius: 40px;
   border: 2px solid #AB752F;
 }
@@ -415,11 +424,22 @@ h2 strong {
   }
 
   .arapski {
-    font-size: 19px !important;
+    font-size: 1.8rem !important;
   }
 
   .arapski-lekcija {
-    font-size: 19px !important;
+    font-size: 2rem !important;
+  }
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
+  .arapski {
+    font-size: 1.6rem !important;
+  }
+
+  .arapski-lekcija {
+    font-size: 2rem !important;
   }
 }
 
