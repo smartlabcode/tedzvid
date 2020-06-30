@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2b589d534a6267f8d389a4fa9ed9ee6d",
+    "revision": "efac629a86f216a4fb487957160d4c45",
     "url": "/tedzvid/index.html"
   },
   {
-    "revision": "240b6314a1a76002df06",
+    "revision": "1b0f7b92bd08100433ff",
     "url": "/tedzvid/static/css/2.829c9cb5.chunk.css"
   },
   {
-    "revision": "92ec6587797d3cae8111",
+    "revision": "e25c0a93e9def33217f2",
     "url": "/tedzvid/static/css/main.dd3dce70.chunk.css"
   },
   {
-    "revision": "240b6314a1a76002df06",
-    "url": "/tedzvid/static/js/2.5079fb86.chunk.js"
+    "revision": "1b0f7b92bd08100433ff",
+    "url": "/tedzvid/static/js/2.d619f994.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/tedzvid/static/js/2.5079fb86.chunk.js.LICENSE.txt"
+    "url": "/tedzvid/static/js/2.d619f994.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "92ec6587797d3cae8111",
-    "url": "/tedzvid/static/js/main.49f5a1da.chunk.js"
+    "revision": "e25c0a93e9def33217f2",
+    "url": "/tedzvid/static/js/main.5a555fa9.chunk.js"
   },
   {
     "revision": "fd2260fa53914c8d5ce7",
