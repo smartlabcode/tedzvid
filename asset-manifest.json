@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "./static/css/main.de461587.chunk.css",
-    "main.js": "./static/js/main.a25ea068.chunk.js",
-    "main.js.map": "./static/js/main.a25ea068.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.3579f3b6.js",
-    "runtime-main.js.map": "./static/js/runtime-main.3579f3b6.js.map",
-    "static/css/2.829c9cb5.chunk.css": "./static/css/2.829c9cb5.chunk.css",
-    "static/js/2.d619f994.chunk.js": "./static/js/2.d619f994.chunk.js",
-    "static/js/2.d619f994.chunk.js.map": "./static/js/2.d619f994.chunk.js.map",
-    "index.html": "./index.html",
-    "precache-manifest.966984eab609f0dda7c742f71597e1a9.js": "./precache-manifest.966984eab609f0dda7c742f71597e1a9.js",
-    "service-worker.js": "./service-worker.js",
-    "static/css/2.829c9cb5.chunk.css.map": "./static/css/2.829c9cb5.chunk.css.map",
-    "static/css/main.de461587.chunk.css.map": "./static/css/main.de461587.chunk.css.map",
-    "static/js/2.d619f994.chunk.js.LICENSE.txt": "./static/js/2.d619f994.chunk.js.LICENSE.txt",
-    "static/media/App.scss": "./static/media/KuranKerimFontHamdullah.c5109a1c.ttf"
+    "main.css": "/tedzvid/static/css/main.ea9ccb80.chunk.css",
+    "main.js": "/tedzvid/static/js/main.8b559fdf.chunk.js",
+    "main.js.map": "/tedzvid/static/js/main.8b559fdf.chunk.js.map",
+    "runtime-main.js": "/tedzvid/static/js/runtime-main.d772a02c.js",
+    "runtime-main.js.map": "/tedzvid/static/js/runtime-main.d772a02c.js.map",
+    "static/css/2.829c9cb5.chunk.css": "/tedzvid/static/css/2.829c9cb5.chunk.css",
+    "static/js/2.d619f994.chunk.js": "/tedzvid/static/js/2.d619f994.chunk.js",
+    "static/js/2.d619f994.chunk.js.map": "/tedzvid/static/js/2.d619f994.chunk.js.map",
+    "index.html": "/tedzvid/index.html",
+    "precache-manifest.63f906d2dc21796540e76ce653ea12d8.js": "/tedzvid/precache-manifest.63f906d2dc21796540e76ce653ea12d8.js",
+    "service-worker.js": "/tedzvid/service-worker.js",
+    "static/css/2.829c9cb5.chunk.css.map": "/tedzvid/static/css/2.829c9cb5.chunk.css.map",
+    "static/css/main.ea9ccb80.chunk.css.map": "/tedzvid/static/css/main.ea9ccb80.chunk.css.map",
+    "static/js/2.d619f994.chunk.js.LICENSE.txt": "/tedzvid/static/js/2.d619f994.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/tedzvid/static/media/KuranKerimFontHamdullah.c5109a1c.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.3579f3b6.js",
+    "static/js/runtime-main.d772a02c.js",
     "static/css/2.829c9cb5.chunk.css",
     "static/js/2.d619f994.chunk.js",
-    "static/css/main.de461587.chunk.css",
-    "static/js/main.a25ea068.chunk.js"
+    "static/css/main.ea9ccb80.chunk.css",
+    "static/js/main.8b559fdf.chunk.js"
   ]
 }
