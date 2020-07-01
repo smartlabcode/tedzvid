@@ -1,18 +1,11 @@
 /* Kenan Babačić - SmartLab.ba */
 
 import React from 'react';
+import { BrowserRouter, Route } from 'react-router-dom';
 import Home from './Body/HomePage';
 import Demo from './Body/LandingPage';
 import {
 	L1,
-	L2,
-	L3,
-	L4,
-	L5,
-	L6,
-	L7,
-	L8,
-	L9,
 	L10,
 	L11,
 	L12,
@@ -24,13 +17,18 @@ import {
 	L17,
 	L18,
 	L19,
+	L2,
 	L20,
 	L21,
-	L22
+	L22,
+	L3,
+	L4,
+	L5,
+	L6,
+	L7,
+	L8,
+	L9
 } from './Helpers/LessonsHelper';
-
-import Container from 'react-bootstrap/Container';
-import { BrowserRouter, Route } from 'react-router-dom';
 
 function App() {
 	return (

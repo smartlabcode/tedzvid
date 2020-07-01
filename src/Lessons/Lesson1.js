@@ -1,16 +1,13 @@
 import React from 'react';
+// Bootstrap
+import { Col, Container, Row, Table } from 'react-bootstrap';
+// Other
+import '../App.scss';
+import LekcijaMenu from '../Body/LekcijaMenu';
+import Footer from '../Body/MainFooter';
 import data from '../Data/L1Data.json';
 import PlayerRow from '../Helpers/PlayerHelper';
 import VjezbeRow from '../Helpers/VjezbeHelper';
-import Footer from '../Body/MainFooter';
-import { Link } from 'react-router-dom';
-import LekcijaMenu from '../Body/LekcijaMenu';
-
-// Bootstrap
-import { Row, Col, Table, Container } from 'react-bootstrap';
-
-// Other
-import '../App.scss';
 
 function L1() {
 	return (
