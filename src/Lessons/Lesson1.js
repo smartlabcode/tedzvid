@@ -249,11 +249,11 @@ function L1() {
 				</Row>
 				<Row className="text-center">
 					<Col className="mobile-row">
-						<span>
+						<span className="mobile-row">
 							<span className="tacka">۞</span>
 							{VjezbeRow(data, 'vjezba', 'red24')}
-							{VjezbeRow(data, 'vjezba', 'red23')}
 						</span>
+						<span className="mobile-row">{VjezbeRow(data, 'vjezba', 'red23')}</span>
 						<span>
 							<span className="tacka">۞</span>
 							{VjezbeRow(data, 'vjezba', 'red22')}
