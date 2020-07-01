@@ -86,7 +86,7 @@ function L2() {
 			</Row>
 
 			<Row className="text-center">
-				<Col>
+				<Col className="mobile-row">
 					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj13')}
 					<span className='tacka'>۞</span>

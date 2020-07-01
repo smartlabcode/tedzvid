@@ -230,58 +230,58 @@ function L1() {
 					</Col>
 				</Row>
 				<Row className="text-center">
-					<Col>
-						<span class="mobile-row">{VjezbeRow(data, 'vjezba', 'red19')}</span>
-						<span class="mobile-row">{VjezbeRow(data, 'vjezba', 'red18')}</span>
+					<Col className="mobile-row">
+						<span>{VjezbeRow(data, 'vjezba', 'red19')}</span>
+						<span>{VjezbeRow(data, 'vjezba', 'red18')}</span>
 					</Col>
 				</Row>
 				<Row className="text-center">
-					<Col>
-						<span class="mobile-row">
+					<Col className="mobile-row">
+						<span>
 							<span className="tacka">۞</span>
 							{VjezbeRow(data, 'vjezba', 'red21')}
 						</span>
-						<span class="mobile-row">
+						<span>
 							<span className="tacka">۞</span>
 							{VjezbeRow(data, 'vjezba', 'red20')}
 						</span>
 					</Col>
 				</Row>
 				<Row className="text-center">
-					<Col>
-						<span className="mobile-row">
+					<Col className="mobile-row">
+						<span>
 							<span className="tacka">۞</span>
 							{VjezbeRow(data, 'vjezba', 'red24')}
 							{VjezbeRow(data, 'vjezba', 'red23')}
 						</span>
-						<span className="mobile-row">
+						<span>
 							<span className="tacka">۞</span>
 							{VjezbeRow(data, 'vjezba', 'red22')}
 						</span>
 					</Col>
 				</Row>
 				<Row className="text-center">
-					<Col>
+					<Col className="mobile-row">
 						<span className="tacka">۞</span>
 						{VjezbeRow(data, 'vjezba', 'red26')}
-						<span className="mobile-row">
+						<span>
 							<span className="tacka">۞</span>
 							{VjezbeRow(data, 'vjezba', 'red25')}
 						</span>
 					</Col>
 				</Row>
 				<Row className="text-center">
-					<Col>
+					<Col className="mobile-row">
 						<span className="tacka">۞</span>
 						{VjezbeRow(data, 'vjezba', 'red31')}
 						<span className="tacka">۞</span>
 						{VjezbeRow(data, 'vjezba', 'red30')}
 
-						<span className="mobile-row">
+						<span>
 							<span className="tacka">۞</span>
 							{VjezbeRow(data, 'vjezba', 'red29')}
 						</span>
-						<span className="mobile-row">
+						<span>
 							<span className="tacka">۞</span>
 							{VjezbeRow(data, 'vjezba', 'red28')}
 						</span>
