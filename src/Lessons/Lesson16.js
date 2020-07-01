@@ -9,8 +9,6 @@ import data from '../Data/L16Data.json';
 import PlayerRow from '../Helpers/PlayerHelper';
 import VjezbeRow from '../Helpers/VjezbeHelper';
 
-
-
 function L16() {
 	return (
 		<React.Fragment>
@@ -20,7 +18,7 @@ function L16() {
 					<Col>
 						<div className="mobileTop">
 							<center>
-								<img src={process.env.PUBLIC_URL + '/assets/svg/Group 61.svg'} />
+								<img alt="demo" src={process.env.PUBLIC_URL + '/assets/svg/Group 61.svg'} />
 							</center>
 							<h2 className="text-center font-weight-bold text-uppercase">IDGAM MUTEKARIBEJN</h2>
 						</div>

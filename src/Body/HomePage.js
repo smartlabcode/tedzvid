@@ -1,27 +1,28 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import HomeFirst from '../Body/HomeFirst';
 
 function Home() {
-	const [ otherpage, pageClick ] = useState(false);
+	// const [ otherpage, pageClick ] = useState(false);
 
-	const pageClickHandler = () => {
-		return pageClick(!otherpage);
-	};
+	// const pageClickHandler = () => {
+	// 	return pageClick(!otherpage);
+	// };
 
 	return (
 		<React.Fragment>
 			<div className="topNav">
 				<div className="logoNavBox">
 					<Link to="/">
-						<img className="logoUrl" src={process.env.PUBLIC_URL + '/assets/svg/logoUrl.png'} />
+						<img alt="demo" className="logoUrl" src={process.env.PUBLIC_URL + '/assets/svg/logoUrl.png'} />
 					</Link>
 				</div>
 				<div className="nav">
 					<ul>
 						<Link to={'/'}>
 							<img
+								alt="demo"
 								style={{ marginTop: '11px' }}
 								src={process.env.PUBLIC_URL + '/assets/svg/ic_trending_flat_24px.png'}
 							/>
@@ -31,9 +32,13 @@ function Home() {
 				</div>
 			</div>
 			<div className="topMobileNav">
-				<img className="hamburger" src={process.env.PUBLIC_URL + '/assets/svg/hamburger.svg'} />
+				<img alt="demo" className="hamburger" src={process.env.PUBLIC_URL + '/assets/svg/hamburger.svg'} />
 				<Link to="/">
-					<img className="mobileLogo" src={process.env.PUBLIC_URL + '/assets/svg/mobileLogo.png'} />
+					<img
+						alt="demo"
+						className="mobileLogo"
+						src={process.env.PUBLIC_URL + '/assets/svg/mobileLogo.png'}
+					/>
 				</Link>
 				<div>
 					<Link to={'/lekcije'}>

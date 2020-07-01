@@ -18,7 +18,7 @@ function L12() {
 					<Col>
 						<div className="mobileTop">
 							<center>
-								<img src={process.env.PUBLIC_URL + '/assets/svg/Group 61.svg'} />
+								<img alt="demo" src={process.env.PUBLIC_URL + '/assets/svg/Group 61.svg'} />
 							</center>
 							<h2 className="text-center font-weight-bold text-uppercase">IHFA ŠEFEVIJJ</h2>
 						</div>

@@ -12,31 +12,31 @@ import Arabic from '../Letters/Arabic';
 import Player from '../Player/Player';
 
 function L6() {
-	const r1 = data.row1.map((dat) => {
-		return (
-			<span key={'key' + dat.id}>
-				<Player url={dat.url} key={'p' + dat.id}>
-					<Arabic arabic={dat.highlight} key={'a' + dat.id}>
-						{dat.word}
-					</Arabic>
-				</Player>{' '}
-				{dat.after === 'break' ? <br /> : dat.after}
-			</span>
-		);
-	});
+	// const r1 = data.row1.map((dat) => {
+	// 	return (
+	// 		<span key={'key' + dat.id}>
+	// 			<Player url={dat.url} key={'p' + dat.id}>
+	// 				<Arabic arabic={dat.highlight} key={'a' + dat.id}>
+	// 					{dat.word}
+	// 				</Arabic>
+	// 			</Player>{' '}
+	// 			{dat.after === 'break' ? <br /> : dat.after}
+	// 		</span>
+	// 	);
+	// });
 
-	const r2 = data.row2.map((dat) => {
-		return (
-			<span key={'key' + dat.id}>
-				<Player url={dat.url} key={'p' + dat.id}>
-					<Arabic arabic={dat.highlight} key={'a' + dat.id}>
-						{dat.word}
-					</Arabic>
-				</Player>{' '}
-				{dat.after === 'break' ? <br /> : dat.after}
-			</span>
-		);
-	});
+	// const r2 = data.row2.map((dat) => {
+	// 	return (
+	// 		<span key={'key' + dat.id}>
+	// 			<Player url={dat.url} key={'p' + dat.id}>
+	// 				<Arabic arabic={dat.highlight} key={'a' + dat.id}>
+	// 					{dat.word}
+	// 				</Arabic>
+	// 			</Player>{' '}
+	// 			{dat.after === 'break' ? <br /> : dat.after}
+	// 		</span>
+	// 	);
+	// });
 
 	const r3 = data.row3.map((dat, ind) => {
 		return (
@@ -54,7 +54,7 @@ function L6() {
 					<Col>
 						<div className="mobileTop">
 							<center>
-								<img src={process.env.PUBLIC_URL + '/assets/svg/Group 61.svg'} />
+								<img alt="demo" src={process.env.PUBLIC_URL + '/assets/svg/Group 61.svg'} />
 							</center>
 							<h2 className="text-center font-weight-bold text-uppercase">IDGAM MEAL-GUNNEH</h2>
 						</div>

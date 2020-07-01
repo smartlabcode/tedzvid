@@ -10,6 +10,7 @@ function Footer(props) {
 					<Col className="text-left">
 						<Link to={props.prev} className="text-white">
 							<img
+								alt="demo"
 								style={{ width: '30px', float: 'right', marginTop: '0' }}
 								className="logoUrl"
 								src={process.env.PUBLIC_URL + '/assets/svg/ic_arrow_drop_down_circle_24px.svg'}
@@ -19,6 +20,7 @@ function Footer(props) {
 					<Col className="text-right">
 						<Link to={props.next} className="text-white">
 							<img
+								alt="demo"
 								className="btnRight"
 								src={process.env.PUBLIC_URL + '/assets/svg/ic_arrow_drop_down_circle_24px.svg'}
 							/>
