@@ -84,27 +84,27 @@ function L18() {
 				</Col>
 			</Row>
 			<Row className="text-center">
-				<Col>
+				<Col className="mobile-row">
 				<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj8')}
 					{VjezbeRow(data, 'vjezba', 'broj7')}
 				</Col>
 			</Row>
 			<Row className="text-center">
-				<Col>
+				<Col className="mobile-row">
 				<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj9')}
 				</Col>
 			</Row>
 
 			<Row className="text-center">
-				<Col>
+				<Col className="mobile-row">
 				<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj10')}
 				</Col>
 			</Row>
 			<Row className="text-center">
-				<Col>
+				<Col className="mobile-row">
 				<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj11')}
 				</Col>

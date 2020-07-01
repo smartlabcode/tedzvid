@@ -86,14 +86,14 @@ function L11() {
         <hr/>
 
 			<Row className="text-center">
-				<Col>
+				<Col className="mobile-row">
 					<span className='tacka'>۞</span>
           {VjezbeRow(data, 'vjezba', 'broj7')}
 				</Col>
 			</Row>
 
 			<Row className="text-center">
-				<Col>
+				<Col className="mobile-row">
         <span className='tacka'>۞</span>
           {VjezbeRow(data, 'vjezba', 'broj9')}
 					<span className='tacka'>۞</span>
@@ -102,7 +102,7 @@ function L11() {
 			</Row>
 
 			<Row className="text-center">
-				<Col>
+				<Col className="mobile-row">
          
           <span className='tacka'>۞</span>
           {VjezbeRow(data, 'vjezba', 'broj11')} 
@@ -112,7 +112,7 @@ function L11() {
 
 		
       <Row className="text-center">
-				<Col>
+				<Col className="mobile-row">
 					<span className='tacka'>۞</span>
           {VjezbeRow(data, 'vjezba', 'broj14')}
           <span className='tacka'>۞</span>
@@ -122,7 +122,7 @@ function L11() {
 				</Col>
 			</Row>
       <Row className="text-center">
-				<Col>
+				<Col className="mobile-row">
 					<span className='tacka'>۞</span>
           {VjezbeRow(data, 'vjezba', 'broj16')}
           <span className='tacka'>۞</span>

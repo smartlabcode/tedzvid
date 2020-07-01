@@ -97,7 +97,7 @@ function L2() {
 			</Row>
 
 			<Row className="text-center">
-				<Col>
+				<Col className="mobile-row"> 
 					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj15')}
 					<span className='tacka'>۞</span>
@@ -106,7 +106,7 @@ function L2() {
 			</Row>
 
 			<Row className="text-center">
-				<Col>
+				<Col className="mobile-row">
 					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj17')}
 					<span className='tacka'>۞</span>
@@ -115,7 +115,7 @@ function L2() {
 			</Row>
 
 			<Row className="text-center">
-				<Col>
+				<Col className="mobile-row">
 					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj19')}
 					<span className='tacka'>۞</span>
@@ -123,7 +123,7 @@ function L2() {
 				</Col>
 			</Row>
 			<Row className="text-center">
-				<Col>
+				<Col className="mobile-row">
 					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj21')}
 					<span className='tacka'>۞</span>
@@ -131,7 +131,7 @@ function L2() {
 				</Col>
 			</Row>
 			<Row className="text-center">
-				<Col>
+				<Col className="mobile-row">
 					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj22')}
 				</Col>

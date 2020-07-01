@@ -102,7 +102,7 @@ function L22() {
 			</Row>
 
 			<Row className="text-center">
-				<Col> 	
+				<Col className="mobile-row"> 	
 					<span className='tacka'><span className='tacka'>۞</span></span>
 					{VjezbeRow(data, 'vjezba', 'broj9')}
 					<span className='tacka'><span className='tacka'>۞</span></span>
@@ -111,7 +111,7 @@ function L22() {
 			</Row>
 
 			<Row className="text-center">
-				<Col>
+				<Col className="mobile-row">
 					<span className='tacka'><span className='tacka'>۞</span></span>
 					{VjezbeRow(data, 'vjezba', 'broj11')}
 					<span className='tacka'><span className='tacka'>۞</span></span>
@@ -120,7 +120,7 @@ function L22() {
 			</Row>
 
 			<Row className="text-center">
-				<Col>
+				<Col className="mobile-row">
 					<span className='tacka'><span className='tacka'>۞</span></span>
 					{VjezbeRow(data, 'vjezba', 'broj13')}
 					<span className='tacka'><span className='tacka'>۞</span></span>
@@ -129,7 +129,7 @@ function L22() {
 			</Row>
 
 			<Row className="text-center">
-				<Col>
+				<Col className="mobile-row">
 				<span className='tacka'><span className='tacka'>۞</span></span>
 					{VjezbeRow(data, 'vjezba', 'broj15')}
 					<span className='tacka'><span className='tacka'>۞</span></span>

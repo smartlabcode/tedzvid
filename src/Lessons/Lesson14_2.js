@@ -72,7 +72,7 @@ function L14_2() {
 			</Row>
 
 			<Row className="text-center">
-				<Col>
+				<Col className="mobile-row">
 					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj29')}
 					<span className='tacka'>۞</span>
@@ -80,7 +80,7 @@ function L14_2() {
 				</Col>
 			</Row>
 			<Row className="text-center">
-				<Col>
+				<Col className="mobile-row">
 					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj31')}
 					<span className='tacka'>۞</span>
@@ -88,7 +88,7 @@ function L14_2() {
 				</Col>
 			</Row>
 			<Row className="text-center">
-				<Col>
+				<Col className="mobile-row">
 					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj33')}
 					<span className='tacka'>۞</span>
@@ -96,7 +96,7 @@ function L14_2() {
 				</Col>
 			</Row>
 			<Row className="text-center">
-				<Col>
+				<Col className="mobile-row">
 					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj35')}
 					<span className='tacka'>۞</span>
@@ -104,7 +104,7 @@ function L14_2() {
 				</Col>
 			</Row>
 			<Row className="text-center">
-				<Col>
+				<Col className="mobile-row">
 					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj38')}
 					<span className='tacka'>۞</span>
@@ -115,7 +115,7 @@ function L14_2() {
 			</Row>
 
 			<Row className="text-center">
-				<Col>
+				<Col className="mobile-row">
 					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj39')}
 				</Col>

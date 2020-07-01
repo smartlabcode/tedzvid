@@ -86,7 +86,7 @@ function L16() {
 			</Row>
 
 			<Row className="text-center">
-				<Col>
+				<Col className="mobile-row">
 				<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj7')}
 					{VjezbeRow(data, 'vjezba', 'broj6')}
@@ -95,7 +95,7 @@ function L16() {
 				</Col>
 			</Row>
 			<Row className="text-center">
-				<Col>
+				<Col className="mobile-row">
 				<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj9')}
 					<span className='tacka'>۞</span>
@@ -107,7 +107,7 @@ function L16() {
 			</Row>
 
 			<Row className="text-center">
-				<Col>
+				<Col className="mobile-row">
 				<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj12')}
 					<span className='tacka'>۞</span>

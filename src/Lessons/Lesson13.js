@@ -92,7 +92,7 @@ function L13() {
 			</Row> 
 
 			<Row className="text-center">
-				<Col>
+				<Col className="mobile-row">
 					<span className='tacka'>۞</span>
           {VjezbeRow(data, 'vjezba', 'broj10')}
           <span className='tacka'>۞</span>
@@ -101,21 +101,21 @@ function L13() {
 			</Row>
 
 			<Row className="text-center">
-				<Col>
+				<Col className="mobile-row">
 					<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj11')}
 				</Col>
 			</Row>
 
 			<Row className="text-center">
-				<Col>
+				<Col className="mobile-row">
           <span className='tacka'>۞</span>
           {VjezbeRow(data, 'vjezba', 'broj12')}
 				</Col>
 			</Row>
 
 			<Row className="text-center">
-				<Col>
+				<Col className="mobile-row">
 					<span className='tacka'>۞</span>
           {VjezbeRow(data, 'vjezba', 'broj14')}
           <span className='tacka'>۞</span>
@@ -123,7 +123,7 @@ function L13() {
 				</Col>
 			</Row>
       <Row className="text-center">
-				<Col>
+				<Col className="mobile-row">
 					<span className='tacka'>۞</span>
           {VjezbeRow(data, 'vjezba', 'broj17')}
           <span className='tacka'>۞</span>

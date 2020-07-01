@@ -73,7 +73,7 @@ function L17() {
 			</Row>
 
 			<Row className="text-center">
-				<Col>
+				<Col className="mobile-row">
 				<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj12')}
 					<span className='tacka'>۞</span>
@@ -82,7 +82,7 @@ function L17() {
 			</Row>
 
 			<Row className="text-center">
-				<Col>
+				<Col className="mobile-row">
 				<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj14')}
 					<span className='tacka'>۞</span>
@@ -95,7 +95,7 @@ function L17() {
 			</Row>
 
 			<Row className="text-center">
-				<Col>
+				<Col className="mobile-row">
 				<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj17')}
 					{VjezbeRow(data, 'vjezba', 'broj16')}
@@ -103,7 +103,7 @@ function L17() {
 			</Row>
 
 			<Row className="text-center">
-				<Col>
+				<Col className="mobile-row">
 				<span className='tacka'>۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj19')}
 					<span className='tacka'>۞</span>
