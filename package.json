@@ -2,7 +2,7 @@
   "name": "tedzvid",
   "version": "1.0.0",
   "private": false,
-  "homepage": "http://localhost:9000/",
+  "homepage": "http://127.0.0.1:5500/build/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.18",
     "@fortawesome/free-solid-svg-icons": "^5.8.2",
