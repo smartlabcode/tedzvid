@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/tedzvid/static/css/main.bb55fe94.chunk.css",
-    "main.js": "/tedzvid/static/js/main.8b559fdf.chunk.js",
-    "main.js.map": "/tedzvid/static/js/main.8b559fdf.chunk.js.map",
+    "main.js": "/tedzvid/static/js/main.2e2d51d6.chunk.js",
+    "main.js.map": "/tedzvid/static/js/main.2e2d51d6.chunk.js.map",
     "runtime-main.js": "/tedzvid/static/js/runtime-main.d772a02c.js",
     "runtime-main.js.map": "/tedzvid/static/js/runtime-main.d772a02c.js.map",
     "static/css/2.829c9cb5.chunk.css": "/tedzvid/static/css/2.829c9cb5.chunk.css",
     "static/js/2.d619f994.chunk.js": "/tedzvid/static/js/2.d619f994.chunk.js",
     "static/js/2.d619f994.chunk.js.map": "/tedzvid/static/js/2.d619f994.chunk.js.map",
     "index.html": "/tedzvid/index.html",
-    "precache-manifest.d53c7b0fb86881f6b60394183ad83581.js": "/tedzvid/precache-manifest.d53c7b0fb86881f6b60394183ad83581.js",
+    "precache-manifest.502d728ee4af8d10bbee65700885ff6c.js": "/tedzvid/precache-manifest.502d728ee4af8d10bbee65700885ff6c.js",
     "service-worker.js": "/tedzvid/service-worker.js",
     "static/css/2.829c9cb5.chunk.css.map": "/tedzvid/static/css/2.829c9cb5.chunk.css.map",
     "static/css/main.bb55fe94.chunk.css.map": "/tedzvid/static/css/main.bb55fe94.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.829c9cb5.chunk.css",
     "static/js/2.d619f994.chunk.js",
     "static/css/main.bb55fe94.chunk.css",
-    "static/js/main.8b559fdf.chunk.js"
+    "static/js/main.2e2d51d6.chunk.js"
   ]
 }
