@@ -87,36 +87,34 @@ function L16() {
 
 			<Row className="text-center">
 				<Col className="mobile-row">
-				<span className='tacka'>۞</span>
-					{VjezbeRow(data, 'vjezba', 'broj7')}
+					<span className='tacka'>{VjezbeRow(data, 'vjezba', 'broj5')} ۞</span>
 					{VjezbeRow(data, 'vjezba', 'broj6')}
-					<span className='tacka'>۞</span>
-					{VjezbeRow(data, 'vjezba', 'broj5')}
+					<span className='tacka'>{VjezbeRow(data, 'vjezba', 'broj7')} ۞</span>
 				</Col>
 			</Row>
 			<Row className="text-center">
 				<Col className="mobile-row">
-				<span className='tacka'>۞</span>
-					{VjezbeRow(data, 'vjezba', 'broj9')}
-					<span className='tacka'>۞</span>
-					{VjezbeRow(data, 'vjezba', 'broj8')}
+					<span className='tacka'>{VjezbeRow(data, 'vjezba', 'broj8')} ۞</span>
+					<span className='tacka'>{VjezbeRow(data, 'vjezba', 'broj9')} ۞</span>
 				</Col>
 			</Row>
 			<Row className="text-center">
-				<Col><span className='tacka'>۞</span>{VjezbeRow(data, 'vjezba', 'broj10')}</Col>
+				<Col className="mobile-row">
+					<span className='tacka'>{VjezbeRow(data, 'vjezba', 'broj10')} ۞</span>
+				</Col>
 			</Row>
 
 			<Row className="text-center">
 				<Col className="mobile-row">
-				<span className='tacka'>۞</span>
-					{VjezbeRow(data, 'vjezba', 'broj12')}
-					<span className='tacka'>۞</span>
-					{VjezbeRow(data, 'vjezba', 'broj11')}
+					<span className='tacka'>{VjezbeRow(data, 'vjezba', 'broj11')} ۞</span>
+					<span className='tacka'>{VjezbeRow(data, 'vjezba', 'broj12')} ۞</span>	
 				</Col>
 			</Row>
 
 			<Row className="text-center">
-				<Col><span className='tacka'>۞</span>{VjezbeRow(data, 'vjezba', 'broj13')}</Col>
+				<Col className="mobile-row">
+					<span className='tacka'>{VjezbeRow(data, 'vjezba', 'broj13')} ۞</span>
+				</Col>
 			</Row>
 
 			<Footer prev="/lekcija15" next="/lekcija17" />

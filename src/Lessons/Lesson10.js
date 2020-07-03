@@ -85,44 +85,35 @@ function L10() {
 			</Row>
 			<Row className="text-center">
 				<Col className="mobile-row">
-					<span className='tacka'>۞</span>
-					{VjezbeRow(data, 'vjezba', 'broj8')}
-					<span className='tacka'>۞</span>
-					{VjezbeRow(data, 'vjezba', 'broj7')}
-					<span className='tacka'>۞</span>
-					{VjezbeRow(data, 'vjezba', 'broj6')}
+					<span className='tacka'>{VjezbeRow(data, 'vjezba', 'broj6')} ۞</span>
+					<span className='tacka'>{VjezbeRow(data, 'vjezba', 'broj7')} ۞</span>
+					<span className='tacka'>{VjezbeRow(data, 'vjezba', 'broj8')} ۞</span>
 				</Col>
 			</Row>
 			<Row className="text-center">
 				<Col className="mobile-row">
-					<span className='tacka'>۞</span>
-					{VjezbeRow(data, 'vjezba', 'broj10')}
-					<span className='tacka'>۞</span>
-					{VjezbeRow(data, 'vjezba', 'broj9')}
+					<span className='tacka'>{VjezbeRow(data, 'vjezba', 'broj9')} ۞</span>
+					<span className='tacka'>{VjezbeRow(data, 'vjezba', 'broj10')} ۞</span>
 				</Col>
 			</Row>
 			<Row className="text-center">
 				<Col className="mobile-row">
-					<span className='tacka'>۞</span>
-					{VjezbeRow(data, 'vjezba', 'broj11')}
+					<span className='tacka'>{VjezbeRow(data, 'vjezba', 'broj11')} ۞</span>
 				</Col>
 			</Row>
 			<Row className="text-center">
 				<Col className="mobile-row">
-
-					<span className='tacka'>۞</span>
-					{VjezbeRow(data, 'vjezba', 'broj12')}
+					<span className='tacka'>{VjezbeRow(data, 'vjezba', 'broj12')} ۞</span>
 				</Col>
 			</Row>
 			<Row className="text-center">
 				<Col className="mobile-row">
-					<span className='tacka'>۞</span>
-					{VjezbeRow(data, 'vjezba', 'broj13')}</Col>
+					<span className='tacka'>{VjezbeRow(data, 'vjezba', 'broj13')} ۞</span>
+				</Col>
 			</Row>
 			<Row className="text-center">
 				<Col className="mobile-row">
-					<span className='tacka'>۞</span>
-					{VjezbeRow(data, 'vjezba', 'broj14')}
+					<span className='tacka'>{VjezbeRow(data, 'vjezba', 'broj14')} ۞</span>
 				</Col>
 			</Row>
 			<Footer prev="/lekcija9" next="/lekcija11" />

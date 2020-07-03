@@ -93,44 +93,33 @@ function L14() {
 
 			<Row className="text-center">
 				<Col className="mobile-row">
-					<span className='tacka'>۞</span>
-					{VjezbeRow(data, 'vjezba', 'broj14')}
-					<span className='tacka'>۞</span>
-					{VjezbeRow(data, 'vjezba', 'broj13')}
-					<span className='tacka'>۞</span>
-					{VjezbeRow(data, 'vjezba', 'broj12')}
+					<span className='tacka'>{VjezbeRow(data, 'vjezba', 'broj12')} ۞</span>
+					<span className='tacka'>{VjezbeRow(data, 'vjezba', 'broj13')} ۞</span>
+					<span className='tacka'>{VjezbeRow(data, 'vjezba', 'broj14')} ۞</span>
 				</Col>
 			</Row>
 			<Row className="text-center">
 				<Col className="mobile-row">
-					<span className='tacka'>۞</span>
-					{VjezbeRow(data, 'vjezba', 'broj16')}
-					<span className='tacka'>۞</span>
-					{VjezbeRow(data, 'vjezba', 'broj15')}
+					<span className='tacka'>{VjezbeRow(data, 'vjezba', 'broj15')} ۞</span>
+					<span className='tacka'>{VjezbeRow(data, 'vjezba', 'broj16')} ۞</span>
 				</Col>
 			</Row>
 			<Row className="text-center">
 				<Col className="mobile-row">
-					<span className='tacka'>۞</span>
-					{VjezbeRow(data, 'vjezba', 'broj18')}
-					<span className='tacka'>۞</span>
-					{VjezbeRow(data, 'vjezba', 'broj17')}
+					<span className='tacka'>{VjezbeRow(data, 'vjezba', 'broj17')} ۞</span>
+					<span className='tacka'>{VjezbeRow(data, 'vjezba', 'broj18')} ۞</span>
 				</Col>
 			</Row>
 			<Row className="text-center">
 				<Col className="mobile-row">
-					<span className='tacka'>۞</span>
-					{VjezbeRow(data, 'vjezba', 'broj20')}
-					<span className='tacka'>۞</span>
-					{VjezbeRow(data, 'vjezba', 'broj19')}
+					<span className='tacka'>{VjezbeRow(data, 'vjezba', 'broj19')} ۞</span>
+					<span className='tacka'>{VjezbeRow(data, 'vjezba', 'broj20')} ۞</span>
 				</Col>
 			</Row>
 			<Row className="text-center">
 				<Col className="mobile-row">
-					<span className='tacka'>۞</span>
-					{VjezbeRow(data, 'vjezba', 'broj22')}
-					<span className='tacka'>۞</span>
-					{VjezbeRow(data, 'vjezba', 'broj21')}
+					<span className='tacka'>{VjezbeRow(data, 'vjezba', 'broj21')} ۞</span>
+					<span className='tacka'>{VjezbeRow(data, 'vjezba', 'broj22')} ۞</span>
 				</Col>
 			</Row>
 

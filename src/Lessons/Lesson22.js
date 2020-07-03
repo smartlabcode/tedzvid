@@ -102,43 +102,33 @@ function L22() {
 			</Row>
 
 			<Row className="text-center">
-				<Col className="mobile-row"> 	
-					<span className='tacka'><span className='tacka'>۞</span></span>
-					{VjezbeRow(data, 'vjezba', 'broj9')}
-					<span className='tacka'><span className='tacka'>۞</span></span>
-					{VjezbeRow(data, 'vjezba', 'broj8')}
+				<Col className="mobile-row"> 
+					<span className='tacka'><span className='tacka'>{VjezbeRow(data, 'vjezba', 'broj8')} ۞</span></span>
+					<span className='tacka'><span className='tacka'>{VjezbeRow(data, 'vjezba', 'broj9')} ۞</span></span>
 				</Col>
 			</Row>
 
 			<Row className="text-center">
 				<Col className="mobile-row">
-					<span className='tacka'><span className='tacka'>۞</span></span>
-					{VjezbeRow(data, 'vjezba', 'broj11')}
-					<span className='tacka'><span className='tacka'>۞</span></span>
-					{VjezbeRow(data, 'vjezba', 'broj10')}
+					<span className='tacka'><span className='tacka'>{VjezbeRow(data, 'vjezba', 'broj10')} ۞</span></span>
+					<span className='tacka'><span className='tacka'>{VjezbeRow(data, 'vjezba', 'broj11')} ۞</span></span>
 				</Col>
 			</Row>
 
 			<Row className="text-center">
 				<Col className="mobile-row">
-					<span className='tacka'><span className='tacka'>۞</span></span>
-					{VjezbeRow(data, 'vjezba', 'broj13')}
-					<span className='tacka'><span className='tacka'>۞</span></span>
-					{VjezbeRow(data, 'vjezba', 'broj12')}
+					<span className='tacka'><span className='tacka'>{VjezbeRow(data, 'vjezba', 'broj12')} ۞</span></span>
+					<span className='tacka'><span className='tacka'>{VjezbeRow(data, 'vjezba', 'broj13')} ۞</span></span>
 				</Col>
 			</Row>
 
 			<Row className="text-center">
 				<Col className="mobile-row">
-				<span className='tacka'><span className='tacka'>۞</span></span>
-					{VjezbeRow(data, 'vjezba', 'broj15')}
-					<span className='tacka'><span className='tacka'>۞</span></span>
-					{VjezbeRow(data, 'vjezba', 'broj14')}
+					<span className='tacka'><span className='tacka'>{VjezbeRow(data, 'vjezba', 'broj14')} ۞</span></span>
+					<span className='tacka'><span className='tacka'>{VjezbeRow(data, 'vjezba', 'broj15')} ۞</span></span>
 				</Col>
 			</Row>
-
-	
-
+			
 			<Footer prev="/lekcija21" next="/lekcija1" />
 			</Container>
 		</React.Fragment>

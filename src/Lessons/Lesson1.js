@@ -231,50 +231,56 @@ function L1() {
 				</Row>
 				<Row className="text-center">
 					<Col className="mobile-row">
-						<span>{VjezbeRow(data, 'vjezba', 'red19')}</span>
 						<span>{VjezbeRow(data, 'vjezba', 'red18')}</span>
+						<span>{VjezbeRow(data, 'vjezba', 'red19')}</span>
+
+						
 					</Col>
 				</Row>
 				<Row className="text-center">
 					<Col className="mobile-row">
 						<span>
-							<span className="tacka">۞ {VjezbeRow(data, 'vjezba', 'red21')}</span>
+							<span className="tacka">{VjezbeRow(data, 'vjezba', 'red20')} ۞</span>
+							
 						</span>
 						<span>
-							<span className="tacka">۞ {VjezbeRow(data, 'vjezba', 'red20')}</span>
+							<span className="tacka">{VjezbeRow(data, 'vjezba', 'red21')} ۞</span>
 						</span>
 					</Col>
 				</Row>
 				<Row className="text-center">
 					<Col className="mobile-row">
 						<span className="mobile-row">
-							<span className="tacka">۞ {VjezbeRow(data, 'vjezba', 'red24')}</span>
 							
+							<span className="tacka">{VjezbeRow(data, 'vjezba', 'red22')} ۞</span>
 						</span>
 						<span className="mobile-row">{VjezbeRow(data, 'vjezba', 'red23')}</span>
 						<span>
-							<span className="tacka">۞ {VjezbeRow(data, 'vjezba', 'red22')}</span>
+							<span className="tacka">{VjezbeRow(data, 'vjezba', 'red24')} ۞</span>
 						</span>
 					</Col>
 				</Row>
 				<Row className="text-center">
 					<Col className="mobile-row">
-						<span className="tacka">۞ {VjezbeRow(data, 'vjezba', 'red26')}</span>
 						<span>
-							<span className="tacka">۞ {VjezbeRow(data, 'vjezba', 'red25')}</span>
+							
+							<span className="tacka">{VjezbeRow(data, 'vjezba', 'red25')} ۞</span>
+						</span>
+						<span>
+							<span className="tacka">{VjezbeRow(data, 'vjezba', 'red26')} ۞</span>
 						</span>
 					</Col>
 				</Row>
 				<Row className="text-center">
 					<Col className="mobile-row">
-						<span className="tacka">۞ {VjezbeRow(data, 'vjezba', 'red31')}</span>
-						<span className="tacka">۞ {VjezbeRow(data, 'vjezba', 'red30')}</span>
 						<span>
-							<span className="tacka">۞ {VjezbeRow(data, 'vjezba', 'red29')}</span>
+							<span className="tacka">{VjezbeRow(data, 'vjezba', 'red28')} ۞</span>
 						</span>
 						<span>
-							<span className="tacka">۞ {VjezbeRow(data, 'vjezba', 'red28')}</span>
+							<span className="tacka">{VjezbeRow(data, 'vjezba', 'red29')} ۞</span>
 						</span>
+						<span className="tacka">{VjezbeRow(data, 'vjezba', 'red30')} ۞</span>
+						<span className="tacka">{VjezbeRow(data, 'vjezba', 'red31')} ۞</span>
 					</Col>
 				</Row>
 

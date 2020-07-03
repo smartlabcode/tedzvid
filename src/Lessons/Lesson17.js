@@ -74,19 +74,15 @@ function L17() {
 
 			<Row className="text-center">
 				<Col className="mobile-row">
-				<span className='tacka'>۞</span>
-					{VjezbeRow(data, 'vjezba', 'broj12')}
-					<span className='tacka'>۞</span>
-					{VjezbeRow(data, 'vjezba', 'broj11')}
+					<span className='tacka'>{VjezbeRow(data, 'vjezba', 'broj11')} ۞</span>
+					<span className='tacka'>{VjezbeRow(data, 'vjezba', 'broj12')} ۞</span>
 				</Col>
 			</Row>
 
 			<Row className="text-center">
 				<Col className="mobile-row">
-				<span className='tacka'>۞</span>
-					{VjezbeRow(data, 'vjezba', 'broj14')}
-					<span className='tacka'>۞</span>
-					{VjezbeRow(data, 'vjezba', 'broj13')}
+					<span className='tacka'>{VjezbeRow(data, 'vjezba', 'broj13')} ۞</span>
+					<span className='tacka'>{VjezbeRow(data, 'vjezba', 'broj14')} ۞</span>
 				</Col>
 			</Row>
 
@@ -96,18 +92,15 @@ function L17() {
 
 			<Row className="text-center">
 				<Col className="mobile-row">
-				<span className='tacka'>۞</span>
-					{VjezbeRow(data, 'vjezba', 'broj17')}
 					{VjezbeRow(data, 'vjezba', 'broj16')}
+					<span className='tacka'>{VjezbeRow(data, 'vjezba', 'broj17')} ۞</span>
 				</Col>
 			</Row>
 
 			<Row className="text-center">
 				<Col className="mobile-row">
-				<span className='tacka'>۞</span>
-					{VjezbeRow(data, 'vjezba', 'broj19')}
-					<span className='tacka'>۞</span>
-					{VjezbeRow(data, 'vjezba', 'broj18')}
+					<span className='tacka'>{VjezbeRow(data, 'vjezba', 'broj18')} ۞</span>
+					<span className='tacka'>{VjezbeRow(data, 'vjezba', 'broj19')} ۞</span>
 				</Col>
 			</Row>
 
