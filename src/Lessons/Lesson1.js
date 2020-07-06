@@ -11,8 +11,24 @@ import { Row, Col, Table, Container } from 'react-bootstrap';
 
 // Other
 import '../App.scss';
+function scrollToHash() {
+	/* Obtain hash from current location (and trim off leading #) */
+	const id = window.location.hash.substr(1);
 
+	if (id) {
+		/* Find matching element by id */
+		const anchor = document.getElementById(id);
+
+		if (anchor) {
+			/* Scroll to that element if present */
+			anchor.scrollIntoView();
+		}
+	}
+}
 function L1() {
+	React.useEffect(() => {
+		scrollToHash();
+	}, []);
 	return (
 		<React.Fragment>
 			<LekcijaMenu broj="1" naziv="VAKF" />
@@ -220,7 +236,7 @@ function L1() {
 						<br />
 					</Col>
 				</Row>
-				<h2 className="text-center">
+				<h2 className="text-center" id="vjezba">
 					<strong>VJEŽBA</strong>
 				</h2>
 				<hr />
@@ -233,15 +249,12 @@ function L1() {
 					<Col className="mobile-row">
 						<span>{VjezbeRow(data, 'vjezba', 'red18')}</span>
 						<span>{VjezbeRow(data, 'vjezba', 'red19')}</span>
-
-						
 					</Col>
 				</Row>
 				<Row className="text-center">
 					<Col className="mobile-row">
 						<span>
 							<span className="tacka">{VjezbeRow(data, 'vjezba', 'red20')} ۞</span>
-							
 						</span>
 						<span>
 							<span className="tacka">{VjezbeRow(data, 'vjezba', 'red21')} ۞</span>
@@ -251,7 +264,6 @@ function L1() {
 				<Row className="text-center">
 					<Col className="mobile-row">
 						<span className="mobile-row">
-							
 							<span className="tacka">{VjezbeRow(data, 'vjezba', 'red22')} ۞</span>
 						</span>
 						<span className="mobile-row">{VjezbeRow(data, 'vjezba', 'red23')}</span>
@@ -263,7 +275,6 @@ function L1() {
 				<Row className="text-center">
 					<Col className="mobile-row">
 						<span>
-							
 							<span className="tacka">{VjezbeRow(data, 'vjezba', 'red25')} ۞</span>
 						</span>
 						<span>
