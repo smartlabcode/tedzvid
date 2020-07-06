@@ -229,7 +229,7 @@ function L1() {
 						<br />
 					</Col>
 				</Row>
-				<Row className="text-center">
+				<Row id="vjezba" className="text-center">
 					<Col className="mobile-row">
 						<span>{VjezbeRow(data, 'vjezba', 'red18')}</span>
 						<span>{VjezbeRow(data, 'vjezba', 'red19')}</span>

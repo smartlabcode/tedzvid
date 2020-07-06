@@ -250,15 +250,17 @@ ul.bottomMenu {
   height: 123px;
 }
 .pristupiBtn{
-  position: absolute;
-    right: 45px;
-    top: 45px;
+  position: relative;
+    float: right;
+    top: -51px;
     width: 103px;
     height: 30px;
     background-color: white;
     border: 2px slolid #AB752F;
     border-radius: 40px;
     border: 2px solid #AB752F;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 .height50px{
   height: 50px;
@@ -266,8 +268,16 @@ ul.bottomMenu {
 h3{
   font-size: 17px;
 }
+.sectonRight{
+  float: right;
+  width: 44%;
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .card-body{
+    padding-left: unset !important;
+    padding-right: unset !important;
+  }
   .container{
     width: 90% !important;
     padding: 0px !important;
@@ -282,13 +292,15 @@ h3{
     position: unset;
     right: 45px;
     top: 45px;
-    width: 103px;
+    width: 95px;
     height: 30px;
     background-color: white;
     border: 2px slolid #AB752F;
     border-radius: 40px;
     border: 2px solid #AB752F;
     margin-top: 15px;
+    margin-right: 5px;
+    margin-left: unset !important;
   }
   .card{
     height: 100% !important;
@@ -297,8 +309,8 @@ h3{
     
   }
   .sectonRight{
-    float: right;
-    width: 69% !important;
+    float: left;
+    width: 200px;
   }
   .col{
     padding-right: unset !important;
@@ -368,6 +380,10 @@ h2 strong{
   }
   .height50px{
     display: none;
+  }
+  .alignMobile{
+    width: 74%;
+    float: right;
   }
   .mobileTop{
     display: unset;

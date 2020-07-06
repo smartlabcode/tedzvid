@@ -13,29 +13,62 @@ function HomeFirst(props) {
 		<React.Fragment>
 			{lekcije.map((lekcija, index) => {
 				let number = props.start + index + 1;
+
+				function dugmeTabela() {
+					if (index == 0) {
+						return <Link to={'/lekcija' + number + '#tabela'} style={{ color: 'inherit' }}>
+						<button className="pristupiBtn">
+							Tabela <IoIosArrowForward />
+						</button>
+					</Link>
+					}		
+				}
+				function dugmeZnakovi() {
+					if (index == 0) {
+						return <Link to={'/lekcija' + number + '#znakovi'} style={{ color: 'inherit' }}>
+						<button className="pristupiBtn">
+							Znakovi <IoIosArrowForward />
+						</button>
+					</Link>
+					}		
+				}
 				return (
 					<Row className="">
 						<Col>
-							<Link to={'/lekcija' + number} style={{ color: 'inherit' }}>
-								<Card>
-									<Card.Body>
-										<Badge style={{ paddingLeft: '0' }} className="imelekcije">
-											{number}
-										</Badge>
-										<div className="sectonRight">
-											<Card.Title>{lekcija.title} </Card.Title>
-											<Card.Subtitle className="mb-2 text-muted">
-												{lekcija.subtitle}
-											</Card.Subtitle>
-											<IconContext.Provider value={{ color: '#92623C' }}>
+							
+							<Card>
+								<Card.Body>
+									<Badge style={{ paddingLeft: '0' }} className="imelekcije">
+										{number}
+									</Badge>
+									<div className="alignMobile">
+									<div className="tabletText">
+									<Card.Title>{lekcija.title} </Card.Title>
+										<Card.Subtitle className="mb-2 text-muted">
+											{lekcija.subtitle}
+										</Card.Subtitle>
+									<div className="sectonRight">
+										
+										<IconContext.Provider value={{ color: '#92623C' }}>
+											{dugmeTabela()}
+											{dugmeZnakovi()}
+											<Link to={'/lekcija' + number + '#vjezba'} style={{ color: 'inherit' }}>
 												<button className="pristupiBtn">
-													Pristupi <IoIosArrowForward />
+													Vježba <IoIosArrowForward />
 												</button>
-											</IconContext.Provider>
-										</div>
-									</Card.Body>
-								</Card>
-							</Link>
+											</Link>
+											<Link to={'/lekcija' + number + '#lekcija'} style={{ color: 'inherit' }}>
+												<button className="pristupiBtn">
+													Lekcija <IoIosArrowForward />
+												</button>
+											</Link>
+										</IconContext.Provider>
+									</div>	
+									</div>
+									</div>
+								</Card.Body>
+							</Card>
+							
 						</Col>
 
 						{/* <Col>
