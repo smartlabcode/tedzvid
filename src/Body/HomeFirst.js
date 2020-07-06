@@ -16,7 +16,7 @@ function HomeFirst(props) {
 				return (
 					<Row className="">
 						<Col>
-							<Link to={'/lekcija' + number} style={{ color: 'inherit' }}>
+							<Link to={'/lekcija' + number + '#vjezba'} style={{ color: 'inherit' }}>
 								<Card>
 									<Card.Body>
 										<Badge style={{ paddingLeft: '0' }} className="imelekcije">
