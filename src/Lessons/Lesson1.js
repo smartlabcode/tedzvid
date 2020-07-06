@@ -43,7 +43,7 @@ function L1() {
 							<h2 className="text-center font-weight-bold text-uppercase">Vakf</h2>
 						</div>
 
-						<h4 className="text-center">
+						<h4 className="text-center" id="lekcija">
 							<strong>Stajanje prilikom učenja</strong>
 						</h4>
 						<hr />
@@ -109,7 +109,7 @@ function L1() {
 					<Col>{PlayerRow(data, 'row4')}</Col>
 				</Row>
 				<Row>
-					<Col className="opisLekcije my-3">
+					<Col className="opisLekcije my-3" id="tabela">
 						<h3>Pregled u tabeli:</h3>
 						<Table className="tabela-opis text-center" bordered hover responsive>
 							<thead className="text-danger text-uppercase">
@@ -160,7 +160,7 @@ function L1() {
 					</Col>
 				</Row>
 				<Row>
-					<Col className="opisLekcije my-3">
+					<Col className="opisLekcije my-3" id="znakovi">
 						<h3>
 							<strong>Znakovi za stajanje:</strong>
 						</h3>

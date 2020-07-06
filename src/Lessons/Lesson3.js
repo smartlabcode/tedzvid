@@ -12,7 +12,25 @@ import { Row, Col, Table, Container } from 'react-bootstrap';
 // Other
 import '../App.scss';
 
+function scrollToHash() {
+	/* Obtain hash from current location (and trim off leading #) */
+	const id = window.location.hash.substr(1);
+
+	if (id) {
+		/* Find matching element by id */
+		const anchor = document.getElementById(id);
+
+		if (anchor) {
+			/* Scroll to that element if present */
+			anchor.scrollIntoView();
+		}
+	}
+}
+
 function L3() {
+	React.useEffect(() => {
+		scrollToHash();
+	}, []);
 	return (
 		<React.Fragment>
 		<LekcijaMenu broj="3" naziv="LAFZATULLAH"></LekcijaMenu>	
@@ -23,7 +41,7 @@ function L3() {
 						<center>
 							<img src={process.env.PUBLIC_URL + '/assets/svg/Group 61.svg'} /> 
 						</center>
-						<h2 className="text-center font-weight-bold text-uppercase">LAFZATULLAH</h2>
+						<h2 className="text-center font-weight-bold text-uppercase" id="lekcija">LAFZATULLAH</h2>
 					</div>
 					<h4 className="text-center">
 					<strong>izgovaranje riječi Allah <span className="arapski-lekcija"> اللّٰه </span></strong>
@@ -98,7 +116,7 @@ function L3() {
 				</Col>
 			</Row>
 
-			<h2 className="text-center"><strong>VJEŽBA</strong></h2>
+			<h2 className="text-center" id="vjezba"><strong>VJEŽBA</strong></h2>
 			<hr />
 			<Row>
 				<Col>

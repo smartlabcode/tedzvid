@@ -13,7 +13,25 @@ import { Row, Col, Container } from 'react-bootstrap';
 // Other
 import '../App.scss';
 
+function scrollToHash() {
+	/* Obtain hash from current location (and trim off leading #) */
+	const id = window.location.hash.substr(1);
+
+	if (id) {
+		/* Find matching element by id */
+		const anchor = document.getElementById(id);
+
+		if (anchor) {
+			/* Scroll to that element if present */
+			anchor.scrollIntoView();
+		}
+	}
+}
+
 function L9() {
+  React.useEffect(() => {
+    scrollToHash();
+  }, []);
     return (
         <React.Fragment>
         <LekcijaMenu broj="9" naziv="IZHAR HALKIJJ"></LekcijaMenu>
@@ -24,7 +42,7 @@ function L9() {
               <center>
                 <img src={process.env.PUBLIC_URL + '/assets/svg/Group 61.svg'} /> 
               </center>
-              <h2 className="text-center font-weight-bold text-uppercase">IZHAR HALKIJJ</h2>
+              <h2 className="text-center font-weight-bold text-uppercase" id="lekcija">IZHAR HALKIJJ</h2>
             </div>
             <h4 className="text-center"><strong>čisto izgovaranje harfa N (ن) ili tenvina</strong></h4>
             <hr/>
@@ -80,7 +98,7 @@ function L9() {
 				</Col>
 			</Row>
 
-        <h2 className="text-center"><strong>VJEŽBA</strong></h2>
+        <h2 className="text-center" id="vjezba" ><strong>VJEŽBA</strong></h2>
         <hr/>
         <Row>
 				<Col>

@@ -12,7 +12,26 @@ import { Row, Col, Container } from 'react-bootstrap';
 // Other
 import '../App.scss';
 
+function scrollToHash() {
+	/* Obtain hash from current location (and trim off leading #) */
+	const id = window.location.hash.substr(1);
+
+	if (id) {
+		/* Find matching element by id */
+		const anchor = document.getElementById(id);
+
+		if (anchor) {
+			/* Scroll to that element if present */
+			anchor.scrollIntoView();
+		}
+	}
+}
+
 function L4() {
+	
+	React.useEffect(() => {
+		scrollToHash();
+	}, []);
 	return (
 		<React.Fragment>
 			<LekcijaMenu broj="4" naziv="IDGAM MISLEJN"></LekcijaMenu>
@@ -23,7 +42,7 @@ function L4() {
 						<center>
 							<img src={process.env.PUBLIC_URL + '/assets/svg/Group 61.svg'} /> 
 						</center>
-						<h2 className="text-center font-weight-bold text-uppercase">IDGAM MISLEJN</h2>
+						<h2 className="text-center font-weight-bold text-uppercase" id="lekcija">IDGAM MISLEJN</h2>
 					</div>
 					<h4 className="text-center"><strong>uklapanje istih harfova</strong></h4>
 					<hr />
@@ -50,7 +69,7 @@ function L4() {
 			</Row>			
 
       <Row className="text-center mobile-row">
-				<Col>{PlayerRow(data, 'row1')}</Col>
+				<Col>{PlayerRow(data, 'row1')}</Col>,
 			</Row>
 
       <Row className="text-center">
@@ -67,7 +86,7 @@ function L4() {
 				</Col>
 			</Row>
 	
-			<h2 className="text-center"><strong>VJEŽBA</strong></h2>
+			<h2 className="text-center" id="vjezba"><strong>VJEŽBA</strong></h2>
 			<hr />
 			<Row>
 				<Col>

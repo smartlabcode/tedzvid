@@ -12,7 +12,25 @@ import { Row, Col, Container } from 'react-bootstrap';
 // Other
 import '../App.scss';
 
+function scrollToHash() {
+	/* Obtain hash from current location (and trim off leading #) */
+	const id = window.location.hash.substr(1);
+
+	if (id) {
+		/* Find matching element by id */
+		const anchor = document.getElementById(id);
+
+		if (anchor) {
+			/* Scroll to that element if present */
+			anchor.scrollIntoView();
+		}
+	}
+}
+
 function L18() {
+	React.useEffect(() => {
+		scrollToHash();
+	}, []);
 	return (
 		<React.Fragment>
 			<LekcijaMenu broj="18" naziv="MEDD MUTTESIL"></LekcijaMenu>
@@ -23,7 +41,7 @@ function L18() {
 					<center>
 						<img src={process.env.PUBLIC_URL + '/assets/svg/Group 61.svg'} /> 
 					</center>
-					<h2 className="text-center font-weight-bold text-uppercase">MEDD MUTTESIL</h2>
+					<h2 className="text-center font-weight-bold text-uppercase" id="lekcija">MEDD MUTTESIL</h2>
 					</div>
 					<h4 className="text-center"><strong>spojena dužina</strong></h4>
 					<hr />
@@ -68,7 +86,7 @@ function L18() {
 				</Col>
 			</Row>
 
-			<h2 className="text-center"><strong>VJEŽBA</strong></h2>
+			<h2 className="text-center" id="vjezba"><strong>VJEŽBA</strong></h2>
 			<hr />
 
 			<Row>

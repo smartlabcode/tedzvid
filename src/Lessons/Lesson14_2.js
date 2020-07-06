@@ -12,11 +12,29 @@ import { Row, Col, Container } from 'react-bootstrap';
 // Other
 import '../App.scss';
 
+function scrollToHash() {
+	/* Obtain hash from current location (and trim off leading #) */
+	const id = window.location.hash.substr(1);
+
+	if (id) {
+		/* Find matching element by id */
+		const anchor = document.getElementById(id);
+
+		if (anchor) {
+			/* Scroll to that element if present */
+			anchor.scrollIntoView();
+		}
+	}
+}
+
 function L14_2() {
+	React.useEffect(() => {
+		scrollToHash();
+	}, []);
 	return (
 		<React.Fragment>
 			<LekcijaMenu broj="14.2" naziv="HUKMURRA"></LekcijaMenu>
-			<Container>
+			<Container id="lekcija">
 			<Row>
 				<Col className="opisLekcije">Harf<strong> R </strong><span className="arapski-lekcija" >(ر)</span> se uči <u>tanko</u> u sljedećim situacijama:</Col>
 			</Row>
@@ -62,7 +80,7 @@ function L14_2() {
 				</Col>
 			</Row>
 
-			<h2 className="text-center"><strong>VJEŽBA</strong></h2>
+			<h2 className="text-center" id="vjezba"><strong>VJEŽBA</strong></h2>
 			<hr />
 
 			<Row>

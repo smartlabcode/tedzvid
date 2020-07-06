@@ -14,7 +14,26 @@ import '../App.scss';
 import Arabic from '../Letters/Arabic';
 import Player from '../Player/Player';
 
+function scrollToHash() {
+	/* Obtain hash from current location (and trim off leading #) */
+	const id = window.location.hash.substr(1);
+
+	if (id) {
+		/* Find matching element by id */
+		const anchor = document.getElementById(id);
+
+		if (anchor) {
+			/* Scroll to that element if present */
+			anchor.scrollIntoView();
+		}
+	}
+}
+
 function L6() {
+	React.useEffect(() => {
+		scrollToHash();
+	}, []);
+	
 	const r1 = data.row1.map((dat) => {
 		return (
 			<span key={'key' + dat.id}>
@@ -59,7 +78,7 @@ function L6() {
 						<center>
 							<img src={process.env.PUBLIC_URL + '/assets/svg/Group 61.svg'} /> 
 						</center>
-						<h2 className="text-center font-weight-bold text-uppercase">IDGAM MEAL-GUNNEH</h2>
+						<h2 className="text-center font-weight-bold text-uppercase" id="lekcija">IDGAM MEAL-GUNNEH</h2>
 					</div>
 					<h4 className="text-center"><strong>uklapanje sa propuštanjem zraka kroz nos</strong></h4>
 					<hr />
@@ -116,7 +135,7 @@ function L6() {
 				</Col>
 			</Row>
 
-			<h2 className="text-center"><strong>VJEŽBA</strong></h2>
+			<h2 className="text-center" id="vjezba"><strong>VJEŽBA</strong></h2>
 			<hr />
 			<Row>
 				<Col>
