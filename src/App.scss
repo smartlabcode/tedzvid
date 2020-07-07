@@ -272,6 +272,13 @@ h3{
   float: right;
   width: 44%;
 }
+.modal-dialog{
+  width: 95vw !important;
+  max-width: unset !important;
+}
+.custom-modal{
+  zoom: 140%;
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .card-body{
@@ -375,6 +382,9 @@ h2 strong{
   }
 }
 @media only screen and (max-width: 600px) {
+  .zoomIcon{
+    display: none;
+  }
   h4{
     font-size: 15px !important;
   }
