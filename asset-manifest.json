@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/tedzvid/static/css/main.b965fe3b.chunk.css",
-    "main.js": "/tedzvid/static/js/main.5251e356.chunk.js",
-    "main.js.map": "/tedzvid/static/js/main.5251e356.chunk.js.map",
-    "runtime-main.js": "/tedzvid/static/js/runtime-main.d772a02c.js",
-    "runtime-main.js.map": "/tedzvid/static/js/runtime-main.d772a02c.js.map",
-    "static/css/2.829c9cb5.chunk.css": "/tedzvid/static/css/2.829c9cb5.chunk.css",
-    "static/js/2.16271e8b.chunk.js": "/tedzvid/static/js/2.16271e8b.chunk.js",
-    "static/js/2.16271e8b.chunk.js.map": "/tedzvid/static/js/2.16271e8b.chunk.js.map",
-    "index.html": "/tedzvid/index.html",
-    "precache-manifest.768f5793877d39dd18c1437f54c2d255.js": "/tedzvid/precache-manifest.768f5793877d39dd18c1437f54c2d255.js",
-    "service-worker.js": "/tedzvid/service-worker.js",
-    "static/css/2.829c9cb5.chunk.css.map": "/tedzvid/static/css/2.829c9cb5.chunk.css.map",
-    "static/css/main.b965fe3b.chunk.css.map": "/tedzvid/static/css/main.b965fe3b.chunk.css.map",
-    "static/js/2.16271e8b.chunk.js.LICENSE.txt": "/tedzvid/static/js/2.16271e8b.chunk.js.LICENSE.txt",
-    "static/media/App.scss": "/tedzvid/static/media/KuranKerimFontHamdullah.c5109a1c.ttf"
+    "main.css": "/fahro.github.io/tedzvid/static/css/main.2ae2a410.chunk.css",
+    "main.js": "/fahro.github.io/tedzvid/static/js/main.cd8fc8d0.chunk.js",
+    "main.js.map": "/fahro.github.io/tedzvid/static/js/main.cd8fc8d0.chunk.js.map",
+    "runtime-main.js": "/fahro.github.io/tedzvid/static/js/runtime-main.b6473e83.js",
+    "runtime-main.js.map": "/fahro.github.io/tedzvid/static/js/runtime-main.b6473e83.js.map",
+    "static/css/2.829c9cb5.chunk.css": "/fahro.github.io/tedzvid/static/css/2.829c9cb5.chunk.css",
+    "static/js/2.ff561dc1.chunk.js": "/fahro.github.io/tedzvid/static/js/2.ff561dc1.chunk.js",
+    "static/js/2.ff561dc1.chunk.js.map": "/fahro.github.io/tedzvid/static/js/2.ff561dc1.chunk.js.map",
+    "index.html": "/fahro.github.io/tedzvid/index.html",
+    "precache-manifest.08367cf0f3a7832a1399b438cba63b0a.js": "/fahro.github.io/tedzvid/precache-manifest.08367cf0f3a7832a1399b438cba63b0a.js",
+    "service-worker.js": "/fahro.github.io/tedzvid/service-worker.js",
+    "static/css/2.829c9cb5.chunk.css.map": "/fahro.github.io/tedzvid/static/css/2.829c9cb5.chunk.css.map",
+    "static/css/main.2ae2a410.chunk.css.map": "/fahro.github.io/tedzvid/static/css/main.2ae2a410.chunk.css.map",
+    "static/js/2.ff561dc1.chunk.js.LICENSE.txt": "/fahro.github.io/tedzvid/static/js/2.ff561dc1.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/fahro.github.io/tedzvid/static/media/KuranKerimFontHamdullah.c5109a1c.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.d772a02c.js",
+    "static/js/runtime-main.b6473e83.js",
     "static/css/2.829c9cb5.chunk.css",
-    "static/js/2.16271e8b.chunk.js",
-    "static/css/main.b965fe3b.chunk.css",
-    "static/js/main.5251e356.chunk.js"
+    "static/js/2.ff561dc1.chunk.js",
+    "static/css/main.2ae2a410.chunk.css",
+    "static/js/main.cd8fc8d0.chunk.js"
   ]
 }
