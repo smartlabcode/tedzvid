@@ -1,7 +1,8 @@
 {
   "name": "tedzvid",
   "version": "1.0.0",
-  "homepage": "fahro.github.io/tedzvid/",
+  "private": false,
+  "homepage": "https://fahro.github.io/tedzvidba/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.18",
     "@fortawesome/free-solid-svg-icons": "^5.8.2",

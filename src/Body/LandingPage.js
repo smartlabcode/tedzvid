@@ -1,6 +1,8 @@
 import React from 'react';
-import { AiOutlineCloseCircle } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
+import { IconContext } from 'react-icons';
+import { AiOutlineCloseCircle } from 'react-icons/ai';
 
 function LandingPage(props) {
 	return (
@@ -8,7 +10,7 @@ function LandingPage(props) {
 			<div className="wrapper">
 				<div className="topNav">
 					<div className="logoNavBox">
-						<img alt="demo" className="logoUrl" src={process.env.PUBLIC_URL + '/assets/svg/logoUrl.png'} />
+						<img className="logoUrl" src={process.env.PUBLIC_URL + '/assets/svg/logoUrl.png'} />
 					</div>
 					<div className="nav">
 						<ul>
@@ -21,7 +23,7 @@ function LandingPage(props) {
 							<a href="#impresum">
 								<li>IMPRESUM</li>
 							</a>
-							<a href="/">
+							<a href="#">
 								<li className="sideHr"> NASLOVNA</li>
 							</a>
 						</ul>
@@ -29,9 +31,9 @@ function LandingPage(props) {
 				</div>
 
 				<div className="topMobileNav">
-					<img alt="demo" className="hamburger" src={process.env.PUBLIC_URL + '/assets/svg/hamburger.svg'} />
+					<img className="hamburger" src={process.env.PUBLIC_URL + '/assets/svg/hamburger.svg'} />
 					<Link to={'/'}>
-						<img alt="demo" className="mobileLogo" src={process.env.PUBLIC_URL + '/assets/svg/mobileLogo.png'} />
+						<img className="mobileLogo" src={process.env.PUBLIC_URL + '/assets/svg/mobileLogo.png'} />
 					</Link>
 					<div>
 						<Link to={'/lekcije'}>
@@ -70,14 +72,14 @@ function LandingPage(props) {
 				</div>
 
 				<div className="innerWrapper">
-					<img alt="demo" className="quranbg" src={process.env.PUBLIC_URL + '/assets/svg/quranbg.svg'} />
+					<img className="quranbg" src={process.env.PUBLIC_URL + '/assets/svg/quranbg.svg'} />
 					<div className="sectionOne">
 						<h2>
 							<b>Tedžvid.ba</b>
 						</h2>
 						<p>Priručnik za učenje tedžvidskih pravila</p>
 					</div>
-					<img alt="demo" className="quran" src={process.env.PUBLIC_URL + '/assets/svg/quran03.png'} />
+					<img className="quran" src={process.env.PUBLIC_URL + '/assets/svg/quran03.png'} />
 					<center className="description" id="impresum">
 						<h2 className="white">
 							<b>Lorem</b>

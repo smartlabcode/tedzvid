@@ -9,7 +9,7 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-image: url('/tedzvid/assets/svg/bgpattern.png');
+    background-image: url('/assets/svg/bgpattern.png');
 }
 
 #root {
@@ -250,6 +250,7 @@ body {
         color: wheat;
         margin-top: 30px;
         margin-left: 30px;
+        cursor: pointer;
     }
 
     a {
@@ -282,6 +283,7 @@ body {
         position: absolute;
         top: 30px;
         left: 10%;
+        cursor: pointer;
     }
 
     .mobileLogo {

@@ -1,28 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import HomeFirst from '../Body/HomeFirst';
 
 function Home() {
-	// const [ otherpage, pageClick ] = useState(false);
+	const [ otherpage, pageClick ] = useState(false);
+	const [ isHidden, toggleIsHidden ] = useState(true);
 
-	// const pageClickHandler = () => {
-	// 	return pageClick(!otherpage);
-	// };
-
+	const pageClickHandler = () => {
+		return pageClick(!otherpage);
+	};
+	const toggleIsHiddenHandler = () => {
+		console.log('CLICK!');
+		toggleIsHidden(!isHidden);
+	};
 	return (
 		<React.Fragment>
 			<div className="topNav">
 				<div className="logoNavBox">
 					<Link to="/">
-						<img alt="demo" className="logoUrl" src={process.env.PUBLIC_URL + '/assets/svg/logoUrl.png'} />
+						<img className="logoUrl" src={process.env.PUBLIC_URL + '/assets/svg/logoUrl.png'} />
 					</Link>
 				</div>
 				<div className="nav">
 					<ul>
 						<Link to={'/'}>
 							<img
-								alt="demo"
 								style={{ marginTop: '11px' }}
 								src={process.env.PUBLIC_URL + '/assets/svg/ic_trending_flat_24px.png'}
 							/>
@@ -32,13 +35,14 @@ function Home() {
 				</div>
 			</div>
 			<div className="topMobileNav">
-				<img alt="demo" className="hamburger" src={process.env.PUBLIC_URL + '/assets/svg/hamburger.svg'} />
+				<img
+					className="hamburger"
+					src={process.env.PUBLIC_URL + '/assets/svg/hamburger.svg'}
+					onClick={toggleIsHiddenHandler}
+				/>
+
 				<Link to="/">
-					<img
-						alt="demo"
-						className="mobileLogo"
-						src={process.env.PUBLIC_URL + '/assets/svg/mobileLogo.png'}
-					/>
+					<img className="mobileLogo" src={process.env.PUBLIC_URL + '/assets/svg/mobileLogo.png'} />
 				</Link>
 				<div>
 					<Link to={'/lekcije'}>
@@ -58,8 +62,10 @@ function Home() {
 						</svg>
 					</Link>
 				</div>
-				<div className="fullMenu" style={{ display: 'none' }}>
-					<h3 className="closeBTN">X</h3>
+				<div className={isHidden ? 'hide' : 'fullMenu'}>
+					<h3 className="closeBTN" onClick={toggleIsHiddenHandler}>
+						X
+					</h3>
 					<center>
 						<ul>
 							<li className="selectedBtn">NASLOVNA</li>
