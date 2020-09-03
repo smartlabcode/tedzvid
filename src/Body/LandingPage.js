@@ -21,7 +21,7 @@ function LandingPage(props) {
 								<li>KONTAKT</li>
 							</a>
 							<a href="#impresum">
-								<li>IMPRESUM</li>
+								<li>O NAMA</li>
 							</a>
 							<a href="#">
 								<li className="sideHr"> NASLOVNA</li>
@@ -78,19 +78,19 @@ function LandingPage(props) {
 							<b>Tedžvid.ba</b>
 						</h2>
 						<p>Priručnik za učenje tedžvidskih pravila</p>
+						<button type="submit" class="contactBTN btn-lekcije">LEKCIJE</button>
 					</div>
-					<img className="quran" src={process.env.PUBLIC_URL + '/assets/svg/quran03.png'} />
 					<center className="description" id="impresum">
+					<img className="quran" src={process.env.PUBLIC_URL + '/assets/svg/quran03.png'} />
 						<h2 className="white">
-							<b>Lorem</b>
+							<b>O NAMA</b>
 						</h2>
 						<br />
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure quisquam quam optio,
-							incidunt, amet in sed, harum autem sunt repellat dicta aperiam ab tempora reiciendis facere
-							doloribus. Perferendis, sequi nihil? Lorem ipsum, dolor sit amet consectetur adipisicing
-							elit. Itaque qui omnis labore voluptate, dignissimos incidunt nulla explicabo nihil odio non
-							vero distinctio exercitationem pariatur aspernatur rerum nostrum. Eveniet, fuga alias.
+						Tedzvid.ba je elektronska, interaktivna verzija printanog tedžvida autora mr. Sejid ef. Strike. Ovaj tedžvid ima za cilj da pomogne novim učačima Kur'ana, kako polaznicima mektepske nastave tako i odraslima, u lakšem savladavanju osnovnih tedžvidskih pravila. Jednostavan rječnik i izbjegavanje stručnih termina, koliko je to bilo moguće, čine ga pristupačnijim široj čitalačkoj populaciji.
+						<br/><br/> Posebnost stranice tedzvid.ba su interaktivni primjeri čiji audio zapis možete preslušati klikom na isti, a video zapis nakon vježbe će vam pomoći da lakše razumijete tedžvidsko pravilo koje želite savladati.
+						<br/><br/> Nadamo se da će tedžvid.ba pomoći mu'allimima pri objašnjavanju tedžvidskih pravila, kako djeci u mektebu tako i odraslima nakon završetka sufare. 
+
 						</p>
 					</center>
 

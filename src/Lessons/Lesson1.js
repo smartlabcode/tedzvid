@@ -95,13 +95,13 @@ function L1() {
             <strong>1.</strong> Kada riječ na kojoj staje završava{" "}
             <strong>kratkim vokalom</strong> E{" "}
             <span className="arapski-lekcija "> ــــَـــ</span> , I{" "}
-            <span className="arapski-lekcija "> ــــِــ</span>, U{" "}
+            <span className="arapski-lekcija "> ــــِــ</span> , U{" "}
             <span className="arapski-lekcija "> ــــُـــ </span>ili{" "}
             <strong>tenvinom</strong> IN{" "}
-            <span className="arapski-lekcija "> ــــٍــ </span>, UN{" "}
-            <span className="arapski-lekcija"> ـــٌـــ</span>, stat će kao da je
+            <span className="arapski-lekcija "> ــــٍــ </span> , UN{" "}
+            <span className="arapski-lekcija"> ـــٌـــ</span> , stat će kao da je
             na riječi <strong>sukun</strong>{" "}
-            <span className="arapski-lekcija "> ــــْـــ</span>, npr.:
+            <span className="arapski-lekcija "> ــــْـــ</span> , npr.:
           </Col>
         </Row>
         <Row className="text-center">

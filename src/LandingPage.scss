@@ -39,7 +39,7 @@ body {
     .logoNavBox {
         width: 25%;
         height: 100%;
-        background-color: #92623CE6;
+        background-color: #92623C;
         float: left;
     }
 
@@ -116,7 +116,7 @@ body {
 
     .quran {
         position: relative;
-        top: -60px;
+        // top: -60px;
         z-index: 100;
         width: 100%;
         margin-left: auto;
@@ -134,7 +134,7 @@ body {
 
     .description {
         position: relative;
-        top: -50px;
+        // top: -50px;
 
         h2 {
             font-size: 32px;
@@ -334,7 +334,10 @@ body {
         color: white;
     }
 }
-
+.btn-lekcije{
+    margin-bottom: 40px;
+    margin-top: unset;
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
