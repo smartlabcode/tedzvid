@@ -199,14 +199,14 @@ function L17() {
 
         <Row className="text-center">
           <Col>
-            <span className="tacka">۞</span>
-            {VjezbeRow(data, "vjezba", "broj15")}
+            <span className="tacka">
+            {VjezbeRow(data, "vjezba", "broj15")} ۞
+            </span>
           </Col>
         </Row>
 
         <Row className="text-center">
           <Col className="mobile-row">
-            {VjezbeRow(data, "vjezba", "broj16")}
             <span className="tacka">
               {VjezbeRow(data, "vjezba", "broj17")} ۞
             </span>
@@ -257,14 +257,14 @@ function L17() {
 
             <Row className="text-center">
               <Col>
-                <span className="tacka">۞</span>
-                {VjezbeRow(data, "vjezba", "broj15")}
+                <span className="tacka">
+                {VjezbeRow(data, "vjezba", "broj15")} ۞
+                </span>
               </Col>
             </Row>
 
             <Row className="text-center">
               <Col className="mobile-row">
-                {VjezbeRow(data, "vjezba", "broj16")}
                 <span className="tacka">
                   {VjezbeRow(data, "vjezba", "broj17")} ۞
                 </span>

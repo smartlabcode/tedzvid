@@ -107,7 +107,7 @@ function L2() {
           <Col>{PlayerRow(data, "row1")}</Col>
         </Row>
 
-        <Row className="text-center">
+        <Row className="text-center rtl">
           <Col>{PlayerRow(data, "row2")}</Col>
         </Row>
 
@@ -125,7 +125,7 @@ function L2() {
             </strong>
             ili U{" "}
             <strong>
-              <span className="arapski-lekcija">ــــُـــ</span>
+              <span className="arapski-lekcija">ــــُـــ</span> 
             </strong>
             , zamjenica{" "}
             <strong>
@@ -139,7 +139,7 @@ function L2() {
           <Col>{PlayerRow(data, "row3")}</Col>
         </Row>
 
-        <Row className="text-center">
+        <Row className="text-center rtl">
           <Col>{PlayerRow(data, "row4")}</Col>
         </Row>
 
@@ -185,7 +185,7 @@ function L2() {
               <Col>{PlayerRow(data, "row1")}</Col>
             </Row>
 
-            <Row className="text-center">
+            <Row className="text-center rtl">
               <Col>{PlayerRow(data, "row2")}</Col>
             </Row>
 
@@ -201,11 +201,11 @@ function L2() {
                 <strong>
                   <span className="arapski-lekcija">ــــِــ </span>
                 </strong>
-                ili U{" "}
+                ili U {" "}
                 <strong>
                   <span className="arapski-lekcija">ــــُـــ</span>
                 </strong>
-                , zamjenica{" "}
+                 , zamjenica{" "}
                 <strong>
                   HU (<span className="arapski-lekcija">هُ</span>)
                 </strong>{" "}
@@ -217,7 +217,7 @@ function L2() {
               <Col>{PlayerRow(data, "row3")}</Col>
             </Row>
 
-            <Row className="text-center">
+            <Row className="text-center rtl">
               <Col>{PlayerRow(data, "row4")}</Col>
             </Row>
 

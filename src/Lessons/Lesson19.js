@@ -250,8 +250,10 @@ function L19() {
 
         <Row className="text-center">
           <Col>
-            <span className="tacka">۞</span>
-            {VjezbeRow(data, "vjezba", "broj8")}
+            <span className="tacka">
+            {VjezbeRow(data, "vjezba", "broj8")} 
+            ۞
+            </span>
           </Col>
         </Row>
 
@@ -268,8 +270,9 @@ function L19() {
 
         <Row className="text-center">
           <Col>
-            <span className="tacka">۞</span>
-            {VjezbeRow(data, "vjezba", "broj11")}
+            <span className="tacka">
+            {VjezbeRow(data, "vjezba", "broj11")} ۞
+            </span>
           </Col>
         </Row>
 
@@ -309,8 +312,10 @@ function L19() {
 
             <Row className="text-center">
               <Col>
-                <span className="tacka">۞</span>
+                <span className="tacka">
                 {VjezbeRow(data, "vjezba", "broj8")}
+                 ۞
+                </span>
               </Col>
             </Row>
 
@@ -327,8 +332,9 @@ function L19() {
 
             <Row className="text-center">
               <Col>
-                <span className="tacka">۞</span>
-                {VjezbeRow(data, "vjezba", "broj11")}
+                <span className="tacka">
+                {VjezbeRow(data, "vjezba", "broj11")} ۞
+                </span>
               </Col>
             </Row>
 

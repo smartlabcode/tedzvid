@@ -63,10 +63,22 @@ span.svira {
 span{
   font-size: 1.5rem;
 }
-
+span.oznaceno{
+  font-size: 1.8rem;
+}
 span.tacka {
   padding-left: 0.3em;
-  padding-right: 0.3em
+  padding-right: 0.3em;
+}
+// .text-center.row{
+//   direction: rtl;
+// }
+
+.rtl{
+  direction: rtl;
+}
+.ltr{
+  direction: ltr;
 }
 
 span.after {

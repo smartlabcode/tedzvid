@@ -236,9 +236,6 @@ function L11() {
         <Row className="text-center">
           <Col className="mobile-row">
             <span className="tacka">
-              {VjezbeRow(data, "vjezba", "broj10")} ۞
-            </span>
-            <span className="tacka">
               {VjezbeRow(data, "vjezba", "broj11")} ۞
             </span>
           </Col>
@@ -298,9 +295,6 @@ function L11() {
 
             <Row className="text-center">
               <Col className="mobile-row">
-                <span className="tacka">
-                  {VjezbeRow(data, "vjezba", "broj10")} ۞
-                </span>
                 <span className="tacka">
                   {VjezbeRow(data, "vjezba", "broj11")} ۞
                 </span>
