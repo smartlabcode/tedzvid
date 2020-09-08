@@ -48,6 +48,7 @@ function Footer(props) {
                 </Row>
             </footer>
     </React.Fragment>
+    
     );
 }
 

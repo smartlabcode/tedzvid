@@ -29,39 +29,43 @@
         }
     ],
     "row2": [{
-            "id": 5,
-            "url": "./assets/audio/l4/5.mp3",
-            "highlight": "هْهُ",
-            "word": "يُكْرِهْهُنَّ",
+
+            "id": 7,
+            "url": "./assets/audio/l4/7.mp3",
+            "highlight": "لْ لِ",
+            "word": "قُلْ لِمَنِ الْأَرْضُ",
             "after": " ; "
         },
         {
+
             "id": 6,
             "url": "./assets/audio/l4/6.mp3",
             "highlight": "ذْ ذَ",
             "word": "إِذْ ذَهَبَ مُغَاضِبًا",
             "after": " ; "
+            
         },
         {
-            "id": 7,
-            "url": "./assets/audio/l4/7.mp3",
-            "highlight": "لْ لِ",
-            "word": "قُلْ لِمَنِ الْأَرْضُ",
+            "id": 5,
+            "url": "./assets/audio/l4/5.mp3",
+            "highlight": "هْهُ",
+            "word": "يُكْرِهْهُنَّ",
             "after": null
         }
     ],
     "row3": [{
-            "id": 9,
-            "url": "./assets/audio/l4/9.mp3",
-            "highlight": "رْ رَ",
-            "word": "وَاذْكُـرْ رَبَّـكَ كَـثِـيـرًا",
-            "after": " ; "
-        },
-        {
+
             "id": 8,
             "url": "./assets/audio/l4/8.mp3",
             "highlight": "بْ بِـ",
             "word": "إِذْهَـبْ بِـكِـتَابِي هٰـذَا",
+            "after": " ; "
+        },
+        {
+            "id": 9,
+            "url": "./assets/audio/l4/9.mp3",
+            "highlight": "رْ رَ",
+            "word": "وَاذْكُـرْ رَبَّـكَ كَـثِـيـرًا",
             "after": null
         }
     ],

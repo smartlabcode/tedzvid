@@ -22,19 +22,17 @@ const useAudio = (url, audioPlayed) => {
 
   return [playing, toggle];
 };
-
 const Player = (props) => {
   const [playing, toggle] = useAudio(props.url, props.playr);
-
   return (
+    
       <span
           id='rijeciAudio'
           className={ playing ? 'svira' : 'ne-svira' }
           onClick={toggle}
       >
-          { playing ? props.children : props.children }
-      </span>
+        { playing ? props.children : props.children }
+      </span>  
   );
 };
-
 export default React.memo(Player);

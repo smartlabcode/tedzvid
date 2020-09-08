@@ -57,14 +57,17 @@
             "after": null
         }
     ],
-    "row3": {"broj1":[{
+
+
+
+    "row3": {"broj5":[{
             "id": 9,
             "url": "./assets/audio/l1/9.wav",
             "highlight": "مُو",
             "word": "قَامُوا",
-            "after": " ; "
+            "after": null
         }],
-        "broj2":[
+        "broj4":[
         {
             "id": 10,
             "url": "./assets/audio/l1/10.wav",
@@ -86,7 +89,7 @@
             "word": "دِينِى",
             "after": " ; "
         }],
-        "broj4":[
+        "broj2":[
         {
             "id": 12,
             "url": "./assets/audio/l1/12.wav",
@@ -94,15 +97,20 @@
             "word": "حُسْنَى",
             "after": " ; "
         }],
-        "broj5":[
+        "broj1":[
         {
             "id": 13,
             "url": "./assets/audio/l1/13.wav",
             "highlight": "دُو",
             "word": "وَعْبُدُوا",
-            "after": null
+            "after": " ; "
         }]
         },
+
+
+
+
+
     "row4": [{
             "id": 14,
             "url": "./assets/audio/l1/14.wav",

@@ -296,10 +296,10 @@ function L15() {
             <Row className="text-center">
               <Col className="mobile-row">
                 <span className="tacka">
-                  {VjezbeRow(data, "vjezba", "broj13")} ۞
+                  {VjezbeRow(data, "vjezba", "broj12")} ۞
                 </span>
                 <span className="tacka">
-                  {VjezbeRow(data, "vjezba", "broj12")} ۞
+                  {VjezbeRow(data, "vjezba", "broj13")} ۞
                 </span>
               </Col>
             </Row>

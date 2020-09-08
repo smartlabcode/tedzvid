@@ -99,15 +99,15 @@ function L4() {
           </Col>
         </Row>
 
-        <Row className="text-center mobile-row">
+        <Row className="text-center">
           <Col>{PlayerRow(data, "row1")}</Col>,
         </Row>
 
-        <Row className="text-center">
+        <Row className="text-center rtl">
           <Col>{PlayerRow(data, "row2")}</Col>
         </Row>
 
-        <Row className="text-center">
+        <Row className="text-center rtl">
           <Col>{PlayerRow(data, "row3")}</Col>
         </Row>
         <Modal

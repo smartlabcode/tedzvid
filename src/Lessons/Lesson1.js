@@ -104,15 +104,15 @@ function L1() {
             <span className="arapski-lekcija "> ــــْـــ</span> , npr.:
           </Col>
         </Row>
-        <Row className="text-center">
+        <Row className="text-center disableRtl">
           <Col>{PlayerRow(data, "row1")}</Col>
         </Row>
         <Row>
           <Col className="opisLekcije my-3">
             <strong>2.</strong> Kada riječ završava <strong>tenvinom</strong> EN{" "}
-            <span className="arapski-lekcija "> ــــًــ</span>, stat će kao da
+            <span className="arapski-lekcija "> ــــًــ</span> , stat će kao da
             je <strong>dugo</strong> A{" "}
-            <span className="arapski-lekcija "> ـــَـــ ا </span>, npr.:
+            <span className="arapski-lekcija "> ـــَـــ ا </span> , npr.:
           </Col>
         </Row>
         <Row className="text-center">
@@ -122,15 +122,15 @@ function L1() {
           <Col className="opisLekcije my-3">
             <strong>3.</strong> Kada riječ završava{" "}
             <strong>dugim vokalom</strong> A{" "}
-            <span className="arapski-lekcija"> ــــَـــ ا </span>,{" "}
+            <span className="arapski-lekcija"> ــــَـــ ا </span> ,{" "}
             <strong>dugim vokalom</strong> I{" "}
             <span className="arapski-lekcija">ـــِــ ى</span> ili{" "}
             <strong>dugim vokalom</strong> U{" "}
-            <span className="arapski-lekcija">ـــُــ و</span>, stat će{" "}
-            <u>bez ikakve promjene</u>, npr.:
+            <span className="arapski-lekcija">ـــُــ و</span> , stat će{" "}
+            <u>bez ikakve promjene</u> , npr.:
           </Col>
         </Row>
-        <Row className="text-center">
+        <Row className="text-center rtl">
           <Col>
             {VjezbeRow(data, "row3", "broj1")}
             {VjezbeRow(data, "row3", "broj2")}
@@ -142,9 +142,9 @@ function L1() {
         <Row>
           <Col className="opisLekcije my-3">
             <strong>4.</strong> Kada riječ završava okruglim <strong>T</strong>{" "}
-            <span className="arapski-lekcija">(ة/ـة)</span>, stat će kao da je
+            <span className="arapski-lekcija">(ة/ـة)</span> , stat će kao da je
             napisano slovo <strong>H </strong>
-            <span className="arapski-lekcija">(ه)</span>, bez obzira koji je
+            <span className="arapski-lekcija">(ه)</span> , bez obzira koji je
             vokal ili tenvin napisan na njemu, npr.:
           </Col>
         </Row>
@@ -175,7 +175,7 @@ function L1() {
                     E <span class="arapski-lekcija ">ــــَـــ</span> , I{" "}
                     <span className="arapski-lekcija "> ــــِــ</span> , U{" "}
                     <span className="arapski-lekcija"> ــــُـــ</span> , IN{" "}
-                    <span className="arapski-lekcija"> ـــٍـــ </span>, UN{" "}
+                    <span className="arapski-lekcija"> ـــٍـــ </span> , UN{" "}
                     <span className="arapski-lekcija"> ـــٌــ</span>
                   </td>
                   <td>
@@ -188,7 +188,8 @@ function L1() {
                     EN <span className="arapski-lekcija "> ـــًــ</span>
                   </td>
                   <td>
-                    kao da je dugo A{" "}
+                    kao da je dugo A 
+                    <br/>
                     <span className="arapski-lekcija"> ــَــ ا</span>
                   </td>
                 </tr>
@@ -240,7 +241,7 @@ function L1() {
                     E <span class="arapski-lekcija ">ــــَـــ</span> , I{" "}
                     <span className="arapski-lekcija "> ــــِــ</span> , U{" "}
                     <span className="arapski-lekcija"> ــــُـــ</span> , IN{" "}
-                    <span className="arapski-lekcija"> ـــٍـــ </span>, UN{" "}
+                    <span className="arapski-lekcija"> ـــٍـــ </span> , UN{" "}
                     <span className="arapski-lekcija"> ـــٌــ</span>
                   </td>
                   <td>
@@ -365,7 +366,7 @@ function L1() {
             <p>
               <strong>NAPOMENA</strong>: Znak{" "}
               <span className="arapski-lekcija"> قصر</span> ispod riječi je znak
-              da se vokal ispod kojeg se nalazi uči <u>kratko</u>, a{" "}
+              da se vokal ispod kojeg se nalazi uči <u>kratko</u> , a{" "}
               <span className="arapski-lekcija"> مد </span>je znak da se vokal
               uči <u>dugo</u>.
             </p>
@@ -455,7 +456,7 @@ function L1() {
             <p>
               <strong>NAPOMENA</strong>: Znak{" "}
               <span className="arapski-lekcija"> قصر</span> ispod riječi je znak
-              da se vokal ispod kojeg se nalazi uči <u>kratko</u>, a{" "}
+              da se vokal ispod kojeg se nalazi uči <u>kratko</u> , a{" "}
               <span className="arapski-lekcija"> مد </span>je znak da se vokal
               uči <u>dugo</u>.
             </p>
@@ -493,13 +494,13 @@ function L1() {
                 <strong>1.</strong> Kada riječ na kojoj staje završava{" "}
                 <strong>kratkim vokalom</strong> E{" "}
                 <span className="arapski-lekcija "> ــــَـــ</span> , I{" "}
-                <span className="arapski-lekcija "> ــــِــ</span>, U{" "}
+                <span className="arapski-lekcija "> ــــِــ</span> , U{" "}
                 <span className="arapski-lekcija "> ــــُـــ </span>ili{" "}
                 <strong>tenvinom</strong> IN{" "}
-                <span className="arapski-lekcija "> ــــٍــ </span>, UN{" "}
-                <span className="arapski-lekcija"> ـــٌـــ</span>, stat će kao
+                <span className="arapski-lekcija "> ــــٍــ </span> , UN{" "}
+                <span className="arapski-lekcija"> ـــٌـــ</span> , stat će kao
                 da je na riječi <strong>sukun</strong>{" "}
-                <span className="arapski-lekcija "> ــــْـــ</span>, npr.:
+                <span className="arapski-lekcija "> ــــْـــ</span> , npr.:
               </Col>
             </Row>
             <Row className="text-center">
@@ -509,9 +510,9 @@ function L1() {
               <Col className="opisLekcije my-3">
                 <strong>2.</strong> Kada riječ završava{" "}
                 <strong>tenvinom</strong> EN{" "}
-                <span className="arapski-lekcija "> ــــًــ</span>, stat će kao
+                <span className="arapski-lekcija "> ــــًــ</span> , stat će kao
                 da je <strong>dugo</strong> A{" "}
-                <span className="arapski-lekcija "> ـــَـــ ا </span>, npr.:
+                <span className="arapski-lekcija "> ـــَـــ ا </span> , npr.:
               </Col>
             </Row>
             <Row className="text-center">
@@ -521,15 +522,15 @@ function L1() {
               <Col className="opisLekcije my-3">
                 <strong>3.</strong> Kada riječ završava{" "}
                 <strong>dugim vokalom</strong> A{" "}
-                <span className="arapski-lekcija"> ــــَـــ ا </span>,{" "}
+                <span className="arapski-lekcija"> ــــَـــ ا </span> ,{" "}
                 <strong>dugim vokalom</strong> I{" "}
                 <span className="arapski-lekcija">ـــِــ ى</span> ili{" "}
                 <strong>dugim vokalom</strong> U{" "}
-                <span className="arapski-lekcija">ـــُــ و</span>, stat će{" "}
-                <u>bez ikakve promjene</u>, npr.:
+                <span className="arapski-lekcija">ـــُــ و</span> , stat će{" "}
+                <u>bez ikakve promjene</u> , npr.:
               </Col>
             </Row>
-            <Row className="text-center">
+            <Row className="text-center rtl">
               <Col>
                 {VjezbeRow(data, "row3", "broj1")}
                 {VjezbeRow(data, "row3", "broj2")}
@@ -542,9 +543,9 @@ function L1() {
               <Col className="opisLekcije my-3">
                 <strong>4.</strong> Kada riječ završava okruglim{" "}
                 <strong>T</strong>{" "}
-                <span className="arapski-lekcija">(ة/ـة)</span>, stat će kao da
+                <span className="arapski-lekcija">(ة/ـة)</span> , stat će kao da
                 je napisano slovo <strong>H </strong>
-                <span className="arapski-lekcija">(ه)</span>, bez obzira koji je
+                <span className="arapski-lekcija">(ه)</span> , bez obzira koji je
                 vokal ili tenvin napisan na njemu, npr.:
               </Col>
             </Row>
@@ -743,5 +744,4 @@ function L1() {
     </React.Fragment>
   );
 }
-
 export default L1;

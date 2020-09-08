@@ -344,10 +344,10 @@ function L6() {
             <Row className="text-center">
               <Col className="mobile-row">
                 <span className="tacka">
-                  {VjezbeRow(data, "vjezba", "broj11")} ۞
+                  {VjezbeRow(data, "vjezba", "broj11")} ۞ ff
                 </span>
                 <span className="tacka">
-                  {VjezbeRow(data, "vjezba", "broj12")} ۞
+                  {VjezbeRow(data, "vjezba", "broj12")} ۞ ff
                 </span>
               </Col>
             </Row>

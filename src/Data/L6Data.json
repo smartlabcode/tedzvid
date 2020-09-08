@@ -118,34 +118,34 @@
             "word": "عْدٌ وَبَرْقٌ",
             "after": null
         }, {
-            "id": 121,
-            "highlight": "تٌ وَ",
-            "word": "فِيهِ ظُلُمَاتٌ وَرَ",
-            "after": null
-        }, {
             "id": 122,
             "highlight": "بٍ مِ",
             "word": " أَوْ كَصَيِّبٍ مِنَ السَّمَٓاءِ",
             "after": null
+        }, {
+            "id": 121,
+            "highlight": "تٌ وَ",
+            "word": "فِيهِ ظُلُمَاتٌ وَرَ",
+            "after": null
         }],
-        "broj13": [{
+        "broj14": [{
             "id": 13,
             "url": "./assets/audio/l6/13.mp3",
             "highlight": "نٌ مِ",
             "word": "ضْوَانٌ مِنَ اللّٰهِ ",
             "after": null
         }, {
-            "id": 131,
-            "highlight": "ةٌ وَ",
-            "word": "ةٌ وَرِ",
-            "after": null
-        }, {
             "id": 132,
             "highlight": "جٌ مُ",
             "word": "وَأَزْوَاجٌ مُطَهَّرَ",
             "after": null
+        }, {
+            "id": 131,
+            "highlight": "ةٌ وَ",
+            "word": "ةٌ وَرِ",
+            "after": null
         }],
-        "broj14": [{
+        "broj13": [{
             "id": 14,
             "url": "./assets/audio/l6/14.mp3",
             "highlight": "ةٌ يَ",

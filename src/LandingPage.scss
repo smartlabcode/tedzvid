@@ -90,15 +90,24 @@ body {
 }
 
 .innerWrapper {
-    width: 50%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
     position: relative;
 
     .sectionOne {
         margin-top: 150px;
-        width: 50%;
-        float: right;
+        height: 540px;
+        // width: 50%;
+        // float: left;
+        .left{
+            width: 40%;
+            float: left;
+        }
+        .right{
+            width: 60%;
+            float: right;
+        }
 
         h2 {
             width: 100%;
@@ -127,13 +136,13 @@ body {
         position: absolute;
         margin-left: -100%;
         z-index: -100;
-        height: 100%;
-        margin-top: 38%;
+        // height: 100%;
+        margin-top: 11%;
         mix-blend-mode: multiply;
     }
 
     .description {
-        position: relative;
+        // position: relative;
         // top: -50px;
 
         h2 {
@@ -146,10 +155,63 @@ body {
         }
     }
 }
-
-.sectionTwo {
+.sectionTwo{
     margin-top: 350px;
     position: absolute;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .book{    
+        width: 40%;
+        float: left;
+
+        .bookImg{
+            width: 100%;
+        }
+    }
+    .bookInfo{
+        float: right;
+        width: 50%;
+        line-height:10px;
+    }
+    h2 {
+        color: #92623C;
+    }
+}
+.iconbg{
+    width: 50pt;
+    height: 50pt;
+    background-color: #92623c;
+    border-radius: 50%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+}
+.iconInfo{
+    width: auto;
+    display: inline-block;
+    margin-right: 20px;
+
+    svg{
+        display: flex;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    p{
+        line-height: normal;
+    }
+}
+.spacer{
+    margin-right: 13px;
+  }
+.sectionThree {
+    margin-top: 950px; // Podesiti kasnije
+    // position: absolute;
 
     input {
         width: 100%;
@@ -197,11 +259,12 @@ body {
 }
 
 .footerLanding {
-    margin-top: 1156px;
+    margin-top: 100px;
     background-color: #92623C;
     width: 100%;
     height: 240px;
     mix-blend-mode: multiply;
+    
 
     .contentLeft {
         position: relative;
@@ -301,7 +364,15 @@ body {
         margin-top: 150px !important;
         position: absolute;
     }
-
+    .innerWrapper .quranbg{
+        margin-top: 32%;
+    }
+    .sectionTwo .book .bookImg {
+        width: 80%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .innerWrapper .sectionOne {
         top: 73px;
         position: relative;
@@ -333,6 +404,36 @@ body {
         width: unset !important;
         color: white;
     }
+    .innerWrapper .sectionOne .left {
+        width: unset;
+        float: unset;
+    }
+    .innerWrapper .sectionOne .right {
+        width: unset;
+        float: right;
+        margin-bottom: 74px;
+    }
+
+    .sectionTwo {
+        display: unset;
+        justify-content: unset;
+        align-items: unset;
+    }
+    .sectionTwo .book {
+        width: unset;
+        float: unset;
+    }
+    .sectionTwo .bookInfo {
+        float: unset;
+        width: unset;
+        line-height: unset;
+    }
+    .innerWrapper .quran{
+        margin-top: unset;
+    }
+    .sectionThree {
+        margin-top: 870px;
+    }
 }
 .btn-lekcije{
     margin-bottom: 40px;
@@ -348,7 +449,7 @@ body {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (min-width: 600px) {
     .footerLanding .contentLeft {
         position: relative;
         top: 43px;
@@ -366,5 +467,11 @@ body {
         width: 110px;
         margin-left: 25%;
         margin-top: 22px;
+    }
+    .innerWrapper .quran{
+        margin-top: 125px;
+    }
+    .sectionThree {
+        margin-top: 730px;
     }
 }

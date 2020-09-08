@@ -89,7 +89,7 @@ function L3() {
             <span className="arapski-lekcija"> اللّٰه </span>dođe{" "}
             <strong>vokal</strong> E{" "}
             <span className="arapski-lekcija"> ــــَـــ </span>ili{" "}
-            <strong>vokal</strong> U
+            <strong>vokal</strong> U 
             <span className="arapski-lekcija">ــــُـــ </span>, riječ Allah
             <span className="arapski-lekcija">اللّٰه </span>se uči <u>krupno</u>
             , npr.: {PlayerRow(data, "row1")}
@@ -111,11 +111,11 @@ function L3() {
           </Col>
         </Row>
 
-        <Row className="text-center">
+        <Row className="text-center rtl">
           <Col>{PlayerRow(data, "row3")}</Col>
         </Row>
 
-        <Row className="text-center">
+        <Row className="text-center rtl">
           <Col>{PlayerRow(data, "row4")}</Col>
         </Row>
 
@@ -168,11 +168,11 @@ function L3() {
               </Col>
             </Row>
 
-            <Row className="text-center">
+            <Row className="text-center rtl">
               <Col>{PlayerRow(data, "row3")}</Col>
             </Row>
 
-            <Row className="text-center">
+            <Row className="text-center rtl">
               <Col>{PlayerRow(data, "row4")}</Col>
             </Row>
           </Modal.Body>
