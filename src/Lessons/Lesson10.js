@@ -106,10 +106,11 @@ function L10() {
           </Col>
         </Row>
 
-        <Row className="text-center">
+        <Row className="text-center rtl">
           <Col>
+          {PlayerRow(data, "row1")}
             {VjezbeRow(data, "multirow", "word1")}
-            {PlayerRow(data, "row1")}
+            
           </Col>
         </Row>
         <Row className="text-center">
@@ -164,10 +165,10 @@ function L10() {
               </Col>
             </Row>
 
-            <Row className="text-center">
+            <Row className="text-center rtl">
               <Col>
-                {VjezbeRow(data, "multirow", "word1")}
                 {PlayerRow(data, "row1")}
+                {VjezbeRow(data, "multirow", "word1")}
               </Col>
             </Row>
             <Row className="text-center">

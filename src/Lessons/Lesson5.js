@@ -104,11 +104,11 @@ function L5() {
           <Col>{PlayerRow(data, "row1")}</Col>
         </Row>
 
-        <Row className="text-center">
+        <Row className="text-center rtl">
           <Col>{PlayerRow(data, "row2")}</Col>
         </Row>
 
-        <Row className="text-center">
+        <Row className="text-center rtl">
           <Col>{PlayerRow(data, "row3")}</Col>
         </Row>
 
@@ -153,11 +153,11 @@ function L5() {
               <Col>{PlayerRow(data, "row1")}</Col>
             </Row>
 
-            <Row className="text-center">
+            <Row className="text-center rtl">
               <Col>{PlayerRow(data, "row2")}</Col>
             </Row>
 
-            <Row className="text-center">
+            <Row className="text-center rtl">
               <Col>{PlayerRow(data, "row3")}</Col>
             </Row>
 

@@ -109,21 +109,24 @@ function L19() {
           <pre> </pre>„turska štampa“<pre> </pre>„medinska štampa“
         </Row>
 
-        <Row className="text-center">
+        <Row className="text-center rtl">
           <Col>
             {VjezbeRow(data, "rows", "row2lijevi")}{" "}
+            <br/>
             {VjezbeRow(data, "rows", "row2desni")}
           </Col>
         </Row>
-        <Row className="text-center">
+        <Row className="text-center rtl">
           <Col>
             {VjezbeRow(data, "rows", "row3lijevi")}{" "}
+            <br/>
             {VjezbeRow(data, "rows", "row3desni")}
           </Col>
         </Row>
-        <Row className="text-center">
+        <Row className="text-center rtl">
           <Col>
             {VjezbeRow(data, "rows", "row4lijevi")}{" "}
+            <br/>
             {VjezbeRow(data, "rows", "row4desni")}
           </Col>
         </Row>
@@ -182,18 +185,21 @@ function L19() {
             <Row className="text-center">
               <Col>
                 {VjezbeRow(data, "rows", "row2lijevi")}{" "}
+                <br/>
                 {VjezbeRow(data, "rows", "row2desni")}
               </Col>
             </Row>
             <Row className="text-center">
               <Col>
                 {VjezbeRow(data, "rows", "row3lijevi")}{" "}
+                <br/>
                 {VjezbeRow(data, "rows", "row3desni")}
               </Col>
             </Row>
             <Row className="text-center">
               <Col>
                 {VjezbeRow(data, "rows", "row4lijevi")}{" "}
+                <br/>
                 {VjezbeRow(data, "rows", "row4desni")}
               </Col>
             </Row>

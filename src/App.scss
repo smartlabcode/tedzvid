@@ -81,6 +81,8 @@ span.tacka {
   direction: ltr;
 }
 
+
+
 span.after {
   padding-left: 0.3em;
   padding-right: 0.3em;
@@ -255,6 +257,26 @@ ul.bottomMenu {
   margin-right: auto;
   left: 0;
   right: 0;
+}
+.iconWrapper{
+  display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
 }
 /*FRONT PAGE*/
 .wrapper{

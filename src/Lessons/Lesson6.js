@@ -148,11 +148,11 @@ function L6() {
           <Col>{PlayerRow(data, "row1")}</Col>
         </Row>
 
-        <Row className="text-center">
+        <Row className="text-center rtl">
           <Col>{PlayerRow(data, "row2")}</Col>
         </Row>
 
-        <Row className="text-center">
+        <Row className="text-center rtl">
           <Col>
             <span key={"key" + data.row3[0].id}>
               <Player url={data.row3[0].url} key={"p" + data.row3[0].id}>
@@ -216,11 +216,11 @@ function L6() {
               <Col>{PlayerRow(data, "row1")}</Col>
             </Row>
 
-            <Row className="text-center">
+            <Row className="text-center rtl">
               <Col>{PlayerRow(data, "row2")}</Col>
             </Row>
 
-            <Row className="text-center">
+            <Row className="text-center rtl">
               <Col>
                 <span key={"key" + data.row3[0].id}>
                   <Player url={data.row3[0].url} key={"p" + data.row3[0].id}>

@@ -105,18 +105,19 @@ function L13() {
           </Col>
         </Row>
 
-        <Row className="text-center">
+        <Row className="text-center rtl">
           <Col>{PlayerRow(data, "row1")}</Col>
         </Row>
 
-        <Row className="text-center">
+        <Row className="text-center rtl">
           <Col>
-            {PlayerRow(data, "row2")}
             {VjezbeRow(data, "multirow", "row2")}
+            {PlayerRow(data, "row2")}
+            
           </Col>
         </Row>
 
-        <Row className="text-center">
+        <Row className="text-center rtl">
           <Col>{VjezbeRow(data, "multirow", "row3")}</Col>
         </Row>
 
@@ -165,19 +166,20 @@ function L13() {
                 <br />
               </Col>
             </Row>
-
-            <Row className="text-center">
+ 
+            <Row className="text-center rtl">
               <Col>{PlayerRow(data, "row1")}</Col>
             </Row>
 
-            <Row className="text-center">
+            <Row className="text-center rtl">
               <Col>
+              {VjezbeRow(data, "multirow", "row2")}
                 {PlayerRow(data, "row2")}
-                {VjezbeRow(data, "multirow", "row2")}
+                
               </Col>
             </Row>
 
-            <Row className="text-center">
+            <Row className="text-center rtl">
               <Col>{VjezbeRow(data, "multirow", "row3")}</Col>
             </Row>
 
