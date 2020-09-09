@@ -14,16 +14,17 @@
         "after": null
     }],
     "row3": [{
-            "id": 4,
-            "url": "./assets/audio/l18/4.mp3",
-            "highlight": "لٰٓـئِ",
-            "word": " وَ أُولٰٓـئِكَ هُمُ الْمُفْلِحُونَ",
-            "after": null
-        }, {
+
             "id": 3,
             "url": "./assets/audio/l18/3.mp3",
             "highlight": "لٰٓـئِ",
             "word": "أُولٰٓـئِكَ عَلٰى هُدًى مِنْ رَبِـهِمْ ۖ",
+            "after": null
+        }, {
+            "id": 4,
+            "url": "./assets/audio/l18/4.mp3",
+            "highlight": "لٰٓـئِ",
+            "word": " وَ أُولٰٓـئِكَ هُمُ الْمُفْلِحُونَ",
             "after": null
         }
 

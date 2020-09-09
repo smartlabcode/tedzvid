@@ -97,7 +97,7 @@ function L18() {
           <Col>{PlayerRow(data, "row2")}</Col>
         </Row>
 
-        <Row className="text-center">
+        <Row className="text-center rtl">
           <Col>{PlayerRow(data, "row3")}</Col>
         </Row>
 
@@ -142,7 +142,7 @@ function L18() {
               <Col>{PlayerRow(data, "row2")}</Col>
             </Row>
 
-            <Row className="text-center">
+            <Row className="text-center rtl">
               <Col>{PlayerRow(data, "row3")}</Col>
             </Row>
 

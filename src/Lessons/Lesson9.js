@@ -76,16 +76,16 @@ const handleShow = () => setShow(true);
           </Col>
         </Row>
 
-        <Row className="text-center">
+        <Row className="text-center rtl">
           <Col>
             { PlayerRow(data, 'row1') }
           </Col>
         </Row>
 
-        <Row className="text-center">
+        <Row className="text-center rtl">
           <Col>
-            { PlayerRow(data, 'row2') }
-            { VjezbeRow(data, 'multirow', 'word1') }
+		  { VjezbeRow(data, 'multirow', 'word1') }
+		  { PlayerRow(data, 'row2') }
           </Col>
         </Row>
 
@@ -134,10 +134,10 @@ const handleShow = () => setShow(true);
           </Col>
         </Row>
 
-        <Row className="text-center">
+        <Row className="text-center rtl">
           <Col>
-            { PlayerRow(data, 'row2') }
-            { VjezbeRow(data, 'multirow', 'word1') }
+		  { VjezbeRow(data, 'multirow', 'word1') }
+		  { PlayerRow(data, 'row2') }
           </Col>
         </Row>
 
