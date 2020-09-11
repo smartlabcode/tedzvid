@@ -1,12 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { BrowserRouter, Route } from 'react-router-dom';
+// import { BrowserRouter, Route } from 'react-router-dom';
 import { IconContext } from 'react-icons';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
 import { FiPhoneCall } from 'react-icons/fi';
 import { BsFillPersonFill } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
-
 
 function LandingPage(props) {
 	return (
@@ -14,7 +13,11 @@ function LandingPage(props) {
 			<div className="wrapper">
 				<div className="topNav">
 					<div className="logoNavBox">
-						<img className="logoUrl" src={process.env.PUBLIC_URL + '/assets/svg/logoUrl.png'} />
+						<img
+							className="logoUrl"
+							src={process.env.PUBLIC_URL + '/assets/svg/logoUrl.png'}
+							alt="logo url"
+						/>
 					</div>
 					<div className="nav">
 						<ul>
@@ -27,7 +30,7 @@ function LandingPage(props) {
 							<a href="#impresum">
 								<li>O NAMA</li>
 							</a>
-							<a href="#">
+							<a href="/">
 								<li className="sideHr"> NASLOVNA</li>
 							</a>
 						</ul>
@@ -35,9 +38,17 @@ function LandingPage(props) {
 				</div>
 
 				<div className="topMobileNav">
-					<img className="hamburger" src={process.env.PUBLIC_URL + '/assets/svg/hamburger.svg'} />
+					<img
+						className="hamburger"
+						src={process.env.PUBLIC_URL + '/assets/svg/hamburger.svg'}
+						alt="hamburger menu logo"
+					/>
 					<Link to={'/'}>
-						<img className="mobileLogo" src={process.env.PUBLIC_URL + '/assets/svg/mobileLogo.png'} />
+						<img
+							className="mobileLogo"
+							src={process.env.PUBLIC_URL + '/assets/svg/mobileLogo.png'}
+							alt="mobile logo"
+						/>
 					</Link>
 					<div>
 						<Link to={'/lekcije'}>
@@ -76,70 +87,92 @@ function LandingPage(props) {
 				</div>
 
 				<div className="innerWrapper">
-					<img className="quranbg" src={process.env.PUBLIC_URL + '/assets/svg/quranbg.svg'} />
+					<img
+						className="quranbg"
+						src={process.env.PUBLIC_URL + '/assets/svg/quranbg.svg'}
+						alt="quran background"
+					/>
 					<div className="sectionOne">
-						
-						<div class="left">
+						<div className="left">
 							<h2>
 								<b>Tedžvid.ba</b>
 							</h2>
 							<p>Priručnik za učenje tedžvidskih pravila</p>
-							
+
 							<Link to={'/lekcije'}>
-								<button type="submit" class="contactBTN btn-lekcije">LEKCIJE</button>
+								<button type="submit" className="contactBTN btn-lekcije">
+									LEKCIJE
+								</button>
 							</Link>
 						</div>
-						<div class="right">
-							<img className="quran" src={process.env.PUBLIC_URL + '/assets/svg/quran03.png'} />
+						<div className="right">
+							<img
+								className="quran"
+								src={process.env.PUBLIC_URL + '/assets/svg/quran03.png'}
+								alt="Quran"
+							/>
 						</div>
 					</div>
 					<center>
-					<div className="description" id="impresum">
-						
-						<h2 className="white">
-							<b>O NAMA</b>
-						</h2>
-						<br />
-						<p>
-						Tedzvid.ba je elektronska, interaktivna verzija printanog tedžvida autora mr. Sejid ef. Strike. Ovaj tedžvid ima za cilj da pomogne novim učačima Kur'ana, kako polaznicima mektepske nastave tako i odraslima, u lakšem savladavanju osnovnih tedžvidskih pravila. Jednostavan rječnik i izbjegavanje stručnih termina, koliko je to bilo moguće, čine ga pristupačnijim široj čitalačkoj populaciji.
-						<br/><br/> Posebnost stranice tedzvid.ba su interaktivni primjeri čiji audio zapis možete preslušati klikom na isti, a video zapis nakon vježbe će vam pomoći da lakše razumijete tedžvidsko pravilo koje želite savladati. Nadamo se da će tedžvid.ba pomoći mu'allimima pri objašnjavanju tedžvidskih pravila, kako djeci u mektebu tako i odraslima nakon završetka sufare. 
-						</p>
-						
-					</div>
+						<div className="description" id="impresum">
+							<h2 className="white">
+								<b>O NAMA</b>
+							</h2>
+							<br />
+							<p>
+								Tedzvid.ba je elektronska, interaktivna verzija printanog tedžvida autora mr. Sejid ef.
+								Strike. Ovaj tedžvid ima za cilj da pomogne novim učačima Kur'ana, kako polaznicima
+								mektepske nastave tako i odraslima, u lakšem savladavanju osnovnih tedžvidskih pravila.
+								Jednostavan rječnik i izbjegavanje stručnih termina, koliko je to bilo moguće, čine ga
+								pristupačnijim široj čitalačkoj populaciji.
+								<br />
+								<br /> Posebnost stranice tedzvid.ba su interaktivni primjeri čiji audio zapis možete
+								preslušati klikom na isti, a video zapis nakon vježbe će vam pomoći da lakše razumijete
+								tedžvidsko pravilo koje želite savladati. Nadamo se da će tedžvid.ba pomoći mu'allimima
+								pri objašnjavanju tedžvidskih pravila, kako djeci u mektebu tako i odraslima nakon
+								završetka sufare.
+							</p>
+						</div>
 					</center>
 					<div className="sectionTwo">
-						<div class="book">
-							<img className="bookImg" src={process.env.PUBLIC_URL + '/assets/svg/book.png'} />
+						<div className="book">
+							<img className="bookImg" src={process.env.PUBLIC_URL + '/assets/svg/book.png'} alt="Book" />
 						</div>
-						<IconContext.Provider value={{ color: "white", className: "global-class-name"}}>
-						<div class="bookInfo">
-							<b><h2>Želim printano izdanje</h2></b><br/>
-							<h6>Informacije vazano za printano izdanje tedžvida možete dobiti kod autora:</h6><br/>
-							<div class="iconWrapper">
-								<div className="iconInfo">
-								<div class="iconbg"><BsFillPersonFill size={32}/></div>
-									
-									<p>mr. Sejid ef. Strika</p>
-									
+						<IconContext.Provider value={{ color: 'white', className: 'global-className-name' }}>
+							<div className="bookInfo">
+								<b>
+									<h2>Želim printano izdanje</h2>
+								</b>
+								<br />
+								<h6>Informacije vazano za printano izdanje tedžvida možete dobiti kod autora:</h6>
+								<br />
+								<div className="iconWrapper">
+									<div className="iconInfo">
+										<div className="iconbg">
+											<BsFillPersonFill size={32} />
+										</div>
+
+										<p>mr. Sejid ef. Strika</p>
+									</div>
+									<div className="iconInfo">
+										<div className="iconbg">
+											<MdEmail size={32} />
+										</div>
+
+										<p>sejidstrika@gmail.com</p>
+									</div>
+									<div className="iconInfo">
+										<div className="iconbg">
+											<FiPhoneCall size={32} />
+										</div>
+
+										<p>+38761 617 606</p>
+									</div>
+								</div>
 							</div>
-							<div className="iconInfo">
-								<div class="iconbg"><MdEmail size={32}/></div>
-									
-									<p>sejidstrika@gmail.com</p>
-									
-							</div>
-							<div className="iconInfo">
-								<div class="iconbg"><FiPhoneCall size={32}/></div>
-									
-									<p>+38761 617 606</p>
-									
-							</div>
-							</div>
-							
-						</div>
 						</IconContext.Provider>
 					</div>
-					
+
 					<div className="sectionThree" id="contact">
 						<center>
 							<h2>
@@ -147,7 +180,8 @@ function LandingPage(props) {
 							</h2>
 							<br />
 							<p>
-								Ukoliko imate neke sugestije, zapažanja, impresije budite slobodni da ih napišete kako bismo unaprijedili ovaj sajt.
+								Ukoliko imate neke sugestije, zapažanja, impresije budite slobodni da ih napišete kako
+								bismo unaprijedili ovaj sajt.
 							</p>
 							<form className="form" action="" method="post">
 								<input type="text" placeholder="Ime, prezime" />

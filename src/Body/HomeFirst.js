@@ -15,7 +15,7 @@ function HomeFirst(props) {
         let number = props.start + index + 1;
 
         function dugmeTabela() {
-          if (index == 0) {
+          if (index === 0) {
             return (
               <Link
                 to={"/lekcija" + number + "#tabela"}
@@ -29,7 +29,7 @@ function HomeFirst(props) {
           }
         }
         function dugmeZnakovi() {
-          if (index == 0) {
+          if (index === 0) {
             return (
               <Link
                 to={"/lekcija" + number + "#znakovi"}

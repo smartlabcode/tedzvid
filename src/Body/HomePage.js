@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 import HomeFirst from '../Body/HomeFirst';
 
 function Home() {
-	const [ otherpage, pageClick ] = useState(false);
+	// const [ otherpage, pageClick ] = useState(false);
 	const [ isHidden, toggleIsHidden ] = useState(true);
 
-	const pageClickHandler = () => {
-		return pageClick(!otherpage);
-	};
+	// const pageClickHandler = () => {
+	// 	return pageClick(!otherpage);
+	// };
 	const toggleIsHiddenHandler = () => {
 		console.log('CLICK!');
 		toggleIsHidden(!isHidden);
@@ -19,7 +19,7 @@ function Home() {
 			<div className="topNav">
 				<div className="logoNavBox">
 					<Link to="/">
-						<img className="logoUrl" src={process.env.PUBLIC_URL + '/assets/svg/logoUrl.png'} />
+						<img className="logoUrl" src={process.env.PUBLIC_URL + '/assets/svg/logoUrl.png'} alt="logo" />
 					</Link>
 				</div>
 				<div className="nav">
@@ -28,6 +28,7 @@ function Home() {
 							<img
 								style={{ marginTop: '11px' }}
 								src={process.env.PUBLIC_URL + '/assets/svg/ic_trending_flat_24px.png'}
+								alt="trenindg flat"
 							/>
 							<li style={{ color: 'black' }}>NAZAD NA NASLOVNU</li>
 						</Link>
@@ -38,11 +39,16 @@ function Home() {
 				<img
 					className="hamburger"
 					src={process.env.PUBLIC_URL + '/assets/svg/hamburger.svg'}
+					alt="hamburger menu icon"
 					onClick={toggleIsHiddenHandler}
 				/>
 
 				<Link to="/">
-					<img className="mobileLogo" src={process.env.PUBLIC_URL + '/assets/svg/mobileLogo.png'} />
+					<img
+						className="mobileLogo"
+						src={process.env.PUBLIC_URL + '/assets/svg/mobileLogo.png'}
+						alt="mobile logo"
+					/>
 				</Link>
 				<div>
 					<Link to={'/lekcije'}>
