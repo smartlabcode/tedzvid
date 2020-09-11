@@ -65,8 +65,9 @@ span {
   font-size: 1.5rem;
 }
 
-span.oznaceno {
-  font-size: 1.8rem;
+span.oznaceno,
+span.arapski {
+  font-size: 2rem;
 }
 
 span.tacka {
@@ -100,8 +101,6 @@ span.arapski {
   //padding: 0 .25em;
   border-radius: .15em;
   line-height: 3.7rem;
-  font-size: 27px;
-  font-size: 2rem;
   margin-right: 0.5rem;
 }
 
@@ -305,7 +304,7 @@ ul.bottomMenu {
   position: relative;
   float: right;
   top: -51px;
-  width: 103px;
+  width: 108px;
   height: 30px;
   background-color: white;
   border: 2px slolid #AB752F;
@@ -325,7 +324,7 @@ h3 {
 
 .sectonRight {
   float: right;
-  width: 44%;
+  width: 55%;
 }
 
 .modal-dialog {
