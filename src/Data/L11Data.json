@@ -1,6 +1,5 @@
 {
-    "row1": [
-        {
+    "row1": [{
             "id": 1,
             "url": "./assets/audio/l11/1.mp3",
             "highlight": "نْـتُ",
@@ -15,8 +14,7 @@
             "after": null
         }
     ],
-    "row2": [
-        {
+    "row2": [{
 
             "id": 3,
             "url": "./assets/audio/l11/3.mp3",
@@ -32,18 +30,15 @@
             "after": null
         }
     ],
-    "row3": [
-        {
-            "id": 6,
-            "url": "./assets/audio/l11/6.mp3",
-            "highlight": "نْـفِ",
-            "word": "وَمِمَّا رَزَقْنَاهُمْ يُـنْـفِقُونَ",
-            "after": null
-        }
-    ],
+    "row3": [{
+        "id": 6,
+        "url": "./assets/audio/l11/6.mp3",
+        "highlight": "نْـفِ",
+        "word": "وَمِمَّا رَزَقْنَاهُمْ يُـنْـفِقُونَ",
+        "after": null
+    }],
     "multirow": {
-        "word1": [
-            {
+        "word1": [{
                 "id": 5,
                 "url": "./assets/audio/l11/5.mp3",
                 "highlight": "نْ تَ",
@@ -59,8 +54,7 @@
         ]
     },
     "vjezba": {
-        "broj7": [
-            {
+        "broj7": [{
                 "id": 7,
                 "url": "./assets/audio/l11/7.mp3",
                 "highlight": "ِنْ قَـ",
@@ -81,8 +75,7 @@
                 "after": null
             }
         ],
-        "broj8": [
-            {
+        "broj8": [{
                 "id": 8,
                 "url": "./assets/audio/l11/8.mp3",
                 "highlight": "نْذِ",
@@ -96,17 +89,14 @@
                 "after": null
             }
         ],
-        "broj9": [
-            {
-                "id": 9,
-                "url": "./assets/audio/l11/9.mp3",
-                "highlight": "نْـقُ",
-                "word": "وَلَا يَـنْـقُضُونَ الْمِيثَاقَ",
-                "after": null
-            }
-        ],
-        "broj11": [
-            {
+        "broj9": [{
+            "id": 9,
+            "url": "./assets/audio/l11/9.mp3",
+            "highlight": "نْـقُ",
+            "word": "وَلَا يَـنْـقُضُونَ الْمِيثَاقَ",
+            "after": null
+        }],
+        "broj11": [{
                 "id": 11,
                 "url": "./assets/audio/l11/11.mp3",
                 "highlight": "ـنْـكُ",
@@ -127,57 +117,47 @@
                 "highlight": "نْ تَ",
                 "word": "وَإِنْ تَعُودُوا",
                 "after": null
-            },{
+            }, {
                 "id": 111,
                 "highlight": "نْ تُ",
                 "word": " نَعُدْ وَلَنْ تُـغْنِـيَ",
                 "after": null
             }
         ],
-        "broj12": [
-            {
-                "id": 12,
-                "url": "./assets/audio/l11/12.mp3",
-                "highlight": "نْ دَ",
-                "word": "وَمَنْ دَخَلَهُ كَانَ اٰمِنًا ",
-                "after": null
-            }
-        ],
-        "broj13": [
-            {
-                "id": 13,
-                "url": "./assets/audio/l11/13.mp3",
-                "highlight": "نْ زُ",
-                "word": "أَفَمَنْ زُيِّـنَ لَهُ سُٓوءُ عَمَلِهِ ",
-                "after": null
-            }
-        ],
-        "broj14": [
-            {
-                "id": 14,
-                "url": "./assets/audio/l11/14.mp3",
-                "highlight": "نْ صَ",
-                "word": "وَمَنْ صَلَحَ مِنْ اٰبَٓائِهِمْ",
-                "after": null
-            }
-        ],
-        "broj15": [
-            {
-                "id": 15,
-                "url": "./assets/audio/l11/15.mp3",
-                "highlight": "نْ صَ",
-                "word": "َلَّذِينَ هُمْ عَنْ صَلَاتِهِمْ سَاهُونَ ",
-                "after": null
-            }
-        ],
-        "broj16": [
-            {
-                "id": 16,
-                "url": "./assets/audio/l11/16.mp3",
-                "highlight": "نْ طَ",
-                "word": "كُلُوا مِنْ طَـيِّـبَاتِ مَا رَزَقْـنَاكُمْ ",
-                "after": null
-            }
-        ]
+        "broj12": [{
+            "id": 12,
+            "url": "./assets/audio/l11/12.mp3",
+            "highlight": "نْ دَ",
+            "word": "وَمَنْ دَخَلَهُ كَانَ اٰمِنًا ",
+            "after": null
+        }],
+        "broj13": [{
+            "id": 13,
+            "url": "./assets/audio/l11/13.mp3",
+            "highlight": "نْ زُ",
+            "word": "أَفَمَنْ زُيِّـنَ لَهُ سُٓوءُ عَمَلِهِ ",
+            "after": null
+        }],
+        "broj14": [{
+            "id": 14,
+            "url": "./assets/audio/l11/14.mp3",
+            "highlight": "نْ صَ",
+            "word": "وَمَنْ صَلَحَ مِنْ اٰبَٓائِهِمْ",
+            "after": null
+        }],
+        "broj15": [{
+            "id": 15,
+            "url": "./assets/audio/l11/15.mp3",
+            "highlight": "نْ صَ",
+            "word": " أَلَّذِينَ هُمْ عَنْ صَلَاتِهِمْ سَاهُونَ",
+            "after": null
+        }],
+        "broj16": [{
+            "id": 16,
+            "url": "./assets/audio/l11/16.mp3",
+            "highlight": "نْ طَ",
+            "word": "كُلُوا مِنْ طَـيِّـبَاتِ مَا رَزَقْـنَاكُمْ ",
+            "after": null
+        }]
     }
 }

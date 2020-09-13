@@ -60,52 +60,50 @@
 
 
 
-    "row3": {"broj5":[{
+    "row3": {
+        "broj5": [{
             "id": 9,
             "url": "./assets/audio/l1/9.wav",
             "highlight": "مُو",
             "word": "قَامُوا",
             "after": null
         }],
-        "broj4":[
-        {
-            "id": 10,
-            "url": "./assets/audio/l1/10.wav",
-            "highlight": "ا",
-            "word": "مَنَّا",
-            "after": " ; "
-        },
-        {
-            "id": 101,
-            "highlight": null,
-            "word": "اٰ",
-            "after": null
-        }],
-        "broj3":[
-        {
+        "broj4": [{
+                "id": 10,
+                "url": "./assets/audio/l1/10.wav",
+                "highlight": "ا",
+                "word": "مَنَّا",
+                "after": " ; "
+            },
+            {
+                "id": 101,
+                "highlight": null,
+                "word": "اٰ",
+                "after": null
+            }
+        ],
+        "broj3": [{
             "id": 11,
             "url": "./assets/audio/l1/11.wav",
             "highlight": "نِى",
             "word": "دِينِى",
             "after": " ; "
         }],
-        "broj2":[
-        {
+        "broj2": [{
             "id": 12,
             "url": "./assets/audio/l1/12.wav",
             "highlight": "نَى",
             "word": "حُسْنَى",
             "after": " ; "
         }],
-        "broj1":[
-        {
+        "broj1": [{
             "id": 13,
             "url": "./assets/audio/l1/13.wav",
             "highlight": "دُو",
             "word": "وَعْبُدُوا",
             "after": " ; "
         }]
-        },
+    },
 
 
 
@@ -204,8 +202,7 @@
             "word": "وَمَٓا أَدْرٰيكَ مَا الْقَارِعَةُ ",
             "after": null
         }],
-        "red26": [
-            {
+        "red26": [{
                 "id": 261,
                 "url": "./assets/audio/l1/27.mp3",
                 "highlight": "نُ",

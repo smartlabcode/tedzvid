@@ -77,20 +77,20 @@
     ],
     "vjezba": {
         "broj11": [{
-            "id": 11,
-            "url": "./assets/audio/l2/11.wav",
-            "highlight": "هُ",
-            "word": " وَرَضُوا عَنْهُ",
-            "after": null
-        },
-        {
-            "id": 11,
-            "highlight": "",
-            "word": "رَضِيَ اللّٰهُ عَنْهُمْ",
-            "after": null
-        }
-    
-    ],
+                "id": 11,
+                "url": "./assets/audio/l2/11.wav",
+                "highlight": "هُ",
+                "word": " وَرَضُوا عَنْهُ",
+                "after": null
+            },
+            {
+                "id": 11,
+                "highlight": "",
+                "word": "رَضِيَ اللّٰهُ عَنْهُمْ",
+                "after": null
+            }
+
+        ],
         "broj12": [{
             "id": 12,
             "url": "./assets/audio/l2/12.wav",

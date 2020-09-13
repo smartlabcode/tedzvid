@@ -1,6 +1,5 @@
 {
-    "row1": [
-        {
+    "row1": [{
 
             "id": 1,
             "url": "./assets/audio/l21/1.mp3",
@@ -16,8 +15,7 @@
             "after": " ؛ "
         }
     ],
-    "row2": [
-        {
+    "row2": [{
 
             "id": 3,
             "url": "./assets/audio/l21/3.mp3",
@@ -33,123 +31,97 @@
             "after": null
         }
     ],
-    "row3": [
-        {
-            "id": 5,
-            "url": "./assets/audio/l21/5.mp3",
-            "highlight": "نُونَ",
-            "word": "فَلَا خَوْفٌ عَلَيْهِمْ وَلَا هُمْ يَحْزَنُونَ",
-            "after": null
-        }
-    ],
+    "row3": [{
+        "id": 5,
+        "url": "./assets/audio/l21/5.mp3",
+        "highlight": "نُونَ",
+        "word": "فَلَا خَوْفٌ عَلَيْهِمْ وَلَا هُمْ يَحْزَنُونَ",
+        "after": null
+    }],
     "vjezba": {
-        "broj6": [
-            {
-                "id": 6,
-                "url": "./assets/audio/l21/6.mp3",
-                "highlight": "لِـيمٌ",
-                "word": "وَلِلْكَافِرِينَ عَذَابٌ أَلِـيمٌ",
-                "after": null
-            }
-        ],
-        "broj7": [
-            {
-                "id": 7,
-                "url": "./assets/audio/l21/7.mp3",
-                "highlight": "عِيدٍ",
-                "word": "وَمَا هِيَ مِنَ الظَّالِمِينَ بِـبَعِيدٍ ",
-                "after": null
-            }
-        ],
-        "broj8": [
-            {
-                "id": 8,
-                "url": "./assets/audio/l21/8.mp3",
-                "highlight": "دُونَ",
-                "word": "هُمْ فِيهَا خَالِدُونَ",
-                "after": null
-            }
-        ],
-        "broj9": [
-            {
-                "id": 9,
-                "url": "./assets/audio/l21/9.mp3",
-                "highlight": "نَّاسِ",
-                "word": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ",
-                "after": null
-            }
-        ],
-        "broj10": [
-            {
-                "id": 10,
-                "url": "./assets/audio/l21/10.mp3",
-                "highlight": "دِّينِ",
-                "word": "أَرَأَيْتَ الَّذِي يُـكَـذِّبُ بِالـدِّينِ ",
-                "after": null
-            }
-        ],
-        "broj11": [
-            {
-                "id": 11,
-                "url": "./assets/audio/l21/11.mp3",
-                "highlight": "تُـونِ",
-                "word": "وَالتِّـينِ وَالـزَّيْـتُـونِ ",
-                "after": null
-            }
-        ],
-        "broj12": [
-            {
-                "id": 12,
-                "url": "./assets/audio/l21/12.mp3",
-                "highlight": "نِـينَ",
-                "word": "وَطُورِ سِيـنِـينَ ",
-                "after": null
-            }
-        ],
-        "broj13": [
-            {
-                "id": 13,
-                "url": "./assets/audio/l21/13.mp3",
-                "highlight": "مِينِ",
-                "word": "وَهٰـذَا الْبَلَدِ الْأَمِينِ ",
-                "after": null
-            }
-        ],
-        "broj14": [
-            {
-                "id": 14,
-                "url": "./assets/audio/l21/14.mp3",
-                "highlight": "دِيرٌ",
-                "word": "إِنَّ اللّٰهَ عَلٰى كُـلِّ شَيْءٍ قَدِيرٌ",
-                "after": null
-            }
-        ],
-        "broj15": [
-            {
-                "id": 15,
-                "url": "./assets/audio/l21/15.mp3",
-                "highlight": "لِيمٌ",
-                "word": "وَهُوَ بِكُـلِّ شَيْءٍ عَلِيمٌ ",
-                "after": null
-            }
-        ],
-        "broj16": [
-            {
-                "id": 16,
-                "url": "./assets/audio/l21/16.mp3",
-                "highlight": "حِيمُ",
-                "word": "إِنَّهُ هُوَ التَّوَّابُ الرَّحِيمُ",
-                "after": null
-            }
-        ],
-        "broj17": [
-            {
-                "id": 17,
-                "url": "./assets/audio/l21/17.mp3",
-                "highlight": "ئَاتِ",
-                "word": "إِنَّ الْحَسَنَاتِ يُذْهِبْنَ السَّـيِّـئَاتِ",
-                "after": null
-            }
-        ]
+        "broj6": [{
+            "id": 6,
+            "url": "./assets/audio/l21/6.mp3",
+            "highlight": "لِـيمٌ",
+            "word": "وَلِلْكَافِرِينَ عَذَابٌ أَلِـيمٌ",
+            "after": null
+        }],
+        "broj7": [{
+            "id": 7,
+            "url": "./assets/audio/l21/7.mp3",
+            "highlight": "عِيدٍ",
+            "word": "وَمَا هِيَ مِنَ الظَّالِمِينَ بِـبَعِيدٍ ",
+            "after": null
+        }],
+        "broj8": [{
+            "id": 8,
+            "url": "./assets/audio/l21/8.mp3",
+            "highlight": "دُونَ",
+            "word": "هُمْ فِيهَا خَالِدُونَ",
+            "after": null
+        }],
+        "broj9": [{
+            "id": 9,
+            "url": "./assets/audio/l21/9.mp3",
+            "highlight": "نَّاسِ",
+            "word": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ",
+            "after": null
+        }],
+        "broj10": [{
+            "id": 10,
+            "url": "./assets/audio/l21/10.mp3",
+            "highlight": "دِّينِ",
+            "word": "أَرَأَيْتَ الَّذِي يُـكَـذِّبُ بِالـدِّينِ ",
+            "after": null
+        }],
+        "broj11": [{
+            "id": 11,
+            "url": "./assets/audio/l21/11.mp3",
+            "highlight": "تُـونِ",
+            "word": "وَالتِّـينِ وَالـزَّيْـتُـونِ ",
+            "after": null
+        }],
+        "broj12": [{
+            "id": 12,
+            "url": "./assets/audio/l21/12.mp3",
+            "highlight": "نِـينَ",
+            "word": "وَطُورِ سِيـنِـينَ ",
+            "after": null
+        }],
+        "broj13": [{
+            "id": 13,
+            "url": "./assets/audio/l21/13.mp3",
+            "highlight": "مِينِ",
+            "word": "وَهٰـذَا الْبَلَدِ الْأَمِينِ ",
+            "after": null
+        }],
+        "broj14": [{
+            "id": 14,
+            "url": "./assets/audio/l21/14.mp3",
+            "highlight": "دِيرٌ",
+            "word": "إِنَّ اللّٰهَ عَلٰى كُـلِّ شَيْءٍ قَدِيرٌ",
+            "after": null
+        }],
+        "broj15": [{
+            "id": 15,
+            "url": "./assets/audio/l21/15.mp3",
+            "highlight": "لِيمٌ",
+            "word": "وَهُوَ بِكُـلِّ شَيْءٍ عَلِيمٌ ",
+            "after": null
+        }],
+        "broj16": [{
+            "id": 16,
+            "url": "./assets/audio/l21/16.mp3",
+            "highlight": "حِيمُ",
+            "word": "إِنَّهُ هُوَ التَّوَّابُ الرَّحِيمُ",
+            "after": null
+        }],
+        "broj17": [{
+            "id": 17,
+            "url": "./assets/audio/l21/17.mp3",
+            "highlight": "ئَاتِ",
+            "word": "إِنَّ الْحَسَنَاتِ يُذْهِبْنَ السَّـيِّـئَاتِ",
+            "after": null
+        }]
     }
 }

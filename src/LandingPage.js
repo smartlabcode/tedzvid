@@ -8,7 +8,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 function LandingPage() {
 	return (
 		<BrowserRouter basename={process.env.PUBLIC_URL}>
-            <Route path="/home" exact component={Home} />
+			<Route path="/home" exact component={Home} />
 			<Route path="/" exact component={Demo} />
 		</BrowserRouter>
 	);

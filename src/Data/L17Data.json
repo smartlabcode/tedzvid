@@ -1,19 +1,16 @@
 {
-    "row1": [
-        {
-            "id": 1,
-            "url": "./assets/audio/l17/1.mp3",
-            "highlight": "ءَا تُـو نِـي ",
-            "word": "ءَا تُـو نِـي ",
-            "after": "."
-        }
-    ],
-    "row2": [
-        {
+    "row1": [{
+        "id": 1,
+        "url": "./assets/audio/l17/1.mp3",
+        "highlight": "ءَا تُـو نِـي ",
+        "word": "ءَا تُـو نِـي ",
+        "after": "."
+    }],
+    "row2": [{
             "id": 6,
             "url": "./assets/audio/l17/6.mp3",
             "highlight": "وَي",
-            "word":" ذَوَي",
+            "word": " ذَوَي",
             "after": "؛"
         },
         {
@@ -45,8 +42,7 @@
             "after": null
         }
     ],
-    "row3": [
-        {
+    "row3": [{
             "id": 10,
             "url": "./assets/audio/l17/10.mp3",
             "highlight": "رِي",
@@ -76,8 +72,7 @@
         }
     ],
     "vjezba": {
-        "broj11": [
-            {
+        "broj11": [{
                 "id": 11,
                 "url": "./assets/audio/l17/11.mp3",
                 "highlight": "دُو",
@@ -98,8 +93,7 @@
                 "after": null
             }
         ],
-        "broj12": [
-            {
+        "broj12": [{
                 "id": 12,
                 "url": "./assets/audio/l17/12.mp3",
                 "highlight": "لَا",
@@ -107,7 +101,7 @@
                 "after": null
             },
             {
-                
+
                 "id": 122,
                 "highlight": "ذٰ",
                 "word": "ذٰلِكَ",
@@ -120,8 +114,7 @@
                 "after": null
             }
         ],
-        "broj13": [
-            {
+        "broj13": [{
                 "id": 13,
                 "url": "./assets/audio/l17/13.mp3",
                 "highlight": "قِيمُو",
@@ -135,8 +128,7 @@
                 "after": null
             }
         ],
-        "broj14": [
-            {
+        "broj14": [{
                 "id": 14,
                 "url": "./assets/audio/l17/14.mp3",
                 "highlight": "كَانَا",
@@ -157,8 +149,7 @@
                 "after": null
             }
         ],
-        "broj15": [
-            {
+        "broj15": [{
                 "id": 15,
                 "url": "./assets/audio/l17/15.mp3",
                 "highlight": "يَا",
@@ -179,8 +170,7 @@
                 "after": null
             }
         ],
-        "broj16": [
-            {
+        "broj16": [{
                 "id": 16,
                 "url": "./assets/audio/l17/16.mp3",
                 "highlight": "دُو",
@@ -194,13 +184,12 @@
                 "after": null
             }
         ],
-        "broj17": [
-            {
+        "broj17": [{
                 "id": 172,
                 "url": "./assets/audio/l17/17.mp3",
                 "highlight": "نَا",
                 "word": "هُـنَا",
-                "after":null
+                "after": null
             },
             {
                 "id": 161,
@@ -248,37 +237,35 @@
                 "id": 17,
                 "highlight": "ـنَا",
                 "word": "قُـتِـلْـنَا",
-                "after":null
+                "after": null
             },
             {
                 "id": 171,
                 "highlight": "هَا",
                 "word": "هَا",
-                "after":null
+                "after": null
             }
         ],
-        "broj18": [
-            {
+        "broj18": [{
                 "id": 18,
                 "url": "./assets/audio/l17/18.mp3",
                 "highlight": "وٰى",
                 "word": "الْقُوٰى",
                 "after": null
-            },{
+            }, {
                 "id": 181,
                 "highlight": "دِي",
                 "word": "عَلَّمَهُ شَدِيدُ",
-                "after":null
+                "after": null
             }
 
         ],
-        "broj19": [
-            {
+        "broj19": [{
                 "id": 19,
                 "url": "./assets/audio/l17/19.mp3",
                 "highlight": "نَّا",
                 "word": "مَنَّا",
-                "after":null
+                "after": null
             },
             {
 
@@ -311,13 +298,13 @@
                 "id": 17,
                 "highlight": "قَا",
                 "word": "ا قَا",
-                "after":null
+                "after": null
             },
             {
                 "id": 171,
                 "highlight": "ا",
                 "word": "لُـوٓا اٰ",
-                "after":null
+                "after": null
             }
         ]
     }

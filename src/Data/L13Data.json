@@ -1,6 +1,5 @@
 {
-    "row1": [
-        {
+    "row1": [{
 
             "id": 5,
             "url": "./assets/audio/l13/5.mp3",
@@ -24,7 +23,7 @@
             "after": " ; "
         },
         {
-             "id": 2,
+            "id": 2,
             "url": "./assets/audio/l13/2.mp3",
             "highlight": "قْ",
             "word": "اَلْفَلَــقْ",
@@ -38,18 +37,15 @@
             "after": null
         }
     ],
-    "row2": [
-        {
-            "id": 7,
-            "url": "./assets/audio/l13/7.mp3",
-            "highlight": "طْـ",
-            "word": "أَلَّذِٓي أَطْـعَمَهُمْ مِنْ جُوعٍ",
-            "after": " ; "
-        }
-    ],
+    "row2": [{
+        "id": 7,
+        "url": "./assets/audio/l13/7.mp3",
+        "highlight": "طْـ",
+        "word": "أَلَّذِٓي أَطْـعَمَهُمْ مِنْ جُوعٍ",
+        "after": " ; "
+    }],
     "multirow": {
-        "row2": [
-            {
+        "row2": [{
                 "id": 6,
                 "url": "./assets/audio/l13/6.mp3",
                 "highlight": "ـقْ",
@@ -63,8 +59,7 @@
                 "after": null
             }
         ],
-        "row3": [
-            {
+        "row3": [{
                 "id": 8,
                 "url": "./assets/audio/l13/8.mp3",
                 "highlight": "جْ",
@@ -80,26 +75,21 @@
         ]
     },
     "vjezba": {
-        "broj9": [
-            {
-                "id": 9,
-                "url": "./assets/audio/l13/9.mp3",
-                "highlight": "قْـ",
-                "word": "وَهُوَ الَّذِي يَـقْـبَلُ التَّوْبَةَ عَنْ عِبَادِهِ ",
-                "after": null
-            }
-        ],
-        "broj10": [
-            {
-                "id": 10,
-                "url": "./assets/audio/l13/10.mp3",
-                "highlight": "طْـ",
-                "word": "أَلَّذِٓي أَطْـعَمَهُمْ مِنْ جُوعٍ ",
-                "after": null
-            }
-        ],
-        "broj11": [
-            {
+        "broj9": [{
+            "id": 9,
+            "url": "./assets/audio/l13/9.mp3",
+            "highlight": "قْـ",
+            "word": "وَهُوَ الَّذِي يَـقْـبَلُ التَّوْبَةَ عَنْ عِبَادِهِ ",
+            "after": null
+        }],
+        "broj10": [{
+            "id": 10,
+            "url": "./assets/audio/l13/10.mp3",
+            "highlight": "طْـ",
+            "word": "أَلَّذِٓي أَطْـعَمَهُمْ مِنْ جُوعٍ ",
+            "after": null
+        }],
+        "broj11": [{
                 "id": 11,
                 "url": "./assets/audio/l13/11.mp3",
                 "highlight": "طِ",
@@ -119,8 +109,7 @@
                 "after": null
             }
         ],
-        "broj12": [
-            {
+        "broj12": [{
                 "id": 12,
                 "url": "./assets/audio/l13/12.mp3",
                 "highlight": "جْ",
@@ -134,8 +123,7 @@
                 "after": null
             }
         ],
-        "broj13": [
-            {
+        "broj13": [{
                 "id": 13,
                 "url": "./assets/audio/l13/13.mp3",
                 "highlight": "بْـ",
@@ -149,41 +137,33 @@
                 "after": null
             }
         ],
-        "broj14": [
-            {
-                "id": 14,
-                "url": "./assets/audio/l13/14.mp3",
-                "highlight": "دٌ",
-                "word": "قُلْ هُوَ اللّٰهُ أَحَدٌ",
-                "after": null
-            }
-        ],
-        "broj15": [
-            {
-                "id": 15,
-                "url": "./assets/audio/l13/15.mp3",
-                "highlight": "دُ",
-                "word": "اَللّٰهُ الصَّمَدُ",
-                "after": null
-            }
-        ],
-        "broj16": [
-            {
-                "id": 16,
-                "url": "./assets/audio/l13/16.mp3",
-                "highlight": "دْ",
-                "word": "لَمْ يَلِدْ وَلَمْ يُولَدْ",
-                "after": null
-            }
-        ],
-        "broj17": [
-            {
-                "id": 17,
-                "url": "./assets/audio/l13/17.mp3",
-                "highlight": "دٌ",
-                "word": "وَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ",
-                "after": null
-            }
-        ]
+        "broj14": [{
+            "id": 14,
+            "url": "./assets/audio/l13/14.mp3",
+            "highlight": "دٌ",
+            "word": "قُلْ هُوَ اللّٰهُ أَحَدٌ",
+            "after": null
+        }],
+        "broj15": [{
+            "id": 15,
+            "url": "./assets/audio/l13/15.mp3",
+            "highlight": "دُ",
+            "word": "اَللّٰهُ الصَّمَدُ",
+            "after": null
+        }],
+        "broj16": [{
+            "id": 16,
+            "url": "./assets/audio/l13/16.mp3",
+            "highlight": "دْ",
+            "word": "لَمْ يَلِدْ وَلَمْ يُولَدْ",
+            "after": null
+        }],
+        "broj17": [{
+            "id": 17,
+            "url": "./assets/audio/l13/17.mp3",
+            "highlight": "دٌ",
+            "word": "وَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ",
+            "after": null
+        }]
     }
 }

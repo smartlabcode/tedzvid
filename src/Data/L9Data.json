@@ -1,6 +1,5 @@
 {
-    "row1": [
-        {
+    "row1": [{
 
             "id": 2,
             "url": "./assets/audio/l9/2.mp3",
@@ -16,17 +15,14 @@
             "after": null
         }
     ],
-    "row2": [
-        {
-            "id": 4,
-            "url": "./assets/audio/l9/4.mp3",
-            "highlight": "ـًا حَ",
-            "word": "عَلِيمـًا حَكِيمًا",
-            "after": null
-        }
-    ],
-    "row3": [
-        {
+    "row2": [{
+        "id": 4,
+        "url": "./assets/audio/l9/4.mp3",
+        "highlight": "ـًا حَ",
+        "word": "عَلِيمـًا حَكِيمًا",
+        "after": null
+    }],
+    "row3": [{
             "id": 5,
             "url": "./assets/audio/l9/5.mp3",
             "highlight": "نْوَ",
@@ -56,8 +52,7 @@
         }
     ],
     "multirow": {
-        "word1": [
-            {
+        "word1": [{
                 "id": 3,
                 "url": "./assets/audio/l9/3.mp3",
                 "highlight": "نْهُ",
@@ -83,28 +78,24 @@
                 "word": "وَيَنْأَوْ",
                 "after": null
             }
-        ]},
+        ]
+    },
     "vjezba": {
-        "broj9": [
-            {
-                "id": 9,
-                "url": "./assets/audio/l9/9.mp3",
-                "highlight": "نْهُ",
-                "word": "وَإِخْرَاجُ أَهْلِهِ مِنْهُ أَكْبَرُ عِنْدَ اللّٰهِ ",
-                "after": null
-            }
-        ],
-        "broj10": [
-            {
-                "id": 10,
-                "url": "./assets/audio/l9/10.mp3",
-                "highlight": "نْ خَ",
-                "word": "مِمَّنْ خَلَقْنَا تَفْضِيلًا ",
-                "after": null
-            }
-        ],
-        "broj11": [
-            {
+        "broj9": [{
+            "id": 9,
+            "url": "./assets/audio/l9/9.mp3",
+            "highlight": "نْهُ",
+            "word": "وَإِخْرَاجُ أَهْلِهِ مِنْهُ أَكْبَرُ عِنْدَ اللّٰهِ ",
+            "after": null
+        }],
+        "broj10": [{
+            "id": 10,
+            "url": "./assets/audio/l9/10.mp3",
+            "highlight": "نْ خَ",
+            "word": "مِمَّنْ خَلَقْنَا تَفْضِيلًا ",
+            "after": null
+        }],
+        "broj11": [{
                 "id": 11,
                 "url": "./assets/audio/l9/11.mp3",
                 "highlight": "قًا غَ",
@@ -118,8 +109,7 @@
                 "after": null
             }
         ],
-        "broj12": [
-            {
+        "broj12": [{
                 "id": 12,
                 "url": "./assets/audio/l9/12.mp3",
                 "highlight": "دًا حَ",
@@ -133,80 +123,63 @@
                 "after": null
             }
         ],
-        "broj13": [
-            {
-                "id": 13,
-                "url": "./assets/audio/l9/13.mp3",
-                "highlight": "نْ حَ",
-                "word": "َمِنْ حَيْثُ خَرَجْتَ",
-                "after": null
-            }
-        ],
-        "broj14": [
-            {
-                "id": 14,
-                "url": "./assets/audio/l9/14.mp3",
-                "highlight": "نْ خَ",
-                "word": "ذٰلِكَ لِمَنْ خَشِيَ رَبَّهُ",
-                "after": null
-            }
-        ],
-        "broj15": [
-            {
-                "id": 15,
-                "url": "./assets/audio/l9/15.mp3",
-                "highlight": "نْحَ",
-                "word": "فَصَلِّ لِـرَبِّكَ وَانْحَرْ ",
-                "after": null
-            }
-        ],
-        "broj16": [
-            {
-                "id": 16,
-                "url": "./assets/audio/l9/16.mp3",
-                "highlight": "نْـعَ",
-                "word": "صِرَاطَ الَّذِينَ أَنْـعَمْتَ عَلَيْهِمْ",
-                "after": null
-            }
-        ],
-        "broj17": [
-            {
-                "id": 17,
-                "url": "./assets/audio/l9/17.mp3",
-                "highlight": "ءً غَ",
-                "word": "لَأَسْقَيْنَاهُمْ مَٓاءً غَدَقًا",
-                "after": null
-            }
-        ],
-        "broj18": [
-            {
-                "id": 18,
-                "url": "./assets/audio/l9/18.mp3",
-                "highlight": "نْ أَ",
-                "word": "وَأْتُوا الْبُيُوتَ مِنْ أَبْوَابِهَا ",
-                "after": null
-            }
-        ],
-        "broj19": [
-            {
-                "id": 19,
-                "url": "./assets/audio/l9/19.mp3",
-                "highlight": "رٌ حَ",
-                "word": "وَاللّٰهُ غَفُورٌ حَلِيمٌ",
-                "after": null
-            }
-        ],
-        "broj20": [
-            {
-                "id": 20,
-                "url": "./assets/audio/l9/20.mp3",
-                "highlight": "نْوَ",
-                "word": "وَمِنَ النَّخْلِ مِنْ طَلْعِهَا قِنْوَانٌ دَانِيَةٌ ",
-                "after": null
-            }
-        ],
-        "broj21": [
-            {
+        "broj13": [{
+            "id": 13,
+            "url": "./assets/audio/l9/13.mp3",
+            "highlight": "نْ حَ",
+            "word": "َمِنْ حَيْثُ خَرَجْتَ",
+            "after": null
+        }],
+        "broj14": [{
+            "id": 14,
+            "url": "./assets/audio/l9/14.mp3",
+            "highlight": "نْ خَ",
+            "word": "ذٰلِكَ لِمَنْ خَشِيَ رَبَّهُ",
+            "after": null
+        }],
+        "broj15": [{
+            "id": 15,
+            "url": "./assets/audio/l9/15.mp3",
+            "highlight": "نْحَ",
+            "word": "فَصَلِّ لِـرَبِّكَ وَانْحَرْ ",
+            "after": null
+        }],
+        "broj16": [{
+            "id": 16,
+            "url": "./assets/audio/l9/16.mp3",
+            "highlight": "نْـعَ",
+            "word": "صِرَاطَ الَّذِينَ أَنْـعَمْتَ عَلَيْهِمْ",
+            "after": null
+        }],
+        "broj17": [{
+            "id": 17,
+            "url": "./assets/audio/l9/17.mp3",
+            "highlight": "ءً غَ",
+            "word": "لَأَسْقَيْنَاهُمْ مَٓاءً غَدَقًا",
+            "after": null
+        }],
+        "broj18": [{
+            "id": 18,
+            "url": "./assets/audio/l9/18.mp3",
+            "highlight": "نْ أَ",
+            "word": "وَأْتُوا الْبُيُوتَ مِنْ أَبْوَابِهَا ",
+            "after": null
+        }],
+        "broj19": [{
+            "id": 19,
+            "url": "./assets/audio/l9/19.mp3",
+            "highlight": "رٌ حَ",
+            "word": "وَاللّٰهُ غَفُورٌ حَلِيمٌ",
+            "after": null
+        }],
+        "broj20": [{
+            "id": 20,
+            "url": "./assets/audio/l9/20.mp3",
+            "highlight": "نْوَ",
+            "word": "وَمِنَ النَّخْلِ مِنْ طَلْعِهَا قِنْوَانٌ دَانِيَةٌ ",
+            "after": null
+        }],
+        "broj21": [{
                 "id": 21,
                 "url": "./assets/audio/l9/21.mp3",
                 "highlight": "نْيَ",
@@ -220,14 +193,12 @@
                 "after": null
             }
         ],
-        "broj22": [
-            {
-                "id": 22,
-                "url": "./assets/audio/l9/22.mp3",
-                "highlight": "نْيَ",
-                "word": "وَغَرَّتْهُمُ الْحَيٰوةُ الدُّنْيَا",
-                "after": null
-            }
-        ]
+        "broj22": [{
+            "id": 22,
+            "url": "./assets/audio/l9/22.mp3",
+            "highlight": "نْيَ",
+            "word": "وَغَرَّتْهُمُ الْحَيٰوةُ الدُّنْيَا",
+            "after": null
+        }]
     }
 }
