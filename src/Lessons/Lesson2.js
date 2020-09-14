@@ -93,7 +93,7 @@ function L2() {
 					</Col>
 				</Row>
 
-				<Row className="text-center">
+				<Row className="text-center reorder">
 					<Col>{PlayerRow(data, 'row1')}</Col>
 				</Row>
 

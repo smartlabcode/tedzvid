@@ -38,10 +38,10 @@
         }
     ],
     "row3": [{
-            "id": 8,
-            "url": "./assets/audio/l2/8.wav",
+            "id": 6,
+            "url": "./assets/audio/l2/6.wav",
             "highlight": "هُ",
-            "word": "لَـهُ",
+            "word": "اِسْـمُــهُ",
             "after": " ; "
         },
         {
@@ -50,12 +50,11 @@
             "highlight": "هِ",
             "word": "بِـهِ",
             "after": " ; "
-        },
-        {
-            "id": 6,
-            "url": "./assets/audio/l2/6.wav",
+        }, {
+            "id": 8,
+            "url": "./assets/audio/l2/8.wav",
             "highlight": "هُ",
-            "word": "اِسْـمُــهُ",
+            "word": "لَـهُ",
             "after": " . "
         }
     ],
