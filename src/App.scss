@@ -32,6 +32,8 @@ body {
   font-family: 'KuranKerimFontHamdullah', serif;
 }
 
+
+
 span.ne-svira {
   color: inherit;
 }
@@ -67,7 +69,7 @@ span {
 
 span.oznaceno,
 span.arapski {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 span.tacka {
@@ -457,8 +459,37 @@ h2 strong {
 }
 
 @media only screen and (max-width: 600px) {
+
+  .reorder {
+    .col {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      // span {
+
+
+      //   &:nth-of-type(odd) {
+      //     text-align: right;
+      //     width: 45%;
+      //   }
+
+      //   &:nth-of-type(even) {
+      //     text-align: left;
+      //     width: 45%;
+      //   }
+      // }
+      .after {
+        display: none
+      }
+    }
+  }
+
+
   body {
-    font-size: 1rem !important;
+    font-size: 0.9rem !important;
   }
 
   span.after {
@@ -528,10 +559,8 @@ h2 strong {
     margin-right: 10%;
   }
 
-  .arapski {
-    font-size: 1.8rem !important;
-  }
-
+  .oznaceno,
+  .arapski,
   .arapski-lekcija {
     font-size: 1.8rem !important;
   }
@@ -548,16 +577,11 @@ h2 strong {
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1000px) {
-  .arapski {
-    font-size: 1.6rem !important;
-  }
 
-
+  .oznaceno,
+  .arapski,
   .arapski-lekcija {
-    .arapski-lekcija {
-      font-size: 19px !important;
-      font-size: 2rem !important;
-    }
+    font-size: 2.2rem !important;
   }
 }
 
@@ -599,3 +623,18 @@ h2 strong {
     }
   }
 } */
+
+
+.reorder {
+  .col {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &>span {
+      margin: 10px;
+    }
+  }
+}

@@ -5,16 +5,13 @@ function Arabic(props) {
 	const arabicTxt = props.children;
 
 	const replacedTxt = myReactStringReplace(arabicTxt, props.arabic, (match, i) => (
-		<>
-		<span   key={'rp' + i} className="oznaceno">
+		<span key={'rp' + i} className="oznaceno">
 			{match}
 		</span>
-		</>
 	));
-	console.log('REPLACED!:', replacedTxt);
 
 	return (
-		<span  lang="ar" className={props.bold ? 'arap-red' : 'arapski'}>
+		<span lang="ar" className={props.bold ? 'arap-red' : 'arapski'}>
 			{props.arabic ? replacedTxt : props.children}
 		</span>
 	);

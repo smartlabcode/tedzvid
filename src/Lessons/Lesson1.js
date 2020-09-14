@@ -92,7 +92,7 @@ function L1() {
 						<strong>sukun</strong> <span className="arapski-lekcija "> ــــْـــ</span> , npr.:
 					</Col>
 				</Row>
-				<Row className="text-center disableRtl">
+				<Row className="text-center reorder">
 					<Col>{PlayerRow(data, 'row1')}</Col>
 				</Row>
 				<Row>
@@ -102,7 +102,7 @@ function L1() {
 						<span className="arapski-lekcija "> ـــَـــ ا </span> , npr.:
 					</Col>
 				</Row>
-				<Row className="text-center">
+				<Row className="text-center reorder">
 					<Col>{PlayerRow(data, 'row2')}</Col>
 				</Row>
 				<Row>
@@ -113,7 +113,7 @@ function L1() {
 						<span className="arapski-lekcija">ـــُــ و</span> , stat će <u>bez ikakve promjene</u> , npr.:
 					</Col>
 				</Row>
-				<Row className="text-center rtl">
+				<Row className="text-center  ">
 					<Col>
 						{VjezbeRow(data, 'row3', 'broj1')}
 						{VjezbeRow(data, 'row3', 'broj2')}
@@ -131,7 +131,7 @@ function L1() {
 						njemu, npr.:
 					</Col>
 				</Row>
-				<Row className="text-center">
+				<Row className="text-center reorder">
 					<Col>{PlayerRow(data, 'row4')}</Col>
 				</Row>
 				<Row>
