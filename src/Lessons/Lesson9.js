@@ -112,14 +112,14 @@ function L9() {
 					</Col>
 				</Row>
 
-				<Row className="text-center rtl">
+				<Row className="text-center reorder">
 					<Col>{PlayerRow(data, 'row1')}</Col>
 				</Row>
 
-				<Row className="text-center rtl">
+				<Row className="text-center reorder">
 					<Col>
-						{VjezbeRow(data, 'multirow', 'word1')}
 						{PlayerRow(data, 'row2')}
+						{VjezbeRow(data, 'multirow', 'word1')}
 					</Col>
 				</Row>
 
@@ -192,17 +192,16 @@ function L9() {
 							</Col>
 						</Row>
 
-						<Row className="text-center">
+						<Row className="text-center reorder">
 							<Col>{PlayerRow(data, 'row1')}</Col>
 						</Row>
 
-						<Row className="text-center rtl">
+						<Row className="text-center reorder">
 							<Col>
-								{VjezbeRow(data, 'multirow', 'word1')}
 								{PlayerRow(data, 'row2')}
+								{VjezbeRow(data, 'multirow', 'word1')}
 							</Col>
 						</Row>
-
 						<Row>
 							<Col className="opisLekcije">
 								<strong>IZHAR MUTLAK</strong> – kada poslije harfa <strong>N</strong> sa sukunom (<span className="arapski-lekcija">نْ</span>){' '}

@@ -1,26 +1,24 @@
 {
     "row1": [{
+        "id": 1,
+        "url": "./assets/audio/l9/1.mp3",
+        "highlight": "نْهُ",
+        "word": "عَنْهُ",
+        "after": " ; "
+    }, {
 
-            "id": 2,
-            "url": "./assets/audio/l9/2.mp3",
-            "highlight": "نْ أَ",
-            "word": "قَالَ أَعُوذُ بِاللّٰهِ أَنْ أَكُونَ مِنَ الْجَاهِلِينَ",
-            "after": " ; "
-        },
-        {
-            "id": 1,
-            "url": "./assets/audio/l9/1.mp3",
-            "highlight": "نْهُ",
-            "word": "عَنْهُ",
-            "after": null
-        }
-    ],
+        "id": 2,
+        "url": "./assets/audio/l9/2.mp3",
+        "highlight": "نْ أَ",
+        "word": "قَالَ أَعُوذُ بِاللّٰهِ أَنْ أَكُونَ مِنَ الْجَاهِلِينَ",
+        "after": null
+    }],
     "row2": [{
         "id": 4,
         "url": "./assets/audio/l9/4.mp3",
         "highlight": "ـًا حَ",
         "word": "عَلِيمـًا حَكِيمًا",
-        "after": null
+        "after": " ; "
     }],
     "row3": [
 
@@ -57,7 +55,7 @@
                 "url": "./assets/audio/l9/3.mp3",
                 "highlight": "نْهُ",
                 "word": "نَ عَنْهُ",
-                "after": " ; "
+                "after": null
             },
             {
 

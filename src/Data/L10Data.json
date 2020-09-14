@@ -1,20 +1,18 @@
 {
     "row1": [{
+        "id": 2,
+        "url": "./assets/audio/l10/2.mp3",
+        "highlight": "مْ دِ",
+        "word": "لَكُمْ دِينُكُمْ",
+        "after": " ; "
+    }, {
 
-            "id": 1,
-            "url": "./assets/audio/l10/1.mp3",
-            "highlight": "مْ تَ",
-            "word": "أَلَـمْ تَرَ",
-            "after": " ; "
-        },
-        {
-            "id": 2,
-            "url": "./assets/audio/l10/2.mp3",
-            "highlight": "مْ دِ",
-            "word": "لَكُمْ دِينُكُمْ",
-            "after": " ; "
-        }
-    ],
+        "id": 1,
+        "url": "./assets/audio/l10/1.mp3",
+        "highlight": "مْ تَ",
+        "word": "أَلَـمْ تَرَ",
+        "after": null
+    }],
     "multirow": {
         "word1": [{
 
@@ -22,13 +20,13 @@
                 "url": "./assets/audio/l10/3.mp3",
                 "highlight": "مْ فِ",
                 "word": "كَيْدَهُمْ فِي تَضْلِيلٍ",
-                "after": null
+                "after": " ; "
             },
             {
                 "id": 31,
                 "highlight": "مْ يَ",
                 "word": "أَلَـمْ يَـجْعَلْ",
-                "after": " ; "
+                "after": null
             }
         ],
         "word2": [{
