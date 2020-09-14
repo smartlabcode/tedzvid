@@ -33,7 +33,7 @@
         "url": "./assets/audio/l7/5.mp3",
         "highlight": "رًا رَ",
         "word": "وَكَانَ اللّٰهُ غَفُورًا رَحِيمًا",
-        "after": ";"
+        "after": null
     }],
     "multirow": {
         "word1": [{
@@ -41,7 +41,7 @@
                 "url": "./assets/audio/l7/6.mp3",
                 "highlight": "نْ لَ",
                 "word": "يَكُنْ لَهُ وَلَدٌ",
-                "after": null
+                "after": ";"
             },
             {
                 "id": 61,
