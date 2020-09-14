@@ -91,13 +91,13 @@ function L8() {
 						<br />
 					</Col>
 				</Row>
-				<Row className="text-center">
+				<Row className="text-center reorder">
 					<Col>{PlayerRow(data, 'row1')}</Col>
 				</Row>
-				<Row className="text-center rtl">
+				<Row className="text-center reorder">
 					<Col>{PlayerRow(data, 'row2')}</Col>
 				</Row>
-				<Row className="text-center">
+				<Row className="text-center reorder">
 					<Col>{PlayerRow(data, 'row3')}</Col>
 				</Row>
 				<Row>
@@ -137,13 +137,13 @@ function L8() {
 							</Col>
 						</Row>
 
-						<Row className="text-center">
+						<Row className="text-center reorder">
 							<Col>{PlayerRow(data, 'row1')}</Col>
 						</Row>
-						<Row className="text-center rtl">
+						<Row className="text-center reorder">
 							<Col>{PlayerRow(data, 'row2')}</Col>
 						</Row>
-						<Row className="text-center">
+						<Row className="text-center reorder">
 							<Col>{PlayerRow(data, 'row3')}</Col>
 						</Row>
 
