@@ -14,50 +14,44 @@
         "after": null
     }],
     "row3": [{
-            "id": 3,
-            "url": "./assets/audio/l14/3.mp3",
-            "highlight": "رَ",
-            "word": "أَلَـمْ تَرَ",
-            "after": " ; "
-        },
-        {
-            "id": 4,
-            "url": "./assets/audio/l14/4.mp3",
-            "highlight": "رُ",
-            "word": "رُبـَمَا",
-            "after": null
-        }
-    ],
+        "id": 4,
+        "url": "./assets/audio/l14/4.mp3",
+        "highlight": "رُ",
+        "word": "رُبـَمَا",
+        "after": " ; "
+    }, {
+        "id": 3,
+        "url": "./assets/audio/l14/3.mp3",
+        "highlight": "رَ",
+        "word": "أَلَـمْ تَرَ",
+        "after": null
+    }],
     "row4": [{
-            "id": 5,
-            "url": "./assets/audio/l14/5.mp3",
-            "highlight": "تَرْ",
-            "word": "تَرْجُفُ",
-            "after": " ; "
-        },
-        {
-            "id": 6,
-            "url": "./assets/audio/l14/6.mp3",
-            "highlight": "جُـر",
-            "word": "فَاهْجُـرْ",
-            "after": null
-        }
-    ],
+        "id": 6,
+        "url": "./assets/audio/l14/6.mp3",
+        "highlight": "جُـر",
+        "word": "فَاهْجُـرْ",
+        "after": " ; "
+    }, {
+        "id": 5,
+        "url": "./assets/audio/l14/5.mp3",
+        "highlight": "تَرْ",
+        "word": "تَرْجُفُ",
+        "after": null
+    }],
     "row5": [{
-            "id": 7,
-            "url": "./assets/audio/l14/7.mp3",
-            "highlight": "قَــدْرْ",
-            "word": "قَــدْرْ",
-            "after": " ; "
-        },
-        {
-            "id": 8,
-            "url": "./assets/audio/l14/8.mp3",
-            "highlight": "دُورْ",
-            "word": "صُدُورْ",
-            "after": null
-        }
-    ],
+        "id": 8,
+        "url": "./assets/audio/l14/8.mp3",
+        "highlight": "دُورْ",
+        "word": "صُدُورْ",
+        "after": " ; "
+    }, {
+        "id": 7,
+        "url": "./assets/audio/l14/7.mp3",
+        "highlight": "قَــدْرْ",
+        "word": "قَــدْرْ",
+        "after": null
+    }],
     "row6": [{
         "id": 9,
         "url": "./assets/audio/l14/9.mp3",
@@ -66,20 +60,18 @@
         "after": null
     }],
     "row7": [{
-            "id": 10,
-            "url": "./assets/audio/l14/10.mp3",
-            "highlight": "رْطَا",
-            "word": "قِرْطَاسٍ",
-            "after": " ; "
-        },
-        {
-            "id": 11,
-            "url": "./assets/audio/l14/11.mp3",
-            "highlight": "رْقَ",
-            "word": "فِرْقَةٍ",
-            "after": null
-        }
-    ],
+        "id": 11,
+        "url": "./assets/audio/l14/11.mp3",
+        "highlight": "رْقَ",
+        "word": "فِرْقَةٍ",
+        "after": " ; "
+    }, {
+        "id": 10,
+        "url": "./assets/audio/l14/10.mp3",
+        "highlight": "رْطَا",
+        "word": "قِرْطَاسٍ",
+        "after": null
+    }],
     "row8": [{
         "id": 24,
         "url": "./assets/audio/l14/24.mp3",

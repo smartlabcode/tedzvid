@@ -82,7 +82,7 @@ function L14() {
 				</Row>
 
 				<Row>
-					<Col className="opisLekcije text-center">
+					<Col className="opisLekcije">
 						<strong>1.</strong> kada je harf<strong> R </strong>sa <strong>vokalom</strong> E ({' '}
 						{PlayerRow(data, 'row1')}) ili <strong>vokalom</strong> U ( {PlayerRow(data, 'row2')}), npr.:
 						{PlayerRow(data, 'row3')}
@@ -102,6 +102,7 @@ function L14() {
 							ــُـ رْ
 						</span>
 						), npr.:
+						<br />
 						{PlayerRow(data, 'row4')}
 					</Col>
 				</Row>

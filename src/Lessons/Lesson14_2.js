@@ -79,13 +79,12 @@ function L14_2() {
 				<Row>
 					<Col className="opisLekcije">
 						<strong>3.</strong> kada je harf<strong> R </strong>sa <strong>sukunom</strong>, prije njeg harf
-						sa <strong>sukunom</strong>, a prije toga harf sa
-						<strong>vokalom</strong> I (
+						sa <strong>sukunom</strong>, a prije toga harf sa <strong>vokalom</strong> I (
 						<span className="arapski-lekcija" style={{ color: 'red' }}>
 							{' '}
 							ــِـ ــْـ رْ{' '}
 						</span>
-						), npr.:
+						), npr.:<br />
 						{PlayerRow(data, 'row11')}
 					</Col>
 				</Row>
