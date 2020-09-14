@@ -81,15 +81,15 @@ function L12() {
 					</Col>
 				</Row>
 
-				<Row className="text-center rtl">
+				<Row className="text-center reorder">
 					<Col>{PlayerRow(data, 'row1')}</Col>
 				</Row>
 
-				<Row className="text-center rtl">
+				<Row className="text-center reorder">
 					<Col>{PlayerRow(data, 'row2')}</Col>
 				</Row>
 
-				<Row className="text-center rtl">
+				<Row className="text-center reorder">
 					<Col>{PlayerRow(data, 'row3')}</Col>
 				</Row>
 
@@ -112,15 +112,15 @@ function L12() {
 							</Col>
 						</Row>
 
-						<Row className="text-center rtl">
+						<Row className="text-center reorder">
 							<Col>{PlayerRow(data, 'row1')}</Col>
 						</Row>
 
-						<Row className="text-center rtl">
+						<Row className="text-center reorder">
 							<Col>{PlayerRow(data, 'row2')}</Col>
 						</Row>
 
-						<Row className="text-center rtl">
+						<Row className="text-center reorder">
 							<Col>{PlayerRow(data, 'row3')}</Col>
 						</Row>
 

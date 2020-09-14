@@ -57,7 +57,9 @@ function L11() {
 								IHFA
 							</h2>
 						</div>
-						<h4 className="text-center">skrivanje harfa N (ن)</h4>
+						<h4 className="text-center">
+							<strong>skrivanje harfa N (ن)</strong>
+						</h4>
 						<hr />
 					</Col>
 				</Row>

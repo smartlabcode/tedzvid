@@ -1,10 +1,9 @@
 {
     "row1": [{
-
-            "id": 3,
-            "url": "./assets/audio/l12/3.mp3",
-            "highlight": "مْ بِ",
-            "word": "تَرْمِيهِمْ بِحِجَارَةٍ",
+            "id": 1,
+            "url": "./assets/audio/l12/1.mp3",
+            "highlight": "مْ بِـ",
+            "word": "فَهُمْ بِـهِ مُسْتَمْسِكُونَ",
             "after": " ; "
         },
         {
@@ -13,31 +12,29 @@
             "highlight": "مْ بِ",
             "word": "أَمْ بِـهِ",
             "after": " ; "
-        },
-        {
-            "id": 1,
-            "url": "./assets/audio/l12/1.mp3",
-            "highlight": "مْ بِـ",
-            "word": "فَهُمْ بِـهِ مُسْتَمْسِكُونَ",
+        }, {
+
+            "id": 3,
+            "url": "./assets/audio/l12/3.mp3",
+            "highlight": "مْ بِ",
+            "word": "تَرْمِيهِمْ بِحِجَارَةٍ",
             "after": null
         }
     ],
     "row2": [{
+        "id": 5,
+        "url": "./assets/audio/l12/5.mp3",
+        "highlight": "مْ بِ",
+        "word": "إِنَّ اللّٰـهَ نِعِمَّا يَعِظُكُمْ بِهِ",
+        "after": " ; "
+    }, {
 
-            "id": 4,
-            "url": "./assets/audio/l12/4.mp3",
-            "highlight": "مْ بِ",
-            "word": "يَدْعُونَ رَبَّهُمْ بِالْغَدَاةِ وَالْعَشِيِّ",
-            "after": " ; "
-        },
-        {
-            "id": 5,
-            "url": "./assets/audio/l12/5.mp3",
-            "highlight": "مْ بِ",
-            "word": "إِنَّ اللّٰـهَ نِعِمَّا يَعِظُكُمْ بِهِ",
-            "after": null
-        }
-    ],
+        "id": 4,
+        "url": "./assets/audio/l12/4.mp3",
+        "highlight": "مْ بِ",
+        "word": "يَدْعُونَ رَبَّهُمْ بِالْغَدَاةِ وَالْعَشِيِّ",
+        "after": null
+    }],
     "row3": [{
         "id": 6,
         "url": "./assets/audio/l12/6.mp3",
