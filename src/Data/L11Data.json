@@ -15,27 +15,25 @@
         }
     ],
     "row2": [{
+        "id": 4,
+        "url": "./assets/audio/l11/4.mp3",
+        "highlight": "يٌّ شَ",
+        "word": "إِنَّ اللّٰهَ قَوِيٌّ شَدِيدُ الْعِقَابِ",
+        "after": " ; "
+    }, {
 
-            "id": 3,
-            "url": "./assets/audio/l11/3.mp3",
-            "highlight": "نْ كُـنْـتُ",
-            "word": "إِنْ كُـنْـتُمْ صَادِقِينَ",
-            "after": " ; "
-        },
-        {
-            "id": 4,
-            "url": "./assets/audio/l11/4.mp3",
-            "highlight": "يٌّ شَ",
-            "word": "إِنَّ اللّٰهَ قَوِيٌّ شَدِيدُ الْعِقَابِ",
-            "after": null
-        }
-    ],
+        "id": 3,
+        "url": "./assets/audio/l11/3.mp3",
+        "highlight": "نْ كُـنْـتُ",
+        "word": "إِنْ كُـنْـتُمْ صَادِقِينَ",
+        "after": null
+    }],
     "row3": [{
         "id": 6,
         "url": "./assets/audio/l11/6.mp3",
         "highlight": "نْـفِ",
         "word": "وَمِمَّا رَزَقْنَاهُمْ يُـنْـفِقُونَ",
-        "after": null
+        "after": " ; "
     }],
     "multirow": {
         "word1": [{
@@ -43,7 +41,7 @@
                 "url": "./assets/audio/l11/5.mp3",
                 "highlight": "نْ تَ",
                 "word": "مِنْ تَحْتِهَا الْأَنْهَارُ",
-                "after": " ; "
+                "after": null
             },
             {
                 "id": 501,
