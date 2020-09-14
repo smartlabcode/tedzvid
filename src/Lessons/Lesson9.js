@@ -132,7 +132,7 @@ function L9() {
 					</Col>
 				</Row>
 
-				<Row className="text-center">
+				<Row className="text-center rtl">
 					<Col>{PlayerRow(data, 'row3')}</Col>
 				</Row>
 

@@ -22,11 +22,19 @@
         "word": "عَلِيمـًا حَكِيمًا",
         "after": null
     }],
-    "row3": [{
-            "id": 5,
-            "url": "./assets/audio/l9/5.mp3",
-            "highlight": "نْوَ",
-            "word": "قِنْوَانٌ",
+    "row3": [
+
+        {
+            "id": 8,
+            "url": "./assets/audio/l9/8.mp3",
+            "highlight": "ُّنْيَ",
+            "word": "اَلدُّنْيَا",
+            "after": " ; "
+        }, {
+            "id": 7,
+            "url": "./assets/audio/l9/7.mp3",
+            "highlight": "نْيَ",
+            "word": "بُنْيَانٌ",
             "after": " ; "
         },
         {
@@ -35,20 +43,12 @@
             "highlight": "نْوَ",
             "word": "صِنْوَانٌ",
             "after": " ; "
-        },
-        {
-            "id": 7,
-            "url": "./assets/audio/l9/7.mp3",
-            "highlight": "نْيَ",
-            "word": "بُنْيَانٌ",
-            "after": " ; "
-        },
-        {
-            "id": 8,
-            "url": "./assets/audio/l9/8.mp3",
-            "highlight": "ُّنْيَ",
-            "word": "اَلدُّنْيَا",
-            "after": " ; "
+        }, {
+            "id": 5,
+            "url": "./assets/audio/l9/5.mp3",
+            "highlight": "نْوَ",
+            "word": "قِنْوَانٌ",
+            "after": null
         }
     ],
     "multirow": {
