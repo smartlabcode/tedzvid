@@ -29,21 +29,19 @@
         }
     ],
     "row2": [{
+        "id": 6,
+        "url": "./assets/audio/l6/6.mp3",
+        "highlight": "لٌ مِنْ مَ",
+        "word": "فِي جِيدِهَا حَبْلٌ مِنْ مَسَدٍ",
+        "after": null
+    }, {
 
-            "id": 5,
-            "url": "./assets/audio/l6/5.mp3",
-            "highlight": "ئًا نُ",
-            "word": "لَـقَدْ جِئْتَ شَيْـئًا نُكْرًا",
-            "after": " ؛ "
-        },
-        {
-            "id": 6,
-            "url": "./assets/audio/l6/6.mp3",
-            "highlight": "لٌ مِنْ مَ",
-            "word": "فِي جِيدِهَا حَبْلٌ مِنْ مَسَدٍ",
-            "after": null
-        }
-    ],
+        "id": 5,
+        "url": "./assets/audio/l6/5.mp3",
+        "highlight": "ئًا نُ",
+        "word": "لَـقَدْ جِئْتَ شَيْـئًا نُكْرًا",
+        "after": " ؛ "
+    }],
     "row3": [{
 
             "id": 1001,

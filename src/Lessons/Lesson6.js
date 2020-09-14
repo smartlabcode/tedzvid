@@ -131,18 +131,18 @@ function L6() {
 					</Col>
 				</Row>
 
-				<Row className="text-center">
+				<Row className="text-center reorder">
 					<Col>{PlayerRow(data, 'row1')}</Col>
 				</Row>
 
-				<Row className="text-center rtl">
+				<Row className="text-center reorder">
 					<Col>{PlayerRow(data, 'row2')}</Col>
 				</Row>
 
-				<Row className="text-center rtl">
+				<Row className="text-center reorder">
 					<Col>
-						<span key={'key' + data.row3[0].id}>
-							<Player url={data.row3[0].url} key={'p' + data.row3[0].id}>
+						<span key={'key' + data.row3[2].id}>
+							<Player url={data.row3[2].url} key={'p' + data.row3[2].id}>
 								{r3}
 							</Player>
 						</span>{' '}
@@ -190,18 +190,18 @@ function L6() {
 							</Col>
 						</Row>
 
-						<Row className="text-center">
+						<Row className="text-center reorder">
 							<Col>{PlayerRow(data, 'row1')}</Col>
 						</Row>
 
-						<Row className="text-center rtl">
+						<Row className="text-center reorder">
 							<Col>{PlayerRow(data, 'row2')}</Col>
 						</Row>
 
-						<Row className="text-center rtl">
+						<Row className="text-center reorder">
 							<Col>
-								<span key={'key' + data.row3[0].id}>
-									<Player url={data.row3[0].url} key={'p' + data.row3[0].id}>
+								<span key={'key' + data.row3[2].id}>
+									<Player url={data.row3[2].url} key={'p' + data.row3[2].id}>
 										{r3}
 									</Player>
 								</span>{' '}
