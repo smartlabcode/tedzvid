@@ -1,19 +1,17 @@
 {
     "row1": [{
-            "id": 1,
-            "url": "./assets/audio/l20/1.mp3",
-            "highlight": "آجَّ",
-            "word": "حَآجَّ",
-            "after": " ; "
-        },
-        {
-            "id": 2,
-            "url": "./assets/audio/l20/2.mp3",
-            "highlight": "آٰ لْ",
-            "word": "آٰ لْاٰنَ",
-            "after": "."
-        }
-    ],
+        "id": 2,
+        "url": "./assets/audio/l20/2.mp3",
+        "highlight": "آٰ لْ",
+        "word": "آٰ لْاٰنَ",
+        "after": " ; "
+    }, {
+        "id": 1,
+        "url": "./assets/audio/l20/1.mp3",
+        "highlight": "آجَّ",
+        "word": "حَآجَّ",
+        "after": "."
+    }],
     "row2": [{
             "id": 3,
             "url": "./assets/audio/l20/3.mp3",
@@ -58,20 +56,18 @@
         }
     ],
     "row3": [{
-            "id": 7,
-            "url": "./assets/audio/l20/7.mp3",
-            "highlight": "حَـآ قَّـ",
-            "word": "   وَمَآ أَدْرَاكَ مَا الْحَـآ قَّـةُ",
-            "after": " ؛ "
-        },
-        {
-            "id": 6,
-            "url": "./assets/audio/l20/6.mp3",
-            "highlight": "صَّـآ فَّ",
-            "word": "وَالصَّـآ فَّاتِ صَفًّا",
-            "after": null
-        }
-    ],
+        "id": 6,
+        "url": "./assets/audio/l20/6.mp3",
+        "highlight": "صَّـآ فَّ",
+        "word": "وَالصَّـآ فَّاتِ صَفًّا",
+        "after": " ؛ "
+    }, {
+        "id": 7,
+        "url": "./assets/audio/l20/7.mp3",
+        "highlight": "حَـآ قَّـ",
+        "word": "   وَمَآ أَدْرَاكَ مَا الْحَـآ قَّـةُ",
+        "after": null
+    }],
     "row4": [{
         "id": 8,
         "url": "./assets/audio/l20/8.mp3",

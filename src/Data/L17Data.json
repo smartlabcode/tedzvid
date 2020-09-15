@@ -249,49 +249,51 @@
         "broj19": [{
                 "id": 19,
                 "url": "./assets/audio/l17/19.mp3",
+
                 "highlight": "نَّا",
                 "word": "مَنَّا",
                 "after": null
             },
             {
 
-                "id": 176,
+                "id": 197,
                 "highlight": "ذَا",
                 "word": "وَإِذَا",
                 "after": null
             },
             {
 
-                "id": 175,
+                "id": 196,
                 "highlight": "ذِي",
-                "word": "لَقُواالَّذِي",
+                "word": "لَقُوا الَّذِينَ",
                 "after": null
             },
-            {
 
-                "id": 174,
-                "highlight": "ا",
-                "word": "نَ اٰم",
+            {
+                "id": 195,
+                "highlight": "اٰ",
+                "word": "اٰ",
                 "after": null
             },
             {
-                "id": 173,
+                "id": 194,
                 "highlight": "نُو",
-                "word": "ََنُو",
+                "word": "مَنُوا",
                 "after": null
             },
             {
-                "id": 17,
+                "id": 193,
                 "highlight": "قَا",
-                "word": "ا قَا",
+                "word": "قَالُـوٓا",
                 "after": null
             },
             {
-                "id": 171,
-                "highlight": "ا",
-                "word": "لُـوٓا اٰ",
+                "id": 192,
+                "highlight": "اٰ",
+                "word": "اٰ",
                 "after": null
             }
+
         ]
     }
 }

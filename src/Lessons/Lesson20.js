@@ -89,14 +89,14 @@ function L20() {
 					</Col>
 				</Row>
 
-				<Row className="text-center">
+				<Row className="text-center reorder">
 					<Col>{PlayerRow(data, 'row2')}</Col>
 				</Row>
-				<Row className="text-center">
+				<Row className="text-center reorder rtl">
 					<Col>{PlayerRow(data, 'row3')}</Col>
 				</Row>
 
-				<Row className="text-center">
+				<Row className="text-center reorder ">
 					<Col>{PlayerRow(data, 'row4')}</Col>
 				</Row>
 

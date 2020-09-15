@@ -90,25 +90,30 @@ function L19() {
 					</Col>
 				</Row>
 
-				<Row className="opisLekcije">
-					<pre> </pre>„turska štampa“<pre> </pre>„medinska štampa“
+				<Row className="opisLekcije text-center">
+					<Col>
+						<pre> „turska štampa“</pre>
+					</Col>
+					<Col>
+						<pre> „medinska štampa“</pre>
+					</Col>
 				</Row>
 
-				<Row className="text-center rtl">
+				<Row className="text-center reorder">
 					<Col>
-						{VjezbeRow(data, 'rows', 'row2lijevi')} <br />
+						{VjezbeRow(data, 'rows', 'row2lijevi')}
 						{VjezbeRow(data, 'rows', 'row2desni')}
 					</Col>
 				</Row>
-				<Row className="text-center rtl">
+				<Row className="text-center reorder">
 					<Col>
-						{VjezbeRow(data, 'rows', 'row3lijevi')} <br />
+						{VjezbeRow(data, 'rows', 'row3lijevi')}
 						{VjezbeRow(data, 'rows', 'row3desni')}
 					</Col>
 				</Row>
-				<Row className="text-center rtl">
+				<Row className="text-center reorder">
 					<Col>
-						{VjezbeRow(data, 'rows', 'row4lijevi')} <br />
+						{VjezbeRow(data, 'rows', 'row4lijevi')}
 						{VjezbeRow(data, 'rows', 'row4desni')}
 					</Col>
 				</Row>
@@ -211,12 +216,10 @@ function L19() {
 					</Col>
 				</Row>
 
-				<Row className="text-center">
+				<Row className="text-center rtl">
 					<Col>
-						<span className="tacka">
-							{VjezbeRow(data, 'vjezba', 'broj8')}
-							۞
-						</span>
+						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj8')}</span>
+						<span className="tacka">۞</span>
 					</Col>
 				</Row>
 
@@ -227,9 +230,10 @@ function L19() {
 					</Col>
 				</Row>
 
-				<Row className="text-center">
+				<Row className="text-center rtl">
 					<Col>
-						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj11')} ۞</span>
+						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj11')} </span>
+						<span className="tacka">۞</span>
 					</Col>
 				</Row>
 
