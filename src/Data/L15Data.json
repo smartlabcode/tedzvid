@@ -16,20 +16,18 @@
     ],
     "row2": [{
 
-            "id": 3,
-            "url": "./assets/audio/l15/3.mp3",
-            "highlight": "دْتُ",
-            "word": "وَلَآ أَنَا عَابِدٌ مَا عَبَدْتُـمْ",
-            "after": null
-        },
-        {
-            "id": 4,
-            "url": "./assets/audio/l15/4.mp3",
-            "highlight": "تْ طَٓ",
-            "word": "وَقَالَتْ طَٓائِفَةٌ مِنْ أَهْلِ الْكِتَابِ",
-            "after": " ; "
-        }
-    ],
+        "id": 3,
+        "url": "./assets/audio/l15/3.mp3",
+        "highlight": "دْتُ",
+        "word": "وَلَآ أَنَا عَابِدٌ مَا عَبَدْتُـمْ",
+        "after": " ; "
+    }, {
+        "id": 4,
+        "url": "./assets/audio/l15/4.mp3",
+        "highlight": "تْ طَٓ",
+        "word": "وَقَالَتْ طَٓائِفَةٌ مِنْ أَهْلِ الْكِتَابِ",
+        "after": null
+    }],
     "row3": [{
             "id": 5,
             "url": "./assets/audio/l15/5.mp3",
@@ -46,20 +44,18 @@
         }
     ],
     "row4": [{
-            "id": 8,
-            "url": "./assets/audio/l15/8.mp3",
-            "highlight": "ثْ ذٰ",
-            "word": "يَلْهَثْ ذٰلِكَ",
-            "after": " ; "
-        },
-        {
-            "id": 7,
-            "url": "./assets/audio/l15/7.mp3",
-            "highlight": "ذْ ظَ",
-            "word": "وَلَوْ أَنَّهُمْ إِذْ ظَلَمُٓوا أَنْفُسَهُمْ",
-            "after": null
-        }
-    ],
+        "id": 7,
+        "url": "./assets/audio/l15/7.mp3",
+        "highlight": "ذْ ظَ",
+        "word": "وَلَوْ أَنَّهُمْ إِذْ ظَلَمُٓوا أَنْفُسَهُمْ",
+        "after": " ; "
+    }, {
+        "id": 8,
+        "url": "./assets/audio/l15/8.mp3",
+        "highlight": "ثْ ذٰ",
+        "word": "يَلْهَثْ ذٰلِكَ",
+        "after": null
+    }],
     "row5": [{
             "id": 9,
             "url": "./assets/audio/l15/9.mp3",

@@ -85,7 +85,7 @@ function L15() {
 					</Col>
 				</Row>
 
-				<Row>
+				<Row className="text-center reorder rtl">
 					<Col className="opisLekcije text-center">{PlayerRow(data, 'row2')}</Col>
 				</Row>
 
@@ -96,7 +96,7 @@ function L15() {
 					</Col>
 				</Row>
 
-				<Row>
+				<Row className="text-center reorder rtl">
 					<Col className="opisLekcije text-center">{PlayerRow(data, 'row4')}</Col>
 				</Row>
 

@@ -95,16 +95,16 @@ function L10() {
 					</Col>
 				</Row>
 
-				<Row className="text-center reorder">
+				<Row className="text-center reorder rtl">
 					<Col>
-						{VjezbeRow(data, 'multirow', 'word1')}
 						{PlayerRow(data, 'row1')}
+						{VjezbeRow(data, 'multirow', 'word1')}
 					</Col>
 				</Row>
-				<Row className="text-center reorder">
+				<Row className="text-center reorder rtl">
 					<Col>{VjezbeRow(data, 'multirow', 'word2')}</Col>
 				</Row>
-				<Row className="text-center reorder">
+				<Row className="text-center reorder rtl">
 					<Col>{VjezbeRow(data, 'multirow', 'word3')}</Col>
 				</Row>
 
@@ -147,19 +147,18 @@ function L10() {
 							</Col>
 						</Row>
 
-						<Row className="text-center rtl">
+						<Row className="text-center reorder rtl">
 							<Col>
 								{PlayerRow(data, 'row1')}
 								{VjezbeRow(data, 'multirow', 'word1')}
 							</Col>
 						</Row>
-						<Row className="text-center">
+						<Row className="text-center reorder rtl">
 							<Col>{VjezbeRow(data, 'multirow', 'word2')}</Col>
 						</Row>
-						<Row className="text-center">
+						<Row className="text-center reorder rtl">
 							<Col>{VjezbeRow(data, 'multirow', 'word3')}</Col>
 						</Row>
-
 						<Row>
 							<Col>
 								<br />

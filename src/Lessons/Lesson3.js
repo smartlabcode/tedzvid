@@ -80,11 +80,13 @@ function L3() {
 						<strong>vokal</strong> U
 						<span className="arapski-lekcija">ــــُـــ </span>, riječ Allah
 						<span className="arapski-lekcija">اللّٰه </span>se uči <u>krupno</u>
-						, npr.: {PlayerRow(data, 'row1')}
+						, npr.:
 					</Col>
 				</Row>
-
-				<Row className="text-center">
+				<Row className="text-center reorder">
+					<Col>{PlayerRow(data, 'row1')}</Col>
+				</Row>
+				<Row className="text-center reorder ">
 					<Col>{VjezbeRow(data, 'multirow', 'row2')}</Col>
 				</Row>
 
@@ -102,7 +104,7 @@ function L3() {
 					<Col>{PlayerRow(data, 'row3')}</Col>
 				</Row>
 
-				<Row className="text-center rtl">
+				<Row className="text-center reorder rtl">
 					<Col>{PlayerRow(data, 'row4')}</Col>
 				</Row>
 

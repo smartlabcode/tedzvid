@@ -1,21 +1,10 @@
 {
     "row1": [{
-            "id": 1,
-            "url": "./assets/audio/l13/1.mp3",
-            "highlight": "طْ",
-            "word": "قِـسْـطْ",
-            "after": " ; "
-        }, {
-            "id": 2,
-            "url": "./assets/audio/l13/2.mp3",
-            "highlight": "قْ",
-            "word": "اَلْفَلَــقْ",
-            "after": " ; "
-        }, {
-            "id": 3,
-            "url": "./assets/audio/l13/3.mp3",
-            "highlight": "بْ",
-            "word": "اَلْأَبْتَرُ",
+
+            "id": 5,
+            "url": "./assets/audio/l13/5.mp3",
+            "highlight": "دْ",
+            "word": "قَــدْ",
             "after": " ; "
         },
         {
@@ -26,11 +15,22 @@
             "word": "أَجْــرٌ",
             "after": " ; "
         }, {
-
-            "id": 5,
-            "url": "./assets/audio/l13/5.mp3",
-            "highlight": "دْ",
-            "word": "قَــدْ",
+            "id": 3,
+            "url": "./assets/audio/l13/3.mp3",
+            "highlight": "بْ",
+            "word": "اَلْأَبْتَرُ",
+            "after": " ; "
+        }, {
+            "id": 2,
+            "url": "./assets/audio/l13/2.mp3",
+            "highlight": "قْ",
+            "word": "اَلْفَلَــقْ",
+            "after": " ; "
+        }, {
+            "id": 1,
+            "url": "./assets/audio/l13/1.mp3",
+            "highlight": "طْ",
+            "word": "قِـسْـطْ",
             "after": null
         }
     ],
@@ -39,7 +39,7 @@
         "url": "./assets/audio/l13/7.mp3",
         "highlight": "طْـ",
         "word": "أَلَّذِٓي أَطْـعَمَهُمْ مِنْ جُوعٍ",
-        "after": " ; "
+        "after": null
     }],
     "multirow": {
         "row2": [{
@@ -47,7 +47,7 @@
                 "url": "./assets/audio/l13/6.mp3",
                 "highlight": "ـقْ",
                 "word": "لِتَـقْرَأَهُ عَلَى النَّاسِ",
-                "after": null
+                "after": " ; "
             },
             {
                 "id": 601,

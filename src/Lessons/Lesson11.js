@@ -99,14 +99,14 @@ function L11() {
 					<Col>{PlayerRow(data, 'row1')}</Col>
 				</Row>
 
-				<Row className="text-center reorder">
+				<Row className="text-center reorder rtl">
 					<Col>{PlayerRow(data, 'row2')}</Col>
 				</Row>
 
-				<Row className="text-center reorder">
+				<Row className="text-center reorder rtl">
 					<Col>
-						{PlayerRow(data, 'row3')}
 						{VjezbeRow(data, 'multirow', 'word1')}
+						{PlayerRow(data, 'row3')}
 					</Col>
 				</Row>
 
@@ -153,14 +153,14 @@ function L11() {
 							<Col>{PlayerRow(data, 'row1')}</Col>
 						</Row>
 
-						<Row className="text-center reorder">
+						<Row className="text-center reorder rtl">
 							<Col>{PlayerRow(data, 'row2')}</Col>
 						</Row>
 
-						<Row className="text-center reorder">
+						<Row className="text-center reorder rtl">
 							<Col>
-								{PlayerRow(data, 'row3')}
 								{VjezbeRow(data, 'multirow', 'word1')}
+								{PlayerRow(data, 'row3')}
 							</Col>
 						</Row>
 
