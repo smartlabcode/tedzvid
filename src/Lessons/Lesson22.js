@@ -152,15 +152,15 @@ function L22() {
 							</Col>
 						</Row>
 
-						<Row className="text-center reorder ">
+						<Row className="text-center ">
 							<Col>
-								<span>
-									<span className="arapski">( ـــَــ وْ ـــْــ )</span>{' '}
-									{PlayerRow(data, 'row1lijevi')}
-								</span>
 								<span>
 									<span className="arapski">( ـــَــ يْ ـــْــ ) </span>{' '}
 									{PlayerRow(data, 'row1desni')}
+								</span>
+								<span>
+									<span className="arapski">( ـــَــ وْ ـــْــ )</span>{' '}
+									{PlayerRow(data, 'row1lijevi')}
 								</span>
 							</Col>
 						</Row>
