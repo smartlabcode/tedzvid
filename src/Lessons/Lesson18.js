@@ -162,9 +162,10 @@ function L18() {
 				<IconContext.Provider value={{ size: '30px', style: { float: 'right' } }}>
 					<MdZoomOutMap className="zoomIcon" onClick={handleShow} />
 				</IconContext.Provider>
-				<Row className="text-center">
+				<Row className="text-center rtl">
 					<Col>
-						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj6')} ۞</span>
+						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj6')} </span>
+						<span className="tacka">۞ </span>
 					</Col>
 				</Row>
 				<Row className="text-center">

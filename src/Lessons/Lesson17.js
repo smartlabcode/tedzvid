@@ -165,9 +165,10 @@ function L17() {
 					</Col>
 				</Row>
 
-				<Row className="text-center">
+				<Row className="text-center rtl">
 					<Col>
-						<span className="tacka">۞{VjezbeRow(data, 'vjezba', 'broj15')} </span>
+						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj15')} </span>
+						<span className="tacka">۞</span>
 					</Col>
 				</Row>
 
