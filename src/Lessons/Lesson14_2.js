@@ -238,8 +238,7 @@ function L14_2() {
 
 				<Row className="text-center">
 					<Col className="mobile-row">
-						<span className="tacka">۞</span>
-						{VjezbeRow(data, 'vjezba', 'broj39')}
+						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj39')} ۞</span>
 					</Col>
 				</Row>
 				<Modal show={show} onHide={handleClose} backdrop="static" keyboard={false}>
