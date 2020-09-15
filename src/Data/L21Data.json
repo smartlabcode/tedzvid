@@ -5,14 +5,14 @@
             "url": "./assets/audio/l21/1.mp3",
             "highlight": "مِينَ",
             "word": "أَلْـحَمْدُ لِلّٰهِ رَبِّ الْعَالَمِينَ ",
-            "after": null
+            "after": " ؛ "
         },
         {
             "id": 2,
             "url": "./assets/audio/l21/2.mp3",
             "highlight": "نُون",
             "word": "وَعَلَى اللّٰهِ فَلْيَتَوَكَّلِ الْمُؤْمِنُونَ",
-            "after": " ؛ "
+            "after": null
         }
     ],
     "row2": [{
