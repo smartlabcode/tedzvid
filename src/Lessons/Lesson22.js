@@ -82,10 +82,14 @@ function L22() {
 					</Col>
 				</Row>
 
-				<Row className="text-center">
+				<Row className="text-center reorder ">
 					<Col>
-						<span className="arapski">( ـــَــ وْ ـــْــ )</span> {PlayerRow(data, 'row1lijevi')}
-						<span className="arapski">( ـــَــ يْ ـــْــ ) </span> {PlayerRow(data, 'row1desni')}
+						<span>
+							<span className="arapski">( ـــَــ وْ ـــْــ )</span> {PlayerRow(data, 'row1lijevi')}
+						</span>
+						<span>
+							<span className="arapski">( ـــَــ يْ ـــْــ ) </span> {PlayerRow(data, 'row1desni')}
+						</span>
 					</Col>
 				</Row>
 
@@ -108,15 +112,15 @@ function L22() {
 					</Col>
 				</Row>
 
-				<Row className="text-center rtl">
+				<Row className="text-center rtl reorder">
 					<Col>{PlayerRow(data, 'row2')}</Col>
 				</Row>
 
-				<Row className="text-center rtl">
+				<Row className="text-center rtl reorder">
 					<Col>{PlayerRow(data, 'row3')}</Col>
 				</Row>
 
-				<Row className="text-center">
+				<Row className="text-center reorder">
 					<Col>{PlayerRow(data, 'row4')}</Col>
 				</Row>
 
@@ -148,13 +152,18 @@ function L22() {
 							</Col>
 						</Row>
 
-						<Row className="text-center">
+						<Row className="text-center reorder ">
 							<Col>
-								<span className="arapski">( ـــَــ وْ ـــْــ )</span> {PlayerRow(data, 'row1lijevi')}
-								<span className="arapski">( ـــَــ يْ ـــْــ ) </span> {PlayerRow(data, 'row1desni')}
+								<span>
+									<span className="arapski">( ـــَــ وْ ـــْــ )</span>{' '}
+									{PlayerRow(data, 'row1lijevi')}
+								</span>
+								<span>
+									<span className="arapski">( ـــَــ يْ ـــْــ ) </span>{' '}
+									{PlayerRow(data, 'row1desni')}
+								</span>
 							</Col>
 						</Row>
-
 						<Row>
 							<Col>
 								<br />
