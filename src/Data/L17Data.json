@@ -39,7 +39,7 @@
             "url": "./assets/audio/l17/2.mp3",
             "highlight": "اٰ",
             "word": "اٰزَرُ ",
-            "after": null
+            "after": "؛"
         }
     ],
     "row3": [{
@@ -68,7 +68,7 @@
             "url": "./assets/audio/l17/7.mp3",
             "highlight": "ذُو",
             "word": "ذُو",
-            "after": null
+            "after": "؛"
         }
     ],
     "vjezba": {
@@ -153,7 +153,7 @@
                 "id": 15,
                 "url": "./assets/audio/l17/15.mp3",
                 "highlight": "يَا",
-                "word": "يَا قَوْمِ إِنَّكُمْ ظَلَمْتُمْ أَنفُسَكُم ",
+                "word": "يَا قَوْمِ إِنَّكُمْ ظَلَمْتُمْ أَنْفُسَكُمْ ",
                 "after": null
             },
             {
@@ -189,20 +189,6 @@
                 "url": "./assets/audio/l17/17.mp3",
                 "highlight": "نَا",
                 "word": "هُـنَا",
-                "after": null
-            },
-            {
-                "id": 161,
-                "highlight": "مَا لَا",
-                "word": "مَا لَا",
-                "after": null
-            },
-            {
-
-                "id": 16,
-                "url": "./assets/audio/l17/16.mp3",
-                "highlight": "دُو",
-                "word": "يُبْدُونَ لَكَ ۖ ",
                 "after": null
             },
             {
