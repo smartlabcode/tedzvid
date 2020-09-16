@@ -84,7 +84,7 @@ function L7() {
 						<span className="arapski-lekcija"> (ن)</span> u harf <strong>L</strong>{' '}
 						<span className="arapski-lekcija">(ل)</span>, odnosno, <strong>R</strong>{' '}
 						<span className="arapski-lekcija">(ر)</span>, tj. <strong>N</strong>{' '}
-						<span className="arapski-lekcija">(ن)</span>se nikako ne uči, npr.:
+						<span className="arapski-lekcija">(ن)&nbsp;</span>se nikako ne uči, npr.:
 					</Col>
 				</Row>
 				<Row>
