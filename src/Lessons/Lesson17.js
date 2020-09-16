@@ -78,12 +78,12 @@ function L17() {
 					</Col>
 				</Row>
 
-				<Row>
-					<Col className="text-center">{PlayerRow(data, 'row2')}</Col>
+				<Row className="text-center rtl reorder">
+					<Col>{PlayerRow(data, 'row2')}</Col>
 				</Row>
 
-				<Row>
-					<Col className="text-center">{PlayerRow(data, 'row3')}</Col>
+				<Row className="text-center rtl reorder">
+					<Col>{PlayerRow(data, 'row3')}</Col>
 				</Row>
 
 				<Row>
@@ -112,12 +112,12 @@ function L17() {
 							</Col>
 						</Row>
 
-						<Row>
-							<Col className="text-center">{PlayerRow(data, 'row2')}</Col>
+						<Row className="text-center rtl reorder">
+							<Col>{PlayerRow(data, 'row2')}</Col>
 						</Row>
 
-						<Row>
-							<Col className="text-center">{PlayerRow(data, 'row3')}</Col>
+						<Row className="text-center rtl reorder">
+							<Col>{PlayerRow(data, 'row3')}</Col>
 						</Row>
 
 						<Row>

@@ -6,25 +6,13 @@
         "word": "ءَا تُـو نِـي ",
         "after": "."
     }],
-    "row2": [{
-            "id": 6,
-            "url": "./assets/audio/l17/6.mp3",
-            "highlight": "وَي",
-            "word": " ذَوَي",
-            "after": "؛"
-        },
+    "row2": [
+
         {
-            "id": 5,
-            "url": "./assets/audio/l17/5.mp3",
-            "highlight": "قَا",
-            "word": "قَالَ ",
-            "after": "؛"
-        },
-        {
-            "id": 4,
-            "url": "./assets/audio/l17/4.mp3",
-            "highlight": "دَا",
-            "word": "دَارَ",
+            "id": 2,
+            "url": "./assets/audio/l17/2.mp3",
+            "highlight": "اٰ",
+            "word": "اٰزَرُ ",
             "after": "؛"
         },
         {
@@ -33,12 +21,24 @@
             "highlight": "اٰ",
             "word": "اٰوَوْ",
             "after": "؛"
+        }, {
+            "id": 4,
+            "url": "./assets/audio/l17/4.mp3",
+            "highlight": "دَا",
+            "word": "دَارَ",
+            "after": "؛"
         },
         {
-            "id": 2,
-            "url": "./assets/audio/l17/2.mp3",
-            "highlight": "اٰ",
-            "word": "اٰزَرُ ",
+            "id": 5,
+            "url": "./assets/audio/l17/5.mp3",
+            "highlight": "قَا",
+            "word": "قَالَ ",
+            "after": "؛"
+        }, {
+            "id": 6,
+            "url": "./assets/audio/l17/6.mp3",
+            "highlight": "وَي",
+            "word": " ذَوَي",
             "after": "؛"
         }
     ],
@@ -76,20 +76,20 @@
                 "id": 11,
                 "url": "./assets/audio/l17/11.mp3",
                 "highlight": "دُو",
-                "word": "تُفْسِدُوا فِي الْأَرْضِ ",
+                "word": "فْسِدُوا فِي الْأَرْضِ",
                 "after": null
             },
             {
 
                 "id": 112,
                 "highlight": "ذَا قِـيـ",
-                "word": "وَإِذَا قِـيـلَ",
+                "word": "وَإِذَا قِـيـلَ لَهُ",
                 "after": null
             },
             {
                 "id": 111,
                 "highlight": "لَا",
-                "word": "لَهُمْ لَا ",
+                "word": "مْ لَا تُ",
                 "after": null
             }
         ],
@@ -97,7 +97,7 @@
                 "id": 12,
                 "url": "./assets/audio/l17/12.mp3",
                 "highlight": "لَا",
-                "word": " لَا رَيْبَفِيهِ",
+                "word": "لَا رَيْبَ فِيهِ",
                 "after": null
             },
             {
