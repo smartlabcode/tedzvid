@@ -114,9 +114,12 @@ function L6() {
 						<span className="arapski-lekcija">نْ</span>) ili <strong>tenvina</strong> EN{' '}
 						<span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
 						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
-						<span className="arapski-lekcija">ــٌــ</span> dođe jedan od četiri harfa:{' '}
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
-							ي م ن و
+						<span className="arapski-lekcija">ــٌــ</span> dođe jedan od četiri harfa:&nbsp;
+						<span
+							className="arapski-lekcija"
+							style={{ color: 'red', fontSize: '3rem', whiteSpace: 'nowrap' }}
+						>
+							و ي م ن
 						</span>{' '}
 						(sadržana u riječi <strong>jemnu</strong> –
 						<span className="arapski-lekcija">يَمْنُو</span>), dolazi do uklapanja harfa <strong>N</strong>(
@@ -241,9 +244,9 @@ function L6() {
 					<MdZoomOutMap className="zoomIcon" onClick={handleShow} />
 				</IconContext.Provider>
 
-				<Row className="text-center">
+				<Row className="text-center reorder">
 					<Col className="mobile-row">
-						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj8')} ۞</span>
+						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj8')} ۞ </span>
 					</Col>
 				</Row>
 				<Row className="text-center">
@@ -266,8 +269,8 @@ function L6() {
 
 				<Row className="text-center">
 					<Col className="mobile-row">
-						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj13')} ۞</span>
 						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj14')} ۞</span>
+						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj13')} ۞</span>
 					</Col>
 				</Row>
 				<Modal show={show} onHide={handleClose} backdrop="static" keyboard={false}>
@@ -293,15 +296,15 @@ function L6() {
 
 						<Row className="text-center">
 							<Col className="mobile-row">
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj11')} ۞ ff</span>
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj12')} ۞ ff</span>
+								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj11')} ۞ </span>
+								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj12')} ۞ </span>
 							</Col>
 						</Row>
 
 						<Row className="text-center">
 							<Col className="mobile-row">
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj13')} ۞</span>
 								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj14')} ۞</span>
+								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj13')} ۞</span>
 							</Col>
 						</Row>
 					</Modal.Body>
