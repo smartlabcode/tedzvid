@@ -3,11 +3,24 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,700&subset=latin-ext');
 
 @font-face {
-  font-family: 'KuranKerimFontHamdullah';
+  font-family: KuranKerimFontHamdullah;
   font-style: normal;
   font-weight: 900;
   src: url('./fonts/KuranKerimFontHamdullah.ttf');
   /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: 'HamdullahMushaf';
+  src: url('./fonts/ShaikhHamdullahMushaf.eot');
+  src: url('./fonts/ShaikhHamdullahMushaf.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/ShaikhHamdullahMushaf.woff2') format('woff2'),
+    url('./fonts/ShaikhHamdullahMushaf.woff') format('woff'),
+    url('./fonts/ShaikhHamdullahMushaf.ttf') format('truetype'),
+    url('./fonts/ShaikhHamdullahMushaf.svg#ShaikhHamdullahMushaf') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 
@@ -18,7 +31,7 @@
 }
 
 body {
-  font-family: Palatino, "Palatino Linotype" !important;
+  font-family: HamdullahMushaf, "Palatino Linotype" !important;
 }
 
 #root {
@@ -29,7 +42,7 @@ body {
 }
 
 .underLine {
-  font-family: 'KuranKerimFontHamdullah', serif;
+  font-family: HamdullahMushaf, serif;
 }
 
 
@@ -43,7 +56,7 @@ span.ne-svira {
 }
 
 span.svira {
-  font-family: 'KuranKerimFontHamdullah', serif;
+  font-family: HamdullahMushaf, serif;
   /* display: inline-block; */
   /* border: 1px solid #ddd; */
   /* padding: 0 .25em; */
@@ -95,19 +108,19 @@ span.after {
   padding-left: 0.3em;
   padding-right: 0.3em;
   font-size: 2em;
-  font-family: KuranKerimFontHamdullah;
+  font-family: HamdullahMushaf;
 }
 
 span.arapski {
-  font-family: 'KuranKerimFontHamdullah', serif;
+  font-family: HamdullahMushaf, serif;
   //padding: 0 .25em;
   border-radius: .15em;
   line-height: 4.5rem;
-  // margin-right: 0.5rem;
+  margin-right: 0.2rem;
 }
 
 span.arapski-lekcija {
-  font-family: 'KuranKerimFontHamdullah', serif;
+  font-family: HamdullahMushaf, serif;
   //padding: 0 .25em;
   border-radius: .15em;
   font-size: 2rem;
@@ -118,7 +131,7 @@ span.arapski-lekcija {
 }
 
 span.arap-red {
-  font-family: 'KuranKerimFontHamdullah', serif;
+  font-family: HamdullahMushaf, serif;
   color: red;
 }
 
@@ -166,7 +179,7 @@ footer.mainfooter {
   box-shadow: 0px 4px 7px 0px rgba(214, 214, 214, 1);
   padding: 30px !important;
   background-color: white !important;
-  font-family: Palatino, "Palatino Linotype" !important;
+  font-family: HamdullahMushaf, "Palatino Linotype" !important;
 }
 
 .card-title {
