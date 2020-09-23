@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { AiOutlineCloseCircle } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 // Bootstrap
 import { Container } from 'react-bootstrap';
 
 function LekcijaMenu(props) {
+	const [ isHidden, toggleIsHidden ] = useState(true);
+
+	const toggleIsHiddenHandler = () => {
+		toggleIsHidden(!isHidden);
+	};
 	return (
 		<React.Fragment>
 			<div className="topNav">
@@ -34,6 +40,7 @@ function LekcijaMenu(props) {
 					className="hamburger"
 					src={process.env.PUBLIC_URL + '/assets/svg/hamburger.svg'}
 					alt="hamburger menu icon"
+					onClick={toggleIsHiddenHandler}
 				/>
 				<Link to="/">
 					<img
@@ -61,14 +68,24 @@ function LekcijaMenu(props) {
 					</Link>
 				</div>
 
-				<div className="fullMenu" style={{ display: 'none' }}>
-					<h3 className="closeBTN">X</h3>
+				<div className={isHidden ? 'hide' : 'fullMenu'}>
+					<h3 className="closeBTN" onClick={toggleIsHiddenHandler}>
+						<AiOutlineCloseCircle />
+					</h3>
 					<center>
 						<ul>
-							<li className="selectedBtn">NASLOVNA</li>
-							<li>IMPRESUM</li>
-							<li>KONTAKT</li>
-							<li>LEKCIJE</li>
+							<Link to={'/lekcije'}>
+								<li className="selectedBtn">LEKCIJE</li>
+							</Link>
+							<Link to={'/'}>
+								<li className="selectedBtn">NASLOVNA</li>
+							</Link>
+							<a href="/#contact" onClick={toggleIsHiddenHandler}>
+								<li>KONTAKT</li>
+							</a>
+							<a href="/#impresum" onClick={toggleIsHiddenHandler}>
+								<li>O NAMA</li>
+							</a>
 						</ul>
 					</center>
 				</div>

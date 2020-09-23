@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 // import { BrowserRouter, Route } from 'react-router-dom';
 import { IconContext } from 'react-icons';
@@ -8,16 +8,23 @@ import { BsFillPersonFill } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
 
 function LandingPage(props) {
+	const [ isHidden, toggleIsHidden ] = useState(true);
+
+	const toggleIsHiddenHandler = () => {
+		toggleIsHidden(!isHidden);
+	};
 	return (
 		<React.Fragment>
 			<div className="wrapper">
 				<div className="topNav">
 					<div className="logoNavBox">
-						<img
-							className="logoUrl"
-							src={process.env.PUBLIC_URL + '/assets/svg/logoUrl.png'}
-							alt="logo url"
-						/>
+						<Link to="/">
+							<img
+								className="logoUrl"
+								src={process.env.PUBLIC_URL + '/assets/svg/logoUrl.png'}
+								alt="logo"
+							/>
+						</Link>
 					</div>
 					<div className="nav">
 						<ul>
@@ -41,8 +48,10 @@ function LandingPage(props) {
 					<img
 						className="hamburger"
 						src={process.env.PUBLIC_URL + '/assets/svg/hamburger.svg'}
-						alt="hamburger menu logo"
+						alt="hamburger menu icon"
+						onClick={toggleIsHiddenHandler}
 					/>
+
 					<Link to={'/'}>
 						<img
 							className="mobileLogo"
@@ -69,18 +78,21 @@ function LandingPage(props) {
 						</Link>
 					</div>
 
-					<div className="fullMenu" style={{ display: 'none' }}>
-						<h3 className="closeBTN">
+					<div className={isHidden ? 'hide' : 'fullMenu'}>
+						<h3 className="closeBTN" onClick={toggleIsHiddenHandler}>
 							<AiOutlineCloseCircle />
 						</h3>
 						<center>
 							<ul>
-								<li className="selectedBtn">NASLOVNA</li>
-								<a href="#impresum">
-									<li>IMPRESUM</li>
+								<Link to={'/lekcije'}>
+									<li className="selectedBtn">LEKCIJE</li>
+								</Link>
+								<a href="#contact" onClick={toggleIsHiddenHandler}>
+									<li>KONTAKT</li>
 								</a>
-								<li>KONTAKT</li>
-								<li>LEKCIJE</li>
+								<a href="#impresum" onClick={toggleIsHiddenHandler}>
+									<li>O NAMA</li>
+								</a>
 							</ul>
 						</center>
 					</div>

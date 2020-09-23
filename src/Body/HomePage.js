@@ -2,16 +2,17 @@ import React, { useState } from 'react';
 import { Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import HomeFirst from '../Body/HomeFirst';
+import { AiOutlineCloseCircle } from 'react-icons/ai';
 
 function Home() {
 	// const [ otherpage, pageClick ] = useState(false);
-	const [ isHidden, toggleIsHidden ] = useState(true);
 
 	// const pageClickHandler = () => {
 	// 	return pageClick(!otherpage);
 	// };
+	const [ isHidden, toggleIsHidden ] = useState(true);
+
 	const toggleIsHiddenHandler = () => {
-		console.log('CLICK!');
 		toggleIsHidden(!isHidden);
 	};
 	return (
@@ -70,14 +71,19 @@ function Home() {
 				</div>
 				<div className={isHidden ? 'hide' : 'fullMenu'}>
 					<h3 className="closeBTN" onClick={toggleIsHiddenHandler}>
-						X
+						<AiOutlineCloseCircle />
 					</h3>
 					<center>
 						<ul>
-							<li className="selectedBtn">NASLOVNA</li>
-							<li>IMPRESUM</li>
-							<li>KONTAKT</li>
-							<li>LEKCIJE</li>
+							<Link to={'/'}>
+								<li className="selectedBtn">NASLOVNA</li>
+							</Link>
+							<a href="/#contact" onClick={toggleIsHiddenHandler}>
+								<li>KONTAKT</li>
+							</a>
+							<a href="/#impresum" onClick={toggleIsHiddenHandler}>
+								<li>O NAMA</li>
+							</a>
 						</ul>
 					</center>
 				</div>
