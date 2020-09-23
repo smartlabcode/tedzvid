@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
+import { BsArrowLeft } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 // Bootstrap
 import { Container } from 'react-bootstrap';
@@ -51,20 +52,7 @@ function LekcijaMenu(props) {
 				</Link>
 				<div>
 					<Link to={'/lekcije'}>
-						<svg
-							className="mobNavSearch"
-							xmlns="http://www.w3.org/2000/svg"
-							width="17.49"
-							height="17.49"
-							viewBox="0 0 17.49 17.49"
-						>
-							<path
-								id="ic_search_24px"
-								d="M15.5,14h-.79l-.28-.27a6.51,6.51,0,1,0-.7.7l.27.28v.79l5,4.99L20.49,19Zm-6,0A4.5,4.5,0,1,1,14,9.5,4.494,4.494,0,0,1,9.5,14Z"
-								transform="translate(-3 -3)"
-								fill="#fce3aa"
-							/>
-						</svg>
+						<BsArrowLeft size={32} className="mobNavArrow" />
 					</Link>
 				</div>
 

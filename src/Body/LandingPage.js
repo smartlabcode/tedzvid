@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { IconContext } from 'react-icons';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
 import { FiPhoneCall } from 'react-icons/fi';
-import { BsFillPersonFill } from 'react-icons/bs';
+import { BsFillPersonFill, BsArrowRight } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
 
 function LandingPage(props) {
@@ -61,20 +61,7 @@ function LandingPage(props) {
 					</Link>
 					<div>
 						<Link to={'/lekcije'}>
-							<svg
-								className="mobNavArrow"
-								xmlns="http://www.w3.org/2000/svg"
-								width="16"
-								height="16"
-								viewBox="0 0 16 16"
-							>
-								<path
-									id="ic_arrow_back_24px"
-									d="M4,11H16.17L10.58,5.41,12,4l8,8-8,8-1.41-1.41L16.17,13H4Z"
-									transform="translate(-4 -4)"
-									fill="#fce3aa"
-								/>
-							</svg>
+							<BsArrowRight size={32} className="mobNavArrow" />
 						</Link>
 					</div>
 
