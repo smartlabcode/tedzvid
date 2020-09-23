@@ -447,31 +447,11 @@ h2 strong {
   display: none;
 }
 
-@media only screen and (min-width: 600px) {
-  .mobile-row {
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-flex-wrap: wrap-reverse;
-    -ms-flex-wrap: wrap-reverse;
-    flex-wrap: wrap-reverse;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-align-content: flex-start;
-    -ms-flex-line-pack: start;
-    align-content: flex-start;
-    -webkit-align-items: flex-start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    direction: rtl;
-  }
-}
 
 @media only screen and (max-width: 600px) {
+
+
+
 
   .reorder {
     width: 100%;
@@ -650,5 +630,78 @@ h2 strong {
     &>span {
       margin: 10px;
     }
+  }
+}
+
+.footerLanding {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+
+  h2 {
+    color: white;
+    font-size: 1.3rem;
+
+  }
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+
+    li {
+
+      border-radius: 50%;
+      background-color: white;
+      padding: 10px;
+      margin-left: 10px;
+
+      width: 100px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+
+      a {
+        width: 100%;
+
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+
+    }
+  }
+}
+
+
+@media only screen and (min-width: 600px) {
+
+
+
+  .mobile-row {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap-reverse;
+    -ms-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    direction: rtl;
   }
 }

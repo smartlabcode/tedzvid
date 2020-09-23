@@ -184,12 +184,12 @@ function LandingPage(props) {
 								bismo unaprijedili ovaj sajt.
 							</p>
 							<form className="form" action="" method="post">
-								<input type="text" placeholder="Ime, prezime" />
+								<input type="text" placeholder="Ime i prezime" />
 								<input type="email" placeholder="Email" name="" id="" />
 								<input type="tel" placeholder="Broj telefona" name="" id="" />
 								<input
 									className="textInput"
-									placeholder="Unesi zadržaj porke"
+									placeholder="Unesi sadržaj porke"
 									type="text"
 									name=""
 									id=""
@@ -202,13 +202,19 @@ function LandingPage(props) {
 					</div>
 				</div>
 				<footer className="footerLanding">
-					<div className="contentLeft">
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam veniam nulla, est, eos culpa
-							aspernatur adipisci exercitationem incidunt quam velit hic! Optio odio repellendus beatae
-							architecto autem voluptatem blanditiis ipsum!Lorem
-						</p>
-					</div>
+					<h2>Prijatelji projekta:</h2>
+					<ul>
+						<li>
+							<a href="https://imtec.ba/" target="_blank">
+								<img src={process.env.PUBLIC_URL + '/assets/svg/imtec_logo.png'} alt="" />
+							</a>
+						</li>
+						<li>
+							<a href="https://smartlab.ba/" target="_blank">
+								<img src={process.env.PUBLIC_URL + '/assets/svg/smartlab_logo.svg'} alt="" />
+							</a>
+						</li>
+					</ul>
 				</footer>
 			</div>
 		</React.Fragment>
