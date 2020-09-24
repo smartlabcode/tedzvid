@@ -154,17 +154,20 @@ function LandingPage(props) {
 										<p>mr. Sejid ef. Strika</p>
 									</div>
 									<div className="iconInfo">
-										<div className="iconbg">
-											<MdEmail size={32} />
-										</div>
-
-										<p>sejidstrika@gmail.com</p>
+										<a href="mailto:sejidstrika@tedzvid.ba">
+											<div className="iconbg">
+												<MdEmail size={32} />
+											</div>
+										</a>
+										<p>sejidstrika@tedzvid.ba</p>
 									</div>
-									<div className="iconInfo">
-										<div className="iconbg">
-											<FiPhoneCall size={32} />
-										</div>
 
+									<div className="iconInfo">
+										<a href="viber://chat?number=0038761617606">
+											<div className="iconbg">
+												<FiPhoneCall size={32} />
+											</div>
+										</a>
 										<p>+38761 617 606</p>
 									</div>
 								</div>
@@ -182,19 +185,26 @@ function LandingPage(props) {
 								Ukoliko imate neke sugestije, zapažanja, impresije budite slobodni da ih napišete kako
 								bismo unaprijedili ovaj sajt.
 							</p>
-							<form className="form" action="" method="post">
-								<input type="text" placeholder="Ime i prezime" />
-								<input type="email" placeholder="Email" name="" id="" />
-								<input type="tel" placeholder="Broj telefona" name="" id="" />
-								<input
+
+							<form
+								action="https://send.pageclip.co/wRH1bp6IBZe5paTzYnZGFFEt4NhsZmh9"
+								class="pageclip-form"
+								method="post"
+							>
+								<input type="text" placeholder="Ime i prezime" name="ime_i_prezime" required />
+								<input type="email" placeholder="Email" name="email" id="" required />
+								<input type="tel" placeholder="Broj telefona" name="broj_telefona" id="" />
+								<textarea
 									className="textInput"
 									placeholder="Unesi sadržaj poruke"
 									type="text"
-									name=""
+									name="poruka"
 									id=""
+									required
 								/>
-								<button type="submit" className="contactBTN">
-									POŠALJI
+
+								<button type="submit" class="pageclip-form__submit contactBTN">
+									<span>POŠALJI</span>
 								</button>
 							</form>
 						</center>
