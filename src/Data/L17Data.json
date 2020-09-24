@@ -97,7 +97,7 @@
                 "id": 12,
                 "url": "./assets/audio/l17/12.mp3",
                 "highlight": "لَا",
-                "word": "لَا رَيْبَ فِيهِ",
+                "word": " لَا رَيْبَ فِيهِ",
                 "after": null
             },
             {
@@ -109,8 +109,8 @@
             },
             {
                 "id": 121,
-                "highlight": "",
-                "word": " الْكِتَابُ",
+                "highlight": "تَا",
+                "word": "الْكِتَابُ",
                 "after": null
             }
         ],
@@ -272,7 +272,7 @@
             {
                 "id": 195,
                 "highlight": "اٰ",
-                "word": "اٰ",
+                "word": " اٰ",
                 "after": null
             },
             {

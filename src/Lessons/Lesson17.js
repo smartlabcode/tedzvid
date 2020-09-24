@@ -82,7 +82,7 @@ function L17() {
 					<Col>{PlayerRow(data, 'row2')}</Col>
 				</Row>
 
-				<Row className="text-center rtl ">
+				<Row className="text-center reorder-basic-display-after ">
 					<Col>{PlayerRow(data, 'row3')}</Col>
 				</Row>
 

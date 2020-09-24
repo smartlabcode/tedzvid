@@ -79,9 +79,9 @@ function L11() {
 						<span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
 						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
 						<span className="arapski-lekcija">ــٌــ</span> dođe jedan od 15 harfova:{' '}
-						<Arabic arabic="ت ث ج د ذ ز س ش ص ض ط ظ ف ق ك" key="arL11">
+						<Arabic arabic="ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق " key="arL11">
 							{' '}
-							ت ث ج د ذ ز س ش ص ض ط ظ ف ق ك{' '}
+							ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق {' '}
 						</Arabic>
 						, onda se harf <strong>N</strong> (
 						<span className="arapski-lekcija">ن</span>) uči kroz nos u trajanju od 2 hareketa, s tim da
@@ -135,7 +135,7 @@ function L11() {
 								<span className="arapski-lekcija">ــٌــ</span> dođe jedan od 15 harfova:{' '}
 								<Arabic arabic="ت ث ج د ذ ز س ش ص ض ط ظ ف ق ك" key="arL11">
 									{' '}
-									ت ث ج د ذ ز س ش ص ض ط ظ ف ق ك{' '}
+									ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق {' '}
 								</Arabic>
 								, onda se harf <strong>N</strong> (
 								<span className="arapski-lekcija">ن</span>) uči kroz nos u trajanju od 2 hareketa, s tim

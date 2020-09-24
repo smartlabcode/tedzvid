@@ -413,7 +413,7 @@ h3 {
   }
 
   .row {
-    width: 90%;
+    width: 95%;
     margin: auto !important;
   }
 }
@@ -467,6 +467,11 @@ h2 strong {
       }
     }
   }
+
+  .reorder-basic-display-after {
+    width: 100%;
+  }
+
 
   .reorder {
     width: 100%;
@@ -648,6 +653,17 @@ h2 strong {
     justify-content: center;
     flex-wrap: wrap;
 
+
+  }
+}
+
+.reorder-basic-display-after {
+  .col {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 
   }
 }
