@@ -6,9 +6,6 @@ import { AiOutlineCloseCircle } from 'react-icons/ai';
 import { FiPhoneCall } from 'react-icons/fi';
 import { BsFillPersonFill, BsArrowRight } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
-import Pageclip from 'pageclip';
-const pageclipAPIKey = 'api_pkafgkpLRU37MuxIK2Z54hk3b5Fgr3Uh';
-const pageclip = new Pageclip(pageclipAPIKey);
 
 function LandingPage(props) {
 	const [ isHidden, toggleIsHidden ] = useState(true);
@@ -28,18 +25,10 @@ function LandingPage(props) {
 		console.log('Phone: ', phone);
 		console.log('Message', message);
 		event.preventDefault();
-
-		pageclip
-			.send({ 'Ime i Prezime': fullName, Email: email, 'Broj Telefona': phone, Poruka: message })
-			.then((response) => {
-				console.log(response.status, response.data); // => 200, [Item, Item]
-			})
-			.then(() => {
-				return pageclip.fetch();
-			})
-			.then((response) => {
-				console.log(response.status, response.data); // => 200, [Item, Item]
-			});
+		const data = { 'Ime i Prezime': fullName, Email: email, 'Broj Telefona': phone, Poruka: message };
+		window.Pageclip.send('wRH1bp6IBZe5paTzYnZGFFEt4NhsZmh9', 'default', data, function(error, response) {
+			console.log('saved?', !!error, '; response:', error || response);
+		});
 	};
 	return (
 		<React.Fragment>
