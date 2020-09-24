@@ -482,12 +482,11 @@ h2 strong {
 
         &:nth-of-type(odd) {
           text-align: right;
-          width: 60%;
+          width: 55%;
         }
 
         &:nth-of-type(even) {
-          margin-left: 10px;
-
+          width: 45%;
           text-align: left;
         }
       }

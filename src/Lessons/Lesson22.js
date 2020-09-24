@@ -82,7 +82,7 @@ function L22() {
 					</Col>
 				</Row>
 
-				<Row className="text-center reorder ">
+				<Row className="text-center reorder-basic ">
 					<Col>
 						<span>
 							<span className="arapski">( ـــَــ وْ ـــْــ )</span> {PlayerRow(data, 'row1lijevi')}
