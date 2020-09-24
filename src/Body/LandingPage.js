@@ -6,12 +6,40 @@ import { AiOutlineCloseCircle } from 'react-icons/ai';
 import { FiPhoneCall } from 'react-icons/fi';
 import { BsFillPersonFill, BsArrowRight } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
+import Pageclip from 'pageclip';
+const pageclipAPIKey = 'api_pkafgkpLRU37MuxIK2Z54hk3b5Fgr3Uh';
+const pageclip = new Pageclip(pageclipAPIKey);
 
 function LandingPage(props) {
 	const [ isHidden, toggleIsHidden ] = useState(true);
+	const [ fullName, setFullName ] = useState('');
+	const [ email, setEmail ] = useState('');
+	const [ phone, setPhone ] = useState('');
+	const [ message, setMessage ] = useState('');
 
 	const toggleIsHiddenHandler = () => {
 		toggleIsHidden(!isHidden);
+	};
+
+	const handleSubmit = (event) => {
+		console.log('A name was submitted: ');
+		console.log('Full Name: ', fullName);
+		console.log('Email: ', email);
+		console.log('Phone: ', phone);
+		console.log('Message', message);
+		event.preventDefault();
+
+		pageclip
+			.send({ 'Ime i Prezime': fullName, Email: email, 'Broj Telefona': phone, Poruka: message })
+			.then((response) => {
+				console.log(response.status, response.data); // => 200, [Item, Item]
+			})
+			.then(() => {
+				return pageclip.fetch();
+			})
+			.then((response) => {
+				console.log(response.status, response.data); // => 200, [Item, Item]
+			});
 	};
 	return (
 		<React.Fragment>
@@ -186,14 +214,38 @@ function LandingPage(props) {
 								bismo unaprijedili ovaj sajt.
 							</p>
 
-							<form
-								action="https://send.pageclip.co/wRH1bp6IBZe5paTzYnZGFFEt4NhsZmh9"
-								class="pageclip-form"
-								method="post"
-							>
-								<input type="text" placeholder="Ime i prezime" name="ime_i_prezime" required />
-								<input type="email" placeholder="Email" name="email" id="" required />
-								<input type="tel" placeholder="Broj telefona" name="broj_telefona" id="" />
+							<form onSubmit={handleSubmit}>
+								<input
+									type="text"
+									placeholder="Ime i prezime"
+									name="ime i prezime"
+									value={fullName}
+									onChange={(e) => {
+										setFullName(e.target.value);
+									}}
+									required
+								/>
+								<input
+									type="email"
+									placeholder="Email"
+									name="email"
+									id=""
+									required
+									value={email}
+									onChange={(e) => {
+										setEmail(e.target.value);
+									}}
+								/>
+								<input
+									type="tel"
+									placeholder="Broj telefona"
+									name="broj telefona"
+									id=""
+									value={phone}
+									onChange={(e) => {
+										setPhone(e.target.value);
+									}}
+								/>
 								<textarea
 									className="textInput"
 									placeholder="Unesi sadržaj poruke"
@@ -201,9 +253,13 @@ function LandingPage(props) {
 									name="poruka"
 									id=""
 									required
+									value={message}
+									onChange={(e) => {
+										setMessage(e.target.value);
+									}}
 								/>
 
-								<button type="submit" class="pageclip-form__submit contactBTN">
+								<button type="submit" className="pageclip-form__submit contactBTN">
 									<span>POŠALJI</span>
 								</button>
 							</form>
