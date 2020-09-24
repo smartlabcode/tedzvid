@@ -95,13 +95,13 @@ function L7() {
 				<Row className="text-center reorder">
 					<Col>{PlayerRow(data, 'row1')}</Col>
 				</Row>
-				<Row className="text-center  rtl">
+				<Row className="text-center reorder-basic  rtl">
 					<Col>
 						{PlayerRow(data, 'row2')}
 						{VjezbeRow(data, 'multirow', 'word1')}
 					</Col>
 				</Row>
-				<Row className="text-center ">
+				<Row className="text-center reorder-basic ">
 					<Col>{VjezbeRow(data, 'multirow', 'word2')}</Col>
 				</Row>
 				<Row>

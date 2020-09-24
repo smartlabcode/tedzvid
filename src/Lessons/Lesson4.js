@@ -93,11 +93,11 @@ function L4() {
 					<Col>{PlayerRow(data, 'row1')}</Col>,
 				</Row>
 
-				<Row className="text-center rtl ">
+				<Row className="text-center reorder-basic  rtl ">
 					<Col>{PlayerRow(data, 'row2')}</Col>
 				</Row>
 
-				<Row className="text-center  rtl">
+				<Row className="text-center reorder-basic  rtl">
 					<Col>{PlayerRow(data, 'row3')}</Col>
 				</Row>
 				<Modal show={showL} onHide={handleCloseL} backdrop="static" keyboard={false}>

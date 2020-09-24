@@ -170,7 +170,7 @@ function L14_2() {
 									{' '}
 									ــــَـــ يْـــرْ{' '}
 								</span>
-								), npr.: {PlayerRow(data, 'row12')}
+								), npr.:<br /> {PlayerRow(data, 'row12')}
 							</Col>
 						</Row>
 

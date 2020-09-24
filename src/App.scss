@@ -370,6 +370,7 @@ h3 {
   }
 
   .container {
+    width: 90% !important;
     padding: 0px !important;
     margin-bottom: 90px;
   }
@@ -486,7 +487,8 @@ h2 strong {
         }
 
         &:nth-of-type(even) {
-          width: 45%;
+          width: 40%;
+          margin-left: 10px;
           text-align: left;
         }
       }

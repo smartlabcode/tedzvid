@@ -101,7 +101,7 @@ function L10() {
 						{VjezbeRow(data, 'multirow', 'word1')}
 					</Col>
 				</Row>
-				<Row className="text-center  rtl">
+				<Row className="text-center  reorder-basic rtl">
 					<Col>{VjezbeRow(data, 'multirow', 'word2')}</Col>
 				</Row>
 				<Row className="text-center  rtl">

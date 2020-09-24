@@ -104,7 +104,7 @@ function L3() {
 					<Col>{PlayerRow(data, 'row3')}</Col>
 				</Row>
 
-				<Row className="text-center  rtl">
+				<Row className="text-center  reorder-basic rtl">
 					<Col>{PlayerRow(data, 'row4')}</Col>
 				</Row>
 

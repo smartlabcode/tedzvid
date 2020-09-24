@@ -138,11 +138,11 @@ function L6() {
 					<Col>{PlayerRow(data, 'row1')}</Col>
 				</Row>
 
-				<Row className="text-center  rtl">
+				<Row className="text-center reorder-basic rtl">
 					<Col>{PlayerRow(data, 'row2')}</Col>
 				</Row>
 
-				<Row className="text-center ">
+				<Row className="text-center reorder-basic ">
 					<Col>
 						<span key={'key' + data.row3[2].id}>
 							<Player url={data.row3[2].url} key={'p' + data.row3[2].id}>
