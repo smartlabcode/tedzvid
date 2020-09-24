@@ -59,7 +59,8 @@ function L14_2() {
 				<Row>
 					<Col className="opisLekcije">
 						<strong>1.</strong> kada je harf<strong> R </strong>sa <strong>vokalom</strong> I ({' '}
-						{PlayerRow(data, 'row9')} ), npr.: {PlayerRow(data, 'row8')}
+						{PlayerRow(data, 'row9')} ), npr.: <br />
+						{PlayerRow(data, 'row8')}
 					</Col>
 				</Row>
 

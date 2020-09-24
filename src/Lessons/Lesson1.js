@@ -113,7 +113,7 @@ function L1() {
 						<span className="arapski-lekcija">ـــُــ و</span> , stat će <u>bez ikakve promjene</u> , npr.:
 					</Col>
 				</Row>
-				<Row className="text-center  ">
+				<Row className="text-center ">
 					<Col>
 						{VjezbeRow(data, 'row3', 'broj1')}
 						{VjezbeRow(data, 'row3', 'broj2')}

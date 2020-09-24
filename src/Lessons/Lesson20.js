@@ -83,20 +83,19 @@ function L20() {
 						<strong>
 							ili tešdidom <span className="arapski-lekcija"> ـــّــ </span>
 						</strong>
-						, bit će medd lazim . Traje obavezno 6 hareketa, npr.:
-						<pre style={{ display: 'inline' }}> </pre>
-						{PlayerRow(data, 'row1')}
+						, bit će medd lazim . Traje obavezno 6 hareketa, npr.:<br />
+						<div className="text-center">{PlayerRow(data, 'row1')}</div>
 					</Col>
 				</Row>
 
 				<Row className="text-center reorder">
 					<Col>{PlayerRow(data, 'row2')}</Col>
 				</Row>
-				<Row className="text-center reorder rtl">
+				<Row className="text-center  reorder-basic rtl">
 					<Col>{PlayerRow(data, 'row3')}</Col>
 				</Row>
 
-				<Row className="text-center reorder ">
+				<Row className="text-center  ">
 					<Col>{PlayerRow(data, 'row4')}</Col>
 				</Row>
 

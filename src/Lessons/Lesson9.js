@@ -112,11 +112,11 @@ function L9() {
 					</Col>
 				</Row>
 
-				<Row className="text-center reorder rtl">
+				<Row className="text-center  rtl">
 					<Col>{PlayerRow(data, 'row1')}</Col>
 				</Row>
 
-				<Row className="text-center reorder rtl">
+				<Row className="text-center  rtl">
 					<Col>
 						{VjezbeRow(data, 'multirow', 'word1')}
 						{PlayerRow(data, 'row2')}

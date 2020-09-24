@@ -95,15 +95,15 @@ function L11() {
 					</Col>
 				</Row>
 
-				<Row className="text-center reorder">
+				<Row className="text-center ">
 					<Col>{PlayerRow(data, 'row1')}</Col>
 				</Row>
 
-				<Row className="text-center reorder rtl">
+				<Row className="text-center  rtl">
 					<Col>{PlayerRow(data, 'row2')}</Col>
 				</Row>
 
-				<Row className="text-center reorder rtl">
+				<Row className="text-center  rtl">
 					<Col>
 						{VjezbeRow(data, 'multirow', 'word1')}
 						{PlayerRow(data, 'row3')}

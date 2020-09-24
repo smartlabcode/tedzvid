@@ -188,7 +188,7 @@ function LandingPage(props) {
 								<input type="tel" placeholder="Broj telefona" name="" id="" />
 								<input
 									className="textInput"
-									placeholder="Unesi sadržaj porke"
+									placeholder="Unesi sadržaj poruke"
 									type="text"
 									name=""
 									id=""
@@ -204,12 +204,12 @@ function LandingPage(props) {
 					<h2>Prijatelji projekta:</h2>
 					<ul>
 						<li>
-							<a href="https://imtec.ba/" target="_blank">
+							<a href="https://imtec.ba/" target="_blank" rel="noopener noreferrer">
 								<img src={process.env.PUBLIC_URL + '/assets/svg/imtec_logo.png'} alt="" />
 							</a>
 						</li>
 						<li>
-							<a href="https://smartlab.ba/" target="_blank">
+							<a href="https://smartlab.ba/" target="_blank" rel="noopener noreferrer">
 								<img src={process.env.PUBLIC_URL + '/assets/svg/smartlab_logo.svg'} alt="" />
 							</a>
 						</li>

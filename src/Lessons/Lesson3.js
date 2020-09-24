@@ -83,10 +83,10 @@ function L3() {
 						, npr.:
 					</Col>
 				</Row>
-				<Row className="text-center reorder">
+				<Row className="text-center ">
 					<Col>{PlayerRow(data, 'row1')}</Col>
 				</Row>
-				<Row className="text-center reorder ">
+				<Row className="text-center  ">
 					<Col>{VjezbeRow(data, 'multirow', 'row2')}</Col>
 				</Row>
 
@@ -100,11 +100,11 @@ function L3() {
 					</Col>
 				</Row>
 
-				<Row className="text-center reorder">
+				<Row className="text-center ">
 					<Col>{PlayerRow(data, 'row3')}</Col>
 				</Row>
 
-				<Row className="text-center reorder rtl">
+				<Row className="text-center  rtl">
 					<Col>{PlayerRow(data, 'row4')}</Col>
 				</Row>
 
@@ -148,11 +148,11 @@ function L3() {
 							</Col>
 						</Row>
 
-						<Row className="text-center reporder">
+						<Row className="text-center ">
 							<Col>{PlayerRow(data, 'row3')}</Col>
 						</Row>
 
-						<Row className="text-center rtl">
+						<Row className="text-center  rtl">
 							<Col>{PlayerRow(data, 'row4')}</Col>
 						</Row>
 					</Modal.Body>
