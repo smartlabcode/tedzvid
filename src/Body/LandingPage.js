@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 // import { BrowserRouter, Route } from 'react-router-dom';
 import { IconContext } from 'react-icons';
@@ -8,26 +8,41 @@ import { BsFillPersonFill, BsArrowRight } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
 
 function LandingPage(props) {
-	const [ isHidden, toggleIsHidden ] = useState(true);
+	const [ isHidden, setIsHidden ] = useState(true);
+	const [ showSuccessMessage, setShowSuccessMessage ] = useState(false);
+	const [ showErrorMessage, setShowErrorMessage ] = useState(false);
 	const [ fullName, setFullName ] = useState('');
 	const [ email, setEmail ] = useState('');
 	const [ phone, setPhone ] = useState('');
 	const [ message, setMessage ] = useState('');
+	const timerToClearSomewhere = useRef(null); //now you can pass timer to another component
+
+	useEffect(() => {
+		return () => clearTimeout(timerToClearSomewhere.current);
+	}, []);
 
 	const toggleIsHiddenHandler = () => {
-		toggleIsHidden(!isHidden);
+		setIsHidden(!isHidden);
 	};
 
 	const handleSubmit = (event) => {
-		console.log('A name was submitted: ');
-		console.log('Full Name: ', fullName);
-		console.log('Email: ', email);
-		console.log('Phone: ', phone);
-		console.log('Message', message);
 		event.preventDefault();
 		const data = { 'Ime i Prezime': fullName, Email: email, 'Broj Telefona': phone, Poruka: message };
 		window.Pageclip.send('wRH1bp6IBZe5paTzYnZGFFEt4NhsZmh9', 'default', data, function(error, response) {
-			console.log('saved?', !!error, '; response:', error || response);
+			// console.log('saved?', !!error, '; response:', error || response);
+			if (!error) {
+				setShowSuccessMessage(true);
+				timerToClearSomewhere.current = setTimeout(() => setShowSuccessMessage(false), 3000);
+			} else {
+				setShowErrorMessage(true);
+				timerToClearSomewhere.current = setTimeout(() => {
+					setShowErrorMessage(false);
+				}, 3000);
+			}
+			setFullName('');
+			setEmail('');
+			setPhone('');
+			setMessage('');
 		});
 	};
 	return (
@@ -247,7 +262,18 @@ function LandingPage(props) {
 										setMessage(e.target.value);
 									}}
 								/>
-
+								<div className={showSuccessMessage ? 'success_message' : 'hide'}>
+									<span className="closebtn" onClick={() => setShowSuccessMessage(false)}>
+										&times;
+									</span>
+									<strong>Uspjesno</strong> ste poslali vasu poruku!
+								</div>
+								<div className={showErrorMessage ? 'error_message' : 'hide'}>
+									<span className="closebtn" onClick={() => setShowErrorMessage(false)}>
+										&times;
+									</span>
+									Doslo je do greske prilikom slanja poruke!
+								</div>
 								<button type="submit" className="pageclip-form__submit contactBTN">
 									<span>POŠALJI</span>
 								</button>
