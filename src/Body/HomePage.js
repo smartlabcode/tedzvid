@@ -66,11 +66,15 @@ function Home() {
 							<Link to={'/'}>
 								<li className="selectedBtn">NASLOVNA</li>
 							</Link>
-							<a href="/#contact" onClick={toggleIsHiddenHandler}>
-								<li>KONTAKT</li>
-							</a>
-							<a href="/#impresum" onClick={toggleIsHiddenHandler}>
+							<a href="/#o-nama" onClick={toggleIsHiddenHandler}>
 								<li>O NAMA</li>
+							</a>
+							<a href="/#printano" onClick={toggleIsHiddenHandler}>
+								<li>PRINTATNO IZDANJE</li>
+							</a>
+
+							<a href="/#kontakt" onClick={toggleIsHiddenHandler}>
+								<li>KONTAKT</li>
 							</a>
 						</ul>
 					</center>

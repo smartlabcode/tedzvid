@@ -63,14 +63,16 @@ function LandingPage(props) {
 							<Link to={'/lekcije'}>
 								<li className="selectedBtn">LEKCIJE</li>
 							</Link>
-							<a href="#contact">
-								<li>KONTAKT</li>
-							</a>
-							<a href="#impresum">
+
+							<a href="#o-nama">
 								<li>O NAMA</li>
 							</a>
-							<a href="/">
-								<li className="sideHr"> NASLOVNA</li>
+
+							<a href="#printano">
+								<li>PRINTATNO IZDANJE</li>
+							</a>
+							<a href="#kontakt">
+								<li>KONTAKT</li>
 							</a>
 						</ul>
 					</div>
@@ -106,11 +108,15 @@ function LandingPage(props) {
 								<Link to={'/lekcije'}>
 									<li className="selectedBtn">LEKCIJE</li>
 								</Link>
-								<a href="#contact" onClick={toggleIsHiddenHandler}>
-									<li>KONTAKT</li>
-								</a>
-								<a href="#impresum" onClick={toggleIsHiddenHandler}>
+								<a href="#o-nama" onClick={toggleIsHiddenHandler}>
 									<li>O NAMA</li>
+								</a>
+								<a href="#printano" onClick={toggleIsHiddenHandler}>
+									<li>PRINTATNO IZDANJE</li>
+								</a>
+
+								<a href="#kontakt" onClick={toggleIsHiddenHandler}>
+									<li>KONTAKT</li>
 								</a>
 							</ul>
 						</center>
@@ -145,7 +151,7 @@ function LandingPage(props) {
 						</div>
 					</div>
 					<center>
-						<div className="description" id="impresum">
+						<div className="description" id="o-nama">
 							<br />
 							<h2 className="white">O NAMA</h2>
 							<p>
@@ -163,7 +169,7 @@ function LandingPage(props) {
 							</p>
 						</div>
 					</center>
-					<div className="sectionTwo">
+					<div className="sectionTwo" id="printano">
 						<div className="book">
 							<img className="bookImg" src={process.env.PUBLIC_URL + '/assets/svg/book.png'} alt="Book" />
 						</div>
@@ -205,7 +211,7 @@ function LandingPage(props) {
 						</IconContext.Provider>
 					</div>
 
-					<div className="sectionThree" id="contact">
+					<div className="sectionThree" id="kontakt">
 						<center>
 							<h2>
 								<b>Kontakt</b>
