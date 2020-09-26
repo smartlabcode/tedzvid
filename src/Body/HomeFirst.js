@@ -37,7 +37,7 @@ function HomeFirst(props) {
 					}
 				}
 				return (
-					<Row className="">
+					<Row className="" key={index}>
 						<Col>
 							<Card>
 								<Card.Body>
