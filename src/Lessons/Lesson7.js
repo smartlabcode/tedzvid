@@ -54,7 +54,7 @@ function L7() {
 								<img src={process.env.PUBLIC_URL + '/assets/svg/Group 61.svg'} alt="Group 61" />
 							</center>
 							<h2 className="text-center font-weight-bold text-uppercase" id="lekcija">
-								IDGAM BILA GUNNEH
+								7 IDGAM BILA GUNNEH
 							</h2>
 						</div>
 						<h4 className="text-center">

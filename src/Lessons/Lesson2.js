@@ -54,7 +54,7 @@ function L2() {
 							</center>
 
 							<h2 className="text-center font-weight-bold text-uppercase" id="lekcija">
-								Damir
+								2 Damir
 							</h2>
 						</div>
 						<h4 className="text-center">

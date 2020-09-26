@@ -54,7 +54,7 @@ function L9() {
 								<img src={process.env.PUBLIC_URL + '/assets/svg/Group 61.svg'} alt="Group 61" />
 							</center>
 							<h2 className="text-center font-weight-bold text-uppercase" id="lekcija">
-								IZHAR HALKIJJ
+								9 IZHAR HALKIJJ
 							</h2>
 						</div>
 						<h4 className="text-center">
@@ -112,7 +112,7 @@ function L9() {
 					</Col>
 				</Row>
 
-				<Row className="text-center  rtl">
+				<Row className="text-center reorder-basic-display-after rtl">
 					<Col>{PlayerRow(data, 'row1')}</Col>
 				</Row>
 

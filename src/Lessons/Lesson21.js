@@ -53,7 +53,7 @@ function L21() {
 								<img src={process.env.PUBLIC_URL + '/assets/svg/Group 61.svg'} alt="Group 61" />
 							</center>
 							<h2 className="text-center font-weight-bold text-uppercase" id="lekcija">
-								MEDD ARID
+								21 MEDD ARID
 							</h2>
 						</div>
 						<h4 className="text-center font-weight-bold">nestalna dužina</h4>

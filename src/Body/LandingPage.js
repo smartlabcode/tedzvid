@@ -146,10 +146,8 @@ function LandingPage(props) {
 					</div>
 					<center>
 						<div className="description" id="impresum">
-							<h2 className="white">
-								<b>O NAMA</b>
-							</h2>
 							<br />
+							<h2 className="white">O NAMA</h2>
 							<p>
 								Tedzvid.ba je elektronska, interaktivna verzija printanog tedžvida autora mr. Sejid ef.
 								Strike. Ovaj tedžvid ima za cilj da pomogne novim učačima Kur'ana, kako polaznicima
@@ -266,13 +264,13 @@ function LandingPage(props) {
 									<span className="closebtn" onClick={() => setShowSuccessMessage(false)}>
 										&times;
 									</span>
-									<strong>Uspjesno</strong> ste poslali vasu poruku!
+									<strong>Uspješno</strong> ste poslali vašu poruku!
 								</div>
 								<div className={showErrorMessage ? 'error_message' : 'hide'}>
 									<span className="closebtn" onClick={() => setShowErrorMessage(false)}>
 										&times;
 									</span>
-									Doslo je do greske prilikom slanja poruke!
+									Došlo je do greške prilikom slanja poruke!
 								</div>
 								<button type="submit" className="pageclip-form__submit contactBTN">
 									<span>POŠALJI</span>

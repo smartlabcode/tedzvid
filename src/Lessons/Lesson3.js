@@ -54,7 +54,7 @@ function L3() {
 								<img src={process.env.PUBLIC_URL + '/assets/svg/Group 61.svg'} alt="Group 61" />
 							</center>
 							<h2 className="text-center font-weight-bold text-uppercase" id="lekcija">
-								LAFZATULLAH
+								3 LAFZATULLAH
 							</h2>
 						</div>
 						<h4 className="text-center">

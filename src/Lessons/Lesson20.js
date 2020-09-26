@@ -53,7 +53,7 @@ function L20() {
 								<img src={process.env.PUBLIC_URL + '/assets/svg/Group 61.svg'} alt="Group 61" />
 							</center>
 							<h2 className="text-center font-weight-bold text-uppercase" id="lekcija">
-								MEDD LAZIM
+								20 MEDD LAZIM
 							</h2>
 						</div>
 						<h4 className="text-center">
@@ -91,7 +91,7 @@ function L20() {
 				<Row className="text-center reorder">
 					<Col>{PlayerRow(data, 'row2')}</Col>
 				</Row>
-				<Row className="text-center  reorder-basic rtl">
+				<Row className="text-center  reorder-basic-display-after rtl">
 					<Col>{PlayerRow(data, 'row3')}</Col>
 				</Row>
 

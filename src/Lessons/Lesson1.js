@@ -62,7 +62,7 @@ function L1() {
 								<img src={process.env.PUBLIC_URL + '/assets/svg/Group 61.svg'} alt="Group 61" />
 							</center>
 
-							<h2 className="text-center font-weight-bold text-uppercase">Vakf</h2>
+							<h2 className="text-center font-weight-bold text-uppercase">1 Vakf</h2>
 						</div>
 
 						<h4 className="text-center" id="lekcija">
