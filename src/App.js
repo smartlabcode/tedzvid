@@ -28,10 +28,20 @@ import {
 	L21,
 	L22
 } from './Helpers/LessonsHelper';
+import ReactGA from 'react-ga';
+import { createBrowserHistory } from 'history';
 
 // import Container from 'react-bootstrap/Container';
 import { BrowserRouter, Route } from 'react-router-dom';
 
+const trackingId = 'UA-179006564-1y'; // Replace with your Google Analytics tracking ID
+ReactGA.initialize(trackingId);
+
+const history = createBrowserHistory();
+history.listen((location) => {
+	ReactGA.set({ page: location.pathname }); // Update the user's current page
+	ReactGA.pageview(location.pathname); // Record a pageview for the given page
+});
 function App() {
 	return (
 		<BrowserRouter basename={process.env.PUBLIC_URL}>
