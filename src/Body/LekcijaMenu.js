@@ -82,20 +82,19 @@ function LekcijaMenu(props) {
 					</center>
 				</div>
 			</div>
-			<Container className="height50px">
-				<div className="lekcijaTop">
-					<h2 style={{ float: 'left', marginRight: '20px' }} className="text-uppercase">
-						{props.broj}
-					</h2>
-					<h2 style={{ float: 'left' }} className="text-uppercase">
-						{props.naziv}
-					</h2>
-					<img
+			<Container className="height50px ">
+				<div className="lekcijaTop text-center">
+					<div className="reorder">
+						<h2 className="text-uppercase" style={{ fontWeight: 'bold' }}>
+							{props.broj} {props.naziv}
+						</h2>
+					</div>
+					{/* <img
 						style={{ float: 'right', width: '12px', marginTop: '15px' }}
 						className="logoUrl"
 						src={process.env.PUBLIC_URL + '/assets/svg/Polygon 3.svg'}
 						alt="Polygon 3"
-					/>
+					/> */}
 				</div>
 			</Container>
 		</React.Fragment>

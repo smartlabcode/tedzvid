@@ -1,8 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useHistory } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { Row, Col } from 'react-bootstrap';
 
 function Footer(props) {
+	const history = useHistory();
+	const handleKeyPress = (event) => {
+		if (event.keyCode === 37) {
+			history.push(props.prev);
+		}
+		if (event.keyCode === 39) {
+			history.push(props.next);
+		}
+	};
+	useEffect(() => {
+		window.addEventListener('keydown', handleKeyPress);
+		return () => {
+			window.removeEventListener('keydown', handleKeyPress);
+		};
+	}, []);
+
 	return (
 		<React.Fragment>
 			<footer className="mainfooter">
@@ -30,7 +47,7 @@ function Footer(props) {
 			</footer>
 			<footer className="mobilefooter">
 				<Row className="mobileNavButtons">
-					<div>
+					<div onKeyDown={handleKeyPress}>
 						<Link to={props.prev} className="text-white">
 							<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
 								<path

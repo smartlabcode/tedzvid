@@ -37,7 +37,7 @@ function ListRoutes() {
 	let history = useHistory();
 	useEffect(() => {
 		console.log("initialize!")
-		ReactGA.initialize('UA-179006564-1y'); // put your tracking id here
+		ReactGA.initialize('UA-179006564-1'); // put your tracking id here
 		ReactGA.set({ page: '/' }); // Update the user's current page
 		ReactGA.pageview('/'); // Record a pageview for the given page
 	}, []);
