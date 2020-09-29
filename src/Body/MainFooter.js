@@ -18,7 +18,7 @@ function Footer(props) {
 		return () => {
 			window.removeEventListener('keydown', handleKeyPress);
 		};
-	}, []);
+	});
 
 	return (
 		<React.Fragment>

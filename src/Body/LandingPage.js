@@ -6,6 +6,8 @@ import { AiOutlineCloseCircle } from 'react-icons/ai';
 import { FiPhoneCall } from 'react-icons/fi';
 import { BsFillPersonFill, BsArrowRight } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
+import BrowserMessage from './BrowserMessage';
+import BrowserDetect from '../Helpers/BrowserDetect'
 
 function LandingPage(props) {
 	const [ isHidden, setIsHidden ] = useState(true);
@@ -16,8 +18,16 @@ function LandingPage(props) {
 	const [ phone, setPhone ] = useState('');
 	const [ message, setMessage ] = useState('');
 	const timerToClearSomewhere = useRef(null); //now you can pass timer to another component
+	const [browserVersion,setBrowserVersion]=useState('');
+	const [OS,setOS]=useState('');
+	const [browser,setBrowser]=useState('');
 
 	useEffect(() => {
+		BrowserDetect.init();
+		const {browser,OS,version}=BrowserDetect;
+		setBrowser(browser)
+		setOS(OS)
+		setBrowserVersion(version)
 		return () => clearTimeout(timerToClearSomewhere.current);
 	}, []);
 
@@ -300,6 +310,7 @@ function LandingPage(props) {
 						</li>
 					</ul>
 				</footer>
+			<BrowserMessage  browser={browser} browserVersion={browserVersion} OS={OS}/>
 			</div>
 		</React.Fragment>
 	);
