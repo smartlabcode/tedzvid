@@ -72,7 +72,7 @@ function LekcijaMenu(props) {
 								<li>O NAMA</li>
 							</a>
 							<a href="/#printano" onClick={toggleIsHiddenHandler}>
-								<li>PRINTATNO IZDANJE</li>
+								<li>PRINTANO IZDANJE</li>
 							</a>
 
 							<a href="/#kontakt" onClick={toggleIsHiddenHandler}>

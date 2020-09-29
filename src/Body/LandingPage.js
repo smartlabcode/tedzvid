@@ -69,7 +69,7 @@ function LandingPage(props) {
 							</a>
 
 							<a href="#printano">
-								<li>PRINTATNO IZDANJE</li>
+								<li>PRINTANO IZDANJE</li>
 							</a>
 							<a href="#kontakt">
 								<li>KONTAKT</li>
@@ -112,7 +112,7 @@ function LandingPage(props) {
 									<li>O NAMA</li>
 								</a>
 								<a href="#printano" onClick={toggleIsHiddenHandler}>
-									<li>PRINTATNO IZDANJE</li>
+									<li>PRINTANO IZDANJE</li>
 								</a>
 
 								<a href="#kontakt" onClick={toggleIsHiddenHandler}>
