@@ -10,7 +10,6 @@ export default function BrowserMessage(props) {
 			<span>We use cookies to provide you the best possible experience. But don't panic - we won't share any of your data. You can find more informations about our cookies <a href="/">here</a>.
 			Browser:{props.browser} {' '}
 			Version:{props.browserVersion} {' '}
-			OS:{props.OS} {' '}
 			</span>
 			
 			<div className="close" onClick={e=>setIsHidden(true)} >
