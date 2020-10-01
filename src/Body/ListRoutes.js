@@ -3,6 +3,7 @@
 import React, { useEffect } from 'react';
 import Home from './HomePage';
 import Demo from './LandingPage';
+import Obavijest from './Obavijest';
 import {
 	L1,
 	L2,
@@ -36,7 +37,6 @@ import {  Route,useHistory } from 'react-router-dom';
 function ListRoutes() {
 	let history = useHistory();
 	useEffect(() => {
-		console.log("initialize!")
 		ReactGA.initialize('UA-179006564-1'); // put your tracking id here
 		ReactGA.set({ page: '/' }); // Update the user's current page
 		ReactGA.pageview('/'); // Record a pageview for the given page
@@ -78,6 +78,7 @@ function ListRoutes() {
 			<Route path="/lekcija20" component={L20} />
 			<Route path="/lekcija21" component={L21} />
 			<Route path="/lekcija22" component={L22} />
+			<Route path="/obavijest" component={Obavijest} />
 			</>
 	);
 }
