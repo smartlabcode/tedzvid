@@ -590,17 +590,26 @@ h2 strong {
 
   .mobile-row {
     display: grid;
-    flex-direction: row;
-    flex-wrap: wrap-reverse;
-    justify-content: center;
-    align-content: flex-start;
-    align-items: flex-start;
+    // flex-direction: row;
+    // flex-wrap: wrap-reverse;
+    // justify-content: center;
+    // align-content: flex-start;
+    // align-items: flex-start;
     direction: rtl;
   }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1000px) {
 
+  // .mobile-row {
+  //   display: grid !important;
+  //   // flex-direction: row;
+  //   // flex-wrap: wrap-reverse;
+  //   // justify-content: center;
+  //   // align-content: flex-start;
+  //   // align-items: flex-start;
+  //   direction: rtl !important; 
+  // }
   .oznaceno,
   .arapski,
   .arapski-lekcija {
@@ -739,9 +748,9 @@ h2 strong {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-flex-wrap: wrap-reverse;
-    -ms-flex-wrap: wrap-reverse;
-    flex-wrap: wrap-reverse;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -805,7 +814,7 @@ h2 strong {
   align-self: center;
   color: #919191;
   transition: color 0.2s;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .browser-message a.close:hover {
