@@ -492,7 +492,7 @@ function L1() {
 				</Row>
 				<Row id="vjezba" className="text-center">
 					<Col className="mobile-row">
-						<span>{VjezbeRow(data, 'vjezba', 'red18')}</span>
+						<span style={{ marginLeft: '25px' }}> {VjezbeRow(data, 'vjezba', 'red18')}</span>
 						<span>{VjezbeRow(data, 'vjezba', 'red19')}</span>
 					</Col>
 				</Row>
@@ -551,7 +551,7 @@ function L1() {
 						</Row>
 						<Row id="vjezba" className="text-center">
 							<Col className="mobile-row">
-								<span>{VjezbeRow(data, 'vjezba', 'red18')}</span>
+								<span style={{ marginLeft: '50px' }}> {VjezbeRow(data, 'vjezba', 'red18')}</span>
 								<span>{VjezbeRow(data, 'vjezba', 'red19')}</span>
 							</Col>
 						</Row>
