@@ -7,9 +7,7 @@ import { FiPhoneCall } from 'react-icons/fi';
 import { BsFillPersonFill, BsArrowRight } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
 import BrowserMessage from './BrowserMessage';
-import {detect} from '../Helpers/BrowserDetect'
-
-
+import { detect } from '../Helpers/BrowserDetect';
 
 function LandingPage(props) {
 	const [ isHidden, setIsHidden ] = useState(true);
@@ -20,13 +18,13 @@ function LandingPage(props) {
 	const [ phone, setPhone ] = useState('');
 	const [ message, setMessage ] = useState('');
 	const timerToClearSomewhere = useRef(null); //now you can pass timer to another component
-	const [browserVersion,setBrowserVersion]=useState('');
-	const [browser,setBrowser]=useState('');
+	const [ browserVersion, setBrowserVersion ] = useState('');
+	const [ browser, setBrowser ] = useState('');
 
 	useEffect(() => {
-		const [browser,version]=detect().split(' ')
-		setBrowser(browser)
-		setBrowserVersion(version)
+		const [ browser, version ] = detect().split(' ');
+		setBrowser(browser);
+		setBrowserVersion(version);
 		return () => clearTimeout(timerToClearSomewhere.current);
 	}, []);
 
@@ -159,7 +157,7 @@ function LandingPage(props) {
 							/>
 						</div>
 					</div>
-					<center>
+					<center style={{ display: 'inline-flex' }}>
 						<div className="description" id="o-nama">
 							<br />
 							<h2 className="white">O NAMA</h2>
@@ -309,7 +307,7 @@ function LandingPage(props) {
 						</li>
 					</ul>
 				</footer>
-			<BrowserMessage  browser={browser} browserVersion={browserVersion} />
+				<BrowserMessage browser={browser} browserVersion={browserVersion} />
 			</div>
 		</React.Fragment>
 	);
