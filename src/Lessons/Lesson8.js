@@ -58,7 +58,7 @@ function L8() {
 							</h2>
 						</div>
 						<h4 className="text-center">
-							<strong>pretvaranje harfa N (ن) u harf M (م)</strong>
+							<strong>Pretvaranje harfa N (ن) u harf M (م)</strong>
 						</h4>
 						<hr />
 					</Col>

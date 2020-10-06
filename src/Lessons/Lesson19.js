@@ -57,7 +57,7 @@ function L19() {
 							</h2>
 						</div>
 						<h4 className="text-center">
-							<strong>rastavljena dužina</strong>
+							<strong>Rastavljena dužina</strong>
 						</h4>
 					</Col>
 				</Row>
@@ -72,7 +72,7 @@ function L19() {
 					<MdZoomOutMap className="zoomIcon" onClick={handleShowL} />
 				</IconContext.Provider>
 				<Row>
-					<Col className="opisLekcije text-center">
+					<Col className="opisLekcije ">
 						Kada poslije <strong>dugog vokala</strong> A <span className="arapski-lekcija">ـــَــ ا</span> ,
 						I <span className="arapski-lekcija"> ـــِـ ى</span> , U{' '}
 						<span className="arapski-lekcija" style={{ lineHeight: '1.8em' }}>
@@ -209,7 +209,7 @@ function L19() {
 					<MdZoomOutMap className="zoomIcon" onClick={handleShow} />
 				</IconContext.Provider>
 				<Row className="text-center">
-					<Col className="mobile-row">
+					<Col className="mobile-row rtl">
 						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj5')} ۞</span>
 						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj6')} ۞</span>
 						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj7')} ۞</span>
@@ -224,7 +224,7 @@ function L19() {
 				</Row>
 
 				<Row className="text-center">
-					<Col className="mobile-row">
+					<Col className="mobile-row rtl">
 						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj9')} ۞</span>
 						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj10')} ۞</span>
 					</Col>
@@ -238,7 +238,7 @@ function L19() {
 				</Row>
 
 				<Row className="text-center">
-					<Col className="mobile-row">
+					<Col className="mobile-row rtl">
 						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj12')} ۞</span>
 						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj13')} ۞</span>
 					</Col>
@@ -249,37 +249,36 @@ function L19() {
 					</Modal.Header>
 					<Modal.Body className="custom-modal">
 						<Row className="text-center">
-							<Col className="mobile-row">
+							<Col className="mobile-row rtl">
 								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj5')} ۞</span>
 								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj6')} ۞</span>
 								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj7')} ۞</span>
 							</Col>
 						</Row>
 
-						<Row className="text-center">
+						<Row className="text-center rtl">
 							<Col>
-								<span className="tacka">
-									{VjezbeRow(data, 'vjezba', 'broj8')}
-									۞
-								</span>
+								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj8')}</span>
+								<span className="tacka">۞</span>
 							</Col>
 						</Row>
 
 						<Row className="text-center">
-							<Col className="mobile-row">
+							<Col className="mobile-row rtl">
 								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj9')} ۞</span>
 								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj10')} ۞</span>
 							</Col>
 						</Row>
 
-						<Row className="text-center">
+						<Row className="text-center rtl">
 							<Col>
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj11')} ۞</span>
+								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj11')} </span>
+								<span className="tacka">۞</span>
 							</Col>
 						</Row>
 
 						<Row className="text-center">
-							<Col className="mobile-row">
+							<Col className="mobile-row rtl">
 								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj12')} ۞</span>
 								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj13')} ۞</span>
 							</Col>

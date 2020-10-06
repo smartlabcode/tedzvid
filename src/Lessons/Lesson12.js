@@ -57,7 +57,7 @@ function L12() {
 							</h2>
 						</div>
 						<h4 className="text-center">
-							<strong>skrivanje harfa M (م)</strong>
+							<strong>Skrivanje harfa M (م)</strong>
 						</h4>
 						<hr />
 					</Col>

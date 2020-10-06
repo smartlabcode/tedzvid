@@ -59,7 +59,7 @@ function L5() {
 							</h2>
 						</div>
 						<h4 className="text-center">
-							<strong>uklapanje istih harfova sa propuštanjem zraka kroz nos</strong>
+							<strong>Uklapanje istih harfova sa propuštanjem zraka kroz nos</strong>
 						</h4>
 						<hr />
 					</Col>
@@ -90,7 +90,7 @@ function L5() {
 					<Col>{PlayerRow(data, 'row1')}</Col>
 				</Row>
 
-				<Row className="text-center reorder-basic rtl">
+				<Row className="text-center rtl">
 					<Col>{PlayerRow(data, 'row2')}</Col>
 				</Row>
 

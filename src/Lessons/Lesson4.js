@@ -58,7 +58,7 @@ function L4() {
 							</h2>
 						</div>
 						<h4 className="text-center">
-							<strong>uklapanje istih harfova</strong>
+							<strong>Uklapanje istih harfova</strong>
 						</h4>
 						<hr />
 					</Col>
@@ -93,11 +93,11 @@ function L4() {
 					<Col>{PlayerRow(data, 'row1')}</Col>,
 				</Row>
 
-				<Row className="text-center reorder-basic  rtl ">
+				<Row className="text-center mobile-row rtl ">
 					<Col>{PlayerRow(data, 'row2')}</Col>
 				</Row>
 
-				<Row className="text-center reorder-basic  rtl">
+				<Row className="text-center mobile-row  rtl">
 					<Col>{PlayerRow(data, 'row3')}</Col>
 				</Row>
 				<Modal show={showL} onHide={handleCloseL} backdrop="static" keyboard={false}>
@@ -122,7 +122,7 @@ function L4() {
 							</Col>
 						</Row>
 
-						<Row className="text-center mobile-row">
+						<Row className="text-center reorder">
 							<Col>{PlayerRow(data, 'row1')}</Col>,
 						</Row>
 

@@ -59,7 +59,7 @@ function L14() {
 						</div>
 						<h4 className="text-center">
 							<strong>
-								izgovor harfa R <span className="arapski-lekcija">(ر)</span>
+								Izgovor harfa R <span className="arapski-lekcija">(ر)</span>
 							</strong>
 						</h4>
 						<hr />
@@ -169,10 +169,10 @@ function L14() {
 						</Row>
 
 						<Row>
-							<Col className="opisLekcije text-center">
+							<Col className="opisLekcije">
 								<strong>1.</strong> kada je harf<strong> R </strong>sa <strong>vokalom</strong> E ({' '}
 								{PlayerRow(data, 'row1')}) ili <strong>vokalom</strong> U ( {PlayerRow(data, 'row2')}),
-								npr.:
+								npr.: <br />
 								{PlayerRow(data, 'row3')}
 							</Col>
 						</Row>
@@ -190,6 +190,7 @@ function L14() {
 									ــُـ رْ
 								</span>
 								), npr.:
+								<br />
 								{PlayerRow(data, 'row4')}
 							</Col>
 						</Row>
@@ -212,7 +213,7 @@ function L14() {
 									{' '}
 									ــُـ ــْـ رْ{' '}
 								</span>
-								), npr.: {PlayerRow(data, 'row5')}
+								), npr.:<br /> {PlayerRow(data, 'row5')}
 							</Col>
 						</Row>
 
@@ -222,7 +223,8 @@ function L14() {
 								<span className="arapski-lekcija" style={{ color: 'red' }}>
 									رْ
 								</span>
-								), a prije njeg glas sa nestalnom kesrom, npr.: {PlayerRow(data, 'row6')}
+								), a prije njeg glas sa nestalnom kesrom, npr.: <br />
+								{PlayerRow(data, 'row6')}
 							</Col>
 						</Row>
 
@@ -232,7 +234,7 @@ function L14() {
 								<span className="arapski-lekcija" style={{ color: 'red' }}>
 									رْ
 								</span>
-								), a poslije njeg jedan od krupnih harfova, npr.: {PlayerRow(data, 'row7')}
+								), a poslije njeg jedan od krupnih harfova, npr.:<br /> {PlayerRow(data, 'row7')}
 							</Col>
 						</Row>
 

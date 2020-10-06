@@ -58,7 +58,7 @@ function L2() {
 							</h2>
 						</div>
 						<h4 className="text-center">
-							<strong>izgovaranje zamjenice HU (هُ)</strong>
+							<strong>Izgovaranje zamjenice HU (</strong>هُ<strong>)</strong>
 						</h4>
 						<hr />
 					</Col>

@@ -58,7 +58,7 @@ function L11() {
 							</h2>
 						</div>
 						<h4 className="text-center">
-							<strong>skrivanje harfa N (ن)</strong>
+							<strong>Skrivanje harfa N (ن)</strong>
 						</h4>
 						<hr />
 					</Col>
@@ -79,10 +79,12 @@ function L11() {
 						<span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
 						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
 						<span className="arapski-lekcija">ــٌــ</span> dođe jedan od 15 harfova:{' '}
-						<Arabic arabic="ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق " key="arL11">
-							{' '}
-							ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق {' '}
-						</Arabic>
+						<span style={{ display: 'inline-flex' }}>
+							<Arabic arabic="ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق " key="arL11">
+								{' '}
+								ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق {' '}
+							</Arabic>
+						</span>
 						, onda se harf <strong>N</strong> (
 						<span className="arapski-lekcija">ن</span>) uči kroz nos u trajanju od 2 hareketa, s tim da
 						jezik ne dotakne nepce, npr.:
@@ -95,10 +97,9 @@ function L11() {
 					</Col>
 				</Row>
 
-				<Row className="text-center ">
+				<Row className="text-center reorder">
 					<Col>{PlayerRow(data, 'row1')}</Col>
 				</Row>
-
 				<Row className="text-center reorder-basic rtl">
 					<Col>{PlayerRow(data, 'row2')}</Col>
 				</Row>
@@ -133,10 +134,12 @@ function L11() {
 								<span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
 								<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
 								<span className="arapski-lekcija">ــٌــ</span> dođe jedan od 15 harfova:{' '}
-								<Arabic arabic="ت ث ج د ذ ز س ش ص ض ط ظ ف ق ك" key="arL11">
-									{' '}
-									ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق {' '}
-								</Arabic>
+								<span style={{ display: 'inline-flex' }}>
+									<Arabic arabic="ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق " key="arL11">
+										{' '}
+										ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق {' '}
+									</Arabic>
+								</span>
 								, onda se harf <strong>N</strong> (
 								<span className="arapski-lekcija">ن</span>) uči kroz nos u trajanju od 2 hareketa, s tim
 								da jezik ne dotakne nepce, npr.:

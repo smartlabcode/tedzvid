@@ -90,11 +90,11 @@ function L6() {
 								<img src={process.env.PUBLIC_URL + '/assets/svg/Group 61.svg'} alt="Group 61" />
 							</center>
 							<h2 className="text-center font-weight-bold text-uppercase" id="lekcija">
-								 6 IDGAM MEAL-GUNNEH
+								6 IDGAM MEAL-GUNNEH
 							</h2>
 						</div>
 						<h4 className="text-center">
-							<strong>uklapanje sa propuštanjem zraka kroz nos</strong>
+							<strong>Uklapanje sa propuštanjem zraka kroz nos</strong>
 						</h4>
 						<hr />
 					</Col>
@@ -119,7 +119,7 @@ function L6() {
 							className="arapski-lekcija"
 							style={{ color: 'red', fontSize: '3rem', whiteSpace: 'nowrap' }}
 						>
-							و ي م ن
+							و ن م ي
 						</span>{' '}
 						(sadržana u riječi <strong>jemnu</strong> –
 						<span className="arapski-lekcija">يَمْنُو</span>), dolazi do uklapanja harfa <strong>N</strong>(
@@ -138,7 +138,7 @@ function L6() {
 					<Col>{PlayerRow(data, 'row1')}</Col>
 				</Row>
 
-				<Row className="text-center reorder-basic rtl">
+				<Row className="text-center reorder-basic">
 					<Col>{PlayerRow(data, 'row2')}</Col>
 				</Row>
 
@@ -176,8 +176,11 @@ function L6() {
 								<span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
 								<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
 								<span className="arapski-lekcija">ــٌــ</span> dođe jedan od četiri harfa:{' '}
-								<span className="arapski-lekcija" style={{ color: 'red' }}>
-									ي م ن و
+								<span
+									className="arapski-lekcija"
+									style={{ color: 'red', fontSize: '3rem', whiteSpace: 'nowrap' }}
+								>
+									و ن م ي
 								</span>{' '}
 								(sadržana u riječi <strong>jemnu</strong> –
 								<span className="arapski-lekcija">يَمْنُو</span>), dolazi do uklapanja harfa{' '}
@@ -193,11 +196,11 @@ function L6() {
 							</Col>
 						</Row>
 
-						<Row className="text-center ">
+						<Row className="text-center reorder">
 							<Col>{PlayerRow(data, 'row1')}</Col>
 						</Row>
 
-						<Row className="text-center  rtl">
+						<Row className="text-center reorder-basic rtl">
 							<Col>{PlayerRow(data, 'row2')}</Col>
 						</Row>
 

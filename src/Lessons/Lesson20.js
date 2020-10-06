@@ -57,7 +57,7 @@ function L20() {
 							</h2>
 						</div>
 						<h4 className="text-center">
-							<strong>stalna dužina</strong>
+							<strong>Stalna dužina</strong>
 						</h4>
 					</Col>
 				</Row>
@@ -83,13 +83,12 @@ function L20() {
 						<strong>
 							ili tešdidom <span className="arapski-lekcija"> ـــّــ </span>
 						</strong>
-						, bit će medd lazim . Traje obavezno 6 hareketa, npr.:<br />
-						<div className="text-center">{PlayerRow(data, 'row1')}</div>
+						, bit će medd lazim . Traje obavezno 6 hareketa, npr.:<span style={{ display: 'inline-flex' }}>{PlayerRow(data, 'row1')}</span>
 					</Col>
 				</Row>
 
-				<Row className="text-center reorder">
-					<Col>{PlayerRow(data, 'row2')}</Col>
+				<Row className="text-center  reorder">
+					<Col style={{ flexWrap: 'wrap-reverse' }}>{PlayerRow(data, 'row2')}</Col>
 				</Row>
 				<Row className="text-center  reorder-basic-display-after rtl">
 					<Col>{PlayerRow(data, 'row3')}</Col>
@@ -128,19 +127,18 @@ function L20() {
 									ili tešdidom <span className="arapski-lekcija"> ـــّــ </span>
 								</strong>
 								, bit će medd lazim . Traje obavezno 6 hareketa, npr.:
-								<pre style={{ display: 'inline' }}> </pre>
 								{PlayerRow(data, 'row1')}
 							</Col>
 						</Row>
 
-						<Row className="text-center">
-							<Col>{PlayerRow(data, 'row2')}</Col>
+						<Row className="text-center  reorder">
+							<Col style={{ flexWrap: 'wrap-reverse' }}>{PlayerRow(data, 'row2')}</Col>
 						</Row>
-						<Row className="text-center">
+						<Row className="text-center  reorder-basic-display-after rtl">
 							<Col>{PlayerRow(data, 'row3')}</Col>
 						</Row>
 
-						<Row className="text-center">
+						<Row className="text-center  ">
 							<Col>{PlayerRow(data, 'row4')}</Col>
 						</Row>
 
@@ -176,27 +174,27 @@ function L20() {
 					<MdZoomOutMap className="zoomIcon" onClick={handleShow} />
 				</IconContext.Provider>
 				<Row className="text-center">
-					<Col className="mobile-row">
+					<Col className="mobile-row rtl">
 						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj9')} ۞</span>
 						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj10')} ۞</span>
 					</Col>
 				</Row>
 				<Row className="text-center">
-					<Col className="mobile-row">
+					<Col className="mobile-row rtl">
 						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj11')} ۞</span>
 						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj12')} ۞</span>
 						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj13')} ۞</span>
 					</Col>
 				</Row>
 				<Row className="text-center">
-					<Col className="mobile-row">
+					<Col className="mobile-row rtl">
 						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj14')} ۞</span>
 						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj15')} ۞</span>
 					</Col>
 				</Row>
 
 				<Row className="text-center">
-					<Col className="mobile-row">
+					<Col className="mobile-row rtl">
 						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj16')} ۞</span>
 						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj17')} ۞</span>
 						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj18')} ۞</span>
@@ -211,27 +209,27 @@ function L20() {
 					</Modal.Header>
 					<Modal.Body className="custom-modal">
 						<Row className="text-center">
-							<Col className="mobile-row">
+							<Col className="mobile-row rtl">
 								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj9')} ۞</span>
 								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj10')} ۞</span>
 							</Col>
 						</Row>
 						<Row className="text-center">
-							<Col className="mobile-row">
+							<Col className="mobile-row rtl">
 								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj11')} ۞</span>
 								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj12')} ۞</span>
 								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj13')} ۞</span>
 							</Col>
 						</Row>
 						<Row className="text-center">
-							<Col className="mobile-row">
+							<Col className="mobile-row rtl">
 								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj14')} ۞</span>
 								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj15')} ۞</span>
 							</Col>
 						</Row>
 
 						<Row className="text-center">
-							<Col className="mobile-row">
+							<Col className="mobile-row rtl">
 								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj16')} ۞</span>
 								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj17')} ۞</span>
 								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj18')} ۞</span>

@@ -56,7 +56,7 @@ function L17() {
 								17 MEDD TABIJJ
 							</h2>
 						</div>
-						<h4 className="text-center font-weight-bold">obična dužina</h4>
+						<h4 className="text-center font-weight-bold">Obična dužina</h4>
 						<hr />
 					</Col>
 				</Row>
@@ -152,14 +152,14 @@ function L17() {
 					<MdZoomOutMap className="zoomIcon" onClick={handleShow} />
 				</IconContext.Provider>
 				<Row className="text-center">
-					<Col className="mobile-row">
+					<Col className="mobile-row rtl">
 						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj11')} ۞</span>
 						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj12')} ۞</span>
 					</Col>
 				</Row>
 
 				<Row className="text-center">
-					<Col className="mobile-row">
+					<Col className="mobile-row rtl">
 						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj13')} ۞</span>
 						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj14')} ۞</span>
 					</Col>
@@ -173,7 +173,7 @@ function L17() {
 				</Row>
 
 				<Row className="text-center">
-					<Col className="mobile-row">
+					<Col className="mobile-row rtl">
 						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj16')}</span>
 
 						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj17')} ۞</span>
@@ -181,7 +181,7 @@ function L17() {
 				</Row>
 
 				<Row className="text-center">
-					<Col className="mobile-row">
+					<Col className="mobile-row rtl">
 						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj18')} ۞</span>
 						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj19')} ۞</span>
 					</Col>
@@ -192,34 +192,36 @@ function L17() {
 					</Modal.Header>
 					<Modal.Body className="custom-modal">
 						<Row className="text-center">
-							<Col className="mobile-row">
+							<Col className="mobile-row rtl">
 								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj11')} ۞</span>
 								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj12')} ۞</span>
 							</Col>
 						</Row>
 
 						<Row className="text-center">
-							<Col className="mobile-row">
+							<Col className="mobile-row rtl">
 								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj13')} ۞</span>
 								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj14')} ۞</span>
 							</Col>
 						</Row>
 
-						<Row className="text-center ">
+						<Row className="text-center rtl">
 							<Col>
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj15')} ۞</span>
+								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj15')} </span>
+								<span className="tacka">۞</span>
 							</Col>
 						</Row>
 
 						<Row className="text-center">
-							<Col className="mobile-row">
+							<Col className="mobile-row rtl">
 								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj16')}</span>
+
 								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj17')} ۞</span>
 							</Col>
 						</Row>
 
 						<Row className="text-center">
-							<Col className="mobile-row">
+							<Col className="mobile-row rtl">
 								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj18')} ۞</span>
 								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj19')} ۞</span>
 							</Col>

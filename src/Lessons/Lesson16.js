@@ -57,7 +57,7 @@ function L16() {
 							</h2>
 						</div>
 						<h4 className="text-center">
-							<strong>uklapanje bliskih harfova</strong>
+							<strong>Uklapanje bliskih harfova</strong>
 						</h4>
 						<hr />
 					</Col>
@@ -182,14 +182,14 @@ function L16() {
 					<MdZoomOutMap className="zoomIcon" onClick={handleShow} />
 				</IconContext.Provider>
 				<Row className="text-center">
-					<Col className="mobile-row">
+					<Col className="mobile-row rtl">
 						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj5')} ۞</span>
 						{VjezbeRow(data, 'vjezba', 'broj6')}
 						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj7')} ۞</span>
 					</Col>
 				</Row>
 				<Row className="text-center">
-					<Col className="mobile-row">
+					<Col className="mobile-row rtl">
 						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj8')} ۞</span>
 						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj9')} ۞</span>
 					</Col>
@@ -201,7 +201,7 @@ function L16() {
 				</Row>
 
 				<Row className="text-center">
-					<Col className="mobile-row">
+					<Col className="mobile-row rtl">
 						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj11')} ۞</span>
 						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj12')} ۞</span>
 					</Col>
@@ -218,14 +218,14 @@ function L16() {
 					</Modal.Header>
 					<Modal.Body className="custom-modal">
 						<Row className="text-center">
-							<Col className="mobile-row">
+							<Col className="mobile-row rtl">
 								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj5')} ۞</span>
 								{VjezbeRow(data, 'vjezba', 'broj6')}
 								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj7')} ۞</span>
 							</Col>
 						</Row>
 						<Row className="text-center">
-							<Col className="mobile-row">
+							<Col className="mobile-row rtl">
 								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj8')} ۞</span>
 								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj9')} ۞</span>
 							</Col>
@@ -237,7 +237,7 @@ function L16() {
 						</Row>
 
 						<Row className="text-center">
-							<Col className="mobile-row">
+							<Col className="mobile-row rtl">
 								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj11')} ۞</span>
 								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj12')} ۞</span>
 							</Col>

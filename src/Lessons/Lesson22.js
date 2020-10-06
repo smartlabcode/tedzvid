@@ -57,7 +57,7 @@ function L22() {
 							</h2>
 						</div>
 						<h4 className="text-center font-weight-bold ">
-							<strong>poluvokalna dužina</strong>
+							<strong>Poluvokalna dužina</strong>
 						</h4>
 						<hr />
 					</Col>

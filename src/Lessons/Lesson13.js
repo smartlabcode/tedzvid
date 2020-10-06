@@ -58,7 +58,7 @@ function L13() {
 							</h2>
 						</div>
 						<h4 className="text-center">
-							<strong>odskakanje harfova</strong>
+							<strong>Odskakanje harfova</strong>
 						</h4>
 						<hr />
 					</Col>

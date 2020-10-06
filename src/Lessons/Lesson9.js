@@ -58,7 +58,7 @@ function L9() {
 							</h2>
 						</div>
 						<h4 className="text-center">
-							<strong>čisto izgovaranje harfa N (ن) ili tenvina</strong>
+							<strong>Čisto izgovaranje harfa N (ن) ili tenvina</strong>
 						</h4>
 						<hr />
 					</Col>

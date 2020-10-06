@@ -59,7 +59,7 @@ function L3() {
 						</div>
 						<h4 className="text-center">
 							<strong>
-								izgovaranje riječi Allah <span className="arapski-lekcija"> اللّٰه </span>
+								Izgovaranje riječi Allah <span className="arapski-lekcija"> اللّٰه </span>
 							</strong>
 						</h4>
 						<hr />
@@ -130,12 +130,14 @@ function L3() {
 								<strong>vokal</strong> E <span className="arapski-lekcija"> ــــَـــ </span>ili{' '}
 								<strong>vokal</strong> U
 								<span className="arapski-lekcija">ــــُـــ </span>, riječ Allah
-								<span className="arapski-lekcija">اللّٰه </span>se uči <u>krupno</u>, npr.:{' '}
-								{PlayerRow(data, 'row1')}
+								<span className="arapski-lekcija">اللّٰه </span>se uči <u>krupno</u>
+								, npr.:
 							</Col>
 						</Row>
-
-						<Row className="text-center">
+						<Row className="text-center ">
+							<Col>{PlayerRow(data, 'row1')}</Col>
+						</Row>
+						<Row className="text-center  ">
 							<Col>{VjezbeRow(data, 'multirow', 'row2')}</Col>
 						</Row>
 

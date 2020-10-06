@@ -56,7 +56,7 @@ function L21() {
 								21 MEDD ARID
 							</h2>
 						</div>
-						<h4 className="text-center font-weight-bold">nestalna dužina</h4>
+						<h4 className="text-center font-weight-bold">Nestalna dužina</h4>
 						<hr />
 					</Col>
 				</Row>
@@ -180,14 +180,14 @@ function L21() {
 					<MdZoomOutMap className="zoomIcon" onClick={handleShow} />
 				</IconContext.Provider>
 				<Row className="text-center">
-					<Col className="mobile-row">
+					<Col className="mobile-row rtl">
 						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj6')} ۞</span>
 						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj7')} ۞</span>
 					</Col>
 				</Row>
 
 				<Row className="text-center">
-					<Col className="mobile-row">
+					<Col className="mobile-row rtl ">
 						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj8')} ۞</span>
 						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj9')} ۞</span>
 						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj10')} ۞</span>
@@ -195,7 +195,7 @@ function L21() {
 				</Row>
 
 				<Row className="text-center">
-					<Col className="mobile-row">
+					<Col className="mobile-row rtl">
 						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj11')} ۞</span>
 						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj12')} ۞</span>
 						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj13')} ۞</span>
@@ -203,14 +203,14 @@ function L21() {
 				</Row>
 
 				<Row className="text-center">
-					<Col className="mobile-row">
+					<Col className="mobile-row rtl">
 						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj14')} ۞</span>
 						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj15')} ۞</span>
 					</Col>
 				</Row>
 
 				<Row className="text-center">
-					<Col className="mobile-row">
+					<Col className="mobile-row rtl">
 						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj16')} ۞</span>
 						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj17')} ۞</span>
 					</Col>
@@ -221,14 +221,14 @@ function L21() {
 					</Modal.Header>
 					<Modal.Body className="custom-modal">
 						<Row className="text-center">
-							<Col className="mobile-row">
+							<Col className="mobile-row rtl">
 								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj6')} ۞</span>
 								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj7')} ۞</span>
 							</Col>
 						</Row>
 
 						<Row className="text-center">
-							<Col className="mobile-row">
+							<Col className="mobile-row rtl ">
 								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj8')} ۞</span>
 								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj9')} ۞</span>
 								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj10')} ۞</span>
@@ -236,7 +236,7 @@ function L21() {
 						</Row>
 
 						<Row className="text-center">
-							<Col className="mobile-row">
+							<Col className="mobile-row rtl">
 								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj11')} ۞</span>
 								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj12')} ۞</span>
 								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj13')} ۞</span>
@@ -244,14 +244,14 @@ function L21() {
 						</Row>
 
 						<Row className="text-center">
-							<Col className="mobile-row">
+							<Col className="mobile-row rtl">
 								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj14')} ۞</span>
 								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj15')} ۞</span>
 							</Col>
 						</Row>
 
 						<Row className="text-center">
-							<Col className="mobile-row">
+							<Col className="mobile-row rtl">
 								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj16')} ۞</span>
 								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj17')} ۞</span>
 							</Col>

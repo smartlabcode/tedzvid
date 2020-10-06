@@ -428,7 +428,7 @@ function L1() {
 								<strong>sukun</strong> <span className="arapski-lekcija "> ــــْـــ</span> , npr.:
 							</Col>
 						</Row>
-						<Row className="text-center">
+						<Row className="text-center reorder">
 							<Col>{PlayerRow(data, 'row1')}</Col>
 						</Row>
 						<Row>
@@ -438,7 +438,7 @@ function L1() {
 								<strong>dugo</strong> A <span className="arapski-lekcija "> ـــَـــ ا </span> , npr.:
 							</Col>
 						</Row>
-						<Row className="text-center">
+						<Row className="text-center reorder">
 							<Col>{PlayerRow(data, 'row2')}</Col>
 						</Row>
 						<Row>
@@ -450,7 +450,7 @@ function L1() {
 								npr.:
 							</Col>
 						</Row>
-						<Row className="text-center rtl">
+						<Row className="text-center ">
 							<Col>
 								{VjezbeRow(data, 'row3', 'broj1')}
 								{VjezbeRow(data, 'row3', 'broj2')}
@@ -468,7 +468,7 @@ function L1() {
 								napisan na njemu, npr.:
 							</Col>
 						</Row>
-						<Row className="text-center">
+						<Row className="text-center reorder">
 							<Col>{PlayerRow(data, 'row4')}</Col>
 						</Row>
 					</Modal.Body>
@@ -491,7 +491,7 @@ function L1() {
 					</Col>
 				</Row>
 				<Row id="vjezba" className="text-center">
-					<Col className="mobile-row">
+					<Col className="mobile-row rtl">
 						<span style={{ marginLeft: '25px' }}> {VjezbeRow(data, 'vjezba', 'red18')}</span>
 						<span>{VjezbeRow(data, 'vjezba', 'red19')}</span>
 					</Col>
@@ -550,7 +550,7 @@ function L1() {
 							</Col>
 						</Row>
 						<Row id="vjezba" className="text-center">
-							<Col className="mobile-row">
+							<Col className="mobile-row rtl">
 								<span style={{ marginLeft: '50px' }}> {VjezbeRow(data, 'vjezba', 'red18')}</span>
 								<span>{VjezbeRow(data, 'vjezba', 'red19')}</span>
 							</Col>

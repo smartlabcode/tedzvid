@@ -57,7 +57,7 @@ function L10() {
 							</h2>
 						</div>
 						<h4 className="text-center">
-							<strong>čisto izgovaranje harfa M (م)</strong>
+							<strong>Čisto izgovaranje harfa M (م)</strong>
 						</h4>
 						<hr />
 					</Col>

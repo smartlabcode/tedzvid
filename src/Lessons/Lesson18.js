@@ -57,7 +57,7 @@ function L18() {
 							</h2>
 						</div>
 						<h4 className="text-center">
-							<strong>spojena dužina</strong>
+							<strong>Spojena dužina</strong>
 						</h4>
 						<hr />
 					</Col>

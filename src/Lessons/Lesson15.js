@@ -142,7 +142,7 @@ function L15() {
 							</Col>
 						</Row>
 
-						<Row>
+						<Row className="text-center  rtl">
 							<Col className="opisLekcije text-center">{PlayerRow(data, 'row2')}</Col>
 						</Row>
 
@@ -153,7 +153,7 @@ function L15() {
 							</Col>
 						</Row>
 
-						<Row>
+						<Row className="text-center  rtl">
 							<Col className="opisLekcije text-center">{PlayerRow(data, 'row4')}</Col>
 						</Row>
 
@@ -209,7 +209,7 @@ function L15() {
 
 				<Row className="text-center">
 					<Col>
-						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj14')} ۞</span>
+						<span className="tacka">۞{VjezbeRow(data, 'vjezba', 'broj14')} </span>
 					</Col>
 				</Row>
 
@@ -237,14 +237,14 @@ function L15() {
 					<Modal.Body className="custom-modal">
 						<Row className="text-center">
 							<Col className="mobile-row">
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj12')} ۞</span>
 								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj13')} ۞</span>
+								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj12')} ۞</span>
 							</Col>
 						</Row>
 
 						<Row className="text-center">
 							<Col>
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj14')} ۞</span>
+								<span className="tacka">۞{VjezbeRow(data, 'vjezba', 'broj14')} </span>
 							</Col>
 						</Row>
 

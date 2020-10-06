@@ -125,6 +125,7 @@ span.arapski-lekcija {
   //padding: 0 .25em;
   border-radius: .15em;
   font-size: 2rem;
+  font-weight: normal;
 }
 
 .text-center.col>span {
@@ -141,6 +142,11 @@ span.arap-red {
   padding-left: 4em;
   padding-right: 4em;
   font-size: 1.5rem;
+
+  // span.arapski {
+  //   display: inline-flex;
+  // }
+
 }
 
 .lekcije-wrapper {

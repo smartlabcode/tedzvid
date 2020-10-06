@@ -1,9 +1,9 @@
 {
     "row1": [{
-            "id": 1,
-            "url": "./assets/audio/l2/3.wav",
-            "highlight": "دَاهُ",
-            "word": "يَـدَاهُ",
+            "id": 3,
+            "url": "./assets/audio/l2/1.wav",
+            "highlight": "يْـهِ",
+            "word": "إِلَـيْـهِ",
             "after": " ; "
         },
         {
@@ -12,14 +12,14 @@
             "highlight": "يـهِ",
             "word": "أَبِـيـهِ",
             "after": " ; "
-        },
-        {
-            "id": 3,
-            "url": "./assets/audio/l2/1.wav",
-            "highlight": "يْـهِ",
-            "word": "إِلَـيْـهِ",
+        }, {
+            "id": 1,
+            "url": "./assets/audio/l2/3.wav",
+            "highlight": "دَاهُ",
+            "word": "يَـدَاهُ",
             "after": null
         }
+
     ],
     "row2": [{
 

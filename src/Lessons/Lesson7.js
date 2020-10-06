@@ -58,7 +58,7 @@ function L7() {
 							</h2>
 						</div>
 						<h4 className="text-center">
-							<strong>uklapanje bez propuštanja zraka kroz nos</strong>
+							<strong>Uklapanje bez propuštanja zraka kroz nos</strong>
 						</h4>
 						<hr />
 					</Col>
@@ -95,7 +95,7 @@ function L7() {
 				<Row className="text-center reorder">
 					<Col>{PlayerRow(data, 'row1')}</Col>
 				</Row>
-				<Row className="text-center reorder-basic  rtl">
+				<Row className="text-center reorder-basic-display-after  rtl">
 					<Col>
 						{PlayerRow(data, 'row2')}
 						{VjezbeRow(data, 'multirow', 'word1')}
@@ -136,16 +136,16 @@ function L7() {
 								<br />
 							</Col>
 						</Row>
-						<Row className="text-center ">
+						<Row className="text-center reorder">
 							<Col>{PlayerRow(data, 'row1')}</Col>
 						</Row>
-						<Row className="text-center  rtl">
+						<Row className="text-center reorder-basic  rtl">
 							<Col>
 								{PlayerRow(data, 'row2')}
 								{VjezbeRow(data, 'multirow', 'word1')}
 							</Col>
 						</Row>
-						<Row className="text-center ">
+						<Row className="text-center reorder-basic ">
 							<Col>{VjezbeRow(data, 'multirow', 'word2')}</Col>
 						</Row>
 						<Row>
