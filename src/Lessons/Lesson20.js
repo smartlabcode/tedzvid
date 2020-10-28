@@ -83,7 +83,8 @@ function L20() {
 						<strong>
 							ili tešdidom <span className="arapski-lekcija"> ـــّــ </span>
 						</strong>
-						, bit će medd lazim . Traje obavezno 6 hareketa, npr.:<span style={{ display: 'inline-flex' }}>{PlayerRow(data, 'row1')}</span>
+						, bit će medd lazim. Traje obavezno 6 hareketa, npr.:
+						{PlayerRow(data, 'row1')}
 					</Col>
 				</Row>
 
@@ -126,7 +127,7 @@ function L20() {
 								<strong>
 									ili tešdidom <span className="arapski-lekcija"> ـــّــ </span>
 								</strong>
-								, bit će medd lazim . Traje obavezno 6 hareketa, npr.:
+								, bit će medd lazim. Traje obavezno 6 hareketa, npr.:
 								{PlayerRow(data, 'row1')}
 							</Col>
 						</Row>

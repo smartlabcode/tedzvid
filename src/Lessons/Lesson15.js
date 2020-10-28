@@ -208,8 +208,8 @@ function L15() {
 				</Row>
 
 				<Row className="text-center">
-					<Col>
-						<span className="tacka">۞{VjezbeRow(data, 'vjezba', 'broj14')} </span>
+					<Col className="mobile-row">
+						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj14')}۞</span>
 					</Col>
 				</Row>
 

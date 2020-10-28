@@ -195,9 +195,10 @@ function L18() {
 						<Modal.Title>VJEŽBA</Modal.Title>
 					</Modal.Header>
 					<Modal.Body className="custom-modal">
-						<Row className="text-center">
+						<Row className="text-center rtl">
 							<Col>
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj6')} ۞</span>
+								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj6')} </span>
+								<span className="tacka">۞ </span>
 							</Col>
 						</Row>
 						<Row className="text-center">

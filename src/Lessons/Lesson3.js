@@ -83,7 +83,7 @@ function L3() {
 						, npr.:
 					</Col>
 				</Row>
-				<Row className="text-center ">
+				<Row className="text-center  reorder-basic ">
 					<Col>{PlayerRow(data, 'row1')}</Col>
 				</Row>
 				<Row className="text-center  ">
@@ -100,7 +100,7 @@ function L3() {
 					</Col>
 				</Row>
 
-				<Row className="text-center ">
+				<Row className="text-center  reorder-basic ">
 					<Col>{PlayerRow(data, 'row3')}</Col>
 				</Row>
 
@@ -134,7 +134,7 @@ function L3() {
 								, npr.:
 							</Col>
 						</Row>
-						<Row className="text-center ">
+						<Row className="text-center  reorder-basic ">
 							<Col>{PlayerRow(data, 'row1')}</Col>
 						</Row>
 						<Row className="text-center  ">
@@ -146,15 +146,16 @@ function L3() {
 								Kada prije riječi Allah
 								<span className="arapski-lekcija"> اللّٰه</span> dođe <strong>vokal</strong> I
 								<span className="arapski-lekcija"> ــــِــ</span>, riječ Allah
-								<span className="arapski-lekcija"> اللّٰه</span> se uči <u>tanko</u>, npr.:
+								<span className="arapski-lekcija"> اللّٰه</span> se uči <u>tanko</u>
+								, npr.:
 							</Col>
 						</Row>
 
-						<Row className="text-center ">
+						<Row className="text-center  reorder-basic ">
 							<Col>{PlayerRow(data, 'row3')}</Col>
 						</Row>
 
-						<Row className="text-center  rtl">
+						<Row className="text-center  reorder-basic rtl">
 							<Col>{PlayerRow(data, 'row4')}</Col>
 						</Row>
 					</Modal.Body>

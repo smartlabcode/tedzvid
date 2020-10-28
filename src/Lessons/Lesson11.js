@@ -97,7 +97,7 @@ function L11() {
 					</Col>
 				</Row>
 
-				<Row className="text-center reorder">
+				<Row className="text-center reorder-basic-display-after">
 					<Col>{PlayerRow(data, 'row1')}</Col>
 				</Row>
 				<Row className="text-center reorder-basic rtl">
@@ -152,15 +152,14 @@ function L11() {
 							</Col>
 						</Row>
 
-						<Row className="text-center reorder">
+						<Row className="text-center reorder-basic-display-after">
 							<Col>{PlayerRow(data, 'row1')}</Col>
 						</Row>
-
-						<Row className="text-center reorder rtl">
+						<Row className="text-center reorder-basic rtl">
 							<Col>{PlayerRow(data, 'row2')}</Col>
 						</Row>
 
-						<Row className="text-center reorder rtl">
+						<Row className="text-center  rtl">
 							<Col>
 								{VjezbeRow(data, 'multirow', 'word1')}
 								{PlayerRow(data, 'row3')}
@@ -246,6 +245,7 @@ function L11() {
 
 						<Row className="text-center">
 							<Col className="mobile-row">
+								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj10')} </span>
 								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj11')} ۞</span>
 							</Col>
 						</Row>

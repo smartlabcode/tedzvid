@@ -75,20 +75,23 @@ function L22() {
 					<Col className="opisLekcije">
 						Kada harfovi <strong>V</strong> ili <strong>J</strong> budu sa{' '}
 						<strong>
-							sukunom <span className="arapski-lekcija">(يْ/وْ)</span>
+							sukunom <span className="arapski-lekcija">(يْ / وْ)</span>
 						</strong>
 						, prije njih <strong>kratki vokal</strong> E <span className="arapski-lekcija">ـــَـــ </span> a
 						poslije njih harf sa <strong>sukunom</strong>, bit će medd lin, npr.:
 					</Col>
 				</Row>
 
-				<Row className="text-center reorder-basic ">
+				<Row className="text-center reorder-basic-display-after rtl">
 					<Col>
 						<span>
-							<span className="arapski">( ـــَــ وْ ـــْــ )</span> {PlayerRow(data, 'row1lijevi')}
+							{PlayerRow(data, 'row1desni')}
+							<span className="arapski">( ـــَــ يْ ـــْــ ) </span>
 						</span>
+						<span className="after">;</span>
 						<span>
-							<span className="arapski">( ـــَــ يْ ـــْــ ) </span> {PlayerRow(data, 'row1desni')}
+							{PlayerRow(data, 'row1lijevi')}
+							<span className="arapski">( ـــَــ وْ ـــْــ )</span>
 						</span>
 					</Col>
 				</Row>
@@ -144,7 +147,7 @@ function L22() {
 							<Col className="opisLekcije">
 								Kada harfovi <strong>V</strong> ili <strong>J</strong> budu sa{' '}
 								<strong>
-									sukunom <span className="arapski-lekcija">(يْ/وْ)</span>
+									sukunom <span className="arapski-lekcija">(يْ / وْ)</span>
 								</strong>
 								, prije njih <strong>kratki vokal</strong> E{' '}
 								<span className="arapski-lekcija">ـــَـــ </span> a poslije njih harf sa{' '}

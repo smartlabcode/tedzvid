@@ -78,7 +78,7 @@ function L19() {
 						<span className="arapski-lekcija" style={{ lineHeight: '1.8em' }}>
 							ـــُــ و
 						</span>{' '}
-						dođe <strong>hemze</strong> ili <strong>elif</strong> <u>na početku sljedeće</u> riječi , bit će
+						dođe <strong>hemze</strong> ili <strong>elif</strong> <u>na početku sljedeće</u> riječi, bit će
 						medd munfesil. Traje 4-5 hareketa,npr.:
 						<span style={{ lineHeight: '1.5em' }}>{PlayerRow(data, 'row1')}</span>
 					</Col>
@@ -90,28 +90,29 @@ function L19() {
 					</Col>
 				</Row>
 
-				<Row className="opisLekcije text-center">
+				<Row className="opisLekcije text-center  reorder-basic-display-after">
 					<Col>
 						<pre> „turska štampa“</pre>
 					</Col>
+					-
 					<Col>
 						<pre> „medinska štampa“</pre>
 					</Col>
 				</Row>
 
-				<Row className="text-center reorder-basic">
+				<Row className="text-center  reorder-basic-display-after">
 					<Col>
 						{VjezbeRow(data, 'rows', 'row2lijevi')}
 						{VjezbeRow(data, 'rows', 'row2desni')}
 					</Col>
 				</Row>
-				<Row className="text-center reorder-basic">
+				<Row className="text-center  reorder-basic-display-after">
 					<Col>
 						{VjezbeRow(data, 'rows', 'row3lijevi')}
 						{VjezbeRow(data, 'rows', 'row3desni')}
 					</Col>
 				</Row>
-				<Row className="text-center reorder-basic">
+				<Row className="text-center reorder-basic-display-after">
 					<Col>
 						{VjezbeRow(data, 'rows', 'row4lijevi')}
 						{VjezbeRow(data, 'rows', 'row4desni')}
@@ -135,15 +136,15 @@ function L19() {
 					</Modal.Header>
 					<Modal.Body className="custom-modal">
 						<Row>
-							<Col className="opisLekcije text-center">
+							<Col className="opisLekcije ">
 								Kada poslije <strong>dugog vokala</strong> A{' '}
 								<span className="arapski-lekcija">ـــَــ ا</span> , I{' '}
 								<span className="arapski-lekcija"> ـــِـ ى</span> , U{' '}
 								<span className="arapski-lekcija" style={{ lineHeight: '1.8em' }}>
 									ـــُــ و
 								</span>{' '}
-								dođe <strong>hemze</strong> ili <strong>elif</strong> <u>na početku sljedeće</u> riječi
-								, bit će medd munfesil. Traje 4-5 hareketa,npr.:
+								dođe <strong>hemze</strong> ili <strong>elif</strong> <u>na početku sljedeće</u> riječi,
+								bit će medd munfesil. Traje 4-5 hareketa,npr.:
 								<span style={{ lineHeight: '1.5em' }}>{PlayerRow(data, 'row1')}</span>
 							</Col>
 						</Row>
@@ -154,25 +155,30 @@ function L19() {
 							</Col>
 						</Row>
 
-						<Row className="opisLekcije">
-							<pre> </pre>„turska štampa“<pre> </pre>„medinska štampa“
+						<Row className="opisLekcije text-center">
+							<Col>
+								<pre> „turska štampa“</pre>
+							</Col>
+							<Col>
+								<pre> „medinska štampa“</pre>
+							</Col>
 						</Row>
 
-						<Row className="text-center">
+						<Row className="text-center reorder-basic">
 							<Col>
-								{VjezbeRow(data, 'rows', 'row2lijevi')} <br />
+								{VjezbeRow(data, 'rows', 'row2lijevi')}
 								{VjezbeRow(data, 'rows', 'row2desni')}
 							</Col>
 						</Row>
-						<Row className="text-center">
+						<Row className="text-center reorder-basic">
 							<Col>
-								{VjezbeRow(data, 'rows', 'row3lijevi')} <br />
+								{VjezbeRow(data, 'rows', 'row3lijevi')}
 								{VjezbeRow(data, 'rows', 'row3desni')}
 							</Col>
 						</Row>
-						<Row className="text-center">
+						<Row className="text-center reorder-basic">
 							<Col>
-								{VjezbeRow(data, 'rows', 'row4lijevi')} <br />
+								{VjezbeRow(data, 'rows', 'row4lijevi')}
 								{VjezbeRow(data, 'rows', 'row4desni')}
 							</Col>
 						</Row>

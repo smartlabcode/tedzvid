@@ -2,13 +2,11 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 // import { BrowserRouter, Route } from 'react-router-dom';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
-import {  BsArrowRight } from 'react-icons/bs';
-import {getStyleObjectFromString} from '../Helpers/Streplace';
-
+import { BsArrowRight } from 'react-icons/bs';
+import { getStyleObjectFromString } from '../Helpers/Streplace';
 
 function Obavijest(props) {
 	const [ isHidden, setIsHidden ] = useState(true);
-
 
 	const toggleIsHiddenHandler = () => {
 		setIsHidden(!isHidden);
@@ -93,61 +91,112 @@ function Obavijest(props) {
 				</div>
 
 				<div className="innerWrapper">
-				<img
+					<img
 						className="quranbg"
 						src={process.env.PUBLIC_URL + '/assets/svg/quranbg.svg'}
 						alt="quran background"
-						style={{marginTop:"-250px"}}
+						style={{ marginTop: '-250px' }}
 					/>
-						<center>
+					<center>
 						<div className="description" id="o-nama">
 							<br />
 							<h2 className="white">UPOZORENJE</h2>
-							
-<p style={getStyleObjectFromString("margin-bottom: 0.11in; line-height: 108%")}><font face="Palatino Linotype, serif">Poštovani
-posjetioce
-stranice <b>tedzvid.ba</b>,
-prepoznali smo da vaš pretraživač
-možda neće najbolje
-učitati lekcije ili harfove. </font>
-</p>
-<p style={getStyleObjectFromString("margin-bottom: 0.11in; line-height: 108%")}><font face="Palatino Linotype, serif">Pozivamo
-vas da  ažurirate postojeći ili koristite drugi pretraživač
-kako bi ispravno učitali tedzvid.ba.</font></p>
-<p style={getStyleObjectFromString("margin-bottom: 0.11in; line-height: 108%")}><font face="Palatino Linotype, serif"><b>Testirane
-verzije za Windows 10, 8.1, 8, 7, Mac OS:</b></font></p>
-<p style={getStyleObjectFromString("text-indent: 0.39in; margin-bottom: 0.11in; line-height: 108%")}>
-<font face="Palatino Linotype, serif">Chrome : 76+ verzije</font></p>
-<p style={getStyleObjectFromString("text-indent: 0.39in; margin-bottom: 0.11in; line-height: 108%")}>
-<font face="Palatino Linotype, serif">Firefox : 44+ verzije</font></p>
-<p style={getStyleObjectFromString("text-indent: 0.39in; margin-bottom: 0.11in; line-height: 108%")}>
-<font face="Palatino Linotype, serif">Opera: 63+ verzije</font></p>
-<p style={getStyleObjectFromString("text-indent: 0.39in; margin-bottom: 0.11in; line-height: 108%")}>
-<font face="Palatino Linotype, serif">Edge: sve verzije</font></p>
-<p style={getStyleObjectFromString("margin-bottom: 0.11in; line-height: 108%")}><font face="Palatino Linotype, serif"><b>Windows
-XP :</b> firefox 44+</font></p>
-<p style={getStyleObjectFromString("margin-bottom: 0.11in; line-height: 108%")}><font face="Palatino Linotype, serif"><b>Internet
-Explorer:</b> </font><font color="#ff0000"><font face="Palatino Linotype, serif">nijedna
-verijza</font></font></p>
-<p style={getStyleObjectFromString("margin-bottom: 0.11in; line-height: 108%")}><font face="Palatino Linotype, serif"><b>Safari:
-</b> </font><font color="#ff0000"><font face="Palatino Linotype, serif">nijedna
-verzija</font></font></p>
-<p style={getStyleObjectFromString("margin-bottom: 0.11in; line-height: 108%")}><font face="Palatino Linotype, serif"><b>Andorid
-operativni sistem</b>: </font>
-</p>
-<p style={getStyleObjectFromString("text-indent: 0.39in; margin-bottom: 0.11in; line-height: 108%")}>
-<font face="Palatino Linotype, serif">Crhome : 76+ verzije </font>
-</p>
-<p style={getStyleObjectFromString("text-indent: 0.39in; margin-bottom: 0.11in; line-height: 108%")}>
-<font face="Palatino Linotype, serif">Firefox : 44+ verzije</font></p>
-<p align="right" style={getStyleObjectFromString("margin-bottom: 0.11in; line-height: 108%")}><font face="Palatino Linotype, serif">Hvala
-na razumijevanju.</font></p>
+
+							<p style={getStyleObjectFromString('margin-bottom: 0.11in; line-height: 108%')}>
+								<font face="Palatino Linotype, serif">
+									Poštovani posjetioce stranice <b>tedzvid.ba</b>, prepoznali smo da vaš pretraživač
+									možda neće najbolje učitati lekcije ili harfove.{' '}
+								</font>
+							</p>
+							<p style={getStyleObjectFromString('margin-bottom: 0.11in; line-height: 108%')}>
+								<font face="Palatino Linotype, serif">
+									Pozivamo vas da ažurirate postojeći ili koristite drugi pretraživač kako bi ispravno
+									učitali tedzvid.ba.
+								</font>
+							</p>
+							<p style={getStyleObjectFromString('margin-bottom: 0.11in; line-height: 108%')}>
+								<font face="Palatino Linotype, serif">
+									<b>Testirane verzije za Windows 10, 8.1, 8, 7, Mac OS:</b>
+								</font>
+							</p>
+							<p
+								style={getStyleObjectFromString(
+									'text-indent: 0.39in; margin-bottom: 0.11in; line-height: 108%'
+								)}
+							>
+								<font face="Palatino Linotype, serif">Chrome : 76+ verzije</font>
+							</p>
+							<p
+								style={getStyleObjectFromString(
+									'text-indent: 0.39in; margin-bottom: 0.11in; line-height: 108%'
+								)}
+							>
+								<font face="Palatino Linotype, serif">Firefox : 44+ verzije</font>
+							</p>
+							<p
+								style={getStyleObjectFromString(
+									'text-indent: 0.39in; margin-bottom: 0.11in; line-height: 108%'
+								)}
+							>
+								<font face="Palatino Linotype, serif">Opera: 63+ verzije</font>
+							</p>
+							<p
+								style={getStyleObjectFromString(
+									'text-indent: 0.39in; margin-bottom: 0.11in; line-height: 108%'
+								)}
+							>
+								<font face="Palatino Linotype, serif">Edge: sve verzije</font>
+							</p>
+							<p style={getStyleObjectFromString('margin-bottom: 0.11in; line-height: 108%')}>
+								<font face="Palatino Linotype, serif">
+									<b>Windows XP :</b> firefox 44+
+								</font>
+							</p>
+							<p style={getStyleObjectFromString('margin-bottom: 0.11in; line-height: 108%')}>
+								<font face="Palatino Linotype, serif">
+									<b>Internet Explorer:</b>{' '}
+								</font>
+								<font color="#fce3aa">
+									<font face="Palatino Linotype, serif">nijedna verijza</font>
+								</font>
+							</p>
+							<p style={getStyleObjectFromString('margin-bottom: 0.11in; line-height: 108%')}>
+								<font face="Palatino Linotype, serif">
+									<b>Safari:</b>{' '}
+								</font>
+								<font color="#fce3aa">
+									<font face="Palatino Linotype, serif">nijedna verzija</font>
+								</font>
+							</p>
+							<p style={getStyleObjectFromString('margin-bottom: 0.11in; line-height: 108%')}>
+								<font face="Palatino Linotype, serif">
+									<b>Andorid operativni sistem</b>:{' '}
+								</font>
+							</p>
+							<p
+								style={getStyleObjectFromString(
+									'text-indent: 0.39in; margin-bottom: 0.11in; line-height: 108%'
+								)}
+							>
+								<font face="Palatino Linotype, serif">Chrome : 76+ verzije </font>
+							</p>
+							<p
+								style={getStyleObjectFromString(
+									'text-indent: 0.39in; margin-bottom: 0.11in; line-height: 108%'
+								)}
+							>
+								<font face="Palatino Linotype, serif">Firefox : 44+ verzije</font>
+							</p>
+							<p
+								align="right"
+								style={getStyleObjectFromString('margin-bottom: 0.11in; line-height: 108%')}
+							>
+								<font face="Palatino Linotype, serif">Hvala na razumijevanju.</font>
+							</p>
 						</div>
 					</center>
-					
-					<div className="sectionThree" id="kontakt">
-						
-					</div>
+
+					<div className="sectionThree" id="kontakt" />
 				</div>
 				<footer className="footerLanding">
 					<h2>Prijatelji projekta:</h2>

@@ -58,7 +58,7 @@ function L2() {
 							</h2>
 						</div>
 						<h4 className="text-center">
-							<strong>Izgovaranje zamjenice HU (</strong>هُ<strong>)</strong>
+							<strong>Izgovaranje zamjenice HU(</strong>هُ<strong>)</strong>
 						</h4>
 						<hr />
 					</Col>
@@ -76,7 +76,7 @@ function L2() {
 					<Col className="opisLekcije">
 						Kada prije zamjenice{' '}
 						<strong>
-							HU (<span className="arapski-lekcija "> هُ</span>)
+							HU (<span className="arapski-lekcija ">هُ</span>)
 						</strong>{' '}
 						dođe <strong>dugi vokal </strong>A <span className="arapski-lekcija">ـــَــ ا</span> , I{' '}
 						<span className="arapski-lekcija">ـــِـ ى </span>, U{' '}

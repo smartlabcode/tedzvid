@@ -112,11 +112,11 @@ function L17() {
 							</Col>
 						</Row>
 
-						<Row className="text-center rtl reorder">
+						<Row className="text-center rtl ">
 							<Col>{PlayerRow(data, 'row2')}</Col>
 						</Row>
 
-						<Row className="text-center rtl reorder">
+						<Row className="text-center reorder-basic-display-after ">
 							<Col>{PlayerRow(data, 'row3')}</Col>
 						</Row>
 

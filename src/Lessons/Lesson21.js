@@ -73,13 +73,8 @@ function L21() {
 					<Col className="opisLekcije">
 						Kada poslije <strong>dugog vokala</strong> A <span className="arapski-lekcija">ـــَــ ا</span> ,
 						I <span className="arapski-lekcija"> ـــِـ ى </span>, U{' '}
-						<strong>
-							{' '}
-							<span className="arapski-lekcija" style={{ fontSize: '1.9em' }}>
-								ـــُــ و
-							</span>
-						</strong>{' '}
-						dođe <strong>nestalni sukun</strong>, bit će medd arid. Traje 2-4-6 hareketa.
+						<span className="arapski-lekcija">ـــُــ و</span> dođe <strong>nestalni sukun</strong>, bit će
+						medd arid. Traje 2-4-6 hareketa.
 					</Col>
 				</Row>
 
@@ -121,13 +116,8 @@ function L21() {
 								Kada poslije <strong>dugog vokala</strong> A{' '}
 								<span className="arapski-lekcija">ـــَــ ا</span> , I{' '}
 								<span className="arapski-lekcija"> ـــِـ ى </span>, U{' '}
-								<strong>
-									{' '}
-									<span className="arapski-lekcija" style={{ fontSize: '1.9em' }}>
-										ـــُــ و
-									</span>
-								</strong>{' '}
-								dođe <strong>nestalni sukun</strong>, bit će medd arid. Traje 2-4-6 hareketa.
+								<span className="arapski-lekcija">ـــُــ و</span> dođe <strong>nestalni sukun</strong>,
+								bit će medd arid. Traje 2-4-6 hareketa.
 							</Col>
 						</Row>
 
@@ -137,14 +127,14 @@ function L21() {
 							</Col>
 						</Row>
 
-						<Row>
+						<Row className="text-center  rtl">
 							<Col className="text-center">{PlayerRow(data, 'row1')}</Col>
 						</Row>
-						<Row>
+						<Row className="text-center  rtl">
 							<Col className="text-center">{PlayerRow(data, 'row2')}</Col>
 						</Row>
 
-						<Row>
+						<Row className="text-center ">
 							<Col className="text-center">{PlayerRow(data, 'row3')}</Col>
 						</Row>
 

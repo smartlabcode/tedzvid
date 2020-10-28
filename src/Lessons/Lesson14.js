@@ -114,7 +114,7 @@ function L14() {
 						<strong>
 							<strong> R </strong>
 						</strong>
-						sa <strong>sukunom</strong>, prije njeg harf sa <strong>sukunom</strong>, a prije toga harf sa
+						sa <strong>sukunom</strong>, prije njeg harf sa <strong>sukunom</strong>, a prije toga harf sa{' '} 
 						<strong>vokalom</strong> E (
 						<span className="arapski-lekcija" style={{ color: 'red' }}>
 							{' '}
@@ -202,7 +202,7 @@ function L14() {
 									<strong> R </strong>
 								</strong>
 								sa <strong>sukunom</strong>, prije njeg harf sa <strong>sukunom</strong>, a prije toga
-								harf sa
+								harf sa{' '} 
 								<strong>vokalom</strong> E (
 								<span className="arapski-lekcija" style={{ color: 'red' }}>
 									{' '}
