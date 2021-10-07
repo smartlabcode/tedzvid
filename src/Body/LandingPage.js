@@ -166,6 +166,7 @@ function LandingPage(props) {
 								</button>
 							</Link>
 						</div>
+
 						<div className='right'>
 							<img
 								className='quran'
