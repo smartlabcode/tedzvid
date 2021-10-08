@@ -1,10 +1,4 @@
-/* Kenan Babačić - SmartLab.ba */
-
-/*FRONT PAGE*/
-html {
-	scroll-behavior: smooth;
-	scroll-snap-align: center;
-}
+/*Dino Čamdžić - SmartLab */
 
 body {
 	font-family: 'Roboto', sans-serif !important;
@@ -19,504 +13,539 @@ body {
 	width: 100%;
 	overflow-x: hidden;
 }
-
-/*TOP NAV*/
-
 .topNav {
-	width: 100%;
-	height: 100px;
-	display: flex;
-	align-items: center;
-	flex-direction: row;
-	justify-content: space-between;
-	box-shadow: 0px 4px 7px 0px rgba(214, 214, 214, 1);
-	background: rgb(244, 239, 239);
-	background: transparent linear-gradient(180deg, #ffffff 0%, #ffffffcf 100%) 0%
-		0% no-repeat padding-box;
-
-	.logoNavBox {
-		width: 25%;
-		height: 100%;
-		background-color: #92623c;
-		float: left;
-	}
-
-	.nav {
-		margin-right: 5%;
-		a:nth-last-child(n + 3) {
-			border-right: 1px solid #e6e6e6;
-		}
-	}
-
-	ul {
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-		overflow: hidden;
-		display: flex;
-	}
-
-	li {
-		padding: 7px 25px 7px;
-		font-size: 14px;
-	}
-
-	li a {
-		display: block;
-		color: white;
-		text-align: center;
-		padding: 16px;
-		text-decoration: none;
-	}
-
-	.selectedBtn {
-		background-color: #ab772e;
-		border-radius: 15px;
-		width: 111px;
-		text-align: center;
-		color: white;
-		font-weight: bold;
-		margin-left: 0.85rem;
-	}
-
-	a {
-		color: inherit;
-	}
-
-	a:hover {
-		color: #ab772e;
-		text-decoration: none;
-		cursor: pointer;
-	}
+	display: none;
 }
-
-.sideHr {
-	border-right: 1px solid #e6e6e6;
-}
-
-.innerWrapper {
-	width: 70%;
-	margin-left: auto;
-	margin-right: auto;
-	position: relative;
-
-	.sectionOne {
-		margin-top: 150px;
-		height: 540px;
-
-		// width: 50%;
-		// float: left;
-		.left {
-			width: 40%;
-			float: left;
-		}
-
-		.right {
-			width: 60%;
-			float: right;
-		}
-
-		h2 {
-			width: 100%;
-			float: right;
-			font-size: 64px;
-			color: #92623c;
-		}
-
-		p {
-			width: 100%;
-			float: right;
-			font-size: 16px;
-			letter-spacing: 1.12px;
-			margin-top: -0.5rem;
-		}
-		.ios {
-			margin-left: 1rem;
-		}
-	}
-
-	.quran {
-		position: relative;
-		// top: -60px;
-		z-index: 100;
-		width: 100%;
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	.quranbg {
-		position: absolute;
-		margin-left: -100%;
-		z-index: -100;
-		// height: 100%;
-		margin-top: 20%;
-		mix-blend-mode: multiply;
-	}
-
-	.description {
-		// position: relative;
-		// top: -50px;
-
-		h2 {
-			font-size: 32px;
-			color: white;
-		}
-
-		p {
-			color: white;
-		}
-	}
-}
-
-.sectionTwo {
-	margin-top: 350px;
-	position: absolute;
-	width: 100%;
-
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-
-	.book {
-		width: 40%;
-		float: left;
-
-		.bookImg {
-			width: 100%;
-		}
-	}
-
-	.bookInfo {
-		float: right;
-		width: 50%;
-		line-height: 10px;
-	}
-
-	h2 {
-		color: #92623c;
-	}
-}
-
-.iconbg {
-	width: 50pt;
-	height: 50pt;
-	background-color: #92623c;
-	border-radius: 50%;
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 5px;
-}
-
-.iconInfo {
-	width: auto;
-	display: inline-block;
-	margin-right: 20px;
-
-	svg {
-		display: flex;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	}
-
-	p {
-		line-height: normal;
-	}
-}
-
-.spacer {
-	margin-right: 13px;
-}
-
-.sectionThree {
-	margin-top: 950px; // Podesiti kasnije
-	// position: absolute;
-
-	input {
-		width: 100%;
-		height: 50px;
-		margin-bottom: 15px;
-		border: 2px solid #c8c8c8;
-		box-shadow: 0px 3px 6px 0px rgba(214, 214, 214, 1);
-		padding: 20px;
-	}
-
-	textarea {
-		width: 100%;
-		height: 150px;
-		margin-bottom: 15px;
-		border: 2px solid #c8c8c8;
-		box-shadow: 0px 3px 6px 0px rgba(214, 214, 214, 1);
-		padding: 20px;
-	}
-
-	h2 {
-		color: #92623c;
-	}
-
-	.form {
-		margin-top: 80px;
-
-		.textInput {
-			height: 105px;
-		}
-
-		:focus {
-			outline: none;
-			border: 2px solid #92623c;
-		}
-	}
-}
-
-.contactBTN {
-	background-color: #92623c;
-	border-radius: 20pt;
-	width: 135pt;
-	height: 40pt;
-	color: white;
-	border-style: none;
-	margin-top: 45px;
-}
-
-.logoUrl {
-	width: 110px;
-	margin-left: 45%;
-	margin-top: 22px;
-}
-
-.footerLanding {
-	margin-top: 100px;
-	background-color: #92623c;
-	width: 100%;
-}
-
-/*Mobile Nav*/
-
 .topMobileNav {
 	width: 100%;
 	height: 70px;
-	background-color: #92623c;
-}
+	background: #8a552be6 0% 0% no-repeat padding-box;
+	box-shadow: 0px 3px 6px #00000029;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 
-/*Mobile optimization*/
+	.hamburger {
+		width: 20px;
+		cursor: pointer;
+	}
+	.mobileLogo {
+		width: 147px;
+	}
+	.mobNavArrow {
+		color: rgb(252, 227, 170);
+	}
+}
 
 .fullMenu {
 	width: 100%;
 	height: 100vh;
-	z-index: 1000;
+	z-index: 10;
 	background-color: #92623c;
 	position: fixed;
-
-	ul {
-		position: absolute;
-		width: 100%;
-		text-align: center;
-		list-style: none;
-		top: 91px;
-		color: wheat;
-		padding: 0;
-	}
-
-	li {
-		padding: 20px;
-		border-bottom: 1px solid #8f735ae6;
-	}
+	top: 0;
 
 	.closeBTN {
 		color: wheat;
-		margin-top: 30px;
-		margin-left: 30px;
-		cursor: pointer;
+		margin: 30px;
 	}
+	ul {
+		list-style: none;
+		width: 100%;
+		padding: 0;
 
-	a {
-		color: inherit;
+		a {
+			color: wheat;
+			li {
+				padding: 20px;
+				border-bottom: 1px solid #8f735ae6;
+			}
+			&:hover {
+				text-decoration: none;
+			}
+		}
 	}
+}
+.innerFooter {
+	width: 90%;
+}
+.innerWrapper {
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+	h2 {
+		font-size: 24px;
+		font-weight: bold;
+	}
+	.sectionOne {
+		margin-top: 50px;
+		.title {
+			text-align: center;
+			h1 {
+				font-size: 48px;
+				color: #92623c;
+				font-weight: bold;
+				margin-bottom: 0;
+			}
+		}
+		.headerImage {
+			height: -webkit-fit-content;
+			height: -moz-fit-content;
+			height: fit-content;
+			img {
+				width: 100%;
+			}
+		}
+		.actionsBtn {
+			display: flex;
+			justify-content: center;
+			.btn-lekcije {
+				background-color: #92623c;
+				color: #fff;
+				border-radius: 15px;
+				padding: 10px 34px;
+				font-size: 18px;
+				font-weight: bold;
+				border: none;
+			}
+		}
+		.download-section {
+			margin-top: 50px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			.download-icons {
+				display: flex;
+				gap: 10px;
+			}
+		}
+	}
+	.description {
+		position: relative;
+		margin-top: 190px;
+		color: #fff;
 
-	a:hover {
-		color: #ab772e;
-		text-decoration: none;
-		cursor: pointer;
+		.quranbg {
+			mix-blend-mode: multiply;
+			position: absolute;
+			z-index: -1;
+			transform: translate(-30%, -27%);
+			height: 135%;
+		}
+		h2 {
+			z-index: 9;
+			margin-bottom: 3rem;
+		}
+		p {
+			margin: 0 35px;
+		}
+		.video {
+			margin-top: 3rem;
+			iframe {
+				width: 311px;
+				height: 174px;
+			}
+		}
+	}
+	.sectionTwo {
+		margin-top: 100px;
+		.book {
+			display: none;
+		}
+		.bookInfo {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			text-align: center;
+			h2 {
+				color: #92623c;
+			}
+			h6 {
+				font-size: 16px;
+			}
+			.iconWrapper {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				margin-top: 1rem;
+				.firstRow {
+					display: flex;
+					justify-content: center;
+					gap: 1.5rem;
+				}
+				.iconInfo {
+					width: auto;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					gap: 1rem;
+					p {
+						font-size: 16px;
+						color: #000000;
+					}
+					.iconbg {
+						background-color: #92623c;
+						height: 80px;
+						width: 80px;
+						border-radius: 50%;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+					}
+					svg {
+						display: flex;
+					}
+				}
+			}
+		}
+	}
+	.sectionThree {
+		margin: 65px 30px 0 30px;
+		h2 {
+			color: #92623c;
+		}
+		p {
+			font-size: 16px;
+		}
+		form {
+			margin: 80px 0;
+
+			input,
+			textarea {
+				width: 100%;
+				padding: 15px 20px;
+				background: #ffffff 0% 0% no-repeat padding-box;
+				box-shadow: 0px 3px 6px #00000029;
+				border: 2px solid #c8c8c8;
+				margin-bottom: 15px;
+				font-size: 16px;
+				&:focus {
+					outline: none;
+					border: 2px solid #92623c;
+				}
+			}
+			.contactBTN {
+				background-color: #92623c;
+				color: #fff;
+				border-radius: 20px;
+				padding: 10px 34px;
+				font-size: 15px;
+				font-weight: medium;
+				border: none;
+				margin-top: 40px;
+			}
+			textarea {
+				height: 105px;
+			}
+		}
 	}
 }
 
-/* Extra small devices (phones, 600px and down) */
-
-@media only screen and (max-width: 600px) {
-	.mobNavArrow {
-		float: right;
-		margin-top: 20px;
-		margin-right: 5%;
-		color: rgb(252, 227, 170);
+.footerLandingNew {
+	width: 100%;
+	background: #fff;
+	box-shadow: 0px 3px 6px #00000029;
+	.innerFooter {
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+		height: 205px;
+		display: flex;
+		gap: 3rem;
+		.footerLogo {
+			display: none;
+		}
+		.footerInfo {
+			height: 100%;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			position: relative;
+			.footerLinks {
+				.footerNav {
+					display: none;
+				}
+				.footerPartners {
+					align-self: center;
+					font-size: 14px;
+					color: #afafaf;
+					p {
+						margin-bottom: 2rem;
+					}
+					ul {
+						display: flex;
+						list-style: none;
+						align-items: flex-end;
+						justify-content: center;
+						gap: 2rem;
+						padding: 0;
+						.smartlab-logo {
+							width: 126px;
+						}
+					}
+				}
+			}
+		}
+		.copyright {
+			position: absolute;
+			bottom: 0rem;
+			width: 100%;
+			border-top: 1px solid #dcdbdb;
+			font-size: 13px;
+			color: #afafaf;
+			padding: 0.5rem;
+		}
 	}
+}
 
-	.topNav {
-		display: none;
-	}
-
-	.hamburger {
-		width: 20px;
-		position: absolute;
-		top: 30px;
-		left: 10%;
-		cursor: pointer;
-	}
-
-	.mobileLogo {
-		position: absolute;
-		width: 147px;
-		left: 31%;
-		top: 21px;
-	}
-
-	.innerWrapper {
+@media (min-width: 758px) {
+	.innerFooter {
 		width: 90%;
 	}
+	.innerWrapper {
+		width: 90%;
+		.sectionOne {
+			margin-top: 60px;
+			display: grid;
 
-	.sectionTwo {
-		margin-top: 330px !important;
-		position: absolute;
+			grid-template-columns: 40% 60%;
+			grid-template-rows: 40% 20% 30%;
+			p {
+				letter-spacing: 1.12px;
+			}
+			.title {
+				text-align: left;
+				align-self: center;
+				h1 {
+					font-size: 64px;
+				}
+			}
+			.headerImage {
+				grid-column: 2;
+				grid-row: 1/4;
+				z-index: 9;
+			}
+			.actionsBtn {
+				justify-content: left;
+				align-items: flex-start;
+			}
+			.download-section {
+				align-items: unset;
+				align-self: flex-start;
+				margin: 0;
+				.download-icons {
+					display: flex;
+					gap: 10px;
+				}
+			}
+		}
+		.description {
+			margin-top: 4rem;
+			.quranbg {
+				transform: translate(-50%, -28%);
+			}
+			h2 {
+				font-size: 34px;
+			}
+			p {
+				padding: 0 3rem;
+			}
+			.video {
+				margin-top: 5rem;
+				iframe {
+					width: 734px;
+					height: 412px;
+				}
+			}
+		}
+		.sectionTwo {
+			display: flex;
+			gap: 2rem;
+			.book {
+				display: block;
+			}
+			.bookInfo {
+				text-align: left;
+				h2 {
+					color: #92623c;
+					font-size: 34px;
+				}
+				.iconWrapper {
+					flex-direction: row;
+					align-items: center;
+					margin-top: 1rem;
+					gap: 4rem;
+					@media (max-width: 1440px) {
+						justify-content: unset !important;
+						gap: 1.5rem;
+					}
+					.iconInfo {
+						flex-direction: row;
+						p {
+							font-size: 16px;
+							margin: 0;
+						}
+					}
+					.firstRow {
+						flex-direction: column;
+						gap: 1.5rem;
+					}
+				}
+			}
+		}
+		.sectionThree {
+			margin: 100px auto 55px auto;
+			max-width: 590px;
+			h2 {
+				font-size: 34px;
+			}
+			form {
+				margin-top: 10px;
+
+				input,
+				textarea {
+					width: 100%;
+					padding: 15px 20px;
+					background: #ffffff 0% 0% no-repeat padding-box;
+					box-shadow: 0px 3px 6px #00000029;
+					border: 2px solid #c8c8c8;
+					margin-bottom: 15px;
+					font-size: 16px;
+					&:focus {
+						outline: none;
+						border: 2px solid #92623c;
+					}
+				}
+				.contactBTN {
+					background-color: #92623c;
+					color: #fff;
+					border-radius: 20px;
+					padding: 10px 34px;
+					font-size: 15px;
+					font-weight: medium;
+					border: none;
+					margin-top: 40px;
+				}
+				textarea {
+					height: 105px;
+				}
+			}
+		}
 	}
-
-	.innerWrapper .quranbg {
-		margin-top: 32%;
+	.footerLandingNew {
+		.innerFooter {
+			width: 65%;
+			height: 242px;
+			.footerLogo {
+				min-width: 197px;
+				height: 215px;
+				background: #8a552be6;
+				align-self: flex-end;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				.logoUrl {
+					width: 113px;
+				}
+			}
+			.footerInfo {
+				text-align: left;
+				.footerLinks {
+					display: flex;
+					justify-content: space-between;
+					width: 100%;
+					.footerNav {
+						display: block;
+						ul {
+							a {
+								color: #afafaf;
+								font-size: 14px;
+								li {
+									margin-bottom: 15px;
+								}
+							}
+						}
+					}
+				}
+			}
+			.copyright {
+				text-align: center;
+			}
+		}
 	}
-
-	.sectionTwo .book .bookImg {
-		width: 80%;
-		display: flex;
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	.innerWrapper .sectionOne {
-		top: 73px;
-		position: relative;
-		margin-bottom: 59px;
-		float: unset;
-		text-align: center;
-		width: 300px;
-		height: 268px;
-		margin: auto;
-	}
-
-	.innerWrapper .sectionOne h2 {
-		font-size: 42px;
-	}
-
-	.contactBTN {
-		margin-top: 20px;
-	}
-
-	footer {
-		margin-top: 990px;
-	}
-
-	footer .contentLeft {
-		position: relative;
-		top: 40px !important;
-		margin-left: 10%;
-		margin-right: 10%;
-		width: unset !important;
-		color: white;
-	}
-
-	.innerWrapper .sectionOne .left {
-		width: unset;
-		float: unset;
-	}
-
-	.innerWrapper .sectionOne .right {
-		width: 105%;
-		float: right;
-		margin-bottom: 74px;
-	}
-
-	.sectionTwo {
-		justify-content: unset;
-		align-items: unset;
-	}
-
-	.sectionTwo .book {
-		width: unset;
-		float: unset;
-	}
-
-	.sectionTwo .bookInfo {
-		float: unset;
-		width: unset;
-		line-height: unset;
-	}
-
-	.innerWrapper .quran {
-		margin-top: unset;
-	}
-
-	.sectionThree {
-		margin-top: 870px;
-	}
-}
-
-.btn-lekcije {
-	margin-bottom: 40px;
-	margin-top: unset;
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-
-@media only screen and (min-width: 600px) {
 	.topMobileNav {
 		display: none;
 	}
-}
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) and (min-width: 600px) {
-	.sectionTwo {
-		margin-top: 280px;
-		position: absolute;
+	.topNav {
+		width: 100%;
+		height: 120px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		box-shadow: 0px 3px 6px #00000029;
+		background: transparent linear-gradient(180deg, #ffffff 0%, #ffffffcf 100%)
+			0% 0% no-repeat padding-box;
+
+		.logoNavBox {
+			background: #92623c;
+			width: 30%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.logoUrl {
+			width: 113px;
+		}
+		.nav {
+			margin-right: 10%;
+
+			ul {
+				list-style: none;
+				display: flex;
+				align-items: center;
+				margin: 0;
+				padding: 0;
+
+				a:nth-last-child(n + 3) {
+					border-right: 1px solid #e6e6e6;
+				}
+				a {
+					padding: 7px 25px 7px;
+					font-size: 14px;
+					text-decoration: none;
+					li {
+						color: #000000;
+						&:hover {
+							color: #ab772e;
+						}
+					}
+				}
+
+				.selectedBtn {
+					background-color: #92623c;
+					font-size: 15px;
+					border-radius: 15px;
+					color: #fff;
+					padding: 8px 27px;
+					font-weight: 700;
+
+					&:hover {
+						color: white;
+					}
+				}
+			}
+		}
 	}
+}
 
-	.logoUrl {
-		width: 110px;
-		margin-left: 25%;
-		margin-top: 22px;
+@media (min-width: 992px) {
+	.innerWrapper {
+		width: 65%;
 	}
-
-	.innerWrapper .quran {
-		margin-top: 125px;
+	.innerFooter {
+		width: 65%;
 	}
-
-	.sectionThree {
-		margin-top: 860px;
-	}
-}
-
-.success_message {
-	padding: 15px;
-	background-color: darkgreen;
-	color: white;
-}
-
-.error_message {
-	padding: 15px;
-	background-color: darkred;
-	color: white;
-}
-
-.closebtn {
-	margin-left: 15px;
-	color: white;
-	font-weight: bold;
-	float: right;
-	font-size: 22px;
-	line-height: 20px;
-	cursor: pointer;
-	transition: 0.3s;
-}
-
-.closebtn:hover {
-	color: black;
 }

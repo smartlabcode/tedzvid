@@ -122,39 +122,38 @@ function LandingPage(props) {
 							<BsArrowRight size={32} className='mobNavArrow' />
 						</Link>
 					</div>
+				</div>
+				<div className={isHidden ? 'hide' : 'fullMenu'}>
+					<h3 className='closeBTN' onClick={toggleIsHiddenHandler}>
+						<AiOutlineCloseCircle />
+					</h3>
+					<center>
+						<ul>
+							<Link to={'/lekcije'}>
+								<li className='selectedBtn'>LEKCIJE</li>
+							</Link>
+							<a href='#o-nama' onClick={toggleIsHiddenHandler}>
+								<li>O NAMA</li>
+							</a>
+							<a href='#printano' onClick={toggleIsHiddenHandler}>
+								<li>PRINTANO IZDANJE</li>
+							</a>
 
-					<div className={isHidden ? 'hide' : 'fullMenu'}>
-						<h3 className='closeBTN' onClick={toggleIsHiddenHandler}>
-							<AiOutlineCloseCircle />
-						</h3>
-						<center>
-							<ul>
-								<Link to={'/lekcije'}>
-									<li className='selectedBtn'>LEKCIJE</li>
-								</Link>
-								<a href='#o-nama' onClick={toggleIsHiddenHandler}>
-									<li>O NAMA</li>
-								</a>
-								<a href='#printano' onClick={toggleIsHiddenHandler}>
-									<li>PRINTANO IZDANJE</li>
-								</a>
-
-								<a href='#kontakt' onClick={toggleIsHiddenHandler}>
-									<li>KONTAKT</li>
-								</a>
-							</ul>
-						</center>
-					</div>
+							<a href='#kontakt' onClick={toggleIsHiddenHandler}>
+								<li>KONTAKT</li>
+							</a>
+						</ul>
+					</center>
 				</div>
 
 				<div className='innerWrapper'>
-					<img
+					{/* <img
 						className='quranbg'
 						src={process.env.PUBLIC_URL + '/assets/svg/quranbg.svg'}
 						alt='quran background'
-					/>
+					/> */}
 					<div className='sectionOne'>
-						<div className='left'>
+						{/* <div className='left'>
 							<h2>
 								<b>Tedžvid.ba</b>
 							</h2>
@@ -173,12 +172,49 @@ function LandingPage(props) {
 								src={process.env.PUBLIC_URL + '/assets/svg/quran03.png'}
 								alt='Quran'
 							/>
+						</div> */}
+						<div className='title'>
+							<h1>Tedžvid.ba</h1>
+							<p>Priručnik za učenje tedžvidskih pravila</p>
+						</div>
+						<div className='headerImage'>
+							<img
+								className='quran'
+								src={process.env.PUBLIC_URL + '/assets/svg/quran03.png'}
+								alt='Quran'
+							/>
+						</div>
+						<div className='actionsBtn'>
+							<Link to={'/lekcije'}>
+								<button type='submit' className='btn-lekcije'>
+									LEKCIJE
+								</button>
+							</Link>
+						</div>
+						<div className='download-section'>
+							<p>Aplikacija je dostupna na:</p>
+							<div className='download-icons'>
+								<img
+									className='android'
+									src={process.env.PUBLIC_URL + '/assets/svg/android.png'}
+									alt='Android aplikacija'
+								/>
+								<img
+									className='ios'
+									src={process.env.PUBLIC_URL + '/assets/svg/ios.png'}
+									alt='iOS Aplikacija'
+								/>
+							</div>
 						</div>
 					</div>
-					<center style={{ display: 'inline-flex' }}>
+					<center>
 						<div className='description' id='o-nama'>
-							<br />
-							<h2 className='white'>O NAMA</h2>
+							<img
+								className='quranbg'
+								src={process.env.PUBLIC_URL + '/assets/svg/quranbg.svg'}
+								alt='quran background'
+							/>
+							<h2>O nama</h2>
 							<p>
 								Tedzvid.ba je elektronska, interaktivna verzija printanog
 								tedžvida autora mr. Sejid ef. Strike. Ovaj tedžvid ima za cilj
@@ -195,6 +231,14 @@ function LandingPage(props) {
 								mu'allimima pri objašnjavanju tedžvidskih pravila, kako djeci u
 								mektebu tako i odraslima nakon završetka sufare.
 							</p>
+							<div className='video'>
+								<iframe
+									src='https://www.youtube.com/embed/2Yk_8zotx_8'
+									title='YouTube video player'
+									frameborder='0'
+									allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+									allowfullscreen></iframe>
+							</div>
 						</div>
 					</center>
 					<div className='sectionTwo' id='printano'>
@@ -218,20 +262,22 @@ function LandingPage(props) {
 								</h6>
 								<br />
 								<div className='iconWrapper'>
-									<div className='iconInfo'>
-										<div className='iconbg'>
-											<BsFillPersonFill size={32} />
-										</div>
-
-										<p>mr. Sejid ef. Strika</p>
-									</div>
-									<div className='iconInfo'>
-										<a href='mailto:sejidstrika@tedzvid.ba'>
+									<div className='firstRow'>
+										<div className='iconInfo'>
 											<div className='iconbg'>
-												<MdEmail size={32} />
+												<BsFillPersonFill size={32} />
 											</div>
-										</a>
-										<p>sejidstrika@tedzvid.ba</p>
+
+											<p>mr. Sejid ef. Strika</p>
+										</div>
+										<div className='iconInfo'>
+											<a href='mailto:sejidstrika@tedzvid.ba'>
+												<div className='iconbg'>
+													<MdEmail size={32} />
+												</div>
+											</a>
+											<p>sejidstrika@tedzvid.ba</p>
+										</div>
 									</div>
 
 									<div className='iconInfo'>
@@ -249,9 +295,7 @@ function LandingPage(props) {
 
 					<div className='sectionThree' id='kontakt'>
 						<center>
-							<h2>
-								<b>Kontakt</b>
-							</h2>
+							<h2>Kontakt</h2>
 							<br />
 							<p>
 								Ukoliko imate neke sugestije, zapažanja, impresije budite
@@ -321,15 +365,85 @@ function LandingPage(props) {
 								</div>
 								<button
 									type='submit'
-									className='pageclip-form__submit contactBTN'>
-									<span>POŠALJI</span>
+									className='pageclip-form__submit contactBTN '>
+									POŠALJI
 								</button>
 							</form>
 						</center>
 					</div>
 				</div>
-				<footer className='footerLanding'>
-					<h2>Prijatelji projekta:</h2>
+				<footer className='footerLandingNew'>
+					<div className='innerFooter'>
+						<div className='footerLogo'>
+							<Link to='/'>
+								<img
+									className='logoUrl'
+									src={process.env.PUBLIC_URL + '/assets/svg/logoUrl.png'}
+									alt='logo'
+								/>
+							</Link>
+						</div>
+						<div className='footerInfo'>
+							<div className='footerLinks'>
+								<div className='footerNav'>
+									<ul>
+										<a href='#kontakt'>
+											<li>Kontakt</li>
+										</a>
+										<a href='#printano'>
+											<li>Printano izdanje</li>
+										</a>
+										<a href='#o-nama'>
+											<li>O nama</li>
+										</a>
+										<a
+											href='https://sufara.ba/'
+											target='_blank'
+											rel='noopener noreferrer'>
+											<li>Sufara.ba</li>
+										</a>
+									</ul>
+								</div>
+								<div className='footerPartners'>
+									<p>Prijatelji projekta:</p>
+									<ul>
+										<li>
+											<a
+												href='https://imtec.ba/'
+												target='_blank'
+												rel='noopener noreferrer'>
+												<img
+													className='imtec-logo'
+													src={
+														process.env.PUBLIC_URL +
+														'/assets/svg/imtec_logo.png'
+													}
+													alt=''
+												/>
+											</a>
+										</li>
+										<li>
+											<a
+												href='https://smartlab.ba/'
+												target='_blank'
+												rel='noopener noreferrer'>
+												<img
+													className='smartlab-logo'
+													src={
+														process.env.PUBLIC_URL +
+														'/assets/svg/smartlab_logo.svg'
+													}
+													alt=''
+												/>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div className='copyright'>Copyright © 2021 | tedzvid.ba</div>
+						</div>
+					</div>
+					{/* <h2>Prijatelji projekta:</h2>
 					<ul>
 						<li>
 							<a
@@ -353,7 +467,7 @@ function LandingPage(props) {
 								/>
 							</a>
 						</li>
-					</ul>
+					</ul> */}
 				</footer>
 				<BrowserMessage browser={browser} browserVersion={browserVersion} />
 			</div>
