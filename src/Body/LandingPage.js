@@ -194,16 +194,26 @@ function LandingPage(props) {
 						<div className='download-section'>
 							<p>Aplikacija je dostupna na:</p>
 							<div className='download-icons'>
-								<img
-									className='android'
-									src={process.env.PUBLIC_URL + '/assets/svg/android.png'}
-									alt='Android aplikacija'
-								/>
-								<img
-									className='ios'
-									src={process.env.PUBLIC_URL + '/assets/svg/ios.png'}
-									alt='iOS Aplikacija'
-								/>
+								<a
+									href='https://play.google.com/store/apps/details?id=com.tedzvidba.app&hl=en&gl=US'
+									target='_blank'
+									rel='noopener noreferrer'>
+									<img
+										className='android'
+										src={process.env.PUBLIC_URL + '/assets/svg/android.png'}
+										alt='Android aplikacija'
+									/>
+								</a>
+								<a
+									href='https://apps.apple.com/rs/app/tedzvid-ba/id1561588495'
+									target='_blank'
+									rel='noopener noreferrer'>
+									<img
+										className='ios'
+										src={process.env.PUBLIC_URL + '/assets/svg/ios.png'}
+										alt='iOS Aplikacija'
+									/>
+								</a>
 							</div>
 						</div>
 					</div>
