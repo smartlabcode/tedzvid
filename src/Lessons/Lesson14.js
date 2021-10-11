@@ -44,405 +44,399 @@ function L14() {
   }, []);
 
   return (
-    <React.Fragment>
-      <LekcijaMenu broj="14" naziv="HUKMURRA" />
-      <Container>
-        <Row>
-          <Col>
-            <div className="mobileTop">
-              <center>
-                <img
-                  src={process.env.PUBLIC_URL + "/assets/svg/Group 61.svg"}
-                  alt="Group 61"
-                />
-              </center>
-              <h2
-                className="text-center font-weight-bold text-uppercase"
-                id="lekcija"
-              >
-                14 HUKMURRA
-              </h2>
-            </div>
-            <h4 className="text-center">
-              <strong>
-                Izgovor harfa R <span className="arapski-lekcija">(ر)</span>
-              </strong>
-            </h4>
-            <hr />
-          </Col>
-        </Row>
+		<React.Fragment>
+			<LekcijaMenu broj='14' naziv='HUKMURRA' />
+			<Container>
+				<Row>
+					<Col>
+						<div className='mobileTop'>
+							<center>
+								<img
+									src={process.env.PUBLIC_URL + '/assets/svg/Group 61.svg'}
+									alt='Group 61'
+								/>
+							</center>
+							<h2
+								className='text-center font-weight-bold text-uppercase'
+								id='lekcija'>
+								14 HUKMURRA
+							</h2>
+						</div>
+						<h4 className='text-center'>
+							<strong>
+								Izgovor harfa R <span className='arapski-lekcija'>(ر)</span>
+							</strong>
+						</h4>
+						<hr />
+					</Col>
+				</Row>
 
-        <Row>
-          <Col>
-            <br />
-          </Col>
-        </Row>
-        <IconContext.Provider
-          value={{ size: "30px", style: { float: "right" } }}
-        >
-          <MdZoomOutMap className="zoomIcon" onClick={handleShowL} />
-        </IconContext.Provider>
-        <Row>
-          <Col className="opisLekcije">
-            Harf<strong> R </strong>
-            <span className="arapski-lekcija">(ر)</span> se uči <u>krupno</u> u
-            sljedećim situacijama:
-          </Col>
-        </Row>
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+				<IconContext.Provider
+					value={{ size: '30px', style: { float: 'right' } }}>
+					<MdZoomOutMap className='zoomIcon' onClick={handleShowL} />
+				</IconContext.Provider>
+				<Row>
+					<Col className='opisLekcije'>
+						Harf<strong> R </strong>
+						<span className='arapski-lekcija'>(ر)</span> se uči <u>krupno</u> u
+						sljedećim situacijama:
+					</Col>
+				</Row>
 
-        <Row>
-          <Col className="opisLekcije">
-            <strong>1.</strong> kada je harf<strong> R </strong>sa{" "}
-            <strong>vokalom</strong> E ( {PlayerRow(data, "row1")}) ili{" "}
-            <strong>vokalom</strong> U ( {PlayerRow(data, "row2")}), npr.:{" "}
-            <br />
-            {PlayerRow(data, "row3")}
-          </Col>
-        </Row>
+				<Row>
+					<Col className='opisLekcije'>
+						<strong>1.</strong> kada je harf<strong> R </strong>sa{' '}
+						<strong>vokalom</strong> E ( {PlayerRow(data, 'row1')}) ili{' '}
+						<strong>vokalom</strong> U ( {PlayerRow(data, 'row2')}), npr.:{' '}
+						<br />
+						{PlayerRow(data, 'row3')}
+					</Col>
+				</Row>
 
-        <Row>
-          <Col className="opisLekcije">
-            <strong>2.</strong> kada je harf<strong> R </strong>sa{" "}
-            <strong>sukunom</strong>, a prije njeg harf sa{" "}
-            <strong>vokalom</strong> E (
-            <span className="arapski-lekcija" style={{ color: "red" }}>
-              {" "}
-              ــَـ رْ{" "}
-            </span>
-            ) ili U (
-            <span className="arapski-lekcija" style={{ color: "red" }}>
-              ــُـ رْ
-            </span>
-            ), npr.:
-            <br />
-            {PlayerRow(data, "row4")}
-          </Col>
-        </Row>
+				<Row>
+					<Col className='opisLekcije'>
+						<strong>2.</strong> kada je harf<strong> R </strong>sa{' '}
+						<strong>sukunom</strong>, a prije njeg harf sa{' '}
+						<strong>vokalom</strong> E (
+						<span className='arapski-lekcija' style={{ color: 'red' }}>
+							{' '}
+							ــَـ رْ{' '}
+						</span>
+						) ili U (
+						<span className='arapski-lekcija' style={{ color: 'red' }}>
+							ــُـ رْ
+						</span>
+						), npr.:
+						<br />
+						{PlayerRow(data, 'row4')}
+					</Col>
+				</Row>
 
-        <Row>
-          <Col className="opisLekcije">
-            <strong>3.</strong> kada je harf
-            <strong>
-              <strong> R </strong>
-            </strong>
-            sa <strong>sukunom</strong>, prije njeg harf sa{" "}
-            <strong>sukunom</strong>, a prije toga harf sa{" "}
-            <strong>vokalom</strong> E (
-            <span className="arapski-lekcija" style={{ color: "red" }}>
-              {" "}
-              ــَـ ــْـ رْ{" "}
-            </span>
-            ) ili U (
-            <span className="arapski-lekcija" style={{ color: "red" }}>
-              {" "}
-              ــُـ ــْـ رْ{" "}
-            </span>
-            ), npr.:
-            <br /> {PlayerRow(data, "row5")}
-          </Col>
-        </Row>
+				<Row>
+					<Col className='opisLekcije'>
+						<strong>3.</strong> kada je harf
+						<strong>
+							<strong> R </strong>
+						</strong>
+						sa <strong>sukunom</strong>, prije njeg harf sa{' '}
+						<strong>sukunom</strong>, a prije toga harf sa{' '}
+						<strong>vokalom</strong> E (
+						<span className='arapski-lekcija' style={{ color: 'red' }}>
+							{' '}
+							ــَـ ــْـ رْ{' '}
+						</span>
+						) ili U (
+						<span className='arapski-lekcija' style={{ color: 'red' }}>
+							{' '}
+							ــُـ ــْـ رْ{' '}
+						</span>
+						), npr.:
+						<br /> {PlayerRow(data, 'row5')}
+					</Col>
+				</Row>
 
-        <Row>
-          <Col className="opisLekcije">
-            <strong>4.</strong> kada je harf<strong> R </strong>sa{" "}
-            <strong>sukunom</strong> (
-            <span className="arapski-lekcija" style={{ color: "red" }}>
-              رْ
-            </span>
-            ), a prije njeg glas sa nestalnom kesrom, npr.: <br />
-            {PlayerRow(data, "row6")}
-          </Col>
-        </Row>
+				<Row>
+					<Col className='opisLekcije'>
+						<strong>4.</strong> kada je harf<strong> R </strong>sa{' '}
+						<strong>sukunom</strong> (
+						<span className='arapski-lekcija' style={{ color: 'red' }}>
+							رْ
+						</span>
+						), a prije njeg glas sa nestalnom kesrom, npr.: <br />
+						{PlayerRow(data, 'row6')}
+					</Col>
+				</Row>
 
-        <Row>
-          <Col className="opisLekcije">
-            <strong>5.</strong> kada je harf<strong> R </strong>sa{" "}
-            <strong>sukunom</strong> (
-            <span className="arapski-lekcija" style={{ color: "red" }}>
-              رْ
-            </span>
-            ), a poslije njeg jedan od krupnih harfova, npr.:
-            <br /> {PlayerRow(data, "row7")}
-          </Col>
-        </Row>
+				<Row>
+					<Col className='opisLekcije'>
+						<strong>5.</strong> kada je harf<strong> R </strong>sa{' '}
+						<strong>sukunom</strong> (
+						<span className='arapski-lekcija' style={{ color: 'red' }}>
+							رْ
+						</span>
+						), a poslije njeg jedan od krupnih harfova, npr.:
+						<br /> {PlayerRow(data, 'row7')}
+					</Col>
+				</Row>
 
-        <Row>
-          <Col>
-            <br />
-          </Col>
-        </Row>
-        <Modal
-          show={showL}
-          onHide={handleCloseL}
-          backdrop="static"
-          keyboard={false}
-        >
-          <Modal.Header closeButton>
-            <Modal.Title>LEKCIJA</Modal.Title>
-          </Modal.Header>
-          <Modal.Body className="custom-modal">
-            <Row>
-              <Col className="opisLekcije">
-                Harf<strong> R </strong>
-                <span className="arapski-lekcija">(ر)</span> se uči{" "}
-                <u>krupno</u> u sljedećim situacijama:
-              </Col>
-            </Row>
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+				<Modal
+					show={showL}
+					onHide={handleCloseL}
+					backdrop='static'
+					keyboard={false}>
+					<Modal.Header closeButton>
+						<Modal.Title>LEKCIJA</Modal.Title>
+					</Modal.Header>
+					<Modal.Body className='custom-modal'>
+						<Row>
+							<Col className='opisLekcije'>
+								Harf<strong> R </strong>
+								<span className='arapski-lekcija'>(ر)</span> se uči{' '}
+								<u>krupno</u> u sljedećim situacijama:
+							</Col>
+						</Row>
 
-            <Row>
-              <Col className="opisLekcije">
-                <strong>1.</strong> kada je harf<strong> R </strong>sa{" "}
-                <strong>vokalom</strong> E ( {PlayerRow(data, "row1")}) ili{" "}
-                <strong>vokalom</strong> U ( {PlayerRow(data, "row2")}), npr.:{" "}
-                <br />
-                {PlayerRow(data, "row3")}
-              </Col>
-            </Row>
+						<Row>
+							<Col className='opisLekcije'>
+								<strong>1.</strong> kada je harf<strong> R </strong>sa{' '}
+								<strong>vokalom</strong> E ( {PlayerRow(data, 'row1')}) ili{' '}
+								<strong>vokalom</strong> U ( {PlayerRow(data, 'row2')}), npr.:{' '}
+								<br />
+								{PlayerRow(data, 'row3')}
+							</Col>
+						</Row>
 
-            <Row>
-              <Col className="opisLekcije">
-                <strong>2.</strong> kada je harf<strong> R </strong>sa{" "}
-                <strong>sukunom</strong>, a prije njeg harf sa{" "}
-                <strong>vokalom</strong> E (
-                <span className="arapski-lekcija" style={{ color: "red" }}>
-                  {" "}
-                  ــَـ رْ{" "}
-                </span>
-                ) ili U (
-                <span className="arapski-lekcija" style={{ color: "red" }}>
-                  ــُـ رْ
-                </span>
-                ), npr.:
-                <br />
-                {PlayerRow(data, "row4")}
-              </Col>
-            </Row>
+						<Row>
+							<Col className='opisLekcije'>
+								<strong>2.</strong> kada je harf<strong> R </strong>sa{' '}
+								<strong>sukunom</strong>, a prije njeg harf sa{' '}
+								<strong>vokalom</strong> E (
+								<span className='arapski-lekcija' style={{ color: 'red' }}>
+									{' '}
+									ــَـ رْ{' '}
+								</span>
+								) ili U (
+								<span className='arapski-lekcija' style={{ color: 'red' }}>
+									ــُـ رْ
+								</span>
+								), npr.:
+								<br />
+								{PlayerRow(data, 'row4')}
+							</Col>
+						</Row>
 
-            <Row>
-              <Col className="opisLekcije">
-                <strong>3.</strong> kada je harf
-                <strong>
-                  <strong> R </strong>
-                </strong>
-                sa <strong>sukunom</strong>, prije njeg harf sa{" "}
-                <strong>sukunom</strong>, a prije toga harf sa{" "}
-                <strong>vokalom</strong> E (
-                <span className="arapski-lekcija" style={{ color: "red" }}>
-                  {" "}
-                  ــَـ ــْـ رْ{" "}
-                </span>
-                ) ili U (
-                <span className="arapski-lekcija" style={{ color: "red" }}>
-                  {" "}
-                  ــُـ ــْـ رْ{" "}
-                </span>
-                ), npr.:
-                <br /> {PlayerRow(data, "row5")}
-              </Col>
-            </Row>
+						<Row>
+							<Col className='opisLekcije'>
+								<strong>3.</strong> kada je harf
+								<strong>
+									<strong> R </strong>
+								</strong>
+								sa <strong>sukunom</strong>, prije njeg harf sa{' '}
+								<strong>sukunom</strong>, a prije toga harf sa{' '}
+								<strong>vokalom</strong> E (
+								<span className='arapski-lekcija' style={{ color: 'red' }}>
+									{' '}
+									ــَـ ــْـ رْ{' '}
+								</span>
+								) ili U (
+								<span className='arapski-lekcija' style={{ color: 'red' }}>
+									{' '}
+									ــُـ ــْـ رْ{' '}
+								</span>
+								), npr.:
+								<br /> {PlayerRow(data, 'row5')}
+							</Col>
+						</Row>
 
-            <Row>
-              <Col className="opisLekcije">
-                <strong>4.</strong> kada je harf<strong> R </strong>sa{" "}
-                <strong>sukunom</strong> (
-                <span className="arapski-lekcija" style={{ color: "red" }}>
-                  رْ
-                </span>
-                ), a prije njeg glas sa nestalnom kesrom, npr.: <br />
-                {PlayerRow(data, "row6")}
-              </Col>
-            </Row>
+						<Row>
+							<Col className='opisLekcije'>
+								<strong>4.</strong> kada je harf<strong> R </strong>sa{' '}
+								<strong>sukunom</strong> (
+								<span className='arapski-lekcija' style={{ color: 'red' }}>
+									رْ
+								</span>
+								), a prije njeg glas sa nestalnom kesrom, npr.: <br />
+								{PlayerRow(data, 'row6')}
+							</Col>
+						</Row>
 
-            <Row>
-              <Col className="opisLekcije">
-                <strong>5.</strong> kada je harf<strong> R </strong>sa{" "}
-                <strong>sukunom</strong> (
-                <span className="arapski-lekcija" style={{ color: "red" }}>
-                  رْ
-                </span>
-                ), a poslije njeg jedan od krupnih harfova, npr.:
-                <br /> {PlayerRow(data, "row7")}
-              </Col>
-            </Row>
+						<Row>
+							<Col className='opisLekcije'>
+								<strong>5.</strong> kada je harf<strong> R </strong>sa{' '}
+								<strong>sukunom</strong> (
+								<span className='arapski-lekcija' style={{ color: 'red' }}>
+									رْ
+								</span>
+								), a poslije njeg jedan od krupnih harfova, npr.:
+								<br /> {PlayerRow(data, 'row7')}
+							</Col>
+						</Row>
 
-            <Row>
-              <Col>
-                <br />
-              </Col>
-            </Row>
-          </Modal.Body>
-          <Modal.Footer>
-            <Button variant="secondary" onClick={handleCloseL}>
-              Zatvori
-            </Button>
-          </Modal.Footer>
-        </Modal>
-        <h2 className="text-center" id="vjezba">
-          <strong>VJEŽBA</strong>
-        </h2>
-        <hr />
+						<Row>
+							<Col>
+								<br />
+							</Col>
+						</Row>
+					</Modal.Body>
+					<Modal.Footer>
+						<Button variant='secondary' onClick={handleCloseL}>
+							Zatvori
+						</Button>
+					</Modal.Footer>
+				</Modal>
+				<h2 className='text-center' id='vjezba'>
+					<strong>VJEŽBA</strong>
+				</h2>
+				<hr />
 
-        <Row>
-          <Col>
-            <br />
-          </Col>
-        </Row>
-        <IconContext.Provider
-          value={{ size: "30px", style: { float: "right" } }}
-        >
-          <MdZoomOutMap className="zoomIcon" onClick={handleShow} />
-        </IconContext.Provider>
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+				<IconContext.Provider
+					value={{ size: '30px', style: { float: 'right' } }}>
+					<MdZoomOutMap className='zoomIcon' onClick={handleShow} />
+				</IconContext.Provider>
 
-        <Row className="text-center">
-          <Col className="mobile-row">
-            <span className="tacka">
-              {VjezbeRow(data, "vjezba", "broj12")} ۞
-            </span>
-            <span className="tacka">
-              {VjezbeRow(data, "vjezba", "broj13")} ۞
-            </span>
-            <span className="tacka">
-              {VjezbeRow(data, "vjezba", "broj14")} ۞
-            </span>
-          </Col>
-        </Row>
-        <Row className="text-center">
-          <Col className="mobile-row">
-            <span className="tacka">
-              {VjezbeRow(data, "vjezba", "broj15")} ۞
-            </span>
-            <span className="tacka">
-              {VjezbeRow(data, "vjezba", "broj16")} ۞
-            </span>
-          </Col>
-        </Row>
-        <Row className="text-center">
-          <Col className="mobile-row">
-            <span className="tacka">
-              {VjezbeRow(data, "vjezba", "broj17")} ۞
-            </span>
-            <span className="tacka">
-              {VjezbeRow(data, "vjezba", "broj18")} ۞
-            </span>
-          </Col>
-        </Row>
-        <Row className="text-center">
-          <Col className="mobile-row">
-            <span className="tacka">
-              {VjezbeRow(data, "vjezba", "broj19")} ۞
-            </span>
-            <span className="tacka">
-              {VjezbeRow(data, "vjezba", "broj20")} ۞
-            </span>
-          </Col>
-        </Row>
-        <Row className="text-center">
-          <Col className="mobile-row">
-            <span className="tacka">
-              {VjezbeRow(data, "vjezba", "broj21")} ۞
-            </span>
-            <span className="tacka">
-              {VjezbeRow(data, "vjezba", "broj22")} ۞
-            </span>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <hr />
-            <h2 className="text-center" id="vjezba">
-              <strong>VIDEO LEKCIJA</strong>
-            </h2>
-            <center>
-              <div className="video">
-                <iframe
-                  width="900"
-                  height="506"
-                  src="https://www.youtube.com/embed/rOcWxXFJ_CE?list=PLcdhKKk9LmetUjroRtBCCkugO_whS-cW2"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen="true"
-                  webkitallowfullscreen="true"
-                  mozallowfullscreen="true"
-                ></iframe>
-              </div>
-            </center>
-          </Col>
-        </Row>
-        <Modal
-          show={show}
-          onHide={handleClose}
-          backdrop="static"
-          keyboard={false}
-        >
-          <Modal.Header closeButton>
-            <Modal.Title>VJEŽBA</Modal.Title>
-          </Modal.Header>
-          <Modal.Body className="custom-modal">
-            <Row className="text-center">
-              <Col className="mobile-row">
-                <span className="tacka">
-                  {VjezbeRow(data, "vjezba", "broj12")} ۞
-                </span>
-                <span className="tacka">
-                  {VjezbeRow(data, "vjezba", "broj13")} ۞
-                </span>
-                <span className="tacka">
-                  {VjezbeRow(data, "vjezba", "broj14")} ۞
-                </span>
-              </Col>
-            </Row>
-            <Row className="text-center">
-              <Col className="mobile-row">
-                <span className="tacka">
-                  {VjezbeRow(data, "vjezba", "broj15")} ۞
-                </span>
-                <span className="tacka">
-                  {VjezbeRow(data, "vjezba", "broj16")} ۞
-                </span>
-              </Col>
-            </Row>
-            <Row className="text-center">
-              <Col className="mobile-row">
-                <span className="tacka">
-                  {VjezbeRow(data, "vjezba", "broj17")} ۞
-                </span>
-                <span className="tacka">
-                  {VjezbeRow(data, "vjezba", "broj18")} ۞
-                </span>
-              </Col>
-            </Row>
-            <Row className="text-center">
-              <Col className="mobile-row">
-                <span className="tacka">
-                  {VjezbeRow(data, "vjezba", "broj19")} ۞
-                </span>
-                <span className="tacka">
-                  {VjezbeRow(data, "vjezba", "broj20")} ۞
-                </span>
-              </Col>
-            </Row>
-            <Row className="text-center">
-              <Col className="mobile-row">
-                <span className="tacka">
-                  {VjezbeRow(data, "vjezba", "broj21")} ۞
-                </span>
-                <span className="tacka">
-                  {VjezbeRow(data, "vjezba", "broj22")} ۞
-                </span>
-              </Col>
-            </Row>
-          </Modal.Body>
-          <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
-              Zatvori
-            </Button>
-          </Modal.Footer>
-        </Modal>
-        <Footer prev="/lekcija13" next="/lekcija14_2" />
-      </Container>
-    </React.Fragment>
-  );
+				<Row className='text-center'>
+					<Col className='mobile-row'>
+						<span className='tacka'>
+							{VjezbeRow(data, 'vjezba', 'broj12')} ۞
+						</span>
+						<span className='tacka'>
+							{VjezbeRow(data, 'vjezba', 'broj13')} ۞
+						</span>
+						<span className='tacka'>
+							{VjezbeRow(data, 'vjezba', 'broj14')} ۞
+						</span>
+					</Col>
+				</Row>
+				<Row className='text-center'>
+					<Col className='mobile-row'>
+						<span className='tacka'>
+							{VjezbeRow(data, 'vjezba', 'broj15')} ۞
+						</span>
+						<span className='tacka'>
+							{VjezbeRow(data, 'vjezba', 'broj16')} ۞
+						</span>
+					</Col>
+				</Row>
+				<Row className='text-center'>
+					<Col className='mobile-row'>
+						<span className='tacka'>
+							{VjezbeRow(data, 'vjezba', 'broj17')} ۞
+						</span>
+						<span className='tacka'>
+							{VjezbeRow(data, 'vjezba', 'broj18')} ۞
+						</span>
+					</Col>
+				</Row>
+				<Row className='text-center'>
+					<Col className='mobile-row'>
+						<span className='tacka'>
+							{VjezbeRow(data, 'vjezba', 'broj19')} ۞
+						</span>
+						<span className='tacka'>
+							{VjezbeRow(data, 'vjezba', 'broj20')} ۞
+						</span>
+					</Col>
+				</Row>
+				<Row className='text-center'>
+					<Col className='mobile-row'>
+						<span className='tacka'>
+							{VjezbeRow(data, 'vjezba', 'broj21')} ۞
+						</span>
+						<span className='tacka'>
+							{VjezbeRow(data, 'vjezba', 'broj22')} ۞
+						</span>
+					</Col>
+				</Row>
+				<Row>
+					<Col>
+						<hr />
+						<h2 className='text-center' id='video'>
+							<strong>VIDEO LEKCIJA</strong>
+						</h2>
+						<center>
+							<div className='video'>
+								<iframe
+									width='900'
+									height='506'
+									src='https://www.youtube.com/embed/rOcWxXFJ_CE?list=PLcdhKKk9LmetUjroRtBCCkugO_whS-cW2'
+									title='YouTube video player'
+									frameborder='0'
+									allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+									allowFullScreen='true'
+									webkitallowfullscreen='true'
+									mozallowfullscreen='true'></iframe>
+							</div>
+						</center>
+					</Col>
+				</Row>
+				<Modal
+					show={show}
+					onHide={handleClose}
+					backdrop='static'
+					keyboard={false}>
+					<Modal.Header closeButton>
+						<Modal.Title>VJEŽBA</Modal.Title>
+					</Modal.Header>
+					<Modal.Body className='custom-modal'>
+						<Row className='text-center'>
+							<Col className='mobile-row'>
+								<span className='tacka'>
+									{VjezbeRow(data, 'vjezba', 'broj12')} ۞
+								</span>
+								<span className='tacka'>
+									{VjezbeRow(data, 'vjezba', 'broj13')} ۞
+								</span>
+								<span className='tacka'>
+									{VjezbeRow(data, 'vjezba', 'broj14')} ۞
+								</span>
+							</Col>
+						</Row>
+						<Row className='text-center'>
+							<Col className='mobile-row'>
+								<span className='tacka'>
+									{VjezbeRow(data, 'vjezba', 'broj15')} ۞
+								</span>
+								<span className='tacka'>
+									{VjezbeRow(data, 'vjezba', 'broj16')} ۞
+								</span>
+							</Col>
+						</Row>
+						<Row className='text-center'>
+							<Col className='mobile-row'>
+								<span className='tacka'>
+									{VjezbeRow(data, 'vjezba', 'broj17')} ۞
+								</span>
+								<span className='tacka'>
+									{VjezbeRow(data, 'vjezba', 'broj18')} ۞
+								</span>
+							</Col>
+						</Row>
+						<Row className='text-center'>
+							<Col className='mobile-row'>
+								<span className='tacka'>
+									{VjezbeRow(data, 'vjezba', 'broj19')} ۞
+								</span>
+								<span className='tacka'>
+									{VjezbeRow(data, 'vjezba', 'broj20')} ۞
+								</span>
+							</Col>
+						</Row>
+						<Row className='text-center'>
+							<Col className='mobile-row'>
+								<span className='tacka'>
+									{VjezbeRow(data, 'vjezba', 'broj21')} ۞
+								</span>
+								<span className='tacka'>
+									{VjezbeRow(data, 'vjezba', 'broj22')} ۞
+								</span>
+							</Col>
+						</Row>
+					</Modal.Body>
+					<Modal.Footer>
+						<Button variant='secondary' onClick={handleClose}>
+							Zatvori
+						</Button>
+					</Modal.Footer>
+				</Modal>
+				<Footer prev='/lekcija13' next='/lekcija14_2' />
+			</Container>
+		</React.Fragment>
+	);
 }
 
 export default L14;

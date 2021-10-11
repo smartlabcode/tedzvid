@@ -17,8 +17,10 @@ function HomeFirst(props) {
 				function dugmeTabela() {
 					if (index === 0) {
 						return (
-							<Link to={'/lekcija' + number + '#tabela'} style={{ color: 'inherit' }}>
-								<button className="pristupiBtn">
+							<Link
+								to={'/lekcija' + number + '#tabela'}
+								style={{ color: 'inherit' }}>
+								<button className='pristupiBtn'>
 									Tabela <IoIosArrowForward />
 								</button>
 							</Link>
@@ -28,8 +30,10 @@ function HomeFirst(props) {
 				function dugmeZnakovi() {
 					if (index === 0) {
 						return (
-							<Link to={'/lekcija' + number + '#znakovi'} style={{ color: 'inherit' }}>
-								<button className="pristupiBtn">
+							<Link
+								to={'/lekcija' + number + '#znakovi'}
+								style={{ color: 'inherit' }}>
+								<button className='pristupiBtn'>
 									Znakovi <IoIosArrowForward />
 								</button>
 							</Link>
@@ -37,36 +41,43 @@ function HomeFirst(props) {
 					}
 				}
 				return (
-					<Row className="" key={index}>
+					<Row className='' key={index}>
 						<Col>
 							<Card>
 								<Card.Body>
-									<Badge style={{ paddingLeft: '0' }} className="imelekcije">
+									<Badge style={{ paddingLeft: '0' }} className='imelekcije'>
 										{number}
 									</Badge>
-									<div className="alignMobile">
-										<div className="tabletText">
+									<div className='alignMobile'>
+										<div className='tabletText'>
 											<Card.Title>{lekcija.title} </Card.Title>
-											<Card.Subtitle className="mb-2 text-muted">
+											<Card.Subtitle className='mb-2 text-muted'>
 												{lekcija.subtitle}
 											</Card.Subtitle>
-											<div className="sectonRight">
+											<div className='sectonRight'>
 												<IconContext.Provider value={{ color: '#92623C' }}>
+													<Link
+														to={'/lekcija' + number + '#video'}
+														style={{ color: 'inherit' }}>
+														<button className='videoBtn'>
+															Video{' '}
+															<IoIosArrowForward style={{ color: 'white' }} />
+														</button>
+													</Link>
 													{dugmeTabela()}
 													{dugmeZnakovi()}
 													<Link
 														to={'/lekcija' + number + '#vjezba'}
-														style={{ color: 'inherit' }}
-													>
-														<button className="pristupiBtn">
+														style={{ color: 'inherit' }}>
+														<button className='pristupiBtn'>
 															Vježba <IoIosArrowForward />
 														</button>
 													</Link>
+
 													<Link
 														to={'/lekcija' + number + '#lekcija'}
-														style={{ color: 'inherit' }}
-													>
-														<button className="pristupiBtn">
+														style={{ color: 'inherit' }}>
+														<button className='pristupiBtn'>
 															Lekcija <IoIosArrowForward />
 														</button>
 													</Link>
