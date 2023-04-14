@@ -8,6 +8,8 @@ import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import { MdZoomOutMap } from 'react-icons/md';
 import { IconContext } from 'react-icons';
+import { useTranslation } from "react-i18next";
+
 
 // Bootstrap
 import { Row, Col, Table, Container } from 'react-bootstrap';
@@ -32,6 +34,7 @@ function scrollToHash() {
 }
 
 function L1() {
+	const { t } = useTranslation();
 	const [show, setShow] = React.useState(false);
 	const [showT, setShowT] = React.useState(false);
 	const [showZ, setShowZ] = React.useState(false);
@@ -54,7 +57,7 @@ function L1() {
 	}, []);
 	return (
 		<React.Fragment>
-			<LekcijaMenu broj='1' naziv='VAKF' />
+			<LekcijaMenu broj='1' naziv={t("1")} />
 			<Container>
 				<Row>
 					<Col>
@@ -72,7 +75,7 @@ function L1() {
 						</div>
 
 						<h4 className='text-center' id='lekcija'>
-							<strong>Stajanje prilikom učenja</strong>
+							<strong>{t("2")}</strong>
 						</h4>
 						<hr />
 					</Col>
@@ -84,15 +87,13 @@ function L1() {
 
 				<Row>
 					<Col className='opisLekcije'>
-						Prilikom učenja Kur'ana, učač može stati u sljedećim situacijama:
-						ako je kraj ajeta, ako postoji znak za stajanje i kada mu ponestane
-						daha. To čini na sljedeći način:
+						{t("3")}
 					</Col>
 				</Row>
 				<Row>
 					<Col className='opisLekcije my-3'>
-						<strong>1.</strong> Kada riječ na kojoj staje završava{' '}
-						<strong>kratkim vokalom</strong> E{' '}
+						<strong>1.</strong> {t("4")}{' '}
+						<strong>{t("5")}</strong> E{' '}
 						<span className='arapski-lekcija '> ــــَـــ</span> , I{' '}
 						<span className='arapski-lekcija '> ــــِــ</span> , U{' '}
 						<span className='arapski-lekcija '> ــــُـــ </span>ili{' '}
@@ -476,9 +477,7 @@ function L1() {
 					<Modal.Body className='custom-modal'>
 						<Row>
 							<Col className='opisLekcije'>
-								Prilikom učenja Kur'ana, učač može stati u sljedećim
-								situacijama: ako je kraj ajeta, ako postoji znak za stajanje i
-								kada mu ponestane daha. To čini na sljedeći način:
+								{t("3")}
 							</Col>
 						</Row>
 						<Row>

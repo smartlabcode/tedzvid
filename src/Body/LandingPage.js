@@ -8,8 +8,14 @@ import { BsFillPersonFill, BsArrowRight } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
 import BrowserMessage from './BrowserMessage';
 import { detect } from '../Helpers/BrowserDetect';
+import { useTranslation } from "react-i18next";
 
 function LandingPage(props) {
+	const { i18n } = useTranslation();
+
+	function handleChangeLanguage(event) {
+		i18n.changeLanguage(event.target.value);
+	}
 	const [isHidden, setIsHidden] = useState(true);
 	const [showSuccessMessage, setShowSuccessMessage] = useState(false);
 	const [showErrorMessage, setShowErrorMessage] = useState(false);
@@ -78,6 +84,10 @@ function LandingPage(props) {
 							/>
 						</Link>
 					</div>
+					<select onChange={handleChangeLanguage} value={i18n.language} >
+						<option value="bs">Bosanski</option>
+						<option value="en">English</option>
+					</select>
 					<div className='nav'>
 						<ul>
 							<a href='#kontakt'>

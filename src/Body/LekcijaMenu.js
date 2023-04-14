@@ -5,7 +5,15 @@ import { Link } from 'react-router-dom';
 // Bootstrap
 import { Container } from 'react-bootstrap';
 
+import { useTranslation } from "react-i18next";
+
+
 function LekcijaMenu(props) {
+	const { i18n } = useTranslation();
+
+	function handleChangeLanguage(event) {
+		i18n.changeLanguage(event.target.value);
+	}
 	const [ isHidden, toggleIsHidden ] = useState(true);
 
 	const toggleIsHiddenHandler = () => {
@@ -23,6 +31,10 @@ function LekcijaMenu(props) {
 						/>
 					</Link>
 				</div>
+				<select onChange={handleChangeLanguage} value={i18n.language}>
+						<option value="bs">Bosanski</option>
+						<option value="en">English</option>
+					</select>
 				<div className="nav">
 					<ul>
 						<Link to={'/lekcije'}>

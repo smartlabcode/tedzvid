@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import HomeFirst from '../Body/HomeFirst';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
 import { BsArrowLeft } from 'react-icons/bs';
+import { useTranslation } from "react-i18next";
 
 function Home() {
 	// const [ otherpage, pageClick ] = useState(false);
@@ -16,6 +17,11 @@ function Home() {
 	const toggleIsHiddenHandler = () => {
 		toggleIsHidden(!isHidden);
 	};
+	const { i18n } = useTranslation();
+
+	function handleChangeLanguage(event) {
+		i18n.changeLanguage(event.target.value);
+	}
 	return (
 		<React.Fragment>
 			<div className="topNav">
@@ -24,6 +30,10 @@ function Home() {
 						<img className="logoUrl" src={process.env.PUBLIC_URL + '/assets/svg/logoUrl.png'} alt="logo" />
 					</Link>
 				</div>
+				<select onChange={handleChangeLanguage} value={i18n.language} >
+						<option value="bs">Bosanski</option>
+						<option value="en">English</option>
+					</select>
 				<div className="nav">
 					<ul>
 						<Link to={'/'}>

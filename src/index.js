@@ -8,6 +8,30 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
 
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+import LanguageDetector from "i18next-browser-languagedetector";
+import en from "./Body/locales/en.json";
+import bs from "./Body/locales/bs.json";
+
+i18n
+  .use(LanguageDetector)
+  .use(initReactI18next)
+  .init({
+    resources: {
+      bs: {
+        translation: bs
+      },
+      en: {
+        translation: en
+      }
+    },
+    fallbackLng: "bs",
+    interpolation: {
+      escapeValue: false
+    }
+  });
+
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
