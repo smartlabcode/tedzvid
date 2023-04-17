@@ -28,6 +28,35 @@
             "after": null
         }
     ],
+    "row1_en": [{
+            "id": 1,
+            "url": "./assets/audio/l1/1.wav",
+            "highlight": "قَ",
+            "word": "مَاخَلَقَ",
+            "after": "is recited as: "
+        },
+        {
+            "id": 2,
+            "url": "./assets/audio/l1/2.wav",
+            "highlight": "قْ",
+            "word": "مَاخَلَقْ",
+            "after": " ; "
+        },
+        {
+            "id": 3,
+            "url": "./assets/audio/l1/3.wav",
+            "highlight": "ءٌ",
+            "word": "سَوَآءٌ",
+            "after": " is recited as: "
+        },
+        {
+            "id": 4,
+            "url": "./assets/audio/l1/4.wav",
+            "highlight": "ءْ",
+            "word": "سَوَآءْ",
+            "after": null
+        }
+    ],
     "row2": [{
             "id": 5,
             "url": "./assets/audio/l1/5.wav",
@@ -57,6 +86,36 @@
             "after": null
         }
     ],
+    "row2_en": [{
+            "id": 5,
+            "url": "./assets/audio/l1/5.wav",
+            "highlight": "جًا",
+            "word": "أَفْوَاجًا",
+            "after": " is recited as: "
+        },
+        {
+            "id": 6,
+            "url": "./assets/audio/l1/6.wav",
+            "highlight": "جَا",
+            "word": "أَفْوَاجَا",
+            "after": " ; "
+        },
+        {
+            "id": 7,
+            "url": "./assets/audio/l1/7.wav",
+            "highlight": "حًا",
+            "word": " ضَبْحًا",
+            "after": " is recited as: "
+        },
+        {
+            "id": 8,
+            "url": "./assets/audio/l1/8.wav",
+            "highlight": "حَا",
+            "word": "ضَبْحَا",
+            "after": null
+        }
+    ],
+
 
 
 
@@ -129,6 +188,35 @@
             "highlight": "ةً",
             "word": " أَفْئِدَةً",
             "after": " čita se: "
+        },
+        {
+            "id": 17,
+            "url": "./assets/audio/l1/17.wav",
+            "highlight": "هْ",
+            "word": "أَفْئِدَهْ",
+            "after": null
+        }
+    ],
+    "row4_en": [{
+            "id": 14,
+            "url": "./assets/audio/l1/14.wav",
+            "highlight": "ةُ",
+            "word": "أَلْقَارِعَةُ ",
+            "after": " is recited as: "
+        },
+        {
+            "id": 15,
+            "url": "./assets/audio/l1/15.wav",
+            "highlight": "هْ",
+            "word": "أَلْقَارِعَهْ",
+            "after": " ; "
+        },
+        {
+            "id": 16,
+            "url": "./assets/audio/l1/16.wav",
+            "highlight": "ةً",
+            "word": " أَفْئِدَةً",
+            "after": " is recited as: "
         },
         {
             "id": 17,
