@@ -194,7 +194,7 @@ const Lesson1_bs = () => {
 					backdrop='static'
 					keyboard={false}>
 					<Modal.Header closeButton>
-						<Modal.Title>Pregled u tabeli:</Modal.Title>
+						<Modal.Title>TABULAR OVERVIEW:</Modal.Title>
 					</Modal.Header>
 					<Modal.Body className='custom-modal'>
 						<Table
@@ -204,8 +204,8 @@ const Lesson1_bs = () => {
 							responsive>
 							<thead className='text-danger text-uppercase'>
 								<tr>
-									<th>Kada riječ završava na</th>
-									<th>Stajemo</th>
+									<th>WHEN THE WORD ENDS IN</th>
+									<th>WE SHOULD STOP</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -218,7 +218,7 @@ const Lesson1_bs = () => {
 										<span className='arapski-lekcija'> ـــٌــ</span>
 									</td>
 									<td>
-										kao da je sukun{' '}
+										as if it ends in {' '}
 										<span className='arapski-lekcija '> ـــْــ</span>
 									</td>
 								</tr>
@@ -227,24 +227,25 @@ const Lesson1_bs = () => {
 										EN <span className='arapski-lekcija '> ـــًــ</span>
 									</td>
 									<td>
-										kao da je dugo A{' '}
+										as if it ends in long A
+										<br />
 										<span className='arapski-lekcija'> ــَــ ا</span>
 									</td>
 								</tr>
 								<tr>
 									<td>
-										dugo A <span className='arapski-lekcija'>ـــَــ ا</span> ,
-										dugo I <span className='arapski lekcija'>ـــِـ ى</span> ,
-										dugo U <span className='arapski-lekcija'>ـــُــ و</span>
+										long A <span className='arapski-lekcija'>ـــَــ ا</span> ,
+										long I <span className='arapski lekcija'>ـــِـ ى</span> ,
+										long U <span className='arapski-lekcija'>ـــُــ و</span>
 									</td>
-									<td>bez ikakve promjene</td>
+									<td>without any change</td>
 								</tr>
 								<tr>
 									<td>
-										okruglo T <span className='arapski-lekcija'> (ة/ـة)</span>
+										round T <span className='arapski-lekcija'> (ة/ـة)</span>
 									</td>
 									<td>
-										kao da je H <span className='arapski-lekcija'> (ه)</span>
+										as if it ends in H <span className='arapski-lekcija'> (ه)</span>
 									</td>
 								</tr>
 							</tbody>
@@ -345,13 +346,14 @@ const Lesson1_bs = () => {
 					backdrop='static'
 					keyboard={false}>
 					<Modal.Header closeButton>
-						<Modal.Title>Znakovi za stajanje:</Modal.Title>
+						<Modal.Title>STOPPING SINGS:</Modal.Title>
 					</Modal.Header>
 					<Modal.Body className='custom-modal'>
 						<p>
-							Iznad nekih riječi u Kur'anu nalaze se <strong>znakovi</strong>{' '}
-							koji označavaju da li se na toj riječi mora stati ili se ne smije,
-							da li je bolje stati ili je bolje preći. Ti znakovi su:
+							Some <strong>signs</strong> are placed above some words in the Qur'an and they mark whether
+							the reader must or must not stop at that word, whether it is better to stop or to
+							continue reading. Those signs are:
+
 						</p>
 						<br />
 						<Table
@@ -361,10 +363,10 @@ const Lesson1_bs = () => {
 							responsive>
 							<thead className='text-uppercase'>
 								<tr>
-									<th className='text-danger'>Mora stati</th>
-									<th>Bolje stati</th>
-									<th>Boje preći</th>
-									<th className='text-danger'>Ne smije se stati</th>
+									<th className='text-danger'>MUST STOP</th>
+									<th>IT IS BETTER TO STOP</th>
+									<th>IT IS BETTER TO CONTINUE</th>
+									<th className='text-danger'>MUSTN'T STOP</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -394,8 +396,8 @@ const Lesson1_bs = () => {
 							responsive>
 							<thead className='text-uppercase'>
 								<tr>
-									<th>Sekta</th>
-									<th>Tri tačkice</th>
+									<th>THE SAKT</th>
+									<th>THREE DOTS</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -403,13 +405,12 @@ const Lesson1_bs = () => {
 									<td>
 										<span className='arapski-lekcija'> سكتة ؛ س</span>
 										<br />
-										Pauzira se bez prekidanja daha.
+										Pause without taking a new breath when reciting.
 									</td>
 									<td>
 										<span className='arapski-lekcija'> رَيْبَۚۛ ف۪يهِۚۛ </span>
 										<br />
-										Ukoliko se pauzira na prvom znaku, onda je na drugom
-										obavezno preći i obrnuto.
+										If the reciter stops at the first sign, then he must continue without stopping at the second sign. 
 									</td>
 								</tr>
 							</tbody>
@@ -418,11 +419,9 @@ const Lesson1_bs = () => {
 						<br />
 
 						<p>
-							<strong>NAPOMENA</strong>: Znak{' '}
-							<span className='arapski-lekcija'> قصر</span> ispod riječi je znak
-							da se vokal ispod kojeg se nalazi uči <u>kratko</u> , a{' '}
-							<span className='arapski-lekcija'> مد </span>je znak da se vokal
-							uči <u>dugo</u>.
+							<strong>NOTE</strong>: The sign{' '}
+							<span className='arapski-lekcija'> قصر</span> below the word indicates that the vowel under which it is written is <u>short</u> , and{' '}
+							<span className='arapski-lekcija'> مد </span>is a sign that the vowel is recited as a <u>long</u> vowel.
 						</p>
 					</Modal.Body>
 					<Modal.Footer>
@@ -442,78 +441,71 @@ const Lesson1_bs = () => {
 					backdrop='static'
 					keyboard={false}>
 					<Modal.Header closeButton>
-						<Modal.Title>LEKCIJA</Modal.Title>
+						<Modal.Title>PRACTICE</Modal.Title>
 					</Modal.Header>
 					<Modal.Body className='custom-modal'>
 						<Row>
-							<Col className='opisLekcije'>
-								Prilikom učenja Kur'ana, učač može stati u sljedećim
-								situacijama: ako je kraj ajeta, ako postoji znak za stajanje i
-								kada mu ponestane daha. To čini na sljedeći način:
-							</Col>
-						</Row>
-						<Row>
-							<Col className='opisLekcije my-3'>
-								<strong>1.</strong> Kada riječ na kojoj staje završava{' '}
-								<strong>kratkim vokalom</strong> E{' '}
-								<span className='arapski-lekcija '> ــــَـــ</span> , I{' '}
-								<span className='arapski-lekcija '> ــــِــ</span> , U{' '}
-								<span className='arapski-lekcija '> ــــُـــ </span>ili{' '}
-								<strong>tenvinom</strong> IN{' '}
-								<span className='arapski-lekcija '> ــــٍــ </span> , UN{' '}
-								<span className='arapski-lekcija'> ـــٌـــ</span> , stat će kao
-								da je na riječi <strong>sukun</strong>{' '}
-								<span className='arapski-lekcija '> ــــْـــ</span> , npr.:
-							</Col>
-						</Row>
+					<Col className='opisLekcije'>
+						During the recitation of the Qur&#39;an, the reader can stop in the following
+						situations: at the end of the verse, if there is a stopping sign and when he is out
+						of breath. It can be done the following way:
+					</Col>
+				</Row>
+				<Row>
+					<Col className='opisLekcije my-3'>
+						<strong>1.</strong> When the word (at which he stops) ends {' '}
+						<strong>in the short vowel</strong> E{' '}
+						<span className='arapski-lekcija '> ــــَـــ</span> , I{' '}
+						<span className='arapski-lekcija '> ــــِــ</span> , U{' '}
+						<span className='arapski-lekcija '> ــــُـــ </span>or{' '}
+						<strong>nunation/tanwin</strong> IN{' '}
+						<span className='arapski-lekcija '> ــــٍــ </span> , UN{' '}
+						<span className='arapski-lekcija'> ـــٌـــ</span> , he will stop as if the word ends in <strong>sukoon</strong>{' '}
+						<span className='arapski-lekcija '> ــــْـــ</span> , for example:
+					</Col>
+				</Row>
+				<Row className='text-center reorder'>
+					<Col>{PlayerRow(data, 'row1_en')}</Col>
+				</Row>
+				<Row>
+					<Col className='opisLekcije my-3'>
+						<strong>2.</strong> When the word ends in <strong>tanwin</strong> EN{' '}
+						<span className='arapski-lekcija '> ــــًــ</span> , he will stop as if it ends in <strong>the long vowel</strong> A{' '}
+						<span className='arapski-lekcija '> ـــَـــ ا </span> , for example:
+					</Col>
+				</Row>
+				<Row className='text-center reorder'>
+					<Col>{PlayerRow(data, 'row2_en')}</Col>
+				</Row>
+				<Row>
+					<Col className='opisLekcije my-3'>
+						<strong>3.</strong> When the word ends in{' '}
+						<strong>the long vowel</strong> A{' '}
+						<span className='arapski-lekcija'> ــــَـــ ا </span> ,{' '}
+						<strong>the long vowel </strong> I{' '}
+						<span className='arapski-lekcija'>ـــِــ ى</span> ili{' '}
+						<strong>the long vowel </strong> U{' '}
+						<span className='arapski-lekcija'>ـــُــ و</span> , he will stop without making any change, for example:
+					</Col>
+				</Row>
+				<Row className='text-center '>
+					<Col>
+						{VjezbeRow(data, 'row3', 'broj1')}
+						{VjezbeRow(data, 'row3', 'broj2')}
+						{VjezbeRow(data, 'row3', 'broj3')}
+						{VjezbeRow(data, 'row3', 'broj4')}
+						{VjezbeRow(data, 'row3', 'broj5')}
+					</Col>
+				</Row>
+				<Row>
+					<Col className='opisLekcije my-3'>
+						<strong>4.</strong> ⦁	When the word ends in round <strong>T</strong>{' '}
+						<span className='arapski-lekcija'>(ة/ـة)</span> , he will stop as if the letter <strong>H </strong>
+						<span className='arapski-lekcija'>(ه)</span> , were written regardless of which vowel or tanwin is written on it, for example:
+					</Col>
+				</Row>
 						<Row className='text-center reorder'>
-							<Col>{PlayerRow(data, 'row1')}</Col>
-						</Row>
-						<Row>
-							<Col className='opisLekcije my-3'>
-								<strong>2.</strong> Kada riječ završava{' '}
-								<strong>tenvinom</strong> EN{' '}
-								<span className='arapski-lekcija '> ــــًــ</span> , stat će kao
-								da je <strong>dugo</strong> A{' '}
-								<span className='arapski-lekcija '> ـــَـــ ا </span> , npr.:
-							</Col>
-						</Row>
-						<Row className='text-center reorder'>
-							<Col>{PlayerRow(data, 'row2')}</Col>
-						</Row>
-						<Row>
-							<Col className='opisLekcije my-3'>
-								<strong>3.</strong> Kada riječ završava{' '}
-								<strong>dugim vokalom</strong> A{' '}
-								<span className='arapski-lekcija'> ــــَـــ ا </span> ,{' '}
-								<strong>dugim vokalom</strong> I{' '}
-								<span className='arapski-lekcija'>ـــِــ ى</span> ili{' '}
-								<strong>dugim vokalom</strong> U{' '}
-								<span className='arapski-lekcija'>ـــُــ و</span> , stat će{' '}
-								<u>bez ikakve promjene</u> , npr.:
-							</Col>
-						</Row>
-						<Row className='text-center '>
-							<Col>
-								{VjezbeRow(data, 'row3', 'broj1')}
-								{VjezbeRow(data, 'row3', 'broj2')}
-								{VjezbeRow(data, 'row3', 'broj3')}
-								{VjezbeRow(data, 'row3', 'broj4')}
-								{VjezbeRow(data, 'row3', 'broj5')}
-							</Col>
-						</Row>
-						<Row>
-							<Col className='opisLekcije my-3'>
-								<strong>4.</strong> Kada riječ završava okruglim{' '}
-								<strong>T</strong>{' '}
-								<span className='arapski-lekcija'>(ة/ـة)</span> , stat će kao da
-								je napisano slovo <strong>H </strong>
-								<span className='arapski-lekcija'>(ه)</span> , bez obzira koji
-								je vokal ili tenvin napisan na njemu, npr.:
-							</Col>
-						</Row>
-						<Row className='text-center reorder'>
-							<Col>{PlayerRow(data, 'row4')}</Col>
+							<Col>{PlayerRow(data, 'row4_en')}</Col>
 						</Row>
 					</Modal.Body>
 					<Modal.Footer>
