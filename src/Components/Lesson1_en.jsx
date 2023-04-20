@@ -253,7 +253,7 @@ const Lesson1_bs = () => {
 					</Modal.Body>
 					<Modal.Footer>
 						<Button variant='secondary' onClick={handleCloseT}>
-							Zatvori
+							Close
 						</Button>
 					</Modal.Footer>
 				</Modal>
@@ -426,7 +426,7 @@ const Lesson1_bs = () => {
 					</Modal.Body>
 					<Modal.Footer>
 						<Button variant='secondary' onClick={handleCloseZ}>
-							Zatvori
+							Close
 						</Button>
 					</Modal.Footer>
 				</Modal>
@@ -510,7 +510,7 @@ const Lesson1_bs = () => {
 					</Modal.Body>
 					<Modal.Footer>
 						<Button variant='secondary' onClick={handleCloseL}>
-							Zatvori
+							Close
 						</Button>
 					</Modal.Footer>
 				</Modal>
@@ -720,7 +720,7 @@ const Lesson1_bs = () => {
 					</Modal.Body>
 					<Modal.Footer>
 						<Button variant='secondary' onClick={handleClose}>
-							Zatvori
+							Close
 						</Button>
 					</Modal.Footer>
 				</Modal>

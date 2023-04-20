@@ -14,6 +14,7 @@ import LanguageSwitcher from '../Components/Dropdown';
 
 function LandingPage(props) {
 	const { i18n } = useTranslation();
+	const { t } = useTranslation();
 
 	function handleChangeLanguage(event) {
 		i18n.changeLanguage(event.target.value);
@@ -89,13 +90,13 @@ function LandingPage(props) {
 					<div className='nav'>
 						<ul>
 							<a href='#kontakt'>
-								<li>KONTAKT</li>
+								<li>{t('kontakt')}</li>
 							</a>
 							<a href='#printano'>
-								<li>PRINTANO IZDANJE</li>
+								<li>{t('printizd')}</li>
 							</a>
 							<a href='#o-nama'>
-								<li>O NAMA</li>
+								<li>{t('onama')}</li>
 							</a>
 							<a
 								href='https://sufara.ba/'
@@ -104,7 +105,7 @@ function LandingPage(props) {
 								<li>SUFARA.BA</li>
 							</a>
 							<Link to={'/lekcije'}>
-								<li className='selectedBtn'>LEKCIJE</li>
+								<li className='selectedBtn'>{t('lekcije')}</li>
 							</Link>
 							<div className='languageSwitch'>
     						  <LanguageSwitcher onChange={handleChangeLanguage} value={i18n.language} />
@@ -152,14 +153,14 @@ function LandingPage(props) {
 								<li className='selectedBtn'>LEKCIJE</li>
 							</Link>
 							<a href='#o-nama' onClick={toggleIsHiddenHandler}>
-								<li>O NAMA</li>
+								<li>{t('onama')}</li>
 							</a>
 							<a href='#printano' onClick={toggleIsHiddenHandler}>
-								<li>PRINTANO IZDANJE</li>
+								<li>{t('printizd')}</li>
 							</a>
 
 							<a href='#kontakt' onClick={toggleIsHiddenHandler}>
-								<li>KONTAKT</li>
+								<li>{t('kontakt')}</li>
 							</a>
 							<a
 								href='https://sufara.ba/'
@@ -203,7 +204,7 @@ function LandingPage(props) {
 						</div> */}
 						<div className='title'>
 							<h1>Tedžvid.ba</h1>
-							<p>Priručnik za učenje tedžvidskih pravila</p>
+							<p>{t("appTitle")}</p>
 						</div>
 						<div className='headerImage'>
 							<img
@@ -215,12 +216,12 @@ function LandingPage(props) {
 						<div className='actionsBtn'>
 							<Link to={'/lekcije'}>
 								<button type='submit' className='btn-lekcije'>
-									LEKCIJE
+									{t('lekcije')}
 								</button>
 							</Link>
 						</div>
 						<div className='download-section'>
-							<p>Aplikacija je dostupna na:</p>
+							<p>{t('appAvailableOn')}</p>
 							<div className='download-icons'>
 								<a
 									href='https://play.google.com/store/apps/details?id=com.tedzvidba.app&hl=en&gl=US'
@@ -252,23 +253,8 @@ function LandingPage(props) {
 								src={process.env.PUBLIC_URL + '/assets/svg/quranbg.svg'}
 								alt='quran background'
 							/>
-							<h2>O nama</h2>
-							<p>
-								Tedzvid.ba je elektronska, interaktivna verzija printanog
-								tedžvida autora mr. Sejid ef. Strike. Ovaj tedžvid ima za cilj
-								da pomogne novim učačima Kur'ana, kako polaznicima mektepske
-								nastave tako i odraslima, u lakšem savladavanju osnovnih
-								tedžvidskih pravila. Jednostavan rječnik i izbjegavanje stručnih
-								termina, koliko je to bilo moguće, čine ga pristupačnijim široj
-								čitalačkoj populaciji.
-								<br />
-								<br /> Posebnost stranice tedzvid.ba su interaktivni primjeri
-								čiji audio zapis možete preslušati klikom na isti, a video zapis
-								nakon vježbe će vam pomoći da lakše razumijete tedžvidsko
-								pravilo koje želite savladati. Nadamo se da će tedžvid.ba pomoći
-								mu'allimima pri objašnjavanju tedžvidskih pravila, kako djeci u
-								mektebu tako i odraslima nakon završetka sufare.
-							</p>
+							<h2>{t('aboutUs')}</h2>
+							<p dangerouslySetInnerHTML={{ __html: t("aboutUsContent") }} />
 							<div className='video'>
 								<iframe
 									src='https://www.youtube.com/embed/2Yk_8zotx_8'

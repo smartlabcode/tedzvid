@@ -28,6 +28,35 @@
             "after": null
         }
     ],
+    "row1_en": [{
+            "id": 1,
+            "url": "./assets/audio/l7/1.mp3",
+            "highlight": "لٌ لِ",
+            "word": "وَيْلٌ لِكُلِّ",
+            "after": " is recited as: "
+        },
+        {
+            "id": 2,
+            "url": "./assets/audio/l7/2.mp3",
+            "highlight": "لّـِ",
+            "word": "وَيْلُـلّـِكُلِّ",
+            "after": " ; "
+        },
+        {
+            "id": 3,
+            "url": "./assets/audio/l7/3.mp3",
+            "highlight": "نْ رَ",
+            "word": "مِنْ رَبِّـهِمْ",
+            "after": " is recited as: "
+        },
+        {
+            "id": 4,
+            "url": "./assets/audio/l7/4.mp3",
+            "highlight": "رَّ",
+            "word": "مِرَّ بِّـهِمْ",
+            "after": null
+        }
+    ],
     "row2": [{
         "id": 5,
         "url": "./assets/audio/l7/5.mp3",

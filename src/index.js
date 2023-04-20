@@ -13,6 +13,7 @@ import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 import en from "./Body/locales/en.json";
 import bs from "./Body/locales/bs.json";
+import ReactMarkdown from 'react-markdown';
 
 i18n
   .use(LanguageDetector)

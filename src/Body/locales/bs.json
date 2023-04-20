@@ -1,9 +1,17 @@
 {
-  "1": "VAKF",
-  "2": "Stajanje prilikom učenja",
-  "3": "Prilikom učenja Kur'ana, učač može stati u sljedećim situacijama: ako je kraj ajeta, ako postoji znak za stajanje i kada mu ponestane daha. To čini na sljedeći način:",
-  "4": "Kada riječ na kojoj staje završava",
-
-  "5": "kratkim vokalom"
-
+  "kontakt": "KONTAKT",
+  "printizd": "PRINTANO IZDANJE",
+  "onama": "O NAMA",
+  "lekcije": "LEKCIJE",
+  "appTitle": "Priručnik za učenje tedžvidskih pravila",
+  "appAvailableOn": "Aplikacija je dostupna na:",
+  "aboutUs": "O nama",
+  "aboutUsContent": "Tedzvid.ba je elektronska, interaktivna verzija štampanog Tajvida autora g. Sejida ef. Strikea. Tajvid ima za cilj pomoći novim učenicima Kur'ana, uključujući učenike tradicionalnih islamskih škola i odrasle osobe, da bolje razumiju i usavrše osnovna pravila Tajvida. Jednostavni vokabular i izbjegavanje tehničkih termina, koliko god je to moguće, čine ga dostupnijim široj publici.\n\nPosebna karakteristika tedzvid.ba web stranice su interaktivni primjeri, gdje možete slušati audio snimke klikom na njih, a video snimak nakon vježbe će vam pomoći da bolje razumijete Tajvid pravilo koje želite naučiti. Nadamo se da će tedzvid.ba pomoći nastavnicima u objašnjavanju Tajvid pravila djeci u islamskim školama i odraslima nakon što završe svoje kur'anske recitacije.",
+  "printedEdition": "Želim štampanu verziju",
+  "printedEditionInfo": "Informacije o štampanoj verziji Tajvida možete dobiti od autora:",
+  "contact": "Kontakt",
+  "nameSurname": "Ime i prezime",
+  "email": "Email",
+  "phoneNumber": "Broj telefona",
+  "enterMessage": "Unesite vašu poruku"
 }

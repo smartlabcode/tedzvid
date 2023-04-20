@@ -110,7 +110,7 @@ const Lesson6_bs = () => {
 				</Row>
 
 				<Row className='text-center reorder'>
-					<Col>{PlayerRow(data, 'row1')}</Col>
+					<Col>{PlayerRow(data, 'row1_en')}</Col>
 				</Row>
 
 				<Row className='text-center reorder-basic rtl'>
@@ -150,30 +150,22 @@ const Lesson6_bs = () => {
 					<Modal.Body className='custom-modal'>
 						<Row>
 							<Col className='opisLekcije'>
-								Kada poslije harfa <strong>N</strong> sa{' '}
-								<strong>sukunom</strong> (
-								<span className='arapski-lekcija'>نْ</span>) ili{' '}
-								<strong>tenvina</strong> EN{' '}
-								<span className='arapski-lekcija'>ـــًـــ</span> , IN{' '}
-								<span className='arapski-lekcija'>ـــٍــ</span> , UN{' '}
-								<span className='arapski-lekcija'>ــٌــ</span> dođe jedan od
-								četiri harfa:{' '}
-								<span
-									className='arapski-lekcija'
-									style={{
-										color: 'red',
-										fontSize: '3rem',
-										whiteSpace: 'nowrap',
-									}}>
-									و ن م ي
-								</span>{' '}
-								(sadržana u riječi <strong>jemnu</strong> –
-								<span className='arapski-lekcija'>يَمْنُو</span>), dolazi do
-								uklapanja harfa <strong>N</strong>(
-								<span className='arapski-lekcija'>ن</span>) u jedan od spomenuta
-								četiri harfa, propuštajući zrak kroz nos u trajanju od 2
-								hareketa, npr.:
-							</Col>
+						When the letter <strong>N</strong> with <strong>sukoon</strong> (
+						<span className='arapski-lekcija'>نْ</span>) or nunation/{' '}
+						<strong>tanwin</strong> EN{' '}
+						<span className='arapski-lekcija'>ـــًـــ</span> , IN{' '}
+						<span className='arapski-lekcija'>ـــٍــ</span> , UN{' '}
+						<span className='arapski-lekcija'>ــٌــ</span> is followed by one of the four letters: &nbsp;
+						<span
+							className='arapski-lekcija'
+							style={{ color: 'red', fontSize: '3rem', whiteSpace: 'nowrap' }}>
+							و ن م ي
+						</span>{' '}
+						(contained in the word <strong>jemnu</strong> –
+						<span className='arapski-lekcija'>يَمْنُو</span>), the letter <strong>N</strong>(
+						<span className='arapski-lekcija'>ن</span>) assimilates into one of the aforementioned letters, with the airflow through the nose lasting 2 counts, for example:
+
+					</Col>
 						</Row>
 
 						<Row>
@@ -183,7 +175,7 @@ const Lesson6_bs = () => {
 						</Row>
 
 						<Row className='text-center reorder'>
-							<Col>{PlayerRow(data, 'row1')}</Col>
+							<Col>{PlayerRow(data, 'row1_en')}</Col>
 						</Row>
 
 						<Row className='text-center reorder-basic rtl'>
@@ -215,13 +207,13 @@ const Lesson6_bs = () => {
 					</Modal.Body>
 					<Modal.Footer>
 						<Button variant='secondary' onClick={handleCloseL}>
-							Zatvori
+							Close
 						</Button>
 					</Modal.Footer>
 				</Modal>
 
 				<h2 className='text-center' id='vjezba'>
-					<strong>VJEŽBA</strong>
+					<strong>PRACTICE</strong>
 				</h2>
 				<hr />
 				<Row>
@@ -281,7 +273,7 @@ const Lesson6_bs = () => {
 					<Col>
 						<hr />
 						<h2 className='text-center' id='video'>
-							<strong>VIDEO LEKCIJA</strong>
+							<strong>VIDEO LECTURE</strong>
 						</h2>
 						<center>
 							<div className='video'>
@@ -305,7 +297,7 @@ const Lesson6_bs = () => {
 					backdrop='static'
 					keyboard={false}>
 					<Modal.Header closeButton>
-						<Modal.Title>VJEŽBA</Modal.Title>
+						<Modal.Title>PRACTICE</Modal.Title>
 					</Modal.Header>
 					<Modal.Body className='custom-modal'>
 						<Row className='text-center'>
@@ -354,7 +346,7 @@ const Lesson6_bs = () => {
 					</Modal.Body>
 					<Modal.Footer>
 						<Button variant='secondary' onClick={handleClose}>
-							Zatvori
+							Close
 						</Button>
 					</Modal.Footer>
 				</Modal>

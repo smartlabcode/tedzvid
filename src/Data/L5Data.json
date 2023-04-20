@@ -14,6 +14,21 @@
             "after": null
         }
     ],
+    "row1_en": [{
+            "id": 1,
+            "url": "./assets/audio/l5/1.mp3",
+            "highlight": "مْ  مِ",
+            "word": "هُمْ  مِنْ",
+            "after": " is recited as: "
+        },
+        {
+            "id": 2,
+            "url": "./assets/audio/l5/2.mp3",
+            "highlight": "مِّ",
+            "word": "هـُمِّنْ",
+            "after": null
+        }
+    ],
     "row2": [{
 
             "id": 3,
@@ -54,6 +69,7 @@
             "after": null
         }
     ],
+    
     "vjezba": {
         "broj8": [{
             "id": 8,

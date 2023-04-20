@@ -28,6 +28,35 @@
             "after": null
         }
     ],
+    "row1_en": [{
+            "id": 1,
+            "url": "./assets/audio/l4/1.mp3",
+            "highlight": "ذْ ذَ",
+            "word": "إِذْ ذَهَبَ",
+            "after": "  is recited as:  "
+        },
+        {
+            "id": 2,
+            "url": "./assets/audio/l4/2.mp3",
+            "highlight": "ذَّ",
+            "word": "إِذَّهَبَ",
+            "after": " ;    "
+        },
+        {
+            "id": 3,
+            "url": "./assets/audio/l4/3.mp3",
+            "highlight": "لْ لَ",
+            "word": "قُــلْ لَــمْ",
+            "after": "  is recited as:  "
+        },
+        {
+            "id": 4,
+            "url": "./assets/audio/l4/4.mp3",
+            "highlight": "لَّ",
+            "word": "قُلَّمْ",
+            "after": null
+        }
+    ],
     "row2": [{
 
             "id": 7,
