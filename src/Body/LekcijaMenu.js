@@ -10,6 +10,7 @@ import "./lekcijePage.scss"
 
 function LekcijaMenu(props) {
 	const { i18n } = useTranslation();
+	const { t } = useTranslation();
 
 	function handleChangeLanguage(event) {
 		i18n.changeLanguage(event.target.value);
@@ -82,20 +83,20 @@ function LekcijaMenu(props) {
 					<center>
 						<ul>
 							<Link to={'/lekcije'}>
-								<li className="selectedBtn">LEKCIJE</li>
+								<li className="selectedBtn">{t("lekcije")}</li>
 							</Link>
 							<Link to={'/'}>
-								<li className="selectedBtn">NASLOVNA</li>
+								<li className="selectedBtn">{t("home")}</li>
 							</Link>
 							<a href="/#o-nama" onClick={toggleIsHiddenHandler}>
-								<li>O NAMA</li>
+								<li>{t("onama")}</li>
 							</a>
 							<a href="/#printano" onClick={toggleIsHiddenHandler}>
-								<li>PRINTANO IZDANJE</li>
+								<li>{t("printizd")}</li>
 							</a>
 
 							<a href="/#kontakt" onClick={toggleIsHiddenHandler}>
-								<li>KONTAKT</li>
+								<li>{t("kontakt")}</li>
 							</a>
 
 							<div className='languageSwitchFullMenu' style={{width:"100px",marginTop:"20px"}}>

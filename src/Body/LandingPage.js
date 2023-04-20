@@ -150,7 +150,7 @@ function LandingPage(props) {
 					<center>
 						<ul>
 							<Link to={'/lekcije'}>
-								<li className='selectedBtn'>LEKCIJE</li>
+								<li className='selectedBtn'>{t('lekcije')}</li>
 							</Link>
 							<a href='#o-nama' onClick={toggleIsHiddenHandler}>
 								<li>{t('onama')}</li>
@@ -253,7 +253,6 @@ function LandingPage(props) {
 								src={process.env.PUBLIC_URL + '/assets/svg/quranbg.svg'}
 								alt='quran background'
 							/>
-							<h2>{t('aboutUs')}</h2>
 							<p dangerouslySetInnerHTML={{ __html: t("aboutUsContent") }} />
 							<div className='video'>
 								<iframe
@@ -279,12 +278,11 @@ function LandingPage(props) {
 							value={{ color: 'white', className: 'global-className-name' }}>
 							<div className='bookInfo'>
 								<b>
-									<h2>Želim printano izdanje</h2>
+									<h2>{t('printedEdition')}</h2>
 								</b>
 								<br />
 								<h6>
-									Informacije vazano za printano izdanje tedžvida možete dobiti
-									kod autora:
+									{t('printedEditionInfo')}
 								</h6>
 								<br />
 								<div className='iconWrapper'>
@@ -321,17 +319,16 @@ function LandingPage(props) {
 
 					<div className='sectionThree' id='kontakt'>
 						<center>
-							<h2>Kontakt</h2>
+							<h2>{t('contact')}</h2>
 							<br />
 							<p>
-								Ukoliko imate neke sugestije, zapažanja, impresije budite
-								slobodni da ih napišete kako bismo unaprijedili ovaj sajt.
+								{t('contactInfo')}
 							</p>
 
 							<form onSubmit={handleSubmit}>
 								<input
 									type='text'
-									placeholder='Ime i prezime'
+									placeholder={t("nameSurname")}
 									name='ime i prezime'
 									value={fullName}
 									onChange={(e) => {
@@ -341,7 +338,7 @@ function LandingPage(props) {
 								/>
 								<input
 									type='email'
-									placeholder='Email'
+									placeholder={t("email")}
 									name='email'
 									id=''
 									required
@@ -352,7 +349,7 @@ function LandingPage(props) {
 								/>
 								<input
 									type='tel'
-									placeholder='Broj telefona'
+									placeholder={t("phoneNumber")}
 									name='broj telefona'
 									id=''
 									value={phone}
@@ -362,7 +359,7 @@ function LandingPage(props) {
 								/>
 								<textarea
 									className='textInput'
-									placeholder='Unesi sadržaj poruke'
+									placeholder={t("enterMessage")}
 									type='text'
 									name='poruka'
 									id=''
@@ -379,7 +376,7 @@ function LandingPage(props) {
 										onClick={() => setShowSuccessMessage(false)}>
 										&times;
 									</span>
-									<strong>Uspješno</strong> ste poslali vašu poruku!
+									{t('sendS')}
 								</div>
 								<div className={showErrorMessage ? 'error_message' : 'hide'}>
 									<span
@@ -387,12 +384,12 @@ function LandingPage(props) {
 										onClick={() => setShowErrorMessage(false)}>
 										&times;
 									</span>
-									Došlo je do greške prilikom slanja poruke!
+									{t('sendF')}
 								</div>
 								<button
 									type='submit'
 									className='pageclip-form__submit contactBTN '>
-									POŠALJI
+									{t("send")}
 								</button>
 							</form>
 						</center>
@@ -414,13 +411,13 @@ function LandingPage(props) {
 								<div className='footerNav'>
 									<ul>
 										<a href='#kontakt'>
-											<li>Kontakt</li>
+											<li>{t('kontakt')}</li>
 										</a>
 										<a href='#printano'>
-											<li>Printano izdanje</li>
+											<li>{t('printizd')}</li>
 										</a>
 										<a href='#o-nama'>
-											<li>O nama</li>
+											<li>{t('onama')}</li>
 										</a>
 										<a
 											href='https://sufara.ba/'
@@ -431,7 +428,7 @@ function LandingPage(props) {
 									</ul>
 								</div>
 								<div className='footerPartners'>
-									<p>Prijatelji projekta:</p>
+									<p>{t('partners')}</p>
 									<ul>
 										<li>
 											<a

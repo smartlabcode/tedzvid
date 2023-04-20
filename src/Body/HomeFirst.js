@@ -4,11 +4,17 @@ import { Link } from 'react-router-dom';
 import data from '../Data/lessons.json';
 import { IoIosArrowForward } from 'react-icons/io';
 import { IconContext } from 'react-icons';
+import { useTranslation } from "react-i18next";
+
+
+
 
 function HomeFirst(props) {
+	const { t } = useTranslation();
+	const { i18n } = useTranslation();
 	// let lekcije = data['lekcije'].slice(props.start,props.stop)
-	let lekcije = data['lekcije'].reduce((acc, curr) => acc.concat(curr), []);
-
+	let lekcije = data['lekcije_en'].reduce((acc, curr) => acc.concat(curr), []);
+	
 	return (
 		<React.Fragment>
 			{lekcije.map((lekcija, index) => {
@@ -21,7 +27,7 @@ function HomeFirst(props) {
 								to={'/lekcija' + number + '#tabela'}
 								style={{ color: 'inherit' }}>
 								<button className='pristupiBtn'>
-									Tabela <IoIosArrowForward />
+									{t('table')} <IoIosArrowForward />
 								</button>
 							</Link>
 						);
@@ -34,7 +40,7 @@ function HomeFirst(props) {
 								to={'/lekcija' + number + '#znakovi'}
 								style={{ color: 'inherit' }}>
 								<button className='pristupiBtn'>
-									Znakovi <IoIosArrowForward />
+									{t('signs')} <IoIosArrowForward />
 								</button>
 							</Link>
 						);
@@ -60,7 +66,7 @@ function HomeFirst(props) {
 														to={'/lekcija' + number + '#video'}
 														style={{ color: 'inherit' }}>
 														<button className='videoBtn'>
-															Video{' '}
+															{t('video')}{' '}
 															<IoIosArrowForward style={{ color: 'white' }} />
 														</button>
 													</Link>
@@ -70,7 +76,7 @@ function HomeFirst(props) {
 														to={'/lekcija' + number + '#vjezba'}
 														style={{ color: 'inherit' }}>
 														<button className='pristupiBtn'>
-															Vježba <IoIosArrowForward />
+															{t('practice')} <IoIosArrowForward />
 														</button>
 													</Link>
 
@@ -78,7 +84,7 @@ function HomeFirst(props) {
 														to={'/lekcija' + number + '#lekcija'}
 														style={{ color: 'inherit' }}>
 														<button className='pristupiBtn'>
-															Lekcija <IoIosArrowForward />
+															{t('lecturev1')} <IoIosArrowForward />
 														</button>
 													</Link>
 												</IconContext.Provider>

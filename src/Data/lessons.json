@@ -122,5 +122,120 @@
             }
         ]
 
+    ],
+    "lekcije_en": [
+        [{
+                "title": "VAKF",
+                "subtitle": "Pausing during recitation"
+            },
+            {
+                "title": "DAMIR",
+                "subtitle": "Pronunciation of the pronoun HU (هُ)"
+            }
+        ],
+        [{
+                "title": "LAFZATULLAH",
+                "subtitle": "Pronunciation of the word Allah اللّٰه"
+            },
+            {
+                "title": "IDGAM MISLEJN",
+                "subtitle": "Merging of identical letters"
+            }
+        ],
+        [{
+                "title": "IDGAM MISLEJN MEAL-GUNNEH",
+                "subtitle": "Merging of identical letters with nasal emission"
+            },
+            {
+                "title": "IDGAM MEAL-GUNNEH",
+                "subtitle": "Merging with nasal emission"
+            }
+        ],
+        [{
+                "title": "IDGAM BILA GUNNEH",
+                "subtitle": "Merging without nasal emission"
+            },
+            {
+                "title": "IKLAB",
+                "subtitle": "Conversion of the letter N (ن) to the letter M (م)"
+            }
+        ],
+        [{
+                "title": "IZHAR HALLKIJ",
+                "subtitle": "Clear pronunciation of the letter N (ن) or tanween"
+            },
+            {
+                "title": "IZHAR ŠEFEVIJJ",
+                "subtitle": "Clear pronunciation of the letter M (م)"
+            }
+        ],
+        [{
+                "title": "IHFA",
+                "subtitle": "Hiding the letter N (ن)"
+            },
+            {
+
+                "title": "IHFA SEVIJJ",
+                "subtitle": "Hiding the letter M (م)"
+
+            }
+        ],
+        [{
+                "title": "KALKALA",
+                "subtitle": "Bouncing of letters"
+            },
+            {
+
+                "title": "HUKMURRA",
+                "subtitle": "Pronunciation of the letter R (ر)"
+
+            }
+        ],
+        [{
+                "title": "IDGAM MUTEDŽANISEJN",
+                "subtitle": "Merging of related letters"
+            },
+            {
+
+                "title": "IDGAM MUTEKARIBEJN",
+                "subtitle": "Merging of close letters"
+
+            }
+        ],
+        [{
+                "title": "MEDD TABI'IJJ",
+                "subtitle": "Natural lengthening"
+            },
+            {
+
+                "title": "MEDD MUTTESIL",
+                "subtitle": "Connected lengthening"
+
+            }
+        ],
+
+        [{
+
+                "title": "MEDD MUNFESIL",
+                "subtitle": "Separated lengthening"
+
+            },
+            {
+
+                "title": "MEDD LAZIM",
+                "subtitle": "Fixed lengthening"
+
+            }
+        ],
+       [{
+            "title": "MEDD ARID",
+            "subtitle": "Unstable prolongation"
+            },
+            {
+            "title": "MEDD LIN",
+            "subtitle": "Semi-vowel prolongation"
+            }
+        ]
+
     ]
 }

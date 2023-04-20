@@ -8,6 +8,7 @@ import { useTranslation } from "react-i18next";
 import LanguageSwitcher from '../Components/Dropdown';
 import "./homePage.scss"
 function Home() {
+	const { t } = useTranslation();
 	// const [ otherpage, pageClick ] = useState(false);
 
 	// const pageClickHandler = () => {
@@ -82,17 +83,17 @@ function Home() {
 					<center>
 						<ul>
 							<Link to={'/'}>
-								<li className="selectedBtn">NASLOVNA</li>
+								<li className="selectedBtn">{t("home")}</li>
 							</Link>
 							<a href="/#o-nama" onClick={toggleIsHiddenHandler}>
-								<li>O NAMA</li>
+								<li>{t("onama")}</li>
 							</a>
 							<a href="/#printano" onClick={toggleIsHiddenHandler}>
-								<li>PRINTANO IZDANJE</li>
+								<li>{t("printizd")}</li>
 							</a>
 
 							<a href="/#kontakt" onClick={toggleIsHiddenHandler}>
-								<li>KONTAKT</li>
+								<li>{t("kontakt")}</li>
 							</a>
 							<div className='languageSwitchFullMenu' style={{width:"100px",marginTop:"20px"}}>
     						  <LanguageSwitcher onChange={handleChangeLanguage} value={i18n.language} />
