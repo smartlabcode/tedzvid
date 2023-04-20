@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
 import { BsArrowLeft } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
-// Bootstrap
 import { Container } from 'react-bootstrap';
-
 import { useTranslation } from "react-i18next";
+import LanguageSwitcher from  "../Components/Dropdown";
+import "./lekcijePage.scss"
 
 
 function LekcijaMenu(props) {
@@ -31,10 +31,17 @@ function LekcijaMenu(props) {
 						/>
 					</Link>
 				</div>
+				<div className='languageSwitch'>
+					<LanguageSwitcher onChange={handleChangeLanguage} value={i18n.language} />
+				</div>
+				{
+				/*
 				<select onChange={handleChangeLanguage} value={i18n.language}>
 						<option value="bs">Bosanski</option>
 						<option value="en">English</option>
 					</select>
+					*/
+				}
 				<div className="nav">
 					<ul>
 						<Link to={'/lekcije'}>
@@ -90,6 +97,10 @@ function LekcijaMenu(props) {
 							<a href="/#kontakt" onClick={toggleIsHiddenHandler}>
 								<li>KONTAKT</li>
 							</a>
+
+							<div className='languageSwitchFullMenu' style={{width:"100px",marginTop:"20px"}}>
+    						  <LanguageSwitcher onChange={handleChangeLanguage} value={i18n.language} />
+    						</div>
 						</ul>
 					</center>
 				</div>

@@ -10,6 +10,8 @@ import BrowserMessage from './BrowserMessage';
 import { detect } from '../Helpers/BrowserDetect';
 import { useTranslation } from "react-i18next";
 
+import LanguageSwitcher from '../Components/Dropdown';
+
 function LandingPage(props) {
 	const { i18n } = useTranslation();
 
@@ -84,10 +86,6 @@ function LandingPage(props) {
 							/>
 						</Link>
 					</div>
-					<select onChange={handleChangeLanguage} value={i18n.language} >
-						<option value="bs">Bosanski</option>
-						<option value="en">English</option>
-					</select>
 					<div className='nav'>
 						<ul>
 							<a href='#kontakt'>
@@ -108,6 +106,17 @@ function LandingPage(props) {
 							<Link to={'/lekcije'}>
 								<li className='selectedBtn'>LEKCIJE</li>
 							</Link>
+							<div className='languageSwitch'>
+    						  <LanguageSwitcher onChange={handleChangeLanguage} value={i18n.language} />
+    						</div>
+							
+							{/*
+								<select onChange={handleChangeLanguage} value={i18n.language} className='selectorItem' >
+								<option value="bs">Bosanski</option>
+								<option value="en">English</option>
+								</select>
+							*/
+							}
 						</ul>
 					</div>
 				</div>
@@ -158,6 +167,9 @@ function LandingPage(props) {
 								rel='noopener noreferrer'>
 								<li>SUFARA.BA</li>
 							</a>
+							<div className='languageSwitchFullMenu' style={{width:"100px",marginTop:"20px"}}>
+    						  <LanguageSwitcher onChange={handleChangeLanguage} value={i18n.language} />
+    						</div>
 						</ul>
 					</center>
 				</div>

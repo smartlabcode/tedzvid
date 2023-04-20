@@ -5,7 +5,8 @@ import HomeFirst from '../Body/HomeFirst';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
 import { BsArrowLeft } from 'react-icons/bs';
 import { useTranslation } from "react-i18next";
-
+import LanguageSwitcher from '../Components/Dropdown';
+import "./homePage.scss"
 function Home() {
 	// const [ otherpage, pageClick ] = useState(false);
 
@@ -30,10 +31,17 @@ function Home() {
 						<img className="logoUrl" src={process.env.PUBLIC_URL + '/assets/svg/logoUrl.png'} alt="logo" />
 					</Link>
 				</div>
-				<select onChange={handleChangeLanguage} value={i18n.language} >
+				{
+					/*
+					<select onChange={handleChangeLanguage} value={i18n.language} >
 						<option value="bs">Bosanski</option>
 						<option value="en">English</option>
 					</select>
+					*/
+				}
+				<div className='languageSwitch'>
+					<LanguageSwitcher onChange={handleChangeLanguage} value={i18n.language} />
+				</div>
 				<div className="nav">
 					<ul>
 						<Link to={'/'}>
@@ -86,6 +94,9 @@ function Home() {
 							<a href="/#kontakt" onClick={toggleIsHiddenHandler}>
 								<li>KONTAKT</li>
 							</a>
+							<div className='languageSwitchFullMenu' style={{width:"100px",marginTop:"20px"}}>
+    						  <LanguageSwitcher onChange={handleChangeLanguage} value={i18n.language} />
+    						</div>
 						</ul>
 					</center>
 				</div>
