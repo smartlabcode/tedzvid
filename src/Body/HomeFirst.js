@@ -13,8 +13,16 @@ function HomeFirst(props) {
 	const { t } = useTranslation();
 	const { i18n } = useTranslation();
 	// let lekcije = data['lekcije'].slice(props.start,props.stop)
-	let lekcije = data['lekcije_en'].reduce((acc, curr) => acc.concat(curr), []);
-	
+	let propertyName;
+	if (i18n.language === 'en') {
+		propertyName = 'lekcije_en';
+	} else if (i18n.language === 'bs') {
+		propertyName = 'lekcije';
+	} else {
+	// handle unsupported language
+	}
+
+const lekcije = data[propertyName].reduce((acc, curr) => acc.concat(curr), []);
 	return (
 		<React.Fragment>
 			{lekcije.map((lekcija, index) => {
@@ -27,8 +35,8 @@ function HomeFirst(props) {
 								to={'/lekcija' + number + '#tabela'}
 								style={{ color: 'inherit' }}>
 								<button className='pristupiBtn'>
-									{t('table')} <IoIosArrowForward />
-								</button>
+								{t('table')} <IoIosArrowForward />
+				</button>
 							</Link>
 						);
 					}

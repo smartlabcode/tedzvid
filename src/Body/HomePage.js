@@ -51,7 +51,7 @@ function Home() {
 								src={process.env.PUBLIC_URL + '/assets/svg/ic_trending_flat_24px.png'}
 								alt="trenindg flat"
 							/>
-							<li style={{ color: 'black' }}>NAZAD NA NASLOVNU</li>
+							<li style={{ color: 'black' }}>{t('btof')}</li>
 						</Link>
 					</ul>
 				</div>

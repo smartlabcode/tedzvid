@@ -19,10 +19,11 @@
   "sendS": "Uspješno ste poslali vašu poruku!",
   "sendF": "Došlo je do greške prilikom slanja poruke!",
   "partners": "Partneri projekta:",
-  "table": "Table",
+  "table": "Tabela",
   "home": "NASLOVNA",
   "signs": "Znakovi",
   "video": "Video",
   "practice": "Vježba",
-  "lecturev1": "Lekcija"
+  "lecturev1": "Lekcija",
+  "btof": "NAZAD NA NASLOVNU"
 }

@@ -125,64 +125,64 @@
     ],
     "lekcije_en": [
         [{
-                "title": "VAKF",
-                "subtitle": "Pausing during recitation"
+                "title": "WAQF",
+                "subtitle": "stopping during the recitation of the Qur'an"
             },
             {
                 "title": "DAMIR",
-                "subtitle": "Pronunciation of the pronoun HU (هُ)"
+                "subtitle": "the pronunciation of the pronoun HU (هُ)"
             }
         ],
         [{
                 "title": "LAFZATULLAH",
-                "subtitle": "Pronunciation of the word Allah اللّٰه"
+                "subtitle": "the pronunciation of the word Allah اللّٰه"
             },
             {
-                "title": "IDGAM MISLEJN",
-                "subtitle": "Merging of identical letters"
+                "title": "IDGHAAM MITHLAYN",
+                "subtitle": "Assimilation of two identical letters"
             }
         ],
         [{
-                "title": "IDGAM MISLEJN MEAL-GUNNEH",
-                "subtitle": "Merging of identical letters with nasal emission"
+                "title": "IDGHAM MITHLAYN WITH GHUNNAH",
+                "subtitle": "assimilation of two identical letters with the airflow through the nose"
             },
             {
-                "title": "IDGAM MEAL-GUNNEH",
-                "subtitle": "Merging with nasal emission"
+                "title": "IDGHAM WITH GHUNNAH",
+                "subtitle": "Assimilation with the airflow through the nose"
             }
         ],
         [{
-                "title": "IDGAM BILA GUNNEH",
-                "subtitle": "Merging without nasal emission"
+                "title": "IDGHAM WITHOUT GHUNNAH",
+                "subtitle": "Assimilation without the airflow through the nose"
             },
             {
-                "title": "IKLAB",
-                "subtitle": "Conversion of the letter N (ن) to the letter M (م)"
+                "title": "IQLAAB",
+                "subtitle": "Converting the letter N (ن) into M (م)"
             }
         ],
         [{
-                "title": "IZHAR HALLKIJ",
-                "subtitle": "Clear pronunciation of the letter N (ن) or tanween"
+                "title": "IZHAAR HALQIJJ",
+                "subtitle": "Clear pronunciation of the letter N (ن) or nunation/tanwin"
             },
             {
-                "title": "IZHAR ŠEFEVIJJ",
+                "title": "IZHAAR SHAFAWI",
                 "subtitle": "Clear pronunciation of the letter M (م)"
             }
         ],
         [{
                 "title": "IHFA",
-                "subtitle": "Hiding the letter N (ن)"
+                "subtitle": "Concealment of N (ن)"
             },
             {
 
-                "title": "IHFA SEVIJJ",
-                "subtitle": "Hiding the letter M (م)"
+                "title": "IKHFAA’ SHAFAWI",
+                "subtitle": "Concealment of M (م)"
 
             }
         ],
         [{
-                "title": "KALKALA",
-                "subtitle": "Bouncing of letters"
+                "title": "THE QALQALAH",
+                "subtitle": "Echoing sounds"
             },
             {
 
@@ -192,48 +192,48 @@
             }
         ],
         [{
-                "title": "IDGAM MUTEDŽANISEJN",
-                "subtitle": "Merging of related letters"
+                "title": "IDGHAM MUTAJAANISAYN",
+                "subtitle": "Assimilation of letters of the same origin"
             },
             {
 
-                "title": "IDGAM MUTEKARIBEJN",
-                "subtitle": "Merging of close letters"
+                "title": "IDGHAM MUTAQAARIBAYN",
+                "subtitle": "Assimilation of letters with similar origin"
 
             }
         ],
         [{
-                "title": "MEDD TABI'IJJ",
-                "subtitle": "Natural lengthening"
+                "title": "AL-MADD AL-TABEE’EE",
+                "subtitle": "Normal extension"
             },
             {
 
-                "title": "MEDD MUTTESIL",
-                "subtitle": "Connected lengthening"
+                "title": "AL-MADD AL-MUTTASIL",
+                "subtitle": "Connected extension"
 
             }
         ],
 
         [{
 
-                "title": "MEDD MUNFESIL",
-                "subtitle": "Separated lengthening"
+                "title": "AL-MADD AL-MUNFASIL",
+                "subtitle": "Disconnected extension"
 
             },
             {
 
-                "title": "MEDD LAZIM",
-                "subtitle": "Fixed lengthening"
+                "title": "AL-MADD AL-LAZIM",
+                "subtitle": "Mandatory extension"
 
             }
         ],
        [{
-            "title": "MEDD ARID",
-            "subtitle": "Unstable prolongation"
+            "title": "AL-MADD AL-‘AARID",
+            "subtitle": "Temporary extension"
             },
             {
-            "title": "MEDD LIN",
-            "subtitle": "Semi-vowel prolongation"
+            "title": "MADDU AL-LEEN",
+            "subtitle": "Semi-vocal length"
             }
         ]
 

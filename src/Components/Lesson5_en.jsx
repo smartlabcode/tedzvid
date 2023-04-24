@@ -56,7 +56,7 @@ const Lesson5_en = () => {
 						</div>
 						<h4 className='text-center'>
 							<strong>
-								Assimilation of two identical letters
+								Merging of identical letters with nasal emission
 							</strong>
 						</h4>
 						<hr />
