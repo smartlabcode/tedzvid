@@ -73,7 +73,7 @@ const Lesson17_en = () => {
 						<span className='arapski-lekcija'>ـــَــ ا</span> , I{' '}
 						<span className='arapski-lekcija'>ـــِـ ى </span>, U{' '}
 						<span className='arapski-lekcija'>ـــُــ و</span> does not have{' '}
-						<strong>a hamzah</strong> or <strong>sukoon,</strong> al-madd al-ttabee’ee occurs.The reciter must extend it for 2 counts, as in: {PlayerRow(data, 'row1')}
+						<strong>a hamzah</strong> or <strong>sukoon,</strong> al-madd al-ttabee’ee occurs.The reciter must extend it for 2 counts, as in:{PlayerRow(data, 'row1')}
 					</Col>
 				</Row>
 
@@ -102,7 +102,7 @@ const Lesson17_en = () => {
 					backdrop='static'
 					keyboard={false}>
 					<Modal.Header closeButton>
-						<Modal.Title>LEKCIJA</Modal.Title>
+						<Modal.Title>LESSON</Modal.Title>
 					</Modal.Header>
 					<Modal.Body className='custom-modal'>
 						<Row>

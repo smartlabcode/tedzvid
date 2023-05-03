@@ -98,26 +98,26 @@
         [{
 
                 "title": "MEDD MUNFESIL",
-                "subtitle": "rastavljena dužina"
+                "subtitle": "Rastavljena dužina"
 
             },
             {
 
                 "title": "MEDD LAZIM",
-                "subtitle": "stalna dužina"
+                "subtitle": "Stalna dužina"
 
             }
         ],
         [{
 
                 "title": "MEDD ARID",
-                "subtitle": "nestalna dužina"
+                "subtitle": "Nestalna dužina"
 
             },
             {
 
                 "title": "MED LIN",
-                "subtitle": "poluvokalna dužina"
+                "subtitle": "Poluvokalna dužina"
 
             }
         ]
@@ -126,16 +126,16 @@
     "lekcije_en": [
         [{
                 "title": "WAQF",
-                "subtitle": "stopping during the recitation of the Qur'an"
+                "subtitle": "Stopping during the recitation of the Qur'an"
             },
             {
                 "title": "DAMIR",
-                "subtitle": "the pronunciation of the pronoun HU (هُ)"
+                "subtitle": "The pronunciation of the pronoun HU (هُ)"
             }
         ],
         [{
                 "title": "LAFZATULLAH",
-                "subtitle": "the pronunciation of the word Allah اللّٰه"
+                "subtitle": "The pronunciation of the word Allah اللّٰه"
             },
             {
                 "title": "IDGHAAM MITHLAYN",
@@ -144,7 +144,7 @@
         ],
         [{
                 "title": "IDGHAM MITHLAYN WITH GHUNNAH",
-                "subtitle": "assimilation of two identical letters with the airflow through the nose"
+                "subtitle": "Assimilation of two identical letters with the airflow through the nose"
             },
             {
                 "title": "IDGHAM WITH GHUNNAH",

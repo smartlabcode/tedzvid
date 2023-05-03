@@ -103,7 +103,7 @@ const Lesson4_en = () => {
 					backdrop='static'
 					keyboard={false}>
 					<Modal.Header closeButton>
-						<Modal.Title>LEKCIJA</Modal.Title>
+						<Modal.Title>LESSON</Modal.Title>
 					</Modal.Header>
 					<Modal.Body className='custom-modal'>
 						<Row>
