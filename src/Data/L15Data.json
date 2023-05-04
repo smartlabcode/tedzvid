@@ -14,6 +14,21 @@
             "after": null
         }
     ],
+    "row1_en": [{
+            "id": 1,
+            "url": "./assets/audio/l15/1.mp3",
+            "highlight": "دْتُـ",
+            "word": "عَــبَــدْتُـمْ",
+            "after": " is recited as: "
+        },
+        {
+            "id": 2,
+            "url": "./assets/audio/l15/2.mp3",
+            "highlight": "َـتُّ",
+            "word": "عَبَـتُّمْ",
+            "after": null
+        }
+    ],
     "row2": [{
 
         "id": 3,
@@ -43,6 +58,21 @@
             "after": null
         }
     ],
+    "row3_en": [{
+            "id": 5,
+            "url": "./assets/audio/l15/5.mp3",
+            "highlight": "ذْ ظَ",
+            "word": "إِذْ ظَــلَـمُوا",
+            "after": " is recited as: "
+        },
+        {
+            "id": 6,
+            "url": "./assets/audio/l15/6.mp3",
+            "highlight": "ظَّـ",
+            "word": "إِظَّـلَمُوا",
+            "after": null
+        }
+    ],
     "row4": [{
         "id": 7,
         "url": "./assets/audio/l15/7.mp3",
@@ -62,6 +92,21 @@
             "highlight": "بْ مَ",
             "word": "يَا بُــنَـيَّ ارْكَبْ مَعَــنَا",
             "after": " čita se: "
+        },
+        {
+            "id": 10,
+            "url": "./assets/audio/l15/10.mp3",
+            "highlight": "مَّ",
+            "word": "يَا بُــنَـيَّ ارْكَمَّعَــنَا",
+            "after": null
+        }
+    ],
+    "row5_en": [{
+            "id": 9,
+            "url": "./assets/audio/l15/9.mp3",
+            "highlight": "بْ مَ",
+            "word": "يَا بُــنَـيَّ ارْكَبْ مَعَــنَا",
+            "after": " is recited as: "
         },
         {
             "id": 10,

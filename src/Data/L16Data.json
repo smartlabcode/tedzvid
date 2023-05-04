@@ -14,12 +14,42 @@
             "after": null
         }
     ],
+    "row1_en": [{
+            "id": 1,
+            "url": "./assets/audio/l16/1.mp3",
+            "highlight": "قْكُ",
+            "word": "أَلَـمْ نَـخْلُـقْكُمْ",
+            "after": " is recited as: "
+        },
+        {
+            "id": 2,
+            "url": "./assets/audio/l16/2.mp3",
+            "highlight": "كُّ",
+            "word": "أَلَـمْ نَـخْلُكُّـمْ",
+            "after": null
+        }
+    ],
     "row2": [{
             "id": 3,
             "url": "./assets/audio/l16/3.mp3",
             "highlight": "لْ ر",
             "word": "وَقُلْ رَبِّ",
             "after": " čita se: "
+        }, {
+            "id": 4,
+            "url": "./assets/audio/l16/4.mp3",
+            "highlight": "رَّ",
+            "word": "وَقُـرَّبِّ",
+            "after": null
+        }
+
+    ],
+    "row2_en": [{
+            "id": 3,
+            "url": "./assets/audio/l16/3.mp3",
+            "highlight": "لْ ر",
+            "word": "وَقُلْ رَبِّ",
+            "after": " is recited as: "
         }, {
             "id": 4,
             "url": "./assets/audio/l16/4.mp3",

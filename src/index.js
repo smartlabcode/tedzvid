@@ -28,7 +28,6 @@ i18n
       }
     },
     fallbackLng: "bs",
-    lng: 'bs',
     interpolation: {
       escapeValue: false
     }

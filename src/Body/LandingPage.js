@@ -461,7 +461,6 @@ function LandingPage(props) {
 											</a>
 										</li>
 									</ul>
-									<p>Prof.dr. Amna Brdarević-Čeljo</p>
 								</div>
 							</div>
 							<div className='copyright'>Copyright © 2021 | tedzvid.ba</div>

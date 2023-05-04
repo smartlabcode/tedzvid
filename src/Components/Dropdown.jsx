@@ -5,8 +5,8 @@ import './dropdown.scss'
 
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
-  const storedLanguage = localStorage.getItem("language");
-  const defaultLanguage = "en";
+  const storedLanguage = localStorage.getItem("lng");
+  const defaultLanguage = "bs";
   const [language, setLanguage] = useState(storedLanguage || defaultLanguage);
   const [isOpen, setIsOpen] = useState(false);
   const bosnianFlag = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Flag_of_Bosnia_and_Herzegovina.svg/100px-Flag_of_Bosnia_and_Herzegovina.svg.png"

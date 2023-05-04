@@ -51,7 +51,7 @@ function LekcijaMenu(props) {
 								src={process.env.PUBLIC_URL + '/assets/svg/ic_trending_flat_24px.png'}
 								alt="trending flat"
 							/>
-							<li style={{ color: 'black' }}>NAZAD NA LEKCIJE</li>
+							<li style={{ color: 'black' }}>	{t('btol')}</li>
 						</Link>
 					</ul>
 				</div>

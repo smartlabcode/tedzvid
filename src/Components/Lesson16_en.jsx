@@ -84,7 +84,7 @@ const Lesson16_en = () => {
 				</Row>
 
 				<Row className='text-center'>
-					<Col>{PlayerRow(data, 'row1')}</Col>
+					<Col>{PlayerRow(data, 'row1_en')}</Col>
 				</Row>
 
 				<Row>
@@ -96,7 +96,7 @@ const Lesson16_en = () => {
 				</Row>
 
 				<Row className='text-center'>
-					<Col>{PlayerRow(data, 'row2')}</Col>
+					<Col>{PlayerRow(data, 'row2_en')}</Col>
 				</Row>
 
 				<Row>
@@ -134,7 +134,7 @@ const Lesson16_en = () => {
 				</Row>
 
 				<Row className='text-center'>
-					<Col>{PlayerRow(data, 'row1')}</Col>
+					<Col>{PlayerRow(data, 'row1_en')}</Col>
 				</Row>
 
 				<Row>
@@ -146,7 +146,7 @@ const Lesson16_en = () => {
 				</Row>
 
 						<Row className='text-center'>
-							<Col>{PlayerRow(data, 'row2')}</Col>
+							<Col>{PlayerRow(data, 'row2_en')}</Col>
 						</Row>
 
 						<Row>

@@ -80,7 +80,7 @@ const Lesson15_en = () => {
 					<Col className='opisLekcije text-left'>
 						<strong className=''>1.</strong>
 						<span className='arapski-lekcija'> ط د ت </span> as in:{' '}
-						{PlayerRow(data, 'row1')}
+						{PlayerRow(data, 'row1_en')}
 					</Col>
 				</Row>
 
@@ -93,7 +93,7 @@ const Lesson15_en = () => {
 				<Row>
 					<Col className='opisLekcije text-left'>
 						<strong>2.</strong> <span className='arapski-lekcija'> ظ ذ ث </span>{' '}
-						as in: {PlayerRow(data, 'row3')}
+						as in: {PlayerRow(data, 'row3_en')}
 					</Col>
 				</Row>
 
@@ -106,7 +106,7 @@ const Lesson15_en = () => {
 				<Row>
 					<Col className='opisLekcije text-left'>
 						<strong>3.</strong> <span className='arapski-lekcija'> ب م </span>{' '}
-						as in: {PlayerRow(data, 'row5')}
+						as in: {PlayerRow(data, 'row5_en')}
 					</Col>
 				</Row>
 
@@ -140,7 +140,7 @@ const Lesson15_en = () => {
                         <Col className='opisLekcije'>
                     When the letters of the same origin stand next to each other, the first letter with {' '}
 						<strong>sukoon</strong>, and the second with <strong>a short vowel/haraka</strong>,
-						then the former assimilates into the latter one from the same group: <u></u>:
+						then the former assimilates into the latter one from the same group: <u></u>
 					</Col>
 						</Row>
 
@@ -148,7 +148,7 @@ const Lesson15_en = () => {
 							<Col className='opisLekcije text-left'>
 								<strong className=''>1.</strong>
 								<span className='arapski-lekcija'> ط د ت </span> as in:{' '}
-								{PlayerRow(data, 'row1')}
+								{PlayerRow(data, 'row1_en')}
 							</Col>
 						</Row>
 
@@ -162,7 +162,7 @@ const Lesson15_en = () => {
 							<Col className='opisLekcije text-left'>
 								<strong>2.</strong>{' '}
 								<span className='arapski-lekcija'> ظ ذ ث </span> as in:{' '}
-								{PlayerRow(data, 'row3')}
+								{PlayerRow(data, 'row3_en')}
 							</Col>
 						</Row>
 
@@ -176,7 +176,7 @@ const Lesson15_en = () => {
 							<Col className='opisLekcije text-left'>
 								<strong>3.</strong>{' '}
 								<span className='arapski-lekcija'> ب م </span> as in:{' '}
-								{PlayerRow(data, 'row5')}
+								{PlayerRow(data, 'row5_en')}
 							</Col>
 						</Row>
 

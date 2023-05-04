@@ -55,6 +55,49 @@
             "after": null
         }
     ],
+    "row2_en": [{
+            "id": 3,
+            "url": "./assets/audio/l20/3.mp3",
+            "highlight": null,
+            "word": "قٓ",
+            "after": "is recited as: "
+        },
+        {
+            "id": 4,
+            "url": "./assets/audio/l20/3.mp3",
+            "highlight": "قَـآفْ",
+            "word": "قَـآفْ",
+            "after": " ; "
+        },
+        {
+            "id": 5,
+            "url": "./assets/audio/l20/4.mp3",
+            "highlight": null,
+            "word": "صٓ",
+            "after": "is recited as: "
+        },
+        {
+            "id": 6,
+            "url": "./assets/audio/l20/4.mp3",
+            "highlight": "صَآدْ",
+            "word": "صَآدْ",
+            "after": " ; "
+        },
+        {
+            "id": 7,
+            "url": "./assets/audio/l20/5.mp3",
+            "highlight": null,
+            "word": "الٓمٓ",
+            "after": "is recited as: "
+        },
+        {
+            "id": 8,
+            "url": "./assets/audio/l20/5.mp3",
+            "highlight": "لَآمْ مِيٓمْ",
+            "word": "اَلِفْ لَآمْ مِيٓمْ",
+            "after": null
+        }
+    ],
     "row3": [{
         "id": 6,
         "url": "./assets/audio/l20/6.mp3",

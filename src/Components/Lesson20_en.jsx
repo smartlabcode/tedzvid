@@ -87,7 +87,7 @@ const Lesson20_en = () => {
 
 				<Row className='text-center  reorder'>
 					<Col style={{ flexWrap: 'wrap-reverse' }}>
-						{PlayerRow(data, 'row2')}
+						{PlayerRow(data, 'row2_en')}
 					</Col>
 				</Row>
 				<Row className='text-center  reorder-basic-display-after rtl'>
@@ -137,7 +137,7 @@ const Lesson20_en = () => {
 
 						<Row className='text-center  reorder'>
 							<Col style={{ flexWrap: 'wrap-reverse' }}>
-								{PlayerRow(data, 'row2')}
+								{PlayerRow(data, 'row2_en')}
 							</Col>
 						</Row>
 						<Row className='text-center  reorder-basic-display-after rtl'>
