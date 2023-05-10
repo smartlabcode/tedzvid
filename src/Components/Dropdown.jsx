@@ -1,20 +1,22 @@
-import React, { useState } from "react";
-import { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import './dropdown.scss'
+import "./dropdown.scss";
 
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
-  const storedLanguage = localStorage.getItem("lng");
   const defaultLanguage = "bs";
+  const storedLanguage = localStorage.getItem("language");
   const [language, setLanguage] = useState(storedLanguage || defaultLanguage);
   const [isOpen, setIsOpen] = useState(false);
-  const bosnianFlag = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Flag_of_Bosnia_and_Herzegovina.svg/100px-Flag_of_Bosnia_and_Herzegovina.svg.png"
-  const englishFlag = "https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/100px-Flag_of_the_United_Kingdom.svg.png"
+  const bosnianFlag =
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Flag_of_Bosnia_and_Herzegovina.svg/100px-Flag_of_Bosnia_and_Herzegovina.svg.png";
+  const englishFlag =
+    "https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/100px-Flag_of_the_United_Kingdom.svg.png";
+
   const handleLanguageChange = (newLanguage) => {
     i18n.changeLanguage(newLanguage);
     setLanguage(newLanguage);
-    localStorage.setItem("language", newLanguage); // Store selected language in localStorage
+    localStorage.setItem("language", newLanguage);
     setIsOpen(false);
   };
 
@@ -22,11 +24,12 @@ const LanguageSwitcher = () => {
     setIsOpen((prev) => !prev);
   };
 
-  // Update the language state when the language in localStorage changes
   useEffect(() => {
-    const storedLanguage = localStorage.getItem("language");
-    setLanguage(storedLanguage || defaultLanguage);
-  }, []);
+    localStorage.removeItem('i18nextLng');
+    if (!storedLanguage) {
+     handleLanguageChange(defaultLanguage);
+    }
+  }, [storedLanguage]);
 
  return (
     <div style={{ position: "relative" }}>
