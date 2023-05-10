@@ -25,8 +25,9 @@ const LanguageSwitcher = () => {
   };
 
   useEffect(() => {
-    localStorage.removeItem('i18nextLng');
     if (!storedLanguage) {
+     //localStorage.removeItem('i18nextLng
+     localStorage.setItem('i18nextLng','bs');
      handleLanguageChange(defaultLanguage);
     }
   }, [storedLanguage]);
