@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import { FaTimes } from 'react-icons/fa';
+import { isWebview } from "../Helpers/BrowserDetect";
 
 export default function BrowserMessage(props) {
 	const [ isHidden, setIsHidden ] = useState(false);
@@ -12,7 +13,10 @@ export default function BrowserMessage(props) {
 		}
 	let browser=props.browser.toLowerCase();
 	let version=props.browserVersion;
-	let needUpdate = browser in allowedVersions?allowedVersions[browser]>=version:true;
+	let needUpdate =
+    !isWebview() && browser in allowedVersions
+      ? allowedVersions[browser] >= version
+      : true;
 	setIsHidden(!needUpdate)
 	}, [props.browser,props.browserVersion]);
 	return (
