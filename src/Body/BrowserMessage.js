@@ -13,10 +13,11 @@ export default function BrowserMessage(props) {
 		}
 	let browser=props.browser.toLowerCase();
 	let version=props.browserVersion;
-	let needUpdate =
-    !isWebview() && browser in allowedVersions
-      ? allowedVersions[browser] >= version
-      : true;
+	let needUpdate = false;
+  if (!window.ReactNativeWebView) {
+    needUpdate =
+      browser in allowedVersions ? allowedVersions[browser] >= version : true;
+  }
 	setIsHidden(!needUpdate)
 	}, [props.browser,props.browserVersion]);
 	return (
