@@ -1,6 +1,5 @@
 import React,{useState,useEffect} from 'react';
-import { FaTimes } from 'react-icons/fa';
-import { isWebview } from "../Helpers/BrowserDetect";
+import { FaTimes } from "react-icons/fa";
 
 export default function BrowserMessage(props) {
 	const [ isHidden, setIsHidden ] = useState(false);

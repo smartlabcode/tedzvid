@@ -153,7 +153,7 @@ span.arap-red {
 	color: red;
 }
 
-.opisLekcije {
+div.opisLekcije {
 	padding: 0.8rem;
 	padding-left: 4em;
 	padding-right: 4em;
@@ -809,4 +809,9 @@ h2 strong {
 	color: red;
 	text-decoration: none;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.vjezba-row {
+	margin-top: 1.75rem;
+	margin-bottom: 1.75rem;
 }

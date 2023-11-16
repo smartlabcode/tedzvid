@@ -35,293 +35,307 @@ const Lesson20_en = () => {
 	const { i18n } = useTranslation();
   return (
     <>
-    <LekcijaMenu broj='20' naziv='AL-MADD AL-LAZIM' />
-			<Container>
-				<Row>
-					<Col>
-						<div className='mobileTop'>
-							<center>
-								<img
-									src={process.env.PUBLIC_URL + '/assets/svg/Group 61.svg'}
-									alt='Group 61'
-								/>
-							</center>
-							<h2
-								className='text-center font-weight-bold text-uppercase'
-								id='lekcija'>
-								20 AL-MADD AL-LAZIM
-							</h2>
-						</div>
-						<h4 className='text-center'>
-							<strong>Mandatory extension</strong>
-						</h4>
-					</Col>
-				</Row>
-				<hr />
+      <LekcijaMenu broj="20" naziv="AL-MADD AL-LAZIM" />
+      <Container>
+        <Row>
+          <Col>
+            <div className="mobileTop">
+              <center>
+                <img
+                  src={process.env.PUBLIC_URL + "/assets/svg/Group 61.svg"}
+                  alt="Group 61"
+                />
+              </center>
+              <h2
+                className="text-center font-weight-bold text-uppercase"
+                id="lekcija"
+              >
+                20 AL-MADD AL-LAZIM
+              </h2>
+            </div>
+            <h4 className="text-center">
+              <strong>Mandatory extension</strong>
+            </h4>
+          </Col>
+        </Row>
+        <hr />
 
-				<Row>
-					<Col>
-						<br />
-					</Col>
-				</Row>
-				<IconContext.Provider
-					value={{ size: '30px', style: { float: 'right' } }}>
-					<MdZoomOutMap className='zoomIcon' onClick={handleShowL} />
-				</IconContext.Provider>
-				<Row>
-					<Col className='opisLekcije'>
-					When the <strong>long vowel</strong> A{' '}
-						<span className='arapski-lekcija'>ـــَــ ا</span> , I
-						<span className='arapski-lekcija'> ـــِـ ى </span>, or U{' '}
-						<span className='arapski-lekcija'>ـــُــ و</span> is followed by{' '}
-						<strong>
-						a permanent sukoon <span className='arapski-lekcija'> ـــْــ </span>
-						</strong>{' '} or {' '}
-						 <strong>
-						  shaddah <span className='arapski-lekcija'>ـــّــ </span> {/*dodo sam "alt+0160" nevidljivi znak umjesto space-a kako bi sastavilo shaddah i arapski znak, kako bi uvijek bili u istom redu */}
-						</strong>
-						, al-madd al-lazim occurs. The reciter must extend the word for 6 counts, as in:<br></br>
-						{PlayerRow(data, 'row1')}
-					</Col>
-				</Row>
+        <Row>
+          <Col>
+            <br />
+          </Col>
+        </Row>
+        <IconContext.Provider
+          value={{ size: "30px", style: { float: "right" } }}
+        >
+          <MdZoomOutMap className="zoomIcon" onClick={handleShowL} />
+        </IconContext.Provider>
+        <Row>
+          <Col className="opisLekcije">
+            When the <strong>long vowel</strong> A{" "}
+            <span className="arapski-lekcija">ـــَــ ا</span> , I
+            <span className="arapski-lekcija"> ـــِـ ى </span>, or U{" "}
+            <span className="arapski-lekcija">ـــُــ و</span> is followed by{" "}
+            <strong>
+              a permanent sukoon{" "}
+              <span className="arapski-lekcija"> ـــْــ </span>
+            </strong>{" "}
+            or{" "}
+            <strong>
+              shaddah <span className="arapski-lekcija">ـــّــ </span>{" "}
+              {/*dodo sam "alt+0160" nevidljivi znak umjesto space-a kako bi sastavilo shaddah i arapski znak, kako bi uvijek bili u istom redu */}
+            </strong>
+            , al-madd al-lazim occurs. The reciter must extend the word for 6
+            counts, as in:<br></br>
+            {PlayerRow(data, "row1")}
+          </Col>
+        </Row>
 
-				<Row className='text-center  reorder'>
-					<Col style={{ flexWrap: 'wrap-reverse' }}>
-						{PlayerRow(data, 'row2_en')}
-					</Col>
-				</Row>
-				<Row className='text-center  reorder-basic-display-after rtl'>
-					<Col>{PlayerRow(data, 'row3')}</Col>
-				</Row>
+        <Row className="text-center  reorder">
+          <Col style={{ flexWrap: "wrap-reverse" }}>
+            {PlayerRow(data, "row2_en")}
+          </Col>
+        </Row>
+        <Row className="text-center  reorder-basic-display-after rtl">
+          <Col>{PlayerRow(data, "row3")}</Col>
+        </Row>
 
-				<Row className='text-center  '>
-					<Col>{PlayerRow(data, 'row4')}</Col>
-				</Row>
+        <Row className="text-center  ">
+          <Col>{PlayerRow(data, "row4")}</Col>
+        </Row>
 
-				<Row>
-					<Col>
-						<br />
-					</Col>
-				</Row>
+        <Row>
+          <Col>
+            <br />
+          </Col>
+        </Row>
 
-				<Row>
-					<Col>
-						<br />
-					</Col>
-				</Row>
-				<Modal
-					show={showL}
-					onHide={handleCloseL}
-					backdrop='static'
-					keyboard={false}>
-					<Modal.Header closeButton>
-						<Modal.Title>LESSON</Modal.Title>
-					</Modal.Header>
-					<Modal.Body className='custom-modal'>
-						<Row>
-						<Col className='opisLekcije'>
-					When the <strong>long vowel</strong> A{' '}
-						<span className='arapski-lekcija'>ـــَــ ا</span> , I
-						<span className='arapski-lekcija'> ـــِـ ى </span>, or U{' '}
-						<span className='arapski-lekcija'>ـــُــ و</span> is followed by{' '}
-						<strong>
-						a permanent sukoon <span className='arapski-lekcija'> ـــْــ </span>
-						</strong>{' '} or {' '}
-						 <strong>
-						  shaddah <span className='arapski-lekcija'>ـــّــ </span> {/*dodo sam "alt+0160" nevidljivi znak umjesto space-a kako bi sastavilo shaddah i arapski znak, kako bi uvijek bili u istom redu */}
-						</strong>
-						, al-madd al-lazim occurs. The reciter must extend the word for 6 counts, as in:<br></br>
-						{PlayerRow(data, 'row1')}
-					</Col>
-						</Row>
+        <Row>
+          <Col>
+            <br />
+          </Col>
+        </Row>
+        <Modal
+          show={showL}
+          onHide={handleCloseL}
+          backdrop="static"
+          keyboard={false}
+        >
+          <Modal.Header closeButton>
+            <Modal.Title>LESSON</Modal.Title>
+          </Modal.Header>
+          <Modal.Body className="custom-modal">
+            <Row>
+              <Col className="opisLekcije">
+                When the <strong>long vowel</strong> A{" "}
+                <span className="arapski-lekcija">ـــَــ ا</span> , I
+                <span className="arapski-lekcija"> ـــِـ ى </span>, or U{" "}
+                <span className="arapski-lekcija">ـــُــ و</span> is followed by{" "}
+                <strong>
+                  a permanent sukoon{" "}
+                  <span className="arapski-lekcija"> ـــْــ </span>
+                </strong>{" "}
+                or{" "}
+                <strong>
+                  shaddah <span className="arapski-lekcija">ـــّــ </span>{" "}
+                  {/*dodo sam "alt+0160" nevidljivi znak umjesto space-a kako bi sastavilo shaddah i arapski znak, kako bi uvijek bili u istom redu */}
+                </strong>
+                , al-madd al-lazim occurs. The reciter must extend the word for
+                6 counts, as in:<br></br>
+                {PlayerRow(data, "row1")}
+              </Col>
+            </Row>
 
-						<Row className='text-center  reorder'>
-							<Col style={{ flexWrap: 'wrap-reverse' }}>
-								{PlayerRow(data, 'row2_en')}
-							</Col>
-						</Row>
-						<Row className='text-center  reorder-basic-display-after rtl'>
-							<Col>{PlayerRow(data, 'row3')}</Col>
-						</Row>
+            <Row className="text-center  reorder">
+              <Col style={{ flexWrap: "wrap-reverse" }}>
+                {PlayerRow(data, "row2_en")}
+              </Col>
+            </Row>
+            <Row className="text-center  reorder-basic-display-after rtl">
+              <Col>{PlayerRow(data, "row3")}</Col>
+            </Row>
 
-						<Row className='text-center  '>
-							<Col>{PlayerRow(data, 'row4')}</Col>
-						</Row>
+            <Row className="text-center  ">
+              <Col>{PlayerRow(data, "row4")}</Col>
+            </Row>
 
-						<Row>
-							<Col>
-								<br />
-							</Col>
-						</Row>
+            <Row>
+              <Col>
+                <br />
+              </Col>
+            </Row>
 
-						<Row>
-							<Col>
-								<br />
-							</Col>
-						</Row>
-					</Modal.Body>
-					<Modal.Footer>
-						<Button variant='secondary' onClick={handleCloseL}>
-							Close
-						</Button>
-					</Modal.Footer>
-				</Modal>
-				<h2 className='text-center' id='vjezba'>
-					<strong>PRACTICE</strong>
-				</h2>
-				<hr />
+            <Row>
+              <Col>
+                <br />
+              </Col>
+            </Row>
+          </Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={handleCloseL}>
+              Close
+            </Button>
+          </Modal.Footer>
+        </Modal>
+        <h2 className="text-center" id="vjezba">
+          <strong>PRACTICE</strong>
+        </h2>
+        <hr />
 
-				<Row>
-					<Col>
-						<br />
-					</Col>
-				</Row>
-				<IconContext.Provider
-					value={{ size: '30px', style: { float: 'right' } }}>
-					<MdZoomOutMap className='zoomIcon' onClick={handleShow} />
-				</IconContext.Provider>
-				<Row className='text-center'>
-					<Col className='mobile-row rtl'>
-						<span className='tacka'>
-							{VjezbeRow(data, 'vjezba', 'broj9')} ۞
-						</span>
-						<span className='tacka'>
-							{VjezbeRow(data, 'vjezba', 'broj10')} ۞
-						</span>
-					</Col>
-				</Row>
-				<Row className='text-center'>
-					<Col className='mobile-row rtl'>
-						<span className='tacka'>
-							{VjezbeRow(data, 'vjezba', 'broj11')} ۞
-						</span>
-						<span className='tacka'>
-							{VjezbeRow(data, 'vjezba', 'broj12')} ۞
-						</span>
-						<span className='tacka'>
-							{VjezbeRow(data, 'vjezba', 'broj13')} ۞
-						</span>
-					</Col>
-				</Row>
-				<Row className='text-center'>
-					<Col className='mobile-row rtl'>
-						<span className='tacka'>
-							{VjezbeRow(data, 'vjezba', 'broj14')} ۞
-						</span>
-						<span className='tacka'>
-							{VjezbeRow(data, 'vjezba', 'broj15')} ۞
-						</span>
-					</Col>
-				</Row>
+        <Row>
+          <Col>
+            <br />
+          </Col>
+        </Row>
+        <IconContext.Provider
+          value={{ size: "30px", style: { float: "right" } }}
+        >
+          <MdZoomOutMap className="zoomIcon" onClick={handleShow} />
+        </IconContext.Provider>
+        <Row className="text-center vjezba-row">
+          <Col className="mobile-row rtl">
+            <span className="tacka">
+              {VjezbeRow(data, "vjezba", "broj9")} ۞
+            </span>
+            <span className="tacka">
+              {VjezbeRow(data, "vjezba", "broj10")} ۞
+            </span>
+          </Col>
+        </Row>
+        <Row className="text-center vjezba-row">
+          <Col className="mobile-row rtl">
+            <span className="tacka">
+              {VjezbeRow(data, "vjezba", "broj11")} ۞
+            </span>
+            <span className="tacka">
+              {VjezbeRow(data, "vjezba", "broj12")} ۞
+            </span>
+            <span className="tacka">
+              {VjezbeRow(data, "vjezba", "broj13")} ۞
+            </span>
+          </Col>
+        </Row>
+        <Row className="text-center vjezba-row">
+          <Col className="mobile-row rtl">
+            <span className="tacka">
+              {VjezbeRow(data, "vjezba", "broj14")} ۞
+            </span>
+            <span className="tacka">
+              {VjezbeRow(data, "vjezba", "broj15")} ۞
+            </span>
+          </Col>
+        </Row>
 
-				<Row className='text-center'>
-					<Col className='mobile-row rtl'>
-						<span className='tacka'>
-							{VjezbeRow(data, 'vjezba', 'broj16')} ۞
-						</span>
-						<span className='tacka'>
-							{VjezbeRow(data, 'vjezba', 'broj17')} ۞
-						</span>
-						<span className='tacka'>
-							{VjezbeRow(data, 'vjezba', 'broj18')} ۞
-						</span>
-					</Col>
-				</Row>
-				<Row className='text-center'>
-					<Col />
-				</Row>
-				<Row>
-					<Col>
-						<hr />
-						<h2 className='text-center' id='video'>
-							<strong>VIDEO LECTURE</strong>
-						</h2>
-						<center>
-							<div className='video'>
-								<iframe
-									width='900'
-									height='506'
-									src='https://www.youtube.com/embed/4B7RWJ72RGA'
-									title='YouTube video player'
-									frameborder='0'
-									allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-									allowFullScreen='true'
-									webkitallowfullscreen='true'
-									mozallowfullscreen='true'></iframe>
-							</div>
-						</center>
-					</Col>
-				</Row>
-				<Modal
-					show={show}
-					onHide={handleClose}
-					backdrop='static'
-					keyboard={false}>
-					<Modal.Header closeButton>
-						<Modal.Title>PRACTICE</Modal.Title>
-					</Modal.Header>
-					<Modal.Body className='custom-modal'>
-						<Row className='text-center'>
-							<Col className='mobile-row rtl'>
-								<span className='tacka'>
-									{VjezbeRow(data, 'vjezba', 'broj9')} ۞
-								</span>
-								<span className='tacka'>
-									{VjezbeRow(data, 'vjezba', 'broj10')} ۞
-								</span>
-							</Col>
-						</Row>
-						<Row className='text-center'>
-							<Col className='mobile-row rtl'>
-								<span className='tacka'>
-									{VjezbeRow(data, 'vjezba', 'broj11')} ۞
-								</span>
-								<span className='tacka'>
-									{VjezbeRow(data, 'vjezba', 'broj12')} ۞
-								</span>
-								<span className='tacka'>
-									{VjezbeRow(data, 'vjezba', 'broj13')} ۞
-								</span>
-							</Col>
-						</Row>
-						<Row className='text-center'>
-							<Col className='mobile-row rtl'>
-								<span className='tacka'>
-									{VjezbeRow(data, 'vjezba', 'broj14')} ۞
-								</span>
-								<span className='tacka'>
-									{VjezbeRow(data, 'vjezba', 'broj15')} ۞
-								</span>
-							</Col>
-						</Row>
+        <Row className="text-center vjezba-row">
+          <Col className="mobile-row rtl">
+            <span className="tacka">
+              {VjezbeRow(data, "vjezba", "broj16")} ۞
+            </span>
+            <span className="tacka">
+              {VjezbeRow(data, "vjezba", "broj17")} ۞
+            </span>
+            <span className="tacka">
+              {VjezbeRow(data, "vjezba", "broj18")} ۞
+            </span>
+          </Col>
+        </Row>
+        <Row className="text-center vjezba-row">
+          <Col />
+        </Row>
+        <Row>
+          <Col>
+            <hr />
+            <h2 className="text-center" id="video">
+              <strong>VIDEO LECTURE</strong>
+            </h2>
+            <center>
+              <div className="video">
+                <iframe
+                  width="900"
+                  height="506"
+                  src="https://www.youtube.com/embed/4B7RWJ72RGA"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen="true"
+                  webkitallowfullscreen="true"
+                  mozallowfullscreen="true"
+                ></iframe>
+              </div>
+            </center>
+          </Col>
+        </Row>
+        <Modal
+          show={show}
+          onHide={handleClose}
+          backdrop="static"
+          keyboard={false}
+        >
+          <Modal.Header closeButton>
+            <Modal.Title>PRACTICE</Modal.Title>
+          </Modal.Header>
+          <Modal.Body className="custom-modal">
+            <Row className="text-center vjezba-row">
+              <Col className="mobile-row rtl">
+                <span className="tacka">
+                  {VjezbeRow(data, "vjezba", "broj9")} ۞
+                </span>
+                <span className="tacka">
+                  {VjezbeRow(data, "vjezba", "broj10")} ۞
+                </span>
+              </Col>
+            </Row>
+            <Row className="text-center vjezba-row">
+              <Col className="mobile-row rtl">
+                <span className="tacka">
+                  {VjezbeRow(data, "vjezba", "broj11")} ۞
+                </span>
+                <span className="tacka">
+                  {VjezbeRow(data, "vjezba", "broj12")} ۞
+                </span>
+                <span className="tacka">
+                  {VjezbeRow(data, "vjezba", "broj13")} ۞
+                </span>
+              </Col>
+            </Row>
+            <Row className="text-center vjezba-row">
+              <Col className="mobile-row rtl">
+                <span className="tacka">
+                  {VjezbeRow(data, "vjezba", "broj14")} ۞
+                </span>
+                <span className="tacka">
+                  {VjezbeRow(data, "vjezba", "broj15")} ۞
+                </span>
+              </Col>
+            </Row>
 
-						<Row className='text-center'>
-							<Col className='mobile-row rtl'>
-								<span className='tacka'>
-									{VjezbeRow(data, 'vjezba', 'broj16')} ۞
-								</span>
-								<span className='tacka'>
-									{VjezbeRow(data, 'vjezba', 'broj17')} ۞
-								</span>
-								<span className='tacka'>
-									{VjezbeRow(data, 'vjezba', 'broj18')} ۞
-								</span>
-							</Col>
-						</Row>
-						<Row className='text-center'>
-							<Col />
-						</Row>
-					</Modal.Body>
-					<Modal.Footer>
-						<Button variant='secondary' onClick={handleClose}>
-							Close
-						</Button>
-					</Modal.Footer>
-				</Modal>
-				<Footer prev='/lekcija19' next='/lekcija21' />
-			</Container>
+            <Row className="text-center vjezba-row">
+              <Col className="mobile-row rtl">
+                <span className="tacka">
+                  {VjezbeRow(data, "vjezba", "broj16")} ۞
+                </span>
+                <span className="tacka">
+                  {VjezbeRow(data, "vjezba", "broj17")} ۞
+                </span>
+                <span className="tacka">
+                  {VjezbeRow(data, "vjezba", "broj18")} ۞
+                </span>
+              </Col>
+            </Row>
+            <Row className="text-center vjezba-row">
+              <Col />
+            </Row>
+          </Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={handleClose}>
+              Close
+            </Button>
+          </Modal.Footer>
+        </Modal>
+        <Footer prev="/lekcija19" next="/lekcija21" />
+      </Container>
     </>
-  )
+  );
 }
 
 export default Lesson20_en

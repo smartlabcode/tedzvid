@@ -153,7 +153,7 @@ const Lesson12_en = () => {
 					value={{ size: '30px', style: { float: 'right' } }}>
 					<MdZoomOutMap className='zoomIcon' onClick={handleShow} />
 				</IconContext.Provider>
-				<Row className='text-center'>
+				<Row className="text-center vjezba-row">
 					<Col className='mobile-row'>
 						<span className='tacka'>
 							{VjezbeRow(data, 'vjezba', 'broj7')} ۞
@@ -163,7 +163,7 @@ const Lesson12_en = () => {
 						</span>
 					</Col>
 				</Row>
-				<Row className='text-center'>
+				<Row className="text-center vjezba-row">
 					<Col className='mobile-row'>
 						<span className='tacka'>
 							{VjezbeRow(data, 'vjezba', 'broj9')} ۞
@@ -173,21 +173,21 @@ const Lesson12_en = () => {
 						</span>
 					</Col>
 				</Row>
-				<Row className='text-center'>
+				<Row className="text-center vjezba-row">
 					<Col className='mobile-row'>
 						<span className='tacka'>
 							{VjezbeRow(data, 'vjezba', 'broj11')} ۞
 						</span>
 					</Col>
 				</Row>
-				<Row className='text-center'>
+				<Row className="text-center vjezba-row">
 					<Col className='mobile-row'>
 						<span className='tacka'>
 							{VjezbeRow(data, 'vjezba', 'broj12')} ۞
 						</span>
 					</Col>
 				</Row>
-				<Row className='text-center'>
+				<Row className="text-center vjezba-row">
 					<Col className='mobile-row'>
 						<span className='tacka'>
 							{VjezbeRow(data, 'vjezba', 'broj13')} ۞
@@ -197,7 +197,7 @@ const Lesson12_en = () => {
 						</span>
 					</Col>
 				</Row>
-				<Row className='text-center'>
+				<Row className="text-center vjezba-row">
 					<Col className='mobile-row'>
 						<span className='tacka'>
 							{VjezbeRow(data, 'vjezba', 'broj15')} ۞
@@ -235,7 +235,7 @@ const Lesson12_en = () => {
 						<Modal.Title>PRACTICE</Modal.Title>
 					</Modal.Header>
 					<Modal.Body className='custom-modal'>
-						<Row className='text-center'>
+						<Row className="text-center vjezba-row">
 							<Col className='mobile-row'>
 								<span className='tacka'>
 									{VjezbeRow(data, 'vjezba', 'broj7')} ۞
@@ -245,7 +245,7 @@ const Lesson12_en = () => {
 								</span>
 							</Col>
 						</Row>
-						<Row className='text-center'>
+						<Row className="text-center vjezba-row">
 							<Col className='mobile-row'>
 								<span className='tacka'>
 									{VjezbeRow(data, 'vjezba', 'broj9')} ۞
@@ -255,21 +255,21 @@ const Lesson12_en = () => {
 								</span>
 							</Col>
 						</Row>
-						<Row className='text-center'>
+						<Row className="text-center vjezba-row">
 							<Col className='mobile-row'>
 								<span className='tacka'>
 									{VjezbeRow(data, 'vjezba', 'broj11')} ۞
 								</span>
 							</Col>
 						</Row>
-						<Row className='text-center'>
+						<Row className="text-center vjezba-row">
 							<Col className='mobile-row'>
 								<span className='tacka'>
 									{VjezbeRow(data, 'vjezba', 'broj12')} ۞
 								</span>
 							</Col>
 						</Row>
-						<Row className='text-center'>
+						<Row className="text-center vjezba-row">
 							<Col className='mobile-row'>
 								<span className='tacka'>
 									{VjezbeRow(data, 'vjezba', 'broj13')} ۞
@@ -279,7 +279,7 @@ const Lesson12_en = () => {
 								</span>
 							</Col>
 						</Row>
-						<Row className='text-center'>
+						<Row className="text-center vjezba-row">
 							<Col className='mobile-row'>
 								<span className='tacka'>
 									{VjezbeRow(data, 'vjezba', 'broj15')} ۞
