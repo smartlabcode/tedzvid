@@ -77,8 +77,11 @@ const Lesson9_en = () => {
           <Col className="opisLekcije">
             When the letter <strong>N</strong> with <strong>sukoon</strong> (
             <span className="arapski-lekcija">نْ</span>) or{" "}
-            <strong>nunation/tanwin</strong> EN ـــًـــ , IN ـــٍــ , UN ــٌــ
-            is followed by one of the six throat letters:{" "}
+            <strong>nunation/tanwin</strong> EN{" "}
+            <span className="arapski-lekcija ">ـــًـــ </span>, IN{" "}
+            <span className="arapski-lekcija ">ـــٍــ </span>, UN
+            <span className="arapski-lekcija "> ــٌــ</span> is followed by one
+            of the six throat letters:{" "}
             <pre style={{ display: "inline" }}> </pre>
             <span className="arapski-lekcija" style={{ color: "red" }}>
               {" "}
@@ -174,8 +177,11 @@ const Lesson9_en = () => {
               <Col className="opisLekcije">
                 When the letter <strong>N</strong> with <strong>sukoon</strong>{" "}
                 (<span className="arapski-lekcija">نْ</span>) or{" "}
-                <strong>nunation/tanwin</strong> EN ـــًـــ , IN ـــٍــ , UN
-                ــٌــ is followed by one of the six throat letters:{" "}
+                <strong>nunation/tanwin</strong> EN{" "}
+                <span className="arapski-lekcija ">ـــًـــ</span> , IN{" "}
+                <span className="arapski-lekcija ">ـــٍــ </span>, UN
+                <span className="arapski-lekcija "> ــٌــ </span>is followed by
+                one of the six throat letters:{" "}
                 <pre style={{ display: "inline" }}> </pre>
                 <span className="arapski-lekcija" style={{ color: "red" }}>
                   {" "}
