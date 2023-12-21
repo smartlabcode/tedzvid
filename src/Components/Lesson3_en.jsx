@@ -107,7 +107,7 @@ const Lesson3_en = () => {
           <Col>. {PlayerRow(data, "row3")}</Col>
         </Row>
 
-        <Row className="text-center  reorder-basic rtl">
+        <Row className="text-center reorder-basic-display-after rtl">
           <Col>{PlayerRow(data, "row4")}</Col>
         </Row>
 
@@ -166,7 +166,7 @@ const Lesson3_en = () => {
               <Col>. {PlayerRow(data, "row3")}</Col>
             </Row>
 
-            <Row className="text-center  reorder-basic rtl">
+            <Row className="text-center reorder-basic-display-after rtl">
               <Col>{PlayerRow(data, "row4")}</Col>
             </Row>
           </Modal.Body>
