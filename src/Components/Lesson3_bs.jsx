@@ -85,8 +85,8 @@ const Lesson3_bs = () => {
             , npr.:
           </Col>
         </Row>
-        <Row className="text-center  reorder-basic ">
-          <Col>{PlayerRow(data, "row1")}</Col>
+        <Row className="text-center  mobile-row">
+          <Col>. {PlayerRow(data, "row1")}</Col>
         </Row>
         <Row className="text-center  ">
           <Col>{VjezbeRow(data, "multirow", "row2")}</Col>
@@ -103,8 +103,8 @@ const Lesson3_bs = () => {
           </Col>
         </Row>
 
-        <Row className="text-center  reorder-basic ">
-          <Col>{PlayerRow(data, "row3")}</Col>
+        <Row className="text-center mobile-row">
+          <Col>. {PlayerRow(data, "row3")}</Col>
         </Row>
 
         <Row className="text-center  reorder-basic rtl">
@@ -144,8 +144,8 @@ const Lesson3_bs = () => {
                 <u>krupno</u>, npr.:
               </Col>
             </Row>
-            <Row className="text-center  reorder-basic ">
-              <Col>{PlayerRow(data, "row1")}</Col>
+            <Row className="text-center  mobile-row ">
+              <Col>. {PlayerRow(data, "row1")}</Col>
             </Row>
             <Row className="text-center  ">
               <Col>{VjezbeRow(data, "multirow", "row2")}</Col>
@@ -162,8 +162,8 @@ const Lesson3_bs = () => {
               </Col>
             </Row>
 
-            <Row className="text-center  reorder-basic ">
-              <Col>{PlayerRow(data, "row3")}</Col>
+            <Row className="text-center  mobile-row ">
+              <Col>. {PlayerRow(data, "row3")}</Col>
             </Row>
 
             <Row className="text-center  reorder-basic rtl">

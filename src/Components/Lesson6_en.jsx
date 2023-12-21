@@ -118,7 +118,7 @@ const Lesson6_bs = () => {
           <Col>{PlayerRow(data, "row1_en")}</Col>
         </Row>
 
-        <Row className="text-center reorder-basic rtl">
+        <Row className="text-center mobile-row rtl">
           <Col>{PlayerRow(data, "row2")}</Col>
         </Row>
 
@@ -191,7 +191,7 @@ const Lesson6_bs = () => {
               <Col>{PlayerRow(data, "row1_en")}</Col>
             </Row>
 
-            <Row className="text-center reorder-basic rtl">
+            <Row className="text-center mobile-row rtl">
               <Col>{PlayerRow(data, "row2")}</Col>
             </Row>
 

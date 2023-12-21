@@ -86,7 +86,7 @@ const Lesson22_en = () => {
         <Row className="text-center reorder-basic-display-after rtl">
           <Col>
             <span>
-              {PlayerRow(data, "row1desni")}
+              . {PlayerRow(data, "row1desni")}
               <span className="arapski">( ـــَــ يْ ـــْــ ) </span>
             </span>
             <span className="after">;</span>
@@ -163,15 +163,16 @@ const Lesson22_en = () => {
               </Col>
             </Row>
 
-            <Row className="text-center ">
+            <Row className="text-center reorder-basic-display-after rtl">
               <Col>
                 <span>
-                  <span className="arapski">( ـــَــ يْ ـــْــ ) </span>{" "}
-                  {PlayerRow(data, "row1desni")}
+                  . {PlayerRow(data, "row1desni")}
+                  <span className="arapski">( ـــَــ يْ ـــْــ ) </span>
                 </span>
+                <span className="after">;</span>
                 <span>
-                  <span className="arapski">( ـــَــ وْ ـــْــ )</span>{" "}
                   {PlayerRow(data, "row1lijevi")}
+                  <span className="arapski">( ـــَــ وْ ـــْــ )</span>
                 </span>
               </Col>
             </Row>

@@ -101,7 +101,7 @@ const Lesson6_bs = () => {
             </span>{" "}
             (sadržana u riječi <strong>jemnu</strong> –
             <span className="arapski-lekcija">يَمْنُو</span>), dolazi do
-            uklapanja harfa <strong>N</strong>(
+            uklapanja harfa <strong>N</strong> (
             <span className="arapski-lekcija">ن</span>) u jedan od spomenuta
             četiri harfa, propuštajući zrak kroz nos u trajanju od 2 hareketa,
             npr.:
@@ -118,7 +118,7 @@ const Lesson6_bs = () => {
           <Col>{PlayerRow(data, "row1")}</Col>
         </Row>
 
-        <Row className="text-center reorder-basic rtl">
+        <Row className="text-center mobile-row rtl">
           <Col>{PlayerRow(data, "row2")}</Col>
         </Row>
 
@@ -176,7 +176,7 @@ const Lesson6_bs = () => {
                 </span>{" "}
                 (sadržana u riječi <strong>jemnu</strong> –
                 <span className="arapski-lekcija">يَمْنُو</span>), dolazi do
-                uklapanja harfa <strong>N</strong>(
+                uklapanja harfa <strong>N</strong> (
                 <span className="arapski-lekcija">ن</span>) u jedan od spomenuta
                 četiri harfa, propuštajući zrak kroz nos u trajanju od 2
                 hareketa, npr.:
@@ -193,7 +193,7 @@ const Lesson6_bs = () => {
               <Col>{PlayerRow(data, "row1")}</Col>
             </Row>
 
-            <Row className="text-center reorder-basic rtl">
+            <Row className="text-center mobile-row rtl">
               <Col>{PlayerRow(data, "row2")}</Col>
             </Row>
 

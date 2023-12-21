@@ -1,30 +1,34 @@
 {
-    "row1": [{
+    "row1": [
+        {
         "id": 1,
-        "url": "./assets/audio/l3/2.mp3",
-        "highlight": "وَاللّٰهِ",
-        "word": "وَاللّٰهِ",
-        "after": " ; "
-    }, {
-        "id": 2,
         "url": "./assets/audio/l3/1.mp3",
         "highlight": "لُ اللّٰهِ",
         "word": "رَسُولُ اللّٰهِ",
-        "after": " . "
-    }],
-    "row3": [{
-            "id": 5,
-            "url": "./assets/audio/l3/5.mp3",
-            "highlight": "مِ اللّٰهِ",
-            "word": "بِسْمِ اللّٰهِ",
-            "after": " ; "
-        },
+        "after": " ; "
+    },
+    {
+        "id": 2,
+        "url": "./assets/audio/l3/2.mp3",
+        "highlight": "وَاللّٰهِ",
+        "word": "وَاللّٰهِ",
+        "after": null
+    }
+],
+"row3": [
         {
             "id": 4,
             "url": "./assets/audio/l3/4.mp3",
             "highlight": "بِا اللّٰهِ",
             "word": "بِا اللّٰهِ",
-            "after": " . "
+            "after": " ; "
+        },
+        {
+            "id": 5,
+            "url": "./assets/audio/l3/5.mp3",
+            "highlight": "مِ اللّٰهِ",
+            "word": "بِسْمِ اللّٰهِ",
+            "after": null
         }
     ],
     "row4": [{
