@@ -72,8 +72,8 @@ const Lesson15_en = () => {
         </IconContext.Provider>
         <Row>
           <Col className="opisLekcije">
-            When the letters of the same origin stand next to each other, the
-            first letter with <strong>sukoon</strong>, and the second with{" "}
+            When letters of the same origin stand next to each other, and the
+            first letter has <strong>sukoon</strong> while the second has{" "}
             <strong>a short vowel/haraka</strong>, then the former assimilates
             into the latter one from the same group: <u></u>:
           </Col>
@@ -142,10 +142,10 @@ const Lesson15_en = () => {
           <Modal.Body className="custom-modal">
             <Row>
               <Col className="opisLekcije">
-                When the letters of the same origin stand next to each other,
-                the first letter with <strong>sukoon</strong>, and the second
-                with <strong>a short vowel/haraka</strong>, then the former
-                assimilates into the latter one from the same group: <u></u>
+                When letters of the same origin stand next to each other, and
+                the first letter has <strong>sukoon</strong> while the second
+                has <strong>a short vowel/haraka</strong>, then the former
+                assimilates into the latter one from the same group: <u></u>:
               </Col>
             </Row>
 

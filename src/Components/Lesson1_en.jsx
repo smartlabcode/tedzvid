@@ -284,9 +284,9 @@ const Lesson1_bs = () => {
             </h3>
             <br />
             <p>
-              Some <strong>signs</strong> are placed above some words in the
-              Qur'an and they mark whether the reader must or must not stop at
-              that word, whether it is better to stop or to continue reading.
+              Some <strong>signs</strong> are placed above certain words in the
+              Qur'an to indicate whether the reader must or must not stop at
+              that word, or whether it is better to stop or to continue reading.
               Those signs are:
             </p>
             <br />
@@ -375,9 +375,9 @@ const Lesson1_bs = () => {
           </Modal.Header>
           <Modal.Body className="custom-modal">
             <p>
-              Some <strong>signs</strong> are placed above some words in the
-              Qur'an and they mark whether the reader must or must not stop at
-              that word, whether it is better to stop or to continue reading.
+              Some <strong>signs</strong> are placed above certain words in the
+              Qur'an to indicate whether the reader must or must not stop at
+              that word, or whether it is better to stop or to continue reading.
               Those signs are:
             </p>
             <br />

@@ -74,10 +74,10 @@ const Lesson10_en = () => {
         <Row>
           <Col className="opisLekcije">
             When the letter <strong>M</strong> with <strong>sukoon</strong> (
-            <span className="arapski-lekcija">مْ</span>) precedes{" "}
-            <u>any letter</u>, <u>except</u> for the letters <strong>B</strong>{" "}
-            (<span className="arapski-lekcija">ب</span>) and <strong>M</strong>{" "}
-            (<span className="arapski-lekcija">م</span>), then the letter{" "}
+            <span className="arapski-lekcija">مْ</span>) precedes <u>any</u>{" "}
+            letter, <u>except for</u> the letters <strong>B</strong> (
+            <span className="arapski-lekcija">ب</span>) and <strong>M</strong> (
+            <span className="arapski-lekcija">م</span>), then the letter{" "}
             <strong>M</strong> (<span className="arapski-lekcija">م</span>) is
             pronounced <u>clearly</u>, without assimilation. For example:
           </Col>
@@ -127,7 +127,7 @@ const Lesson10_en = () => {
               <Col className="opisLekcije">
                 When the letter <strong>M</strong> with <strong>sukoon</strong>{" "}
                 (<span className="arapski-lekcija">مْ</span>) precedes{" "}
-                <u>any letter</u>, <u>except</u> for the letters{" "}
+                <u>any</u> letter, <u>except for</u> the letters{" "}
                 <strong>B</strong> (<span className="arapski-lekcija">ب</span>)
                 and <strong>M</strong> (
                 <span className="arapski-lekcija">م</span>), then the letter{" "}

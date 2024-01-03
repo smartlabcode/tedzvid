@@ -74,9 +74,9 @@ const Lesson16_en = () => {
         <Row>
           <Col className="opisLekcije">
             When two letters close in proximity but with different
-            characteristics stand next to each other, the first with sukoon and
-            the second with a short vowel/haraka, the former assimilates into
-            the latter from the same group:
+            characteristics stand next to each other, with first having sukoon
+            and the second having a short vowel/haraka, the former assimilates
+            into the latter from the same group:
           </Col>
         </Row>
 
@@ -130,9 +130,9 @@ const Lesson16_en = () => {
             <Row>
               <Col className="opisLekcije">
                 When two letters close in proximity but with different
-                characteristics stand next to each other, the first with sukoon
-                and the second with a short vowel/haraka, the former assimilates
-                into the latter from the same group:
+                characteristics stand next to each other, with first having
+                sukoon and the second having a short vowel/haraka, the former
+                assimilates into the latter from the same group:
               </Col>
             </Row>
 
