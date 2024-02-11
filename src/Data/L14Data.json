@@ -145,12 +145,20 @@
             "highlight": "أَرْ",
             "word": "الْـأَرْضُ وَالْجِبَالُ",
             "after": null
-        }, {
+        },
+        {
             "id": 141,
             "highlight": "تَرْ",
             "word": " يَوْمَ تَرْجُفُ",
             "after": null
-        }],
+        },
+        {
+            "id": 143,
+            "highlight": "",
+            "word": " ",
+            "after": null
+        }
+    ],
         "broj15": [{
             "id": 15,
             "url": "./assets/audio/l14/15.mp3",
