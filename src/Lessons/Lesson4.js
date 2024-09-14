@@ -17,21 +17,8 @@ import { Row, Col, Container } from "react-bootstrap";
 
 // Other
 import "../App.scss";
+import { scrollToHash } from "./Lesson1";
 
-function scrollToHash() {
-  /* Obtain hash from current location (and trim off leading #) */
-  const id = window.location.hash.substr(1);
-
-  if (id) {
-    /* Find matching element by id */
-    const anchor = document.getElementById(id);
-
-    if (anchor) {
-      /* Scroll to that element if present */
-      anchor.scrollIntoView();
-    }
-  }
-}
 
 function L4() {
   const { i18n } = useTranslation();

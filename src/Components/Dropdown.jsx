@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { useTranslation } from "react-i18next";
 import "./dropdown.scss";
 
@@ -8,17 +8,28 @@ const LanguageSwitcher = () => {
   const storedLanguage = localStorage.getItem("language");
   const [language, setLanguage] = useState(storedLanguage || defaultLanguage);
   const [isOpen, setIsOpen] = useState(false);
-  const bosnianFlag =
-    "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Flag_of_Bosnia_and_Herzegovina.svg/100px-Flag_of_Bosnia_and_Herzegovina.svg.png";
-  const englishFlag =
-    "https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/100px-Flag_of_the_United_Kingdom.svg.png";
 
-  const handleLanguageChange = (newLanguage) => {
+  const languages = {
+    bs: {
+      name: "Bosanski",
+      flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Flag_of_Bosnia_and_Herzegovina.svg/100px-Flag_of_Bosnia_and_Herzegovina.svg.png",
+    },
+    en: {
+      name: "English",
+      flag: "https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/100px-Flag_of_the_United_Kingdom.svg.png",
+    },
+    de: {
+      name: "Deutsch",
+      flag: "https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/100px-Flag_of_Germany.svg.png",
+    },
+  };
+
+  const handleLanguageChange = useCallback((newLanguage) => {
     i18n.changeLanguage(newLanguage);
     setLanguage(newLanguage);
     localStorage.setItem("language", newLanguage);
     setIsOpen(false);
-  };
+  });
 
   const toggleMenu = () => {
     setIsOpen((prev) => !prev);
@@ -26,13 +37,12 @@ const LanguageSwitcher = () => {
 
   useEffect(() => {
     if (!storedLanguage) {
-     //localStorage.removeItem('i18nextLng
-     localStorage.setItem('i18nextLng','bs');
-     handleLanguageChange(defaultLanguage);
+      localStorage.setItem("i18nextLng", "bs");
+      handleLanguageChange(defaultLanguage);
     }
-  }, [storedLanguage]);
+  }, [handleLanguageChange, storedLanguage]);
 
- return (
+  return (
     <div style={{ position: "relative" }}>
       <button
         onClick={toggleMenu}
@@ -46,8 +56,8 @@ const LanguageSwitcher = () => {
         }}
       >
         <img
-          src={language === "bs" ? bosnianFlag : englishFlag}
-          alt={language === "bs" ? "Bosnian Flag" : "English Flag"}
+          src={languages[language].flag}
+          alt="Current Language Flag"
           style={{
             width: "22px",
             height: "22px",
@@ -56,7 +66,12 @@ const LanguageSwitcher = () => {
             marginRight: "5px",
           }}
         />
-        <span className="dropdownSpan spanSelectLang"  style={{fontSize: "14px"}}>{language === "bs" ? "Bosanski" : "English"}</span>
+        <span
+          className="dropdownSpan spanSelectLang"
+          style={{ fontSize: "14px" }}
+        >
+          {languages[language].name}
+        </span>
         <svg
           viewBox="0 0 10 6"
           style={{ marginLeft: "5px", fill: "currentColor" }}
@@ -76,58 +91,37 @@ const LanguageSwitcher = () => {
             overflow: "hidden",
           }}
         >
-          <button
-            onClick={() => handleLanguageChange("bs")}
-            style={{
-              display: "flex",
-              alignItems: "center",
-              backgroundColor: "transparent",
-              border: "none",
-              cursor: "pointer",
-              padding: "5px",
-              width: "100%",
-              fontSize: "12px",
-            }}
-          >
-            <img
-              src={bosnianFlag}
-              alt="Bosnian Flag"
+          {Object.keys(languages).map((lang) => (
+            <button
+              key={lang}
+              onClick={() => handleLanguageChange(lang)}
               style={{
-                width: "22px",
-                height: "22px",
-                borderRadius: "50%",
-                objectFit: "cover",
-                marginRight: "5px",
+                display: "flex",
+                alignItems: "center",
+                backgroundColor: "transparent",
+                border: "none",
+                cursor: "pointer",
+                padding: "5px",
+                width: "100%",
+                fontSize: "12px",
               }}
-            />
-            <span className="dropdownSpan" style={{fontSize: "14px"}}>Bosanski</span>
-          </button>
-          <button
-            onClick={() => handleLanguageChange("en")}
-            style={{
-              display: "flex",
-              alignItems: "center",
-              backgroundColor: "transparent",
-              border: "none",
-              cursor: "pointer",
-              padding: "5px",
-              width: "100%",
-              fontSize: "12px",
-            }}
-          >
-            <img
-              src={englishFlag}
-              alt="English Flag"
-              style={{
-                width: "22px",
-                height: "22px",
-                borderRadius: "50%",
-                objectFit: "cover",
-                marginRight: "5px",
-              }}
-            />
-            <span className="dropdownSpan" style={{fontSize: "14px"}}>English</span>
-          </button>
+            >
+              <img
+                src={languages[lang].flag}
+                alt={`${languages[lang].name} Flag`}
+                style={{
+                  width: "22px",
+                  height: "22px",
+                  borderRadius: "50%",
+                  objectFit: "cover",
+                  marginRight: "5px",
+                }}
+              />
+              <span className="dropdownSpan" style={{ fontSize: "14px" }}>
+                {languages[lang].name}
+              </span>
+            </button>
+          ))}
         </div>
       )}
     </div>

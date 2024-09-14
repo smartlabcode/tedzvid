@@ -10,19 +10,19 @@ import Lesson1_en from '../Components/Lesson1_en';
 import '../App.scss';
 import '../LandingPage.scss';
 
-function scrollToHash() {
-	/* Obtain hash from current location (and trim off leading #) */
-	const id = window.location.hash.substr(1);
+export function scrollToHash() {
+  /* Obtain hash from current location (and trim off leading #) */
+  const id = window.location.hash.substr(1);
 
-	if (id) {
-		/* Find matching element by id */
-		const anchor = document.getElementById(id);
+  if (id) {
+    /* Find matching element by id */
+    const anchor = document.getElementById(id);
 
-		if (anchor) {
-			/* Scroll to that element if present */
-			anchor.scrollIntoView();
-		}
-	}
+    if (anchor) {
+      /* Scroll to that element if present */
+      anchor.scrollIntoView();
+    }
+  }
 }
 
 function L1() {
