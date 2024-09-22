@@ -237,5 +237,117 @@
             }
         ]
 
+    ],
+    "lekcije_de": [
+        [
+            {
+                "title": "WAQF",
+                "subtitle": "Stopping during the recitation of the Qur'an"
+            },
+            {
+                "title": "DAMIR",
+                "subtitle": "The pronunciation of the pronoun HU (هُ)"
+            }
+        ],
+        [
+            {
+                "title": "LAFZATULLAH",
+                "subtitle": "The pronunciation of the word Allah اللّٰه"
+            },
+            {
+                "title": "IDGHAAM MITHLAYN",
+                "subtitle": "Assimilation of two identical letters"
+            }
+        ],
+        [
+            {
+                "title": "IDGHAM MITHLAYN WITH GHUNNAH",
+                "subtitle": "Assimilation of two identical letters with the airflow through the nose"
+            },
+            {
+                "title": "IDGHAM WITH GHUNNAH",
+                "subtitle": "Assimilation with the airflow through the nose"
+            }
+        ],
+        [
+            {
+                "title": "IDGHAM WITHOUT GHUNNAH",
+                "subtitle": "Assimilation without the airflow through the nose"
+            },
+            {
+                "title": "IQLAAB",
+                "subtitle": "Converting the letter N (ن) into M (م)"
+            }
+        ],
+        [
+            {
+                "title": "IZHAAR HALQIJJ",
+                "subtitle": "Clear pronunciation of the letter N (ن) or nunation/tanwin"
+            },
+            {
+                "title": "IZHAAR SHAFAWI",
+                "subtitle": "Clear pronunciation of the letter M (م)"
+            }
+        ],
+        [
+            {
+                "title": "IHFA",
+                "subtitle": "Concealment of N (ن)"
+            },
+            {
+                "title": "IKHFAA’ SHAFAWI",
+                "subtitle": "Concealment of M (م)"
+            }
+        ],
+        [
+            {
+                "title": "THE QALQALAH",
+                "subtitle": "Echoing sounds"
+            },
+            {
+                "title": "HUKMURRA",
+                "subtitle": "Pronunciation of the letter R (ر)"
+            }
+        ],
+        [
+            {
+                "title": "IDGHAM MUTAJAANISAYN",
+                "subtitle": "Assimilation of letters of the same origin"
+            },
+            {
+                "title": "IDGHAM MUTAQAARIBAYN",
+                "subtitle": "Assimilation of letters with similar origin"
+            }
+        ],
+        [
+            {
+                "title": "AL-MADD AL-TABEE’EE",
+                "subtitle": "Normal extension"
+            },
+            {
+                "title": "AL-MADD AL-MUTTASIL",
+                "subtitle": "Connected extension"
+            }
+        ],
+        [
+            {
+                "title": "AL-MADD AL-MUNFASIL",
+                "subtitle": "Disconnected extension"
+            },
+            {
+                "title": "AL-MADD AL-LAZIM",
+                "subtitle": "Mandatory extension"
+            }
+        ],
+        [
+            {
+                "title": "AL-MADD AL-‘AARID",
+                "subtitle": "Temporary extension"
+            },
+            {
+                "title": "MADDU AL-LEEN",
+                "subtitle": "Semi-vocal length"
+            }
+        ]
     ]
 }

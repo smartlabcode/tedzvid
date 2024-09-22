@@ -3,6 +3,7 @@ import React from 'react';
 import { useTranslation } from "react-i18next";
 import Lesson15_bs from '../Components/Lesson15_bs';
 import Lesson15_en from '../Components/Lesson15_en';
+import Lesson15_de from "../Components/Lesson15_de";
 
 // Bootstrap
 import { Row, Col, Container } from "react-bootstrap";
@@ -39,14 +40,16 @@ function L15() {
     scrollToHash();
   }, []);
   return (
-	<React.Fragment>
-	<>
-	{
-		i18n.language == 'bs' ? <Lesson15_bs/>:<Lesson15_en/>
-	}
-	</>
-</React.Fragment>
-	);
+    <>
+      {i18n.language === "bs" ? (
+        <Lesson15_bs />
+      ) : i18n.language === "de" ? (
+        <Lesson15_de />
+      ) : (
+        <Lesson15_en />
+      )}
+    </>
+  );
 }
 
 export default L15;

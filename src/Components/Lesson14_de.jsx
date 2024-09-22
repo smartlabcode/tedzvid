@@ -1,20 +1,19 @@
-import React from 'react';
-import data from '../Data/L14Data.json';
-import PlayerRow from '../Helpers/PlayerHelper';
-import VjezbeRow from '../Helpers/VjezbeHelper';
-import Footer from '../Body/MainFooter';
-import LekcijaMenu from '../Body/LekcijaMenu';
-import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
-import { MdZoomOutMap } from 'react-icons/md';
+import React from "react";
+import data from "../Data/L14Data.json";
+import VjezbeRow from "../Helpers/VjezbeHelper";
+import PlayerRow from "../Helpers/PlayerHelper";
+import Footer from "../Body/MainFooter";
+import LekcijaMenu from "../Body/LekcijaMenu";
+import Modal from "react-bootstrap/Modal";
+import Button from "react-bootstrap/Button";
+import { MdZoomOutMap } from "react-icons/md";
 import { IconContext } from "react-icons";
 
 // Bootstrap
 import { Row, Col, Container } from "react-bootstrap";
 
-const Lesson14_bs = () => {
-
-	const [show, setShow] = React.useState(false);
+const Lesson14_de = () => {
+  const [show, setShow] = React.useState(false);
   const [showL, setShowL] = React.useState(false);
 
   const handleCloseL = () => setShowL(false);
@@ -22,6 +21,100 @@ const Lesson14_bs = () => {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  const renderLesson = () => (
+    <>
+      <Row>
+        <Col className="opisLekcije">
+          R Buchstabe<strong> R </strong>
+          <span className="arapski-lekcija">(ر)</span> wird <u>kraftvoll</u>
+          ausgesprochen u wenn:
+        </Col>
+      </Row>
+
+      <Row>
+        <Col className="opisLekcije">
+          <strong>1.</strong> Auf dem<strong> R </strong>einer{" "}
+          <strong>der Vokale</strong> E ( {PlayerRow(data, "row1")}) oder U
+          vorkommt ( {PlayerRow(data, "row2")}), zum Beispiel: <br />
+          {PlayerRow(data, "row3")}
+        </Col>
+      </Row>
+
+      <Row>
+        <Col className="opisLekcije">
+          <strong>2.</strong> Wenn vor dem <strong> R </strong>mit{" "}
+          <strong>sukun</strong>, ein Buchstabe mit <strong>vokal</strong> E (
+          <span className="arapski-lekcija" style={{ color: "red" }}>
+            {" "}
+            ــَـ رْ{" "}
+          </span>
+          ) oder U (
+          <span className="arapski-lekcija" style={{ color: "red" }}>
+            ــُـ رْ
+          </span>
+          ) vorkommt, zum Beispiel:
+          <br />
+          {PlayerRow(data, "row4")}
+        </Col>
+      </Row>
+
+      <Row>
+        <Col className="opisLekcije">
+          <strong>3.</strong> Wenn Buchstabe
+          <strong>
+            <strong> R </strong>
+          </strong>
+          mit <strong>sukun</strong>, und vor dem R ein anderer Buchstabe
+          ebenfalls mit <strong>sukun</strong>, vorkommt und vor diesem ein
+          Buchstabe mit <strong>Vokal</strong> E (
+          <span className="arapski-lekcija" style={{ color: "red" }}>
+            {" "}
+            ــَـ ــْـ رْ{" "}
+          </span>
+          ) oder U (
+          <span className="arapski-lekcija" style={{ color: "red" }}>
+            {" "}
+            ــُـ ــْـ رْ{" "}
+          </span>
+          ) steht, zum Beispiel:
+          <br /> {PlayerRow(data, "row5")}
+        </Col>
+      </Row>
+
+      <Row>
+        <Col className="opisLekcije">
+          <strong>4.</strong> Wenn Buchstabe <strong> R </strong>mit{" "}
+          <strong>sukun</strong> (
+          <span className="arapski-lekcija" style={{ color: "red" }}>
+            رْ
+          </span>
+          ), und vor ihm ein anderer Buchstabe mit einer nicht ursprünglichen
+          Kasrra steht, zum Beispiel: <br />
+          {PlayerRow(data, "row6")}
+        </Col>
+      </Row>
+
+      <Row>
+        <Col className="opisLekcije">
+          <strong>5.</strong> Auf dem <strong> R </strong> ein{" "}
+          <strong>sukun</strong> ist (
+          <span className="arapski-lekcija" style={{ color: "red" }}>
+            رْ
+          </span>
+          ) , und ihm einer der kraftvollen Buchstaben folgt, zum Beispiel:
+          <br /> {PlayerRow(data, "row7")}
+        </Col>
+      </Row>
+
+      <Row>
+        <Col>
+          <br />
+        </Col>
+      </Row>
+    </>
+  );
+
   return (
     <>
       <LekcijaMenu broj="14" naziv="HUKMURRA" />
@@ -44,7 +137,8 @@ const Lesson14_bs = () => {
             </div>
             <h4 className="text-center">
               <strong>
-                Izgovor harfa R <span className="arapski-lekcija">(ر)</span>
+                Aussprache des Buchstabens R{" "}
+                <span className="arapski-lekcija">(ر)</span>
               </strong>
             </h4>
             <hr />
@@ -61,95 +155,9 @@ const Lesson14_bs = () => {
         >
           <MdZoomOutMap className="zoomIcon" onClick={handleShowL} />
         </IconContext.Provider>
-        <Row>
-          <Col className="opisLekcije">
-            Harf<strong> R </strong>
-            <span className="arapski-lekcija">(ر)</span> se uči <u>krupno</u> u
-            sljedećim situacijama:
-          </Col>
-        </Row>
 
-        <Row>
-          <Col className="opisLekcije">
-            <strong>1.</strong> kada je harf<strong> R </strong>sa{" "}
-            <strong>vokalom</strong> E ( {PlayerRow(data, "row1")}) ili{" "}
-            <strong>vokalom</strong> U ( {PlayerRow(data, "row2")}), npr.:{" "}
-            <br />
-            {PlayerRow(data, "row3")}
-          </Col>
-        </Row>
+        {renderLesson()}
 
-        <Row>
-          <Col className="opisLekcije">
-            <strong>2.</strong> kada je harf<strong> R </strong>sa{" "}
-            <strong>sukunom</strong>, a prije njeg harf sa{" "}
-            <strong>vokalom</strong> E (
-            <span className="arapski-lekcija" style={{ color: "red" }}>
-              {" "}
-              ــَـ رْ{" "}
-            </span>
-            ) ili U (
-            <span className="arapski-lekcija" style={{ color: "red" }}>
-              ــُـ رْ
-            </span>
-            ), npr.:
-            <br />
-            {PlayerRow(data, "row4")}
-          </Col>
-        </Row>
-
-        <Row>
-          <Col className="opisLekcije">
-            <strong>3.</strong> kada je harf
-            <strong>
-              <strong> R </strong>
-            </strong>
-            sa <strong>sukunom</strong>, prije njeg harf sa{" "}
-            <strong>sukunom</strong>, a prije toga harf sa{" "}
-            <strong>vokalom</strong> E (
-            <span className="arapski-lekcija" style={{ color: "red" }}>
-              {" "}
-              ــَـ ــْـ رْ{" "}
-            </span>
-            ) ili U (
-            <span className="arapski-lekcija" style={{ color: "red" }}>
-              {" "}
-              ــُـ ــْـ رْ{" "}
-            </span>
-            ), npr.:
-            <br /> {PlayerRow(data, "row5")}
-          </Col>
-        </Row>
-
-        <Row>
-          <Col className="opisLekcije">
-            <strong>4.</strong> kada je harf<strong> R </strong>sa{" "}
-            <strong>sukunom</strong> (
-            <span className="arapski-lekcija" style={{ color: "red" }}>
-              رْ
-            </span>
-            ), a prije njeg glas sa nestalnom kesrom, npr.: <br />
-            {PlayerRow(data, "row6")}
-          </Col>
-        </Row>
-
-        <Row>
-          <Col className="opisLekcije">
-            <strong>5.</strong> kada je harf<strong> R </strong>sa{" "}
-            <strong>sukunom</strong> (
-            <span className="arapski-lekcija" style={{ color: "red" }}>
-              رْ
-            </span>
-            ), a poslije njeg jedan od krupnih harfova, npr.:
-            <br /> {PlayerRow(data, "row7")}
-          </Col>
-        </Row>
-
-        <Row>
-          <Col>
-            <br />
-          </Col>
-        </Row>
         <Modal
           show={showL}
           onHide={handleCloseL}
@@ -157,99 +165,9 @@ const Lesson14_bs = () => {
           keyboard={false}
         >
           <Modal.Header closeButton>
-            <Modal.Title>LEKCIJA</Modal.Title>
+            <Modal.Title>LEKTION</Modal.Title>
           </Modal.Header>
-          <Modal.Body className="custom-modal">
-            <Row>
-              <Col className="opisLekcije">
-                Harf<strong> R </strong>
-                <span className="arapski-lekcija">(ر)</span> se uči{" "}
-                <u>krupno</u> u sljedećim situacijama:
-              </Col>
-            </Row>
-
-            <Row>
-              <Col className="opisLekcije">
-                <strong>1.</strong> kada je harf<strong> R </strong>sa{" "}
-                <strong>vokalom</strong> E ( {PlayerRow(data, "row1")}) ili{" "}
-                <strong>vokalom</strong> U ( {PlayerRow(data, "row2")}), npr.:{" "}
-                <br />
-                {PlayerRow(data, "row3")}
-              </Col>
-            </Row>
-
-            <Row>
-              <Col className="opisLekcije">
-                <strong>2.</strong> kada je harf<strong> R </strong>sa{" "}
-                <strong>sukunom</strong>, a prije njeg harf sa{" "}
-                <strong>vokalom</strong> E (
-                <span className="arapski-lekcija" style={{ color: "red" }}>
-                  {" "}
-                  ــَـ رْ{" "}
-                </span>
-                ) ili U (
-                <span className="arapski-lekcija" style={{ color: "red" }}>
-                  ــُـ رْ
-                </span>
-                ), npr.:
-                <br />
-                {PlayerRow(data, "row4")}
-              </Col>
-            </Row>
-
-            <Row>
-              <Col className="opisLekcije">
-                <strong>3.</strong> kada je harf
-                <strong>
-                  <strong> R </strong>
-                </strong>
-                sa <strong>sukunom</strong>, prije njeg harf sa{" "}
-                <strong>sukunom</strong>, a prije toga harf sa{" "}
-                <strong>vokalom</strong> E (
-                <span className="arapski-lekcija" style={{ color: "red" }}>
-                  {" "}
-                  ــَـ ــْـ رْ{" "}
-                </span>
-                ) ili U (
-                <span className="arapski-lekcija" style={{ color: "red" }}>
-                  {" "}
-                  ــُـ ــْـ رْ{" "}
-                </span>
-                ), npr.:
-                <br /> {PlayerRow(data, "row5")}
-              </Col>
-            </Row>
-
-            <Row>
-              <Col className="opisLekcije">
-                <strong>4.</strong> kada je harf<strong> R </strong>sa{" "}
-                <strong>sukunom</strong> (
-                <span className="arapski-lekcija" style={{ color: "red" }}>
-                  رْ
-                </span>
-                ), a prije njeg glas sa nestalnom kesrom, npr.: <br />
-                {PlayerRow(data, "row6")}
-              </Col>
-            </Row>
-
-            <Row>
-              <Col className="opisLekcije">
-                <strong>5.</strong> kada je harf<strong> R </strong>sa{" "}
-                <strong>sukunom</strong> (
-                <span className="arapski-lekcija" style={{ color: "red" }}>
-                  رْ
-                </span>
-                ), a poslije njeg jedan od krupnih harfova, npr.:
-                <br /> {PlayerRow(data, "row7")}
-              </Col>
-            </Row>
-
-            <Row>
-              <Col>
-                <br />
-              </Col>
-            </Row>
-          </Modal.Body>
+          <Modal.Body className="custom-modal">{renderLesson()}</Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={handleCloseL}>
               Zatvori
@@ -422,6 +340,6 @@ const Lesson14_bs = () => {
       </Container>
     </>
   );
-}
+};
 
-export default Lesson14_bs
+export default Lesson14_de;

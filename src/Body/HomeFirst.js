@@ -18,8 +18,8 @@ function HomeFirst(props) {
 		propertyName = 'lekcije_en';
 	} else if (i18n.language === 'bs') {
 		propertyName = 'lekcije';
-	} else {
-	// handle unsupported language
+	} else if (i18n.language === 'de') {
+		propertyName = 'lekcije_de';
 	}
 
 const lekcije = data[propertyName].reduce((acc, curr) => acc.concat(curr), []);

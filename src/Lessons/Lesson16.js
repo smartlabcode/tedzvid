@@ -10,6 +10,7 @@ import { Row, Col, Container } from 'react-bootstrap';
 // Other
 import '../App.scss';
 import { scrollToHash } from "./Lesson1";
+import Lesson16_de from "../Components/Lesson16_de";
 
 
 function L16() {
@@ -26,14 +27,16 @@ function L16() {
 		scrollToHash();
 	}, []);
 	return (
-		<React.Fragment>
-			<>
-			{
-				i18n.language == 'bs' ? <Lesson16_bs/>:<Lesson16_en/>
-			}
-			</>
-		</React.Fragment>
-	);
+    <>
+      {i18n.language === "bs" ? (
+        <Lesson16_bs />
+      ) : i18n.language === "de" ? (
+        <Lesson16_de />
+      ) : (
+        <Lesson16_en />
+      )}
+    </>
+  );
 }
 
 export default L16;
