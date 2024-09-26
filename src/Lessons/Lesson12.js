@@ -3,9 +3,7 @@ import React from 'react';
 import { useTranslation } from "react-i18next";
 import Lesson12_bs from '../Components/Lesson12_bs';
 import Lesson12_en from '../Components/Lesson12_en';
-
-// Bootstrap
-import { Row, Col, Container } from 'react-bootstrap';
+import Lesson12_de from "../Components/Lesson12_de";
 
 // Other
 import '../App.scss';
@@ -14,26 +12,21 @@ import { scrollToHash } from "./Lesson1";
 
 function L12() {
 	const { i18n } = useTranslation();
-	const [show, setShow] = React.useState(false);
-	const [showL, setShowL] = React.useState(false);
 
-	const handleCloseL = () => setShowL(false);
-	const handleShowL = () => setShowL(true);
-
-	const handleClose = () => setShow(false);
-	const handleShow = () => setShow(true);
-	React.useEffect(() => {
-		scrollToHash();
-	}, []);
-	return (
-		<React.Fragment>
-			<>
-			{
-				i18n.language == 'bs' ? <Lesson12_bs/>:<Lesson12_en/>
-			}
-			</>
-		</React.Fragment>
-	);
+  React.useEffect(() => {
+    scrollToHash();
+  }, []);
+  return (
+    <>
+      {i18n.language === "bs" ? (
+        <Lesson12_bs />
+      ) : i18n.language === "de" ? (
+        <Lesson12_de />
+      ) : (
+        <Lesson12_en />
+      )}
+    </>
+  );
 }
 
 export default L12;
