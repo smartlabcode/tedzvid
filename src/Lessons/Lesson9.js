@@ -10,6 +10,7 @@ import Lesson9_en from '../Components/Lesson9_en';
 import '../App.scss';
 import '../LandingPage.scss';
 import { scrollToHash } from "./Lesson1";
+import Lesson9_de from "../Components/Lesson9_de";
 
 
 function L1() {
@@ -20,13 +21,15 @@ function L1() {
 		scrollToHash();
 	}, []);
 	return (
-		<React.Fragment>
-			<>
-			{
-				i18n.language == 'bs' ? <Lesson9_bs/>:<Lesson9_en/>
-			}
-			</>
-		</React.Fragment>
-	);
+    <>
+      {i18n.language == "bs" ? (
+        <Lesson9_bs />
+      ) : i18n.language == "en" ? (
+        <Lesson9_en />
+      ) : (
+        <Lesson9_de />
+      )}
+    </>
+  );
 }
 export default L1;
