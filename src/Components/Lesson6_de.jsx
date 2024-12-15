@@ -1,18 +1,95 @@
 import React from "react";
-import data from "../Data/L13Data.json";
-import PlayerRow from "../Helpers/PlayerHelper";
-import VjezbeRow from "../Helpers/VjezbeHelper";
+import data from "../Data/L6Data.json";
 import Footer from "../Body/MainFooter";
+import VjezbeRow from "../Helpers/VjezbeHelper";
+import PlayerRow from "../Helpers/PlayerHelper";
 import LekcijaMenu from "../Body/LekcijaMenu";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 import { MdZoomOutMap } from "react-icons/md";
 import { IconContext } from "react-icons";
-import Arabic from "../Letters/Arabic";
+
 // Bootstrap
 import { Row, Col, Container } from "react-bootstrap";
 
-const Lesson13_de = () => {
+// Other
+import "../App.scss";
+import Arabic from "../Letters/Arabic";
+import Player from "../Player/Player";
+
+const r3 = data.row3.map((dat, ind) => {
+  return (
+    <Arabic arabic={dat.highlight} key={"a" + dat.id}>
+      {dat.word}
+    </Arabic>
+  );
+});
+
+const renderLession = () => (
+  <>
+    <Row>
+      <Col className="opisLekcije">
+        Wenn nach dem <strong>N</strong> mit <strong>sukun</strong> (
+        <span className="arapski-lekcija">نْ</span>) oder{" "}
+        <strong>tanwin</strong> EN{" "}
+        <span className="arapski-lekcija">ـــًـــ</span> , IN{" "}
+        <span className="arapski-lekcija">ـــٍــ</span> , UN{" "}
+        <span className="arapski-lekcija">ــٌــ</span> iner der vier idgam
+        Buchstaben:&nbsp;
+        <span
+          className="arapski-lekcija"
+          style={{ color: "red", fontSize: "3rem", whiteSpace: "nowrap" }}
+        >
+          و ن م ي
+        </span>{" "}
+        (unmittelbar danach folgt <strong>jemnu</strong> –
+        <span className="arapski-lekcija">يَمْنُو</span>), wird nun{" "}
+        <strong>N</strong> (<span className="arapski-lekcija">ن</span>) oder
+        tanwin partielle in einen der zvvor genannten Buchstaben assimiliert und
+        nasal ausgesprochen. Zum Beispiel:
+      </Col>
+    </Row>
+
+    <Row>
+      <Col>
+        <br />
+      </Col>
+    </Row>
+
+    <Row className="text-center reorder">
+      <Col>{PlayerRow(data, "row1_de")}</Col>
+    </Row>
+
+    <Row className="text-center mobile-row rtl">
+      <Col>{PlayerRow(data, "row2")}</Col>
+    </Row>
+
+    <Row className="text-center reorder-basic ">
+      <Col>
+        <span key={"key" + data.row3[2].id}>
+          <Player url={data.row3[2].url} key={"p" + data.row3[2].id}>
+            {r3}
+          </Player>
+        </span>{" "}
+        {data.row3[0].after}
+      </Col>
+    </Row>
+
+    <Row>
+      <Col>
+        <br />
+      </Col>
+    </Row>
+
+    <Row>
+      <Col>
+        <br />
+      </Col>
+    </Row>
+  </>
+);
+
+const Lesson6_bs = () => {
   const [show, setShow] = React.useState(false);
   const [showL, setShowL] = React.useState(false);
 
@@ -21,54 +98,9 @@ const Lesson13_de = () => {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-
-  const renderLession = () => (
-    <>
-      <Row>
-        <Col className="opisLekcije">
-          Wenn einer der Kalkala Buchstaben{" "}
-          <Arabic key="ar1l13" arabic="د ج ب ط ق">
-            د ج ب ط ق
-          </Arabic>{" "}
-          mit <strong>sukun</strong> (
-          <span className="arapski-lekcija">ـــْـــ</span>) vorkommt, dann
-          werden die oben genannten Buchstaben kraftvoll federnd ausgesprochen.
-          Zum Beispiel:
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          <br />
-        </Col>
-      </Row>
-      <Row className="text-center  rtl">
-        <Col>{PlayerRow(data, "row1")}</Col>
-      </Row>
-      <Row className="text-center  rtl">
-        <Col>
-          {VjezbeRow(data, "multirow", "row2")}
-          {PlayerRow(data, "row2")}
-        </Col>
-      </Row>
-      <Row className="text-center ">
-        <Col>{VjezbeRow(data, "multirow", "row3")}</Col>
-      </Row>
-      <Row>
-        <Col>
-          <br />
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          <br />
-        </Col>
-      </Row>
-    </>
-  );
-
   return (
     <>
-      <LekcijaMenu broj="13" naziv="KALKALA" />
+      <LekcijaMenu broj="6" naziv="IDGAM MEAL-GUNNEH" />
       <Container>
         <Row>
           <Col>
@@ -83,11 +115,11 @@ const Lesson13_de = () => {
                 className="text-center font-weight-bold text-uppercase"
                 id="lekcija"
               >
-                13 KALKALA
+                6 IDGAM MEAL-GUNNEH
               </h2>
             </div>
             <h4 className="text-center">
-              <strong>Kraftvoll federnde Ausprache</strong>
+              <strong>Partielle Assimilation mit Nasalisieriung</strong>
             </h4>
             <hr />
           </Col>
@@ -111,20 +143,20 @@ const Lesson13_de = () => {
           keyboard={false}
         >
           <Modal.Header closeButton>
-            <Modal.Title>LEKTION</Modal.Title>
+            <Modal.Title>LEKCIJA</Modal.Title>
           </Modal.Header>
           <Modal.Body className="custom-modal">{renderLession()}</Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={handleCloseL}>
-              Schließen
+              Zatvori
             </Button>
           </Modal.Footer>
         </Modal>
+
         <h2 className="text-center" id="vjezba">
-          <strong>ÜBUNG</strong>
+          <strong>VJEŽBA</strong>
         </h2>
         <hr />
-
         <Row>
           <Col>
             <br />
@@ -135,11 +167,23 @@ const Lesson13_de = () => {
         >
           <MdZoomOutMap className="zoomIcon" onClick={handleShow} />
         </IconContext.Provider>
+
+        <Row className="text-center vjezba-row">
+          <Col className="mobile-row">
+            <span className="tacka">
+              {VjezbeRow(data, "vjezba", "broj8")} ۞{" "}
+            </span>
+          </Col>
+        </Row>
         <Row className="text-center vjezba-row">
           <Col className="mobile-row">
             <span className="tacka">
               {VjezbeRow(data, "vjezba", "broj9")} ۞
             </span>
+          </Col>
+        </Row>
+        <Row className="text-center vjezba-row">
+          <Col className="mobile-row">
             <span className="tacka">
               {VjezbeRow(data, "vjezba", "broj10")} ۞
             </span>
@@ -151,11 +195,6 @@ const Lesson13_de = () => {
             <span className="tacka">
               {VjezbeRow(data, "vjezba", "broj11")} ۞
             </span>
-          </Col>
-        </Row>
-
-        <Row className="text-center vjezba-row">
-          <Col className="mobile-row">
             <span className="tacka">
               {VjezbeRow(data, "vjezba", "broj12")} ۞
             </span>
@@ -165,23 +204,10 @@ const Lesson13_de = () => {
         <Row className="text-center vjezba-row">
           <Col className="mobile-row">
             <span className="tacka">
-              {VjezbeRow(data, "vjezba", "broj13")} ۞
-            </span>
-            <span className="tacka">
               {VjezbeRow(data, "vjezba", "broj14")} ۞
             </span>
-          </Col>
-        </Row>
-        <Row className="text-center vjezba-row">
-          <Col className="mobile-row">
             <span className="tacka">
-              {VjezbeRow(data, "vjezba", "broj15")} ۞
-            </span>
-            <span className="tacka">
-              {VjezbeRow(data, "vjezba", "broj16")} ۞
-            </span>
-            <span className="tacka">
-              {VjezbeRow(data, "vjezba", "broj17")} ۞
+              {VjezbeRow(data, "vjezba", "broj13")} ۞
             </span>
           </Col>
         </Row>
@@ -189,14 +215,14 @@ const Lesson13_de = () => {
           <Col>
             <hr />
             <h2 className="text-center" id="video">
-              <strong>VIDEO LEKTION</strong>
+              <strong>VIDEO LEKCIJA</strong>
             </h2>
             <center>
               <div className="video">
                 <iframe
                   width="900"
                   height="506"
-                  src="https://www.youtube.com/embed/HXl9qfDHzFM?list=PLcdhKKk9LmetUjroRtBCCkugO_whS-cW2"
+                  src="https://www.youtube.com/embed/S8O9w4ZnD0A?list=PLcdhKKk9LmetUjroRtBCCkugO_whS-cW2"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -215,14 +241,25 @@ const Lesson13_de = () => {
           keyboard={false}
         >
           <Modal.Header closeButton>
-            <Modal.Title>ÜBUNG</Modal.Title>
+            <Modal.Title>VJEŽBA</Modal.Title>
           </Modal.Header>
           <Modal.Body className="custom-modal">
             <Row className="text-center vjezba-row">
               <Col className="mobile-row">
                 <span className="tacka">
+                  {VjezbeRow(data, "vjezba", "broj8")} ۞
+                </span>
+              </Col>
+            </Row>
+            <Row className="text-center vjezba-row">
+              <Col className="mobile-row">
+                <span className="tacka">
                   {VjezbeRow(data, "vjezba", "broj9")} ۞
                 </span>
+              </Col>
+            </Row>
+            <Row className="text-center vjezba-row">
+              <Col className="mobile-row">
                 <span className="tacka">
                   {VjezbeRow(data, "vjezba", "broj10")} ۞
                 </span>
@@ -232,54 +269,35 @@ const Lesson13_de = () => {
             <Row className="text-center vjezba-row">
               <Col className="mobile-row">
                 <span className="tacka">
-                  {VjezbeRow(data, "vjezba", "broj11")} ۞
+                  {VjezbeRow(data, "vjezba", "broj11")} ۞{" "}
+                </span>
+                <span className="tacka">
+                  {VjezbeRow(data, "vjezba", "broj12")} ۞{" "}
                 </span>
               </Col>
             </Row>
 
             <Row className="text-center vjezba-row">
               <Col className="mobile-row">
-                <span className="tacka">
-                  {VjezbeRow(data, "vjezba", "broj12")} ۞
-                </span>
-              </Col>
-            </Row>
-
-            <Row className="text-center vjezba-row">
-              <Col className="mobile-row">
-                <span className="tacka">
-                  {VjezbeRow(data, "vjezba", "broj13")} ۞
-                </span>
                 <span className="tacka">
                   {VjezbeRow(data, "vjezba", "broj14")} ۞
                 </span>
-              </Col>
-            </Row>
-            <Row className="text-center vjezba-row">
-              <Col className="mobile-row">
                 <span className="tacka">
-                  {VjezbeRow(data, "vjezba", "broj15")} ۞
-                </span>
-                <span className="tacka">
-                  {VjezbeRow(data, "vjezba", "broj16")} ۞
-                </span>
-                <span className="tacka">
-                  {VjezbeRow(data, "vjezba", "broj17")} ۞
+                  {VjezbeRow(data, "vjezba", "broj13")} ۞
                 </span>
               </Col>
             </Row>
           </Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={handleClose}>
-              Schließen
+              Zatvori
             </Button>
           </Modal.Footer>
         </Modal>
-
-        <Footer prev="/lekcija12" next="/lekcija14" />
+        <Footer prev="/lekcija5" next="/lekcija7" />
       </Container>
     </>
   );
 };
 
-export default Lesson13_de;
+export default Lesson6_bs;

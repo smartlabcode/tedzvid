@@ -13,7 +13,7 @@ import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 import en from "./Body/locales/en.json";
 import bs from "./Body/locales/bs.json";
-import ReactMarkdown from 'react-markdown';
+import de from "./Body/locales/de.json";
 
 i18n
   .use(LanguageDetector)
@@ -21,16 +21,19 @@ i18n
   .init({
     resources: {
       bs: {
-        translation: bs
+        translation: bs,
       },
       en: {
-        translation: en
-      }
+        translation: en,
+      },
+      de: {
+        translation: de,
+      },
     },
     fallbackLng: "bs",
     interpolation: {
-      escapeValue: false
-    }
+      escapeValue: false,
+    },
   });
 
 

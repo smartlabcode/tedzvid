@@ -186,32 +186,7 @@ function LandingPage(props) {
         </div>
 
         <div className="innerWrapper">
-          {/* <img
-						className='quranbg'
-						src={process.env.PUBLIC_URL + '/assets/svg/quranbg.svg'}
-						alt='quran background'
-					/> */}
           <div className="sectionOne">
-            {/* <div className='left'>
-							<h2>
-								<b>Tedžvid.ba</b>
-							</h2>
-							<p>Priručnik za učenje tedžvidskih pravila</p>
-
-							<Link to={'/lekcije'}>
-								<button type='submit' className='contactBTN btn-lekcije'>
-									LEKCIJE
-								</button>
-							</Link>
-						</div>
-
-						<div className='right'>
-							<img
-								className='quran'
-								src={process.env.PUBLIC_URL + '/assets/svg/quran03.png'}
-								alt='Quran'
-							/>
-						</div> */}
             <div className="title">
               <h1>Tedžvid.ba</h1>
               <p>{t("appTitle")}</p>

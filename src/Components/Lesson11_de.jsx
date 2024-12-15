@@ -126,18 +126,18 @@ const Lesson11_de = () => {
           keyboard={false}
         >
           <Modal.Header closeButton>
-            <Modal.Title>LEKCIJA</Modal.Title>
+            <Modal.Title>LEKTION</Modal.Title>
           </Modal.Header>
           <Modal.Body className="custom-modal">{renderLession()}</Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={handleCloseL}>
-              Zatvori
+              Schließen
             </Button>
           </Modal.Footer>
         </Modal>
 
         <h2 className="text-center" id="vjezba">
-          <strong>VJEŽBA</strong>
+          <strong>ÜBUNG</strong>
         </h2>
         <hr />
         <IconContext.Provider
@@ -202,7 +202,7 @@ const Lesson11_de = () => {
           <Col>
             <hr />
             <h2 className="text-center" id="video">
-              <strong>VIDEO LEKCIJA</strong>
+              <strong>VIDEO LEKTION</strong>
             </h2>
             <center>
               <div className="video">
@@ -228,7 +228,7 @@ const Lesson11_de = () => {
           keyboard={false}
         >
           <Modal.Header closeButton>
-            <Modal.Title>VJEŽBA</Modal.Title>
+            <Modal.Title>ÜBUNG</Modal.Title>
           </Modal.Header>
           <Modal.Body className="custom-modal">
             <Row className="text-center vjezba-row">
@@ -287,7 +287,7 @@ const Lesson11_de = () => {
           </Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={handleClose}>
-              Zatvori
+              Schließen
             </Button>
           </Modal.Footer>
         </Modal>

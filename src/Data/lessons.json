@@ -1,6 +1,7 @@
 {
     "lekcije": [
-        [{
+        [
+            {
                 "title": "VAKF",
                 "subtitle": "Stajanje prilikom učenja"
             },
@@ -9,7 +10,8 @@
                 "subtitle": "Izgovaranje zamjenice HU (هُ)"
             }
         ],
-        [{
+        [
+            {
                 "title": "LAFZATULLAH",
                 "subtitle": "Izgovaranje riječi Allah اللّٰه"
             },
@@ -18,7 +20,8 @@
                 "subtitle": "Uklapanje istih harfova"
             }
         ],
-        [{
+        [
+            {
                 "title": "IDGAM MISLEJN MEAL-GUNNEH",
                 "subtitle": "Uklapanje istih harfova sa propuštanjem zraka kroz nos"
             },
@@ -27,7 +30,8 @@
                 "subtitle": "Uklapanje sa propuštanjem zraka kroz nos"
             }
         ],
-        [{
+        [
+            {
                 "title": " IDGAM BILA GUNNEH ",
                 "subtitle": "Uklapanje bez propuštanja zraka kroz nos"
             },
@@ -36,209 +40,78 @@
                 "subtitle": "Pretvaranje harfa N (ن) u harf M (م)"
             }
         ],
-        [{
+        [
+            {
                 "title": "IZHAR HALLKIJ ",
                 "subtitle": "Čisto izgovaranje harfa N (ن) ili tenvina"
             },
-
             {
                 "title": "IZHAR ŠEFEVIJJ ",
                 "subtitle": "Čisto izgovaranje harfa M (م)"
             }
         ],
-        [{
+        [
+            {
                 "title": "IHFA",
                 "subtitle": "Skrivanje harfa N (ن)"
             },
-
             {
-
                 "title": "IHFA SEVIJJ",
                 "subtitle": "Skrivanje harfa M (م)"
-
             }
         ],
-        [{
+        [
+            {
                 "title": "KALKALA",
                 "subtitle": "Odskakanje harfova"
             },
-
             {
-
                 "title": "HUKMURRA",
                 "subtitle": "Izgovaranje harfa R (ر)"
-
             }
         ],
-        [{
+        [
+            {
                 "title": "IDGAM MUTEDŽANISEJN",
                 "subtitle": "Uklapanje srodnih harfova"
             },
-
             {
-
                 "title": "IDGAM MUTEKARIBEJN",
                 "subtitle": "Uklapanje bliskih harfova"
-
             }
         ],
-        [{
+        [
+            {
                 "title": "MEDD TABI'IJJ ",
                 "subtitle": "Obična dužina"
             },
-
             {
-
                 "title": "MEDD MUTTESIL",
                 "subtitle": "Spojena dužina"
-
             }
         ],
-
-        [{
-
+        [
+            {
                 "title": "MEDD MUNFESIL",
                 "subtitle": "Rastavljena dužina"
-
             },
             {
-
                 "title": "MEDD LAZIM",
                 "subtitle": "Stalna dužina"
-
             }
         ],
-        [{
-
+        [
+            {
                 "title": "MEDD ARID",
                 "subtitle": "Nestalna dužina"
-
             },
             {
-
                 "title": "MED LIN",
                 "subtitle": "Poluvokalna dužina"
-
             }
         ]
-
     ],
     "lekcije_en": [
-        [{
-                "title": "WAQF",
-                "subtitle": "Stopping during the recitation of the Qur'an"
-            },
-            {
-                "title": "DAMIR",
-                "subtitle": "The pronunciation of the pronoun HU (هُ)"
-            }
-        ],
-        [{
-                "title": "LAFZATULLAH",
-                "subtitle": "The pronunciation of the word Allah اللّٰه"
-            },
-            {
-                "title": "IDGHAAM MITHLAYN",
-                "subtitle": "Assimilation of two identical letters"
-            }
-        ],
-        [{
-                "title": "IDGHAM MITHLAYN WITH GHUNNAH",
-                "subtitle": "Assimilation of two identical letters with the airflow through the nose"
-            },
-            {
-                "title": "IDGHAM WITH GHUNNAH",
-                "subtitle": "Assimilation with the airflow through the nose"
-            }
-        ],
-        [{
-                "title": "IDGHAM WITHOUT GHUNNAH",
-                "subtitle": "Assimilation without the airflow through the nose"
-            },
-            {
-                "title": "IQLAAB",
-                "subtitle": "Converting the letter N (ن) into M (م)"
-            }
-        ],
-        [{
-                "title": "IZHAAR HALQIJJ",
-                "subtitle": "Clear pronunciation of the letter N (ن) or nunation/tanwin"
-            },
-            {
-                "title": "IZHAAR SHAFAWI",
-                "subtitle": "Clear pronunciation of the letter M (م)"
-            }
-        ],
-        [{
-                "title": "IHFA",
-                "subtitle": "Concealment of N (ن)"
-            },
-            {
-
-                "title": "IKHFAA’ SHAFAWI",
-                "subtitle": "Concealment of M (م)"
-
-            }
-        ],
-        [{
-                "title": "THE QALQALAH",
-                "subtitle": "Echoing sounds"
-            },
-            {
-
-                "title": "HUKMURRA",
-                "subtitle": "Pronunciation of the letter R (ر)"
-
-            }
-        ],
-        [{
-                "title": "IDGHAM MUTAJAANISAYN",
-                "subtitle": "Assimilation of letters of the same origin"
-            },
-            {
-
-                "title": "IDGHAM MUTAQAARIBAYN",
-                "subtitle": "Assimilation of letters with similar origin"
-
-            }
-        ],
-        [{
-                "title": "AL-MADD AL-TABEE’EE",
-                "subtitle": "Normal extension"
-            },
-            {
-
-                "title": "AL-MADD AL-MUTTASIL",
-                "subtitle": "Connected extension"
-
-            }
-        ],
-
-        [{
-
-                "title": "AL-MADD AL-MUNFASIL",
-                "subtitle": "Disconnected extension"
-
-            },
-            {
-
-                "title": "AL-MADD AL-LAZIM",
-                "subtitle": "Mandatory extension"
-
-            }
-        ],
-       [{
-            "title": "AL-MADD AL-‘AARID",
-            "subtitle": "Temporary extension"
-            },
-            {
-            "title": "MADDU AL-LEEN",
-            "subtitle": "Semi-vocal length"
-            }
-        ]
-
-    ],
-    "lekcije_de": [
         [
             {
                 "title": "WAQF",
@@ -347,6 +220,118 @@
             {
                 "title": "MADDU AL-LEEN",
                 "subtitle": "Semi-vocal length"
+            }
+        ]
+    ],
+    "lekcije_de": [
+        [
+            {
+                "title": "WAQF",
+                "subtitle": "Pause beim Lesen"
+            },
+            {
+                "title": "DAMIR",
+                "subtitle": "Aussprache des Personalpronomen HU (هُ)"
+            }
+        ],
+        [
+            {
+                "title": "LAFZATULLAH",
+                "subtitle": "Aussprache des Wortes Allah اللّٰه"
+            },
+            {
+                "title": "IDGHAAM MITHLAYN",
+                "subtitle": "Assimilation von zwei identischen Buchstaben"
+            }
+        ],
+        [
+            {
+                "title": "IDGHAM MITHLAYN MIT GHUNNAH",
+                "subtitle": "Vollstandinge Assimilation der gleichen Buchstaben"
+            },
+            {
+                "title": "IDGHAM MIT GHUNNAH",
+                "subtitle": "Partielle Assimilation mit Nasalisieriung"
+            }
+        ],
+        [
+            {
+                "title": "IDGHAM OHNE GHUNNAH",
+                "subtitle": "Vollstandige Assimilation ohne Nasalisierung"
+            },
+            {
+                "title": "IQLAAB",
+                "subtitle": "Partielle Verwandlung von N (ن) und tanwin in den Buchstaben M (م) mit Nasalisieriung"
+            }
+        ],
+        [
+            {
+                "title": "IZHAAR HALQIJJ",
+                "subtitle": "Deutlich klare Aussprache von nun mit sukun oder tanwin"
+            },
+            {
+                "title": "IZHAAR SHAFAWI",
+                "subtitle": "Deutlich klare Aussprache des Buchstaben M (م)"
+            }
+        ],
+        [
+            {
+                "title": "IHFA",
+                "subtitle": "Verbergen des Buchstaben N (ن)"
+            },
+            {
+                "title": "IKHFAA' SHAFAWI",
+                "subtitle": "Verbergen des Buchstaben M (م)"
+            }
+        ],
+        [
+            {
+                "title": "DIE QALQALAH",
+                "subtitle": "Kraftvoll federnde Ausprache"
+            },
+            {
+                "title": "HUKMURRA",
+                "subtitle": "Aussprache des Buchstabens R (ر)"
+            }
+        ],
+        [
+            {
+                "title": "IDGHAM MUTAJAANISAYN",
+                "subtitle": "Vollständig Assimilation"
+            },
+            {
+                "title": "IDGHAM MUTAQAARIBAYN",
+                "subtitle": "Vollständig Assimilation der sich nahe stehenden Buchstaben"
+            }
+        ],
+        [
+            {
+                "title": "AL-MADD AL-TABEE'EE",
+                "subtitle": "Normale Verlängerung"
+            },
+            {
+                "title": "AL-MADD AL-MUTTASIL",
+                "subtitle": "Verbundene Verlängerung"
+            }
+        ],
+        [
+            {
+                "title": "AL-MADD AL-MUNFASIL",
+                "subtitle": "Getrennte Verlängerung"
+            },
+            {
+                "title": "AL-MADD AL-LAZIM",
+                "subtitle": "Obligatorische Verlängerung"
+            }
+        ],
+        [
+            {
+                "title": "AL-MADD AL-'AARID",
+                "subtitle": "Vorübergehende Verlängerung"
+            },
+            {
+                "title": "MADDU AL-LEEN",
+                "subtitle": "Halbtönige Länge"
             }
         ]
     ]

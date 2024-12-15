@@ -1,5 +1,6 @@
 {
-    "row1": [{
+    "row1": [
+        {
             "id": 1,
             "url": "./assets/audio/l7/1.mp3",
             "highlight": "لٌ لِ",
@@ -28,7 +29,8 @@
             "after": null
         }
     ],
-    "row1_en": [{
+    "row1_en": [
+        {
             "id": 1,
             "url": "./assets/audio/l7/1.mp3",
             "highlight": "لٌ لِ",
@@ -57,15 +59,48 @@
             "after": null
         }
     ],
-    "row2": [{
-        "id": 5,
-        "url": "./assets/audio/l7/5.mp3",
-        "highlight": "رًا رَ",
-        "word": "وَكَانَ اللّٰهُ غَفُورًا رَحِيمًا",
-        "after": ";"
-    }],
+    "row1_de": [
+        {
+            "id": 1,
+            "url": "./assets/audio/l7/1.mp3",
+            "highlight": "لٌ لِ",
+            "word": "وَيْلٌ لِكُلِّ",
+            "after": " wird ausgesprochen: "
+        },
+        {
+            "id": 2,
+            "url": "./assets/audio/l7/2.mp3",
+            "highlight": "لّـِ",
+            "word": "وَيْلُـلّـِكُلِّ",
+            "after": " ; "
+        },
+        {
+            "id": 3,
+            "url": "./assets/audio/l7/3.mp3",
+            "highlight": "نْ رَ",
+            "word": "مِنْ رَبِّـهِمْ",
+            "after": " wird ausgesprochen: "
+        },
+        {
+            "id": 4,
+            "url": "./assets/audio/l7/4.mp3",
+            "highlight": "رَّ",
+            "word": "مِرَّ بِّـهِمْ",
+            "after": null
+        }
+    ],
+    "row2": [
+        {
+            "id": 5,
+            "url": "./assets/audio/l7/5.mp3",
+            "highlight": "رًا رَ",
+            "word": "وَكَانَ اللّٰهُ غَفُورًا رَحِيمًا",
+            "after": ";"
+        }
+    ],
     "multirow": {
-        "word1": [{
+        "word1": [
+            {
                 "id": 6,
                 "url": "./assets/audio/l7/6.mp3",
                 "highlight": "نْ لَ",
@@ -79,7 +114,8 @@
                 "after": null
             }
         ],
-        "word2": [{
+        "word2": [
+            {
                 "id": 7,
                 "url": "./assets/audio/l7/7.mp3",
                 "highlight": "لٌ لَ",
@@ -95,7 +131,8 @@
         ]
     },
     "vjezba": {
-        "broj8": [{
+        "broj8": [
+            {
                 "id": 8,
                 "url": "./assets/audio/l7/8.mp3",
                 "highlight": "ةٍ لُ",
@@ -109,42 +146,53 @@
                 "after": null
             }
         ],
-        "broj9": [{
-            "id": 9,
-            "url": "./assets/audio/l7/9.mp3",
-            "highlight": "نْ لَ",
-            "word": "وَيُؤْتِ مِنْ لَدُنْهُ أَجْرًا عَظِيمًا",
-            "after": null
-        }],
-        "broj10": [{
-            "id": 10,
-            "url": "./assets/audio/l7/10.mp3",
-            "highlight": "نْ رَ",
-            "word": "وَوَهَبْنَا لَهُ مِـنْ رَحْمَتِنَٓا أَخَاهُ هَارُونَ نَبِيًّا ",
-            "after": null
-        }],
-        "broj11": [{
-            "id": 11,
-            "url": "./assets/audio/l7/11.mp3",
-            "highlight": "مًا لِـ",
-            "word": "وَجَعَلْنَاهَا رُجُومًا لِـلشَّيَاطِينِ ",
-            "after": null
-        }],
-        "broj12": [{
-            "id": 12,
-            "url": "./assets/audio/l7/12.mp3",
-            "highlight": "نْ رِ",
-            "word": "كُلُوا وَاشْرَبُوا مِـنْ رِزْقِ اللّٰهِ",
-            "after": null
-        }],
-        "broj13": [{
-            "id": 13,
-            "url": "./assets/audio/l7/13.mp3",
-            "highlight": "نْ رَ",
-            "word": "فَيَعْلَمُونَ أَنَّـهُ الْحَقُّ مِـنْ رَبِّـهِمْ ",
-            "after": null
-        }],
-        "broj14": [{
+        "broj9": [
+            {
+                "id": 9,
+                "url": "./assets/audio/l7/9.mp3",
+                "highlight": "نْ لَ",
+                "word": "وَيُؤْتِ مِنْ لَدُنْهُ أَجْرًا عَظِيمًا",
+                "after": null
+            }
+        ],
+        "broj10": [
+            {
+                "id": 10,
+                "url": "./assets/audio/l7/10.mp3",
+                "highlight": "نْ رَ",
+                "word": "وَوَهَبْنَا لَهُ مِـنْ رَحْمَتِنَٓا أَخَاهُ هَارُونَ نَبِيًّا ",
+                "after": null
+            }
+        ],
+        "broj11": [
+            {
+                "id": 11,
+                "url": "./assets/audio/l7/11.mp3",
+                "highlight": "مًا لِـ",
+                "word": "وَجَعَلْنَاهَا رُجُومًا لِـلشَّيَاطِينِ ",
+                "after": null
+            }
+        ],
+        "broj12": [
+            {
+                "id": 12,
+                "url": "./assets/audio/l7/12.mp3",
+                "highlight": "نْ رِ",
+                "word": "كُلُوا وَاشْرَبُوا مِـنْ رِزْقِ اللّٰهِ",
+                "after": null
+            }
+        ],
+        "broj13": [
+            {
+                "id": 13,
+                "url": "./assets/audio/l7/13.mp3",
+                "highlight": "نْ رَ",
+                "word": "فَيَعْلَمُونَ أَنَّـهُ الْحَقُّ مِـنْ رَبِّـهِمْ ",
+                "after": null
+            }
+        ],
+        "broj14": [
+            {
                 "id": 14,
                 "url": "./assets/audio/l7/14.mp3",
                 "highlight": "نْ لَ",
@@ -158,7 +206,8 @@
                 "after": null
             }
         ],
-        "broj15": [{
+        "broj15": [
+            {
                 "id": 15,
                 "url": "./assets/audio/l7/15.mp3",
                 "highlight": "يًّا لِـ",
@@ -172,12 +221,14 @@
                 "after": null
             }
         ],
-        "broj16": [{
-            "id": 16,
-            "url": "./assets/audio/l7/16.mp3",
-            "highlight": "نْ ر",
-            "word": "قَالَ وَمَنْ يَقْنَطُ مِنْ رَحْمَةِ رَبِّـهِٓ إِلَّا الضَّآ لُّونَ ",
-            "after": null
-        }]
+        "broj16": [
+            {
+                "id": 16,
+                "url": "./assets/audio/l7/16.mp3",
+                "highlight": "نْ ر",
+                "word": "قَالَ وَمَنْ يَقْنَطُ مِنْ رَحْمَةِ رَبِّـهِٓ إِلَّا الضَّآ لُّونَ ",
+                "after": null
+            }
+        ]
     }
 }
