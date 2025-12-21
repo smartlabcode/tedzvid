@@ -293,7 +293,7 @@ const Lesson1_bs = () => {
                 <tr>
                   <th className="text-danger">Mora stati</th>
                   <th>Bolje stati</th>
-                  <th>Boje preći</th>
+                  <th>Bolje preći</th>
                   <th className="text-danger">Ne smije se stati</th>
                 </tr>
               </thead>
@@ -383,7 +383,7 @@ const Lesson1_bs = () => {
                 <tr>
                   <th className="text-danger">Mora stati</th>
                   <th>Bolje stati</th>
-                  <th>Boje preći</th>
+                  <th>Bolje preći</th>
                   <th className="text-danger">Ne smije se stati</th>
                 </tr>
               </thead>

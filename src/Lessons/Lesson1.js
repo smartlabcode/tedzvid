@@ -3,12 +3,11 @@ import React from 'react';
 import { useTranslation } from "react-i18next";
 import Lesson1_bs from '../Components/Lesson1_bs';
 import Lesson1_en from '../Components/Lesson1_en';
-
-
+import Lesson1_de from "../Components/Lesson1_de";
 
 // Other
-import '../App.scss';
-import '../LandingPage.scss';
+import "../App.scss";
+import "../LandingPage.scss";
 
 export function scrollToHash() {
   /* Obtain hash from current location (and trim off leading #) */
@@ -26,20 +25,22 @@ export function scrollToHash() {
 }
 
 function L1() {
-	const { i18n } = useTranslation();
-	console.log(i18n.language)
+  const { i18n } = useTranslation();
+  console.log(i18n.language);
 
-	React.useEffect(() => {
-		scrollToHash();
-	}, []);
-	return (
-		<React.Fragment>
-			<>
-			{
-				i18n.language == 'bs' ? <Lesson1_bs/>:<Lesson1_en/>
-			}
-			</>
-		</React.Fragment>
-	);
+  React.useEffect(() => {
+    scrollToHash();
+  }, []);
+  return (
+    <>
+      {i18n.language === "bs" ? (
+        <Lesson1_bs />
+      ) : i18n.language === "en" ? (
+        <Lesson1_en />
+      ) : (
+        <Lesson1_de />
+      )}
+    </>
+  );
 }
 export default L1;
