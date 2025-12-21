@@ -13,8 +13,7 @@ import { useTranslation } from "react-i18next";
 // Bootstrap
 import { Row, Col, Table, Container } from "react-bootstrap";
 
-const Lesson1_bs = () => {
-  const { t } = useTranslation();
+const Lesson1_de = () => {
   const [show, setShow] = React.useState(false);
   const [showT, setShowT] = React.useState(false);
   const [showZ, setShowZ] = React.useState(false);
@@ -429,7 +428,7 @@ const Lesson1_bs = () => {
           <Col>
             <hr />
             <h2 className="text-center" id="video">
-              <strong>VIDEOLEKTION</strong>
+              <strong>VIDEO LEKTION</strong>
             </h2>
             <center>
               <div className="video">
@@ -558,4 +557,4 @@ const Lesson1_bs = () => {
   );
 };
 
-export default Lesson1_bs;
+export default Lesson1_de;

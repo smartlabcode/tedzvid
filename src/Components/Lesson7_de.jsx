@@ -193,7 +193,7 @@ const Lesson7_bs = () => {
           <Col>
             <hr />
             <h2 className="text-center" id="video">
-              <strong>VIDEO LEKCIJA</strong>
+              <strong>VIDEO LEKTION</strong>
             </h2>
             <center>
               <div className="video">

@@ -8,15 +8,11 @@ import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 import { MdZoomOutMap } from "react-icons/md";
 import { IconContext } from "react-icons";
-import { useTranslation } from "react-i18next";
 
-
-// Bootstrap
 import { Row, Col, Container } from "react-bootstrap";
 
-const Lesson5_bs = () => {
-
-	const [show, setShow] = React.useState(false);
+const Lesson5_de = () => {
+  const [show, setShow] = React.useState(false);
   const [showL, setShowL] = React.useState(false);
 
   const handleCloseL = () => setShowL(false);
@@ -24,9 +20,53 @@ const Lesson5_bs = () => {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  const renderLession = () => (
+    <>
+      <Row>
+        <Col className="opisLekcije">
+          Wenn der Buchstabe <strong>M</strong>{" "}
+          <span className="arapski-lekcija">(م)</span> mit{" "}
+          <strong>sukoon</strong> auf den Buchstaben <strong>M</strong>
+          <span className="arapski-lekcija"> (م) </span>mit einer{" "}
+          <strong>haraka</strong> folgt, wird der Buchstabe <strong>M</strong>
+          <span className="arapski-lekcija"> (م)</span> mit{" "}
+          <strong>sukoon</strong> mit dem Buchstaben <strong>M</strong>
+          <span className="arapski-lekcija"> (م)</span> mit{" "}
+          <strong>haraka</strong> verschmolzen, wobei der Luftstrom durch die
+          Nase über zwei harakat anhält, zum Beispiel:
+        </Col>
+      </Row>
+
+      <Row className="text-center">
+        <Col>{PlayerRow(data, "row1_de")}</Col>
+      </Row>
+
+      <Row className="text-center rtl">
+        <Col>{PlayerRow(data, "row2")}</Col>
+      </Row>
+
+      <Row className="text-center rtl">
+        <Col>{PlayerRow(data, "row3")}</Col>
+      </Row>
+
+      <Row>
+        <Col>
+          <br />
+        </Col>
+      </Row>
+
+      <Row>
+        <Col>
+          <br />
+        </Col>
+      </Row>
+    </>
+  );
+
   return (
     <>
-      <LekcijaMenu broj="5" naziv="IDGAM MISLEJN MEAL-GUNNEH" />
+      <LekcijaMenu broj="5" naziv="IDGAM MITHLAYN MIT GHUNNAH" />
 
       <Container>
         <Row>
@@ -42,12 +82,12 @@ const Lesson5_bs = () => {
                 className="text-center font-weight-bold text-uppercase"
                 id="lekcija"
               >
-                5 IDGAM MISLEJN MEAL-GUNNEH
+                5 IDGAM MITHLAYN MIT GHUNNAH
               </h2>
             </div>
             <h4 className="text-center">
               <strong>
-                Uklapanje istih harfova sa propuštanjem zraka kroz nos
+                Verschmelzung identischer Buchstaben mit Nasalausstoß
               </strong>
             </h4>
             <hr />
@@ -64,45 +104,7 @@ const Lesson5_bs = () => {
         >
           <MdZoomOutMap className="zoomIcon" onClick={handleShowL} />
         </IconContext.Provider>
-        <Row>
-          <Col className="opisLekcije">
-            Kada poslije harfa <strong>M</strong>{" "}
-            <span className="arapski-lekcija">(م)</span> sa{" "}
-            <strong>sukunom</strong> dođe harf <strong>M</strong>
-            <span className="arapski-lekcija"> (م) </span>sa{" "}
-            <strong>hareketom</strong>, dolazi do <u>uklapanja</u> harfa{" "}
-            <strong>M</strong>
-            <span className="arapski-lekcija"> (م)</span> sa{" "}
-            <strong>sukunom</strong> u harf <strong>M</strong>
-            <span className="arapski-lekcija"> (م)</span> sa{" "}
-            <strong>hareketom</strong>, uz propuštanje zraka kroz nos u trajanju
-            od 2 hareketa, npr.:
-          </Col>
-        </Row>
-
-        <Row className="text-center reorder">
-          <Col>{PlayerRow(data, "row1")}</Col>
-        </Row>
-
-        <Row className="text-center rtl">
-          <Col>{PlayerRow(data, "row2")}</Col>
-        </Row>
-
-        <Row className="text-center reorder-basic rtl">
-          <Col>{PlayerRow(data, "row3")}</Col>
-        </Row>
-
-        <Row>
-          <Col>
-            <br />
-          </Col>
-        </Row>
-
-        <Row>
-          <Col>
-            <br />
-          </Col>
-        </Row>
+        {renderLession()}
         <Modal
           show={showL}
           onHide={handleCloseL}
@@ -112,55 +114,15 @@ const Lesson5_bs = () => {
           <Modal.Header closeButton>
             <Modal.Title>LEKCIJA</Modal.Title>
           </Modal.Header>
-          <Modal.Body className="custom-modal">
-            <Row>
-              <Col className="opisLekcije">
-                Kada poslije harfa <strong>M</strong>{" "}
-                <span className="arapski-lekcija">(م)</span> sa{" "}
-                <strong>sukunom</strong> dođe harf <strong>M</strong>
-                <span className="arapski-lekcija"> (م) </span>sa{" "}
-                <strong>hareketom</strong>, dolazi do <u>uklapanja</u> harfa{" "}
-                <strong>M</strong>
-                <span className="arapski-lekcija"> (م)</span> sa{" "}
-                <strong>sukunom</strong> u harf <strong>M</strong>
-                <span className="arapski-lekcija"> (م)</span> sa{" "}
-                <strong>hareketom</strong>, uz propuštanje zraka kroz nos u
-                trajanju od 2 hareketa, npr.:
-              </Col>
-            </Row>
-
-            <Row className="text-center">
-              <Col>{PlayerRow(data, "row1")}</Col>
-            </Row>
-
-            <Row className="text-center rtl">
-              <Col>{PlayerRow(data, "row2")}</Col>
-            </Row>
-
-            <Row className="text-center rtl">
-              <Col>{PlayerRow(data, "row3")}</Col>
-            </Row>
-
-            <Row>
-              <Col>
-                <br />
-              </Col>
-            </Row>
-
-            <Row>
-              <Col>
-                <br />
-              </Col>
-            </Row>
-          </Modal.Body>
+          <Modal.Body className="custom-modal">{renderLession()}</Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={handleCloseL}>
-              Zatvori
+              Schließen
             </Button>
           </Modal.Footer>
         </Modal>
         <h2 className="text-center" id="vjezba">
-          <strong>VJEŽBA</strong>
+          <strong>ÜBUNG</strong>
         </h2>
         <hr />
         <Row>
@@ -235,7 +197,7 @@ const Lesson5_bs = () => {
           <Col>
             <hr />
             <h2 className="text-center" id="video">
-              <strong>VIDEO LEKCIJA</strong>
+              <strong>VIDEO LEKTION</strong>
             </h2>
             <center>
               <div className="video">
@@ -261,7 +223,7 @@ const Lesson5_bs = () => {
           keyboard={false}
         >
           <Modal.Header closeButton>
-            <Modal.Title>VJEŽBA</Modal.Title>
+            <Modal.Title>ÜBUNG</Modal.Title>
           </Modal.Header>
           <Modal.Body className="custom-modal">
             <Row className="text-center vjezba-row">
@@ -324,7 +286,7 @@ const Lesson5_bs = () => {
           </Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={handleClose}>
-              Zatvori
+              Schließen
             </Button>
           </Modal.Footer>
         </Modal>
@@ -333,6 +295,6 @@ const Lesson5_bs = () => {
       </Container>
     </>
   );
-}
+};
 
-export default Lesson5_bs
+export default Lesson5_de;

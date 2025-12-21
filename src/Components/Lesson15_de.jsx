@@ -259,7 +259,7 @@ const Lesson15_de = () => {
           <Col>
             <hr />
             <h2 className="text-center" id="video">
-              <strong>VIDEOLEKTION</strong>
+              <strong>VIDEO LEKTION</strong>
             </h2>
             <center>
               <div className="video">

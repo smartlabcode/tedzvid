@@ -1,47 +1,30 @@
-import React from 'react';
-import data from '../Data/L5Data.json';
-import PlayerRow from '../Helpers/PlayerHelper';
-import VjezbeRow from '../Helpers/VjezbeHelper';
-import Footer from '../Body/MainFooter';
-import LekcijaMenu from '../Body/LekcijaMenu';
-import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
-import { MdZoomOutMap } from 'react-icons/md';
-import { IconContext } from 'react-icons';
+import React from "react";
 import { useTranslation } from "react-i18next";
-import Lesson5_bs from '../Components/Lesson5_bs';
-import Lesson5_en from '../Components/Lesson5_en';
-
-// Bootstrap
-import { Row, Col, Container } from 'react-bootstrap';
+import Lesson5_bs from "../Components/Lesson5_bs";
+import Lesson5_en from "../Components/Lesson5_en";
+import Lesson5_de from "../Components/Lesson5_de";
 
 // Other
-import '../App.scss';
+import "../App.scss";
 import { scrollToHash } from "./Lesson1";
 
 function L5() {
-	const { i18n } = useTranslation();
-	const [show, setShow] = React.useState(false);
-	const [showL, setShowL] = React.useState(false);
+  const { i18n } = useTranslation();
 
-	const handleCloseL = () => setShowL(false);
-	const handleShowL = () => setShowL(true);
-
-	const handleClose = () => setShow(false);
-	const handleShow = () => setShow(true);
-
-	React.useEffect(() => {
-		scrollToHash();
-	}, []);
-	return (
-		<React.Fragment>
-			<>
-			{
-				i18n.language == 'bs' ? <Lesson5_bs/>:<Lesson5_en/>
-			}
-			</>
-		</React.Fragment>
-	);
+  React.useEffect(() => {
+    scrollToHash();
+  }, []);
+  return (
+    <>
+      {i18n.language == "bs" ? (
+        <Lesson5_bs />
+      ) : i18n.language == "en" ? (
+        <Lesson5_en />
+      ) : (
+        <Lesson5_de />
+      )}
+    </>
+  );
 }
 
 export default L5;
