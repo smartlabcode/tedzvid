@@ -3,11 +3,8 @@ import React from 'react';
 import { useTranslation } from "react-i18next";
 import Lesson19_bs from '../Components/Lesson19_bs';
 import Lesson19_en from '../Components/Lesson19_en';
+import Lesson19_de from "../Components/Lesson19_de";
 
-// Bootstrap
-import { Row, Col, Container } from "react-bootstrap";
-
-// Other
 import "../App.scss";
 
 function scrollToHash() {
@@ -27,26 +24,20 @@ function scrollToHash() {
 
 function L19() {
 	const { i18n } = useTranslation();
-  const [show, setShow] = React.useState(false);
-  const [showL, setShowL] = React.useState(false);
-
-  const handleCloseL = () => setShowL(false);
-  const handleShowL = () => setShowL(true);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
   React.useEffect(() => {
     scrollToHash();
   }, []);
   return (
-	<React.Fragment>
-	<>
-	{
-		i18n.language == 'bs' ? <Lesson19_bs/>:<Lesson19_en/>
-	}
-	</>
-</React.Fragment>
-	);
+    <React.Fragment>
+      {i18n.language === "bs" ? (
+        <Lesson19_bs />
+      ) : i18n.language === "de" ? (
+        <Lesson19_de />
+      ) : (
+        <Lesson19_en />
+      )}
+    </React.Fragment>
+  );
 }
 
 export default L19;
