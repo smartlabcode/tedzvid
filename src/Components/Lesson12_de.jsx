@@ -54,7 +54,7 @@ const Lesson12_de = () => {
 
   return (
     <>
-      <LekcijaMenu broj="12" naziv="IHFA ŠEFEVIJJ" />
+      <LekcijaMenu broj="12" naziv="IHFA SHAFAWI" />
       <Container>
         <Row>
           <Col>
@@ -69,7 +69,7 @@ const Lesson12_de = () => {
                 className="text-center font-weight-bold text-uppercase"
                 id="lekcija"
               >
-                12 IHFA ŠEFEVIJJ
+                12 IHFA SHAFAWI
               </h2>
             </div>
             <h4 className="text-center">
