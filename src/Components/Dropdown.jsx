@@ -8,17 +8,17 @@ const LanguageSwitcher = () => {
   const storedLanguage = localStorage.getItem("language");
   const [language, setLanguage] = useState(storedLanguage || defaultLanguage);
   const [isOpen, setIsOpen] = useState(false);
-  const bosnianFlag =
-    "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Flag_of_Bosnia_and_Herzegovina.svg/100px-Flag_of_Bosnia_and_Herzegovina.svg.png";
-  const englishFlag =
-    "https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/100px-Flag_of_the_United_Kingdom.svg.png";
 
-  const handleLanguageChange = (newLanguage) => {
-    i18n.changeLanguage(newLanguage);
-    setLanguage(newLanguage);
-    localStorage.setItem("language", newLanguage);
-    setIsOpen(false);
-  };
+const bosnianFlag = "https://flagcdn.com/w40/ba.png";
+
+const englishFlag = "https://flagcdn.com/w40/gb.png";
+
+const handleLanguageChange = (newLanguage) => {
+  i18n.changeLanguage(newLanguage);
+  setLanguage(newLanguage);
+  localStorage.setItem("language", newLanguage);
+  setIsOpen(false);
+};
 
   const toggleMenu = () => {
     setIsOpen((prev) => !prev);
@@ -26,11 +26,11 @@ const LanguageSwitcher = () => {
 
   useEffect(() => {
     if (!storedLanguage) {
-     //localStorage.removeItem('i18nextLng
-     localStorage.setItem('i18nextLng','bs');
-     handleLanguageChange(defaultLanguage);
+      //localStorage.removeItem('i18nextLng
+      localStorage.setItem("i18nextLng", "bs");
+      handleLanguageChange(defaultLanguage);
     }
-  }, [storedLanguage]);
+  }, [handleLanguageChange, storedLanguage]);
 
  return (
     <div style={{ position: "relative" }}>
