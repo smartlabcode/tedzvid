@@ -1,5 +1,5 @@
 import React from "react";
-import data from "../Data/L4Data.json";
+import data from "../Data/L22Data.json";
 import PlayerRow from "../Helpers/PlayerHelper";
 import VjezbeRow from "../Helpers/VjezbeHelper";
 import Footer from "../Body/MainFooter";
@@ -9,10 +9,9 @@ import Button from "react-bootstrap/Button";
 import { MdZoomOutMap } from "react-icons/md";
 import { IconContext } from "react-icons";
 
-// Bootstrap
 import { Row, Col, Container } from "react-bootstrap";
 
-const Lesson4_bs = () => {
+const Lesson22_de = () => {
   const [show, setShow] = React.useState(false);
   const [showL, setShowL] = React.useState(false);
 
@@ -26,12 +25,28 @@ const Lesson4_bs = () => {
     <>
       <Row>
         <Col className="opisLekcije">
-          Wenn zwei gleiche Buchstaben hintereinander vorkommen, der Erste mit{" "}
+          Wenn die Buchstaben <strong>W</strong> oder <strong>J</strong>{" "}
           <strong>
-            sukun <span className="arapski-lekcija">ـــْــ</span>
+            mit Sukūn <span className="arapski-lekcija">(يْ / وْ)</span>
           </strong>{" "}
-          und der zweite mit <strong>Vokal</strong>, werden beide vollstandige
-          ineinander assimiliertcund mit teschdid ausgesprochen. Zum Beispiel:
+          vorkommen, ihnen ein <strong>kurzer Vokal</strong> E{" "}
+          <span className="arapski-lekcija">ـــَـــ </span> vorausgeht und ihnen
+          ein Buchstabe mit <strong>sukun</strong> folgt, nennt man das medd
+          lin. Zum Beispiel:
+        </Col>
+      </Row>
+
+      <Row className="text-center reorder-basic-display-after rtl">
+        <Col>
+          <span>
+            . {PlayerRow(data, "row1desni")}
+            <span className="arapski">( ـــَــ يْ ـــْــ ) </span>
+          </span>
+          <span className="after">;</span>
+          <span>
+            {PlayerRow(data, "row1lijevi")}
+            <span className="arapski">( ـــَــ وْ ـــْــ )</span>
+          </span>
         </Col>
       </Row>
 
@@ -41,23 +56,20 @@ const Lesson4_bs = () => {
         </Col>
       </Row>
 
-      <Row className="text-center reorder">
-        <Col>{PlayerRow(data, "row1_de")}</Col>,
-      </Row>
-
-      <Row className="text-center">
-        <Col>{PlayerRow(data, "row2")}</Col>
-      </Row>
-
-      <Row className="text-center">
-        <Col>{PlayerRow(data, "row3")}</Col>
+      <Row>
+        <Col className="opisLekcije">
+          Die Verlängerung auf dem Buchstaben <strong>W</strong>{" "}
+          <span className="arapski-lekcija"> (و)</span> oder <strong>J</strong>{" "}
+          <span className="arapski-lekcija"> (ى)</span> beträgt 2-4-6 kurze
+          Vokale.
+        </Col>
       </Row>
     </>
   );
 
   return (
     <>
-      <LekcijaMenu broj="4" naziv="IDGAM MISLEJN" />
+      <LekcijaMenu broj="22" naziv="MEDD LIN" />
       <Container>
         <Row>
           <Col>
@@ -72,13 +84,11 @@ const Lesson4_bs = () => {
                 className="text-center font-weight-bold text-uppercase"
                 id="lekcija"
               >
-                4 IDGAM MISLEJN
+                22 MEDD LIN
               </h2>
             </div>
-            <h4 className="text-center">
-              <strong>
-                Vollstandinge Assimilation der gleichen Buchstaben
-              </strong>
+            <h4 className="text-center font-weight-bold ">
+              <strong>Halbvokalische Verlängerung</strong>
             </h4>
             <hr />
           </Col>
@@ -95,6 +105,36 @@ const Lesson4_bs = () => {
           <MdZoomOutMap className="zoomIcon" onClick={handleShowL} />
         </IconContext.Provider>
         {renderLession()}
+
+        <Row>
+          <Col>
+            <br />
+          </Col>
+        </Row>
+
+        <Row className="text-center reorder-basic rtl ">
+          <Col>{PlayerRow(data, "row2")}</Col>
+        </Row>
+
+        <Row className="text-center reorder-basic rtl ">
+          <Col>{PlayerRow(data, "row3")}</Col>
+        </Row>
+
+        <Row className="text-center ">
+          <Col>{PlayerRow(data, "row4")}</Col>
+        </Row>
+
+        <Row>
+          <Col>
+            <br />
+          </Col>
+        </Row>
+
+        <Row>
+          <Col>
+            <br />
+          </Col>
+        </Row>
         <Modal
           show={showL}
           onHide={handleCloseL}
@@ -104,19 +144,45 @@ const Lesson4_bs = () => {
           <Modal.Header closeButton>
             <Modal.Title>LEKCIJA</Modal.Title>
           </Modal.Header>
-          <Modal.Body className="custom-modal">{renderLession()}</Modal.Body>
+          <Modal.Body className="custom-modal">
+            {renderLession()}
+
+            <Row>
+              <Col>
+                <br />
+              </Col>
+            </Row>
+
+            <Row className="text-center rtl">
+              <Col>{PlayerRow(data, "row2")}</Col>
+            </Row>
+
+            <Row className="text-center rtl">
+              <Col>{PlayerRow(data, "row3")}</Col>
+            </Row>
+
+            <Row className="text-center">
+              <Col>{PlayerRow(data, "row4")}</Col>
+            </Row>
+
+            <Row>
+              <Col>
+                <br />
+              </Col>
+            </Row>
+
+            <Row>
+              <Col>
+                <br />
+              </Col>
+            </Row>
+          </Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={handleCloseL}>
               Schließen
             </Button>
           </Modal.Footer>
         </Modal>
-        <Row>
-          <Col>
-            <br />
-          </Col>
-        </Row>
-
         <h2 className="text-center" id="vjezba">
           <strong>ÜBUNG</strong>
         </h2>
@@ -134,10 +200,14 @@ const Lesson4_bs = () => {
         <Row className="text-center vjezba-row">
           <Col className="mobile-row">
             <span className="tacka">
-              {VjezbeRow(data, "vjezba", "broj10")} ۞
+              <span className="tacka">
+                {VjezbeRow(data, "vjezba", "broj8")} ۞
+              </span>
             </span>
             <span className="tacka">
-              {VjezbeRow(data, "vjezba", "broj11")} ۞
+              <span className="tacka">
+                {VjezbeRow(data, "vjezba", "broj9")} ۞
+              </span>
             </span>
           </Col>
         </Row>
@@ -145,10 +215,14 @@ const Lesson4_bs = () => {
         <Row className="text-center vjezba-row">
           <Col className="mobile-row">
             <span className="tacka">
-              {VjezbeRow(data, "vjezba", "broj12")} ۞
+              <span className="tacka">
+                {VjezbeRow(data, "vjezba", "broj10")} ۞
+              </span>
             </span>
             <span className="tacka">
-              {VjezbeRow(data, "vjezba", "broj13")} ۞
+              <span className="tacka">
+                {VjezbeRow(data, "vjezba", "broj11")} ۞
+              </span>
             </span>
           </Col>
         </Row>
@@ -156,10 +230,14 @@ const Lesson4_bs = () => {
         <Row className="text-center vjezba-row">
           <Col className="mobile-row">
             <span className="tacka">
-              {VjezbeRow(data, "vjezba", "broj14")} ۞
+              <span className="tacka">
+                {VjezbeRow(data, "vjezba", "broj12")} ۞
+              </span>
             </span>
             <span className="tacka">
-              {VjezbeRow(data, "vjezba", "broj15")} ۞
+              <span className="tacka">
+                {VjezbeRow(data, "vjezba", "broj13")} ۞
+              </span>
             </span>
           </Col>
         </Row>
@@ -167,25 +245,16 @@ const Lesson4_bs = () => {
         <Row className="text-center vjezba-row">
           <Col className="mobile-row">
             <span className="tacka">
-              {VjezbeRow(data, "vjezba", "broj16")} ۞
+              <span className="tacka">
+                {VjezbeRow(data, "vjezba", "broj14")} ۞
+              </span>
             </span>
             <span className="tacka">
-              {VjezbeRow(data, "vjezba", "broj17")} ۞
+              <span className="tacka">
+                {VjezbeRow(data, "vjezba", "broj15")} ۞
+              </span>
             </span>
           </Col>
-        </Row>
-        <Row className="text-center vjezba-row">
-          <Col className="mobile-row">
-            <span className="tacka">
-              {VjezbeRow(data, "vjezba", "broj18")} ۞
-            </span>
-            <span className="tacka">
-              {VjezbeRow(data, "vjezba", "broj19")} ۞
-            </span>
-          </Col>
-        </Row>
-        <Row className="text-center vjezba-row">
-          <Col />
         </Row>
         <Row>
           <Col>
@@ -198,7 +267,7 @@ const Lesson4_bs = () => {
                 <iframe
                   width="900"
                   height="506"
-                  src="https://www.youtube.com/embed/pS0IE9vrCnI?list=PLcdhKKk9LmetUjroRtBCCkugO_whS-cW2"
+                  src="https://www.youtube.com/embed/9MqFOGaeaH0?list=PLcdhKKk9LmetUjroRtBCCkugO_whS-cW2"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -223,10 +292,14 @@ const Lesson4_bs = () => {
             <Row className="text-center vjezba-row">
               <Col className="mobile-row">
                 <span className="tacka">
-                  {VjezbeRow(data, "vjezba", "broj10")} ۞
+                  <span className="tacka">
+                    {VjezbeRow(data, "vjezba", "broj8")} ۞
+                  </span>
                 </span>
                 <span className="tacka">
-                  {VjezbeRow(data, "vjezba", "broj11")} ۞
+                  <span className="tacka">
+                    {VjezbeRow(data, "vjezba", "broj9")} ۞
+                  </span>
                 </span>
               </Col>
             </Row>
@@ -234,10 +307,14 @@ const Lesson4_bs = () => {
             <Row className="text-center vjezba-row">
               <Col className="mobile-row">
                 <span className="tacka">
-                  {VjezbeRow(data, "vjezba", "broj12")} ۞
+                  <span className="tacka">
+                    {VjezbeRow(data, "vjezba", "broj10")} ۞
+                  </span>
                 </span>
                 <span className="tacka">
-                  {VjezbeRow(data, "vjezba", "broj13")} ۞
+                  <span className="tacka">
+                    {VjezbeRow(data, "vjezba", "broj11")} ۞
+                  </span>
                 </span>
               </Col>
             </Row>
@@ -245,10 +322,14 @@ const Lesson4_bs = () => {
             <Row className="text-center vjezba-row">
               <Col className="mobile-row">
                 <span className="tacka">
-                  {VjezbeRow(data, "vjezba", "broj14")} ۞
+                  <span className="tacka">
+                    {VjezbeRow(data, "vjezba", "broj12")} ۞
+                  </span>
                 </span>
                 <span className="tacka">
-                  {VjezbeRow(data, "vjezba", "broj15")} ۞
+                  <span className="tacka">
+                    {VjezbeRow(data, "vjezba", "broj13")} ۞
+                  </span>
                 </span>
               </Col>
             </Row>
@@ -256,25 +337,16 @@ const Lesson4_bs = () => {
             <Row className="text-center vjezba-row">
               <Col className="mobile-row">
                 <span className="tacka">
-                  {VjezbeRow(data, "vjezba", "broj16")} ۞
+                  <span className="tacka">
+                    {VjezbeRow(data, "vjezba", "broj14")} ۞
+                  </span>
                 </span>
                 <span className="tacka">
-                  {VjezbeRow(data, "vjezba", "broj17")} ۞
+                  <span className="tacka">
+                    {VjezbeRow(data, "vjezba", "broj15")} ۞
+                  </span>
                 </span>
               </Col>
-            </Row>
-            <Row className="text-center vjezba-row">
-              <Col className="mobile-row">
-                <span className="tacka">
-                  {VjezbeRow(data, "vjezba", "broj18")} ۞
-                </span>
-                <span className="tacka">
-                  {VjezbeRow(data, "vjezba", "broj19")} ۞
-                </span>
-              </Col>
-            </Row>
-            <Row className="text-center vjezba-row">
-              <Col />
             </Row>
           </Modal.Body>
           <Modal.Footer>
@@ -283,10 +355,10 @@ const Lesson4_bs = () => {
             </Button>
           </Modal.Footer>
         </Modal>
-        <Footer prev="/lekcija3" next="/lekcija5" />
+        <Footer prev="/lekcija21" next="/lekcija1" />
       </Container>
     </>
   );
 };
 
-export default Lesson4_bs;
+export default Lesson22_de;

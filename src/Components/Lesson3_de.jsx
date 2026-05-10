@@ -127,13 +127,13 @@ const Lesson3_bs = () => {
           <Modal.Body className="custom-modal">{renderLession()}</Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={handleCloseL}>
-              Zatvori
+              Schließen
             </Button>
           </Modal.Footer>
         </Modal>
 
         <h2 className="text-center" id="vjezba">
-          <strong>VJEŽBA</strong>
+          <strong>ÜBUNG</strong>
         </h2>
         <hr />
         <Row>
@@ -229,7 +229,7 @@ const Lesson3_bs = () => {
           keyboard={false}
         >
           <Modal.Header closeButton>
-            <Modal.Title>VJEŽBA</Modal.Title>
+            <Modal.Title>ÜBUNG</Modal.Title>
           </Modal.Header>
           <Modal.Body className="custom-modal">
             <Row className="text-center vjezba-row">
@@ -288,7 +288,7 @@ const Lesson3_bs = () => {
           </Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={handleClose}>
-              Zatvori
+              Schließen
             </Button>
           </Modal.Footer>
         </Modal>

@@ -3,50 +3,28 @@ import React from 'react';
 import { useTranslation } from "react-i18next";
 import Lesson22_bs from '../Components/Lesson22_bs';
 import Lesson22_en from '../Components/Lesson22_en';
+import Lesson22_de from "../Components/Lesson22_de";
 
-// Bootstrap
-import { Row, Col, Container } from "react-bootstrap";
-
-// Other
 import "../App.scss";
+import { scrollToHash } from "./Lesson1";
 
-function scrollToHash() {
-  /* Obtain hash from current location (and trim off leading #) */
-  const id = window.location.hash.substr(1);
-
-  if (id) {
-    /* Find matching element by id */
-    const anchor = document.getElementById(id);
-
-    if (anchor) {
-      /* Scroll to that element if present */
-      anchor.scrollIntoView();
-    }
-  }
-}
 
 function L22() {
 	const { i18n } = useTranslation();
-  const [show, setShow] = React.useState(false);
-  const [showL, setShowL] = React.useState(false);
-
-  const handleCloseL = () => setShowL(false);
-  const handleShowL = () => setShowL(true);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
   React.useEffect(() => {
     scrollToHash();
   }, []);
   return (
-	<React.Fragment>
-	<>
-	{
-		i18n.language == 'bs' ? <Lesson22_bs/>:<Lesson22_en/>
-	}
-	</>
-</React.Fragment>
-	);
+    <React.Fragment>
+      {i18n.language === "bs" ? (
+        <Lesson22_bs />
+      ) : i18n.language === "de" ? (
+        <Lesson22_de />
+      ) : (
+        <Lesson22_en />
+      )}
+    </React.Fragment>
+  );
 }
 
 export default L22;
