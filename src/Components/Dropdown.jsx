@@ -12,15 +12,15 @@ const LanguageSwitcher = () => {
   const languages = {
     bs: {
       name: "Bosanski",
-      flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Flag_of_Bosnia_and_Herzegovina.svg/100px-Flag_of_Bosnia_and_Herzegovina.svg.png",
+      flag: "https://flagcdn.com/w40/ba.png",
     },
     en: {
       name: "English",
-      flag: "https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/100px-Flag_of_the_United_Kingdom.svg.png",
+      flag: "https://flagcdn.com/w40/gb.png",
     },
     de: {
       name: "Deutsch",
-      flag: "https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/100px-Flag_of_Germany.svg.png",
+      flag: "https://flagcdn.com/w40/de.png",
     },
   };
 
