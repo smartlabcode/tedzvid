@@ -115,7 +115,7 @@ const Lesson14_2_de = () => {
           keyboard={false}
         >
           <Modal.Header closeButton>
-            <Modal.Title>LESSON</Modal.Title>
+            <Modal.Title>LEKTION</Modal.Title>
           </Modal.Header>
           <Modal.Body className="custom-modal">
             {renderLession()}

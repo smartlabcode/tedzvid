@@ -99,7 +99,7 @@ const Lesson17_de = () => {
           keyboard={false}
         >
           <Modal.Header closeButton>
-            <Modal.Title>LESSON</Modal.Title>
+            <Modal.Title>LEKTION</Modal.Title>
           </Modal.Header>
           <Modal.Body className="custom-modal">
             {renderLession()}
@@ -126,12 +126,12 @@ const Lesson17_de = () => {
           </Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={handleCloseL}>
-              Close
+              Schließen
             </Button>
           </Modal.Footer>
         </Modal>
         <h2 className="text-center" id="vjezba">
-          <strong>PRACTICE</strong>
+          <strong>ÜBUNG</strong>
         </h2>
         <hr />
 
@@ -200,7 +200,7 @@ const Lesson17_de = () => {
           <Col>
             <hr />
             <h2 className="text-center" id="video">
-              <strong>VIDEO LECTURE</strong>
+              <strong>VIDEO LEKTION</strong>
             </h2>
             <center>
               <div className="video">
@@ -226,7 +226,7 @@ const Lesson17_de = () => {
           keyboard={false}
         >
           <Modal.Header closeButton>
-            <Modal.Title>PRACTICE</Modal.Title>
+            <Modal.Title>ÜBUNG</Modal.Title>
           </Modal.Header>
           <Modal.Body className="custom-modal">
             <Row className="text-center vjezba-row">
@@ -285,7 +285,7 @@ const Lesson17_de = () => {
           </Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={handleClose}>
-              Close
+              Schließen
             </Button>
           </Modal.Footer>
         </Modal>
