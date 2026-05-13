@@ -110,7 +110,7 @@ const Lesson9_de = () => {
 
   return (
     <>
-      <LekcijaMenu broj="9" naziv="IZHAR HALKIJJ" />
+      <LekcijaMenu broj="9" naziv="IZHAR HALQI" />
       <Container>
         <Row>
           <Col>
@@ -125,7 +125,7 @@ const Lesson9_de = () => {
                 className="text-center font-weight-bold text-uppercase"
                 id="lekcija"
               >
-                9 IZHAR HALKIJJ
+                9 IZHAR HALQI
               </h2>
             </div>
             <h4 className="text-center">

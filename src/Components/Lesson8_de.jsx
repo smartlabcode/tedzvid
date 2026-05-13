@@ -70,7 +70,7 @@ const Lesson8_bs = () => {
 
   return (
     <>
-      <LekcijaMenu broj="8" naziv="IKLAB" />
+      <LekcijaMenu broj="8" naziv="IQLAB" />
       <Container>
         <Row>
           <Col>

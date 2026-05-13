@@ -23,7 +23,7 @@ const Lesson15_de = () => {
   const handleShow = () => setShow(true);
   return (
     <>
-      <LekcijaMenu broj="15" naziv="IDGHAM MUTAJAANISAYN" />
+      <LekcijaMenu broj="15" naziv="IDGHAM MUTAJANISSAYN" />
       <Container>
         <Row>
           <Col>

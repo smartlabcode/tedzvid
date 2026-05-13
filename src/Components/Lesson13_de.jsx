@@ -68,7 +68,7 @@ const Lesson13_de = () => {
 
   return (
     <>
-      <LekcijaMenu broj="13" naziv="KALKALA" />
+      <LekcijaMenu broj="13" naziv="QALQALA" />
       <Container>
         <Row>
           <Col>
@@ -83,7 +83,7 @@ const Lesson13_de = () => {
                 className="text-center font-weight-bold text-uppercase"
                 id="lekcija"
               >
-                13 KALKALA
+                13 QALQALA
               </h2>
             </div>
             <h4 className="text-center">

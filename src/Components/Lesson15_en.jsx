@@ -50,7 +50,7 @@ const Lesson15_en = () => {
                 className="text-center font-weight-bold text-uppercase"
                 id="lekcija"
               >
-                15 IDGHAM MUTAJAANISAYN
+                15 IDGHAM MUTAJANISSAYN
               </h2>
             </div>
             <h4 className="text-center">

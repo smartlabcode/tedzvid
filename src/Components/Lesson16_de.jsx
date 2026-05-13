@@ -34,7 +34,7 @@ const Lesson16_de = () => {
   const { i18n } = useTranslation();
   return (
     <>
-      <LekcijaMenu broj="16" naziv="IDGHAM MUTAQAARIBAYN" />
+      <LekcijaMenu broj="16" naziv="IDGHAM MUTAQARIBAYN" />
       <Container>
         <Row>
           <Col>
@@ -49,7 +49,7 @@ const Lesson16_de = () => {
                 className="text-center font-weight-bold text-uppercase"
                 id="lekcija"
               >
-                16 IDGHAM MUTAQAARIBAYN
+                16 IDGHAM MUTAQARIBAYN
               </h2>
             </div>
             <h4 className="text-center">
