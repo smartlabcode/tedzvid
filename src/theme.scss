@@ -1502,14 +1502,28 @@ textarea.field {
 
     &__grid {
       grid-template-columns: 1fr;
-      gap: 56px;
+      gap: 40px;
+    }
+
+    /* redoslijed na tabletu/mobitelu: naslovni blok → mockup → ostatak teksta */
+    &__text {
+      display: contents;
+    }
+
+    &__head {
+      order: 0;
     }
 
     &__visual {
-      order: -1; /* na tabletu/mobitelu prvo mockup, pa tekst */
-      padding: 32px 16px 0 0;
+      order: 1;
+      padding: 28px 16px 0 0;
       max-width: 560px;
+      width: 100%;
       margin: 0 auto;
+    }
+
+    &__body {
+      order: 2;
     }
   }
 
