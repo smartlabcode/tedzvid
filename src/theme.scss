@@ -1505,7 +1505,7 @@ textarea.field {
       gap: 40px;
     }
 
-    /* redoslijed na tabletu/mobitelu: naslovni blok → mockup → ostatak teksta */
+    /* redoslijed na tabletu/mobitelu: naslovni blok → mockup → ornament → ostatak teksta */
     &__text {
       display: contents;
     }
@@ -1522,9 +1522,20 @@ textarea.field {
       margin: 0 auto;
     }
 
-    &__body {
+    /* ornament je razdjelnik između mockupa i teksta; razmak daje gap mreže */
+    .ornament {
       order: 2;
+      margin: 0;
     }
+
+    &__body {
+      order: 3;
+    }
+  }
+
+  /* prazan <nav> bi inače trošio gap u traci */
+  .site-nav__bar nav {
+    display: none;
   }
 
   .about__grid,
@@ -1547,13 +1558,33 @@ textarea.field {
     padding: 0 18px;
   }
 
+  /* logo + prekidač jezika + hamburger moraju stati i na 320px */
   .site-nav__inner {
     height: 68px;
+    gap: 10px;
   }
 
   .site-nav__actions .lang-switch button {
-    padding: 5px 8px;
-    font-size: 0.65rem;
+    padding: 5px 7px;
+    font-size: 0.6rem;
+  }
+
+  .site-nav__toggle {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logo {
+    gap: 9px;
+
+    svg {
+      width: 38px;
+      height: 38px;
+    }
+  }
+
+  .logo__word {
+    font-size: 1.08rem;
   }
 
   .logo__tag {
@@ -1609,6 +1640,11 @@ textarea.field {
 
   .features__grid {
     grid-template-columns: 1fr 1fr;
+
+    /* pet stavki u dvije kolone: peta bi ostala sama lijevo */
+    .feature:last-child {
+      grid-column: 1 / -1;
+    }
   }
 
   .about,
@@ -1644,4 +1680,11 @@ textarea.field {
     }
   }
 
+}
+
+@media (max-width: 360px) {
+  /* na najužim ekranima prekidač jezika ostaje samo u mobilnom meniju */
+  .site-nav__actions .lang-switch {
+    display: none;
+  }
 }

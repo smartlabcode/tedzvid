@@ -112,13 +112,13 @@ function LandingPage() {
 					<div className="hero__glow" aria-hidden="true" />
 					<div className="wrap hero__grid">
 						<div className="hero__text">
-							{/* na mobitelu: naslovni blok → mockup → ostatak teksta (display: contents + order) */}
+							{/* na mobitelu: naslovni blok → mockup → ornament → ostatak teksta (display: contents + order) */}
 							<div className="hero__head">
 								<p className="eyebrow">{ui.heroEyebrow}</p>
 								<h1 className="h-display">{ui.heroTitle}</h1>
 								<p className="hero__sub">{ui.heroSub}</p>
-								<Ornament />
 							</div>
+							<Ornament />
 							<div className="hero__body">
 								<p className="hero__lead">{ui.heroLead}</p>
 								<div className="hero__cta">
