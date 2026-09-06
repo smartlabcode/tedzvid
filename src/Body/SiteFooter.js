@@ -28,11 +28,19 @@ export default function SiteFooter() {
 						<Logo light />
 						<p>{ui.footAbout}</p>
 						<div className="store-links store-links--light">
-							<a href={APP_LINKS.android} target="_blank" rel="noopener noreferrer">
-								<FaGooglePlay /> Google Play
+							<a className="store-badge" href={APP_LINKS.android} target="_blank" rel="noopener noreferrer">
+								<FaGooglePlay />
+								<span>
+									<small>{ui.storeGet}</small>
+									<b>Google Play</b>
+								</span>
 							</a>
-							<a href={APP_LINKS.ios} target="_blank" rel="noopener noreferrer">
-								<FaApple /> App Store
+							<a className="store-badge" href={APP_LINKS.ios} target="_blank" rel="noopener noreferrer">
+								<FaApple />
+								<span>
+									<small>{ui.storeGet}</small>
+									<b>App Store</b>
+								</span>
 							</a>
 						</div>
 					</div>

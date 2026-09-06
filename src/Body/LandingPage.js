@@ -25,36 +25,23 @@ import { Ornament } from './Logo';
 import { VideoEmbed } from './LessonVideo';
 import videos from '../Data/videos.json';
 import { APP_LINKS } from './SiteFooter';
+import { useUI } from '../i18n/ui';
 
-const FEATURES = [
-	{ icon: <FaBookOpen />, tone: 'navy', title: 'Sva pravila', text: 'pregledno i sistematično' },
-	{ icon: <FaVolumeUp />, tone: 'green', title: 'Praktične vježbe', text: 'za provjeru znanja' },
-	{ icon: <FaGraduationCap />, tone: 'purple', title: 'Prilagođeno nastavi', text: 'idealno za mektebe i časove' },
-	{ icon: <FaMobileAlt />, tone: 'teal', title: 'Dostupno svuda', text: 'na računaru, tabletu i telefonu' },
-	{ icon: <FaSyncAlt />, tone: 'gold', title: 'Uči, vježbaj, ponavljaj', text: 'napreduj svaki dan' }
+/* Ikone i boje su iste za sve jezike; naslovi i opisi dolaze iz i18n/ui.js */
+const FEATURE_STYLE = [
+	{ icon: <FaBookOpen />, tone: 'navy' },
+	{ icon: <FaVolumeUp />, tone: 'green' },
+	{ icon: <FaGraduationCap />, tone: 'purple' },
+	{ icon: <FaMobileAlt />, tone: 'teal' },
+	{ icon: <FaSyncAlt />, tone: 'gold' }
 ];
 
-const BENEFITS = [
-	{
-		icon: <FaBookOpen />,
-		tone: 'navy',
-		title: 'Jasna objašnjenja',
-		text: 'tedžvidskih pravila bez komplikovanih izraza'
-	},
-	{ icon: <FaHeadphones />, tone: 'green', title: 'Audio primjeri', text: 'poslušaj i odmah primijeni' },
-	{ icon: <FaPlayCircle />, tone: 'gold', title: 'Video lekcije', text: 'vizuelno učenje koje ostaje u pamćenju' },
-	{
-		icon: <FaUsers />,
-		tone: 'purple',
-		title: 'Za sve generacije',
-		text: 'koristan sadržaj za djecu, odrasle i nastavnike'
-	},
-	{
-		icon: <FaMosque />,
-		tone: 'teal',
-		title: 'Pomoć u praksi',
-		text: 'materijal koji olakšava učenje, podučavanje i ponavljanje'
-	}
+const BENEFIT_STYLE = [
+	{ icon: <FaBookOpen />, tone: 'navy' },
+	{ icon: <FaHeadphones />, tone: 'green' },
+	{ icon: <FaPlayCircle />, tone: 'gold' },
+	{ icon: <FaUsers />, tone: 'purple' },
+	{ icon: <FaMosque />, tone: 'teal' }
 ];
 
 function scrollToHash(hash) {
@@ -68,6 +55,7 @@ function scrollToHash(hash) {
 }
 
 function LandingPage() {
+	const ui = useUI();
 	const [ showSuccessMessage, setShowSuccessMessage ] = useState(false);
 	const [ showErrorMessage, setShowErrorMessage ] = useState(false);
 	const [ fullName, setFullName ] = useState('');
@@ -124,32 +112,34 @@ function LandingPage() {
 					<div className="hero__glow" aria-hidden="true" />
 					<div className="wrap hero__grid">
 						<div className="hero__text">
-							<p className="eyebrow">Interaktivni priručnik za tedžvid</p>
-							<h1 className="h-display">
-								Uči <em>tedžvid</em>
-							</h1>
-							<p className="hero__sub">Jednostavno, interaktivno, korak po korak</p>
+							<p className="eyebrow">{ui.heroEyebrow}</p>
+							<h1 className="h-display">{ui.heroTitle}</h1>
+							<p className="hero__sub">{ui.heroSub}</p>
 							<Ornament />
-							<p className="hero__lead">
-								<strong>Tedzvid.ba</strong> je moderna, interaktivna i elektronska verzija tedžvida autora
-								mr. Sejida Strike – stvorena da pomogne početnicima, polaznicima mektepske nastave,
-								mu'allimima i svim ljubiteljima Kur'ana.
-							</p>
+							<p className="hero__lead">{ui.heroLead}</p>
 							<div className="hero__cta">
 								<Link to="/lekcije" className="btn-t btn-t--gold">
-									Počni učiti <FaArrowRight />
+									{ui.heroCtaStart} <FaArrowRight />
 								</Link>
 								<Link to="/#o-nama" className="btn-t btn-t--outline">
-									Saznaj više
+									{ui.heroCtaMore}
 								</Link>
 							</div>
 							<div className="store-links">
-								<span>Aplikacija dostupna na</span>
-								<a href={APP_LINKS.android} target="_blank" rel="noopener noreferrer">
-									<FaGooglePlay /> Google Play
+								<span className="store-links__label">{ui.storeIntro}</span>
+								<a className="store-badge" href={APP_LINKS.android} target="_blank" rel="noopener noreferrer">
+									<FaGooglePlay />
+									<span>
+										<small>{ui.storeGet}</small>
+										<b>Google Play</b>
+									</span>
 								</a>
-								<a href={APP_LINKS.ios} target="_blank" rel="noopener noreferrer">
-									<FaApple /> App Store
+								<a className="store-badge" href={APP_LINKS.ios} target="_blank" rel="noopener noreferrer">
+									<FaApple />
+									<span>
+										<small>{ui.storeGet}</small>
+										<b>App Store</b>
+									</span>
 								</a>
 							</div>
 						</div>
@@ -162,30 +152,28 @@ function LandingPage() {
 									<i />
 								</div>
 								<div className="mock__screen">
-									<h2 className="mock__title">Tedžvid</h2>
-									<div className="mock__subtitle">Interaktivni priručnik</div>
+									<h2 className="mock__title">{ui.mockTitle}</h2>
+									<div className="mock__subtitle">{ui.mockSubtitle}</div>
 									<p className="mock__arabic" lang="ar">
 										وَرَتِّلِ الْقُرْاٰنَ تَرْت۪يلًا
 									</p>
 								</div>
 								<div className="mock__tiles">
 									<Link to="/lekcije" className="mock__tile">
-										<FaBookOpen /> Pravila
+										<FaBookOpen /> {ui.mockRules}
 									</Link>
 									<Link to="/lekcije" className="mock__tile">
-										<FaHeadphones /> Audio
+										<FaHeadphones /> {ui.mockAudio}
 									</Link>
 									<Link to="/lekcija1#video" className="mock__tile">
-										<FaPlayCircle /> Video
+										<FaPlayCircle /> {ui.mockVideo}
 									</Link>
 									<Link to="/lekcija1#vjezba" className="mock__tile">
-										<FaPencilAlt /> Vježbe
+										<FaPencilAlt /> {ui.mockVjezbe}
 									</Link>
 								</div>
 							</div>
-							<div className="hero__badge">
-								Za djecu i odrasle, početnike i naprednije učače
-							</div>
+							<div className="hero__badge">{ui.heroBadge}</div>
 						</div>
 					</div>
 				</section>
@@ -193,13 +181,15 @@ function LandingPage() {
 				{/* ---------- ŠTA ĆETE PRONAĆI ---------- */}
 				<section className="features">
 					<div className="wrap">
-						<p className="eyebrow">Sadržaj</p>
-						<h2 className="h-section">Šta ćete pronaći na tedzvid.ba?</h2>
+						<p className="eyebrow">{ui.featEyebrow}</p>
+						<h2 className="h-section">{ui.featTitle}</h2>
 						<Ornament className="ornament--center" />
 						<div className="features__grid">
-							{FEATURES.map((f) => (
+							{ui.features.map((f, i) => (
 								<div className="feature" key={f.title}>
-									<span className={'icon-circle icon-circle--' + f.tone}>{f.icon}</span>
+									<span className={'icon-circle icon-circle--' + FEATURE_STYLE[i].tone}>
+										{FEATURE_STYLE[i].icon}
+									</span>
 									<h4>{f.title}</h4>
 									<p>{f.text}</p>
 								</div>
@@ -212,33 +202,23 @@ function LandingPage() {
 				<section className="about" id="o-nama">
 					<div className="wrap about__grid">
 						<div>
-							<p className="eyebrow">O nama</p>
-							<h2 className="h-section">Tedžvid dostupan svima</h2>
+							<p className="eyebrow">{ui.aboutEyebrow}</p>
+							<h2 className="h-section">{ui.aboutTitle}</h2>
 							<Ornament light />
-							<p>
-								<strong>Tedzvid.ba</strong> je elektronska, interaktivna verzija printanog tedžvida autora
-								mr. Sejida ef. Strike. Ovaj tedžvid ima za cilj da pomogne novim učačima Kur'ana, kako
-								polaznicima mektepske nastave tako i odraslima, u lakšem savladavanju osnovnih tedžvidskih
-								pravila.
-							</p>
-							<p>
-								Jednostavan rječnik i izbjegavanje stručnih termina, koliko je to bilo moguće, čine ga
-								pristupačnijim široj čitalačkoj populaciji.
-							</p>
-							<p>
-								Posebnost stranice su <strong>interaktivni primjeri</strong> čiji audio zapis možete
-								preslušati klikom na riječ. Nadamo se da će tedzvid.ba pomoći mu'allimima pri objašnjavanju
-								tedžvidskih pravila, kako djeci u mektebu tako i odraslima nakon završetka sufare.
-							</p>
+							<p>{ui.aboutP1}</p>
+							<p>{ui.aboutP2}</p>
+							<p>{ui.aboutP3}</p>
 							<blockquote className="quote">
-								<p>„Najbolji među vama su oni koji uče Kur'an i podučavaju ga.“</p>
-								<cite>Buharija</cite>
+								<p>{ui.quoteText}</p>
+								<cite>{ui.quoteCite}</cite>
 							</blockquote>
 						</div>
 						<div className="benefits">
-							{BENEFITS.map((b) => (
+							{ui.benefits.map((b, i) => (
 								<div className="benefit" key={b.title}>
-									<span className={'icon-circle icon-circle--sm icon-circle--' + b.tone}>{b.icon}</span>
+									<span className={'icon-circle icon-circle--sm icon-circle--' + BENEFIT_STYLE[i].tone}>
+										{BENEFIT_STYLE[i].icon}
+									</span>
 									<div>
 										<h5>{b.title}</h5>
 										<p>{b.text}</p>
@@ -248,9 +228,9 @@ function LandingPage() {
 						</div>
 					</div>
 					<div className="wrap about__video">
-						<p className="eyebrow">Video</p>
-						<h3>Pogledajte kako izgleda učenje na tedzvid.ba</h3>
-						<VideoEmbed video={videos.about} title="Tedzvid.ba – predstavljanje projekta" />
+						<p className="eyebrow">{ui.aboutVideoEyebrow}</p>
+						<h3>{ui.aboutVideoTitle}</h3>
+						<VideoEmbed video={videos.about} title={ui.aboutVideoAlt} />
 					</div>
 				</section>
 
@@ -258,22 +238,19 @@ function LandingPage() {
 				<section className="print" id="printano">
 					<div className="wrap print__grid">
 						<div className="print__book">
-							<img src={process.env.PUBLIC_URL + '/assets/svg/book.png'} alt="Printano izdanje tedžvida" />
+							<img src={process.env.PUBLIC_URL + '/assets/svg/book.png'} alt={ui.printAlt} />
 						</div>
 						<div className="print__text">
-							<p className="eyebrow">Printano izdanje</p>
-							<h2 className="h-section">Želim printano izdanje</h2>
+							<p className="eyebrow">{ui.printEyebrow}</p>
+							<h2 className="h-section">{ui.printTitle}</h2>
 							<Ornament />
-							<p>
-								Tedžvid – priručnik za pravilno učenje Kur'ana sa vježbama dostupan je i u štampanom obliku.
-								Informacije vezane za printano izdanje možete dobiti kod autora:
-							</p>
+							<p>{ui.printText}</p>
 							<div className="chips">
 								<span className="chip">
 									<span className="icon-circle icon-circle--navy">
 										<FaUser />
 									</span>
-									mr. Sejid ef. Strika
+									{ui.author}
 								</span>
 								<a className="chip" href="mailto:sejidstrika@tedzvid.ba">
 									<span className="icon-circle icon-circle--teal">
@@ -296,19 +273,16 @@ function LandingPage() {
 				<section className="contact" id="kontakt">
 					<div className="wrap">
 						<div className="contact__card">
-							<p className="eyebrow">Kontakt</p>
-							<h2 className="h-section">Pišite nam</h2>
+							<p className="eyebrow">{ui.contactEyebrow}</p>
+							<h2 className="h-section">{ui.contactTitle}</h2>
 							<Ornament className="ornament--center" />
-							<p>
-								Ukoliko imate sugestije, zapažanja ili impresije, budite slobodni da ih napišete kako bismo
-								unaprijedili ovu stranicu.
-							</p>
+							<p>{ui.contactText}</p>
 
 							<form className="contact__form" onSubmit={handleSubmit}>
 								<input
 									className="field"
 									type="text"
-									placeholder="Ime i prezime"
+									placeholder={ui.fieldName}
 									name="ime i prezime"
 									value={fullName}
 									onChange={(e) => setFullName(e.target.value)}
@@ -317,7 +291,7 @@ function LandingPage() {
 								<input
 									className="field"
 									type="email"
-									placeholder="Email"
+									placeholder={ui.fieldEmail}
 									name="email"
 									required
 									value={email}
@@ -326,14 +300,14 @@ function LandingPage() {
 								<input
 									className="field span-2"
 									type="tel"
-									placeholder="Broj telefona (opcionalno)"
+									placeholder={ui.fieldPhone}
 									name="broj telefona"
 									value={phone}
 									onChange={(e) => setPhone(e.target.value)}
 								/>
 								<textarea
 									className="field span-2"
-									placeholder="Unesite sadržaj poruke"
+									placeholder={ui.fieldMessage}
 									name="poruka"
 									required
 									value={message}
@@ -341,24 +315,22 @@ function LandingPage() {
 								/>
 								{showSuccessMessage && (
 									<div className="notice notice--ok" role="status">
-										<span>
-											<strong>Uspješno</strong> ste poslali vašu poruku!
-										</span>
-										<button type="button" aria-label="Zatvori" onClick={() => setShowSuccessMessage(false)}>
+										<span>{ui.formOk}</span>
+										<button type="button" aria-label={ui.formClose} onClick={() => setShowSuccessMessage(false)}>
 											&times;
 										</button>
 									</div>
 								)}
 								{showErrorMessage && (
 									<div className="notice notice--err" role="alert">
-										<span>Došlo je do greške prilikom slanja poruke!</span>
-										<button type="button" aria-label="Zatvori" onClick={() => setShowErrorMessage(false)}>
+										<span>{ui.formErr}</span>
+										<button type="button" aria-label={ui.formClose} onClick={() => setShowErrorMessage(false)}>
 											&times;
 										</button>
 									</div>
 								)}
 								<button type="submit" className="btn-t btn-t--navy span-2 pageclip-form__submit">
-									<FaPaperPlane /> Pošalji
+									<FaPaperPlane /> {ui.formSend}
 								</button>
 							</form>
 						</div>
