@@ -3,7 +3,6 @@
 import React, { useEffect } from 'react';
 import Home from './HomePage';
 import Demo from './LandingPage';
-import Obavijest from './Obavijest';
 import {
 	L1,
 	L2,
@@ -92,7 +91,6 @@ function ListRoutes() {
 					/>
 				);
 			})}
-			<Route path="/obavijest" component={Obavijest} />
 		</>
 	);
 }

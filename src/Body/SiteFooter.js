@@ -1,6 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FaGooglePlay, FaApple } from 'react-icons/fa';
 import Logo from './Logo';
+
+export const APP_LINKS = {
+	android: 'https://play.google.com/store/apps/details?id=com.tedzvidba.app',
+	ios: 'https://apps.apple.com/rs/app/tedzvid-ba/id1561588495'
+};
 
 export default function SiteFooter() {
 	const year = new Date().getFullYear();
@@ -22,6 +28,14 @@ export default function SiteFooter() {
 							Interaktivni priručnik za učenje tedžvidskih pravila – jednostavno, korak po korak, za djecu i
 							odrasle, početnike i naprednije učače.
 						</p>
+						<div className="store-links store-links--light">
+							<a href={APP_LINKS.android} target="_blank" rel="noopener noreferrer">
+								<FaGooglePlay /> Google Play
+							</a>
+							<a href={APP_LINKS.ios} target="_blank" rel="noopener noreferrer">
+								<FaApple /> App Store
+							</a>
+						</div>
 					</div>
 					<div>
 						<h6>Navigacija</h6>

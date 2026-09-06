@@ -4,6 +4,7 @@ import PlayerRow from '../Helpers/PlayerHelper';
 import VjezbeRow from '../Helpers/VjezbeHelper';
 import Footer from '../Body/MainFooter';
 import LekcijaMenu from '../Body/LekcijaMenu';
+import LessonVideo from '../Body/LessonVideo';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import { MdZoomOutMap } from 'react-icons/md';
@@ -606,6 +607,7 @@ function L1() {
 					</Modal.Footer>
 				</Modal>
 
+				<LessonVideo broj="1" />
 				<Footer prev="/lekcija22" next="/lekcija2" />
 			</Container>
 		</React.Fragment>

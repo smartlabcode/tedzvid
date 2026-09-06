@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaBookOpen, FaPencilAlt, FaTable, FaListUl } from 'react-icons/fa';
+import { FaBookOpen, FaPencilAlt, FaTable, FaListUl, FaPlayCircle } from 'react-icons/fa';
 import data from '../Data/lessons.json';
 
 function HomeFirst(props) {
@@ -25,6 +25,9 @@ function HomeFirst(props) {
 								</Link>
 								<Link to={base + '#vjezba'} className="btn-t btn-t--ghost btn-t--sm">
 									<FaPencilAlt /> Vježba
+								</Link>
+								<Link to={base + '#video'} className="btn-t btn-t--ghost btn-t--sm">
+									<FaPlayCircle /> Video
 								</Link>
 								{index === 0 && (
 									<Link to={base + '#tabela'} className="btn-t btn-t--ghost btn-t--sm">

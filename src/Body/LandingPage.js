@@ -3,7 +3,6 @@ import { Link, useLocation } from 'react-router-dom';
 import {
 	FaBookOpen,
 	FaHeadphones,
-	FaTable,
 	FaPencilAlt,
 	FaVolumeUp,
 	FaGraduationCap,
@@ -15,13 +14,17 @@ import {
 	FaEnvelope,
 	FaViber,
 	FaArrowRight,
-	FaPaperPlane
+	FaPaperPlane,
+	FaPlayCircle,
+	FaGooglePlay,
+	FaApple
 } from 'react-icons/fa';
 import SiteNav from './SiteNav';
 import SiteFooter from './SiteFooter';
-import BrowserMessage from './BrowserMessage';
 import { Ornament } from './Logo';
-import { detect } from '../Helpers/BrowserDetect';
+import { VideoEmbed } from './LessonVideo';
+import videos from '../Data/videos.json';
+import { APP_LINKS } from './SiteFooter';
 
 const FEATURES = [
 	{ icon: <FaBookOpen />, tone: 'navy', title: 'Sva pravila', text: 'pregledno i sistematično' },
@@ -39,12 +42,7 @@ const BENEFITS = [
 		text: 'tedžvidskih pravila bez komplikovanih izraza'
 	},
 	{ icon: <FaHeadphones />, tone: 'green', title: 'Audio primjeri', text: 'poslušaj i odmah primijeni' },
-	{
-		icon: <FaPencilAlt />,
-		tone: 'gold',
-		title: 'Interaktivne vježbe',
-		text: 'svaku riječ možeš preslušati klikom na nju'
-	},
+	{ icon: <FaPlayCircle />, tone: 'gold', title: 'Video lekcije', text: 'vizuelno učenje koje ostaje u pamćenju' },
 	{
 		icon: <FaUsers />,
 		tone: 'purple',
@@ -77,16 +75,9 @@ function LandingPage() {
 	const [ phone, setPhone ] = useState('');
 	const [ message, setMessage ] = useState('');
 	const timer = useRef(null);
-	const [ browserVersion, setBrowserVersion ] = useState('');
-	const [ browser, setBrowser ] = useState('');
 	const location = useLocation();
 
-	useEffect(() => {
-		const [ b, v ] = detect().split(' ');
-		setBrowser(b);
-		setBrowserVersion(v);
-		return () => clearTimeout(timer.current);
-	}, []);
+	useEffect(() => () => clearTimeout(timer.current), []);
 
 	useEffect(
 		() => {
@@ -152,6 +143,15 @@ function LandingPage() {
 									Saznaj više
 								</Link>
 							</div>
+							<div className="store-links">
+								<span>Aplikacija dostupna na</span>
+								<a href={APP_LINKS.android} target="_blank" rel="noopener noreferrer">
+									<FaGooglePlay /> Google Play
+								</a>
+								<a href={APP_LINKS.ios} target="_blank" rel="noopener noreferrer">
+									<FaApple /> App Store
+								</a>
+							</div>
 						</div>
 
 						<div className="hero__visual">
@@ -175,8 +175,8 @@ function LandingPage() {
 									<Link to="/lekcije" className="mock__tile">
 										<FaHeadphones /> Audio
 									</Link>
-									<Link to="/lekcija1#tabela" className="mock__tile">
-										<FaTable /> Tabele
+									<Link to="/lekcija1#video" className="mock__tile">
+										<FaPlayCircle /> Video
 									</Link>
 									<Link to="/lekcija1#vjezba" className="mock__tile">
 										<FaPencilAlt /> Vježbe
@@ -246,6 +246,11 @@ function LandingPage() {
 								</div>
 							))}
 						</div>
+					</div>
+					<div className="wrap about__video">
+						<p className="eyebrow">Video</p>
+						<h3>Pogledajte kako izgleda učenje na tedzvid.ba</h3>
+						<VideoEmbed video={videos.about} title="Tedzvid.ba – predstavljanje projekta" />
 					</div>
 				</section>
 
@@ -362,7 +367,6 @@ function LandingPage() {
 			</main>
 
 			<SiteFooter />
-			<BrowserMessage browser={browser} browserVersion={browserVersion} />
 		</React.Fragment>
 	);
 }
