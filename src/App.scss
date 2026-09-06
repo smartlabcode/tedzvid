@@ -20,10 +20,6 @@
     font-size: 1.25rem;
     line-height: 1.7;
     color: var(--ink);
-
-    span {
-      font-size: 1.5rem;
-    }
   }
 
   /* stari mobilni naslov – naslov je sada u traci iznad */
@@ -85,6 +81,12 @@
     text-decoration-color: var(--gold);
     text-decoration-thickness: 2px;
   }
+}
+
+/* osnovna veličina teksta u primjerima/vježbama – :where() drži specifičnost na nuli,
+   pa arapski (.arapski, .oznaceno, .after) i .bosanski pravila ispod uvijek pobjeđuju */
+:where(.lekcija-page .container, .custom-modal) span {
+  font-size: 1.5rem;
 }
 
 /* ikona za uvećanje (otvara modal) */
@@ -177,7 +179,23 @@ span.after {
 span.arapski {
   font-family: HamdullahMushaf, serif;
   border-radius: 0.15em;
-  line-height: 4.4rem;
+  line-height: 4.6rem;
+}
+
+/* vježba (redovi .mobile-row) – veći arapski nego u primjerima */
+.lekcija-page .mobile-row {
+  span.arapski,
+  span.oznaceno {
+    font-size: 3.7rem;
+  }
+
+  span.arapski {
+    line-height: 5.4rem;
+  }
+
+  span.tacka {
+    font-size: 1.9rem;
+  }
 }
 
 span.arapski-lekcija {
@@ -307,10 +325,6 @@ span.arap-red {
   font-size: 1.25rem;
   line-height: 1.7;
 
-  span {
-    font-size: 1.5rem;
-  }
-
   h3 {
     color: var(--navy);
     font-weight: 700;
@@ -427,6 +441,17 @@ span.arap-red {
   span.arapski {
     line-height: 4rem;
   }
+
+  .lekcija-page .mobile-row {
+    span.arapski,
+    span.oznaceno {
+      font-size: 3.3rem !important;
+    }
+
+    span.arapski {
+      line-height: 4.8rem;
+    }
+  }
 }
 
 /* ---------- mobitel ---------- */
@@ -441,10 +466,6 @@ span.arap-red {
       padding: 24px 14px 20px;
       border-radius: 18px;
       font-size: 1rem;
-
-      span {
-        font-size: 1rem;
-      }
     }
 
     h2 {
@@ -480,6 +501,10 @@ span.arap-red {
     font-size: 1.8rem;
   }
 
+  :where(.lekcija-page .container) span {
+    font-size: 1rem;
+  }
+
   .oznaceno,
   .arapski,
   .arapski-lekcija {
@@ -488,6 +513,21 @@ span.arap-red {
 
   span.arapski {
     line-height: 3.4rem;
+  }
+
+  .lekcija-page .mobile-row {
+    span.arapski,
+    span.oznaceno {
+      font-size: 2.7rem !important;
+    }
+
+    span.arapski {
+      line-height: 4rem;
+    }
+
+    span.tacka {
+      font-size: 1.3rem;
+    }
   }
 
   .mobile-row {
