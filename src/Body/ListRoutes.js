@@ -6,6 +6,8 @@ import Demo from './LandingPage';
 import AuthPage from './AuthPage';
 import ProfilePage from './ProfilePage';
 import FinalQuizPage from './FinalQuizPage';
+import LeaderboardPage from './LeaderboardPage';
+import AdminPage from './AdminPage';
 import LessonGate from './LessonGate';
 import {
 	L1,
@@ -89,6 +91,8 @@ function ListRoutes() {
 			<Route path="/registracija" exact render={() => <AuthPage mode="register" />} />
 			<Route path="/profil" exact component={ProfilePage} />
 			<Route path="/zavrsni-kviz" exact component={FinalQuizPage} />
+			<Route path="/rang-lista" exact component={LeaderboardPage} />
+			<Route path="/admin" exact component={AdminPage} />
 			{Object.keys(LEKCIJE).map((key) => {
 				const Lekcija = LEKCIJE[key];
 				return (

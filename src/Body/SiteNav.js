@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { FaBars, FaTimes, FaArrowLeft, FaArrowRight, FaUserCircle, FaSignOutAlt } from 'react-icons/fa';
+import { FaBars, FaTimes, FaArrowLeft, FaArrowRight, FaUserCircle, FaSignOutAlt, FaUserShield } from 'react-icons/fa';
 import Logo from './Logo';
 import LangSwitch from './LangSwitch';
 import { useAuth } from '../auth/AuthContext';
@@ -20,10 +20,12 @@ export default function SiteNav({ active, cta }) {
 	const LINKS = [
 		{ key: 'home', to: '/', label: ui.navHome },
 		{ key: 'lekcije', to: '/lekcije', label: ui.navLekcije },
+		{ key: 'rang', to: '/rang-lista', label: ui.navRang },
 		{ key: 'o-nama', to: '/#o-nama', label: ui.navONama },
 		{ key: 'printano', to: '/#printano', label: ui.navPrintano },
 		{ key: 'kontakt', to: '/#kontakt', label: ui.navKontakt }
 	];
+	const jeAdmin = !!(user && user.uloga === 'admin');
 
 	useEffect(
 		() => {
@@ -43,8 +45,9 @@ export default function SiteNav({ active, cta }) {
 	const action = cta || { to: '/lekcije', label: ui.navLekcije };
 	const ime = user ? user.ime.split(' ')[0] : null;
 
-	const renderLinks = () =>
-		LINKS.map((l) => (
+	/* u mobilnom meniju administrator dobiva i stavku Admin (u traci je to ikona) */
+	const renderLinks = (mobile) =>
+		LINKS.concat(mobile && jeAdmin ? [ { key: 'admin', to: '/admin', label: ui.navAdmin } ] : []).map((l) => (
 			<li key={l.key}>
 				<Link to={l.to} className={active === l.key ? 'is-active' : ''}>
 					{l.label}
@@ -52,12 +55,12 @@ export default function SiteNav({ active, cta }) {
 			</li>
 		));
 
-	/* korisnik: ime → moj napredak; gost: prijava */
+	/* korisnik: ime → moj napredak (administratoru samo ikona, pored nje je ikona admina); gost: prijava */
 	const renderUser = () =>
 		user ? (
 			<Link
 				to="/profil"
-				className={'site-nav__user' + (active === 'racun' ? ' is-active' : '')}
+				className={'site-nav__user' + (jeAdmin ? ' site-nav__user--icon' : '') + (active === 'racun' ? ' is-active' : '')}
 				title={ui.navProfil}
 			>
 				<FaUserCircle />
@@ -85,6 +88,16 @@ export default function SiteNav({ active, cta }) {
 					</nav>
 					<div className="site-nav__actions">
 						<LangSwitch />
+						{jeAdmin && (
+							<Link
+								to="/admin"
+								className={'site-nav__admin' + (active === 'admin' ? ' is-active' : '')}
+								title={ui.navAdmin}
+								aria-label={ui.navAdmin}
+							>
+								<FaUserShield />
+							</Link>
+						)}
 						{renderUser()}
 						<Link to={action.to} className="btn-t btn-t--gold btn-t--sm">
 							{action.back && <FaArrowLeft />}
@@ -116,7 +129,7 @@ export default function SiteNav({ active, cta }) {
 						<FaTimes />
 					</button>
 				</div>
-				<ul>{renderLinks()}</ul>
+				<ul>{renderLinks(true)}</ul>
 				<Link to={action.to} className="btn-t btn-t--gold">
 					{action.back && <FaArrowLeft />}
 					{action.label}

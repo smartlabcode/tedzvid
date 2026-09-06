@@ -354,9 +354,9 @@ img {
       display: block;
       padding: 10px 14px;
       border-radius: 999px;
-      font-size: 0.8rem;
+      font-size: 0.78rem;
       font-weight: 600;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.07em;
       text-transform: uppercase;
       color: var(--navy);
 
@@ -1518,6 +1518,20 @@ textarea.field {
   &--guest svg {
     color: var(--muted);
   }
+
+  /* samo ikona (administrator) */
+  &--icon {
+    max-width: none;
+    padding: 0;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    border-radius: 12px;
+
+    span {
+      display: none;
+    }
+  }
 }
 
 /* traka navigacije: linkovi i dugmad ostaju u jednom redu i uz korisnički čip */
@@ -1526,27 +1540,56 @@ textarea.field {
   white-space: nowrap;
 }
 
-/* tablet (901–1100px): uži razmaci da logo, linkovi, jezik, korisnik i dugme stanu u jedan red */
-@media (max-width: 1100px) {
-  .site-nav__inner {
-    gap: 14px;
-  }
+/* šest linkova + jezik + korisnik + dugme: uži razmaci linkova */
+.site-nav__links a {
+  padding: 10px 9px;
+}
 
-  .site-nav__links a {
-    padding: 10px 9px;
-    font-size: 0.76rem;
-  }
+.site-nav__inner {
+  gap: 16px;
+}
 
-  .logo__tag {
+/* administrator: ikona u traci (pregled korisnika) */
+.site-nav__admin {
+  flex: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--navy);
+  font-size: 1.1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: border-color 0.18s ease, color 0.18s ease;
+
+  &:hover,
+  &.is-active {
+    border-color: var(--gold);
+    color: var(--gold-600);
+  }
+}
+
+/* ispod 1300px: slogan loga se skriva da linkovi stanu u jedan red; administratorova ikona
+   ostaje u mobilnom meniju i na stranici profila */
+@media (max-width: 1300px) {
+  .logo__tag,
+  .site-nav__admin {
     display: none;
   }
 }
 
-/* 901–1000px: linkovi su još vidljivi, a s korisničkom ikonom dugme ne stane – dugme se skriva
-   (njegov cilj je ionako među linkovima) */
-@media (max-width: 1000px) and (min-width: 901px) {
-  .site-nav__actions .btn-t {
+/* do 1200px: linkovi idu u mobilni meni, dugme ostaje */
+@media (max-width: 1200px) {
+  .site-nav__links,
+  .site-nav__bar nav {
     display: none;
+  }
+
+  .site-nav__toggle {
+    display: inline-flex;
   }
 }
 
@@ -1831,6 +1874,475 @@ textarea.field {
   }
 }
 
+/* rang lista */
+.rang {
+  position: relative;
+  margin-top: -52px;
+  padding-bottom: 96px;
+
+  &__tabs {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    max-width: 520px;
+    margin: 0 auto 18px;
+    padding: 5px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    box-shadow: var(--shadow-sm);
+
+    button {
+      flex: 1;
+      appearance: none;
+      border: 0;
+      background: transparent;
+      padding: 10px 14px;
+      border-radius: 999px;
+      font-family: var(--font-sans);
+      font-size: 0.74rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      cursor: pointer;
+      transition: background 0.18s ease, color 0.18s ease;
+
+      &:hover {
+        color: var(--navy);
+      }
+
+      &.is-active {
+        background: var(--navy);
+        color: #fff;
+      }
+    }
+  }
+
+  &__card {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 22px 26px 26px;
+    background: #fff;
+    border-radius: 22px;
+    border-top: 6px solid var(--gold);
+    box-shadow: var(--shadow);
+  }
+
+  &__od {
+    margin: 0 0 10px;
+    text-align: center;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold-600);
+  }
+
+  &__empty {
+    margin: 18px 0;
+    text-align: center;
+    color: var(--muted);
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 8px;
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: 44px 1fr auto auto;
+    align-items: center;
+    gap: 14px;
+    padding: 10px 16px 10px 10px;
+    border-radius: 14px;
+    border: 1px solid var(--line);
+    background: var(--cream);
+
+    &.is-me {
+      border-color: var(--gold);
+      background: var(--gold-100);
+    }
+
+    &.is-top .rang__pos {
+      color: #fff;
+    }
+
+    &.is-top-1 .rang__pos {
+      background: var(--gold);
+    }
+
+    &.is-top-2 .rang__pos {
+      background: #9aa5b1;
+    }
+
+    &.is-top-3 .rang__pos {
+      background: #b3703f;
+    }
+  }
+
+  &__pos {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    background: #fff;
+    border: 1px solid var(--line);
+    color: var(--navy);
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      font-size: 1.1rem;
+    }
+  }
+
+  &__name {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 700;
+    color: var(--navy);
+
+    small {
+      margin-left: 8px;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: var(--gold);
+      color: #fff;
+      font-size: 0.62rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+  }
+
+  &__passed {
+    font-size: 0.8rem;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+
+  &__points {
+    font-family: var(--font-display);
+    font-size: 1.6rem;
+    line-height: 1;
+    color: var(--navy);
+    white-space: nowrap;
+
+    small {
+      font-family: var(--font-sans);
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+  }
+
+  &__me {
+    margin: 16px 0 0;
+    padding: 12px 16px;
+    border-radius: 12px;
+    background: var(--gold-100);
+    color: var(--navy);
+    text-align: center;
+    font-weight: 600;
+  }
+
+  &__guest {
+    margin-top: 16px;
+    padding: 16px;
+    border-radius: 14px;
+    border: 1px dashed var(--gold);
+    text-align: center;
+
+    p {
+      margin: 0 0 10px;
+      color: var(--muted);
+    }
+  }
+
+  &__rules {
+    max-width: 640px;
+    margin: 18px auto 0;
+    text-align: center;
+    font-size: 0.86rem;
+    color: var(--muted);
+  }
+}
+
+/* admin panel */
+.admin {
+  position: relative;
+  margin-top: -52px;
+  padding-bottom: 96px;
+
+  &__stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 20px;
+
+    .profil__stat span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+  }
+
+  &__toolbar {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 6px;
+
+    .field {
+      max-width: 420px;
+    }
+  }
+
+  &__count {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+
+  &__hint {
+    margin: 0 0 14px;
+    font-size: 0.82rem;
+    color: var(--muted);
+  }
+
+  &__table-wrap {
+    overflow-x: auto;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    box-shadow: var(--shadow-sm);
+  }
+
+  &__table {
+    width: 100%;
+    min-width: 760px;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+
+    th {
+      padding: 12px 14px;
+      text-align: left;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      border-bottom: 1px solid var(--line);
+      background: var(--cream);
+      white-space: nowrap;
+    }
+
+    td {
+      padding: 11px 14px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: middle;
+      white-space: nowrap;
+
+      small {
+        display: block;
+        color: var(--muted);
+        font-size: 0.78rem;
+      }
+
+      .is-ok {
+        color: #1f6b43;
+        font-weight: 700;
+      }
+
+      .is-partial {
+        color: var(--gold-600);
+        font-weight: 700;
+      }
+    }
+
+    tbody tr:last-child td {
+      border-bottom: 0;
+    }
+  }
+
+  &__row {
+    cursor: pointer;
+    transition: background 0.15s ease;
+
+    &:hover td {
+      background: #fbf8f1;
+    }
+
+    &.is-open td {
+      background: var(--gold-100);
+    }
+  }
+
+  &__empty {
+    text-align: center;
+    color: var(--muted);
+  }
+
+  &__detail td {
+    background: #fbf8f1;
+    white-space: normal;
+  }
+
+  &__cells {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  &__cell {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid var(--line);
+    background: #fff;
+    color: var(--muted);
+    font-size: 0.8rem;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: help;
+
+    small {
+      position: absolute;
+      right: -5px;
+      top: -7px;
+      min-width: 18px;
+      padding: 0 4px;
+      border-radius: 999px;
+      background: var(--navy);
+      color: #fff;
+      font-size: 0.58rem;
+      line-height: 16px;
+      text-align: center;
+    }
+
+    &.is-ok {
+      background: #e6f4ec;
+      border-color: #bfe0cc;
+      color: #1f6b43;
+    }
+
+    &.is-partial {
+      background: #fbe7e5;
+      border-color: #f1c7c3;
+      color: #9c2f28;
+    }
+
+    &--final {
+      width: 52px;
+    }
+  }
+
+  &__legend {
+    display: flex;
+    gap: 16px;
+    margin-top: 10px;
+    font-size: 0.74rem;
+    color: var(--muted);
+
+    span::before {
+      content: '';
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin-right: 6px;
+      border-radius: 3px;
+      border: 1px solid var(--line);
+      background: #fff;
+      vertical-align: -1px;
+    }
+
+    .is-ok::before {
+      background: #e6f4ec;
+      border-color: #bfe0cc;
+    }
+
+    .is-partial::before {
+      background: #fbe7e5;
+      border-color: #f1c7c3;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .admin__stats {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .rang__card {
+    padding: 16px 12px 18px;
+  }
+
+  .rang__row {
+    grid-template-columns: 36px 1fr auto;
+    grid-template-rows: auto auto;
+    gap: 2px 10px;
+    padding: 8px 12px 8px 8px;
+  }
+
+  .rang__pos {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    width: 34px;
+    height: 34px;
+    font-size: 1.1rem;
+  }
+
+  .rang__name {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .rang__passed {
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 0.74rem;
+  }
+
+  .rang__points {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    font-size: 1.4rem;
+    text-align: right;
+  }
+
+  .rang__tabs button {
+    padding: 9px 6px;
+    font-size: 0.66rem;
+  }
+
+  .admin__stats {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .admin__toolbar {
+    flex-wrap: wrap;
+  }
+}
+
 /* zaključana lekcija – stranica s objašnjenjem */
 .gate {
   position: relative;
@@ -2011,8 +2523,11 @@ textarea.field {
   }
 
   &__foot {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
     margin-top: 28px;
-    text-align: center;
   }
 }
 
@@ -2056,6 +2571,11 @@ textarea.field {
   .site-nav__user {
     width: 40px;
     height: 40px;
+  }
+
+  /* administratorova ikona ne stane uz jezik, korisnika i hamburger – ostaje u mobilnom meniju */
+  .site-nav__admin {
+    display: none;
   }
 }
 

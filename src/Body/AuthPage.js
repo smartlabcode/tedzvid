@@ -40,7 +40,7 @@ export default function AuthPage({ mode }) {
 		e.preventDefault();
 		setErr(null);
 		if (!isLogin && ime.trim().length < 2) return setErr('bad_name');
-		if (!EMAIL_RE.test(email.trim())) return setErr('bad_email');
+		if (isLogin ? !email.trim() : !EMAIL_RE.test(email.trim())) return setErr('bad_email');
 		if (lozinka.length < 6) return setErr('bad_password');
 		if (!isLogin && lozinka !== lozinka2) return setErr('passwords_differ');
 		setBusy(true);
@@ -81,12 +81,12 @@ export default function AuthPage({ mode }) {
 								</label>
 							)}
 							<label className="auth__label">
-								<span>{ui.fieldEmail}</span>
+								<span>{isLogin ? ui.fieldLogin : ui.fieldEmail}</span>
 								<input
 									className="field"
-									type="email"
+									type={isLogin ? 'text' : 'email'}
 									name="email"
-									autoComplete="email"
+									autoComplete={isLogin ? 'username' : 'email'}
 									value={email}
 									onChange={(e) => setEmail(e.target.value)}
 									required

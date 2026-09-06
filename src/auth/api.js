@@ -55,3 +55,7 @@ export const api = {
 	me: () => request('GET', '/api/me'),
 	progress: (podaci) => request('POST', '/api/progress', podaci)
 };
+
+/* rang lista (javno) i pregled korisnika (admin) */
+api.leaderboard = (period) => request('GET', '/api/leaderboard?period=' + encodeURIComponent(period || 'sedmica'));
+api.adminUsers = () => request('GET', '/api/admin/users');

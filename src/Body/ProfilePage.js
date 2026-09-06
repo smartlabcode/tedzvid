@@ -8,7 +8,9 @@ import {
 	FaSignOutAlt,
 	FaArrowRight,
 	FaClipboardCheck,
-	FaGraduationCap
+	FaGraduationCap,
+	FaTrophy,
+	FaUserShield
 } from 'react-icons/fa';
 import SiteNav from './SiteNav';
 import SiteFooter from './SiteFooter';
@@ -161,6 +163,14 @@ export default function ProfilePage() {
 							</ol>
 
 							<div className="profil__foot">
+								<Link to="/rang-lista" className="btn-t btn-t--gold">
+									<FaTrophy /> {ui.navRang}
+								</Link>
+								{user.uloga === 'admin' && (
+									<Link to="/admin" className="btn-t btn-t--navy">
+										<FaUserShield /> {ui.navAdmin}
+									</Link>
+								)}
 								<button type="button" className="btn-t btn-t--outline" onClick={odjava}>
 									<FaSignOutAlt /> {ui.navOdjava}
 								</button>

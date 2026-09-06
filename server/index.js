@@ -13,6 +13,12 @@
  *   POST /api/login     { email, lozinka }       → { token, user }
  *   GET  /api/me        (Authorization: Bearer)  → { user }
  *   POST /api/progress  { lekcija, tacno }       → { user }   (lekcija: 1–22 ili 'zavrsni')
+ *   GET  /api/leaderboard?period=sedmica|mjesec|sve → { period, od, lista, moj }
+ *   GET  /api/admin/users (samo admin)          → { sazetak, korisnici }
+ *
+ * Ugrađeni računi (prijava korisničkim imenom umjesto emaila):
+ *   admin  – ADMIN_USER / ADMIN_PASSWORD (podrazumijevano admin / admin123! – promijeniti u produkciji)
+ *   user   – demo korisnik user / user123! (isključiti s DEMO_USER=0)
  *   GET  /api/health                             → { ok: true }
  */
 'use strict';
@@ -37,6 +43,13 @@ const PROLAZ_UDIO = 0.7; /* udio tačnih odgovora za prolaz (7/10 po lekciji, 70
 const ZAVRSNI = 'zavrsni'; /* ključ završnog kviza u napretku */
 const UKUPNO_ZAVRSNI = 100;
 const MAX_BODY = 64 * 1024;
+const TZ = 'Europe/Sarajevo'; /* sedmica/mjesec na rang listi računaju se po lokalnom vremenu */
+const RANG_LIMIT = 25;
+const ADMIN_USER = String(process.env.ADMIN_USER || 'admin').trim().toLowerCase();
+const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || 'admin123!';
+const DEMO_USER = 'user';
+const DEMO_PASSWORD = 'user123!';
+const SEED_DEMO = process.env.DEMO_USER !== '0';
 
 /* ---------- pohrana korisnika (JSON datoteka) ---------- */
 function ensureDataDir() {
@@ -66,7 +79,7 @@ const findById = (id) => users.find((u) => u.id === id);
 
 /* Ono što klijent smije vidjeti (bez lozinke) */
 function publicUser(u) {
-	return { id: u.id, ime: u.ime, email: u.email, progress: u.progress || {} };
+	return { id: u.id, ime: u.ime, email: u.email, uloga: u.uloga || 'korisnik', progress: u.progress || {} };
 }
 
 /* ---------- tajni ključ i tokeni (HMAC-SHA256) ---------- */
@@ -203,6 +216,117 @@ function jeOtkljucana(user, key) {
 	return jePolozena(user, key - 1);
 }
 
+/* ---------- rang lista ---------- */
+/* dijelovi datuma u lokalnoj zoni */
+function dijeloviUZoni(date) {
+	const f = new Intl.DateTimeFormat('en-CA', {
+		timeZone: TZ,
+		year: 'numeric',
+		month: '2-digit',
+		day: '2-digit',
+		hour: '2-digit',
+		minute: '2-digit',
+		second: '2-digit',
+		hourCycle: 'h23',
+		weekday: 'short'
+	});
+	const p = {};
+	f.formatToParts(date).forEach((x) => {
+		p[x.type] = x.value;
+	});
+	return p;
+}
+
+/* pomak zone (ms) u datom trenutku */
+function pomakZone(date) {
+	const p = dijeloviUZoni(date);
+	const kaoUtc = Date.UTC(+p.year, +p.month - 1, +p.day, +p.hour, +p.minute, +p.second);
+	return kaoUtc - Math.floor(date.getTime() / 1000) * 1000;
+}
+
+/* UTC trenutak lokalne ponoći za (godina, mjesec 0-11, dan) */
+function lokalnaPonoc(y, m, d) {
+	const pretpostavka = Date.UTC(y, m, d);
+	let t = pretpostavka - pomakZone(new Date(pretpostavka));
+	const pomak2 = pomakZone(new Date(t));
+	if (pretpostavka - pomak2 !== t) t = pretpostavka - pomak2;
+	return t;
+}
+
+/* početak tekućeg perioda: sedmica (ponedjeljak), mjesec (1.), sve (0) */
+function pocetakPerioda(period, now) {
+	if (period === 'sve') return 0;
+	const p = dijeloviUZoni(now);
+	const y = +p.year;
+	const m = +p.month - 1;
+	const d = +p.day;
+	if (period === 'mjesec') return lokalnaPonoc(y, m, 1);
+	const wd = [ 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat' ].indexOf(p.weekday);
+	return lokalnaPonoc(y, m, d - ((wd + 6) % 7));
+}
+
+/* javno ime na rang listi: ime + inicijal prezimena */
+function javnoIme(ime) {
+	const dijelovi = String(ime || '').trim().split(' ');
+	if (dijelovi.length < 2) return dijelovi[0] || '';
+	return dijelovi[0] + ' ' + dijelovi[dijelovi.length - 1].charAt(0).toUpperCase() + '.';
+}
+
+/* događaji korisnika; stariji korisnici bez zapisa dobivaju po jedan iz sažetka napretka */
+function dogadjajiKorisnika(u) {
+	if (Array.isArray(u.dogadjaji) && u.dogadjaji.length) return u.dogadjaji;
+	return Object.keys(u.progress || {}).map((k) => {
+		const p = u.progress[k];
+		return { k, t: p.najbolje || 0, u: k === ZAVRSNI ? UKUPNO_ZAVRSNI : UKUPNO_PITANJA, d: p.datum };
+	});
+}
+
+/*
+ * Bodovi u periodu = zbir najboljeg rezultata svakog kviza (lekcije 1–22 i završni) unutar perioda.
+ * Ponavljanje istog kviza ne donosi dodatne bodove; polozeno = kvizovi s prolaznim rezultatom u periodu.
+ */
+function bodoviKorisnika(u, od) {
+	const najbolje = {};
+	for (const e of dogadjajiKorisnika(u)) {
+		const t = Date.parse(e.d);
+		if (!(t >= od)) continue;
+		if (!najbolje[e.k] || e.t > najbolje[e.k].t) najbolje[e.k] = { t: e.t, u: e.u, d: t };
+	}
+	let bodovi = 0;
+	let polozeno = 0;
+	let zadnji = 0;
+	for (const k of Object.keys(najbolje)) {
+		const b = najbolje[k];
+		bodovi += b.t;
+		if (b.t >= Math.ceil(b.u * PROLAZ_UDIO)) polozeno += 1;
+		if (b.d > zadnji) zadnji = b.d;
+	}
+	return { bodovi, polozeno, zadnji };
+}
+
+function rangLista(period, ja) {
+	const od = pocetakPerioda(period, new Date());
+	const svi = users
+		.filter((u) => !u.uloga || u.uloga === 'korisnik')
+		.map((u) => Object.assign({ id: u.id, ime: javnoIme(u.ime) }, bodoviKorisnika(u, od)))
+		.filter((r) => r.bodovi > 0)
+		/* više bodova, pa više položenih, pa ko je rezultat postigao ranije */
+		.sort((a, b) => b.bodovi - a.bodovi || b.polozeno - a.polozeno || a.zadnji - b.zadnji);
+	const lista = svi.slice(0, RANG_LIMIT).map((r, i) => ({
+		rang: i + 1,
+		ime: r.ime,
+		bodovi: r.bodovi,
+		polozeno: r.polozeno,
+		ja: !!(ja && r.id === ja.id)
+	}));
+	let moj = null;
+	if (ja) {
+		const i = svi.findIndex((r) => r.id === ja.id);
+		moj = i >= 0 ? { rang: i + 1, bodovi: svi[i].bodovi, polozeno: svi[i].polozeno } : { rang: null, bodovi: 0, polozeno: 0 };
+	}
+	return { period, od: new Date(od).toISOString(), ukupnoKorisnika: svi.length, lista, moj };
+}
+
 /* ---------- API ---------- */
 async function handleApi(req, res, url) {
 	const route = req.method + ' ' + url.pathname;
@@ -248,6 +372,18 @@ async function handleApi(req, res, url) {
 
 	const user = korisnikIzZahtjeva(req);
 
+	if (route === 'GET /api/leaderboard') {
+		const trazeni = url.searchParams.get('period');
+		const period = [ 'sedmica', 'mjesec', 'sve' ].includes(trazeni) ? trazeni : 'sedmica';
+		return json(res, 200, rangLista(period, user));
+	}
+
+	if (route === 'GET /api/admin/users') {
+		if (!user) return json(res, 401, { error: 'unauthorized' });
+		if (user.uloga !== 'admin') return json(res, 403, { error: 'forbidden' });
+		return json(res, 200, pregledKorisnika());
+	}
+
 	if (route === 'GET /api/me') {
 		if (!user) return json(res, 401, { error: 'unauthorized' });
 		return json(res, 200, { user: publicUser(user) });
@@ -272,13 +408,17 @@ async function handleApi(req, res, url) {
 		const key = String(n);
 		user.progress = user.progress || {};
 		const prev = user.progress[key] || {};
+		const sada = new Date().toISOString();
 		user.progress[key] = {
 			najbolje: Math.max(prev.najbolje || 0, tacno),
 			zadnje: tacno,
 			pokusaji: (prev.pokusaji || 0) + 1,
 			polozeno: !!prev.polozeno || tacno >= Math.ceil(ukupno * PROLAZ_UDIO),
-			datum: new Date().toISOString()
+			datum: sada
 		};
+		/* svaki pokušaj s datumom – osnova za sedmičnu/mjesečnu rang listu */
+		user.dogadjaji = user.dogadjaji || [];
+		user.dogadjaji.push({ k: key, t: tacno, u: ukupno, d: sada });
 		saveUsers();
 		return json(res, 200, { user: publicUser(user) });
 	}
@@ -393,6 +533,87 @@ function serveStatic(req, res, url) {
 	});
 }
 
+/* ---------- admin: pregled svih korisnika ---------- */
+function pregledKorisnika() {
+	const sedmica = pocetakPerioda('sedmica', new Date());
+	const korisnici = users
+		.map((u) => {
+			const dog = dogadjajiKorisnika(u);
+			let zadnja = 0;
+			for (const e of dog) {
+				const t = Date.parse(e.d);
+				if (t > zadnja) zadnja = t;
+			}
+			const progress = u.progress || {};
+			const polozeno = Object.keys(progress).filter((k) => k !== ZAVRSNI && progress[k].polozeno).length;
+			const z = progress[ZAVRSNI];
+			return {
+				id: u.id,
+				ime: u.ime,
+				email: u.email,
+				uloga: u.uloga || 'korisnik',
+				createdAt: u.createdAt,
+				zadnjaAktivnost: zadnja ? new Date(zadnja).toISOString() : null,
+				pokusaji: dog.length,
+				polozeno,
+				zavrsni: z ? { najbolje: z.najbolje, polozeno: !!z.polozeno } : null,
+				progress
+			};
+		})
+		.sort(
+			(a, b) =>
+				(Date.parse(b.zadnjaAktivnost || b.createdAt) || 0) - (Date.parse(a.zadnjaAktivnost || a.createdAt) || 0)
+		);
+	const sazetak = {
+		ukupno: users.length,
+		aktivniSedmica: korisnici.filter((k) => k.zadnjaAktivnost && Date.parse(k.zadnjaAktivnost) >= sedmica).length,
+		polozenZavrsni: korisnici.filter((k) => k.zavrsni && k.zavrsni.polozeno).length,
+		pokusaji: korisnici.reduce((sum, k) => sum + k.pokusaji, 0)
+	};
+	return { sazetak, korisnici };
+}
+
+/* ---------- ugrađeni računi: admin i demo korisnik ---------- */
+function osigurajRacun(email, ime, lozinka, uloga, azurirajLozinku) {
+	let u = findByEmail(email);
+	if (!u) {
+		const salt = crypto.randomBytes(16).toString('hex');
+		u = {
+			id: crypto.randomUUID(),
+			ime,
+			email,
+			salt,
+			hash: hashLozinke(lozinka, salt),
+			uloga,
+			createdAt: new Date().toISOString(),
+			progress: {}
+		};
+		users.push(u);
+		return true;
+	}
+	let changed = false;
+	if (u.uloga !== uloga) {
+		u.uloga = uloga;
+		changed = true;
+	}
+	/* lozinka iz okruženja ima prednost nad sačuvanom */
+	if (azurirajLozinku && !provjeriLozinku(lozinka, u)) {
+		u.salt = crypto.randomBytes(16).toString('hex');
+		u.hash = hashLozinke(lozinka, u.salt);
+		changed = true;
+	}
+	return changed;
+}
+
+function seedRacuni() {
+	let changed = osigurajRacun(ADMIN_USER, 'Administrator', ADMIN_PASSWORD, 'admin', !!process.env.ADMIN_PASSWORD);
+	if (SEED_DEMO) changed = osigurajRacun(DEMO_USER, 'Demo Korisnik', DEMO_PASSWORD, 'demo', false) || changed;
+	if (changed) saveUsers();
+	if (!process.env.ADMIN_PASSWORD) {
+		console.warn('UPOZORENJE: admin (' + ADMIN_USER + ') koristi podrazumijevanu lozinku – postavi ADMIN_PASSWORD.');
+	}
+}
+
 /* ---------- server ---------- */
 const server = http.createServer((req, res) => {
 	let url;
@@ -412,6 +633,8 @@ const server = http.createServer((req, res) => {
 	}
 	serveStatic(req, res, url);
 });
+
+seedRacuni();
 
 server.listen(PORT, () => {
 	console.log('tedzvid server na http://localhost:' + PORT);
