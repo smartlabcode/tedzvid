@@ -4,7 +4,9 @@ import React, { createContext, useCallback, useContext, useEffect, useState } fr
 export const LANGS = [ 'bs', 'en' ];
 export const DEFAULT_LANG = 'bs';
 
-const STORAGE_KEY = 'tedzvid-lang';
+/* novi ključ: ranije verzije su automatski odabrani jezik preglednika spremale pod 'tedzvid-lang',
+   pa bi stari posjetioci ostali na engleskom; s novim ključem svi kreću od bosanskog */
+const STORAGE_KEY = 'tedzvid-lang-v2';
 
 /* Naslov i opis stranice (<title>, meta description) po jeziku */
 const META = {
@@ -22,7 +24,8 @@ const META = {
 
 const LanguageContext = createContext({ lang: DEFAULT_LANG, setLang: () => {} });
 
-/* ?lang=en u URL-u ima prednost (dijeljivi linkovi), zatim localStorage, pa jezik preglednika. */
+/* ?lang=en u URL-u ima prednost (dijeljivi linkovi), zatim jezik koji je korisnik sam odabrao (localStorage);
+   inače je uvijek bosanski – jezik preglednika se ne uzima u obzir. */
 function detectLang() {
 	try {
 		const fromQuery = new URLSearchParams(window.location.search).get('lang');
@@ -30,9 +33,6 @@ function detectLang() {
 
 		const saved = window.localStorage.getItem(STORAGE_KEY);
 		if (saved && LANGS.includes(saved)) return saved;
-
-		const nav = (window.navigator.language || '').toLowerCase();
-		if (nav.startsWith('en')) return 'en';
 	} catch (e) {
 		/* privatni način rada / blokiran storage – tiho pada na podrazumijevani jezik */
 	}
