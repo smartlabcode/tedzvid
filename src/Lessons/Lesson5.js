@@ -10,12 +10,200 @@ import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import { MdZoomOutMap } from 'react-icons/md';
 import { IconContext } from 'react-icons';
+import { useLang, DEFAULT_LANG } from '../i18n/LanguageContext';
+import { useUI } from '../i18n/ui';
 
 // Bootstrap
 import { Row, Col, Container } from 'react-bootstrap';
 
 // Other
 import '../App.scss';
+
+/* Tekst lekcije po jezicima. `P` pušta red primjera, `V` pojedinu riječ iz reda. */
+const TXT = {
+	bs: {
+		naziv: 'IDGAM MISLEJN MEAL-GUNNEH',
+		naslov: '5 IDGAM MISLEJN MEAL-GUNNEH',
+		podnaslov: (
+			<React.Fragment>
+				<strong>Uklapanje istih harfova sa propuštanjem zraka kroz nos</strong>
+
+			</React.Fragment>
+		),
+		lekcija: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Kada poslije harfa <strong>M</strong> <span className="arapski-lekcija">(م)</span> sa{' '}
+						<strong>sukunom</strong> dođe harf <strong>M</strong>
+						<span className="arapski-lekcija"> (م) </span>sa <strong>hareketom</strong>, dolazi do{' '}
+						<u>uklapanja</u> harfa <strong>M</strong>
+						<span className="arapski-lekcija"> (م)</span> sa <strong>sukunom</strong> u harf{' '}
+						<strong>M</strong>
+						<span className="arapski-lekcija"> (م)</span> sa <strong>hareketom</strong>, uz propuštanje
+						zraka kroz nos u trajanju od 2 hareketa, npr.:
+					</Col>
+				</Row>
+
+				<Row className="text-center reorder">
+					<Col>{P('row1')}</Col>
+				</Row>
+
+				<Row className="text-center rtl">
+					<Col>{P('row2')}</Col>
+				</Row>
+
+				<Row className="text-center reorder-basic rtl">
+					<Col>{P('row3')}</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+			</React.Fragment>
+		),
+		lekcijaModal: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Kada poslije harfa <strong>M</strong> <span className="arapski-lekcija">(م)</span> sa{' '}
+						<strong>sukunom</strong> dođe harf <strong>M</strong>
+						<span className="arapski-lekcija"> (م) </span>sa <strong>hareketom</strong>, dolazi do{' '}
+						<u>uklapanja</u> harfa <strong>M</strong>
+						<span className="arapski-lekcija"> (م)</span> sa <strong>sukunom</strong> u harf{' '}
+						<strong>M</strong>
+						<span className="arapski-lekcija"> (م)</span> sa <strong>hareketom</strong>, uz
+						propuštanje zraka kroz nos u trajanju od 2 hareketa, npr.:
+					</Col>
+				</Row>
+
+				<Row className="text-center">
+					<Col>{P('row1')}</Col>
+				</Row>
+
+				<Row className="text-center rtl">
+					<Col>{P('row2')}</Col>
+				</Row>
+
+				<Row className="text-center rtl">
+					<Col>{P('row3')}</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+			</React.Fragment>
+		)
+	},
+
+	en: {
+		naziv: "IDGHAM MITHLAYN MA'AL-GHUNNAH",
+		naslov: "5 IDGHAM MITHLAYN MA'AL-GHUNNAH",
+		podnaslov: (
+			<React.Fragment>
+				<strong>Merging identical letters with nasalisation</strong>
+			</React.Fragment>
+		),
+		lekcija: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						When the letter <strong>M</strong> <span className="arapski-lekcija">(م)</span> carrying a{' '}
+						<strong>sukun</strong> is followed by the letter <strong>M</strong>
+						<span className="arapski-lekcija"> (م) </span>carrying a <strong>haraka</strong>, the letter{' '}
+						<strong>M</strong>
+						<span className="arapski-lekcija"> (م)</span> with the <strong>sukun</strong> <u>merges</u> into
+						the letter <strong>M</strong>
+						<span className="arapski-lekcija"> (م)</span> with the <strong>haraka</strong>, while letting air
+						pass through the nose for the length of 2 harakas, e.g.:
+					</Col>
+				</Row>
+
+				<Row className="text-center reorder">
+					<Col>{P('row1')}</Col>
+				</Row>
+
+				<Row className="text-center rtl">
+					<Col>{P('row2')}</Col>
+				</Row>
+
+				<Row className="text-center reorder-basic rtl">
+					<Col>{P('row3')}</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		),
+		lekcijaModal: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						When the letter <strong>M</strong> <span className="arapski-lekcija">(م)</span> carrying a{' '}
+						<strong>sukun</strong> is followed by the letter <strong>M</strong>
+						<span className="arapski-lekcija"> (م) </span>carrying a <strong>haraka</strong>, the letter{' '}
+						<strong>M</strong>
+						<span className="arapski-lekcija"> (م)</span> with the <strong>sukun</strong> <u>merges</u> into
+						the letter <strong>M</strong>
+						<span className="arapski-lekcija"> (م)</span> with the <strong>haraka</strong>, while letting
+						air pass through the nose for the length of 2 harakas, e.g.:
+					</Col>
+				</Row>
+
+				<Row className="text-center">
+					<Col>{P('row1')}</Col>
+				</Row>
+
+				<Row className="text-center rtl">
+					<Col>{P('row2')}</Col>
+				</Row>
+
+				<Row className="text-center rtl">
+					<Col>{P('row3')}</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		)
+	}
+};
 
 function scrollToHash() {
 	/* Obtain hash from current location (and trim off leading #) */
@@ -33,6 +221,12 @@ function scrollToHash() {
 }
 
 function L5() {
+	const { lang } = useLang();
+	const ui = useUI();
+	const t = TXT[lang] || TXT[DEFAULT_LANG];
+	const R = (row) => PlayerRow(data, row);
+	const W = (main, row) => VjezbeRow(data, main, row);
+
 	const [ show, setShow ] = React.useState(false);
 	const [ showL, setShowL ] = React.useState(false);
 
@@ -47,7 +241,7 @@ function L5() {
 	}, []);
 	return (
 		<React.Fragment>
-			<LekcijaMenu broj="5" naziv="IDGAM MISLEJN MEAL-GUNNEH" />
+			<LekcijaMenu broj="5" naziv={t.naziv} />
 
 			<Container>
 				<Row>
@@ -56,13 +250,9 @@ function L5() {
 							<center>
 								<img src={process.env.PUBLIC_URL + '/assets/svg/Group 61.svg'} alt="Group 61" />
 							</center>
-							<h2 className="text-center font-weight-bold text-uppercase" id="lekcija">
-								5 IDGAM MISLEJN MEAL-GUNNEH
-							</h2>
+							<h2 className="text-center font-weight-bold text-uppercase" id="lekcija">{t.naslov}</h2>
 						</div>
-						<h4 className="text-center">
-							<strong>Uklapanje istih harfova sa propuštanjem zraka kroz nos</strong>
-						</h4>
+						<h4 className="text-center">{t.podnaslov}</h4>
 						<hr />
 					</Col>
 				</Row>
@@ -75,93 +265,23 @@ function L5() {
 				<IconContext.Provider value={{ size: '30px', style: { float: 'right' } }}>
 					<MdZoomOutMap className="zoomIcon" onClick={handleShowL} />
 				</IconContext.Provider>
-				<Row>
-					<Col className="opisLekcije">
-						Kada poslije harfa <strong>M</strong> <span className="arapski-lekcija">(م)</span> sa{' '}
-						<strong>sukunom</strong> dođe harf <strong>M</strong>
-						<span className="arapski-lekcija"> (م) </span>sa <strong>hareketom</strong>, dolazi do{' '}
-						<u>uklapanja</u> harfa <strong>M</strong>
-						<span className="arapski-lekcija"> (م)</span> sa <strong>sukunom</strong> u harf{' '}
-						<strong>M</strong>
-						<span className="arapski-lekcija"> (م)</span> sa <strong>hareketom</strong>, uz propuštanje
-						zraka kroz nos u trajanju od 2 hareketa, npr.:
-					</Col>
-				</Row>
 
-				<Row className="text-center reorder">
-					<Col>{PlayerRow(data, 'row1')}</Col>
-				</Row>
+				{t.lekcija(R, W)}
 
-				<Row className="text-center rtl">
-					<Col>{PlayerRow(data, 'row2')}</Col>
-				</Row>
-
-				<Row className="text-center reorder-basic rtl">
-					<Col>{PlayerRow(data, 'row3')}</Col>
-				</Row>
-
-				<Row>
-					<Col>
-						<br />
-					</Col>
-				</Row>
-
-				<Row>
-					<Col>
-						<br />
-					</Col>
-				</Row>
-				<Modal show={showL} onHide={handleCloseL} backdrop="static" keyboard={false}>
+<Modal show={showL} onHide={handleCloseL} backdrop="static" keyboard={false}>
 					<Modal.Header closeButton>
-						<Modal.Title>LEKCIJA</Modal.Title>
+						<Modal.Title>{ui.lekcija}</Modal.Title>
 					</Modal.Header>
-					<Modal.Body className="custom-modal">
-						<Row>
-							<Col className="opisLekcije">
-								Kada poslije harfa <strong>M</strong> <span className="arapski-lekcija">(م)</span> sa{' '}
-								<strong>sukunom</strong> dođe harf <strong>M</strong>
-								<span className="arapski-lekcija"> (م) </span>sa <strong>hareketom</strong>, dolazi do{' '}
-								<u>uklapanja</u> harfa <strong>M</strong>
-								<span className="arapski-lekcija"> (م)</span> sa <strong>sukunom</strong> u harf{' '}
-								<strong>M</strong>
-								<span className="arapski-lekcija"> (م)</span> sa <strong>hareketom</strong>, uz
-								propuštanje zraka kroz nos u trajanju od 2 hareketa, npr.:
-							</Col>
-						</Row>
-
-						<Row className="text-center">
-							<Col>{PlayerRow(data, 'row1')}</Col>
-						</Row>
-
-						<Row className="text-center rtl">
-							<Col>{PlayerRow(data, 'row2')}</Col>
-						</Row>
-
-						<Row className="text-center rtl">
-							<Col>{PlayerRow(data, 'row3')}</Col>
-						</Row>
-
-						<Row>
-							<Col>
-								<br />
-							</Col>
-						</Row>
-
-						<Row>
-							<Col>
-								<br />
-							</Col>
-						</Row>
-					</Modal.Body>
+					<Modal.Body className="custom-modal">{t.lekcijaModal(R, W)}</Modal.Body>
 					<Modal.Footer>
 						<Button variant="secondary" onClick={handleCloseL}>
-							Zatvori
+							{ui.zatvori}
 						</Button>
 					</Modal.Footer>
 				</Modal>
 				<section className="vjezba-panel">
 				<h2 className="text-center" id="vjezba">
-					<strong>VJEŽBA</strong>
+					<strong>{ui.vjezba}</strong>
 				</h2>
 				<hr />
 				<VjezbaToolbar />
@@ -214,7 +334,7 @@ function L5() {
 				</section>
 				<Modal show={show} onHide={handleClose} backdrop="static" keyboard={false}>
 					<Modal.Header closeButton>
-						<Modal.Title>VJEŽBA</Modal.Title>
+						<Modal.Title>{ui.vjezba}</Modal.Title>
 					</Modal.Header>
 					<Modal.Body className="custom-modal">
 						<Row className="text-center">
@@ -257,7 +377,7 @@ function L5() {
 					</Modal.Body>
 					<Modal.Footer>
 						<Button variant="secondary" onClick={handleClose}>
-							Zatvori
+							{ui.zatvori}
 						</Button>
 					</Modal.Footer>
 				</Modal>

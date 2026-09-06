@@ -10,12 +10,188 @@ import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import { MdZoomOutMap } from 'react-icons/md';
 import { IconContext } from 'react-icons';
+import { useLang, DEFAULT_LANG } from '../i18n/LanguageContext';
+import { useUI } from '../i18n/ui';
 
 // Bootstrap
 import { Row, Col, Container } from 'react-bootstrap';
 
 // Other
 import '../App.scss';
+
+/* Tekst lekcije po jezicima. `P` pušta red primjera, `V` pojedinu riječ iz reda. */
+const TXT = {
+	bs: {
+		naziv: 'MEDD MUTTESIL',
+		naslov: '18 MEDD MUTTESIL',
+		podnaslov: (
+			<React.Fragment>
+				<strong>Spojena dužina</strong>
+
+			</React.Fragment>
+		),
+		lekcija: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Kada poslije <strong>dugog vokala</strong> A <span className="arapski-lekcija">ـــَــ ا</span> ,
+						I <span className="arapski-lekcija">ـــِـ ى </span>, U{' '}
+						<span className="arapski-lekcija">ـــُــ و</span> dođe <strong>hemze</strong> u <u>istoj</u>{' '}
+						riječi, bit će medd muttesil. Traje obavezno 4-5 hareketa, npr.: {P('row1')}
+					</Col>
+				</Row>
+
+				<Row className="text-center">
+					<Col>{P('row2')}</Col>
+				</Row>
+
+				<Row className="text-center reorder-basic rtl">
+					<Col>{P('row3')}</Col>
+				</Row>
+
+				<Row className="text-center">
+					<Col>{V('multirow', 'row4')}</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+			</React.Fragment>
+		),
+		lekcijaModal: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Kada poslije <strong>dugog vokala</strong> A{' '}
+						<span className="arapski-lekcija">ـــَــ ا</span> , I{' '}
+						<span className="arapski-lekcija">ـــِـ ى </span>, U{' '}
+						<span className="arapski-lekcija">ـــُــ و</span> dođe <strong>hemze</strong> u{' '}
+						<u>istoj</u> riječi, bit će medd muttesil. Traje obavezno 4-5 hareketa, npr.:{' '}
+						{P('row1')}
+					</Col>
+				</Row>
+
+				<Row className="text-center">
+					<Col>{P('row2')}</Col>
+				</Row>
+
+				<Row className="text-center rtl">
+					<Col>{P('row3')}</Col>
+				</Row>
+
+				<Row className="text-center">
+					<Col>{V('multirow', 'row4')}</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+			</React.Fragment>
+		)
+	},
+
+	en: {
+		naziv: 'MADD MUTTASIL',
+		naslov: '18 MADD MUTTASIL',
+		podnaslov: (
+			<React.Fragment>
+				<strong>Connected prolongation</strong>
+			</React.Fragment>
+		),
+		lekcija: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						When the <strong>long vowel</strong> A <span className="arapski-lekcija">ـــَــ ا</span> , I{' '}
+						<span className="arapski-lekcija">ـــِـ ى </span>, U{' '}
+						<span className="arapski-lekcija">ـــُــ و</span> is followed by a <strong>hamza</strong> in the{' '}
+						<u>same</u> word, it is madd muttasil. It must last 4–5 harakas, e.g.: {P('row1')}
+					</Col>
+				</Row>
+
+				<Row className="text-center">
+					<Col>{P('row2')}</Col>
+				</Row>
+
+				<Row className="text-center reorder-basic rtl">
+					<Col>{P('row3')}</Col>
+				</Row>
+
+				<Row className="text-center">
+					<Col>{V('multirow', 'row4')}</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		),
+		lekcijaModal: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						When the <strong>long vowel</strong> A{' '}
+						<span className="arapski-lekcija">ـــَــ ا</span> , I{' '}
+						<span className="arapski-lekcija">ـــِـ ى </span>, U{' '}
+						<span className="arapski-lekcija">ـــُــ و</span> is followed by a <strong>hamza</strong> in the{' '}
+						<u>same</u> word, it is madd muttasil. It must last 4–5 harakas, e.g.:{' '}
+						{P('row1')}
+					</Col>
+				</Row>
+
+				<Row className="text-center">
+					<Col>{P('row2')}</Col>
+				</Row>
+
+				<Row className="text-center rtl">
+					<Col>{P('row3')}</Col>
+				</Row>
+
+				<Row className="text-center">
+					<Col>{V('multirow', 'row4')}</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		)
+	}
+};
 
 function scrollToHash() {
 	/* Obtain hash from current location (and trim off leading #) */
@@ -33,6 +209,12 @@ function scrollToHash() {
 }
 
 function L18() {
+	const { lang } = useLang();
+	const ui = useUI();
+	const t = TXT[lang] || TXT[DEFAULT_LANG];
+	const R = (row) => PlayerRow(data, row);
+	const W = (main, row) => VjezbeRow(data, main, row);
+
 	const [ show, setShow ] = React.useState(false);
 	const [ showL, setShowL ] = React.useState(false);
 
@@ -46,7 +228,7 @@ function L18() {
 	}, []);
 	return (
 		<React.Fragment>
-			<LekcijaMenu broj="18" naziv="MEDD MUTTESIL" />
+			<LekcijaMenu broj="18" naziv={t.naziv} />
 			<Container>
 				<Row>
 					<Col>
@@ -54,13 +236,9 @@ function L18() {
 							<center>
 								<img src={process.env.PUBLIC_URL + '/assets/svg/Group 61.svg'} alt="Group 61" />
 							</center>
-							<h2 className="text-center font-weight-bold text-uppercase" id="lekcija">
-								18 MEDD MUTTESIL
-							</h2>
+							<h2 className="text-center font-weight-bold text-uppercase" id="lekcija">{t.naslov}</h2>
 						</div>
-						<h4 className="text-center">
-							<strong>Spojena dužina</strong>
-						</h4>
+						<h4 className="text-center">{t.podnaslov}</h4>
 						<hr />
 					</Col>
 				</Row>
@@ -73,87 +251,23 @@ function L18() {
 				<IconContext.Provider value={{ size: '30px', style: { float: 'right' } }}>
 					<MdZoomOutMap className="zoomIcon" onClick={handleShowL} />
 				</IconContext.Provider>
-				<Row>
-					<Col className="opisLekcije">
-						Kada poslije <strong>dugog vokala</strong> A <span className="arapski-lekcija">ـــَــ ا</span> ,
-						I <span className="arapski-lekcija">ـــِـ ى </span>, U{' '}
-						<span className="arapski-lekcija">ـــُــ و</span> dođe <strong>hemze</strong> u <u>istoj</u>{' '}
-						riječi, bit će medd muttesil. Traje obavezno 4-5 hareketa, npr.: {PlayerRow(data, 'row1')}
-					</Col>
-				</Row>
 
-				<Row className="text-center">
-					<Col>{PlayerRow(data, 'row2')}</Col>
-				</Row>
+				{t.lekcija(R, W)}
 
-				<Row className="text-center reorder-basic rtl">
-					<Col>{PlayerRow(data, 'row3')}</Col>
-				</Row>
-
-				<Row className="text-center">
-					<Col>{VjezbeRow(data, 'multirow', 'row4')}</Col>
-				</Row>
-
-				<Row>
-					<Col>
-						<br />
-					</Col>
-				</Row>
-
-				<Row>
-					<Col>
-						<br />
-					</Col>
-				</Row>
-				<Modal show={showL} onHide={handleCloseL} backdrop="static" keyboard={false}>
+<Modal show={showL} onHide={handleCloseL} backdrop="static" keyboard={false}>
 					<Modal.Header closeButton>
-						<Modal.Title>LEKCIJA</Modal.Title>
+						<Modal.Title>{ui.lekcija}</Modal.Title>
 					</Modal.Header>
-					<Modal.Body className="custom-modal">
-						<Row>
-							<Col className="opisLekcije">
-								Kada poslije <strong>dugog vokala</strong> A{' '}
-								<span className="arapski-lekcija">ـــَــ ا</span> , I{' '}
-								<span className="arapski-lekcija">ـــِـ ى </span>, U{' '}
-								<span className="arapski-lekcija">ـــُــ و</span> dođe <strong>hemze</strong> u{' '}
-								<u>istoj</u> riječi, bit će medd muttesil. Traje obavezno 4-5 hareketa, npr.:{' '}
-								{PlayerRow(data, 'row1')}
-							</Col>
-						</Row>
-
-						<Row className="text-center">
-							<Col>{PlayerRow(data, 'row2')}</Col>
-						</Row>
-
-						<Row className="text-center rtl">
-							<Col>{PlayerRow(data, 'row3')}</Col>
-						</Row>
-
-						<Row className="text-center">
-							<Col>{VjezbeRow(data, 'multirow', 'row4')}</Col>
-						</Row>
-
-						<Row>
-							<Col>
-								<br />
-							</Col>
-						</Row>
-
-						<Row>
-							<Col>
-								<br />
-							</Col>
-						</Row>
-					</Modal.Body>
+					<Modal.Body className="custom-modal">{t.lekcijaModal(R, W)}</Modal.Body>
 					<Modal.Footer>
 						<Button variant="secondary" onClick={handleCloseL}>
-							Zatvori
+							{ui.zatvori}
 						</Button>
 					</Modal.Footer>
 				</Modal>
 				<section className="vjezba-panel">
 				<h2 className="text-center" id="vjezba">
-					<strong>VJEŽBA</strong>
+					<strong>{ui.vjezba}</strong>
 				</h2>
 				<hr />
 				<VjezbaToolbar />
@@ -197,7 +311,7 @@ function L18() {
 				</section>
 				<Modal show={show} onHide={handleClose} backdrop="static" keyboard={false}>
 					<Modal.Header closeButton>
-						<Modal.Title>VJEŽBA</Modal.Title>
+						<Modal.Title>{ui.vjezba}</Modal.Title>
 					</Modal.Header>
 					<Modal.Body className="custom-modal">
 						<Row className="text-center rtl">
@@ -231,7 +345,7 @@ function L18() {
 					</Modal.Body>
 					<Modal.Footer>
 						<Button variant="secondary" onClick={handleClose}>
-							Zatvori
+							{ui.zatvori}
 						</Button>
 					</Modal.Footer>
 				</Modal>

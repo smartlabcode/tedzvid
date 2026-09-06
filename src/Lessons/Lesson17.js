@@ -10,12 +10,163 @@ import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import { MdZoomOutMap } from 'react-icons/md';
 import { IconContext } from 'react-icons';
+import { useLang, DEFAULT_LANG } from '../i18n/LanguageContext';
+import { useUI } from '../i18n/ui';
 
 // Bootstrap
 import { Row, Col, Container } from 'react-bootstrap';
 
 // Other
 import '../App.scss';
+
+/* Tekst lekcije po jezicima. `P` pušta red primjera, `V` pojedinu riječ iz reda. */
+const TXT = {
+	bs: {
+		naziv: 'MEDD TABIJJ',
+		naslov: '17 MEDD TABIJJ',
+		podnaslov: 'Obična dužina',
+		lekcija: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Kada poslije <strong>dugog vokala </strong>A <span className="arapski-lekcija">ـــَــ ا</span> ,
+						I <span className="arapski-lekcija">ـــِـ ى </span>, U{' '}
+						<span className="arapski-lekcija">ـــُــ و</span> nema ni <strong>hemzeta</strong> ni{' '}
+						<strong>sukuna,</strong>bit će medd tabijj.Traje 2 haraketa, npr.:{P('row1')}
+					</Col>
+				</Row>
+
+				<Row className="text-center rtl ">
+					<Col>{P('row2')}</Col>
+				</Row>
+
+				<Row className="text-center reorder-basic-display-after ">
+					<Col>{P('row3')}</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+			</React.Fragment>
+		),
+		lekcijaModal: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Kada poslije <strong>dugog vokala </strong>A{' '}
+						<span className="arapski-lekcija">ـــَــ ا</span> , I{' '}
+						<span className="arapski-lekcija">ـــِـ ى </span>, U{' '}
+						<span className="arapski-lekcija">ـــُــ و</span> nema ni <strong>hemzeta</strong> ni{' '}
+						<strong>sukuna,</strong>bit će medd tabijj.Traje 2 haraketa, npr.:{P('row1')}
+					</Col>
+				</Row>
+
+				<Row className="text-center rtl ">
+					<Col>{P('row2')}</Col>
+				</Row>
+
+				<Row className="text-center reorder-basic-display-after ">
+					<Col>{P('row3')}</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+			</React.Fragment>
+		)
+	},
+
+	en: {
+		naziv: "MADD TABI'I",
+		naslov: "17 MADD TABI'I",
+		podnaslov: 'Natural prolongation',
+		lekcija: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						When the <strong>long vowel </strong>A <span className="arapski-lekcija">ـــَــ ا</span> , I{' '}
+						<span className="arapski-lekcija">ـــِـ ى </span>, U{' '}
+						<span className="arapski-lekcija">ـــُــ و</span> is followed by neither a{' '}
+						<strong>hamza</strong> nor a <strong>sukun,</strong> it is madd tabi'i. It lasts 2 harakas,
+						e.g.:{P('row1')}
+					</Col>
+				</Row>
+
+				<Row className="text-center rtl ">
+					<Col>{P('row2')}</Col>
+				</Row>
+
+				<Row className="text-center reorder-basic-display-after ">
+					<Col>{P('row3')}</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		),
+		lekcijaModal: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						When the <strong>long vowel </strong>A{' '}
+						<span className="arapski-lekcija">ـــَــ ا</span> , I{' '}
+						<span className="arapski-lekcija">ـــِـ ى </span>, U{' '}
+						<span className="arapski-lekcija">ـــُــ و</span> is followed by neither a{' '}
+						<strong>hamza</strong> nor a <strong>sukun,</strong> it is madd tabi'i. It lasts 2 harakas,
+						e.g.:{P('row1')}
+					</Col>
+				</Row>
+
+				<Row className="text-center rtl ">
+					<Col>{P('row2')}</Col>
+				</Row>
+
+				<Row className="text-center reorder-basic-display-after ">
+					<Col>{P('row3')}</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		)
+	}
+};
 
 function scrollToHash() {
 	/* Obtain hash from current location (and trim off leading #) */
@@ -33,6 +184,12 @@ function scrollToHash() {
 }
 
 function L17() {
+	const { lang } = useLang();
+	const ui = useUI();
+	const t = TXT[lang] || TXT[DEFAULT_LANG];
+	const R = (row) => PlayerRow(data, row);
+	const W = (main, row) => VjezbeRow(data, main, row);
+
 	const [ show, setShow ] = React.useState(false);
 	const [ showL, setShowL ] = React.useState(false);
 
@@ -46,7 +203,7 @@ function L17() {
 	}, []);
 	return (
 		<React.Fragment>
-			<LekcijaMenu broj="17" naziv="MEDD TABIJJ" />
+			<LekcijaMenu broj="17" naziv={t.naziv} />
 			<Container>
 				<Row>
 					<Col>
@@ -54,11 +211,9 @@ function L17() {
 							<center>
 								<img src={process.env.PUBLIC_URL + '/assets/svg/Group 61.svg'} alt="Group 61" />
 							</center>
-							<h2 className="text-center font-weight-bold text-uppercase" id="lekcija">
-								17 MEDD TABIJJ
-							</h2>
+							<h2 className="text-center font-weight-bold text-uppercase" id="lekcija">{t.naslov}</h2>
 						</div>
-						<h4 className="text-center font-weight-bold">Obična dužina</h4>
+						<h4 className="text-center font-weight-bold">{t.podnaslov}</h4>
 						<hr />
 					</Col>
 				</Row>
@@ -71,78 +226,23 @@ function L17() {
 				<IconContext.Provider value={{ size: '30px', style: { float: 'right' } }}>
 					<MdZoomOutMap className="zoomIcon" onClick={handleShowL} />
 				</IconContext.Provider>
-				<Row>
-					<Col className="opisLekcije">
-						Kada poslije <strong>dugog vokala </strong>A <span className="arapski-lekcija">ـــَــ ا</span> ,
-						I <span className="arapski-lekcija">ـــِـ ى </span>, U{' '}
-						<span className="arapski-lekcija">ـــُــ و</span> nema ni <strong>hemzeta</strong> ni{' '}
-						<strong>sukuna,</strong>bit će medd tabijj.Traje 2 haraketa, npr.:{PlayerRow(data, 'row1')}
-					</Col>
-				</Row>
 
-				<Row className="text-center rtl ">
-					<Col>{PlayerRow(data, 'row2')}</Col>
-				</Row>
+				{t.lekcija(R, W)}
 
-				<Row className="text-center reorder-basic-display-after ">
-					<Col>{PlayerRow(data, 'row3')}</Col>
-				</Row>
-
-				<Row>
-					<Col>
-						<br />
-					</Col>
-				</Row>
-
-				<Row>
-					<Col>
-						<br />
-					</Col>
-				</Row>
-				<Modal show={showL} onHide={handleCloseL} backdrop="static" keyboard={false}>
+<Modal show={showL} onHide={handleCloseL} backdrop="static" keyboard={false}>
 					<Modal.Header closeButton>
-						<Modal.Title>LEKCIJA</Modal.Title>
+						<Modal.Title>{ui.lekcija}</Modal.Title>
 					</Modal.Header>
-					<Modal.Body className="custom-modal">
-						<Row>
-							<Col className="opisLekcije">
-								Kada poslije <strong>dugog vokala </strong>A{' '}
-								<span className="arapski-lekcija">ـــَــ ا</span> , I{' '}
-								<span className="arapski-lekcija">ـــِـ ى </span>, U{' '}
-								<span className="arapski-lekcija">ـــُــ و</span> nema ni <strong>hemzeta</strong> ni{' '}
-								<strong>sukuna,</strong>bit će medd tabijj.Traje 2 haraketa, npr.:{PlayerRow(data, 'row1')}
-							</Col>
-						</Row>
-
-						<Row className="text-center rtl ">
-							<Col>{PlayerRow(data, 'row2')}</Col>
-						</Row>
-
-						<Row className="text-center reorder-basic-display-after ">
-							<Col>{PlayerRow(data, 'row3')}</Col>
-						</Row>
-
-						<Row>
-							<Col>
-								<br />
-							</Col>
-						</Row>
-
-						<Row>
-							<Col>
-								<br />
-							</Col>
-						</Row>
-					</Modal.Body>
+					<Modal.Body className="custom-modal">{t.lekcijaModal(R, W)}</Modal.Body>
 					<Modal.Footer>
 						<Button variant="secondary" onClick={handleCloseL}>
-							Zatvori
+							{ui.zatvori}
 						</Button>
 					</Modal.Footer>
 				</Modal>
 				<section className="vjezba-panel">
 				<h2 className="text-center" id="vjezba">
-					<strong>VJEŽBA</strong>
+					<strong>{ui.vjezba}</strong>
 				</h2>
 				<hr />
 				<VjezbaToolbar />
@@ -193,7 +293,7 @@ function L17() {
 				</section>
 				<Modal show={show} onHide={handleClose} backdrop="static" keyboard={false}>
 					<Modal.Header closeButton>
-						<Modal.Title>VJEŽBA</Modal.Title>
+						<Modal.Title>{ui.vjezba}</Modal.Title>
 					</Modal.Header>
 					<Modal.Body className="custom-modal">
 						<Row className="text-center">
@@ -234,7 +334,7 @@ function L17() {
 					</Modal.Body>
 					<Modal.Footer>
 						<Button variant="secondary" onClick={handleClose}>
-							Zatvori
+							{ui.zatvori}
 						</Button>
 					</Modal.Footer>
 				</Modal>

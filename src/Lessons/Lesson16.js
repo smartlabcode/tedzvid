@@ -10,12 +10,226 @@ import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import { MdZoomOutMap } from 'react-icons/md';
 import { IconContext } from 'react-icons';
+import { useLang, DEFAULT_LANG } from '../i18n/LanguageContext';
+import { useUI } from '../i18n/ui';
 
 // Bootstrap
 import { Row, Col, Container } from 'react-bootstrap';
 
 // Other
 import '../App.scss';
+
+/* Tekst lekcije po jezicima. `P` pušta red primjera, `V` pojedinu riječ iz reda. */
+const TXT = {
+	bs: {
+		naziv: 'IDGAM MUTEKARIBEJN',
+		naslov: '16 IDGAM MUTEKARIBEJN',
+		podnaslov: (
+			<React.Fragment>
+				<strong>Uklapanje bliskih harfova</strong>
+
+			</React.Fragment>
+		),
+		lekcija: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Kada dođu jedan do drugog <u>bliski</u> harfovi, prvi sa <strong>sukunom</strong>, a drugi sa{' '}
+						<strong>hareketom</strong>, onda se prvi uklapa u drugi iz <u>iste grupe</u>:
+					</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije ">
+						1. Kada poslije harfa <strong>Q</strong> sa <strong>sukunom</strong>{' '}
+						<span className="arapski">(قْ)</span> dođe harf <strong>K</strong>{' '}
+						<span className="arapski">(ك)</span> sa <strong>hareketom</strong>:
+					</Col>
+				</Row>
+
+				<Row className="text-center">
+					<Col>{P('row1')}</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije ">
+						2. Kada poslije harfa <strong>L</strong> sa <strong>sukunom</strong>{' '}
+						<span className="arapski">(لْ)</span> dođe harf <strong>R</strong>{' '}
+						<span className="arapski">(ر)</span> sa <strong>hareketom</strong>:
+					</Col>
+				</Row>
+
+				<Row className="text-center">
+					<Col>{P('row2')}</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+			</React.Fragment>
+		),
+		lekcijaModal: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Kada dođu jedan do drugog <u>bliski</u> harfovi, prvi sa <strong>sukunom</strong>, a
+						drugi sa <strong>hareketom</strong>, onda se prvi uklapa u drugi iz <u>iste grupe</u>:
+					</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije my-3">
+						1. Kada poslije harfa <strong>Q</strong> sa <strong>sukunom</strong>{' '}
+						<span className="arapski">(قْ)</span> dođe harf <strong>K</strong>{' '}
+						<span className="arapski">(ك)</span> sa <strong>hareketom</strong>:
+					</Col>
+				</Row>
+
+				<Row className="text-center">
+					<Col>{P('row1')}</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije my-3">
+						2. Kada poslije harfa <strong>L</strong> sa <strong>sukunom</strong>{' '}
+						<span className="arapski">(لْ)</span> dođe harf <strong>R</strong>{' '}
+						<span className="arapski">(ر)</span> sa <strong>hareketom</strong>:
+					</Col>
+				</Row>
+
+				<Row className="text-center">
+					<Col>{P('row2')}</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+			</React.Fragment>
+		)
+	},
+
+	en: {
+		naziv: 'IDGHAM MUTAQARIBAYN',
+		naslov: '16 IDGHAM MUTAQARIBAYN',
+		podnaslov: (
+			<React.Fragment>
+				<strong>Merging close letters</strong>
+			</React.Fragment>
+		),
+		lekcija: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						When two <u>close</u> letters come next to each other, the first carrying a{' '}
+						<strong>sukun</strong> and the second a <strong>haraka</strong>, the first merges into the
+						second one from the <u>same group</u>:
+					</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije ">
+						1. When the letter <strong>Q</strong> with a <strong>sukun</strong>{' '}
+						<span className="arapski">(قْ)</span> is followed by the letter <strong>K</strong>{' '}
+						<span className="arapski">(ك)</span> with a <strong>haraka</strong>:
+					</Col>
+				</Row>
+
+				<Row className="text-center">
+					<Col>{P('row1')}</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije ">
+						2. When the letter <strong>L</strong> with a <strong>sukun</strong>{' '}
+						<span className="arapski">(لْ)</span> is followed by the letter <strong>R</strong>{' '}
+						<span className="arapski">(ر)</span> with a <strong>haraka</strong>:
+					</Col>
+				</Row>
+
+				<Row className="text-center">
+					<Col>{P('row2')}</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		),
+		lekcijaModal: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						When two <u>close</u> letters come next to each other, the first carrying a{' '}
+						<strong>sukun</strong> and the second a <strong>haraka</strong>, the first merges into
+						the second one from the <u>same group</u>:
+					</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije my-3">
+						1. When the letter <strong>Q</strong> with a <strong>sukun</strong>{' '}
+						<span className="arapski">(قْ)</span> is followed by the letter <strong>K</strong>{' '}
+						<span className="arapski">(ك)</span> with a <strong>haraka</strong>:
+					</Col>
+				</Row>
+
+				<Row className="text-center">
+					<Col>{P('row1')}</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije my-3">
+						2. When the letter <strong>L</strong> with a <strong>sukun</strong>{' '}
+						<span className="arapski">(لْ)</span> is followed by the letter <strong>R</strong>{' '}
+						<span className="arapski">(ر)</span> with a <strong>haraka</strong>:
+					</Col>
+				</Row>
+
+				<Row className="text-center">
+					<Col>{P('row2')}</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		)
+	}
+};
 
 function scrollToHash() {
 	/* Obtain hash from current location (and trim off leading #) */
@@ -33,6 +247,12 @@ function scrollToHash() {
 }
 
 function L16() {
+	const { lang } = useLang();
+	const ui = useUI();
+	const t = TXT[lang] || TXT[DEFAULT_LANG];
+	const R = (row) => PlayerRow(data, row);
+	const W = (main, row) => VjezbeRow(data, main, row);
+
 	const [ show, setShow ] = React.useState(false);
 	const [ showL, setShowL ] = React.useState(false);
 
@@ -46,7 +266,7 @@ function L16() {
 	}, []);
 	return (
 		<React.Fragment>
-			<LekcijaMenu broj="16" naziv="IDGAM MUTEKARIBEJN" />
+			<LekcijaMenu broj="16" naziv={t.naziv} />
 			<Container>
 				<Row>
 					<Col>
@@ -54,13 +274,9 @@ function L16() {
 							<center>
 								<img src={process.env.PUBLIC_URL + '/assets/svg/Group 61.svg'} alt="Group 61" />
 							</center>
-							<h2 className="text-center font-weight-bold text-uppercase" id="lekcija">
-								16 IDGAM MUTEKARIBEJN
-							</h2>
+							<h2 className="text-center font-weight-bold text-uppercase" id="lekcija">{t.naslov}</h2>
 						</div>
-						<h4 className="text-center">
-							<strong>Uklapanje bliskih harfova</strong>
-						</h4>
+						<h4 className="text-center">{t.podnaslov}</h4>
 						<hr />
 					</Col>
 				</Row>
@@ -74,105 +290,22 @@ function L16() {
 					<MdZoomOutMap className="zoomIcon" onClick={handleShowL} />
 				</IconContext.Provider>
 
-				<Row>
-					<Col className="opisLekcije">
-						Kada dođu jedan do drugog <u>bliski</u> harfovi, prvi sa <strong>sukunom</strong>, a drugi sa{' '}
-						<strong>hareketom</strong>, onda se prvi uklapa u drugi iz <u>iste grupe</u>:
-					</Col>
-				</Row>
+				{t.lekcija(R, W)}
 
-				<Row>
-					<Col className="opisLekcije ">
-						1. Kada poslije harfa <strong>Q</strong> sa <strong>sukunom</strong>{' '}
-						<span className="arapski">(قْ)</span> dođe harf <strong>K</strong>{' '}
-						<span className="arapski">(ك)</span> sa <strong>hareketom</strong>:
-					</Col>
-				</Row>
-
-				<Row className="text-center">
-					<Col>{PlayerRow(data, 'row1')}</Col>
-				</Row>
-
-				<Row>
-					<Col className="opisLekcije ">
-						2. Kada poslije harfa <strong>L</strong> sa <strong>sukunom</strong>{' '}
-						<span className="arapski">(لْ)</span> dođe harf <strong>R</strong>{' '}
-						<span className="arapski">(ر)</span> sa <strong>hareketom</strong>:
-					</Col>
-				</Row>
-
-				<Row className="text-center">
-					<Col>{PlayerRow(data, 'row2')}</Col>
-				</Row>
-
-				<Row>
-					<Col>
-						<br />
-					</Col>
-				</Row>
-
-				<Row>
-					<Col>
-						<br />
-					</Col>
-				</Row>
-				<Modal show={showL} onHide={handleCloseL} backdrop="static" keyboard={false}>
+<Modal show={showL} onHide={handleCloseL} backdrop="static" keyboard={false}>
 					<Modal.Header closeButton>
-						<Modal.Title>LEKCIJA</Modal.Title>
+						<Modal.Title>{ui.lekcija}</Modal.Title>
 					</Modal.Header>
-					<Modal.Body className="custom-modal">
-						<Row>
-							<Col className="opisLekcije">
-								Kada dođu jedan do drugog <u>bliski</u> harfovi, prvi sa <strong>sukunom</strong>, a
-								drugi sa <strong>hareketom</strong>, onda se prvi uklapa u drugi iz <u>iste grupe</u>:
-							</Col>
-						</Row>
-
-						<Row>
-							<Col className="opisLekcije my-3">
-								1. Kada poslije harfa <strong>Q</strong> sa <strong>sukunom</strong>{' '}
-								<span className="arapski">(قْ)</span> dođe harf <strong>K</strong>{' '}
-								<span className="arapski">(ك)</span> sa <strong>hareketom</strong>:
-							</Col>
-						</Row>
-
-						<Row className="text-center">
-							<Col>{PlayerRow(data, 'row1')}</Col>
-						</Row>
-
-						<Row>
-							<Col className="opisLekcije my-3">
-								2. Kada poslije harfa <strong>L</strong> sa <strong>sukunom</strong>{' '}
-								<span className="arapski">(لْ)</span> dođe harf <strong>R</strong>{' '}
-								<span className="arapski">(ر)</span> sa <strong>hareketom</strong>:
-							</Col>
-						</Row>
-
-						<Row className="text-center">
-							<Col>{PlayerRow(data, 'row2')}</Col>
-						</Row>
-
-						<Row>
-							<Col>
-								<br />
-							</Col>
-						</Row>
-
-						<Row>
-							<Col>
-								<br />
-							</Col>
-						</Row>
-					</Modal.Body>
+					<Modal.Body className="custom-modal">{t.lekcijaModal(R, W)}</Modal.Body>
 					<Modal.Footer>
 						<Button variant="secondary" onClick={handleCloseL}>
-							Zatvori
+							{ui.zatvori}
 						</Button>
 					</Modal.Footer>
 				</Modal>
 				<section className="vjezba-panel">
 				<h2 className="text-center" id="vjezba">
-					<strong>VJEŽBA</strong>
+					<strong>{ui.vjezba}</strong>
 				</h2>
 				<hr />
 				<VjezbaToolbar />
@@ -219,7 +352,7 @@ function L16() {
 				</section>
 				<Modal show={show} onHide={handleClose} backdrop="static" keyboard={false}>
 					<Modal.Header closeButton>
-						<Modal.Title>VJEŽBA</Modal.Title>
+						<Modal.Title>{ui.vjezba}</Modal.Title>
 					</Modal.Header>
 					<Modal.Body className="custom-modal">
 						<Row className="text-center">
@@ -256,7 +389,7 @@ function L16() {
 					</Modal.Body>
 					<Modal.Footer>
 						<Button variant="secondary" onClick={handleClose}>
-							Zatvori
+							{ui.zatvori}
 						</Button>
 					</Modal.Footer>
 				</Modal>

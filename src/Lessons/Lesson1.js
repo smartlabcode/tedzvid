@@ -10,12 +10,371 @@ import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import { MdZoomOutMap } from 'react-icons/md';
 import { IconContext } from 'react-icons';
+import { useLang, DEFAULT_LANG } from '../i18n/LanguageContext';
+import { useUI } from '../i18n/ui';
 
 // Bootstrap
 import { Row, Col, Table, Container } from 'react-bootstrap';
 
 // Other
 import '../App.scss';
+
+/* kratica za arapski isječak unutar teksta lekcije */
+const A = ({ children }) => <span className="arapski-lekcija">{children}</span>;
+
+/* Tekst lekcije po jezicima. `P` pušta red primjera, `V` pojedinu riječ iz reda. */
+const TXT = {
+	bs: {
+		naziv: 'VAKF',
+		naslov: '1 Vakf',
+		podnaslov: 'Stajanje prilikom učenja',
+		lekcija: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Prilikom učenja Kur'ana, učač može stati u sljedećim situacijama: ako je kraj ajeta, ako postoji
+						znak za stajanje i kada mu ponestane daha. To čini na sljedeći način:
+					</Col>
+				</Row>
+				<Row>
+					<Col className="opisLekcije my-3">
+						<strong>1.</strong> Kada riječ na kojoj staje završava <strong>kratkim vokalom</strong> E{' '}
+						<A> ــــَـــ</A> , I <A> ــــِــ</A> , U <A> ــــُـــ </A>ili <strong>tenvinom</strong> IN{' '}
+						<A> ــــٍــ </A> , UN <A> ـــٌـــ</A> , stat će kao da je na riječi <strong>sukun</strong>{' '}
+						<A> ــــْـــ</A> , npr.:
+					</Col>
+				</Row>
+				<Row className="text-center reorder">
+					<Col>{P('row1')}</Col>
+				</Row>
+				<Row>
+					<Col className="opisLekcije my-3">
+						<strong>2.</strong> Kada riječ završava <strong>tenvinom</strong> EN <A> ــــًــ</A> , stat će
+						kao da je <strong>dugo</strong> A <A> ـــَـــ ا </A> , npr.:
+					</Col>
+				</Row>
+				<Row className="text-center reorder">
+					<Col>{P('row2')}</Col>
+				</Row>
+				<Row>
+					<Col className="opisLekcije my-3">
+						<strong>3.</strong> Kada riječ završava <strong>dugim vokalom</strong> A <A> ــــَـــ ا </A> ,{' '}
+						<strong>dugim vokalom</strong> I <A>ـــِــ ى</A> ili <strong>dugim vokalom</strong> U{' '}
+						<A>ـــُــ و</A> , stat će <u>bez ikakve promjene</u> , npr.:
+					</Col>
+				</Row>
+				<Row className="text-center ">
+					<Col>
+						{V('row3', 'broj1')}
+						{V('row3', 'broj2')}
+						{V('row3', 'broj3')}
+						{V('row3', 'broj4')}
+						{V('row3', 'broj5')}
+					</Col>
+				</Row>
+				<Row>
+					<Col className="opisLekcije my-3">
+						<strong>4.</strong> Kada riječ završava okruglim <strong>T</strong> <A>(ة/ـة)</A> , stat će kao
+						da je napisano slovo <strong>H </strong>
+						<A>(ه)</A> , bez obzira koji je vokal ili tenvin napisan na njemu, npr.:
+					</Col>
+				</Row>
+				<Row className="text-center reorder">
+					<Col>{P('row4')}</Col>
+				</Row>
+			</React.Fragment>
+		),
+		tabela: (
+			<Table className="tabela-opis text-center" bordered hover responsive>
+				<thead className="text-danger text-uppercase">
+					<tr>
+						<th>Kada riječ završava na</th>
+						<th>Stajemo</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							E <A>ــــَـــ</A> , I <A> ــــِــ</A> , U <A> ــــُـــ</A> , IN <A> ـــٍـــ </A> , UN{' '}
+							<A> ـــٌــ</A>
+						</td>
+						<td>
+							kao da je sukun <A> ـــْــ</A>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							EN <A> ـــًــ</A>
+						</td>
+						<td>
+							kao da je dugo A
+							<br />
+							<A> ــَــ ا</A>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							dugo A <A>ـــَــ ا</A> , dugo I <A>ـــِـ ى</A> , dugo U <A>ـــُــ و</A>
+						</td>
+						<td>bez ikakve promjene</td>
+					</tr>
+					<tr>
+						<td>
+							okruglo T <A> (ة/ـة)</A>
+						</td>
+						<td>
+							kao da je H <A> (ه)</A>
+						</td>
+					</tr>
+				</tbody>
+			</Table>
+		),
+		znakoviNaslov: 'Znakovi za stajanje:',
+		znakovi: (
+			<React.Fragment>
+				<p>
+					Iznad nekih riječi u Kur'anu nalaze se <strong>znakovi</strong> koji označavaju da li se na toj
+					riječi mora stati ili se ne smije, da li je bolje stati ili je bolje preći. Ti znakovi su:
+				</p>
+				<br />
+				<Table className="tabela-opis text-center" bordered hover responsive>
+					<thead className="text-uppercase">
+						<tr>
+							<th className="text-danger">Mora stati</th>
+							<th>Bolje stati</th>
+							<th>Bolje preći</th>
+							<th className="text-danger">Ne smije se stati</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<A>م</A>
+							</td>
+							<td>
+								<A> قف ؛ قلي ؛ ج ؛ ط</A>
+							</td>
+							<td>
+								<A> صلي ؛ ق ؛ ص ؛ ز</A>
+							</td>
+							<td>
+								<A> لا</A>
+							</td>
+						</tr>
+					</tbody>
+				</Table>
+
+				<br />
+
+				<Table className="tabela-opis text-center" bordered hover responsive>
+					<thead className="text-uppercase">
+						<tr>
+							<th>Sekta</th>
+							<th>Tri tačkice</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<A> سكتة ؛ س</A>
+								<br />
+								Pauzira se bez prekidanja daha.
+							</td>
+							<td>
+								<A> رَيْبَۚۛ ف۪يهِۚۛ </A>
+								<br />
+								Ukoliko se pauzira na prvom znaku, onda je na drugom obavezno preći i obrnuto.
+							</td>
+						</tr>
+					</tbody>
+				</Table>
+
+				<br />
+
+				<p>
+					<strong>NAPOMENA</strong>: Znak <A> قصر</A> ispod riječi je znak da se vokal ispod kojeg se nalazi
+					uči <u>kratko</u> , a <A> مد </A>je znak da se vokal uči <u>dugo</u>.
+				</p>
+			</React.Fragment>
+		)
+	},
+
+	en: {
+		naziv: 'WAQF',
+		naslov: '1 Waqf',
+		podnaslov: 'Stopping during recitation',
+		lekcija: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						While reciting the Qur'an, the reciter may stop in the following situations: at the end of a
+						verse, where there is a sign for stopping, and when they run out of breath. This is done as
+						follows:
+					</Col>
+				</Row>
+				<Row>
+					<Col className="opisLekcije my-3">
+						<strong>1.</strong> When the word on which the reciter stops ends in the{' '}
+						<strong>short vowel</strong> A <A> ــــَـــ</A> , I <A> ــــِــ</A> , U <A> ــــُـــ </A>or in
+						the <strong>tanween</strong> IN <A> ــــٍــ </A> , UN <A> ـــٌـــ</A> , they stop as if the word
+						carried a <strong>sukun</strong> <A> ــــْـــ</A> , e.g.:
+					</Col>
+				</Row>
+				<Row className="text-center reorder">
+					<Col>{P('row1')}</Col>
+				</Row>
+				<Row>
+					<Col className="opisLekcije my-3">
+						<strong>2.</strong> When the word ends in the <strong>tanween</strong> AN <A> ــــًــ</A> , they
+						stop as if it were a <strong>long</strong> A <A> ـــَـــ ا </A> , e.g.:
+					</Col>
+				</Row>
+				<Row className="text-center reorder">
+					<Col>{P('row2')}</Col>
+				</Row>
+				<Row>
+					<Col className="opisLekcije my-3">
+						<strong>3.</strong> When the word ends in the <strong>long vowel</strong> A <A> ــــَـــ ا </A>{' '}
+						, the <strong>long vowel</strong> I <A>ـــِــ ى</A> or the <strong>long vowel</strong> U{' '}
+						<A>ـــُــ و</A> , they stop <u>without any change</u> , e.g.:
+					</Col>
+				</Row>
+				<Row className="text-center ">
+					<Col>
+						{V('row3', 'broj1')}
+						{V('row3', 'broj2')}
+						{V('row3', 'broj3')}
+						{V('row3', 'broj4')}
+						{V('row3', 'broj5')}
+					</Col>
+				</Row>
+				<Row>
+					<Col className="opisLekcije my-3">
+						<strong>4.</strong> When the word ends in the round <strong>T</strong> <A>(ة/ـة)</A> , they stop
+						as if the letter <strong>H </strong>
+						<A>(ه)</A> were written , no matter which vowel or tanween is written on it, e.g.:
+					</Col>
+				</Row>
+				<Row className="text-center reorder">
+					<Col>{P('row4')}</Col>
+				</Row>
+			</React.Fragment>
+		),
+		tabela: (
+			<Table className="tabela-opis text-center" bordered hover responsive>
+				<thead className="text-danger text-uppercase">
+					<tr>
+						<th>When the word ends in</th>
+						<th>We stop</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							A <A>ــــَـــ</A> , I <A> ــــِــ</A> , U <A> ــــُـــ</A> , IN <A> ـــٍـــ </A> , UN{' '}
+							<A> ـــٌــ</A>
+						</td>
+						<td>
+							as if there were a sukun <A> ـــْــ</A>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							AN <A> ـــًــ</A>
+						</td>
+						<td>
+							as if it were a long A
+							<br />
+							<A> ــَــ ا</A>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							long A <A>ـــَــ ا</A> , long I <A>ـــِـ ى</A> , long U <A>ـــُــ و</A>
+						</td>
+						<td>with no change at all</td>
+					</tr>
+					<tr>
+						<td>
+							round T <A> (ة/ـة)</A>
+						</td>
+						<td>
+							as if it were H <A> (ه)</A>
+						</td>
+					</tr>
+				</tbody>
+			</Table>
+		),
+		znakoviNaslov: 'Signs for stopping:',
+		znakovi: (
+			<React.Fragment>
+				<p>
+					Above some words in the Qur'an there are <strong>signs</strong> which show whether one must stop on
+					that word or must not, whether it is better to stop or better to continue. These signs are:
+				</p>
+				<br />
+				<Table className="tabela-opis text-center" bordered hover responsive>
+					<thead className="text-uppercase">
+						<tr>
+							<th className="text-danger">Must stop</th>
+							<th>Better to stop</th>
+							<th>Better to continue</th>
+							<th className="text-danger">Must not stop</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<A>م</A>
+							</td>
+							<td>
+								<A> قف ؛ قلي ؛ ج ؛ ط</A>
+							</td>
+							<td>
+								<A> صلي ؛ ق ؛ ص ؛ ز</A>
+							</td>
+							<td>
+								<A> لا</A>
+							</td>
+						</tr>
+					</tbody>
+				</Table>
+
+				<br />
+
+				<Table className="tabela-opis text-center" bordered hover responsive>
+					<thead className="text-uppercase">
+						<tr>
+							<th>Saktah</th>
+							<th>Three dots</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<A> سكتة ؛ س</A>
+								<br />
+								One pauses without breaking the breath.
+							</td>
+							<td>
+								<A> رَيْبَۚۛ ف۪يهِۚۛ </A>
+								<br />
+								If you pause at the first sign, then at the second one you must continue, and vice versa.
+							</td>
+						</tr>
+					</tbody>
+				</Table>
+
+				<br />
+
+				<p>
+					<strong>NOTE</strong>: The sign <A> قصر</A> beneath a word means that the vowel it stands under is
+					recited <u>short</u> , while <A> مد </A>means that the vowel is recited <u>long</u>.
+				</p>
+			</React.Fragment>
+		)
+	}
+};
 
 function scrollToHash() {
 	/* Obtain hash from current location (and trim off leading #) */
@@ -33,6 +392,10 @@ function scrollToHash() {
 }
 
 function L1() {
+	const { lang } = useLang();
+	const ui = useUI();
+	const t = TXT[lang] || TXT[DEFAULT_LANG];
+
 	const [ show, setShow ] = React.useState(false);
 	const [ showT, setShowT ] = React.useState(false);
 	const [ showZ, setShowZ ] = React.useState(false);
@@ -53,9 +416,13 @@ function L1() {
 	React.useEffect(() => {
 		scrollToHash();
 	}, []);
+
+	/* isti sadržaj lekcije se prikazuje na stranici i u uvećanom prikazu */
+	const lekcija = t.lekcija((row) => PlayerRow(data, row), (main, row) => VjezbeRow(data, main, row));
+
 	return (
 		<React.Fragment>
-			<LekcijaMenu broj="1" naziv="VAKF" />
+			<LekcijaMenu broj="1" naziv={t.naziv} />
 			<Container>
 				<Row>
 					<Col>
@@ -64,11 +431,11 @@ function L1() {
 								<img src={process.env.PUBLIC_URL + '/assets/svg/Group 61.svg'} alt="Group 61" />
 							</center>
 
-							<h2 className="text-center font-weight-bold text-uppercase">1 Vakf</h2>
+							<h2 className="text-center font-weight-bold text-uppercase">{t.naslov}</h2>
 						</div>
 
 						<h4 className="text-center" id="lekcija">
-							<strong>Stajanje prilikom učenja</strong>
+							<strong>{t.podnaslov}</strong>
 						</h4>
 						<hr />
 					</Col>
@@ -77,176 +444,25 @@ function L1() {
 					<MdZoomOutMap className="zoomIcon" onClick={handleShowL} />
 				</IconContext.Provider>
 
-				<Row>
-					<Col className="opisLekcije">
-						Prilikom učenja Kur'ana, učač može stati u sljedećim situacijama: ako je kraj ajeta, ako postoji
-						znak za stajanje i kada mu ponestane daha. To čini na sljedeći način:
-					</Col>
-				</Row>
-				<Row>
-					<Col className="opisLekcije my-3">
-						<strong>1.</strong> Kada riječ na kojoj staje završava <strong>kratkim vokalom</strong> E{' '}
-						<span className="arapski-lekcija "> ــــَـــ</span> , I{' '}
-						<span className="arapski-lekcija "> ــــِــ</span> , U{' '}
-						<span className="arapski-lekcija "> ــــُـــ </span>ili <strong>tenvinom</strong> IN{' '}
-						<span className="arapski-lekcija "> ــــٍــ </span> , UN{' '}
-						<span className="arapski-lekcija"> ـــٌـــ</span> , stat će kao da je na riječi{' '}
-						<strong>sukun</strong> <span className="arapski-lekcija "> ــــْـــ</span> , npr.:
-					</Col>
-				</Row>
-				<Row className="text-center reorder">
-					<Col>{PlayerRow(data, 'row1')}</Col>
-				</Row>
-				<Row>
-					<Col className="opisLekcije my-3">
-						<strong>2.</strong> Kada riječ završava <strong>tenvinom</strong> EN{' '}
-						<span className="arapski-lekcija "> ــــًــ</span> , stat će kao da je <strong>dugo</strong> A{' '}
-						<span className="arapski-lekcija "> ـــَـــ ا </span> , npr.:
-					</Col>
-				</Row>
-				<Row className="text-center reorder">
-					<Col>{PlayerRow(data, 'row2')}</Col>
-				</Row>
-				<Row>
-					<Col className="opisLekcije my-3">
-						<strong>3.</strong> Kada riječ završava <strong>dugim vokalom</strong> A{' '}
-						<span className="arapski-lekcija"> ــــَـــ ا </span> , <strong>dugim vokalom</strong> I{' '}
-						<span className="arapski-lekcija">ـــِــ ى</span> ili <strong>dugim vokalom</strong> U{' '}
-						<span className="arapski-lekcija">ـــُــ و</span> , stat će <u>bez ikakve promjene</u> , npr.:
-					</Col>
-				</Row>
-				<Row className="text-center ">
-					<Col>
-						{VjezbeRow(data, 'row3', 'broj1')}
-						{VjezbeRow(data, 'row3', 'broj2')}
-						{VjezbeRow(data, 'row3', 'broj3')}
-						{VjezbeRow(data, 'row3', 'broj4')}
-						{VjezbeRow(data, 'row3', 'broj5')}
-					</Col>
-				</Row>
-				<Row>
-					<Col className="opisLekcije my-3">
-						<strong>4.</strong> Kada riječ završava okruglim <strong>T</strong>{' '}
-						<span className="arapski-lekcija">(ة/ـة)</span> , stat će kao da je napisano slovo{' '}
-						<strong>H </strong>
-						<span className="arapski-lekcija">(ه)</span> , bez obzira koji je vokal ili tenvin napisan na
-						njemu, npr.:
-					</Col>
-				</Row>
-				<Row className="text-center reorder">
-					<Col>{PlayerRow(data, 'row4')}</Col>
-				</Row>
+				{lekcija}
+
 				<Row>
 					<Col className="opisLekcije my-3" id="tabela">
 						<IconContext.Provider value={{ size: '30px', style: { float: 'right' } }}>
 							<MdZoomOutMap className="zoomIcon" onClick={handleShowT} />
 						</IconContext.Provider>
-						<h3>Pregled u tabeli:</h3>
-						<Table className="tabela-opis text-center" bordered hover responsive>
-							<thead className="text-danger text-uppercase">
-								<tr>
-									<th>Kada riječ završava na</th>
-									<th>Stajemo</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>
-										E <span className="arapski-lekcija ">ــــَـــ</span> , I{' '}
-										<span className="arapski-lekcija "> ــــِــ</span> , U{' '}
-										<span className="arapski-lekcija"> ــــُـــ</span> , IN{' '}
-										<span className="arapski-lekcija"> ـــٍـــ </span> , UN{' '}
-										<span className="arapski-lekcija"> ـــٌــ</span>
-									</td>
-									<td>
-										kao da je sukun <span className="arapski-lekcija "> ـــْــ</span>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										EN <span className="arapski-lekcija "> ـــًــ</span>
-									</td>
-									<td>
-										kao da je dugo A
-										<br />
-										<span className="arapski-lekcija"> ــَــ ا</span>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										dugo A <span className="arapski-lekcija">ـــَــ ا</span> , dugo I{' '}
-										<span className="arapski lekcija">ـــِـ ى</span> , dugo U{' '}
-										<span className="arapski-lekcija">ـــُــ و</span>
-									</td>
-									<td>bez ikakve promjene</td>
-								</tr>
-								<tr>
-									<td>
-										okruglo T <span className="arapski-lekcija"> (ة/ـة)</span>
-									</td>
-									<td>
-										kao da je H <span className="arapski-lekcija"> (ه)</span>
-									</td>
-								</tr>
-							</tbody>
-						</Table>
+						<h3>{ui.tabelaNaslov}</h3>
+						{t.tabela}
 					</Col>
 				</Row>
 				<Modal show={showT} onHide={handleCloseT} backdrop="static" keyboard={false}>
 					<Modal.Header closeButton>
-						<Modal.Title>Pregled u tabeli:</Modal.Title>
+						<Modal.Title>{ui.tabelaNaslov}</Modal.Title>
 					</Modal.Header>
-					<Modal.Body className="custom-modal">
-						<Table className="tabela-opis text-center" bordered hover responsive>
-							<thead className="text-danger text-uppercase">
-								<tr>
-									<th>Kada riječ završava na</th>
-									<th>Stajemo</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>
-										E <span className="arapski-lekcija ">ــــَـــ</span> , I{' '}
-										<span className="arapski-lekcija "> ــــِــ</span> , U{' '}
-										<span className="arapski-lekcija"> ــــُـــ</span> , IN{' '}
-										<span className="arapski-lekcija"> ـــٍـــ </span> , UN{' '}
-										<span className="arapski-lekcija"> ـــٌــ</span>
-									</td>
-									<td>
-										kao da je sukun <span className="arapski-lekcija "> ـــْــ</span>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										EN <span className="arapski-lekcija "> ـــًــ</span>
-									</td>
-									<td>
-										kao da je dugo A <span className="arapski-lekcija"> ــَــ ا</span>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										dugo A <span className="arapski-lekcija">ـــَــ ا</span> , dugo I{' '}
-										<span className="arapski lekcija">ـــِـ ى</span> , dugo U{' '}
-										<span className="arapski-lekcija">ـــُــ و</span>
-									</td>
-									<td>bez ikakve promjene</td>
-								</tr>
-								<tr>
-									<td>
-										okruglo T <span className="arapski-lekcija"> (ة/ـة)</span>
-									</td>
-									<td>
-										kao da je H <span className="arapski-lekcija"> (ه)</span>
-									</td>
-								</tr>
-							</tbody>
-						</Table>
-					</Modal.Body>
+					<Modal.Body className="custom-modal">{t.tabela}</Modal.Body>
 					<Modal.Footer>
 						<Button variant="secondary" onClick={handleCloseT}>
-							Zatvori
+							{ui.zatvori}
 						</Button>
 					</Modal.Footer>
 				</Modal>
@@ -256,150 +472,20 @@ function L1() {
 							<MdZoomOutMap className="zoomIcon" onClick={handleShowZ} />
 						</IconContext.Provider>
 						<h3>
-							<strong>Znakovi za stajanje:</strong>
+							<strong>{t.znakoviNaslov}</strong>
 						</h3>
 						<br />
-						<p>
-							Iznad nekih riječi u Kur'anu nalaze se <strong>znakovi</strong> koji označavaju da li se na
-							toj riječi mora stati ili se ne smije, da li je bolje stati ili je bolje preći. Ti znakovi
-							su:
-						</p>
-						<br />
-						<Table className="tabela-opis text-center" bordered hover responsive>
-							<thead className="text-uppercase">
-								<tr>
-									<th className="text-danger">Mora stati</th>
-									<th>Bolje stati</th>
-									<th>Boje preći</th>
-									<th className="text-danger">Ne smije se stati</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>
-										<span className="arapski-lekcija">م</span>
-									</td>
-									<td>
-										<span className="arapski-lekcija"> قف ؛ قلي ؛ ج ؛ ط</span>
-									</td>
-									<td>
-										<span className="arapski-lekcija"> صلي ؛ ق ؛ ص ؛ ز</span>
-									</td>
-									<td>
-										<span className="arapski-lekcija"> لا</span>
-									</td>
-								</tr>
-							</tbody>
-						</Table>
-
-						<br />
-
-						<Table className="tabela-opis text-center" bordered hover responsive>
-							<thead className="text-uppercase">
-								<tr>
-									<th>Sekta</th>
-									<th>Tri tačkice</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>
-										<span className="arapski-lekcija"> سكتة ؛ س</span>
-										<br />
-										Pauzira se bez prekidanja daha.
-									</td>
-									<td>
-										<span className="arapski-lekcija"> رَيْبَۚۛ ف۪يهِۚۛ </span>
-										<br />
-										Ukoliko se pauzira na prvom znaku, onda je na drugom obavezno preći i obrnuto.
-									</td>
-								</tr>
-							</tbody>
-						</Table>
-
-						<br />
-
-						<p>
-							<strong>NAPOMENA</strong>: Znak <span className="arapski-lekcija"> قصر</span> ispod riječi
-							je znak da se vokal ispod kojeg se nalazi uči <u>kratko</u> , a{' '}
-							<span className="arapski-lekcija"> مد </span>je znak da se vokal uči <u>dugo</u>.
-						</p>
+						{t.znakovi}
 					</Col>
 				</Row>
 				<Modal show={showZ} onHide={handleCloseZ} backdrop="static" keyboard={false}>
 					<Modal.Header closeButton>
-						<Modal.Title>Znakovi za stajanje:</Modal.Title>
+						<Modal.Title>{t.znakoviNaslov}</Modal.Title>
 					</Modal.Header>
-					<Modal.Body className="custom-modal">
-						<p>
-							Iznad nekih riječi u Kur'anu nalaze se <strong>znakovi</strong> koji označavaju da li se na
-							toj riječi mora stati ili se ne smije, da li je bolje stati ili je bolje preći. Ti znakovi
-							su:
-						</p>
-						<br />
-						<Table className="tabela-opis text-center" bordered hover responsive>
-							<thead className="text-uppercase">
-								<tr>
-									<th className="text-danger">Mora stati</th>
-									<th>Bolje stati</th>
-									<th>Boje preći</th>
-									<th className="text-danger">Ne smije se stati</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>
-										<span className="arapski-lekcija">م</span>
-									</td>
-									<td>
-										<span className="arapski-lekcija"> قف ؛ قلي ؛ ج ؛ ط</span>
-									</td>
-									<td>
-										<span className="arapski-lekcija"> صلي ؛ ق ؛ ص ؛ ز</span>
-									</td>
-									<td>
-										<span className="arapski-lekcija"> لا</span>
-									</td>
-								</tr>
-							</tbody>
-						</Table>
-
-						<br />
-
-						<Table className="tabela-opis text-center" bordered hover responsive>
-							<thead className="text-uppercase">
-								<tr>
-									<th>Sekta</th>
-									<th>Tri tačkice</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>
-										<span className="arapski-lekcija"> سكتة ؛ س</span>
-										<br />
-										Pauzira se bez prekidanja daha.
-									</td>
-									<td>
-										<span className="arapski-lekcija"> رَيْبَۚۛ ف۪يهِۚۛ </span>
-										<br />
-										Ukoliko se pauzira na prvom znaku, onda je na drugom obavezno preći i obrnuto.
-									</td>
-								</tr>
-							</tbody>
-						</Table>
-
-						<br />
-
-						<p>
-							<strong>NAPOMENA</strong>: Znak <span className="arapski-lekcija"> قصر</span> ispod riječi
-							je znak da se vokal ispod kojeg se nalazi uči <u>kratko</u> , a{' '}
-							<span className="arapski-lekcija"> مد </span>je znak da se vokal uči <u>dugo</u>.
-						</p>
-					</Modal.Body>
+					<Modal.Body className="custom-modal">{t.znakovi}</Modal.Body>
 					<Modal.Footer>
 						<Button variant="secondary" onClick={handleCloseZ}>
-							Zatvori
+							{ui.zatvori}
 						</Button>
 					</Modal.Footer>
 				</Modal>
@@ -410,143 +496,82 @@ function L1() {
 				</Row>
 				<Modal show={showL} onHide={handleCloseL} backdrop="static" keyboard={false}>
 					<Modal.Header closeButton>
-						<Modal.Title>LEKCIJA</Modal.Title>
+						<Modal.Title>{ui.lekcija}</Modal.Title>
 					</Modal.Header>
-					<Modal.Body className="custom-modal">
-						<Row>
-							<Col className="opisLekcije">
-								Prilikom učenja Kur'ana, učač može stati u sljedećim situacijama: ako je kraj ajeta, ako
-								postoji znak za stajanje i kada mu ponestane daha. To čini na sljedeći način:
-							</Col>
-						</Row>
-						<Row>
-							<Col className="opisLekcije my-3">
-								<strong>1.</strong> Kada riječ na kojoj staje završava <strong>kratkim vokalom</strong>{' '}
-								E <span className="arapski-lekcija "> ــــَـــ</span> , I{' '}
-								<span className="arapski-lekcija "> ــــِــ</span> , U{' '}
-								<span className="arapski-lekcija "> ــــُـــ </span>ili <strong>tenvinom</strong> IN{' '}
-								<span className="arapski-lekcija "> ــــٍــ </span> , UN{' '}
-								<span className="arapski-lekcija"> ـــٌـــ</span> , stat će kao da je na riječi{' '}
-								<strong>sukun</strong> <span className="arapski-lekcija "> ــــْـــ</span> , npr.:
-							</Col>
-						</Row>
-						<Row className="text-center reorder">
-							<Col>{PlayerRow(data, 'row1')}</Col>
-						</Row>
-						<Row>
-							<Col className="opisLekcije my-3">
-								<strong>2.</strong> Kada riječ završava <strong>tenvinom</strong> EN{' '}
-								<span className="arapski-lekcija "> ــــًــ</span> , stat će kao da je{' '}
-								<strong>dugo</strong> A <span className="arapski-lekcija "> ـــَـــ ا </span> , npr.:
-							</Col>
-						</Row>
-						<Row className="text-center reorder">
-							<Col>{PlayerRow(data, 'row2')}</Col>
-						</Row>
-						<Row>
-							<Col className="opisLekcije my-3">
-								<strong>3.</strong> Kada riječ završava <strong>dugim vokalom</strong> A{' '}
-								<span className="arapski-lekcija"> ــــَـــ ا </span> , <strong>dugim vokalom</strong> I{' '}
-								<span className="arapski-lekcija">ـــِــ ى</span> ili <strong>dugim vokalom</strong> U{' '}
-								<span className="arapski-lekcija">ـــُــ و</span> , stat će <u>bez ikakve promjene</u> ,
-								npr.:
-							</Col>
-						</Row>
-						<Row className="text-center ">
-							<Col>
-								{VjezbeRow(data, 'row3', 'broj1')}
-								{VjezbeRow(data, 'row3', 'broj2')}
-								{VjezbeRow(data, 'row3', 'broj3')}
-								{VjezbeRow(data, 'row3', 'broj4')}
-								{VjezbeRow(data, 'row3', 'broj5')}
-							</Col>
-						</Row>
-						<Row>
-							<Col className="opisLekcije my-3">
-								<strong>4.</strong> Kada riječ završava okruglim <strong>T</strong>{' '}
-								<span className="arapski-lekcija">(ة/ـة)</span> , stat će kao da je napisano slovo{' '}
-								<strong>H </strong>
-								<span className="arapski-lekcija">(ه)</span> , bez obzira koji je vokal ili tenvin
-								napisan na njemu, npr.:
-							</Col>
-						</Row>
-						<Row className="text-center reorder">
-							<Col>{PlayerRow(data, 'row4')}</Col>
-						</Row>
-					</Modal.Body>
+					<Modal.Body className="custom-modal">{lekcija}</Modal.Body>
 					<Modal.Footer>
 						<Button variant="secondary" onClick={handleCloseL}>
-							Zatvori
+							{ui.zatvori}
 						</Button>
 					</Modal.Footer>
 				</Modal>
 				<section className="vjezba-panel">
-				<h2 className="text-center" id="vjezba">
-					<strong>VJEŽBA</strong>
-				</h2>
-				<hr />
-				<VjezbaToolbar />
-				<IconContext.Provider value={{ size: '30px', style: { float: 'right' } }}>
-					<MdZoomOutMap className="zoomIcon" onClick={handleShow} />
-				</IconContext.Provider>
-				<Row>
-					<Col>
-						<br />
-					</Col>
-				</Row>
-				<Row id="vjezba" className="text-center">
-					<Col className="mobile-row rtl">
-						<span style={{ marginLeft: '25px' }}> {VjezbeRow(data, 'vjezba', 'red18')}</span>
-						<span>{VjezbeRow(data, 'vjezba', 'red19')}</span>
-					</Col>
-				</Row>
-				<Row className="text-center">
-					<Col className="mobile-row">
-						<span>
-							<span className="tacka">{VjezbeRow(data, 'vjezba', 'red20')} ۞</span>
-						</span>
-						<span>
-							<span className="tacka">{VjezbeRow(data, 'vjezba', 'red21')} ۞</span>
-						</span>
-					</Col>
-				</Row>
-				<Row className="text-center">
-					<Col className="mobile-row">
-						<span className="mobile-row">
-							<span className="tacka">{VjezbeRow(data, 'vjezba', 'red22')} ۞</span>
-						</span>
-						<span className="mobile-row">{VjezbeRow(data, 'vjezba', 'red23')}</span>
-						<span>
-							<span className="tacka">{VjezbeRow(data, 'vjezba', 'red24')} ۞</span>
-						</span>
-					</Col>
-				</Row>
-				<Row className="text-center">
-					<Col className="mobile-row">
-						<span>
-							<span className="tacka">{VjezbeRow(data, 'vjezba', 'red25')} ۞</span>
-						</span>
-						<span>
-							<span className="tacka">{VjezbeRow(data, 'vjezba', 'red26')} ۞</span>
-						</span>
-					</Col>
-				</Row>
-				<Row className="text-center">
-					<Col className="mobile-row">
-						<span>
-							<span className="tacka">{VjezbeRow(data, 'vjezba', 'red28')} ۞</span>
-						</span>
-						<span>
-							<span className="tacka">{VjezbeRow(data, 'vjezba', 'red29')} ۞</span>
-						</span>
-						<span className="tacka">{VjezbeRow(data, 'vjezba', 'red30')} ۞</span>
-						<span className="tacka">{VjezbeRow(data, 'vjezba', 'red31')} ۞</span>
-					</Col>
-				</Row>
+					<h2 className="text-center" id="vjezba">
+						<strong>{ui.vjezba}</strong>
+					</h2>
+					<hr />
+					<VjezbaToolbar />
+					<IconContext.Provider value={{ size: '30px', style: { float: 'right' } }}>
+						<MdZoomOutMap className="zoomIcon" onClick={handleShow} />
+					</IconContext.Provider>
+					<Row>
+						<Col>
+							<br />
+						</Col>
+					</Row>
+					<Row id="vjezba" className="text-center">
+						<Col className="mobile-row rtl">
+							<span style={{ marginLeft: '25px' }}> {VjezbeRow(data, 'vjezba', 'red18')}</span>
+							<span>{VjezbeRow(data, 'vjezba', 'red19')}</span>
+						</Col>
+					</Row>
+					<Row className="text-center">
+						<Col className="mobile-row">
+							<span>
+								<span className="tacka">{VjezbeRow(data, 'vjezba', 'red20')} ۞</span>
+							</span>
+							<span>
+								<span className="tacka">{VjezbeRow(data, 'vjezba', 'red21')} ۞</span>
+							</span>
+						</Col>
+					</Row>
+					<Row className="text-center">
+						<Col className="mobile-row">
+							<span className="mobile-row">
+								<span className="tacka">{VjezbeRow(data, 'vjezba', 'red22')} ۞</span>
+							</span>
+							<span className="mobile-row">{VjezbeRow(data, 'vjezba', 'red23')}</span>
+							<span>
+								<span className="tacka">{VjezbeRow(data, 'vjezba', 'red24')} ۞</span>
+							</span>
+						</Col>
+					</Row>
+					<Row className="text-center">
+						<Col className="mobile-row">
+							<span>
+								<span className="tacka">{VjezbeRow(data, 'vjezba', 'red25')} ۞</span>
+							</span>
+							<span>
+								<span className="tacka">{VjezbeRow(data, 'vjezba', 'red26')} ۞</span>
+							</span>
+						</Col>
+					</Row>
+					<Row className="text-center">
+						<Col className="mobile-row">
+							<span>
+								<span className="tacka">{VjezbeRow(data, 'vjezba', 'red28')} ۞</span>
+							</span>
+							<span>
+								<span className="tacka">{VjezbeRow(data, 'vjezba', 'red29')} ۞</span>
+							</span>
+							<span className="tacka">{VjezbeRow(data, 'vjezba', 'red30')} ۞</span>
+							<span className="tacka">{VjezbeRow(data, 'vjezba', 'red31')} ۞</span>
+						</Col>
+					</Row>
 				</section>
 				<Modal show={show} onHide={handleClose} backdrop="static" keyboard={false}>
 					<Modal.Header closeButton>
-						<Modal.Title>VJEŽBA</Modal.Title>
+						<Modal.Title>{ui.vjezba}</Modal.Title>
 					</Modal.Header>
 					<Modal.Body className="custom-modal">
 						<Row>
@@ -606,7 +631,7 @@ function L1() {
 					</Modal.Body>
 					<Modal.Footer>
 						<Button variant="secondary" onClick={handleClose}>
-							Zatvori
+							{ui.zatvori}
 						</Button>
 					</Modal.Footer>
 				</Modal>

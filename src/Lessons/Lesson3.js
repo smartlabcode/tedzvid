@@ -10,12 +10,220 @@ import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import { MdZoomOutMap } from 'react-icons/md';
 import { IconContext } from 'react-icons';
+import { useLang, DEFAULT_LANG } from '../i18n/LanguageContext';
+import { useUI } from '../i18n/ui';
 
 // Bootstrap
 import { Row, Col, Container } from 'react-bootstrap';
 
 // Other
 import '../App.scss';
+
+/* Tekst lekcije po jezicima. `P` pušta red primjera, `V` pojedinu riječ iz reda. */
+const TXT = {
+	bs: {
+		naziv: 'LAFZATULLAH',
+		naslov: '3 LAFZATULLAH',
+		podnaslov: (
+			<React.Fragment>
+				<strong>
+					Izgovaranje riječi Allah <span className="arapski-lekcija"> اللّٰه </span>
+				</strong>
+
+			</React.Fragment>
+		),
+		lekcija: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Kada prije riječi Allah <span className="arapski-lekcija"> اللّٰه </span>dođe{' '}
+						<strong>vokal</strong> E <span className="arapski-lekcija"> ــــَـــ </span>ili{' '}
+						<strong>vokal</strong> U
+						<span className="arapski-lekcija">ــــُـــ </span>, riječ Allah
+						<span className="arapski-lekcija">اللّٰه </span>se uči <u>krupno</u>
+						, npr.:
+					</Col>
+				</Row>
+				<Row className="text-center  reorder-basic ">
+					<Col>{P('row1')}</Col>
+				</Row>
+				<Row className="text-center  ">
+					<Col>{V('multirow', 'row2')}</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije">
+						Kada prije riječi Allah
+						<span className="arapski-lekcija"> اللّٰه</span> dođe <strong>vokal</strong> I
+						<span className="arapski-lekcija"> ــــِــ</span>, riječ Allah
+						<span className="arapski-lekcija"> اللّٰه</span> se uči <u>tanko</u>
+						, npr.:
+					</Col>
+				</Row>
+
+				<Row className="text-center  reorder-basic ">
+					<Col>{P('row3')}</Col>
+				</Row>
+
+				<Row className="text-center  reorder-basic rtl">
+					<Col>{P('row4')}</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+			</React.Fragment>
+		),
+		lekcijaModal: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Kada prije riječi Allah <span className="arapski-lekcija"> اللّٰه </span>dođe{' '}
+						<strong>vokal</strong> E <span className="arapski-lekcija"> ــــَـــ </span>ili{' '}
+						<strong>vokal</strong> U
+						<span className="arapski-lekcija">ــــُـــ </span>, riječ Allah
+						<span className="arapski-lekcija">اللّٰه </span>se uči <u>krupno</u>
+						, npr.:
+					</Col>
+				</Row>
+				<Row className="text-center  reorder-basic ">
+					<Col>{P('row1')}</Col>
+				</Row>
+				<Row className="text-center  ">
+					<Col>{V('multirow', 'row2')}</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije">
+						Kada prije riječi Allah
+						<span className="arapski-lekcija"> اللّٰه</span> dođe <strong>vokal</strong> I
+						<span className="arapski-lekcija"> ــــِــ</span>, riječ Allah
+						<span className="arapski-lekcija"> اللّٰه</span> se uči <u>tanko</u>
+						, npr.:
+					</Col>
+				</Row>
+
+				<Row className="text-center  reorder-basic ">
+					<Col>{P('row3')}</Col>
+				</Row>
+
+				<Row className="text-center  reorder-basic rtl">
+					<Col>{P('row4')}</Col>
+				</Row>
+
+			</React.Fragment>
+		)
+	},
+
+	en: {
+		naziv: 'LAFDHATULLAH',
+		naslov: '3 LAFDHATULLAH',
+		podnaslov: (
+			<React.Fragment>
+				<strong>
+					Pronouncing the word Allah <span className="arapski-lekcija"> اللّٰه </span>
+				</strong>
+			</React.Fragment>
+		),
+		lekcija: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						When the word Allah <span className="arapski-lekcija"> اللّٰه </span>is preceded by the{' '}
+						<strong>vowel</strong> A <span className="arapski-lekcija"> ــــَـــ </span>or the{' '}
+						<strong>vowel</strong> U
+						<span className="arapski-lekcija">ــــُـــ </span>, the word Allah
+						<span className="arapski-lekcija">اللّٰه </span>is recited <u>heavy</u>
+						, e.g.:
+					</Col>
+				</Row>
+				<Row className="text-center  reorder-basic ">
+					<Col>{P('row1')}</Col>
+				</Row>
+				<Row className="text-center  ">
+					<Col>{V('multirow', 'row2')}</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije">
+						When the word Allah
+						<span className="arapski-lekcija"> اللّٰه</span> is preceded by the <strong>vowel</strong> I
+						<span className="arapski-lekcija"> ــــِــ</span>, the word Allah
+						<span className="arapski-lekcija"> اللّٰه</span> is recited <u>light</u>
+						, e.g.:
+					</Col>
+				</Row>
+
+				<Row className="text-center  reorder-basic ">
+					<Col>{P('row3')}</Col>
+				</Row>
+
+				<Row className="text-center  reorder-basic rtl">
+					<Col>{P('row4')}</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		),
+		lekcijaModal: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						When the word Allah <span className="arapski-lekcija"> اللّٰه </span>is preceded by the{' '}
+						<strong>vowel</strong> A <span className="arapski-lekcija"> ــــَـــ </span>or the{' '}
+						<strong>vowel</strong> U
+						<span className="arapski-lekcija">ــــُـــ </span>, the word Allah
+						<span className="arapski-lekcija">اللّٰه </span>is recited <u>heavy</u>
+						, e.g.:
+					</Col>
+				</Row>
+				<Row className="text-center  reorder-basic ">
+					<Col>{P('row1')}</Col>
+				</Row>
+				<Row className="text-center  ">
+					<Col>{V('multirow', 'row2')}</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije">
+						When the word Allah
+						<span className="arapski-lekcija"> اللّٰه</span> is preceded by the <strong>vowel</strong> I
+						<span className="arapski-lekcija"> ــــِــ</span>, the word Allah
+						<span className="arapski-lekcija"> اللّٰه</span> is recited <u>light</u>
+						, e.g.:
+					</Col>
+				</Row>
+
+				<Row className="text-center  reorder-basic ">
+					<Col>{P('row3')}</Col>
+				</Row>
+
+				<Row className="text-center  reorder-basic rtl">
+					<Col>{P('row4')}</Col>
+				</Row>
+			</React.Fragment>
+		)
+	}
+};
 
 function scrollToHash() {
 	/* Obtain hash from current location (and trim off leading #) */
@@ -33,6 +241,12 @@ function scrollToHash() {
 }
 
 function L3() {
+	const { lang } = useLang();
+	const ui = useUI();
+	const t = TXT[lang] || TXT[DEFAULT_LANG];
+	const R = (row) => PlayerRow(data, row);
+	const W = (main, row) => VjezbeRow(data, main, row);
+
 	const [ show, setShow ] = React.useState(false);
 	const [ showL, setShowL ] = React.useState(false);
 
@@ -47,7 +261,7 @@ function L3() {
 	}, []);
 	return (
 		<React.Fragment>
-			<LekcijaMenu broj="3" naziv="LAFZATULLAH" />
+			<LekcijaMenu broj="3" naziv={t.naziv} />
 			<Container>
 				<Row>
 					<Col>
@@ -55,15 +269,9 @@ function L3() {
 							<center>
 								<img src={process.env.PUBLIC_URL + '/assets/svg/Group 61.svg'} alt="Group 61" />
 							</center>
-							<h2 className="text-center font-weight-bold text-uppercase" id="lekcija">
-								3 LAFZATULLAH
-							</h2>
+							<h2 className="text-center font-weight-bold text-uppercase" id="lekcija">{t.naslov}</h2>
 						</div>
-						<h4 className="text-center">
-							<strong>
-								Izgovaranje riječi Allah <span className="arapski-lekcija"> اللّٰه </span>
-							</strong>
-						</h4>
+						<h4 className="text-center">{t.podnaslov}</h4>
 						<hr />
 					</Col>
 				</Row>
@@ -75,102 +283,24 @@ function L3() {
 				<IconContext.Provider value={{ size: '30px', style: { float: 'right' } }}>
 					<MdZoomOutMap className="zoomIcon" onClick={handleShowL} />
 				</IconContext.Provider>
-				<Row>
-					<Col className="opisLekcije">
-						Kada prije riječi Allah <span className="arapski-lekcija"> اللّٰه </span>dođe{' '}
-						<strong>vokal</strong> E <span className="arapski-lekcija"> ــــَـــ </span>ili{' '}
-						<strong>vokal</strong> U
-						<span className="arapski-lekcija">ــــُـــ </span>, riječ Allah
-						<span className="arapski-lekcija">اللّٰه </span>se uči <u>krupno</u>
-						, npr.:
-					</Col>
-				</Row>
-				<Row className="text-center  reorder-basic ">
-					<Col>{PlayerRow(data, 'row1')}</Col>
-				</Row>
-				<Row className="text-center  ">
-					<Col>{VjezbeRow(data, 'multirow', 'row2')}</Col>
-				</Row>
 
-				<Row>
-					<Col className="opisLekcije">
-						Kada prije riječi Allah
-						<span className="arapski-lekcija"> اللّٰه</span> dođe <strong>vokal</strong> I
-						<span className="arapski-lekcija"> ــــِــ</span>, riječ Allah
-						<span className="arapski-lekcija"> اللّٰه</span> se uči <u>tanko</u>
-						, npr.:
-					</Col>
-				</Row>
+				{t.lekcija(R, W)}
 
-				<Row className="text-center  reorder-basic ">
-					<Col>{PlayerRow(data, 'row3')}</Col>
-				</Row>
-
-				<Row className="text-center  reorder-basic rtl">
-					<Col>{PlayerRow(data, 'row4')}</Col>
-				</Row>
-
-				<Row>
-					<Col>
-						<br />
-					</Col>
-				</Row>
-
-				<Row>
-					<Col>
-						<br />
-					</Col>
-				</Row>
-				<Modal show={showL} onHide={handleCloseL} backdrop="static" keyboard={false}>
+<Modal show={showL} onHide={handleCloseL} backdrop="static" keyboard={false}>
 					<Modal.Header closeButton>
-						<Modal.Title>LEKCIJA</Modal.Title>
+						<Modal.Title>{ui.lekcija}</Modal.Title>
 					</Modal.Header>
-					<Modal.Body className="custom-modal">
-						<Row>
-							<Col className="opisLekcije">
-								Kada prije riječi Allah <span className="arapski-lekcija"> اللّٰه </span>dođe{' '}
-								<strong>vokal</strong> E <span className="arapski-lekcija"> ــــَـــ </span>ili{' '}
-								<strong>vokal</strong> U
-								<span className="arapski-lekcija">ــــُـــ </span>, riječ Allah
-								<span className="arapski-lekcija">اللّٰه </span>se uči <u>krupno</u>
-								, npr.:
-							</Col>
-						</Row>
-						<Row className="text-center  reorder-basic ">
-							<Col>{PlayerRow(data, 'row1')}</Col>
-						</Row>
-						<Row className="text-center  ">
-							<Col>{VjezbeRow(data, 'multirow', 'row2')}</Col>
-						</Row>
-
-						<Row>
-							<Col className="opisLekcije">
-								Kada prije riječi Allah
-								<span className="arapski-lekcija"> اللّٰه</span> dođe <strong>vokal</strong> I
-								<span className="arapski-lekcija"> ــــِــ</span>, riječ Allah
-								<span className="arapski-lekcija"> اللّٰه</span> se uči <u>tanko</u>
-								, npr.:
-							</Col>
-						</Row>
-
-						<Row className="text-center  reorder-basic ">
-							<Col>{PlayerRow(data, 'row3')}</Col>
-						</Row>
-
-						<Row className="text-center  reorder-basic rtl">
-							<Col>{PlayerRow(data, 'row4')}</Col>
-						</Row>
-					</Modal.Body>
+					<Modal.Body className="custom-modal">{t.lekcijaModal(R, W)}</Modal.Body>
 					<Modal.Footer>
 						<Button variant="secondary" onClick={handleCloseL}>
-							Zatvori
+							{ui.zatvori}
 						</Button>
 					</Modal.Footer>
 				</Modal>
 
 				<section className="vjezba-panel">
 				<h2 className="text-center" id="vjezba">
-					<strong>VJEŽBA</strong>
+					<strong>{ui.vjezba}</strong>
 				</h2>
 				<hr />
 				<VjezbaToolbar />
@@ -218,7 +348,7 @@ function L3() {
 				</section>
 				<Modal show={show} onHide={handleClose} backdrop="static" keyboard={false}>
 					<Modal.Header closeButton>
-						<Modal.Title>VJEŽBA</Modal.Title>
+						<Modal.Title>{ui.vjezba}</Modal.Title>
 					</Modal.Header>
 					<Modal.Body className="custom-modal">
 						<Row className="text-center">
@@ -257,7 +387,7 @@ function L3() {
 					</Modal.Body>
 					<Modal.Footer>
 						<Button variant="secondary" onClick={handleClose}>
-							Zatvori
+							{ui.zatvori}
 						</Button>
 					</Modal.Footer>
 				</Modal>

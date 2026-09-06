@@ -10,12 +10,211 @@ import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import { MdZoomOutMap } from 'react-icons/md';
 import { IconContext } from 'react-icons';
+import { useLang, DEFAULT_LANG } from '../i18n/LanguageContext';
+import { useUI } from '../i18n/ui';
 
 // Bootstrap
 import { Row, Col, Container } from 'react-bootstrap';
 
 // Other
 import '../App.scss';
+
+/* Tekst lekcije po jezicima. `P` pušta red primjera, `V` pojedinu riječ iz reda. */
+const TXT = {
+	bs: {
+		naziv: 'MEDD LAZIM',
+		naslov: '20 MEDD LAZIM',
+		podnaslov: (
+			<React.Fragment>
+				<strong>Stalna dužina</strong>
+
+			</React.Fragment>
+		),
+		lekcija: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Kada poslije <strong>dugog vokala</strong> A <span className="arapski-lekcija">ـــَــ ا</span> ,
+						I
+						<span className="arapski-lekcija"> ـــِـ ى </span>, U{' '}
+						<span className="arapski-lekcija">ـــُــ و</span> dođe harf sa{' '}
+						<strong>
+							stalnim sukunom <span className="arapski-lekcija"> ـــْــ </span>
+						</strong>{' '}
+						<strong>
+							ili tešdidom <span className="arapski-lekcija"> ـــّــ </span>
+						</strong>
+						, bit će medd lazim. Traje obavezno 6 hareketa, npr.:
+						{P('row1')}
+					</Col>
+				</Row>
+
+				<Row className="text-center  reorder">
+					<Col style={{ flexWrap: 'wrap-reverse' }}>{P('row2')}</Col>
+				</Row>
+				<Row className="text-center  reorder-basic-display-after rtl">
+					<Col>{P('row3')}</Col>
+				</Row>
+
+				<Row className="text-center  ">
+					<Col>{P('row4')}</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+			</React.Fragment>
+		),
+		lekcijaModal: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Kada poslije <strong>dugog vokala</strong> A{' '}
+						<span className="arapski-lekcija">ـــَــ ا</span> , I
+						<span className="arapski-lekcija"> ـــِـ ى </span>, U{' '}
+						<span className="arapski-lekcija">ـــُــ و</span> dođe harf sa{' '}
+						<strong>
+							stalnim sukunom <span className="arapski-lekcija"> ـــْــ </span>
+						</strong>{' '}
+						<strong>
+							ili tešdidom <span className="arapski-lekcija"> ـــّــ </span>
+						</strong>
+						, bit će medd lazim. Traje obavezno 6 hareketa, npr.:
+						{P('row1')}
+					</Col>
+				</Row>
+
+				<Row className="text-center  reorder">
+					<Col style={{ flexWrap: 'wrap-reverse' }}>{P('row2')}</Col>
+				</Row>
+				<Row className="text-center  reorder-basic-display-after rtl">
+					<Col>{P('row3')}</Col>
+				</Row>
+
+				<Row className="text-center  ">
+					<Col>{P('row4')}</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+			</React.Fragment>
+		)
+	},
+
+	en: {
+		naziv: 'MADD LAZIM',
+		naslov: '20 MADD LAZIM',
+		podnaslov: (
+			<React.Fragment>
+				<strong>Obligatory prolongation</strong>
+			</React.Fragment>
+		),
+		lekcija: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						When the <strong>long vowel</strong> A <span className="arapski-lekcija">ـــَــ ا</span> , I
+						<span className="arapski-lekcija"> ـــِـ ى </span>, U{' '}
+						<span className="arapski-lekcija">ـــُــ و</span> is followed by a letter with a{' '}
+						<strong>
+							permanent sukun <span className="arapski-lekcija"> ـــْــ </span>
+						</strong>{' '}
+						<strong>
+							or a tashdeed <span className="arapski-lekcija"> ـــّــ </span>
+						</strong>
+						, it is madd lazim. It must last 6 harakas, e.g.:
+						{P('row1')}
+					</Col>
+				</Row>
+
+				<Row className="text-center  reorder">
+					<Col style={{ flexWrap: 'wrap-reverse' }}>{P('row2')}</Col>
+				</Row>
+				<Row className="text-center  reorder-basic-display-after rtl">
+					<Col>{P('row3')}</Col>
+				</Row>
+
+				<Row className="text-center  ">
+					<Col>{P('row4')}</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		),
+		lekcijaModal: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						When the <strong>long vowel</strong> A{' '}
+						<span className="arapski-lekcija">ـــَــ ا</span> , I
+						<span className="arapski-lekcija"> ـــِـ ى </span>, U{' '}
+						<span className="arapski-lekcija">ـــُــ و</span> is followed by a letter with a{' '}
+						<strong>
+							permanent sukun <span className="arapski-lekcija"> ـــْــ </span>
+						</strong>{' '}
+						<strong>
+							or a tashdeed <span className="arapski-lekcija"> ـــّــ </span>
+						</strong>
+						, it is madd lazim. It must last 6 harakas, e.g.:
+						{P('row1')}
+					</Col>
+				</Row>
+
+				<Row className="text-center  reorder">
+					<Col style={{ flexWrap: 'wrap-reverse' }}>{P('row2')}</Col>
+				</Row>
+				<Row className="text-center  reorder-basic-display-after rtl">
+					<Col>{P('row3')}</Col>
+				</Row>
+
+				<Row className="text-center  ">
+					<Col>{P('row4')}</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		)
+	}
+};
 
 function scrollToHash() {
 	/* Obtain hash from current location (and trim off leading #) */
@@ -33,6 +232,12 @@ function scrollToHash() {
 }
 
 function L20() {
+	const { lang } = useLang();
+	const ui = useUI();
+	const t = TXT[lang] || TXT[DEFAULT_LANG];
+	const R = (row) => PlayerRow(data, row);
+	const W = (main, row) => VjezbeRow(data, main, row);
+
 	const [ show, setShow ] = React.useState(false);
 	const [ showL, setShowL ] = React.useState(false);
 
@@ -46,7 +251,7 @@ function L20() {
 	}, []);
 	return (
 		<React.Fragment>
-			<LekcijaMenu broj="20" naziv="MEDD LAZIM" />
+			<LekcijaMenu broj="20" naziv={t.naziv} />
 			<Container>
 				<Row>
 					<Col>
@@ -54,13 +259,9 @@ function L20() {
 							<center>
 								<img src={process.env.PUBLIC_URL + '/assets/svg/Group 61.svg'} alt="Group 61" />
 							</center>
-							<h2 className="text-center font-weight-bold text-uppercase" id="lekcija">
-								20 MEDD LAZIM
-							</h2>
+							<h2 className="text-center font-weight-bold text-uppercase" id="lekcija">{t.naslov}</h2>
 						</div>
-						<h4 className="text-center">
-							<strong>Stalna dužina</strong>
-						</h4>
+						<h4 className="text-center">{t.podnaslov}</h4>
 					</Col>
 				</Row>
 				<hr />
@@ -73,99 +274,23 @@ function L20() {
 				<IconContext.Provider value={{ size: '30px', style: { float: 'right' } }}>
 					<MdZoomOutMap className="zoomIcon" onClick={handleShowL} />
 				</IconContext.Provider>
-				<Row>
-					<Col className="opisLekcije">
-						Kada poslije <strong>dugog vokala</strong> A <span className="arapski-lekcija">ـــَــ ا</span> ,
-						I
-						<span className="arapski-lekcija"> ـــِـ ى </span>, U{' '}
-						<span className="arapski-lekcija">ـــُــ و</span> dođe harf sa{' '}
-						<strong>
-							stalnim sukunom <span className="arapski-lekcija"> ـــْــ </span>
-						</strong>{' '}
-						<strong>
-							ili tešdidom <span className="arapski-lekcija"> ـــّــ </span>
-						</strong>
-						, bit će medd lazim. Traje obavezno 6 hareketa, npr.:
-						{PlayerRow(data, 'row1')}
-					</Col>
-				</Row>
 
-				<Row className="text-center  reorder">
-					<Col style={{ flexWrap: 'wrap-reverse' }}>{PlayerRow(data, 'row2')}</Col>
-				</Row>
-				<Row className="text-center  reorder-basic-display-after rtl">
-					<Col>{PlayerRow(data, 'row3')}</Col>
-				</Row>
+				{t.lekcija(R, W)}
 
-				<Row className="text-center  ">
-					<Col>{PlayerRow(data, 'row4')}</Col>
-				</Row>
-
-				<Row>
-					<Col>
-						<br />
-					</Col>
-				</Row>
-
-				<Row>
-					<Col>
-						<br />
-					</Col>
-				</Row>
-				<Modal show={showL} onHide={handleCloseL} backdrop="static" keyboard={false}>
+<Modal show={showL} onHide={handleCloseL} backdrop="static" keyboard={false}>
 					<Modal.Header closeButton>
-						<Modal.Title>LEKCIJA</Modal.Title>
+						<Modal.Title>{ui.lekcija}</Modal.Title>
 					</Modal.Header>
-					<Modal.Body className="custom-modal">
-						<Row>
-							<Col className="opisLekcije">
-								Kada poslije <strong>dugog vokala</strong> A{' '}
-								<span className="arapski-lekcija">ـــَــ ا</span> , I
-								<span className="arapski-lekcija"> ـــِـ ى </span>, U{' '}
-								<span className="arapski-lekcija">ـــُــ و</span> dođe harf sa{' '}
-								<strong>
-									stalnim sukunom <span className="arapski-lekcija"> ـــْــ </span>
-								</strong>{' '}
-								<strong>
-									ili tešdidom <span className="arapski-lekcija"> ـــّــ </span>
-								</strong>
-								, bit će medd lazim. Traje obavezno 6 hareketa, npr.:
-								{PlayerRow(data, 'row1')}
-							</Col>
-						</Row>
-
-						<Row className="text-center  reorder">
-							<Col style={{ flexWrap: 'wrap-reverse' }}>{PlayerRow(data, 'row2')}</Col>
-						</Row>
-						<Row className="text-center  reorder-basic-display-after rtl">
-							<Col>{PlayerRow(data, 'row3')}</Col>
-						</Row>
-
-						<Row className="text-center  ">
-							<Col>{PlayerRow(data, 'row4')}</Col>
-						</Row>
-
-						<Row>
-							<Col>
-								<br />
-							</Col>
-						</Row>
-
-						<Row>
-							<Col>
-								<br />
-							</Col>
-						</Row>
-					</Modal.Body>
+					<Modal.Body className="custom-modal">{t.lekcijaModal(R, W)}</Modal.Body>
 					<Modal.Footer>
 						<Button variant="secondary" onClick={handleCloseL}>
-							Zatvori
+							{ui.zatvori}
 						</Button>
 					</Modal.Footer>
 				</Modal>
 				<section className="vjezba-panel">
 				<h2 className="text-center" id="vjezba">
-					<strong>VJEŽBA</strong>
+					<strong>{ui.vjezba}</strong>
 				</h2>
 				<hr />
 				<VjezbaToolbar />
@@ -211,7 +336,7 @@ function L20() {
 				</section>
 				<Modal show={show} onHide={handleClose} backdrop="static" keyboard={false}>
 					<Modal.Header closeButton>
-						<Modal.Title>VJEŽBA</Modal.Title>
+						<Modal.Title>{ui.vjezba}</Modal.Title>
 					</Modal.Header>
 					<Modal.Body className="custom-modal">
 						<Row className="text-center">
@@ -247,7 +372,7 @@ function L20() {
 					</Modal.Body>
 					<Modal.Footer>
 						<Button variant="secondary" onClick={handleClose}>
-							Zatvori
+							{ui.zatvori}
 						</Button>
 					</Modal.Footer>
 				</Modal>

@@ -6,6 +6,20 @@ export const DEFAULT_LANG = 'bs';
 
 const STORAGE_KEY = 'tedzvid-lang';
 
+/* Naslov i opis stranice (<title>, meta description) po jeziku */
+const META = {
+	bs: {
+		title: 'Tedžvid.ba – Uči tedžvid jednostavno, interaktivno, korak po korak',
+		description:
+			'Tedzvid.ba – interaktivni priručnik za učenje tedžvidskih pravila. Jednostavno, interaktivno, korak po korak – za djecu i odrasle, početnike i naprednije učače.'
+	},
+	en: {
+		title: 'Tedzvid.ba – Learn tajweed simply, interactively, step by step',
+		description:
+			'Tedzvid.ba – an interactive handbook for learning the rules of tajweed. Simple, interactive, step by step – for children and adults, beginners and advanced reciters.'
+	}
+};
+
 const LanguageContext = createContext({ lang: DEFAULT_LANG, setLang: () => {} });
 
 /* ?lang=en u URL-u ima prednost (dijeljivi linkovi), zatim localStorage, pa jezik preglednika. */
@@ -30,7 +44,11 @@ export function LanguageProvider({ children }) {
 
 	useEffect(
 		() => {
+			const meta = META[lang] || META[DEFAULT_LANG];
 			document.documentElement.lang = lang;
+			document.title = meta.title;
+			const desc = document.querySelector('meta[name="description"]');
+			if (desc) desc.setAttribute('content', meta.description);
 			try {
 				window.localStorage.setItem(STORAGE_KEY, lang);
 			} catch (e) {}

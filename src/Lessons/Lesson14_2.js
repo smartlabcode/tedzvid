@@ -10,12 +10,306 @@ import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import { MdZoomOutMap } from 'react-icons/md';
 import { IconContext } from 'react-icons';
+import { useLang, DEFAULT_LANG } from '../i18n/LanguageContext';
+import { useUI } from '../i18n/ui';
 
 // Bootstrap
 import { Row, Col, Container } from 'react-bootstrap';
 
 // Other
 import '../App.scss';
+
+/* Tekst lekcije po jezicima. `P` pušta red primjera, `V` pojedinu riječ iz reda. */
+const TXT = {
+	bs: {
+		naziv: 'HUKMURRA',
+		lekcija: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Harf<strong> R </strong>
+						<span className="arapski-lekcija">(ر)</span> se uči <u>tanko</u> u sljedećim situacijama:
+					</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije">
+						<strong>1.</strong> kada je harf<strong> R </strong>sa <strong>vokalom</strong> I ({' '}
+						{P('row9')} ), npr.: <br />
+						{P('row8')}
+					</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije">
+						<strong>2.</strong> kada je harf<strong> R </strong>sa <strong>sukunom</strong>, a prije njeg
+						harf sa <strong>vokalom</strong> I (
+						<span className="arapski-lekcija" style={{ color: 'red' }}>
+							ــــِـــ رْ{' '}
+						</span>
+						), npr.:
+						<br />
+						{P('row10')}
+					</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije">
+						<strong>3.</strong> kada je harf<strong> R </strong>sa <strong>sukunom</strong>, prije njeg harf
+						sa <strong>sukunom</strong>, a prije toga harf sa <strong>vokalom</strong> I (
+						<span className="arapski-lekcija" style={{ color: 'red' }}>
+							{' '}
+							ــِـ ــْـ رْ{' '}
+						</span>
+						), npr.:<br />
+						{P('row11')}
+					</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije">
+						<strong>4.</strong> kada je harf<strong> R </strong>sa <strong>sukunom</strong>, a prije njeg
+						harf <strong>J</strong> također sa <strong>sukunom</strong>, a prije toga harf sa{' '}
+						<strong>vokalom</strong> E (
+						<span className="arapski-lekcija" style={{ color: 'red' }}>
+							{' '}
+							ــــَـــ يْـــرْ{' '}
+						</span>
+						), npr.: {P('row12')}
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+			</React.Fragment>
+		),
+		lekcijaModal: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Harf<strong> R </strong>
+						<span className="arapski-lekcija">(ر)</span> se uči <u>tanko</u> u sljedećim
+						situacijama:
+					</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije">
+						<strong>1.</strong> kada je harf<strong> R </strong>sa <strong>vokalom</strong> I ({' '}
+						{P('row9')} ), npr.: {P('row8')}
+					</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije">
+						<strong>2.</strong> kada je harf<strong> R </strong>sa <strong>sukunom</strong>, a prije
+						njeg harf sa <strong>vokalom</strong> I (
+						<span className="arapski-lekcija" style={{ color: 'red' }}>
+							ــــِـــ رْ{' '}
+						</span>
+						), npr.:
+						<br />
+						{P('row10')}
+					</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije">
+						<strong>3.</strong> kada je harf<strong> R </strong>sa <strong>sukunom</strong>, prije
+						njeg harf sa <strong>sukunom</strong>, a prije toga harf sa
+						<strong>vokalom</strong> I (
+						<span className="arapski-lekcija" style={{ color: 'red' }}>
+							{' '}
+							ــِـ ــْـ رْ{' '}
+						</span>
+						), npr.:
+						{P('row11')}
+					</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije">
+						<strong>4.</strong> kada je harf<strong> R </strong>sa <strong>sukunom</strong>, a prije
+						njeg harf <strong>J</strong> također sa <strong>sukunom</strong>, a prije toga harf sa{' '}
+						<strong>vokalom</strong> E (
+						<span className="arapski-lekcija" style={{ color: 'red' }}>
+							{' '}
+							ــــَـــ يْـــرْ{' '}
+						</span>
+						), npr.:<br /> {P('row12')}
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+			</React.Fragment>
+		)
+	},
+
+	en: {
+		naziv: 'HUKM AR-RA',
+		lekcija: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						The letter<strong> R </strong>
+						<span className="arapski-lekcija">(ر)</span> is recited <u>light</u> in the following situations:
+					</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije">
+						<strong>1.</strong> when the letter<strong> R </strong>carries the <strong>vowel</strong> I ({' '}
+						{P('row9')} ), e.g.: <br />
+						{P('row8')}
+					</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije">
+						<strong>2.</strong> when the letter<strong> R </strong>carries a <strong>sukun</strong> and is
+						preceded by a letter with the <strong>vowel</strong> I (
+						<span className="arapski-lekcija" style={{ color: 'red' }}>
+							ــــِـــ رْ{' '}
+						</span>
+						), e.g.:
+						<br />
+						{P('row10')}
+					</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije">
+						<strong>3.</strong> when the letter<strong> R </strong>carries a <strong>sukun</strong>, is
+						preceded by a letter with a <strong>sukun</strong>, and before that comes a letter with the{' '}
+						<strong>vowel</strong> I (
+						<span className="arapski-lekcija" style={{ color: 'red' }}>
+							{' '}
+							ــِـ ــْـ رْ{' '}
+						</span>
+						), e.g.:<br />
+						{P('row11')}
+					</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije">
+						<strong>4.</strong> when the letter<strong> R </strong>carries a <strong>sukun</strong> and is
+						preceded by the letter <strong>Y</strong> also carrying a <strong>sukun</strong>, and before
+						that comes a letter with the <strong>vowel</strong> A (
+						<span className="arapski-lekcija" style={{ color: 'red' }}>
+							{' '}
+							ــــَـــ يْـــرْ{' '}
+						</span>
+						), e.g.: {P('row12')}
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		),
+		lekcijaModal: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						The letter<strong> R </strong>
+						<span className="arapski-lekcija">(ر)</span> is recited <u>light</u> in the following
+						situations:
+					</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije">
+						<strong>1.</strong> when the letter<strong> R </strong>carries the <strong>vowel</strong> I ({' '}
+						{P('row9')} ), e.g.: {P('row8')}
+					</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije">
+						<strong>2.</strong> when the letter<strong> R </strong>carries a <strong>sukun</strong> and is
+						preceded by a letter with the <strong>vowel</strong> I (
+						<span className="arapski-lekcija" style={{ color: 'red' }}>
+							ــــِـــ رْ{' '}
+						</span>
+						), e.g.:
+						<br />
+						{P('row10')}
+					</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije">
+						<strong>3.</strong> when the letter<strong> R </strong>carries a <strong>sukun</strong>, is
+						preceded by a letter with a <strong>sukun</strong>, and before that comes a letter with the
+						<strong>vowel</strong> I (
+						<span className="arapski-lekcija" style={{ color: 'red' }}>
+							{' '}
+							ــِـ ــْـ رْ{' '}
+						</span>
+						), e.g.:
+						{P('row11')}
+					</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije">
+						<strong>4.</strong> when the letter<strong> R </strong>carries a <strong>sukun</strong> and is
+						preceded by the letter <strong>Y</strong> also carrying a <strong>sukun</strong>, and before
+						that comes a letter with the <strong>vowel</strong> A (
+						<span className="arapski-lekcija" style={{ color: 'red' }}>
+							{' '}
+							ــــَـــ يْـــرْ{' '}
+						</span>
+						), e.g.:<br /> {P('row12')}
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		)
+	}
+};
 
 function scrollToHash() {
 	/* Obtain hash from current location (and trim off leading #) */
@@ -33,6 +327,12 @@ function scrollToHash() {
 }
 
 function L14_2() {
+	const { lang } = useLang();
+	const ui = useUI();
+	const t = TXT[lang] || TXT[DEFAULT_LANG];
+	const R = (row) => PlayerRow(data, row);
+	const W = (main, row) => VjezbeRow(data, main, row);
+
 	const [ show, setShow ] = React.useState(false);
 	const [ showL, setShowL ] = React.useState(false);
 
@@ -46,157 +346,28 @@ function L14_2() {
 	}, []);
 	return (
 		<React.Fragment>
-			<LekcijaMenu broj="14.2" naziv="HUKMURRA" />
+			<LekcijaMenu broj="14.2" naziv={t.naziv} />
 			<Container id="lekcija">
 				<IconContext.Provider value={{ size: '30px', style: { float: 'right' } }}>
 					<MdZoomOutMap className="zoomIcon" onClick={handleShowL} />
 				</IconContext.Provider>
-				<Row>
-					<Col className="opisLekcije">
-						Harf<strong> R </strong>
-						<span className="arapski-lekcija">(ر)</span> se uči <u>tanko</u> u sljedećim situacijama:
-					</Col>
-				</Row>
 
-				<Row>
-					<Col className="opisLekcije">
-						<strong>1.</strong> kada je harf<strong> R </strong>sa <strong>vokalom</strong> I ({' '}
-						{PlayerRow(data, 'row9')} ), npr.: <br />
-						{PlayerRow(data, 'row8')}
-					</Col>
-				</Row>
+				{t.lekcija(R, W)}
 
-				<Row>
-					<Col className="opisLekcije">
-						<strong>2.</strong> kada je harf<strong> R </strong>sa <strong>sukunom</strong>, a prije njeg
-						harf sa <strong>vokalom</strong> I (
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
-							ــــِـــ رْ{' '}
-						</span>
-						), npr.:
-						<br />
-						{PlayerRow(data, 'row10')}
-					</Col>
-				</Row>
-
-				<Row>
-					<Col className="opisLekcije">
-						<strong>3.</strong> kada je harf<strong> R </strong>sa <strong>sukunom</strong>, prije njeg harf
-						sa <strong>sukunom</strong>, a prije toga harf sa <strong>vokalom</strong> I (
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
-							{' '}
-							ــِـ ــْـ رْ{' '}
-						</span>
-						), npr.:<br />
-						{PlayerRow(data, 'row11')}
-					</Col>
-				</Row>
-
-				<Row>
-					<Col className="opisLekcije">
-						<strong>4.</strong> kada je harf<strong> R </strong>sa <strong>sukunom</strong>, a prije njeg
-						harf <strong>J</strong> također sa <strong>sukunom</strong>, a prije toga harf sa{' '}
-						<strong>vokalom</strong> E (
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
-							{' '}
-							ــــَـــ يْـــرْ{' '}
-						</span>
-						), npr.: {PlayerRow(data, 'row12')}
-					</Col>
-				</Row>
-
-				<Row>
-					<Col>
-						<br />
-					</Col>
-				</Row>
-
-				<Row>
-					<Col>
-						<br />
-					</Col>
-				</Row>
-				<Modal show={showL} onHide={handleCloseL} backdrop="static" keyboard={false}>
+<Modal show={showL} onHide={handleCloseL} backdrop="static" keyboard={false}>
 					<Modal.Header closeButton>
-						<Modal.Title>LEKCIJA</Modal.Title>
+						<Modal.Title>{ui.lekcija}</Modal.Title>
 					</Modal.Header>
-					<Modal.Body className="custom-modal">
-						<Row>
-							<Col className="opisLekcije">
-								Harf<strong> R </strong>
-								<span className="arapski-lekcija">(ر)</span> se uči <u>tanko</u> u sljedećim
-								situacijama:
-							</Col>
-						</Row>
-
-						<Row>
-							<Col className="opisLekcije">
-								<strong>1.</strong> kada je harf<strong> R </strong>sa <strong>vokalom</strong> I ({' '}
-								{PlayerRow(data, 'row9')} ), npr.: {PlayerRow(data, 'row8')}
-							</Col>
-						</Row>
-
-						<Row>
-							<Col className="opisLekcije">
-								<strong>2.</strong> kada je harf<strong> R </strong>sa <strong>sukunom</strong>, a prije
-								njeg harf sa <strong>vokalom</strong> I (
-								<span className="arapski-lekcija" style={{ color: 'red' }}>
-									ــــِـــ رْ{' '}
-								</span>
-								), npr.:
-								<br />
-								{PlayerRow(data, 'row10')}
-							</Col>
-						</Row>
-
-						<Row>
-							<Col className="opisLekcije">
-								<strong>3.</strong> kada je harf<strong> R </strong>sa <strong>sukunom</strong>, prije
-								njeg harf sa <strong>sukunom</strong>, a prije toga harf sa
-								<strong>vokalom</strong> I (
-								<span className="arapski-lekcija" style={{ color: 'red' }}>
-									{' '}
-									ــِـ ــْـ رْ{' '}
-								</span>
-								), npr.:
-								{PlayerRow(data, 'row11')}
-							</Col>
-						</Row>
-
-						<Row>
-							<Col className="opisLekcije">
-								<strong>4.</strong> kada je harf<strong> R </strong>sa <strong>sukunom</strong>, a prije
-								njeg harf <strong>J</strong> također sa <strong>sukunom</strong>, a prije toga harf sa{' '}
-								<strong>vokalom</strong> E (
-								<span className="arapski-lekcija" style={{ color: 'red' }}>
-									{' '}
-									ــــَـــ يْـــرْ{' '}
-								</span>
-								), npr.:<br /> {PlayerRow(data, 'row12')}
-							</Col>
-						</Row>
-
-						<Row>
-							<Col>
-								<br />
-							</Col>
-						</Row>
-
-						<Row>
-							<Col>
-								<br />
-							</Col>
-						</Row>
-					</Modal.Body>
+					<Modal.Body className="custom-modal">{t.lekcijaModal(R, W)}</Modal.Body>
 					<Modal.Footer>
 						<Button variant="secondary" onClick={handleCloseL}>
-							Zatvori
+							{ui.zatvori}
 						</Button>
 					</Modal.Footer>
 				</Modal>
 				<section className="vjezba-panel">
 				<h2 className="text-center" id="vjezba">
-					<strong>VJEŽBA</strong>
+					<strong>{ui.vjezba}</strong>
 				</h2>
 				<hr />
 				<VjezbaToolbar />
@@ -249,7 +420,7 @@ function L14_2() {
 				</section>
 				<Modal show={show} onHide={handleClose} backdrop="static" keyboard={false}>
 					<Modal.Header closeButton>
-						<Modal.Title>VJEŽBA</Modal.Title>
+						<Modal.Title>{ui.vjezba}</Modal.Title>
 					</Modal.Header>
 					<Modal.Body className="custom-modal">
 						<Row className="text-center">
@@ -292,7 +463,7 @@ function L14_2() {
 					</Modal.Body>
 					<Modal.Footer>
 						<Button variant="secondary" onClick={handleClose}>
-							Zatvori
+							{ui.zatvori}
 						</Button>
 					</Modal.Footer>
 				</Modal>

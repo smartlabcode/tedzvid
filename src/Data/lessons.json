@@ -1,126 +1,169 @@
 {
     "lekcije": [
         [{
-                "title": "VAKF",
-                "subtitle": "Stajanje prilikom učenja"
+                "title": { "bs": "VAKF", "en": "WAQF" },
+                "subtitle": {
+                    "bs": "Stajanje prilikom učenja",
+                    "en": "Stopping during recitation"
+                }
             },
             {
-                "title": "DAMIR",
-                "subtitle": "Izgovaranje zamjenice HU (هُ)"
+                "title": { "bs": "DAMIR", "en": "DAMIR" },
+                "subtitle": {
+                    "bs": "Izgovaranje zamjenice HU (هُ)",
+                    "en": "Pronouncing the pronoun HU (هُ)"
+                }
             }
         ],
         [{
-                "title": "LAFZATULLAH",
-                "subtitle": "Izgovaranje riječi Allah اللّٰه"
+                "title": { "bs": "LAFZATULLAH", "en": "LAFDHATULLAH" },
+                "subtitle": {
+                    "bs": "Izgovaranje riječi Allah اللّٰه",
+                    "en": "Pronouncing the word Allah اللّٰه"
+                }
             },
             {
-                "title": "IDGAM MISLEJN ",
-                "subtitle": "Uklapanje istih harfova"
+                "title": { "bs": "IDGAM MISLEJN", "en": "IDGHAM MITHLAYN" },
+                "subtitle": {
+                    "bs": "Uklapanje istih harfova",
+                    "en": "Merging identical letters"
+                }
             }
         ],
         [{
-                "title": "IDGAM MISLEJN MEAL-GUNNEH",
-                "subtitle": "Uklapanje istih harfova sa propuštanjem zraka kroz nos"
+                "title": { "bs": "IDGAM MISLEJN MEAL-GUNNEH", "en": "IDGHAM MITHLAYN MA'AL-GHUNNAH" },
+                "subtitle": {
+                    "bs": "Uklapanje istih harfova sa propuštanjem zraka kroz nos",
+                    "en": "Merging identical letters with nasalisation"
+                }
             },
             {
-                "title": "IDGAM MEAL-GUNNEH ",
-                "subtitle": "Uklapanje sa propuštanjem zraka kroz nos"
+                "title": { "bs": "IDGAM MEAL-GUNNEH", "en": "IDGHAM MA'AL-GHUNNAH" },
+                "subtitle": {
+                    "bs": "Uklapanje sa propuštanjem zraka kroz nos",
+                    "en": "Merging with nasalisation"
+                }
             }
         ],
         [{
-                "title": " IDGAM BILA GUNNEH ",
-                "subtitle": "Uklapanje bez propuštanja zraka kroz nos"
+                "title": { "bs": "IDGAM BILA GUNNEH", "en": "IDGHAM BILA GHUNNAH" },
+                "subtitle": {
+                    "bs": "Uklapanje bez propuštanja zraka kroz nos",
+                    "en": "Merging without nasalisation"
+                }
             },
             {
-                "title": "IKLAB",
-                "subtitle": "Pretvaranje harfa N (ن) u harf M (م)"
+                "title": { "bs": "IKLAB", "en": "IQLAB" },
+                "subtitle": {
+                    "bs": "Pretvaranje harfa N (ن) u harf M (م)",
+                    "en": "Turning the letter N (ن) into the letter M (م)"
+                }
             }
         ],
         [{
-                "title": "IZHAR HALLKIJ ",
-                "subtitle": "Čisto izgovaranje harfa N (ن) ili tenvina"
+                "title": { "bs": "IZHAR HALLKIJ", "en": "IDHHAR HALQI" },
+                "subtitle": {
+                    "bs": "Čisto izgovaranje harfa N (ن) ili tenvina",
+                    "en": "Clear pronunciation of the letter N (ن) or tanween"
+                }
             },
-
             {
-                "title": "IZHAR ŠEFEVIJJ ",
-                "subtitle": "Čisto izgovaranje harfa M (م)"
+                "title": { "bs": "IZHAR ŠEFEVIJJ", "en": "IDHHAR SHAFAWI" },
+                "subtitle": {
+                    "bs": "Čisto izgovaranje harfa M (م)",
+                    "en": "Clear pronunciation of the letter M (م)"
+                }
             }
         ],
         [{
-                "title": "IHFA",
-                "subtitle": "Skrivanje harfa N (ن)"
+                "title": { "bs": "IHFA", "en": "IKHFA" },
+                "subtitle": {
+                    "bs": "Skrivanje harfa N (ن)",
+                    "en": "Hiding the letter N (ن)"
+                }
             },
-
             {
-
-                "title": "IHFA SEVIJJ",
-                "subtitle": "Skrivanje harfa M (م)"
-
+                "title": { "bs": "IHFA SEVIJJ", "en": "IKHFA SHAFAWI" },
+                "subtitle": {
+                    "bs": "Skrivanje harfa M (م)",
+                    "en": "Hiding the letter M (م)"
+                }
             }
         ],
         [{
-                "title": "KALKALA",
-                "subtitle": "Odskakanje harfova"
+                "title": { "bs": "KALKALA", "en": "QALQALAH" },
+                "subtitle": {
+                    "bs": "Odskakanje harfova",
+                    "en": "Bouncing of the letters"
+                }
             },
-
             {
-
-                "title": "HUKMURRA",
-                "subtitle": "Izgovaranje harfa R (ر)"
-
+                "title": { "bs": "HUKMURRA", "en": "HUKM AR-RA" },
+                "subtitle": {
+                    "bs": "Izgovaranje harfa R (ر)",
+                    "en": "Pronouncing the letter R (ر)"
+                }
             }
         ],
         [{
-                "title": "IDGAM MUTEDŽANISEJN",
-                "subtitle": "Uklapanje srodnih harfova"
+                "title": { "bs": "IDGAM MUTEDŽANISEJN", "en": "IDGHAM MUTAJANISAYN" },
+                "subtitle": {
+                    "bs": "Uklapanje srodnih harfova",
+                    "en": "Merging related letters"
+                }
             },
-
             {
-
-                "title": "IDGAM MUTEKARIBEJN",
-                "subtitle": "Uklapanje bliskih harfova"
-
+                "title": { "bs": "IDGAM MUTEKARIBEJN", "en": "IDGHAM MUTAQARIBAYN" },
+                "subtitle": {
+                    "bs": "Uklapanje bliskih harfova",
+                    "en": "Merging close letters"
+                }
             }
         ],
         [{
-                "title": "MEDD TABI'IJJ ",
-                "subtitle": "Obična dužina"
-            },
-
-            {
-
-                "title": "MEDD MUTTESIL",
-                "subtitle": "Spojena dužina"
-
-            }
-        ],
-
-        [{
-
-                "title": "MEDD MUNFESIL",
-                "subtitle": "rastavljena dužina"
-
+                "title": { "bs": "MEDD TABI'IJJ", "en": "MADD TABI'I" },
+                "subtitle": {
+                    "bs": "Obična dužina",
+                    "en": "Natural prolongation"
+                }
             },
             {
-
-                "title": "MEDD LAZIM",
-                "subtitle": "stalna dužina"
-
+                "title": { "bs": "MEDD MUTTESIL", "en": "MADD MUTTASIL" },
+                "subtitle": {
+                    "bs": "Spojena dužina",
+                    "en": "Connected prolongation"
+                }
             }
         ],
         [{
-
-                "title": "MEDD ARID",
-                "subtitle": "nestalna dužina"
-
+                "title": { "bs": "MEDD MUNFESIL", "en": "MADD MUNFASIL" },
+                "subtitle": {
+                    "bs": "rastavljena dužina",
+                    "en": "separated prolongation"
+                }
             },
             {
-
-                "title": "MED LIN",
-                "subtitle": "poluvokalna dužina"
-
+                "title": { "bs": "MEDD LAZIM", "en": "MADD LAZIM" },
+                "subtitle": {
+                    "bs": "stalna dužina",
+                    "en": "obligatory prolongation"
+                }
+            }
+        ],
+        [{
+                "title": { "bs": "MEDD ARID", "en": "MADD 'ARID" },
+                "subtitle": {
+                    "bs": "nestalna dužina",
+                    "en": "temporary prolongation"
+                }
+            },
+            {
+                "title": { "bs": "MED LIN", "en": "MADD LIN" },
+                "subtitle": {
+                    "bs": "poluvokalna dužina",
+                    "en": "soft-letter prolongation"
+                }
             }
         ]
-
     ]
 }
