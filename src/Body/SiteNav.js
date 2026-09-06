@@ -1,19 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { FaBars, FaTimes, FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import { FaBars, FaTimes, FaArrowLeft, FaArrowRight, FaUserCircle, FaSignOutAlt } from 'react-icons/fa';
 import Logo from './Logo';
 import LangSwitch from './LangSwitch';
+import { useAuth } from '../auth/AuthContext';
 import { useUI } from '../i18n/ui';
 
 /**
  * Zajednička navigacija za sve stranice.
- * props.active  – ključ aktivnog linka (home | lekcije | ...)
+ * props.active  – ključ aktivnog linka (home | lekcije | racun | ...)
  * props.cta     – { to, label, back } dugme desno; podrazumijevano vodi na lekcije
  */
 export default function SiteNav({ active, cta }) {
 	const [ open, setOpen ] = useState(false);
 	const location = useLocation();
 	const ui = useUI();
+	const { user, logout } = useAuth();
 
 	const LINKS = [
 		{ key: 'home', to: '/', label: ui.navHome },
@@ -39,6 +41,7 @@ export default function SiteNav({ active, cta }) {
 	);
 
 	const action = cta || { to: '/lekcije', label: ui.navLekcije };
+	const ime = user ? user.ime.split(' ')[0] : null;
 
 	const renderLinks = () =>
 		LINKS.map((l) => (
@@ -48,6 +51,28 @@ export default function SiteNav({ active, cta }) {
 				</Link>
 			</li>
 		));
+
+	/* korisnik: ime → moj napredak; gost: prijava */
+	const renderUser = () =>
+		user ? (
+			<Link
+				to="/profil"
+				className={'site-nav__user' + (active === 'racun' ? ' is-active' : '')}
+				title={ui.navProfil}
+			>
+				<FaUserCircle />
+				<span>{ime}</span>
+			</Link>
+		) : (
+			<Link
+				to="/prijava"
+				className={'site-nav__user site-nav__user--guest' + (active === 'racun' ? ' is-active' : '')}
+				title={ui.navPrijava}
+			>
+				<FaUserCircle />
+				<span>{ui.navPrijava}</span>
+			</Link>
+		);
 
 	return (
 		<header className="site-nav">
@@ -60,6 +85,7 @@ export default function SiteNav({ active, cta }) {
 					</nav>
 					<div className="site-nav__actions">
 						<LangSwitch />
+						{renderUser()}
 						<Link to={action.to} className="btn-t btn-t--gold btn-t--sm">
 							{action.back && <FaArrowLeft />}
 							{action.label}
@@ -96,6 +122,27 @@ export default function SiteNav({ active, cta }) {
 					{action.label}
 					{!action.back && <FaArrowRight />}
 				</Link>
+				<div className="site-nav__mobile-auth">
+					{user ? (
+						<React.Fragment>
+							<Link to="/profil" className="btn-t btn-t--light">
+								<FaUserCircle /> {ui.navProfil}
+							</Link>
+							<button type="button" className="btn-t btn-t--light" onClick={logout}>
+								<FaSignOutAlt /> {ui.navOdjava}
+							</button>
+						</React.Fragment>
+					) : (
+						<React.Fragment>
+							<Link to="/prijava" className="btn-t btn-t--light">
+								<FaUserCircle /> {ui.navPrijava}
+							</Link>
+							<Link to="/registracija" className="btn-t btn-t--light">
+								{ui.navRegistracija}
+							</Link>
+						</React.Fragment>
+					)}
+				</div>
 				<LangSwitch light className="lang-switch--mobile" />
 			</div>
 		</header>

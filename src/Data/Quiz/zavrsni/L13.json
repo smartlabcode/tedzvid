@@ -1,0 +1,49 @@
+{
+  "lekcija": 13,
+  "pitanja": [
+    {
+      "q": { "bs": "U kojem od ovih primjera nema kalkale?", "en": "In which of these examples is there no qalqalah?" },
+      "opcije": [
+        { "bs": "يَدْخُلُونَهَا", "en": "يَدْخُلُونَهَا" },
+        { "bs": "الرِّجْسَ", "en": "الرِّجْسَ" },
+        { "bs": "أَبْوَابَ جَهَنَّمَ", "en": "أَبْوَابَ جَهَنَّمَ" },
+        { "bs": "مِنْ جُوعٍ", "en": "مِنْ جُوعٍ" }
+      ],
+      "tacno": 3,
+      "objasnjenje": { "bs": "U مِنْ جُوعٍ sa sukunom je harf ن, koji nije harf kalkale, a harf ج ima vokal.", "en": "In مِنْ جُوعٍ the letter with a sukun is ن, which is not a qalqalah letter, and the letter ج carries a vowel." }
+    },
+    {
+      "q": { "bs": "U primjeru تَجْرِي مِنْ تَحْتِهَا الْأَنْهَارُ koji harf odskače?", "en": "In the example تَجْرِي مِنْ تَحْتِهَا الْأَنْهَارُ which letter bounces?" },
+      "opcije": [
+        { "bs": "Harf ج u تَجْرِي", "en": "The letter ج in تَجْرِي" },
+        { "bs": "Harf ن u مِنْ", "en": "The letter ن in مِنْ" },
+        { "bs": "Harf ح u تَحْتِهَا", "en": "The letter ح in تَحْتِهَا" },
+        { "bs": "Harf ت u تَحْتِهَا", "en": "The letter ت in تَحْتِهَا" }
+      ],
+      "tacno": 0,
+      "objasnjenje": { "bs": "Harf ج je harf kalkale i u تَجْرِي je sa sukunom, dok ن i ح sa sukunom nisu harfovi kalkale.", "en": "The letter ج is a qalqalah letter and in تَجْرِي it carries a sukun, while ن and ح with a sukun are not qalqalah letters." }
+    },
+    {
+      "q": { "bs": "U riječi يَقْبَلُ (وَهُوَ الَّذِي يَقْبَلُ التَّوْبَةَ) nalaze se dva harfa kalkale, ق i ب. Koji od njih odskače i zašto?", "en": "The word يَقْبَلُ (in وَهُوَ الَّذِي يَقْبَلُ التَّوْبَةَ) contains two qalqalah letters, ق and ب. Which of them bounces, and why?" },
+      "opcije": [
+        { "bs": "Harf ب, jer je sa vokalom E", "en": "The letter ب, because it carries the vowel A" },
+        { "bs": "Harf ق, jer je sa sukunom", "en": "The letter ق, because it carries a sukun" },
+        { "bs": "Harf ب, jer dolazi poslije harfa ق", "en": "The letter ب, because it comes after the letter ق" },
+        { "bs": "Harf ق, jer je prije njega harf J (ي)", "en": "The letter ق, because it is preceded by the letter Y (ي)" }
+      ],
+      "tacno": 1,
+      "objasnjenje": { "bs": "Harf kalkale odskače samo kada je sa sukunom, a u يَقْبَلُ sukun ima harf ق, dok ب ima vokal E.", "en": "A qalqalah letter bounces only when it carries a sukun, and in يَقْبَلُ it is ق that carries the sukun, while ب carries the vowel A." }
+    },
+    {
+      "q": { "bs": "Koliko puta dolazi do kalkale u primjeru لَمْ يَلِدْ وَلَمْ يُولَدْ?", "en": "How many times does qalqalah occur in the example لَمْ يَلِدْ وَلَمْ يُولَدْ?" },
+      "opcije": [
+        { "bs": "0", "en": "0" },
+        { "bs": "1", "en": "1" },
+        { "bs": "2", "en": "2" },
+        { "bs": "3", "en": "3" }
+      ],
+      "tacno": 2,
+      "objasnjenje": { "bs": "Harf د je sa sukunom na kraju riječi يَلِدْ i يُولَدْ, pa odskače dva puta, a مْ nije harf kalkale.", "en": "The letter د carries a sukun at the end of يَلِدْ and يُولَدْ, so it bounces twice, while مْ is not a qalqalah letter." }
+    }
+  ]
+}

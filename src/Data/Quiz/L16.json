@@ -1,0 +1,115 @@
+{
+  "lekcija": 16,
+  "pitanja": [
+    {
+      "q": { "bs": "Šta znači idgam mutekaribejn?", "en": "What does idgham mutaqaribayn mean?" },
+      "opcije": [
+        { "bs": "Uklapanje istih harfova", "en": "Merging identical letters" },
+        { "bs": "Uklapanje srodnih harfova", "en": "Merging related letters" },
+        { "bs": "Uklapanje bliskih harfova", "en": "Merging close letters" },
+        { "bs": "Skrivanje harfa N (ن)", "en": "Hiding the letter N (ن)" }
+      ],
+      "tacno": 2,
+      "objasnjenje": { "bs": "Idgam mutekaribejn znači uklapanje bliskih harfova.", "en": "Idgham mutaqaribayn means merging close letters." }
+    },
+    {
+      "q": { "bs": "Koliko slučajeva idgam mutekaribejna navodi ova lekcija?", "en": "How many cases of idgham mutaqaribayn does this lesson list?" },
+      "opcije": [
+        { "bs": "2", "en": "2" },
+        { "bs": "3", "en": "3" },
+        { "bs": "4", "en": "4" },
+        { "bs": "5", "en": "5" }
+      ],
+      "tacno": 0,
+      "objasnjenje": { "bs": "Lekcija navodi dva slučaja: قْ + ك i لْ + ر.", "en": "The lesson lists two cases: قْ + ك and لْ + ر." }
+    },
+    {
+      "q": { "bs": "Koji znak nosi prvi od dva bliska harfa kod idgam mutekaribejna?", "en": "Which sign does the first of the two close letters carry in idgham mutaqaribayn?" },
+      "opcije": [
+        { "bs": "Hareket", "en": "A haraka" },
+        { "bs": "Sukun", "en": "A sukun" },
+        { "bs": "Tenvin", "en": "A tanween" },
+        { "bs": "Tešdid", "en": "A tashdeed" }
+      ],
+      "tacno": 1,
+      "objasnjenje": { "bs": "Prvi harf je sa sukunom, a drugi sa hareketom.", "en": "The first letter carries a sukun and the second a haraka." }
+    },
+    {
+      "q": { "bs": "Koji su parovi bliskih harfova u ovoj lekciji?", "en": "Which are the pairs of close letters in this lesson?" },
+      "opcije": [
+        { "bs": "ط-د-ت i ظ-ذ-ث", "en": "ط-د-ت and ظ-ذ-ث" },
+        { "bs": "ب i م", "en": "ب and م" },
+        { "bs": "ن i م", "en": "ن and م" },
+        { "bs": "قْ + ك i لْ + ر", "en": "قْ + ك and لْ + ر" }
+      ],
+      "tacno": 3,
+      "objasnjenje": { "bs": "Bliski harfovi u ovoj lekciji su Q (ق) sa K (ك) i L (ل) sa R (ر).", "en": "The close letters in this lesson are Q (ق) with K (ك) and L (ل) with R (ر)." }
+    },
+    {
+      "q": { "bs": "Koji harf sa hareketom mora doći poslije harfa Q sa sukunom (قْ) da bi nastao idgam mutekaribejn?", "en": "Which letter with a haraka must follow the letter Q with a sukun (قْ) for idgham mutaqaribayn to occur?" },
+      "opcije": [
+        { "bs": "Harf Q (ق)", "en": "The letter Q (ق)" },
+        { "bs": "Harf K (ك)", "en": "The letter K (ك)" },
+        { "bs": "Harf G (غ)", "en": "The letter GH (غ)" },
+        { "bs": "Harf H (خ)", "en": "The letter KH (خ)" }
+      ],
+      "tacno": 1,
+      "objasnjenje": { "bs": "Poslije قْ mora doći harf K (ك) sa hareketom, npr. أَلَمْ نَخْلُقْكُمْ.", "en": "قْ must be followed by the letter K (ك) with a haraka, e.g. أَلَمْ نَخْلُقْكُمْ." }
+    },
+    {
+      "q": { "bs": "Koji harf sa hareketom mora doći poslije harfa L sa sukunom (لْ) da bi nastao idgam mutekaribejn?", "en": "Which letter with a haraka must follow the letter L with a sukun (لْ) for idgham mutaqaribayn to occur?" },
+      "opcije": [
+        { "bs": "Harf L (ل)", "en": "The letter L (ل)" },
+        { "bs": "Harf N (ن)", "en": "The letter N (ن)" },
+        { "bs": "Harf R (ر)", "en": "The letter R (ر)" },
+        { "bs": "Harf M (م)", "en": "The letter M (م)" }
+      ],
+      "tacno": 2,
+      "objasnjenje": { "bs": "Poslije لْ mora doći harf R (ر) sa hareketom, npr. وَقُلْ رَبِّ.", "en": "لْ must be followed by the letter R (ر) with a haraka, e.g. وَقُلْ رَبِّ." }
+    },
+    {
+      "q": { "bs": "Kako se čita أَلَمْ نَخْلُقْكُمْ?", "en": "How is أَلَمْ نَخْلُقْكُمْ read?" },
+      "opcije": [
+        { "bs": "أَلَمْ نَخْلُقُّمْ", "en": "أَلَمْ نَخْلُقُّمْ" },
+        { "bs": "أَلَمْ نَخْلُقْكُمْ (bez promjene)", "en": "أَلَمْ نَخْلُقْكُمْ (unchanged)" },
+        { "bs": "أَلَمْ نَخْلُنْكُمْ", "en": "أَلَمْ نَخْلُنْكُمْ" },
+        { "bs": "أَلَمْ نَخْلُكُّمْ", "en": "أَلَمْ نَخْلُكُّمْ" }
+      ],
+      "tacno": 3,
+      "objasnjenje": { "bs": "Harf ق sa sukunom uklapa se u harf ك, pa se čita أَلَمْ نَخْلُكُّمْ.", "en": "The letter ق with a sukun merges into the letter ك, so it is read أَلَمْ نَخْلُكُّمْ." }
+    },
+    {
+      "q": { "bs": "Kako se čita وَقُلْ رَبِّ?", "en": "How is وَقُلْ رَبِّ read?" },
+      "opcije": [
+        { "bs": "وَقُرَّبِّ", "en": "وَقُرَّبِّ" },
+        { "bs": "وَقُلَّبِّ", "en": "وَقُلَّبِّ" },
+        { "bs": "وَقُلْ رَبِّ (bez promjene)", "en": "وَقُلْ رَبِّ (unchanged)" },
+        { "bs": "وَقُنْ رَبِّ", "en": "وَقُنْ رَبِّ" }
+      ],
+      "tacno": 0,
+      "objasnjenje": { "bs": "Harf ل sa sukunom uklapa se u harf ر, pa se čita وَقُرَّبِّ.", "en": "The letter ل with a sukun merges into the letter ر, so it is read وَقُرَّبِّ." }
+    },
+    {
+      "q": { "bs": "U kojem od ovih primjera se nalazi idgam mutekaribejn?", "en": "In which of these examples is there idgham mutaqaribayn?" },
+      "opcije": [
+        { "bs": "عَبَدْتُمْ", "en": "عَبَدْتُمْ" },
+        { "bs": "أَمْ بِهِ", "en": "أَمْ بِهِ" },
+        { "bs": "بَلْ رَفَعَهُ اللّٰهُ", "en": "بَلْ رَفَعَهُ اللّٰهُ" },
+        { "bs": "قَدْ", "en": "قَدْ" }
+      ],
+      "tacno": 2,
+      "objasnjenje": { "bs": "U بَلْ رَفَعَهُ poslije harfa L sa sukunom dolazi harf R sa hareketom.", "en": "In بَلْ رَفَعَهُ the letter L with a sukun is followed by the letter R with a haraka." }
+    },
+    {
+      "q": { "bs": "Šta se dešava s prvim harfom (npr. قْ ili لْ) kod idgam mutekaribejna?", "en": "What happens to the first letter (e.g. قْ or لْ) in idgham mutaqaribayn?" },
+      "opcije": [
+        { "bs": "Izgovara se čisto", "en": "It is pronounced clearly" },
+        { "bs": "Uklapa se u drugi harf", "en": "It merges into the second letter" },
+        { "bs": "Produžava se 2 hareketa", "en": "It is prolonged for 2 harakas" },
+        { "bs": "Odskače", "en": "It bounces" }
+      ],
+      "tacno": 1,
+      "objasnjenje": { "bs": "Prvi harf sa sukunom uklapa se u drugi harf sa hareketom.", "en": "The first letter with a sukun merges into the second letter with a haraka." }
+    }
+  ]
+}

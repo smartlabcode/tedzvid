@@ -1,0 +1,75 @@
+{
+  "lekcija": 7,
+  "pitanja": [
+    {
+      "q": { "bs": "Koje pravilo se primjenjuje u primjeru وَإِذًا لَا?", "en": "Which rule applies in the example وَإِذًا لَا?" },
+      "opcije": [
+        { "bs": "Idgam meal-gunneh", "en": "Idgham ma'al-ghunnah" },
+        { "bs": "Idgam bila gunneh", "en": "Idgham bila ghunnah" },
+        { "bs": "Ihfa", "en": "Ikhfa" },
+        { "bs": "Izhar halkijj", "en": "Idhhar halqi" }
+      ],
+      "tacno": 1,
+      "objasnjenje": {
+        "bs": "Poslije tenvina EN dolazi harf L (ل), pa se tenvin potpuno uklapa u L bez propuštanja zraka kroz nos.",
+        "en": "The tanween AN is followed by the letter L (ل), so it merges completely into L without air passing through the nose."
+      }
+    },
+    {
+      "q": { "bs": "U kojem primjeru se harf N (ن) sa sukunom nikako ne uči?", "en": "In which example is the letter N (ن) with a sukun not pronounced at all?" },
+      "opcije": [
+        { "bs": "مِنْ بَعْدِ", "en": "مِنْ بَعْدِ" },
+        { "bs": "مِنْ حَيْثُ", "en": "مِنْ حَيْثُ" },
+        { "bs": "مِنْ مَسَدٍ", "en": "مِنْ مَسَدٍ" },
+        { "bs": "مِنْ رِزْقِ اللّٰهِ", "en": "مِنْ رِزْقِ اللّٰهِ" }
+      ],
+      "tacno": 3,
+      "objasnjenje": {
+        "bs": "Poslije harfa N sa sukunom dolazi harf R (ر), pa se N potpuno uklapa u R i nikako se ne uči.",
+        "en": "The letter N with a sukun is followed by R (ر), so N merges completely into R and is not pronounced at all."
+      }
+    },
+    {
+      "q": { "bs": "U primjeru هُمَزَةٍ لُمَزَةٍ, koji harf izaziva idgam bila gunneh poslije tenvina IN?", "en": "In the example هُمَزَةٍ لُمَزَةٍ, which letter causes idgham bila ghunnah after the tanween IN?" },
+      "opcije": [
+        { "bs": "L (ل)", "en": "L (ل)" },
+        { "bs": "M (م)", "en": "M (م)" },
+        { "bs": "Z (ز)", "en": "Z (ز)" },
+        { "bs": "H (ه)", "en": "H (ه)" }
+      ],
+      "tacno": 0,
+      "objasnjenje": {
+        "bs": "Poslije tenvina IN dolazi harf L (ل) na početku riječi لُمَزَةٍ, pa se tenvin potpuno uklapa u L.",
+        "en": "The tanween IN is followed by the letter L (ل) at the start of the word لُمَزَةٍ, so the tanween merges completely into L."
+      }
+    },
+    {
+      "q": { "bs": "Po čemu se idgam bila gunneh razlikuje od izhara halkijja?", "en": "How does idgham bila ghunnah differ from idhhar halqi?" },
+      "opcije": [
+        { "bs": "Kod idgama bila gunneh zrak se propušta kroz nos, a kod izhara halkijja ne", "en": "In idgham bila ghunnah air passes through the nose, in idhhar halqi it does not" },
+        { "bs": "Idgam bila gunneh dolazi poslije harfa M (م) sa sukunom, a izhar halkijj poslije harfa N (ن)", "en": "Idgham bila ghunnah occurs after the letter M (م) with a sukun, idhhar halqi after the letter N (ن)" },
+        { "bs": "Kod idgama bila gunneh harf N (ن) se potpuno uklapa u L (ل) ili R (ر), a kod izhara halkijja se izgovara čisto", "en": "In idgham bila ghunnah the letter N (ن) merges completely into L (ل) or R (ر), while in idhhar halqi it is pronounced clearly" },
+        { "bs": "Kod idgama bila gunneh harf N (ن) se izgovara čisto, a kod izhara halkijja se uklapa", "en": "In idgham bila ghunnah the letter N (ن) is pronounced clearly, while in idhhar halqi it merges" }
+      ],
+      "tacno": 2,
+      "objasnjenje": {
+        "bs": "Idgam bila gunneh je potpuno uklapanje harfa N (ن) ispred L (ل) ili R (ر), a izhar halkijj je čisto izgovaranje harfa N ispred grlenih harfova.",
+        "en": "Idgham bila ghunnah is the complete merging of the letter N (ن) before L (ل) or R (ر), while idhhar halqi is the clear pronunciation of N before the throat letters."
+      }
+    },
+    {
+      "q": { "bs": "Kako se čita وَيْلٌ لِكُلِّ po pravilu idgama bila gunneh?", "en": "How is وَيْلٌ لِكُلِّ read according to idgham bila ghunnah?" },
+      "opcije": [
+        { "bs": "وَيْلُلِّكُلِّ – bez propuštanja zraka kroz nos", "en": "وَيْلُلِّكُلِّ – without air passing through the nose" },
+        { "bs": "وَيْلُلِّكُلِّ – uz propuštanje zraka kroz nos 2 hareketa", "en": "وَيْلُلِّكُلِّ – with air passing through the nose for 2 harakas" },
+        { "bs": "وَيْلٌ لِكُلِّ – tenvin se izgovara čisto", "en": "وَيْلٌ لِكُلِّ – the tanween is pronounced clearly" },
+        { "bs": "وَيْلُمْ لِكُلِّ – tenvin se pretvara u harf M (م)", "en": "وَيْلُمْ لِكُلِّ – the tanween turns into the letter M (م)" }
+      ],
+      "tacno": 0,
+      "objasnjenje": {
+        "bs": "Tenvin UN se potpuno uklapa u harf L (ل), pa se čita وَيْلُلِّكُلِّ bez propuštanja zraka kroz nos.",
+        "en": "The tanween UN merges completely into the letter L (ل), so it is read وَيْلُلِّكُلِّ without air passing through the nose."
+      }
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "lekcija": 5,
+  "pitanja": [
+    {
+      "q": { "bs": "Šta znači \"meal-gunneh\" u nazivu idgam mislejn meal-gunneh?", "en": "What does \"ma'al-ghunnah\" mean in the name idgham mithlayn ma'al-ghunnah?" },
+      "opcije": [
+        { "bs": "Sa tešdidom", "en": "With a tashdeed" },
+        { "bs": "Sa propuštanjem zraka kroz nos", "en": "With letting air pass through the nose" },
+        { "bs": "Sa sukunom", "en": "With a sukun" },
+        { "bs": "Bez ikakve promjene", "en": "Without any change" }
+      ],
+      "tacno": 1,
+      "objasnjenje": { "bs": "Meal-gunneh znači sa propuštanjem zraka kroz nos.", "en": "Ma'al-ghunnah means with nasalisation, i.e. letting air pass through the nose." }
+    },
+    {
+      "q": { "bs": "Kod kojeg harfa dolazi do idgam mislejn meal-gunneha?", "en": "With which letter does idgham mithlayn ma'al-ghunnah take place?" },
+      "opcije": [
+        { "bs": "Harf N (ن)", "en": "The letter N (ن)" },
+        { "bs": "Harf L (ل)", "en": "The letter L (ل)" },
+        { "bs": "Harf B (ب)", "en": "The letter B (ب)" },
+        { "bs": "Harf M (م)", "en": "The letter M (م)" }
+      ],
+      "tacno": 3,
+      "objasnjenje": { "bs": "Idgam mislejn meal-gunneh nastaje kada poslije harfa M (م) sa sukunom dođe harf M (م) sa hareketom.", "en": "Idgham mithlayn ma'al-ghunnah occurs when the letter M (م) with a sukun is followed by the letter M (م) with a haraka." }
+    },
+    {
+      "q": { "bs": "Kada dolazi do idgam mislejn meal-gunneha?", "en": "When does idgham mithlayn ma'al-ghunnah take place?" },
+      "opcije": [
+        { "bs": "Kada poslije harfa M sa sukunom dođe harf M sa hareketom", "en": "When the letter M with a sukun is followed by the letter M with a haraka" },
+        { "bs": "Kada poslije harfa M sa hareketom dođe harf M sa sukunom", "en": "When the letter M with a haraka is followed by the letter M with a sukun" },
+        { "bs": "Kada poslije harfa M sa sukunom dođe harf B (ب)", "en": "When the letter M with a sukun is followed by the letter B (ب)" },
+        { "bs": "Kada poslije harfa N (ن) sa sukunom dođe harf M", "en": "When the letter N (ن) with a sukun is followed by the letter M" }
+      ],
+      "tacno": 0,
+      "objasnjenje": { "bs": "Harf M sa sukunom uklapa se u harf M sa hareketom koji dolazi poslije njega.", "en": "The letter M with a sukun merges into the letter M with a haraka that follows it." }
+    },
+    {
+      "q": { "bs": "Koliko traje propuštanje zraka kroz nos kod idgam mislejn meal-gunneha?", "en": "How long does the air pass through the nose in idgham mithlayn ma'al-ghunnah?" },
+      "opcije": [
+        { "bs": "1 hareket", "en": "1 haraka" },
+        { "bs": "4 hareketa", "en": "4 harakas" },
+        { "bs": "2 hareketa", "en": "2 harakas" },
+        { "bs": "6 hareketa", "en": "6 harakas" }
+      ],
+      "tacno": 2,
+      "objasnjenje": { "bs": "Zrak se propušta kroz nos u trajanju od 2 hareketa.", "en": "Air passes through the nose for the length of 2 harakas." }
+    },
+    {
+      "q": { "bs": "Kako se čita هُمْ مِنْ?", "en": "How is هُمْ مِنْ read?" },
+      "opcije": [
+        { "bs": "هُمْ مِنْ, bez promjene", "en": "هُمْ مِنْ, without change" },
+        { "bs": "هُمِنْ", "en": "هُمِنْ" },
+        { "bs": "هُنْ مِنْ", "en": "هُنْ مِنْ" },
+        { "bs": "هُمِّنْ, uz propuštanje zraka kroz nos", "en": "هُمِّنْ, letting air pass through the nose" }
+      ],
+      "tacno": 3,
+      "objasnjenje": { "bs": "Harf M sa sukunom uklapa se u harf M sa hareketom, pa se هُمْ مِنْ čita هُمِّنْ sa gunnehom.", "en": "The letter M with a sukun merges into the letter M with a haraka, so هُمْ مِنْ is read هُمِّنْ with ghunnah." }
+    },
+    {
+      "q": { "bs": "U kojem primjeru ima idgam mislejn meal-gunneh?", "en": "In which example is there idgham mithlayn ma'al-ghunnah?" },
+      "opcije": [
+        { "bs": "قُلْ لَمْ", "en": "قُلْ لَمْ" },
+        { "bs": "أَطْعَمَهُمْ مِنْ", "en": "أَطْعَمَهُمْ مِنْ" },
+        { "bs": "إِذْ ذَهَبَ", "en": "إِذْ ذَهَبَ" },
+        { "bs": "بِسْمِ اللّٰهِ", "en": "بِسْمِ اللّٰهِ" }
+      ],
+      "tacno": 1,
+      "objasnjenje": { "bs": "U أَطْعَمَهُمْ مِنْ poslije harfa M sa sukunom dođe harf M sa hareketom.", "en": "In أَطْعَمَهُمْ مِنْ the letter M with a sukun is followed by the letter M with a haraka." }
+    },
+    {
+      "q": { "bs": "Po čemu se idgam mislejn meal-gunneh razlikuje od idgam mislejna iz lekcije 4?", "en": "How does idgham mithlayn ma'al-ghunnah differ from idgham mithlayn in lesson 4?" },
+      "opcije": [
+        { "bs": "Uklapanje je uz propuštanje zraka kroz nos", "en": "The merging is done with air passing through the nose" },
+        { "bs": "Prvi harf se uči, a drugi ne", "en": "The first letter is pronounced and the second is not" },
+        { "bs": "Na drugom harfu nema tešdida", "en": "There is no tashdeed on the second letter" },
+        { "bs": "Harfovi se uopšte ne uklapaju", "en": "The letters do not merge at all" }
+      ],
+      "tacno": 0,
+      "objasnjenje": { "bs": "Kod idgam mislejn meal-gunneha harf M se uklapa uz propuštanje zraka kroz nos u trajanju od 2 hareketa.", "en": "In idgham mithlayn ma'al-ghunnah the letter M merges with air passing through the nose for 2 harakas." }
+    },
+    {
+      "q": { "bs": "Koja se dva harfa uklapaju u primjeru فَإِنَّ لَكُمْ مَا سَأَلْتُمْ?", "en": "Which two letters merge in the example فَإِنَّ لَكُمْ مَا سَأَلْتُمْ?" },
+      "opcije": [
+        { "bs": "ن i ل", "en": "ن and ل" },
+        { "bs": "ل i ك", "en": "ل and ك" },
+        { "bs": "م i م", "en": "م and م" },
+        { "bs": "م i ا", "en": "م and ا" }
+      ],
+      "tacno": 2,
+      "objasnjenje": { "bs": "Harf M (م) sa sukunom na kraju riječi لَكُمْ uklapa se u harf M (م) na početku riječi مَا.", "en": "The letter M (م) with a sukun at the end of لَكُمْ merges into the letter M (م) at the beginning of مَا." }
+    },
+    {
+      "q": { "bs": "Šta se dešava sa harfom M (م) sa sukunom kod ovog pravila?", "en": "What happens to the letter M (م) with the sukun in this rule?" },
+      "opcije": [
+        { "bs": "Uči se odvojeno, sa sukunom", "en": "It is pronounced separately, with the sukun" },
+        { "bs": "Uklapa se u harf M sa hareketom", "en": "It merges into the letter M with the haraka" },
+        { "bs": "Pretvara se u harf N (ن)", "en": "It turns into the letter N (ن)" },
+        { "bs": "Uči se dugo", "en": "It is recited long" }
+      ],
+      "tacno": 1,
+      "objasnjenje": { "bs": "Harf M sa sukunom uklapa se u harf M sa hareketom koji dolazi poslije njega, uz gunneh.", "en": "The letter M with the sukun merges into the letter M with the haraka that follows it, with ghunnah." }
+    },
+    {
+      "q": { "bs": "U kojem primjeru NEMA idgam mislejn meal-gunneha?", "en": "In which example is there NO idgham mithlayn ma'al-ghunnah?" },
+      "opcije": [
+        { "bs": "هُمْ مِنْ", "en": "هُمْ مِنْ" },
+        { "bs": "وَاٰمَنَهُمْ مِنْ خَوْفٍ", "en": "وَاٰمَنَهُمْ مِنْ خَوْفٍ" },
+        { "bs": "إِنَّهَا عَلَيْهِمْ مُؤْصَدَةٌ", "en": "إِنَّهَا عَلَيْهِمْ مُؤْصَدَةٌ" },
+        { "bs": "وَاذْكُرْ رَبَّكَ", "en": "وَاذْكُرْ رَبَّكَ" }
+      ],
+      "tacno": 3,
+      "objasnjenje": { "bs": "U وَاذْكُرْ رَبَّكَ uklapaju se harfovi R (ر), a ne harf M (م), pa nema gunneha.", "en": "In وَاذْكُرْ رَبَّكَ the letters R (ر) merge, not the letter M (م), so there is no ghunnah." }
+    }
+  ]
+}

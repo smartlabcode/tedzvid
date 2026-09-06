@@ -1474,6 +1474,592 @@ textarea.field {
 }
 
 /* =========================================================
+   KORISNIČKI RAČUN – prijava, registracija, napredak, zaključane lekcije
+   ========================================================= */
+
+/* korisnik u traci navigacije (ime → moj napredak; gost → prijava) */
+.site-nav__user {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  max-width: 170px;
+  padding: 7px 14px 7px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--navy);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  flex: none;
+  transition: border-color 0.18s ease, color 0.18s ease, background 0.18s ease;
+
+  svg {
+    flex: none;
+    font-size: 1.25rem;
+    color: var(--gold);
+  }
+
+  span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &:hover,
+  &.is-active {
+    border-color: var(--gold);
+    color: var(--gold-600);
+    text-decoration: none;
+  }
+
+  &--guest svg {
+    color: var(--muted);
+  }
+}
+
+/* traka navigacije: linkovi i dugmad ostaju u jednom redu i uz korisnički čip */
+.site-nav__links a,
+.site-nav__actions .btn-t {
+  white-space: nowrap;
+}
+
+/* tablet (901–1100px): uži razmaci da logo, linkovi, jezik, korisnik i dugme stanu u jedan red */
+@media (max-width: 1100px) {
+  .site-nav__inner {
+    gap: 14px;
+  }
+
+  .site-nav__links a {
+    padding: 10px 9px;
+    font-size: 0.76rem;
+  }
+
+  .logo__tag {
+    display: none;
+  }
+}
+
+/* 901–1000px: linkovi su još vidljivi, a s korisničkom ikonom dugme ne stane – dugme se skriva
+   (njegov cilj je ionako među linkovima) */
+@media (max-width: 1000px) and (min-width: 901px) {
+  .site-nav__actions .btn-t {
+    display: none;
+  }
+}
+
+/* ispod 1200px korisnik u traci je samo ikona (tekst ostaje u mobilnom meniju) */
+@media (max-width: 1200px) {
+  .site-nav__user {
+    max-width: none;
+    padding: 0;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    border-radius: 12px;
+
+    span {
+      display: none;
+    }
+  }
+}
+
+.site-nav__mobile-auth {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+
+  .btn-t {
+    margin-top: 0;
+    align-self: auto;
+  }
+}
+
+/* prijava / registracija */
+.auth {
+  position: relative;
+  margin-top: -52px;
+  padding-bottom: 96px;
+
+  &__card {
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 40px 44px 36px;
+    background: #fff;
+    border-radius: 22px;
+    border-top: 6px solid var(--gold);
+    box-shadow: var(--shadow);
+  }
+
+  &__form {
+    display: grid;
+    gap: 16px;
+
+    .btn-t {
+      justify-self: center;
+      min-width: 220px;
+      margin-top: 8px;
+
+      &:disabled {
+        opacity: 0.6;
+        cursor: wait;
+        transform: none;
+      }
+    }
+
+    .notice {
+      grid-column: auto;
+    }
+  }
+
+  &__label {
+    display: grid;
+    gap: 6px;
+    margin: 0;
+
+    > span {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--navy);
+    }
+
+    small {
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
+  }
+
+  &__switch {
+    margin: 24px 0 0;
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.92rem;
+
+    a {
+      font-weight: 700;
+    }
+  }
+}
+
+/* status kviza (kartica lekcije, pregled napretka) */
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  svg {
+    font-size: 0.8rem;
+  }
+
+  &--ok {
+    background: #e6f4ec;
+    color: #1f6b43;
+  }
+
+  &--partial {
+    background: var(--gold-100);
+    color: var(--gold-600);
+  }
+
+  &--open {
+    background: #e9f1f6;
+    color: var(--navy);
+  }
+
+  &--locked {
+    background: var(--cream-2);
+    color: var(--muted);
+  }
+}
+
+/* kartica lekcije: zaključano / položeno */
+.lessons__grid.is-loading {
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.lesson-card {
+  &__num {
+    position: relative;
+  }
+
+  &__badge {
+    position: absolute;
+    right: -9px;
+    top: -9px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background: var(--navy);
+    color: #fff;
+    font-size: 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &.is-done &__badge {
+    background: var(--green);
+  }
+
+  &__status {
+    margin: -6px 0 12px;
+  }
+
+  &__locked p {
+    margin: 0 0 10px;
+    font-size: 0.86rem;
+    color: var(--muted);
+  }
+
+  &.is-locked {
+    background: var(--cream-2);
+    border-style: dashed;
+
+    &:hover {
+      transform: none;
+      border-color: var(--line);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .lesson-card__num {
+      background: #e7e1d4;
+      color: var(--muted);
+    }
+
+    .lesson-card__title {
+      color: var(--muted);
+    }
+  }
+}
+
+/* završni kviz – široka kartica na dnu pregleda lekcija */
+.lessons__final {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  margin-top: 28px;
+  padding: 28px 30px;
+  background: var(--navy);
+  background-image: var(--pattern-light);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  color: #fff;
+
+  .eyebrow {
+    color: var(--gold-200);
+  }
+
+  h3 {
+    margin: 4px 0 6px;
+    font-family: var(--font-display);
+    font-size: 2rem;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    color: #fff;
+  }
+
+  &-icon {
+    flex: none;
+    width: 64px;
+    height: 64px;
+    border-radius: 18px;
+    background: var(--gold);
+    color: var(--navy-900);
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-body {
+    flex: 1;
+    min-width: 0;
+  }
+
+  &-text {
+    margin: 0 0 14px;
+    color: rgba(255, 255, 255, 0.82);
+  }
+
+  &-hint {
+    margin: 0 0 12px;
+    font-size: 0.86rem;
+    color: rgba(255, 255, 255, 0.72);
+  }
+
+  .lesson-card__status {
+    margin: 0 0 12px;
+  }
+
+  .btn-t--ghost {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+
+    &:hover {
+      border-color: var(--gold-200);
+      color: var(--gold-200);
+    }
+  }
+
+  &.is-locked {
+    background: var(--navy-900);
+
+    .lessons__final-icon {
+      background: rgba(255, 255, 255, 0.12);
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+
+  &.is-done .lessons__final-icon {
+    background: var(--green);
+    color: #fff;
+  }
+}
+
+/* zaključana lekcija – stranica s objašnjenjem */
+.gate {
+  position: relative;
+  margin-top: -52px;
+  padding-bottom: 96px;
+
+  &--loading {
+    min-height: 240px;
+  }
+
+  &__card {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 44px 48px;
+    background: #fff;
+    border-radius: 22px;
+    border-top: 6px solid var(--gold);
+    box-shadow: var(--shadow);
+    text-align: center;
+
+    h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 3vw, 2.4rem);
+      letter-spacing: 0.03em;
+      color: var(--navy);
+      margin: 0 0 10px;
+    }
+
+    p {
+      color: var(--muted);
+      max-width: 54ch;
+      margin: 0 auto;
+    }
+  }
+
+  &__icon {
+    width: 72px;
+    height: 72px;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    background: var(--gold-100);
+    color: var(--gold-600);
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 26px;
+  }
+}
+
+/* moj napredak */
+.profil {
+  position: relative;
+  margin-top: -52px;
+  padding-bottom: 96px;
+
+  &__summary {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+
+  &__stat {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 22px 24px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    box-shadow: var(--shadow-sm);
+
+    b {
+      font-family: var(--font-display);
+      font-size: 2.6rem;
+      line-height: 1;
+      color: var(--navy);
+
+      small {
+        font-size: 1.2rem;
+        color: var(--muted);
+      }
+    }
+
+    span {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    &--next {
+      justify-content: center;
+      align-items: flex-start;
+      gap: 12px;
+    }
+  }
+
+  &__done {
+    font-family: inherit !important;
+    font-size: 1rem !important;
+    color: var(--green) !important;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 10px;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 16px 12px 12px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    box-shadow: var(--shadow-sm);
+
+    &.is-locked {
+      opacity: 0.65;
+      background: var(--cream-2);
+      border-style: dashed;
+    }
+
+    &.is-ok .profil__num {
+      background: #e6f4ec;
+      color: #1f6b43;
+    }
+  }
+
+  &__num {
+    flex: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: var(--gold-100);
+    color: var(--gold-600);
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__name {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+
+    b {
+      font-size: 0.9rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--navy);
+    }
+
+    small {
+      color: var(--muted);
+      font-size: 0.82rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+
+  &__foot {
+    margin-top: 28px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .profil__summary {
+    grid-template-columns: 1fr 1fr;
+
+    .profil__stat--next {
+      grid-column: 1 / -1;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .auth__card,
+  .gate__card {
+    padding: 30px 22px 32px;
+  }
+
+  .profil__summary {
+    grid-template-columns: 1fr;
+  }
+
+  .lessons__final {
+    flex-direction: column;
+    padding: 22px 18px;
+
+    h3 {
+      font-size: 1.7rem;
+    }
+  }
+
+  .profil__row {
+    flex-wrap: wrap;
+
+    .profil__kviz {
+      margin-left: auto;
+    }
+  }
+
+  .site-nav__user {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* =========================================================
    RESPONSIVE
    ========================================================= */
 @media (max-width: 1024px) {

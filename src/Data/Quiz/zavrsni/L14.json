@@ -1,0 +1,49 @@
+{
+  "lekcija": 14,
+  "pitanja": [
+    {
+      "q": { "bs": "Kako se uči harf R (ر) u riječi صُدُورْ i zašto?", "en": "How is the letter R (ر) recited in the word صُدُورْ, and why?" },
+      "opcije": [
+        { "bs": "Tanko, jer je prije njega harf و sa sukunom", "en": "Light, because it is preceded by the letter و with a sukun" },
+        { "bs": "Krupno, jer je harf R sa vokalom U", "en": "Heavy, because the letter R carries the vowel U" },
+        { "bs": "Tanko, jer je harf R na kraju riječi", "en": "Light, because the letter R is at the end of the word" },
+        { "bs": "Krupno, jer je R sa sukunom, prije njega harf sa sukunom, a prije toga harf sa vokalom U", "en": "Heavy, because R carries a sukun, is preceded by a letter with a sukun, and before that comes a letter with the vowel U" }
+      ],
+      "tacno": 3,
+      "objasnjenje": { "bs": "To je treća situacija krupnog izgovora (ــُـ ــْـ رْ), kao u صُدُورْ i قَدْرْ.", "en": "This is the third situation of heavy pronunciation (ــُـ ــْـ رْ), as in صُدُورْ and قَدْرْ." }
+    },
+    {
+      "q": { "bs": "Kako se uči harf R (ر) u primjeru فَاغْفِرْ لَنَا ذُنُوبَنَا?", "en": "How is the letter R (ر) recited in the example فَاغْفِرْ لَنَا ذُنُوبَنَا?" },
+      "opcije": [
+        { "bs": "Krupno, jer je prije njega harf غ sa sukunom", "en": "Heavy, because it is preceded by the letter غ with a sukun" },
+        { "bs": "Tanko, jer je R sa sukunom, a prije njega harf sa vokalom I", "en": "Light, because R carries a sukun and is preceded by a letter with the vowel I" },
+        { "bs": "Krupno, jer poslije njega dolazi harf L (ل)", "en": "Heavy, because it is followed by the letter L (ل)" },
+        { "bs": "Tanko, jer je harf R sa vokalom I", "en": "Light, because the letter R carries the vowel I" }
+      ],
+      "tacno": 1,
+      "objasnjenje": { "bs": "U فَاغْفِرْ harf R je sa sukunom, a prije njega je harf ف sa vokalom I (ــِـ رْ), pa se uči tanko.", "en": "In فَاغْفِرْ the letter R carries a sukun and is preceded by the letter ف with the vowel I (ــِـ رْ), so it is recited light." }
+    },
+    {
+      "q": { "bs": "U primjeru قِبَلَ الْمَشْرِقِ وَالْمَغْرِبِ kako se uče oba harfa R (ر)?", "en": "In the example قِبَلَ الْمَشْرِقِ وَالْمَغْرِبِ how are both letters R (ر) recited?" },
+      "opcije": [
+        { "bs": "Oba tanko, jer su sa vokalom I", "en": "Both light, because they carry the vowel I" },
+        { "bs": "Oba krupno, jer je prije njih harf sa sukunom", "en": "Both heavy, because they are preceded by a letter with a sukun" },
+        { "bs": "Prvi krupno, a drugi tanko", "en": "The first heavy and the second light" },
+        { "bs": "Prvi tanko, a drugi krupno", "en": "The first light and the second heavy" }
+      ],
+      "tacno": 0,
+      "objasnjenje": { "bs": "Harf R sa vokalom I uči se tanko, a u الْمَشْرِقِ i الْمَغْرِبِ oba harfa R imaju vokal I.", "en": "The letter R with the vowel I is recited light, and in الْمَشْرِقِ and الْمَغْرِبِ both letters R carry the vowel I." }
+    },
+    {
+      "q": { "bs": "Zašto se u primjeru وَإِلَيْهِ يُرْجَعُ الْأَمْرُ harf R (ر) u riječi يُرْجَعُ uči krupno?", "en": "Why is the letter R (ر) in the word يُرْجَعُ (in وَإِلَيْهِ يُرْجَعُ الْأَمْرُ) recited heavy?" },
+      "opcije": [
+        { "bs": "Jer je harf R sa vokalom U", "en": "Because the letter R carries the vowel U" },
+        { "bs": "Jer poslije harfa R dolazi harf ج", "en": "Because the letter R is followed by the letter ج" },
+        { "bs": "Jer je harf R sa sukunom, a prije njega harf sa vokalom U", "en": "Because the letter R carries a sukun and is preceded by a letter with the vowel U" },
+        { "bs": "Jer je prije harfa R harf J (ي) sa sukunom", "en": "Because the letter R is preceded by the letter Y (ي) with a sukun" }
+      ],
+      "tacno": 2,
+      "objasnjenje": { "bs": "To je druga situacija krupnog izgovora (ــُـ رْ): harf R sa sukunom iza harfa sa vokalom U, kao u فَاهْجُرْ.", "en": "This is the second situation of heavy pronunciation (ــُـ رْ): the letter R with a sukun after a letter with the vowel U, as in فَاهْجُرْ." }
+    }
+  ]
+}

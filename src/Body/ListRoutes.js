@@ -3,6 +3,10 @@
 import React, { useEffect } from 'react';
 import Home from './HomePage';
 import Demo from './LandingPage';
+import AuthPage from './AuthPage';
+import ProfilePage from './ProfilePage';
+import FinalQuizPage from './FinalQuizPage';
+import LessonGate from './LessonGate';
 import {
 	L1,
 	L2,
@@ -81,6 +85,10 @@ function ListRoutes() {
 		<React.Fragment key={lang}>
 			<Route path="/" exact component={Demo} />
 			<Route path="/lekcije" exact component={Home} />
+			<Route path="/prijava" exact render={() => <AuthPage mode="login" />} />
+			<Route path="/registracija" exact render={() => <AuthPage mode="register" />} />
+			<Route path="/profil" exact component={ProfilePage} />
+			<Route path="/zavrsni-kviz" exact component={FinalQuizPage} />
 			{Object.keys(LEKCIJE).map((key) => {
 				const Lekcija = LEKCIJE[key];
 				return (
@@ -88,10 +96,13 @@ function ListRoutes() {
 						key={key}
 						path={'/lekcija' + key}
 						render={() => (
-							<div className="lekcija-page">
-								<Lekcija />
-								<NowPlayingBar />
-							</div>
+							/* zaključana lekcija prikazuje objašnjenje umjesto sadržaja */
+							<LessonGate lekcija={key}>
+								<div className="lekcija-page">
+									<Lekcija />
+									<NowPlayingBar />
+								</div>
+							</LessonGate>
 						)}
 					/>
 				);

@@ -1,0 +1,115 @@
+{
+  "lekcija": 20,
+  "pitanja": [
+    {
+      "q": { "bs": "Šta znači „medd lazim“?", "en": "What does “madd lazim” mean?" },
+      "opcije": [
+        { "bs": "Obična dužina", "en": "Natural prolongation" },
+        { "bs": "Spojena dužina", "en": "Connected prolongation" },
+        { "bs": "Nestalna dužina", "en": "Temporary prolongation" },
+        { "bs": "Stalna dužina", "en": "Obligatory prolongation" }
+      ],
+      "tacno": 3,
+      "objasnjenje": { "bs": "Medd lazim je stalna dužina.", "en": "Madd lazim is the obligatory prolongation." }
+    },
+    {
+      "q": { "bs": "Kada nastaje medd lazim?", "en": "When does madd lazim occur?" },
+      "opcije": [
+        { "bs": "Kada poslije dugog vokala dođe hemze u istoj riječi", "en": "When the long vowel is followed by a hamza in the same word" },
+        { "bs": "Kada poslije dugog vokala dođe harf sa stalnim sukunom ili tešdidom", "en": "When the long vowel is followed by a letter with a permanent sukun or a tashdeed" },
+        { "bs": "Kada poslije dugog vokala dođe nestalni sukun", "en": "When the long vowel is followed by a temporary sukun" },
+        { "bs": "Kada poslije dugog vokala nema ni hemzeta ni sukuna", "en": "When the long vowel is followed by neither a hamza nor a sukun" }
+      ],
+      "tacno": 1,
+      "objasnjenje": { "bs": "Medd lazim je kada poslije dugog vokala dođe harf sa stalnim sukunom ili tešdidom.", "en": "Madd lazim is when the long vowel is followed by a letter with a permanent sukun or a tashdeed." }
+    },
+    {
+      "q": { "bs": "Koliko traje medd lazim?", "en": "How long does madd lazim last?" },
+      "opcije": [
+        { "bs": "2 hareketa", "en": "2 harakas" },
+        { "bs": "4-5 hareketa", "en": "4–5 harakas" },
+        { "bs": "Obavezno 6 hareketa", "en": "It must last 6 harakas" },
+        { "bs": "2-4-6 hareketa", "en": "2, 4 or 6 harakas" }
+      ],
+      "tacno": 2,
+      "objasnjenje": { "bs": "Medd lazim traje obavezno 6 hareketa.", "en": "Madd lazim must last 6 harakas." }
+    },
+    {
+      "q": { "bs": "Kako se čita harf قٓ na početku sure?", "en": "How is the letter قٓ read at the beginning of a surah?" },
+      "opcije": [
+        { "bs": "قَـآفْ – dužina traje 6 hareketa", "en": "قَـآفْ – the prolongation lasts 6 harakas" },
+        { "bs": "Kratko, bez dužine", "en": "Short, without prolongation" },
+        { "bs": "Kaf – dužina traje 2 hareketa", "en": "Qaf – the prolongation lasts 2 harakas" },
+        { "bs": "Kaf – dužina traje 4-5 hareketa", "en": "Qaf – the prolongation lasts 4–5 harakas" }
+      ],
+      "tacno": 0,
+      "objasnjenje": { "bs": "Harf قٓ čita se قَـآفْ, a poslije dugog vokala A dolazi stalni sukun, pa je to medd lazim od 6 hareketa.", "en": "The letter قٓ is read قَـآفْ, and the long vowel A is followed by a permanent sukun, so it is madd lazim of 6 harakas." }
+    },
+    {
+      "q": { "bs": "Šta osim stalnog sukuna može doći poslije dugog vokala da bi bio medd lazim?", "en": "Besides a permanent sukun, what can follow the long vowel for it to be madd lazim?" },
+      "opcije": [
+        { "bs": "Hemze", "en": "A hamza" },
+        { "bs": "Tešdid", "en": "A tashdeed" },
+        { "bs": "Elif", "en": "An alif" },
+        { "bs": "Nestalni sukun", "en": "A temporary sukun" }
+      ],
+      "tacno": 1,
+      "objasnjenje": { "bs": "Medd lazim nastaje kada poslije dugog vokala dođe harf sa stalnim sukunom ili tešdidom.", "en": "Madd lazim occurs when the long vowel is followed by a letter with a permanent sukun or a tashdeed." }
+    },
+    {
+      "q": { "bs": "U riječi آٰلْاٰنَ medd lazim nastaje jer poslije dugog vokala A dolazi:", "en": "In the word آٰلْاٰنَ madd lazim occurs because the long vowel A is followed by:" },
+      "opcije": [
+        { "bs": "hemze", "en": "a hamza" },
+        { "bs": "elif", "en": "an alif" },
+        { "bs": "nestalni sukun", "en": "a temporary sukun" },
+        { "bs": "harf L sa stalnim sukunom (لْ)", "en": "the letter L with a permanent sukun (لْ)" }
+      ],
+      "tacno": 3,
+      "objasnjenje": { "bs": "U riječi آٰلْاٰنَ poslije dugog vokala A dolazi harf L sa stalnim sukunom, pa je to medd lazim.", "en": "In آٰلْاٰنَ the long vowel A is followed by the letter L with a permanent sukun, so it is madd lazim." }
+    },
+    {
+      "q": { "bs": "Koja riječ sadrži medd lazim?", "en": "Which word contains madd lazim?" },
+      "opcije": [
+        { "bs": "الضَّآلِّينَ", "en": "الضَّآلِّينَ" },
+        { "bs": "جَٓاءَ", "en": "جَٓاءَ" },
+        { "bs": "قَالَ", "en": "قَالَ" },
+        { "bs": "وَمَآ أَنْتُمْ", "en": "وَمَآ أَنْتُمْ" }
+      ],
+      "tacno": 0,
+      "objasnjenje": { "bs": "U riječi الضَّآلِّينَ poslije dugog vokala A dolazi harf L sa tešdidom, pa je to medd lazim.", "en": "In الضَّآلِّينَ the long vowel A is followed by the letter L with a tashdeed, so it is madd lazim." }
+    },
+    {
+      "q": { "bs": "Kako se čita الٓمٓ na početku sure?", "en": "How is الٓمٓ read at the beginning of a surah?" },
+      "opcije": [
+        { "bs": "Kao jedna kratka riječ", "en": "As one short word" },
+        { "bs": "Elif lam mim, bez ikakve dužine", "en": "Alif lam mim, without any prolongation" },
+        { "bs": "اَلِفْ لَآمْ مِيٓمْ – lam i mim sa medd lazimom od 6 hareketa", "en": "اَلِفْ لَآمْ مِيٓمْ – lam and mim with madd lazim of 6 harakas" },
+        { "bs": "Elif lam mim, svaki sa dužinom od 2 hareketa", "en": "Alif lam mim, each with a prolongation of 2 harakas" }
+      ],
+      "tacno": 2,
+      "objasnjenje": { "bs": "Čita se اَلِفْ لَآمْ مِيٓمْ, a dužina u lam i mim je medd lazim od 6 hareketa.", "en": "It is read اَلِفْ لَآمْ مِيٓمْ, and the prolongation in lam and mim is madd lazim of 6 harakas." }
+    },
+    {
+      "q": { "bs": "Kakav sukun mora doći poslije dugog vokala kod medd lazima?", "en": "What kind of sukun must follow the long vowel in madd lazim?" },
+      "opcije": [
+        { "bs": "Nestalni sukun", "en": "A temporary sukun" },
+        { "bs": "Sukun na hemzetu", "en": "A sukun on a hamza" },
+        { "bs": "Sukun na kraju ajeta", "en": "A sukun at the end of an ayah" },
+        { "bs": "Stalni sukun", "en": "A permanent sukun" }
+      ],
+      "tacno": 3,
+      "objasnjenje": { "bs": "Kod medd lazima poslije dugog vokala dolazi harf sa stalnim sukunom.", "en": "In madd lazim the long vowel is followed by a letter with a permanent sukun." }
+    },
+    {
+      "q": { "bs": "Smije li se medd lazim skratiti?", "en": "May madd lazim be shortened?" },
+      "opcije": [
+        { "bs": "Da, na 2 hareketa", "en": "Yes, to 2 harakas" },
+        { "bs": "Ne, on obavezno traje 6 hareketa", "en": "No, it must last 6 harakas" },
+        { "bs": "Da, na 4 hareketa", "en": "Yes, to 4 harakas" },
+        { "bs": "Da, ako je na kraju ajeta", "en": "Yes, if it is at the end of an ayah" }
+      ],
+      "tacno": 1,
+      "objasnjenje": { "bs": "Medd lazim traje obavezno 6 hareketa i ne smije se skratiti.", "en": "Madd lazim must last 6 harakas and may not be shortened." }
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "lekcija": 6,
+  "pitanja": [
+    {
+      "q": { "bs": "U primjeru نِعْمَةً مِنْهُ, kako se uči tenvin EN?", "en": "In the example نِعْمَةً مِنْهُ, how is the tanween AN recited?" },
+      "opcije": [
+        { "bs": "Izgovara se čisto, bez uklapanja", "en": "It is pronounced clearly, without merging" },
+        { "bs": "Uklapa se u harf M (م), a zrak se propušta kroz nos 2 hareketa", "en": "It merges into the letter M (م) while air passes through the nose for 2 harakas" },
+        { "bs": "Potpuno se uklapa u harf M (م), bez propuštanja zraka kroz nos", "en": "It merges completely into the letter M (م), without air passing through the nose" },
+        { "bs": "Skriva se, a jezik ne dotiče nepce", "en": "It is hidden, without the tongue touching the palate" }
+      ],
+      "tacno": 1,
+      "objasnjenje": {
+        "bs": "Poslije tenvina EN dolazi harf M (م), jedan od četiri harfa و ن م ي, pa se tenvin uklapa u M uz propuštanje zraka kroz nos.",
+        "en": "The tanween AN is followed by the letter M (م), one of the four letters و ن م ي, so it merges into M with air passing through the nose."
+      }
+    },
+    {
+      "q": { "bs": "Koje pravilo se primjenjuje u primjeru أُمَّةٌ يَدْعُونَ?", "en": "Which rule applies in the example أُمَّةٌ يَدْعُونَ?" },
+      "opcije": [
+        { "bs": "Izhar mutlak", "en": "Idhhar mutlaq" },
+        { "bs": "Ihfa", "en": "Ikhfa" },
+        { "bs": "Idgam meal-gunneh", "en": "Idgham ma'al-ghunnah" },
+        { "bs": "Idgam bila gunneh", "en": "Idgham bila ghunnah" }
+      ],
+      "tacno": 2,
+      "objasnjenje": {
+        "bs": "Poslije tenvina UN dolazi harf J (ي) na početku sljedeće riječi, pa dolazi do idgama meal-gunneh.",
+        "en": "The tanween UN is followed by the letter Y (ي) at the start of the next word, so idgham ma'al-ghunnah occurs."
+      }
+    },
+    {
+      "q": { "bs": "Koliko puta u primjeru حَبْلٌ مِنْ مَسَدٍ dolazi do idgama meal-gunneh?", "en": "How many times does idgham ma'al-ghunnah occur in the example حَبْلٌ مِنْ مَسَدٍ?" },
+      "opcije": [
+        { "bs": "Jedanput", "en": "Once" },
+        { "bs": "Dva puta", "en": "Twice" },
+        { "bs": "Tri puta", "en": "Three times" },
+        { "bs": "Nijednom", "en": "Not at all" }
+      ],
+      "tacno": 1,
+      "objasnjenje": {
+        "bs": "Prvo poslije tenvina UN (حَبْلٌ) dolazi harf M (م), a zatim poslije harfa N sa sukunom (مِنْ) opet harf M (م).",
+        "en": "First the tanween UN (حَبْلٌ) is followed by the letter M (م), and then the letter N with a sukun (مِنْ) is again followed by M (م)."
+      }
+    },
+    {
+      "q": { "bs": "Kada poslije harfa N (ن) sa sukunom dođe harf R (ر), da li dolazi do idgama meal-gunneh?", "en": "When the letter N (ن) with a sukun is followed by the letter R (ر), does idgham ma'al-ghunnah occur?" },
+      "opcije": [
+        { "bs": "Da, jer je R (ر) jedan od četiri harfa", "en": "Yes, because R (ر) is one of the four letters" },
+        { "bs": "Ne, harf N (ن) se izgovara čisto", "en": "No, the letter N (ن) is pronounced clearly" },
+        { "bs": "Ne, harf N (ن) se pretvara u harf M (م)", "en": "No, the letter N (ن) turns into the letter M (م)" },
+        { "bs": "Ne, dolazi do idgama bila gunneh, bez propuštanja zraka kroz nos", "en": "No, idgham bila ghunnah occurs, without air passing through the nose" }
+      ],
+      "tacno": 3,
+      "objasnjenje": {
+        "bs": "Harf R (ر) nije među harfovima و ن م ي, nego uz harf L (ل) izaziva idgam bila gunneh.",
+        "en": "The letter R (ر) is not among the letters و ن م ي; together with L (ل) it causes idgham bila ghunnah."
+      }
+    },
+    {
+      "q": { "bs": "U primjeru شَيْئًا نُكْرًا, u koji harf se uklapa tenvin EN?", "en": "In the example شَيْئًا نُكْرًا, into which letter does the tanween AN merge?" },
+      "opcije": [
+        { "bs": "U harf N (ن)", "en": "Into the letter N (ن)" },
+        { "bs": "U harf K (ك)", "en": "Into the letter K (ك)" },
+        { "bs": "U harf Š (ش)", "en": "Into the letter Sh (ش)" },
+        { "bs": "U harf R (ر)", "en": "Into the letter R (ر)" }
+      ],
+      "tacno": 0,
+      "objasnjenje": {
+        "bs": "Poslije tenvina EN dolazi harf N (ن) na početku riječi نُكْرًا, pa se tenvin uklapa u N uz propuštanje zraka kroz nos.",
+        "en": "The tanween AN is followed by the letter N (ن) at the start of the word نُكْرًا, so the tanween merges into N with air passing through the nose."
+      }
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "lekcija": 15,
+  "pitanja": [
+    {
+      "q": { "bs": "Šta znači idgam mutedžanisejn?", "en": "What does idgham mutajanisayn mean?" },
+      "opcije": [
+        { "bs": "Uklapanje istih harfova", "en": "Merging identical letters" },
+        { "bs": "Uklapanje srodnih harfova", "en": "Merging related letters" },
+        { "bs": "Uklapanje bliskih harfova", "en": "Merging close letters" },
+        { "bs": "Skrivanje harfa M (م)", "en": "Hiding the letter M (م)" }
+      ],
+      "tacno": 1,
+      "objasnjenje": { "bs": "Idgam mutedžanisejn znači uklapanje srodnih harfova.", "en": "Idgham mutajanisayn means merging related letters." }
+    },
+    {
+      "q": { "bs": "Koji znak nosi prvi od dva srodna harfa kod idgam mutedžanisejna?", "en": "Which sign does the first of the two related letters carry in idgham mutajanisayn?" },
+      "opcije": [
+        { "bs": "Sukun", "en": "A sukun" },
+        { "bs": "Hareket", "en": "A haraka" },
+        { "bs": "Tenvin", "en": "A tanween" },
+        { "bs": "Tešdid", "en": "A tashdeed" }
+      ],
+      "tacno": 0,
+      "objasnjenje": { "bs": "Prvi harf je sa sukunom, a drugi sa hareketom.", "en": "The first letter carries a sukun and the second a haraka." }
+    },
+    {
+      "q": { "bs": "Koji znak nosi drugi od dva srodna harfa kod idgam mutedžanisejna?", "en": "Which sign does the second of the two related letters carry in idgham mutajanisayn?" },
+      "opcije": [
+        { "bs": "Sukun", "en": "A sukun" },
+        { "bs": "Tenvin", "en": "A tanween" },
+        { "bs": "Hareket", "en": "A haraka" },
+        { "bs": "Tešdid", "en": "A tashdeed" }
+      ],
+      "tacno": 2,
+      "objasnjenje": { "bs": "Drugi harf mora biti sa hareketom da bi se prvi uklopio u njega.", "en": "The second letter must carry a haraka so that the first merges into it." }
+    },
+    {
+      "q": { "bs": "Šta se dešava kada dođu jedan do drugog srodni harfovi iz iste grupe?", "en": "What happens when two related letters from the same group come next to each other?" },
+      "opcije": [
+        { "bs": "Oba se izgovaraju čisto", "en": "Both are pronounced clearly" },
+        { "bs": "Drugi se uklapa u prvi", "en": "The second merges into the first" },
+        { "bs": "Prvi se izgovara kroz nos", "en": "The first is pronounced through the nose" },
+        { "bs": "Prvi se uklapa u drugi", "en": "The first merges into the second" }
+      ],
+      "tacno": 3,
+      "objasnjenje": { "bs": "Prvi harf (sa sukunom) uklapa se u drugi (sa hareketom).", "en": "The first letter (with a sukun) merges into the second (with a haraka)." }
+    },
+    {
+      "q": { "bs": "Koliko grupa srodnih harfova navodi ova lekcija?", "en": "How many groups of related letters does this lesson list?" },
+      "opcije": [
+        { "bs": "2", "en": "2" },
+        { "bs": "3", "en": "3" },
+        { "bs": "4", "en": "4" },
+        { "bs": "5", "en": "5" }
+      ],
+      "tacno": 1,
+      "objasnjenje": { "bs": "Postoje tri grupe: ط د ت, ظ ذ ث i ب م.", "en": "There are three groups: ط د ت, ظ ذ ث and ب م." }
+    },
+    {
+      "q": { "bs": "Koji harfovi pripadaju istoj grupi kao harf د?", "en": "Which letters belong to the same group as the letter د?" },
+      "opcije": [
+        { "bs": "ط i ت", "en": "ط and ت" },
+        { "bs": "ظ i ث", "en": "ظ and ث" },
+        { "bs": "ب i م", "en": "ب and م" },
+        { "bs": "ن i م", "en": "ن and م" }
+      ],
+      "tacno": 0,
+      "objasnjenje": { "bs": "Prva grupa srodnih harfova je ط د ت.", "en": "The first group of related letters is ط د ت." }
+    },
+    {
+      "q": { "bs": "Koja od ovih grupa je grupa srodnih harfova?", "en": "Which of these is a group of related letters?" },
+      "opcije": [
+        { "bs": "ط ذ ت", "en": "ط ذ ت" },
+        { "bs": "ق ك", "en": "ق ك" },
+        { "bs": "ظ ذ ث", "en": "ظ ذ ث" },
+        { "bs": "ب ن", "en": "ب ن" }
+      ],
+      "tacno": 2,
+      "objasnjenje": { "bs": "Druga grupa srodnih harfova je ظ ذ ث.", "en": "The second group of related letters is ظ ذ ث." }
+    },
+    {
+      "q": { "bs": "Kako se čita عَبَدْتُمْ?", "en": "How is عَبَدْتُمْ read?" },
+      "opcije": [
+        { "bs": "عَبَدُّمْ", "en": "عَبَدُّمْ" },
+        { "bs": "عَبَدْتُمْ (bez promjene)", "en": "عَبَدْتُمْ (unchanged)" },
+        { "bs": "عَبَنْتُمْ", "en": "عَبَنْتُمْ" },
+        { "bs": "عَبَتُّمْ", "en": "عَبَتُّمْ" }
+      ],
+      "tacno": 3,
+      "objasnjenje": { "bs": "Harf د sa sukunom uklapa se u harf ت, pa se čita عَبَتُّمْ.", "en": "The letter د with a sukun merges into the letter ت, so it is read عَبَتُّمْ." }
+    },
+    {
+      "q": { "bs": "Kako se čita إِذْ ظَلَمُوا?", "en": "How is إِذْ ظَلَمُوا read?" },
+      "opcije": [
+        { "bs": "إِذَّلَمُوا", "en": "إِذَّلَمُوا" },
+        { "bs": "إِظَّلَمُوا", "en": "إِظَّلَمُوا" },
+        { "bs": "إِذْ ظَلَمُوا (bez promjene)", "en": "إِذْ ظَلَمُوا (unchanged)" },
+        { "bs": "إِزَّلَمُوا", "en": "إِزَّلَمُوا" }
+      ],
+      "tacno": 1,
+      "objasnjenje": { "bs": "Harf ذ sa sukunom uklapa se u harf ظ, pa se čita إِظَّلَمُوا.", "en": "The letter ذ with a sukun merges into the letter ظ, so it is read إِظَّلَمُوا." }
+    },
+    {
+      "q": { "bs": "U kojem od ovih primjera se nalazi idgam mutedžanisejn?", "en": "In which of these examples is there idgham mutajanisayn?" },
+      "opcije": [
+        { "bs": "ارْكَبْ مَعَنَا", "en": "ارْكَبْ مَعَنَا" },
+        { "bs": "وَقُلْ رَبِّ", "en": "وَقُلْ رَبِّ" },
+        { "bs": "أَلَمْ نَخْلُقْكُمْ", "en": "أَلَمْ نَخْلُقْكُمْ" },
+        { "bs": "مِنْ تَحْتِهَا", "en": "مِنْ تَحْتِهَا" }
+      ],
+      "tacno": 0,
+      "objasnjenje": { "bs": "U ارْكَبْ مَعَنَا harf ب sa sukunom uklapa se u harf م iz iste grupe.", "en": "In ارْكَبْ مَعَنَا the letter ب with a sukun merges into the letter م from the same group." }
+    }
+  ]
+}

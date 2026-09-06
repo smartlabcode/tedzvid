@@ -1,0 +1,115 @@
+{
+  "lekcija": 4,
+  "pitanja": [
+    {
+      "q": { "bs": "Šta znači idgam mislejn?", "en": "What does idgham mithlayn mean?" },
+      "opcije": [
+        { "bs": "Uklapanje istih harfova", "en": "Merging identical letters" },
+        { "bs": "Stajanje prilikom učenja", "en": "Stopping during recitation" },
+        { "bs": "Izgovaranje zamjenice HU", "en": "Pronouncing the pronoun HU" },
+        { "bs": "Propuštanje zraka kroz nos", "en": "Letting air pass through the nose" }
+      ],
+      "tacno": 0,
+      "objasnjenje": { "bs": "Idgam mislejn znači uklapanje istih harfova.", "en": "Idgham mithlayn means merging identical letters." }
+    },
+    {
+      "q": { "bs": "Kada dolazi do idgam mislejna?", "en": "When does idgham mithlayn take place?" },
+      "opcije": [
+        { "bs": "Kada poslije harfa sa hareketom dođe isti harf sa sukunom", "en": "When a letter with a haraka is followed by the same letter with a sukun" },
+        { "bs": "Kada poslije harfa sa sukunom dođe bilo koji drugi harf", "en": "When a letter with a sukun is followed by any other letter" },
+        { "bs": "Kada poslije harfa sa sukunom dođe isti harf sa hareketom", "en": "When a letter with a sukun is followed by the same letter with a haraka" },
+        { "bs": "Kada poslije tenvina dođe harf M (م)", "en": "When a tanween is followed by the letter M (م)" }
+      ],
+      "tacno": 2,
+      "objasnjenje": { "bs": "Idgam mislejn nastaje kada poslije harfa sa sukunom dođe isti harf sa hareketom.", "en": "Idgham mithlayn occurs when a letter carrying a sukun is followed by the same letter carrying a haraka." }
+    },
+    {
+      "q": { "bs": "Šta se dešava sa prvim harfom (onim sa sukunom) kod idgam mislejna?", "en": "What happens to the first letter (the one with the sukun) in idgham mithlayn?" },
+      "opcije": [
+        { "bs": "Uči se sa tešdidom", "en": "It is recited with a tashdeed" },
+        { "bs": "Ne uči se", "en": "It is not pronounced" },
+        { "bs": "Uči se dugo", "en": "It is recited long" },
+        { "bs": "Uči se kroz nos", "en": "It is recited through the nose" }
+      ],
+      "tacno": 1,
+      "objasnjenje": { "bs": "Kod idgam mislejna prvi harf se ne uči, a drugi se uči sa tešdidom.", "en": "In idgham mithlayn the first letter is not pronounced, and the second is recited with a tashdeed." }
+    },
+    {
+      "q": { "bs": "Kako se uči drugi harf kod idgam mislejna?", "en": "How is the second letter recited in idgham mithlayn?" },
+      "opcije": [
+        { "bs": "Sa sukunom", "en": "With a sukun" },
+        { "bs": "Kratko", "en": "Short" },
+        { "bs": "Sa gunnehom", "en": "With ghunnah" },
+        { "bs": "Sa tešdidom", "en": "With a tashdeed" }
+      ],
+      "tacno": 3,
+      "objasnjenje": { "bs": "Drugi harf se uči sa tešdidom, jer se u njega uklopio prvi harf.", "en": "The second letter is recited with a tashdeed, because the first letter merged into it." }
+    },
+    {
+      "q": { "bs": "Kako se čita قُلْ لَمْ?", "en": "How is قُلْ لَمْ read?" },
+      "opcije": [
+        { "bs": "قُلْ لَمْ, bez promjene", "en": "قُلْ لَمْ, without change" },
+        { "bs": "قُلَمْ", "en": "قُلَمْ" },
+        { "bs": "قُلَّمْ", "en": "قُلَّمْ" },
+        { "bs": "قُلْ لَمْ, sa gunnehom", "en": "قُلْ لَمْ, with ghunnah" }
+      ],
+      "tacno": 2,
+      "objasnjenje": { "bs": "Harf L (ل) sa sukunom uklapa se u harf L (ل) sa hareketom, pa se قُلْ لَمْ čita قُلَّمْ.", "en": "The letter L (ل) with a sukun merges into the letter L (ل) with a haraka, so قُلْ لَمْ is read قُلَّمْ." }
+    },
+    {
+      "q": { "bs": "Kako se čita إِذْ ذَهَبَ?", "en": "How is إِذْ ذَهَبَ read?" },
+      "opcije": [
+        { "bs": "إِذَّهَبَ", "en": "إِذَّهَبَ" },
+        { "bs": "إِذَهَبَ", "en": "إِذَهَبَ" },
+        { "bs": "إِذْ ذَهَبَ, bez promjene", "en": "إِذْ ذَهَبَ, without change" },
+        { "bs": "إِذْ ذَهَبَ, sa gunnehom", "en": "إِذْ ذَهَبَ, with ghunnah" }
+      ],
+      "tacno": 0,
+      "objasnjenje": { "bs": "Harf ذ sa sukunom uklapa se u isti harf sa hareketom, pa se čita إِذَّهَبَ sa tešdidom.", "en": "The letter ذ with a sukun merges into the same letter with a haraka, so it is read إِذَّهَبَ with a tashdeed." }
+    },
+    {
+      "q": { "bs": "U kojem primjeru ima idgam mislejn?", "en": "In which example is there idgham mithlayn?" },
+      "opcije": [
+        { "bs": "بِسْمِ اللّٰهِ", "en": "بِسْمِ اللّٰهِ" },
+        { "bs": "لَهُ", "en": "لَهُ" },
+        { "bs": "مَاخَلَقَ", "en": "مَاخَلَقَ" },
+        { "bs": "وَاذْكُرْ رَبَّكَ", "en": "وَاذْكُرْ رَبَّكَ" }
+      ],
+      "tacno": 3,
+      "objasnjenje": { "bs": "U وَاذْكُرْ رَبَّكَ poslije harfa R (ر) sa sukunom dođe harf R (ر) sa hareketom, pa se uklapaju.", "en": "In وَاذْكُرْ رَبَّكَ the letter R (ر) with a sukun is followed by the letter R (ر) with a haraka, so they merge." }
+    },
+    {
+      "q": { "bs": "Koja se dva harfa uklapaju u primjeru إِذْهَبْ بِكِتَابِي?", "en": "Which two letters merge in the example إِذْهَبْ بِكِتَابِي?" },
+      "opcije": [
+        { "bs": "ذ i ه", "en": "ذ and ه" },
+        { "bs": "ب i ب", "en": "ب and ب" },
+        { "bs": "ه i ب", "en": "ه and ب" },
+        { "bs": "ب i ك", "en": "ب and ك" }
+      ],
+      "tacno": 1,
+      "objasnjenje": { "bs": "Harf B (ب) sa sukunom na kraju riječi إِذْهَبْ uklapa se u harf B (ب) na početku riječi بِكِتَابِي.", "en": "The letter B (ب) with a sukun at the end of إِذْهَبْ merges into the letter B (ب) at the beginning of بِكِتَابِي." }
+    },
+    {
+      "q": { "bs": "Kakvo je uklapanje kod idgam mislejna?", "en": "What kind of merging is idgham mithlayn?" },
+      "opcije": [
+        { "bs": "Djelimično, sa gunnehom", "en": "Partial, with ghunnah" },
+        { "bs": "Samo u izgovoru, bez tešdida", "en": "Only in pronunciation, without a tashdeed" },
+        { "bs": "Potpuno, prvi harf se ne uči", "en": "Complete, the first letter is not pronounced" },
+        { "bs": "Nema uklapanja, oba harfa se uče", "en": "No merging, both letters are pronounced" }
+      ],
+      "tacno": 2,
+      "objasnjenje": { "bs": "Kod idgam mislejna dolazi do potpunog uklapanja: prvi harf se ne uči, a drugi se uči sa tešdidom.", "en": "In idgham mithlayn a complete merging takes place: the first letter is not pronounced and the second is recited with a tashdeed." }
+    },
+    {
+      "q": { "bs": "Za koje harfove važi idgam mislejn?", "en": "To which letters does idgham mithlayn apply?" },
+      "opcije": [
+        { "bs": "Za bilo koji harf sa sukunom iza kojeg dođe isti harf", "en": "To any letter with a sukun followed by the same letter" },
+        { "bs": "Samo za harf N (ن)", "en": "Only to the letter N (ن)" },
+        { "bs": "Samo za harf M (م)", "en": "Only to the letter M (م)" },
+        { "bs": "Samo za harf L (ل)", "en": "Only to the letter L (ل)" }
+      ],
+      "tacno": 0,
+      "objasnjenje": { "bs": "Idgam mislejn važi za bilo koji harf sa sukunom iza kojeg dođe isti harf sa hareketom.", "en": "Idgham mithlayn applies to any letter with a sukun that is followed by the same letter with a haraka." }
+    }
+  ]
+}

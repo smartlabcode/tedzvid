@@ -1,0 +1,145 @@
+{
+  "lekcija": 6,
+  "pitanja": [
+    {
+      "q": { "bs": "Šta znači idgam meal-gunneh?", "en": "What does idgham ma'al-ghunnah mean?" },
+      "opcije": [
+        { "bs": "Uklapanje bez propuštanja zraka kroz nos", "en": "Merging without nasalisation" },
+        { "bs": "Uklapanje sa propuštanjem zraka kroz nos", "en": "Merging with nasalisation" },
+        { "bs": "Pretvaranje harfa N (ن) u harf M (م)", "en": "Turning the letter N (ن) into the letter M (م)" },
+        { "bs": "Čisto izgovaranje harfa N (ن)", "en": "Clear pronunciation of the letter N (ن)" }
+      ],
+      "tacno": 1,
+      "objasnjenje": {
+        "bs": "Idgam meal-gunneh je uklapanje harfa N (ن) u sljedeći harf uz propuštanje zraka kroz nos.",
+        "en": "Idgham ma'al-ghunnah is the merging of the letter N (ن) into the next letter while letting air pass through the nose."
+      }
+    },
+    {
+      "q": { "bs": "Poslije čega može doći do idgama meal-gunneh?", "en": "After what can idgham ma'al-ghunnah occur?" },
+      "opcije": [
+        { "bs": "Poslije harfa M (م) sa sukunom", "en": "After the letter M (م) with a sukun" },
+        { "bs": "Poslije harfa L (ل) ili R (ر)", "en": "After the letter L (ل) or R (ر)" },
+        { "bs": "Poslije bilo kojeg harfa sa sukunom", "en": "After any letter with a sukun" },
+        { "bs": "Poslije harfa N (ن) sa sukunom ili tenvina", "en": "After the letter N (ن) with a sukun or tanween" }
+      ],
+      "tacno": 3,
+      "objasnjenje": {
+        "bs": "Pravilo važi kada poslije harfa N sa sukunom (نْ) ili tenvina EN, IN, UN dođe jedan od četiri harfa.",
+        "en": "The rule applies when the letter N with a sukun (نْ) or the tanween AN, IN, UN is followed by one of the four letters."
+      }
+    },
+    {
+      "q": { "bs": "Koji harfovi izazivaju idgam meal-gunneh?", "en": "Which letters cause idgham ma'al-ghunnah?" },
+      "opcije": [
+        { "bs": "V, N, M, J (و ن م ي)", "en": "W, N, M, Y (و ن م ي)" },
+        { "bs": "L i R (ل ر)", "en": "L and R (ل ر)" },
+        { "bs": "B (ب)", "en": "B (ب)" },
+        { "bs": "Šest grlenih harfova (خ غ ح ع ه أ)", "en": "The six throat letters (خ غ ح ع ه أ)" }
+      ],
+      "tacno": 0,
+      "objasnjenje": {
+        "bs": "Idgam meal-gunneh izazivaju četiri harfa و ن م ي, sadržana u riječi jemnu (يَمْنُو).",
+        "en": "Idgham ma'al-ghunnah is caused by the four letters و ن م ي, contained in the word yamnu (يَمْنُو)."
+      }
+    },
+    {
+      "q": { "bs": "Koliko harfova izaziva idgam meal-gunneh?", "en": "How many letters cause idgham ma'al-ghunnah?" },
+      "opcije": [
+        { "bs": "Jedan", "en": "One" },
+        { "bs": "Dva", "en": "Two" },
+        { "bs": "Četiri", "en": "Four" },
+        { "bs": "Šest", "en": "Six" }
+      ],
+      "tacno": 2,
+      "objasnjenje": {
+        "bs": "Idgam meal-gunneh izazivaju četiri harfa: و ن م ي.",
+        "en": "Four letters cause idgham ma'al-ghunnah: و ن م ي."
+      }
+    },
+    {
+      "q": { "bs": "U kojoj riječi su sadržana četiri harfa idgama meal-gunneh?", "en": "Which word contains the four letters of idgham ma'al-ghunnah?" },
+      "opcije": [
+        { "bs": "bismi (بِسْمِ)", "en": "bismi (بِسْمِ)" },
+        { "bs": "lemru (لَمْرُ)", "en": "lamru (لَمْرُ)" },
+        { "bs": "jemnu (يَمْنُو)", "en": "yamnu (يَمْنُو)" },
+        { "bs": "hamdu (حَمْدُ)", "en": "hamdu (حَمْدُ)" }
+      ],
+      "tacno": 2,
+      "objasnjenje": {
+        "bs": "Harfovi و ن م ي sadržani su u riječi jemnu (يَمْنُو).",
+        "en": "The letters و ن م ي are contained in the word yamnu (يَمْنُو)."
+      }
+    },
+    {
+      "q": { "bs": "Koliko traje propuštanje zraka kroz nos kod idgama meal-gunneh?", "en": "How long does the air pass through the nose in idgham ma'al-ghunnah?" },
+      "opcije": [
+        { "bs": "1 hareket", "en": "1 haraka" },
+        { "bs": "2 hareketa", "en": "2 harakas" },
+        { "bs": "4 hareketa", "en": "4 harakas" },
+        { "bs": "6 hareketa", "en": "6 harakas" }
+      ],
+      "tacno": 1,
+      "objasnjenje": {
+        "bs": "Zrak se propušta kroz nos u trajanju od 2 hareketa.",
+        "en": "Air passes through the nose for the length of 2 harakas."
+      }
+    },
+    {
+      "q": { "bs": "Šta se dešava sa harfom N (ن) kod idgama meal-gunneh?", "en": "What happens to the letter N (ن) in idgham ma'al-ghunnah?" },
+      "opcije": [
+        { "bs": "Uklapa se u sljedeći harf uz propuštanje zraka kroz nos", "en": "It merges into the next letter while air passes through the nose" },
+        { "bs": "Izgovara se čisto, bez uklapanja", "en": "It is pronounced clearly, without merging" },
+        { "bs": "Pretvara se u harf M (م)", "en": "It turns into the letter M (م)" },
+        { "bs": "Nikako se ne uči", "en": "It is not pronounced at all" }
+      ],
+      "tacno": 0,
+      "objasnjenje": {
+        "bs": "Harf N (ن) se uklapa u jedan od harfova و ن م ي, a zrak se propušta kroz nos 2 hareketa.",
+        "en": "The letter N (ن) merges into one of the letters و ن م ي while air passes through the nose for 2 harakas."
+      }
+    },
+    {
+      "q": { "bs": "Po čemu se idgam meal-gunneh razlikuje od idgama bila gunneh?", "en": "How does idgham ma'al-ghunnah differ from idgham bila ghunnah?" },
+      "opcije": [
+        { "bs": "Kod idgama meal-gunneh harf N (ن) se pretvara u harf M (م)", "en": "In idgham ma'al-ghunnah the letter N (ن) turns into the letter M (م)" },
+        { "bs": "Idgam meal-gunneh dolazi samo poslije tenvina", "en": "Idgham ma'al-ghunnah occurs only after tanween" },
+        { "bs": "Kod idgama meal-gunneh poslije harfa N dolaze harfovi L (ل) i R (ر)", "en": "In idgham ma'al-ghunnah the letter N is followed by L (ل) or R (ر)" },
+        { "bs": "Kod idgama meal-gunneh zrak se propušta kroz nos, a kod idgama bila gunneh ne", "en": "In idgham ma'al-ghunnah air passes through the nose, in idgham bila ghunnah it does not" }
+      ],
+      "tacno": 3,
+      "objasnjenje": {
+        "bs": "Meal-gunneh znači sa propuštanjem zraka kroz nos, a bila gunneh bez propuštanja zraka kroz nos.",
+        "en": "Ma'al-ghunnah means with nasalisation, while bila ghunnah means without nasalisation."
+      }
+    },
+    {
+      "q": { "bs": "U kojem primjeru dolazi do idgama meal-gunneh?", "en": "In which example does idgham ma'al-ghunnah occur?" },
+      "opcije": [
+        { "bs": "مِنْ بَعْدِ", "en": "مِنْ بَعْدِ" },
+        { "bs": "مَنْ نَشَاءُ", "en": "مَنْ نَشَاءُ" },
+        { "bs": "مِنْ رَبِّهِمْ", "en": "مِنْ رَبِّهِمْ" },
+        { "bs": "عَنْهُ", "en": "عَنْهُ" }
+      ],
+      "tacno": 1,
+      "objasnjenje": {
+        "bs": "U primjeru مَنْ نَشَاءُ poslije harfa N sa sukunom dolazi harf N (ن), jedan od četiri harfa idgama meal-gunneh.",
+        "en": "In مَنْ نَشَاءُ the letter N with a sukun is followed by the letter N (ن), one of the four letters of idgham ma'al-ghunnah."
+      }
+    },
+    {
+      "q": { "bs": "Koje pravilo se primjenjuje kada poslije tenvina dođe harf V (و)?", "en": "Which rule applies when tanween is followed by the letter W (و)?" },
+      "opcije": [
+        { "bs": "Idgam meal-gunneh", "en": "Idgham ma'al-ghunnah" },
+        { "bs": "Idgam bila gunneh", "en": "Idgham bila ghunnah" },
+        { "bs": "Iklab", "en": "Iqlab" },
+        { "bs": "Izhar halkijj", "en": "Idhhar halqi" }
+      ],
+      "tacno": 0,
+      "objasnjenje": {
+        "bs": "Harf V (و) je jedan od četiri harfa و ن م ي, pa dolazi do idgama meal-gunneh, npr. يَهُودِيًّا وَلَا.",
+        "en": "The letter W (و) is one of the four letters و ن م ي, so idgham ma'al-ghunnah occurs, e.g. يَهُودِيًّا وَلَا."
+      }
+    }
+  ]
+}

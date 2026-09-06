@@ -1,0 +1,115 @@
+{
+  "lekcija": 13,
+  "pitanja": [
+    {
+      "q": { "bs": "Šta znači kalkala?", "en": "What does qalqalah mean?" },
+      "opcije": [
+        { "bs": "Skrivanje harfova", "en": "Hiding of the letters" },
+        { "bs": "Odskakanje harfova", "en": "Bouncing of the letters" },
+        { "bs": "Uklapanje harfova", "en": "Merging of the letters" },
+        { "bs": "Produžavanje harfova", "en": "Prolonging of the letters" }
+      ],
+      "tacno": 1,
+      "objasnjenje": { "bs": "Kalkala znači odskakanje harfova.", "en": "Qalqalah means the bouncing of the letters." }
+    },
+    {
+      "q": { "bs": "Koliko ima harfova kalkale?", "en": "How many qalqalah letters are there?" },
+      "opcije": [
+        { "bs": "3", "en": "3" },
+        { "bs": "4", "en": "4" },
+        { "bs": "5", "en": "5" },
+        { "bs": "6", "en": "6" }
+      ],
+      "tacno": 2,
+      "objasnjenje": { "bs": "Harfova kalkale ima pet: د ج ب ط ق.", "en": "There are five qalqalah letters: د ج ب ط ق." }
+    },
+    {
+      "q": { "bs": "Koji su harfovi kalkale?", "en": "Which are the qalqalah letters?" },
+      "opcije": [
+        { "bs": "د ج ب ط ق", "en": "د ج ب ط ق" },
+        { "bs": "ن م و ي", "en": "ن م و ي" },
+        { "bs": "ص ض ط ظ", "en": "ص ض ط ظ" },
+        { "bs": "ح خ ع غ", "en": "ح خ ع غ" }
+      ],
+      "tacno": 0,
+      "objasnjenje": { "bs": "Harfovi kalkale su د ج ب ط ق, sadržani u izrazu kutbu džeddin.", "en": "The qalqalah letters are د ج ب ط ق, contained in the phrase qutbu jaddin." }
+    },
+    {
+      "q": { "bs": "U kojem izrazu su sadržani harfovi kalkale?", "en": "Which phrase contains the qalqalah letters?" },
+      "opcije": [
+        { "bs": "بِسْمِ اللّٰهِ", "en": "بِسْمِ اللّٰهِ" },
+        { "bs": "أَلْحَمْدُ لِلّٰهِ", "en": "أَلْحَمْدُ لِلّٰهِ" },
+        { "bs": "قُلْ هُوَ اللّٰهُ", "en": "قُلْ هُوَ اللّٰهُ" },
+        { "bs": "قُطْبُ جَدٍّ (kutbu džeddin)", "en": "قُطْبُ جَدٍّ (qutbu jaddin)" }
+      ],
+      "tacno": 3,
+      "objasnjenje": { "bs": "Harfovi kalkale su sadržani u izrazu kutbu džeddin (قُطْبُ جَدٍّ).", "en": "The qalqalah letters are contained in the phrase qutbu jaddin (قُطْبُ جَدٍّ)." }
+    },
+    {
+      "q": { "bs": "Koji znak mora imati harf kalkale da bi odskakao?", "en": "Which sign must a qalqalah letter carry in order to bounce?" },
+      "opcije": [
+        { "bs": "Vokal E", "en": "The vowel A" },
+        { "bs": "Sukun", "en": "A sukun" },
+        { "bs": "Tenvin", "en": "A tanween" },
+        { "bs": "Tešdid", "en": "A tashdeed" }
+      ],
+      "tacno": 1,
+      "objasnjenje": { "bs": "Harfovi kalkale odskaču kada su sa sukunom.", "en": "The qalqalah letters bounce when they carry a sukun." }
+    },
+    {
+      "q": { "bs": "Koji od ovih harfova je harf kalkale?", "en": "Which of these letters is a qalqalah letter?" },
+      "opcije": [
+        { "bs": "ك", "en": "ك" },
+        { "bs": "ت", "en": "ت" },
+        { "bs": "ط", "en": "ط" },
+        { "bs": "ن", "en": "ن" }
+      ],
+      "tacno": 2,
+      "objasnjenje": { "bs": "Harf ط je jedan od pet harfova kalkale (د ج ب ط ق).", "en": "The letter ط is one of the five qalqalah letters (د ج ب ط ق)." }
+    },
+    {
+      "q": { "bs": "U kojoj od ovih riječi dolazi do kalkale?", "en": "In which of these words does qalqalah occur?" },
+      "opcije": [
+        { "bs": "قَدْ", "en": "قَدْ" },
+        { "bs": "قُلْ", "en": "قُلْ" },
+        { "bs": "مِنْ", "en": "مِنْ" },
+        { "bs": "هُمْ", "en": "هُمْ" }
+      ],
+      "tacno": 0,
+      "objasnjenje": { "bs": "U riječi قَدْ harf د je sa sukunom, pa odskače.", "en": "In the word قَدْ the letter د carries a sukun, so it bounces." }
+    },
+    {
+      "q": { "bs": "Koji harf odskače u riječi أَجْرٌ?", "en": "Which letter bounces in the word أَجْرٌ?" },
+      "opcije": [
+        { "bs": "أ", "en": "أ" },
+        { "bs": "ر", "en": "ر" },
+        { "bs": "Tenvin", "en": "The tanween" },
+        { "bs": "ج", "en": "ج" }
+      ],
+      "tacno": 3,
+      "objasnjenje": { "bs": "Harf ج je harf kalkale i u riječi أَجْرٌ je sa sukunom.", "en": "The letter ج is a qalqalah letter and in the word أَجْرٌ it carries a sukun." }
+    },
+    {
+      "q": { "bs": "Zašto u riječi قِسْطْ dolazi do kalkale?", "en": "Why does qalqalah occur in the word قِسْطْ?" },
+      "opcije": [
+        { "bs": "Jer je harf ق na početku riječi", "en": "Because the letter ق is at the beginning of the word" },
+        { "bs": "Jer je harf ط sa sukunom", "en": "Because the letter ط carries a sukun" },
+        { "bs": "Jer je harf س sa sukunom", "en": "Because the letter س carries a sukun" },
+        { "bs": "Jer harf ق ima kesru", "en": "Because the letter ق carries a kasra" }
+      ],
+      "tacno": 1,
+      "objasnjenje": { "bs": "Harf ط je harf kalkale i ovdje je sa sukunom, pa odskače.", "en": "The letter ط is a qalqalah letter and here it carries a sukun, so it bounces." }
+    },
+    {
+      "q": { "bs": "Kada harf kalkale odskače?", "en": "When does a qalqalah letter bounce?" },
+      "opcije": [
+        { "bs": "Uvijek, bez obzira na znak", "en": "Always, regardless of the sign" },
+        { "bs": "Samo kada je sa vokalom", "en": "Only when it carries a vowel" },
+        { "bs": "Samo kada je sa sukunom", "en": "Only when it carries a sukun" },
+        { "bs": "Samo na početku riječi", "en": "Only at the beginning of a word" }
+      ],
+      "tacno": 2,
+      "objasnjenje": { "bs": "Do odskakanja dolazi samo kada je harf kalkale sa sukunom.", "en": "Bouncing happens only when the qalqalah letter carries a sukun." }
+    }
+  ]
+}

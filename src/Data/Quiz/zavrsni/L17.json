@@ -1,0 +1,49 @@
+{
+  "lekcija": 17,
+  "pitanja": [
+    {
+      "q": { "bs": "Gdje je medd tabijj u riječi رَبِّي?", "en": "Where is the madd tabi'i in the word رَبِّي?" },
+      "opcije": [
+        { "bs": "Na harfu R sa kratkim vokalom E (رَ)", "en": "On the letter R with the short vowel A (رَ)" },
+        { "bs": "Na harfu B sa tešdidom (بِّ)", "en": "On the letter B with the tashdeed (بِّ)" },
+        { "bs": "Na dugom vokalu I (بِّي)", "en": "On the long vowel I (بِّي)" },
+        { "bs": "U riječi رَبِّي nema medd tabijja, jer ima tešdid", "en": "There is no madd tabi'i in رَبِّي, because it has a tashdeed" }
+      ],
+      "tacno": 2,
+      "objasnjenje": { "bs": "Tešdid je prije dugog vokala I, a poslije njega nema ni hemzeta ni sukuna, pa je بِّي medd tabijj od 2 hareketa.", "en": "The tashdeed comes before the long vowel I, and after it there is neither a hamza nor a sukun, so بِّي is madd tabi'i of 2 harakas." }
+    },
+    {
+      "q": { "bs": "Koja riječ nema medd tabijj?", "en": "Which word has no madd tabi'i?" },
+      "opcije": [
+        { "bs": "هُنَا", "en": "هُنَا" },
+        { "bs": "ظَلَمْتُمْ", "en": "ظَلَمْتُمْ" },
+        { "bs": "كَانَ", "en": "كَانَ" },
+        { "bs": "لَنَا", "en": "لَنَا" }
+      ],
+      "tacno": 1,
+      "objasnjenje": { "bs": "U riječi ظَلَمْتُمْ nema dugog vokala, a u ostalim riječima je dugi vokal A poslije kojeg nema ni hemzeta ni sukuna.", "en": "The word ظَلَمْتُمْ has no long vowel, while the other words have a long vowel A followed by neither a hamza nor a sukun." }
+    },
+    {
+      "q": { "bs": "Učenik je dugi vokal U (دُو) u riječi يُبْدُونَ učio 6 hareketa. Je li to ispravno?", "en": "A student read the long vowel U (دُو) in the word يُبْدُونَ for 6 harakas. Is that correct?" },
+      "opcije": [
+        { "bs": "Da, svaka dužina traje 6 hareketa", "en": "Yes, every prolongation lasts 6 harakas" },
+        { "bs": "Da, ali samo kada je dugi vokal U", "en": "Yes, but only when it is the long vowel U" },
+        { "bs": "Ne, treba ga učiti 4-5 hareketa", "en": "No, it should be read for 4–5 harakas" },
+        { "bs": "Ne, to je medd tabijj i traje 2 hareketa", "en": "No, it is madd tabi'i and lasts 2 harakas" }
+      ],
+      "tacno": 3,
+      "objasnjenje": { "bs": "Poslije dugog vokala U u riječi يُبْدُونَ dolazi harf N sa hareketom, pa je to medd tabijj i traje samo 2 hareketa.", "en": "In يُبْدُونَ the long vowel U is followed by the letter N with a haraka, so it is madd tabi'i and lasts only 2 harakas." }
+    },
+    {
+      "q": { "bs": "Koliko traju dugi vokal A u riječi كَانَ i dugi vokal I u riječi الَّذِينَ?", "en": "How long do the long vowel A in كَانَ and the long vowel I in الَّذِينَ last?" },
+      "opcije": [
+        { "bs": "Oba jednako, po 2 hareketa", "en": "Both the same, 2 harakas each" },
+        { "bs": "Dugi vokal A 2 hareketa, a dugi vokal I 4 hareketa", "en": "The long vowel A 2 harakas and the long vowel I 4 harakas" },
+        { "bs": "Dugi vokal A 6 hareketa, a dugi vokal I 2 hareketa", "en": "The long vowel A 6 harakas and the long vowel I 2 harakas" },
+        { "bs": "Oba jednako, po 4-5 hareketa", "en": "Both the same, 4–5 harakas each" }
+      ],
+      "tacno": 0,
+      "objasnjenje": { "bs": "U obje riječi poslije dugog vokala nema ni hemzeta ni sukuna, pa su oba medd tabijj i traju po 2 hareketa.", "en": "In both words the long vowel is followed by neither a hamza nor a sukun, so both are madd tabi'i and last 2 harakas each." }
+    }
+  ]
+}

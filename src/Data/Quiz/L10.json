@@ -1,0 +1,145 @@
+{
+  "lekcija": 10,
+  "pitanja": [
+    {
+      "q": { "bs": "Šta znači izhar šefevijj?", "en": "What does idhhar shafawi mean?" },
+      "opcije": [
+        { "bs": "Čisto izgovaranje harfa N (ن)", "en": "Clear pronunciation of the letter N (ن)" },
+        { "bs": "Uklapanje harfa M (م) u sljedeći harf", "en": "Merging the letter M (م) into the next letter" },
+        { "bs": "Čisto izgovaranje harfa M (م)", "en": "Clear pronunciation of the letter M (م)" },
+        { "bs": "Pretvaranje harfa N (ن) u harf M (م)", "en": "Turning the letter N (ن) into the letter M (م)" }
+      ],
+      "tacno": 2,
+      "objasnjenje": {
+        "bs": "Izhar šefevijj je čisto izgovaranje harfa M (م) sa sukunom, bez uklapanja.",
+        "en": "Idhhar shafawi is the clear pronunciation of the letter M (م) with a sukun, without merging."
+      }
+    },
+    {
+      "q": { "bs": "Na koji harf sa sukunom se odnosi izhar šefevijj?", "en": "Which letter with a sukun does idhhar shafawi concern?" },
+      "opcije": [
+        { "bs": "Harf M (م)", "en": "The letter M (م)" },
+        { "bs": "Harf N (ن)", "en": "The letter N (ن)" },
+        { "bs": "Harf B (ب)", "en": "The letter B (ب)" },
+        { "bs": "Harf L (ل)", "en": "The letter L (ل)" }
+      ],
+      "tacno": 0,
+      "objasnjenje": {
+        "bs": "Izhar šefevijj se odnosi na harf M sa sukunom (مْ).",
+        "en": "Idhhar shafawi concerns the letter M with a sukun (مْ)."
+      }
+    },
+    {
+      "q": { "bs": "Ispred kojih harfova se harf M (م) sa sukunom izgovara čisto?", "en": "Before which letters is the letter M (م) with a sukun pronounced clearly?" },
+      "opcije": [
+        { "bs": "Samo ispred grlenih harfova", "en": "Only before the throat letters" },
+        { "bs": "Samo ispred harfova B (ب) i M (م)", "en": "Only before the letters B (ب) and M (م)" },
+        { "bs": "Samo ispred harfova V (و) i J (ي)", "en": "Only before the letters W (و) and Y (ي)" },
+        { "bs": "Ispred bilo kojeg harfa, osim B (ب) i M (م)", "en": "Before any letter, except B (ب) and M (م)" }
+      ],
+      "tacno": 3,
+      "objasnjenje": {
+        "bs": "Harf M sa sukunom izgovara se čisto ispred bilo kojeg harfa, osim harfova B (ب) i M (م).",
+        "en": "The letter M with a sukun is pronounced clearly before any letter, except the letters B (ب) and M (م)."
+      }
+    },
+    {
+      "q": { "bs": "Koja dva harfa su izuzetak kod izhara šefevijja?", "en": "Which two letters are the exception in idhhar shafawi?" },
+      "opcije": [
+        { "bs": "L (ل) i R (ر)", "en": "L (ل) and R (ر)" },
+        { "bs": "B (ب) i M (م)", "en": "B (ب) and M (م)" },
+        { "bs": "V (و) i J (ي)", "en": "W (و) and Y (ي)" },
+        { "bs": "N (ن) i M (م)", "en": "N (ن) and M (م)" }
+      ],
+      "tacno": 1,
+      "objasnjenje": {
+        "bs": "Ispred harfova B (ب) i M (م) harf M sa sukunom se ne izgovara po pravilu izhara šefevijja.",
+        "en": "Before the letters B (ب) and M (م) the letter M with a sukun does not follow the rule of idhhar shafawi."
+      }
+    },
+    {
+      "q": { "bs": "Kako se izgovara harf M (م) sa sukunom kod izhara šefevijja?", "en": "How is the letter M (م) with a sukun pronounced in idhhar shafawi?" },
+      "opcije": [
+        { "bs": "Čisto, bez uklapanja", "en": "Clearly, without merging" },
+        { "bs": "Kroz nos u trajanju od 2 hareketa", "en": "Through the nose for 2 harakas" },
+        { "bs": "Uklapa se u sljedeći harf", "en": "It merges into the next letter" },
+        { "bs": "Nikako se ne uči", "en": "It is not pronounced at all" }
+      ],
+      "tacno": 0,
+      "objasnjenje": {
+        "bs": "Kod izhara šefevijja harf M (م) se izgovara čisto, tj. bez uklapanja.",
+        "en": "In idhhar shafawi the letter M (م) is pronounced clearly, that is, without merging."
+      }
+    },
+    {
+      "q": { "bs": "U kojem primjeru dolazi do izhara šefevijja?", "en": "In which example does idhhar shafawi occur?" },
+      "opcije": [
+        { "bs": "مِنْ بَعْدِ", "en": "مِنْ بَعْدِ" },
+        { "bs": "عَنْهُ", "en": "عَنْهُ" },
+        { "bs": "أَلَمْ تَرَ", "en": "أَلَمْ تَرَ" },
+        { "bs": "وَيْلٌ لِكُلِّ", "en": "وَيْلٌ لِكُلِّ" }
+      ],
+      "tacno": 2,
+      "objasnjenje": {
+        "bs": "U primjeru أَلَمْ تَرَ poslije harfa M sa sukunom dolazi harf T (ت), pa se M izgovara čisto.",
+        "en": "In أَلَمْ تَرَ the letter M with a sukun is followed by the letter T (ت), so M is pronounced clearly."
+      }
+    },
+    {
+      "q": { "bs": "Po čemu se izhar šefevijj razlikuje od izhara halkijja?", "en": "How does idhhar shafawi differ from idhhar halqi?" },
+      "opcije": [
+        { "bs": "Kod izhara šefevijja harf se uklapa, a kod izhara halkijja ne", "en": "In idhhar shafawi the letter merges, in idhhar halqi it does not" },
+        { "bs": "Izhar šefevijj se odnosi na harf M (م) sa sukunom, a izhar halkijj na harf N (ن) sa sukunom ili tenvin", "en": "Idhhar shafawi concerns the letter M (م) with a sukun, while idhhar halqi concerns the letter N (ن) with a sukun or tanween" },
+        { "bs": "Izhar šefevijj dolazi samo ispred grlenih harfova", "en": "Idhhar shafawi occurs only before the throat letters" },
+        { "bs": "Izhar šefevijj traje 2 hareketa, a izhar halkijj ne", "en": "Idhhar shafawi lasts 2 harakas, idhhar halqi does not" }
+      ],
+      "tacno": 1,
+      "objasnjenje": {
+        "bs": "Oba su čisto izgovaranje, ali izhar šefevijj važi za harf M sa sukunom, a izhar halkijj za harf N sa sukunom ili tenvin.",
+        "en": "Both are clear pronunciation, but idhhar shafawi applies to the letter M with a sukun and idhhar halqi to the letter N with a sukun or tanween."
+      }
+    },
+    {
+      "q": { "bs": "U primjeru لَكُمْ دِينُكُمْ, zašto se harf M sa sukunom izgovara čisto?", "en": "In the example لَكُمْ دِينُكُمْ, why is the letter M with a sukun pronounced clearly?" },
+      "opcije": [
+        { "bs": "Jer poslije njega dolazi harf B (ب)", "en": "Because it is followed by the letter B (ب)" },
+        { "bs": "Jer poslije njega dolazi harf M (م)", "en": "Because it is followed by the letter M (م)" },
+        { "bs": "Jer je na kraju riječi", "en": "Because it is at the end of the word" },
+        { "bs": "Jer poslije njega dolazi harf D (د), koji nije ni B (ب) ni M (م)", "en": "Because it is followed by the letter D (د), which is neither B (ب) nor M (م)" }
+      ],
+      "tacno": 3,
+      "objasnjenje": {
+        "bs": "Harf D (د) nije izuzetak, pa se harf M sa sukunom izgovara čisto.",
+        "en": "The letter D (د) is not an exception, so the letter M with a sukun is pronounced clearly."
+      }
+    },
+    {
+      "q": { "bs": "Ispred kojeg od sljedećih harfova se harf M (م) sa sukunom NE izgovara po pravilu izhara šefevijja?", "en": "Before which of the following letters is the letter M (م) with a sukun NOT pronounced according to idhhar shafawi?" },
+      "opcije": [
+        { "bs": "B (ب)", "en": "B (ب)" },
+        { "bs": "T (ت)", "en": "T (ت)" },
+        { "bs": "D (د)", "en": "D (د)" },
+        { "bs": "F (ف)", "en": "F (ف)" }
+      ],
+      "tacno": 0,
+      "objasnjenje": {
+        "bs": "Harf B (ب) je, uz harf M (م), izuzetak od pravila izhara šefevijja.",
+        "en": "The letter B (ب), together with M (م), is an exception to the rule of idhhar shafawi."
+      }
+    },
+    {
+      "q": { "bs": "Koje pravilo se primjenjuje u primjeru وَلَمْ يُولَدْ?", "en": "Which rule applies in the example وَلَمْ يُولَدْ?" },
+      "opcije": [
+        { "bs": "Izhar halkijj", "en": "Idhhar halqi" },
+        { "bs": "Izhar šefevijj", "en": "Idhhar shafawi" },
+        { "bs": "Idgam meal-gunneh", "en": "Idgham ma'al-ghunnah" },
+        { "bs": "Iklab", "en": "Iqlab" }
+      ],
+      "tacno": 1,
+      "objasnjenje": {
+        "bs": "Poslije harfa M sa sukunom dolazi harf J (ي), koji nije B ni M, pa se M izgovara čisto – izhar šefevijj.",
+        "en": "The letter M with a sukun is followed by the letter Y (ي), which is neither B nor M, so M is pronounced clearly – idhhar shafawi."
+      }
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "lekcija": 20,
+  "pitanja": [
+    {
+      "q": { "bs": "U riječi وَالصَّآفَّاتِ ima dva duga vokala A. Koji od njih je medd lazim?", "en": "The word وَالصَّآفَّاتِ has two long vowels A. Which of them is madd lazim?" },
+      "opcije": [
+        { "bs": "Prvi (صَّآ), jer poslije njega dolazi harf F sa tešdidom", "en": "The first (صَّآ), because it is followed by the letter F with a tashdeed" },
+        { "bs": "Drugi (فَّا), jer je prije njega tešdid", "en": "The second (فَّا), because a tashdeed comes before it" },
+        { "bs": "Oba, jer riječ ima dva tešdida", "en": "Both, because the word has two tashdeeds" },
+        { "bs": "Nijedan, oba su medd tabijj", "en": "Neither, both are madd tabi'i" }
+      ],
+      "tacno": 0,
+      "objasnjenje": { "bs": "Medd lazim je samo kada harf sa tešdidom dolazi poslije dugog vokala; drugi dugi vokal A (فَّا) ima tešdid prije sebe, a poslije njega dolazi harf T sa hareketom, pa je medd tabijj.", "en": "Madd lazim only occurs when the letter with the tashdeed comes after the long vowel; the second long vowel A (فَّا) has the tashdeed before it and is followed by the letter T with a haraka, so it is madd tabi'i." }
+    },
+    {
+      "q": { "bs": "U primjeru وَمَآ أَدْرَاكَ مَا الْحَآقَّةُ gdje je medd lazim?", "en": "In the example وَمَآ أَدْرَاكَ مَا الْحَآقَّةُ, where is the madd lazim?" },
+      "opcije": [
+        { "bs": "U riječi مَآ, jer sljedeća riječ أَدْرَاكَ počinje hemzetom", "en": "In the word مَآ, because the next word أَدْرَاكَ begins with a hamza" },
+        { "bs": "U riječi أَدْرَاكَ, na dugom vokalu A (رَا)", "en": "In the word أَدْرَاكَ, on the long vowel A (رَا)" },
+        { "bs": "U riječi الْحَآقَّةُ, jer poslije dugog vokala A dolazi harf ق sa tešdidom (قَّ)", "en": "In the word الْحَآقَّةُ, because the long vowel A is followed by the letter ق with a tashdeed (قَّ)" },
+        { "bs": "U riječi مَا ispred الْحَآقَّةُ", "en": "In the word مَا before الْحَآقَّةُ" }
+      ],
+      "tacno": 2,
+      "objasnjenje": { "bs": "Samo u riječi الْحَآقَّةُ poslije dugog vokala A dolazi harf sa tešdidom, pa je to medd lazim od 6 hareketa; u مَآ أَدْرَاكَ je medd munfesil.", "en": "Only in الْحَآقَّةُ is the long vowel A followed by a letter with a tashdeed, so that is madd lazim of 6 harakas; مَآ أَدْرَاكَ is madd munfasil." }
+    },
+    {
+      "q": { "bs": "U kojoj riječi medd lazim nastaje zbog stalnog sukuna, a ne zbog tešdida?", "en": "In which word does madd lazim arise from a permanent sukun, not from a tashdeed?" },
+      "opcije": [
+        { "bs": "حَآجَّ", "en": "حَآجَّ" },
+        { "bs": "الضَّآلِّينَ", "en": "الضَّآلِّينَ" },
+        { "bs": "الطَّآمَّةُ", "en": "الطَّآمَّةُ" },
+        { "bs": "صَآدْ", "en": "صَآدْ" }
+      ],
+      "tacno": 3,
+      "objasnjenje": { "bs": "U riječi صَآدْ poslije dugog vokala A dolazi harf D sa stalnim sukunom, a u ostalim riječima dolazi harf sa tešdidom.", "en": "In صَآدْ the long vowel A is followed by the letter D with a permanent sukun, while in the other words it is followed by a letter with a tashdeed." }
+    },
+    {
+      "q": { "bs": "Koji primjer ima medd lazim poslije dugog vokala I?", "en": "Which example has madd lazim after the long vowel I?" },
+      "opcije": [
+        { "bs": "لَآمْ", "en": "لَآمْ" },
+        { "bs": "مِيٓمْ", "en": "مِيٓمْ" },
+        { "bs": "قَآفْ", "en": "قَآفْ" },
+        { "bs": "حَآجَّ", "en": "حَآجَّ" }
+      ],
+      "tacno": 1,
+      "objasnjenje": { "bs": "U مِيٓمْ poslije dugog vokala I dolazi harf M sa stalnim sukunom, a u ostalim primjerima dužina je na dugom vokalu A.", "en": "In مِيٓمْ the long vowel I is followed by the letter M with a permanent sukun, while in the other examples the prolongation is on the long vowel A." }
+    }
+  ]
+}

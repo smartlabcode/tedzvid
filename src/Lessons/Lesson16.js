@@ -5,6 +5,7 @@ import VjezbeRow from '../Helpers/VjezbeHelper';
 import Footer from '../Body/MainFooter';
 import LekcijaMenu from '../Body/LekcijaMenu';
 import LessonVideo from '../Body/LessonVideo';
+import LessonQuiz from '../Quiz/LessonQuiz';
 import VjezbaToolbar from '../Player/VjezbaToolbar';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
@@ -394,6 +395,7 @@ function L16() {
 					</Modal.Footer>
 				</Modal>
 				<LessonVideo broj="16" />
+				<LessonQuiz broj="16" />
 				<Footer prev="/lekcija15" next="/lekcija17" />
 			</Container>
 		</React.Fragment>

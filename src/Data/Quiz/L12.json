@@ -1,0 +1,115 @@
+{
+  "lekcija": 12,
+  "pitanja": [
+    {
+      "q": { "bs": "Šta znači ihfa šefevijj?", "en": "What does ikhfa shafawi mean?" },
+      "opcije": [
+        { "bs": "Skrivanje harfa M (م)", "en": "Hiding the letter M (م)" },
+        { "bs": "Skrivanje harfa N (ن)", "en": "Hiding the letter N (ن)" },
+        { "bs": "Uklapanje harfa M (م)", "en": "Merging the letter M (م)" },
+        { "bs": "Čist izgovor harfa M (م)", "en": "Clear pronunciation of the letter M (م)" }
+      ],
+      "tacno": 0,
+      "objasnjenje": { "bs": "Ihfa šefevijj znači skrivanje harfa M (م).", "en": "Ikhfa shafawi means hiding the letter M (م)." }
+    },
+    {
+      "q": { "bs": "Koji harf sa sukunom je u pitanju kod ihfa šefevijja?", "en": "Which letter with a sukun does ikhfa shafawi concern?" },
+      "opcije": [
+        { "bs": "Harf N (ن)", "en": "The letter N (ن)" },
+        { "bs": "Harf B (ب)", "en": "The letter B (ب)" },
+        { "bs": "Harf M (م)", "en": "The letter M (م)" },
+        { "bs": "Harf L (ل)", "en": "The letter L (ل)" }
+      ],
+      "tacno": 2,
+      "objasnjenje": { "bs": "Ihfa šefevijj se odnosi na harf M sa sukunom (مْ).", "en": "Ikhfa shafawi concerns the letter M with a sukun (مْ)." }
+    },
+    {
+      "q": { "bs": "Koji harf mora doći poslije harfa M sa sukunom (مْ) da bi nastao ihfa šefevijj?", "en": "Which letter must follow the letter M with a sukun (مْ) for ikhfa shafawi to occur?" },
+      "opcije": [
+        { "bs": "Harf M (م)", "en": "The letter M (م)" },
+        { "bs": "Harf B (ب)", "en": "The letter B (ب)" },
+        { "bs": "Harf N (ن)", "en": "The letter N (ن)" },
+        { "bs": "Harf V (و)", "en": "The letter W (و)" }
+      ],
+      "tacno": 1,
+      "objasnjenje": { "bs": "Ihfa šefevijj nastaje kada poslije مْ dođe harf B (ب).", "en": "Ikhfa shafawi occurs when مْ is followed by the letter B (ب)." }
+    },
+    {
+      "q": { "bs": "Kako se izgovara harf M (م) kod ihfa šefevijja?", "en": "How is the letter M (م) pronounced in ikhfa shafawi?" },
+      "opcije": [
+        { "bs": "Izgovara se čisto, bez produžavanja", "en": "It is pronounced clearly, without prolongation" },
+        { "bs": "Pretvara se u harf N (ن)", "en": "It changes into the letter N (ن)" },
+        { "bs": "Uopšte se ne izgovara", "en": "It is not pronounced at all" },
+        { "bs": "Produžava se u trajanju od 2 hareketa", "en": "It is prolonged for the length of 2 harakas" }
+      ],
+      "tacno": 3,
+      "objasnjenje": { "bs": "Kod ihfa šefevijja izgovor harfa M se produžava 2 hareketa.", "en": "In ikhfa shafawi the pronunciation of the letter M is prolonged for 2 harakas." }
+    },
+    {
+      "q": { "bs": "Koliko traje produžavanje harfa M (م) kod ihfa šefevijja?", "en": "How long is the letter M (م) prolonged in ikhfa shafawi?" },
+      "opcije": [
+        { "bs": "1 hareket", "en": "1 haraka" },
+        { "bs": "2 hareketa", "en": "2 harakas" },
+        { "bs": "4 hareketa", "en": "4 harakas" },
+        { "bs": "6 hareketa", "en": "6 harakas" }
+      ],
+      "tacno": 1,
+      "objasnjenje": { "bs": "Harf M se produžava u trajanju od 2 hareketa.", "en": "The letter M is prolonged for the length of 2 harakas." }
+    },
+    {
+      "q": { "bs": "U kojem od ovih primjera se nalazi ihfa šefevijj?", "en": "In which of these examples is there ikhfa shafawi?" },
+      "opcije": [
+        { "bs": "أَمْ بِهِ", "en": "أَمْ بِهِ" },
+        { "bs": "مِنْ تَحْتِهَا", "en": "مِنْ تَحْتِهَا" },
+        { "bs": "لَعَلَّكُمْ تَعْقِلُونَ", "en": "لَعَلَّكُمْ تَعْقِلُونَ" },
+        { "bs": "قَدْ", "en": "قَدْ" }
+      ],
+      "tacno": 0,
+      "objasnjenje": { "bs": "U أَمْ بِهِ poslije harfa M sa sukunom dolazi harf B (ب).", "en": "In أَمْ بِهِ the letter M with a sukun is followed by the letter B (ب)." }
+    },
+    {
+      "q": { "bs": "U primjeru ذٰلِكُمْ وَصَّاكُمْ بِهِ لَعَلَّكُمْ تَعْقِلُونَ gdje se nalazi ihfa šefevijj?", "en": "In the example ذٰلِكُمْ وَصَّاكُمْ بِهِ لَعَلَّكُمْ تَعْقِلُونَ where is the ikhfa shafawi?" },
+      "opcije": [
+        { "bs": "ذٰلِكُمْ وَ", "en": "ذٰلِكُمْ وَ" },
+        { "bs": "لَعَلَّكُمْ تَ", "en": "لَعَلَّكُمْ تَ" },
+        { "bs": "وَصَّاكُمْ بِهِ", "en": "وَصَّاكُمْ بِهِ" },
+        { "bs": "تَعْقِلُونَ", "en": "تَعْقِلُونَ" }
+      ],
+      "tacno": 2,
+      "objasnjenje": { "bs": "Samo u وَصَّاكُمْ بِهِ poslije مْ dolazi harf B (ب).", "en": "Only in وَصَّاكُمْ بِهِ is مْ followed by the letter B (ب)." }
+    },
+    {
+      "q": { "bs": "Zašto u لَعَلَّكُمْ تَعْقِلُونَ nema ihfa šefevijja?", "en": "Why is there no ikhfa shafawi in لَعَلَّكُمْ تَعْقِلُونَ?" },
+      "opcije": [
+        { "bs": "Jer harf M nema sukun", "en": "Because the letter M has no sukun" },
+        { "bs": "Jer je harf M na početku riječi", "en": "Because the letter M is at the beginning of the word" },
+        { "bs": "Jer poslije مْ dolazi harf B (ب)", "en": "Because مْ is followed by the letter B (ب)" },
+        { "bs": "Jer poslije مْ dolazi harf T (ت), a ne B (ب)", "en": "Because مْ is followed by the letter T (ت), not B (ب)" }
+      ],
+      "tacno": 3,
+      "objasnjenje": { "bs": "Ihfa šefevijj nastaje samo kada poslije مْ dođe harf B (ب).", "en": "Ikhfa shafawi occurs only when مْ is followed by the letter B (ب)." }
+    },
+    {
+      "q": { "bs": "Koji znak mora stajati na harfu M (م) da bi nastao ihfa šefevijj?", "en": "Which sign must the letter M (م) carry for ikhfa shafawi to occur?" },
+      "opcije": [
+        { "bs": "Vokal E", "en": "The vowel A" },
+        { "bs": "Sukun", "en": "A sukun" },
+        { "bs": "Tenvin", "en": "A tanween" },
+        { "bs": "Tešdid", "en": "A tashdeed" }
+      ],
+      "tacno": 1,
+      "objasnjenje": { "bs": "Harf M mora biti sa sukunom (مْ).", "en": "The letter M must carry a sukun (مْ)." }
+    },
+    {
+      "q": { "bs": "Između koja dva harfa nastaje ihfa šefevijj?", "en": "Between which two letters does ikhfa shafawi occur?" },
+      "opcije": [
+        { "bs": "N (ن) i B (ب)", "en": "N (ن) and B (ب)" },
+        { "bs": "M (م) i M (م)", "en": "M (م) and M (م)" },
+        { "bs": "M (م) i N (ن)", "en": "M (م) and N (ن)" },
+        { "bs": "M (م) i B (ب)", "en": "M (م) and B (ب)" }
+      ],
+      "tacno": 3,
+      "objasnjenje": { "bs": "Ihfa šefevijj nastaje kada poslije harfa M sa sukunom dođe harf B.", "en": "Ikhfa shafawi occurs when the letter M with a sukun is followed by the letter B." }
+    }
+  ]
+}

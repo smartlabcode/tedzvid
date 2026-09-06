@@ -1,0 +1,115 @@
+{
+  "lekcija": 17,
+  "pitanja": [
+    {
+      "q": { "bs": "Šta znači „medd tabijj“?", "en": "What does “madd tabi'i” mean?" },
+      "opcije": [
+        { "bs": "Spojena dužina", "en": "Connected prolongation" },
+        { "bs": "Stalna dužina", "en": "Obligatory prolongation" },
+        { "bs": "Obična dužina", "en": "Natural prolongation" },
+        { "bs": "Nestalna dužina", "en": "Temporary prolongation" }
+      ],
+      "tacno": 2,
+      "objasnjenje": { "bs": "Medd tabijj je obična dužina.", "en": "Madd tabi'i is the natural prolongation." }
+    },
+    {
+      "q": { "bs": "Poslije kojih vokala može doći medd tabijj?", "en": "After which vowels can madd tabi'i occur?" },
+      "opcije": [
+        { "bs": "Poslije dugih vokala A, I i U", "en": "After the long vowels A, I and U" },
+        { "bs": "Samo poslije dugog vokala A", "en": "Only after the long vowel A" },
+        { "bs": "Poslije kratkih vokala E, I i U", "en": "After the short vowels A, I and U" },
+        { "bs": "Samo poslije dugog vokala U", "en": "Only after the long vowel U" }
+      ],
+      "tacno": 0,
+      "objasnjenje": { "bs": "Medd tabijj dolazi poslije dugog vokala A, I ili U.", "en": "Madd tabi'i comes after the long vowel A, I or U." }
+    },
+    {
+      "q": { "bs": "Kada će poslije dugog vokala biti medd tabijj?", "en": "When is there madd tabi'i after a long vowel?" },
+      "opcije": [
+        { "bs": "Kada poslije dugog vokala dođe hemze", "en": "When the long vowel is followed by a hamza" },
+        { "bs": "Kada poslije dugog vokala dođe sukun", "en": "When the long vowel is followed by a sukun" },
+        { "bs": "Kada poslije dugog vokala dođe tešdid", "en": "When the long vowel is followed by a tashdeed" },
+        { "bs": "Kada poslije dugog vokala nema ni hemzeta ni sukuna", "en": "When the long vowel is followed by neither a hamza nor a sukun" }
+      ],
+      "tacno": 3,
+      "objasnjenje": { "bs": "Medd tabijj je kada poslije dugog vokala nema ni hemzeta ni sukuna.", "en": "Madd tabi'i is when the long vowel is followed by neither a hamza nor a sukun." }
+    },
+    {
+      "q": { "bs": "Koliko traje medd tabijj?", "en": "How long does madd tabi'i last?" },
+      "opcije": [
+        { "bs": "1 hareket", "en": "1 haraka" },
+        { "bs": "2 hareketa", "en": "2 harakas" },
+        { "bs": "4-5 hareketa", "en": "4–5 harakas" },
+        { "bs": "6 hareketa", "en": "6 harakas" }
+      ],
+      "tacno": 1,
+      "objasnjenje": { "bs": "Medd tabijj traje 2 hareketa.", "en": "Madd tabi'i lasts 2 harakas." }
+    },
+    {
+      "q": { "bs": "Kojim znakom se piše dugi vokal U?", "en": "Which sign shows the long vowel U?" },
+      "opcije": [
+        { "bs": "ـــُــ و", "en": "ـــُــ و" },
+        { "bs": "ـــَــ ا", "en": "ـــَــ ا" },
+        { "bs": "ـــِـ ى", "en": "ـــِـ ى" },
+        { "bs": "ـــْــ", "en": "ـــْــ" }
+      ],
+      "tacno": 0,
+      "objasnjenje": { "bs": "Dugi vokal U piše se znakom ـــُــ و.", "en": "The long vowel U is written as ـــُــ و." }
+    },
+    {
+      "q": { "bs": "Gdje je medd tabijj u riječi قَالَ?", "en": "Where is the madd tabi'i in the word قَالَ?" },
+      "opcije": [
+        { "bs": "Na harfu L (ل)", "en": "On the letter L (ل)" },
+        { "bs": "Na kratkom vokalu E na kraju riječi", "en": "On the short vowel A at the end of the word" },
+        { "bs": "Na dugom vokalu A (قَا)", "en": "On the long vowel A (قَا)" },
+        { "bs": "U riječi قَالَ nema medd tabijja", "en": "There is no madd tabi'i in the word قَالَ" }
+      ],
+      "tacno": 2,
+      "objasnjenje": { "bs": "U riječi قَالَ poslije dugog vokala A nema ni hemzeta ni sukuna, pa je to medd tabijj.", "en": "In قَالَ the long vowel A is followed by neither a hamza nor a sukun, so it is madd tabi'i." }
+    },
+    {
+      "q": { "bs": "Ako poslije dugog vokala dođe hemze, hoće li to biti medd tabijj?", "en": "If a hamza comes after the long vowel, is it madd tabi'i?" },
+      "opcije": [
+        { "bs": "Da, uvijek je medd tabijj", "en": "Yes, it is always madd tabi'i" },
+        { "bs": "Ne, medd tabijj je samo kada nema ni hemzeta ni sukuna", "en": "No, madd tabi'i is only when there is neither a hamza nor a sukun" },
+        { "bs": "Da, ali tada traje 6 hareketa", "en": "Yes, but then it lasts 6 harakas" },
+        { "bs": "Da, ali samo poslije dugog vokala A", "en": "Yes, but only after the long vowel A" }
+      ],
+      "tacno": 1,
+      "objasnjenje": { "bs": "Medd tabijj je samo kada poslije dugog vokala nema ni hemzeta ni sukuna.", "en": "Madd tabi'i is only when the long vowel is followed by neither a hamza nor a sukun." }
+    },
+    {
+      "q": { "bs": "Koja riječ ima medd tabijj na dugom vokalu I?", "en": "Which word has madd tabi'i on the long vowel I?" },
+      "opcije": [
+        { "bs": "ذُو", "en": "ذُو" },
+        { "bs": "دَارَ", "en": "دَارَ" },
+        { "bs": "قَالَ", "en": "قَالَ" },
+        { "bs": "يُرِيدُ", "en": "يُرِيدُ" }
+      ],
+      "tacno": 3,
+      "objasnjenje": { "bs": "U riječi يُرِيدُ dugi vokal I (رِي) je medd tabijj.", "en": "In the word يُرِيدُ the long vowel I (رِي) is madd tabi'i." }
+    },
+    {
+      "q": { "bs": "Koliko medd tabijja ima u riječi ءَاتُونِي?", "en": "How many madd tabi'i are there in the word ءَاتُونِي?" },
+      "opcije": [
+        { "bs": "Tri: na dugom vokalu A, U i I", "en": "Three: on the long vowels A, U and I" },
+        { "bs": "Jedan: samo na dugom vokalu A", "en": "One: only on the long vowel A" },
+        { "bs": "Dva: na dugom vokalu A i U", "en": "Two: on the long vowels A and U" },
+        { "bs": "Nijedan", "en": "None" }
+      ],
+      "tacno": 0,
+      "objasnjenje": { "bs": "U riječi ءَاتُونِي su tri duga vokala (ءَا، تُو، نِي) i svaki je medd tabijj od 2 hareketa.", "en": "The word ءَاتُونِي has three long vowels (ءَا، تُو، نِي) and each is madd tabi'i of 2 harakas." }
+    },
+    {
+      "q": { "bs": "Koje pravilo vrijedi za dugi vokal U (دُو) u riječi صُدُورِ?", "en": "Which rule applies to the long vowel U (دُو) in the word صُدُورِ?" },
+      "opcije": [
+        { "bs": "Medd muttesil, jer poslije dolazi hemze", "en": "Madd muttasil, because a hamza follows" },
+        { "bs": "Medd lazim, jer poslije dolazi tešdid", "en": "Madd lazim, because a tashdeed follows" },
+        { "bs": "Medd tabijj, jer poslije ne dolazi ni hemze ni sukun", "en": "Madd tabi'i, because neither a hamza nor a sukun follows" },
+        { "bs": "Nema dužine", "en": "There is no prolongation" }
+      ],
+      "tacno": 2,
+      "objasnjenje": { "bs": "Poslije dugog vokala U u riječi صُدُورِ dolazi harf R sa hareketom, pa je to medd tabijj od 2 hareketa.", "en": "In صُدُورِ the long vowel U is followed by the letter R with a haraka, so it is madd tabi'i of 2 harakas." }
+    }
+  ]
+}

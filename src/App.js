@@ -4,6 +4,7 @@ import React from 'react';
 
 import ListRoutes from './Body/ListRoutes';
 import { LanguageProvider } from './i18n/LanguageContext';
+import { AuthProvider } from './auth/AuthContext';
 
 // import ReactGA from 'react-ga';
 
@@ -20,9 +21,12 @@ function App() {
 
 	return (
 		<LanguageProvider>
-			<BrowserRouter basename={process.env.PUBLIC_URL}>
-				<ListRoutes />
-			</BrowserRouter>
+			{/* prijavljeni korisnik i napredak su iznad rutera: promjena jezika ih ne resetuje */}
+			<AuthProvider>
+				<BrowserRouter basename={process.env.PUBLIC_URL}>
+					<ListRoutes />
+				</BrowserRouter>
+			</AuthProvider>
 		</LanguageProvider>
 	);
 }

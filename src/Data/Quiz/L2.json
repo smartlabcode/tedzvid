@@ -1,0 +1,115 @@
+{
+  "lekcija": 2,
+  "pitanja": [
+    {
+      "q": { "bs": "O čemu govori pravilo damir?", "en": "What is the rule damir about?" },
+      "opcije": [
+        { "bs": "O stajanju prilikom učenja", "en": "Stopping during recitation" },
+        { "bs": "O izgovaranju riječi Allah", "en": "Pronouncing the word Allah" },
+        { "bs": "O izgovaranju zamjenice HU (هُ)", "en": "Pronouncing the pronoun HU (هُ)" },
+        { "bs": "O uklapanju istih harfova", "en": "Merging identical letters" }
+      ],
+      "tacno": 2,
+      "objasnjenje": { "bs": "Damir je pravilo o tome kada se zamjenica HU (هُ) uči kratko, a kada dugo.", "en": "Damir is the rule about when the pronoun HU (هُ) is recited short and when long." }
+    },
+    {
+      "q": { "bs": "Kada se zamjenica HU (هُ) uči kratko?", "en": "When is the pronoun HU (هُ) recited short?" },
+      "opcije": [
+        { "bs": "Kada prije nje dođe dugi vokal ili sukun", "en": "When it is preceded by a long vowel or a sukun" },
+        { "bs": "Kada prije nje dođe kratki vokal", "en": "When it is preceded by a short vowel" },
+        { "bs": "Kada je riječ na kraju ajeta", "en": "When the word is at the end of a verse" },
+        { "bs": "Kada prije nje dođe tenvin", "en": "When it is preceded by a tanween" }
+      ],
+      "tacno": 0,
+      "objasnjenje": { "bs": "Poslije dugog vokala A, I, U ili sukuna zamjenica HU se uči kratko.", "en": "After the long vowel A, I, U or a sukun the pronoun HU is recited short." }
+    },
+    {
+      "q": { "bs": "Kada se zamjenica HU (هُ) uči dugo?", "en": "When is the pronoun HU (هُ) recited long?" },
+      "opcije": [
+        { "bs": "Kada prije nje dođe sukun", "en": "When it is preceded by a sukun" },
+        { "bs": "Kada prije nje dođe dugi vokal", "en": "When it is preceded by a long vowel" },
+        { "bs": "Kada je riječ na kraju ajeta", "en": "When the word is at the end of a verse" },
+        { "bs": "Kada prije nje dođe kratki vokal E, I ili U", "en": "When it is preceded by the short vowel A, I or U" }
+      ],
+      "tacno": 3,
+      "objasnjenje": { "bs": "Poslije kratkog vokala zamjenica HU se uči dugo, npr. لَهُ, بِهِ.", "en": "After a short vowel the pronoun HU is recited long, e.g. لَهُ, بِهِ." }
+    },
+    {
+      "q": { "bs": "Kako se uči zamjenica HU u riječi إِلَيْهِ?", "en": "How is the pronoun HU recited in the word إِلَيْهِ?" },
+      "opcije": [
+        { "bs": "Dugo, jer prije nje dođe kratki vokal", "en": "Long, because it is preceded by a short vowel" },
+        { "bs": "Kratko, jer prije nje dođe sukun", "en": "Short, because it is preceded by a sukun" },
+        { "bs": "Dugo, jer prije nje dođe sukun", "en": "Long, because it is preceded by a sukun" },
+        { "bs": "Kratko, jer prije nje dođe kratki vokal", "en": "Short, because it is preceded by a short vowel" }
+      ],
+      "tacno": 1,
+      "objasnjenje": { "bs": "U riječi إِلَيْهِ prije zamjenice je harf J (ي) sa sukunom, pa se HU uči kratko.", "en": "In إِلَيْهِ the pronoun is preceded by the letter Y (ي) with a sukun, so HU is recited short." }
+    },
+    {
+      "q": { "bs": "Kako se uči zamjenica HU u riječi لَهُ?", "en": "How is the pronoun HU recited in the word لَهُ?" },
+      "opcije": [
+        { "bs": "Dugo", "en": "Long" },
+        { "bs": "Kratko", "en": "Short" },
+        { "bs": "Sa gunnehom", "en": "With ghunnah" },
+        { "bs": "Kao da je na njoj sukun", "en": "As if it carried a sukun" }
+      ],
+      "tacno": 0,
+      "objasnjenje": { "bs": "U riječi لَهُ prije zamjenice je kratki vokal E, pa se HU uči dugo.", "en": "In لَهُ the pronoun is preceded by the short vowel A, so HU is recited long." }
+    },
+    {
+      "q": { "bs": "U kojoj se riječi zamjenica HU uči kratko?", "en": "In which word is the pronoun HU recited short?" },
+      "opcije": [
+        { "bs": "لَهُ", "en": "لَهُ" },
+        { "bs": "بِهِ", "en": "بِهِ" },
+        { "bs": "يَدَاهُ", "en": "يَدَاهُ" },
+        { "bs": "اِسْمُهُ", "en": "اِسْمُهُ" }
+      ],
+      "tacno": 2,
+      "objasnjenje": { "bs": "U riječi يَدَاهُ prije zamjenice dođe dugi vokal A, pa se HU uči kratko.", "en": "In يَدَاهُ the pronoun is preceded by the long vowel A, so HU is recited short." }
+    },
+    {
+      "q": { "bs": "U kojoj se riječi zamjenica HU uči dugo?", "en": "In which word is the pronoun HU recited long?" },
+      "opcije": [
+        { "bs": "أَبِيهِ", "en": "أَبِيهِ" },
+        { "bs": "بِهِ", "en": "بِهِ" },
+        { "bs": "إِلَيْهِ", "en": "إِلَيْهِ" },
+        { "bs": "يَدَاهُ", "en": "يَدَاهُ" }
+      ],
+      "tacno": 1,
+      "objasnjenje": { "bs": "U riječi بِهِ prije zamjenice je kratki vokal I, pa se HU uči dugo.", "en": "In بِهِ the pronoun is preceded by the short vowel I, so HU is recited long." }
+    },
+    {
+      "q": { "bs": "Šta dolazi prije zamjenice HU u riječi أَبِيهِ?", "en": "What comes before the pronoun HU in the word أَبِيهِ?" },
+      "opcije": [
+        { "bs": "Kratki vokal I", "en": "The short vowel I" },
+        { "bs": "Sukun", "en": "A sukun" },
+        { "bs": "Kratki vokal U", "en": "The short vowel U" },
+        { "bs": "Dugi vokal I", "en": "The long vowel I" }
+      ],
+      "tacno": 3,
+      "objasnjenje": { "bs": "U riječi أَبِيهِ prije zamjenice je dugi vokal I, zato se HU uči kratko.", "en": "In أَبِيهِ the pronoun is preceded by the long vowel I, so HU is recited short." }
+    },
+    {
+      "q": { "bs": "Na koliko se načina može učiti zamjenica HU (هُ)?", "en": "In how many ways can the pronoun HU (هُ) be recited?" },
+      "opcije": [
+        { "bs": "Na dva načina: kratko ili dugo", "en": "In two ways: short or long" },
+        { "bs": "Na tri načina", "en": "In three ways" },
+        { "bs": "Uvijek isto, kratko", "en": "Always the same, short" },
+        { "bs": "Uvijek isto, dugo", "en": "Always the same, long" }
+      ],
+      "tacno": 0,
+      "objasnjenje": { "bs": "Zamjenica HU se uči kratko ili dugo, zavisno od toga šta dolazi prije nje.", "en": "The pronoun HU is recited either short or long, depending on what comes before it." }
+    },
+    {
+      "q": { "bs": "Šta odlučuje da li se zamjenica HU uči kratko ili dugo?", "en": "What decides whether the pronoun HU is recited short or long?" },
+      "opcije": [
+        { "bs": "Harf koji dolazi poslije nje", "en": "The letter that comes after it" },
+        { "bs": "Da li je riječ na kraju ajeta", "en": "Whether the word is at the end of a verse" },
+        { "bs": "Vokal ili sukun koji dolazi prije nje", "en": "The vowel or sukun that comes before it" },
+        { "bs": "Da li na njoj piše tenvin", "en": "Whether it carries a tanween" }
+      ],
+      "tacno": 2,
+      "objasnjenje": { "bs": "Izgovor zamjenice HU zavisi od onoga što dolazi prije nje: dugi vokal ili sukun – kratko, kratki vokal – dugo.", "en": "The pronunciation of HU depends on what comes before it: a long vowel or a sukun – short, a short vowel – long." }
+    }
+  ]
+}

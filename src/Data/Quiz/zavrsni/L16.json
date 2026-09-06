@@ -1,0 +1,49 @@
+{
+  "lekcija": 16,
+  "pitanja": [
+    {
+      "q": { "bs": "Koliko puta se u primjeru وَقُلْ رَبِّ أَدْخِلْنِي مُدْخَلَ صِدْقٍ javlja idgam mutekaribejn?", "en": "How many times does idgham mutaqaribayn occur in the example وَقُلْ رَبِّ أَدْخِلْنِي مُدْخَلَ صِدْقٍ?" },
+      "opcije": [
+        { "bs": "0", "en": "0" },
+        { "bs": "1", "en": "1" },
+        { "bs": "2", "en": "2" },
+        { "bs": "3", "en": "3" }
+      ],
+      "tacno": 1,
+      "objasnjenje": { "bs": "Samo u قُلْ رَبِّ poslije لْ dolazi harf R, dok u أَدْخِلْنِي poslije لْ dolazi harf N, pa tu nema uklapanja.", "en": "Only in قُلْ رَبِّ is لْ followed by the letter R, while in أَدْخِلْنِي the لْ is followed by the letter N, so there is no merging there." }
+    },
+    {
+      "q": { "bs": "U kojem od ovih primjera nema idgam mutekaribejna?", "en": "In which of these examples is there no idgham mutaqaribayn?" },
+      "opcije": [
+        { "bs": "بَلْ رَفَعَهُ اللّٰهُ", "en": "بَلْ رَفَعَهُ اللّٰهُ" },
+        { "bs": "فَقُلْ رَبُّكُمْ ذُو رَحْمَةٍ", "en": "فَقُلْ رَبُّكُمْ ذُو رَحْمَةٍ" },
+        { "bs": "أَلَمْ نَخْلُقْكُمْ مِنْ مَٓاءٍ", "en": "أَلَمْ نَخْلُقْكُمْ مِنْ مَٓاءٍ" },
+        { "bs": "قُلْ هُوَ اللّٰهُ أَحَدٌ", "en": "قُلْ هُوَ اللّٰهُ أَحَدٌ" }
+      ],
+      "tacno": 3,
+      "objasnjenje": { "bs": "U قُلْ هُوَ poslije harfa L sa sukunom dolazi harf ه, a ne harf R, pa nema uklapanja.", "en": "In قُلْ هُوَ the letter L with a sukun is followed by the letter ه, not the letter R, so there is no merging." }
+    },
+    {
+      "q": { "bs": "Koji znak dobija harf R (ر) kada se لْ uklopi u njega, npr. وَقُرَّبِّ?", "en": "Which sign does the letter R (ر) receive when لْ merges into it, e.g. وَقُرَّبِّ?" },
+      "opcije": [
+        { "bs": "Sukun", "en": "A sukun" },
+        { "bs": "Tenvin", "en": "A tanween" },
+        { "bs": "Tešdid", "en": "A tashdeed" },
+        { "bs": "Kesra", "en": "A kasra" }
+      ],
+      "tacno": 2,
+      "objasnjenje": { "bs": "Uklopljeni harf se izgovara udvojeno, pa harf R dobija tešdid: وَقُرَّبِّ, kao i ك u نَخْلُكُّمْ.", "en": "The merged letter is pronounced doubled, so the letter R receives a tashdeed: وَقُرَّبِّ, just like ك in نَخْلُكُّمْ." }
+    },
+    {
+      "q": { "bs": "Koji od ovih zapisa prikazuje idgam mutekaribejn?", "en": "Which of these combinations shows idgham mutaqaribayn?" },
+      "opcije": [
+        { "bs": "لْ رَ", "en": "لْ رَ" },
+        { "bs": "رْ لَ", "en": "رْ لَ" },
+        { "bs": "لَ رْ", "en": "لَ رْ" },
+        { "bs": "كْ قَ", "en": "كْ قَ" }
+      ],
+      "tacno": 0,
+      "objasnjenje": { "bs": "Uklapanje nastaje samo kada je prvi harf L sa sukunom, a poslije njega harf R sa hareketom (لْ رَ), ili قْ pa ك.", "en": "Merging occurs only when the first letter is L with a sukun followed by R with a haraka (لْ رَ), or قْ followed by ك." }
+    }
+  ]
+}

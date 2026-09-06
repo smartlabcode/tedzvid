@@ -1,0 +1,145 @@
+{
+  "lekcija": 11,
+  "pitanja": [
+    {
+      "q": { "bs": "Šta znači ihfa?", "en": "What does ikhfa mean?" },
+      "opcije": [
+        { "bs": "Čisto izgovaranje harfa N (ن)", "en": "Clear pronunciation of the letter N (ن)" },
+        { "bs": "Pretvaranje harfa N (ن) u harf M (م)", "en": "Turning the letter N (ن) into the letter M (م)" },
+        { "bs": "Potpuno uklapanje harfa N (ن)", "en": "Complete merging of the letter N (ن)" },
+        { "bs": "Skrivanje harfa N (ن)", "en": "Hiding the letter N (ن)" }
+      ],
+      "tacno": 3,
+      "objasnjenje": {
+        "bs": "Ihfa znači skrivanje harfa N (ن), koji se uči kroz nos, a jezik ne dotiče nepce.",
+        "en": "Ikhfa means hiding the letter N (ن), which is recited through the nose without the tongue touching the palate."
+      }
+    },
+    {
+      "q": { "bs": "Koliko harfova izaziva ihfu?", "en": "How many letters cause ikhfa?" },
+      "opcije": [
+        { "bs": "Šest", "en": "Six" },
+        { "bs": "Petnaest", "en": "Fifteen" },
+        { "bs": "Četiri", "en": "Four" },
+        { "bs": "Dva", "en": "Two" }
+      ],
+      "tacno": 1,
+      "objasnjenje": {
+        "bs": "Ihfu izaziva 15 harfova: ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق.",
+        "en": "Ikhfa is caused by 15 letters: ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق."
+      }
+    },
+    {
+      "q": { "bs": "Poslije čega dolazi do ihfe?", "en": "After what does ikhfa occur?" },
+      "opcije": [
+        { "bs": "Poslije harfa N (ن) sa sukunom ili tenvina", "en": "After the letter N (ن) with a sukun or tanween" },
+        { "bs": "Poslije harfa M (م) sa sukunom", "en": "After the letter M (م) with a sukun" },
+        { "bs": "Poslije grlenog harfa", "en": "After a throat letter" },
+        { "bs": "Poslije bilo kojeg harfa sa sukunom", "en": "After any letter with a sukun" }
+      ],
+      "tacno": 0,
+      "objasnjenje": {
+        "bs": "Pravilo važi kada poslije harfa N sa sukunom (نْ) ili tenvina EN, IN, UN dođe jedan od 15 harfova ihfe.",
+        "en": "The rule applies when the letter N with a sukun (نْ) or the tanween AN, IN, UN is followed by one of the 15 letters of ikhfa."
+      }
+    },
+    {
+      "q": { "bs": "Kako se uči harf N (ن) kod ihfe?", "en": "How is the letter N (ن) recited in ikhfa?" },
+      "opcije": [
+        { "bs": "Čisto, bez uklapanja", "en": "Clearly, without merging" },
+        { "bs": "Potpuno se uklapa i nikako se ne uči", "en": "It merges completely and is not pronounced at all" },
+        { "bs": "Kroz nos u trajanju od 2 hareketa, a jezik ne dotiče nepce", "en": "Through the nose for 2 harakas, without the tongue touching the palate" },
+        { "bs": "Pretvara se u harf M (م)", "en": "It turns into the letter M (م)" }
+      ],
+      "tacno": 2,
+      "objasnjenje": {
+        "bs": "Kod ihfe harf N (ن) se uči kroz nos 2 hareketa, s tim da jezik ne dotakne nepce.",
+        "en": "In ikhfa the letter N (ن) is recited through the nose for 2 harakas, without the tongue touching the palate."
+      }
+    },
+    {
+      "q": { "bs": "Koliko traje učenje harfa N (ن) kroz nos kod ihfe?", "en": "How long is the letter N (ن) recited through the nose in ikhfa?" },
+      "opcije": [
+        { "bs": "6 hareketa", "en": "6 harakas" },
+        { "bs": "4 hareketa", "en": "4 harakas" },
+        { "bs": "1 hareket", "en": "1 haraka" },
+        { "bs": "2 hareketa", "en": "2 harakas" }
+      ],
+      "tacno": 3,
+      "objasnjenje": {
+        "bs": "Harf N se uči kroz nos u trajanju od 2 hareketa.",
+        "en": "The letter N is recited through the nose for the length of 2 harakas."
+      }
+    },
+    {
+      "q": { "bs": "Gdje je jezik dok se uči harf N (ن) kod ihfe?", "en": "Where is the tongue while the letter N (ن) is recited in ikhfa?" },
+      "opcije": [
+        { "bs": "Ne dotiče nepce", "en": "It does not touch the palate" },
+        { "bs": "Čvrsto pritisnut uz nepce", "en": "Pressed firmly against the palate" },
+        { "bs": "Između zuba", "en": "Between the teeth" },
+        { "bs": "Dotiče gornje zube", "en": "It touches the upper teeth" }
+      ],
+      "tacno": 0,
+      "objasnjenje": {
+        "bs": "Kod ihfe se harf N uči kroz nos, s tim da jezik ne dotakne nepce.",
+        "en": "In ikhfa the letter N is recited through the nose without the tongue touching the palate."
+      }
+    },
+    {
+      "q": { "bs": "Koji od sljedećih harfova izaziva ihfu?", "en": "Which of the following letters causes ikhfa?" },
+      "opcije": [
+        { "bs": "B (ب)", "en": "B (ب)" },
+        { "bs": "K (ك)", "en": "K (ك)" },
+        { "bs": "L (ل)", "en": "L (ل)" },
+        { "bs": "Ajn (ع)", "en": "Ayn (ع)" }
+      ],
+      "tacno": 1,
+      "objasnjenje": {
+        "bs": "Harf K (ك) je jedan od 15 harfova ihfe.",
+        "en": "The letter K (ك) is one of the 15 letters of ikhfa."
+      }
+    },
+    {
+      "q": { "bs": "U kojem primjeru dolazi do ihfe?", "en": "In which example does ikhfa occur?" },
+      "opcije": [
+        { "bs": "مِنْ بَعْدِ", "en": "مِنْ بَعْدِ" },
+        { "bs": "مَنْ نَشَاءُ", "en": "مَنْ نَشَاءُ" },
+        { "bs": "أَنْتُمْ", "en": "أَنْتُمْ" },
+        { "bs": "عَنْهُ", "en": "عَنْهُ" }
+      ],
+      "tacno": 2,
+      "objasnjenje": {
+        "bs": "U riječi أَنْتُمْ poslije harfa N sa sukunom dolazi harf T (ت), jedan od 15 harfova ihfe.",
+        "en": "In the word أَنْتُمْ the letter N with a sukun is followed by the letter T (ت), one of the 15 letters of ikhfa."
+      }
+    },
+    {
+      "q": { "bs": "Po čemu se ihfa razlikuje od idgama meal-gunneh?", "en": "How does ikhfa differ from idgham ma'al-ghunnah?" },
+      "opcije": [
+        { "bs": "Kod ihfe poslije harfa N dolazi jedan od 15 harfova i N se skriva, a kod idgama meal-gunneh jedan od četiri harfa (و ن م ي) i N se uklapa", "en": "In ikhfa N is followed by one of 15 letters and is hidden, while in idgham ma'al-ghunnah it is followed by one of four letters (و ن م ي) and merges" },
+        { "bs": "Kod ihfe se harf N pretvara u harf M (م)", "en": "In ikhfa the letter N turns into the letter M (م)" },
+        { "bs": "Kod ihfe se harf N izgovara čisto", "en": "In ikhfa the letter N is pronounced clearly" },
+        { "bs": "Kod ihfe se zrak ne propušta kroz nos", "en": "In ikhfa air does not pass through the nose" }
+      ],
+      "tacno": 0,
+      "objasnjenje": {
+        "bs": "Kod ihfe se N skriva ispred 15 harfova, a kod idgama meal-gunneh se uklapa u jedan od četiri harfa و ن م ي.",
+        "en": "In ikhfa N is hidden before the 15 letters, while in idgham ma'al-ghunnah it merges into one of the four letters و ن م ي."
+      }
+    },
+    {
+      "q": { "bs": "Koje pravilo se primjenjuje u primjeru جَنَّاتٌ تَجْرِي?", "en": "Which rule applies in the example جَنَّاتٌ تَجْرِي?" },
+      "opcije": [
+        { "bs": "Iklab", "en": "Iqlab" },
+        { "bs": "Ihfa", "en": "Ikhfa" },
+        { "bs": "Izhar halkijj", "en": "Idhhar halqi" },
+        { "bs": "Idgam bila gunneh", "en": "Idgham bila ghunnah" }
+      ],
+      "tacno": 1,
+      "objasnjenje": {
+        "bs": "Poslije tenvina UN dolazi harf T (ت), jedan od 15 harfova ihfe.",
+        "en": "The tanween UN is followed by the letter T (ت), one of the 15 letters of ikhfa."
+      }
+    }
+  ]
+}

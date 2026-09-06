@@ -981,3 +981,481 @@ span.arap-red {
     }
   }
 }
+
+/* ---------- kviz nakon lekcije ---------- */
+.kviz {
+  margin-top: 44px;
+  font-size: 1rem;
+
+  h2 {
+    margin-top: 0;
+  }
+
+  &__card {
+    position: relative;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 32px 36px;
+    background: linear-gradient(180deg, #fffdf8 0%, #faf5ea 100%);
+    border: 1px solid var(--gold-200);
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(16, 59, 92, 0.06);
+  }
+
+  &__intro,
+  &__result {
+    text-align: center;
+
+    h3 {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      letter-spacing: 0.03em;
+      color: var(--navy);
+      margin: 0 0 8px;
+    }
+
+    p {
+      color: var(--muted);
+      max-width: 52ch;
+      margin: 0 auto 10px;
+    }
+  }
+
+  &__icon {
+    width: 72px;
+    height: 72px;
+    margin: 0 auto 16px;
+    border-radius: 50%;
+    background: var(--gold-100);
+    color: var(--gold-600);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__result.is-pass &__icon {
+    background: #e6f4ec;
+    color: #1f6b43;
+  }
+
+  &__result.is-fail &__icon {
+    background: #fbe7e5;
+    color: #9c2f28;
+  }
+
+  &__best {
+    font-weight: 600;
+    color: var(--navy) !important;
+
+    svg {
+      color: var(--green);
+      vertical-align: -2px;
+    }
+  }
+
+  &__note {
+    font-size: 0.9rem;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+
+  &__count {
+    font-size: 0.74rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold-600);
+  }
+
+  &__dots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--line);
+      font-size: 0;
+
+      &.is-now {
+        background: var(--navy);
+        box-shadow: 0 0 0 3px rgba(16, 59, 92, 0.18);
+      }
+
+      &.is-ok {
+        background: var(--green);
+      }
+
+      &.is-bad {
+        background: #c2453c;
+      }
+    }
+
+    &--big {
+      justify-content: center;
+      margin: 14px 0 18px;
+
+      li {
+        width: 30px;
+        height: 30px;
+        font-size: 0.78rem;
+        font-weight: 700;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+  &__text {
+    font-size: 1.18rem;
+    font-weight: 600;
+    line-height: 1.6;
+    color: var(--ink);
+    margin: 0 0 18px;
+  }
+
+  &__opts {
+    display: grid;
+    gap: 10px;
+  }
+
+  &__opt {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 14px;
+    border: 1.5px solid var(--line);
+    background: #fff;
+    color: var(--ink);
+    font: inherit;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: left;
+    cursor: pointer;
+    transition: border-color 0.15s ease, background 0.15s ease, transform 0.15s ease;
+
+    &:hover:not(:disabled) {
+      border-color: var(--gold);
+      transform: translateX(2px);
+    }
+
+    &:focus-visible {
+      outline: 3px solid var(--gold-200);
+      outline-offset: 2px;
+    }
+
+    &:disabled {
+      cursor: default;
+    }
+
+    &.is-selected {
+      border-color: var(--navy);
+      background: #eef4f8;
+
+      .kviz__letter {
+        background: var(--navy);
+        color: #fff;
+      }
+    }
+
+    &.is-correct {
+      border-color: var(--green);
+      background: #e6f4ec;
+
+      .kviz__letter {
+        background: var(--green);
+        color: #fff;
+      }
+    }
+
+    &.is-wrong {
+      border-color: #c2453c;
+      background: #fbe7e5;
+
+      .kviz__letter {
+        background: #c2453c;
+        color: #fff;
+      }
+    }
+  }
+
+  &__letter {
+    flex: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--gold-100);
+    color: var(--gold-600);
+    font-size: 0.8rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* arapski isječak u pitanju/odgovoru */
+  &__ar {
+    font-family: HamdullahMushaf, serif;
+    font-size: 1.7em;
+    line-height: 1;
+    vertical-align: middle;
+    padding: 0 0.15em;
+    unicode-bidi: isolate;
+  }
+
+  &__feedback {
+    margin-top: 16px;
+    padding: 12px 16px;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+
+    &.is-ok {
+      background: #e6f4ec;
+      color: #1f6b43;
+    }
+
+    &.is-bad {
+      background: #fbe7e5;
+      color: #9c2f28;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 22px;
+
+    .btn-t:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      transform: none;
+      box-shadow: none;
+    }
+  }
+
+  &__score {
+    font-family: var(--font-display);
+    font-size: 3rem;
+    line-height: 1;
+    color: var(--navy) !important;
+    margin: 0 0 10px !important;
+
+    b {
+      font-weight: 400;
+      color: var(--gold);
+    }
+  }
+
+  &__save {
+    font-size: 0.88rem;
+
+    &.is-saved {
+      color: #1f6b43 !important;
+    }
+
+    &.is-error {
+      color: #9c2f28 !important;
+    }
+
+    button {
+      border: 0;
+      background: none;
+      color: inherit;
+      font: inherit;
+      font-weight: 700;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  &__guest {
+    margin-top: 10px;
+    padding: 16px;
+    border-radius: 14px;
+    background: #fff;
+    border: 1px dashed var(--gold);
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    > div {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+  }
+}
+
+/* sljedeća lekcija zaključana (traka na dnu lekcije) */
+.lesson-nav__btn.is-locked {
+  border-style: dashed;
+  opacity: 0.75;
+}
+
+@media only screen and (max-width: 600px) {
+  .kviz {
+    margin-top: 32px;
+
+    &__card {
+      padding: 22px 14px;
+      border-radius: 18px;
+    }
+
+    &__text {
+      font-size: 1.05rem;
+    }
+
+    &__opt {
+      padding: 10px 12px;
+      gap: 10px;
+    }
+
+    &__ar {
+      font-size: 1.5em;
+    }
+
+    &__intro h3,
+    &__result h3 {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+/* ---------- završni kviz (100 pitanja) ---------- */
+.kviz {
+  /* traka napretka umjesto tačkica kad je pitanja mnogo */
+  &__bar {
+    flex: 1;
+    min-width: 140px;
+    max-width: 320px;
+    height: 8px;
+    border-radius: 999px;
+    background: var(--line);
+    overflow: hidden;
+
+    span {
+      display: block;
+      height: 100%;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--gold), var(--gold-600));
+      transition: width 0.25s ease;
+    }
+  }
+
+  /* oznaka lekcije uz broj pitanja */
+  &__tag {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 2px 9px;
+    border-radius: 999px;
+    background: var(--gold-100);
+    color: var(--gold-600);
+    font-size: 0.66rem;
+    letter-spacing: 0.1em;
+  }
+
+  &__counts {
+    font-weight: 600;
+    color: var(--navy) !important;
+  }
+
+  /* lekcije za ponavljanje (rezultat završnog kviza) */
+  &__review {
+    margin: 6px auto 16px;
+    padding: 16px;
+    max-width: 640px;
+    border-radius: 14px;
+    background: #fff;
+    border: 1px solid var(--line);
+
+    p {
+      margin: 0 0 10px;
+      font-size: 0.74rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold-600) !important;
+    }
+
+    > div {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+    }
+  }
+
+  &__chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px 6px 6px;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    background: var(--cream);
+    color: var(--navy);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: border-color 0.15s ease, color 0.15s ease;
+
+    b {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: var(--navy);
+      color: #fff;
+      font-size: 0.72rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    small {
+      font-size: 0.68rem;
+      font-weight: 500;
+      text-transform: none;
+      color: #9c2f28;
+    }
+
+    &:hover {
+      border-color: var(--gold);
+      color: var(--gold-600);
+      text-decoration: none;
+    }
+  }
+}
+
+/* sidra unutar lekcije (#lekcija, #vjezba, #video, #kviz …): pri skoku ostaje mjesta za ljepljivu navigaciju */
+#lekcija,
+#tabela,
+#znakovi,
+#vjezba,
+#video,
+#kviz {
+  scroll-margin-top: 96px;
+}

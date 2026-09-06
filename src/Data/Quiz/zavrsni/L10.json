@@ -1,0 +1,75 @@
+{
+  "lekcija": 10,
+  "pitanja": [
+    {
+      "q": { "bs": "U kojem primjeru se harf M (م) sa sukunom NE izgovara po pravilu izhara šefevijja?", "en": "In which example is the letter M (م) with a sukun NOT pronounced according to idhhar shafawi?" },
+      "opcije": [
+        { "bs": "هُمْ لَا يُؤْمِنُونَ", "en": "هُمْ لَا يُؤْمِنُونَ" },
+        { "bs": "لَهُمْ مِمَّا", "en": "لَهُمْ مِمَّا" },
+        { "bs": "أَبْصَارِهِمْ غِشَاوَةٌ", "en": "أَبْصَارِهِمْ غِشَاوَةٌ" },
+        { "bs": "أَلَمْ يَجْعَلْ", "en": "أَلَمْ يَجْعَلْ" }
+      ],
+      "tacno": 1,
+      "objasnjenje": {
+        "bs": "U primjeru لَهُمْ مِمَّا poslije harfa M sa sukunom dolazi harf M (م), a to je jedan od dva izuzetka.",
+        "en": "In the example لَهُمْ مِمَّا the letter M with a sukun is followed by the letter M (م), which is one of the two exceptions."
+      }
+    },
+    {
+      "q": { "bs": "Koja je razlika između primjera أَلَمْ تَرَ i أَنْتُمْ?", "en": "What is the difference between the examples أَلَمْ تَرَ and أَنْتُمْ?" },
+      "opcije": [
+        { "bs": "U oba se harf sa sukunom izgovara čisto", "en": "In both the letter with a sukun is pronounced clearly" },
+        { "bs": "U prvom se M (م) skriva, a u drugom se N (ن) izgovara čisto", "en": "In the first M (م) is hidden, in the second N (ن) is pronounced clearly" },
+        { "bs": "U prvom se M (م) izgovara čisto (izhar šefevijj), a u drugom se N (ن) skriva (ihfa)", "en": "In the first M (م) is pronounced clearly (idhhar shafawi), in the second N (ن) is hidden (ikhfa)" },
+        { "bs": "U oba dolazi do ihfe", "en": "In both ikhfa occurs" }
+      ],
+      "tacno": 2,
+      "objasnjenje": {
+        "bs": "Ispred harfa T (ت) harf M sa sukunom se izgovara čisto, a harf N sa sukunom se skriva, jer je T (ت) jedan od 15 harfova ihfe.",
+        "en": "Before the letter T (ت) the letter M with a sukun is pronounced clearly, while the letter N with a sukun is hidden, because T (ت) is one of the 15 letters of ikhfa."
+      }
+    },
+    {
+      "q": { "bs": "Koliko puta u primjeru فَلَا خَوْفٌ عَلَيْهِمْ وَلَا هُمْ يَحْزَنُونَ dolazi do izhara šefevijja?", "en": "How many times does idhhar shafawi occur in the example فَلَا خَوْفٌ عَلَيْهِمْ وَلَا هُمْ يَحْزَنُونَ?" },
+      "opcije": [
+        { "bs": "Jedanput", "en": "Once" },
+        { "bs": "Dva puta", "en": "Twice" },
+        { "bs": "Tri puta", "en": "Three times" },
+        { "bs": "Nijednom", "en": "Not at all" }
+      ],
+      "tacno": 1,
+      "objasnjenje": {
+        "bs": "Harf M sa sukunom dolazi ispred V (و) u عَلَيْهِمْ وَلَا i ispred J (ي) u هُمْ يَحْزَنُونَ; tenvin u خَوْفٌ ispred ع je izhar halkijj.",
+        "en": "The letter M with a sukun comes before W (و) in عَلَيْهِمْ وَلَا and before Y (ي) in هُمْ يَحْزَنُونَ; the tanween in خَوْفٌ before ع is idhhar halqi."
+      }
+    },
+    {
+      "q": { "bs": "U primjeru عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا, ispred kojih harfova se harf M (م) sa sukunom izgovara čisto?", "en": "In the example عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا, before which letters is the letter M (م) with a sukun pronounced clearly?" },
+      "opcije": [
+        { "bs": "Ispred Gajn (غ) i V (و)", "en": "Before Ghayn (غ) and W (و)" },
+        { "bs": "Ispred Gajn (غ) i L (ل)", "en": "Before Ghayn (غ) and L (ل)" },
+        { "bs": "Ispred Ajn (ع) i V (و)", "en": "Before Ayn (ع) and W (و)" },
+        { "bs": "Ispred L (ل) i N (ن)", "en": "Before L (ل) and N (ن)" }
+      ],
+      "tacno": 0,
+      "objasnjenje": {
+        "bs": "Poslije prvog عَلَيْهِمْ dolazi harf غ, a poslije drugog harf و; nijedan nije B (ب) ni M (م), pa se M izgovara čisto.",
+        "en": "The first عَلَيْهِمْ is followed by the letter غ and the second by و; neither is B (ب) or M (م), so M is pronounced clearly."
+      }
+    },
+    {
+      "q": { "bs": "Kako se uči harf M (م) sa sukunom ispred harfa F (ف), kao u هُمْ فِي تَضْلِيلٍ?", "en": "How is the letter M (م) with a sukun recited before the letter F (ف), as in هُمْ فِي تَضْلِيلٍ?" },
+      "opcije": [
+        { "bs": "Uklapa se u harf F (ف)", "en": "It merges into the letter F (ف)" },
+        { "bs": "Skriva se i uči kroz nos 2 hareketa", "en": "It is hidden and recited through the nose for 2 harakas" },
+        { "bs": "Pretvara se u harf N (ن)", "en": "It turns into the letter N (ن)" },
+        { "bs": "Čisto, bez uklapanja, jer F (ف) nije ni B (ب) ni M (م)", "en": "Clearly, without merging, because F (ف) is neither B (ب) nor M (م)" }
+      ],
+      "tacno": 3,
+      "objasnjenje": {
+        "bs": "Jedini izuzeci su harfovi B (ب) i M (م); ispred svih ostalih harfova, pa i F (ف), harf M sa sukunom se izgovara čisto.",
+        "en": "The only exceptions are the letters B (ب) and M (م); before all other letters, including F (ف), the letter M with a sukun is pronounced clearly."
+      }
+    }
+  ]
+}

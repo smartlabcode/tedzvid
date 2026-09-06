@@ -1,0 +1,115 @@
+{
+  "lekcija": 18,
+  "pitanja": [
+    {
+      "q": { "bs": "Šta znači „medd muttesil“?", "en": "What does “madd muttasil” mean?" },
+      "opcije": [
+        { "bs": "Obična dužina", "en": "Natural prolongation" },
+        { "bs": "Spojena dužina", "en": "Connected prolongation" },
+        { "bs": "Rastavljena dužina", "en": "Separated prolongation" },
+        { "bs": "Stalna dužina", "en": "Obligatory prolongation" }
+      ],
+      "tacno": 1,
+      "objasnjenje": { "bs": "Medd muttesil je spojena dužina.", "en": "Madd muttasil is the connected prolongation." }
+    },
+    {
+      "q": { "bs": "Kada nastaje medd muttesil?", "en": "When does madd muttasil occur?" },
+      "opcije": [
+        { "bs": "Kada poslije dugog vokala dođe sukun", "en": "When the long vowel is followed by a sukun" },
+        { "bs": "Kada poslije dugog vokala nema ni hemzeta ni sukuna", "en": "When the long vowel is followed by neither a hamza nor a sukun" },
+        { "bs": "Kada poslije dugog vokala dođe hemze na početku sljedeće riječi", "en": "When the long vowel is followed by a hamza at the beginning of the next word" },
+        { "bs": "Kada poslije dugog vokala dođe hemze u istoj riječi", "en": "When the long vowel is followed by a hamza in the same word" }
+      ],
+      "tacno": 3,
+      "objasnjenje": { "bs": "Medd muttesil je kada poslije dugog vokala dođe hemze u istoj riječi.", "en": "Madd muttasil is when the long vowel is followed by a hamza in the same word." }
+    },
+    {
+      "q": { "bs": "Koliko traje medd muttesil?", "en": "How long does madd muttasil last?" },
+      "opcije": [
+        { "bs": "Obavezno 4-5 hareketa", "en": "It must last 4–5 harakas" },
+        { "bs": "2 hareketa", "en": "2 harakas" },
+        { "bs": "Obavezno 6 hareketa", "en": "It must last 6 harakas" },
+        { "bs": "2-4-6 hareketa", "en": "2, 4 or 6 harakas" }
+      ],
+      "tacno": 0,
+      "objasnjenje": { "bs": "Medd muttesil traje obavezno 4-5 hareketa.", "en": "Madd muttasil must last 4–5 harakas." }
+    },
+    {
+      "q": { "bs": "Šta mora doći poslije dugog vokala da bi bio medd muttesil?", "en": "What must follow the long vowel for it to be madd muttasil?" },
+      "opcije": [
+        { "bs": "Sukun", "en": "A sukun" },
+        { "bs": "Tešdid", "en": "A tashdeed" },
+        { "bs": "Hemze", "en": "A hamza" },
+        { "bs": "Harf N (ن)", "en": "The letter N (ن)" }
+      ],
+      "tacno": 2,
+      "objasnjenje": { "bs": "Kod medd muttesila poslije dugog vokala dolazi hemze.", "en": "In madd muttasil the long vowel is followed by a hamza." }
+    },
+    {
+      "q": { "bs": "Po čemu se medd muttesil razlikuje od medd tabijja?", "en": "How does madd muttasil differ from madd tabi'i?" },
+      "opcije": [
+        { "bs": "Medd muttesil dolazi poslije kratkog vokala", "en": "Madd muttasil comes after a short vowel" },
+        { "bs": "Medd muttesil traje kraće", "en": "Madd muttasil is shorter" },
+        { "bs": "Kod medd muttesila nema hemzeta", "en": "Madd muttasil has no hamza" },
+        { "bs": "Kod medd muttesila poslije dugog vokala dolazi hemze i dužina traje 4-5 hareketa", "en": "In madd muttasil the long vowel is followed by a hamza and it lasts 4–5 harakas" }
+      ],
+      "tacno": 3,
+      "objasnjenje": { "bs": "Medd tabijj nema hemzeta i traje 2 hareketa, a medd muttesil ima hemze u istoj riječi i traje 4-5 hareketa.", "en": "Madd tabi'i has no hamza and lasts 2 harakas, while madd muttasil has a hamza in the same word and lasts 4–5 harakas." }
+    },
+    {
+      "q": { "bs": "Gdje je medd muttesil u riječi جَٓاءَ?", "en": "Where is the madd muttasil in the word جَٓاءَ?" },
+      "opcije": [
+        { "bs": "Na harfu ج sa kratkim vokalom E", "en": "On the letter ج with the short vowel A" },
+        { "bs": "Na dugom vokalu A poslije kojeg dolazi hemze (جَٓاءَ)", "en": "On the long vowel A followed by a hamza (جَٓاءَ)" },
+        { "bs": "Na hemzetu (ء)", "en": "On the hamza (ء)" },
+        { "bs": "U riječi جَٓاءَ nema medd muttesila", "en": "There is no madd muttasil in the word جَٓاءَ" }
+      ],
+      "tacno": 1,
+      "objasnjenje": { "bs": "U riječi جَٓاءَ poslije dugog vokala A dolazi hemze u istoj riječi, pa je dugi vokal A medd muttesil.", "en": "In جَٓاءَ the long vowel A is followed by a hamza in the same word, so the long vowel A is madd muttasil." }
+    },
+    {
+      "q": { "bs": "Koja riječ sadrži medd muttesil?", "en": "Which word contains madd muttasil?" },
+      "opcije": [
+        { "bs": "السُّٓوءَ", "en": "السُّٓوءَ" },
+        { "bs": "قَالَ", "en": "قَالَ" },
+        { "bs": "يُرِيدُ", "en": "يُرِيدُ" },
+        { "bs": "ذُو", "en": "ذُو" }
+      ],
+      "tacno": 0,
+      "objasnjenje": { "bs": "U riječi السُّٓوءَ poslije dugog vokala U dolazi hemze u istoj riječi.", "en": "In السُّٓوءَ the long vowel U is followed by a hamza in the same word." }
+    },
+    {
+      "q": { "bs": "U riječi الْفَحْشَٓاءَ medd muttesil je na:", "en": "In the word الْفَحْشَٓاءَ the madd muttasil is on:" },
+      "opcije": [
+        { "bs": "harfu F (ف)", "en": "the letter F (ف)" },
+        { "bs": "harfu ح sa sukunom", "en": "the letter ح with a sukun" },
+        { "bs": "dugom vokalu A (شَٓا), jer poslije njega dolazi hemze", "en": "the long vowel A (شَٓا), because a hamza follows it" },
+        { "bs": "kratkom vokalu E na kraju riječi", "en": "the short vowel A at the end of the word" }
+      ],
+      "tacno": 2,
+      "objasnjenje": { "bs": "Dugi vokal A (شَٓا) je medd muttesil jer poslije njega dolazi hemze u istoj riječi.", "en": "The long vowel A (شَٓا) is madd muttasil because a hamza follows it in the same word." }
+    },
+    {
+      "q": { "bs": "Poslije kojih dugih vokala može nastati medd muttesil?", "en": "After which long vowels can madd muttasil occur?" },
+      "opcije": [
+        { "bs": "Samo poslije dugog vokala A", "en": "Only after the long vowel A" },
+        { "bs": "Poslije dugih vokala A, I i U", "en": "After the long vowels A, I and U" },
+        { "bs": "Samo poslije dugog vokala U", "en": "Only after the long vowel U" },
+        { "bs": "Samo poslije dugih vokala A i I", "en": "Only after the long vowels A and I" }
+      ],
+      "tacno": 1,
+      "objasnjenje": { "bs": "Medd muttesil može doći poslije dugog vokala A, I ili U.", "en": "Madd muttasil can come after the long vowel A, I or U." }
+    },
+    {
+      "q": { "bs": "Smije li se medd muttesil skratiti na 2 hareketa?", "en": "May madd muttasil be shortened to 2 harakas?" },
+      "opcije": [
+        { "bs": "Da, uvijek", "en": "Yes, always" },
+        { "bs": "Da, ako je na kraju ajeta", "en": "Yes, if it is at the end of an ayah" },
+        { "bs": "Da, ako je hemze na početku riječi", "en": "Yes, if the hamza is at the beginning of the word" },
+        { "bs": "Ne, on obavezno traje 4-5 hareketa", "en": "No, it must last 4–5 harakas" }
+      ],
+      "tacno": 3,
+      "objasnjenje": { "bs": "Medd muttesil traje obavezno 4-5 hareketa i ne smije se skratiti.", "en": "Madd muttasil must last 4–5 harakas and may not be shortened." }
+    }
+  ]
+}

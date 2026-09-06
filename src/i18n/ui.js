@@ -169,7 +169,122 @@ const UI = {
 		audioNextTrack: 'Sljedeći zapis',
 		audioPosition: 'Pozicija u zapisu',
 		audioUnavailable: 'Audio zapis nije dostupan.',
-		audioStopClose: 'Zaustavi i zatvori'
+		audioStopClose: 'Zaustavi i zatvori',
+
+		/* ----- korisnički račun ----- */
+		navPrijava: 'Prijava',
+		navRegistracija: 'Registracija',
+		navProfil: 'Moj napredak',
+		navOdjava: 'Odjava',
+		authEyebrow: 'Korisnički račun',
+		loginTitle: 'Prijava',
+		loginText: 'Prijavi se da nastaviš učenje i otključaš sljedeće lekcije.',
+		registerTitle: 'Registracija',
+		registerText:
+			'Napravi besplatan račun: napredak se čuva, a svaki položeni kviz otključava sljedeću lekciju.',
+		fieldPassword: 'Lozinka',
+		fieldPassword2: 'Ponovi lozinku',
+		passwordHint: 'Najmanje 6 znakova.',
+		btnLogin: 'Prijavi se',
+		btnRegister: 'Napravi račun',
+		btnWorking: 'Trenutak…',
+		switchToRegister: 'Nemaš račun?',
+		switchToLogin: 'Već imaš račun?',
+		authErrors: {
+			bad_credentials: 'Pogrešan email ili lozinka.',
+			email_exists: 'Račun s ovom email adresom već postoji.',
+			bad_email: 'Unesi ispravnu email adresu.',
+			bad_password: 'Lozinka mora imati najmanje 6 znakova.',
+			bad_name: 'Unesi ime (najmanje 2 znaka).',
+			passwords_differ: 'Lozinke se ne podudaraju.',
+			too_many: 'Previše pokušaja. Pokušaj ponovo za nekoliko minuta.',
+			network: 'Server nije dostupan. Provjeri vezu i pokušaj ponovo.',
+			unauthorized: 'Sesija je istekla – prijavi se ponovo.',
+			locked: 'Ova lekcija je još zaključana.',
+			server: 'Došlo je do greške. Pokušaj ponovo.'
+		},
+
+		/* ----- moj napredak ----- */
+		profilEyebrow: 'Moj napredak',
+		profilText: (prolaz, ukupno) =>
+			`Lekcije se otključavaju redom: položen kviz (najmanje ${prolaz} od ${ukupno} tačnih) otključava sljedeću lekciju.`,
+		profilPassed: 'Položenih lekcija',
+		profilUnlocked: 'Otključanih lekcija',
+		profilNext: 'Sljedeći korak',
+		profilAllDone: 'Sve lekcije su položene – svaka čast!',
+		statusPolozeno: 'Položeno',
+		statusNijePolozeno: 'Nije položeno',
+		statusOtkljucano: 'Otključano',
+		statusZakljucano: 'Zaključano',
+
+		/* ----- kartice lekcija: zaključavanje ----- */
+		cardKviz: 'Kviz',
+		cardUnlockHint: (n) => `Lekcije se otključavaju redom – položi kviz lekcije ${n} da nastaviš dalje.`,
+		cardUnlockGuest: 'Prijavi se ili napravi besplatan račun da otključaš lekcije i sačuvaš napredak.',
+		cardGoQuiz: (n) => `Kviz lekcije ${n}`,
+
+		/* ----- zaključana lekcija ----- */
+		gateTitle: 'Lekcija je zaključana',
+		gateTextUser: (n, prolaz, ukupno) =>
+			`Da otključaš ovu lekciju, položi kviz na kraju lekcije ${n} (najmanje ${prolaz} od ${ukupno} tačnih odgovora).`,
+		gateTextGuest:
+			'Lekcije se otključavaju redom: nakon svake lekcije slijedi kratki kviz, a položen kviz otključava sljedeću lekciju. Prijavi se ili napravi besplatan račun da bi se tvoj napredak sačuvao.',
+
+		/* ----- kviz ----- */
+		kviz: 'KVIZ',
+		kvizIntroTitle: 'Provjeri znanje',
+		kvizIntroText: (prolaz, ukupno) =>
+			`${ukupno} pitanja o ovoj lekciji. Za prolaz treba najmanje ${prolaz} tačnih odgovora – položen kviz otključava sljedeću lekciju.`,
+		kvizStart: 'Započni kviz',
+		kvizRestart: 'Pokušaj ponovo',
+		kvizQuestion: (i, n) => `Pitanje ${i} od ${n}`,
+		kvizProgressAria: 'Napredak kroz kviz',
+		kvizAnswer: 'Odgovori',
+		kvizNext: 'Sljedeće pitanje',
+		kvizFinish: 'Pogledaj rezultat',
+		kvizCorrect: 'Tačno!',
+		kvizWrong: 'Netačno.',
+		kvizCorrectIs: 'Tačan odgovor:',
+		kvizScore: (t, n) => `${t} od ${n} tačnih`,
+		kvizPassed: 'Bravo, kviz je položen!',
+		kvizFailedTitle: 'Nije položeno',
+		kvizFailed: (prolaz) =>
+			`Za prolaz treba najmanje ${prolaz} tačnih odgovora. Pročitaj lekciju još jednom i pokušaj ponovo.`,
+		kvizUnlocked: (n) => `Otključana je lekcija ${n}.`,
+		kvizAllDone: 'Ovo je bila posljednja lekcija – sve lekcije su pređene. Slijedi završni kviz iz cijelog tedžvida.',
+		kvizNextLesson: (n) => `Lekcija ${n}`,
+		kvizSaving: 'Spremanje napretka…',
+		kvizSaved: 'Napredak je sačuvan.',
+		kvizSaveError: 'Napredak nije sačuvan – provjeri vezu.',
+		kvizRetrySave: 'Pokušaj sačuvati ponovo',
+		kvizGuest: 'Prijavi se ili napravi račun da se rezultat sačuva i otključa sljedeća lekcija.',
+		kvizBest: (b, n) => `Najbolji rezultat: ${b} od ${n}`,
+		kvizAlreadyPassed: 'Kviz je već položen i sljedeća lekcija je otključana – vježbaj koliko želiš.',
+		kvizCorrectCount: (t, n) => `Tačnih: ${t} · Netačnih: ${n - t}`,
+
+		/* ----- završni kviz ----- */
+		zavrsniEyebrow: 'Provjera cijelog tedžvida',
+		zavrsniTitle: 'Završni kviz',
+		zavrsniText: (n, prolaz) =>
+			`${n} pitanja iz svih 22 lekcije, izmiješanim redoslijedom. Za prolaz treba najmanje ${prolaz} tačnih odgovora.`,
+		zavrsniCardText: (n) => `${n} pitanja iz svih lekcija – provjera znanja iz cijelog tedžvida.`,
+		zavrsniOpen: 'Otvori završni kviz',
+		zavrsniIntroText: (n, prolaz) =>
+			`${n} pitanja iz svih 22 lekcije, izmiješanim redoslijedom. Za prolaz treba najmanje ${prolaz} tačnih odgovora. Ako zatvoriš stranicu, možeš nastaviti gdje si stao dok je preglednik otvoren.`,
+		zavrsniResume: (i, n) => `Nastavi (pitanje ${i} od ${n})`,
+		zavrsniRestart: 'Počni ispočetka',
+		zavrsniLockedTitle: 'Završni kviz je zaključan',
+		zavrsniLockedUser: (n) =>
+			`Završni kviz se otključava kad položiš kvizove svih 22 lekcije. Trenutno si na lekciji ${n}.`,
+		zavrsniLockedGuest:
+			'Završni kviz se otključava kad se polože kvizovi svih 22 lekcije. Prijavi se ili napravi besplatan račun da bi se tvoj napredak sačuvao.',
+		zavrsniPassed: 'Bravo, završni kviz je položen!',
+		zavrsniPassedText: 'Cijeli tedžvid je pređen i provjeren – svaka čast!',
+		zavrsniFailed: (prolaz) =>
+			`Za prolaz treba najmanje ${prolaz} tačnih odgovora. Ponovi lekcije u kojima je bilo grešaka i pokušaj ponovo.`,
+		zavrsniReview: 'Preporuka za ponavljanje:',
+		zavrsniMistakes: (n) => (n === 1 ? '1 greška' : n < 5 ? `${n} greške` : `${n} grešaka`),
+		profilEverything: 'Sve lekcije i završni kviz su položeni – svaka čast!'
 	},
 
 	en: {
@@ -334,7 +449,120 @@ const UI = {
 		audioNextTrack: 'Next recording',
 		audioPosition: 'Position in the recording',
 		audioUnavailable: 'This audio recording is not available.',
-		audioStopClose: 'Stop and close'
+		audioStopClose: 'Stop and close',
+
+		/* ----- account ----- */
+		navPrijava: 'Log in',
+		navRegistracija: 'Sign up',
+		navProfil: 'My progress',
+		navOdjava: 'Log out',
+		authEyebrow: 'Your account',
+		loginTitle: 'Log in',
+		loginText: 'Log in to continue learning and unlock the next lessons.',
+		registerTitle: 'Create an account',
+		registerText: 'Create a free account: your progress is saved and every passed quiz unlocks the next lesson.',
+		fieldPassword: 'Password',
+		fieldPassword2: 'Repeat password',
+		passwordHint: 'At least 6 characters.',
+		btnLogin: 'Log in',
+		btnRegister: 'Create account',
+		btnWorking: 'One moment…',
+		switchToRegister: 'No account yet?',
+		switchToLogin: 'Already have an account?',
+		authErrors: {
+			bad_credentials: 'Wrong email or password.',
+			email_exists: 'An account with this email address already exists.',
+			bad_email: 'Enter a valid email address.',
+			bad_password: 'The password must be at least 6 characters long.',
+			bad_name: 'Enter your name (at least 2 characters).',
+			passwords_differ: 'The passwords do not match.',
+			too_many: 'Too many attempts. Try again in a few minutes.',
+			network: 'The server is not reachable. Check your connection and try again.',
+			unauthorized: 'Your session has expired – please log in again.',
+			locked: 'This lesson is still locked.',
+			server: 'Something went wrong. Please try again.'
+		},
+
+		/* ----- my progress ----- */
+		profilEyebrow: 'My progress',
+		profilText: (prolaz, ukupno) =>
+			`Lessons unlock in order: a passed quiz (at least ${prolaz} of ${ukupno} correct) unlocks the next lesson.`,
+		profilPassed: 'Lessons passed',
+		profilUnlocked: 'Lessons unlocked',
+		profilNext: 'Next step',
+		profilAllDone: 'All lessons passed – well done!',
+		statusPolozeno: 'Passed',
+		statusNijePolozeno: 'Not passed',
+		statusOtkljucano: 'Unlocked',
+		statusZakljucano: 'Locked',
+
+		/* ----- lesson cards: locking ----- */
+		cardKviz: 'Quiz',
+		cardUnlockHint: (n) => `Lessons unlock in order – pass the lesson ${n} quiz to continue.`,
+		cardUnlockGuest: 'Log in or create a free account to unlock lessons and save your progress.',
+		cardGoQuiz: (n) => `Lesson ${n} quiz`,
+
+		/* ----- locked lesson ----- */
+		gateTitle: 'This lesson is locked',
+		gateTextUser: (n, prolaz, ukupno) =>
+			`To unlock this lesson, pass the quiz at the end of lesson ${n} (at least ${prolaz} of ${ukupno} correct answers).`,
+		gateTextGuest:
+			'Lessons unlock in order: every lesson ends with a short quiz, and a passed quiz unlocks the next lesson. Log in or create a free account so your progress is saved.',
+
+		/* ----- quiz ----- */
+		kviz: 'QUIZ',
+		kvizIntroTitle: 'Test your knowledge',
+		kvizIntroText: (prolaz, ukupno) =>
+			`${ukupno} questions about this lesson. You need at least ${prolaz} correct answers to pass – a passed quiz unlocks the next lesson.`,
+		kvizStart: 'Start the quiz',
+		kvizRestart: 'Try again',
+		kvizQuestion: (i, n) => `Question ${i} of ${n}`,
+		kvizProgressAria: 'Quiz progress',
+		kvizAnswer: 'Answer',
+		kvizNext: 'Next question',
+		kvizFinish: 'See the result',
+		kvizCorrect: 'Correct!',
+		kvizWrong: 'Not quite.',
+		kvizCorrectIs: 'The correct answer is:',
+		kvizScore: (t, n) => `${t} of ${n} correct`,
+		kvizPassed: 'Well done, you passed!',
+		kvizFailedTitle: 'Not passed',
+		kvizFailed: (prolaz) => `You need at least ${prolaz} correct answers to pass. Read the lesson once more and try again.`,
+		kvizUnlocked: (n) => `Lesson ${n} is now unlocked.`,
+		kvizAllDone: 'That was the last lesson – you have gone through every lesson. Next up is the final quiz on the whole handbook.',
+		kvizNextLesson: (n) => `Lesson ${n}`,
+		kvizSaving: 'Saving progress…',
+		kvizSaved: 'Progress saved.',
+		kvizSaveError: 'Progress was not saved – check your connection.',
+		kvizRetrySave: 'Try saving again',
+		kvizGuest: 'Log in or create an account so your result is saved and the next lesson unlocks.',
+		kvizBest: (b, n) => `Best result: ${b} of ${n}`,
+		kvizAlreadyPassed: 'You have already passed this quiz and the next lesson is unlocked – practise as often as you like.',
+		kvizCorrectCount: (t, n) => `Correct: ${t} · Wrong: ${n - t}`,
+
+		/* ----- final quiz ----- */
+		zavrsniEyebrow: 'Test of the whole handbook',
+		zavrsniTitle: 'Final quiz',
+		zavrsniText: (n, prolaz) =>
+			`${n} questions from all 22 lessons, in random order. You need at least ${prolaz} correct answers to pass.`,
+		zavrsniCardText: (n) => `${n} questions from every lesson – a test of the whole handbook.`,
+		zavrsniOpen: 'Open the final quiz',
+		zavrsniIntroText: (n, prolaz) =>
+			`${n} questions from all 22 lessons, in random order. You need at least ${prolaz} correct answers to pass. If you close the page you can continue where you left off while the browser stays open.`,
+		zavrsniResume: (i, n) => `Continue (question ${i} of ${n})`,
+		zavrsniRestart: 'Start over',
+		zavrsniLockedTitle: 'The final quiz is locked',
+		zavrsniLockedUser: (n) =>
+			`The final quiz unlocks once you have passed the quizzes of all 22 lessons. You are currently on lesson ${n}.`,
+		zavrsniLockedGuest:
+			'The final quiz unlocks once the quizzes of all 22 lessons are passed. Log in or create a free account so your progress is saved.',
+		zavrsniPassed: 'Well done, you passed the final quiz!',
+		zavrsniPassedText: 'You have gone through and tested the whole handbook – well done!',
+		zavrsniFailed: (prolaz) =>
+			`You need at least ${prolaz} correct answers to pass. Revise the lessons where you made mistakes and try again.`,
+		zavrsniReview: 'Recommended for revision:',
+		zavrsniMistakes: (n) => (n === 1 ? '1 mistake' : `${n} mistakes`),
+		profilEverything: 'All lessons and the final quiz passed – well done!'
 	}
 };
 

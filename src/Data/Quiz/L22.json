@@ -1,0 +1,115 @@
+{
+  "lekcija": 22,
+  "pitanja": [
+    {
+      "q": { "bs": "Šta znači „medd lin“?", "en": "What does “madd lin” mean?" },
+      "opcije": [
+        { "bs": "Nestalna dužina", "en": "Temporary prolongation" },
+        { "bs": "Poluvokalna dužina", "en": "Soft-letter prolongation" },
+        { "bs": "Stalna dužina", "en": "Obligatory prolongation" },
+        { "bs": "Rastavljena dužina", "en": "Separated prolongation" }
+      ],
+      "tacno": 1,
+      "objasnjenje": { "bs": "Medd lin je poluvokalna dužina.", "en": "Madd lin is the soft-letter prolongation." }
+    },
+    {
+      "q": { "bs": "Na kojim harfovima nastaje medd lin?", "en": "On which letters does madd lin occur?" },
+      "opcije": [
+        { "bs": "Na harfovima N (ن) i M (م)", "en": "On the letters N (ن) and M (م)" },
+        { "bs": "Na harfovima L (ل) i R (ر)", "en": "On the letters L (ل) and R (ر)" },
+        { "bs": "Na hemzetu i elifu", "en": "On the hamza and the alif" },
+        { "bs": "Na harfovima V (و) i J (ى)", "en": "On the letters W (و) and Y (ى)" }
+      ],
+      "tacno": 3,
+      "objasnjenje": { "bs": "Medd lin nastaje na harfovima V (و) i J (ى) sa sukunom.", "en": "Madd lin occurs on the letters W (و) and Y (ى) with a sukun." }
+    },
+    {
+      "q": { "bs": "Koji znak moraju imati harfovi V ili J da bi bio medd lin?", "en": "Which sign must the letters W or Y carry for it to be madd lin?" },
+      "opcije": [
+        { "bs": "Sukun (يْ / وْ)", "en": "A sukun (يْ / وْ)" },
+        { "bs": "Tešdid", "en": "A tashdeed" },
+        { "bs": "Kratki vokal E", "en": "The short vowel A" },
+        { "bs": "Kratki vokal U", "en": "The short vowel U" }
+      ],
+      "tacno": 0,
+      "objasnjenje": { "bs": "Kod medd lina harfovi V ili J imaju sukun (يْ / وْ).", "en": "In madd lin the letters W or Y carry a sukun (يْ / وْ)." }
+    },
+    {
+      "q": { "bs": "Koji kratki vokal mora biti prije harfa V ili J sa sukunom da bi bio medd lin?", "en": "Which short vowel must come before the letter W or Y with a sukun for it to be madd lin?" },
+      "opcije": [
+        { "bs": "Kratki vokal I", "en": "The short vowel I" },
+        { "bs": "Kratki vokal U", "en": "The short vowel U" },
+        { "bs": "Kratki vokal E ( ـــَـــ )", "en": "The short vowel A ( ـــَـــ )" },
+        { "bs": "Dugi vokal A", "en": "The long vowel A" }
+      ],
+      "tacno": 2,
+      "objasnjenje": { "bs": "Prije harfa V ili J sa sukunom mora biti kratki vokal E.", "en": "The letter W or Y with a sukun must be preceded by the short vowel A." }
+    },
+    {
+      "q": { "bs": "Šta mora doći poslije harfa V ili J sa sukunom da bi bio medd lin?", "en": "What must follow the letter W or Y with a sukun for it to be madd lin?" },
+      "opcije": [
+        { "bs": "Harf sa sukunom", "en": "A letter with a sukun" },
+        { "bs": "Hemze", "en": "A hamza" },
+        { "bs": "Harf sa tešdidom", "en": "A letter with a tashdeed" },
+        { "bs": "Dugi vokal", "en": "A long vowel" }
+      ],
+      "tacno": 0,
+      "objasnjenje": { "bs": "Poslije harfa V ili J sa sukunom mora doći harf sa sukunom.", "en": "The letter W or Y with a sukun must be followed by a letter with a sukun." }
+    },
+    {
+      "q": { "bs": "Koliko traje medd lin?", "en": "How long does madd lin last?" },
+      "opcije": [
+        { "bs": "Obavezno 6 hareketa", "en": "It must last 6 harakas" },
+        { "bs": "Samo 2 hareketa", "en": "Only 2 harakas" },
+        { "bs": "Obavezno 4-5 hareketa", "en": "It must last 4–5 harakas" },
+        { "bs": "2-4-6 hareketa", "en": "2, 4 or 6 harakas" }
+      ],
+      "tacno": 3,
+      "objasnjenje": { "bs": "Medd lin traje 2-4-6 hareketa.", "en": "Madd lin lasts 2, 4 or 6 harakas." }
+    },
+    {
+      "q": { "bs": "Koja riječ sadrži medd lin?", "en": "Which word contains madd lin?" },
+      "opcije": [
+        { "bs": "قَالَ", "en": "قَالَ" },
+        { "bs": "خَوْفْ", "en": "خَوْفْ" },
+        { "bs": "جَٓاءَ", "en": "جَٓاءَ" },
+        { "bs": "حَآجَّ", "en": "حَآجَّ" }
+      ],
+      "tacno": 1,
+      "objasnjenje": { "bs": "U riječi خَوْفْ prije harfa V sa sukunom je kratki vokal E, a poslije njega harf F sa sukunom.", "en": "In خَوْفْ the letter W with a sukun is preceded by the short vowel A and followed by the letter F with a sukun." }
+    },
+    {
+      "q": { "bs": "Gdje je medd lin u primjeru الْبَيْتِ?", "en": "Where is the madd lin in the example الْبَيْتِ?" },
+      "opcije": [
+        { "bs": "Na harfu B (ب)", "en": "On the letter B (ب)" },
+        { "bs": "Na harfu T (ت)", "en": "On the letter T (ت)" },
+        { "bs": "Na harfu J sa sukunom (بَيْ)", "en": "On the letter Y with a sukun (بَيْ)" },
+        { "bs": "U ovom primjeru nema medd lina", "en": "There is no madd lin in this example" }
+      ],
+      "tacno": 2,
+      "objasnjenje": { "bs": "U الْبَيْتِ harf J ima sukun, a prije njega je kratki vokal E, pa je to medd lin.", "en": "In الْبَيْتِ the letter Y carries a sukun and is preceded by the short vowel A, so it is madd lin." }
+    },
+    {
+      "q": { "bs": "Po čemu se medd lin razlikuje od ostalih dužina?", "en": "How does madd lin differ from the other prolongations?" },
+      "opcije": [
+        { "bs": "Traje najduže od svih dužina", "en": "It lasts the longest of all prolongations" },
+        { "bs": "Dolazi samo na početku riječi", "en": "It comes only at the beginning of a word" },
+        { "bs": "Dolazi poslije hemzeta", "en": "It comes after a hamza" },
+        { "bs": "Dužina je na harfu V ili J sa sukunom iza kratkog vokala E, a ne na dugom vokalu", "en": "The prolongation is on the letter W or Y with a sukun after the short vowel A, not on a long vowel" }
+      ],
+      "tacno": 3,
+      "objasnjenje": { "bs": "Ostale dužine su na dugom vokalu, a medd lin je na harfu V ili J sa sukunom poslije kratkog vokala E.", "en": "The other prolongations are on a long vowel, while madd lin is on the letter W or Y with a sukun after the short vowel A." }
+    },
+    {
+      "q": { "bs": "Koji primjer ima medd lin na harfu V (و)?", "en": "Which example has madd lin on the letter W (و)?" },
+      "opcije": [
+        { "bs": "خَيْرْ", "en": "خَيْرْ" },
+        { "bs": "الْقَوْمِ", "en": "الْقَوْمِ" },
+        { "bs": "الْعَيْنِ", "en": "الْعَيْنِ" },
+        { "bs": "الْبَيْتِ", "en": "الْبَيْتِ" }
+      ],
+      "tacno": 1,
+      "objasnjenje": { "bs": "U الْقَوْمِ poslije kratkog vokala E dolazi harf V sa sukunom (قَوْ), a u ostalim primjerima je harf J.", "en": "In الْقَوْمِ the short vowel A is followed by the letter W with a sukun (قَوْ), while the other examples have the letter Y." }
+    }
+  ]
+}

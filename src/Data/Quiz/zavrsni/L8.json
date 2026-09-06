@@ -1,0 +1,75 @@
+{
+  "lekcija": 8,
+  "pitanja": [
+    {
+      "q": { "bs": "U kojem od sljedećih primjera NE dolazi do iklaba?", "en": "In which of the following examples does iqlab NOT occur?" },
+      "opcije": [
+        { "bs": "يَنْبَغِي", "en": "يَنْبَغِي" },
+        { "bs": "بُنْيَانٌ", "en": "بُنْيَانٌ" },
+        { "bs": "عَلِيمٌ بِالْمُتَّقِينَ", "en": "عَلِيمٌ بِالْمُتَّقِينَ" },
+        { "bs": "مِنْ بَقْلِهَا", "en": "مِنْ بَقْلِهَا" }
+      ],
+      "tacno": 1,
+      "objasnjenje": {
+        "bs": "U riječi بُنْيَانٌ poslije harfa N sa sukunom dolazi harf J (ي), a ne B (ب), pa nema iklaba.",
+        "en": "In the word بُنْيَانٌ the letter N with a sukun is followed by Y (ي), not B (ب), so there is no iqlab."
+      }
+    },
+    {
+      "q": { "bs": "Šta se dešava sa harfom N (ن) sa sukunom u primjeru مِنْ بَنِي, a šta u primjeru مِنْ مَسَدٍ?", "en": "What happens to the letter N (ن) with a sukun in the example مِنْ بَنِي, and what in the example مِنْ مَسَدٍ?" },
+      "opcije": [
+        { "bs": "U oba se harf N (ن) izgovara čisto", "en": "In both the letter N (ن) is pronounced clearly" },
+        { "bs": "U oba se harf N (ن) nikako ne uči", "en": "In both the letter N (ن) is not pronounced at all" },
+        { "bs": "U prvom se pretvara u M (م) jer dolazi B (ب), a u drugom se uklapa u M (م) jer dolazi M (م)", "en": "In the first it turns into M (م) because B (ب) follows, in the second it merges into M (م) because M (م) follows" },
+        { "bs": "U prvom se uklapa u B (ب), a u drugom se izgovara čisto", "en": "In the first it merges into B (ب), in the second it is pronounced clearly" }
+      ],
+      "tacno": 2,
+      "objasnjenje": {
+        "bs": "Ispred harfa B (ب) je iklab (N postaje M), a ispred harfa M (م) je idgam meal-gunneh (N se uklapa u M).",
+        "en": "Before the letter B (ب) it is iqlab (N becomes M), and before the letter M (م) it is idgham ma'al-ghunnah (N merges into M)."
+      }
+    },
+    {
+      "q": { "bs": "Šta je zajedničko iklabu i idgamu meal-gunneh?", "en": "What do iqlab and idgham ma'al-ghunnah have in common?" },
+      "opcije": [
+        { "bs": "Kod oba se harf N (ن) pretvara u harf M (م)", "en": "In both the letter N (ن) turns into the letter M (م)" },
+        { "bs": "Oba izaziva harf B (ب)", "en": "Both are caused by the letter B (ب)" },
+        { "bs": "Kod oba se harf N (ن) nikako ne uči", "en": "In both the letter N (ن) is not pronounced at all" },
+        { "bs": "Oba traju 2 hareketa", "en": "Both last 2 harakas" }
+      ],
+      "tacno": 3,
+      "objasnjenje": {
+        "bs": "Kod iklaba se harf M (م) uči 2 hareketa, a kod idgama meal-gunneh zrak se propušta kroz nos 2 hareketa.",
+        "en": "In iqlab the letter M (م) is held for 2 harakas, and in idgham ma'al-ghunnah air passes through the nose for 2 harakas."
+      }
+    },
+    {
+      "q": { "bs": "Da li iklab važi i kada su harf N (ن) sa sukunom i harf B (ب) u istoj riječi, npr. يَنْبَغِي?", "en": "Does iqlab also apply when the letter N (ن) with a sukun and the letter B (ب) are in the same word, e.g. يَنْبَغِي?" },
+      "opcije": [
+        { "bs": "Da, važi i u istoj riječi i između dvije riječi", "en": "Yes, it applies both within one word and between two words" },
+        { "bs": "Ne, važi samo između dvije riječi", "en": "No, it applies only between two words" },
+        { "bs": "Ne, u istoj riječi se harf N (ن) izgovara čisto", "en": "No, within one word the letter N (ن) is pronounced clearly" },
+        { "bs": "Ne, u istoj riječi dolazi do ihfe", "en": "No, within one word ikhfa occurs" }
+      ],
+      "tacno": 0,
+      "objasnjenje": {
+        "bs": "Kad god poslije harfa N sa sukunom dođe harf B (ب), N se pretvara u M (م), npr. يَنْبَغِي i مِنْ بَعْدِ.",
+        "en": "Whenever the letter N with a sukun is followed by B (ب), N turns into M (م), e.g. يَنْبَغِي and مِنْ بَعْدِ."
+      }
+    },
+    {
+      "q": { "bs": "Zašto u primjeru مِنْ بَعْدِ nema ihfe, iako se harf N (ن) ne izgovara čisto?", "en": "Why is there no ikhfa in the example مِنْ بَعْدِ, even though the letter N (ن) is not pronounced clearly?" },
+      "opcije": [
+        { "bs": "Jer poslije harfa N dolazi grleni harf", "en": "Because the letter N is followed by a throat letter" },
+        { "bs": "Jer harf B (ب) nije jedan od 15 harfova ihfe, nego jedini harf iklaba", "en": "Because the letter B (ب) is not one of the 15 letters of ikhfa, but the only letter of iqlab" },
+        { "bs": "Jer je harf N na kraju riječi", "en": "Because the letter N is at the end of the word" },
+        { "bs": "Jer se harf N uklapa u harf B (ب)", "en": "Because the letter N merges into the letter B (ب)" }
+      ],
+      "tacno": 1,
+      "objasnjenje": {
+        "bs": "Ispred harfa B (ب) harf N (ن) se pretvara u M (م) – to je iklab, a ne ihfa.",
+        "en": "Before the letter B (ب) the letter N (ن) turns into M (م) – that is iqlab, not ikhfa."
+      }
+    }
+  ]
+}

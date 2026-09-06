@@ -1,0 +1,49 @@
+{
+  "lekcija": 21,
+  "pitanja": [
+    {
+      "q": { "bs": "Ako na riječi الْمُؤْمِنُونَ ne stanemo, nego nastavimo učiti, dugi vokal U (نُو) učimo kao:", "en": "If we do not stop on the word الْمُؤْمِنُونَ but continue reciting, the long vowel U (نُو) is read as:" },
+      "opcije": [
+        { "bs": "medd arid od 2-4-6 hareketa", "en": "madd 'arid of 2, 4 or 6 harakas" },
+        { "bs": "medd lazim od 6 hareketa", "en": "madd lazim of 6 harakas" },
+        { "bs": "medd tabijj od 2 hareketa, jer harf N ima hareket, a ne sukun", "en": "madd tabi'i of 2 harakas, because the letter N has a haraka, not a sukun" },
+        { "bs": "medd muttesil od 4-5 hareketa", "en": "madd muttasil of 4–5 harakas" }
+      ],
+      "tacno": 2,
+      "objasnjenje": { "bs": "Nestalni sukun nastaje samo kada stanemo; kada nastavimo, harf N ima hareket, pa poslije dugog vokala nema ni hemzeta ni sukuna i to je medd tabijj.", "en": "A temporary sukun appears only when we stop; when we continue, the letter N has a haraka, so the long vowel is followed by neither a hamza nor a sukun and it is madd tabi'i." }
+    },
+    {
+      "q": { "bs": "Zašto je dugi vokal I u riječi قَدِيرٌ na kraju ajeta medd arid?", "en": "Why is the long vowel I in the word قَدِيرٌ at the end of the ayah madd 'arid?" },
+      "opcije": [
+        { "bs": "Jer poslije njega dolazi hemze", "en": "Because it is followed by a hamza" },
+        { "bs": "Jer pri stajanju tenvin UN na harfu R postaje nestalni sukun", "en": "Because when stopping, the tanween UN on the letter R becomes a temporary sukun" },
+        { "bs": "Jer harf R ima stalni sukun", "en": "Because the letter R has a permanent sukun" },
+        { "bs": "Jer je prije njega harf D sa hareketom", "en": "Because it is preceded by the letter D with a haraka" }
+      ],
+      "tacno": 1,
+      "objasnjenje": { "bs": "Kada stanemo na riječi قَدِيرٌ, tenvin UN učimo kao sukun, pa poslije dugog vokala I dolazi nestalni sukun i to je medd arid.", "en": "When we stop on قَدِيرٌ, the tanween UN is read as a sukun, so the long vowel I is followed by a temporary sukun and it is madd 'arid." }
+    },
+    {
+      "q": { "bs": "Koji primjer ima medd arid poslije dugog vokala A?", "en": "Which example has madd 'arid after the long vowel A?" },
+      "opcije": [
+        { "bs": "سِينِينَ", "en": "سِينِينَ" },
+        { "bs": "يَحْزَنُونَ", "en": "يَحْزَنُونَ" },
+        { "bs": "تُكَذِّبَانِ", "en": "تُكَذِّبَانِ" },
+        { "bs": "الرَّحِيمُ", "en": "الرَّحِيمُ" }
+      ],
+      "tacno": 2,
+      "objasnjenje": { "bs": "U riječi تُكَذِّبَانِ poslije dugog vokala A (بَا) dolazi nestalni sukun na harfu N; u ostalim primjerima medd arid je poslije dugog vokala I ili U.", "en": "In تُكَذِّبَانِ the long vowel A (بَا) is followed by a temporary sukun on the letter N; in the other examples the madd 'arid comes after the long vowel I or U." }
+    },
+    {
+      "q": { "bs": "Gdje je medd arid u riječi السَّيِّئَاتِ na kraju ajeta?", "en": "Where is the madd 'arid in the word السَّيِّئَاتِ at the end of the ayah?" },
+      "opcije": [
+        { "bs": "Na dugom vokalu A (ئَا), jer harf T na kraju dobija nestalni sukun", "en": "On the long vowel A (ئَا), because the final letter T gets a temporary sukun" },
+        { "bs": "Na hemzetu (ئ), jer je to medd muttesil", "en": "On the hamza (ئ), because it is madd muttasil" },
+        { "bs": "Na harfu J sa tešdidom (يِّ)", "en": "On the letter Y with a tashdeed (يِّ)" },
+        { "bs": "U ovoj riječi nema dužine", "en": "There is no prolongation in this word" }
+      ],
+      "tacno": 0,
+      "objasnjenje": { "bs": "Hemze je prije dugog vokala A, a poslije njega dolazi harf T sa nestalnim sukunom, pa je to medd arid od 2-4-6 hareketa.", "en": "The hamza comes before the long vowel A, and after it comes the letter T with a temporary sukun, so it is madd 'arid of 2, 4 or 6 harakas." }
+    }
+  ]
+}

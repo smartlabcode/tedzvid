@@ -1,0 +1,145 @@
+{
+  "lekcija": 8,
+  "pitanja": [
+    {
+      "q": { "bs": "Šta je iklab?", "en": "What is iqlab?" },
+      "opcije": [
+        { "bs": "Skrivanje harfa N (ن)", "en": "Hiding the letter N (ن)" },
+        { "bs": "Čisto izgovaranje harfa N (ن)", "en": "Clear pronunciation of the letter N (ن)" },
+        { "bs": "Uklapanje harfa N (ن) u harf B (ب)", "en": "Merging the letter N (ن) into the letter B (ب)" },
+        { "bs": "Pretvaranje harfa N (ن) u harf M (م)", "en": "Turning the letter N (ن) into the letter M (م)" }
+      ],
+      "tacno": 3,
+      "objasnjenje": {
+        "bs": "Iklab je pretvaranje harfa N (ن) u harf M (م) kada poslije njega dođe harf B (ب).",
+        "en": "Iqlab is turning the letter N (ن) into the letter M (م) when it is followed by the letter B (ب)."
+      }
+    },
+    {
+      "q": { "bs": "Koji harf izaziva iklab?", "en": "Which letter causes iqlab?" },
+      "opcije": [
+        { "bs": "M (م)", "en": "M (م)" },
+        { "bs": "B (ب)", "en": "B (ب)" },
+        { "bs": "L (ل)", "en": "L (ل)" },
+        { "bs": "N (ن)", "en": "N (ن)" }
+      ],
+      "tacno": 1,
+      "objasnjenje": {
+        "bs": "Do iklaba dolazi kada poslije harfa N sa sukunom ili tenvina dođe harf B (ب).",
+        "en": "Iqlab occurs when the letter N with a sukun or tanween is followed by the letter B (ب)."
+      }
+    },
+    {
+      "q": { "bs": "Poslije čega dolazi do iklaba?", "en": "After what does iqlab occur?" },
+      "opcije": [
+        { "bs": "Poslije harfa M (م) sa sukunom", "en": "After the letter M (م) with a sukun" },
+        { "bs": "Poslije harfa B (ب) sa sukunom", "en": "After the letter B (ب) with a sukun" },
+        { "bs": "Poslije harfa N (ن) sa sukunom ili tenvina", "en": "After the letter N (ن) with a sukun or tanween" },
+        { "bs": "Poslije bilo kojeg harfa sa sukunom", "en": "After any letter with a sukun" }
+      ],
+      "tacno": 2,
+      "objasnjenje": {
+        "bs": "Pravilo važi kada poslije harfa N sa sukunom (نْ) ili tenvina EN, IN, UN dođe harf B (ب).",
+        "en": "The rule applies when the letter N with a sukun (نْ) or the tanween AN, IN, UN is followed by the letter B (ب)."
+      }
+    },
+    {
+      "q": { "bs": "Koliko harfova izaziva iklab?", "en": "How many letters cause iqlab?" },
+      "opcije": [
+        { "bs": "Jedan", "en": "One" },
+        { "bs": "Dva", "en": "Two" },
+        { "bs": "Četiri", "en": "Four" },
+        { "bs": "Petnaest", "en": "Fifteen" }
+      ],
+      "tacno": 0,
+      "objasnjenje": {
+        "bs": "Iklab izaziva samo jedan harf – B (ب).",
+        "en": "Only one letter causes iqlab – B (ب)."
+      }
+    },
+    {
+      "q": { "bs": "Koliko traje izgovor harfa M (م) kod iklaba?", "en": "How long is the letter M (م) held in iqlab?" },
+      "opcije": [
+        { "bs": "1 hareket", "en": "1 haraka" },
+        { "bs": "2 hareketa", "en": "2 harakas" },
+        { "bs": "4 hareketa", "en": "4 harakas" },
+        { "bs": "Ne traje nimalo, N se ne uči", "en": "No length at all, N is not pronounced" }
+      ],
+      "tacno": 1,
+      "objasnjenje": {
+        "bs": "Harf N (ن) se pretvara u harf M (م) u trajanju od 2 hareketa.",
+        "en": "The letter N (ن) turns into the letter M (م) for the length of 2 harakas."
+      }
+    },
+    {
+      "q": { "bs": "U kojem primjeru dolazi do iklaba?", "en": "In which example does iqlab occur?" },
+      "opcije": [
+        { "bs": "مِنْ رَبِّهِمْ", "en": "مِنْ رَبِّهِمْ" },
+        { "bs": "مَنْ نَشَاءُ", "en": "مَنْ نَشَاءُ" },
+        { "bs": "أَنْ أَكُونَ", "en": "أَنْ أَكُونَ" },
+        { "bs": "مِنْ بَعْدِ", "en": "مِنْ بَعْدِ" }
+      ],
+      "tacno": 3,
+      "objasnjenje": {
+        "bs": "U primjeru مِنْ بَعْدِ poslije harfa N sa sukunom dolazi harf B (ب), pa se N pretvara u M.",
+        "en": "In مِنْ بَعْدِ the letter N with a sukun is followed by the letter B (ب), so N turns into M."
+      }
+    },
+    {
+      "q": { "bs": "Kako se čita مِنْ بَعْدِ po pravilu iklaba?", "en": "How is مِنْ بَعْدِ read according to iqlab?" },
+      "opcije": [
+        { "bs": "مِمْبَعْدِ", "en": "مِمْبَعْدِ" },
+        { "bs": "مِنْبَعْدِ", "en": "مِنْبَعْدِ" },
+        { "bs": "مِبَّعْدِ", "en": "مِبَّعْدِ" },
+        { "bs": "مِنَّعْدِ", "en": "مِنَّعْدِ" }
+      ],
+      "tacno": 0,
+      "objasnjenje": {
+        "bs": "Harf N se pretvara u harf M (م), pa se čita مِمْبَعْدِ.",
+        "en": "The letter N turns into the letter M (م), so it is read مِمْبَعْدِ."
+      }
+    },
+    {
+      "q": { "bs": "Po čemu se iklab razlikuje od idgama?", "en": "How does iqlab differ from idgham?" },
+      "opcije": [
+        { "bs": "Kod iklaba se harf N (ن) izgovara čisto", "en": "In iqlab the letter N (ن) is pronounced clearly" },
+        { "bs": "Kod iklaba se harf N (ن) nikako ne uči", "en": "In iqlab the letter N (ن) is not pronounced at all" },
+        { "bs": "Kod iklaba se harf N (ن) pretvara u harf M (م), a kod idgama se uklapa u sljedeći harf", "en": "In iqlab the letter N (ن) turns into the letter M (م), while in idgham it merges into the next letter" },
+        { "bs": "Iklab dolazi samo poslije tenvina", "en": "Iqlab occurs only after tanween" }
+      ],
+      "tacno": 2,
+      "objasnjenje": {
+        "bs": "Kod iklaba N (ن) postaje M (م) ispred harfa B (ب), a kod idgama se N uklapa u harf koji dolazi poslije njega.",
+        "en": "In iqlab N (ن) becomes M (م) before the letter B (ب), while in idgham N merges into the letter that follows it."
+      }
+    },
+    {
+      "q": { "bs": "Šta se dešava sa tenvinom u primjeru سَمِيعٌ بَصِيرٌ?", "en": "What happens to the tanween in the example سَمِيعٌ بَصِيرٌ?" },
+      "opcije": [
+        { "bs": "Uklapa se u harf B (ب)", "en": "It merges into the letter B (ب)" },
+        { "bs": "Pretvara se u harf M (م)", "en": "It turns into the letter M (م)" },
+        { "bs": "Izgovara se čisto", "en": "It is pronounced clearly" },
+        { "bs": "Nikako se ne uči", "en": "It is not pronounced at all" }
+      ],
+      "tacno": 1,
+      "objasnjenje": {
+        "bs": "Poslije tenvina UN dolazi harf B (ب), pa se tenvin pretvara u M i uči 2 hareketa.",
+        "en": "The tanween UN is followed by the letter B (ب), so it turns into M held for 2 harakas."
+      }
+    },
+    {
+      "q": { "bs": "Koje pravilo se primjenjuje u riječi أَنْبِيَاءَ, gdje poslije harfa N sa sukunom dolazi harf B (ب)?", "en": "Which rule applies in the word أَنْبِيَاءَ, where the letter N with a sukun is followed by the letter B (ب)?" },
+      "opcije": [
+        { "bs": "Iklab", "en": "Iqlab" },
+        { "bs": "Idgam meal-gunneh", "en": "Idgham ma'al-ghunnah" },
+        { "bs": "Izhar halkijj", "en": "Idhhar halqi" },
+        { "bs": "Ihfa", "en": "Ikhfa" }
+      ],
+      "tacno": 0,
+      "objasnjenje": {
+        "bs": "Kad god poslije harfa N sa sukunom dođe harf B (ب), N se pretvara u M – to je iklab.",
+        "en": "Whenever the letter N with a sukun is followed by the letter B (ب), N turns into M – that is iqlab."
+      }
+    }
+  ]
+}
