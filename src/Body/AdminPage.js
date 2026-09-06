@@ -56,7 +56,15 @@ export default function AdminPage() {
 	const datumVrijeme = (iso) => (iso ? formatDatumVrijeme(iso, lang) : ui.adminNever);
 
 	const q = trazi.trim().toLowerCase();
-	const korisnici = data ? data.korisnici.filter((k) => !q || k.ime.toLowerCase().includes(q) || k.email.toLowerCase().includes(q)) : [];
+	const korisnici = data
+		? data.korisnici.filter(
+				(k) =>
+					!q ||
+					k.ime.toLowerCase().includes(q) ||
+					k.email.toLowerCase().includes(q) ||
+					(k.korisnicko && k.korisnicko.includes(q))
+			)
+		: [];
 
 	const statusCelije = (p, ukupno) => (!p ? 'none' : p.polozeno ? 'ok' : 'partial');
 
@@ -152,7 +160,10 @@ export default function AdminPage() {
 													>
 														<td>
 															<b>{k.ime}</b>
-															<small>{k.email}</small>
+															<small>
+																{k.korisnicko && k.korisnicko !== k.email && '@' + k.korisnicko + ' · '}
+																{k.email}
+															</small>
 														</td>
 														<td>
 															<span className={'status-pill status-pill--' + (k.uloga === 'admin' ? 'ok' : k.uloga === 'demo' ? 'partial' : 'open')}>

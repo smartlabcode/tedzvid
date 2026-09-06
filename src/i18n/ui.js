@@ -196,6 +196,8 @@ const UI = {
 			bad_email: 'Unesi ispravnu email adresu.',
 			bad_password: 'Lozinka mora imati najmanje 6 znakova.',
 			bad_name: 'Unesi ime (najmanje 2 znaka).',
+			bad_username: 'Korisničko ime: 3–20 znakova, mala slova, brojevi, tačka, crtica ili donja crta.',
+			username_exists: 'Korisničko ime je zauzeto – odaberi drugo.',
 			passwords_differ: 'Lozinke se ne podudaraju.',
 			too_many: 'Previše pokušaja. Pokušaj ponovo za nekoliko minuta.',
 			network: 'Server nije dostupan. Provjeri vezu i pokušaj ponovo.',
@@ -286,6 +288,8 @@ const UI = {
 		zavrsniMistakes: (n) => (n === 1 ? '1 greška' : n < 5 ? `${n} greške` : `${n} grešaka`),
 		profilEverything: 'Sve lekcije i završni kviz su položeni – svaka čast!',
 		fieldLogin: 'Email ili korisničko ime',
+		fieldUsername: 'Korisničko ime',
+		usernameHint: '3–20 znakova: mala slova, brojevi, tačka, crtica ili donja crta. Prikazuje se na rang listi.',
 
 		/* ----- rang lista ----- */
 		navRang: 'Rang lista',
@@ -522,6 +526,8 @@ const UI = {
 			bad_email: 'Enter a valid email address.',
 			bad_password: 'The password must be at least 6 characters long.',
 			bad_name: 'Enter your name (at least 2 characters).',
+			bad_username: 'Username: 3–20 characters, lowercase letters, digits, dot, dash or underscore.',
+			username_exists: 'That username is taken – choose another one.',
 			passwords_differ: 'The passwords do not match.',
 			too_many: 'Too many attempts. Try again in a few minutes.',
 			network: 'The server is not reachable. Check your connection and try again.',
@@ -611,6 +617,8 @@ const UI = {
 		zavrsniMistakes: (n) => (n === 1 ? '1 mistake' : `${n} mistakes`),
 		profilEverything: 'All lessons and the final quiz passed – well done!',
 		fieldLogin: 'Email or username',
+		fieldUsername: 'Username',
+		usernameHint: '3–20 characters: lowercase letters, digits, dot, dash or underscore. Shown on the leaderboard.',
 
 		/* ----- leaderboard ----- */
 		navRang: 'Leaderboard',

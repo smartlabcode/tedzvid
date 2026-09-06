@@ -96,7 +96,11 @@ export default function ProfilePage() {
 	return (
 		<React.Fragment>
 			<SiteNav active="racun" cta={{ to: '/lekcije', label: ui.navSveLekcije, back: true }} />
-			<PageBand eyebrow={ui.profilEyebrow} title={user ? user.ime : '…'} text={ui.profilText(PROLAZ, UKUPNO)} />
+			<PageBand
+				eyebrow={ui.profilEyebrow + (user && user.korisnicko ? ' · @' + user.korisnicko : '')}
+				title={user ? user.ime : '…'}
+				text={ui.profilText(PROLAZ, UKUPNO)}
+			/>
 			<main className="profil">
 				<div className="wrap">
 					{user && (

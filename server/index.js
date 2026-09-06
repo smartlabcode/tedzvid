@@ -9,8 +9,8 @@
  *   BUILD_DIR       – mapa s buildom (podrazumijevano ./build)
  *
  * API (JSON):
- *   POST /api/register  { ime, email, lozinka }  → { token, user }
- *   POST /api/login     { email, lozinka }       → { token, user }
+ *   POST /api/register  { ime, korisnicko, email, lozinka } → { token, user }
+ *   POST /api/login     { email, lozinka }       → { token, user }   (email ili korisničko ime)
  *   GET  /api/me        (Authorization: Bearer)  → { user }
  *   POST /api/progress  { lekcija, tacno }       → { user }   (lekcija: 1–22 ili 'zavrsni')
  *   GET  /api/leaderboard?period=sedmica|mjesec|sve → { period, od, lista, moj }
@@ -75,11 +75,20 @@ function saveUsers() {
 }
 
 const findByEmail = (email) => users.find((u) => u.email === email);
+/* prijava: email ili korisničko ime (ugrađeni računi imaju oba jednaka) */
+const findByLogin = (v) => users.find((u) => u.email === v || u.korisnicko === v);
 const findById = (id) => users.find((u) => u.id === id);
 
 /* Ono što klijent smije vidjeti (bez lozinke) */
 function publicUser(u) {
-	return { id: u.id, ime: u.ime, email: u.email, uloga: u.uloga || 'korisnik', progress: u.progress || {} };
+	return {
+		id: u.id,
+		ime: u.ime,
+		korisnicko: u.korisnicko || null,
+		email: u.email,
+		uloga: u.uloga || 'korisnik',
+		progress: u.progress || {}
+	};
 }
 
 /* ---------- tajni ključ i tokeni (HMAC-SHA256) ---------- */
@@ -200,6 +209,9 @@ function korisnikIzZahtjeva(req) {
 }
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+/* korisničko ime: 3–20 znakova, mala slova, brojevi, tačka, crtica, donja crta; počinje slovom ili brojem */
+const USERNAME_RE = /^[a-z0-9][a-z0-9._-]{2,19}$/;
+const normKorisnicko = (v) => String(v || '').trim().toLowerCase();
 const normEmail = (v) => String(v || '').trim().toLowerCase();
 const normIme = (v) => String(v || '').trim().replace(/\s+/g, ' ');
 
@@ -308,7 +320,7 @@ function rangLista(period, ja) {
 	const od = pocetakPerioda(period, new Date());
 	const svi = users
 		.filter((u) => !u.uloga || u.uloga === 'korisnik')
-		.map((u) => Object.assign({ id: u.id, ime: javnoIme(u.ime) }, bodoviKorisnika(u, od)))
+		.map((u) => Object.assign({ id: u.id, ime: u.korisnicko || javnoIme(u.ime) }, bodoviKorisnika(u, od)))
 		.filter((r) => r.bodovi > 0)
 		/* više bodova, pa više položenih, pa ko je rezultat postigao ranije */
 		.sort((a, b) => b.bodovi - a.bodovi || b.polozeno - a.polozeno || a.zadnji - b.zadnji);
@@ -346,14 +358,18 @@ async function handleApi(req, res, url) {
 
 		if (route === 'POST /api/register') {
 			const ime = normIme(body.ime);
+			const korisnicko = normKorisnicko(body.korisnicko);
 			if (ime.length < 2 || ime.length > 60) return json(res, 400, { error: 'bad_name' });
+			if (!USERNAME_RE.test(korisnicko)) return json(res, 400, { error: 'bad_username' });
 			if (!EMAIL_RE.test(email) || email.length > 120) return json(res, 400, { error: 'bad_email' });
 			if (lozinka.length < 6 || lozinka.length > 200) return json(res, 400, { error: 'bad_password' });
 			if (findByEmail(email)) return json(res, 409, { error: 'email_exists' });
+			if (findByLogin(korisnicko)) return json(res, 409, { error: 'username_exists' });
 			const salt = crypto.randomBytes(16).toString('hex');
 			const user = {
 				id: crypto.randomUUID(),
 				ime,
+				korisnicko,
 				email,
 				salt,
 				hash: hashLozinke(lozinka, salt),
@@ -365,7 +381,7 @@ async function handleApi(req, res, url) {
 			return json(res, 201, { token: izdajToken(user), user: publicUser(user) });
 		}
 
-		const user = findByEmail(email);
+		const user = findByLogin(email);
 		if (!user || !provjeriLozinku(lozinka, user)) return json(res, 401, { error: 'bad_credentials' });
 		return json(res, 200, { token: izdajToken(user), user: publicUser(user) });
 	}
@@ -550,6 +566,7 @@ function pregledKorisnika() {
 			return {
 				id: u.id,
 				ime: u.ime,
+				korisnicko: u.korisnicko || null,
 				email: u.email,
 				uloga: u.uloga || 'korisnik',
 				createdAt: u.createdAt,
@@ -581,6 +598,7 @@ function osigurajRacun(email, ime, lozinka, uloga, azurirajLozinku) {
 		u = {
 			id: crypto.randomUUID(),
 			ime,
+			korisnicko: email,
 			email,
 			salt,
 			hash: hashLozinke(lozinka, salt),
@@ -594,6 +612,10 @@ function osigurajRacun(email, ime, lozinka, uloga, azurirajLozinku) {
 	let changed = false;
 	if (u.uloga !== uloga) {
 		u.uloga = uloga;
+		changed = true;
+	}
+	if (!u.korisnicko) {
+		u.korisnicko = email;
 		changed = true;
 	}
 	/* lozinka iz okruženja ima prednost nad sačuvanom */

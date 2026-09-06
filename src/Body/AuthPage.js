@@ -8,6 +8,8 @@ import { useAuth } from '../auth/AuthContext';
 import { useUI } from '../i18n/ui';
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+/* isto pravilo kao na serveru: 3–20 znakova, mala slova, brojevi, . _ - */
+const USERNAME_RE = /^[a-z0-9][a-z0-9._-]{2,19}$/;
 
 /* Prijava (mode="login") i registracija (mode="register") – ista stranica, različita polja */
 export default function AuthPage({ mode }) {
@@ -17,6 +19,7 @@ export default function AuthPage({ mode }) {
 	const location = useLocation();
 
 	const [ ime, setIme ] = useState('');
+	const [ korisnicko, setKorisnicko ] = useState('');
 	const [ email, setEmail ] = useState('');
 	const [ lozinka, setLozinka ] = useState('');
 	const [ lozinka2, setLozinka2 ] = useState('');
@@ -40,13 +43,14 @@ export default function AuthPage({ mode }) {
 		e.preventDefault();
 		setErr(null);
 		if (!isLogin && ime.trim().length < 2) return setErr('bad_name');
+		if (!isLogin && !USERNAME_RE.test(korisnicko.trim().toLowerCase())) return setErr('bad_username');
 		if (isLogin ? !email.trim() : !EMAIL_RE.test(email.trim())) return setErr('bad_email');
 		if (lozinka.length < 6) return setErr('bad_password');
 		if (!isLogin && lozinka !== lozinka2) return setErr('passwords_differ');
 		setBusy(true);
 		try {
 			if (isLogin) await login(email, lozinka);
-			else await register(ime, email, lozinka);
+			else await register(ime, email, lozinka, korisnicko.trim().toLowerCase());
 			/* uspjeh: gornji <Redirect> preuzima čim se korisnik postavi */
 		} catch (ex) {
 			setErr(ex.code || 'server');
@@ -78,6 +82,24 @@ export default function AuthPage({ mode }) {
 										onChange={(e) => setIme(e.target.value)}
 										required
 									/>
+								</label>
+							)}
+							{!isLogin && (
+								<label className="auth__label">
+									<span>{ui.fieldUsername}</span>
+									<input
+										className="field"
+										type="text"
+										name="korisnicko"
+										autoComplete="username"
+										autoCapitalize="none"
+										spellCheck={false}
+										maxLength={20}
+										value={korisnicko}
+										onChange={(e) => setKorisnicko(e.target.value)}
+										required
+									/>
+									<small>{ui.usernameHint}</small>
 								</label>
 							)}
 							<label className="auth__label">
