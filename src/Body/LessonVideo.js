@@ -1,5 +1,6 @@
 import React from 'react';
 import videos from '../Data/videos.json';
+import { useUI } from '../i18n/ui';
 
 /* Responzivni YouTube embed (16:9) */
 export function VideoEmbed({ video, title }) {
@@ -22,17 +23,22 @@ export function VideoEmbed({ video, title }) {
 
 /* Sekcija "Video lekcija" na dnu svake lekcije (sidro #video) */
 export default function LessonVideo({ broj }) {
+	const ui = useUI();
 	const list = videos.lekcije[String(broj)];
 	if (!list || !list.length) return null;
 	return (
 		<section className="lesson-video" id="video">
 			<h2 className="text-center">
-				<strong>VIDEO LEKCIJA</strong>
+				<strong>{ui.videoLekcija}</strong>
 			</h2>
 			<hr />
 			<div className={'lesson-video__grid' + (list.length > 1 ? ' lesson-video__grid--two' : '')}>
 				{list.map((v, i) => (
-					<VideoEmbed key={v.id} video={v} title={`Video lekcija ${broj}${list.length > 1 ? ' – ' + (i + 1) : ''}`} />
+					<VideoEmbed
+						key={v.id}
+						video={v}
+						title={`${ui.videoTitle} ${broj}${list.length > 1 ? ' – ' + (i + 1) : ''}`}
+					/>
 				))}
 			</div>
 		</section>

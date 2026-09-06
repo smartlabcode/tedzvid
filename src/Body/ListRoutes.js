@@ -29,6 +29,8 @@ import {
 	L22
 } from '../Helpers/LessonsHelper';
 import ReactGA from 'react-ga';
+import NowPlayingBar from '../Player/NowPlayingBar';
+import { useLang } from '../i18n/LanguageContext';
 import { Route, useHistory } from 'react-router-dom';
 
 const LEKCIJE = {
@@ -59,6 +61,7 @@ const LEKCIJE = {
 
 function ListRoutes() {
 	let history = useHistory();
+	const { lang } = useLang();
 	useEffect(() => {
 		ReactGA.initialize('UA-179006564-1');
 		ReactGA.set({ page: '/' });
@@ -74,7 +77,8 @@ function ListRoutes() {
 		[ history ]
 	);
 	return (
-		<>
+		/* ključ na fragmentu: promjena jezika ponovo iscrtava stranice iz početka */
+		<React.Fragment key={lang}>
 			<Route path="/" exact component={Demo} />
 			<Route path="/lekcije" exact component={Home} />
 			{Object.keys(LEKCIJE).map((key) => {
@@ -86,12 +90,13 @@ function ListRoutes() {
 						render={() => (
 							<div className="lekcija-page">
 								<Lekcija />
+								<NowPlayingBar />
 							</div>
 						)}
 					/>
 				);
 			})}
-		</>
+		</React.Fragment>
 	);
 }
 

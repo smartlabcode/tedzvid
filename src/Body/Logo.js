@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useUI } from '../i18n/ui';
 
 /* Znak: luk (mihrab) s munarom i kupolom – u duhu novog vizuala tedzvid.ba */
 export function LogoMark({ size = 46, light = false }) {
@@ -27,14 +28,15 @@ export function LogoMark({ size = 46, light = false }) {
 }
 
 export default function Logo({ light = false, size = 46, to = '/', tagline = true }) {
+	const ui = useUI();
 	return (
-		<Link to={to} className={'logo' + (light ? ' logo--light' : '')} aria-label="Tedzvid.ba – naslovna">
+		<Link to={to} className={'logo' + (light ? ' logo--light' : '')} aria-label={ui.logoAria}>
 			<LogoMark size={size} light={light} />
 			<span className="logo__text">
 				<span className="logo__word">
 					TEDZVID<b>.BA</b>
 				</span>
-				{tagline && <span className="logo__tag">Znanje koje te približava Kur'anu</span>}
+				{tagline && <span className="logo__tag">{ui.logoTag}</span>}
 			</span>
 		</Link>
 	);

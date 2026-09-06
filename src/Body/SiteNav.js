@@ -2,14 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FaBars, FaTimes, FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import Logo from './Logo';
-
-const LINKS = [
-	{ key: 'home', to: '/', label: 'Početna' },
-	{ key: 'lekcije', to: '/lekcije', label: 'Lekcije' },
-	{ key: 'o-nama', to: '/#o-nama', label: 'O nama' },
-	{ key: 'printano', to: '/#printano', label: 'Printano izdanje' },
-	{ key: 'kontakt', to: '/#kontakt', label: 'Kontakt' }
-];
+import LangSwitch from './LangSwitch';
+import { useUI } from '../i18n/ui';
 
 /**
  * Zajednička navigacija za sve stranice.
@@ -19,6 +13,15 @@ const LINKS = [
 export default function SiteNav({ active, cta }) {
 	const [ open, setOpen ] = useState(false);
 	const location = useLocation();
+	const ui = useUI();
+
+	const LINKS = [
+		{ key: 'home', to: '/', label: ui.navHome },
+		{ key: 'lekcije', to: '/lekcije', label: ui.navLekcije },
+		{ key: 'o-nama', to: '/#o-nama', label: ui.navONama },
+		{ key: 'printano', to: '/#printano', label: ui.navPrintano },
+		{ key: 'kontakt', to: '/#kontakt', label: ui.navKontakt }
+	];
 
 	useEffect(
 		() => {
@@ -35,7 +38,7 @@ export default function SiteNav({ active, cta }) {
 		[ open ]
 	);
 
-	const action = cta || { to: '/lekcije', label: 'Lekcije' };
+	const action = cta || { to: '/lekcije', label: ui.navLekcije };
 
 	const renderLinks = () =>
 		LINKS.map((l) => (
@@ -52,10 +55,11 @@ export default function SiteNav({ active, cta }) {
 			<div className="site-nav__bar">
 				<div className="wrap site-nav__inner">
 					<Logo />
-					<nav aria-label="Glavna navigacija">
+					<nav aria-label={ui.navMain}>
 						<ul className="site-nav__links">{renderLinks()}</ul>
 					</nav>
 					<div className="site-nav__actions">
+						<LangSwitch />
 						<Link to={action.to} className="btn-t btn-t--gold btn-t--sm">
 							{action.back && <FaArrowLeft />}
 							{action.label}
@@ -64,7 +68,7 @@ export default function SiteNav({ active, cta }) {
 						<button
 							type="button"
 							className="site-nav__toggle"
-							aria-label="Otvori meni"
+							aria-label={ui.navOpen}
 							aria-expanded={open}
 							onClick={() => setOpen(true)}
 						>
@@ -80,7 +84,7 @@ export default function SiteNav({ active, cta }) {
 					<button
 						type="button"
 						className="site-nav__mobile-close"
-						aria-label="Zatvori meni"
+						aria-label={ui.navClose}
 						onClick={() => setOpen(false)}
 					>
 						<FaTimes />
@@ -92,6 +96,7 @@ export default function SiteNav({ active, cta }) {
 					{action.label}
 					{!action.back && <FaArrowRight />}
 				</Link>
+				<LangSwitch light className="lang-switch--mobile" />
 			</div>
 		</header>
 	);

@@ -3,6 +3,7 @@
 import React from 'react';
 
 import ListRoutes from './Body/ListRoutes';
+import { LanguageProvider } from './i18n/LanguageContext';
 
 // import ReactGA from 'react-ga';
 
@@ -18,9 +19,11 @@ function App() {
 	// });
 
 	return (
-		<BrowserRouter basename={process.env.PUBLIC_URL}>
-			<ListRoutes />
-		</BrowserRouter>
+		<LanguageProvider>
+			<BrowserRouter basename={process.env.PUBLIC_URL}>
+				<ListRoutes />
+			</BrowserRouter>
+		</LanguageProvider>
 	);
 }
 

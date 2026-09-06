@@ -1,35 +1,53 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import * as audioBus from './audioBus';
+import { useUI } from '../i18n/ui';
 
-const useAudio = (url, audioPlayed) => {
-	const [ audio ] = useState(new Audio(url));
-	const [ playing, setPlaying ] = useState(false);
+let counter = 0;
 
-	const toggle = () => setPlaying(!playing);
+/* Klikabilna riječ/ajet – zvuk ide preko zajedničkog audioBus-a */
+const Player = (props) => {
+	const idRef = useRef(null);
+	if (idRef.current === null) idRef.current = ++counter;
+	const spanRef = useRef(null);
+	const ui = useUI();
+	const [ status, setStatus ] = useState('idle'); // idle | playing | paused
 
 	useEffect(
-		() => {
-			if (playing) {
-				audio.play();
-				audio.onended = () => {
-					setPlaying(!playing);
-				};
-				audio.volume = 1; // Jačina zvuka
-			} else {
-				audio.pause();
-				audio.currentTime = 0;
-			}
-		},
-		[ audio, playing ]
+		() =>
+			audioBus.subscribe((s) => {
+				const active = s.ownerId === idRef.current;
+				setStatus(!active ? 'idle' : s.playing ? 'playing' : 'paused');
+			}),
+		[]
 	);
 
-	return [ playing, toggle ];
-};
-const Player = (props) => {
-	const [ playing, toggle ] = useAudio(props.url, props.playr);
+	const onClick = () => {
+		const label = spanRef.current ? spanRef.current.textContent.trim() : '';
+		audioBus.toggle(idRef.current, props.url, label);
+	};
+
+	const cls = status === 'playing' ? 'svira' : status === 'paused' ? 'pauzirano' : 'ne-svira';
+
 	return (
-		<span id="rijeciAudio" className={playing ? 'svira' : 'ne-svira'} onClick={toggle}>
-			{playing ? props.children : props.children}
+		<span
+			ref={spanRef}
+			className={'rijec-audio ' + cls}
+			data-audio-id={idRef.current}
+			data-url={props.url}
+			onClick={onClick}
+			role="button"
+			tabIndex={0}
+			onKeyDown={(e) => {
+				if (e.key === 'Enter' || e.key === ' ') {
+					e.preventDefault();
+					onClick();
+				}
+			}}
+			title={ui.audioWordTitle}
+		>
+			{props.children}
 		</span>
 	);
 };
+
 export default React.memo(Player);

@@ -6,6 +6,7 @@ import Footer from '../Body/MainFooter';
 import Arabic from '../Letters/Arabic';
 import LekcijaMenu from '../Body/LekcijaMenu';
 import LessonVideo from '../Body/LessonVideo';
+import VjezbaToolbar from '../Player/VjezbaToolbar';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import { MdZoomOutMap } from 'react-icons/md';
@@ -186,10 +187,12 @@ function L11() {
 					</Modal.Footer>
 				</Modal>
 
+				<section className="vjezba-panel">
 				<h2 className="text-center" id="vjezba">
 					<strong>VJEŽBA</strong>
 				</h2>
 				<hr />
+				<VjezbaToolbar />
 				<IconContext.Provider value={{ size: '30px', style: { float: 'right' } }}>
 					<MdZoomOutMap className="zoomIcon" onClick={handleShow} />
 				</IconContext.Provider>
@@ -226,6 +229,7 @@ function L11() {
 						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj16')} ۞</span>
 					</Col>
 				</Row>
+				</section>
 				<Modal show={show} onHide={handleClose} backdrop="static" keyboard={false}>
 					<Modal.Header closeButton>
 						<Modal.Title>VJEŽBA</Modal.Title>

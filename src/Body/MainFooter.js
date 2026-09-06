@@ -1,10 +1,12 @@
 import React, { useEffect } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { FaChevronLeft, FaChevronRight, FaHome } from 'react-icons/fa';
+import { useUI } from '../i18n/ui';
 
 /* Navigacija između lekcija (na dnu lekcije; na mobitelu fiksirana traka) */
 function Footer(props) {
 	const history = useHistory();
+	const ui = useUI();
 
 	useEffect(() => {
 		const handleKeyPress = (event) => {
@@ -18,16 +20,16 @@ function Footer(props) {
 
 	return (
 		<footer className="lesson-nav">
-			<Link to={props.prev} className="lesson-nav__btn lesson-nav__btn--prev" aria-label="Prethodna lekcija">
+			<Link to={props.prev} className="lesson-nav__btn lesson-nav__btn--prev" aria-label={ui.prethodnaAria}>
 				<FaChevronLeft />
-				<em>Prethodna</em>
+				<em>{ui.prethodna}</em>
 			</Link>
-			<Link to="/lekcije" className="lesson-nav__btn lesson-nav__btn--home" aria-label="Sve lekcije">
+			<Link to="/lekcije" className="lesson-nav__btn lesson-nav__btn--home" aria-label={ui.sveLekcije}>
 				<FaHome />
-				<em>Sve lekcije</em>
+				<em>{ui.sveLekcije}</em>
 			</Link>
-			<Link to={props.next} className="lesson-nav__btn lesson-nav__btn--next" aria-label="Sljedeća lekcija">
-				<em>Sljedeća</em>
+			<Link to={props.next} className="lesson-nav__btn lesson-nav__btn--next" aria-label={ui.sljedecaAria}>
+				<em>{ui.sljedeca}</em>
 				<FaChevronRight />
 			</Link>
 		</footer>
