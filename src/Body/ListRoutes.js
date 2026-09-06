@@ -30,23 +30,46 @@ import {
 	L22
 } from '../Helpers/LessonsHelper';
 import ReactGA from 'react-ga';
+import { Route, useHistory } from 'react-router-dom';
 
-// import Container from 'react-bootstrap/Container';
-import {  Route,useHistory } from 'react-router-dom';
+const LEKCIJE = {
+	'1': L1,
+	'2': L2,
+	'3': L3,
+	'4': L4,
+	'5': L5,
+	'6': L6,
+	'7': L7,
+	'8': L8,
+	'9': L9,
+	'10': L10,
+	'11': L11,
+	'12': L12,
+	'13': L13,
+	'14': L14,
+	'14_2': L14_2,
+	'15': L15,
+	'16': L16,
+	'17': L17,
+	'18': L18,
+	'19': L19,
+	'20': L20,
+	'21': L21,
+	'22': L22
+};
 
 function ListRoutes() {
 	let history = useHistory();
 	useEffect(() => {
-		ReactGA.initialize('UA-179006564-1'); // put your tracking id here
-		ReactGA.set({ page: '/' }); // Update the user's current page
-		ReactGA.pageview('/'); // Record a pageview for the given page
+		ReactGA.initialize('UA-179006564-1');
+		ReactGA.set({ page: '/' });
+		ReactGA.pageview('/');
 	}, []);
 	useEffect(
 		() => {
 			return history.listen((location) => {
-				console.log(`You changed the page to: ${location.pathname} `);
-				ReactGA.set({ page: location.pathname }); // Update the user's current page
-  				ReactGA.pageview(location.pathname); // Record a pageview for the given page
+				ReactGA.set({ page: location.pathname });
+				ReactGA.pageview(location.pathname);
 			});
 		},
 		[ history ]
@@ -55,31 +78,22 @@ function ListRoutes() {
 		<>
 			<Route path="/" exact component={Demo} />
 			<Route path="/lekcije" exact component={Home} />
-			<Route path="/lekcija1" component={L1} />
-			<Route path="/lekcija2" component={L2} />
-			<Route path="/lekcija3" component={L3} />
-			<Route path="/lekcija4" component={L4} />
-			<Route path="/lekcija5" component={L5} />
-			<Route path="/lekcija6" component={L6} />
-			<Route path="/lekcija7" component={L7} />
-			<Route path="/lekcija8" component={L8} />
-			<Route path="/lekcija9" component={L9} />
-			<Route path="/lekcija10" component={L10} />
-			<Route path="/lekcija11" component={L11} />
-			<Route path="/lekcija12" component={L12} />
-			<Route path="/lekcija13" component={L13} />
-			<Route path="/lekcija14" component={L14} />
-			<Route path="/lekcija14_2" component={L14_2} />
-			<Route path="/lekcija15" component={L15} />
-			<Route path="/lekcija16" component={L16} />
-			<Route path="/lekcija17" component={L17} />
-			<Route path="/lekcija18" component={L18} />
-			<Route path="/lekcija19" component={L19} />
-			<Route path="/lekcija20" component={L20} />
-			<Route path="/lekcija21" component={L21} />
-			<Route path="/lekcija22" component={L22} />
+			{Object.keys(LEKCIJE).map((key) => {
+				const Lekcija = LEKCIJE[key];
+				return (
+					<Route
+						key={key}
+						path={'/lekcija' + key}
+						render={() => (
+							<div className="lekcija-page">
+								<Lekcija />
+							</div>
+						)}
+					/>
+				);
+			})}
 			<Route path="/obavijest" component={Obavijest} />
-			</>
+		</>
 	);
 }
 

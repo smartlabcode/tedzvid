@@ -1,95 +1,47 @@
 import React from 'react';
-import { Row, Col, Card, Badge } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { FaBookOpen, FaPencilAlt, FaTable, FaListUl } from 'react-icons/fa';
 import data from '../Data/lessons.json';
-import { IoIosArrowForward } from 'react-icons/io';
-import { IconContext } from 'react-icons';
 
 function HomeFirst(props) {
-	// let lekcije = data['lekcije'].slice(props.start,props.stop)
-	let lekcije = data['lekcije'].reduce((acc, curr) => acc.concat(curr), []);
+	const lekcije = data['lekcije'].reduce((acc, curr) => acc.concat(curr), []);
 
 	return (
-		<React.Fragment>
+		<div className="lessons__grid">
 			{lekcije.map((lekcija, index) => {
-				let number = props.start + index + 1;
-
-				function dugmeTabela() {
-					if (index === 0) {
-						return (
-							<Link to={'/lekcija' + number + '#tabela'} style={{ color: 'inherit' }}>
-								<button className="pristupiBtn">
-									Tabela <IoIosArrowForward />
-								</button>
-							</Link>
-						);
-					}
-				}
-				function dugmeZnakovi() {
-					if (index === 0) {
-						return (
-							<Link to={'/lekcija' + number + '#znakovi'} style={{ color: 'inherit' }}>
-								<button className="pristupiBtn">
-									Znakovi <IoIosArrowForward />
-								</button>
-							</Link>
-						);
-					}
-				}
+				const number = props.start + index + 1;
+				const base = '/lekcija' + number;
 				return (
-					<Row className="" key={index}>
-						<Col>
-							<Card>
-								<Card.Body>
-									<Badge style={{ paddingLeft: '0' }} className="imelekcije">
-										{number}
-									</Badge>
-									<div className="alignMobile">
-										<div className="tabletText">
-											<Card.Title>{lekcija.title} </Card.Title>
-											<Card.Subtitle className="mb-2 text-muted">
-												{lekcija.subtitle}
-											</Card.Subtitle>
-											<div className="sectonRight">
-												<IconContext.Provider value={{ color: '#92623C' }}>
-													{dugmeTabela()}
-													{dugmeZnakovi()}
-													<Link
-														to={'/lekcija' + number + '#vjezba'}
-														style={{ color: 'inherit' }}
-													>
-														<button className="pristupiBtn">
-															Vježba <IoIosArrowForward />
-														</button>
-													</Link>
-													<Link
-														to={'/lekcija' + number + '#lekcija'}
-														style={{ color: 'inherit' }}
-													>
-														<button className="pristupiBtn">
-															Lekcija <IoIosArrowForward />
-														</button>
-													</Link>
-												</IconContext.Provider>
-											</div>
-										</div>
-									</div>
-								</Card.Body>
-							</Card>
-						</Col>
-
-						{/* <Col>
-                    <Link to={"/lekcija"+(number+1)} style={{ color: 'inherit' }}><Card>
-                        <Card.Body>
-                            <Card.Title>{lekcija[1].title} <Badge className="imelekcije" variant="light">Lekcija {number+1}</Badge> </Card.Title>
-                            <Card.Subtitle className="mb-2 text-muted">{lekcija[1].subtitle}</Card.Subtitle>
-                        </Card.Body>
-                    </Card></Link>
-                </Col> */}
-					</Row>
+					<article className="lesson-card" key={index}>
+						<div className="lesson-card__num" aria-hidden="true">
+							{number}
+						</div>
+						<div className="lesson-card__body">
+							<h3 className="lesson-card__title">{lekcija.title.trim()}</h3>
+							<p className="lesson-card__sub">{lekcija.subtitle}</p>
+							<div className="lesson-card__actions">
+								<Link to={base + '#lekcija'} className="btn-t btn-t--navy btn-t--sm">
+									<FaBookOpen /> Lekcija
+								</Link>
+								<Link to={base + '#vjezba'} className="btn-t btn-t--ghost btn-t--sm">
+									<FaPencilAlt /> Vježba
+								</Link>
+								{index === 0 && (
+									<Link to={base + '#tabela'} className="btn-t btn-t--ghost btn-t--sm">
+										<FaTable /> Tabela
+									</Link>
+								)}
+								{index === 0 && (
+									<Link to={base + '#znakovi'} className="btn-t btn-t--ghost btn-t--sm">
+										<FaListUl /> Znakovi
+									</Link>
+								)}
+							</div>
+						</div>
+					</article>
 				);
 			})}
-		</React.Fragment>
+		</div>
 	);
 }
 

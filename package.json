@@ -7,11 +7,9 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.18",
     "@fortawesome/free-solid-svg-icons": "^5.8.2",
     "@fortawesome/react-fontawesome": "^0.1.4",
-    "babel-jest": "^24.9.0",
     "bootstrap": "^4.5.0",
     "gh-pages": "^2.0.1",
     "history": "^5.0.0",
-    "node-sass": "^4.12.0",
     "raf": "^3.4.1",
     "react": "^16.8.6",
     "react-app-polyfill": "^1.0.6",
@@ -21,10 +19,12 @@
     "react-icons": "^3.10.0",
     "react-router": "^5.0.0",
     "react-router-dom": "^5.0.0",
-    "react-scripts": "^3.4.1",
+    "react-scripts": "5.0.1",
     "react-string-replace": "^0.4.4",
     "roboto-fontface": "^0.10.0",
-    "semantic-ui-react": "^0.88.2"
+    "sass": "^1.77.0",
+    "semantic-ui-react": "^0.88.2",
+    "serve": "^14.2.6"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -32,7 +32,8 @@
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "serve": "serve -s build -l ${PORT:-3000}"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -48,5 +49,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "ajv": "^8.20.0"
+  },
+  "engines": {
+    "node": ">=20"
   }
 }
