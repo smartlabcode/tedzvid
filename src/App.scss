@@ -1483,6 +1483,13 @@ span.arap-red {
   user-select: none;
   animation: oblak-in 0.2s ease;
 
+  /* samo kad tekst ne stane ni iznad ni ispod ajeta */
+  &--skrolabilan {
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    touch-action: pan-y;
+  }
+
   &--vuce {
     cursor: grabbing;
     animation: none;

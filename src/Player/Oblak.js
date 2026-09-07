@@ -6,7 +6,8 @@ import { useUI } from '../i18n/ui';
 /*
  * Oblačić s objašnjenjem uz riječ/ajet koji trenutno svira.
  * Kači se uz prvi istaknuti (crveni) dio riječi – ako ga nema, uz cijelu riječ.
- * Od dvije strane (iznad ili ispod harfa) bira onu koja pokriva manje teksta vježbe.
+ * Nikad ne prekriva ajet koji se trenutno uči, ni kad se prelama u više redova:
+ * ide iznad ili ispod cijelog tog ajeta, na stranu koja pokriva manje ostalog teksta.
  * Korisnik ga može odvući mišem ili prstom; taj pomak se pamti do kraja posjete,
  * pa se i sljedeći oblačići pojave tamo gdje mu ne smetaju.
  * Napomena: [{ tip: 'dugo' | 'kratko' | 'napomena', bs: '...', en: '...' }]
@@ -52,8 +53,10 @@ export default function Oblak({ anchorRef, notes }) {
 					Array.prototype.find.call(host.querySelectorAll('.oznaceno'), (el) => el.getBoundingClientRect().width > 0) ||
 					host;
 				const r = target.getBoundingClientRect();
+				/* cijeli aktivni ajet (može se prelamati u više redova) – preko njega se ne smije */
+				const rh = host.getBoundingClientRect();
 				const w = box.offsetWidth;
-				const h = box.offsetHeight;
+				let h = box.offsetHeight;
 				const vw = window.innerWidth;
 				const vh = window.innerHeight;
 
@@ -69,8 +72,11 @@ export default function Oblak({ anchorRef, notes }) {
 				/* harf mora biti u vidnom polju i nepokriven (modal, plejer...) */
 				let vidljiv = r.width > 0 && cx >= 0 && cx <= vw && cy >= gornjaGranica && cy <= vh;
 				if (vidljiv && document.elementFromPoint) {
-					const el = document.elementFromPoint(cx, cy);
-					vidljiv = !!el && host.contains(el);
+					/* sam oblačić se ne računa kao prepreka, samo modal, plejer i slično */
+					const ispod = document.elementsFromPoint
+						? Array.prototype.find.call(document.elementsFromPoint(cx, cy), (el) => el !== box && !box.contains(el))
+						: document.elementFromPoint(cx, cy);
+					vidljiv = !!ispod && host.contains(ispod);
 				}
 
 				let left = cx - w / 2;
@@ -91,10 +97,20 @@ export default function Oblak({ anchorRef, notes }) {
 				};
 				const uOkvir = (t) => Math.max(gornjaGranica + MARGIN, Math.min(t, donjaGranica - MARGIN - h));
 
-				const gore = r.top - GAP - (gornjaGranica + MARGIN);
-				const dolje = donjaGranica - MARGIN - (r.bottom + GAP);
-				const iznad = uOkvir(r.top - GAP - h);
-				const ispod = uOkvir(r.bottom + GAP);
+				const gore = rh.top - GAP - (gornjaGranica + MARGIN);
+				const dolje = donjaGranica - MARGIN - (rh.bottom + GAP);
+				/* na višu stranu mora stati cijeli; samo ako ni tamo ne stane, skraćuje se i skroluje */
+				box.style.maxHeight = '';
+				h = box.offsetHeight;
+				const najvisa = Math.max(120, Math.max(gore, dolje));
+				const stisnut = h > najvisa;
+				box.classList.toggle('oblak--skrolabilan', stisnut);
+				if (stisnut) {
+					box.style.maxHeight = najvisa + 'px';
+					h = box.offsetHeight;
+				}
+				const iznad = uOkvir(rh.top - GAP - h);
+				const ispod = uOkvir(rh.bottom + GAP);
 				let mjesto;
 				if (h > gore && h > dolje) mjesto = gore >= dolje ? 'above' : 'below';
 				else if (h > gore) mjesto = 'below';
@@ -103,7 +119,7 @@ export default function Oblak({ anchorRef, notes }) {
 
 				let top = uOkvir((mjesto === 'above' ? iznad : ispod) + pomak.dy);
 				/* strelica pokazuje na harf; kad je oblačić odvučen ustranu, nema je */
-				const uzHarf = cx > left + 18 && cx < left + w - 18 && (mjesto === 'above' ? top + h <= r.top : top >= r.bottom);
+				const uzHarf = cx > left + 18 && cx < left + w - 18 && (mjesto === 'above' ? top + h <= rh.top : top >= rh.bottom);
 				const strelica = Math.max(18, Math.min(cx - left, w - 18));
 
 				setPos((p) =>
@@ -155,6 +171,8 @@ export default function Oblak({ anchorRef, notes }) {
 	const pocniVucu = (e) => {
 		const box = ref.current;
 		if (!box || (e.button !== undefined && e.button !== 0)) return;
+		/* prstom se skraćeni oblačić skroluje, ne vuče */
+		if (e.touches && box.classList.contains('oblak--skrolabilan')) return;
 		const t = e.touches ? e.touches[0] : e;
 		const start = { x: t.clientX, y: t.clientY, dx: pomak.dx, dy: pomak.dy, left: box.offsetLeft, top: box.offsetTop };
 		vuceRef.current = true;
