@@ -4,6 +4,14 @@
   "private": false,
   "homepage": "https://tedzvid.ba/",
   "dependencies": {
+    "@capacitor/android": "^8.5.1",
+    "@capacitor/app": "^8.1.1",
+    "@capacitor/core": "^8.5.1",
+    "@capacitor/ios": "^8.5.1",
+    "@capacitor/keyboard": "^8.0.5",
+    "@capacitor/network": "^8.0.1",
+    "@capacitor/splash-screen": "^8.0.2",
+    "@capacitor/status-bar": "^8.0.3",
     "@fortawesome/fontawesome-svg-core": "^1.2.18",
     "@fortawesome/free-solid-svg-icons": "^5.8.2",
     "@fortawesome/react-fontawesome": "^0.1.4",
@@ -34,7 +42,14 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "serve": "node server/index.js",
-    "server": "node server/index.js"
+    "server": "node server/index.js",
+    "build:app": "REACT_APP_API_URL=${TEDZVID_API:-https://tedzvid.ba} react-scripts build",
+    "app:sync": "npm run build:app && cap sync",
+    "app:ios": "npm run app:sync && cap open ios",
+    "app:android": "npm run app:sync && cap open android",
+    "app:run:ios": "npm run app:sync && cap run ios",
+    "app:run:android": "npm run app:sync && cap run android",
+    "app:assets": "capacitor-assets generate --iconBackgroundColor \"#103b5c\" --iconBackgroundColorDark \"#103b5c\" --splashBackgroundColor \"#103b5c\" --splashBackgroundColorDark \"#0b2942\""
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -52,6 +67,8 @@
     ]
   },
   "devDependencies": {
+    "@capacitor/assets": "^3.0.5",
+    "@capacitor/cli": "^8.5.1",
     "ajv": "^8.20.0"
   },
   "engines": {

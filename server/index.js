@@ -7,6 +7,8 @@
  *   DATA_DIR        – mapa za users.json i tajni ključ (podrazumijevano ./data)
  *   SESSION_SECRET  – ključ za potpisivanje tokena (ako nije zadan, generiše se i čuva u DATA_DIR/secret)
  *   BUILD_DIR       – mapa s buildom (podrazumijevano ./build)
+ *   CORS_ORIGINS    – dodatni izvori za CORS, odvojeni zarezom (mobilna aplikacija
+ *                     s capacitor://localhost i https://localhost je već dozvoljena)
  *
  * API (JSON):
  *   POST /api/register  { ime, korisnicko, email, lozinka } → { token, user }
@@ -157,6 +159,40 @@ function prekoracenLimit(ip) {
 	}
 	e.count += 1;
 	return e.count > LIMIT_BROJ;
+}
+
+/* ---------- CORS (mobilna aplikacija) ----------
+ * Mobilna aplikacija (Capacitor) učitava se s lokalnog izvora u WebViewu i
+ * poziva ovaj API preko mreže, pa joj treba CORS. Dozvoljeni su samo izvori
+ * koje Capacitor koristi (iOS: capacitor://localhost, Android: http://localhost)
+ * plus ono što je navedeno u CORS_ORIGINS (npr. za lokalni razvoj aplikacije).
+ */
+const CORS_IZVORI = new Set(
+	[ 'capacitor://localhost', 'ionic://localhost', 'http://localhost', 'https://localhost' ]
+		.concat(String(process.env.CORS_ORIGINS || '').split(',').map((v) => v.trim()).filter(Boolean))
+);
+
+/* vraća true ako je zahtjev s dozvoljenog izvora (i postavlja zaglavlja) */
+function cors(req, res) {
+	const origin = req.headers.origin;
+	if (!origin) return true; /* isti izvor / bez preglednika */
+	let dozvoljen = CORS_IZVORI.has(origin);
+	if (!dozvoljen) {
+		/* Android WebView na nekim verzijama dodaje port */
+		try {
+			const u = new URL(origin);
+			dozvoljen = (u.hostname === 'localhost' || u.hostname === '127.0.0.1') && u.protocol !== 'file:';
+		} catch (e) {
+			dozvoljen = false;
+		}
+	}
+	if (!dozvoljen) return false;
+	res.setHeader('Access-Control-Allow-Origin', origin);
+	res.setHeader('Vary', 'Origin');
+	res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+	res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+	res.setHeader('Access-Control-Max-Age', '86400');
+	return true;
 }
 
 /* ---------- pomoćne ---------- */
@@ -344,6 +380,12 @@ function rangLista(period, ja) {
 /* ---------- API ---------- */
 async function handleApi(req, res, url) {
 	const route = req.method + ' ' + url.pathname;
+
+	if (!cors(req, res)) return json(res, 403, { error: 'forbidden_origin' });
+	if (req.method === 'OPTIONS') {
+		res.writeHead(204);
+		return res.end();
+	}
 
 	if (route === 'GET /api/health') return json(res, 200, { ok: true });
 

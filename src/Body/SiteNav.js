@@ -42,6 +42,13 @@ export default function SiteNav({ active, cta }) {
 		[ open ]
 	);
 
+	/* Android dugme "nazad" (mobilna aplikacija) prvo zatvara otvoreni meni */
+	useEffect(() => {
+		const zatvori = () => setOpen(false);
+		document.addEventListener('tedzvid:zatvori-meni', zatvori);
+		return () => document.removeEventListener('tedzvid:zatvori-meni', zatvori);
+	}, []);
+
 	const action = cta || { to: '/lekcije', label: ui.navLekcije };
 	const ime = user ? user.ime.split(' ')[0] : null;
 

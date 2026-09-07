@@ -1460,6 +1460,88 @@ span.arap-red {
   scroll-margin-top: 96px;
 }
 
+/* ==========================================================================
+   Mobilna aplikacija (Capacitor – iOS / Android)
+   Vrijedi samo kad je <html> označen klasom `is-native` (vidi src/native).
+   Na webu ništa od ovoga se ne primjenjuje.
+   ========================================================================== */
+
+html.is-native {
+  /* sigurne zone: urez (notch), dinamički otok, traka za gestu */
+  --sa-top: env(safe-area-inset-top, 0px);
+  --sa-bottom: env(safe-area-inset-bottom, 0px);
+  --sa-left: env(safe-area-inset-left, 0px);
+  --sa-right: env(safe-area-inset-right, 0px);
+
+  /* WebView se ne smije "rastezati" kao stranica u pregledniku */
+  overscroll-behavior-y: none;
+
+  body {
+    overscroll-behavior-y: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    user-select: none;
+  }
+
+  /* unos teksta ostaje normalan (odabir, kopiranje, kontekstni meni) */
+  input,
+  textarea,
+  [contenteditable='true'] {
+    user-select: text;
+    -webkit-user-select: text;
+    -webkit-touch-callout: default;
+  }
+
+  /* traka navigacije ide ispod ureza */
+  .site-nav__bar {
+    padding-top: var(--sa-top);
+  }
+
+  /* urez sa strane postoji samo u pejzažnoj orijentaciji; tada je .wrap na 24px,
+     pa max() zadržava postojeći razmak i samo ga poveća koliko treba */
+  @media (orientation: landscape) {
+    .wrap {
+      padding-left: max(var(--sa-left), 24px);
+      padding-right: max(var(--sa-right), 24px);
+    }
+  }
+
+  /* mobilni meni preko cijelog ekrana */
+  .site-nav__mobile {
+    padding-top: var(--sa-top);
+    padding-bottom: var(--sa-bottom);
+  }
+
+  /* plutajući audio plejer iznad trake za gestu */
+  .now-playing {
+    bottom: calc(22px + var(--sa-bottom));
+  }
+
+  /* podnožje: zadnji red ne smije pod traku za gestu (osnovno je 26px) */
+  .site-footer {
+    padding-bottom: calc(26px + var(--sa-bottom));
+  }
+
+  /* dok je tastatura otvorena nema smisla držati fiksirane trake
+     (traka lekcije je fiksirana samo do 600px i tamo već sama računa sigurnu zonu) */
+  body.tipkovnica {
+    .now-playing {
+      display: none;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .lesson-nav {
+        display: none;
+      }
+    }
+  }
+
+  /* unutar same aplikacije nema smisla nuditi preuzimanje aplikacije */
+  .store-links {
+    display: none !important;
+  }
+}
+
 /* ---------- oblačić s objašnjenjem uz riječ koja svira (Player/Oblak.js) ---------- */
 .oblak {
   position: fixed;

@@ -48,3 +48,97 @@ Okruženje:
 | `DEMO_USER`      | `0` isključuje demo korisnika user / user123!          | uključen        |
 
 Na Railwayu je disk privremen: da korisnici prežive novi deploy, montirati Volume i postaviti `DATA_DIR` na tu putanju (npr. `/data`), a `SESSION_SECRET` postaviti kao varijablu.
+
+### Mobilne aplikacije (iOS i Android)
+
+Aplikacije su [Capacitor](https://capacitorjs.com) omotač oko istog CRA builda – nema
+odvojenog koda, sve lekcije, kvizovi, zvuk i grafika idu u paket aplikacije (radi bez
+interneta), a samo `/api` pozivi idu na `https://tedzvid.ba`.
+
+```
+npm run app:sync        # build za aplikaciju + prenos u ios/ i android/
+npm run app:ios         # isto + otvara Xcode
+npm run app:android     # isto + otvara Android Studio
+npm run app:run:ios     # pokreće na simulatoru / uređaju
+npm run app:run:android
+npm run app:assets      # regeneriše ikone i splash iz resources/
+```
+
+`npm run build:app` pravi build s `REACT_APP_API_URL=https://tedzvid.ba`. Za rad prema
+lokalnom serveru: `TEDZVID_API=http://192.168.x.x:3002 npm run app:sync` (adresa mašine u
+lokalnoj mreži, ne `localhost` – to je u aplikaciji sama aplikacija).
+
+**Preduslovi:** iOS – Xcode 15+ (ovisnosti idu preko Swift Package Managera).
+Android – Android Studio i JDK 21 (`brew install --cask android-studio temurin@21`).
+
+**Identifikatori** (isti kao postojeći listinzi u prodavnicama, da ovo budu ažuriranja, a
+ne nove aplikacije):
+
+| | vrijednost | gdje se mijenja |
+| --- | --- | --- |
+| appId / bundle ID | `com.tedzvidba.app` | `capacitor.config.json`, `android/app/build.gradle`, Xcode |
+| naziv | `Tedžvid.ba` | `capacitor.config.json` → `cap sync` |
+| verzija | `2.0.0` (Android `versionCode 200`, iOS build `200`) | `android/app/build.gradle`, `MARKETING_VERSION`/`CURRENT_PROJECT_VERSION` u Xcodeu |
+
+Verziju treba podići prije svakog slanja – Google Play traži veći `versionCode`, App Store
+Connect veći build broj od već objavljenog.
+
+**Nativne izmjene u web kodu:** `src/native/` (status traka, splash, Android dugme "nazad",
+klasa `is-native` na `<html>`), sigurne zone i skrivanje poveznica na prodavnice na dnu
+`src/App.scss`. Na webu ništa od toga nema efekta.
+
+**Server:** API šalje CORS zaglavlja za izvore koje Capacitor koristi
+(`capacitor://localhost`, `https://localhost`); dodatni izvori se navode u `CORS_ORIGINS`.
+
+**Build iz terminala** (bez Xcodea / Android Studija):
+
+```
+# iOS – zastavice sprječavaju da xcodebuild zapne na razrješavanju SPM paketa
+cd ios/App && xcodebuild -scheme App -configuration Debug \
+  -destination "platform=iOS Simulator,name=iPhone 17 Pro" \
+  -disableAutomaticPackageResolution -onlyUsePackageVersionsFromResolvedFile build
+
+# Android
+export JAVA_HOME=$(brew --prefix openjdk@21)/libexec/openjdk.jdk/Contents/Home
+export ANDROID_HOME=$(brew --prefix)/share/android-commandlinetools
+cd android && ./gradlew assembleDebug
+```
+
+**Veličina:** aplikacija nosi cijeli `public/assets` (≈110 MB zvuka), pa je paket
+≈116 MB (Android APK) / ≈121 MB (iOS). Unutar je oba ograničenja prodavnica, ali
+prekodiranje zvuka (`.wav` na 192 kHz i `.mp3` na 256 kbps → 64–96 kbps mono) spustilo
+bi to na ≈25 MB, i ubrzalo web.
+
+**Objava:**
+
+- iOS: `npm run app:ios` → u Xcodeu Product → Archive → Distribute App.
+  Iz terminala (tim `D6T287Z6N5`, automatsko potpisivanje):
+
+  ```
+  cd ios/App
+  # arhiv se pravi nepotpisan – potpisivanje pri archive traži razvojni profil,
+  # a njemu treba bar jedan registrovan uređaj na nalogu
+  xcodebuild -scheme App -configuration Release -destination "generic/platform=iOS" \
+    -archivePath /tmp/Tedzvid.xcarchive -disableAutomaticPackageResolution \
+    -onlyUsePackageVersionsFromResolvedFile \
+    CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" archive
+
+  # potpisivanje ide pri exportu – distribucijskom profilu uređaji ne trebaju
+  xcodebuild -exportArchive -archivePath /tmp/Tedzvid.xcarchive \
+    -exportPath /tmp/export -exportOptionsPlist ExportOptions.plist -allowProvisioningUpdates
+  ```
+
+  `ExportOptions.plist`: `method=app-store-connect`, `teamID=D6T287Z6N5`, `signingStyle=automatic`.
+  Gotov `.ipa` se šalje kroz Xcode Organizer ili `xcrun altool`/`notarytool`.
+
+- Android: keystore se ne čuva u repozitoriju. Napraviti `android/keystore.properties`
+  (`storeFile`, `storePassword`, `keyAlias`, `keyPassword`) s **postojećim upload ključem**
+  aplikacije `com.tedzvidba.app`, pa `cd android && ./gradlew bundleRelease`. Bez tog fajla
+  release se gradi nepotpisan i Play Console ga odbija. Ako je ključ izgubljen, u Play
+  Consoleu se traži reset upload ključa (moguće samo uz uključen Play App Signing).
+
+Mape `ios/` i `android/` su u repozitoriju, ali kopirani web sadržaj
+(`ios/App/App/public`, `android/app/src/main/assets/public`) nije – dobija se sa `cap sync`.
+
+> **Prije prve objave aplikacija na produkciju mora otići CORS iz `server/index.js`** –
+> bez toga prijava, rang lista i napredak u aplikaciji vraćaju grešku mreže.

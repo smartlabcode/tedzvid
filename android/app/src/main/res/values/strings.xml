@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Tedžvid.ba</string>
+    <string name="title_activity_main">Tedžvid.ba</string>
+    <string name="package_name">com.tedzvidba.app</string>
+    <string name="custom_url_scheme">com.tedzvidba.app</string>
+</resources>
