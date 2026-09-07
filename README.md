@@ -25,6 +25,8 @@ Produkcija (Railway): `npm run build`, zatim `npm run serve` – isti Node serve
 ]
 ```
 
+  Oblačić se sam smješta iznad ili ispod harfa, na stranu koja prekriva manje teksta vježbe, a korisnik ga može odvući mišem ili prstom; taj pomak vrijedi do osvježavanja stranice.
+
   Kad grupa ima više zapisa, a samo prvi ima `url` (vježbe i `V(...)` redovi), napomena ide na taj prvi zapis i pokriva sve pojave u ajetu, redom čitanja. Dozvoljeni `tip` (određuje natpis i boju oznake, prijevodi su u `src/i18n/ui.js` pod `napomenaTip`): `dugo`, `kratko`, `krupno`, `tanko`, `duzina`, `stajanje`, `uklapanje`, `nos`, `odskakanje`, `pretvaranje`, `skrivanje`, `cisto`, `napomena`. Sam oblačić crta `src/Player/Oblak.js`.
 - Završni kviz (`/zavrsni-kviz`): 100 pitanja iz svih lekcija (`src/Data/Quiz/zavrsni/L{n}.json`, 5 po lekciji za lekcije 1–12, 4 za 13–22), izmiješanim redoslijedom; otključan kad su položene sve lekcije, prolaz 70/100. Započeti kviz se pamti u sessionStorage.
 - Rang lista (`/rang-lista`): sedmica (od ponedjeljka), mjesec i ukupno, po vremenu Europe/Sarajevo; bodovi = zbir najboljeg rezultata svakog kviza u periodu (ponavljanje ne donosi bodove). Admin i demo korisnik nisu na listi.

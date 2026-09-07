@@ -1478,8 +1478,16 @@ span.arap-red {
   line-height: 1.5;
   text-align: left;
   direction: ltr;
-  pointer-events: none; /* ne smeta klikanju na susjedne riječi */
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
   animation: oblak-in 0.2s ease;
+
+  &--vuce {
+    cursor: grabbing;
+    animation: none;
+    box-shadow: 0 20px 46px rgba(16, 59, 92, 0.24);
+  }
 
   /* strelica prema istaknutom harfu */
   &::after {
@@ -1518,6 +1526,11 @@ span.arap-red {
     visibility: hidden;
     opacity: 0;
     animation: none;
+  }
+
+  /* odvučen ustranu: strelica bi pokazivala u prazno */
+  &--bez-strelice::after {
+    display: none;
   }
 
   &__stavka + &__stavka {

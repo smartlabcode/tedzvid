@@ -173,6 +173,7 @@ const UI = {
 
 		/* ----- oblačić s objašnjenjem uz riječ koja svira ----- */
 		napomenaAria: 'Objašnjenje',
+		napomenaPomjeri: 'Povuci da pomjeriš objašnjenje',
 		napomenaTip: {
 			dugo: 'Uči se dugo',
 			kratko: 'Uči se kratko',
@@ -522,6 +523,7 @@ const UI = {
 
 		/* ----- explanation bubble next to the playing word ----- */
 		napomenaAria: 'Explanation',
+		napomenaPomjeri: 'Drag to move the explanation',
 		napomenaTip: {
 			dugo: 'Recited long',
 			kratko: 'Recited short',

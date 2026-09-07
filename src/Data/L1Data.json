@@ -194,8 +194,8 @@
                 "id": 19,
                 "url": "./assets/audio/l1/19.mp3",
                 "napomena": [
-                    {"tip": "stajanje", "bs": "U riječi بِه۪ۙ je dugi vokal I (ه۪), zato se pri stajanju uči bez ikakve promjene: bihii.", "en": "In بِه۪ۙ there is the long vowel I (ه۪), so when stopping it is recited with no change at all: bihī."},
-                    {"tip": "stajanje", "bs": "Posljednja riječ završava dugim vokalom A (نَاۚ), zato se pri stajanju uči bez ikakve promjene: rabbinaa.", "en": "The last word ends in the long vowel A (نَاۚ), so when stopping it is recited with no change at all: rabbinā."}
+                    {"tip": "napomena", "bs": "Riječ بِه۪ۙ završava dugim vokalom I (ه۪), ali znak ۙ iznad nje kaže da se tu ne staje, nego se uči dalje.", "en": "The word بِه۪ۙ ends in the long vowel I (ه۪), but the sign ۙ above it means one does not stop there but carries on."},
+                    {"tip": "stajanje", "bs": "Znak ۚ kaže da se ovdje smije stati, a riječ završava dugim vokalom A (نَاۚ), pa se uči bez ikakve promjene: rabbinaa.", "en": "The sign ۚ means stopping is allowed here, and the word ends in the long vowel A (نَاۚ), so it is recited with no change at all: rabbinā."}
                 ],
                 "highlight": "نَاۚ",
                 "word": "بِّنَاۚ ",
