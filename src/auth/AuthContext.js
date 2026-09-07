@@ -1,6 +1,6 @@
 import React, { createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react';
 import { api, getToken, setToken } from './api';
-import { ZAVRSNI, jeOtkljucana, jeOtkljucanZavrsni } from './progress';
+import { BONUS, ZAVRSNI, jeOtkljucana, jeOtkljucanBonus, jeOtkljucanZavrsni } from './progress';
 
 /*
  * Prijavljeni korisnik i njegov napredak.
@@ -8,7 +8,7 @@ import { ZAVRSNI, jeOtkljucana, jeOtkljucanZavrsni } from './progress';
  *   loading   – true dok se uz postojeći token provjerava /api/me
  *   progress  – { '1': { najbolje, zadnje, pokusaji, polozeno, datum }, ... }
  *   isAdmin   – korisnik s ulogom 'admin': njemu su sve lekcije i završni kviz uvijek otključani
- *   isUnlocked(key) – key je broj lekcije ('3', '14_2') ili ZAVRSNI
+ *   isUnlocked(key) – key je broj lekcije ('3', '14_2'), ZAVRSNI ili BONUS
  */
 const EMPTY = {};
 
@@ -93,8 +93,12 @@ export function AuthProvider({ children }) {
 			loading,
 			progress,
 			isAdmin,
-			isUnlocked: (key) =>
-				isAdmin || (key === ZAVRSNI ? jeOtkljucanZavrsni(progress) : jeOtkljucana(progress, key)),
+			isUnlocked: (key) => {
+				if (isAdmin) return true;
+				if (key === ZAVRSNI) return jeOtkljucanZavrsni(progress);
+				if (key === BONUS) return jeOtkljucanBonus(progress);
+				return jeOtkljucana(progress, key);
+			},
 			login,
 			register,
 			logout,

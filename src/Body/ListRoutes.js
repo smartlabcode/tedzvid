@@ -9,6 +9,7 @@ import FinalQuizPage from './FinalQuizPage';
 import LeaderboardPage from './LeaderboardPage';
 import AdminPage from './AdminPage';
 import LessonGate from './LessonGate';
+import JasinPage from './JasinPage';
 import {
 	L1,
 	L2,
@@ -92,6 +93,7 @@ function ListRoutes() {
 			<Route path="/profil" exact component={ProfilePage} />
 			<Route path="/zavrsni-kviz" exact component={FinalQuizPage} />
 			<Route path="/rang-lista" exact component={LeaderboardPage} />
+			<Route path="/jasin" exact component={JasinPage} />
 			<Route path="/admin" exact component={AdminPage} />
 			{Object.keys(LEKCIJE).map((key) => {
 				const Lekcija = LEKCIJE[key];

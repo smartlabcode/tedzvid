@@ -354,7 +354,44 @@ const UI = {
 		adminDetailHint: 'Klikni red za napredak po lekcijama.',
 		adminCell: (n, p) => (p ? `Lekcija ${n}: najbolje ${p.najbolje}/10, pokušaja: ${p.pokusaji}` : `Lekcija ${n}: nije rješavana`),
 		adminCellFinal: (p) => (p ? `Završni kviz: najbolje ${p.najbolje}/100, pokušaja: ${p.pokusaji}` : 'Završni kviz: nije rješavan'),
-		adminLegend: { ok: 'položeno', partial: 'nije položeno', none: 'nije rješavano' }
+		adminLegend: { ok: 'položeno', partial: 'nije položeno', none: 'nije rješavano' },
+
+		/* ----- bonus lekcija: sura Jasin ----- */
+		navJasin: 'Sura Jasin',
+		jasinEyebrow: 'Bonus lekcija',
+		jasinNaslov: 'Sura Jasin',
+		jasinPodnaslov: 'Cijela sura, stranica po stranicu, s bojama i objašnjenjima za sva tedžvidska pravila iz 22 lekcije.',
+		jasinUvod:
+			'Svaka boja u tekstu je jedno pravilo. Klikni na obojeni harf i pročitaj zašto se tu primjenjuje to pravilo, ili otvori spisak svih pravila ispod ajeta. Zvučni zapis uči Mahmud Halil el-Husari.',
+		jasinPrivremeniZvuk: 'Zvučni zapis je privremeno preuzet s vanjskog izvora (everyayah.com) dok se ne snime vlastiti.',
+		jasinStranica: (n) => `Stranica ${n}`,
+		jasinStranicaMushafa: (n) => `Stranica ${n} mushafa`,
+		jasinAjeti: (a, b) => `ajeti ${a}–${b}`,
+		jasinLegenda: 'Boje pravila',
+		jasinSve: 'Sve boje',
+		jasinManje: 'Manje boja',
+		jasinNista: 'Bez boja',
+		jasinSamo: 'samo ovo pravilo',
+		jasinNemaUSuri: 'nema u ovoj suri',
+		jasinPuta: (n) => `${n}×`,
+		jasinLekcijaKratko: (n) => `lekcija ${n}`,
+		jasinBezLekcije: 'obrađeno uz 5. i 6. lekciju',
+		jasinPravilaBroj: (n) => (n === 1 ? '1 pravilo' : n < 5 ? `${n} pravila` : `${n} pravila`),
+		jasinOtvoriPravila: 'Prikaži pravila',
+		jasinZatvoriPravila: 'Sakrij pravila',
+		jasinSvaObjasnjenja: 'Objašnjenja uz sve ajete',
+		jasinPustiAjet: (n) => `Poslušaj ${n}. ajet`,
+		jasinPustiStranicu: 'Pusti cijelu stranicu',
+		jasinZaustavi: 'Zaustavi',
+		jasinOznaka: (n) => `Jasin, ${n}. ajet`,
+		jasinPrethodna: 'Prethodna stranica',
+		jasinSljedeca: 'Sljedeća stranica',
+		jasinZakljucanNaslov: 'Bonus lekcija je još zaključana',
+		jasinZakljucanKorisnik: (n) =>
+			`Sura Jasin se otključava kad položiš kvizove svih 22 lekcije. Nastavi s ${n}. lekcijom.`,
+		jasinZakljucanGost: 'Prijavi se i pređi svih 22 lekcije da otključaš bonus lekciju sa surom Jasin.',
+		jasinKarticaTekst: 'Cijela sura Jasin s bojama i objašnjenjima svih pravila koja si prešao – kao nagrada na kraju kursa.',
+		jasinOtvori: 'Otvori bonus lekciju'
 	},
 
 	en: {
@@ -702,7 +739,44 @@ const UI = {
 		adminDetailHint: 'Click a row for progress per lesson.',
 		adminCell: (n, p) => (p ? `Lesson ${n}: best ${p.najbolje}/10, attempts: ${p.pokusaji}` : `Lesson ${n}: not taken`),
 		adminCellFinal: (p) => (p ? `Final quiz: best ${p.najbolje}/100, attempts: ${p.pokusaji}` : 'Final quiz: not taken'),
-		adminLegend: { ok: 'passed', partial: 'not passed', none: 'not taken' }
+		adminLegend: { ok: 'passed', partial: 'not passed', none: 'not taken' },
+
+		/* ----- bonus lesson: Surah Ya-Sin ----- */
+		navJasin: 'Surah Ya-Sin',
+		jasinEyebrow: 'Bonus lesson',
+		jasinNaslov: 'Surah Ya-Sin',
+		jasinPodnaslov: 'The whole surah, page by page, colour-coded and explained with every tajweed rule from the 22 lessons.',
+		jasinUvod:
+			'Every colour in the text is one rule. Tap a coloured letter to read why the rule applies there, or open the list of all rules under a verse. The recitation is by Mahmoud Khalil Al-Husary.',
+		jasinPrivremeniZvuk: 'The recitation is temporarily served from an external source (everyayah.com) until our own is recorded.',
+		jasinStranica: (n) => `Page ${n}`,
+		jasinStranicaMushafa: (n) => `Mushaf page ${n}`,
+		jasinAjeti: (a, b) => `verses ${a}–${b}`,
+		jasinLegenda: 'Rule colours',
+		jasinSve: 'All colours',
+		jasinManje: 'Fewer colours',
+		jasinNista: 'No colours',
+		jasinSamo: 'this rule only',
+		jasinNemaUSuri: 'not found in this surah',
+		jasinPuta: (n) => `${n}×`,
+		jasinLekcijaKratko: (n) => `lesson ${n}`,
+		jasinBezLekcije: 'covered in lessons 5 and 6',
+		jasinPravilaBroj: (n) => (n === 1 ? '1 rule' : `${n} rules`),
+		jasinOtvoriPravila: 'Show rules',
+		jasinZatvoriPravila: 'Hide rules',
+		jasinSvaObjasnjenja: 'Explanations under every verse',
+		jasinPustiAjet: (n) => `Listen to verse ${n}`,
+		jasinPustiStranicu: 'Play the whole page',
+		jasinZaustavi: 'Stop',
+		jasinOznaka: (n) => `Ya-Sin, verse ${n}`,
+		jasinPrethodna: 'Previous page',
+		jasinSljedeca: 'Next page',
+		jasinZakljucanNaslov: 'The bonus lesson is still locked',
+		jasinZakljucanKorisnik: (n) =>
+			`Surah Ya-Sin unlocks once you pass the quizzes of all 22 lessons. Continue with lesson ${n}.`,
+		jasinZakljucanGost: 'Log in and complete all 22 lessons to unlock the bonus lesson with Surah Ya-Sin.',
+		jasinKarticaTekst: 'The whole of Surah Ya-Sin, colour-coded and explained with every rule you have learned – a reward at the end of the course.',
+		jasinOtvori: 'Open the bonus lesson'
 	}
 };
 

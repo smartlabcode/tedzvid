@@ -54,3 +54,6 @@ node_modules
 *.jks
 *.keystore
 /android/keystore.properties
+
+# keš preuzetih izvora za gradnju sure Jasin (skripta ga ponovo preuzme)
+/scripts/yasin/.cache

@@ -2794,3 +2794,556 @@ textarea.field {
     display: none;
   }
 }
+
+/* =========================================================
+   BONUS LEKCIJA: SURA JASIN
+   Cijela sura po stranicama mushafa; svako tedžvidsko pravilo
+   ima svoju boju (--boja dolazi iz kataloga YasinPravila.json).
+   ========================================================= */
+.jasin {
+  position: relative;
+  margin-top: -52px;
+  padding-bottom: 96px;
+
+  &__uvod {
+    max-width: 760px;
+    margin: 0 auto 22px;
+    padding: 18px 22px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-left: 5px solid var(--gold);
+    border-radius: 14px;
+    box-shadow: var(--shadow-sm);
+    color: var(--muted);
+    text-align: center;
+  }
+}
+
+/* ---------- legenda boja ---------- */
+.jasin-legenda {
+  padding: 20px 24px 8px;
+  margin-bottom: 22px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  box-shadow: var(--shadow-sm);
+
+  &__vrh {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--line);
+
+    h2 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0;
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      letter-spacing: 0.03em;
+      color: var(--navy);
+
+      svg {
+        color: var(--gold);
+      }
+    }
+  }
+
+  &__gumbi {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  &__grupa {
+    padding: 14px 0 6px;
+
+    + .jasin-legenda__grupa {
+      border-top: 1px dashed var(--line);
+    }
+
+    h3 {
+      margin: 0 0 10px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 10px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+  }
+}
+
+.jasin-cip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font: inherit;
+  font-size: 0.86rem;
+  color: var(--ink);
+  cursor: pointer;
+  transition: border-color 0.15s ease, background-color 0.15s ease, opacity 0.15s ease;
+
+  &__tacka {
+    width: 12px;
+    height: 12px;
+    flex: none;
+    border-radius: 50%;
+    background: var(--boja);
+  }
+
+  &__ime {
+    font-weight: 600;
+    color: var(--boja);
+  }
+
+  &__broj {
+    color: var(--muted);
+    font-size: 0.8rem;
+  }
+
+  &:hover:not(:disabled) {
+    border-color: var(--boja);
+    background: var(--cream);
+  }
+
+  &.is-off {
+    opacity: 0.45;
+
+    .jasin-cip__tacka {
+      background: transparent;
+      box-shadow: inset 0 0 0 2px var(--boja);
+    }
+
+    .jasin-cip__ime {
+      color: var(--muted);
+      text-decoration: line-through;
+    }
+  }
+
+  &.is-prazan,
+  &:disabled {
+    opacity: 0.4;
+    cursor: default;
+    font-style: italic;
+  }
+
+  &__lekcija {
+    font-size: 0.76rem;
+    color: var(--muted);
+    text-decoration: underline;
+    white-space: nowrap;
+
+    &:hover {
+      color: var(--gold-600);
+    }
+  }
+}
+
+.jasin-cip__lekcija {
+  font-size: 0.76rem;
+  color: var(--muted);
+  text-decoration: underline;
+  white-space: nowrap;
+
+  &:hover {
+    color: var(--gold-600);
+  }
+}
+
+/* ---------- izbor stranice mushafa ---------- */
+.jasin-stranice {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8px;
+  margin-bottom: 18px;
+
+  &__gumb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    padding: 10px 6px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    font: inherit;
+    color: var(--navy);
+    cursor: pointer;
+    transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+
+    strong {
+      font-size: 0.95rem;
+    }
+
+    span {
+      font-size: 0.76rem;
+      color: var(--muted);
+    }
+
+    &:hover {
+      border-color: var(--gold);
+    }
+
+    &.je-aktivan {
+      background: var(--navy);
+      border-color: var(--navy);
+      color: #fff;
+
+      span {
+        color: var(--gold-200);
+      }
+    }
+  }
+}
+
+/* ---------- traka s napomenom o zvuku i puštanjem stranice ---------- */
+.jasin-traka {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 18px;
+  margin-bottom: 16px;
+  background: var(--cream-2);
+  border-radius: 14px;
+
+  &__uputa {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    font-size: 0.86rem;
+    color: var(--muted);
+
+    svg {
+      color: var(--gold-600);
+      flex: none;
+    }
+  }
+
+  &__gumbi {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+  }
+}
+
+.jasin-prekidac {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  font-size: 0.86rem;
+  color: var(--ink);
+  cursor: pointer;
+
+  input {
+    width: 16px;
+    height: 16px;
+    accent-color: var(--navy);
+  }
+}
+
+/* ---------- stranica sure ---------- */
+.jasin-stranica {
+  padding: 8px 0 0;
+
+  &__naslov {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 10px;
+    margin: 0 0 14px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--gold-200);
+    font-family: var(--font-display);
+    font-size: 1.6rem;
+    letter-spacing: 0.03em;
+    color: var(--navy);
+
+    span {
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      letter-spacing: 0;
+      color: var(--muted);
+    }
+  }
+}
+
+.jasin-ajet {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  padding: 16px 18px;
+  margin-bottom: 10px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: var(--shadow-sm);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+  &.je-svira {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px var(--gold-100);
+  }
+
+  &__alat {
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    width: 76px;
+  }
+
+  &__pusti {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 7px 12px;
+    background: var(--navy);
+    border: 0;
+    border-radius: 999px;
+    color: #fff;
+    font: inherit;
+    font-size: 0.82rem;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+
+    &:hover {
+      background: var(--gold-600);
+    }
+
+    &.je-svira {
+      background: var(--gold);
+    }
+
+    svg {
+      font-size: 0.7rem;
+    }
+  }
+
+  &__broj {
+    font-weight: 700;
+  }
+
+  &__spisak-gumb {
+    padding: 4px 10px;
+    background: transparent;
+    border: 1px dashed var(--line);
+    border-radius: 999px;
+    font: inherit;
+    font-size: 0.74rem;
+    color: var(--muted);
+    cursor: pointer;
+    white-space: nowrap;
+
+    &:hover,
+    &.je-otvoren {
+      border-style: solid;
+      border-color: var(--gold);
+      color: var(--gold-600);
+    }
+  }
+
+  &__tekst {
+    flex: 1 1 320px;
+    margin: 0;
+    font-family: HamdullahMushaf, serif;
+    font-size: 2.9rem;
+    line-height: 4.4rem;
+    color: var(--ink);
+    text-align: justify;
+  }
+
+  &__kraj {
+    display: inline-block;
+    min-width: 1.5em;
+    margin: 0 0.2em;
+    padding: 0 0.12em;
+    border: 2px solid var(--gold);
+    border-radius: 50%;
+    font-size: 0.55em;
+    line-height: 1.5em;
+    text-align: center;
+    color: var(--gold-600);
+    vertical-align: middle;
+  }
+}
+
+/* obojeni harf: klikom otvara objašnjenje pravila */
+.jasin-h {
+  color: var(--boja);
+  cursor: pointer;
+  border-radius: 0.2em;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  transition: background-color 0.15s ease, box-shadow 0.15s ease;
+
+  &:hover,
+  &:focus-visible {
+    outline: none;
+    background: color-mix(in srgb, var(--boja) 12%, transparent);
+  }
+
+  &.je-izabran {
+    background: color-mix(in srgb, var(--boja) 18%, transparent);
+    box-shadow: 0 2px 0 var(--boja);
+  }
+}
+
+/* ---------- spisak pravila ispod ajeta ---------- */
+.jasin-pravila {
+  flex: 1 1 100%;
+  margin: 4px 0 0;
+  padding: 12px 0 0;
+  border-top: 1px dashed var(--line);
+  list-style: none;
+  counter-reset: none;
+
+  &__stavka {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 14px;
+    align-items: baseline;
+    padding: 8px 12px;
+    border-radius: 12px;
+    border-right: 4px solid var(--boja);
+    cursor: pointer;
+
+    + .jasin-pravila__stavka {
+      margin-top: 4px;
+    }
+
+    &:hover {
+      background: var(--cream);
+    }
+
+    &.je-izabran {
+      background: color-mix(in srgb, var(--boja) 10%, var(--cream));
+    }
+  }
+
+  &__rijec {
+    flex: none;
+    min-width: 120px;
+    font-family: HamdullahMushaf, serif;
+    font-size: 1.7rem;
+    line-height: 2.4rem;
+    color: var(--boja);
+  }
+
+  &__opis {
+    flex: 1 1 260px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 4px 10px;
+    font-size: 0.9rem;
+
+    strong {
+      color: var(--boja);
+    }
+  }
+
+  &__lekcija {
+    padding: 1px 8px;
+    background: var(--cream-2);
+    border-radius: 999px;
+    font-size: 0.72rem;
+    color: var(--muted);
+    text-decoration: none;
+    white-space: nowrap;
+
+    &:hover {
+      background: var(--gold-100);
+      color: var(--gold-600);
+    }
+
+    &--bez {
+      font-style: italic;
+    }
+  }
+
+  &__tekst {
+    flex: 1 1 100%;
+    color: var(--ink);
+  }
+}
+
+.jasin-kraj {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 22px;
+
+  .btn-t:disabled {
+    opacity: 0.4;
+    cursor: default;
+  }
+}
+
+/* kartica bonusa u pregledu lekcija */
+.lessons__final--bonus {
+  background: var(--navy-700);
+
+  .lessons__final-icon {
+    background: var(--teal);
+  }
+}
+
+@media (max-width: 900px) {
+  .jasin-stranice {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .jasin-ajet {
+    padding: 14px;
+
+    &__alat {
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    &__tekst {
+      font-size: 2.3rem;
+      line-height: 3.7rem;
+    }
+  }
+
+  .jasin-pravila__rijec {
+    min-width: 0;
+  }
+
+  .jasin-stranice {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

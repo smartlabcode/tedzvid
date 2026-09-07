@@ -49,3 +49,8 @@ export const PROLAZ_ZAVRSNI = 70;
 export const putanjaZavrsnog = '/zavrsni-kviz';
 export const jeOtkljucanZavrsni = (progress) => jePolozena(progress, BROJ_LEKCIJA);
 export const jePolozenZavrsni = (progress) => jePolozena(progress, ZAVRSNI);
+
+/* ----- bonus lekcija: sura Jasin, otključana kad su položene sve lekcije ----- */
+export const BONUS = 'jasin';
+export const putanjaBonusa = '/jasin';
+export const jeOtkljucanBonus = (progress) => jePolozena(progress, BROJ_LEKCIJA);
