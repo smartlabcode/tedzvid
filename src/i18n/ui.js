@@ -389,7 +389,7 @@ const UI = {
 			`Sura Jasin se otključava kad položiš kvizove svih 22 lekcije. Nastavi s ${n}. lekcijom.`,
 		jasinZakljucanGost: 'Prijavi se i pređi svih 22 lekcije da otključaš bonus lekciju sa surom Jasin.',
 		jasinKarticaTekst: 'Cijela sura Jasin s bojama i objašnjenjima svih pravila koja si prešao – kao nagrada na kraju kursa.',
-		jasinOtvori: 'Otvori bonus lekciju',
+		jasinOtvori: 'Otvori suru Jasin',
 
 		/* ----- bonus lekcija: amme sure ----- */
 		ammeEyebrow: 'Bonus lekcija',
@@ -867,7 +867,7 @@ const UI = {
 			`Surah Ya-Sin unlocks once you pass the quizzes of all 22 lessons. Continue with lesson ${n}.`,
 		jasinZakljucanGost: 'Log in and complete all 22 lessons to unlock the bonus lesson with Surah Ya-Sin.',
 		jasinKarticaTekst: 'The whole of Surah Ya-Sin, colour-coded and explained with every rule you have learned – a reward at the end of the course.',
-		jasinOtvori: 'Open the bonus lesson',
+		jasinOtvori: 'Open Surah Ya-Sin',
 
 		/* ----- bonus lesson: short surahs ----- */
 		ammeEyebrow: 'Bonus lesson',

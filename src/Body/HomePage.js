@@ -4,7 +4,6 @@ import SiteFooter from './SiteFooter';
 import PageBand from './PageBand';
 import HomeFirst from './HomeFirst';
 import FinalQuizCard from './FinalQuizCard';
-import BonusCard from './BonusCard';
 import BonusKartica from './BonusKartica';
 import { useUI } from '../i18n/ui';
 
@@ -25,8 +24,8 @@ function Home() {
 					<BonusKartica vrsta="fatiha" />
 					<BonusKartica vrsta="kursij" />
 					<BonusKartica vrsta="mulk" />
-					<BonusCard vrsta="jasin" />
-					<BonusCard vrsta="amme" />
+					<BonusKartica vrsta="jasin" />
+					<BonusKartica vrsta="amme" />
 				</div>
 			</main>
 			<SiteFooter />

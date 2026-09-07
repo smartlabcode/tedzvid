@@ -14,7 +14,9 @@ import { useUI } from '../i18n/ui';
 const LEKCIJE = {
 	fatiha: React.lazy(() => import('../Lessons/Fatiha')),
 	kursij: React.lazy(() => import('../Lessons/Kursij')),
-	mulk: React.lazy(() => import('../Lessons/Mulk'))
+	mulk: React.lazy(() => import('../Lessons/Mulk')),
+	jasin: React.lazy(() => import('../Lessons/Yasin')),
+	amme: React.lazy(() => import('../Lessons/AmmeDzuz'))
 };
 
 /*

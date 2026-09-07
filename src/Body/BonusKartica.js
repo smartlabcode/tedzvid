@@ -1,19 +1,30 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaMosque, FaStar, FaScroll, FaLock, FaClipboardCheck, FaSignInAlt, FaUserPlus } from 'react-icons/fa';
+import { FaMosque, FaStar, FaScroll, FaBookOpen, FaQuran, FaLock, FaClipboardCheck, FaSignInAlt, FaUserPlus } from 'react-icons/fa';
 import { useAuth } from '../auth/AuthContext';
-import { BONUS, trenutnaLekcija, putanjaKviza, putanjaFatihe, putanjaKursija, putanjaMulka } from '../auth/progress';
+import {
+	BONUS,
+	trenutnaLekcija,
+	putanjaKviza,
+	putanjaFatihe,
+	putanjaKursija,
+	putanjaMulka,
+	putanjaBonusa,
+	putanjaAmmeDzuza
+} from '../auth/progress';
 import vrstaTekstovi from '../Lessons/bonusVrste';
 import { useUI } from '../i18n/ui';
 
 /*
- * Kartica bonus lekcije s kraćom cjelinom (El-Fatiha, Ajetul-kursij, El-Mulk)
- * na pregledu lekcija. Sve se otključavaju istim uslovom kao i sura Jasin.
+ * Kartica bonus lekcije s kur'anskim tekstom na pregledu lekcija.
+ * Sve se otključavaju istim uslovom – kad su položeni kvizovi svih 22 lekcije.
  */
 const VRSTE = {
 	fatiha: { putanja: putanjaFatihe, Ikona: FaMosque },
 	kursij: { putanja: putanjaKursija, Ikona: FaStar },
-	mulk: { putanja: putanjaMulka, Ikona: FaScroll }
+	mulk: { putanja: putanjaMulka, Ikona: FaScroll },
+	jasin: { putanja: putanjaBonusa, Ikona: FaBookOpen },
+	amme: { putanja: putanjaAmmeDzuza, Ikona: FaQuran }
 };
 
 export default function BonusKartica({ vrsta }) {
