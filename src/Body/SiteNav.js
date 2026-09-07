@@ -20,6 +20,7 @@ export default function SiteNav({ active, cta }) {
 	const LINKS = [
 		{ key: 'home', to: '/', label: ui.navHome },
 		{ key: 'lekcije', to: '/lekcije', label: ui.navLekcije },
+		{ key: 'igra', to: '/igra', label: ui.navIgra },
 		{ key: 'rang', to: '/rang-lista', label: ui.navRang },
 		{ key: 'o-nama', to: '/#o-nama', label: ui.navONama },
 		{ key: 'printano', to: '/#printano', label: ui.navPrintano },
