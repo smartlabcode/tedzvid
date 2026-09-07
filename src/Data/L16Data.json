@@ -2,6 +2,9 @@
     "row1": [{
             "id": 1,
             "url": "./assets/audio/l16/1.mp3",
+            "napomena": [
+                {"tip": "uklapanje", "bs": "U riječi نَـخْلُـقْكُمْ harf قْ sa sukunom prati harf كُ sa hareketom, zato se prvi uklapa u drugi i uči se samo ك sa tešdidom.", "en": "In نَـخْلُـقْكُمْ the letter قْ with a sukun is followed by كُ with a haraka, so the first merges into the second and only ك with a tashdeed is recited."}
+            ],
             "highlight": "قْكُ",
             "word": "أَلَـمْ نَـخْلُـقْكُمْ",
             "after": " čita se: "
@@ -9,6 +12,9 @@
         {
             "id": 2,
             "url": "./assets/audio/l16/2.mp3",
+            "napomena": [
+                {"tip": "napomena", "bs": "Ovo je zapis izgovora: harf Q sa sukunom uklopio se u ك, zato se uči كُّ sa tešdidom, a prvi harf se uopće ne čuje.", "en": "This is how the recitation is written: the letter Q with a sukun has merged into ك, so كُّ is recited with a tashdeed and the first letter is not heard at all."}
+            ],
             "highlight": "كُّ",
             "word": "أَلَـمْ نَـخْلُكُّـمْ",
             "after": null
@@ -17,12 +23,18 @@
     "row2": [{
             "id": 3,
             "url": "./assets/audio/l16/3.mp3",
+            "napomena": [
+                {"tip": "uklapanje", "bs": "U riječima وَقُلْ رَبِّ harf لْ sa sukunom prati harf رَ sa hareketom, zato se لْ ne uči nego se uklapa u ر sa tešdidom.", "en": "In وَقُلْ رَبِّ the letter لْ with a sukun is followed by رَ with a haraka, so لْ is not pronounced but merges into ر with a tashdeed."}
+            ],
             "highlight": "لْ ر",
             "word": "وَقُلْ رَبِّ",
             "after": " čita se: "
         }, {
             "id": 4,
             "url": "./assets/audio/l16/4.mp3",
+            "napomena": [
+                {"tip": "napomena", "bs": "Ovo je zapis izgovora: harf L sa sukunom uklopio se u ر, zato se uči رَّ sa tešdidom i čuje se samo jedan harf.", "en": "This is how the recitation is written: the letter L with a sukun has merged into ر, so رَّ is recited with a tashdeed and only one letter is heard."}
+            ],
             "highlight": "رَّ",
             "word": "وَقُـرَّبِّ",
             "after": null
@@ -33,6 +45,9 @@
         "broj7": [{
             "id": 7,
             "url": "./assets/audio/l16/7.mp3",
+            "napomena": [
+                {"tip": "napomena", "bs": "U ovom ajetu nema para bliskih harfova iz ovog pravila, pa nema ni uklapanja.", "en": "This verse has no pair of close letters from this rule, so there is no merging."}
+            ],
             "highlight": "",
             "word": "وَكَانَ اللّٰهُ عَزِيزًا حَكِيمًا ",
             "after": null
@@ -40,6 +55,9 @@
         "broj6": [{
             "id": 6,
             "url": "./assets/audio/l16/6.mp3",
+            "napomena": [
+                {"tip": "uklapanje", "bs": "U riječima بَلْ رَفَعَهُ harf لْ sa sukunom prati harf رَ sa hareketom, zato se لْ ne uči nego se uklapa u ر sa tešdidom.", "en": "In بَلْ رَفَعَهُ the letter لْ with a sukun is followed by رَ with a haraka, so لْ is not pronounced but merges into ر with a tashdeed."}
+            ],
             "highlight": "لْ رَ",
             "word": " بَلْ رَفَعَهُ اللّٰهُ إِلَيْهِ ۚ",
             "after": null
@@ -47,6 +65,9 @@
         "broj5": [{
             "id": 5,
             "url": "./assets/audio/l16/5.mp3",
+            "napomena": [
+                {"tip": "uklapanje", "bs": "U riječima وَقُلْ رَبِّ harf لْ sa sukunom prati harf رَ sa hareketom, zato se لْ uklapa u ر i uči se samo taj harf sa tešdidom.", "en": "In وَقُلْ رَبِّ the letter لْ with a sukun is followed by رَ with a haraka, so لْ merges into ر and only that letter is recited, with a tashdeed."}
+            ],
             "highlight": "لْ رَ",
             "word": "وَقُلْ رَبِّ زِدْنِي عِلْمًا ",
             "after": null
@@ -54,6 +75,9 @@
         "broj8": [{
             "id": 8,
             "url": "./assets/audio/l16/8.mp3",
+            "napomena": [
+                {"tip": "uklapanje", "bs": "U riječima فَقُلْ رَبُّكُمْ harf لْ sa sukunom prati harf رَ sa hareketom, zato se لْ uklapa u ر i uči se samo taj harf sa tešdidom.", "en": "In فَقُلْ رَبُّكُمْ the letter لْ with a sukun is followed by رَ with a haraka, so لْ merges into ر and only that letter is recited, with a tashdeed."}
+            ],
             "highlight": "لْ رَ",
             "word": " إِنْ كَذَّبُوكَ فَقُلْ رَبُّكُمْ ذُو رَحْمَةٍ وَاسِعَةٍ ",
             "after": null
@@ -61,6 +85,9 @@
         "broj9": [{
             "id": 9,
             "url": "./assets/audio/l16/9.mp3",
+            "napomena": [
+                {"tip": "uklapanje", "bs": "U riječi نَخْلُـقْكُمْ harf قْ sa sukunom prati harf كُ sa hareketom, zato se قْ uklapa u ك i uči se samo ك sa tešdidom.", "en": "In نَخْلُـقْكُمْ the letter قْ with a sukun is followed by كُ with a haraka, so قْ merges into ك and only ك with a tashdeed is recited."}
+            ],
             "highlight": "قْكُ",
             "word": " أَلَمْ نَخْلُـقْكُمْ مِنْ مَٓاءٍ مَهِينٍ",
             "after": null
@@ -69,6 +96,9 @@
         "broj10": [{
             "id": 10,
             "url": "./assets/audio/l16/10.mp3",
+            "napomena": [
+                {"tip": "uklapanje", "bs": "U riječima وَقُلْ رَبِّ harf لْ sa sukunom prati harf رَ sa hareketom, zato se لْ ne uči nego se oba harfa uče kao jedan ر sa tešdidom.", "en": "In وَقُلْ رَبِّ the letter لْ with a sukun is followed by رَ with a haraka, so لْ is not pronounced and both letters are recited as one ر with a tashdeed."}
+            ],
             "highlight": "لْ رَ",
             "word": "وَاخْفِضْ لَهُمَا جَنَاحَ الذُّلِّ مِنَ الرَّحْمَةِ وَقُلْ رَبِّ ارْحَمْهُمَا كَمَا رَبَّـيَانِي صَغِيرًا",
             "after": null
@@ -77,6 +107,9 @@
         "broj11": [{
             "id": 11,
             "url": "./assets/audio/l16/11.mp3",
+            "napomena": [
+                {"tip": "uklapanje", "bs": "U riječima وَقُلْ رَبِّ harf لْ sa sukunom prati harf رَ sa hareketom, zato se لْ uklapa u ر i čuje se samo jedan harf sa tešdidom.", "en": "In وَقُلْ رَبِّ the letter لْ with a sukun is followed by رَ with a haraka, so لْ merges into ر and only one letter with a tashdeed is heard."}
+            ],
             "highlight": "لْ رَ",
             "word": " وَقُلْ رَبِّ اغْفِرْ وَارْحَمْ ",
             "after": null
@@ -85,6 +118,9 @@
         "broj12": [{
             "id": 12,
             "url": "./assets/audio/l16/12.mp3",
+            "napomena": [
+                {"tip": "uklapanje", "bs": "U riječima بَـلْ رَبُّـكُمْ harf لْ sa sukunom prati harf رَ sa hareketom, zato se لْ ne uči nego se uklapa u ر sa tešdidom.", "en": "In بَـلْ رَبُّـكُمْ the letter لْ with a sukun is followed by رَ with a haraka, so لْ is not pronounced but merges into ر with a tashdeed."}
+            ],
             "highlight": "لْ رَ",
             "word": "قَالَ بَـلْ رَبُّـكُمْ رَبُّ السَّمَاوَاتِ وَالْأَرْضِ ",
             "after": null
@@ -93,6 +129,9 @@
         "broj13": [{
             "id": 13,
             "url": "./assets/audio/l16/13.mp3",
+            "napomena": [
+                {"tip": "uklapanje", "bs": "U riječima وَقُلْ رَبِّ harf لْ sa sukunom prati harf رَ sa hareketom, zato se لْ uklapa u ر i uči se samo taj harf sa tešdidom.", "en": "In وَقُلْ رَبِّ the letter لْ with a sukun is followed by رَ with a haraka, so لْ merges into ر and only that letter is recited, with a tashdeed."}
+            ],
             "highlight": "لْ رَ",
             "word": "وَقُلْ رَبِّ أَدْخِلْن۪ي مُدْخَلَ صِدْقٍ ",
             "after": null

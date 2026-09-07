@@ -17,7 +17,8 @@
  *   GET  /api/admin/users (samo admin)          → { sazetak, korisnici }
  *
  * Ugrađeni računi (prijava korisničkim imenom umjesto emaila):
- *   admin  – ADMIN_USER / ADMIN_PASSWORD (podrazumijevano admin / admin123! – promijeniti u produkciji)
+ *   admin  – ADMIN_USER / ADMIN_PASSWORD (podrazumijevano admin / admin123! – promijeniti u produkciji);
+ *            adminu su sve lekcije i završni kviz uvijek otključani
  *   user   – demo korisnik user / user123! (isključiti s DEMO_USER=0)
  *   GET  /api/health                             → { ok: true }
  */
@@ -221,8 +222,9 @@ function jePolozena(user, key) {
 }
 
 /* Lekcija N je otključana ako je prva ili ako je položen kviz lekcije N-1;
-   završni kviz kad je položena posljednja lekcija. */
+   završni kviz kad je položena posljednja lekcija. Adminu je sve uvijek otključano. */
 function jeOtkljucana(user, key) {
+	if (user.uloga === 'admin') return true;
 	if (key === ZAVRSNI) return jePolozena(user, BROJ_LEKCIJA);
 	if (key <= 1) return true;
 	return jePolozena(user, key - 1);

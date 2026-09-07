@@ -3,6 +3,9 @@
 
             "id": 1,
             "url": "./assets/audio/l21/1.mp3",
+            "napomena": [
+                {"tip": "duzina", "bs": "U riječi الْعَالَمِينَ poslije dugog vokala I (مِي) staje se na نَ, hareket otpada i dolazi nestalni sukun, zato je to medd arid koji traje 2, 4 ili 6 hareketa.", "en": "In الْعَالَمِينَ, after the long vowel I (مِي) we stop on نَ, the haraka drops and a temporary sukun appears, so this is madd 'arid, lasting 2, 4 or 6 harakas."}
+            ],
             "highlight": "مِينَ",
             "word": "أَلْـحَمْدُ لِلّٰهِ رَبِّ الْعَالَمِينَ ",
             "after": " ؛ "
@@ -10,6 +13,9 @@
         {
             "id": 2,
             "url": "./assets/audio/l21/2.mp3",
+            "napomena": [
+                {"tip": "duzina", "bs": "U riječi الْمُؤْمِنُونَ poslije dugog vokala U (نُو) staje se na نَ, hareket otpada i dolazi nestalni sukun, zato je to medd arid koji traje 2, 4 ili 6 hareketa.", "en": "In الْمُؤْمِنُونَ, after the long vowel U (نُو) we stop on نَ, the haraka drops and a temporary sukun appears, so this is madd 'arid, lasting 2, 4 or 6 harakas."}
+            ],
             "highlight": "نُون",
             "word": "وَعَلَى اللّٰهِ فَلْيَتَوَكَّلِ الْمُؤْمِنُونَ",
             "after": null
@@ -19,6 +25,9 @@
 
             "id": 3,
             "url": "./assets/audio/l21/3.mp3",
+            "napomena": [
+                {"tip": "duzina", "bs": "U riječi تُـكَـذِّبَانِ poslije dugog vokala A (بَا) staje se na نِ, hareket otpada i dolazi nestalni sukun, zato je to medd arid koji traje 2, 4 ili 6 hareketa.", "en": "In تُـكَـذِّبَانِ, after the long vowel A (بَا) we stop on نِ, the haraka drops and a temporary sukun appears, so this is madd 'arid, lasting 2, 4 or 6 harakas."}
+            ],
             "highlight": "بَانِ",
             "word": "فَبِأَيِّ اٰلَآءِ رَبِّـكُمَا تُـكَـذِّبَانِ ",
             "after": " ؛ "
@@ -26,6 +35,9 @@
         {
             "id": 4,
             "url": "./assets/audio/l21/4.mp3",
+            "napomena": [
+                {"tip": "duzina", "bs": "U riječi الْفَاسِقِينَ poslije dugog vokala I (قِي) staje se na نَ, hareket otpada i dolazi nestalni sukun, zato je to medd arid koji traje 2, 4 ili 6 hareketa.", "en": "In الْفَاسِقِينَ, after the long vowel I (قِي) we stop on نَ, the haraka drops and a temporary sukun appears, so this is madd 'arid, lasting 2, 4 or 6 harakas."}
+            ],
             "highlight": "قِينَ",
             "word": "وَمَا يُضِلُّ بِهِٓ إِلَّا الْفَاسِقِينَ",
             "after": null
@@ -34,6 +46,9 @@
     "row3": [{
         "id": 5,
         "url": "./assets/audio/l21/5.mp3",
+        "napomena": [
+            {"tip": "duzina", "bs": "U riječi يَحْزَنُونَ poslije dugog vokala U (نُو) staje se na نَ, hareket otpada i dolazi nestalni sukun, zato je to medd arid koji traje 2, 4 ili 6 hareketa.", "en": "In يَحْزَنُونَ, after the long vowel U (نُو) we stop on نَ, the haraka drops and a temporary sukun appears, so this is madd 'arid, lasting 2, 4 or 6 harakas."}
+        ],
         "highlight": "نُونَ",
         "word": "فَلَا خَوْفٌ عَلَيْهِمْ وَلَا هُمْ يَحْزَنُونَ",
         "after": null
@@ -42,6 +57,9 @@
         "broj6": [{
             "id": 6,
             "url": "./assets/audio/l21/6.mp3",
+            "napomena": [
+                {"tip": "duzina", "bs": "U riječi أَلِـيمٌ poslije dugog vokala I (لِـي) staje se na مٌ, tenvin otpada i م dobije nestalni sukun, pa se uči 2, 4 ili 6 hareketa.", "en": "In أَلِـيمٌ, after the long vowel I (لِـي) we stop on مٌ, the tanween drops and م takes a temporary sukun, so it is recited for 2, 4 or 6 harakas."}
+            ],
             "highlight": "لِـيمٌ",
             "word": "وَلِلْكَافِرِينَ عَذَابٌ أَلِـيمٌ",
             "after": null
@@ -49,6 +67,9 @@
         "broj7": [{
             "id": 7,
             "url": "./assets/audio/l21/7.mp3",
+            "napomena": [
+                {"tip": "duzina", "bs": "U riječi بِـبَعِيدٍ poslije dugog vokala I (عِي) staje se na دٍ, tenvin otpada i د dobije nestalni sukun, pa se uči 2, 4 ili 6 hareketa.", "en": "In بِـبَعِيدٍ, after the long vowel I (عِي) we stop on دٍ, the tanween drops and د takes a temporary sukun, so it is recited for 2, 4 or 6 harakas."}
+            ],
             "highlight": "عِيدٍ",
             "word": "وَمَا هِيَ مِنَ الظَّالِمِينَ بِـبَعِيدٍ ",
             "after": null
@@ -56,6 +77,9 @@
         "broj8": [{
             "id": 8,
             "url": "./assets/audio/l21/8.mp3",
+            "napomena": [
+                {"tip": "duzina", "bs": "U riječi خَالِدُونَ poslije dugog vokala U (دُو) staje se na نَ, hareket otpada i dolazi nestalni sukun, pa se uči 2, 4 ili 6 hareketa.", "en": "In خَالِدُونَ, after the long vowel U (دُو) we stop on نَ, the haraka drops and a temporary sukun appears, so it is recited for 2, 4 or 6 harakas."}
+            ],
             "highlight": "دُونَ",
             "word": "هُمْ فِيهَا خَالِدُونَ",
             "after": null
@@ -63,6 +87,9 @@
         "broj9": [{
             "id": 9,
             "url": "./assets/audio/l21/9.mp3",
+            "napomena": [
+                {"tip": "duzina", "bs": "U riječi النَّاسِ poslije dugog vokala A (نَّا) staje se na سِ, hareket otpada i dolazi nestalni sukun, pa se uči 2, 4 ili 6 hareketa.", "en": "In النَّاسِ, after the long vowel A (نَّا) we stop on سِ, the haraka drops and a temporary sukun appears, so it is recited for 2, 4 or 6 harakas."}
+            ],
             "highlight": "نَّاسِ",
             "word": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ",
             "after": null
@@ -70,6 +97,9 @@
         "broj10": [{
             "id": 10,
             "url": "./assets/audio/l21/10.mp3",
+            "napomena": [
+                {"tip": "duzina", "bs": "U riječi بِالـدِّينِ poslije dugog vokala I (دِّي) staje se na نِ, hareket otpada i dolazi nestalni sukun, pa se uči 2, 4 ili 6 hareketa.", "en": "In بِالـدِّينِ, after the long vowel I (دِّي) we stop on نِ, the haraka drops and a temporary sukun appears, so it is recited for 2, 4 or 6 harakas."}
+            ],
             "highlight": "دِّينِ",
             "word": "أَرَأَيْتَ الَّذِي يُـكَـذِّبُ بِالـدِّينِ ",
             "after": null
@@ -77,6 +107,9 @@
         "broj11": [{
             "id": 11,
             "url": "./assets/audio/l21/11.mp3",
+            "napomena": [
+                {"tip": "duzina", "bs": "U riječi وَالـزَّيْـتُـونِ poslije dugog vokala U (تُـو) staje se na نِ, hareket otpada i dolazi nestalni sukun, pa se uči 2, 4 ili 6 hareketa.", "en": "In وَالـزَّيْـتُـونِ, after the long vowel U (تُـو) we stop on نِ, the haraka drops and a temporary sukun appears, so it is recited for 2, 4 or 6 harakas."}
+            ],
             "highlight": "تُـونِ",
             "word": "وَالتِّـينِ وَالـزَّيْـتُـونِ ",
             "after": null
@@ -84,6 +117,9 @@
         "broj12": [{
             "id": 12,
             "url": "./assets/audio/l21/12.mp3",
+            "napomena": [
+                {"tip": "duzina", "bs": "U riječi سِيـنِـينَ poslije dugog vokala I (نِـي) staje se na نَ, hareket otpada i dolazi nestalni sukun, pa se uči 2, 4 ili 6 hareketa.", "en": "In سِيـنِـينَ, after the long vowel I (نِـي) we stop on نَ, the haraka drops and a temporary sukun appears, so it is recited for 2, 4 or 6 harakas."}
+            ],
             "highlight": "نِـينَ",
             "word": "وَطُورِ سِيـنِـينَ ",
             "after": null
@@ -91,6 +127,9 @@
         "broj13": [{
             "id": 13,
             "url": "./assets/audio/l21/13.mp3",
+            "napomena": [
+                {"tip": "duzina", "bs": "U riječi الْأَمِينِ poslije dugog vokala I (مِي) staje se na نِ, hareket otpada i dolazi nestalni sukun, pa se uči 2, 4 ili 6 hareketa.", "en": "In الْأَمِينِ, after the long vowel I (مِي) we stop on نِ, the haraka drops and a temporary sukun appears, so it is recited for 2, 4 or 6 harakas."}
+            ],
             "highlight": "مِينِ",
             "word": "وَهٰـذَا الْبَلَدِ الْأَمِينِ ",
             "after": null
@@ -98,6 +137,9 @@
         "broj14": [{
             "id": 14,
             "url": "./assets/audio/l21/14.mp3",
+            "napomena": [
+                {"tip": "duzina", "bs": "U riječi قَدِيرٌ poslije dugog vokala I (دِي) staje se na رٌ, tenvin otpada i ر dobije nestalni sukun, pa se uči 2, 4 ili 6 hareketa.", "en": "In قَدِيرٌ, after the long vowel I (دِي) we stop on رٌ, the tanween drops and ر takes a temporary sukun, so it is recited for 2, 4 or 6 harakas."}
+            ],
             "highlight": "دِيرٌ",
             "word": "إِنَّ اللّٰهَ عَلٰى كُـلِّ شَيْءٍ قَدِيرٌ",
             "after": null
@@ -105,6 +147,9 @@
         "broj15": [{
             "id": 15,
             "url": "./assets/audio/l21/15.mp3",
+            "napomena": [
+                {"tip": "duzina", "bs": "U riječi عَلِيمٌ poslije dugog vokala I (لِي) staje se na مٌ, tenvin otpada i م dobije nestalni sukun, pa se uči 2, 4 ili 6 hareketa.", "en": "In عَلِيمٌ, after the long vowel I (لِي) we stop on مٌ, the tanween drops and م takes a temporary sukun, so it is recited for 2, 4 or 6 harakas."}
+            ],
             "highlight": "لِيمٌ",
             "word": "وَهُوَ بِكُـلِّ شَيْءٍ عَلِيمٌ ",
             "after": null
@@ -112,6 +157,9 @@
         "broj16": [{
             "id": 16,
             "url": "./assets/audio/l21/16.mp3",
+            "napomena": [
+                {"tip": "duzina", "bs": "U riječi الرَّحِيمُ poslije dugog vokala I (حِي) staje se na مُ, hareket otpada i dolazi nestalni sukun, pa se uči 2, 4 ili 6 hareketa.", "en": "In الرَّحِيمُ, after the long vowel I (حِي) we stop on مُ, the haraka drops and a temporary sukun appears, so it is recited for 2, 4 or 6 harakas."}
+            ],
             "highlight": "حِيمُ",
             "word": "إِنَّهُ هُوَ التَّوَّابُ الرَّحِيمُ",
             "after": null
@@ -119,6 +167,9 @@
         "broj17": [{
             "id": 17,
             "url": "./assets/audio/l21/17.mp3",
+            "napomena": [
+                {"tip": "duzina", "bs": "U riječi السَّـيِّـئَاتِ poslije dugog vokala A (ئَا) staje se na تِ, hareket otpada i dolazi nestalni sukun, pa se uči 2, 4 ili 6 hareketa.", "en": "In السَّـيِّـئَاتِ, after the long vowel A (ئَا) we stop on تِ, the haraka drops and a temporary sukun appears, so it is recited for 2, 4 or 6 harakas."}
+            ],
             "highlight": "ئَاتِ",
             "word": "إِنَّ الْحَسَنَاتِ يُذْهِبْنَ السَّـيِّـئَاتِ",
             "after": null

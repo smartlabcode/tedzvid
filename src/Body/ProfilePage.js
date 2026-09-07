@@ -23,8 +23,6 @@ import {
 	UKUPNO_ZAVRSNI,
 	BROJ_LEKCIJA,
 	ZAVRSNI,
-	jeOtkljucana,
-	jeOtkljucanZavrsni,
 	jePolozenZavrsni,
 	trenutnaLekcija,
 	putanjaLekcije,
@@ -38,7 +36,7 @@ const pick = (field, lang) => (typeof field === 'string' ? field : field[lang] |
 
 /* Moj napredak: sažetak + status svake lekcije i završnog kviza + odjava */
 export default function ProfilePage() {
-	const { user, loading, progress, logout } = useAuth();
+	const { user, loading, progress, isAdmin, isUnlocked, logout } = useAuth();
 	const { lang } = useLang();
 	const ui = useUI();
 	const history = useHistory();
@@ -52,8 +50,8 @@ export default function ProfilePage() {
 	const lekcije = data['lekcije'].reduce((acc, curr) => acc.concat(curr), []);
 	const polozenih = lekcije.filter((_, i) => progress[String(i + 1)] && progress[String(i + 1)].polozeno).length;
 	const trenutna = trenutnaLekcija(progress);
-	const otkljucanih = trenutna === null ? BROJ_LEKCIJA : trenutna;
-	const zavrsniOtkljucan = jeOtkljucanZavrsni(progress);
+	const otkljucanih = isAdmin || trenutna === null ? BROJ_LEKCIJA : trenutna;
+	const zavrsniOtkljucan = isUnlocked(ZAVRSNI);
 	const zavrsniPolozen = jePolozenZavrsni(progress);
 	const pz = progress[ZAVRSNI];
 
@@ -147,7 +145,7 @@ export default function ProfilePage() {
 										n,
 										pick(lekcija.title, lang).trim(),
 										pick(lekcija.subtitle, lang),
-										statusZa(p, jeOtkljucana(progress, n)),
+										statusZa(p, isUnlocked(n)),
 										p,
 										UKUPNO,
 										putanjaKviza(n)

@@ -2,6 +2,9 @@
     "row1": [{
             "id": 3,
             "url": "./assets/audio/l2/1.wav",
+            "napomena": [
+                {"tip": "kratko", "bs": "Prije هُ je dugi vokal A (دَا), zato se هُ uči kratko: hu.", "en": "هُ is preceded by the long vowel A (دَا), so هُ is recited short: hu."}
+            ],
             "highlight": "يْـهِ",
             "word": "إِلَـيْـهِ",
             "after": " ; "
@@ -9,12 +12,18 @@
         {
             "id": 2,
             "url": "./assets/audio/l2/2.wav",
+            "napomena": [
+                {"tip": "kratko", "bs": "Prije هِ je dugi vokal I (بِي), zato se هِ uči kratko: hi.", "en": "هِ is preceded by the long vowel I (بِي), so هِ is recited short: hi."}
+            ],
             "highlight": "يـهِ",
             "word": "أَبِـيـهِ",
             "after": " ; "
         }, {
             "id": 1,
             "url": "./assets/audio/l2/3.wav",
+            "napomena": [
+                {"tip": "kratko", "bs": "Prije هِ je sukun (يْ), zato se هِ uči kratko: hi.", "en": "هِ is preceded by a sukūn (يْ), so هِ is recited short: hi."}
+            ],
             "highlight": "دَاهُ",
             "word": "يَـدَاهُ",
             "after": null
@@ -25,6 +34,9 @@
 
             "id": 4,
             "url": "./assets/audio/l2/4.wav",
+            "napomena": [
+                {"tip": "kratko", "bs": "U riječi إِلَيْهِ prije هِ je sukun (يْ), zato se uči kratko: hi.", "en": "In إِلَيْهِ, هِ is preceded by a sukūn (يْ), so it is recited short: hi."}
+            ],
             "highlight": "يْهِ",
             "word": "إِنَّا لِلّٰهِ وَإِنَّا إِلَ‍يْهِ رَاجِعُونَ",
             "after": " ; "
@@ -32,6 +44,9 @@
         {
             "id": 5,
             "url": "./assets/audio/l2/5.wav",
+            "napomena": [
+                {"tip": "kratko", "bs": "U riječi لِأَبِيهِ prije هِ je dugi vokal I (بِي), zato se uči kratko: hi.", "en": "In لِأَبِيهِ, هِ is preceded by the long vowel I (بِي), so it is recited short: hi."}
+            ],
             "highlight": "يهِ",
             "word": "وَإِذْ قَالَ إِبْرَاهِيمُ لِأَبِيهِ اٰزَرَ",
             "after": null
@@ -40,6 +55,9 @@
     "row3": [{
             "id": 6,
             "url": "./assets/audio/l2/6.wav",
+            "napomena": [
+                {"tip": "dugo", "bs": "Prije هُ je kratki vokal U (مُ), zato se هُ uči dugo: huu.", "en": "هُ is preceded by the short vowel U (مُ), so هُ is recited long: hū."}
+            ],
             "highlight": "هُ",
             "word": "اِسْـمُــهُ",
             "after": " ; "
@@ -47,12 +65,18 @@
         {
             "id": 7,
             "url": "./assets/audio/l2/7.wav",
+            "napomena": [
+                {"tip": "dugo", "bs": "Prije هِ je kratki vokal I (بِ), zato se هِ uči dugo: hii.", "en": "هِ is preceded by the short vowel I (بِ), so هِ is recited long: hī."}
+            ],
             "highlight": "هِ",
             "word": "بِـهِ",
             "after": " ; "
         }, {
             "id": 8,
             "url": "./assets/audio/l2/8.wav",
+            "napomena": [
+                {"tip": "dugo", "bs": "Prije هُ je kratki vokal E (لَ), zato se هُ uči dugo: huu.", "en": "هُ is preceded by the short vowel A (لَ), so هُ is recited long: hū."}
+            ],
             "highlight": "هُ",
             "word": "لَـهُ",
             "after": " . "
@@ -62,6 +86,9 @@
 
             "id": 9,
             "url": "./assets/audio/l2/9.wav",
+            "napomena": [
+                {"tip": "dugo", "bs": "U riječima مَوَازِينُهُ i فَأُمُّهُ prije هُ je kratki vokal U (نُ, مُّ), zato se uči dugo: huu.", "en": "In مَوَازِينُهُ and فَأُمُّهُ, هُ is preceded by the short vowel U (نُ, مُّ), so it is recited long: hū."}
+            ],
             "highlight": "هُ",
             "word": "وَأَمَّا مَنْ خَفَّتْ مَوَازِينُهُ فَأُمُّهُ هَاوِيَةٌ",
             "after": " ; "
@@ -69,6 +96,9 @@
         {
             "id": 10,
             "url": "./assets/audio/l2/10.wav",
+            "napomena": [
+                {"tip": "dugo", "bs": "U riječima مَلَٓائِكَتِهِ, كُتُبِهِ i رُسُلِهِ prije هِ je kratki vokal I (تِ, بِ, لِ), zato se uči dugo: hii.", "en": "In مَلَٓائِكَتِهِ, كُتُبِهِ and رُسُلِهِ, هِ is preceded by the short vowel I (تِ, بِ, لِ), so it is recited long: hī."}
+            ],
             "highlight": "هِ",
             "word": "وَمَلَٓا ئـِكَتِهِ وَكُتُبِهِ وَرُسُلِهِ",
             "after": null
@@ -78,6 +108,9 @@
         "broj11": [{
                 "id": 11,
                 "url": "./assets/audio/l2/11.wav",
+                "napomena": [
+                    {"tip": "kratko", "bs": "U riječi عَنْهُ prije هُ je sukun (نْ), zato se uči kratko: hu.", "en": "In عَنْهُ, هُ is preceded by a sukūn (نْ), so it is recited short: hu."}
+                ],
                 "highlight": "هُ",
                 "word": " وَرَضُوا عَنْهُ",
                 "after": null
@@ -93,6 +126,9 @@
         "broj12": [{
             "id": 12,
             "url": "./assets/audio/l2/12.wav",
+            "napomena": [
+                {"tip": "dugo", "bs": "U riječi بِهِ prije هِ je kratki vokal I (بِ), zato se uči dugo: hii.", "en": "In بِهِ, هِ is preceded by the short vowel I (بِ), so it is recited long: hī."}
+            ],
             "highlight": "هِ",
             "word": " يُضِلُّ بِهِ كَثِيرًا",
             "after": null
@@ -100,6 +136,9 @@
         "broj13": [{
             "id": 13,
             "url": "./assets/audio/l2/13.wav",
+            "napomena": [
+                {"tip": "dugo", "bs": "U riječi عِنْدَهُ prije هُ je kratki vokal E (دَ), zato se uči dugo: huu.", "en": "In عِنْدَهُ, هُ is preceded by the short vowel A (دَ), so it is recited long: hū."}
+            ],
             "highlight": "هُ",
             "word": "وَاللّٰهُ عِنْدَهُ حُسْنُ الْمَاٰبِ",
             "after": null
@@ -107,6 +146,9 @@
         "broj14": [{
             "id": 14,
             "url": "./assets/audio/l2/14.wav",
+            "napomena": [
+                {"tip": "dugo", "bs": "U riječi عِنْدَهُ prije هُ je kratki vokal E (دَ), zato se uči dugo: huu.", "en": "In عِنْدَهُ, هُ is preceded by the short vowel A (دَ), so it is recited long: hū."}
+            ],
             "highlight": "هُ",
             "word": " وَعِنْدَهُ مَفَاتِحُ الْغَيْبِ  ",
             "after": null
@@ -114,6 +156,9 @@
         "broj15": [{
             "id": 15,
             "url": "./assets/audio/l2/15.wav",
+            "napomena": [
+                {"tip": "dugo", "bs": "U riječi عِنْدَهُ prije هُ je kratki vokal E (دَ), zato se uči dugo: huu.", "en": "In عِنْدَهُ, هُ is preceded by the short vowel A (دَ), so it is recited long: hū."}
+            ],
             "highlight": "هُ",
             "word": "وَكُلُّ شَيْءٍ عِنْدَهُ بِمِقْدَارٍ",
             "after": null
@@ -121,6 +166,9 @@
         "broj16": [{
             "id": 16,
             "url": "./assets/audio/l2/16.wav",
+            "napomena": [
+                {"tip": "dugo", "bs": "U riječi بِرَحْمَتِهِ prije هِ je kratki vokal I (تِ), zato se uči dugo: hii.", "en": "In بِرَحْمَتِهِ, هِ is preceded by the short vowel I (تِ), so it is recited long: hī."}
+            ],
             "highlight": "هِ",
             "word": " قُلْ بِفَضْلِ اللّٰهِ وَبِرَحْمَتِهِ فَبِذٰلِكَ فَلْيَفْرَحُوا ",
             "after": null
@@ -128,6 +176,9 @@
         "broj17": [{
             "id": 17,
             "url": "./assets/audio/l2/17.wav",
+            "napomena": [
+                {"tip": "kratko", "bs": "U riječi مِنْهُ prije هُ je sukun (نْ), zato se uči kratko: hu.", "en": "In مِنْهُ, هُ is preceded by a sukūn (نْ), so it is recited short: hu."}
+            ],
             "highlight": "هُ",
             "word": " فَشَرِبُوا مِنْهُ إِلَّا قَلِيلًا",
             "after": null
@@ -135,6 +186,10 @@
         "broj18": [{
             "id": 18,
             "url": "./assets/audio/l2/18.wav",
+            "napomena": [
+                {"tip": "dugo", "bs": "U riječi أَهْلِهِ prije هِ je kratki vokal I (لِ), zato se uči dugo: hii.", "en": "In أَهْلِهِ, هِ is preceded by the short vowel I (لِ), so it is recited long: hī."},
+                {"tip": "kratko", "bs": "U riječi مِنْهُ prije هُ je sukun (نْ), zato se uči kratko: hu.", "en": "In مِنْهُ, هُ is preceded by a sukūn (نْ), so it is recited short: hu."}
+            ],
             "highlight": "هُ",
             "word": "هُ أَكْبَرُ عِنْدَ اللّٰهِ ",
             "after": null
@@ -147,6 +202,10 @@
         "broj19": [{
             "id": 19,
             "url": "./assets/audio/l2/19.wav",
+            "napomena": [
+                {"tip": "kratko", "bs": "U riječi عَلَيْهِ prije هِ je sukun (يْ), zato se uči kratko: hi.", "en": "In عَلَيْهِ, هِ is preceded by a sukūn (يْ), so it is recited short: hi."},
+                {"tip": "dugo", "bs": "U riječi رِزْقُهُ prije هُ je kratki vokal U (قُ), zato se uči dugo: huu.", "en": "In رِزْقُهُ, هُ is preceded by the short vowel U (قُ), so it is recited long: hū."}
+            ],
             "highlight": "هُ",
             "word": " رِزْقُهُ فَلْيُنْفِقْ",
             "after": null
@@ -159,6 +218,9 @@
         "broj20": [{
             "id": 20,
             "url": "./assets/audio/l2/20.wav",
+            "napomena": [
+                {"tip": "kratko", "bs": "U riječi لِبَنِيهِ prije هِ je dugi vokal I (نِي), zato se uči kratko: hi.", "en": "In لِبَنِيهِ, هِ is preceded by the long vowel I (نِي), so it is recited short: hi."}
+            ],
             "highlight": "هِ",
             "word": "إِذْ قَالَ لِـبَـنِـيهِ مَا تَعْبُدُونَ",
             "after": null
@@ -166,6 +228,9 @@
         "broj21": [{
             "id": 21,
             "url": "./assets/audio/l2/21.wav",
+            "napomena": [
+                {"tip": "dugo", "bs": "U riječi سَبِيلِهِ prije هِ je kratki vokal I (لِ), zato se uči dugo: hii.", "en": "In سَبِيلِهِ, هِ is preceded by the short vowel I (لِ), so it is recited long: hī."}
+            ],
             "highlight": "هِ",
             "word": " ف۪ي سَب۪يلِهِ لَعَلَّكُمْ تُفْلِحُونَ ",
             "after": null
@@ -178,6 +243,9 @@
         "broj22": [{
             "id": 22,
             "url": "./assets/audio/l2/22.wav",
+            "napomena": [
+                {"tip": "kratko", "bs": "U riječi إِلَيْهِ prije هِ je sukun (يْ), zato se uči kratko: hi.", "en": "In إِلَيْهِ, هِ is preceded by a sukūn (يْ), so it is recited short: hi."}
+            ],
             "highlight": "هِ",
             "word": " هُوَ رَبُّكُمْ وَإِلَيْهِ تُرْجَعُونَ",
             "after": null

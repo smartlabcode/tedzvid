@@ -2,6 +2,9 @@
     "row1": [{
         "id": 1,
         "url": "./assets/audio/l19/1.mp3",
+        "napomena": [
+            {"tip": "duzina", "bs": "U riječima وَمَآ أَنْـــتُـمْ poslije dugog vokala A مَآ dolazi hemze na početku sljedeće riječi, zato ta dužina traje 4 do 5 hareketa.", "en": "In وَمَآ أَنْـــتُـمْ the long vowel A مَآ is followed by a hamza at the beginning of the next word, so the prolongation lasts 4 to 5 harakas."}
+        ],
         "highlight": "مَآ أَ",
         "word": " وَمَآ أَنْـــتُـمْ ",
         "after": "."
@@ -10,6 +13,11 @@
         "row2lijevi": [{
                 "id": 21,
                 "url": "./assets/audio/l19/2.mp3",
+                "napomena": [
+                    {"tip": "duzina", "bs": "U riječi وَلَٓا poslije dugog vokala A لَٓا dolazi elif اَ na početku sljedeće riječi, zato ta dužina traje 4 do 5 hareketa.", "en": "In وَلَٓا the long vowel A لَٓا is followed by an alif اَ at the beginning of the next word, so the prolongation lasts 4 to 5 harakas."},
+                    {"tip": "duzina", "bs": "U riječima مَٓا اَعْبُدُ poslije dugog vokala A مَٓا dolazi elif na početku sljedeće riječi, zato ta dužina traje 4 do 5 hareketa.", "en": "In مَٓا اَعْبُدُ the long vowel A مَٓا is followed by an alif at the beginning of the next word, so the prolongation lasts 4 to 5 harakas."},
+                    {"tip": "napomena", "bs": "U turskoj štampi sljedeća riječ počinje elifom sa fethom اَ, bez znaka hemzeta, ali se dužina uči isto kao u medinskoj štampi.", "en": "In the Turkish print the next word begins with an alif with a fatha اَ, without a hamza sign, but the prolongation is recited just as in the Medina print."}
+                ],
                 "highlight": "مَٓا اَ",
                 "word": "نْتُمْ عَابِدُونَ مَٓا اَعْبُدُ",
                 "after": " - "
@@ -23,6 +31,11 @@
         "row2desni": [{
                 "id": 3,
                 "url": "./assets/audio/l19/2.mp3",
+                "napomena": [
+                    {"tip": "duzina", "bs": "U riječi وَلَٓا poslije dugog vokala A لَٓا dolazi hemze أَ na početku sljedeće riječi, zato ta dužina traje 4 do 5 hareketa.", "en": "In وَلَٓا the long vowel A لَٓا is followed by a hamza أَ at the beginning of the next word, so the prolongation lasts 4 to 5 harakas."},
+                    {"tip": "duzina", "bs": "U riječima مَآ أَعْبُدُ poslije dugog vokala A مَآ dolazi hemze na početku sljedeće riječi, zato ta dužina traje 4 do 5 hareketa.", "en": "In مَآ أَعْبُدُ the long vowel A مَآ is followed by a hamza at the beginning of the next word, so the prolongation lasts 4 to 5 harakas."},
+                    {"tip": "napomena", "bs": "U medinskoj štampi sljedeća riječ počinje hemzetom أَ, a turska štampa na tom mjestu piše elif sa fethom, dok je dužina ista.", "en": "In the Medina print the next word begins with a hamza أَ, while the Turkish print writes an alif with a fatha there, and the prolongation is the same."}
+                ],
                 "highlight": "مَآ أَ",
                 "word": "نْـتُمْ عَابِدُونَ مَآ أَعْبُدُ",
                 "after": null
@@ -37,6 +50,10 @@
         "row3lijevi": [{
             "id": 4,
             "url": "./assets/audio/l19/3.mp3",
+            "napomena": [
+                {"tip": "duzina", "bs": "U riječima وَلَٓا اَنَا۬ poslije dugog vokala A لَٓا dolazi elif na početku sljedeće riječi, zato ta dužina traje 4 do 5 hareketa.", "en": "In وَلَٓا اَنَا۬ the long vowel A لَٓا is followed by an alif at the beginning of the next word, so the prolongation lasts 4 to 5 harakas."},
+                {"tip": "napomena", "bs": "U turskoj štampi sljedeća riječ počinje elifom sa fethom اَ, bez znaka hemzeta, ali se dužina uči isto kao u medinskoj štampi.", "en": "In the Turkish print the next word begins with an alif with a fatha اَ, without a hamza sign, but the prolongation is recited just as in the Medina print."}
+            ],
             "highlight": "لَٓا اَ",
             "word": "وَلَٓا اَنَا۬ عَابِدٌ مَا عَبَدْتُمْ",
             "after": "- "
@@ -44,6 +61,10 @@
         "row3desni": [{
             "id": 5,
             "url": "./assets/audio/l19/3.mp3",
+            "napomena": [
+                {"tip": "duzina", "bs": "U riječima وَلَآ أَنَا poslije dugog vokala A لَآ dolazi hemze na početku sljedeće riječi, zato ta dužina traje 4 do 5 hareketa.", "en": "In وَلَآ أَنَا the long vowel A لَآ is followed by a hamza at the beginning of the next word, so the prolongation lasts 4 to 5 harakas."},
+                {"tip": "napomena", "bs": "U medinskoj štampi sljedeća riječ počinje hemzetom أَ, a turska štampa na tom mjestu piše elif sa fethom, dok je dužina ista.", "en": "In the Medina print the next word begins with a hamza أَ, while the Turkish print writes an alif with a fatha there, and the prolongation is the same."}
+            ],
             "highlight": "لَآ أَ",
             "word": "وَلَآ أَنَا عَابِدٌ مَا عَبَدْتُمْ",
             "after": null
@@ -51,6 +72,10 @@
         "row4lijevi": [{
             "id": 6,
             "url": "./assets/audio/l19/4.mp3",
+            "napomena": [
+                {"tip": "duzina", "bs": "U riječima مَٓا اَغْنٰى poslije dugog vokala A مَٓا dolazi elif na početku sljedeće riječi, zato ta dužina traje 4 do 5 hareketa.", "en": "In مَٓا اَغْنٰى the long vowel A مَٓا is followed by an alif at the beginning of the next word, so the prolongation lasts 4 to 5 harakas."},
+                {"tip": "napomena", "bs": "U turskoj štampi sljedeća riječ počinje elifom sa fethom اَ, bez znaka hemzeta, ali se dužina uči isto kao u medinskoj štampi.", "en": "In the Turkish print the next word begins with an alif with a fatha اَ, without a hamza sign, but the prolongation is recited just as in the Medina print."}
+            ],
             "highlight": "مَٓا اَ",
             "word": " مَٓا اَغْنٰى عَنْهُ مَالُهُ",
             "after": "- "
@@ -58,6 +83,10 @@
         "row4desni": [{
             "id": 7,
             "url": "./assets/audio/l19/4.mp3",
+            "napomena": [
+                {"tip": "duzina", "bs": "U riječima مَٓا أَغْنٰى poslije dugog vokala A مَٓا dolazi hemze na početku sljedeće riječi, zato ta dužina traje 4 do 5 hareketa.", "en": "In مَٓا أَغْنٰى the long vowel A مَٓا is followed by a hamza at the beginning of the next word, so the prolongation lasts 4 to 5 harakas."},
+                {"tip": "napomena", "bs": "U medinskoj štampi sljedeća riječ počinje hemzetom أَ, a turska štampa na tom mjestu piše elif sa fethom, dok je dužina ista.", "en": "In the Medina print the next word begins with a hamza أَ, while the Turkish print writes an alif with a fatha there, and the prolongation is the same."}
+            ],
             "highlight": "مَٓا أَ",
             "word": "مَٓا أَغْنٰى عَنْهُ مَالُهُ",
             "after": null
@@ -68,6 +97,9 @@
         "broj13": [{
             "id": 13,
             "url": "./assets/audio/l19/13.mp3",
+            "napomena": [
+                {"tip": "duzina", "bs": "U riječima مَآ أَصَابَكَ poslije dugog vokala A مَآ dolazi hemze na početku sljedeće riječi, zato ta dužina traje 4 do 5 hareketa.", "en": "In مَآ أَصَابَكَ the long vowel A مَآ is followed by a hamza at the beginning of the next word, so the prolongation lasts 4 to 5 harakas."}
+            ],
             "highlight": "مَآ أَ",
             "word": "مَآ أَصَابَكَ مِنْ حَسَنَةٍ فَمِنَ اللّٰهِ",
             "after": null
@@ -75,6 +107,9 @@
         "broj12": [{
             "id": 12,
             "url": "./assets/audio/l19/12.mp3",
+            "napomena": [
+                {"tip": "duzina", "bs": "U riječima مَالَـهُٓ اَخْلَدَهُ poslije dugog vokala U هُٓ dolazi elif na početku sljedeće riječi, zato ta dužina traje 4 do 5 hareketa.", "en": "In مَالَـهُٓ اَخْلَدَهُ the long vowel U هُٓ is followed by an alif at the beginning of the next word, so the prolongation lasts 4 to 5 harakas."}
+            ],
             "highlight": "هُٓ اَ",
             "word": "يَحْسَبُ أَنَّ مَالَـهُٓ اَخْلَدَهُ",
             "after": null
@@ -82,6 +117,9 @@
         "broj5": [{
             "id": 6,
             "url": "./assets/audio/l19/5.mp3",
+            "napomena": [
+                {"tip": "duzina", "bs": "U riječima يَٓا اَيُّهَا poslije dugog vokala A يَٓا dolazi elif na početku sljedeće riječi, zato ta dužina traje 4 do 5 hareketa.", "en": "In يَٓا اَيُّهَا the long vowel A يَٓا is followed by an alif at the beginning of the next word, so the prolongation lasts 4 to 5 harakas."}
+            ],
             "highlight": "يَٓا اَ",
             "word": "قُلْ يَٓا اَيُّهَا الْكَافِرُونَ ",
             "after": null
@@ -89,6 +127,9 @@
         "broj6": [{
             "id": 6,
             "url": "./assets/audio/l19/6.mp3",
+            "napomena": [
+                {"tip": "duzina", "bs": "U riječima لَٓا اَعْبُدُ poslije dugog vokala A لَٓا dolazi elif na početku sljedeće riječi, zato ta dužina traje 4 do 5 hareketa.", "en": "In لَٓا اَعْبُدُ the long vowel A لَٓا is followed by an alif at the beginning of the next word, so the prolongation lasts 4 to 5 harakas."}
+            ],
             "highlight": "لَٓا اَ",
             "word": "لَٓا اَعْبُدُ مَا تَعْبُدُونَ",
             "after": null
@@ -96,6 +137,9 @@
         "broj7": [{
             "id": 7,
             "url": "./assets/audio/l19/7.mp3",
+            "napomena": [
+                {"tip": "duzina", "bs": "U riječima وَمَآ اَرْسَلْنَاكَ poslije dugog vokala A مَآ dolazi elif na početku sljedeće riječi, zato ta dužina traje 4 do 5 hareketa.", "en": "In وَمَآ اَرْسَلْنَاكَ the long vowel A مَآ is followed by an alif at the beginning of the next word, so the prolongation lasts 4 to 5 harakas."}
+            ],
             "highlight": "مَآ اَ",
             "word": "وَمَآ اَرْسَلْنَاكَ إِلَّا مُبَـشِّـرًا وَنَذِيرًا",
             "after": null
@@ -103,6 +147,10 @@
         "broj8": [{
                 "id": 8,
                 "url": "./assets/audio/l19/8.mp3",
+                "napomena": [
+                    {"tip": "duzina", "bs": "Poslije dugog vokala A يَآ dolazi hemze أَ na početku sljedeće riječi, zato ta dužina traje 4 do 5 hareketa.", "en": "The long vowel A يَآ is followed by a hamza أَ at the beginning of the next word, so the prolongation lasts 4 to 5 harakas."},
+                    {"tip": "duzina", "bs": "U riječima قُٓـوا أَنْـفُسَكُمْ poslije dugog vokala U قُٓـوا dolazi hemze na početku sljedeće riječi, zato ta dužina traje 4 do 5 hareketa.", "en": "In قُٓـوا أَنْـفُسَكُمْ the long vowel U قُٓـوا is followed by a hamza at the beginning of the next word, so the prolongation lasts 4 to 5 harakas."}
+                ],
                 "highlight": "قُٓـوا أَ",
                 "word": "يُّهَا الَّذِينَ اٰمَنُوا قُٓـوا أَنْـفُسَكُمْ وَأَهْلِيكُمْ نَارًا",
                 "after": null
@@ -117,6 +165,10 @@
         "broj9": [{
                 "id": 9,
                 "url": "./assets/audio/l19/9.mp3",
+                "napomena": [
+                    {"tip": "duzina", "bs": "U riječi فَتُوبُٓـوا poslije dugog vokala U بُٓـوا dolazi hemze إِ na početku sljedeće riječi, zato ta dužina traje 4 do 5 hareketa.", "en": "In فَتُوبُٓـوا the long vowel U بُٓـوا is followed by a hamza إِ at the beginning of the next word, so the prolongation lasts 4 to 5 harakas."},
+                    {"tip": "duzina", "bs": "U riječima فَاقْـتُـلُٓـوا أَنْفُسَكُمْ poslije dugog vokala U لُٓـوا dolazi hemze na početku sljedeće riječi, zato ta dužina traje 4 do 5 hareketa.", "en": "In فَاقْـتُـلُٓـوا أَنْفُسَكُمْ the long vowel U لُٓـوا is followed by a hamza at the beginning of the next word, so the prolongation lasts 4 to 5 harakas."}
+                ],
                 "highlight": "لُٓـوا أَ",
                 "word": "لٰى بَارِئِكُمْ فَاقْـتُـلُٓـوا أَنْفُسَكُمْ ",
                 "after": null
@@ -131,6 +183,10 @@
         "broj10": [{
                 "id": 10,
                 "url": "./assets/audio/l19/10.mp3",
+                "napomena": [
+                    {"tip": "duzina", "bs": "U riječi وَاعْلَمُٓوا poslije dugog vokala U مُٓوا dolazi hemze أَ na početku sljedeće riječi, zato ta dužina traje 4 do 5 hareketa.", "en": "In وَاعْلَمُٓوا the long vowel U مُٓوا is followed by a hamza أَ at the beginning of the next word, so the prolongation lasts 4 to 5 harakas."},
+                    {"tip": "duzina", "bs": "U riječima فِٓـي أَنْـفُسِكُمْ poslije dugog vokala I فِٓـي dolazi hemze na početku sljedeće riječi, zato ta dužina traje 4 do 5 hareketa.", "en": "In فِٓـي أَنْـفُسِكُمْ the long vowel I فِٓـي is followed by a hamza at the beginning of the next word, so the prolongation lasts 4 to 5 harakas."}
+                ],
                 "highlight": "فِٓـي أَ",
                 "word": "نَّ اللّٰهَ يَعْلَمُ مَا فِٓـي أَنْـفُسِكُمْ ",
                 "after": null
@@ -146,6 +202,10 @@
         "broj11": [{
                 "id": 11,
                 "url": "./assets/audio/l19/11.mp3",
+                "napomena": [
+                    {"tip": "duzina", "bs": "Poslije dugog vokala A يَآ dolazi hemze أَ na početku sljedeće riječi, zato ta dužina traje 4 do 5 hareketa.", "en": "The long vowel A يَآ is followed by a hamza أَ at the beginning of the next word, so the prolongation lasts 4 to 5 harakas."},
+                    {"tip": "duzina", "bs": "U riječima مَآ أَحَلَّ poslije dugog vokala A مَآ dolazi hemze na početku sljedeće riječi, zato ta dužina traje 4 do 5 hareketa.", "en": "In مَآ أَحَلَّ the long vowel A مَآ is followed by a hamza at the beginning of the next word, so the prolongation lasts 4 to 5 harakas."}
+                ],
                 "highlight": "مَآ أَ",
                 "word": "يُّهَا النَّبِيُّ لِمَ تُـحَـرِّمُ مَآ أَحَلَّ اللّٰهُ لَكَ ",
                 "after": null

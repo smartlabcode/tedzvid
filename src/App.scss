@@ -1459,3 +1459,169 @@ span.arap-red {
 #kviz {
   scroll-margin-top: 96px;
 }
+
+/* ---------- oblačić s objašnjenjem uz riječ koja svira (Player/Oblak.js) ---------- */
+.oblak {
+  position: fixed;
+  z-index: 1055; /* iznad bootstrap modala (1050), ispod plutajućeg plejera (1060) */
+  width: max-content;
+  max-width: min(380px, calc(100vw - 16px));
+  padding: 10px 14px 12px;
+  background: #fff;
+  background-image: linear-gradient(180deg, #fffdf8 0%, #fff 60%);
+  color: var(--ink);
+  border: 1px solid var(--gold-200);
+  border-radius: 14px;
+  box-shadow: 0 14px 34px rgba(16, 59, 92, 0.16);
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+  line-height: 1.5;
+  text-align: left;
+  direction: ltr;
+  pointer-events: none; /* ne smeta klikanju na susjedne riječi */
+  animation: oblak-in 0.2s ease;
+
+  /* strelica prema istaknutom harfu */
+  &::after {
+    content: '';
+    position: absolute;
+    left: var(--strelica, 50%);
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border: 1px solid var(--gold-200);
+    transform: translateX(-50%) rotate(45deg);
+  }
+
+  &--above {
+    transform-origin: var(--strelica, 50%) 100%;
+
+    &::after {
+      bottom: -7px;
+      border-top: 0;
+      border-left: 0;
+    }
+  }
+
+  &--below {
+    transform-origin: var(--strelica, 50%) 0;
+
+    &::after {
+      top: -7px;
+      background: #fffdf8;
+      border-bottom: 0;
+      border-right: 0;
+    }
+  }
+
+  &--skriven {
+    visibility: hidden;
+    opacity: 0;
+    animation: none;
+  }
+
+  &__stavka + &__stavka {
+    margin-top: 9px;
+    padding-top: 9px;
+    border-top: 1px dashed var(--gold-200);
+  }
+
+  &__tip {
+    display: inline-block;
+    margin-bottom: 4px;
+    padding: 2px 9px;
+    border-radius: 999px;
+    font-size: 0.64rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    background: var(--gold-100);
+    color: var(--gold-600);
+
+    /* parovi suprotnosti: tamnoplavo = duže/krupnije, zlatno = kraće/tanje */
+    &--dugo,
+    &--krupno,
+    &--duzina {
+      background: var(--navy);
+      color: #fff;
+    }
+
+    &--kratko,
+    &--tanko,
+    &--stajanje {
+      background: var(--gold-100);
+      color: var(--gold-600);
+      box-shadow: inset 0 0 0 1px var(--gold-200);
+    }
+
+    /* imenovana pravila */
+    &--uklapanje,
+    &--nos,
+    &--odskakanje {
+      background: var(--teal);
+      color: #fff;
+    }
+
+    &--pretvaranje,
+    &--skrivanje {
+      background: var(--purple);
+      color: #fff;
+    }
+
+    &--cisto {
+      background: var(--green);
+      color: #fff;
+    }
+
+    &--napomena {
+      background: var(--cream-2);
+      color: var(--muted);
+    }
+  }
+
+  &__tekst {
+    display: block;
+  }
+
+  &__grupa {
+    white-space: nowrap;
+  }
+
+  /* arapski unutar napomene – mushaf font, malo veći od okolnog teksta */
+  &__ar {
+    display: inline-block;
+    padding: 0 0.12em;
+    font-family: HamdullahMushaf, serif;
+    font-size: 1.6em;
+    line-height: 1;
+    vertical-align: -0.1em;
+    color: var(--navy);
+    unicode-bidi: isolate;
+    white-space: nowrap;
+  }
+}
+
+@keyframes oblak-in {
+  from {
+    opacity: 0;
+    transform: scale(0.94);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .oblak {
+    animation: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .oblak {
+    max-width: calc(100vw - 16px);
+    padding: 9px 12px 10px;
+    font-size: 0.86rem;
+  }
+}

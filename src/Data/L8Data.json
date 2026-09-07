@@ -2,6 +2,9 @@
     "row1": [{
             "id": 1,
             "url": "./assets/audio/l8/1.mp3",
+            "napomena": [
+                {"tip": "pretvaranje", "bs": "Harf N ima sukun (نْ), a iza njega dolazi harf B (بَ), zato se نْ uči kao مْ u trajanju od 2 hareketa.", "en": "The letter N has a sukun (نْ) and is followed by the letter B (بَ), so نْ is recited as مْ for the length of 2 harakas."}
+            ],
             "highlight": "نْ بَ",
             "word": "مِنْ بَعْدِ",
             "after": " čita se: "
@@ -9,6 +12,9 @@
         {
             "id": 2,
             "url": "./assets/audio/l8/2.mp3",
+            "napomena": [
+                {"tip": "pretvaranje", "bs": "Ovo je izgovor prethodnog primjera: نْ je pretvoreno u مْ, zato se مِنْ بَعْدِ uči kao مِـمْبَعْدِ u trajanju od 2 hareketa.", "en": "This is how the previous example sounds: نْ has turned into مْ, so مِنْ بَعْدِ is recited as مِـمْبَعْدِ for the length of 2 harakas."}
+            ],
             "highlight": "مْ",
             "word": "مِـمْبَعْدِ",
             "after": " ; "
@@ -16,6 +22,9 @@
         {
             "id": 3,
             "url": "./assets/audio/l8/3.mp3",
+            "napomena": [
+                {"tip": "pretvaranje", "bs": "U riječi سَـمِيعٌ je tenvin UN (عٌ), a iza njega dolazi harf B (بَ), zato se glas N uči kao م u trajanju od 2 hareketa.", "en": "In سَـمِيعٌ there is the tanween UN (عٌ) followed by the letter B (بَ), so the N sound is recited as م for the length of 2 harakas."}
+            ],
             "highlight": "عٌ بَ",
             "word": "سَـمِيعٌ بَصِيرٌ",
             "after": " čita se: "
@@ -23,6 +32,9 @@
         {
             "id": 4,
             "url": "./assets/audio/l8/4.mp3",
+            "napomena": [
+                {"tip": "pretvaranje", "bs": "Ovo je izgovor prethodnog primjera: umjesto tenvina UN stoji malo م (عُ ۢ), zato se tu uči glas M u trajanju od 2 hareketa.", "en": "This is how the previous example sounds: a small م stands instead of the tanween UN (عُ ۢ), so the M sound is recited for the length of 2 harakas."}
+            ],
             "highlight": "عُ ۢ بَ",
             "word": "سَمِيعُ ۢ بَصِيرٌ",
             "after": null
@@ -32,12 +44,18 @@
 
         "id": 5,
         "url": "./assets/audio/l8/5.mp3",
+        "napomena": [
+            {"tip": "pretvaranje", "bs": "U riječi مِنْ harf N ima sukun (نْ), a iza njega dolazi harf B (بَـ), zato se نْ uči kao م u trajanju od 2 hareketa.", "en": "In مِنْ the letter N has a sukun (نْ) and is followed by the letter B (بَـ), so نْ is recited as م for the length of 2 harakas."}
+        ],
         "highlight": "نْ بَـ",
         "word": "مِنْ بَـقْلِهَا وَقِـثَّٓائِهَا",
         "after": " ; "
     }, {
         "id": 6,
         "url": "./assets/audio/l8/6.mp3",
+        "napomena": [
+            {"tip": "pretvaranje", "bs": "U riječima مِنْ بَـعْدِي harf N ima sukun (نْ), a iza njega dolazi harf B (بَـ), zato se نْ uči kao م u trajanju od 2 hareketa.", "en": "In مِنْ بَـعْدِي the letter N has a sukun (نْ) and is followed by the letter B (بَـ), so نْ is recited as م for the length of 2 harakas."}
+        ],
         "highlight": "نْ بَـ",
         "word": "إِذْ قَالَ لِـبَـنِيـهِ مَا تَعْبُدُونَ مِنْ بَـعْدِي",
         "after": null
@@ -45,6 +63,9 @@
     "row3": [{
         "id": 7,
         "url": "./assets/audio/l8/7.mp3",
+        "napomena": [
+            {"tip": "pretvaranje", "bs": "U riječi صُمٌّ je tenvin UN (مٌّ), a iza njega dolazi harf B (بُ), zato se glas N uči kao م u trajanju od 2 hareketa.", "en": "In صُمٌّ there is the tanween UN (مٌّ) followed by the letter B (بُ), so the N sound is recited as م for the length of 2 harakas."}
+        ],
         "highlight": "مٌّ بُ",
         "word": "صُمٌّ بُـكْمٌ عُمْيٌ فَهُمْ لَا يَرْجِعُونَ",
         "after": null
@@ -69,6 +90,9 @@
         "broj8": [{
             "id": 8,
             "url": "./assets/audio/l8/8.mp3",
+            "napomena": [
+                {"tip": "pretvaranje", "bs": "U riječi عَلِيمٌ je tenvin UN (مٌ), a iza njega dolazi harf B (بِ), zato se glas N uči kao م u trajanju od 2 hareketa.", "en": "In عَلِيمٌ there is the tanween UN (مٌ) followed by the letter B (بِ), so the N sound is recited as م for the length of 2 harakas."}
+            ],
             "highlight": "مٌ بِ",
             "word": "وَاللّٰهُ عَلِيمٌ بِالْمُتَّقِينَ ",
             "after": null
@@ -76,6 +100,9 @@
         "broj9": [{
             "id": 9,
             "url": "./assets/audio/l8/9.mp3",
+            "napomena": [
+                {"tip": "pretvaranje", "bs": "U riječi غَمًّا je tenvin EN (مًّا), a iza njega dolazi harf B (بِ), zato se glas N uči kao م u trajanju od 2 hareketa.", "en": "In غَمًّا there is the tanween AN (مًّا) followed by the letter B (بِ), so the N sound is recited as م for the length of 2 harakas."}
+            ],
             "highlight": "مًّا بِ",
             "word": "فَأَثَابَكُمْ غَمًّا بِغَـمٍّ",
             "after": null
@@ -83,6 +110,9 @@
         "broj10": [{
             "id": 10,
             "url": "./assets/audio/l8/10.mp3",
+            "napomena": [
+                {"tip": "pretvaranje", "bs": "U riječi خَبِيرٌ je tenvin UN (رٌ), a iza njega dolazi harf B (بِ), zato se glas N uči kao م u trajanju od 2 hareketa.", "en": "In خَبِيرٌ there is the tanween UN (رٌ) followed by the letter B (بِ), so the N sound is recited as م for the length of 2 harakas."}
+            ],
             "highlight": "رٌ بِ",
             "word": " وَاللّٰهُ خَبِيرٌ بِمَا تَعْمَلُونَ",
             "after": null
@@ -90,6 +120,9 @@
         "broj11": [{
             "id": 11,
             "url": "./assets/audio/l8/11.mp3",
+            "napomena": [
+                {"tip": "pretvaranje", "bs": "U riječi لَيُـنْبَذَنَّ harf N ima sukun (نْ), a iza njega dolazi harf B (بَ), zato se نْ uči kao م u trajanju od 2 hareketa.", "en": "In لَيُـنْبَذَنَّ the letter N has a sukun (نْ) and is followed by the letter B (بَ), so نْ is recited as م for the length of 2 harakas."}
+            ],
             "highlight": "ـنْبَ",
             "word": "كَلَّا ۖ لَيُـنْبَذَنَّ فِي الْحُطَمَةِ",
             "after": null
@@ -97,6 +130,9 @@
         "broj12": [{
             "id": 12,
             "url": "./assets/audio/l8/12.mp3",
+            "napomena": [
+                {"tip": "pretvaranje", "bs": "U riječi أَنْبِيَٓاءَ harf N ima sukun (نْ), a iza njega dolazi harf B (بِ), zato se نْ uči kao م u trajanju od 2 hareketa.", "en": "In أَنْبِيَٓاءَ the letter N has a sukun (نْ) and is followed by the letter B (بِ), so نْ is recited as م for the length of 2 harakas."}
+            ],
             "highlight": "نْبِ",
             "word": "قُلْ فَلِمَ تَقْتُلُونَ أَنْبِيَٓاءَ اللّٰهِ ",
             "after": null
@@ -104,6 +140,9 @@
         "broj13": [{
             "id": 13,
             "url": "./assets/audio/l8/13.mp3",
+            "napomena": [
+                {"tip": "pretvaranje", "bs": "U riječi مِنْ harf N ima sukun (نْ), a iza njega dolazi harf B (بَـ), zato se نْ uči kao م u trajanju od 2 hareketa.", "en": "In مِنْ the letter N has a sukun (نْ) and is followed by the letter B (بَـ), so نْ is recited as م for the length of 2 harakas."}
+            ],
             "highlight": "نْ بَـ",
             "word": " مِنْ بَـعْدِ مَا تَبَيَّنَ لَهُمُ الْحَقُّ",
             "after": null
@@ -111,6 +150,9 @@
         "broj14": [{
             "id": 14,
             "url": "./assets/audio/l8/14.mp3",
+            "napomena": [
+                {"tip": "pretvaranje", "bs": "U riječi يَـنْـبَـغِي harf N ima sukun (نْ), a iza njega dolazi harf B (بَـ), zato se نْ uči kao م u trajanju od 2 hareketa.", "en": "In يَـنْـبَـغِي the letter N has a sukun (نْ) and is followed by the letter B (بَـ), so نْ is recited as م for the length of 2 harakas."}
+            ],
             "highlight": "نْـبَـ",
             "word": " لَا الشَّمْسُ يَـنْـبَـغِي لَهَا",
             "after": null
@@ -118,6 +160,9 @@
         "broj15": [{
             "id": 15,
             "url": "./assets/audio/l8/15.mp3",
+            "napomena": [
+                {"tip": "pretvaranje", "bs": "U riječi سَمِيعًا je tenvin EN (عًا), a iza njega dolazi harf B (بَ), zato se glas N uči kao م u trajanju od 2 hareketa.", "en": "In سَمِيعًا there is the tanween AN (عًا) followed by the letter B (بَ), so the N sound is recited as م for the length of 2 harakas."}
+            ],
             "highlight": "عًا بَ",
             "word": " إِنَّ اللّٰهَ كَانَ سَمِيعًا بَصِيرًا",
             "after": null
@@ -125,6 +170,9 @@
         "broj16": [{
             "id": 16,
             "url": "./assets/audio/l8/16.mp3",
+            "napomena": [
+                {"tip": "pretvaranje", "bs": "U riječi بِذَنْـبِـهِمْ harf N ima sukun (نْ), a iza njega dolazi harf B (بِـ), zato se نْ uči kao م u trajanju od 2 hareketa.", "en": "In بِذَنْـبِـهِمْ the letter N has a sukun (نْ) and is followed by the letter B (بِـ), so نْ is recited as م for the length of 2 harakas."}
+            ],
             "highlight": "نْـبِـ",
             "word": "فَاعْتَرَفُوا بِذَنْـبِـهِمْ فَسُحْقًا لِأَصْحَابِ السَّعِيرِ",
             "after": null
@@ -132,6 +180,9 @@
         "broj17": [{
             "id": 17,
             "url": "./assets/audio/l8/17.mp3",
+            "napomena": [
+                {"tip": "pretvaranje", "bs": "U riječi تُـنْـبِتُ harf N ima sukun (نْ), a iza njega dolazi harf B (بِ), zato se نْ uči kao م u trajanju od 2 hareketa.", "en": "In تُـنْـبِتُ the letter N has a sukun (نْ) and is followed by the letter B (بِ), so نْ is recited as م for the length of 2 harakas."}
+            ],
             "highlight": "نْـبِ",
             "word": "فَادْعُ لَنَا رَبَّكَ يُخْرِجْ لَنَا مِمَّا تُـنْـبِتُ الْأَرْضُ",
             "after": null
@@ -139,6 +190,10 @@
         "broj18": [{
                 "id": 18,
                 "url": "./assets/audio/l8/18.mp3",
+                "napomena": [
+                    {"tip": "pretvaranje", "bs": "U riječima مِنْ بَـنِٓي harf N ima sukun (نْ), a iza njega dolazi harf B (بَـ), zato se نْ uči kao م u trajanju od 2 hareketa.", "en": "In مِنْ بَـنِٓي the letter N has a sukun (نْ) and is followed by the letter B (بَـ), so نْ is recited as م for the length of 2 harakas."},
+                    {"tip": "pretvaranje", "bs": "U riječima مِنْ بَـعْدِ harf N ima sukun (نْ), a iza njega dolazi harf B (بَـ), zato se نْ uči kao م u trajanju od 2 hareketa.", "en": "In مِنْ بَـعْدِ the letter N has a sukun (نْ) and is followed by the letter B (بَـ), so نْ is recited as م for the length of 2 harakas."}
+                ],
                 "highlight": "نْ بَ",
                 "word": " إِسْرَٓائِيلَ مِنْ بَـعْدِ مُوسٰى",
                 "after": null

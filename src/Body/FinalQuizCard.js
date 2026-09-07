@@ -5,7 +5,6 @@ import { useAuth } from '../auth/AuthContext';
 import {
 	ZAVRSNI,
 	UKUPNO_ZAVRSNI,
-	jeOtkljucanZavrsni,
 	jePolozenZavrsni,
 	trenutnaLekcija,
 	putanjaKviza,
@@ -16,10 +15,10 @@ import { useUI } from '../i18n/ui';
 /* Kartica završnog kviza na dnu pregleda lekcija */
 export default function FinalQuizCard() {
 	const ui = useUI();
-	const { user, loading, progress } = useAuth();
+	const { user, loading, progress, isUnlocked } = useAuth();
 	const p = progress[ZAVRSNI];
 	const polozen = jePolozenZavrsni(progress);
-	const locked = !loading && !jeOtkljucanZavrsni(progress);
+	const locked = !loading && !isUnlocked(ZAVRSNI);
 	const trenutna = trenutnaLekcija(progress) || 1;
 
 	return (

@@ -1,12 +1,14 @@
 import React, { createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react';
 import { api, getToken, setToken } from './api';
-import { jeOtkljucana } from './progress';
+import { ZAVRSNI, jeOtkljucana, jeOtkljucanZavrsni } from './progress';
 
 /*
  * Prijavljeni korisnik i njegov napredak.
  *   user      – { id, ime, email, progress } ili null (gost)
  *   loading   – true dok se uz postojeći token provjerava /api/me
  *   progress  – { '1': { najbolje, zadnje, pokusaji, polozeno, datum }, ... }
+ *   isAdmin   – korisnik s ulogom 'admin': njemu su sve lekcije i završni kviz uvijek otključani
+ *   isUnlocked(key) – key je broj lekcije ('3', '14_2') ili ZAVRSNI
  */
 const EMPTY = {};
 
@@ -14,6 +16,7 @@ const AuthContext = createContext({
 	user: null,
 	loading: false,
 	progress: EMPTY,
+	isAdmin: false,
 	isUnlocked: () => true,
 	login: async () => null,
 	register: async () => null,
@@ -82,19 +85,22 @@ export function AuthProvider({ children }) {
 	}, []);
 
 	const progress = (user && user.progress) || EMPTY;
+	const isAdmin = !!(user && user.uloga === 'admin');
 
 	const value = useMemo(
 		() => ({
 			user,
 			loading,
 			progress,
-			isUnlocked: (key) => jeOtkljucana(progress, key),
+			isAdmin,
+			isUnlocked: (key) =>
+				isAdmin || (key === ZAVRSNI ? jeOtkljucanZavrsni(progress) : jeOtkljucana(progress, key)),
 			login,
 			register,
 			logout,
 			saveResult
 		}),
-		[ user, loading, progress, login, register, logout, saveResult ]
+		[ user, loading, progress, isAdmin, login, register, logout, saveResult ]
 	);
 
 	return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;

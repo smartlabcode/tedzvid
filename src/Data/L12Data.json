@@ -3,6 +3,9 @@
 
             "id": 3,
             "url": "./assets/audio/l12/3.mp3",
+            "napomena": [
+                {"tip": "skrivanje", "bs": "U riječima تَرْمِيهِمْ بِحِجَارَةٍ poslije harfa مْ sa sukunom dolazi harf بِ, zato se izgovor harfa م skriva i produžava u trajanju od 2 hareketa.", "en": "In تَرْمِيهِمْ بِحِجَارَةٍ the letter مْ with a sukun is followed by the letter بِ, so the letter م is hidden and prolonged for the length of 2 harakas."}
+            ],
             "highlight": "مْ بِ",
             "word": "تَرْمِيهِمْ بِحِجَارَةٍ",
             "after": " ; "
@@ -10,12 +13,18 @@
         {
             "id": 2,
             "url": "./assets/audio/l12/2.mp3",
+            "napomena": [
+                {"tip": "skrivanje", "bs": "Na kraju riječi أَمْ je harf مْ sa sukunom, a odmah iza njega je harf بِ, zato se م uči skriveno i produženo u trajanju od 2 hareketa.", "en": "At the end of أَمْ there is مْ with a sukun, immediately followed by بِ, so م is recited hidden and prolonged for the length of 2 harakas."}
+            ],
             "highlight": "مْ بِ",
             "word": "أَمْ بِـهِ",
             "after": " ; "
         }, {
             "id": 1,
             "url": "./assets/audio/l12/1.mp3",
+            "napomena": [
+                {"tip": "skrivanje", "bs": "U riječima فَهُمْ بِـهِ harf مْ sa sukunom prati harf بِ, zato se م ne uči kratko nego skriveno, uz produženje od 2 hareketa.", "en": "In فَهُمْ بِـهِ the letter مْ with a sukun is followed by the letter بِ, so م is not recited short but hidden, with a prolongation of 2 harakas."}
+            ],
             "highlight": "مْ بِـ",
             "word": "فَهُمْ بِـهِ مُسْتَمْسِكُونَ",
             "after": null
@@ -25,12 +34,18 @@
 
         "id": 4,
         "url": "./assets/audio/l12/4.mp3",
+        "napomena": [
+            {"tip": "skrivanje", "bs": "U riječima رَبَّهُمْ بِالْغَدَاةِ poslije harfa مْ sa sukunom dolazi harf بِ, zato se izgovor harfa م skriva i produžava u trajanju od 2 hareketa.", "en": "In رَبَّهُمْ بِالْغَدَاةِ the letter مْ with a sukun is followed by the letter بِ, so the letter م is hidden and prolonged for the length of 2 harakas."}
+        ],
         "highlight": "مْ بِ",
         "word": "يَدْعُونَ رَبَّهُمْ بِالْغَدَاةِ وَالْعَشِيِّ",
         "after": " ; "
     }, {
         "id": 5,
         "url": "./assets/audio/l12/5.mp3",
+        "napomena": [
+            {"tip": "skrivanje", "bs": "U riječima يَعِظُكُمْ بِهِ harf مْ sa sukunom prati harf بِ, zato se م ne uči kratko nego skriveno, uz produženje od 2 hareketa.", "en": "In يَعِظُكُمْ بِهِ the letter مْ with a sukun is followed by the letter بِ, so م is not recited short but hidden, with a prolongation of 2 harakas."}
+        ],
         "highlight": "مْ بِ",
         "word": "إِنَّ اللّٰـهَ نِعِمَّا يَعِظُكُمْ بِهِ",
         "after": null
@@ -38,6 +53,9 @@
     "row3": [{
         "id": 6,
         "url": "./assets/audio/l12/6.mp3",
+        "napomena": [
+            {"tip": "skrivanje", "bs": "U riječima وَصَّاكُمْ بِهِ poslije harfa مْ sa sukunom dolazi harf بِ, zato se izgovor harfa م skriva i produžava u trajanju od 2 hareketa.", "en": "In وَصَّاكُمْ بِهِ the letter مْ with a sukun is followed by the letter بِ, so the letter م is hidden and prolonged for the length of 2 harakas."}
+        ],
         "highlight": "مْ بِ",
         "word": "ذٰلِكُمْ وَصَّاكُمْ بِهِ لَعَلَّكُمْ تَعْقِلُونَ",
         "after": null
@@ -63,6 +81,9 @@
         "broj7": [{
             "id": 7,
             "url": "./assets/audio/l12/7.mp3",
+            "napomena": [
+                {"tip": "skrivanje", "bs": "U riječima يَأْمُرُكُمْ بِهِٓ poslije harfa مْ sa sukunom dolazi harf بِ, zato se izgovor harfa م skriva i produžava u trajanju od 2 hareketa.", "en": "In يَأْمُرُكُمْ بِهِٓ the letter مْ with a sukun is followed by the letter بِ, so the letter م is hidden and prolonged for the length of 2 harakas."}
+            ],
             "highlight": "مْ بِ",
             "word": "قُلْ بِئْسَمَا يَأْمُرُكُمْ بِهِٓ إِيمَانُكُمْ ",
             "after": null
@@ -70,6 +91,9 @@
         "broj8": [{
             "id": 8,
             "url": "./assets/audio/l12/8.mp3",
+            "napomena": [
+                {"tip": "skrivanje", "bs": "U riječima اٰمَنْـتُمْ بِهِ harf مْ sa sukunom prati harf بِ, zato se م ne uči kratko nego skriveno, uz produženje od 2 hareketa.", "en": "In اٰمَنْـتُمْ بِهِ the letter مْ with a sukun is followed by the letter بِ, so م is not recited short but hidden, with a prolongation of 2 harakas."}
+            ],
             "highlight": "مْ بِ",
             "word": "فَإِنْ اٰمَنُوا بِمِثْلِ مَٓا اٰمَنْـتُمْ بِهِ فَقَدِ اهْتَدَوْا",
             "after": null
@@ -77,6 +101,9 @@
         "broj9": [{
             "id": 9,
             "url": "./assets/audio/l12/9.mp3",
+            "napomena": [
+                {"tip": "skrivanje", "bs": "Na kraju riječi وَصَّاكُمْ je harf مْ sa sukunom, a odmah iza njega je harf بِ, zato se م uči skriveno i produženo u trajanju od 2 hareketa.", "en": "At the end of وَصَّاكُمْ there is مْ with a sukun, immediately followed by بِ, so م is recited hidden and prolonged for the length of 2 harakas."}
+            ],
             "highlight": "مْ بِ",
             "word": " ذٰلِكُمْ وَصَّاكُمْ بِهِ لَعَلَّكُمْ تَعْقِلُونَ ",
             "after": null
@@ -84,6 +111,9 @@
         "broj10": [{
             "id": 10,
             "url": "./assets/audio/l12/10.mp3",
+            "napomena": [
+                {"tip": "skrivanje", "bs": "U riječima يَأْمُرُهُمْ بِالْمَعْرُوفِ poslije harfa مْ sa sukunom dolazi harf بِ, zato se izgovor harfa م skriva i produžava u trajanju od 2 hareketa.", "en": "In يَأْمُرُهُمْ بِالْمَعْرُوفِ the letter مْ with a sukun is followed by the letter بِ, so the letter م is hidden and prolonged for the length of 2 harakas."}
+            ],
             "highlight": "مْ بِا",
             "word": "يَأْمُرُهُمْ بِالْمَعْرُوفِ وَيَنْهَاهُمْ عَنِ الْمُنْـكَرِ",
             "after": null
@@ -91,6 +121,9 @@
         "broj11": [{
             "id": 11,
             "url": "./assets/audio/l12/11.mp3",
+            "napomena": [
+                {"tip": "skrivanje", "bs": "U riječima لِيُعَذِّبَهُمْ بِهَا harf مْ sa sukunom prati harf بِ, zato se م ne uči kratko nego skriveno, uz produženje od 2 hareketa.", "en": "In لِيُعَذِّبَهُمْ بِهَا the letter مْ with a sukun is followed by the letter بِ, so م is not recited short but hidden, with a prolongation of 2 harakas."}
+            ],
             "highlight": "مْ بِ",
             "word": "إِنَّمَا يُرِيدُ اللّٰهُ لِيُعَذِّبَهُمْ بِهَا فِي الْحَيَاةِ الدُّنْـيَا",
             "after": null
@@ -98,6 +131,9 @@
         "broj12": [{
             "id": 12,
             "url": "./assets/audio/l12/12.mp3",
+            "napomena": [
+                {"tip": "skrivanje", "bs": "U riječima وَتُـزَكِّـيهِمْ بِهَا poslije harfa مْ sa sukunom dolazi harf بِ, zato se izgovor harfa م skriva i produžava u trajanju od 2 hareketa.", "en": "In وَتُـزَكِّـيهِمْ بِهَا the letter مْ with a sukun is followed by the letter بِ, so the letter م is hidden and prolonged for the length of 2 harakas."}
+            ],
             "highlight": "مْ بِ",
             "word": " خُذْ مِنْ أَمْوَالِهِمْ صَدَقَةً تُطَـهِّرُهُمْ وَتُـزَكِّـيهِمْ بِهَا",
             "after": null
@@ -105,6 +141,9 @@
         "broj13": [{
             "id": 13,
             "url": "./assets/audio/l12/13.mp3",
+            "napomena": [
+                {"tip": "skrivanje", "bs": "Na kraju riječi رَبُّهُمْ je harf مْ sa sukunom, a odmah iza njega je harf بِ, zato se م uči skriveno i produženo u trajanju od 2 hareketa.", "en": "At the end of رَبُّهُمْ there is مْ with a sukun, immediately followed by بِ, so م is recited hidden and prolonged for the length of 2 harakas."}
+            ],
             "highlight": "مْ بِـ",
             "word": " يَهْدِيهِمْ رَبُّهُمْ بِـإِيمَانِهِمْ",
             "after": null
@@ -112,6 +151,9 @@
         "broj14": [{
             "id": 14,
             "url": "./assets/audio/l12/14.mp3",
+            "napomena": [
+                {"tip": "skrivanje", "bs": "U riječima اٰمَنْـتُمْ بِهِ poslije harfa مْ sa sukunom dolazi harf بِ, zato se izgovor harfa م skriva i produžava u trajanju od 2 hareketa.", "en": "In اٰمَنْـتُمْ بِهِ the letter مْ with a sukun is followed by the letter بِ, so the letter م is hidden and prolonged for the length of 2 harakas."}
+            ],
             "highlight": "مْ بِ",
             "word": "أَثُمَّ إِذَا مَا وَقَعَ اٰمَنْـتُمْ بِهِ",
             "after": null
@@ -119,6 +161,9 @@
         "broj15": [{
             "id": 15,
             "url": "./assets/audio/l12/15.mp3",
+            "napomena": [
+                {"tip": "skrivanje", "bs": "U riječima قُلُوبُهُمْ بِذِكْرِ harf مْ sa sukunom prati harf بِ, zato se م ne uči kratko nego skriveno, uz produženje od 2 hareketa.", "en": "In قُلُوبُهُمْ بِذِكْرِ the letter مْ with a sukun is followed by the letter بِ, so م is not recited short but hidden, with a prolongation of 2 harakas."}
+            ],
             "highlight": "مْ بِ",
             "word": "أَلَّذِينَ اٰمَنُوا وَتَطْمَئِنُّ قُلُوبُهُمْ بِذِكْرِ اللّٰهِ",
             "after": null

@@ -28,7 +28,7 @@ function Vjezbe(data, mainrow, rows) {
 
 		return (
 			<span key={'key' + data[0].id}>
-				<Player url={data[0].url} key={'p' + data[0].id}>
+				<Player url={data[0].url} note={data[0].napomena} key={'p' + data[0].id}>
 					{
 						<Arabic arabic={data[0].highlight} key={'a' + data[0].id}>
 							{ar}

@@ -11,7 +11,6 @@ import {
 	ZAVRSNI,
 	UKUPNO_ZAVRSNI,
 	PROLAZ_ZAVRSNI,
-	jeOtkljucanZavrsni,
 	trenutnaLekcija,
 	putanjaKviza
 } from '../auth/progress';
@@ -19,7 +18,7 @@ import { useUI } from '../i18n/ui';
 
 /* Završni kviz (/zavrsni-kviz): 100 pitanja iz svih lekcija; otključan kad su položene sve lekcije */
 export default function FinalQuizPage() {
-	const { user, loading, progress } = useAuth();
+	const { user, loading, progress, isUnlocked } = useAuth();
 	const ui = useUI();
 	const location = useLocation();
 
@@ -27,7 +26,7 @@ export default function FinalQuizPage() {
 		window.scrollTo(0, 0);
 	}, []);
 
-	const otkljucan = !loading && jeOtkljucanZavrsni(progress);
+	const otkljucan = !loading && isUnlocked(ZAVRSNI);
 	const trenutna = trenutnaLekcija(progress) || 1;
 	const from = location.pathname;
 

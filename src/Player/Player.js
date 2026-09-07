@@ -1,10 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
 import * as audioBus from './audioBus';
 import { useUI } from '../i18n/ui';
+import Oblak from './Oblak';
 
 let counter = 0;
 
-/* Klikabilna riječ/ajet – zvuk ide preko zajedničkog audioBus-a */
+/* Klikabilna riječ/ajet – zvuk ide preko zajedničkog audioBus-a.
+   `note` (napomena iz podataka lekcije) se dok zapis svira/pauziran je prikazuje kao oblačić uz istaknuti harf. */
 const Player = (props) => {
 	const idRef = useRef(null);
 	if (idRef.current === null) idRef.current = ++counter;
@@ -27,8 +29,11 @@ const Player = (props) => {
 	};
 
 	const cls = status === 'playing' ? 'svira' : status === 'paused' ? 'pauzirano' : 'ne-svira';
+	const notes = Array.isArray(props.note) ? props.note : props.note ? [ props.note ] : [];
+	const oblak = status !== 'idle' && notes.length > 0;
 
 	return (
+		<React.Fragment>
 		<span
 			ref={spanRef}
 			className={'rijec-audio ' + cls}
@@ -47,6 +52,8 @@ const Player = (props) => {
 		>
 			{props.children}
 		</span>
+		{oblak && <Oblak anchorRef={spanRef} notes={notes} />}
+		</React.Fragment>
 	);
 };
 

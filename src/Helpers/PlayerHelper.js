@@ -15,7 +15,7 @@ function PRow(data, rowname) {
 			}
 			return (
 				<span key={'key' + dat.id} onClick={toggle}>
-					<Player url={dat.url} key={'p' + dat.id} playr={playing ? true : false}>
+					<Player url={dat.url} note={dat.napomena} key={'p' + dat.id} playr={playing ? true : false}>
 						<Arabic arabic={dat.highlight} key={'a' + dat.id}>
 							{dat.word}
 						</Arabic>

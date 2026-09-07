@@ -16,7 +16,16 @@ Produkcija (Railway): `npm run build`, zatim `npm run serve` – isti Node serve
 
 - Registracija (`/registracija`: ime, korisničko ime, email, lozinka), prijava (`/prijava`, email ili korisničko ime), pregled napretka (`/profil`). Korisničko ime (3–20 znakova, jedinstveno) prikazuje se na rang listi.
 - Nakon svake lekcije je kviz od 10 pitanja (`src/Data/Quiz/L{n}.json`, bs + en). Lekcija 14 ima dva dijela; kviz je na kraju drugog dijela (`/lekcija14_2`).
-- Lekcije se otključavaju redom: lekcija N+1 je otključana kad je položen kviz lekcije N (najmanje 7 od 10 tačnih). Gost vidi samo lekciju 1.
+- Lekcije se otključavaju redom: lekcija N+1 je otključana kad je položen kviz lekcije N (najmanje 7 od 10 tačnih). Gost vidi samo lekciju 1. Adminu su sve lekcije i završni kviz uvijek otključani (provjera i na klijentu i na serveru).
+- Uz svaki klikabilni primjer (riječ ili ajet) u lekcijama i vježbama stoji objašnjenje koje se dok zapis svira prikazuje kao oblačić uz istaknuti harf. Tekstovi žive u `src/Data/L{n}Data.json`, u polju `napomena` onog zapisa koji ima `url`:
+
+```json
+"napomena": [
+    { "tip": "uklapanje", "bs": "...", "en": "..." }
+]
+```
+
+  Kad grupa ima više zapisa, a samo prvi ima `url` (vježbe i `V(...)` redovi), napomena ide na taj prvi zapis i pokriva sve pojave u ajetu, redom čitanja. Dozvoljeni `tip` (određuje natpis i boju oznake, prijevodi su u `src/i18n/ui.js` pod `napomenaTip`): `dugo`, `kratko`, `krupno`, `tanko`, `duzina`, `stajanje`, `uklapanje`, `nos`, `odskakanje`, `pretvaranje`, `skrivanje`, `cisto`, `napomena`. Sam oblačić crta `src/Player/Oblak.js`.
 - Završni kviz (`/zavrsni-kviz`): 100 pitanja iz svih lekcija (`src/Data/Quiz/zavrsni/L{n}.json`, 5 po lekciji za lekcije 1–12, 4 za 13–22), izmiješanim redoslijedom; otključan kad su položene sve lekcije, prolaz 70/100. Započeti kviz se pamti u sessionStorage.
 - Rang lista (`/rang-lista`): sedmica (od ponedjeljka), mjesec i ukupno, po vremenu Europe/Sarajevo; bodovi = zbir najboljeg rezultata svakog kviza u periodu (ponavljanje ne donosi bodove). Admin i demo korisnik nisu na listi.
 - Ugrađeni računi (prijava korisničkim imenom): admin `admin` / `admin123!` (promijeniti preko `ADMIN_USER` / `ADMIN_PASSWORD`), demo `user` / `user123!` (isključiti s `DEMO_USER=0`). Admin panel `/admin`: sažetak i napredak svih korisnika.

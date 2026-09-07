@@ -171,6 +171,24 @@ const UI = {
 		audioUnavailable: 'Audio zapis nije dostupan.',
 		audioStopClose: 'Zaustavi i zatvori',
 
+		/* ----- oblačić s objašnjenjem uz riječ koja svira ----- */
+		napomenaAria: 'Objašnjenje',
+		napomenaTip: {
+			dugo: 'Uči se dugo',
+			kratko: 'Uči se kratko',
+			krupno: 'Uči se krupno',
+			tanko: 'Uči se tanko',
+			duzina: 'Dužina',
+			stajanje: 'Stajanje',
+			uklapanje: 'Uklapanje',
+			nos: 'Kroz nos',
+			odskakanje: 'Odskakanje',
+			pretvaranje: 'Pretvaranje',
+			skrivanje: 'Skrivanje',
+			cisto: 'Čisto',
+			napomena: 'Napomena'
+		},
+
 		/* ----- korisnički račun ----- */
 		navPrijava: 'Prijava',
 		navRegistracija: 'Registracija',
@@ -501,6 +519,24 @@ const UI = {
 		audioPosition: 'Position in the recording',
 		audioUnavailable: 'This audio recording is not available.',
 		audioStopClose: 'Stop and close',
+
+		/* ----- explanation bubble next to the playing word ----- */
+		napomenaAria: 'Explanation',
+		napomenaTip: {
+			dugo: 'Recited long',
+			kratko: 'Recited short',
+			krupno: 'Recited heavy',
+			tanko: 'Recited light',
+			duzina: 'Prolongation',
+			stajanje: 'Stopping',
+			uklapanje: 'Merging',
+			nos: 'Through the nose',
+			odskakanje: 'Bouncing',
+			pretvaranje: 'Conversion',
+			skrivanje: 'Hiding',
+			cisto: 'Clear',
+			napomena: 'Note'
+		},
 
 		/* ----- account ----- */
 		navPrijava: 'Log in',

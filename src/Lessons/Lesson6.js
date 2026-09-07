@@ -72,7 +72,7 @@ const TXT = {
 				<Row className="text-center reorder-basic ">
 					<Col>
 						<span key={'key' + data.row3[2].id}>
-							<Player url={data.row3[2].url} key={'p' + data.row3[2].id}>
+							<Player url={data.row3[2].url} note={data.row3[2].napomena} key={'p' + data.row3[2].id}>
 								{r3}
 							</Player>
 						</span>{' '}
@@ -134,7 +134,7 @@ const TXT = {
 				<Row className="text-center ">
 					<Col>
 						<span key={'key' + data.row3[2].id}>
-							<Player url={data.row3[2].url} key={'p' + data.row3[2].id}>
+							<Player url={data.row3[2].url} note={data.row3[2].napomena} key={'p' + data.row3[2].id}>
 								{r3}
 							</Player>
 						</span>{' '}
@@ -205,7 +205,7 @@ const TXT = {
 				<Row className="text-center reorder-basic ">
 					<Col>
 						<span key={'key' + data.row3[2].id}>
-							<Player url={data.row3[2].url} key={'p' + data.row3[2].id}>
+							<Player url={data.row3[2].url} note={data.row3[2].napomena} key={'p' + data.row3[2].id}>
 								{r3}
 							</Player>
 						</span>{' '}
@@ -266,7 +266,7 @@ const TXT = {
 				<Row className="text-center ">
 					<Col>
 						<span key={'key' + data.row3[2].id}>
-							<Player url={data.row3[2].url} key={'p' + data.row3[2].id}>
+							<Player url={data.row3[2].url} note={data.row3[2].napomena} key={'p' + data.row3[2].id}>
 								{r3}
 							</Player>
 						</span>{' '}
