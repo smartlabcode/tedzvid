@@ -176,16 +176,23 @@ const CORS_IZVORI = new Set(
 function cors(req, res) {
 	const origin = req.headers.origin;
 	if (!origin) return true; /* isti izvor / bez preglednika */
-	let dozvoljen = CORS_IZVORI.has(origin);
-	if (!dozvoljen) {
-		/* Android WebView na nekim verzijama dodaje port */
-		try {
-			const u = new URL(origin);
-			dozvoljen = (u.hostname === 'localhost' || u.hostname === '127.0.0.1') && u.protocol !== 'file:';
-		} catch (e) {
-			dozvoljen = false;
-		}
+
+	let u = null;
+	try {
+		u = new URL(origin);
+	} catch (e) {
+		return false;
 	}
+
+	/* Preglednik šalje Origin i za POST sa same stranice (prijava, registracija).
+	   To nije CORS nego vlastiti izvor, pa prolazi bez dodatnih zaglavlja.
+	   Iza proxyja (Railway) javnu adresu nosi x-forwarded-host. */
+	const host = String(req.headers['x-forwarded-host'] || req.headers.host || '').split(',')[0].trim();
+	if (host && u.host === host) return true;
+
+	/* Android WebView na nekim verzijama dodaje port */
+	const dozvoljen =
+		CORS_IZVORI.has(origin) || ((u.hostname === 'localhost' || u.hostname === '127.0.0.1') && u.protocol !== 'file:');
 	if (!dozvoljen) return false;
 	res.setHeader('Access-Control-Allow-Origin', origin);
 	res.setHeader('Vary', 'Origin');
