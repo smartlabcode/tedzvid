@@ -2798,12 +2798,20 @@ textarea.field {
 /* =========================================================
    BONUS LEKCIJA: SURA JASIN
    Cijela sura po stranicama mushafa; svako tedžvidsko pravilo
-   ima svoju boju (--boja dolazi iz kataloga YasinPravila.json).
+   ima svoju boju (--boja dolazi iz kataloga SurePravila.json).
    ========================================================= */
-.jasin {
+.sura {
   position: relative;
   margin-top: -52px;
   padding-bottom: 96px;
+
+  &__osuri {
+    max-width: 760px;
+    margin: 0 auto 22px;
+    font-size: 0.86rem;
+    text-align: center;
+    color: var(--muted);
+  }
 
   &__uvod {
     max-width: 760px;
@@ -2820,7 +2828,7 @@ textarea.field {
 }
 
 /* ---------- legenda boja ---------- */
-.jasin-legenda {
+.sura-legenda {
   padding: 20px 24px 8px;
   margin-bottom: 22px;
   background: #fff;
@@ -2838,9 +2846,6 @@ textarea.field {
     border-bottom: 1px solid var(--line);
 
     h2 {
-      display: flex;
-      align-items: center;
-      gap: 10px;
       margin: 0;
       font-family: var(--font-display);
       font-size: 1.5rem;
@@ -2849,6 +2854,16 @@ textarea.field {
 
       svg {
         color: var(--gold);
+      }
+
+      /* odjeljak na koji se brojevi u legendi odnose */
+      em {
+        font-family: var(--font-sans);
+        font-style: normal;
+        font-size: 0.82rem;
+        font-weight: 600;
+        letter-spacing: 0;
+        color: var(--gold-600);
       }
     }
   }
@@ -2862,7 +2877,7 @@ textarea.field {
   &__grupa {
     padding: 14px 0 6px;
 
-    + .jasin-legenda__grupa {
+    + .sura-legenda__grupa {
       border-top: 1px dashed var(--line);
     }
 
@@ -2892,7 +2907,7 @@ textarea.field {
   }
 }
 
-.jasin-cip {
+.sura-cip {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -2932,12 +2947,12 @@ textarea.field {
   &.is-off {
     opacity: 0.45;
 
-    .jasin-cip__tacka {
+    .sura-cip__tacka {
       background: transparent;
       box-shadow: inset 0 0 0 2px var(--boja);
     }
 
-    .jasin-cip__ime {
+    .sura-cip__ime {
       color: var(--muted);
       text-decoration: line-through;
     }
@@ -2962,7 +2977,7 @@ textarea.field {
   }
 }
 
-.jasin-cip__lekcija {
+.sura-cip__lekcija {
   font-size: 0.76rem;
   color: var(--muted);
   text-decoration: underline;
@@ -2974,7 +2989,7 @@ textarea.field {
 }
 
 /* ---------- izbor stranice mushafa ---------- */
-.jasin-stranice {
+.sura-izbor {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 8px;
@@ -3020,7 +3035,7 @@ textarea.field {
 }
 
 /* ---------- traka s napomenom o zvuku i puštanjem stranice ---------- */
-.jasin-traka {
+.sura-traka {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
@@ -3053,7 +3068,7 @@ textarea.field {
   }
 }
 
-.jasin-prekidac {
+.sura-prekidac {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -3070,7 +3085,7 @@ textarea.field {
 }
 
 /* ---------- stranica sure ---------- */
-.jasin-stranica {
+.sura-odjeljak {
   padding: 8px 0 0;
 
   &__naslov {
@@ -3095,7 +3110,7 @@ textarea.field {
   }
 }
 
-.jasin-ajet {
+.sura-ajet {
   display: flex;
   flex-wrap: wrap;
   gap: 10px 16px;
@@ -3197,7 +3212,7 @@ textarea.field {
 }
 
 /* obojeni harf: klikom otvara objašnjenje pravila */
-.jasin-h {
+.sura-h {
   color: var(--boja);
   cursor: pointer;
   border-radius: 0.2em;
@@ -3218,7 +3233,7 @@ textarea.field {
 }
 
 /* ---------- spisak pravila ispod ajeta ---------- */
-.jasin-pravila {
+.sura-pravila {
   flex: 1 1 100%;
   margin: 4px 0 0;
   padding: 12px 0 0;
@@ -3236,7 +3251,7 @@ textarea.field {
     border-right: 4px solid var(--boja);
     cursor: pointer;
 
-    + .jasin-pravila__stavka {
+    + .sura-pravila__stavka {
       margin-top: 4px;
     }
 
@@ -3296,7 +3311,7 @@ textarea.field {
   }
 }
 
-.jasin-kraj {
+.sura-kraj {
   display: flex;
   justify-content: space-between;
   gap: 12px;
@@ -3318,13 +3333,13 @@ textarea.field {
 }
 
 @media (max-width: 900px) {
-  .jasin-stranice {
+  .sura-izbor {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (max-width: 640px) {
-  .jasin-ajet {
+  .sura-ajet {
     padding: 14px;
 
     &__alat {
@@ -3339,11 +3354,114 @@ textarea.field {
     }
   }
 
-  .jasin-pravila__rijec {
+  .sura-pravila__rijec {
     min-width: 0;
   }
 
-  .jasin-stranice {
+  .sura-izbor {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ---------- Amme džuz: izbor sure, besmela, naziv sure ---------- */
+.sura-izbor--sure {
+  grid-template-columns: repeat(6, 1fr);
+  gap: 6px;
+
+  .sura-izbor__gumb {
+    padding: 7px 4px;
+    border-radius: 12px;
+
+    strong {
+      font-size: 0.82rem;
+      line-height: 1.2;
+    }
+
+    span {
+      font-size: 0.7rem;
+    }
+  }
+}
+
+/* besmela stoji ispred svake sure, pa se blago izdvaja */
+.sura-ajet.je-besmela {
+  background: var(--cream);
+  border-style: dashed;
+
+  .sura-ajet__pusti {
+    background: var(--teal);
+  }
+
+  .sura-ajet__alat {
+    width: auto;
+  }
+
+  .sura-ajet__broj {
+    font-size: 0.76rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+}
+
+/* arapski naziv sure uz naslov odjeljka */
+.sura-odjeljak__naslov em {
+  font-family: HamdullahMushaf, serif;
+  font-style: normal;
+  font-size: 1.9rem;
+  line-height: 1;
+  color: var(--gold-600);
+}
+
+@media (max-width: 900px) {
+  .sura-izbor--sure {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .sura-izbor--sure {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ---------- legenda boja: skupljena dok se ne klikne na naslov ---------- */
+.sura-legenda {
+  &__prekidac {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    background: none;
+    border: 0;
+    font: inherit;
+    color: inherit;
+    letter-spacing: inherit;
+    text-align: left;
+    cursor: pointer;
+
+    &:hover,
+    &:focus-visible {
+      color: var(--gold-600);
+    }
+  }
+
+  &__strelica {
+    font-size: 0.7em;
+    color: var(--gold);
+    transition: transform 0.18s ease;
+  }
+
+  /* skupljena: bez linije ispod naslova i bez praznog prostora */
+  &:not(.je-otvorena) {
+    padding-bottom: 20px;
+
+    .sura-legenda__vrh {
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+  }
+
+  &.je-otvorena .sura-legenda__strelica {
+    transform: rotate(180deg);
   }
 }

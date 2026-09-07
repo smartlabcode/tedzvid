@@ -53,4 +53,8 @@ export const jePolozenZavrsni = (progress) => jePolozena(progress, ZAVRSNI);
 /* ----- bonus lekcija: sura Jasin, otključana kad su položene sve lekcije ----- */
 export const BONUS = 'jasin';
 export const putanjaBonusa = '/jasin';
+export const putanjaAmmeDzuza = '/amme-dzuz';
+export const putanjaFatihe = '/fatiha';
+export const putanjaKursija = '/ajetul-kursij';
+export const putanjaMulka = '/mulk';
 export const jeOtkljucanBonus = (progress) => jePolozena(progress, BROJ_LEKCIJA);

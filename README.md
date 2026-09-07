@@ -49,6 +49,46 @@ Okruženje:
 
 Na Railwayu je disk privremen: da korisnici prežive novi deploy, montirati Volume i postaviti `DATA_DIR` na tu putanju (npr. `/data`), a `SESSION_SECRET` postaviti kao varijablu.
 
+### Bonus lekcije: sura Jasin i Amme džuz
+
+Dvije bonus lekcije s kur'anskim tekstom otključavaju se tek kad su položeni kvizovi svih
+22 lekcije (isto pravilo kao završni kviz; adminu su otključane odmah):
+
+* `/jasin` – cijela sura Jasin, razložena po stranicama mushafa (440–445),
+* `/amme-dzuz` – trideseti (Amme) džuz: 37 sura (En-Nebe’ … En-Nas), sura po sura, svaka s besmelom.
+
+U oba slučaja svaki obojeni dio teksta nosi jedno tedžvidsko pravilo iz lekcija 1–22, s
+objašnjenjem zašto se baš tu primjenjuje. Prikaz je zajednički (`src/Lessons/SuraTekst.js`),
+razlikuju se samo natpisi i podaci. Legenda broji pravila **za otvoreni odjeljak** – za
+pojedinu suru odnosno za pojedinu stranicu mushafa – pa se vidi šta se u njoj zaista javlja.
+
+Tekst i pravila nisu pisani rukom nego ih gradi skripta:
+
+```bash
+node scripts/sure/build.js      # → src/Data/YasinData.json, AmmeDzuzData.json, SurePravila.json
+node scripts/sure/provjeri.js   # provjera izgrađenih podataka
+```
+
+Skripta spaja tri izvora (jednom ih preuzme i kešira u `scripts/sure/.cache/`):
+
+* **api.quran.com, uthmani** – čist tekst, koji se i prikazuje,
+* **api.quran.com, uthmani\_tajweed** – isti tekst s oznakama tedžvidskog mushafa (ihfa,
+  iklab, uklapanja, kalkala, gunne, harfovi koji se ne uče); oznake se poravnavaju na čisti
+  tekst jer se pravopis dva zapisa mjestimično razlikuje,
+* **api.alquran.cloud** – stranica mushafa za svaki ajet i podaci o suri.
+
+Pravila koja mushaf ne boji (izhar hallkijj i šefevijj, lafzatullah, damir, hukmurra, sve
+dužine, znakovi za vakf) prepoznaje sama skripta prema definicijama iz lekcija. Boje i veza
+pravila s lekcijom su u `scripts/sure/pravila.js`, a nazivi i značenja sura u `build.js`.
+
+Gradnja sama provjerava da se izgrađeni tekst znak po znak poklapa s čistim uthmani
+zapisom; `provjeri.js` uz to provjerava da svako objašnjenje odgovara harfovima u ajetu
+(npr. da ihfa zaista stoji ispred jednog od svojih 15 harfova).
+
+Zvučni zapisi su privremeno s `everyayah.com` (Husari). Kad se snime vlastiti, dovoljno je
+promijeniti `AUDIO.baza` u `scripts/sure/build.js` (npr. na `./assets/audio/sure/`) i
+ponovo pokrenuti skriptu.
+
 ### Mobilne aplikacije (iOS i Android)
 
 Aplikacije su [Capacitor](https://capacitorjs.com) omotač oko istog CRA builda – nema

@@ -1,28 +1,32 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaBookOpen, FaLock, FaClipboardCheck, FaSignInAlt, FaUserPlus } from 'react-icons/fa';
+import { FaBookOpen, FaQuran, FaLock, FaClipboardCheck, FaSignInAlt, FaUserPlus } from 'react-icons/fa';
 import { useAuth } from '../auth/AuthContext';
-import { BONUS, trenutnaLekcija, putanjaKviza, putanjaBonusa } from '../auth/progress';
+import { BONUS, trenutnaLekcija, putanjaKviza, putanjaBonusa, putanjaAmmeDzuza } from '../auth/progress';
 import { useUI } from '../i18n/ui';
 
-/* Kartica bonus lekcije (sura Jasin) na dnu pregleda lekcija, ispod završnog kviza */
-export default function BonusCard() {
+/*
+ * Kartica bonus lekcije na dnu pregleda lekcija, ispod završnog kviza.
+ * `vrsta` bira između sure Jasin i kratkih sura – obje se otključavaju istim uslovom.
+ */
+export default function BonusCard({ vrsta }) {
+	const jasin = vrsta !== 'amme';
 	const ui = useUI();
 	const { user, loading, progress, isUnlocked } = useAuth();
 	const locked = !loading && !isUnlocked(BONUS);
 	const trenutna = trenutnaLekcija(progress) || 1;
 
 	return (
-		<article className={'lessons__final lessons__final--bonus' + (locked ? ' is-locked' : '')}>
+		<article className={'lessons__final lessons__final--bonus lessons__final--' + (jasin ? 'jasin' : 'amme') + (locked ? ' is-locked' : '')}>
 			<div className="lessons__final-icon" aria-hidden="true">
-				{locked ? <FaLock /> : <FaBookOpen />}
+				{locked ? <FaLock /> : jasin ? <FaBookOpen /> : <FaQuran />}
 			</div>
 			<div className="lessons__final-body">
-				<p className="eyebrow">{ui.jasinEyebrow}</p>
-				<h3>{ui.jasinNaslov}</h3>
-				<p className="lessons__final-text">{ui.jasinKarticaTekst}</p>
+				<p className="eyebrow">{jasin ? ui.jasinEyebrow : ui.ammeEyebrow}</p>
+				<h3>{jasin ? ui.jasinNaslov : ui.ammeNaslov}</h3>
+				<p className="lessons__final-text">{jasin ? ui.jasinKarticaTekst : ui.ammeKarticaTekst}</p>
 				{locked && (
-					<p className="lessons__final-hint">{user ? ui.jasinZakljucanKorisnik(trenutna) : ui.cardUnlockGuest}</p>
+					<p className="lessons__final-hint">{user ? (jasin ? ui.jasinZakljucanKorisnik(trenutna) : ui.ammeZakljucanKorisnik(trenutna)) : ui.cardUnlockGuest}</p>
 				)}
 				<div className="lesson-card__actions">
 					{locked ? (
@@ -41,8 +45,8 @@ export default function BonusCard() {
 							</React.Fragment>
 						)
 					) : (
-						<Link to={putanjaBonusa} className="btn-t btn-t--gold btn-t--sm">
-							<FaBookOpen /> {ui.jasinOtvori}
+						<Link to={jasin ? putanjaBonusa : putanjaAmmeDzuza} className="btn-t btn-t--gold btn-t--sm">
+							{jasin ? <FaBookOpen /> : <FaQuran />} {jasin ? ui.jasinOtvori : ui.ammeOtvori}
 						</Link>
 					)}
 				</div>

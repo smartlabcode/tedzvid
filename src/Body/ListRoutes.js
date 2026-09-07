@@ -9,7 +9,9 @@ import FinalQuizPage from './FinalQuizPage';
 import LeaderboardPage from './LeaderboardPage';
 import AdminPage from './AdminPage';
 import LessonGate from './LessonGate';
+import BonusPage from './BonusPage';
 import JasinPage from './JasinPage';
+import AmmeDzuzPage from './AmmeDzuzPage';
 import {
 	L1,
 	L2,
@@ -93,7 +95,11 @@ function ListRoutes() {
 			<Route path="/profil" exact component={ProfilePage} />
 			<Route path="/zavrsni-kviz" exact component={FinalQuizPage} />
 			<Route path="/rang-lista" exact component={LeaderboardPage} />
+			<Route path="/fatiha" exact render={() => <BonusPage vrsta="fatiha" />} />
+			<Route path="/ajetul-kursij" exact render={() => <BonusPage vrsta="kursij" />} />
+			<Route path="/mulk" exact render={() => <BonusPage vrsta="mulk" />} />
 			<Route path="/jasin" exact component={JasinPage} />
+			<Route path="/amme-dzuz" exact component={AmmeDzuzPage} />
 			<Route path="/admin" exact component={AdminPage} />
 			{Object.keys(LEKCIJE).map((key) => {
 				const Lekcija = LEKCIJE[key];

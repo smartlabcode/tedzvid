@@ -28,7 +28,7 @@ function arabize(text) {
 		.map((dio, i) => (i % 2 ? <span key={i} className="oblak__grupa">{arRun(dio, i)}</span> : arRun(dio, i)));
 }
 
-const GAP = 12; // razmak između oblačića i harfa
+const GAP = 26; // razmak između oblačića i ajeta koji se uči
 const MARGIN = 8; // najmanji razmak od ruba ekrana
 const USKO = 700; // do ove širine ekrana oblačić se sidri pri dnu
 

@@ -1,0 +1,5407 @@
+{
+	"vrsta": "mulk",
+	"sura": 67,
+	"brojAjeta": 30,
+	"audio": {
+		"baza": "https://everyayah.com/data/Husary_128kbps/",
+		"ucac": "Mahmud Halil el-Husari"
+	},
+	"objasnjenja": {
+		"bs": [
+			"Obična dužina na harfu A (ا): uči se 2 hareketa (medd tabi’ijj).",
+			"Harf R (ر) se uči krupno jer nosi vokal E.",
+			"Tenvin IN (ـٍ) ispred harfa Q (ق): skriva se uz gunnu 2 hareketa (ihfa).",
+			"Pri stajanju zadnji harf R (ر) dobija sukun poslije dužine: medd arid – uči se 2, 4 ili 6 hareketa.",
+			"Ovaj harf se piše, ali se ne uči.",
+			"Harf B (ب) sa sukunom: odskače (kalkala).",
+			"M sa sukunom (مْ) ispred harfa hemze (أ): izgovara se čisto, bez gunne (izhar šefevijj).",
+			"Tenvin EN (ـً) ispred harfa V (و): uklapa se u njeg uz gunnu 2 hareketa (idgam mea-l-gunneh).",
+			"Znak za stajanje ۚ (osmanski ج): ovdje bolje je stati.",
+			"Obična dužina na harfu J (ي): uči se 2 hareketa (medd tabi’ijj).",
+			"Harf R (ر) se uči krupno jer nosi vokal U.",
+			"Tenvin IN (ـٍ) ispred harfa T (ط): skriva se uz gunnu 2 hareketa (ihfa).",
+			"Tenvin EN (ـً) ispred harfa M (م): uklapa se u njeg uz gunnu 2 hareketa (idgam mea-l-gunneh).",
+			"Znak za stajanje ۖ (osmanski صلي): ovdje bolje je preći.",
+			"N (ن) sa sukunom ispred harfa T (ت): skriva se uz gunnu 2 hareketa (ihfa).",
+			"Tenvin IN (ـٍ) ispred harfa F (ف): skriva se uz gunnu 2 hareketa (ihfa).",
+			"Harf R (ر) se uči krupno jer je sa sukunom, prije njeg je harf sa sukunom, a prije toga vokal E.",
+			"N (ن) sa sukunom ispred harfa F (ف): skriva se uz gunnu 2 hareketa (ihfa).",
+			"M (م) sa šeddom: uči se uz gunnu (kroz nos) 2 hareketa.",
+			"N (ن) sa sukunom ispred harfa Q (ق): skriva se uz gunnu 2 hareketa (ihfa).",
+			"Harf D (د) sa sukunom: odskače (kalkala).",
+			"N (ن) sa šeddom: uči se uz gunnu (kroz nos) 2 hareketa.",
+			"Poslije dužine, u istoj riječi, dolazi hemze: medd muttesil – uči se 4 ili 5 hareketa.",
+			"Obična dužina na harfu V (و): uči se 2 hareketa (medd tabi’ijj).",
+			"Tenvin EN (ـً) ispred harfa L (ل): uklapa se u njeg bez gunne (idgam bila gunneh).",
+			"Pri stajanju zadnji harf N (ن) dobija sukun poslije dužine: medd arid – uči se 2, 4 ili 6 hareketa.",
+			"M sa sukunom (مْ) ispred harfa A (ع): izgovara se čisto, bez gunne (izhar šefevijj).",
+			"Harf R (ر) se uči tanko jer nosi vokal I.",
+			"Dužina je na kraju riječi, a sljedeća riječ počinje hemzetom: medd munfesil – uči se 2, 4 ili 5 hareketa.",
+			"Prije harfa J (ي) sa sukunom je kratki vokal E, a poslije njeg harf sa sukunom: medd lin – uči se 2, 4 ili 6 hareketa.",
+			"Tenvin UN (ـٌ) ispred harfa S (س): skriva se uz gunnu 2 hareketa (ihfa).",
+			"M sa sukunom (مْ) ispred harfa H (خ): izgovara se čisto, bez gunne (izhar šefevijj).",
+			"M sa sukunom (مْ) ispred harfa J (ي): izgovara se čisto, bez gunne (izhar šefevijj).",
+			"M sa sukunom (مْ) ispred harfa N (ن): izgovara se čisto, bez gunne (izhar šefevijj).",
+			"Tenvin UN (ـٌ) ispred harfa F (ف): skriva se uz gunnu 2 hareketa (ihfa).",
+			"Prije riječi Allah (اللّٰه) je vokal E ili U: riječ se uči krupno.",
+			"N (ن) sa sukunom ispred harfa Š (ش): skriva se uz gunnu 2 hareketa (ihfa).",
+			"Tenvin IN (ـٍ) ispred grlenog harfa hemze (إ): izgovara se čisto, bez gunne (izhar hallkijj).",
+			"N sa sukunom (نْ) ispred grlenog harfa hemze (أ): izgovara se čisto, bez gunne (izhar hallkijj).",
+			"M sa sukunom (مْ) ispred harfa hemze (إ): izgovara se čisto, bez gunne (izhar šefevijj).",
+			"Tenvin IN (ـٍ) ispred harfa K (ك): skriva se uz gunnu 2 hareketa (ihfa).",
+			"N (ن) sa sukunom ispred harfa B (ب): N se pretvara u M uz gunnu 2 hareketa (iklab).",
+			"M sa sukunom (مْ) ispred harfa F (ف): izgovara se čisto, bez gunne (izhar šefevijj).",
+			"M sa sukunom (مْ) ispred harfa B (ب): skriva se uz gunnu 2 hareketa (ihfa šefevijj).",
+			"M sa sukunom (مْ) ispred istog harfa M (م): uklapa se u njeg uz gunnu 2 hareketa (idgam mislejn mea-l-gunneh).",
+			"Tenvin UN (ـٌ) ispred harfa V (و): uklapa se u njeg uz gunnu 2 hareketa (idgam mea-l-gunneh).",
+			"Harf DŽ (ج) sa sukunom: odskače (kalkala).",
+			"Tenvin UN (ـٌ) ispred harfa K (ك): skriva se uz gunnu 2 hareketa (ihfa).",
+			"Zamjenica HU (هُ): prije nje je kratki vokal, pa se uči dugo (2 hareketa).",
+			"Tenvin UN (ـٌ) ispred harfa B (ب): N se pretvara u M uz gunnu 2 hareketa (iklab).",
+			"N sa sukunom (نْ) ispred grlenog harfa H (خ): izgovara se čisto, bez gunne (izhar hallkijj).",
+			"Harf R (ر) se uči krupno jer je sa sukunom, a poslije njeg dolazi krupni harf D (ض).",
+			"Tenvin EN (ـً) ispred harfa F (ف): skriva se uz gunnu 2 hareketa (ihfa).",
+			"M sa sukunom (مْ) ispred harfa Š (ش): izgovara se čisto, bez gunne (izhar šefevijj).",
+			"N (ن) sa sukunom ispred harfa R (ر): uklapa se u njeg bez gunne (idgam bila gunneh).",
+			"Zamjenica HU (هُ): prije nje je dugi vokal ili sukun, pa se uči kratko.",
+			"N (ن) sa sukunom ispred harfa J (ي): uklapa se u njeg uz gunnu 2 hareketa (idgam mea-l-gunneh).",
+			"Harf R (ر) se uči krupno jer je sa sukunom, a prije njeg je vokal U.",
+			"M sa sukunom (مْ) ispred harfa H (ح): izgovara se čisto, bez gunne (izhar šefevijj).",
+			"M sa sukunom (مْ) ispred harfa S (ص): izgovara se čisto, bez gunne (izhar šefevijj).",
+			"Poslije dužine dolazi harf sa sukunom ili šeddom: medd lazim – uči se 6 hareketa.",
+			"Tenvin IN (ـٍ) ispred harfa V (و): uklapa se u njeg uz gunnu 2 hareketa (idgam mea-l-gunneh).",
+			"Harf Q (ق) sa sukunom: odskače (kalkala).",
+			"M sa sukunom (مْ) ispred harfa S (س): izgovara se čisto, bez gunne (izhar šefevijj).",
+			"Tenvin IN (ـٍ) ispred harfa B (ب): N se pretvara u M uz gunnu 2 hareketa (iklab).",
+			"N sa sukunom (نْ) ispred grlenog harfa H (ه): izgovara se čisto, bez gunne (izhar hallkijj).",
+			"Tenvin UN (ـٌ) ispred harfa L (ل): uklapa se u njeg bez gunne (idgam bila gunneh).",
+			"N (ن) sa sukunom ispred harfa S (ص): skriva se uz gunnu 2 hareketa (ihfa).",
+			"N (ن) sa sukunom ispred harfa D (د): skriva se uz gunnu 2 hareketa (ihfa).",
+			"Harf R (ر) se uči krupno jer je sa sukunom, a prije njeg je vokal E.",
+			"Harf L (ل) sa sukunom ispred istog harfa: uklapa se u njeg (idgam mislejn).",
+			"Tenvin EN (ـً) ispred grlenog harfa A (ع): izgovara se čisto, bez gunne (izhar hallkijj).",
+			"Tenvin IN (ـٍ) ispred harfa M (م): uklapa se u njeg uz gunnu 2 hareketa (idgam mea-l-gunneh).",
+			"Pri stajanju zadnji harf M (م) dobija sukun poslije dužine: medd arid – uči se 2, 4 ili 6 hareketa.",
+			"M sa sukunom (مْ) ispred harfa V (و): izgovara se čisto, bez gunne (izhar šefevijj).",
+			"N (ن) sa sukunom ispred harfa K (ك): skriva se uz gunnu 2 hareketa (ihfa).",
+			"Tenvin UN (ـٌ) ispred harfa M (م): uklapa se u njeg uz gunnu 2 hareketa (idgam mea-l-gunneh).",
+			"Tenvin EN (ـً) ispred harfa S (س): skriva se uz gunnu 2 hareketa (ihfa).",
+			"N (ن) sa sukunom ispred harfa M (م): uklapa se u njeg uz gunnu 2 hareketa (idgam mea-l-gunneh).",
+			"N sa sukunom (نْ) ispred grlenog harfa A (ع): izgovara se čisto, bez gunne (izhar hallkijj).",
+			"Tenvin IN (ـٍ) ispred grlenog harfa hemze (أ): izgovara se čisto, bez gunne (izhar hallkijj).",
+			"M sa sukunom (مْ) ispred harfa G (غ): izgovara se čisto, bez gunne (izhar šefevijj)."
+		],
+		"en": [
+			"A natural prolongation on the letter A (ا): 2 harakas (madd tabi’i).",
+			"The letter R (ر) is recited heavy because it carries the vowel A.",
+			"Tanween IN (ـٍ) before the letter Q (ق): hidden with ghunnah for 2 harakas (ikhfa).",
+			"When stopping, the final letter R (ر) takes a sukun after the prolongation: madd ’arid – 2, 4 or 6 harakas.",
+			"This letter is written but not pronounced.",
+			"The letter B (ب) with a sukun bounces (qalqalah).",
+			"M with a sukun (مْ) before the letter hamza (أ): pronounced clearly, without ghunnah (idhhar shafawi).",
+			"Tanween EN (ـً) before the letter W (و): merged into it with ghunnah for 2 harakas (idgham ma’al-ghunnah).",
+			"Stopping sign ۚ (Ottoman ج): here better to stop.",
+			"A natural prolongation on the letter Y (ي): 2 harakas (madd tabi’i).",
+			"The letter R (ر) is recited heavy because it carries the vowel U.",
+			"Tanween IN (ـٍ) before the letter T (ط): hidden with ghunnah for 2 harakas (ikhfa).",
+			"Tanween EN (ـً) before the letter M (م): merged into it with ghunnah for 2 harakas (idgham ma’al-ghunnah).",
+			"Stopping sign ۖ (Ottoman صلي): here better to continue.",
+			"N (ن) with a sukun before the letter T (ت): hidden with ghunnah for 2 harakas (ikhfa).",
+			"Tanween IN (ـٍ) before the letter F (ف): hidden with ghunnah for 2 harakas (ikhfa).",
+			"The letter R (ر) is recited heavy because it has a sukun, is preceded by a letter with a sukun, and before that the vowel A.",
+			"N (ن) with a sukun before the letter F (ف): hidden with ghunnah for 2 harakas (ikhfa).",
+			"M (م) with a shadda: recited with ghunnah (through the nose) for 2 harakas.",
+			"N (ن) with a sukun before the letter Q (ق): hidden with ghunnah for 2 harakas (ikhfa).",
+			"The letter D (د) with a sukun bounces (qalqalah).",
+			"N (ن) with a shadda: recited with ghunnah (through the nose) for 2 harakas.",
+			"The prolongation is followed by a hamza in the same word: madd muttasil – 4 or 5 harakas.",
+			"A natural prolongation on the letter W (و): 2 harakas (madd tabi’i).",
+			"Tanween EN (ـً) before the letter L (ل): merged into it without ghunnah (idgham bila ghunnah).",
+			"When stopping, the final letter N (ن) takes a sukun after the prolongation: madd ’arid – 2, 4 or 6 harakas.",
+			"M with a sukun (مْ) before the letter 'A (ع): pronounced clearly, without ghunnah (idhhar shafawi).",
+			"The letter R (ر) is recited light because it carries the vowel I.",
+			"The prolongation ends the word and the next word begins with a hamza: madd munfasil – 2, 4 or 5 harakas.",
+			"The letter Y (ي) with a sukun is preceded by the short vowel A and followed by a letter with a sukun: madd lin – 2, 4 or 6 harakas.",
+			"Tanween UN (ـٌ) before the letter S (س): hidden with ghunnah for 2 harakas (ikhfa).",
+			"M with a sukun (مْ) before the letter KH (خ): pronounced clearly, without ghunnah (idhhar shafawi).",
+			"M with a sukun (مْ) before the letter Y (ي): pronounced clearly, without ghunnah (idhhar shafawi).",
+			"M with a sukun (مْ) before the letter N (ن): pronounced clearly, without ghunnah (idhhar shafawi).",
+			"Tanween UN (ـٌ) before the letter F (ف): hidden with ghunnah for 2 harakas (ikhfa).",
+			"The word Allah (اللّٰه) is preceded by the vowel A or U: it is recited heavy (tafkhim).",
+			"N (ن) with a sukun before the letter SH (ش): hidden with ghunnah for 2 harakas (ikhfa).",
+			"Tanween IN (ـٍ) before the throat letter hamza (إ): pronounced clearly, without ghunnah (idhhar halqi).",
+			"N with a sukun (نْ) before the throat letter hamza (أ): pronounced clearly, without ghunnah (idhhar halqi).",
+			"M with a sukun (مْ) before the letter hamza (إ): pronounced clearly, without ghunnah (idhhar shafawi).",
+			"Tanween IN (ـٍ) before the letter K (ك): hidden with ghunnah for 2 harakas (ikhfa).",
+			"N (ن) with a sukun before the letter B (ب): the N turns into M with ghunnah for 2 harakas (iqlab).",
+			"M with a sukun (مْ) before the letter F (ف): pronounced clearly, without ghunnah (idhhar shafawi).",
+			"M with a sukun (مْ) before the letter B (ب): hidden with ghunnah for 2 harakas (ikhfa shafawi).",
+			"M with a sukun (مْ) before the same letter M (م): merged into it with ghunnah for 2 harakas (idgham mithlayn ma’al-ghunnah).",
+			"Tanween UN (ـٌ) before the letter W (و): merged into it with ghunnah for 2 harakas (idgham ma’al-ghunnah).",
+			"The letter J (ج) with a sukun bounces (qalqalah).",
+			"Tanween UN (ـٌ) before the letter K (ك): hidden with ghunnah for 2 harakas (ikhfa).",
+			"The pronoun HU (هُ) is preceded by a short vowel, so it is prolonged (2 harakas).",
+			"Tanween UN (ـٌ) before the letter B (ب): the N turns into M with ghunnah for 2 harakas (iqlab).",
+			"N with a sukun (نْ) before the throat letter KH (خ): pronounced clearly, without ghunnah (idhhar halqi).",
+			"The letter R (ر) is recited heavy because it has a sukun and is followed by the heavy letter D (ض).",
+			"Tanween EN (ـً) before the letter F (ف): hidden with ghunnah for 2 harakas (ikhfa).",
+			"M with a sukun (مْ) before the letter SH (ش): pronounced clearly, without ghunnah (idhhar shafawi).",
+			"N (ن) with a sukun before the letter R (ر): merged into it without ghunnah (idgham bila ghunnah).",
+			"The pronoun HU (هُ) is preceded by a long vowel or a sukun, so it is recited short.",
+			"N (ن) with a sukun before the letter Y (ي): merged into it with ghunnah for 2 harakas (idgham ma’al-ghunnah).",
+			"The letter R (ر) is recited heavy because it has a sukun and is preceded by the vowel U.",
+			"M with a sukun (مْ) before the letter H (ح): pronounced clearly, without ghunnah (idhhar shafawi).",
+			"M with a sukun (مْ) before the letter S (ص): pronounced clearly, without ghunnah (idhhar shafawi).",
+			"The prolongation is followed by a letter with a sukun or a shadda: madd lazim – 6 harakas.",
+			"Tanween IN (ـٍ) before the letter W (و): merged into it with ghunnah for 2 harakas (idgham ma’al-ghunnah).",
+			"The letter Q (ق) with a sukun bounces (qalqalah).",
+			"M with a sukun (مْ) before the letter S (س): pronounced clearly, without ghunnah (idhhar shafawi).",
+			"Tanween IN (ـٍ) before the letter B (ب): the N turns into M with ghunnah for 2 harakas (iqlab).",
+			"N with a sukun (نْ) before the throat letter H (ه): pronounced clearly, without ghunnah (idhhar halqi).",
+			"Tanween UN (ـٌ) before the letter L (ل): merged into it without ghunnah (idgham bila ghunnah).",
+			"N (ن) with a sukun before the letter S (ص): hidden with ghunnah for 2 harakas (ikhfa).",
+			"N (ن) with a sukun before the letter D (د): hidden with ghunnah for 2 harakas (ikhfa).",
+			"The letter R (ر) is recited heavy because it has a sukun and is preceded by the vowel A.",
+			"The letter L (ل) with a sukun before the same letter: merged into it (idgham mithlayn).",
+			"Tanween EN (ـً) before the throat letter 'A (ع): pronounced clearly, without ghunnah (idhhar halqi).",
+			"Tanween IN (ـٍ) before the letter M (م): merged into it with ghunnah for 2 harakas (idgham ma’al-ghunnah).",
+			"When stopping, the final letter M (م) takes a sukun after the prolongation: madd ’arid – 2, 4 or 6 harakas.",
+			"M with a sukun (مْ) before the letter W (و): pronounced clearly, without ghunnah (idhhar shafawi).",
+			"N (ن) with a sukun before the letter K (ك): hidden with ghunnah for 2 harakas (ikhfa).",
+			"Tanween UN (ـٌ) before the letter M (م): merged into it with ghunnah for 2 harakas (idgham ma’al-ghunnah).",
+			"Tanween EN (ـً) before the letter S (س): hidden with ghunnah for 2 harakas (ikhfa).",
+			"N (ن) with a sukun before the letter M (م): merged into it with ghunnah for 2 harakas (idgham ma’al-ghunnah).",
+			"N with a sukun (نْ) before the throat letter 'A (ع): pronounced clearly, without ghunnah (idhhar halqi).",
+			"Tanween IN (ـٍ) before the throat letter hamza (أ): pronounced clearly, without ghunnah (idhhar halqi).",
+			"M with a sukun (مْ) before the letter GH (غ): pronounced clearly, without ghunnah (idhhar shafawi)."
+		]
+	},
+	"odjeljci": [
+		{
+			"kljuc": "s562",
+			"sura": 67,
+			"stranica": 562,
+			"ajeti": [
+				{
+					"n": 1,
+					"audio": "067001.mp3",
+					"dijelovi": [
+						{
+							"t": " تَبَ"
+						},
+						{
+							"t": "ـٰ",
+							"i": 0
+						},
+						{
+							"t": "رَ",
+							"i": 1
+						},
+						{
+							"t": "كَ الَّذِى بِيَدِهِ الْمُلْكُ وَهُوَ عَلَ"
+						},
+						{
+							"t": "ىٰ",
+							"i": 2
+						},
+						{
+							"t": " كُلِّ شَ"
+						},
+						{
+							"t": "يْءٍ",
+							"i": 3
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "قَ",
+							"i": 3
+						},
+						{
+							"t": "دِ"
+						},
+						{
+							"t": "ي",
+							"i": 4
+						},
+						{
+							"t": "رٌ"
+						}
+					],
+					"pravila": [
+						{
+							"id": "medd-tabii",
+							"rijec": "تَبَـٰرَكَ",
+							"t": 0
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "تَبَـٰرَكَ",
+							"t": 1
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "عَلَىٰ",
+							"t": 0
+						},
+						{
+							"id": "ihfa",
+							"rijec": "شَيْءٍ",
+							"t": 2
+						},
+						{
+							"id": "medd-arid",
+							"rijec": "قَدِيرٌ",
+							"t": 3
+						}
+					]
+				},
+				{
+					"n": 2,
+					"audio": "067002.mp3",
+					"dijelovi": [
+						{
+							"t": "الَّذِى خَلَقَ الْمَوْتَ وَالْحَيَ"
+						},
+						{
+							"t": "وٰ",
+							"i": 0
+						},
+						{
+							"t": "ةَ لِيَ"
+						},
+						{
+							"t": "بْ",
+							"i": 1
+						},
+						{
+							"t": "لُوَكُ"
+						},
+						{
+							"t": "مْ",
+							"i": 2
+						},
+						{
+							"t": " أَيُّكُ"
+						},
+						{
+							"t": "مْ",
+							"i": 3
+						},
+						{
+							"t": " أَحْسَنُ عَمَلً"
+						},
+						{
+							"t": "ا",
+							"i": 4
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "ۚ",
+							"i": 5
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "وَ",
+							"i": 4
+						},
+						{
+							"t": "هُوَ الْعَزِ"
+						},
+						{
+							"t": "ي",
+							"i": 6
+						},
+						{
+							"t": "زُ الْغَفُ"
+						},
+						{
+							"t": "و",
+							"i": 7
+						},
+						{
+							"t": "رُ",
+							"i": 8
+						}
+					],
+					"pravila": [
+						{
+							"id": "ne-uci-se",
+							"rijec": "وَالْحَيَوٰةَ",
+							"t": 4
+						},
+						{
+							"id": "kalkala",
+							"rijec": "لِيَبْلُوَكُمْ",
+							"t": 5
+						},
+						{
+							"id": "izhar-sefevijj",
+							"rijec": "لِيَبْلُوَكُمْ",
+							"t": 6
+						},
+						{
+							"id": "izhar-sefevijj",
+							"rijec": "أَيُّكُمْ",
+							"t": 6
+						},
+						{
+							"id": "idgam-gunneh",
+							"rijec": "عَمَلًا",
+							"t": 7
+						},
+						{
+							"id": "vakf",
+							"rijec": "ۚ",
+							"t": 8
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "الْعَزِيزُ",
+							"t": 9
+						},
+						{
+							"id": "medd-arid",
+							"rijec": "الْغَفُورُ",
+							"t": 3
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "الْغَفُورُ",
+							"t": 10
+						}
+					]
+				},
+				{
+					"n": 3,
+					"audio": "067003.mp3",
+					"dijelovi": [
+						{
+							"t": "الَّذِى خَلَقَ سَ"
+						},
+						{
+							"t": "بْ",
+							"i": 0
+						},
+						{
+							"t": "عَ سَمَ"
+						},
+						{
+							"t": "ـٰ",
+							"i": 1
+						},
+						{
+							"t": "وَٰ",
+							"i": 2
+						},
+						{
+							"t": "تٍ",
+							"i": 3
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "طِ",
+							"i": 3
+						},
+						{
+							"t": "بَ"
+						},
+						{
+							"t": "ا",
+							"i": 4
+						},
+						{
+							"t": "قًا",
+							"i": 5
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "ۖ",
+							"i": 6
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "مَّ",
+							"i": 5
+						},
+						{
+							"t": "ا",
+							"i": 7
+						},
+						{
+							"t": " تَ"
+						},
+						{
+							"t": "رَ",
+							"i": 8
+						},
+						{
+							"t": "ىٰ",
+							"i": 9
+						},
+						{
+							"t": " فِى خَلْقِ ال"
+						},
+						{
+							"t": "رَّ",
+							"i": 10
+						},
+						{
+							"t": "حْمَ"
+						},
+						{
+							"t": "ـٰ",
+							"i": 11
+						},
+						{
+							"t": "نِ مِ"
+						},
+						{
+							"t": "ن",
+							"i": 12
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "تَ",
+							"i": 12
+						},
+						{
+							"t": "فَ"
+						},
+						{
+							"t": "ـٰ",
+							"i": 13
+						},
+						{
+							"t": "وُ"
+						},
+						{
+							"t": "تٍ",
+							"i": 14
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "ۖ",
+							"i": 15
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "فَ",
+							"i": 14
+						},
+						{
+							"t": "ا"
+						},
+						{
+							"t": "رْ",
+							"i": 16
+						},
+						{
+							"t": "جِعِ الْبَصَ"
+						},
+						{
+							"t": "رَ",
+							"i": 17
+						},
+						{
+							"t": " هَلْ تَ"
+						},
+						{
+							"t": "رَ",
+							"i": 18
+						},
+						{
+							"t": "ىٰ",
+							"i": 19
+						},
+						{
+							"t": " مِ"
+						},
+						{
+							"t": "ن",
+							"i": 20
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "فُ",
+							"i": 20
+						},
+						{
+							"t": "طُ"
+						},
+						{
+							"t": "و",
+							"i": 21
+						},
+						{
+							"t": "رٍ"
+						}
+					],
+					"pravila": [
+						{
+							"id": "kalkala",
+							"rijec": "سَبْعَ",
+							"t": 5
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "سَمَـٰوَٰتٍ",
+							"t": 0
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "سَمَـٰوَٰتٍ",
+							"t": 0
+						},
+						{
+							"id": "ihfa",
+							"rijec": "سَمَـٰوَٰتٍ",
+							"t": 11
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "طِبَاقًا",
+							"t": 0
+						},
+						{
+							"id": "idgam-gunneh",
+							"rijec": "طِبَاقًا",
+							"t": 12
+						},
+						{
+							"id": "vakf",
+							"rijec": "ۖ",
+							"t": 13
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "مَّا",
+							"t": 0
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "تَرَىٰ",
+							"t": 1
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "تَرَىٰ",
+							"t": 0
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "الرَّحْمَـٰنِ",
+							"t": 1
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "الرَّحْمَـٰنِ",
+							"t": 0
+						},
+						{
+							"id": "ihfa",
+							"rijec": "مِن",
+							"t": 14
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "تَفَـٰوُتٍ",
+							"t": 0
+						},
+						{
+							"id": "ihfa",
+							"rijec": "تَفَـٰوُتٍ",
+							"t": 15
+						},
+						{
+							"id": "vakf",
+							"rijec": "ۖ",
+							"t": 13
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "فَارْجِعِ",
+							"t": 16
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "الْبَصَرَ",
+							"t": 1
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "تَرَىٰ",
+							"t": 1
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "تَرَىٰ",
+							"t": 0
+						},
+						{
+							"id": "ihfa",
+							"rijec": "مِن",
+							"t": 17
+						},
+						{
+							"id": "medd-arid",
+							"rijec": "فُطُورٍ",
+							"t": 3
+						}
+					]
+				},
+				{
+					"n": 4,
+					"audio": "067004.mp3",
+					"dijelovi": [
+						{
+							"t": "ثُ"
+						},
+						{
+							"t": "مَّ",
+							"i": 0
+						},
+						{
+							"t": " ا"
+						},
+						{
+							"t": "رْ",
+							"i": 1
+						},
+						{
+							"t": "جِعِ الْبَصَ"
+						},
+						{
+							"t": "رَ",
+							"i": 2
+						},
+						{
+							"t": " كَ"
+						},
+						{
+							"t": "رَّ",
+							"i": 3
+						},
+						{
+							"t": "تَيْنِ يَ"
+						},
+						{
+							"t": "نقَ",
+							"i": 4
+						},
+						{
+							"t": "لِ"
+						},
+						{
+							"t": "بْ",
+							"i": 5
+						},
+						{
+							"t": " إِلَيْكَ الْبَصَ"
+						},
+						{
+							"t": "رُ",
+							"i": 6
+						},
+						{
+							"t": " خَ"
+						},
+						{
+							"t": "ا",
+							"i": 7
+						},
+						{
+							"t": "سِ"
+						},
+						{
+							"t": "ئًا",
+							"i": 8
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "وَ",
+							"i": 8
+						},
+						{
+							"t": "هُوَ حَسِ"
+						},
+						{
+							"t": "ي",
+							"i": 9
+						},
+						{
+							"t": "رٌ"
+						}
+					],
+					"pravila": [
+						{
+							"id": "gunne",
+							"rijec": "ثُمَّ",
+							"t": 18
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "ارْجِعِ",
+							"t": 16
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "الْبَصَرَ",
+							"t": 1
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "كَرَّتَيْنِ",
+							"t": 1
+						},
+						{
+							"id": "ihfa",
+							"rijec": "يَنقَلِبْ",
+							"t": 19
+						},
+						{
+							"id": "kalkala",
+							"rijec": "يَنقَلِبْ",
+							"t": 5
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "الْبَصَرُ",
+							"t": 10
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "خَاسِئًا",
+							"t": 0
+						},
+						{
+							"id": "idgam-gunneh",
+							"rijec": "خَاسِئًا",
+							"t": 7
+						},
+						{
+							"id": "medd-arid",
+							"rijec": "حَسِيرٌ",
+							"t": 3
+						}
+					]
+				},
+				{
+					"n": 5,
+					"audio": "067005.mp3",
+					"dijelovi": [
+						{
+							"t": "وَلَقَ"
+						},
+						{
+							"t": "دْ",
+							"i": 0
+						},
+						{
+							"t": " زَيَّ"
+						},
+						{
+							"t": "نَّ",
+							"i": 1
+						},
+						{
+							"t": "ا",
+							"i": 2
+						},
+						{
+							"t": " السَّمَ"
+						},
+						{
+							"t": "آ",
+							"i": 3
+						},
+						{
+							"t": "ءَ الدُّنْيَ"
+						},
+						{
+							"t": "ا",
+							"i": 4
+						},
+						{
+							"t": " بِمَصَ"
+						},
+						{
+							"t": "ـٰ",
+							"i": 5
+						},
+						{
+							"t": "بِ"
+						},
+						{
+							"t": "ي",
+							"i": 6
+						},
+						{
+							"t": "حَ وَجَعَلْنَ"
+						},
+						{
+							"t": "ـٰ",
+							"i": 7
+						},
+						{
+							"t": "هَ"
+						},
+						{
+							"t": "ا",
+							"i": 8
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "رُ",
+							"i": 9
+						},
+						{
+							"t": "جُ"
+						},
+						{
+							"t": "و",
+							"i": 10
+						},
+						{
+							"t": "مًا",
+							"i": 11
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "لِّ",
+							"i": 11
+						},
+						{
+							"t": "لشَّيَ"
+						},
+						{
+							"t": "ـٰ",
+							"i": 12
+						},
+						{
+							"t": "طِ"
+						},
+						{
+							"t": "ي",
+							"i": 13
+						},
+						{
+							"t": "نِ "
+						},
+						{
+							"t": "ۖ",
+							"i": 14
+						},
+						{
+							"t": " وَأَعْتَ"
+						},
+						{
+							"t": "دْ",
+							"i": 15
+						},
+						{
+							"t": "نَ"
+						},
+						{
+							"t": "ا",
+							"i": 16
+						},
+						{
+							"t": " لَهُ"
+						},
+						{
+							"t": "مْ",
+							"i": 17
+						},
+						{
+							"t": " عَذَ"
+						},
+						{
+							"t": "ا",
+							"i": 18
+						},
+						{
+							"t": "بَ السَّعِ"
+						},
+						{
+							"t": "ي",
+							"i": 19
+						},
+						{
+							"t": "رِ",
+							"i": 20
+						}
+					],
+					"pravila": [
+						{
+							"id": "kalkala",
+							"rijec": "وَلَقَدْ",
+							"t": 20
+						},
+						{
+							"id": "gunne",
+							"rijec": "زَيَّنَّا",
+							"t": 21
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "زَيَّنَّا",
+							"t": 0
+						},
+						{
+							"id": "medd-muttesil",
+							"rijec": "السَّمَآءَ",
+							"t": 22
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "الدُّنْيَا",
+							"t": 0
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "بِمَصَـٰبِيحَ",
+							"t": 0
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "بِمَصَـٰبِيحَ",
+							"t": 9
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "وَجَعَلْنَـٰهَا",
+							"t": 0
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "وَجَعَلْنَـٰهَا",
+							"t": 0
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "رُجُومًا",
+							"t": 10
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "رُجُومًا",
+							"t": 23
+						},
+						{
+							"id": "idgam-bila-gunneh",
+							"rijec": "رُجُومًا",
+							"t": 24
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "لِّلشَّيَـٰطِينِ",
+							"t": 0
+						},
+						{
+							"id": "medd-arid",
+							"rijec": "لِّلشَّيَـٰطِينِ",
+							"t": 25
+						},
+						{
+							"id": "vakf",
+							"rijec": "ۖ",
+							"t": 13
+						},
+						{
+							"id": "kalkala",
+							"rijec": "وَأَعْتَدْنَا",
+							"t": 20
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "وَأَعْتَدْنَا",
+							"t": 0
+						},
+						{
+							"id": "izhar-sefevijj",
+							"rijec": "لَهُمْ",
+							"t": 26
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "عَذَابَ",
+							"t": 0
+						},
+						{
+							"id": "medd-arid",
+							"rijec": "السَّعِيرِ",
+							"t": 3
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "السَّعِيرِ",
+							"t": 27
+						}
+					]
+				},
+				{
+					"n": 6,
+					"audio": "067006.mp3",
+					"dijelovi": [
+						{
+							"t": "وَلِلَّذِ"
+						},
+						{
+							"t": "ي",
+							"i": 0
+						},
+						{
+							"t": "نَ كَفَ"
+						},
+						{
+							"t": "رُ",
+							"i": 1
+						},
+						{
+							"t": "و",
+							"i": 2
+						},
+						{
+							"t": "ا",
+							"i": 3
+						},
+						{
+							"t": " بِ"
+						},
+						{
+							"t": "رَ",
+							"i": 4
+						},
+						{
+							"t": "بِّهِ"
+						},
+						{
+							"t": "مْ",
+							"i": 5
+						},
+						{
+							"t": " عَذَ"
+						},
+						{
+							"t": "ا",
+							"i": 6
+						},
+						{
+							"t": "بُ جَهَ"
+						},
+						{
+							"t": "نَّ",
+							"i": 7
+						},
+						{
+							"t": "مَ "
+						},
+						{
+							"t": "ۖ",
+							"i": 8
+						},
+						{
+							"t": " وَبِئْسَ الْمَصِ"
+						},
+						{
+							"t": "ي",
+							"i": 9
+						},
+						{
+							"t": "رُ",
+							"i": 10
+						}
+					],
+					"pravila": [
+						{
+							"id": "medd-tabii",
+							"rijec": "وَلِلَّذِينَ",
+							"t": 9
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "كَفَرُوا",
+							"t": 10
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "كَفَرُوا",
+							"t": 23
+						},
+						{
+							"id": "ne-uci-se",
+							"rijec": "كَفَرُوا",
+							"t": 4
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "بِرَبِّهِمْ",
+							"t": 1
+						},
+						{
+							"id": "izhar-sefevijj",
+							"rijec": "بِرَبِّهِمْ",
+							"t": 26
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "عَذَابُ",
+							"t": 0
+						},
+						{
+							"id": "gunne",
+							"rijec": "جَهَنَّمَ",
+							"t": 21
+						},
+						{
+							"id": "vakf",
+							"rijec": "ۖ",
+							"t": 13
+						},
+						{
+							"id": "medd-arid",
+							"rijec": "الْمَصِيرُ",
+							"t": 3
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "الْمَصِيرُ",
+							"t": 10
+						}
+					]
+				},
+				{
+					"n": 7,
+					"audio": "067007.mp3",
+					"dijelovi": [
+						{
+							"t": "إِذَ"
+						},
+						{
+							"t": "آ",
+							"i": 0
+						},
+						{
+							"t": " أُلْقُ"
+						},
+						{
+							"t": "و",
+							"i": 1
+						},
+						{
+							"t": "ا",
+							"i": 2
+						},
+						{
+							"t": " فِ"
+						},
+						{
+							"t": "ي",
+							"i": 3
+						},
+						{
+							"t": "هَ"
+						},
+						{
+							"t": "ا",
+							"i": 4
+						},
+						{
+							"t": " سَمِعُ"
+						},
+						{
+							"t": "و",
+							"i": 5
+						},
+						{
+							"t": "ا",
+							"i": 6
+						},
+						{
+							"t": " لَهَ"
+						},
+						{
+							"t": "ا",
+							"i": 7
+						},
+						{
+							"t": " شَهِ"
+						},
+						{
+							"t": "ي",
+							"i": 8
+						},
+						{
+							"t": "قًا",
+							"i": 9
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "وَ",
+							"i": 9
+						},
+						{
+							"t": "هِيَ تَفُ"
+						},
+						{
+							"t": "و",
+							"i": 10
+						},
+						{
+							"t": "رُ",
+							"i": 11
+						}
+					],
+					"pravila": [
+						{
+							"id": "medd-munfesil",
+							"rijec": "إِذَآ",
+							"t": 28
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "أُلْقُوا",
+							"t": 23
+						},
+						{
+							"id": "ne-uci-se",
+							"rijec": "أُلْقُوا",
+							"t": 4
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "فِيهَا",
+							"t": 9
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "فِيهَا",
+							"t": 0
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "سَمِعُوا",
+							"t": 23
+						},
+						{
+							"id": "ne-uci-se",
+							"rijec": "سَمِعُوا",
+							"t": 4
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "لَهَا",
+							"t": 0
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "شَهِيقًا",
+							"t": 9
+						},
+						{
+							"id": "idgam-gunneh",
+							"rijec": "شَهِيقًا",
+							"t": 7
+						},
+						{
+							"id": "medd-arid",
+							"rijec": "تَفُورُ",
+							"t": 3
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "تَفُورُ",
+							"t": 10
+						}
+					]
+				},
+				{
+					"n": 8,
+					"audio": "067008.mp3",
+					"dijelovi": [
+						{
+							"t": "تَكَ"
+						},
+						{
+							"t": "ا",
+							"i": 0
+						},
+						{
+							"t": "دُ تَمَيَّزُ مِنَ الْغَ"
+						},
+						{
+							"t": "يْ",
+							"i": 1
+						},
+						{
+							"t": "ظِ "
+						},
+						{
+							"t": "ۖ",
+							"i": 2
+						},
+						{
+							"t": " كُلَّمَ"
+						},
+						{
+							"t": "آ",
+							"i": 3
+						},
+						{
+							"t": " أُلْقِيَ فِ"
+						},
+						{
+							"t": "ي",
+							"i": 4
+						},
+						{
+							"t": "هَ"
+						},
+						{
+							"t": "ا",
+							"i": 5
+						},
+						{
+							"t": " فَوْ"
+						},
+						{
+							"t": "جٌ",
+							"i": 6
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "سَ",
+							"i": 6
+						},
+						{
+							"t": "أَلَهُ"
+						},
+						{
+							"t": "مْ",
+							"i": 7
+						},
+						{
+							"t": " خَزَنَتُهَ"
+						},
+						{
+							"t": "آ",
+							"i": 8
+						},
+						{
+							"t": " أَلَ"
+						},
+						{
+							"t": "مْ",
+							"i": 9
+						},
+						{
+							"t": " يَأْتِكُ"
+						},
+						{
+							"t": "مْ",
+							"i": 10
+						},
+						{
+							"t": " نَذِ"
+						},
+						{
+							"t": "ي",
+							"i": 11
+						},
+						{
+							"t": "رٌ"
+						}
+					],
+					"pravila": [
+						{
+							"id": "medd-tabii",
+							"rijec": "تَكَادُ",
+							"t": 0
+						},
+						{
+							"id": "medd-lin",
+							"rijec": "الْغَيْظِ",
+							"t": 29
+						},
+						{
+							"id": "vakf",
+							"rijec": "ۖ",
+							"t": 13
+						},
+						{
+							"id": "medd-munfesil",
+							"rijec": "كُلَّمَآ",
+							"t": 28
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "فِيهَا",
+							"t": 9
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "فِيهَا",
+							"t": 0
+						},
+						{
+							"id": "ihfa",
+							"rijec": "فَوْجٌ",
+							"t": 30
+						},
+						{
+							"id": "izhar-sefevijj",
+							"rijec": "سَأَلَهُمْ",
+							"t": 31
+						},
+						{
+							"id": "medd-munfesil",
+							"rijec": "خَزَنَتُهَآ",
+							"t": 28
+						},
+						{
+							"id": "izhar-sefevijj",
+							"rijec": "أَلَمْ",
+							"t": 32
+						},
+						{
+							"id": "izhar-sefevijj",
+							"rijec": "يَأْتِكُمْ",
+							"t": 33
+						},
+						{
+							"id": "medd-arid",
+							"rijec": "نَذِيرٌ",
+							"t": 3
+						}
+					]
+				},
+				{
+					"n": 9,
+					"audio": "067009.mp3",
+					"dijelovi": [
+						{
+							"t": "قَ"
+						},
+						{
+							"t": "ا",
+							"i": 0
+						},
+						{
+							"t": "لُ"
+						},
+						{
+							"t": "و",
+							"i": 1
+						},
+						{
+							"t": "ا",
+							"i": 2
+						},
+						{
+							"t": " بَلَ"
+						},
+						{
+							"t": "ىٰ",
+							"i": 3
+						},
+						{
+							"t": " قَ"
+						},
+						{
+							"t": "دْ",
+							"i": 4
+						},
+						{
+							"t": " جَ"
+						},
+						{
+							"t": "آ",
+							"i": 5
+						},
+						{
+							"t": "ءَنَ"
+						},
+						{
+							"t": "ا",
+							"i": 6
+						},
+						{
+							"t": " نَذِ"
+						},
+						{
+							"t": "ي",
+							"i": 7
+						},
+						{
+							"t": "رٌ",
+							"i": 8
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "فَ",
+							"i": 8
+						},
+						{
+							"t": "كَذَّ"
+						},
+						{
+							"t": "بْ",
+							"i": 9
+						},
+						{
+							"t": "نَ"
+						},
+						{
+							"t": "ا",
+							"i": 10
+						},
+						{
+							"t": " وَقُلْنَ"
+						},
+						{
+							"t": "ا",
+							"i": 11
+						},
+						{
+							"t": " مَ"
+						},
+						{
+							"t": "ا",
+							"i": 12
+						},
+						{
+							"t": " نَزَّلَ ا"
+						},
+						{
+							"t": "للَّهُ",
+							"i": 13
+						},
+						{
+							"t": " مِ"
+						},
+						{
+							"t": "ن",
+							"i": 14
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "شَ",
+							"i": 14
+						},
+						{
+							"t": "يْ"
+						},
+						{
+							"t": "ءٍ",
+							"i": 15
+						},
+						{
+							"t": " إِ"
+						},
+						{
+							"t": "نْ",
+							"i": 16
+						},
+						{
+							"t": " أَ"
+						},
+						{
+							"t": "نتُ",
+							"i": 17
+						},
+						{
+							"t": "مْ",
+							"i": 18
+						},
+						{
+							"t": " إِلَّ"
+						},
+						{
+							"t": "ا",
+							"i": 19
+						},
+						{
+							"t": " فِى ضَلَ"
+						},
+						{
+							"t": "ـٰ",
+							"i": 20
+						},
+						{
+							"t": "لٍ",
+							"i": 21
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "كَ",
+							"i": 21
+						},
+						{
+							"t": "بِ"
+						},
+						{
+							"t": "ي",
+							"i": 22
+						},
+						{
+							"t": "رٍ"
+						}
+					],
+					"pravila": [
+						{
+							"id": "medd-tabii",
+							"rijec": "قَالُوا",
+							"t": 0
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "قَالُوا",
+							"t": 23
+						},
+						{
+							"id": "ne-uci-se",
+							"rijec": "قَالُوا",
+							"t": 4
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "بَلَىٰ",
+							"t": 0
+						},
+						{
+							"id": "kalkala",
+							"rijec": "قَدْ",
+							"t": 20
+						},
+						{
+							"id": "medd-muttesil",
+							"rijec": "جَآءَنَا",
+							"t": 22
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "جَآءَنَا",
+							"t": 0
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "نَذِيرٌ",
+							"t": 9
+						},
+						{
+							"id": "ihfa",
+							"rijec": "نَذِيرٌ",
+							"t": 34
+						},
+						{
+							"id": "kalkala",
+							"rijec": "فَكَذَّبْنَا",
+							"t": 5
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "فَكَذَّبْنَا",
+							"t": 0
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "وَقُلْنَا",
+							"t": 0
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "مَا",
+							"t": 0
+						},
+						{
+							"id": "lafzatullah",
+							"rijec": "اللَّهُ",
+							"t": 35
+						},
+						{
+							"id": "ihfa",
+							"rijec": "مِن",
+							"t": 36
+						},
+						{
+							"id": "izhar-halkij",
+							"rijec": "شَيْءٍ",
+							"t": 37
+						},
+						{
+							"id": "izhar-halkij",
+							"rijec": "إِنْ",
+							"t": 38
+						},
+						{
+							"id": "ihfa",
+							"rijec": "أَنتُمْ",
+							"t": 14
+						},
+						{
+							"id": "izhar-sefevijj",
+							"rijec": "أَنتُمْ",
+							"t": 39
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "إِلَّا",
+							"t": 0
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "ضَلَـٰلٍ",
+							"t": 0
+						},
+						{
+							"id": "ihfa",
+							"rijec": "ضَلَـٰلٍ",
+							"t": 40
+						},
+						{
+							"id": "medd-arid",
+							"rijec": "كَبِيرٍ",
+							"t": 3
+						}
+					]
+				},
+				{
+					"n": 10,
+					"audio": "067010.mp3",
+					"dijelovi": [
+						{
+							"t": "وَقَ"
+						},
+						{
+							"t": "ا",
+							"i": 0
+						},
+						{
+							"t": "لُ"
+						},
+						{
+							"t": "و",
+							"i": 1
+						},
+						{
+							"t": "ا",
+							"i": 2
+						},
+						{
+							"t": " لَوْ كُ"
+						},
+						{
+							"t": "نَّ",
+							"i": 3
+						},
+						{
+							"t": "ا",
+							"i": 4
+						},
+						{
+							"t": " نَسْمَعُ أَوْ نَعْقِلُ مَ"
+						},
+						{
+							"t": "ا",
+							"i": 5
+						},
+						{
+							"t": " كُ"
+						},
+						{
+							"t": "نَّ",
+							"i": 6
+						},
+						{
+							"t": "ا",
+							"i": 7
+						},
+						{
+							"t": " فِ"
+						},
+						{
+							"t": "يٓ",
+							"i": 8
+						},
+						{
+							"t": " أَصْحَ"
+						},
+						{
+							"t": "ـٰ",
+							"i": 9
+						},
+						{
+							"t": "بِ السَّعِ"
+						},
+						{
+							"t": "ي",
+							"i": 10
+						},
+						{
+							"t": "رِ",
+							"i": 11
+						}
+					],
+					"pravila": [
+						{
+							"id": "medd-tabii",
+							"rijec": "وَقَالُوا",
+							"t": 0
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "وَقَالُوا",
+							"t": 23
+						},
+						{
+							"id": "ne-uci-se",
+							"rijec": "وَقَالُوا",
+							"t": 4
+						},
+						{
+							"id": "gunne",
+							"rijec": "كُنَّا",
+							"t": 21
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "كُنَّا",
+							"t": 0
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "مَا",
+							"t": 0
+						},
+						{
+							"id": "gunne",
+							"rijec": "كُنَّا",
+							"t": 21
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "كُنَّا",
+							"t": 0
+						},
+						{
+							"id": "medd-munfesil",
+							"rijec": "فِيٓ",
+							"t": 28
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "أَصْحَـٰبِ",
+							"t": 0
+						},
+						{
+							"id": "medd-arid",
+							"rijec": "السَّعِيرِ",
+							"t": 3
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "السَّعِيرِ",
+							"t": 27
+						}
+					]
+				},
+				{
+					"n": 11,
+					"audio": "067011.mp3",
+					"dijelovi": [
+						{
+							"t": "فَاعْتَ"
+						},
+						{
+							"t": "رَ",
+							"i": 0
+						},
+						{
+							"t": "فُ"
+						},
+						{
+							"t": "و",
+							"i": 1
+						},
+						{
+							"t": "ا",
+							"i": 2
+						},
+						{
+							"t": " بِذَ"
+						},
+						{
+							"t": "نۢبِ",
+							"i": 3
+						},
+						{
+							"t": "هِ"
+						},
+						{
+							"t": "مْ",
+							"i": 4
+						},
+						{
+							"t": " فَسُحْ"
+						},
+						{
+							"t": "قًا",
+							"i": 5
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "لِّ",
+							"i": 5
+						},
+						{
+							"t": "أَصْحَ"
+						},
+						{
+							"t": "ـٰ",
+							"i": 6
+						},
+						{
+							"t": "بِ السَّعِ"
+						},
+						{
+							"t": "ي",
+							"i": 7
+						},
+						{
+							"t": "رِ",
+							"i": 8
+						}
+					],
+					"pravila": [
+						{
+							"id": "hukmurra",
+							"rijec": "فَاعْتَرَفُوا",
+							"t": 1
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "فَاعْتَرَفُوا",
+							"t": 23
+						},
+						{
+							"id": "ne-uci-se",
+							"rijec": "فَاعْتَرَفُوا",
+							"t": 4
+						},
+						{
+							"id": "iklab",
+							"rijec": "بِذَنۢبِهِمْ",
+							"t": 41
+						},
+						{
+							"id": "izhar-sefevijj",
+							"rijec": "بِذَنۢبِهِمْ",
+							"t": 42
+						},
+						{
+							"id": "idgam-bila-gunneh",
+							"rijec": "فَسُحْقًا",
+							"t": 24
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "لِّأَصْحَـٰبِ",
+							"t": 0
+						},
+						{
+							"id": "medd-arid",
+							"rijec": "السَّعِيرِ",
+							"t": 3
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "السَّعِيرِ",
+							"t": 27
+						}
+					]
+				},
+				{
+					"n": 12,
+					"audio": "067012.mp3",
+					"dijelovi": [
+						{
+							"t": "إِ"
+						},
+						{
+							"t": "نَّ",
+							"i": 0
+						},
+						{
+							"t": " الَّذِ"
+						},
+						{
+							"t": "ي",
+							"i": 1
+						},
+						{
+							"t": "نَ يَخْشَوْنَ "
+						},
+						{
+							"t": "رَ",
+							"i": 2
+						},
+						{
+							"t": "بَّهُ"
+						},
+						{
+							"t": "م",
+							"i": 3
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "بِ",
+							"i": 3
+						},
+						{
+							"t": "الْغَيْبِ لَهُ"
+						},
+						{
+							"t": "م",
+							"i": 4
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "مَّ",
+							"i": 4
+						},
+						{
+							"t": "غْفِ"
+						},
+						{
+							"t": "رَ",
+							"i": 5
+						},
+						{
+							"t": "ةٌ",
+							"i": 6
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "وَ",
+							"i": 6
+						},
+						{
+							"t": "أَ"
+						},
+						{
+							"t": "جْ",
+							"i": 7
+						},
+						{
+							"t": "رٌ",
+							"i": 8
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "كَ",
+							"i": 8
+						},
+						{
+							"t": "بِ"
+						},
+						{
+							"t": "ي",
+							"i": 9
+						},
+						{
+							"t": "رٌ"
+						}
+					],
+					"pravila": [
+						{
+							"id": "gunne",
+							"rijec": "إِنَّ",
+							"t": 21
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "الَّذِينَ",
+							"t": 9
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "رَبَّهُم",
+							"t": 1
+						},
+						{
+							"id": "ihfa-sefevijj",
+							"rijec": "رَبَّهُم",
+							"t": 43
+						},
+						{
+							"id": "idgam-mislejn-gunneh",
+							"rijec": "لَهُم",
+							"t": 44
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "مَّغْفِرَةٌ",
+							"t": 1
+						},
+						{
+							"id": "idgam-gunneh",
+							"rijec": "مَّغْفِرَةٌ",
+							"t": 45
+						},
+						{
+							"id": "kalkala",
+							"rijec": "وَأَجْرٌ",
+							"t": 46
+						},
+						{
+							"id": "ihfa",
+							"rijec": "وَأَجْرٌ",
+							"t": 47
+						},
+						{
+							"id": "medd-arid",
+							"rijec": "كَبِيرٌ",
+							"t": 3
+						}
+					]
+				}
+			],
+			"od": 1,
+			"do": 12
+		},
+		{
+			"kljuc": "s563",
+			"sura": 67,
+			"stranica": 563,
+			"ajeti": [
+				{
+					"n": 13,
+					"audio": "067013.mp3",
+					"dijelovi": [
+						{
+							"t": "وَأَسِ"
+						},
+						{
+							"t": "رُّ",
+							"i": 0
+						},
+						{
+							"t": "و",
+							"i": 1
+						},
+						{
+							"t": "ا",
+							"i": 2
+						},
+						{
+							"t": " قَوْلَكُ"
+						},
+						{
+							"t": "مْ",
+							"i": 3
+						},
+						{
+							"t": " أَوِ ا"
+						},
+						{
+							"t": "جْ",
+							"i": 4
+						},
+						{
+							"t": "هَ"
+						},
+						{
+							"t": "رُ",
+							"i": 5
+						},
+						{
+							"t": "و",
+							"i": 6
+						},
+						{
+							"t": "ا",
+							"i": 7
+						},
+						{
+							"t": " بِ"
+						},
+						{
+							"t": "هِ",
+							"i": 8
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "ۖ",
+							"i": 9
+						},
+						{
+							"t": " إِ"
+						},
+						{
+							"t": "نَّ",
+							"i": 10
+						},
+						{
+							"t": "هُ",
+							"i": 11
+						},
+						{
+							"t": " عَلِ"
+						},
+						{
+							"t": "ي",
+							"i": 12
+						},
+						{
+							"t": "مٌۢ",
+							"i": 13
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "بِ",
+							"i": 13
+						},
+						{
+							"t": "ذَ"
+						},
+						{
+							"t": "ا",
+							"i": 14
+						},
+						{
+							"t": "تِ الصُّدُ"
+						},
+						{
+							"t": "و",
+							"i": 15
+						},
+						{
+							"t": "رِ",
+							"i": 16
+						}
+					],
+					"pravila": [
+						{
+							"id": "hukmurra",
+							"rijec": "وَأَسِرُّوا",
+							"t": 10
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "وَأَسِرُّوا",
+							"t": 23
+						},
+						{
+							"id": "ne-uci-se",
+							"rijec": "وَأَسِرُّوا",
+							"t": 4
+						},
+						{
+							"id": "izhar-sefevijj",
+							"rijec": "قَوْلَكُمْ",
+							"t": 6
+						},
+						{
+							"id": "kalkala",
+							"rijec": "اجْهَرُوا",
+							"t": 46
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "اجْهَرُوا",
+							"t": 10
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "اجْهَرُوا",
+							"t": 23
+						},
+						{
+							"id": "ne-uci-se",
+							"rijec": "اجْهَرُوا",
+							"t": 4
+						},
+						{
+							"id": "damir",
+							"rijec": "بِهِ",
+							"t": 48
+						},
+						{
+							"id": "vakf",
+							"rijec": "ۖ",
+							"t": 13
+						},
+						{
+							"id": "gunne",
+							"rijec": "إِنَّهُ",
+							"t": 21
+						},
+						{
+							"id": "damir",
+							"rijec": "إِنَّهُ",
+							"t": 48
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "عَلِيمٌۢ",
+							"t": 9
+						},
+						{
+							"id": "iklab",
+							"rijec": "عَلِيمٌۢ",
+							"t": 49
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "بِذَاتِ",
+							"t": 0
+						},
+						{
+							"id": "medd-arid",
+							"rijec": "الصُّدُورِ",
+							"t": 3
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "الصُّدُورِ",
+							"t": 27
+						}
+					]
+				},
+				{
+					"n": 14,
+					"audio": "067014.mp3",
+					"dijelovi": [
+						{
+							"t": "أَلَ"
+						},
+						{
+							"t": "ا",
+							"i": 0
+						},
+						{
+							"t": " يَعْلَمُ مَ"
+						},
+						{
+							"t": "نْ",
+							"i": 1
+						},
+						{
+							"t": " خَلَقَ وَهُوَ اللَّطِ"
+						},
+						{
+							"t": "ي",
+							"i": 2
+						},
+						{
+							"t": "فُ الْخَبِ"
+						},
+						{
+							"t": "ي",
+							"i": 3
+						},
+						{
+							"t": "رُ",
+							"i": 4
+						}
+					],
+					"pravila": [
+						{
+							"id": "medd-tabii",
+							"rijec": "أَلَا",
+							"t": 0
+						},
+						{
+							"id": "izhar-halkij",
+							"rijec": "مَنْ",
+							"t": 50
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "اللَّطِيفُ",
+							"t": 9
+						},
+						{
+							"id": "medd-arid",
+							"rijec": "الْخَبِيرُ",
+							"t": 3
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "الْخَبِيرُ",
+							"t": 10
+						}
+					]
+				},
+				{
+					"n": 15,
+					"audio": "067015.mp3",
+					"dijelovi": [
+						{
+							"t": "هُوَ الَّذِى جَعَلَ لَكُمُ الْأَ"
+						},
+						{
+							"t": "رْ",
+							"i": 0
+						},
+						{
+							"t": "ضَ ذَلُ"
+						},
+						{
+							"t": "و",
+							"i": 1
+						},
+						{
+							"t": "لً"
+						},
+						{
+							"t": "ا",
+							"i": 2
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "فَ",
+							"i": 2
+						},
+						{
+							"t": "ا"
+						},
+						{
+							"t": "مْ",
+							"i": 3
+						},
+						{
+							"t": "شُ"
+						},
+						{
+							"t": "و",
+							"i": 4
+						},
+						{
+							"t": "ا",
+							"i": 5
+						},
+						{
+							"t": " فِى مَنَ"
+						},
+						{
+							"t": "ا",
+							"i": 6
+						},
+						{
+							"t": "كِبِهَ"
+						},
+						{
+							"t": "ا",
+							"i": 7
+						},
+						{
+							"t": " وَكُلُ"
+						},
+						{
+							"t": "و",
+							"i": 8
+						},
+						{
+							"t": "ا",
+							"i": 9
+						},
+						{
+							"t": " مِ"
+						},
+						{
+							"t": "ن",
+							"i": 10
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "رِّ",
+							"i": 10
+						},
+						{
+							"t": "زْقِ"
+						},
+						{
+							"t": "هِ",
+							"i": 11
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "ۖ",
+							"i": 12
+						},
+						{
+							"t": " وَإِلَيْ"
+						},
+						{
+							"t": "هِ",
+							"i": 13
+						},
+						{
+							"t": " ال"
+						},
+						{
+							"t": "نُّ",
+							"i": 14
+						},
+						{
+							"t": "شُ"
+						},
+						{
+							"t": "و",
+							"i": 15
+						},
+						{
+							"t": "رُ",
+							"i": 16
+						}
+					],
+					"pravila": [
+						{
+							"id": "hukmurra",
+							"rijec": "الْأَرْضَ",
+							"t": 51
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "ذَلُولًا",
+							"t": 23
+						},
+						{
+							"id": "ihfa",
+							"rijec": "ذَلُولًا",
+							"t": 52
+						},
+						{
+							"id": "izhar-sefevijj",
+							"rijec": "فَامْشُوا",
+							"t": 53
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "فَامْشُوا",
+							"t": 23
+						},
+						{
+							"id": "ne-uci-se",
+							"rijec": "فَامْشُوا",
+							"t": 4
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "مَنَاكِبِهَا",
+							"t": 0
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "مَنَاكِبِهَا",
+							"t": 0
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "وَكُلُوا",
+							"t": 23
+						},
+						{
+							"id": "ne-uci-se",
+							"rijec": "وَكُلُوا",
+							"t": 4
+						},
+						{
+							"id": "idgam-bila-gunneh",
+							"rijec": "مِن",
+							"t": 54
+						},
+						{
+							"id": "damir",
+							"rijec": "رِّزْقِهِ",
+							"t": 48
+						},
+						{
+							"id": "vakf",
+							"rijec": "ۖ",
+							"t": 13
+						},
+						{
+							"id": "damir",
+							"rijec": "وَإِلَيْهِ",
+							"t": 55
+						},
+						{
+							"id": "gunne",
+							"rijec": "النُّشُورُ",
+							"t": 21
+						},
+						{
+							"id": "medd-arid",
+							"rijec": "النُّشُورُ",
+							"t": 3
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "النُّشُورُ",
+							"t": 10
+						}
+					]
+				},
+				{
+					"n": 16,
+					"audio": "067016.mp3",
+					"dijelovi": [
+						{
+							"t": "ءَأَمِ"
+						},
+						{
+							"t": "نتُ",
+							"i": 0
+						},
+						{
+							"t": "م",
+							"i": 1
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "مَّ",
+							"i": 1
+						},
+						{
+							"t": "ن",
+							"i": 2
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "فِ",
+							"i": 2
+						},
+						{
+							"t": "ى السَّمَ"
+						},
+						{
+							"t": "آ",
+							"i": 3
+						},
+						{
+							"t": "ءِ أَ"
+						},
+						{
+							"t": "ن",
+							"i": 4
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "يَ",
+							"i": 4
+						},
+						{
+							"t": "خْسِفَ بِكُمُ الْأَ"
+						},
+						{
+							"t": "رْ",
+							"i": 5
+						},
+						{
+							"t": "ضَ فَإِذَ"
+						},
+						{
+							"t": "ا",
+							"i": 6
+						},
+						{
+							"t": " هِيَ تَمُ"
+						},
+						{
+							"t": "و",
+							"i": 7
+						},
+						{
+							"t": "رُ",
+							"i": 8
+						}
+					],
+					"pravila": [
+						{
+							"id": "ihfa",
+							"rijec": "ءَأَمِنتُم",
+							"t": 14
+						},
+						{
+							"id": "idgam-mislejn-gunneh",
+							"rijec": "ءَأَمِنتُم",
+							"t": 44
+						},
+						{
+							"id": "ihfa",
+							"rijec": "مَّن",
+							"t": 17
+						},
+						{
+							"id": "medd-muttesil",
+							"rijec": "السَّمَآءِ",
+							"t": 22
+						},
+						{
+							"id": "idgam-gunneh",
+							"rijec": "أَن",
+							"t": 56
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "الْأَرْضَ",
+							"t": 51
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "فَإِذَا",
+							"t": 0
+						},
+						{
+							"id": "medd-arid",
+							"rijec": "تَمُورُ",
+							"t": 3
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "تَمُورُ",
+							"t": 10
+						}
+					]
+				},
+				{
+					"n": 17,
+					"audio": "067017.mp3",
+					"dijelovi": [
+						{
+							"t": "أَ"
+						},
+						{
+							"t": "مْ",
+							"i": 0
+						},
+						{
+							"t": " أَمِ"
+						},
+						{
+							"t": "نتُ",
+							"i": 1
+						},
+						{
+							"t": "م",
+							"i": 2
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "مَّ",
+							"i": 2
+						},
+						{
+							"t": "ن",
+							"i": 3
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "فِ",
+							"i": 3
+						},
+						{
+							"t": "ى السَّمَ"
+						},
+						{
+							"t": "آ",
+							"i": 4
+						},
+						{
+							"t": "ءِ أَ"
+						},
+						{
+							"t": "ن",
+							"i": 5
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "يُ",
+							"i": 5
+						},
+						{
+							"t": "رْ",
+							"i": 6
+						},
+						{
+							"t": "سِلَ عَلَيْكُ"
+						},
+						{
+							"t": "مْ",
+							"i": 7
+						},
+						{
+							"t": " حَ"
+						},
+						{
+							"t": "ا",
+							"i": 8
+						},
+						{
+							"t": "صِ"
+						},
+						{
+							"t": "بًا",
+							"i": 9
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "ۖ",
+							"i": 10
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "فَ",
+							"i": 9
+						},
+						{
+							"t": "سَتَعْلَمُ"
+						},
+						{
+							"t": "و",
+							"i": 11
+						},
+						{
+							"t": "نَ كَيْفَ نَذِ"
+						},
+						{
+							"t": "ي",
+							"i": 12
+						},
+						{
+							"t": "رِ",
+							"i": 13
+						}
+					],
+					"pravila": [
+						{
+							"id": "izhar-sefevijj",
+							"rijec": "أَمْ",
+							"t": 6
+						},
+						{
+							"id": "ihfa",
+							"rijec": "أَمِنتُم",
+							"t": 14
+						},
+						{
+							"id": "idgam-mislejn-gunneh",
+							"rijec": "أَمِنتُم",
+							"t": 44
+						},
+						{
+							"id": "ihfa",
+							"rijec": "مَّن",
+							"t": 17
+						},
+						{
+							"id": "medd-muttesil",
+							"rijec": "السَّمَآءِ",
+							"t": 22
+						},
+						{
+							"id": "idgam-gunneh",
+							"rijec": "أَن",
+							"t": 56
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "يُرْسِلَ",
+							"t": 57
+						},
+						{
+							"id": "izhar-sefevijj",
+							"rijec": "عَلَيْكُمْ",
+							"t": 58
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "حَاصِبًا",
+							"t": 0
+						},
+						{
+							"id": "ihfa",
+							"rijec": "حَاصِبًا",
+							"t": 52
+						},
+						{
+							"id": "vakf",
+							"rijec": "ۖ",
+							"t": 13
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "فَسَتَعْلَمُونَ",
+							"t": 23
+						},
+						{
+							"id": "medd-arid",
+							"rijec": "نَذِيرِ",
+							"t": 3
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "نَذِيرِ",
+							"t": 27
+						}
+					]
+				},
+				{
+					"n": 18,
+					"audio": "067018.mp3",
+					"dijelovi": [
+						{
+							"t": "وَلَقَ"
+						},
+						{
+							"t": "دْ",
+							"i": 0
+						},
+						{
+							"t": " كَذَّبَ الَّذِ"
+						},
+						{
+							"t": "ي",
+							"i": 1
+						},
+						{
+							"t": "نَ مِ"
+						},
+						{
+							"t": "ن",
+							"i": 2
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "قَ",
+							"i": 2
+						},
+						{
+							"t": "بْ",
+							"i": 3
+						},
+						{
+							"t": "لِهِ"
+						},
+						{
+							"t": "مْ",
+							"i": 4
+						},
+						{
+							"t": " فَكَيْفَ كَ"
+						},
+						{
+							"t": "ا",
+							"i": 5
+						},
+						{
+							"t": "نَ نَكِ"
+						},
+						{
+							"t": "ي",
+							"i": 6
+						},
+						{
+							"t": "رِ",
+							"i": 7
+						}
+					],
+					"pravila": [
+						{
+							"id": "kalkala",
+							"rijec": "وَلَقَدْ",
+							"t": 20
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "الَّذِينَ",
+							"t": 9
+						},
+						{
+							"id": "ihfa",
+							"rijec": "مِن",
+							"t": 19
+						},
+						{
+							"id": "kalkala",
+							"rijec": "قَبْلِهِمْ",
+							"t": 5
+						},
+						{
+							"id": "izhar-sefevijj",
+							"rijec": "قَبْلِهِمْ",
+							"t": 42
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "كَانَ",
+							"t": 0
+						},
+						{
+							"id": "medd-arid",
+							"rijec": "نَكِيرِ",
+							"t": 3
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "نَكِيرِ",
+							"t": 27
+						}
+					]
+				},
+				{
+					"n": 19,
+					"audio": "067019.mp3",
+					"dijelovi": [
+						{
+							"t": "أَوَلَ"
+						},
+						{
+							"t": "مْ",
+							"i": 0
+						},
+						{
+							"t": " يَ"
+						},
+						{
+							"t": "رَ",
+							"i": 1
+						},
+						{
+							"t": "وْ"
+						},
+						{
+							"t": "ا",
+							"i": 2
+						},
+						{
+							"t": " إِلَى الطَّيْ"
+						},
+						{
+							"t": "رِ",
+							"i": 3
+						},
+						{
+							"t": " فَوْقَهُ"
+						},
+						{
+							"t": "مْ",
+							"i": 4
+						},
+						{
+							"t": " صَ"
+						},
+						{
+							"t": "ـٰٓ",
+							"i": 5
+						},
+						{
+							"t": "فَّ"
+						},
+						{
+							"t": "ـٰ",
+							"i": 6
+						},
+						{
+							"t": "تٍ",
+							"i": 7
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "وَ",
+							"i": 7
+						},
+						{
+							"t": "يَ"
+						},
+						{
+							"t": "قْ",
+							"i": 8
+						},
+						{
+							"t": "بِضْنَ "
+						},
+						{
+							"t": "ۚ",
+							"i": 9
+						},
+						{
+							"t": " مَ"
+						},
+						{
+							"t": "ا",
+							"i": 10
+						},
+						{
+							"t": " يُ"
+						},
+						{
+							"t": "مْ",
+							"i": 11
+						},
+						{
+							"t": "سِكُهُ"
+						},
+						{
+							"t": "نَّ",
+							"i": 12
+						},
+						{
+							"t": " إِلَّ"
+						},
+						{
+							"t": "ا",
+							"i": 13
+						},
+						{
+							"t": " ال"
+						},
+						{
+							"t": "رَّ",
+							"i": 14
+						},
+						{
+							"t": "حْمَ"
+						},
+						{
+							"t": "ـٰ",
+							"i": 15
+						},
+						{
+							"t": "نُ "
+						},
+						{
+							"t": "ۚ",
+							"i": 16
+						},
+						{
+							"t": " إِ"
+						},
+						{
+							"t": "نَّ",
+							"i": 17
+						},
+						{
+							"t": "هُ",
+							"i": 18
+						},
+						{
+							"t": " بِكُلِّ شَيْ"
+						},
+						{
+							"t": "ءٍۭ",
+							"i": 19
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "بَ",
+							"i": 19
+						},
+						{
+							"t": "صِ"
+						},
+						{
+							"t": "ي",
+							"i": 20
+						},
+						{
+							"t": "رٌ"
+						}
+					],
+					"pravila": [
+						{
+							"id": "izhar-sefevijj",
+							"rijec": "أَوَلَمْ",
+							"t": 32
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "يَرَوْا",
+							"t": 1
+						},
+						{
+							"id": "ne-uci-se",
+							"rijec": "يَرَوْا",
+							"t": 4
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "الطَّيْرِ",
+							"t": 27
+						},
+						{
+							"id": "izhar-sefevijj",
+							"rijec": "فَوْقَهُمْ",
+							"t": 59
+						},
+						{
+							"id": "medd-lazim",
+							"rijec": "صَـٰٓفَّـٰتٍ",
+							"t": 60
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "صَـٰٓفَّـٰتٍ",
+							"t": 0
+						},
+						{
+							"id": "idgam-gunneh",
+							"rijec": "صَـٰٓفَّـٰتٍ",
+							"t": 61
+						},
+						{
+							"id": "kalkala",
+							"rijec": "وَيَقْبِضْنَ",
+							"t": 62
+						},
+						{
+							"id": "vakf",
+							"rijec": "ۚ",
+							"t": 8
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "مَا",
+							"t": 0
+						},
+						{
+							"id": "izhar-sefevijj",
+							"rijec": "يُمْسِكُهُنَّ",
+							"t": 63
+						},
+						{
+							"id": "gunne",
+							"rijec": "يُمْسِكُهُنَّ",
+							"t": 21
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "إِلَّا",
+							"t": 0
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "الرَّحْمَـٰنُ",
+							"t": 1
+						},
+						{
+							"id": "medd-arid",
+							"rijec": "الرَّحْمَـٰنُ",
+							"t": 25
+						},
+						{
+							"id": "vakf",
+							"rijec": "ۚ",
+							"t": 8
+						},
+						{
+							"id": "gunne",
+							"rijec": "إِنَّهُ",
+							"t": 21
+						},
+						{
+							"id": "damir",
+							"rijec": "إِنَّهُ",
+							"t": 48
+						},
+						{
+							"id": "iklab",
+							"rijec": "شَيْءٍۭ",
+							"t": 64
+						},
+						{
+							"id": "medd-arid",
+							"rijec": "بَصِيرٌ",
+							"t": 3
+						}
+					]
+				},
+				{
+					"n": 20,
+					"audio": "067020.mp3",
+					"dijelovi": [
+						{
+							"t": "أَ"
+						},
+						{
+							"t": "مَّ",
+							"i": 0
+						},
+						{
+							"t": "نْ",
+							"i": 1
+						},
+						{
+							"t": " هَ"
+						},
+						{
+							"t": "ـٰ",
+							"i": 2
+						},
+						{
+							"t": "ذَ"
+						},
+						{
+							"t": "ا",
+							"i": 3
+						},
+						{
+							"t": " الَّذِى هُوَ جُن"
+						},
+						{
+							"t": "دٌ",
+							"i": 4
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "لَّ",
+							"i": 4
+						},
+						{
+							"t": "كُ"
+						},
+						{
+							"t": "مْ",
+							"i": 5
+						},
+						{
+							"t": " يَ"
+						},
+						{
+							"t": "نصُ",
+							"i": 6
+						},
+						{
+							"t": "رُ",
+							"i": 7
+						},
+						{
+							"t": "كُ"
+						},
+						{
+							"t": "م",
+							"i": 8
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "مِّ",
+							"i": 8
+						},
+						{
+							"t": "ن",
+							"i": 9
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "دُ",
+							"i": 9
+						},
+						{
+							"t": "و",
+							"i": 10
+						},
+						{
+							"t": "نِ ال"
+						},
+						{
+							"t": "رَّ",
+							"i": 11
+						},
+						{
+							"t": "حْمَ"
+						},
+						{
+							"t": "ـٰ",
+							"i": 12
+						},
+						{
+							"t": "نِ "
+						},
+						{
+							"t": "ۚ",
+							"i": 13
+						},
+						{
+							"t": " إِنِ الْكَ"
+						},
+						{
+							"t": "ـٰ",
+							"i": 14
+						},
+						{
+							"t": "فِ"
+						},
+						{
+							"t": "رُ",
+							"i": 15
+						},
+						{
+							"t": "و",
+							"i": 16
+						},
+						{
+							"t": "نَ إِلَّ"
+						},
+						{
+							"t": "ا",
+							"i": 17
+						},
+						{
+							"t": " فِى غُ"
+						},
+						{
+							"t": "رُ",
+							"i": 18
+						},
+						{
+							"t": "و",
+							"i": 19
+						},
+						{
+							"t": "رٍ"
+						}
+					],
+					"pravila": [
+						{
+							"id": "gunne",
+							"rijec": "أَمَّنْ",
+							"t": 18
+						},
+						{
+							"id": "izhar-halkij",
+							"rijec": "أَمَّنْ",
+							"t": 65
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "هَـٰذَا",
+							"t": 0
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "هَـٰذَا",
+							"t": 0
+						},
+						{
+							"id": "idgam-bila-gunneh",
+							"rijec": "جُندٌ",
+							"t": 66
+						},
+						{
+							"id": "izhar-sefevijj",
+							"rijec": "لَّكُمْ",
+							"t": 32
+						},
+						{
+							"id": "ihfa",
+							"rijec": "يَنصُرُكُم",
+							"t": 67
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "يَنصُرُكُم",
+							"t": 10
+						},
+						{
+							"id": "idgam-mislejn-gunneh",
+							"rijec": "يَنصُرُكُم",
+							"t": 44
+						},
+						{
+							"id": "ihfa",
+							"rijec": "مِّن",
+							"t": 68
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "دُونِ",
+							"t": 23
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "الرَّحْمَـٰنِ",
+							"t": 1
+						},
+						{
+							"id": "medd-arid",
+							"rijec": "الرَّحْمَـٰنِ",
+							"t": 25
+						},
+						{
+							"id": "vakf",
+							"rijec": "ۚ",
+							"t": 8
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "الْكَـٰفِرُونَ",
+							"t": 0
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "الْكَـٰفِرُونَ",
+							"t": 10
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "الْكَـٰفِرُونَ",
+							"t": 23
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "إِلَّا",
+							"t": 0
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "غُرُورٍ",
+							"t": 10
+						},
+						{
+							"id": "medd-arid",
+							"rijec": "غُرُورٍ",
+							"t": 3
+						}
+					]
+				},
+				{
+					"n": 21,
+					"audio": "067021.mp3",
+					"dijelovi": [
+						{
+							"t": "أَ"
+						},
+						{
+							"t": "مَّ",
+							"i": 0
+						},
+						{
+							"t": "نْ",
+							"i": 1
+						},
+						{
+							"t": " هَ"
+						},
+						{
+							"t": "ـٰ",
+							"i": 2
+						},
+						{
+							"t": "ذَ"
+						},
+						{
+							"t": "ا",
+							"i": 3
+						},
+						{
+							"t": " الَّذِى يَ"
+						},
+						{
+							"t": "رْ",
+							"i": 4
+						},
+						{
+							"t": "زُقُكُ"
+						},
+						{
+							"t": "مْ",
+							"i": 5
+						},
+						{
+							"t": " إِ"
+						},
+						{
+							"t": "نْ",
+							"i": 6
+						},
+						{
+							"t": " أَ"
+						},
+						{
+							"t": "مْ",
+							"i": 7
+						},
+						{
+							"t": "سَكَ "
+						},
+						{
+							"t": "رِ",
+							"i": 8
+						},
+						{
+							"t": "زْقَ"
+						},
+						{
+							"t": "هُ",
+							"i": 9
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "ۚ",
+							"i": 10
+						},
+						{
+							"t": " بَ"
+						},
+						{
+							"t": "ل",
+							"i": 11
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "لَّ",
+							"i": 11
+						},
+						{
+							"t": "جُّ"
+						},
+						{
+							"t": "و",
+							"i": 12
+						},
+						{
+							"t": "ا",
+							"i": 13
+						},
+						{
+							"t": " فِى عُتُ"
+						},
+						{
+							"t": "وٍّ",
+							"i": 14
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "وَ",
+							"i": 14
+						},
+						{
+							"t": "نُفُ"
+						},
+						{
+							"t": "و",
+							"i": 15
+						},
+						{
+							"t": "رٍ"
+						}
+					],
+					"pravila": [
+						{
+							"id": "gunne",
+							"rijec": "أَمَّنْ",
+							"t": 18
+						},
+						{
+							"id": "izhar-halkij",
+							"rijec": "أَمَّنْ",
+							"t": 65
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "هَـٰذَا",
+							"t": 0
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "هَـٰذَا",
+							"t": 0
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "يَرْزُقُكُمْ",
+							"t": 69
+						},
+						{
+							"id": "izhar-sefevijj",
+							"rijec": "يَرْزُقُكُمْ",
+							"t": 39
+						},
+						{
+							"id": "izhar-halkij",
+							"rijec": "إِنْ",
+							"t": 38
+						},
+						{
+							"id": "izhar-sefevijj",
+							"rijec": "أَمْسَكَ",
+							"t": 63
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "رِزْقَهُ",
+							"t": 27
+						},
+						{
+							"id": "damir",
+							"rijec": "رِزْقَهُ",
+							"t": 48
+						},
+						{
+							"id": "vakf",
+							"rijec": "ۚ",
+							"t": 8
+						},
+						{
+							"id": "idgam-mislejn",
+							"rijec": "بَل",
+							"t": 70
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "لَّجُّوا",
+							"t": 23
+						},
+						{
+							"id": "ne-uci-se",
+							"rijec": "لَّجُّوا",
+							"t": 4
+						},
+						{
+							"id": "idgam-gunneh",
+							"rijec": "عُتُوٍّ",
+							"t": 61
+						},
+						{
+							"id": "medd-arid",
+							"rijec": "وَنُفُورٍ",
+							"t": 3
+						}
+					]
+				},
+				{
+					"n": 22,
+					"audio": "067022.mp3",
+					"dijelovi": [
+						{
+							"t": "أَفَمَ"
+						},
+						{
+							"t": "ن",
+							"i": 0
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "يَ",
+							"i": 0
+						},
+						{
+							"t": "مْ",
+							"i": 1
+						},
+						{
+							"t": "شِى مُكِ"
+						},
+						{
+							"t": "بًّ",
+							"i": 2
+						},
+						{
+							"t": "ا عَلَ"
+						},
+						{
+							"t": "ىٰ",
+							"i": 3
+						},
+						{
+							"t": " وَ"
+						},
+						{
+							"t": "جْ",
+							"i": 4
+						},
+						{
+							"t": "هِ"
+						},
+						{
+							"t": "هِ",
+							"i": 5
+						},
+						{
+							"t": " أَهْدَ"
+						},
+						{
+							"t": "ىٰٓ",
+							"i": 6
+						},
+						{
+							"t": " أَ"
+						},
+						{
+							"t": "مَّ",
+							"i": 7
+						},
+						{
+							"t": "ن",
+							"i": 8
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "يَ",
+							"i": 8
+						},
+						{
+							"t": "مْ",
+							"i": 9
+						},
+						{
+							"t": "شِى سَوِ"
+						},
+						{
+							"t": "يًّ",
+							"i": 10
+						},
+						{
+							"t": "ا عَلَ"
+						},
+						{
+							"t": "ىٰ",
+							"i": 11
+						},
+						{
+							"t": " صِ"
+						},
+						{
+							"t": "رَٰ",
+							"i": 12
+						},
+						{
+							"t": "طٍ",
+							"i": 14
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "مُّ",
+							"i": 14
+						},
+						{
+							"t": "سْتَقِ"
+						},
+						{
+							"t": "ي",
+							"i": 15
+						},
+						{
+							"t": "مٍ"
+						}
+					],
+					"pravila": [
+						{
+							"id": "idgam-gunneh",
+							"rijec": "أَفَمَن",
+							"t": 56
+						},
+						{
+							"id": "izhar-sefevijj",
+							"rijec": "يَمْشِى",
+							"t": 53
+						},
+						{
+							"id": "izhar-halkij",
+							"rijec": "مُكِبًّا",
+							"t": 71
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "عَلَىٰ",
+							"t": 0
+						},
+						{
+							"id": "kalkala",
+							"rijec": "وَجْهِهِ",
+							"t": 46
+						},
+						{
+							"id": "damir",
+							"rijec": "وَجْهِهِ",
+							"t": 48
+						},
+						{
+							"id": "medd-munfesil",
+							"rijec": "أَهْدَىٰٓ",
+							"t": 28
+						},
+						{
+							"id": "gunne",
+							"rijec": "أَمَّن",
+							"t": 18
+						},
+						{
+							"id": "idgam-gunneh",
+							"rijec": "أَمَّن",
+							"t": 56
+						},
+						{
+							"id": "izhar-sefevijj",
+							"rijec": "يَمْشِى",
+							"t": 53
+						},
+						{
+							"id": "izhar-halkij",
+							"rijec": "سَوِيًّا",
+							"t": 71
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "عَلَىٰ",
+							"t": 0
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "صِرَٰطٍ",
+							"t": 0
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "صِرَٰطٍ",
+							"t": 1
+						},
+						{
+							"id": "idgam-gunneh",
+							"rijec": "صِرَٰطٍ",
+							"t": 72
+						},
+						{
+							"id": "medd-arid",
+							"rijec": "مُّسْتَقِيمٍ",
+							"t": 73
+						}
+					]
+				},
+				{
+					"n": 23,
+					"audio": "067023.mp3",
+					"dijelovi": [
+						{
+							"t": "قُلْ هُوَ الَّذِ"
+						},
+						{
+							"t": "يٓ",
+							"i": 0
+						},
+						{
+							"t": " أَ"
+						},
+						{
+							"t": "نشَ",
+							"i": 1
+						},
+						{
+							"t": "أَكُ"
+						},
+						{
+							"t": "مْ",
+							"i": 2
+						},
+						{
+							"t": " وَجَعَلَ لَكُمُ السَّ"
+						},
+						{
+							"t": "مْ",
+							"i": 3
+						},
+						{
+							"t": "عَ وَالْأَ"
+						},
+						{
+							"t": "بْ",
+							"i": 4
+						},
+						{
+							"t": "صَ"
+						},
+						{
+							"t": "ـٰ",
+							"i": 5
+						},
+						{
+							"t": "رَ",
+							"i": 6
+						},
+						{
+							"t": " وَالْأَفْـِٔدَةَ "
+						},
+						{
+							"t": "ۖ",
+							"i": 7
+						},
+						{
+							"t": " قَلِ"
+						},
+						{
+							"t": "ي",
+							"i": 8
+						},
+						{
+							"t": "لً"
+						},
+						{
+							"t": "ا",
+							"i": 9
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "مَّ",
+							"i": 9
+						},
+						{
+							"t": "ا",
+							"i": 10
+						},
+						{
+							"t": " تَشْكُ"
+						},
+						{
+							"t": "رُ",
+							"i": 11
+						},
+						{
+							"t": "و",
+							"i": 12
+						},
+						{
+							"t": "نَ"
+						}
+					],
+					"pravila": [
+						{
+							"id": "medd-munfesil",
+							"rijec": "الَّذِيٓ",
+							"t": 28
+						},
+						{
+							"id": "ihfa",
+							"rijec": "أَنشَأَكُمْ",
+							"t": 36
+						},
+						{
+							"id": "izhar-sefevijj",
+							"rijec": "أَنشَأَكُمْ",
+							"t": 74
+						},
+						{
+							"id": "izhar-sefevijj",
+							"rijec": "السَّمْعَ",
+							"t": 26
+						},
+						{
+							"id": "kalkala",
+							"rijec": "وَالْأَبْصَـٰرَ",
+							"t": 5
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "وَالْأَبْصَـٰرَ",
+							"t": 0
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "وَالْأَبْصَـٰرَ",
+							"t": 1
+						},
+						{
+							"id": "vakf",
+							"rijec": "ۖ",
+							"t": 13
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "قَلِيلًا",
+							"t": 9
+						},
+						{
+							"id": "idgam-gunneh",
+							"rijec": "قَلِيلًا",
+							"t": 12
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "مَّا",
+							"t": 0
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "تَشْكُرُونَ",
+							"t": 10
+						},
+						{
+							"id": "medd-arid",
+							"rijec": "تَشْكُرُونَ",
+							"t": 25
+						}
+					]
+				},
+				{
+					"n": 24,
+					"audio": "067024.mp3",
+					"dijelovi": [
+						{
+							"t": "قُلْ هُوَ الَّذِى ذَ"
+						},
+						{
+							"t": "رَ",
+							"i": 0
+						},
+						{
+							"t": "أَكُ"
+						},
+						{
+							"t": "مْ",
+							"i": 1
+						},
+						{
+							"t": " فِى الْأَ"
+						},
+						{
+							"t": "رْ",
+							"i": 2
+						},
+						{
+							"t": "ضِ وَإِلَيْ"
+						},
+						{
+							"t": "هِ",
+							"i": 3
+						},
+						{
+							"t": " تُحْشَ"
+						},
+						{
+							"t": "رُ",
+							"i": 4
+						},
+						{
+							"t": "و",
+							"i": 5
+						},
+						{
+							"t": "نَ"
+						}
+					],
+					"pravila": [
+						{
+							"id": "hukmurra",
+							"rijec": "ذَرَأَكُمْ",
+							"t": 1
+						},
+						{
+							"id": "izhar-sefevijj",
+							"rijec": "ذَرَأَكُمْ",
+							"t": 42
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "الْأَرْضِ",
+							"t": 51
+						},
+						{
+							"id": "damir",
+							"rijec": "وَإِلَيْهِ",
+							"t": 55
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "تُحْشَرُونَ",
+							"t": 10
+						},
+						{
+							"id": "medd-arid",
+							"rijec": "تُحْشَرُونَ",
+							"t": 25
+						}
+					]
+				},
+				{
+					"n": 25,
+					"audio": "067025.mp3",
+					"dijelovi": [
+						{
+							"t": "وَيَقُ"
+						},
+						{
+							"t": "و",
+							"i": 0
+						},
+						{
+							"t": "لُ"
+						},
+						{
+							"t": "و",
+							"i": 1
+						},
+						{
+							"t": "نَ مَتَ"
+						},
+						{
+							"t": "ىٰ",
+							"i": 2
+						},
+						{
+							"t": " هَ"
+						},
+						{
+							"t": "ـٰ",
+							"i": 3
+						},
+						{
+							"t": "ذَ"
+						},
+						{
+							"t": "ا",
+							"i": 4
+						},
+						{
+							"t": " الْوَعْدُ إِ"
+						},
+						{
+							"t": "ن",
+							"i": 5
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "كُ",
+							"i": 5
+						},
+						{
+							"t": "نتُ",
+							"i": 6
+						},
+						{
+							"t": "مْ",
+							"i": 7
+						},
+						{
+							"t": " صَ"
+						},
+						{
+							"t": "ـٰ",
+							"i": 8
+						},
+						{
+							"t": "دِقِ"
+						},
+						{
+							"t": "ي",
+							"i": 9
+						},
+						{
+							"t": "نَ"
+						}
+					],
+					"pravila": [
+						{
+							"id": "medd-tabii",
+							"rijec": "وَيَقُولُونَ",
+							"t": 23
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "وَيَقُولُونَ",
+							"t": 23
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "مَتَىٰ",
+							"t": 0
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "هَـٰذَا",
+							"t": 0
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "هَـٰذَا",
+							"t": 0
+						},
+						{
+							"id": "ihfa",
+							"rijec": "إِن",
+							"t": 75
+						},
+						{
+							"id": "ihfa",
+							"rijec": "كُنتُمْ",
+							"t": 14
+						},
+						{
+							"id": "izhar-sefevijj",
+							"rijec": "كُنتُمْ",
+							"t": 59
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "صَـٰدِقِينَ",
+							"t": 0
+						},
+						{
+							"id": "medd-arid",
+							"rijec": "صَـٰدِقِينَ",
+							"t": 25
+						}
+					]
+				},
+				{
+					"n": 26,
+					"audio": "067026.mp3",
+					"dijelovi": [
+						{
+							"t": "قُلْ إِ"
+						},
+						{
+							"t": "نَّ",
+							"i": 0
+						},
+						{
+							"t": "مَ"
+						},
+						{
+							"t": "ا",
+							"i": 1
+						},
+						{
+							"t": " الْعِلْمُ عِ"
+						},
+						{
+							"t": "ندَ",
+							"i": 2
+						},
+						{
+							"t": " ا"
+						},
+						{
+							"t": "للَّهِ",
+							"i": 3
+						},
+						{
+							"t": " وَإِ"
+						},
+						{
+							"t": "نَّ",
+							"i": 4
+						},
+						{
+							"t": "مَ"
+						},
+						{
+							"t": "آ",
+							"i": 5
+						},
+						{
+							"t": " أَنَ"
+						},
+						{
+							"t": "ا۠",
+							"i": 6
+						},
+						{
+							"t": " نَذِ"
+						},
+						{
+							"t": "ي",
+							"i": 7
+						},
+						{
+							"t": "رٌ",
+							"i": 8
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "مُّ",
+							"i": 8
+						},
+						{
+							"t": "بِ"
+						},
+						{
+							"t": "ي",
+							"i": 9
+						},
+						{
+							"t": "نٌ"
+						}
+					],
+					"pravila": [
+						{
+							"id": "gunne",
+							"rijec": "إِنَّمَا",
+							"t": 21
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "إِنَّمَا",
+							"t": 0
+						},
+						{
+							"id": "ihfa",
+							"rijec": "عِندَ",
+							"t": 68
+						},
+						{
+							"id": "lafzatullah",
+							"rijec": "اللَّهِ",
+							"t": 35
+						},
+						{
+							"id": "gunne",
+							"rijec": "وَإِنَّمَآ",
+							"t": 21
+						},
+						{
+							"id": "medd-munfesil",
+							"rijec": "وَإِنَّمَآ",
+							"t": 28
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "أَنَا۠",
+							"t": 0
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "نَذِيرٌ",
+							"t": 9
+						},
+						{
+							"id": "idgam-gunneh",
+							"rijec": "نَذِيرٌ",
+							"t": 76
+						},
+						{
+							"id": "medd-arid",
+							"rijec": "مُّبِينٌ",
+							"t": 25
+						}
+					]
+				}
+			],
+			"od": 13,
+			"do": 26
+		},
+		{
+			"kljuc": "s564",
+			"sura": 67,
+			"stranica": 564,
+			"ajeti": [
+				{
+					"n": 27,
+					"audio": "067027.mp3",
+					"dijelovi": [
+						{
+							"t": "فَلَ"
+						},
+						{
+							"t": "مَّ",
+							"i": 0
+						},
+						{
+							"t": "ا",
+							"i": 1
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "رَ",
+							"i": 2
+						},
+						{
+							"t": "أَوْ"
+						},
+						{
+							"t": "هُ",
+							"i": 3
+						},
+						{
+							"t": " زُلْفَ"
+						},
+						{
+							"t": "ةً",
+							"i": 4
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "سِ",
+							"i": 4
+						},
+						{
+							"t": "يٓ",
+							"i": 5
+						},
+						{
+							"t": "ـَٔتْ وُجُ"
+						},
+						{
+							"t": "و",
+							"i": 6
+						},
+						{
+							"t": "هُ",
+							"i": 7
+						},
+						{
+							"t": " الَّذِ"
+						},
+						{
+							"t": "ي",
+							"i": 8
+						},
+						{
+							"t": "نَ كَفَ"
+						},
+						{
+							"t": "رُ",
+							"i": 9
+						},
+						{
+							"t": "و",
+							"i": 10
+						},
+						{
+							"t": "ا",
+							"i": 11
+						},
+						{
+							"t": " وَقِ"
+						},
+						{
+							"t": "ي",
+							"i": 12
+						},
+						{
+							"t": "لَ هَ"
+						},
+						{
+							"t": "ـٰ",
+							"i": 13
+						},
+						{
+							"t": "ذَ"
+						},
+						{
+							"t": "ا",
+							"i": 14
+						},
+						{
+							"t": " الَّذِى كُ"
+						},
+						{
+							"t": "نتُ",
+							"i": 15
+						},
+						{
+							"t": "م",
+							"i": 16
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "بِ",
+							"i": 16
+						},
+						{
+							"t": "هِ",
+							"i": 17
+						},
+						{
+							"t": " تَدَّعُ"
+						},
+						{
+							"t": "و",
+							"i": 18
+						},
+						{
+							"t": "نَ"
+						}
+					],
+					"pravila": [
+						{
+							"id": "gunne",
+							"rijec": "فَلَمَّا",
+							"t": 18
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "فَلَمَّا",
+							"t": 0
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "رَأَوْهُ",
+							"t": 1
+						},
+						{
+							"id": "damir",
+							"rijec": "رَأَوْهُ",
+							"t": 55
+						},
+						{
+							"id": "ihfa",
+							"rijec": "زُلْفَةً",
+							"t": 77
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "سِيٓـَٔتْ",
+							"t": 9
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "وُجُوهُ",
+							"t": 23
+						},
+						{
+							"id": "damir",
+							"rijec": "وُجُوهُ",
+							"t": 55
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "الَّذِينَ",
+							"t": 9
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "كَفَرُوا",
+							"t": 10
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "كَفَرُوا",
+							"t": 23
+						},
+						{
+							"id": "ne-uci-se",
+							"rijec": "كَفَرُوا",
+							"t": 4
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "وَقِيلَ",
+							"t": 9
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "هَـٰذَا",
+							"t": 0
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "هَـٰذَا",
+							"t": 0
+						},
+						{
+							"id": "ihfa",
+							"rijec": "كُنتُم",
+							"t": 14
+						},
+						{
+							"id": "ihfa-sefevijj",
+							"rijec": "كُنتُم",
+							"t": 43
+						},
+						{
+							"id": "damir",
+							"rijec": "بِهِ",
+							"t": 48
+						},
+						{
+							"id": "medd-arid",
+							"rijec": "تَدَّعُونَ",
+							"t": 25
+						}
+					]
+				},
+				{
+					"n": 28,
+					"audio": "067028.mp3",
+					"dijelovi": [
+						{
+							"t": "قُلْ أَ"
+						},
+						{
+							"t": "رَ",
+							"i": 0
+						},
+						{
+							"t": "ءَيْتُ"
+						},
+						{
+							"t": "مْ",
+							"i": 1
+						},
+						{
+							"t": " إِ"
+						},
+						{
+							"t": "نْ",
+							"i": 2
+						},
+						{
+							"t": " أَهْلَكَنِيَ ا"
+						},
+						{
+							"t": "للَّهُ",
+							"i": 3
+						},
+						{
+							"t": " وَمَ"
+						},
+						{
+							"t": "ن",
+							"i": 4
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "مَّ",
+							"i": 4
+						},
+						{
+							"t": "عِيَ أَوْ "
+						},
+						{
+							"t": "رَ",
+							"i": 5
+						},
+						{
+							"t": "حِمَنَ"
+						},
+						{
+							"t": "ا",
+							"i": 6
+						},
+						{
+							"t": " فَمَ"
+						},
+						{
+							"t": "ن",
+							"i": 7
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "يُ",
+							"i": 7
+						},
+						{
+							"t": "جِ"
+						},
+						{
+							"t": "ي",
+							"i": 8
+						},
+						{
+							"t": "رُ",
+							"i": 9
+						},
+						{
+							"t": " الْكَ"
+						},
+						{
+							"t": "ـٰ",
+							"i": 10
+						},
+						{
+							"t": "فِ"
+						},
+						{
+							"t": "رِ",
+							"i": 11
+						},
+						{
+							"t": "ي",
+							"i": 12
+						},
+						{
+							"t": "نَ مِ"
+						},
+						{
+							"t": "نْ",
+							"i": 13
+						},
+						{
+							"t": " عَذَ"
+						},
+						{
+							"t": "ا",
+							"i": 14
+						},
+						{
+							"t": "بٍ",
+							"i": 15
+						},
+						{
+							"t": " أَلِ"
+						},
+						{
+							"t": "ي",
+							"i": 16
+						},
+						{
+							"t": "مٍ"
+						}
+					],
+					"pravila": [
+						{
+							"id": "hukmurra",
+							"rijec": "أَرَءَيْتُمْ",
+							"t": 1
+						},
+						{
+							"id": "izhar-sefevijj",
+							"rijec": "أَرَءَيْتُمْ",
+							"t": 39
+						},
+						{
+							"id": "izhar-halkij",
+							"rijec": "إِنْ",
+							"t": 38
+						},
+						{
+							"id": "lafzatullah",
+							"rijec": "اللَّهُ",
+							"t": 35
+						},
+						{
+							"id": "idgam-gunneh",
+							"rijec": "وَمَن",
+							"t": 78
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "رَحِمَنَا",
+							"t": 1
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "رَحِمَنَا",
+							"t": 0
+						},
+						{
+							"id": "idgam-gunneh",
+							"rijec": "فَمَن",
+							"t": 56
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "يُجِيرُ",
+							"t": 9
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "يُجِيرُ",
+							"t": 10
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "الْكَـٰفِرِينَ",
+							"t": 0
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "الْكَـٰفِرِينَ",
+							"t": 27
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "الْكَـٰفِرِينَ",
+							"t": 9
+						},
+						{
+							"id": "izhar-halkij",
+							"rijec": "مِنْ",
+							"t": 79
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "عَذَابٍ",
+							"t": 0
+						},
+						{
+							"id": "izhar-halkij",
+							"rijec": "عَذَابٍ",
+							"t": 80
+						},
+						{
+							"id": "medd-arid",
+							"rijec": "أَلِيمٍ",
+							"t": 73
+						}
+					]
+				},
+				{
+					"n": 29,
+					"audio": "067029.mp3",
+					"dijelovi": [
+						{
+							"t": "قُلْ هُوَ ال"
+						},
+						{
+							"t": "رَّ",
+							"i": 0
+						},
+						{
+							"t": "حْمَ"
+						},
+						{
+							"t": "ـٰ",
+							"i": 1
+						},
+						{
+							"t": "نُ ءَ"
+						},
+						{
+							"t": "ا",
+							"i": 2
+						},
+						{
+							"t": "مَ"
+						},
+						{
+							"t": "نَّ",
+							"i": 3
+						},
+						{
+							"t": "ا",
+							"i": 4
+						},
+						{
+							"t": " بِ"
+						},
+						{
+							"t": "هِ",
+							"i": 5
+						},
+						{
+							"t": " وَعَلَيْ"
+						},
+						{
+							"t": "هِ",
+							"i": 6
+						},
+						{
+							"t": " تَوَكَّلْنَ"
+						},
+						{
+							"t": "ا",
+							"i": 7
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "ۖ",
+							"i": 8
+						},
+						{
+							"t": " فَسَتَعْلَمُ"
+						},
+						{
+							"t": "و",
+							"i": 9
+						},
+						{
+							"t": "نَ مَ"
+						},
+						{
+							"t": "نْ",
+							"i": 10
+						},
+						{
+							"t": " هُوَ فِى ضَلَ"
+						},
+						{
+							"t": "ـٰ",
+							"i": 11
+						},
+						{
+							"t": "لٍ",
+							"i": 12
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "مُّ",
+							"i": 12
+						},
+						{
+							"t": "بِ"
+						},
+						{
+							"t": "ي",
+							"i": 13
+						},
+						{
+							"t": "نٍ"
+						}
+					],
+					"pravila": [
+						{
+							"id": "hukmurra",
+							"rijec": "الرَّحْمَـٰنُ",
+							"t": 1
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "الرَّحْمَـٰنُ",
+							"t": 0
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "ءَامَنَّا",
+							"t": 0
+						},
+						{
+							"id": "gunne",
+							"rijec": "ءَامَنَّا",
+							"t": 21
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "ءَامَنَّا",
+							"t": 0
+						},
+						{
+							"id": "damir",
+							"rijec": "بِهِ",
+							"t": 48
+						},
+						{
+							"id": "damir",
+							"rijec": "وَعَلَيْهِ",
+							"t": 55
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "تَوَكَّلْنَا",
+							"t": 0
+						},
+						{
+							"id": "vakf",
+							"rijec": "ۖ",
+							"t": 13
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "فَسَتَعْلَمُونَ",
+							"t": 23
+						},
+						{
+							"id": "izhar-halkij",
+							"rijec": "مَنْ",
+							"t": 65
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "ضَلَـٰلٍ",
+							"t": 0
+						},
+						{
+							"id": "idgam-gunneh",
+							"rijec": "ضَلَـٰلٍ",
+							"t": 72
+						},
+						{
+							"id": "medd-arid",
+							"rijec": "مُّبِينٍ",
+							"t": 25
+						}
+					]
+				},
+				{
+					"n": 30,
+					"audio": "067030.mp3",
+					"dijelovi": [
+						{
+							"t": "قُلْ أَ"
+						},
+						{
+							"t": "رَ",
+							"i": 0
+						},
+						{
+							"t": "ءَيْتُ"
+						},
+						{
+							"t": "مْ",
+							"i": 1
+						},
+						{
+							"t": " إِ"
+						},
+						{
+							"t": "نْ",
+							"i": 2
+						},
+						{
+							"t": " أَصْبَحَ مَ"
+						},
+						{
+							"t": "آ",
+							"i": 3
+						},
+						{
+							"t": "ؤُكُ"
+						},
+						{
+							"t": "مْ",
+							"i": 4
+						},
+						{
+							"t": " غَوْ"
+						},
+						{
+							"t": "رًا",
+							"i": 5
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "فَ",
+							"i": 5
+						},
+						{
+							"t": "مَ"
+						},
+						{
+							"t": "ن",
+							"i": 6
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "يَ",
+							"i": 6
+						},
+						{
+							"t": "أْتِ"
+						},
+						{
+							"t": "ي",
+							"i": 7
+						},
+						{
+							"t": "كُ"
+						},
+						{
+							"t": "م",
+							"i": 8
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "بِ",
+							"i": 8
+						},
+						{
+							"t": "مَ"
+						},
+						{
+							"t": "آ",
+							"i": 9
+						},
+						{
+							"t": "ءٍ",
+							"i": 10
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "مَّ",
+							"i": 10
+						},
+						{
+							"t": "عِ"
+						},
+						{
+							"t": "ي",
+							"i": 11
+						},
+						{
+							"t": "نٍۭ"
+						}
+					],
+					"pravila": [
+						{
+							"id": "hukmurra",
+							"rijec": "أَرَءَيْتُمْ",
+							"t": 1
+						},
+						{
+							"id": "izhar-sefevijj",
+							"rijec": "أَرَءَيْتُمْ",
+							"t": 39
+						},
+						{
+							"id": "izhar-halkij",
+							"rijec": "إِنْ",
+							"t": 38
+						},
+						{
+							"id": "medd-muttesil",
+							"rijec": "مَآؤُكُمْ",
+							"t": 22
+						},
+						{
+							"id": "izhar-sefevijj",
+							"rijec": "مَآؤُكُمْ",
+							"t": 81
+						},
+						{
+							"id": "ihfa",
+							"rijec": "غَوْرًا",
+							"t": 52
+						},
+						{
+							"id": "idgam-gunneh",
+							"rijec": "فَمَن",
+							"t": 56
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "يَأْتِيكُم",
+							"t": 9
+						},
+						{
+							"id": "ihfa-sefevijj",
+							"rijec": "يَأْتِيكُم",
+							"t": 43
+						},
+						{
+							"id": "medd-muttesil",
+							"rijec": "بِمَآءٍ",
+							"t": 22
+						},
+						{
+							"id": "idgam-gunneh",
+							"rijec": "بِمَآءٍ",
+							"t": 72
+						},
+						{
+							"id": "medd-arid",
+							"rijec": "مَّعِينٍۭ",
+							"t": 25
+						}
+					]
+				}
+			],
+			"od": 27,
+			"do": 30
+		}
+	]
+}

@@ -1,4 +1,5 @@
 {
+	"vrsta": "jasin",
 	"sura": 36,
 	"brojAjeta": 83,
 	"audio": {
@@ -14,11 +15,11 @@
 			"N (ن) sa šeddom: uči se uz gunnu (kroz nos) 2 hareketa.",
 			"Pri stajanju zadnji harf N (ن) dobija sukun poslije dužine: medd arid – uči se 2, 4 ili 6 hareketa.",
 			"Harf R (ر) se uči krupno jer nosi vokal E.",
-			"Tenvin IN (ٍ) ispred harfa M (م): uklapa se u njeg uz gunnu 2 hareketa (idgam mea-l-gunneh).",
+			"Tenvin IN (ـٍ) ispred harfa M (م): uklapa se u njeg uz gunnu 2 hareketa (idgam mea-l-gunneh).",
 			"N (ن) sa sukunom ispred harfa Z (ز): skriva se uz gunnu 2 hareketa (ihfa).",
 			"Obična dužina na harfu J (ي): uči se 2 hareketa (medd tabi’ijj).",
 			"N (ن) sa sukunom ispred harfa Z (ذ): skriva se uz gunnu 2 hareketa (ihfa).",
-			"Tenvin EN (ً) ispred harfa M (م): uklapa se u njeg uz gunnu 2 hareketa (idgam mea-l-gunneh).",
+			"Tenvin EN (ـً) ispred harfa M (م): uklapa se u njeg uz gunnu 2 hareketa (idgam mea-l-gunneh).",
 			"Dužina je na kraju riječi, a sljedeća riječ počinje hemzetom: medd munfesil – uči se 2, 4 ili 5 hareketa.",
 			"Poslije dužine, u istoj riječi, dolazi hemze: medd muttesil – uči se 4 ili 5 hareketa.",
 			"M sa sukunom (مْ) ispred harfa F (ف): izgovara se čisto, bez gunne (izhar šefevijj).",
@@ -27,16 +28,16 @@
 			"Harf R (ر) se uči tanko jer nosi vokal I.",
 			"M sa sukunom (مْ) ispred harfa L (ل): izgovara se čisto, bez gunne (izhar šefevijj).",
 			"M sa sukunom (مْ) ispred harfa hemze (أ): izgovara se čisto, bez gunne (izhar šefevijj).",
-			"Tenvin EN (ً) ispred harfa F (ف): skriva se uz gunnu 2 hareketa (ihfa).",
-			"H (ه) sa sukunom ispred istog harfa: uklapa se uz gunnu 2 hareketa (idgam mislejn mea-l-gunneh).",
+			"Tenvin EN (ـً) ispred harfa F (ف): skriva se uz gunnu 2 hareketa (ihfa).",
+			"M sa sukunom (مْ) ispred istog harfa M (م): uklapa se u njeg uz gunnu 2 hareketa (idgam mislejn mea-l-gunneh).",
 			"Harf Q (ق) sa sukunom: odskače (kalkala).",
-			"M (م) sa sukunom ispred harfa B (ب): N se pretvara u M uz gunnu 2 hareketa (iklab).",
+			"N (ن) sa sukunom ispred harfa B (ب): N se pretvara u M uz gunnu 2 hareketa (iklab).",
 			"M sa sukunom (مْ) ispred harfa S (س): izgovara se čisto, bez gunne (izhar šefevijj).",
-			"Tenvin EN (ً) ispred harfa V (و): uklapa se u njeg uz gunnu 2 hareketa (idgam mea-l-gunneh).",
+			"Tenvin EN (ـً) ispred harfa V (و): uklapa se u njeg uz gunnu 2 hareketa (idgam mea-l-gunneh).",
 			"N sa sukunom (نْ) ispred grlenog harfa H (خ): izgovara se čisto, bez gunne (izhar hallkijj).",
 			"Harf B (ب) sa sukunom: odskače (kalkala).",
 			"Harf R (ر) se uči krupno jer nosi vokal U.",
-			"Tenvin UN (ٌ) ispred grlenog harfa A (ع): izgovara se čisto, bez gunne (izhar hallkijj).",
+			"Tenvin UN (ـٌ) ispred grlenog harfa A (ع): izgovara se čisto, bez gunne (izhar hallkijj).",
 			"M sa sukunom (مْ) ispred harfa hemze (ء): izgovara se čisto, bez gunne (izhar šefevijj).",
 			"Harf R (ر) se uči krupno jer je sa sukunom, a prije njeg je vokal E.",
 			"M sa sukunom (مْ) ispred harfa T (ت): izgovara se čisto, bez gunne (izhar šefevijj).",
@@ -44,85 +45,77 @@
 			"Prije harfa J (ي) sa sukunom je kratki vokal E, a poslije njeg harf sa sukunom: medd lin – uči se 2, 4 ili 6 hareketa.",
 			"Znak za stajanje ۖ (osmanski صلي): ovdje bolje je preći.",
 			"Zamjenica HU (هُ): prije nje je dugi vokal ili sukun, pa se uči kratko.",
-			"Tenvin IN (ٍ) ispred harfa V (و): uklapa se u njeg uz gunnu 2 hareketa (idgam mea-l-gunneh).",
+			"Tenvin IN (ـٍ) ispred harfa V (و): uklapa se u njeg uz gunnu 2 hareketa (idgam mea-l-gunneh).",
 			"Harf DŽ (ج) sa sukunom: odskače (kalkala).",
-			"Tenvin IN (ٍ) ispred harfa K (ك): skriva se uz gunnu 2 hareketa (ihfa).",
+			"Tenvin IN (ـٍ) ispred harfa K (ك): skriva se uz gunnu 2 hareketa (ihfa).",
 			"Obična dužina na harfu V (و): uči se 2 hareketa (medd tabi’ijj).",
 			"Ovaj harf se piše, ali se ne uči.",
 			"M sa sukunom (مْ) ispred harfa V (و): izgovara se čisto, bez gunne (izhar šefevijj).",
 			"Znak za stajanje ۚ (osmanski ج): ovdje bolje je stati.",
-			"Tenvin IN (ٍ) ispred grlenog harfa hemze (أ): izgovara se čisto, bez gunne (izhar hallkijj).",
-			"Tenvin IN (ٍ) ispred harfa F (ف): skriva se uz gunnu 2 hareketa (ihfa).",
-			"K (ك) sa sukunom ispred istog harfa: uklapa se uz gunnu 2 hareketa (idgam mislejn mea-l-gunneh).",
+			"Tenvin IN (ـٍ) ispred grlenog harfa hemze (أ): izgovara se čisto, bez gunne (izhar hallkijj).",
+			"Tenvin EN (ـً) ispred grlenog harfa hemze (أ): izgovara se čisto, bez gunne (izhar hallkijj).",
+			"Tenvin IN (ـٍ) ispred harfa F (ف): skriva se uz gunnu 2 hareketa (ihfa).",
 			"N (ن) sa sukunom ispred harfa T (ت): skriva se uz gunnu 2 hareketa (ihfa).",
 			"M sa sukunom (مْ) ispred harfa hemze (إ): izgovara se čisto, bez gunne (izhar šefevijj).",
-			"Tenvin UN (ٌ) ispred harfa M (م): uklapa se u njeg uz gunnu 2 hareketa (idgam mea-l-gunneh).",
+			"Tenvin UN (ـٌ) ispred harfa M (م): uklapa se u njeg uz gunnu 2 hareketa (idgam mea-l-gunneh).",
 			"N (ن) sa sukunom ispred harfa Š (ش): skriva se uz gunnu 2 hareketa (ihfa).",
-			"Tenvin IN (ٍ) ispred grlenog harfa hemze (إ): izgovara se čisto, bez gunne (izhar hallkijj).",
+			"Tenvin IN (ـٍ) ispred grlenog harfa hemze (إ): izgovara se čisto, bez gunne (izhar hallkijj).",
 			"N sa sukunom (نْ) ispred grlenog harfa hemze (أ): izgovara se čisto, bez gunne (izhar hallkijj).",
-			"hemze (ئ) sa sukunom ispred harfa L (ل): uklapa se u njeg bez gunne (idgam bila gunneh).",
-			"Tenvin UN (ٌ) ispred grlenog harfa hemze (أ): izgovara se čisto, bez gunne (izhar hallkijj).",
+			"N (ن) sa sukunom ispred harfa L (ل): uklapa se u njeg bez gunne (idgam bila gunneh).",
+			"Tenvin UN (ـٌ) ispred grlenog harfa hemze (أ): izgovara se čisto, bez gunne (izhar hallkijj).",
 			"M sa sukunom (مْ) ispred harfa B (ب): skriva se uz gunnu 2 hareketa (ihfa šefevijj).",
 			"M sa sukunom (مْ) ispred harfa Q (ق): izgovara se čisto, bez gunne (izhar šefevijj).",
-			"Tenvin UN (ٌ) ispred harfa J (ي): uklapa se u njeg uz gunnu 2 hareketa (idgam mea-l-gunneh).",
-			"M (م) sa sukunom ispred harfa L (ل): uklapa se u njeg bez gunne (idgam bila gunneh).",
+			"Tenvin UN (ـٌ) ispred harfa J (ي): uklapa se u njeg uz gunnu 2 hareketa (idgam mea-l-gunneh).",
 			"N (ن) sa sukunom ispred harfa D (د): skriva se uz gunnu 2 hareketa (ihfa).",
 			"Zamjenica HU (هُ): prije nje je kratki vokal, pa se uči dugo (2 hareketa).",
-			"Tenvin EN (ً) ispred grlenog harfa hemze (إ): izgovara se čisto, bez gunne (izhar hallkijj).",
-			"hemze (إ) sa sukunom ispred harfa J (ي): uklapa se u njeg uz gunnu 2 hareketa (idgam mea-l-gunneh).",
-			"Tenvin IN (ٍ) ispred harfa L (ل): uklapa se u njeg bez gunne (idgam bila gunneh).",
+			"Tenvin EN (ـً) ispred grlenog harfa hemze (إ): izgovara se čisto, bez gunne (izhar hallkijj).",
+			"N (ن) sa sukunom ispred harfa J (ي): uklapa se u njeg uz gunnu 2 hareketa (idgam mea-l-gunneh).",
+			"Tenvin IN (ـٍ) ispred harfa L (ل): uklapa se u njeg bez gunne (idgam bila gunneh).",
 			"M sa sukunom (مْ) ispred harfa Š (ش): izgovara se čisto, bez gunne (izhar šefevijj).",
 			"N (ن) sa sukunom ispred harfa Q (ق): skriva se uz gunnu 2 hareketa (ihfa).",
-			"Tenvin EN (ً) ispred harfa L (ل): uklapa se u njeg bez gunne (idgam bila gunneh).",
+			"Tenvin EN (ـً) ispred harfa L (ل): uklapa se u njeg bez gunne (idgam bila gunneh).",
 			"N (ن) sa sukunom ispred harfa DŽ (ج): skriva se uz gunnu 2 hareketa (ihfa).",
 			"N (ن) sa sukunom ispred harfa K (ك): skriva se uz gunnu 2 hareketa (ihfa).",
 			"M sa sukunom (مْ) ispred harfa H (خ): izgovara se čisto, bez gunne (izhar šefevijj).",
-			"Tenvin EN (ً) ispred grlenog harfa A (ع): izgovara se čisto, bez gunne (izhar hallkijj).",
+			"Tenvin EN (ـً) ispred grlenog harfa A (ع): izgovara se čisto, bez gunne (izhar hallkijj).",
 			"Pri stajanju zadnji harf D (د) dobija sukun poslije dužine: medd arid – uči se 2, 4 ili 6 hareketa.",
 			"N (ن) sa sukunom ispred harfa R (ر): uklapa se u njeg bez gunne (idgam bila gunneh).",
 			"M sa sukunom (مْ) ispred harfa J (ي): izgovara se čisto, bez gunne (izhar šefevijj).",
-			"Tenvin UN (ٌ) ispred harfa L (ل): uklapa se u njeg bez gunne (idgam bila gunneh).",
+			"Tenvin UN (ـٌ) ispred harfa L (ل): uklapa se u njeg bez gunne (idgam bila gunneh).",
 			"M (م) sa šeddom: uči se uz gunnu (kroz nos) 2 hareketa.",
 			"Harf R (ر) se uči krupno jer je sa sukunom, a poslije njeg dolazi krupni harf D (ض).",
 			"N sa sukunom (نْ) ispred grlenog harfa H (ه): izgovara se čisto, bez gunne (izhar hallkijj).",
-			"T (ت) sa sukunom ispred istog harfa: uklapa se uz gunnu 2 hareketa (idgam mislejn mea-l-gunneh).",
+			"N (ن) sa sukunom ispred harfa N (ن): uklapa se u njeg uz gunnu 2 hareketa (idgam mea-l-gunneh).",
 			"N (ن) sa sukunom ispred harfa S (ث): skriva se uz gunnu 2 hareketa (ihfa).",
-			"N (ن) sa sukunom ispred harfa B (ب): N se pretvara u M uz gunnu 2 hareketa (iklab).",
 			"N (ن) sa sukunom ispred harfa F (ف): skriva se uz gunnu 2 hareketa (ihfa).",
 			"Pri stajanju zadnji harf R (ر) dobija sukun poslije dužine: medd arid – uči se 2, 4 ili 6 hareketa.",
-			"Tenvin UN (ٌ) ispred harfa F (ف): skriva se uz gunnu 2 hareketa (ihfa).",
-			"Tenvin IN (ٍ) ispred harfa J (ي): uklapa se u njeg uz gunnu 2 hareketa (idgam mea-l-gunneh).",
+			"Tenvin UN (ـٌ) ispred harfa F (ف): skriva se uz gunnu 2 hareketa (ihfa).",
+			"Tenvin IN (ـٍ) ispred harfa J (ي): uklapa se u njeg uz gunnu 2 hareketa (idgam mea-l-gunneh).",
 			"N (ن) sa sukunom ispred harfa M (م): uklapa se u njeg uz gunnu 2 hareketa (idgam mea-l-gunneh).",
-			"hemze (إ) sa sukunom ispred istog harfa: uklapa se uz gunnu 2 hareketa (idgam mislejn mea-l-gunneh).",
 			"N sa sukunom (نْ) ispred grlenog harfa hemze (ء): izgovara se čisto, bez gunne (izhar hallkijj).",
 			"Prije riječi Allah (اللّٰه) je vokal E ili U: riječ se uči krupno.",
 			"Harf T (ط) sa sukunom: odskače (kalkala).",
 			"M sa sukunom (مْ) ispred harfa S (ص): izgovara se čisto, bez gunne (izhar šefevijj).",
 			"N (ن) sa sukunom ispred harfa Z (ظ): skriva se uz gunnu 2 hareketa (ihfa).",
-			"Tenvin EN (ً) ispred harfa T (ت): skriva se uz gunnu 2 hareketa (ihfa).",
+			"Tenvin EN (ـً) ispred harfa T (ت): skriva se uz gunnu 2 hareketa (ihfa).",
 			"N (ن) sa sukunom ispred harfa S (س): skriva se uz gunnu 2 hareketa (ihfa).",
-			"M (م) sa sukunom ispred harfa M (م): uklapa se u njeg uz gunnu 2 hareketa (idgam mea-l-gunneh).",
 			"Harf R (ر) se uči krupno jer je sa sukunom, a poslije njeg dolazi krupni harf Q (ق).",
 			"Znak za stajanje ۜ (osmanski س): ovdje sekta – pauzira se bez prekidanja daha.",
 			"Znak za stajanje ۗ (osmanski قلي): ovdje bolje je stati.",
 			"M sa sukunom (مْ) ispred harfa DŽ (ج): izgovara se čisto, bez gunne (izhar šefevijj).",
-			"Tenvin UN (ٌ) ispred harfa Š (ش): skriva se uz gunnu 2 hareketa (ihfa).",
-			"Tenvin IN (ٍ) ispred grlenog harfa A (ع): izgovara se čisto, bez gunne (izhar hallkijj).",
-			"Tenvin UN (ٌ) ispred harfa V (و): uklapa se u njeg uz gunnu 2 hareketa (idgam mea-l-gunneh).",
-			"Tenvin UN (ٌ) ispred harfa Q (ق): skriva se uz gunnu 2 hareketa (ihfa).",
-			"hemze (أ) sa sukunom ispred harfa L (ل): uklapa se u njeg bez gunne (idgam bila gunneh).",
+			"Tenvin UN (ـٌ) ispred harfa Š (ش): skriva se uz gunnu 2 hareketa (ihfa).",
+			"Tenvin IN (ـٍ) ispred grlenog harfa A (ع): izgovara se čisto, bez gunne (izhar hallkijj).",
+			"Tenvin UN (ـٌ) ispred harfa V (و): uklapa se u njeg uz gunnu 2 hareketa (idgam mea-l-gunneh).",
+			"Tenvin UN (ـٌ) ispred harfa Q (ق): skriva se uz gunnu 2 hareketa (ihfa).",
+			"Tenvin IN (ـٍ) ispred harfa R (ر): uklapa se u njeg bez gunne (idgam bila gunneh).",
 			"M sa sukunom (مْ) ispred harfa A (ع): izgovara se čisto, bez gunne (izhar šefevijj).",
-			"Tenvin EN (ً) ispred harfa K (ك): skriva se uz gunnu 2 hareketa (ihfa).",
-			"M (م) sa sukunom ispred istog harfa: uklapa se uz gunnu 2 hareketa (idgam mislejn mea-l-gunneh).",
+			"Tenvin EN (ـً) ispred harfa K (ك): skriva se uz gunnu 2 hareketa (ihfa).",
 			"M sa sukunom (مْ) ispred harfa N (ن): izgovara se čisto, bez gunne (izhar šefevijj).",
 			"N sa sukunom (نْ) ispred grlenog harfa A (ع): izgovara se čisto, bez gunne (izhar hallkijj).",
 			"Prije riječi Allah (اللّٰه) je vokal I: riječ se uči tanko.",
 			"N (ن) sa sukunom ispred harfa S (ص): skriva se uz gunnu 2 hareketa (ihfa).",
 			"Znak za stajanje ۘ (osmanski م): ovdje mora se stati.",
-			"M (م) sa sukunom ispred harfa J (ي): uklapa se u njeg uz gunnu 2 hareketa (idgam mea-l-gunneh).",
-			"hemze (أ) sa sukunom ispred harfa J (ي): uklapa se u njeg uz gunnu 2 hareketa (idgam mea-l-gunneh).",
-			"M sa sukunom (مْ) ispred harfa R (ر): izgovara se čisto, bez gunne (izhar šefevijj).",
-			"Š (ش) sa sukunom ispred harfa V (و): uklapa se u njeg uz gunnu 2 hareketa (idgam mea-l-gunneh)."
+			"M sa sukunom (مْ) ispred harfa R (ر): izgovara se čisto, bez gunne (izhar šefevijj)."
 		],
 		"en": [
 			"The prolongation is followed by a letter with a sukun or a shadda: madd lazim – 6 harakas.",
@@ -132,11 +125,11 @@
 			"N (ن) with a shadda: recited with ghunnah (through the nose) for 2 harakas.",
 			"When stopping, the final letter N (ن) takes a sukun after the prolongation: madd ’arid – 2, 4 or 6 harakas.",
 			"The letter R (ر) is recited heavy because it carries the vowel A.",
-			"Tanween IN (ٍ) before the letter M (م): merged into it with ghunnah for 2 harakas (idgham ma’al-ghunnah).",
+			"Tanween IN (ـٍ) before the letter M (م): merged into it with ghunnah for 2 harakas (idgham ma’al-ghunnah).",
 			"N (ن) with a sukun before the letter Z (ز): hidden with ghunnah for 2 harakas (ikhfa).",
 			"A natural prolongation on the letter Y (ي): 2 harakas (madd tabi’i).",
 			"N (ن) with a sukun before the letter DH (ذ): hidden with ghunnah for 2 harakas (ikhfa).",
-			"Tanween EN (ً) before the letter M (م): merged into it with ghunnah for 2 harakas (idgham ma’al-ghunnah).",
+			"Tanween EN (ـً) before the letter M (م): merged into it with ghunnah for 2 harakas (idgham ma’al-ghunnah).",
 			"The prolongation ends the word and the next word begins with a hamza: madd munfasil – 2, 4 or 5 harakas.",
 			"The prolongation is followed by a hamza in the same word: madd muttasil – 4 or 5 harakas.",
 			"M with a sukun (مْ) before the letter F (ف): pronounced clearly, without ghunnah (idhhar shafawi).",
@@ -145,16 +138,16 @@
 			"The letter R (ر) is recited light because it carries the vowel I.",
 			"M with a sukun (مْ) before the letter L (ل): pronounced clearly, without ghunnah (idhhar shafawi).",
 			"M with a sukun (مْ) before the letter hamza (أ): pronounced clearly, without ghunnah (idhhar shafawi).",
-			"Tanween EN (ً) before the letter F (ف): hidden with ghunnah for 2 harakas (ikhfa).",
-			"H (ه) with a sukun before the same letter: merged with ghunnah for 2 harakas (idgham mithlayn ma’al-ghunnah).",
+			"Tanween EN (ـً) before the letter F (ف): hidden with ghunnah for 2 harakas (ikhfa).",
+			"M with a sukun (مْ) before the same letter M (م): merged into it with ghunnah for 2 harakas (idgham mithlayn ma’al-ghunnah).",
 			"The letter Q (ق) with a sukun bounces (qalqalah).",
-			"M (م) with a sukun before the letter B (ب): the N turns into M with ghunnah for 2 harakas (iqlab).",
+			"N (ن) with a sukun before the letter B (ب): the N turns into M with ghunnah for 2 harakas (iqlab).",
 			"M with a sukun (مْ) before the letter S (س): pronounced clearly, without ghunnah (idhhar shafawi).",
-			"Tanween EN (ً) before the letter W (و): merged into it with ghunnah for 2 harakas (idgham ma’al-ghunnah).",
+			"Tanween EN (ـً) before the letter W (و): merged into it with ghunnah for 2 harakas (idgham ma’al-ghunnah).",
 			"N with a sukun (نْ) before the throat letter KH (خ): pronounced clearly, without ghunnah (idhhar halqi).",
 			"The letter B (ب) with a sukun bounces (qalqalah).",
 			"The letter R (ر) is recited heavy because it carries the vowel U.",
-			"Tanween UN (ٌ) before the throat letter 'A (ع): pronounced clearly, without ghunnah (idhhar halqi).",
+			"Tanween UN (ـٌ) before the throat letter 'A (ع): pronounced clearly, without ghunnah (idhhar halqi).",
 			"M with a sukun (مْ) before the letter hamza (ء): pronounced clearly, without ghunnah (idhhar shafawi).",
 			"The letter R (ر) is recited heavy because it has a sukun and is preceded by the vowel A.",
 			"M with a sukun (مْ) before the letter T (ت): pronounced clearly, without ghunnah (idhhar shafawi).",
@@ -162,97 +155,91 @@
 			"The letter Y (ي) with a sukun is preceded by the short vowel A and followed by a letter with a sukun: madd lin – 2, 4 or 6 harakas.",
 			"Stopping sign ۖ (Ottoman صلي): here better to continue.",
 			"The pronoun HU (هُ) is preceded by a long vowel or a sukun, so it is recited short.",
-			"Tanween IN (ٍ) before the letter W (و): merged into it with ghunnah for 2 harakas (idgham ma’al-ghunnah).",
+			"Tanween IN (ـٍ) before the letter W (و): merged into it with ghunnah for 2 harakas (idgham ma’al-ghunnah).",
 			"The letter J (ج) with a sukun bounces (qalqalah).",
-			"Tanween IN (ٍ) before the letter K (ك): hidden with ghunnah for 2 harakas (ikhfa).",
+			"Tanween IN (ـٍ) before the letter K (ك): hidden with ghunnah for 2 harakas (ikhfa).",
 			"A natural prolongation on the letter W (و): 2 harakas (madd tabi’i).",
 			"This letter is written but not pronounced.",
 			"M with a sukun (مْ) before the letter W (و): pronounced clearly, without ghunnah (idhhar shafawi).",
 			"Stopping sign ۚ (Ottoman ج): here better to stop.",
-			"Tanween IN (ٍ) before the throat letter hamza (أ): pronounced clearly, without ghunnah (idhhar halqi).",
-			"Tanween IN (ٍ) before the letter F (ف): hidden with ghunnah for 2 harakas (ikhfa).",
-			"K (ك) with a sukun before the same letter: merged with ghunnah for 2 harakas (idgham mithlayn ma’al-ghunnah).",
+			"Tanween IN (ـٍ) before the throat letter hamza (أ): pronounced clearly, without ghunnah (idhhar halqi).",
+			"Tanween EN (ـً) before the throat letter hamza (أ): pronounced clearly, without ghunnah (idhhar halqi).",
+			"Tanween IN (ـٍ) before the letter F (ف): hidden with ghunnah for 2 harakas (ikhfa).",
 			"N (ن) with a sukun before the letter T (ت): hidden with ghunnah for 2 harakas (ikhfa).",
 			"M with a sukun (مْ) before the letter hamza (إ): pronounced clearly, without ghunnah (idhhar shafawi).",
-			"Tanween UN (ٌ) before the letter M (م): merged into it with ghunnah for 2 harakas (idgham ma’al-ghunnah).",
+			"Tanween UN (ـٌ) before the letter M (م): merged into it with ghunnah for 2 harakas (idgham ma’al-ghunnah).",
 			"N (ن) with a sukun before the letter SH (ش): hidden with ghunnah for 2 harakas (ikhfa).",
-			"Tanween IN (ٍ) before the throat letter hamza (إ): pronounced clearly, without ghunnah (idhhar halqi).",
+			"Tanween IN (ـٍ) before the throat letter hamza (إ): pronounced clearly, without ghunnah (idhhar halqi).",
 			"N with a sukun (نْ) before the throat letter hamza (أ): pronounced clearly, without ghunnah (idhhar halqi).",
-			"hamza (ئ) with a sukun before the letter L (ل): merged into it without ghunnah (idgham bila ghunnah).",
-			"Tanween UN (ٌ) before the throat letter hamza (أ): pronounced clearly, without ghunnah (idhhar halqi).",
+			"N (ن) with a sukun before the letter L (ل): merged into it without ghunnah (idgham bila ghunnah).",
+			"Tanween UN (ـٌ) before the throat letter hamza (أ): pronounced clearly, without ghunnah (idhhar halqi).",
 			"M with a sukun (مْ) before the letter B (ب): hidden with ghunnah for 2 harakas (ikhfa shafawi).",
 			"M with a sukun (مْ) before the letter Q (ق): pronounced clearly, without ghunnah (idhhar shafawi).",
-			"Tanween UN (ٌ) before the letter Y (ي): merged into it with ghunnah for 2 harakas (idgham ma’al-ghunnah).",
-			"M (م) with a sukun before the letter L (ل): merged into it without ghunnah (idgham bila ghunnah).",
+			"Tanween UN (ـٌ) before the letter Y (ي): merged into it with ghunnah for 2 harakas (idgham ma’al-ghunnah).",
 			"N (ن) with a sukun before the letter D (د): hidden with ghunnah for 2 harakas (ikhfa).",
 			"The pronoun HU (هُ) is preceded by a short vowel, so it is prolonged (2 harakas).",
-			"Tanween EN (ً) before the throat letter hamza (إ): pronounced clearly, without ghunnah (idhhar halqi).",
-			"hamza (إ) with a sukun before the letter Y (ي): merged into it with ghunnah for 2 harakas (idgham ma’al-ghunnah).",
-			"Tanween IN (ٍ) before the letter L (ل): merged into it without ghunnah (idgham bila ghunnah).",
+			"Tanween EN (ـً) before the throat letter hamza (إ): pronounced clearly, without ghunnah (idhhar halqi).",
+			"N (ن) with a sukun before the letter Y (ي): merged into it with ghunnah for 2 harakas (idgham ma’al-ghunnah).",
+			"Tanween IN (ـٍ) before the letter L (ل): merged into it without ghunnah (idgham bila ghunnah).",
 			"M with a sukun (مْ) before the letter SH (ش): pronounced clearly, without ghunnah (idhhar shafawi).",
 			"N (ن) with a sukun before the letter Q (ق): hidden with ghunnah for 2 harakas (ikhfa).",
-			"Tanween EN (ً) before the letter L (ل): merged into it without ghunnah (idgham bila ghunnah).",
+			"Tanween EN (ـً) before the letter L (ل): merged into it without ghunnah (idgham bila ghunnah).",
 			"N (ن) with a sukun before the letter J (ج): hidden with ghunnah for 2 harakas (ikhfa).",
 			"N (ن) with a sukun before the letter K (ك): hidden with ghunnah for 2 harakas (ikhfa).",
 			"M with a sukun (مْ) before the letter KH (خ): pronounced clearly, without ghunnah (idhhar shafawi).",
-			"Tanween EN (ً) before the throat letter 'A (ع): pronounced clearly, without ghunnah (idhhar halqi).",
+			"Tanween EN (ـً) before the throat letter 'A (ع): pronounced clearly, without ghunnah (idhhar halqi).",
 			"When stopping, the final letter D (د) takes a sukun after the prolongation: madd ’arid – 2, 4 or 6 harakas.",
 			"N (ن) with a sukun before the letter R (ر): merged into it without ghunnah (idgham bila ghunnah).",
 			"M with a sukun (مْ) before the letter Y (ي): pronounced clearly, without ghunnah (idhhar shafawi).",
-			"Tanween UN (ٌ) before the letter L (ل): merged into it without ghunnah (idgham bila ghunnah).",
+			"Tanween UN (ـٌ) before the letter L (ل): merged into it without ghunnah (idgham bila ghunnah).",
 			"M (م) with a shadda: recited with ghunnah (through the nose) for 2 harakas.",
 			"The letter R (ر) is recited heavy because it has a sukun and is followed by the heavy letter D (ض).",
 			"N with a sukun (نْ) before the throat letter H (ه): pronounced clearly, without ghunnah (idhhar halqi).",
-			"T (ت) with a sukun before the same letter: merged with ghunnah for 2 harakas (idgham mithlayn ma’al-ghunnah).",
+			"N (ن) with a sukun before the letter N (ن): merged into it with ghunnah for 2 harakas (idgham ma’al-ghunnah).",
 			"N (ن) with a sukun before the letter TH (ث): hidden with ghunnah for 2 harakas (ikhfa).",
-			"N (ن) with a sukun before the letter B (ب): the N turns into M with ghunnah for 2 harakas (iqlab).",
 			"N (ن) with a sukun before the letter F (ف): hidden with ghunnah for 2 harakas (ikhfa).",
 			"When stopping, the final letter R (ر) takes a sukun after the prolongation: madd ’arid – 2, 4 or 6 harakas.",
-			"Tanween UN (ٌ) before the letter F (ف): hidden with ghunnah for 2 harakas (ikhfa).",
-			"Tanween IN (ٍ) before the letter Y (ي): merged into it with ghunnah for 2 harakas (idgham ma’al-ghunnah).",
+			"Tanween UN (ـٌ) before the letter F (ف): hidden with ghunnah for 2 harakas (ikhfa).",
+			"Tanween IN (ـٍ) before the letter Y (ي): merged into it with ghunnah for 2 harakas (idgham ma’al-ghunnah).",
 			"N (ن) with a sukun before the letter M (م): merged into it with ghunnah for 2 harakas (idgham ma’al-ghunnah).",
-			"hamza (إ) with a sukun before the same letter: merged with ghunnah for 2 harakas (idgham mithlayn ma’al-ghunnah).",
 			"N with a sukun (نْ) before the throat letter hamza (ء): pronounced clearly, without ghunnah (idhhar halqi).",
 			"The word Allah (اللّٰه) is preceded by the vowel A or U: it is recited heavy (tafkhim).",
 			"The letter T (ط) with a sukun bounces (qalqalah).",
 			"M with a sukun (مْ) before the letter S (ص): pronounced clearly, without ghunnah (idhhar shafawi).",
 			"N (ن) with a sukun before the letter DH (ظ): hidden with ghunnah for 2 harakas (ikhfa).",
-			"Tanween EN (ً) before the letter T (ت): hidden with ghunnah for 2 harakas (ikhfa).",
+			"Tanween EN (ـً) before the letter T (ت): hidden with ghunnah for 2 harakas (ikhfa).",
 			"N (ن) with a sukun before the letter S (س): hidden with ghunnah for 2 harakas (ikhfa).",
-			"M (م) with a sukun before the letter M (م): merged into it with ghunnah for 2 harakas (idgham ma’al-ghunnah).",
 			"The letter R (ر) is recited heavy because it has a sukun and is followed by the heavy letter Q (ق).",
 			"Stopping sign ۜ (Ottoman س): here sakta – a pause without breaking the breath.",
 			"Stopping sign ۗ (Ottoman قلي): here better to stop.",
 			"M with a sukun (مْ) before the letter J (ج): pronounced clearly, without ghunnah (idhhar shafawi).",
-			"Tanween UN (ٌ) before the letter SH (ش): hidden with ghunnah for 2 harakas (ikhfa).",
-			"Tanween IN (ٍ) before the throat letter 'A (ع): pronounced clearly, without ghunnah (idhhar halqi).",
-			"Tanween UN (ٌ) before the letter W (و): merged into it with ghunnah for 2 harakas (idgham ma’al-ghunnah).",
-			"Tanween UN (ٌ) before the letter Q (ق): hidden with ghunnah for 2 harakas (ikhfa).",
-			"hamza (أ) with a sukun before the letter L (ل): merged into it without ghunnah (idgham bila ghunnah).",
+			"Tanween UN (ـٌ) before the letter SH (ش): hidden with ghunnah for 2 harakas (ikhfa).",
+			"Tanween IN (ـٍ) before the throat letter 'A (ع): pronounced clearly, without ghunnah (idhhar halqi).",
+			"Tanween UN (ـٌ) before the letter W (و): merged into it with ghunnah for 2 harakas (idgham ma’al-ghunnah).",
+			"Tanween UN (ـٌ) before the letter Q (ق): hidden with ghunnah for 2 harakas (ikhfa).",
+			"Tanween IN (ـٍ) before the letter R (ر): merged into it without ghunnah (idgham bila ghunnah).",
 			"M with a sukun (مْ) before the letter 'A (ع): pronounced clearly, without ghunnah (idhhar shafawi).",
-			"Tanween EN (ً) before the letter K (ك): hidden with ghunnah for 2 harakas (ikhfa).",
-			"M (م) with a sukun before the same letter: merged with ghunnah for 2 harakas (idgham mithlayn ma’al-ghunnah).",
+			"Tanween EN (ـً) before the letter K (ك): hidden with ghunnah for 2 harakas (ikhfa).",
 			"M with a sukun (مْ) before the letter N (ن): pronounced clearly, without ghunnah (idhhar shafawi).",
 			"N with a sukun (نْ) before the throat letter 'A (ع): pronounced clearly, without ghunnah (idhhar halqi).",
 			"The word Allah (اللّٰه) is preceded by the vowel I: it is recited light (tarqiq).",
 			"N (ن) with a sukun before the letter S (ص): hidden with ghunnah for 2 harakas (ikhfa).",
 			"Stopping sign ۘ (Ottoman م): here one must stop.",
-			"M (م) with a sukun before the letter Y (ي): merged into it with ghunnah for 2 harakas (idgham ma’al-ghunnah).",
-			"hamza (أ) with a sukun before the letter Y (ي): merged into it with ghunnah for 2 harakas (idgham ma’al-ghunnah).",
-			"M with a sukun (مْ) before the letter R (ر): pronounced clearly, without ghunnah (idhhar shafawi).",
-			"SH (ش) with a sukun before the letter W (و): merged into it with ghunnah for 2 harakas (idgham ma’al-ghunnah)."
+			"M with a sukun (مْ) before the letter R (ر): pronounced clearly, without ghunnah (idhhar shafawi)."
 		]
 	},
-	"stranice": [
+	"odjeljci": [
 		{
-			"broj": 440,
+			"kljuc": "s440",
+			"sura": 36,
+			"stranica": 440,
 			"ajeti": [
 				{
 					"n": 1,
 					"audio": "036001.mp3",
 					"dijelovi": [
 						{
-							"t": "ي"
+							"t": " ي"
 						},
 						{
 							"t": "سٓ",
@@ -796,7 +783,10 @@
 							"i": 6
 						},
 						{
-							"t": "لًا",
+							"t": "لً"
+						},
+						{
+							"t": "ا",
 							"i": 7
 						},
 						{
@@ -814,10 +804,10 @@
 							"i": 8
 						},
 						{
-							"t": "نِ فَ"
+							"t": "نِ فَهُ"
 						},
 						{
-							"t": "هُم",
+							"t": "م",
 							"i": 9
 						},
 						{
@@ -917,10 +907,10 @@
 							"i": 0
 						},
 						{
-							"t": " "
+							"t": " مِ"
 						},
 						{
-							"t": "مِنۢ",
+							"t": "نۢ",
 							"i": 1
 						},
 						{
@@ -945,10 +935,10 @@
 							"i": 3
 						},
 						{
-							"t": " سَ"
+							"t": " سَدًّ"
 						},
 						{
-							"t": "دًّا",
+							"t": "ا",
 							"i": 4
 						},
 						{
@@ -973,10 +963,10 @@
 							"i": 6
 						},
 						{
-							"t": " سَ"
+							"t": " سَدًّ"
 						},
 						{
-							"t": "دًّا",
+							"t": "ا",
 							"i": 7
 						},
 						{
@@ -1707,7 +1697,9 @@
 			"do": 12
 		},
 		{
-			"broj": 441,
+			"kljuc": "s441",
+			"sura": 36,
+			"stranica": 441,
 			"ajeti": [
 				{
 					"n": 13,
@@ -1725,10 +1717,10 @@
 							"i": 1
 						},
 						{
-							"t": " لَ"
+							"t": " لَهُ"
 						},
 						{
-							"t": "هُم",
+							"t": "م",
 							"i": 2
 						},
 						{
@@ -1739,46 +1731,53 @@
 							"i": 2
 						},
 						{
-							"t": "ثَلًا أَصْحَ"
+							"t": "ثَ"
+						},
+						{
+							"t": "لً",
+							"i": 3
+						},
+						{
+							"t": "ا أَصْحَ"
 						},
 						{
 							"t": "ـٰ",
-							"i": 3
+							"i": 4
 						},
 						{
 							"t": "بَ الْقَ"
 						},
 						{
 							"t": "رْ",
-							"i": 4
+							"i": 5
 						},
 						{
 							"t": "يَةِ إِذْ جَ"
 						},
 						{
 							"t": "آ",
-							"i": 5
+							"i": 6
 						},
 						{
 							"t": "ءَهَ"
 						},
 						{
 							"t": "ا",
-							"i": 6
+							"i": 7
 						},
 						{
 							"t": " الْمُ"
 						},
 						{
 							"t": "رْ",
-							"i": 7
+							"i": 8
 						},
 						{
 							"t": "سَلُ"
 						},
 						{
 							"t": "و",
-							"i": 8
+							"i": 9
 						},
 						{
 							"t": "نَ"
@@ -1799,6 +1798,11 @@
 							"id": "idgam-mislejn-gunneh",
 							"rijec": "لَهُم",
 							"t": 21
+						},
+						{
+							"id": "izhar-halkij",
+							"rijec": "مَّثَلًا",
+							"t": 45
 						},
 						{
 							"id": "medd-tabii",
@@ -1922,10 +1926,10 @@
 							"i": 11
 						},
 						{
-							"t": " إِلَيْ"
+							"t": " إِلَيْكُ"
 						},
 						{
-							"t": "كُم",
+							"t": "م",
 							"i": 12
 						},
 						{
@@ -1984,7 +1988,7 @@
 						{
 							"id": "ihfa",
 							"rijec": "بِثَالِثٍ",
-							"t": 45
+							"t": 46
 						},
 						{
 							"id": "medd-tabii",
@@ -1992,9 +1996,9 @@
 							"t": 2
 						},
 						{
-							"id": "medd-tabii",
+							"id": "medd-munfesil",
 							"rijec": "فَقَالُوٓا",
-							"t": 40
+							"t": 12
 						},
 						{
 							"id": "ne-uci-se",
@@ -2014,7 +2018,7 @@
 						{
 							"id": "idgam-mislejn-gunneh",
 							"rijec": "إِلَيْكُم",
-							"t": 46
+							"t": 21
 						},
 						{
 							"id": "hukmurra",
@@ -2542,10 +2546,10 @@
 							"i": 8
 						},
 						{
-							"t": " لَ"
+							"t": " لَئِ"
 						},
 						{
-							"t": "ئِن",
+							"t": "ن",
 							"i": 9
 						},
 						{
@@ -2606,7 +2610,10 @@
 							"i": 17
 						},
 						{
-							"t": "كُم",
+							"t": "كُ"
+						},
+						{
+							"t": "م",
 							"i": 18
 						},
 						{
@@ -2653,9 +2660,9 @@
 							"t": 2
 						},
 						{
-							"id": "medd-tabii",
+							"id": "medd-munfesil",
 							"rijec": "قَالُوٓا",
-							"t": 40
+							"t": 12
 						},
 						{
 							"id": "ne-uci-se",
@@ -2740,7 +2747,7 @@
 						{
 							"id": "idgam-mislejn-gunneh",
 							"rijec": "وَلَيَمَسَّنَّكُم",
-							"t": 46
+							"t": 21
 						},
 						{
 							"id": "gunne",
@@ -2806,7 +2813,10 @@
 							"i": 4
 						},
 						{
-							"t": "كُم",
+							"t": "كُ"
+						},
+						{
+							"t": "م",
 							"i": 5
 						},
 						{
@@ -2852,7 +2862,10 @@
 							"i": 9
 						},
 						{
-							"t": "تُم",
+							"t": "تُ"
+						},
+						{
+							"t": "م",
 							"i": 10
 						},
 						{
@@ -2941,7 +2954,7 @@
 						{
 							"id": "idgam-mislejn-gunneh",
 							"rijec": "طَـٰٓئِرُكُم",
-							"t": 46
+							"t": 21
 						},
 						{
 							"id": "izhar-sefevijj",
@@ -3199,10 +3212,10 @@
 							"i": 1
 						},
 						{
-							"t": " "
+							"t": " مَ"
 						},
 						{
-							"t": "مَن",
+							"t": "ن",
 							"i": 2
 						},
 						{
@@ -3217,7 +3230,7 @@
 							"i": 3
 						},
 						{
-							"t": " يَسْــَٔلُكُ"
+							"t": " يَسْـَٔلُكُ"
 						},
 						{
 							"t": "مْ",
@@ -3242,7 +3255,10 @@
 							"i": 6
 						},
 						{
-							"t": "هُم",
+							"t": "هُ"
+						},
+						{
+							"t": "م",
 							"i": 7
 						},
 						{
@@ -3277,7 +3293,7 @@
 						{
 							"id": "idgam-bila-gunneh",
 							"rijec": "مَن",
-							"t": 58
+							"t": 53
 						},
 						{
 							"id": "medd-tabii",
@@ -3286,7 +3302,7 @@
 						},
 						{
 							"id": "izhar-sefevijj",
-							"rijec": "يَسْــَٔلُكُمْ",
+							"rijec": "يَسْـَٔلُكُمْ",
 							"t": 19
 						},
 						{
@@ -3438,10 +3454,10 @@
 							"i": 4
 						},
 						{
-							"t": " "
+							"t": " إِ"
 						},
 						{
-							"t": "إِن",
+							"t": "ن",
 							"i": 5
 						},
 						{
@@ -3513,10 +3529,10 @@
 							"i": 14
 						},
 						{
-							"t": " شَيْـ"
+							"t": " شَيْـًٔ"
 						},
 						{
-							"t": "ـًٔا",
+							"t": "ا",
 							"i": 15
 						},
 						{
@@ -3555,7 +3571,7 @@
 						{
 							"id": "ihfa",
 							"rijec": "مِن",
-							"t": 59
+							"t": 58
 						},
 						{
 							"id": "medd-tabii",
@@ -3565,7 +3581,7 @@
 						{
 							"id": "damir",
 							"rijec": "دُونِهِ",
-							"t": 60
+							"t": 59
 						},
 						{
 							"id": "medd-tabii",
@@ -3575,12 +3591,12 @@
 						{
 							"id": "izhar-halkij",
 							"rijec": "ءَالِهَةً",
-							"t": 61
+							"t": 60
 						},
 						{
 							"id": "idgam-gunneh",
 							"rijec": "إِن",
-							"t": 62
+							"t": 61
 						},
 						{
 							"id": "hukmurra",
@@ -3605,7 +3621,7 @@
 						{
 							"id": "idgam-bila-gunneh",
 							"rijec": "بِضُرٍّ",
-							"t": 63
+							"t": 62
 						},
 						{
 							"id": "medd-tabii",
@@ -3625,11 +3641,11 @@
 						{
 							"id": "izhar-sefevijj",
 							"rijec": "شَفَـٰعَتُهُمْ",
-							"t": 64
+							"t": 63
 						},
 						{
 							"id": "idgam-gunneh",
-							"rijec": "شَيْــًٔا",
+							"rijec": "شَيْـًٔا",
 							"t": 25
 						},
 						{
@@ -3640,7 +3656,7 @@
 						{
 							"id": "ihfa",
 							"rijec": "يُنقِذُونِ",
-							"t": 65
+							"t": 64
 						},
 						{
 							"id": "medd-arid",
@@ -3721,7 +3737,7 @@
 						{
 							"id": "idgam-bila-gunneh",
 							"rijec": "إِذًا",
-							"t": 66
+							"t": 65
 						},
 						{
 							"id": "medd-tabii",
@@ -4003,7 +4019,9 @@
 			"do": 27
 		},
 		{
-			"broj": 442,
+			"kljuc": "s442",
+			"sura": 36,
+			"stranica": 442,
 			"ajeti": [
 				{
 					"n": 28,
@@ -4045,10 +4063,10 @@
 							"i": 4
 						},
 						{
-							"t": " "
+							"t": " مِ"
 						},
 						{
-							"t": "مِنۢ",
+							"t": "نۢ",
 							"i": 5
 						},
 						{
@@ -4160,7 +4178,7 @@
 						{
 							"id": "damir",
 							"rijec": "قَوْمِهِ",
-							"t": 60
+							"t": 59
 						},
 						{
 							"id": "iklab",
@@ -4170,12 +4188,12 @@
 						{
 							"id": "damir",
 							"rijec": "بَعْدِهِ",
-							"t": 60
+							"t": 59
 						},
 						{
 							"id": "ihfa",
 							"rijec": "مِن",
-							"t": 67
+							"t": 66
 						},
 						{
 							"id": "idgam-gunneh",
@@ -4307,7 +4325,7 @@
 						{
 							"id": "ihfa",
 							"rijec": "إِن",
-							"t": 68
+							"t": 67
 						},
 						{
 							"id": "medd-tabii",
@@ -4337,7 +4355,7 @@
 						{
 							"id": "izhar-sefevijj",
 							"rijec": "هُمْ",
-							"t": 69
+							"t": 68
 						},
 						{
 							"id": "medd-tabii",
@@ -4402,7 +4420,10 @@
 							"i": 6
 						},
 						{
-							"t": "هِم",
+							"t": "هِ"
+						},
+						{
+							"t": "م",
 							"i": 7
 						},
 						{
@@ -4491,12 +4512,12 @@
 						{
 							"id": "izhar-halkij",
 							"rijec": "يَـٰحَسْرَةً",
-							"t": 70
+							"t": 69
 						},
 						{
 							"id": "medd-arid",
 							"rijec": "الْعِبَادِ",
-							"t": 71
+							"t": 70
 						},
 						{
 							"id": "vakf",
@@ -4521,7 +4542,7 @@
 						{
 							"id": "idgam-bila-gunneh",
 							"rijec": "مِّن",
-							"t": 72
+							"t": 71
 						},
 						{
 							"id": "medd-tabii",
@@ -4556,7 +4577,7 @@
 						{
 							"id": "damir",
 							"rijec": "بِهِ",
-							"t": 60
+							"t": 59
 						},
 						{
 							"id": "medd-arid",
@@ -4612,10 +4633,10 @@
 							"i": 5
 						},
 						{
-							"t": "لَ"
+							"t": "لَهُ"
 						},
 						{
-							"t": "هُم",
+							"t": "م",
 							"i": 6
 						},
 						{
@@ -4686,7 +4707,7 @@
 						{
 							"id": "izhar-sefevijj",
 							"rijec": "أَلَمْ",
-							"t": 73
+							"t": 72
 						},
 						{
 							"id": "hukmurra",
@@ -4841,17 +4862,17 @@
 						{
 							"id": "ihfa",
 							"rijec": "وَإِن",
-							"t": 68
+							"t": 67
 						},
 						{
 							"id": "idgam-bila-gunneh",
 							"rijec": "كُلٌّ",
-							"t": 74
+							"t": 73
 						},
 						{
 							"id": "gunne",
 							"rijec": "لَّمَّا",
-							"t": 75
+							"t": 74
 						},
 						{
 							"id": "medd-tabii",
@@ -4866,7 +4887,7 @@
 						{
 							"id": "idgam-bila-gunneh",
 							"rijec": "جَمِيعٌ",
-							"t": 74
+							"t": 73
 						},
 						{
 							"id": "medd-tabii",
@@ -4964,10 +4985,10 @@
 							"i": 9
 						},
 						{
-							"t": " حَ"
+							"t": " حَبًّ"
 						},
 						{
-							"t": "بًّا",
+							"t": "ا",
 							"i": 10
 						},
 						{
@@ -5008,12 +5029,12 @@
 						{
 							"id": "idgam-bila-gunneh",
 							"rijec": "وَءَايَةٌ",
-							"t": 74
+							"t": 73
 						},
 						{
 							"id": "hukmurra",
 							"rijec": "الْأَرْضُ",
-							"t": 76
+							"t": 75
 						},
 						{
 							"id": "medd-tabii",
@@ -5043,7 +5064,7 @@
 						{
 							"id": "izhar-halkij",
 							"rijec": "مِنْهَا",
-							"t": 77
+							"t": 76
 						},
 						{
 							"id": "medd-tabii",
@@ -5058,7 +5079,7 @@
 						{
 							"id": "izhar-halkij",
 							"rijec": "فَمِنْهُ",
-							"t": 77
+							"t": 76
 						},
 						{
 							"id": "damir",
@@ -5116,86 +5137,90 @@
 							"t": " "
 						},
 						{
-							"t": "مِّن",
+							"t": "مِّ",
 							"i": 5
+						},
+						{
+							"t": "ن",
+							"i": 6
 						},
 						{
 							"t": " "
 						},
 						{
 							"t": "نَّ",
-							"i": 5
+							"i": 6
 						},
 						{
 							"t": "خِ"
 						},
 						{
 							"t": "ي",
-							"i": 6
+							"i": 7
 						},
 						{
 							"t": "لٍ",
-							"i": 7
+							"i": 8
 						},
 						{
 							"t": " "
 						},
 						{
 							"t": "وَ",
-							"i": 7
+							"i": 8
 						},
 						{
 							"t": "أَعْنَ"
 						},
 						{
 							"t": "ـٰ",
-							"i": 8
+							"i": 9
 						},
 						{
 							"t": "بٍ",
-							"i": 9
+							"i": 10
 						},
 						{
 							"t": " "
 						},
 						{
 							"t": "وَ",
-							"i": 9
+							"i": 10
 						},
 						{
 							"t": "فَجَّ"
 						},
 						{
 							"t": "رْ",
-							"i": 10
+							"i": 11
 						},
 						{
 							"t": "نَ"
 						},
 						{
 							"t": "ا",
-							"i": 11
+							"i": 12
 						},
 						{
 							"t": " فِ"
 						},
 						{
 							"t": "ي",
-							"i": 12
+							"i": 13
 						},
 						{
 							"t": "هَ"
 						},
 						{
 							"t": "ا",
-							"i": 13
+							"i": 14
 						},
 						{
 							"t": " مِنَ الْعُيُ"
 						},
 						{
 							"t": "و",
-							"i": 14
+							"i": 15
 						},
 						{
 							"t": "نِ"
@@ -5228,9 +5253,14 @@
 							"t": 2
 						},
 						{
-							"id": "idgam-mislejn-gunneh",
+							"id": "idgam-gunneh",
 							"rijec": "جَنَّـٰتٍ",
-							"t": 78
+							"t": 7
+						},
+						{
+							"id": "idgam-gunneh",
+							"rijec": "مِّن",
+							"t": 77
 						},
 						{
 							"id": "medd-tabii",
@@ -5390,7 +5420,7 @@
 						{
 							"id": "ihfa",
 							"rijec": "مِن",
-							"t": 79
+							"t": 78
 						},
 						{
 							"id": "hukmurra",
@@ -5400,7 +5430,7 @@
 						{
 							"id": "damir",
 							"rijec": "ثَمَرِهِ",
-							"t": 60
+							"t": 59
 						},
 						{
 							"id": "medd-tabii",
@@ -5575,7 +5605,7 @@
 						{
 							"id": "gunne",
 							"rijec": "مِمَّا",
-							"t": 75
+							"t": 74
 						},
 						{
 							"id": "medd-tabii",
@@ -5585,12 +5615,12 @@
 						{
 							"id": "iklab",
 							"rijec": "تُنۢبِتُ",
-							"t": 80
+							"t": 23
 						},
 						{
 							"id": "hukmurra",
 							"rijec": "الْأَرْضُ",
-							"t": 76
+							"t": 75
 						},
 						{
 							"id": "izhar-halkij",
@@ -5600,7 +5630,7 @@
 						{
 							"id": "ihfa",
 							"rijec": "أَنفُسِهِمْ",
-							"t": 81
+							"t": 79
 						},
 						{
 							"id": "izhar-sefevijj",
@@ -5610,7 +5640,7 @@
 						{
 							"id": "gunne",
 							"rijec": "وَمِمَّا",
-							"t": 75
+							"t": 74
 						},
 						{
 							"id": "medd-tabii",
@@ -5691,10 +5721,10 @@
 							"i": 7
 						},
 						{
-							"t": " "
+							"t": " هُ"
 						},
 						{
-							"t": "هُم",
+							"t": "م",
 							"i": 8
 						},
 						{
@@ -5724,12 +5754,12 @@
 						{
 							"id": "idgam-bila-gunneh",
 							"rijec": "وَءَايَةٌ",
-							"t": 74
+							"t": 73
 						},
 						{
 							"id": "izhar-halkij",
 							"rijec": "مِنْهُ",
-							"t": 77
+							"t": 76
 						},
 						{
 							"id": "damir",
@@ -5880,7 +5910,7 @@
 						{
 							"id": "idgam-bila-gunneh",
 							"rijec": "لِمُسْتَقَرٍّ",
-							"t": 63
+							"t": 62
 						},
 						{
 							"id": "medd-tabii",
@@ -6205,7 +6235,7 @@
 						{
 							"id": "iklab",
 							"rijec": "يَنۢبَغِى",
-							"t": 80
+							"t": 23
 						},
 						{
 							"id": "medd-munfesil",
@@ -6250,7 +6280,7 @@
 						{
 							"id": "medd-arid",
 							"rijec": "النَّهَارِ",
-							"t": 82
+							"t": 80
 						},
 						{
 							"id": "hukmurra",
@@ -6265,12 +6295,12 @@
 						{
 							"id": "ihfa",
 							"rijec": "وَكُلٌّ",
-							"t": 83
+							"t": 81
 						},
 						{
 							"id": "idgam-gunneh",
 							"rijec": "فَلَكٍ",
-							"t": 84
+							"t": 82
 						},
 						{
 							"id": "medd-arid",
@@ -6284,7 +6314,9 @@
 			"do": 40
 		},
 		{
-			"broj": 443,
+			"kljuc": "s443",
+			"sura": 36,
+			"stranica": 443,
 			"ajeti": [
 				{
 					"n": 41,
@@ -6370,7 +6402,7 @@
 						{
 							"id": "idgam-bila-gunneh",
 							"rijec": "وَءَايَةٌ",
-							"t": 74
+							"t": 73
 						},
 						{
 							"id": "izhar-sefevijj",
@@ -6428,10 +6460,10 @@
 							"i": 1
 						},
 						{
-							"t": " لَ"
+							"t": " لَهُ"
 						},
 						{
-							"t": "هُم",
+							"t": "م",
 							"i": 2
 						},
 						{
@@ -6503,12 +6535,12 @@
 						{
 							"id": "idgam-gunneh",
 							"rijec": "مِّن",
-							"t": 85
+							"t": 83
 						},
 						{
 							"id": "damir",
 							"rijec": "مِّثْلِهِ",
-							"t": 60
+							"t": 59
 						},
 						{
 							"id": "medd-tabii",
@@ -6532,10 +6564,10 @@
 					"audio": "036043.mp3",
 					"dijelovi": [
 						{
-							"t": "وَ"
+							"t": "وَإِ"
 						},
 						{
-							"t": "إِن",
+							"t": "ن",
 							"i": 0
 						},
 						{
@@ -6622,9 +6654,9 @@
 					],
 					"pravila": [
 						{
-							"id": "idgam-mislejn-gunneh",
+							"id": "idgam-gunneh",
 							"rijec": "وَإِن",
-							"t": 86
+							"t": 77
 						},
 						{
 							"id": "hukmurra",
@@ -6669,12 +6701,12 @@
 						{
 							"id": "izhar-sefevijj",
 							"rijec": "هُمْ",
-							"t": 73
+							"t": 72
 						},
 						{
 							"id": "ihfa",
 							"rijec": "يُنقَذُونَ",
-							"t": 65
+							"t": 64
 						},
 						{
 							"id": "medd-arid",
@@ -6731,18 +6763,22 @@
 							"i": 5
 						},
 						{
-							"t": "عًا إِلَ"
+							"t": "عً",
+							"i": 6
+						},
+						{
+							"t": "ا إِلَ"
 						},
 						{
 							"t": "ىٰ",
-							"i": 6
+							"i": 7
 						},
 						{
 							"t": " حِ"
 						},
 						{
 							"t": "ي",
-							"i": 7
+							"i": 8
 						},
 						{
 							"t": "نٍ"
@@ -6778,6 +6814,11 @@
 							"id": "medd-tabii",
 							"rijec": "وَمَتَـٰعًا",
 							"t": 2
+						},
+						{
+							"id": "izhar-halkij",
+							"rijec": "وَمَتَـٰعًا",
+							"t": 60
 						},
 						{
 							"id": "medd-tabii",
@@ -6962,7 +7003,10 @@
 							"i": 1
 						},
 						{
-							"t": "هِم",
+							"t": "هِ"
+						},
+						{
+							"t": "م",
 							"i": 2
 						},
 						{
@@ -7105,7 +7149,7 @@
 						{
 							"id": "izhar-halkij",
 							"rijec": "مِّنْ",
-							"t": 87
+							"t": 84
 						},
 						{
 							"id": "medd-tabii",
@@ -7120,7 +7164,7 @@
 						{
 							"id": "izhar-halkij",
 							"rijec": "مِّنْ",
-							"t": 87
+							"t": 84
 						},
 						{
 							"id": "medd-tabii",
@@ -7165,7 +7209,7 @@
 						{
 							"id": "izhar-halkij",
 							"rijec": "عَنْهَا",
-							"t": 77
+							"t": 76
 						},
 						{
 							"id": "medd-tabii",
@@ -7314,10 +7358,10 @@
 							"i": 19
 						},
 						{
-							"t": "عِمُ "
+							"t": "عِمُ مَ"
 						},
 						{
-							"t": "مَن",
+							"t": "ن",
 							"i": 20
 						},
 						{
@@ -7428,7 +7472,7 @@
 						{
 							"id": "ihfa",
 							"rijec": "أَنفِقُوا",
-							"t": 81
+							"t": 79
 						},
 						{
 							"id": "medd-tabii",
@@ -7443,7 +7487,7 @@
 						{
 							"id": "gunne",
 							"rijec": "مِمَّا",
-							"t": 75
+							"t": 74
 						},
 						{
 							"id": "medd-tabii",
@@ -7458,7 +7502,7 @@
 						{
 							"id": "lafzatullah",
 							"rijec": "اللَّهُ",
-							"t": 88
+							"t": 85
 						},
 						{
 							"id": "medd-tabii",
@@ -7496,9 +7540,9 @@
 							"t": 2
 						},
 						{
-							"id": "medd-tabii",
+							"id": "medd-munfesil",
 							"rijec": "ءَامَنُوٓا",
-							"t": 40
+							"t": 12
 						},
 						{
 							"id": "ne-uci-se",
@@ -7508,12 +7552,12 @@
 						{
 							"id": "kalkala",
 							"rijec": "أَنُطْعِمُ",
-							"t": 89
+							"t": 86
 						},
 						{
 							"id": "idgam-bila-gunneh",
 							"rijec": "مَن",
-							"t": 58
+							"t": 53
 						},
 						{
 							"id": "medd-muttesil",
@@ -7523,17 +7567,17 @@
 						{
 							"id": "lafzatullah",
 							"rijec": "اللَّهُ",
-							"t": 88
+							"t": 85
 						},
 						{
 							"id": "kalkala",
 							"rijec": "أَطْعَمَهُ",
-							"t": 89
+							"t": 86
 						},
 						{
 							"id": "damir",
 							"rijec": "أَطْعَمَهُ",
-							"t": 60
+							"t": 59
 						},
 						{
 							"id": "izhar-halkij",
@@ -7622,26 +7666,30 @@
 							"t": " "
 						},
 						{
-							"t": "كُنتُ",
+							"t": "كُ",
 							"i": 5
 						},
 						{
-							"t": "مْ",
+							"t": "نتُ",
 							"i": 6
+						},
+						{
+							"t": "مْ",
+							"i": 7
 						},
 						{
 							"t": " صَ"
 						},
 						{
 							"t": "ـٰ",
-							"i": 7
+							"i": 8
 						},
 						{
 							"t": "دِقِ"
 						},
 						{
 							"t": "ي",
-							"i": 8
+							"i": 9
 						},
 						{
 							"t": "نَ"
@@ -7676,12 +7724,17 @@
 						{
 							"id": "ihfa",
 							"rijec": "إِن",
+							"t": 67
+						},
+						{
+							"id": "ihfa",
+							"rijec": "كُنتُمْ",
 							"t": 47
 						},
 						{
 							"id": "izhar-sefevijj",
 							"rijec": "كُنتُمْ",
-							"t": 90
+							"t": 87
 						},
 						{
 							"id": "medd-tabii",
@@ -7790,7 +7843,7 @@
 						{
 							"id": "ihfa",
 							"rijec": "يَنظُرُونَ",
-							"t": 91
+							"t": 88
 						},
 						{
 							"id": "hukmurra",
@@ -7815,7 +7868,7 @@
 						{
 							"id": "ihfa",
 							"rijec": "وَٰحِدَةً",
-							"t": 92
+							"t": 89
 						},
 						{
 							"id": "izhar-sefevijj",
@@ -7825,7 +7878,7 @@
 						{
 							"id": "izhar-sefevijj",
 							"rijec": "وَهُمْ",
-							"t": 73
+							"t": 72
 						},
 						{
 							"id": "medd-arid",
@@ -7946,7 +7999,7 @@
 						{
 							"id": "izhar-sefevijj",
 							"rijec": "أَهْلِهِمْ",
-							"t": 73
+							"t": 72
 						},
 						{
 							"id": "hukmurra",
@@ -7983,10 +8036,10 @@
 							"i": 2
 						},
 						{
-							"t": " "
+							"t": " هُ"
 						},
 						{
-							"t": "هُم",
+							"t": "م",
 							"i": 3
 						},
 						{
@@ -8093,12 +8146,12 @@
 						{
 							"id": "izhar-sefevijj",
 							"rijec": "رَبِّهِمْ",
-							"t": 73
+							"t": 72
 						},
 						{
 							"id": "ihfa",
 							"rijec": "يَنسِلُونَ",
-							"t": 93
+							"t": 90
 						},
 						{
 							"id": "medd-arid",
@@ -8144,10 +8197,10 @@
 							"i": 4
 						},
 						{
-							"t": " "
+							"t": " مَ"
 						},
 						{
-							"t": "مَنۢ",
+							"t": "نۢ",
 							"i": 5
 						},
 						{
@@ -8165,10 +8218,10 @@
 							"i": 6
 						},
 						{
-							"t": " "
+							"t": " مِ"
 						},
 						{
-							"t": "مِن",
+							"t": "ن",
 							"i": 7
 						},
 						{
@@ -8295,12 +8348,12 @@
 						{
 							"id": "idgam-gunneh",
 							"rijec": "مِن",
-							"t": 94
+							"t": 83
 						},
 						{
 							"id": "hukmurra",
 							"rijec": "مَّرْقَدِنَا",
-							"t": 95
+							"t": 91
 						},
 						{
 							"id": "medd-tabii",
@@ -8310,12 +8363,12 @@
 						{
 							"id": "vakf",
 							"rijec": "ۜ",
-							"t": 96
+							"t": 92
 						},
 						{
 							"id": "vakf",
 							"rijec": "ۗ",
-							"t": 97
+							"t": 93
 						},
 						{
 							"id": "medd-tabii",
@@ -8469,7 +8522,7 @@
 						{
 							"id": "ihfa",
 							"rijec": "إِن",
-							"t": 68
+							"t": 67
 						},
 						{
 							"id": "medd-tabii",
@@ -8499,7 +8552,7 @@
 						{
 							"id": "izhar-sefevijj",
 							"rijec": "هُمْ",
-							"t": 98
+							"t": 94
 						},
 						{
 							"id": "medd-tabii",
@@ -8509,7 +8562,7 @@
 						{
 							"id": "idgam-bila-gunneh",
 							"rijec": "جَمِيعٌ",
-							"t": 74
+							"t": 73
 						},
 						{
 							"id": "medd-tabii",
@@ -8554,10 +8607,10 @@
 							"i": 1
 						},
 						{
-							"t": "يْـ"
+							"t": "يْـًٔ"
 						},
 						{
-							"t": "ـًٔا",
+							"t": "ا",
 							"i": 2
 						},
 						{
@@ -8626,11 +8679,11 @@
 						{
 							"id": "ihfa",
 							"rijec": "نَفْسٌ",
-							"t": 99
+							"t": 95
 						},
 						{
 							"id": "idgam-gunneh",
-							"rijec": "شَيْــًٔا",
+							"rijec": "شَيْـًٔا",
 							"t": 25
 						},
 						{
@@ -8675,7 +8728,9 @@
 			"do": 54
 		},
 		{
-			"broj": 444,
+			"kljuc": "s444",
+			"sura": 36,
+			"stranica": 444,
 			"ajeti": [
 				{
 					"n": 55,
@@ -8750,7 +8805,7 @@
 						{
 							"id": "ihfa",
 							"rijec": "شُغُلٍ",
-							"t": 45
+							"t": 46
 						},
 						{
 							"id": "medd-tabii",
@@ -8812,7 +8867,7 @@
 							"i": 6
 						},
 						{
-							"t": "ئِكِ مُتَّكِــُٔ"
+							"t": "ئِكِ مُتَّكِـُٔ"
 						},
 						{
 							"t": "و",
@@ -8846,7 +8901,7 @@
 						{
 							"id": "izhar-halkij",
 							"rijec": "ظِلَـٰلٍ",
-							"t": 100
+							"t": 96
 						},
 						{
 							"id": "hukmurra",
@@ -8860,7 +8915,7 @@
 						},
 						{
 							"id": "medd-arid",
-							"rijec": "مُتَّكِــُٔونَ",
+							"rijec": "مُتَّكِـُٔونَ",
 							"t": 5
 						}
 					]
@@ -8912,10 +8967,10 @@
 							"i": 4
 						},
 						{
-							"t": "لَ"
+							"t": "لَهُ"
 						},
 						{
-							"t": "هُم",
+							"t": "م",
 							"i": 5
 						},
 						{
@@ -8964,7 +9019,7 @@
 						{
 							"id": "idgam-gunneh",
 							"rijec": "فَـٰكِهَةٌ",
-							"t": 101
+							"t": 97
 						},
 						{
 							"id": "idgam-mislejn-gunneh",
@@ -9006,10 +9061,10 @@
 							"i": 1
 						},
 						{
-							"t": "وْ"
+							"t": "وْلً"
 						},
 						{
-							"t": "لًا",
+							"t": "ا",
 							"i": 2
 						},
 						{
@@ -9027,22 +9082,26 @@
 							"t": " "
 						},
 						{
-							"t": "رَّبٍّ",
+							"t": "رَّ",
 							"i": 3
+						},
+						{
+							"t": "بٍّ",
+							"i": 4
 						},
 						{
 							"t": " "
 						},
 						{
 							"t": "رَّ",
-							"i": 3
+							"i": 4
 						},
 						{
 							"t": "حِ"
 						},
 						{
 							"t": "ي",
-							"i": 4
+							"i": 5
 						},
 						{
 							"t": "مٍ"
@@ -9057,7 +9116,7 @@
 						{
 							"id": "ihfa",
 							"rijec": "سَلَـٰمٌ",
-							"t": 102
+							"t": 98
 						},
 						{
 							"id": "idgam-gunneh",
@@ -9067,7 +9126,12 @@
 						{
 							"id": "idgam-bila-gunneh",
 							"rijec": "مِّن",
-							"t": 72
+							"t": 71
+						},
+						{
+							"id": "idgam-bila-gunneh",
+							"rijec": "رَّبٍّ",
+							"t": 99
 						},
 						{
 							"id": "medd-arid",
@@ -9224,10 +9288,10 @@
 							"i": 5
 						},
 						{
-							"t": "دَمَ "
+							"t": "دَمَ أَ"
 						},
 						{
-							"t": "أَن",
+							"t": "ن",
 							"i": 6
 						},
 						{
@@ -9323,7 +9387,7 @@
 						{
 							"id": "izhar-sefevijj",
 							"rijec": "إِلَيْكُمْ",
-							"t": 73
+							"t": 72
 						},
 						{
 							"id": "medd-tabii",
@@ -9343,7 +9407,7 @@
 						{
 							"id": "idgam-bila-gunneh",
 							"rijec": "أَن",
-							"t": 103
+							"t": 53
 						},
 						{
 							"id": "medd-tabii",
@@ -9378,12 +9442,12 @@
 						{
 							"id": "damir",
 							"rijec": "إِنَّهُ",
-							"t": 60
+							"t": 59
 						},
 						{
 							"id": "izhar-sefevijj",
 							"rijec": "لَكُمْ",
-							"t": 104
+							"t": 100
 						},
 						{
 							"id": "idgam-gunneh",
@@ -9524,10 +9588,10 @@
 							"i": 2
 						},
 						{
-							"t": " جِبِل"
+							"t": " جِبِلًّ"
 						},
 						{
-							"t": "اًّ",
+							"t": "ا",
 							"i": 3
 						},
 						{
@@ -9545,43 +9609,47 @@
 							"i": 4
 						},
 						{
-							"t": "رًا "
+							"t": "رً",
+							"i": 5
+						},
+						{
+							"t": "ا "
 						},
 						{
 							"t": "ۖ",
-							"i": 5
+							"i": 6
 						},
 						{
 							"t": " أَفَلَ"
 						},
 						{
 							"t": "مْ",
-							"i": 6
+							"i": 7
 						},
 						{
 							"t": " تَكُ"
 						},
 						{
 							"t": "و",
-							"i": 7
+							"i": 8
 						},
 						{
 							"t": "نُ"
 						},
 						{
 							"t": "و",
-							"i": 8
+							"i": 9
 						},
 						{
 							"t": "ا",
-							"i": 9
+							"i": 10
 						},
 						{
 							"t": " تَعْقِلُ"
 						},
 						{
 							"t": "و",
-							"i": 10
+							"i": 11
 						},
 						{
 							"t": "نَ"
@@ -9596,22 +9664,27 @@
 						{
 							"id": "ihfa",
 							"rijec": "مِنكُمْ",
-							"t": 68
+							"t": 67
 						},
 						{
 							"id": "izhar-sefevijj",
 							"rijec": "مِنكُمْ",
-							"t": 98
+							"t": 94
 						},
 						{
 							"id": "ihfa",
-							"rijec": "جِبِلاًّ",
-							"t": 105
+							"rijec": "جِبِلًّا",
+							"t": 101
 						},
 						{
 							"id": "medd-tabii",
 							"rijec": "كَثِيرًا",
 							"t": 9
+						},
+						{
+							"id": "izhar-halkij",
+							"rijec": "كَثِيرًا",
+							"t": 45
 						},
 						{
 							"id": "vakf",
@@ -9708,7 +9781,7 @@
 						{
 							"id": "damir",
 							"rijec": "هَـٰذِهِ",
-							"t": 60
+							"t": 59
 						},
 						{
 							"id": "gunne",
@@ -9868,10 +9941,10 @@
 							"i": 6
 						},
 						{
-							"t": "جُلُ"
+							"t": "جُلُهُ"
 						},
 						{
-							"t": "هُم",
+							"t": "م",
 							"i": 7
 						},
 						{
@@ -10208,10 +10281,10 @@
 							"i": 9
 						},
 						{
-							"t": " مُضِ"
+							"t": " مُضِيًّ"
 						},
 						{
-							"t": "يًّا",
+							"t": "ا",
 							"i": 10
 						},
 						{
@@ -10260,7 +10333,7 @@
 						{
 							"id": "izhar-sefevijj",
 							"rijec": "لَمَسَخْنَـٰهُمْ",
-							"t": 104
+							"t": 100
 						},
 						{
 							"id": "medd-tabii",
@@ -10324,10 +10397,10 @@
 					"audio": "036068.mp3",
 					"dijelovi": [
 						{
-							"t": "وَ"
+							"t": "وَمَ"
 						},
 						{
-							"t": "مَن",
+							"t": "ن",
 							"i": 0
 						},
 						{
@@ -10386,14 +10459,14 @@
 					],
 					"pravila": [
 						{
-							"id": "idgam-mislejn-gunneh",
+							"id": "idgam-gunneh",
 							"rijec": "وَمَن",
-							"t": 106
+							"t": 77
 						},
 						{
 							"id": "gunne",
 							"rijec": "نُّعَمِّرْهُ",
-							"t": 75
+							"t": 74
 						},
 						{
 							"id": "hukmurra",
@@ -10564,7 +10637,7 @@
 						{
 							"id": "izhar-sefevijj",
 							"rijec": "عَلَّمْنَـٰهُ",
-							"t": 107
+							"t": 102
 						},
 						{
 							"id": "medd-tabii",
@@ -10589,12 +10662,12 @@
 						{
 							"id": "iklab",
 							"rijec": "يَنۢبَغِى",
-							"t": 80
+							"t": 23
 						},
 						{
 							"id": "damir",
 							"rijec": "لَهُ",
-							"t": 60
+							"t": 59
 						},
 						{
 							"id": "vakf",
@@ -10604,7 +10677,7 @@
 						{
 							"id": "izhar-halkij",
 							"rijec": "إِنْ",
-							"t": 77
+							"t": 76
 						},
 						{
 							"id": "medd-tabii",
@@ -10614,7 +10687,7 @@
 						{
 							"id": "idgam-gunneh",
 							"rijec": "ذِكْرٌ",
-							"t": 101
+							"t": 97
 						},
 						{
 							"id": "hukmurra",
@@ -10672,10 +10745,10 @@
 							"i": 3
 						},
 						{
-							"t": "نَ حَ"
+							"t": "نَ حَيًّ"
 						},
 						{
-							"t": "يًّا",
+							"t": "ا",
 							"i": 4
 						},
 						{
@@ -10721,7 +10794,7 @@
 						{
 							"id": "ihfa",
 							"rijec": "مَن",
-							"t": 68
+							"t": 67
 						},
 						{
 							"id": "medd-tabii",
@@ -10755,7 +10828,9 @@
 			"do": 70
 		},
 		{
-			"broj": 445,
+			"kljuc": "s445",
+			"sura": 36,
+			"stranica": 445,
 			"ajeti": [
 				{
 					"n": 71,
@@ -10808,10 +10883,10 @@
 							"i": 6
 						},
 						{
-							"t": " لَ"
+							"t": " لَهُ"
 						},
 						{
-							"t": "هُم",
+							"t": "م",
 							"i": 7
 						},
 						{
@@ -10904,7 +10979,7 @@
 						{
 							"id": "izhar-sefevijj",
 							"rijec": "أَوَلَمْ",
-							"t": 73
+							"t": 72
 						},
 						{
 							"id": "hukmurra",
@@ -10944,7 +11019,7 @@
 						{
 							"id": "gunne",
 							"rijec": "مِّمَّا",
-							"t": 75
+							"t": 74
 						},
 						{
 							"id": "medd-tabii",
@@ -10964,7 +11039,7 @@
 						{
 							"id": "izhar-halkij",
 							"rijec": "أَنْعَـٰمًا",
-							"t": 108
+							"t": 103
 						},
 						{
 							"id": "medd-tabii",
@@ -11102,7 +11177,7 @@
 						{
 							"id": "izhar-halkij",
 							"rijec": "فَمِنْهَا",
-							"t": 77
+							"t": 76
 						},
 						{
 							"id": "medd-tabii",
@@ -11127,7 +11202,7 @@
 						{
 							"id": "izhar-halkij",
 							"rijec": "وَمِنْهَا",
-							"t": 77
+							"t": 76
 						},
 						{
 							"id": "medd-tabii",
@@ -11367,7 +11442,7 @@
 						{
 							"id": "ihfa",
 							"rijec": "مِن",
-							"t": 59
+							"t": 58
 						},
 						{
 							"id": "medd-tabii",
@@ -11377,7 +11452,7 @@
 						{
 							"id": "lafzatullah",
 							"rijec": "اللَّهِ",
-							"t": 109
+							"t": 104
 						},
 						{
 							"id": "medd-tabii",
@@ -11387,17 +11462,17 @@
 						{
 							"id": "idgam-bila-gunneh",
 							"rijec": "ءَالِهَةً",
-							"t": 66
+							"t": 65
 						},
 						{
 							"id": "izhar-sefevijj",
 							"rijec": "لَّعَلَّهُمْ",
-							"t": 73
+							"t": 72
 						},
 						{
 							"id": "ihfa",
 							"rijec": "يُنصَرُونَ",
-							"t": 110
+							"t": 105
 						},
 						{
 							"id": "hukmurra",
@@ -11527,7 +11602,7 @@
 						{
 							"id": "izhar-sefevijj",
 							"rijec": "لَهُمْ",
-							"t": 98
+							"t": 94
 						},
 						{
 							"id": "idgam-gunneh",
@@ -11634,7 +11709,7 @@
 						{
 							"id": "ihfa",
 							"rijec": "يَحْزُنكَ",
-							"t": 68
+							"t": 67
 						},
 						{
 							"id": "izhar-sefevijj",
@@ -11644,7 +11719,7 @@
 						{
 							"id": "vakf",
 							"rijec": "ۘ",
-							"t": 111
+							"t": 106
 						},
 						{
 							"id": "gunne",
@@ -11742,10 +11817,10 @@
 							"i": 8
 						},
 						{
-							"t": " "
+							"t": " مِ"
 						},
 						{
-							"t": "مِن",
+							"t": "ن",
 							"i": 9
 						},
 						{
@@ -11813,7 +11888,7 @@
 						{
 							"id": "izhar-sefevijj",
 							"rijec": "أَوَلَمْ",
-							"t": 73
+							"t": 72
 						},
 						{
 							"id": "hukmurra",
@@ -11823,7 +11898,7 @@
 						{
 							"id": "ihfa",
 							"rijec": "الْإِنسَـٰنُ",
-							"t": 93
+							"t": 90
 						},
 						{
 							"id": "medd-tabii",
@@ -11856,19 +11931,19 @@
 							"t": 36
 						},
 						{
-							"id": "idgam-mislejn-gunneh",
+							"id": "idgam-gunneh",
 							"rijec": "مِن",
-							"t": 106
+							"t": 77
 						},
 						{
 							"id": "kalkala",
 							"rijec": "نُّطْفَةٍ",
-							"t": 89
+							"t": 86
 						},
 						{
 							"id": "ihfa",
 							"rijec": "نُّطْفَةٍ",
-							"t": 45
+							"t": 46
 						},
 						{
 							"id": "medd-tabii",
@@ -11911,10 +11986,10 @@
 							"i": 1
 						},
 						{
-							"t": " مَثَ"
+							"t": " مَثَلً"
 						},
 						{
-							"t": "لًا",
+							"t": "ا",
 							"i": 2
 						},
 						{
@@ -11946,10 +12021,10 @@
 							"i": 5
 						},
 						{
-							"t": "لَ "
+							"t": "لَ مَ"
 						},
 						{
-							"t": "مَن",
+							"t": "ن",
 							"i": 6
 						},
 						{
@@ -12003,7 +12078,7 @@
 						{
 							"id": "damir",
 							"rijec": "خَلْقَهُ",
-							"t": 60
+							"t": 59
 						},
 						{
 							"id": "vakf",
@@ -12018,7 +12093,7 @@
 						{
 							"id": "idgam-gunneh",
 							"rijec": "مَن",
-							"t": 112
+							"t": 61
 						},
 						{
 							"id": "medd-tabii",
@@ -12163,7 +12238,7 @@
 						{
 							"id": "izhar-halkij",
 							"rijec": "خَلْقٍ",
-							"t": 100
+							"t": 96
 						},
 						{
 							"id": "medd-arid",
@@ -12177,10 +12252,10 @@
 					"audio": "036080.mp3",
 					"dijelovi": [
 						{
-							"t": "الَّذِى جَعَلَ لَ"
+							"t": "الَّذِى جَعَلَ لَكُ"
 						},
 						{
-							"t": "كُم",
+							"t": "م",
 							"i": 0
 						},
 						{
@@ -12277,7 +12352,7 @@
 						{
 							"id": "idgam-mislejn-gunneh",
 							"rijec": "لَكُم",
-							"t": 46
+							"t": 21
 						},
 						{
 							"id": "hukmurra",
@@ -12312,12 +12387,12 @@
 						{
 							"id": "idgam-mislejn-gunneh",
 							"rijec": "أَنتُم",
-							"t": 106
+							"t": 21
 						},
 						{
 							"id": "izhar-halkij",
 							"rijec": "مِّنْهُ",
-							"t": 77
+							"t": 76
 						},
 						{
 							"id": "damir",
@@ -12380,10 +12455,10 @@
 							"i": 5
 						},
 						{
-							"t": " "
+							"t": " أَ"
 						},
 						{
-							"t": "أَن",
+							"t": "ن",
 							"i": 6
 						},
 						{
@@ -12394,10 +12469,10 @@
 							"i": 6
 						},
 						{
-							"t": "خْلُقَ مِثْلَ"
+							"t": "خْلُقَ مِثْلَهُ"
 						},
 						{
-							"t": "هُم",
+							"t": "م",
 							"i": 7
 						},
 						{
@@ -12453,7 +12528,7 @@
 						{
 							"id": "hukmurra",
 							"rijec": "وَالْأَرْضَ",
-							"t": 76
+							"t": 75
 						},
 						{
 							"id": "medd-tabii",
@@ -12463,7 +12538,7 @@
 						{
 							"id": "izhar-halkij",
 							"rijec": "بِقَـٰدِرٍ",
-							"t": 100
+							"t": 96
 						},
 						{
 							"id": "medd-munfesil",
@@ -12473,7 +12548,7 @@
 						{
 							"id": "idgam-gunneh",
 							"rijec": "أَن",
-							"t": 113
+							"t": 61
 						},
 						{
 							"id": "ihfa-sefevijj",
@@ -12554,53 +12629,60 @@
 							"i": 7
 						},
 						{
-							"t": "دَ شَيْــًٔا "
+							"t": "دَ شَيْ"
 						},
 						{
-							"t": "أَن",
+							"t": "ـًٔ",
 							"i": 8
+						},
+						{
+							"t": "ا أَ"
+						},
+						{
+							"t": "ن",
+							"i": 9
 						},
 						{
 							"t": " "
 						},
 						{
 							"t": "يَ",
-							"i": 8
+							"i": 9
 						},
 						{
 							"t": "قُ"
 						},
 						{
 							"t": "و",
-							"i": 9
+							"i": 10
 						},
 						{
 							"t": "لَ لَ"
 						},
 						{
 							"t": "هُ",
-							"i": 10
+							"i": 11
 						},
 						{
 							"t": " كُ"
 						},
 						{
 							"t": "ن",
-							"i": 11
+							"i": 12
 						},
 						{
 							"t": " "
 						},
 						{
 							"t": "فَ",
-							"i": 11
+							"i": 12
 						},
 						{
 							"t": "يَكُ"
 						},
 						{
 							"t": "و",
-							"i": 12
+							"i": 13
 						},
 						{
 							"t": "نُ"
@@ -12620,7 +12702,7 @@
 						{
 							"id": "izhar-sefevijj",
 							"rijec": "أَمْرُهُ",
-							"t": 114
+							"t": 107
 						},
 						{
 							"id": "hukmurra",
@@ -12630,7 +12712,7 @@
 						{
 							"id": "damir",
 							"rijec": "أَمْرُهُ",
-							"t": 60
+							"t": 59
 						},
 						{
 							"id": "medd-munfesil",
@@ -12648,9 +12730,14 @@
 							"t": 2
 						},
 						{
+							"id": "izhar-halkij",
+							"rijec": "شَيْـًٔا",
+							"t": 45
+						},
+						{
 							"id": "idgam-gunneh",
 							"rijec": "أَن",
-							"t": 113
+							"t": 61
 						},
 						{
 							"id": "medd-tabii",
@@ -12660,12 +12747,12 @@
 						{
 							"id": "damir",
 							"rijec": "لَهُ",
-							"t": 60
+							"t": 59
 						},
 						{
 							"id": "ihfa",
 							"rijec": "كُن",
-							"t": 81
+							"t": 79
 						},
 						{
 							"id": "medd-arid",
@@ -12707,10 +12794,10 @@
 							"i": 3
 						},
 						{
-							"t": "تُ كُلِّ "
+							"t": "تُ كُلِّ شَ"
 						},
 						{
-							"t": "شَيْءٍ",
+							"t": "يْءٍ",
 							"i": 4
 						},
 						{
@@ -12759,7 +12846,7 @@
 						{
 							"id": "damir",
 							"rijec": "بِيَدِهِ",
-							"t": 60
+							"t": 59
 						},
 						{
 							"id": "medd-tabii",
@@ -12769,7 +12856,7 @@
 						{
 							"id": "idgam-gunneh",
 							"rijec": "شَيْءٍ",
-							"t": 115
+							"t": 37
 						},
 						{
 							"id": "damir",

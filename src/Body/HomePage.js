@@ -5,6 +5,7 @@ import PageBand from './PageBand';
 import HomeFirst from './HomeFirst';
 import FinalQuizCard from './FinalQuizCard';
 import BonusCard from './BonusCard';
+import BonusKartica from './BonusKartica';
 import { useUI } from '../i18n/ui';
 
 function Home() {
@@ -21,7 +22,11 @@ function Home() {
 				<div className="wrap">
 					<HomeFirst start={0} stop={23} />
 					<FinalQuizCard />
-					<BonusCard />
+					<BonusKartica vrsta="fatiha" />
+					<BonusKartica vrsta="kursij" />
+					<BonusKartica vrsta="mulk" />
+					<BonusCard vrsta="jasin" />
+					<BonusCard vrsta="amme" />
 				</div>
 			</main>
 			<SiteFooter />

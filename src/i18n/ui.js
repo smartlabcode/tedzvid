@@ -357,32 +357,30 @@ const UI = {
 		adminLegend: { ok: 'položeno', partial: 'nije položeno', none: 'nije rješavano' },
 
 		/* ----- bonus lekcija: sura Jasin ----- */
-		navJasin: 'Sura Jasin',
 		jasinEyebrow: 'Bonus lekcija',
 		jasinNaslov: 'Sura Jasin',
 		jasinPodnaslov: 'Cijela sura, stranica po stranicu, s bojama i objašnjenjima za sva tedžvidska pravila iz 22 lekcije.',
 		jasinUvod:
 			'Svaka boja u tekstu je jedno pravilo. Klikni na obojeni harf i pročitaj zašto se tu primjenjuje to pravilo, ili otvori spisak svih pravila ispod ajeta. Zvučni zapis uči Mahmud Halil el-Husari.',
-		jasinPrivremeniZvuk: 'Zvučni zapis je privremeno preuzet s vanjskog izvora (everyayah.com) dok se ne snime vlastiti.',
+		suraPrivremeniZvuk: 'Zvučni zapis je privremeno preuzet s vanjskog izvora (everyayah.com) dok se ne snime vlastiti.',
+		jasinOSuri: (n, a, b) =>
+			`Sura Jasin je 36. sura u Kur’anu: ${n} ajeta, objavljena u Mekki. U mushafu zauzima stranice ${a}–${b}, a ovdje je podijeljena upravo tako.`,
 		jasinStranica: (n) => `Stranica ${n}`,
 		jasinStranicaMushafa: (n) => `Stranica ${n} mushafa`,
+		jasinNemaNaStranici: 'nema na ovoj stranici',
 		jasinAjeti: (a, b) => `ajeti ${a}–${b}`,
-		jasinLegenda: 'Boje pravila',
-		jasinSve: 'Sve boje',
-		jasinManje: 'Manje boja',
-		jasinNista: 'Bez boja',
-		jasinSamo: 'samo ovo pravilo',
-		jasinNemaUSuri: 'nema u ovoj suri',
-		jasinPuta: (n) => `${n}×`,
-		jasinLekcijaKratko: (n) => `lekcija ${n}`,
-		jasinBezLekcije: 'obrađeno uz 5. i 6. lekciju',
-		jasinPravilaBroj: (n) => (n === 1 ? '1 pravilo' : n < 5 ? `${n} pravila` : `${n} pravila`),
-		jasinOtvoriPravila: 'Prikaži pravila',
-		jasinZatvoriPravila: 'Sakrij pravila',
-		jasinSvaObjasnjenja: 'Objašnjenja uz sve ajete',
-		jasinPustiAjet: (n) => `Poslušaj ${n}. ajet`,
+		suraLegenda: 'Boje pravila',
+		suraSve: 'Sve boje',
+		suraManje: 'Manje boja',
+		suraNista: 'Bez boja',
+		suraPuta: (n) => `${n}×`,
+		suraLekcijaKratko: (n) => `lekcija ${n}`,
+		suraBezLekcije: 'obrađeno uz 5. i 6. lekciju',
+		suraPravilaBroj: (n) => (n === 1 ? '1 pravilo' : n < 5 ? `${n} pravila` : `${n} pravila`),
+		suraSvaObjasnjenja: 'Objašnjenja uz sve ajete',
+		suraPustiAjet: (n) => `Poslušaj ${n}. ajet`,
 		jasinPustiStranicu: 'Pusti cijelu stranicu',
-		jasinZaustavi: 'Zaustavi',
+		suraZaustavi: 'Zaustavi',
 		jasinOznaka: (n) => `Jasin, ${n}. ajet`,
 		jasinPrethodna: 'Prethodna stranica',
 		jasinSljedeca: 'Sljedeća stranica',
@@ -391,7 +389,102 @@ const UI = {
 			`Sura Jasin se otključava kad položiš kvizove svih 22 lekcije. Nastavi s ${n}. lekcijom.`,
 		jasinZakljucanGost: 'Prijavi se i pređi svih 22 lekcije da otključaš bonus lekciju sa surom Jasin.',
 		jasinKarticaTekst: 'Cijela sura Jasin s bojama i objašnjenjima svih pravila koja si prešao – kao nagrada na kraju kursa.',
-		jasinOtvori: 'Otvori bonus lekciju'
+		jasinOtvori: 'Otvori bonus lekciju',
+
+		/* ----- bonus lekcija: amme sure ----- */
+		ammeEyebrow: 'Bonus lekcija',
+		ammeNaslov: 'Amme džuz',
+		ammePodnaslov: 'Trideseti džuz Kur’ana – sure koje se najčešće uče napamet – s bojama i objašnjenjima svih tedžvidskih pravila.',
+		ammeUvod:
+			'Sura se bira iz spiska, a uz svaku ide i besmela. Svaka boja u tekstu je jedno pravilo: klikni na obojeni harf i pročitaj zašto se tu primjenjuje, ili otvori spisak pravila ispod ajeta. Boje u legendi broje se za suru koja je otvorena.',
+		ammeODzuzu: (n, a, b) =>
+			`Amme džuz je trideseti i posljednji džuz Kur’ana: ${n} sura, od ${a}. sure En-Nebe’ do ${b}. sure En-Nas. Iste su boje i ista objašnjenja kao u bonus lekciji sa surom Jasin.`,
+		ammeNemaUSuri: 'nema u ovoj suri',
+		ammeAjeta: (n) => (n === 1 ? '1 ajet' : n < 5 ? `${n} ajeta` : `${n} ajeta`),
+		ammeMekkanska: 'mekkanska',
+		ammeMedinska: 'medinska',
+		ammeBesmela: 'Besmela',
+		ammeBesmelaOznaka: 'Besmela',
+		ammePustiSuru: 'Pusti cijelu suru',
+		ammePrethodna: 'Prethodna sura',
+		ammeSljedeca: 'Sljedeća sura',
+		ammeOznaka: (naziv, n) => `${naziv}, ${n}. ajet`,
+		ammeZakljucanNaslov: 'Bonus lekcija je još zaključana',
+		ammeZakljucanKorisnik: (n) =>
+			`Amme džuz se otključava kad položiš kvizove svih 22 lekcije. Nastavi s ${n}. lekcijom.`,
+		ammeZakljucanGost: 'Prijavi se i pređi svih 22 lekcije da otključaš bonus lekciju s Amme džuzom.',
+		ammeKarticaTekst: 'Trideseti džuz Kur’ana, sura po sura, s besmelom, bojama i objašnjenjima svih pravila koja si prešao.',
+		ammeOtvori: 'Otvori Amme džuz',
+
+		/* ----- bonus lekcije s kraćim cjelinama (El-Fatiha, Ajetul-kursij, El-Mulk) ----- */
+		bonus: {
+			fatiha: {
+				poStranicama: false,
+				eyebrow: 'Bonus lekcija',
+				naslov: 'Sura El-Fatiha',
+				podnaslov:
+					'Sura koja se uči na svakom rekatu, s bojama i objašnjenjima za sva tedžvidska pravila iz 22 lekcije.',
+				uvod:
+					'Svaka boja u tekstu je jedno pravilo. Klikni na obojeni harf i pročitaj zašto se tu primjenjuje to pravilo, ili otvori spisak svih pravila ispod ajeta. Zvučni zapis uči Mahmud Halil el-Husari.',
+				osuri: (d) =>
+					`Sura El-Fatiha je prva sura u Kur’anu: ${d.brojAjeta} ajeta, objavljena u Mekki. Uči se na svakom rekatu namaza, pa je vrijedi proći harf po harf.`,
+				pusti: 'Pusti cijelu suru',
+				prethodna: 'Prethodni dio',
+				sljedeca: 'Sljedeći dio',
+				nema: 'nema u ovoj suri',
+				oznaka: (n) => `El-Fatiha, ${n}. ajet`,
+				karticaTekst: 'Sura koju učiš na svakom rekatu, harf po harf, s objašnjenjem svakog pravila koje si prešao.',
+				otvori: 'Otvori suru El-Fatiha',
+				zakljucanNaslov: 'Bonus lekcija je još zaključana',
+				zakljucanKorisnik: (n) =>
+					`Sura El-Fatiha se otključava kad položiš kvizove svih 22 lekcije. Nastavi s ${n}. lekcijom.`,
+				zakljucanGost: 'Prijavi se i pređi svih 22 lekcije da otključaš bonus lekciju sa surom El-Fatiha.'
+			},
+			kursij: {
+				poStranicama: false,
+				eyebrow: 'Bonus lekcija',
+				naslov: 'Ajetul-kursij',
+				podnaslov: 'Ajet koji se najčešće uči napamet, riječ po riječ, s objašnjenjima svih tedžvidskih pravila.',
+				uvod:
+					'Svaka boja u tekstu je jedno pravilo. Klikni na obojeni harf i pročitaj zašto se tu primjenjuje to pravilo, ili otvori spisak svih pravila ispod ajeta. Zvučni zapis uči Mahmud Halil el-Husari.',
+				osuri: () =>
+					'Ajetul-kursij je 255. ajet sure El-Bekare i jedan je od ajeta koji se najčešće uče napamet. Ovdje je razložen na sva pravila iz 22 lekcije.',
+				pusti: 'Pusti ajet',
+				prethodna: 'Prethodni dio',
+				sljedeca: 'Sljedeći dio',
+				nema: 'nema u ovom ajetu',
+				oznaka: () => 'Ajetul-kursij',
+				karticaTekst: 'Ajetul-kursij, riječ po riječ, s objašnjenjem svakog pravila koje si prešao.',
+				otvori: 'Otvori Ajetul-kursij',
+				zakljucanNaslov: 'Bonus lekcija je još zaključana',
+				zakljucanKorisnik: (n) =>
+					`Ajetul-kursij se otključava kad položiš kvizove svih 22 lekcije. Nastavi s ${n}. lekcijom.`,
+				zakljucanGost: 'Prijavi se i pređi svih 22 lekcije da otključaš bonus lekciju s Ajetul-kursijom.'
+			},
+			mulk: {
+				poStranicama: true,
+				eyebrow: 'Bonus lekcija',
+				naslov: 'Sura El-Mulk',
+				podnaslov:
+					'Cijela sura, stranica po stranicu, s bojama i objašnjenjima za sva tedžvidska pravila iz 22 lekcije.',
+				uvod:
+					'Svaka boja u tekstu je jedno pravilo. Klikni na obojeni harf i pročitaj zašto se tu primjenjuje to pravilo, ili otvori spisak svih pravila ispod ajeta. Zvučni zapis uči Mahmud Halil el-Husari.',
+				osuri: (d) =>
+					`Sura El-Mulk je 67. sura u Kur’anu: ${d.brojAjeta} ajeta, objavljena u Mekki. U mushafu zauzima stranice ${d
+						.odjeljci[0].stranica}–${d.odjeljci[d.odjeljci.length - 1].stranica}, a ovdje je podijeljena upravo tako.`,
+				pusti: 'Pusti cijelu stranicu',
+				prethodna: 'Prethodna stranica',
+				sljedeca: 'Sljedeća stranica',
+				nema: 'nema na ovoj stranici',
+				oznaka: (n) => `El-Mulk, ${n}. ajet`,
+				karticaTekst: 'Cijela sura El-Mulk s bojama i objašnjenjima svih pravila koja si prešao.',
+				otvori: 'Otvori suru El-Mulk',
+				zakljucanNaslov: 'Bonus lekcija je još zaključana',
+				zakljucanKorisnik: (n) =>
+					`Sura El-Mulk se otključava kad položiš kvizove svih 22 lekcije. Nastavi s ${n}. lekcijom.`,
+				zakljucanGost: 'Prijavi se i pređi svih 22 lekcije da otključaš bonus lekciju sa surom El-Mulk.'
+			}
+		}
 	},
 
 	en: {
@@ -742,32 +835,30 @@ const UI = {
 		adminLegend: { ok: 'passed', partial: 'not passed', none: 'not taken' },
 
 		/* ----- bonus lesson: Surah Ya-Sin ----- */
-		navJasin: 'Surah Ya-Sin',
 		jasinEyebrow: 'Bonus lesson',
 		jasinNaslov: 'Surah Ya-Sin',
 		jasinPodnaslov: 'The whole surah, page by page, colour-coded and explained with every tajweed rule from the 22 lessons.',
 		jasinUvod:
 			'Every colour in the text is one rule. Tap a coloured letter to read why the rule applies there, or open the list of all rules under a verse. The recitation is by Mahmoud Khalil Al-Husary.',
-		jasinPrivremeniZvuk: 'The recitation is temporarily served from an external source (everyayah.com) until our own is recorded.',
+		suraPrivremeniZvuk: 'The recitation is temporarily served from an external source (everyayah.com) until our own is recorded.',
+		jasinOSuri: (n, a, b) =>
+			`Surah Ya-Sin is the 36th surah of the Qur’an: ${n} verses, revealed in Mecca. In the mushaf it spans pages ${a}–${b}, and it is divided here in exactly the same way.`,
 		jasinStranica: (n) => `Page ${n}`,
 		jasinStranicaMushafa: (n) => `Mushaf page ${n}`,
+		jasinNemaNaStranici: 'not on this page',
 		jasinAjeti: (a, b) => `verses ${a}–${b}`,
-		jasinLegenda: 'Rule colours',
-		jasinSve: 'All colours',
-		jasinManje: 'Fewer colours',
-		jasinNista: 'No colours',
-		jasinSamo: 'this rule only',
-		jasinNemaUSuri: 'not found in this surah',
-		jasinPuta: (n) => `${n}×`,
-		jasinLekcijaKratko: (n) => `lesson ${n}`,
-		jasinBezLekcije: 'covered in lessons 5 and 6',
-		jasinPravilaBroj: (n) => (n === 1 ? '1 rule' : `${n} rules`),
-		jasinOtvoriPravila: 'Show rules',
-		jasinZatvoriPravila: 'Hide rules',
-		jasinSvaObjasnjenja: 'Explanations under every verse',
-		jasinPustiAjet: (n) => `Listen to verse ${n}`,
+		suraLegenda: 'Rule colours',
+		suraSve: 'All colours',
+		suraManje: 'Fewer colours',
+		suraNista: 'No colours',
+		suraPuta: (n) => `${n}×`,
+		suraLekcijaKratko: (n) => `lesson ${n}`,
+		suraBezLekcije: 'covered in lessons 5 and 6',
+		suraPravilaBroj: (n) => (n === 1 ? '1 rule' : `${n} rules`),
+		suraSvaObjasnjenja: 'Explanations under every verse',
+		suraPustiAjet: (n) => `Listen to verse ${n}`,
 		jasinPustiStranicu: 'Play the whole page',
-		jasinZaustavi: 'Stop',
+		suraZaustavi: 'Stop',
 		jasinOznaka: (n) => `Ya-Sin, verse ${n}`,
 		jasinPrethodna: 'Previous page',
 		jasinSljedeca: 'Next page',
@@ -776,7 +867,103 @@ const UI = {
 			`Surah Ya-Sin unlocks once you pass the quizzes of all 22 lessons. Continue with lesson ${n}.`,
 		jasinZakljucanGost: 'Log in and complete all 22 lessons to unlock the bonus lesson with Surah Ya-Sin.',
 		jasinKarticaTekst: 'The whole of Surah Ya-Sin, colour-coded and explained with every rule you have learned – a reward at the end of the course.',
-		jasinOtvori: 'Open the bonus lesson'
+		jasinOtvori: 'Open the bonus lesson',
+
+		/* ----- bonus lesson: short surahs ----- */
+		ammeEyebrow: 'Bonus lesson',
+		ammeNaslov: 'Juz Amma',
+		ammePodnaslov: 'The thirtieth juz of the Qur’an – the surahs most often memorised – colour-coded and explained with every tajweed rule.',
+		ammeUvod:
+			'Pick a surah from the list; each one comes with the Basmala. Every colour in the text is one rule: tap a coloured letter to read why it applies there, or open the list of rules under a verse. The legend counts the rules of the open surah.',
+		ammeODzuzu: (n, a, b) =>
+			`Juz Amma is the thirtieth and last juz of the Qur’an: ${n} surahs, from surah ${a} (An-Naba) to surah ${b} (An-Nas). The colours and explanations are the same as in the Surah Ya-Sin bonus lesson.`,
+		ammeNemaUSuri: 'not in this surah',
+		ammeAjeta: (n) => (n === 1 ? '1 verse' : `${n} verses`),
+		ammeMekkanska: 'Meccan',
+		ammeMedinska: 'Medinan',
+		ammeBesmela: 'Basmala',
+		ammeBesmelaOznaka: 'Basmala',
+		ammePustiSuru: 'Play the whole surah',
+		ammePrethodna: 'Previous surah',
+		ammeSljedeca: 'Next surah',
+		ammeOznaka: (naziv, n) => `${naziv}, verse ${n}`,
+		ammeZakljucanNaslov: 'The bonus lesson is still locked',
+		ammeZakljucanKorisnik: (n) =>
+			`Juz Amma unlocks once you pass the quizzes of all 22 lessons. Continue with lesson ${n}.`,
+		ammeZakljucanGost: 'Log in and complete all 22 lessons to unlock the Juz Amma bonus lesson.',
+		ammeKarticaTekst: 'The thirtieth juz of the Qur’an, surah by surah, with the Basmala, colour-coded and explained with every rule you have learned.',
+		ammeOtvori: 'Open Juz Amma',
+
+		/* ----- bonus lessons with shorter passages (Al-Fatihah, Ayat al-Kursi, Al-Mulk) ----- */
+		bonus: {
+			fatiha: {
+				poStranicama: false,
+				eyebrow: 'Bonus lesson',
+				naslov: 'Surah Al-Fatihah',
+				podnaslov:
+					'The surah recited in every unit of prayer, colour-coded and explained with every tajweed rule from the 22 lessons.',
+				uvod:
+					'Every colour in the text is one rule. Tap a coloured letter to read why the rule applies there, or open the list of all rules under a verse. The recitation is by Mahmoud Khalil Al-Husary.',
+				osuri: (d) =>
+					`Surah Al-Fatihah is the first surah of the Qur’an: ${d.brojAjeta} verses, revealed in Mecca. It is recited in every unit of prayer, so it is worth going through letter by letter.`,
+				pusti: 'Play the whole surah',
+				prethodna: 'Previous part',
+				sljedeca: 'Next part',
+				nema: 'not in this surah',
+				oznaka: (n) => `Al-Fatihah, verse ${n}`,
+				karticaTekst:
+					'The surah you recite in every prayer, letter by letter, with every rule you have learned explained.',
+				otvori: 'Open Surah Al-Fatihah',
+				zakljucanNaslov: 'This bonus lesson is still locked',
+				zakljucanKorisnik: (n) =>
+					`Surah Al-Fatihah unlocks once you pass the quizzes of all 22 lessons. Carry on with lesson ${n}.`,
+				zakljucanGost: 'Sign in and work through all 22 lessons to unlock the bonus lesson with Surah Al-Fatihah.'
+			},
+			kursij: {
+				poStranicama: false,
+				eyebrow: 'Bonus lesson',
+				naslov: 'Ayat al-Kursi',
+				podnaslov: 'One of the most memorised verses, word by word, with every tajweed rule explained.',
+				uvod:
+					'Every colour in the text is one rule. Tap a coloured letter to read why the rule applies there, or open the list of all rules under a verse. The recitation is by Mahmoud Khalil Al-Husary.',
+				osuri: () =>
+					'Ayat al-Kursi is verse 255 of Surah Al-Baqarah and one of the most memorised verses of the Qur’an. Here it is broken down into every rule from the 22 lessons.',
+				pusti: 'Play the verse',
+				prethodna: 'Previous part',
+				sljedeca: 'Next part',
+				nema: 'not in this verse',
+				oznaka: () => 'Ayat al-Kursi',
+				karticaTekst: 'Ayat al-Kursi, word by word, with every rule you have learned explained.',
+				otvori: 'Open Ayat al-Kursi',
+				zakljucanNaslov: 'This bonus lesson is still locked',
+				zakljucanKorisnik: (n) =>
+					`Ayat al-Kursi unlocks once you pass the quizzes of all 22 lessons. Carry on with lesson ${n}.`,
+				zakljucanGost: 'Sign in and work through all 22 lessons to unlock the bonus lesson with Ayat al-Kursi.'
+			},
+			mulk: {
+				poStranicama: true,
+				eyebrow: 'Bonus lesson',
+				naslov: 'Surah Al-Mulk',
+				podnaslov:
+					'The whole surah, page by page, colour-coded and explained with every tajweed rule from the 22 lessons.',
+				uvod:
+					'Every colour in the text is one rule. Tap a coloured letter to read why the rule applies there, or open the list of all rules under a verse. The recitation is by Mahmoud Khalil Al-Husary.',
+				osuri: (d) =>
+					`Surah Al-Mulk is the 67th surah of the Qur’an: ${d.brojAjeta} verses, revealed in Mecca. In the mushaf it spans pages ${d
+						.odjeljci[0].stranica}–${d.odjeljci[d.odjeljci.length - 1].stranica}, and it is divided here in exactly the same way.`,
+				pusti: 'Play the whole page',
+				prethodna: 'Previous page',
+				sljedeca: 'Next page',
+				nema: 'not on this page',
+				oznaka: (n) => `Al-Mulk, verse ${n}`,
+				karticaTekst: 'The whole of Surah Al-Mulk, colour-coded and explained with every rule you have learned.',
+				otvori: 'Open Surah Al-Mulk',
+				zakljucanNaslov: 'This bonus lesson is still locked',
+				zakljucanKorisnik: (n) =>
+					`Surah Al-Mulk unlocks once you pass the quizzes of all 22 lessons. Carry on with lesson ${n}.`,
+				zakljucanGost: 'Sign in and work through all 22 lessons to unlock the bonus lesson with Surah Al-Mulk.'
+			}
+		}
 	}
 };
 

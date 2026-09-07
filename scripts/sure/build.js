@@ -1,22 +1,71 @@
 /*
- * Gradi src/Data/YasinData.json – suru Jasin razloženu po stranicama mushafa,
- * s tedžvidskim pravilima iz svih 22 lekcije i objašnjenjem uz svako pravilo.
+ * Gradi podatke za bonus lekcije s kur'anskim tekstom:
+ *   src/Data/YasinData.json      – sura Jasin razložena po stranicama mushafa
+ *   src/Data/AmmeDzuzData.json    – trideseti (Amme) džuz: 37 sura (En-Nebe’ … En-Nas)
+ * Svaki ajet je razložen na dijelove, a uz svaki dio ide tedžvidsko pravilo iz
+ * lekcija 1–22 s objašnjenjem zašto se baš tu primjenjuje.
  *
- * Pokretanje:  node scripts/yasin/build.js
- * Izvori:      api.quran.com (uthmani tekst s tedžvidskim oznakama) i
- *              api.alquran.cloud (broj stranice mushafa za svaki ajet).
- * Preuzeto se kešira u scripts/yasin/.cache da ponovna gradnja ne traži internet.
+ * Pokretanje:  node scripts/sure/build.js
+ * Izvori:      api.quran.com (uthmani tekst s oznakama tedžvidskog mushafa) i
+ *              api.alquran.cloud (stranica mushafa i podaci o suri).
+ * Preuzeto se kešira u scripts/sure/.cache da ponovna gradnja ne traži internet.
  */
 
 const fs = require('fs');
 const path = require('path');
 const https = require('https');
-const { razloziOznake, normalizuj, uHarfove, tekstHarfa } = require('./lib');
+const { razloziOznake, poravnaj, normalizuj, uHarfove, tekstHarfa } = require('./lib');
 const KATALOG = require('./pravila');
 
 const CACHE = path.join(__dirname, '.cache');
-const IZLAZ = path.join(__dirname, '..', '..', 'src', 'Data', 'YasinData.json');
-const KATALOG_IZLAZ = path.join(__dirname, '..', '..', 'src', 'Data', 'YasinPravila.json');
+const DATA = path.join(__dirname, '..', '..', 'src', 'Data');
+const IZLAZ_JASIN = path.join(DATA, 'YasinData.json');
+const IZLAZ_AMME = path.join(DATA, 'AmmeDzuzData.json');
+const IZLAZ_FATIHA = path.join(DATA, 'FatihaData.json');
+const IZLAZ_KURSIJ = path.join(DATA, 'KursijData.json');
+const IZLAZ_MULK = path.join(DATA, 'MulkData.json');
+const KATALOG_IZLAZ = path.join(DATA, 'SurePravila.json');
+
+/* trideseti džuz (Amme džuz): od sure En-Nebe' do En-Nas; značenja prate prijevod B. Korkuta */
+const AMME = [
+	{ n: 78, bs: 'En-Nebe’', znacenje: { bs: 'Vijest', en: 'The Tidings' } },
+	{ n: 79, bs: 'En-Nazi’at', znacenje: { bs: 'Oni koji čupaju', en: 'Those Who Drag Forth' } },
+	{ n: 80, bs: 'Abese', znacenje: { bs: 'Namrštio se', en: 'He Frowned' } },
+	{ n: 81, bs: 'Et-Tekvir', znacenje: { bs: 'Prestanak sjaja', en: 'The Overthrowing' } },
+	{ n: 82, bs: 'El-Infitar', znacenje: { bs: 'Rascjepljenje', en: 'The Cleaving' } },
+	{ n: 83, bs: 'El-Mutaffifin', znacenje: { bs: 'Oni koji pri mjerenju zakidaju', en: 'The Defrauding' } },
+	{ n: 84, bs: 'El-Inšikak', znacenje: { bs: 'Cijepanje', en: 'The Splitting Open' } },
+	{ n: 85, bs: 'El-Burudž', znacenje: { bs: 'Sazviježđa', en: 'The Constellations' } },
+	{ n: 86, bs: 'Et-Tarik', znacenje: { bs: 'Danica', en: 'The Nightcomer' } },
+	{ n: 87, bs: 'El-A’la', znacenje: { bs: 'Svevišnji', en: 'The Most High' } },
+	{ n: 88, bs: 'El-Gašija', znacenje: { bs: 'Teška nevolja', en: 'The Overwhelming' } },
+	{ n: 89, bs: 'El-Fedžr', znacenje: { bs: 'Zora', en: 'The Dawn' } },
+	{ n: 90, bs: 'El-Beled', znacenje: { bs: 'Grad', en: 'The City' } },
+	{ n: 91, bs: 'Eš-Šems', znacenje: { bs: 'Sunce', en: 'The Sun' } },
+	{ n: 92, bs: 'El-Lejl', znacenje: { bs: 'Noć', en: 'The Night' } },
+	{ n: 93, bs: 'Ed-Duha', znacenje: { bs: 'Jutro', en: 'The Morning Hours' } },
+	{ n: 94, bs: 'Eš-Šerh', znacenje: { bs: 'Širokogrudnost', en: 'The Relief' } },
+	{ n: 95, bs: 'Et-Tin', znacenje: { bs: 'Smokva', en: 'The Fig' } },
+	{ n: 96, bs: 'El-Alek', znacenje: { bs: 'Ugrušak', en: 'The Clot' } },
+	{ n: 97, bs: 'El-Kadr', znacenje: { bs: 'Noć Kadr', en: 'The Night of Decree' } },
+	{ n: 98, bs: 'El-Bejjine', znacenje: { bs: 'Dokaz jasni', en: 'The Clear Proof' } },
+	{ n: 99, bs: 'Ez-Zilzal', znacenje: { bs: 'Zemljotres', en: 'The Earthquake' } },
+	{ n: 100, bs: 'El-Adijat', znacenje: { bs: 'Oni koji jure', en: 'The Racers' } },
+	{ n: 101, bs: 'El-Karia', znacenje: { bs: 'Smak svijeta', en: 'The Calamity' } },
+	{ n: 102, bs: 'Et-Tekasur', znacenje: { bs: 'Nadmetanje', en: 'Rivalry in Worldly Increase' } },
+	{ n: 103, bs: 'El-Asr', znacenje: { bs: 'Vrijeme', en: 'The Declining Day' } },
+	{ n: 104, bs: 'El-Humeze', znacenje: { bs: 'Klevetnik', en: 'The Slanderer' } },
+	{ n: 105, bs: 'El-Fil', znacenje: { bs: 'Slon', en: 'The Elephant' } },
+	{ n: 106, bs: 'Kurejš', znacenje: { bs: 'Kurejšije', en: 'Quraysh' } },
+	{ n: 107, bs: 'El-Maun', znacenje: { bs: 'Davanje u naruč', en: 'Small Kindnesses' } },
+	{ n: 108, bs: 'El-Kevser', znacenje: { bs: 'Mnogo dobro', en: 'Abundance' } },
+	{ n: 109, bs: 'El-Kafirun', znacenje: { bs: 'Nevjernici', en: 'The Disbelievers' } },
+	{ n: 110, bs: 'En-Nasr', znacenje: { bs: 'Pomoć', en: 'Divine Support' } },
+	{ n: 111, bs: 'El-Mesed', znacenje: { bs: 'Palmino vlakno', en: 'The Palm Fibre' } },
+	{ n: 112, bs: 'El-Ihlas', znacenje: { bs: 'Iskrenost', en: 'Sincerity' } },
+	{ n: 113, bs: 'El-Felek', znacenje: { bs: 'Svitanje', en: 'The Daybreak' } },
+	{ n: 114, bs: 'En-Nas', znacenje: { bs: 'Ljudi', en: 'Mankind' } }
+];
 
 /* ---------- preuzimanje s keširanjem ---------- */
 function dohvati(url, ime) {
@@ -27,6 +76,7 @@ function dohvati(url, ime) {
 		https
 			.get(url, (r) => {
 				let s = '';
+				r.setEncoding('utf8'); /* bez ovog se višebajtni harf prelomi na granici paketa */
 				r.on('data', (d) => (s += d));
 				r.on('end', () => {
 					fs.writeFileSync(f, s);
@@ -38,14 +88,12 @@ function dohvati(url, ime) {
 }
 
 /* ---------- harfovi i hareke ---------- */
-const FETHA = 'َ', DAMMA = 'ُ', KESRA = 'ِ', SUKUN = 'ْ', SEDDA = 'ّ', MEDDA = 'ٓ';
+const FETHA = 'َ', DAMMA = 'ُ', KESRA = 'ِ', SUKUN = 'ْ', SEDDA = 'ّ';
 const TENVINI = 'ًٌٍ';
 const MALI_ALIF = 'ٰ';
 const HEMZE = 'ءأإؤئآ';
 const GRLENI = 'ءأإؤئآهعحغخ';        /* izhar hallkijj */
-const KALKALA_H = 'قطبجد';
 const KRUPNI = 'خصضغطقظ';            /* harfovi isti'la – uz njih se R uči krupno */
-const SUNCEVI = 'تثدذرزسشصضطظلن';
 
 const vokal = (h) => (h.hareke.find((c) => c === FETHA || c === DAMMA || c === KESRA) || null);
 const imaSukun = (h) => h.hareke.indexOf(SUKUN) >= 0;
@@ -93,12 +141,14 @@ function uRijeci(harfovi) {
 	return rijeci;
 }
 
+/* harf koji se ne uči (tiho ا i sl.) se preskače – pravila gledaju kroz njeg */
+const zvucni = (h) => h.harf && h.cls !== 'slnt';
 const sljedeciHarf = (H, i) => {
-	for (let k = i + 1; k < H.length; k++) if (H[k].harf) return k;
+	for (let k = i + 1; k < H.length; k++) if (zvucni(H[k])) return k;
 	return -1;
 };
 const prethodniHarf = (H, i) => {
-	for (let k = i - 1; k >= 0; k--) if (H[k].harf) return k;
+	for (let k = i - 1; k >= 0; k--) if (zvucni(H[k])) return k;
 	return -1;
 };
 /* može li se na riječi stati: iza nje je znak za vakf ili kraj ajeta */
@@ -112,7 +162,10 @@ function stajanje(H, rijeci, r) {
 }
 
 /* ---------- prepoznavanje pravila ---------- */
-const PRIORITET = KATALOG.reduce((a, p, i) => ((a[p.id] = i), a), {});
+const PRIORITET = {};
+KATALOG.forEach((p, i) => {
+	PRIORITET[p.id] = i;
+});
 /* pravila koja se boje prije ostalih (specifičnija su) */
 const RED = [
 	'vakf', 'ne-uci-se', 'lafzatullah',
@@ -138,8 +191,8 @@ const KLASE = {
 };
 
 /* ---------- analiza jednog ajeta ---------- */
-function analiziraj(html) {
-	const H = uHarfove(normalizuj(razloziOznake(html)));
+function analiziraj(html, cist) {
+	const H = uHarfove(normalizuj(poravnaj(razloziOznake(html), cist)));
 	const rijeci = uRijeci(H);
 	const nadjena = [];
 	const dodaj = (id, od, doo, tekst) => nadjena.push({ id, od, do: doo, bs: tekst.bs, en: tekst.en });
@@ -153,11 +206,8 @@ function analiziraj(html) {
 			continue;
 		}
 		let j = i;
-		while (j + 1 < H.length && (H[j + 1].cls === cls || (H[j + 1].razmak && H[j + 2] && H[j + 2].cls === cls))) j++;
-		const cilj = H.slice(i, j + 1).filter((h) => h.harf);
-		const zadnji = cilj[cilj.length - 1];
-		let id = KLASE[cls];
-		if (cls === 'idgham_ghunnah') id = zadnji && zadnji.harf === 'ن' ? 'idgam-mislejn-gunneh' : 'idgam-gunneh';
+		while (j + 1 < H.length && H[j + 1].raspon === H[i].raspon) j++;
+		const id = cls === 'idgham_ghunnah' ? 'idgam-gunneh' : KLASE[cls];
 		if (id) dodaj(id, i, j, objasni(id, { H, od: i, do: j }));
 		i = j + 1;
 	}
@@ -177,7 +227,9 @@ function analiziraj(html) {
 		const t = tenvin(h);
 		const jeNun = h.harf === 'ن' && sakin(h);
 		if (!t && !jeNun) return;
-		const s = sljedeciHarf(H, k);
+		let s = sljedeciHarf(H, k);
+		/* elif koji se piše uz tenvin EN (كُفُوًا) ne izgovara se u spajanju */
+		if (t === 'ً' && s >= 0 && H[s].harf === 'ا' && !H[s].hareke.length) s = sljedeciHarf(H, s);
 		if (s < 0 || GRLENI.indexOf(H[s].harf) < 0) return;
 		if (zauzet(k, k, 'izhar-halkij')) return;
 		dodaj('izhar-halkij', k, k, objasni('izhar-halkij', { tenvin: t, harf: H[s].harf }));
@@ -219,7 +271,8 @@ function analiziraj(html) {
 		if (!suglasnik(H[s])) return;
 		const a = h.harf, b = H[s].harf;
 		let id = null;
-		if (a === b) id = a === 'ن' || a === 'م' ? 'idgam-mislejn-gunneh' : 'idgam-mislejn';
+		/* isti harfovi: M u M je idgam mislejn mea-l-gunneh, N u N ide uz idgam mea-l-gunneh */
+		if (a === b) id = a === 'م' ? 'idgam-mislejn-gunneh' : a === 'ن' ? 'idgam-gunneh' : 'idgam-mislejn';
 		else if (SRODNI.some((g) => g.indexOf(a) >= 0 && g.indexOf(b) >= 0)) id = 'idgam-mutedzanisejn';
 		else if (BLISKI.some((g) => g[0] === a && g[1] === b)) id = 'idgam-mutekaribejn';
 		if (!id || zauzet(k, s, id)) return;
@@ -341,26 +394,44 @@ function hukmurra(H, k) {
 const TENVIN_IME = { 'ً': 'EN', 'ٌ': 'UN', 'ٍ': 'IN' };
 const VOKAL_IME = { bs: { 'َ': 'E', 'ُ': 'U', 'ِ': 'I' }, en: { 'َ': 'A', 'ُ': 'U', 'ِ': 'I' } };
 
-/* iz raspona oznake izvlači harf koji je izvor pravila i harf na koji nailazi */
-function par(ctx) {
+/* pravila kod kojih je izvor N sa sukunom, tenvin ili M sa sukunom */
+const NUN_MIM = [ 'ihfa', 'ihfa-sefevijj', 'iklab', 'idgam-gunneh', 'idgam-bila-gunneh', 'idgam-mislejn-gunneh' ];
+
+/*
+ * Iz raspona oznake izvlači harf koji je izvor pravila i harf na koji nailazi.
+ * Oznaka u mushafu zna početi harekom harfa koji je ispred raspona (npr. tenvin u „ًّا و”),
+ * pa se za pravila N/tenvin/M izvor traži i jedan harf unazad.
+ */
+function par(ctx, id) {
 	const H = ctx.H.slice(ctx.od, ctx.do + 1).filter((h) => h.harf);
-	const izvor = H[0] || {};
-	const cilj = H[H.length - 1] || {};
+	const nosilac = (h) => h && (tenvin(h) || ((h.harf === 'ن' || h.harf === 'م') && !vokal(h)));
+	let izvor = H[0] || {};
+	if (NUN_MIM.indexOf(id) >= 0) {
+		const uRasponu = H.slice(0, H.length - 1).find(nosilac);
+		const p = prethodniHarf(ctx.H, ctx.od);
+		izvor = uRasponu || (p >= 0 && nosilac(ctx.H[p]) ? ctx.H[p] : izvor);
+	}
+	/* oznaka ponekad obuhvata samo izvorni harf (npr. „عَبَدتُّمْ”), pa se cilj traži iza raspona */
+	let cilj = H[H.length - 1] || {};
+	if (cilj === izvor || !cilj.harf) {
+		const s = sljedeciHarf(ctx.H, ctx.do);
+		cilj = s >= 0 ? ctx.H[s] : null;
+	}
 	const t = tenvin(izvor);
 	return {
 		izvor,
-		cilj: cilj === izvor ? null : cilj,
+		cilj: cilj && cilj !== izvor ? cilj : null,
 		tenvin: t,
 		/* opis izvora: "tenvin IN (ٍ)" ili "N sa sukunom (نْ)" */
 		opis: {
-			bs: t ? 'Tenvin ' + TENVIN_IME[t] + ' (' + t + ')' : im(izvor.harf, 'bs') + ' sa sukunom',
-			en: t ? 'Tanween ' + TENVIN_IME[t] + ' (' + t + ')' : im(izvor.harf, 'en') + ' with a sukun'
+			bs: t ? 'Tenvin ' + TENVIN_IME[t] + ' (ـ' + t + ')' : im(izvor.harf, 'bs') + ' sa sukunom',
+			en: t ? 'Tanween ' + TENVIN_IME[t] + ' (ـ' + t + ')' : im(izvor.harf, 'en') + ' with a sukun'
 		}
 	};
 }
 
 function objasni(id, ctx) {
-	const p = ctx.H ? par(ctx) : null;
+	const p = ctx.H ? par(ctx, id) : null;
 	const c = p && p.cilj ? im(p.cilj.harf, 'bs') : '';
 	const ce = p && p.cilj ? im(p.cilj.harf, 'en') : '';
 	switch (id) {
@@ -406,33 +477,39 @@ function objasni(id, ctx) {
 				bs: p.opis.bs + ' ispred harfa ' + c + ': uklapa se u njeg bez gunne (idgam bila gunneh).',
 				en: p.opis.en + ' before the letter ' + ce + ': merged into it without ghunnah (idgham bila ghunnah).'
 			};
-		case 'idgam-mislejn-gunneh': {
-			const h = p ? p.izvor.harf : ctx.a;
+		case 'idgam-mislejn-gunneh':
 			return {
-				bs: im(h, 'bs') + ' sa sukunom ispred istog harfa: uklapa se uz gunnu 2 hareketa (idgam mislejn mea-l-gunneh).',
-				en: im(h, 'en') + ' with a sukun before the same letter: merged with ghunnah for 2 harakas (idgham mithlayn ma’al-ghunnah).'
+				bs: 'M sa sukunom (مْ) ispred istog harfa M (م): uklapa se u njeg uz gunnu 2 hareketa (idgam mislejn mea-l-gunneh).',
+				en: 'M with a sukun (مْ) before the same letter M (م): merged into it with ghunnah for 2 harakas (idgham mithlayn ma’al-ghunnah).'
+			};
+		case 'idgam-mislejn': {
+			const a = ctx.a || (p && p.izvor.harf);
+			return {
+				bs: 'Harf ' + im(a, 'bs') + ' sa sukunom ispred istog harfa: uklapa se u njeg (idgam mislejn).',
+				en: 'The letter ' + im(a, 'en') + ' with a sukun before the same letter: merged into it (idgham mithlayn).'
 			};
 		}
-		case 'idgam-mislejn':
+		case 'idgam-mutedzanisejn': {
+			const a = ctx.a || (p && p.izvor.harf);
+			const b = ctx.b || (p && p.cilj && p.cilj.harf);
 			return {
-				bs: 'Harf ' + im(ctx.a, 'bs') + ' sa sukunom ispred istog harfa: uklapa se u njeg (idgam mislejn).',
-				en: 'The letter ' + im(ctx.a, 'en') + ' with a sukun before the same letter: merged into it (idgham mithlayn).'
+				bs: 'Harf ' + im(a, 'bs') + ' sa sukunom ispred srodnog harfa ' + im(b, 'bs') + ': uklapa se u njeg (idgam mutedžanisejn).',
+				en: 'The letter ' + im(a, 'en') + ' with a sukun before the related letter ' + im(b, 'en') + ': merged into it (idgham mutajanisayn).'
 			};
-		case 'idgam-mutedzanisejn':
+		}
+		case 'idgam-mutekaribejn': {
+			const a = ctx.a || (p && p.izvor.harf);
+			const b = ctx.b || (p && p.cilj && p.cilj.harf);
 			return {
-				bs: 'Harf ' + im(ctx.a, 'bs') + ' sa sukunom ispred srodnog harfa ' + im(ctx.b, 'bs') + ': uklapa se u njeg (idgam mutedžanisejn).',
-				en: 'The letter ' + im(ctx.a, 'en') + ' with a sukun before the related letter ' + im(ctx.b, 'en') + ': merged into it (idgham mutajanisayn).'
+				bs: 'Harf ' + im(a, 'bs') + ' sa sukunom ispred bliskog harfa ' + im(b, 'bs') + ': uklapa se u njeg (idgam mutekaribejn).',
+				en: 'The letter ' + im(a, 'en') + ' with a sukun before the close letter ' + im(b, 'en') + ': merged into it (idgham mutaqaribayn).'
 			};
-		case 'idgam-mutekaribejn':
-			return {
-				bs: 'Harf ' + im(ctx.a, 'bs') + ' sa sukunom ispred bliskog harfa ' + im(ctx.b, 'bs') + ': uklapa se u njeg (idgam mutekaribejn).',
-				en: 'The letter ' + im(ctx.a, 'en') + ' with a sukun before the close letter ' + im(ctx.b, 'en') + ': merged into it (idgham mutaqaribayn).'
-			};
+		}
 		case 'izhar-halkij':
 			return {
-				bs: (ctx.tenvin ? 'Tenvin ' + TENVIN_IME[ctx.tenvin] + ' (' + ctx.tenvin + ')' : 'N sa sukunom (نْ)') +
+				bs: (ctx.tenvin ? 'Tenvin ' + TENVIN_IME[ctx.tenvin] + ' (ـ' + ctx.tenvin + ')' : 'N sa sukunom (نْ)') +
 					' ispred grlenog harfa ' + im(ctx.harf, 'bs') + ': izgovara se čisto, bez gunne (izhar hallkijj).',
-				en: (ctx.tenvin ? 'Tanween ' + TENVIN_IME[ctx.tenvin] + ' (' + ctx.tenvin + ')' : 'N with a sukun (نْ)') +
+				en: (ctx.tenvin ? 'Tanween ' + TENVIN_IME[ctx.tenvin] + ' (ـ' + ctx.tenvin + ')' : 'N with a sukun (نْ)') +
 					' before the throat letter ' + im(ctx.harf, 'en') + ': pronounced clearly, without ghunnah (idhhar halqi).'
 			};
 		case 'izhar-sefevijj':
@@ -513,20 +590,29 @@ function cistTekst(h) {
 	return (h.harf || h.vakf || '') + hareke.join('');
 }
 
-/* objašnjenja se ponavljaju kroz cijelu suru, pa se čuvaju jednom i navode brojem */
-const RJECNIK = { bs: [], en: [], kljuc: {} };
-function tekstovi(bs, en) {
-	const k = bs + '\u0000' + en;
-	if (RJECNIK.kljuc[k] === undefined) {
-		RJECNIK.kljuc[k] = RJECNIK.bs.length;
-		RJECNIK.bs.push(bs);
-		RJECNIK.en.push(en);
-	}
-	return RJECNIK.kljuc[k];
+/* objašnjenja se ponavljaju kroz cijeli tekst, pa se čuvaju jednom i navode brojem */
+function rjecnik() {
+	const bs = [], en = [], kljuc = {};
+	return {
+		bs,
+		en,
+		broj(a, b) {
+			const k = a + ' | ' + b;
+			if (kljuc[k] === undefined) {
+				kljuc[k] = bs.length;
+				bs.push(a);
+				en.push(b);
+			}
+			return kljuc[k];
+		}
+	};
 }
 
-function ajet(html, broj) {
-	const { H, rijeci, nadjena } = analiziraj(html);
+const dopuni = (n, sirina) => String(n).padStart(sirina, '0');
+
+/* Razlaže jedan ajet: tekst po dijelovima + pravila koja u njemu vrijede. */
+function ajet(html, sura, broj, rj, brojac, cist) {
+	const { H, rijeci, nadjena } = analiziraj(html, cist);
 	/* svaki harf dobija najviše jedno pravilo – jače pravilo ima prednost */
 	const kome = new Array(H.length).fill(-1);
 	nadjena
@@ -552,60 +638,222 @@ function ajet(html, broj) {
 		return rijeci[r].map((x) => cistTekst(H[x])).join('');
 	};
 
+	if (brojac) nadjena.forEach((p) => (brojac[p.id] = (brojac[p.id] || 0) + 1));
+
 	return {
 		n: broj,
-		audio: '036' + String(broj).padStart(3, '0') + '.mp3',
+		audio: dopuni(sura, 3) + dopuni(broj, 3) + '.mp3',
 		dijelovi: dijelovi.map((d) => (d.i < 0 ? { t: d.t } : { t: d.t, i: d.i })),
 		pravila: nadjena.map((p) => ({
 			id: p.id,
 			rijec: rijecTeksta(p.od) || H[p.od].vakf || '',
-			t: tekstovi(p.bs, p.en)
+			t: rj.broj(p.bs, p.en)
 		}))
 	};
 }
 
-async function main() {
-	const taj = await dohvati('https://api.quran.com/api/v4/quran/verses/uthmani_tajweed?chapter_number=36', 'tajweed.json');
-	const cloud = await dohvati('https://api.alquran.cloud/v1/surah/36/quran-uthmani', 'stranice.json');
+/* Isti niz znakova kao naš, ali dobiven iz čistog uthmani zapisa – kontrola da se
+   pri razlaganju tedžvidskih oznaka nije izgubio ili promijenio nijedan harf. */
+const uporedno = (tekst) =>
+	uHarfove(normalizuj([].map.call(tekst, (ch) => ({ ch, cls: null, raspon: null }))))
+		.map(tekstHarfa)
+		.join('')
+		.replace(/[ۥۦ]ٓ?/g, '')
+		.replace(/۟/g, '')
+		.replace(/\s+/g, ' ')
+		.trim();
+
+const razlike = [];
+function provjeri(oznaka, a, cist) {
+	const nas = a.dijelovi.map((d) => d.t).join('').replace(/\s+/g, ' ').trim();
+	const ocekivano = uporedno(cist);
+	if (nas !== ocekivano) razlike.push(oznaka + '\n     naš: ' + nas + '\n  izvor: ' + ocekivano);
+}
+
+/* alquran.cloud vraća „سُورَةُ الإِخۡلَاصِ” – ostaje samo naziv, s uobičajenim sukunom */
+const arapskiNaziv = (ime) => String(ime || '').replace(/^سُورَةُ\s*/, '').replace(/ۡ/g, 'ْ').trim();
+
+const AUDIO = { baza: 'https://everyayah.com/data/Husary_128kbps/', ucac: 'Mahmud Halil el-Husari' };
+const tajweedUrl = (n) => 'https://api.quran.com/api/v4/quran/verses/uthmani_tajweed?chapter_number=' + n;
+const uthmaniUrl = (n) => 'https://api.quran.com/api/v4/quran/verses/uthmani?chapter_number=' + n;
+
+function zapisi(putanja, sadrzaj, brojac, naslov) {
+	fs.writeFileSync(putanja, JSON.stringify(sadrzaj, null, '\t'));
+	console.log('\n' + naslov + ' → ' + path.relative(process.cwd(), putanja));
+	KATALOG.forEach((p) => console.log(String(brojac[p.id] || 0).padStart(5), p.id, '(lekcija ' + p.lekcija + ')'));
+	const bez = Object.keys(brojac).filter((k) => !PRIORITET.hasOwnProperty(k));
+	if (bez.length) console.log('!! pravila van kataloga:', bez.join(', '));
+}
+
+/* ---------- duga sura: odjeljak je stranica mushafa (Jasin, Mulk) ---------- */
+async function gradiPoStranicama(sura, izlaz, vrsta, naslov) {
+	const taj = await dohvati(tajweedUrl(sura), 'tajweed-' + sura + '.json');
+	const cist = await dohvati(uthmaniUrl(sura), 'uthmani-' + sura + '.json');
+	const cloud = await dohvati('https://api.alquran.cloud/v1/surah/' + sura + '/quran-uthmani', 'stranice-' + sura + '.json');
 	const stranicaAjeta = {};
 	cloud.data.ayahs.forEach((a) => (stranicaAjeta[a.numberInSurah] = a.page));
 
-	const stranice = [];
+	const rj = rjecnik();
 	const brojac = {};
+	const odjeljci = [];
 	taj.verses.forEach((v, idx) => {
 		const n = idx + 1;
-		const a = ajet(v.text_uthmani_tajweed, n);
-		a.pravila.forEach((p) => (brojac[p.id] = (brojac[p.id] || 0) + 1));
+		const a = ajet(v.text_uthmani_tajweed, sura, n, rj, brojac, cist.verses[idx].text_uthmani);
+		provjeri(sura + ':' + n, a, cist.verses[idx].text_uthmani);
 		const str = stranicaAjeta[n];
-		let s = stranice.find((x) => x.broj === str);
-		if (!s) stranice.push((s = { broj: str, ajeti: [] }));
-		s.ajeti.push(a);
+		let o = odjeljci.find((x) => x.stranica === str);
+		if (!o) odjeljci.push((o = { kljuc: 's' + str, sura, stranica: str, ajeti: [] }));
+		o.ajeti.push(a);
 	});
-	stranice.forEach((s) => {
-		s.od = s.ajeti[0].n;
-		s.do = s.ajeti[s.ajeti.length - 1].n;
+	odjeljci.forEach((o) => {
+		o.od = o.ajeti[0].n;
+		o.do = o.ajeti[o.ajeti.length - 1].n;
 	});
 
-	fs.writeFileSync(
-		IZLAZ,
-		JSON.stringify(
-			{
-				sura: 36,
-				brojAjeta: 83,
-				audio: { baza: 'https://everyayah.com/data/Husary_128kbps/', ucac: 'Mahmud Halil el-Husari' },
-				objasnjenja: { bs: RJECNIK.bs, en: RJECNIK.en },
-				stranice
-			},
-			null,
-			'\t'
-		)
+	zapisi(
+		izlaz,
+		{
+			vrsta,
+			sura,
+			brojAjeta: taj.verses.length,
+			audio: AUDIO,
+			objasnjenja: { bs: rj.bs, en: rj.en },
+			odjeljci
+		},
+		brojac,
+		naslov
 	);
-	fs.writeFileSync(KATALOG_IZLAZ, JSON.stringify(KATALOG, null, '\t'));
+}
 
-	console.log('Zapisano:', IZLAZ);
-	KATALOG.forEach((p) => console.log(String(brojac[p.id] || 0).padStart(4), p.id, '(lekcija ' + p.lekcija + ')'));
-	const bez = Object.keys(brojac).filter((k) => !PRIORITET.hasOwnProperty(k));
-	if (bez.length) console.log('!! pravila van kataloga:', bez.join(', '));
+const gradiJasin = () => gradiPoStranicama(36, IZLAZ_JASIN, 'jasin', 'Sura Jasin');
+const gradiMulk = () => gradiPoStranicama(67, IZLAZ_MULK, 'mulk', 'Sura El-Mulk');
+
+/* ---------- kratka cjelina u jednom odjeljku (Fatiha, Ajetul-kursij) ---------- */
+async function gradiCjelinu({ sura, od, do: doAjeta, izlaz, vrsta, kljuc, naziv, znacenje, naslov }) {
+	const taj = await dohvati(tajweedUrl(sura), 'tajweed-' + sura + '.json');
+	const cist = await dohvati(uthmaniUrl(sura), 'uthmani-' + sura + '.json');
+	const popis = (await dohvati('https://api.alquran.cloud/v1/surah', 'sure.json')).data;
+	const info = popis.find((x) => x.number === sura) || {};
+
+	const rj = rjecnik();
+	const brojac = {};
+	const ajeti = [];
+	for (let n = od; n <= doAjeta; n++) {
+		const idx = n - 1;
+		const a = ajet(taj.verses[idx].text_uthmani_tajweed, sura, n, rj, brojac, cist.verses[idx].text_uthmani);
+		provjeri(sura + ':' + n, a, cist.verses[idx].text_uthmani);
+		ajeti.push(a);
+	}
+
+	zapisi(
+		izlaz,
+		{
+			vrsta,
+			sura,
+			brojAjeta: ajeti.length,
+			audio: AUDIO,
+			objasnjenja: { bs: rj.bs, en: rj.en },
+			odjeljci: [
+				{
+					kljuc,
+					sura,
+					od,
+					do: doAjeta,
+					brojAjeta: ajeti.length,
+					mekkanska: info.revelationType !== 'Medinan',
+					naziv: { bs: naziv.bs, en: naziv.en, ar: naziv.ar || arapskiNaziv(info.name) },
+					znacenje,
+					ajeti
+				}
+			]
+		},
+		brojac,
+		naslov
+	);
+}
+
+const gradiFatihu = () =>
+	gradiCjelinu({
+		sura: 1,
+		od: 1,
+		do: 7,
+		izlaz: IZLAZ_FATIHA,
+		vrsta: 'fatiha',
+		kljuc: 'f1',
+		naziv: { bs: 'El-Fatiha', en: 'Al-Fatihah' },
+		znacenje: { bs: 'Pristup', en: 'The Opening' },
+		naslov: 'Sura El-Fatiha'
+	});
+
+const gradiKursij = () =>
+	gradiCjelinu({
+		sura: 2,
+		od: 255,
+		do: 255,
+		izlaz: IZLAZ_KURSIJ,
+		vrsta: 'kursij',
+		kljuc: 'k255',
+		naziv: { bs: 'Ajetul-kursij', en: 'Ayat al-Kursi', ar: 'آيَةُ الْكُرْسِيِّ' },
+		znacenje: { bs: 'Ajet o Prijestolju', en: 'The Verse of the Throne' },
+		naslov: 'Ajetul-kursij (2:255)'
+	});
+
+/* ---------- Amme džuz: odjeljak je jedna sura, a besmela se uči prije svake ---------- */
+async function gradiAmme() {
+	const popis = (await dohvati('https://api.alquran.cloud/v1/surah', 'sure.json')).data;
+	const fatiha = await dohvati(tajweedUrl(1), 'tajweed-1.json');
+	const fatihaCist = await dohvati(uthmaniUrl(1), 'uthmani-1.json');
+
+	const rj = rjecnik();
+	const brojac = {};
+
+	/* besmela je ista pred svakom surom, pa se čuva jednom */
+	const besmela = ajet(fatiha.verses[0].text_uthmani_tajweed, 1, 1, rj, brojac, fatihaCist.verses[0].text_uthmani);
+	provjeri('besmela', besmela, fatihaCist.verses[0].text_uthmani);
+	besmela.n = 0;
+	besmela.besmela = true;
+
+	const odjeljci = [];
+	for (const s of AMME) {
+		const taj = await dohvati(tajweedUrl(s.n), 'tajweed-' + s.n + '.json');
+		const cist = await dohvati(uthmaniUrl(s.n), 'uthmani-' + s.n + '.json');
+		const info = popis.find((x) => x.number === s.n) || {};
+		const ajeti = taj.verses.map((v, i) => {
+			const a = ajet(v.text_uthmani_tajweed, s.n, i + 1, rj, brojac, cist.verses[i].text_uthmani);
+			provjeri(s.n + ':' + (i + 1), a, cist.verses[i].text_uthmani);
+			return a;
+		});
+		odjeljci.push({
+			kljuc: 'r' + s.n,
+			sura: s.n,
+			od: 1,
+			do: taj.verses.length,
+			brojAjeta: taj.verses.length,
+			mekkanska: info.revelationType !== 'Medinan',
+			naziv: { bs: s.bs, en: info.englishName || s.bs, ar: arapskiNaziv(info.name) },
+			znacenje: s.znacenje,
+			ajeti
+		});
+	}
+
+	zapisi(
+		IZLAZ_AMME,
+		{ vrsta: 'amme', dzuz: 30, audio: AUDIO, objasnjenja: { bs: rj.bs, en: rj.en }, besmela, odjeljci },
+		brojac,
+		'Amme džuz (' + AMME[0].n + '-' + AMME[AMME.length - 1].n + ')'
+	);
+}
+
+async function main() {
+	await gradiFatihu();
+	await gradiKursij();
+	await gradiMulk();
+	await gradiJasin();
+	await gradiAmme();
+	fs.writeFileSync(KATALOG_IZLAZ, JSON.stringify(KATALOG, null, '\t'));
+	console.log('\nProvjera teksta prema čistom uthmani zapisu: ' + (razlike.length ? razlike.length + ' RAZLIKA' : 'sve se poklapa'));
+	razlike.slice(0, 10).forEach((r) => console.log('  ' + r));
+	if (razlike.length) process.exitCode = 1;
 }
 
 if (require.main === module) main().catch((e) => { console.error(e); process.exit(1); });
