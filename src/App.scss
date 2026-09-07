@@ -1720,10 +1720,35 @@ html.is-native {
   }
 }
 
+/* uski ekran: oblačić je usidren pri dnu, iznad plejera, a vježba dobije prostor
+   ispod sebe da tekst koji se uči može doći iznad njega */
+.oblak--dokiran {
+  position: fixed;
+  left: 8px;
+  right: 8px;
+  bottom: var(--oblak-dno, 12px);
+  width: auto;
+  max-width: none;
+  cursor: default;
+  touch-action: auto;
+
+  &::after {
+    display: none;
+  }
+}
+
+body.ima-oblak .lekcija-page {
+  padding-bottom: calc(var(--oblak-visina, 0px) + var(--oblak-dno, 0px) + 24px);
+}
+
 @media only screen and (max-width: 600px) {
   .oblak {
     max-width: calc(100vw - 16px);
     padding: 9px 12px 10px;
     font-size: 0.86rem;
+  }
+
+  .oblak--dokiran {
+    max-width: none;
   }
 }

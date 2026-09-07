@@ -25,7 +25,7 @@ Produkcija (Railway): `npm run build`, zatim `npm run serve` – isti Node serve
 ]
 ```
 
-  Oblačić nikad ne prekriva ajet koji se uči, ni kad se prelama u više redova: ide iznad ili ispod cijelog tog ajeta, na stranu koja prekriva manje ostalog teksta. Ako ni tamo ne stane, skraćuje se i u njemu se skroluje. Korisnik ga može odvući mišem ili prstom; taj pomak vrijedi do osvježavanja stranice.
+  Oblačić nikad ne prekriva ajet koji se uči, ni kad se prelama u više redova: ide iznad ili ispod cijelog tog ajeta, na stranu koja prekriva manje ostalog teksta. Ako ni tamo ne stane, skraćuje se i u njemu se skroluje. Na ekranima do 700px oblačić se usidri pri dnu iznad plejera, a stranica dobije toliko praznog prostora da ajet koji se uči stoji iznad njega. Korisnik ga može odvući mišem ili prstom; taj pomak vrijedi do osvježavanja stranice.
 
   Kad grupa ima više zapisa, a samo prvi ima `url` (vježbe i `V(...)` redovi), napomena ide na taj prvi zapis i pokriva sve pojave u ajetu, redom čitanja. Dozvoljeni `tip` (određuje natpis i boju oznake, prijevodi su u `src/i18n/ui.js` pod `napomenaTip`): `dugo`, `kratko`, `krupno`, `tanko`, `duzina`, `stajanje`, `uklapanje`, `nos`, `odskakanje`, `pretvaranje`, `skrivanje`, `cisto`, `napomena`. Sam oblačić crta `src/Player/Oblak.js`.
 - Završni kviz (`/zavrsni-kviz`): 100 pitanja iz svih lekcija (`src/Data/Quiz/zavrsni/L{n}.json`, 5 po lekciji za lekcije 1–12, 4 za 13–22), izmiješanim redoslijedom; otključan kad su položene sve lekcije, prolaz 70/100. Započeti kviz se pamti u sessionStorage.

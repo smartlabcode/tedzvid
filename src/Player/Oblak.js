@@ -10,6 +10,8 @@ import { useUI } from '../i18n/ui';
  * ide iznad ili ispod cijelog tog ajeta, na stranu koja pokriva manje ostalog teksta.
  * Korisnik ga može odvući mišem ili prstom; taj pomak se pamti do kraja posjete,
  * pa se i sljedeći oblačići pojave tamo gdje mu ne smetaju.
+ * Na uskom ekranu pluta preko premalo prostora, pa se usidri pri dnu iznad plejera,
+ * a stranica dobije toliko praznog prostora da tekst vježbe može doći iznad njega.
  * Napomena: [{ tip: 'dugo' | 'kratko' | 'napomena', bs: '...', en: '...' }]
  */
 
@@ -28,6 +30,7 @@ function arabize(text) {
 
 const GAP = 12; // razmak između oblačića i harfa
 const MARGIN = 8; // najmanji razmak od ruba ekrana
+const USKO = 700; // do ove širine ekrana oblačić se sidri pri dnu
 
 /* koliko je korisnik zadnji put odvukao oblačić (traje do osvježavanja stranice) */
 const pomak = { dx: 0, dy: 0 };
@@ -37,7 +40,16 @@ export default function Oblak({ anchorRef, notes }) {
 	const ui = useUI();
 	const ref = useRef(null);
 	const vuceRef = useRef(false);
-	const [ pos, setPos ] = useState({ left: 0, top: 0, strelica: 0, mjesto: 'above', vidljiv: false, uzHarf: true });
+	const pomjerenoRef = useRef(0);
+	const [ pos, setPos ] = useState({
+		left: 0,
+		top: 0,
+		strelica: 0,
+		mjesto: 'above',
+		vidljiv: false,
+		uzHarf: true,
+		dokiran: false
+	});
 
 	useLayoutEffect(
 		() => {
@@ -69,6 +81,7 @@ export default function Oblak({ anchorRef, notes }) {
 				const cx = r.left + r.width / 2;
 				const cy = r.top + r.height / 2;
 
+
 				/* harf mora biti u vidnom polju i nepokriven (modal, plejer...) */
 				let vidljiv = r.width > 0 && cx >= 0 && cx <= vw && cy >= gornjaGranica && cy <= vh;
 				if (vidljiv && document.elementFromPoint) {
@@ -78,6 +91,26 @@ export default function Oblak({ anchorRef, notes }) {
 						: document.elementFromPoint(cx, cy);
 					vidljiv = !!ispod && host.contains(ispod);
 				}
+				/* ---- uski ekran: oblačić se sidri pri dnu, iznad plejera ---- */
+				if (vw <= USKO) {
+					box.style.maxHeight = '';
+					box.classList.remove('oblak--skrolabilan');
+					const visina = box.offsetHeight;
+					document.body.style.setProperty('--oblak-visina', visina + 'px');
+					document.body.style.setProperty('--oblak-dno', vh - donjaGranica + GAP + 'px');
+					document.body.classList.add('ima-oblak');
+					/* ako ajet ostane iza oblačića, stranica se pomjeri da ajet bude iznad njega;
+					   visina oblačića se zna tek nakon iscrtavanja, pa je dozvoljeno par ispravki */
+					const vrh = donjaGranica - GAP - visina;
+					const manjak = rh.bottom + MARGIN - vrh;
+					if (manjak > 1 && pomjerenoRef.current < 4) {
+						pomjerenoRef.current += 1;
+						window.scrollBy(0, Math.ceil(manjak + GAP));
+					}
+					setPos((p) => (p.dokiran && p.vidljiv === vidljiv ? p : { ...p, dokiran: true, vidljiv, uzHarf: false }));
+					return;
+				}
+				document.body.classList.remove('ima-oblak');
 
 				let left = cx - w / 2;
 				left = Math.max(MARGIN, Math.min(left + pomak.dx, vw - MARGIN - w));
@@ -123,9 +156,9 @@ export default function Oblak({ anchorRef, notes }) {
 				const strelica = Math.max(18, Math.min(cx - left, w - 18));
 
 				setPos((p) =>
-					p.left === left && p.top === top && p.strelica === strelica && p.mjesto === mjesto && p.vidljiv === vidljiv && p.uzHarf === uzHarf
+					p.left === left && p.top === top && p.strelica === strelica && p.mjesto === mjesto && p.vidljiv === vidljiv && p.uzHarf === uzHarf && !p.dokiran
 						? p
-						: { left, top, strelica, mjesto, vidljiv, uzHarf }
+						: { left, top, strelica, mjesto, vidljiv, uzHarf, dokiran: false }
 				);
 			};
 			const zakazi = () => {
@@ -155,6 +188,9 @@ export default function Oblak({ anchorRef, notes }) {
 			}
 
 			return () => {
+				document.body.classList.remove('ima-oblak');
+				document.body.style.removeProperty('--oblak-visina');
+				document.body.style.removeProperty('--oblak-dno');
 				clearTimeout(t1);
 				clearTimeout(t2);
 				if (raf !== null) window.cancelAnimationFrame(raf);
@@ -171,6 +207,7 @@ export default function Oblak({ anchorRef, notes }) {
 	const pocniVucu = (e) => {
 		const box = ref.current;
 		if (!box || (e.button !== undefined && e.button !== 0)) return;
+		if (box.classList.contains('oblak--dokiran')) return; /* usidren se ne vuče */
 		/* prstom se skraćeni oblačić skroluje, ne vuče */
 		if (e.touches && box.classList.contains('oblak--skrolabilan')) return;
 		const t = e.touches ? e.touches[0] : e;
@@ -210,9 +247,13 @@ export default function Oblak({ anchorRef, notes }) {
 		<div
 			ref={ref}
 			className={
-				'oblak oblak--' + pos.mjesto + (pos.vidljiv ? '' : ' oblak--skriven') + (pos.uzHarf ? '' : ' oblak--bez-strelice')
+				'oblak oblak--' +
+				pos.mjesto +
+				(pos.vidljiv ? '' : ' oblak--skriven') +
+				(pos.uzHarf ? '' : ' oblak--bez-strelice') +
+				(pos.dokiran ? ' oblak--dokiran' : '')
 			}
-			style={{ left: pos.left, top: pos.top, '--strelica': pos.strelica + 'px' }}
+			style={pos.dokiran ? {} : { left: pos.left, top: pos.top, '--strelica': pos.strelica + 'px' }}
 			role="note"
 			aria-label={ui.napomenaAria}
 			title={ui.napomenaPomjeri}
