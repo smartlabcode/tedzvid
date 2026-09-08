@@ -6,7 +6,8 @@ import Oblak from './Oblak';
 let counter = 0;
 
 /* Klikabilna riječ/ajet – zvuk ide preko zajedničkog audioBus-a.
-   `note` (napomena iz podataka lekcije) se dok zapis svira/pauziran je prikazuje kao oblačić uz istaknuti harf. */
+   `note` (napomena iz podataka lekcije) se dok zapis svira/pauziran je prikazuje kao oblačić uz istaknuti harf.
+   Dok zapis ide, riječ se puni zdesna nalijevo (`--napredak`) da se u tekstu vidi dokle se stiglo. */
 const Player = (props) => {
 	const idRef = useRef(null);
 	if (idRef.current === null) idRef.current = ++counter;
@@ -21,6 +22,33 @@ const Player = (props) => {
 				setStatus(!active ? 'idle' : s.playing ? 'playing' : 'paused');
 			}),
 		[]
+	);
+
+	/* napredak se upisuje pravo u stil elementa – tako kadar po kadar ne ruši prikaz */
+	useEffect(
+		() => {
+			const el = spanRef.current;
+			if (!el) return undefined;
+			if (status === 'idle') {
+				el.style.removeProperty('--napredak');
+				return undefined;
+			}
+			const osvjezi = () => {
+				const trajanje = audioBus.getDuration();
+				const dio = trajanje ? Math.min(1, Math.max(0, audioBus.getCurrentTime() / trajanje)) : 0;
+				el.style.setProperty('--napredak', (dio * 100).toFixed(1) + '%');
+			};
+			osvjezi();
+			if (status !== 'playing') return audioBus.subscribeTime(osvjezi);
+			let kadar;
+			const korak = () => {
+				osvjezi();
+				kadar = requestAnimationFrame(korak);
+			};
+			kadar = requestAnimationFrame(korak);
+			return () => cancelAnimationFrame(kadar);
+		},
+		[ status ]
 	);
 
 	const onClick = () => {

@@ -75,7 +75,11 @@ Skripta spaja tri izvora (jednom ih preuzme i kešira u `scripts/sure/.cache/`):
 * **api.quran.com, uthmani\_tajweed** – isti tekst s oznakama tedžvidskog mushafa (ihfa,
   iklab, uklapanja, kalkala, gunne, harfovi koji se ne uče); oznake se poravnavaju na čisti
   tekst jer se pravopis dva zapisa mjestimično razlikuje,
-* **api.alquran.cloud** – stranica mushafa za svaki ajet i podaci o suri.
+* **api.alquran.cloud** – stranica mushafa za svaki ajet i podaci o suri,
+* **api.quran.com, vrijeme riječi** – početak i kraj svake riječi u Husarijevom zapisu
+  (`/api/v4/recitations/6/by_chapter/N?fields=segments`). Taj zapis je isti onaj s
+  everyayah.com koji stranica pušta, samo u drugoj gustini (64 naspram 128 kb/s), pa
+  vremena vrijede jedan na jedan.
 
 Pravila koja mushaf ne boji (izhar hallkijj i šefevijj, lafzatullah, damir, hukmurra, sve
 dužine, znakovi za vakf) prepoznaje sama skripta prema definicijama iz lekcija. Boje i veza
@@ -83,11 +87,25 @@ pravila s lekcijom su u `scripts/sure/pravila.js`, a nazivi i značenja sura u `
 
 Gradnja sama provjerava da se izgrađeni tekst znak po znak poklapa s čistim uthmani
 zapisom; `provjeri.js` uz to provjerava da svako objašnjenje odgovara harfovima u ajetu
-(npr. da ihfa zaista stoji ispred jednog od svojih 15 harfova).
+(npr. da ihfa zaista stoji ispred jednog od svojih 15 harfova) i da uz svaki ajet ima
+tačno onoliko vremena koliko ajet ima riječi.
 
-Zvučni zapisi su privremeno s `everyayah.com` (Husari). Kad se snime vlastiti, dovoljno je
-promijeniti `AUDIO.baza` u `scripts/sure/build.js` (npr. na `./assets/audio/sure/`) i
-ponovo pokrenuti skriptu.
+#### Praćenje učenja u tekstu
+
+Uz svaki ajet ide `vrijeme`: po jedan zapis `[početak, kraj]` u milisekundama za svaku
+riječ. Dok ajet svira, u tekstu se ističe riječ koja se upravo uči, pređene nose tanku
+liniju, a klik na riječ premota zapis na nju (prekidač „Prati riječ uz zvuk” to gasi).
+Riječi se broje kao i u zapisu – znakovi za vakf (ۖ ۗ ۚ …) stoje sami i ne broje se – a
+grupisanje radi `src/Lessons/suraRijeci.js`, koji koriste i prikaz i `provjeri.js`.
+
+U lekcijama 1–22 jedan zapis pokriva jednu riječ ili kratku frazu, pa se tamo riječ dok
+svira puni zdesna nalijevo prema napretku zapisa (`--napredak` u `src/Player/Player.js`).
+
+Zvučni zapisi su privremeno s `everyayah.com` (Husari). Kad se snime vlastiti, promijeniti
+`AUDIO.baza` u `scripts/sure/build.js` (npr. na `./assets/audio/sure/`) i ponovo pokrenuti
+skriptu. Vrijeme riječi vrijedi samo za Husarijev zapis, pa uz vlastite snimke treba i novi
+izvor vremena; dok ga nema, ajet bez `vrijeme` se i dalje normalno sluša, samo bez
+isticanja riječi (gradnja takve ajete popiše na kraju).
 
 ### Mobilne aplikacije (iOS i Android)
 

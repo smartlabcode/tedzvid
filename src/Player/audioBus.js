@@ -164,6 +164,10 @@ export function getCurrentTime() {
 	return audio ? audio.currentTime : 0;
 }
 
+export function getDuration() {
+	return audio && isFinite(audio.duration) ? audio.duration : 0;
+}
+
 export function subscribe(fn) {
 	stateListeners.add(fn);
 	fn(state);

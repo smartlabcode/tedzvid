@@ -6,15 +6,16 @@
  * lekcija 1–22 s objašnjenjem zašto se baš tu primjenjuje.
  *
  * Pokretanje:  node scripts/sure/build.js
- * Izvori:      api.quran.com (uthmani tekst s oznakama tedžvidskog mushafa) i
- *              api.alquran.cloud (stranica mushafa i podaci o suri).
+ * Izvori:      api.quran.com (uthmani tekst s oznakama tedžvidskog mushafa, uz vrijeme
+ *              svake riječi u Husarijevom zapisu) i api.alquran.cloud (stranica mushafa
+ *              i podaci o suri).
  * Preuzeto se kešira u scripts/sure/.cache da ponovna gradnja ne traži internet.
  */
 
 const fs = require('fs');
 const path = require('path');
 const https = require('https');
-const { razloziOznake, poravnaj, normalizuj, uHarfove, tekstHarfa } = require('./lib');
+const { razloziOznake, poravnaj, normalizuj, uHarfove, tekstHarfa, jeVakf } = require('./lib');
 const KATALOG = require('./pravila');
 
 const CACHE = path.join(__dirname, '.cache');
@@ -611,7 +612,7 @@ function rjecnik() {
 const dopuni = (n, sirina) => String(n).padStart(sirina, '0');
 
 /* Razlaže jedan ajet: tekst po dijelovima + pravila koja u njemu vrijede. */
-function ajet(html, sura, broj, rj, brojac, cist) {
+function ajet(html, sura, broj, rj, brojac, cist, segmenti) {
 	const { H, rijeci, nadjena } = analiziraj(html, cist);
 	/* svaki harf dobija najviše jedno pravilo – jače pravilo ima prednost */
 	const kome = new Array(H.length).fill(-1);
@@ -640,16 +641,27 @@ function ajet(html, sura, broj, rj, brojac, cist) {
 
 	if (brojac) nadjena.forEach((p) => (brojac[p.id] = (brojac[p.id] || 0) + 1));
 
-	return {
-		n: broj,
-		audio: dopuni(sura, 3) + dopuni(broj, 3) + '.mp3',
-		dijelovi: dijelovi.map((d) => (d.i < 0 ? { t: d.t } : { t: d.t, i: d.i })),
+	const izlazDijelovi = dijelovi.map((d) => (d.i < 0 ? { t: d.t } : { t: d.t, i: d.i }));
+	/* vrijeme se upisuje samo ako se broj zapisa poklapa s brojem riječi u našem tekstu */
+	const zaZvuk = rijeciAjeta(izlazDijelovi);
+	const vrijeme = segmenti && segmenti.length === zaZvuk.length ? segmenti : null;
+	if (!vrijeme) bezVremena.push(sura + ':' + broj + ' (riječi ' + zaZvuk.length + ', zapisa ' + ((segmenti || []).length) + ')');
+
+	return Object.assign(
+		{
+			n: broj,
+			audio: dopuni(sura, 3) + dopuni(broj, 3) + '.mp3'
+		},
+		vrijeme ? { vrijeme } : {},
+		{
+		dijelovi: izlazDijelovi,
 		pravila: nadjena.map((p) => ({
 			id: p.id,
 			rijec: rijecTeksta(p.od) || H[p.od].vakf || '',
 			t: rj.broj(p.bs, p.en)
 		}))
-	};
+		}
+	);
 }
 
 /* Isti niz znakova kao naš, ali dobiven iz čistog uthmani zapisa – kontrola da se
@@ -677,8 +689,47 @@ const AUDIO = { baza: 'https://everyayah.com/data/Husary_128kbps/', ucac: 'Mahmu
 const tajweedUrl = (n) => 'https://api.quran.com/api/v4/quran/verses/uthmani_tajweed?chapter_number=' + n;
 const uthmaniUrl = (n) => 'https://api.quran.com/api/v4/quran/verses/uthmani?chapter_number=' + n;
 
+/* ---------- vrijeme svake riječi u zapisu ----------
+   quran.com uz Husarijev zapis (učač 6) daje i vrijeme svake riječi, a taj zapis je
+   isti onaj s everyayah.com koji stranica pušta – samo u drugoj gustini (64 naspram
+   128 kb/s), pa vremena vrijede jedan na jedan. Zahvaljujući tome se pri slušanju u
+   tekstu može istaći riječ koja se upravo uči. */
+const UCAC = 6;
+const vrijemeUrl = (n) =>
+	'https://api.quran.com/api/v4/recitations/' + UCAC + '/by_chapter/' + n + '?fields=segments&per_page=300';
+
+async function vremenaSure(sura) {
+	const j = await dohvati(vrijemeUrl(sura), 'vrijeme-' + UCAC + '-' + sura + '.json');
+	const po = {};
+	(j.audio_files || []).forEach((a) => {
+		const n = Number(String(a.verse_key).split(':')[1]);
+		/* zapis je [redni broj od nule, redni broj od jedan, početak, kraj] – trebaju nam ms */
+		po[n] = (a.segments || []).map((g) => [ Math.round(g[2]), Math.round(g[3]) ]);
+	});
+	return po;
+}
+
+/* riječi ajeta onako kako ih broji quran.com: znak za vakf stoji sam i ne broji se */
+const jeZnakSam = (t) => t.length > 0 && Array.from(t).every(jeVakf);
+const rijeciAjeta = (dijelovi) => dijelovi.map((d) => d.t).join('').split(/\s+/).filter((t) => t && !jeZnakSam(t));
+
+const bezVremena = [];
+
 function zapisi(putanja, sadrzaj, brojac, naslov) {
-	fs.writeFileSync(putanja, JSON.stringify(sadrzaj, null, '\t'));
+	/* vremena riječi idu u jedan red po ajetu – razvučena po broju su nečitljiva */
+	const vremena = [];
+	const tekst = JSON
+		.stringify(
+			sadrzaj,
+			(k, v) => {
+				if (k !== 'vrijeme') return v;
+				vremena.push(JSON.stringify(v));
+				return '@@' + (vremena.length - 1) + '@@';
+			},
+			'\t'
+		)
+		.replace(/"@@(\d+)@@"/g, (m, i) => vremena[Number(i)]);
+	fs.writeFileSync(putanja, tekst);
 	console.log('\n' + naslov + ' → ' + path.relative(process.cwd(), putanja));
 	KATALOG.forEach((p) => console.log(String(brojac[p.id] || 0).padStart(5), p.id, '(lekcija ' + p.lekcija + ')'));
 	const bez = Object.keys(brojac).filter((k) => !PRIORITET.hasOwnProperty(k));
@@ -690,6 +741,7 @@ async function gradiPoStranicama(sura, izlaz, vrsta, naslov) {
 	const taj = await dohvati(tajweedUrl(sura), 'tajweed-' + sura + '.json');
 	const cist = await dohvati(uthmaniUrl(sura), 'uthmani-' + sura + '.json');
 	const cloud = await dohvati('https://api.alquran.cloud/v1/surah/' + sura + '/quran-uthmani', 'stranice-' + sura + '.json');
+	const vremena = await vremenaSure(sura);
 	const stranicaAjeta = {};
 	cloud.data.ayahs.forEach((a) => (stranicaAjeta[a.numberInSurah] = a.page));
 
@@ -698,7 +750,7 @@ async function gradiPoStranicama(sura, izlaz, vrsta, naslov) {
 	const odjeljci = [];
 	taj.verses.forEach((v, idx) => {
 		const n = idx + 1;
-		const a = ajet(v.text_uthmani_tajweed, sura, n, rj, brojac, cist.verses[idx].text_uthmani);
+		const a = ajet(v.text_uthmani_tajweed, sura, n, rj, brojac, cist.verses[idx].text_uthmani, vremena[n]);
 		provjeri(sura + ':' + n, a, cist.verses[idx].text_uthmani);
 		const str = stranicaAjeta[n];
 		let o = odjeljci.find((x) => x.stranica === str);
@@ -734,13 +786,14 @@ async function gradiCjelinu({ sura, od, do: doAjeta, izlaz, vrsta, kljuc, naziv,
 	const cist = await dohvati(uthmaniUrl(sura), 'uthmani-' + sura + '.json');
 	const popis = (await dohvati('https://api.alquran.cloud/v1/surah', 'sure.json')).data;
 	const info = popis.find((x) => x.number === sura) || {};
+	const vremena = await vremenaSure(sura);
 
 	const rj = rjecnik();
 	const brojac = {};
 	const ajeti = [];
 	for (let n = od; n <= doAjeta; n++) {
 		const idx = n - 1;
-		const a = ajet(taj.verses[idx].text_uthmani_tajweed, sura, n, rj, brojac, cist.verses[idx].text_uthmani);
+		const a = ajet(taj.verses[idx].text_uthmani_tajweed, sura, n, rj, brojac, cist.verses[idx].text_uthmani, vremena[n]);
 		provjeri(sura + ':' + n, a, cist.verses[idx].text_uthmani);
 		ajeti.push(a);
 	}
@@ -803,12 +856,13 @@ async function gradiAmme() {
 	const popis = (await dohvati('https://api.alquran.cloud/v1/surah', 'sure.json')).data;
 	const fatiha = await dohvati(tajweedUrl(1), 'tajweed-1.json');
 	const fatihaCist = await dohvati(uthmaniUrl(1), 'uthmani-1.json');
+	const vremenaFatihe = await vremenaSure(1);
 
 	const rj = rjecnik();
 	const brojac = {};
 
 	/* besmela je ista pred svakom surom, pa se čuva jednom */
-	const besmela = ajet(fatiha.verses[0].text_uthmani_tajweed, 1, 1, rj, brojac, fatihaCist.verses[0].text_uthmani);
+	const besmela = ajet(fatiha.verses[0].text_uthmani_tajweed, 1, 1, rj, brojac, fatihaCist.verses[0].text_uthmani, vremenaFatihe[1]);
 	provjeri('besmela', besmela, fatihaCist.verses[0].text_uthmani);
 	besmela.n = 0;
 	besmela.besmela = true;
@@ -818,8 +872,9 @@ async function gradiAmme() {
 		const taj = await dohvati(tajweedUrl(s.n), 'tajweed-' + s.n + '.json');
 		const cist = await dohvati(uthmaniUrl(s.n), 'uthmani-' + s.n + '.json');
 		const info = popis.find((x) => x.number === s.n) || {};
+		const vremena = await vremenaSure(s.n);
 		const ajeti = taj.verses.map((v, i) => {
-			const a = ajet(v.text_uthmani_tajweed, s.n, i + 1, rj, brojac, cist.verses[i].text_uthmani);
+			const a = ajet(v.text_uthmani_tajweed, s.n, i + 1, rj, brojac, cist.verses[i].text_uthmani, vremena[i + 1]);
 			provjeri(s.n + ':' + (i + 1), a, cist.verses[i].text_uthmani);
 			return a;
 		});
@@ -853,6 +908,8 @@ async function main() {
 	fs.writeFileSync(KATALOG_IZLAZ, JSON.stringify(KATALOG, null, '\t'));
 	console.log('\nProvjera teksta prema čistom uthmani zapisu: ' + (razlike.length ? razlike.length + ' RAZLIKA' : 'sve se poklapa'));
 	razlike.slice(0, 10).forEach((r) => console.log('  ' + r));
+	console.log('Vrijeme riječi: ' + (bezVremena.length ? bezVremena.length + ' AJET(A) BEZ VREMENA' : 'upisano uz svaki ajet'));
+	bezVremena.slice(0, 10).forEach((r) => console.log('  ' + r));
 	if (razlike.length) process.exitCode = 1;
 }
 

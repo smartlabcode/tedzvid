@@ -1,10 +1,19 @@
 /*
- * Provjera izgrađenih podataka: da li svako objašnjenje odgovara harfovima u tekstu.
+ * Provjera izgrađenih podataka: da li svako objašnjenje odgovara harfovima u tekstu
+ * i da li se riječi ajeta poklapaju s vremenima iz zvučnog zapisa.
  * Pokretanje:  node scripts/sure/provjeri.js
  */
+const fs = require('fs');
 const path = require('path');
 
 const DATA = path.join(__dirname, '..', '..', 'src', 'Data');
+
+/* Grupisanje u riječi se čita iz same aplikacije (src/Lessons/suraRijeci.js) da bi
+   provjera i prikaz uvijek radili po istom pravilu; `export` se samo skine. */
+const IZVOR_RIJECI = path.join(__dirname, '..', '..', 'src', 'Lessons', 'suraRijeci.js');
+const { uRijeci } = new Function(
+	fs.readFileSync(IZVOR_RIJECI, 'utf8').replace(/^export /gm, '') + '\nreturn { uRijeci, rijecUVremenu };'
+)();
 
 /* ciljni harfovi po pravilu – ono ispred čega izvor stoji */
 const CILJ = {
@@ -85,6 +94,44 @@ function provjeri(ime) {
 	return greske.length;
 }
 
-const ukupno = provjeri('YasinData.json') + provjeri('AmmeDzuzData.json');
+/* Vrijeme riječi: mora ga biti tačno onoliko koliko ajet ima riječi, mora rasti,
+   a grupisanje mora vratiti isti tekst kakav je i ušao. */
+function provjeriVrijeme(ime) {
+	const d = require(path.join(DATA, ime));
+	const greske = [];
+	let ajeta = 0, rijeci = 0;
+
+	const jedan = (sura, a) => {
+		ajeta++;
+		const oznaka = sura + ':' + a.n;
+		const cjeline = uRijeci(a.dijelovi);
+		const tekst = cjeline.map((c) => c.dijelovi.map((x) => x.t).join('')).join('');
+		if (tekst !== a.dijelovi.map((x) => x.t).join('')) greske.push(oznaka + ' → grupisanje mijenja tekst');
+		const brojRijeci = cjeline.filter((c) => c.w >= 0).length;
+		rijeci += brojRijeci;
+		if (!a.vrijeme) return greske.push(oznaka + ' → nema vremena riječi');
+		if (a.vrijeme.length !== brojRijeci)
+			greske.push(oznaka + ' → vremena ' + a.vrijeme.length + ', riječi ' + brojRijeci);
+		let prije = -1;
+		a.vrijeme.forEach((v, i) => {
+			if (!Array.isArray(v) || v.length !== 2) greske.push(oznaka + ' → neispravan zapis na ' + i);
+			else if (v[0] < prije || v[1] < v[0]) greske.push(oznaka + ' → vrijeme ne raste na ' + i);
+			else prije = v[0];
+		});
+	};
+
+	if (d.besmela) jedan(1, d.besmela);
+	d.odjeljci.forEach((o) => o.ajeti.forEach((a) => jedan(o.sura, a)));
+	console.log('  ' + ime.padEnd(20) + ' ajeta: ' + String(ajeta).padStart(4) + ', riječi: ' + String(rijeci).padStart(5) +
+		', grešaka: ' + greske.length);
+	greske.slice(0, 10).forEach((g) => console.log('   ! ' + g));
+	return greske.length;
+}
+
+let ukupno = provjeri('YasinData.json') + provjeri('AmmeDzuzData.json');
+console.log('\nVrijeme riječi uz zvučni zapis');
+ukupno += [ 'FatihaData.json', 'KursijData.json', 'MulkData.json', 'YasinData.json', 'AmmeDzuzData.json' ]
+	.map(provjeriVrijeme)
+	.reduce((a, b) => a + b, 0);
 console.log('\n' + (ukupno ? 'UKUPNO GREŠAKA: ' + ukupno : 'Sve provjere prošle.'));
 process.exitCode = ukupno ? 1 : 0;

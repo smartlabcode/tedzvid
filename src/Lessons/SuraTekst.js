@@ -6,6 +6,7 @@ import SiteNav from '../Body/SiteNav';
 import SiteFooter from '../Body/SiteFooter';
 import PageBand from '../Body/PageBand';
 import * as audioBus from '../Player/audioBus';
+import { uRijeci, rijecUVremenu } from './suraRijeci';
 import vrstaTekstovi from './bonusVrste';
 import { useLang, DEFAULT_LANG } from '../i18n/LanguageContext';
 import { useUI } from '../i18n/ui';
@@ -20,6 +21,10 @@ import '../App.scss';
  *
  * Odjeljak je stranica mushafa (Jasin) ili cijela sura (Amme džuz) – razlikuju se
  * samo natpisi, a sve ostalo je isto. Boje u legendi broje se za otvoreni odjeljak.
+ *
+ * Uz svaki ajet ide i vrijeme svake riječi u zapisu (`ajet.vrijeme`), pa se dok se
+ * ajet sluša u tekstu ističe riječ koja se upravo uči, a klik na riječ premota zapis
+ * na nju.
  */
 
 const PRAVILO = {};
@@ -50,6 +55,7 @@ const CESTA = [ 'medd-tabii', 'medd-arid', 'hukmurra', 'izhar-sefevijj', 'damir'
 
 /* oznaka zapisa za zajednički plejer: sura i redni broj ajeta u jednom broju */
 const oznakaZapisa = (sura, n) => 100000 + sura * 1000 + n;
+
 const arapskiBroj = (n) => String(n).replace(/[0-9]/g, (c) => '٠١٢٣٤٥٦٧٨٩'[Number(c)]);
 const naziv = (p, lang) => p[lang] || p[DEFAULT_LANG];
 
@@ -125,23 +131,87 @@ function Legenda({ brojevi, iskljucena, prebaci, postavi, odjeljak, nema }) {
 }
 
 /* ---------- jedan ajet ---------- */
-function Ajet({ ajet, objasnjenja, iskljucena, svaOtvorena, svira, pusti }) {
+function Ajet({ ajet, objasnjenja, iskljucena, svaOtvorena, aktivan, svira, prati, pusti }) {
 	const { lang } = useLang();
 	const ui = useUI();
 	const [ otvoren, setOtvoren ] = React.useState(false);
 	const [ izabrano, setIzabrano ] = React.useState(-1);
+	const [ tekuca, setTekuca ] = React.useState(-1);
 	const vidljiva = ajet.pravila.map((p, i) => (iskljucena.indexOf(p.id) < 0 ? i : -1)).filter((i) => i >= 0);
 	const prikaziSpisak = otvoren || svaOtvorena;
 	const oznaka = ajet.besmela ? ui.ammeBesmela : String(ajet.n);
+	const cjeline = React.useMemo(() => uRijeci(ajet.dijelovi), [ ajet ]);
+	const vrijeme = prati ? ajet.vrijeme : null;
+
+	/* dok ovaj ajet svira, riječ se traži u svakom kadru; u pauzi je dovoljno pratiti premotavanje */
+	React.useEffect(
+		() => {
+			if (!aktivan || !vrijeme) {
+				setTekuca(-1);
+				return undefined;
+			}
+			const osvjezi = () => setTekuca(rijecUVremenu(vrijeme, audioBus.getCurrentTime() * 1000));
+			osvjezi();
+			if (!svira) return audioBus.subscribeTime(osvjezi);
+			let kadar;
+			const korak = () => {
+				osvjezi();
+				kadar = requestAnimationFrame(korak);
+			};
+			kadar = requestAnimationFrame(korak);
+			return () => cancelAnimationFrame(kadar);
+		},
+		[ aktivan, svira, vrijeme ]
+	);
 
 	const klik = (i) => {
 		setIzabrano(i === izabrano ? -1 : i);
 		setOtvoren(true);
 	};
 
+	/* klik na riječ dok je ajet u plejeru: zapis se premota na nju */
+	const naRijec = (w) => {
+		if (!aktivan || !vrijeme || !vrijeme[w]) return;
+		audioBus.seek(vrijeme[w][0] / 1000);
+		if (!svira) audioBus.resume();
+	};
+
+	const dio = (d, kljuc) => {
+		const p = d.i === undefined ? null : ajet.pravila[d.i];
+		const skriveno = !p || iskljucena.indexOf(p.id) >= 0;
+		if (skriveno) return <span key={kljuc}>{d.t}</span>;
+		return (
+			<span
+				key={kljuc}
+				className={'sura-h' + (izabrano === d.i ? ' je-izabran' : '')}
+				style={{ '--boja': PRAVILO[p.id].boja }}
+				role="button"
+				tabIndex={0}
+				title={naziv(PRAVILO[p.id], lang)}
+				onClick={(e) => {
+					e.stopPropagation(); /* boja objašnjava pravilo, riječ oko nje premota zapis */
+					klik(d.i);
+				}}
+				onKeyDown={(e) => {
+					if (e.key === 'Enter' || e.key === ' ') {
+						e.preventDefault();
+						klik(d.i);
+					}
+				}}
+			>
+				{d.t}
+			</span>
+		);
+	};
+
 	return (
 		<article
-			className={'sura-ajet' + (svira ? ' je-svira' : '') + (ajet.besmela ? ' je-besmela' : '')}
+			className={
+				'sura-ajet' +
+				(svira ? ' je-svira' : '') +
+				(ajet.besmela ? ' je-besmela' : '') +
+				(aktivan && vrijeme ? ' je-prati' : '')
+			}
 			id={'ajet' + ajet.n}
 		>
 			<div className="sura-ajet__alat">
@@ -167,27 +237,21 @@ function Ajet({ ajet, objasnjenja, iskljucena, svaOtvorena, svira, pusti }) {
 			</div>
 
 			<p className="sura-ajet__tekst" lang="ar" dir="rtl">
-				{ajet.dijelovi.map((d, k) => {
-					const p = d.i === undefined ? null : ajet.pravila[d.i];
-					const skriveno = !p || iskljucena.indexOf(p.id) >= 0;
-					if (skriveno) return <span key={k}>{d.t}</span>;
+				{cjeline.map((c, k) => {
+					const sadrzaj = c.dijelovi.map((d, j) => dio(d, k + '-' + j));
+					if (c.w < 0) return <React.Fragment key={k}>{sadrzaj}</React.Fragment>;
 					return (
 						<span
 							key={k}
-							className={'sura-h' + (izabrano === d.i ? ' je-izabran' : '')}
-							style={{ '--boja': PRAVILO[p.id].boja }}
-							role="button"
-							tabIndex={0}
-							title={naziv(PRAVILO[p.id], lang)}
-							onClick={() => klik(d.i)}
-							onKeyDown={(e) => {
-								if (e.key === 'Enter' || e.key === ' ') {
-									e.preventDefault();
-									klik(d.i);
-								}
-							}}
+							className={
+								'sura-rijec' +
+								(c.w === tekuca ? ' je-uci' : '') +
+								(tekuca >= 0 && c.w < tekuca ? ' je-proslo' : '')
+							}
+							title={aktivan && vrijeme ? ui.suraOdRijeci : undefined}
+							onClick={() => naRijec(c.w)}
 						>
-							{d.t}
+							{sadrzaj}
 						</span>
 					);
 				})}
@@ -240,6 +304,7 @@ export default function SuraTekst({ data, vrsta }) {
 	const [ izabran, setIzabran ] = React.useState(0);
 	const [ iskljucena, setIskljucena ] = React.useState([]);
 	const [ svaOtvorena, setSvaOtvorena ] = React.useState(false);
+	const [ prati, setPrati ] = React.useState(true);
 	const [ zvuk, setZvuk ] = React.useState(audioBus.getState());
 
 	React.useEffect(() => audioBus.subscribe(setZvuk), []);
@@ -277,6 +342,27 @@ export default function SuraTekst({ data, vrsta }) {
 		label: oznakaAjeta(o, a)
 	});
 	const redSvira = !!zvuk.queue;
+
+	/* dok red svira, ajet koji je došao na red sam se dovodi u vidno polje */
+	React.useEffect(
+		() => {
+			if (!redSvira || !zvuk.ownerId) return;
+			const a = ajeti.find((x) => oznakaZapisa(x.besmela ? 1 : odjeljak.sura, x.n) === zvuk.ownerId);
+			const el = a && document.getElementById('ajet' + a.n);
+			if (!el) return;
+			/* gore je ljepljiva navigacija, dolje plutajući plejer – ajet mora stati između njih */
+			const nav = document.querySelector('.site-nav');
+			const gore = (nav ? nav.getBoundingClientRect().height : 0) + 12;
+			const dolje = 130;
+			const r = el.getBoundingClientRect();
+			if (r.top >= gore && r.bottom <= window.innerHeight - dolje) return; /* već se vidi */
+			const mirno = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+			/* ajet viši od raspoloživog prozora se ne centrira – vrh bi mu završio pod navigacijom */
+			const visok = r.height > window.innerHeight - gore - dolje;
+			el.scrollIntoView({ behavior: mirno ? 'auto' : 'smooth', block: visok ? 'start' : 'center' });
+		},
+		[ redSvira, zvuk.ownerId, ajeti, odjeljak ]
+	);
 
 	const naOdjeljak = (i) => {
 		setIzabran(i);
@@ -330,6 +416,10 @@ export default function SuraTekst({ data, vrsta }) {
 						</p>
 						<div className="sura-traka__gumbi">
 							<label className="sura-prekidac">
+								<input type="checkbox" checked={prati} onChange={(e) => setPrati(e.target.checked)} />
+								<span>{ui.suraPratiRijec}</span>
+							</label>
+							<label className="sura-prekidac">
 								<input type="checkbox" checked={svaOtvorena} onChange={(e) => setSvaOtvorena(e.target.checked)} />
 								<span>{ui.suraSvaObjasnjenja}</span>
 							</label>
@@ -378,6 +468,8 @@ export default function SuraTekst({ data, vrsta }) {
 									objasnjenja={objasnjenja}
 									iskljucena={iskljucena}
 									svaOtvorena={svaOtvorena}
+									aktivan={zvuk.ownerId === id}
+									prati={prati}
 									svira={zvuk.ownerId === id && zvuk.playing}
 									pusti={() => audioBus.toggle(id, data.audio.baza + a.audio, oznakaAjeta(odjeljak, a))}
 								/>
