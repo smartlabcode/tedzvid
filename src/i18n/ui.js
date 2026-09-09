@@ -134,12 +134,51 @@ const UI = {
 		lessonsEyebrow: 'Interaktivni priručnik',
 		lessonsTitle: 'Lekcije',
 		lessonsText:
-			'Dvadeset dva tedžvidska pravila, korak po korak. Svaka lekcija donosi objašnjenje, zvučne primjere i vježbu.',
+			'Dvadeset dva tedžvidska pravila, korak po korak – sve lekcije su otvorene, bez prijave. Lekcije su podijeljene u pet grupa, a iza svake grupe stoji kviz.',
 		cardLekcija: 'Lekcija',
 		cardVjezba: 'Vježba',
 		cardVideo: 'Video',
 		cardTabela: 'Tabela',
 		cardZnakovi: 'Znakovi',
+
+		/* ----- grupe lekcija i grupni kvizovi ----- */
+		grupaEyebrow: (b) => `Grupa ${b}`,
+		grupaNaslov: (od, doLekcije) => `Lekcije ${od}–${doLekcije}`,
+		grupaKvizNaslov: (b) => `Kviz grupe ${b}`,
+		grupaKvizEyebrow: (b) => `Provjera grupe ${b}`,
+		grupaKarticaTekst: (n, od, doLekcije, prolaz) =>
+			`${n} pitanja iz lekcija ${od}–${doLekcije}. Za prolaz treba najmanje ${prolaz} tačnih odgovora.`,
+		grupaOpen: 'Otvori kviz grupe',
+		grupaIntroText: (n, prolaz, od, doLekcije) =>
+			`${n} pitanja iz lekcija ${od}–${doLekcije}, izmiješanim redoslijedom i drugačija svaki put. Za prolaz treba najmanje ${prolaz} tačnih odgovora.`,
+		grupaLockedTitle: 'Kviz grupe je zaključan',
+		grupaLockedUser: (b) => `Prvo položi kviz grupe ${b}, pa se otključava sljedeći.`,
+		grupaLockedGuest:
+			'Kvizovi grupa se otključavaju redom, a napredak se čuva uz račun. Prijavi se ili napravi besplatan račun.',
+		grupaUnlocked: (b) => `Otključan je kviz grupe ${b}.`,
+		grupaAllDone: 'Sve grupe su položene – slijedi završni kviz iz cijelog tedžvida.',
+		grupaAlreadyPassed: 'Kviz je već položen i sljedeći je otključan – vježbaj koliko želiš.',
+		grupaHint: 'Sve lekcije su otvorene. Kviz na kraju lekcije je vježba, a kviz grupe je prava provjera.',
+
+		/* ----- mualim: kviz od kombinacije lekcija ----- */
+		navMualim: 'Mualim',
+		mualimEyebrow: 'Za mualime',
+		mualimTitle: 'Napravi kviz',
+		mualimText: 'Odaberi lekcije i broj pitanja – kviz se sastavlja iz pitanja odabranih lekcija.',
+		mualimSelect: 'Lekcije',
+		mualimAll: 'Sve',
+		mualimNone: 'Nijedna',
+		mualimCount: 'Broj pitanja',
+		mualimCountAll: 'Sva',
+		mualimCreate: 'Napravi kviz',
+		mualimNew: 'Novi izbor',
+		mualimPicked: (l, p) => `Odabranih lekcija: ${l} · pitanja u bazenu: ${p}`,
+		mualimEmpty: 'Odaberi barem jednu lekciju.',
+		mualimForbidden: 'Ova stranica je namijenjena mualimima.',
+		mualimQuizTitle: 'Mualimov kviz',
+		mualimIntroText: (n, prolaz) =>
+			`${n} pitanja iz odabranih lekcija, izmiješanim redoslijedom. Za prolaz treba najmanje ${prolaz} tačnih odgovora. Rezultat se ne upisuje u napredak.`,
+		mualimPassedText: 'Kviz je položen. Rezultat mualimovog kviza se ne upisuje u napredak.',
 
 		/* ----- pojedina lekcija ----- */
 		lekcijaEyebrow: 'Lekcija',
@@ -197,10 +236,10 @@ const UI = {
 		navOdjava: 'Odjava',
 		authEyebrow: 'Korisnički račun',
 		loginTitle: 'Prijava',
-		loginText: 'Prijavi se da nastaviš učenje i otključaš sljedeće lekcije.',
+		loginText: 'Prijavi se da ti se napredak čuva i da otključaš sljedeće kvizove.',
 		registerTitle: 'Registracija',
 		registerText:
-			'Napravi besplatan račun: napredak se čuva, a svaki položeni kviz otključava sljedeću lekciju.',
+			'Napravi besplatan račun: napredak se čuva, a položen kviz grupe otključava sljedeći.',
 		fieldPassword: 'Lozinka',
 		fieldPassword2: 'Ponovi lozinku',
 		passwordHint: 'Najmanje 6 znakova.',
@@ -221,16 +260,16 @@ const UI = {
 			too_many: 'Previše pokušaja. Pokušaj ponovo za nekoliko minuta.',
 			network: 'Server nije dostupan. Provjeri vezu i pokušaj ponovo.',
 			unauthorized: 'Sesija je istekla – prijavi se ponovo.',
-			locked: 'Ova lekcija je još zaključana.',
+			locked: 'Ovaj kviz je još zaključan.',
 			server: 'Došlo je do greške. Pokušaj ponovo.'
 		},
 
 		/* ----- moj napredak ----- */
 		profilEyebrow: 'Moj napredak',
 		profilText: (prolaz, ukupno) =>
-			`Lekcije se otključavaju redom: položen kviz (najmanje ${prolaz} od ${ukupno} tačnih) otključava sljedeću lekciju.`,
+			`Sve lekcije su otvorene. Napredak se prati kroz kvizove grupa: za prolaz treba najmanje ${prolaz} od ${ukupno} tačnih odgovora.`,
 		profilPassed: 'Položenih lekcija',
-		profilUnlocked: 'Otključanih lekcija',
+		profilGrupe: 'Položenih grupa',
 		profilNext: 'Sljedeći korak',
 		profilAllDone: 'Sve lekcije su položene – svaka čast!',
 		statusPolozeno: 'Položeno',
@@ -238,24 +277,16 @@ const UI = {
 		statusOtkljucano: 'Otključano',
 		statusZakljucano: 'Zaključano',
 
-		/* ----- kartice lekcija: zaključavanje ----- */
+		/* ----- kartice lekcija ----- */
 		cardKviz: 'Kviz',
-		cardUnlockHint: (n) => `Lekcije se otključavaju redom – položi kviz lekcije ${n} da nastaviš dalje.`,
-		cardUnlockGuest: 'Prijavi se ili napravi besplatan račun da otključaš lekcije i sačuvaš napredak.',
+		cardUnlockGuest: 'Prijavi se ili napravi besplatan račun da se napredak sačuva i da otključaš sljedeće kvizove.',
 		cardGoQuiz: (n) => `Kviz lekcije ${n}`,
-
-		/* ----- zaključana lekcija ----- */
-		gateTitle: 'Lekcija je zaključana',
-		gateTextUser: (n, prolaz, ukupno) =>
-			`Da otključaš ovu lekciju, položi kviz na kraju lekcije ${n} (najmanje ${prolaz} od ${ukupno} tačnih odgovora).`,
-		gateTextGuest:
-			'Lekcije se otključavaju redom: nakon svake lekcije slijedi kratki kviz, a položen kviz otključava sljedeću lekciju. Prijavi se ili napravi besplatan račun da bi se tvoj napredak sačuvao.',
 
 		/* ----- kviz ----- */
 		kviz: 'KVIZ',
 		kvizIntroTitle: 'Provjeri znanje',
 		kvizIntroText: (prolaz, ukupno) =>
-			`${ukupno} pitanja o ovoj lekciji. Za prolaz treba najmanje ${prolaz} tačnih odgovora – položen kviz otključava sljedeću lekciju.`,
+			`${ukupno} pitanja o ovoj lekciji – vježba prije kviza grupe. Za prolaz treba najmanje ${prolaz} tačnih odgovora.`,
 		kvizStart: 'Započni kviz',
 		kvizRestart: 'Pokušaj ponovo',
 		kvizQuestion: (i, n) => `Pitanje ${i} od ${n}`,
@@ -271,16 +302,15 @@ const UI = {
 		kvizFailedTitle: 'Nije položeno',
 		kvizFailed: (prolaz) =>
 			`Za prolaz treba najmanje ${prolaz} tačnih odgovora. Pročitaj lekciju još jednom i pokušaj ponovo.`,
-		kvizUnlocked: (n) => `Otključana je lekcija ${n}.`,
-		kvizAllDone: 'Ovo je bila posljednja lekcija – sve lekcije su pređene. Slijedi završni kviz iz cijelog tedžvida.',
+		kvizVjezbaPassed: (b) => `Lekcija je savladana. Znanje cijele grupe provjeri na kvizu grupe ${b}.`,
 		kvizNextLesson: (n) => `Lekcija ${n}`,
 		kvizSaving: 'Spremanje napretka…',
 		kvizSaved: 'Napredak je sačuvan.',
 		kvizSaveError: 'Napredak nije sačuvan – provjeri vezu.',
 		kvizRetrySave: 'Pokušaj sačuvati ponovo',
-		kvizGuest: 'Prijavi se ili napravi račun da se rezultat sačuva i otključa sljedeća lekcija.',
+		kvizGuest: 'Prijavi se ili napravi račun da se rezultat sačuva i računa na rang listi.',
+		kvizGuestGrupa: 'Prijavi se ili napravi račun da se rezultat sačuva i otključa sljedeći kviz grupe.',
 		kvizBest: (b, n) => `Najbolji rezultat: ${b} od ${n}`,
-		kvizAlreadyPassed: 'Kviz je već položen i sljedeća lekcija je otključana – vježbaj koliko želiš.',
 		kvizCorrectCount: (t, n) => `Tačnih: ${t} · Netačnih: ${n - t}`,
 
 		/* ----- završni kviz ----- */
@@ -295,10 +325,9 @@ const UI = {
 		zavrsniResume: (i, n) => `Nastavi (pitanje ${i} od ${n})`,
 		zavrsniRestart: 'Počni ispočetka',
 		zavrsniLockedTitle: 'Završni kviz je zaključan',
-		zavrsniLockedUser: (n) =>
-			`Završni kviz se otključava kad položiš kvizove svih 22 lekcije. Trenutno si na lekciji ${n}.`,
+		zavrsniLockedUser: (b) => `Završni kviz se otključava kad položiš svih pet kvizova grupa. Trenutno si na grupi ${b}.`,
 		zavrsniLockedGuest:
-			'Završni kviz se otključava kad se polože kvizovi svih 22 lekcije. Prijavi se ili napravi besplatan račun da bi se tvoj napredak sačuvao.',
+			'Završni kviz se otključava kad se polože kvizovi svih pet grupa. Prijavi se ili napravi besplatan račun da bi se tvoj napredak sačuvao.',
 		zavrsniPassed: 'Bravo, završni kviz je položen!',
 		zavrsniPassedText: 'Cijeli tedžvid je pređen i provjeren – svaka čast!',
 		zavrsniFailed: (prolaz) =>
@@ -333,7 +362,7 @@ const UI = {
 		igraEyebrow: 'Igraj i uči',
 		igraNaslov: 'Igraonica',
 		igraOpis:
-			'Tri kratke igre za vježbanje tedžvidskih pravila: uhvati harfove pravila, prepoznaj pravilo u riječi i spoji parove. Harfovi i primjeri dolaze iz samih lekcija.',
+			'Šest kratkih igara za vježbanje tedžvidskih pravila: hvatanje harfova, prepoznavanje pravila u riječi i u ajetu, povezivanje pravila s primjerom, razvrstavanje harfova i spajanje parova. Harfovi, primjeri i ajeti dolaze iz samih lekcija.',
 		igraNapomena:
 			'Igre su dodatak lekcijama i ne utječu na napredak ni na rang listu – rezultati se čuvaju samo u ovom pregledniku.',
 		igraBezRekorda: 'Još nema rekorda',
@@ -381,6 +410,33 @@ const UI = {
 		igraParovaKratko: 'parova',
 		igraTezina: 'Težina',
 		igraKarta: (n) => `Kartica ${n}`,
+		igraKolo: (n) => `${n}. kolo`,
+		igraPomoc: 'Pomoć',
+		igraNadjiNaslov: 'Nađi pravilo',
+		igraNadjiUvod: (n) =>
+			`U ${n} ajeta treba pokazati riječ u kojoj je traženo pravilo. Tri promašaja i partija je gotova.`,
+		igraNadjiPitanje: 'U kojoj je riječi ovo pravilo?',
+		igraNadjiAjet: (n) => `${n}. ajet`,
+		igraNadjiUToj: (imena) => `U toj riječi je: ${imena}. Traži dalje.`,
+		igraNadjiNemaPravila: 'U toj riječi nema nijednog označenog pravila.',
+		igraNadjiGotovo: 'Svi ajeti pređeni!',
+		igraNadjiKraj: (t, uk) => `Iz prve pogođeno: ${t} od ${uk} ajeta.`,
+		igraPoveziNaslov: 'Poveži pravila',
+		igraPoveziUvod: (p, k) =>
+			`Dodirni pravilo lijevo pa primjer desno – tačan spoj ostane vezan niti u boji pravila. ${k} kola po ${p} parova.`,
+		igraPoveziPitanje: 'Poveži svako pravilo s primjerom u kojem se nalazi.',
+		igraPoveziKolo: (b) => `Bodova do sada: ${b}. Sljedeće kolo donosi novih pet pravila.`,
+		igraPoveziGotovo: 'Sve povezano!',
+		igraPoveziKraj: (uk, g, v) => `Spojeno ${uk} parova, grešaka: ${g}, vrijeme: ${v}.`,
+		igraRazvrstajNaslov: 'Prisloni harf',
+		igraRazvrstajUvod: (k) =>
+			`Povuci harf u kutiju pravila kojem pripada – ili ga dodirni pa dodirni kutiju. ${k} kola i tri srca.`,
+		igraRazvrstajPitanje: 'Kojem pravilu pripada koji harf?',
+		igraRazvrstajTacno: (naziv) => `pripada u ${naziv}.`,
+		igraRazvrstajNetacno: (naziv) => `nije harf pravila ${naziv}.`,
+		igraRazvrstajGotovo: 'Svi harfovi su na svom mjestu.',
+		igraRazvrstajKolo: (b) => `Bodova do sada: ${b}. Sljedeće kolo donosi druga pravila.`,
+		igraRazvrstajKraj: (k, uk) => `Pređeno ${k} od ${uk} kola.`,
 		igre: {
 			harfovi: {
 				naslov: 'Uhvati harf',
@@ -401,6 +457,28 @@ const UI = {
 					'Brži odgovor nosi više bodova'
 				],
 				uputa: 'Poslije svakog odgovora dobiješ objašnjenje i link na lekciju.'
+			},
+			nadji: {
+				naslov: 'Nađi pravilo',
+				opis: 'Pravi ajet iz bonus lekcija – pokaži riječ u kojoj je traženo pravilo.',
+				kako: [
+					'Ajeti iz El-Fatihe, Ajetul-kursija, El-Mulka, Jasina i Amme džuza',
+					'Promašaj otkriva koje pravilo je u toj riječi',
+					'Svaki ajet se može i poslušati'
+				],
+				uputa: 'Dodirni riječ u kojoj vidiš traženo pravilo; boja i objašnjenje stižu poslije odgovora.'
+			},
+			povezi: {
+				naslov: 'Poveži pravila',
+				opis: 'Lijevo nazivi pravila, desno primjeri – povuci nit između onih koji idu zajedno.',
+				kako: [ 'Tri kola po pet parova', 'Kolo bez greške nosi dodatne bodove', 'Boje niti su iste kao u bonus lekcijama' ],
+				uputa: 'Dodirni jednu pa drugu stranu. Uz spojen par ide objašnjenje i zvučni zapis.'
+			},
+			razvrstaj: {
+				naslov: 'Prisloni harf',
+				opis: 'Razvrstaj harfove: svaki harf ide u kutiju pravila kojem pripada.',
+				kako: [ 'Pet kola, tri do četiri kutije', 'Harf se povuče ili dodirne pa prisloni', 'Pomoć podsjeti koji harfovi idu uz koje pravilo' ],
+				uputa: 'Na dodirnom ekranu je najlakše: prst na harf, pa prst na kutiju.'
 			},
 			memorija: {
 				naslov: 'Spoji parove',
@@ -428,13 +506,16 @@ const UI = {
 		adminColCreated: 'Registrovan',
 		adminColLast: 'Zadnja aktivnost',
 		adminColLessons: 'Lekcije',
+		adminColGroups: 'grupa',
 		adminColFinal: 'Završni',
 		adminColAttempts: 'Pokušaji',
-		adminRole: { admin: 'Admin', demo: 'Demo', korisnik: 'Korisnik' },
+		adminRole: { admin: 'Admin', mualim: 'Mualim', demo: 'Demo', korisnik: 'Korisnik' },
 		adminNever: 'još ništa',
 		adminNoUsers: 'Nema korisnika koji odgovaraju pretrazi.',
 		adminDetailHint: 'Klikni red za napredak po lekcijama.',
 		adminCell: (n, p) => (p ? `Lekcija ${n}: najbolje ${p.najbolje}/10, pokušaja: ${p.pokusaji}` : `Lekcija ${n}: nije rješavana`),
+		adminCellGrupa: (b, p) =>
+			p ? `Kviz grupe ${b}: najbolje ${p.najbolje}/20, pokušaja: ${p.pokusaji}` : `Kviz grupe ${b}: nije rješavan`,
 		adminCellFinal: (p) => (p ? `Završni kviz: najbolje ${p.najbolje}/100, pokušaja: ${p.pokusaji}` : 'Završni kviz: nije rješavan'),
 		adminLegend: { ok: 'položeno', partial: 'nije položeno', none: 'nije rješavano' },
 
@@ -468,10 +549,6 @@ const UI = {
 		jasinOznaka: (n) => `Jasin, ${n}. ajet`,
 		jasinPrethodna: 'Prethodna stranica',
 		jasinSljedeca: 'Sljedeća stranica',
-		jasinZakljucanNaslov: 'Bonus lekcija je još zaključana',
-		jasinZakljucanKorisnik: (n) =>
-			`Sura Jasin se otključava kad položiš kvizove svih 22 lekcije. Nastavi s ${n}. lekcijom.`,
-		jasinZakljucanGost: 'Prijavi se i pređi svih 22 lekcije da otključaš bonus lekciju sa surom Jasin.',
 		jasinKarticaTekst: 'Cijela sura Jasin s bojama i objašnjenjima svih pravila koja si prešao – kao nagrada na kraju kursa.',
 		jasinOtvori: 'Otvori suru Jasin',
 
@@ -493,10 +570,6 @@ const UI = {
 		ammePrethodna: 'Prethodna sura',
 		ammeSljedeca: 'Sljedeća sura',
 		ammeOznaka: (naziv, n) => `${naziv}, ${n}. ajet`,
-		ammeZakljucanNaslov: 'Bonus lekcija je još zaključana',
-		ammeZakljucanKorisnik: (n) =>
-			`Amme džuz se otključava kad položiš kvizove svih 22 lekcije. Nastavi s ${n}. lekcijom.`,
-		ammeZakljucanGost: 'Prijavi se i pređi svih 22 lekcije da otključaš bonus lekciju s Amme džuzom.',
 		ammeKarticaTekst: 'Trideseti džuz Kur’ana, sura po sura, s besmelom, bojama i objašnjenjima svih pravila koja si prešao.',
 		ammeOtvori: 'Otvori Amme džuz',
 
@@ -518,11 +591,7 @@ const UI = {
 				nema: 'nema u ovoj suri',
 				oznaka: (n) => `El-Fatiha, ${n}. ajet`,
 				karticaTekst: 'Sura koju učiš na svakom rekatu, harf po harf, s objašnjenjem svakog pravila koje si prešao.',
-				otvori: 'Otvori suru El-Fatiha',
-				zakljucanNaslov: 'Bonus lekcija je još zaključana',
-				zakljucanKorisnik: (n) =>
-					`Sura El-Fatiha se otključava kad položiš kvizove svih 22 lekcije. Nastavi s ${n}. lekcijom.`,
-				zakljucanGost: 'Prijavi se i pređi svih 22 lekcije da otključaš bonus lekciju sa surom El-Fatiha.'
+				otvori: 'Otvori suru El-Fatiha'
 			},
 			kursij: {
 				poStranicama: false,
@@ -539,11 +608,7 @@ const UI = {
 				nema: 'nema u ovom ajetu',
 				oznaka: () => 'Ajetul-kursij',
 				karticaTekst: 'Ajetul-kursij, riječ po riječ, s objašnjenjem svakog pravila koje si prešao.',
-				otvori: 'Otvori Ajetul-kursij',
-				zakljucanNaslov: 'Bonus lekcija je još zaključana',
-				zakljucanKorisnik: (n) =>
-					`Ajetul-kursij se otključava kad položiš kvizove svih 22 lekcije. Nastavi s ${n}. lekcijom.`,
-				zakljucanGost: 'Prijavi se i pređi svih 22 lekcije da otključaš bonus lekciju s Ajetul-kursijom.'
+				otvori: 'Otvori Ajetul-kursij'
 			},
 			mulk: {
 				poStranicama: true,
@@ -562,11 +627,7 @@ const UI = {
 				nema: 'nema na ovoj stranici',
 				oznaka: (n) => `El-Mulk, ${n}. ajet`,
 				karticaTekst: 'Cijela sura El-Mulk s bojama i objašnjenjima svih pravila koja si prešao.',
-				otvori: 'Otvori suru El-Mulk',
-				zakljucanNaslov: 'Bonus lekcija je još zaključana',
-				zakljucanKorisnik: (n) =>
-					`Sura El-Mulk se otključava kad položiš kvizove svih 22 lekcije. Nastavi s ${n}. lekcijom.`,
-				zakljucanGost: 'Prijavi se i pređi svih 22 lekcije da otključaš bonus lekciju sa surom El-Mulk.'
+				otvori: 'Otvori suru El-Mulk'
 			}
 		}
 	},
@@ -698,12 +759,51 @@ const UI = {
 		lessonsEyebrow: 'Interactive handbook',
 		lessonsTitle: 'Lessons',
 		lessonsText:
-			'Twenty-two rules of tajweed, step by step. Every lesson brings an explanation, audio examples and an exercise.',
+			'Twenty-two rules of tajweed, step by step – every lesson is open, no account needed. The lessons are split into five groups, and each group ends with a quiz.',
 		cardLekcija: 'Lesson',
 		cardVjezba: 'Exercise',
 		cardVideo: 'Video',
 		cardTabela: 'Table',
 		cardZnakovi: 'Signs',
+
+		/* ----- lesson groups and group quizzes ----- */
+		grupaEyebrow: (b) => `Group ${b}`,
+		grupaNaslov: (od, doLekcije) => `Lessons ${od}–${doLekcije}`,
+		grupaKvizNaslov: (b) => `Group ${b} quiz`,
+		grupaKvizEyebrow: (b) => `Test of group ${b}`,
+		grupaKarticaTekst: (n, od, doLekcije, prolaz) =>
+			`${n} questions from lessons ${od}–${doLekcije}. You need at least ${prolaz} correct answers to pass.`,
+		grupaOpen: 'Open the group quiz',
+		grupaIntroText: (n, prolaz, od, doLekcije) =>
+			`${n} questions from lessons ${od}–${doLekcije}, in random order and different every time. You need at least ${prolaz} correct answers to pass.`,
+		grupaLockedTitle: 'This group quiz is locked',
+		grupaLockedUser: (b) => `Pass the group ${b} quiz first and the next one unlocks.`,
+		grupaLockedGuest:
+			'Group quizzes unlock in order and progress is kept with an account. Log in or create a free account.',
+		grupaUnlocked: (b) => `The group ${b} quiz is now unlocked.`,
+		grupaAllDone: 'Every group is passed – next up is the final quiz on the whole handbook.',
+		grupaAlreadyPassed: 'You have already passed this quiz and the next one is unlocked – practise as often as you like.',
+		grupaHint: 'Every lesson is open. The quiz at the end of a lesson is practice; the group quiz is the real test.',
+
+		/* ----- teacher: a quiz from a combination of lessons ----- */
+		navMualim: 'Teacher',
+		mualimEyebrow: 'For teachers',
+		mualimTitle: 'Build a quiz',
+		mualimText: 'Pick the lessons and the number of questions – the quiz is drawn from the questions of those lessons.',
+		mualimSelect: 'Lessons',
+		mualimAll: 'All',
+		mualimNone: 'None',
+		mualimCount: 'Questions',
+		mualimCountAll: 'All',
+		mualimCreate: 'Build the quiz',
+		mualimNew: 'New selection',
+		mualimPicked: (l, p) => `Lessons selected: ${l} · questions in the pool: ${p}`,
+		mualimEmpty: 'Pick at least one lesson.',
+		mualimForbidden: 'This page is meant for teachers.',
+		mualimQuizTitle: 'Teacher\u2019s quiz',
+		mualimIntroText: (n, prolaz) =>
+			`${n} questions from the selected lessons, in random order. You need at least ${prolaz} correct answers to pass. The result is not written to your progress.`,
+		mualimPassedText: 'Quiz passed. A teacher\u2019s quiz result is not written to your progress.',
 
 		/* ----- single lesson ----- */
 		lekcijaEyebrow: 'Lesson',
@@ -761,9 +861,9 @@ const UI = {
 		navOdjava: 'Log out',
 		authEyebrow: 'Your account',
 		loginTitle: 'Log in',
-		loginText: 'Log in to continue learning and unlock the next lessons.',
+		loginText: 'Log in so your progress is saved and the next quizzes unlock.',
 		registerTitle: 'Create an account',
-		registerText: 'Create a free account: your progress is saved and every passed quiz unlocks the next lesson.',
+		registerText: 'Create a free account: your progress is saved and a passed group quiz unlocks the next one.',
 		fieldPassword: 'Password',
 		fieldPassword2: 'Repeat password',
 		passwordHint: 'At least 6 characters.',
@@ -784,16 +884,16 @@ const UI = {
 			too_many: 'Too many attempts. Try again in a few minutes.',
 			network: 'The server is not reachable. Check your connection and try again.',
 			unauthorized: 'Your session has expired – please log in again.',
-			locked: 'This lesson is still locked.',
+			locked: 'This quiz is still locked.',
 			server: 'Something went wrong. Please try again.'
 		},
 
 		/* ----- my progress ----- */
 		profilEyebrow: 'My progress',
 		profilText: (prolaz, ukupno) =>
-			`Lessons unlock in order: a passed quiz (at least ${prolaz} of ${ukupno} correct) unlocks the next lesson.`,
+			`Every lesson is open. Progress is tracked through the group quizzes: at least ${prolaz} of ${ukupno} correct answers to pass.`,
 		profilPassed: 'Lessons passed',
-		profilUnlocked: 'Lessons unlocked',
+		profilGrupe: 'Groups passed',
 		profilNext: 'Next step',
 		profilAllDone: 'All lessons passed – well done!',
 		statusPolozeno: 'Passed',
@@ -801,24 +901,17 @@ const UI = {
 		statusOtkljucano: 'Unlocked',
 		statusZakljucano: 'Locked',
 
-		/* ----- lesson cards: locking ----- */
+		/* ----- lesson cards ----- */
 		cardKviz: 'Quiz',
-		cardUnlockHint: (n) => `Lessons unlock in order – pass the lesson ${n} quiz to continue.`,
-		cardUnlockGuest: 'Log in or create a free account to unlock lessons and save your progress.',
+		cardUnlockGuest: 'Log in or create a free account so your progress is saved and the next quizzes unlock.',
 		cardGoQuiz: (n) => `Lesson ${n} quiz`,
 
-		/* ----- locked lesson ----- */
-		gateTitle: 'This lesson is locked',
-		gateTextUser: (n, prolaz, ukupno) =>
-			`To unlock this lesson, pass the quiz at the end of lesson ${n} (at least ${prolaz} of ${ukupno} correct answers).`,
-		gateTextGuest:
-			'Lessons unlock in order: every lesson ends with a short quiz, and a passed quiz unlocks the next lesson. Log in or create a free account so your progress is saved.',
 
 		/* ----- quiz ----- */
 		kviz: 'QUIZ',
 		kvizIntroTitle: 'Test your knowledge',
 		kvizIntroText: (prolaz, ukupno) =>
-			`${ukupno} questions about this lesson. You need at least ${prolaz} correct answers to pass – a passed quiz unlocks the next lesson.`,
+			`${ukupno} questions about this lesson – practice before the group quiz. You need at least ${prolaz} correct answers to pass.`,
 		kvizStart: 'Start the quiz',
 		kvizRestart: 'Try again',
 		kvizQuestion: (i, n) => `Question ${i} of ${n}`,
@@ -833,16 +926,15 @@ const UI = {
 		kvizPassed: 'Well done, you passed!',
 		kvizFailedTitle: 'Not passed',
 		kvizFailed: (prolaz) => `You need at least ${prolaz} correct answers to pass. Read the lesson once more and try again.`,
-		kvizUnlocked: (n) => `Lesson ${n} is now unlocked.`,
-		kvizAllDone: 'That was the last lesson – you have gone through every lesson. Next up is the final quiz on the whole handbook.',
+		kvizVjezbaPassed: (b) => `You have got this lesson down. Test the whole group on the group ${b} quiz.`,
 		kvizNextLesson: (n) => `Lesson ${n}`,
 		kvizSaving: 'Saving progress…',
 		kvizSaved: 'Progress saved.',
 		kvizSaveError: 'Progress was not saved – check your connection.',
 		kvizRetrySave: 'Try saving again',
-		kvizGuest: 'Log in or create an account so your result is saved and the next lesson unlocks.',
+		kvizGuest: 'Log in or create an account so your result is saved and counts on the leaderboard.',
+		kvizGuestGrupa: 'Log in or create an account so your result is saved and the next group quiz unlocks.',
 		kvizBest: (b, n) => `Best result: ${b} of ${n}`,
-		kvizAlreadyPassed: 'You have already passed this quiz and the next lesson is unlocked – practise as often as you like.',
 		kvizCorrectCount: (t, n) => `Correct: ${t} · Wrong: ${n - t}`,
 
 		/* ----- final quiz ----- */
@@ -857,10 +949,10 @@ const UI = {
 		zavrsniResume: (i, n) => `Continue (question ${i} of ${n})`,
 		zavrsniRestart: 'Start over',
 		zavrsniLockedTitle: 'The final quiz is locked',
-		zavrsniLockedUser: (n) =>
-			`The final quiz unlocks once you have passed the quizzes of all 22 lessons. You are currently on lesson ${n}.`,
+		zavrsniLockedUser: (b) =>
+			`The final quiz unlocks once you have passed all five group quizzes. You are currently on group ${b}.`,
 		zavrsniLockedGuest:
-			'The final quiz unlocks once the quizzes of all 22 lessons are passed. Log in or create a free account so your progress is saved.',
+			'The final quiz unlocks once all five group quizzes are passed. Log in or create a free account so your progress is saved.',
 		zavrsniPassed: 'Well done, you passed the final quiz!',
 		zavrsniPassedText: 'You have gone through and tested the whole handbook – well done!',
 		zavrsniFailed: (prolaz) =>
@@ -895,7 +987,7 @@ const UI = {
 		igraEyebrow: 'Play and learn',
 		igraNaslov: 'Game room',
 		igraOpis:
-			'Three short games for practising the rules of tajweed: catch the letters of a rule, spot the rule in a word, and match the pairs. The letters and examples come from the lessons themselves.',
+			'Six short games for practising the rules of tajweed: catch the letters, spot the rule in a word and in a verse, connect a rule with its example, sort the letters and match the pairs. The letters, examples and verses come from the lessons themselves.',
 		igraNapomena:
 			'The games are an extra to the lessons and do not affect your progress or the leaderboard – results are kept in this browser only.',
 		igraBezRekorda: 'No record yet',
@@ -942,6 +1034,32 @@ const UI = {
 		igraParovaKratko: 'pairs',
 		igraTezina: 'Difficulty',
 		igraKarta: (n) => `Card ${n}`,
+		igraKolo: (n) => `Round ${n}`,
+		igraPomoc: 'Hint',
+		igraNadjiNaslov: 'Find the rule',
+		igraNadjiUvod: (n) => `In ${n} verses, point to the word that contains the rule you are given. Three misses end the game.`,
+		igraNadjiPitanje: 'Which word contains this rule?',
+		igraNadjiAjet: (n) => `verse ${n}`,
+		igraNadjiUToj: (imena) => `That word has: ${imena}. Keep looking.`,
+		igraNadjiNemaPravila: 'That word has no marked rule at all.',
+		igraNadjiGotovo: 'All verses done!',
+		igraNadjiKraj: (t, uk) => `Found at first try: ${t} of ${uk} verses.`,
+		igraPoveziNaslov: 'Connect the rules',
+		igraPoveziUvod: (p, k) =>
+			`Tap a rule on the left and its example on the right – a correct match stays tied with a thread in the colour of the rule. ${k} rounds of ${p} pairs.`,
+		igraPoveziPitanje: 'Connect every rule with the example that contains it.',
+		igraPoveziKolo: (b) => `Points so far: ${b}. The next round brings five new rules.`,
+		igraPoveziGotovo: 'All connected!',
+		igraPoveziKraj: (uk, g, v) => `${uk} pairs matched, mistakes: ${g}, time: ${v}.`,
+		igraRazvrstajNaslov: 'Sort the letters',
+		igraRazvrstajUvod: (k) =>
+			`Drag a letter into the box of the rule it belongs to – or tap the letter and then the box. ${k} rounds and three lives.`,
+		igraRazvrstajPitanje: 'Which letter belongs to which rule?',
+		igraRazvrstajTacno: (naziv) => `belongs to ${naziv}.`,
+		igraRazvrstajNetacno: (naziv) => `is not a letter of ${naziv}.`,
+		igraRazvrstajGotovo: 'Every letter is in its place.',
+		igraRazvrstajKolo: (b) => `Points so far: ${b}. The next round brings other rules.`,
+		igraRazvrstajKraj: (k, uk) => `You cleared ${k} of ${uk} rounds.`,
 		igre: {
 			harfovi: {
 				naslov: 'Catch the letter',
@@ -958,6 +1076,28 @@ const UI = {
 				opis: 'A word from the lessons with one part highlighted – name the rule before the time runs out.',
 				kako: [ '12 seconds per question', 'Examples and notes from every lesson', 'A faster answer scores more' ],
 				uputa: 'After every answer you get an explanation and a link to the lesson.'
+			},
+			nadji: {
+				naslov: 'Find the rule',
+				opis: 'A real verse from the bonus lessons – point to the word that contains the rule.',
+				kako: [
+					'Verses from Al-Fatihah, Ayat al-Kursi, Al-Mulk, Ya-Sin and the Amma juz',
+					'A miss tells you which rule that word really has',
+					'Every verse can be listened to'
+				],
+				uputa: 'Tap the word where you see the rule; the colour and the explanation follow your answer.'
+			},
+			povezi: {
+				naslov: 'Connect the rules',
+				opis: 'Rule names on the left, examples on the right – draw a thread between the ones that belong together.',
+				kako: [ 'Three rounds of five pairs', 'A round without a mistake scores a bonus', 'The threads use the colours of the bonus lessons' ],
+				uputa: 'Tap one side and then the other. Every matched pair comes with an explanation and a recording.'
+			},
+			razvrstaj: {
+				naslov: 'Sort the letters',
+				opis: 'Sort the letters: each one goes into the box of the rule it belongs to.',
+				kako: [ 'Five rounds, three to four boxes', 'Drag a letter, or tap it and then the box', 'The hint reminds you which letters belong to which rule' ],
+				uputa: 'Easiest on a touch screen: finger on the letter, then on the box.'
 			},
 			memorija: {
 				naslov: 'Match the pairs',
@@ -985,13 +1125,16 @@ const UI = {
 		adminColCreated: 'Registered',
 		adminColLast: 'Last activity',
 		adminColLessons: 'Lessons',
+		adminColGroups: 'groups',
 		adminColFinal: 'Final',
 		adminColAttempts: 'Attempts',
-		adminRole: { admin: 'Admin', demo: 'Demo', korisnik: 'User' },
+		adminRole: { admin: 'Admin', mualim: 'Mualim', demo: 'Demo', korisnik: 'User' },
 		adminNever: 'nothing yet',
 		adminNoUsers: 'No users match the search.',
 		adminDetailHint: 'Click a row for progress per lesson.',
 		adminCell: (n, p) => (p ? `Lesson ${n}: best ${p.najbolje}/10, attempts: ${p.pokusaji}` : `Lesson ${n}: not taken`),
+		adminCellGrupa: (b, p) =>
+			p ? `Group ${b} quiz: best ${p.najbolje}/20, attempts: ${p.pokusaji}` : `Group ${b} quiz: not taken`,
 		adminCellFinal: (p) => (p ? `Final quiz: best ${p.najbolje}/100, attempts: ${p.pokusaji}` : 'Final quiz: not taken'),
 		adminLegend: { ok: 'passed', partial: 'not passed', none: 'not taken' },
 
@@ -1025,10 +1168,6 @@ const UI = {
 		jasinOznaka: (n) => `Ya-Sin, verse ${n}`,
 		jasinPrethodna: 'Previous page',
 		jasinSljedeca: 'Next page',
-		jasinZakljucanNaslov: 'The bonus lesson is still locked',
-		jasinZakljucanKorisnik: (n) =>
-			`Surah Ya-Sin unlocks once you pass the quizzes of all 22 lessons. Continue with lesson ${n}.`,
-		jasinZakljucanGost: 'Log in and complete all 22 lessons to unlock the bonus lesson with Surah Ya-Sin.',
 		jasinKarticaTekst: 'The whole of Surah Ya-Sin, colour-coded and explained with every rule you have learned – a reward at the end of the course.',
 		jasinOtvori: 'Open Surah Ya-Sin',
 
@@ -1050,10 +1189,6 @@ const UI = {
 		ammePrethodna: 'Previous surah',
 		ammeSljedeca: 'Next surah',
 		ammeOznaka: (naziv, n) => `${naziv}, verse ${n}`,
-		ammeZakljucanNaslov: 'The bonus lesson is still locked',
-		ammeZakljucanKorisnik: (n) =>
-			`Juz Amma unlocks once you pass the quizzes of all 22 lessons. Continue with lesson ${n}.`,
-		ammeZakljucanGost: 'Log in and complete all 22 lessons to unlock the Juz Amma bonus lesson.',
 		ammeKarticaTekst: 'The thirtieth juz of the Qur’an, surah by surah, with the Basmala, colour-coded and explained with every rule you have learned.',
 		ammeOtvori: 'Open Juz Amma',
 
@@ -1076,11 +1211,7 @@ const UI = {
 				oznaka: (n) => `Al-Fatihah, verse ${n}`,
 				karticaTekst:
 					'The surah you recite in every prayer, letter by letter, with every rule you have learned explained.',
-				otvori: 'Open Surah Al-Fatihah',
-				zakljucanNaslov: 'This bonus lesson is still locked',
-				zakljucanKorisnik: (n) =>
-					`Surah Al-Fatihah unlocks once you pass the quizzes of all 22 lessons. Carry on with lesson ${n}.`,
-				zakljucanGost: 'Sign in and work through all 22 lessons to unlock the bonus lesson with Surah Al-Fatihah.'
+				otvori: 'Open Surah Al-Fatihah'
 			},
 			kursij: {
 				poStranicama: false,
@@ -1097,11 +1228,7 @@ const UI = {
 				nema: 'not in this verse',
 				oznaka: () => 'Ayat al-Kursi',
 				karticaTekst: 'Ayat al-Kursi, word by word, with every rule you have learned explained.',
-				otvori: 'Open Ayat al-Kursi',
-				zakljucanNaslov: 'This bonus lesson is still locked',
-				zakljucanKorisnik: (n) =>
-					`Ayat al-Kursi unlocks once you pass the quizzes of all 22 lessons. Carry on with lesson ${n}.`,
-				zakljucanGost: 'Sign in and work through all 22 lessons to unlock the bonus lesson with Ayat al-Kursi.'
+				otvori: 'Open Ayat al-Kursi'
 			},
 			mulk: {
 				poStranicama: true,
@@ -1120,11 +1247,7 @@ const UI = {
 				nema: 'not on this page',
 				oznaka: (n) => `Al-Mulk, verse ${n}`,
 				karticaTekst: 'The whole of Surah Al-Mulk, colour-coded and explained with every rule you have learned.',
-				otvori: 'Open Surah Al-Mulk',
-				zakljucanNaslov: 'This bonus lesson is still locked',
-				zakljucanKorisnik: (n) =>
-					`Surah Al-Mulk unlocks once you pass the quizzes of all 22 lessons. Carry on with lesson ${n}.`,
-				zakljucanGost: 'Sign in and work through all 22 lessons to unlock the bonus lesson with Surah Al-Mulk.'
+				otvori: 'Open Surah Al-Mulk'
 			}
 		}
 	}

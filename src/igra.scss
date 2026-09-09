@@ -113,6 +113,21 @@
     color: var(--purple);
   }
 
+  &--nadji &__ikona {
+    background: rgba(16, 59, 92, 0.1);
+    color: var(--navy);
+  }
+
+  &--povezi &__ikona {
+    background: rgba(211, 71, 91, 0.12);
+    color: #b8384a;
+  }
+
+  &--razvrstaj &__ikona {
+    background: rgba(47, 143, 91, 0.12);
+    color: var(--green);
+  }
+
   &__opis {
     color: var(--muted);
     margin: 0 0 12px;
@@ -323,6 +338,11 @@
   }
 }
 
+/* dok se igra dovlači, mjesto joj je već rezervisano */
+.igra--ucitava {
+  min-height: 340px;
+}
+
 /* arapski primjer u igrama (vlastite klase – lekcijska pravila imaju !important) */
 .igra__ar {
   font-family: HamdullahMushaf, serif;
@@ -497,8 +517,9 @@
   }
 }
 
-/* ---------- 2. TRKA KROZ PRAVILA ---------- */
-.igra--trka {
+/* ---------- 2. TRKA KROZ PRAVILA (kartu s pitanjem dijeli s „nađi pravilo”) ---------- */
+.igra--trka,
+.igra--nadji {
   .igra__sat {
     height: 8px;
     border-radius: 999px;
@@ -800,17 +821,389 @@
     }
   }
 
-  .igra__poruka {
-    margin: 16px 0 0;
-    padding: 12px 14px;
-    border-radius: 14px;
-    background: var(--gold-100);
-    border-left: 4px solid var(--gold);
-    font-size: 0.9rem;
+}
 
-    b {
+/* poruka ispod ploče (memorija, poveži, prisloni harf) */
+.igra__poruka {
+  margin: 16px 0 0;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: var(--gold-100);
+  border-left: 4px solid var(--gold);
+  font-size: 0.9rem;
+
+  b {
+    color: var(--navy);
+  }
+
+  &.je-netacna {
+    background: rgba(211, 71, 91, 0.1);
+    border-left-color: #d3475b;
+  }
+}
+
+
+/* ---------- 4. NAĐI PRAVILO ---------- */
+.igra--nadji {
+  .igra-nadji__trazeno {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 0 0 14px;
+
+    strong {
+      font-family: var(--font-display);
+      letter-spacing: 0.4px;
       color: var(--navy);
+      font-size: 1.05rem;
     }
+  }
+
+  .igra-nadji__tacka {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: var(--boja);
+  }
+
+  .igra-nadji__lekcija {
+    font-size: 0.75rem;
+    color: var(--muted);
+    text-decoration: none;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 2px 9px;
+
+    &:hover {
+      border-color: var(--gold);
+      color: var(--gold-600);
+    }
+  }
+
+  .igra-nadji__ajet {
+    background: var(--cream);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 16px 14px 8px;
+  }
+
+  .igra-nadji__tekst {
+    font-family: HamdullahMushaf, serif;
+    font-size: clamp(1.45rem, 6vw, 2.2rem);
+    line-height: 2.5;
+    text-align: center;
+    margin: 0;
+  }
+
+  /* riječ je meta klika: dovoljno velika za prst, bez pomjeranja teksta */
+  .igra-nadji__rijec {
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 0 3px;
+    transition: background 0.15s ease;
+
+    &:hover {
+      background: var(--gold-100);
+    }
+
+    &.je-tacna {
+      background: var(--white);
+      border-bottom: 3px solid var(--boja);
+      cursor: default;
+    }
+
+    &.je-netacna {
+      background: rgba(211, 71, 91, 0.14);
+      animation: igra-udar 0.4s ease;
+    }
+  }
+
+  .igra-nadji__ozn {
+    color: var(--boja);
+  }
+
+  .igra-nadji__izvor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 10px 0 0;
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+
+  .igra-nadji__rijec-odg {
+    font-family: HamdullahMushaf, serif;
+    font-size: 1.3rem;
+    color: var(--navy);
+  }
+}
+
+/* ---------- 5. POVEŽI PRAVILA ---------- */
+.igra--povezi {
+  .igra-povezi__ploca {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(34px, 14vw, 110px);
+  }
+
+  /* niti se crtaju ispod kartica, pa se vide samo u razmaku između kolona */
+  .igra-povezi__niti {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .igra-povezi__kolona {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .igra-povezi__kartica {
+    position: relative;
+    min-height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-align: center;
+    padding: 10px 12px;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: var(--white);
+    color: var(--navy);
+    font-weight: 600;
+    font-size: 0.88rem;
+    line-height: 1.25;
+    cursor: pointer;
+    transition: border-color 0.15s ease, background 0.15s ease, transform 0.1s ease;
+
+    &:hover {
+      border-color: var(--gold);
+    }
+
+    &:active {
+      transform: scale(0.985);
+    }
+
+    &.je-izabrana {
+      border-color: var(--gold);
+      background: var(--gold-100);
+    }
+
+    &.je-netacna {
+      border-color: #d3475b;
+      background: rgba(211, 71, 91, 0.1);
+      animation: igra-udar 0.4s ease;
+    }
+
+    &.je-spojena {
+      border-color: var(--boja);
+      box-shadow: inset 0 0 0 1px var(--boja);
+      cursor: default;
+    }
+  }
+
+  .igra-povezi__kartica--rijec .igra__ar {
+    font-size: clamp(1.15rem, 5vw, 1.7rem);
+    line-height: 1.9;
+  }
+
+  .igra-povezi__zvuk {
+    position: absolute;
+    top: 4px;
+    right: 6px;
+    color: var(--muted);
+    font-size: 0.7rem;
+
+    &:hover {
+      color: var(--gold-600);
+    }
+  }
+}
+
+/* ---------- 6. PRISLONI HARF ---------- */
+.igra--razvrstaj {
+  .igra-razvrstaj__pomoc-gumb {
+    margin-left: auto;
+    border: 1px solid var(--line);
+    background: var(--white);
+    color: var(--muted);
+    border-radius: 999px;
+    padding: 4px 12px;
+    font-size: 0.8rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+
+    &.je-ukljucena {
+      border-color: var(--gold);
+      color: var(--gold-600);
+      background: var(--gold-100);
+    }
+  }
+
+  .igra-razvrstaj__kutije {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+
+    &.je-4 {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .igra-razvrstaj__kutija {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 12px 10px;
+    border: 2px dashed var(--line);
+    border-radius: 16px;
+    background: var(--white);
+    text-align: center;
+    transition: border-color 0.15s ease, background 0.15s ease;
+
+    h4 {
+      margin: 0;
+      font-family: var(--font-display);
+      font-size: 0.82rem;
+      letter-spacing: 0.3px;
+      color: var(--boja);
+    }
+
+    /* dok je harf u ruci, kutije se ponašaju kao mete */
+    &.je-meta {
+      border-color: var(--boja);
+      background: var(--cream);
+      cursor: pointer;
+    }
+
+    &.je-trese {
+      border-color: #d3475b;
+      animation: igra-udar 0.4s ease;
+    }
+  }
+
+  .igra-razvrstaj__kontekst {
+    margin: 0;
+    font-size: 0.72rem;
+    color: var(--muted);
+  }
+
+  .igra-razvrstaj__pomoc {
+    margin: 0;
+    font-size: 0.72rem;
+    color: var(--navy);
+    background: var(--gold-100);
+    border-radius: 8px;
+    padding: 4px 6px;
+  }
+
+  .igra-razvrstaj__polje {
+    min-height: 56px;
+    margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 6px;
+    border-radius: 12px;
+    background: var(--cream);
+  }
+
+  .igra-razvrstaj__lekcija {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-size: 0.72rem;
+    color: var(--muted);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--gold-600);
+    }
+  }
+
+  .igra-razvrstaj__zaliha {
+    margin-top: 16px;
+    min-height: 66px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .igra-razvrstaj__harf {
+    width: 58px;
+    height: 58px;
+    display: grid;
+    place-items: center;
+    font-family: HamdullahMushaf, serif;
+    font-size: 1.9rem;
+    color: var(--navy);
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    box-shadow: var(--shadow-sm);
+    cursor: grab;
+    touch-action: none; /* bez ovoga povlačenje po telefonu skrola stranicu */
+    user-select: none;
+    transition: border-color 0.15s ease, transform 0.1s ease;
+
+    &:hover {
+      border-color: var(--gold);
+    }
+
+    &.je-izabran {
+      border-color: var(--gold);
+      background: var(--gold-100);
+      transform: translateY(-4px);
+    }
+
+    &.je-vucen {
+      z-index: 10;
+      cursor: grabbing;
+      box-shadow: var(--shadow);
+      transition: none;
+    }
+
+    &.je-postavljen {
+      width: auto;
+      height: auto;
+      min-width: 34px;
+      padding: 2px 8px;
+      font-size: 1.4rem;
+      border-color: var(--boja);
+      box-shadow: none;
+      cursor: default;
+    }
+  }
+
+  .igra-razvrstaj__prazno {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  .igra-razvrstaj__harf-poruka {
+    font-family: HamdullahMushaf, serif;
+    font-size: 1.3rem;
+    color: var(--navy);
   }
 }
 
@@ -843,6 +1236,34 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .igra--nadji .igra-nadji__tekst {
+    line-height: 2.3;
+  }
+
+  /* kolone moraju ostati jedna nasuprot druge, inače nit nema smisla */
+  .igra--povezi .igra-povezi__ploca {
+    gap: 30px;
+  }
+
+  .igra--povezi .igra-povezi__kartica {
+    min-height: 54px;
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+
+  .igra--razvrstaj {
+    .igra-razvrstaj__kutije,
+    .igra-razvrstaj__kutije.je-4 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .igra-razvrstaj__harf {
+      width: 50px;
+      height: 50px;
+      font-size: 1.7rem;
+    }
+  }
+
   /* polje mora stati na ekran zajedno s korpom */
   .igra--harfovi {
     .igra__polje {
@@ -870,8 +1291,17 @@
 @media (prefers-reduced-motion: reduce) {
   .igra-kartica,
   .igra__karta-lice,
-  .igra__opcija {
+  .igra__opcija,
+  .igra-povezi__kartica,
+  .igra-razvrstaj__harf,
+  .igra-razvrstaj__kutija {
     transition: none;
+  }
+
+  .igra-nadji__rijec.je-netacna,
+  .igra-povezi__kartica.je-netacna,
+  .igra-razvrstaj__kutija.je-trese {
+    animation: none;
   }
 
   .igra__polje.je-udar {

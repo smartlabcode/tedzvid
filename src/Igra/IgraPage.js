@@ -1,20 +1,40 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { FaArrowLeft, FaGamepad, FaHandPaper, FaBolt, FaClone, FaTrophy, FaVolumeUp, FaVolumeMute } from 'react-icons/fa';
+import {
+	FaArrowLeft,
+	FaGamepad,
+	FaHandPaper,
+	FaBolt,
+	FaClone,
+	FaTrophy,
+	FaVolumeUp,
+	FaVolumeMute,
+	FaSearch,
+	FaLink,
+	FaLayerGroup
+} from 'react-icons/fa';
 import SiteNav from '../Body/SiteNav';
 import SiteFooter from '../Body/SiteFooter';
 import PageBand from '../Body/PageBand';
-import UhvatiHarf from './UhvatiHarf';
-import Trka from './Trka';
-import Memorija from './Memorija';
 import { rekord, vrijemeTekst } from './rekordi';
 import { zvukUkljucen, postaviZvuk } from './zvuk';
 import { useUI } from '../i18n/ui';
 import '../igra.scss';
 
+/* Igre nose primjere, harfove i ajete iz lekcija, pa se dovlače tek kad se koja otvori */
+const UhvatiHarf = React.lazy(() => import('./UhvatiHarf'));
+const Trka = React.lazy(() => import('./Trka'));
+const NadjiPravilo = React.lazy(() => import('./NadjiPravilo'));
+const Povezi = React.lazy(() => import('./Povezi'));
+const Razvrstaj = React.lazy(() => import('./Razvrstaj'));
+const Memorija = React.lazy(() => import('./Memorija'));
+
 export const IGRE = [
 	{ id: 'harfovi', putanja: '/igra/harfovi', ikona: FaHandPaper, komponenta: UhvatiHarf },
 	{ id: 'trka', putanja: '/igra/trka', ikona: FaBolt, komponenta: Trka },
+	{ id: 'nadji', putanja: '/igra/nadji', ikona: FaSearch, komponenta: NadjiPravilo },
+	{ id: 'povezi', putanja: '/igra/povezi', ikona: FaLink, komponenta: Povezi },
+	{ id: 'razvrstaj', putanja: '/igra/razvrstaj', ikona: FaLayerGroup, komponenta: Razvrstaj },
 	{ id: 'memorija', putanja: '/igra/memorija', ikona: FaClone, komponenta: Memorija }
 ];
 
@@ -69,7 +89,9 @@ export default function IgraPage({ igra }) {
 							<h1>{ui.igre[stavka.id].naslov}</h1>
 							<Zvuk ui={ui} />
 						</div>
-						<Igra />
+						<React.Suspense fallback={<div className="igra igra--ucitava" />}>
+							<Igra />
+						</React.Suspense>
 						<p className="igra-uputa">{ui.igre[stavka.id].uputa}</p>
 					</div>
 				</main>
