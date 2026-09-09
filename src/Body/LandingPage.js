@@ -21,7 +21,7 @@ import {
 } from 'react-icons/fa';
 import SiteNav from './SiteNav';
 import SiteFooter from './SiteFooter';
-import { Ornament } from './Logo';
+import { Ornament, LOGO_SRC } from './Logo';
 import { VideoEmbed } from './LessonVideo';
 import videos from '../Data/videos.json';
 import { APP_LINKS } from './SiteFooter';
@@ -157,6 +157,7 @@ function LandingPage() {
 									<i />
 								</div>
 								<div className="mock__screen">
+									<img className="mock__logo" src={LOGO_SRC} alt="" aria-hidden="true" />
 									<h2 className="mock__title">{ui.mockTitle}</h2>
 									<div className="mock__subtitle">{ui.mockSubtitle}</div>
 									<p className="mock__arabic" lang="ar">

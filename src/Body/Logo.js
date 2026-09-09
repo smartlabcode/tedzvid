@@ -2,28 +2,22 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useUI } from '../i18n/ui';
 
-/* Znak: luk (mihrab) s munarom i kupolom – u duhu novog vizuala tedzvid.ba */
-export function LogoMark({ size = 46, light = false }) {
-	const navy = light ? '#ffffff' : '#103b5c';
-	const teal = light ? '#8fd3ce' : '#2a8c86';
-	const gold = light ? '#ead9a6' : '#b9962f';
-	const door = light ? '#103b5c' : '#f7f3ec';
+/* Znak: logotip tedzvid.ba – Kur'an na rahli */
+export const LOGO_SRC = process.env.PUBLIC_URL + '/assets/logo.png';
+
+/* izvorne mjere znaka: 320 × 301 */
+const MARK_RATIO = 301 / 320;
+
+export function LogoMark({ size = 46, className = '' }) {
 	return (
-		<svg width={size} height={size} viewBox="0 0 64 64" aria-hidden="true" focusable="false">
-			<path
-				d="M10 62V30C10 17.85 19.85 8 32 8s22 9.85 22 22v32"
-				fill="none"
-				stroke={navy}
-				strokeWidth="4"
-				strokeLinecap="round"
-			/>
-			<rect x="16" y="30" width="7" height="32" rx="1.5" fill={teal} />
-			<path d="M16 30l3.5-8 3.5 8z" fill={teal} />
-			<path d="M26 62V44c0-6.63 5.37-12 12-12s12 5.37 12 12v18z" fill={navy} />
-			<path d="M34 62v-9a4 4 0 0 1 8 0v9z" fill={door} />
-			<circle cx="38" cy="27" r="2.2" fill={gold} />
-			<rect x="37.3" y="29" width="1.4" height="4" fill={gold} />
-		</svg>
+		<img
+			src={LOGO_SRC}
+			className={'logo__mark' + (className ? ' ' + className : '')}
+			width={size}
+			height={Math.round(size * MARK_RATIO)}
+			alt=""
+			aria-hidden="true"
+		/>
 	);
 }
 
@@ -31,7 +25,7 @@ export default function Logo({ light = false, size = 46, to = '/', tagline = tru
 	const ui = useUI();
 	return (
 		<Link to={to} className={'logo' + (light ? ' logo--light' : '')} aria-label={ui.logoAria}>
-			<LogoMark size={size} light={light} />
+			<LogoMark size={size} />
 			<span className="logo__text">
 				<span className="logo__word">
 					TEDZVID<b>.BA</b>
