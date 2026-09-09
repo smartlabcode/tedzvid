@@ -1,6 +1,17 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaArrowRight, FaHeart, FaRegHeart, FaPlay, FaRedo, FaTrophy, FaVolumeUp, FaBookOpen } from 'react-icons/fa';
+import {
+	FaArrowRight,
+	FaHeart,
+	FaRegHeart,
+	FaPlay,
+	FaRedo,
+	FaTrophy,
+	FaVolumeUp,
+	FaBookOpen,
+	FaEye,
+	FaHeadphones
+} from 'react-icons/fa';
 import PRIMJERI from '../Data/Igra/primjeri.json';
 import lessons from '../Data/lessons.json';
 import Primjer from './Primjer';
@@ -12,11 +23,21 @@ import { napraviPitanje } from './pitanja';
 import { rekord, upisiRekord, viseBodova, promijesaj, zvjezdice } from './rekordi';
 import { pisak } from './zvuk';
 
-const LEKCIJE = lessons['lekcije'].reduce((acc, curr) => acc.concat(curr), []);
-const SRCA = 3;
-const SEKUNDI = 12;
+/*
+ * „Prepoznaj po zvuku” – jedina igra u kojoj se pravilo traži uhom: zapis se
+ * pusti, a riječ ostaje skrivena dok se ne odgovori. Ko zaviri u riječ, dobija
+ * pola bodova; ako zapis ne može da se pusti (bez mreže ili bez kodeka), riječ
+ * se otkriva sama da igra ostane igriva.
+ */
 
-export default function Trka() {
+const LEKCIJE = lessons['lekcije'].reduce((acc, curr) => acc.concat(curr), []);
+const SA_ZAPISOM = PRIMJERI.filter((p) => p.url);
+const PITANJA = 10;
+const SRCA = 3;
+const BODOVI = 20;
+const VLASNIK = 'igra-uho';
+
+export default function PoZvuku() {
 	const { lang } = useLang();
 	const ui = useUI();
 	const pick = (f) => (f && (f[lang] !== undefined ? f[lang] : f[DEFAULT_LANG])) || '';
@@ -25,112 +46,96 @@ export default function Trka() {
 	const [ faza, setFaza ] = useState('uvod'); /* uvod | pitanje | odgovor | kraj */
 	const [ pitanje, setPitanje ] = useState(null);
 	const [ izbor, setIzbor ] = useState(null);
+	const [ zavirio, setZavirio ] = useState(false);
 	const [ bodovi, setBodovi ] = useState(0);
 	const [ niz, setNiz ] = useState(0);
-	const [ najveciNiz, setNajveciNiz ] = useState(0);
 	const [ srca, setSrca ] = useState(SRCA);
+	const [ rijeseno, setRijeseno ] = useState(0);
 	const [ tacnih, setTacnih ] = useState(0);
-	const [ ukupno, setUkupno ] = useState(0);
-	const [ preostalo, setPreostalo ] = useState(SEKUNDI);
-	const [ najbolji, setNajbolji ] = useState(() => rekord('trka'));
+	const [ zvuk, setZvuk ] = useState(audioBus.getState());
+	const [ najbolji, setNajbolji ] = useState(() => rekord('uho'));
 	const bazen = useRef([]);
 
+	useEffect(() => audioBus.subscribe(setZvuk), []);
+	useEffect(() => () => audioBus.stop(), []);
+
+	const pusti = (p) => {
+		const primjer = p || (pitanje && pitanje.primjer);
+		if (primjer) audioBus.play(VLASNIK, primjer.url, naziv(primjer.lekcija));
+	};
+
 	const sljedece = () => {
-		if (!bazen.current.length) bazen.current = promijesaj(PRIMJERI);
-		setPitanje(napraviPitanje(bazen.current.pop()));
+		if (!bazen.current.length) bazen.current = promijesaj(SA_ZAPISOM);
+		const novo = napraviPitanje(bazen.current.pop());
+		setPitanje(novo);
 		setIzbor(null);
-		setPreostalo(SEKUNDI);
+		setZavirio(false);
 		setFaza('pitanje');
+		pusti(novo.primjer); /* zapis kreće sam – klik na „Igraj” je već odobrio zvuk */
 	};
 
 	const pokreni = () => {
-		bazen.current = promijesaj(PRIMJERI);
+		bazen.current = promijesaj(SA_ZAPISOM);
 		setBodovi(0);
 		setNiz(0);
-		setNajveciNiz(0);
 		setSrca(SRCA);
+		setRijeseno(0);
 		setTacnih(0);
-		setUkupno(0);
 		sljedece();
 	};
 
-	/* odbrojavanje traje samo dok je pitanje na ekranu */
-	useEffect(
-		() => {
-			if (faza !== 'pitanje') return undefined;
-			const t = setInterval(() => setPreostalo((v) => Math.max(0, +(v - 0.1).toFixed(1))), 100);
-			return () => clearInterval(t);
-		},
-		[ faza, pitanje ]
-	);
+	const zavrsi = () => {
+		pisak('kraj');
+		audioBus.stop();
+		setFaza('kraj');
+		if (bodovi > 0) {
+			const r = upisiRekord('uho', { bodovi, tacnih, datum: Date.now() }, viseBodova);
+			setNajbolji(r.rekord);
+		}
+	};
 
 	const odgovori = (n) => {
 		if (faza !== 'pitanje') return;
 		const tacno = n === pitanje.tacna;
 		const noviNiz = tacno ? niz + 1 : 0;
 		const mn = Math.min(5, 1 + Math.floor(noviNiz / 3));
-		const noviBodovi = tacno ? bodovi + 10 * mn + Math.round(preostalo) : bodovi;
-		const novoTacnih = tacno ? tacnih + 1 : tacnih;
-		const ostalaSrca = tacno ? srca : srca - 1;
+		const dobitak = tacno ? Math.round(BODOVI * mn / (zavirio ? 2 : 1)) : 0;
 
 		setIzbor(n);
-		setUkupno(ukupno + 1);
 		setNiz(noviNiz);
-		if (noviNiz > najveciNiz) setNajveciNiz(noviNiz);
-		setBodovi(noviBodovi);
-		setTacnih(novoTacnih);
-		setSrca(ostalaSrca);
+		setBodovi(bodovi + dobitak);
+		setRijeseno(rijeseno + 1);
+		if (tacno) setTacnih(tacnih + 1);
+		else setSrca(srca - 1);
 		setFaza('odgovor');
 		pisak(tacno ? 'dobro' : 'nizak');
-
-		/* posljednje srce: rezultat se odmah upisuje u rekorde (nula se ne pamti) */
-		if (ostalaSrca <= 0 && noviBodovi > 0) {
-			const r = upisiRekord('trka', { bodovi: noviBodovi, tacnih: novoTacnih, datum: Date.now() }, viseBodova);
-			setNajbolji(r.rekord);
-		}
 	};
-
-	/* isteklo vrijeme vrijedi kao netačan odgovor */
-	useEffect(
-		() => {
-			if (faza === 'pitanje' && preostalo <= 0) odgovori(null);
-		},
-		[ preostalo, faza ] // eslint-disable-line react-hooks/exhaustive-deps
-	);
 
 	const dalje = () => {
-		if (srca <= 0) {
-			pisak('kraj');
-			setFaza('kraj');
-		} else sljedece();
+		if (srca <= 0 || rijeseno >= PITANJA) zavrsi();
+		else sljedece();
 	};
-
-	const pusti = () => {
-		if (pitanje && pitanje.primjer.url) audioBus.play('igra-trka', pitanje.primjer.url, naziv(pitanje.tacna));
-	};
-
-	useEffect(() => () => audioBus.stop(), []);
 
 	if (faza === 'uvod' || faza === 'kraj') {
-		const zvijezde = ukupno ? zvjezdice(tacnih / Math.max(ukupno, 6)) : 0;
+		const zvijezde = rijeseno ? zvjezdice(tacnih / PITANJA) : 0;
 		return (
-			<div className="igra igra--trka">
+			<div className="igra igra--uho">
 				<div className="igra__sloj igra__sloj--stranica">
 					{faza === 'kraj' ? (
 						<React.Fragment>
-							<h3>{ui.igraKraj}</h3>
+							<h3>{srca > 0 ? ui.igraUhoGotovo : ui.igraKraj}</h3>
 							<p className="igra__zvjezde" aria-hidden="true">
 								{[ 0, 1, 2 ].map((i) => <span key={i} className={i < zvijezde ? 'je-puna' : ''}>★</span>)}
 							</p>
 							<p className="igra__krajBodovi">
 								<b>{bodovi}</b> {ui.igraBodovi}
 							</p>
-							<p>{ui.igraTrkaKraj(tacnih, ukupno, najveciNiz)}</p>
+							<p>{ui.igraUhoKraj(tacnih, rijeseno)}</p>
 						</React.Fragment>
 					) : (
 						<React.Fragment>
-							<h3>{ui.igraTrkaNaslov}</h3>
-							<p>{ui.igraTrkaUvod(SEKUNDI)}</p>
+							<h3>{ui.igraUhoNaslov}</h3>
+							<p>{ui.igraUhoUvod(PITANJA)}</p>
 						</React.Fragment>
 					)}
 					{najbolji && (
@@ -147,10 +152,15 @@ export default function Trka() {
 	}
 
 	const p = pitanje.primjer;
+	const gotovo = faza === 'odgovor';
 	const tacno = izbor === pitanje.tacna;
+	const nasZapis = zvuk.ownerId === VLASNIK;
+	const svira = nasZapis && zvuk.playing;
+	const pukao = nasZapis && zvuk.error; /* bez kodeka ili bez mreže – riječ se otkriva sama */
+	const vidiRijec = gotovo || zavirio || pukao;
 
 	return (
-		<div className="igra igra--trka">
+		<div className="igra igra--uho">
 			<div className="igra__hud">
 				<span className="igra__srca" aria-label={ui.igraSrca(srca)}>
 					{[ 0, 1, 2 ].map((i) => (i < srca ? <FaHeart key={i} /> : <FaRegHeart key={i} className="je-prazno" />))}
@@ -159,35 +169,48 @@ export default function Trka() {
 					<b>{bodovi}</b> {ui.igraBodovi}
 				</span>
 				<span className={'igra__niz' + (niz >= 3 ? ' je-vruc' : '')}>×{Math.min(5, 1 + Math.floor(niz / 3))}</span>
-			</div>
-
-			<div className="igra__sat" role="progressbar" aria-valuemin={0} aria-valuemax={SEKUNDI} aria-valuenow={Math.ceil(preostalo)}>
-				<span
-					className={preostalo <= 3 ? 'je-hitno' : ''}
-					style={{ width: preostalo / SEKUNDI * 100 + '%', transition: faza === 'pitanje' ? 'width .1s linear' : 'none' }}
-				/>
+				<span className="igra__vrijeme">
+					{rijeseno}/{PITANJA}
+				</span>
 			</div>
 
 			<div className="igra__karta">
-				<p className="igra__pitanje">{ui.igraTrkaPitanje}</p>
-				<p className="igra__rijec">
-					<Primjer word={p.word} highlight={p.highlight} />
+				<p className="igra__pitanje">
+					<FaHeadphones /> {ui.igraUhoPitanje}
 				</p>
-				<div className="igra__pomoc-red">
-					{p.url && (
-						<button type="button" className="igra__zvuk" onClick={pusti}>
-							<FaVolumeUp /> {ui.igraPoslusaj}
+
+				<div className={'igra-uho__zapis' + (svira ? ' je-svira' : '')}>
+					<button type="button" className="igra-uho__dugme" onClick={() => pusti()} aria-label={ui.igraUhoPonovo}>
+						<FaVolumeUp />
+					</button>
+					<span className="igra-uho__val" aria-hidden="true">
+						{[ 0, 1, 2, 3, 4 ].map((i) => <i key={i} style={{ animationDelay: i * 0.12 + 's' }} />)}
+					</span>
+					<span className="igra-uho__natpis">{pukao ? ui.igraUhoNemaZapisa : ui.igraUhoPonovo}</span>
+				</div>
+
+				<div className={'igra-uho__rijec' + (vidiRijec ? ' je-otkrivena' : '')}>
+					{vidiRijec ? (
+						<Primjer word={p.word} highlight={p.highlight} />
+					) : (
+						<button type="button" className="igra-uho__zaviri" onClick={() => setZavirio(true)}>
+							<FaEye /> {ui.igraUhoPokazi}
 						</button>
 					)}
 				</div>
+				{!gotovo && (
+					<p className="igra-uho__stanje">
+						{pukao ? ui.igraUhoNemaZapisa : zavirio ? ui.igraUhoZavirio : ui.igraUhoSkriveno}
+					</p>
+				)}
 
 				<div className="igra__opcije">
 					{pitanje.opcije.map((n) => {
 						let cls = 'igra__opcija';
-						if (faza === 'odgovor' && n === pitanje.tacna) cls += ' je-tacna';
-						if (faza === 'odgovor' && n === izbor && n !== pitanje.tacna) cls += ' je-netacna';
+						if (gotovo && n === pitanje.tacna) cls += ' je-tacna';
+						if (gotovo && n === izbor && n !== pitanje.tacna) cls += ' je-netacna';
 						return (
-							<button key={n} type="button" className={cls} disabled={faza === 'odgovor'} onClick={() => odgovori(n)}>
+							<button key={n} type="button" className={cls} disabled={gotovo} onClick={() => odgovori(n)}>
 								<span className="igra__opcija-broj">{n}</span>
 								{naziv(n)}
 							</button>
@@ -195,9 +218,9 @@ export default function Trka() {
 					})}
 				</div>
 
-				{faza === 'odgovor' && (
+				{gotovo && (
 					<div className={'igra__odgovor' + (tacno ? ' je-tacna' : ' je-netacna')}>
-						<strong>{tacno ? ui.igraBravo : izbor === null ? ui.igraIsteklo : ui.igraNetacno}</strong>{' '}
+						<strong>{tacno ? ui.igraBravo : ui.igraNetacno}</strong>{' '}
 						{!tacno && <span>{ui.igraTacnoJe(naziv(pitanje.tacna))} </span>}
 						<span>{pick(p.napomena)}</span>
 						<div className="igra__odgovor-akcije">
@@ -205,7 +228,7 @@ export default function Trka() {
 								<FaBookOpen /> {ui.igraOtvoriLekciju(pitanje.tacna)}
 							</Link>
 							<button type="button" className="btn-t btn-t--gold btn-t--sm" onClick={dalje}>
-								{srca <= 0 ? ui.igraRezultat : ui.igraDalje} <FaArrowRight />
+								{srca <= 0 || rijeseno >= PITANJA ? ui.igraRezultat : ui.igraDalje} <FaArrowRight />
 							</button>
 						</div>
 					</div>

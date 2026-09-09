@@ -353,157 +353,123 @@
   color: var(--gold-600);
 }
 
-/* ---------- 1. UHVATI HARF ---------- */
-.igra--harfovi {
-  .igra__zadatak {
-    text-align: center;
-    margin: 0 0 2px;
-    color: var(--muted);
-
-    b {
-      color: var(--navy);
-      font-family: var(--font-display);
-      letter-spacing: 0.5px;
-      font-size: 1.25rem;
-      margin-left: 6px;
-    }
-
-    small {
-      display: block;
-      font-size: 0.82rem;
-    }
-  }
-
-  .igra__lek {
-    font-family: var(--font-sans);
-    font-size: 0.75rem;
-    color: var(--muted);
-    letter-spacing: 0;
-  }
-
-  .igra__ciljni {
-    text-align: center;
-    font-family: HamdullahMushaf, serif;
-    font-size: 1.9rem;
-    color: var(--gold-600);
-    margin: 0 0 10px;
-    line-height: 1.9;
-
-    &--veliki {
-      color: var(--gold) !important;
-      font-size: 2.4rem;
-    }
-  }
-
-  .igra__polje {
-    position: relative;
-    height: clamp(330px, 54vh, 470px);
-    border-radius: var(--radius);
-    overflow: hidden;
-    background: linear-gradient(180deg, var(--navy) 0%, var(--navy-900) 100%);
-    background-image: var(--pattern-light), linear-gradient(180deg, var(--navy) 0%, var(--navy-900) 100%);
-    box-shadow: var(--shadow);
-    touch-action: none;
-    cursor: none;
-    user-select: none;
-
-    &.je-udar {
-      animation: igra-udar 0.32s ease;
-    }
-  }
-
-  .igra__harf {
-    position: absolute;
-    font-family: HamdullahMushaf, serif;
-    font-size: clamp(2.1rem, 7vw, 3.1rem);
-    line-height: 1;
-    color: var(--gold-200);
-    text-shadow: 0 3px 12px rgba(0, 0, 0, 0.45);
-    pointer-events: none;
-  }
-
-  .igra__korpa {
-    position: absolute;
-    bottom: 3%;
-    transform: translateX(-50%);
-    height: 34px;
-    border-radius: 6px 6px 20px 20px;
-    background: linear-gradient(180deg, var(--gold-200), var(--gold));
-    box-shadow: 0 6px 18px rgba(185, 150, 47, 0.45);
-    pointer-events: none;
-
-    &-usta {
-      position: absolute;
-      inset: 0 0 auto 0;
-      height: 7px;
-      border-radius: 6px;
-      background: var(--gold-100);
-    }
-  }
-
-  .igra__iskra {
-    position: absolute;
-    bottom: 12%;
-    transform: translateX(-50%);
-    font-weight: 700;
-    color: var(--gold-200);
-    animation: igra-iskra 0.8s ease-out forwards;
-    pointer-events: none;
-
-    &.je-loša {
-      color: #ff9aa6;
-      font-family: HamdullahMushaf, serif;
-      font-size: 1.6rem;
-    }
-  }
-
-  .igra__nivo-broj {
-    font-family: var(--font-display);
-    letter-spacing: 2px;
-    color: rgba(255, 255, 255, 0.6) !important;
-  }
-
-  .igra__napredak {
+/* ---------- 1. PREPOZNAJ PO ZVUKU ---------- */
+.igra--uho {
+  /* zapis je glavni junak ove igre, pa je i najveći element na kartici */
+  .igra-uho__zapis {
     display: flex;
-    gap: 6px;
+    align-items: center;
     justify-content: center;
-    margin: 14px 0 6px;
+    gap: 14px;
+    padding: 18px;
+    margin-bottom: 14px;
+    border-radius: 16px;
+    background: var(--cream);
+    border: 1px solid var(--line);
+  }
 
-    span {
-      width: 34px;
-      height: 6px;
-      border-radius: 999px;
-      background: var(--line);
+  .igra-uho__dugme {
+    width: 58px;
+    height: 58px;
+    flex: 0 0 auto;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    border: none;
+    background: var(--gold);
+    color: var(--white);
+    font-size: 1.4rem;
+    cursor: pointer;
+    box-shadow: var(--shadow-sm);
 
-      &.je-gotov {
-        background: var(--gold);
-      }
-
-      &.je-sad {
-        background: var(--navy);
-      }
+    &:hover {
+      background: var(--gold-600);
     }
   }
 
-  .igra__podnozje {
-    text-align: center;
+  /* stupci se njišu samo dok zapis svira */
+  .igra-uho__val {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    height: 34px;
+
+    i {
+      display: block;
+      width: 5px;
+      height: 8px;
+      border-radius: 3px;
+      background: var(--line);
+    }
+  }
+
+  .igra-uho__zapis.je-svira .igra-uho__val i {
+    background: var(--teal);
+    animation: igra-val 0.9s ease-in-out infinite;
+  }
+
+  .igra-uho__natpis {
     color: var(--muted);
-    font-size: 0.82rem;
-    margin: 0;
+    font-size: 0.85rem;
+  }
+
+  /* riječ pod zavjesom – otkriva se tek odgovorom ili namjernim zavirivanjem */
+  .igra-uho__rijec {
+    min-height: 96px;
+    display: grid;
+    place-items: center;
+    border-radius: 16px;
+    border: 1px dashed var(--line);
+    background: var(--white);
+    padding: 10px;
+
+    .igra__ar {
+      font-size: clamp(1.6rem, 6vw, 2.6rem);
+      line-height: 2;
+    }
+
+    .igra__ozn {
+      background: var(--gold-100);
+      border-radius: 6px;
+    }
+
+    &.je-otkrivena {
+      border-style: solid;
+      background: var(--cream);
+    }
+  }
+
+  .igra-uho__zaviri {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid var(--line);
+    background: var(--white);
+    color: var(--muted);
+    border-radius: 999px;
+    padding: 8px 16px;
+    font-size: 0.85rem;
+    cursor: pointer;
+
+    &:hover {
+      border-color: var(--gold);
+      color: var(--gold-600);
+    }
+  }
+
+  .igra-uho__stanje {
+    margin: 8px 0 0;
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+
+  .igra__opcije {
+    margin-top: 14px;
   }
 }
 
-@keyframes igra-iskra {
-  from {
-    opacity: 1;
-    transform: translate(-50%, 0);
-  }
-  to {
-    opacity: 0;
-    transform: translate(-50%, -60px);
-  }
-}
-
+/* kratak trzaj kod netačnog poteza (nađi pravilo, poveži, prisloni harf) */
 @keyframes igra-udar {
   0%,
   100% {
@@ -517,8 +483,19 @@
   }
 }
 
-/* ---------- 2. TRKA KROZ PRAVILA (kartu s pitanjem dijeli s „nađi pravilo”) ---------- */
+@keyframes igra-val {
+  0%,
+  100% {
+    height: 8px;
+  }
+  50% {
+    height: 30px;
+  }
+}
+
+/* ---------- 2. TRKA KROZ PRAVILA (kartu s pitanjem dijele i „po zvuku” i „nađi pravilo”) ---------- */
 .igra--trka,
+.igra--uho,
 .igra--nadji {
   .igra__sat {
     height: 8px;
@@ -1228,7 +1205,8 @@
     display: none;
   }
 
-  .igra--trka .igra__opcije {
+  .igra--trka .igra__opcije,
+  .igra--uho .igra__opcije {
     grid-template-columns: 1fr;
   }
 
@@ -1263,29 +1241,6 @@
       font-size: 1.7rem;
     }
   }
-
-  /* polje mora stati na ekran zajedno s korpom */
-  .igra--harfovi {
-    .igra__polje {
-      cursor: default;
-      height: clamp(300px, 50vh, 420px);
-    }
-
-    .igra__zadatak {
-      font-size: 0.88rem;
-      margin-bottom: 0;
-
-      b {
-        font-size: 1.1rem;
-      }
-    }
-
-    .igra__ciljni {
-      font-size: 1.6rem;
-      line-height: 1.7;
-      margin-bottom: 6px;
-    }
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1304,7 +1259,7 @@
     animation: none;
   }
 
-  .igra__polje.je-udar {
+  .igra-uho__zapis.je-svira .igra-uho__val i {
     animation: none;
   }
 }

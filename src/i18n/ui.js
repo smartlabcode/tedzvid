@@ -362,7 +362,7 @@ const UI = {
 		igraEyebrow: 'Igraj i uči',
 		igraNaslov: 'Igraonica',
 		igraOpis:
-			'Šest kratkih igara za vježbanje tedžvidskih pravila: hvatanje harfova, prepoznavanje pravila u riječi i u ajetu, povezivanje pravila s primjerom, razvrstavanje harfova i spajanje parova. Harfovi, primjeri i ajeti dolaze iz samih lekcija.',
+			'Šest kratkih igara za vježbanje tedžvidskih pravila: prepoznavanje pravila po zvuku, u riječi i u ajetu, povezivanje pravila s primjerom, razvrstavanje harfova i spajanje parova. Zapisi, harfovi, primjeri i ajeti dolaze iz samih lekcija.',
 		igraNapomena:
 			'Igre su dodatak lekcijama i ne utječu na napredak ni na rang listu – rezultati se čuvaju samo u ovom pregledniku.',
 		igraBezRekorda: 'Još nema rekorda',
@@ -371,7 +371,6 @@ const UI = {
 		igraKreni: 'Igraj',
 		igraPonovo: 'Igraj ponovo',
 		igraNastavi: 'Nastavi',
-		igraPauza: 'Pauza',
 		igraDalje: 'Dalje',
 		igraRezultat: 'Rezultat',
 		igraBodovi: 'bodova',
@@ -388,15 +387,17 @@ const UI = {
 		igraTacnoJe: (naziv) => `Tačno je: ${naziv}.`,
 		igraOtvoriLekciju: (n) => `Otvori lekciju ${n}`,
 		igraPoslusaj: 'Poslušaj',
-		igraUhvati: 'Hvataj harfove pravila',
-		igraHarfNaslov: 'Uhvati harf',
-		igraHarfUvod:
-			'Harfovi padaju odozgo. Hvataj samo one koji pripadaju traženom pravilu, a ostale pusti da prođu.',
-		igraKontrole: 'Pomjeraj korpu prstom, mišem ili strelicama ← →. Razmak pauzira igru.',
-		igraNivo: (n) => `Nivo ${n}`,
-		igraNapredakNivoa: (a, b, uk) => `Uhvaćeno ${a}/${b} do sljedećeg nivoa · ukupno ${uk} nivoa`,
-		igraHarfPobjeda: 'Prešao si sva pravila – harfovi ti više nisu strani!',
-		igraHarfKraj: (n) => `Stigao si do ${n}. nivoa. Ponovi harfove i pokušaj opet.`,
+		igraUhoNaslov: 'Prepoznaj po zvuku',
+		igraUhoUvod: (n) =>
+			`Zapis se pusti, a riječ ostaje skrivena – pravilo treba prepoznati uhom. ${n} zapisa i tri srca.`,
+		igraUhoPitanje: 'Koje pravilo čuješ?',
+		igraUhoPonovo: 'Poslušaj ponovo',
+		igraUhoPokazi: 'Pokaži riječ',
+		igraUhoSkriveno: 'Riječ je skrivena – oslušni zapis.',
+		igraUhoZavirio: 'Riječ je otkrivena, pa odgovor nosi pola bodova.',
+		igraUhoNemaZapisa: 'Zapis se ne može pustiti, pa je riječ otkrivena.',
+		igraUhoGotovo: 'Uho izoštreno!',
+		igraUhoKraj: (t, uk) => `Tačno prepoznato: ${t} od ${uk} zapisa.`,
 		igraTrkaNaslov: 'Trka kroz pravila',
 		igraTrkaUvod: (s) =>
 			`Prepoznaj pravilo u istaknutom dijelu riječi. Imaš ${s} sekundi po pitanju i tri srca – brži odgovor nosi više bodova.`,
@@ -438,15 +439,15 @@ const UI = {
 		igraRazvrstajKolo: (b) => `Bodova do sada: ${b}. Sljedeće kolo donosi druga pravila.`,
 		igraRazvrstajKraj: (k, uk) => `Pređeno ${k} od ${uk} kola.`,
 		igre: {
-			harfovi: {
-				naslov: 'Uhvati harf',
-				opis: 'Arkada: hvataj harfove koji pripadaju traženom pravilu, a ostale pusti da prođu.',
+			uho: {
+				naslov: 'Prepoznaj po zvuku',
+				opis: 'Zapis svira, riječ je skrivena – pravilo treba prepoznati uhom, kao na času učenja.',
 				kako: [
-					'Šest nivoa: idgam, iklab, izhar, kalkala i ihfa',
-					'Pogrešan harf oduzima srce, novi nivo vraća jedno',
-					'Niz pogodaka množi bodove'
+					'110 zapisa iz svih lekcija, riječ se vidi tek poslije odgovora',
+					'Zapis se može slušati koliko god puta treba',
+					'Ko zaviri u riječ, dobija pola bodova'
 				],
-				uputa: 'Pomjeraj korpu prstom, mišem ili strelicama ← →. Razmak pauzira igru.'
+				uputa: 'Najbolje sa slušalicama: gunnu i uklapanje je lakše čuti nego vidjeti.'
 			},
 			trka: {
 				naslov: 'Trka kroz pravila',
@@ -987,7 +988,7 @@ const UI = {
 		igraEyebrow: 'Play and learn',
 		igraNaslov: 'Game room',
 		igraOpis:
-			'Six short games for practising the rules of tajweed: catch the letters, spot the rule in a word and in a verse, connect a rule with its example, sort the letters and match the pairs. The letters, examples and verses come from the lessons themselves.',
+			'Six short games for practising the rules of tajweed: name the rule by ear, spot it in a word and in a verse, connect a rule with its example, sort the letters and match the pairs. The recordings, letters, examples and verses come from the lessons themselves.',
 		igraNapomena:
 			'The games are an extra to the lessons and do not affect your progress or the leaderboard – results are kept in this browser only.',
 		igraBezRekorda: 'No record yet',
@@ -996,7 +997,6 @@ const UI = {
 		igraKreni: 'Play',
 		igraPonovo: 'Play again',
 		igraNastavi: 'Continue',
-		igraPauza: 'Paused',
 		igraDalje: 'Next',
 		igraRezultat: 'Result',
 		igraBodovi: 'points',
@@ -1013,14 +1013,17 @@ const UI = {
 		igraTacnoJe: (naziv) => `The answer is: ${naziv}.`,
 		igraOtvoriLekciju: (n) => `Open lesson ${n}`,
 		igraPoslusaj: 'Listen',
-		igraUhvati: 'Catch the letters of',
-		igraHarfNaslov: 'Catch the letter',
-		igraHarfUvod: 'Letters fall from the top. Catch only those that belong to the rule shown, and let the others pass.',
-		igraKontrole: 'Move the basket with your finger, the mouse or the ← → keys. Space pauses the game.',
-		igraNivo: (n) => `Level ${n}`,
-		igraNapredakNivoa: (a, b, uk) => `Caught ${a}/${b} to the next level · ${uk} levels in total`,
-		igraHarfPobjeda: 'You cleared every rule – these letters hold no secrets for you!',
-		igraHarfKraj: (n) => `You reached level ${n}. Revise the letters and try again.`,
+		igraUhoNaslov: 'Name what you hear',
+		igraUhoUvod: (n) =>
+			`The recording plays while the word stays hidden – recognise the rule by ear. ${n} recordings and three lives.`,
+		igraUhoPitanje: 'Which rule do you hear?',
+		igraUhoPonovo: 'Play again',
+		igraUhoPokazi: 'Show the word',
+		igraUhoSkriveno: 'The word is hidden – listen to the recording.',
+		igraUhoZavirio: 'The word is showing, so the answer scores half the points.',
+		igraUhoNemaZapisa: 'The recording cannot be played, so the word is revealed.',
+		igraUhoGotovo: 'A sharp ear!',
+		igraUhoKraj: (t, uk) => `Recognised correctly: ${t} of ${uk} recordings.`,
 		igraTrkaNaslov: 'Race through the rules',
 		igraTrkaUvod: (s) =>
 			`Spot the rule in the highlighted part of the word. You have ${s} seconds per question and three lives – a faster answer scores more.`,
@@ -1061,15 +1064,15 @@ const UI = {
 		igraRazvrstajKolo: (b) => `Points so far: ${b}. The next round brings other rules.`,
 		igraRazvrstajKraj: (k, uk) => `You cleared ${k} of ${uk} rounds.`,
 		igre: {
-			harfovi: {
-				naslov: 'Catch the letter',
-				opis: 'An arcade game: catch the letters that belong to the rule shown and let the rest fall.',
+			uho: {
+				naslov: 'Name what you hear',
+				opis: 'The recording plays while the word stays hidden – recognise the rule by ear, as in a recitation class.',
 				kako: [
-					'Six levels: idgham, iqlab, idhhar, qalqalah and ikhfa',
-					'A wrong letter costs a life, a new level gives one back',
-					'A streak multiplies your points'
+					'110 recordings from every lesson, the word appears only after your answer',
+					'Play the recording as many times as you need',
+					'Peeking at the word halves the points'
 				],
-				uputa: 'Move the basket with your finger, the mouse or the ← → keys. Space pauses the game.'
+				uputa: 'Best with headphones: ghunnah and merging are easier to hear than to see.'
 			},
 			trka: {
 				naslov: 'Race through the rules',

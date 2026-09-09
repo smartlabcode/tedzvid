@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import {
 	FaArrowLeft,
 	FaGamepad,
-	FaHandPaper,
+	FaHeadphones,
 	FaBolt,
 	FaClone,
 	FaTrophy,
@@ -22,7 +22,7 @@ import { useUI } from '../i18n/ui';
 import '../igra.scss';
 
 /* Igre nose primjere, harfove i ajete iz lekcija, pa se dovlače tek kad se koja otvori */
-const UhvatiHarf = React.lazy(() => import('./UhvatiHarf'));
+const PoZvuku = React.lazy(() => import('./PoZvuku'));
 const Trka = React.lazy(() => import('./Trka'));
 const NadjiPravilo = React.lazy(() => import('./NadjiPravilo'));
 const Povezi = React.lazy(() => import('./Povezi'));
@@ -30,7 +30,7 @@ const Razvrstaj = React.lazy(() => import('./Razvrstaj'));
 const Memorija = React.lazy(() => import('./Memorija'));
 
 export const IGRE = [
-	{ id: 'harfovi', putanja: '/igra/harfovi', ikona: FaHandPaper, komponenta: UhvatiHarf },
+	{ id: 'uho', putanja: '/igra/uho', ikona: FaHeadphones, komponenta: PoZvuku },
 	{ id: 'trka', putanja: '/igra/trka', ikona: FaBolt, komponenta: Trka },
 	{ id: 'nadji', putanja: '/igra/nadji', ikona: FaSearch, komponenta: NadjiPravilo },
 	{ id: 'povezi', putanja: '/igra/povezi', ikona: FaLink, komponenta: Povezi },
