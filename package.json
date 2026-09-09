@@ -43,7 +43,7 @@
     "eject": "react-scripts eject",
     "serve": "node server/index.js",
     "server": "node server/index.js",
-    "build:app": "REACT_APP_API_URL=${TEDZVID_API:-https://tedzvid.ba} react-scripts build",
+    "build:app": "REACT_APP_API_URL=${TEDZVID_API:-https://tedzvidapp.up.railway.app} react-scripts build",
     "app:sync": "npm run build:app && cap sync",
     "app:ios": "npm run app:sync && cap open ios",
     "app:android": "npm run app:sync && cap open android",

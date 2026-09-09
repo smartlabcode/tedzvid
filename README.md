@@ -111,7 +111,7 @@ isticanja riječi (gradnja takve ajete popiše na kraju).
 
 Aplikacije su [Capacitor](https://capacitorjs.com) omotač oko istog CRA builda – nema
 odvojenog koda, sve lekcije, kvizovi, zvuk i grafika idu u paket aplikacije (radi bez
-interneta), a samo `/api` pozivi idu na `https://tedzvid.ba`.
+interneta), a samo `/api` pozivi idu na `https://tedzvidapp.up.railway.app`.
 
 ```
 npm run app:sync        # build za aplikaciju + prenos u ios/ i android/
@@ -122,7 +122,7 @@ npm run app:run:android
 npm run app:assets      # regeneriše ikone i splash iz resources/
 ```
 
-`npm run build:app` pravi build s `REACT_APP_API_URL=https://tedzvid.ba`. Za rad prema
+`npm run build:app` pravi build s `REACT_APP_API_URL=https://tedzvidapp.up.railway.app`. Za rad prema
 lokalnom serveru: `TEDZVID_API=http://192.168.x.x:3002 npm run app:sync` (adresa mašine u
 lokalnoj mreži, ne `localhost` – to je u aplikaciji sama aplikacija).
 
