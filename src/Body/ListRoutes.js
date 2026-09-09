@@ -10,6 +10,7 @@ import LeaderboardPage from './LeaderboardPage';
 import AdminPage from './AdminPage';
 import LessonGate from './LessonGate';
 import BonusPage from './BonusPage';
+import IgraPage from '../Igra/IgraPage';
 import {
 	L1,
 	L2,
@@ -98,6 +99,8 @@ function ListRoutes() {
 			<Route path="/mulk" exact render={() => <BonusPage vrsta="mulk" />} />
 			<Route path="/jasin" exact render={() => <BonusPage vrsta="jasin" />} />
 			<Route path="/amme-dzuz" exact render={() => <BonusPage vrsta="amme" />} />
+			<Route path="/igra" exact render={() => <IgraPage />} />
+			<Route path="/igra/:igra" exact render={({ match }) => <IgraPage igra={match.params.igra} />} />
 			<Route path="/admin" exact component={AdminPage} />
 			{Object.keys(LEKCIJE).map((key) => {
 				const Lekcija = LEKCIJE[key];

@@ -328,6 +328,88 @@ const UI = {
 		rangGuest: 'Prijavi se ili napravi račun da se i tvoji rezultati nađu na listi.',
 		rangRules: 'Ponavljanje istog kviza ne donosi dodatne bodove – računa se samo najbolji rezultat. Sedmica počinje ponedjeljkom.',
 
+		/* ----- igraonica ----- */
+		navIgra: 'Igra',
+		igraEyebrow: 'Igraj i uči',
+		igraNaslov: 'Igraonica',
+		igraOpis:
+			'Tri kratke igre za vježbanje tedžvidskih pravila: uhvati harfove pravila, prepoznaj pravilo u riječi i spoji parove. Harfovi i primjeri dolaze iz samih lekcija.',
+		igraNapomena:
+			'Igre su dodatak lekcijama i ne utječu na napredak ni na rang listu – rezultati se čuvaju samo u ovom pregledniku.',
+		igraBezRekorda: 'Još nema rekorda',
+		igraZvukUkljucen: 'Zvuk uključen',
+		igraZvukIskljucen: 'Zvuk isključen',
+		igraKreni: 'Igraj',
+		igraPonovo: 'Igraj ponovo',
+		igraNastavi: 'Nastavi',
+		igraPauza: 'Pauza',
+		igraDalje: 'Dalje',
+		igraRezultat: 'Rezultat',
+		igraBodovi: 'bodova',
+		igraPotezi: 'poteza',
+		igraSrca: (n) => `Preostalo srca: ${n}`,
+		igraLekcija: (n) => `lekcija ${n}`,
+		igraRekordBodovi: (n) => `Najbolji rezultat: ${n} bodova`,
+		igraRekordMem: (p, v) => `Najbolje: ${p} poteza, ${v}`,
+		igraKraj: 'Kraj igre',
+		igraPobjeda: 'Bravo, prošao si sve nivoe!',
+		igraBravo: 'Tačno!',
+		igraNetacno: 'Netačno.',
+		igraIsteklo: 'Isteklo je vrijeme.',
+		igraTacnoJe: (naziv) => `Tačno je: ${naziv}.`,
+		igraOtvoriLekciju: (n) => `Otvori lekciju ${n}`,
+		igraPoslusaj: 'Poslušaj',
+		igraUhvati: 'Hvataj harfove pravila',
+		igraHarfNaslov: 'Uhvati harf',
+		igraHarfUvod:
+			'Harfovi padaju odozgo. Hvataj samo one koji pripadaju traženom pravilu, a ostale pusti da prođu.',
+		igraKontrole: 'Pomjeraj korpu prstom, mišem ili strelicama ← →. Razmak pauzira igru.',
+		igraNivo: (n) => `Nivo ${n}`,
+		igraNapredakNivoa: (a, b, uk) => `Uhvaćeno ${a}/${b} do sljedećeg nivoa · ukupno ${uk} nivoa`,
+		igraHarfPobjeda: 'Prešao si sva pravila – harfovi ti više nisu strani!',
+		igraHarfKraj: (n) => `Stigao si do ${n}. nivoa. Ponovi harfove i pokušaj opet.`,
+		igraTrkaNaslov: 'Trka kroz pravila',
+		igraTrkaUvod: (s) =>
+			`Prepoznaj pravilo u istaknutom dijelu riječi. Imaš ${s} sekundi po pitanju i tri srca – brži odgovor nosi više bodova.`,
+		igraTrkaPitanje: 'Koje je pravilo u istaknutom dijelu?',
+		igraTrkaKraj: (t, uk, niz) => `Tačnih odgovora: ${t} od ${uk}. Najduži niz: ${niz}.`,
+		igraMemNaslov: 'Spoji parove',
+		igraMemUvod: 'Okreni dvije kartice i spoji naziv pravila s primjerom iz lekcije.',
+		igraMemBravo: 'Svi parovi spojeni!',
+		igraMemKraj: (p) => `Spojio si svih ${p} parova.`,
+		igraParova: (n) => `${n} parova`,
+		igraParovaKratko: 'parova',
+		igraTezina: 'Težina',
+		igraKarta: (n) => `Kartica ${n}`,
+		igre: {
+			harfovi: {
+				naslov: 'Uhvati harf',
+				opis: 'Arkada: hvataj harfove koji pripadaju traženom pravilu, a ostale pusti da prođu.',
+				kako: [
+					'Šest nivoa: idgam, iklab, izhar, kalkala i ihfa',
+					'Pogrešan harf oduzima srce, novi nivo vraća jedno',
+					'Niz pogodaka množi bodove'
+				],
+				uputa: 'Pomjeraj korpu prstom, mišem ili strelicama ← →. Razmak pauzira igru.'
+			},
+			trka: {
+				naslov: 'Trka kroz pravila',
+				opis: 'Riječ iz lekcije s istaknutim dijelom – pogodi koje je pravilo prije nego istekne vrijeme.',
+				kako: [
+					'12 sekundi po pitanju',
+					'Primjeri i objašnjenja iz svih lekcija',
+					'Brži odgovor nosi više bodova'
+				],
+				uputa: 'Poslije svakog odgovora dobiješ objašnjenje i link na lekciju.'
+			},
+			memorija: {
+				naslov: 'Spoji parove',
+				opis: 'Memorija: spoji naziv pravila s primjerom u kojem se to pravilo nalazi.',
+				kako: [ '6 ili 8 parova', 'Svaki par nosi objašnjenje', 'Cilj je manje poteza i kraće vrijeme' ],
+				uputa: 'Odlična igra za mekteb: može se igrati i na projektoru, u dvije ekipe.'
+			}
+		},
+
 		/* ----- admin ----- */
 		navAdmin: 'Admin',
 		adminEyebrow: 'Administracija',
@@ -807,6 +889,83 @@ const UI = {
 		rangNoPoints: 'You have no points in this period yet – take a quiz!',
 		rangGuest: 'Log in or create an account so your results appear on the list too.',
 		rangRules: 'Repeating the same quiz does not add points – only your best result counts. The week starts on Monday.',
+
+		/* ----- games ----- */
+		navIgra: 'Game',
+		igraEyebrow: 'Play and learn',
+		igraNaslov: 'Game room',
+		igraOpis:
+			'Three short games for practising the rules of tajweed: catch the letters of a rule, spot the rule in a word, and match the pairs. The letters and examples come from the lessons themselves.',
+		igraNapomena:
+			'The games are an extra to the lessons and do not affect your progress or the leaderboard – results are kept in this browser only.',
+		igraBezRekorda: 'No record yet',
+		igraZvukUkljucen: 'Sound on',
+		igraZvukIskljucen: 'Sound off',
+		igraKreni: 'Play',
+		igraPonovo: 'Play again',
+		igraNastavi: 'Continue',
+		igraPauza: 'Paused',
+		igraDalje: 'Next',
+		igraRezultat: 'Result',
+		igraBodovi: 'points',
+		igraPotezi: 'moves',
+		igraSrca: (n) => `Lives left: ${n}`,
+		igraLekcija: (n) => `lesson ${n}`,
+		igraRekordBodovi: (n) => `Best score: ${n} points`,
+		igraRekordMem: (p, v) => `Best: ${p} moves, ${v}`,
+		igraKraj: 'Game over',
+		igraPobjeda: 'Well done, you cleared every level!',
+		igraBravo: 'Correct!',
+		igraNetacno: 'Not quite.',
+		igraIsteklo: 'Time is up.',
+		igraTacnoJe: (naziv) => `The answer is: ${naziv}.`,
+		igraOtvoriLekciju: (n) => `Open lesson ${n}`,
+		igraPoslusaj: 'Listen',
+		igraUhvati: 'Catch the letters of',
+		igraHarfNaslov: 'Catch the letter',
+		igraHarfUvod: 'Letters fall from the top. Catch only those that belong to the rule shown, and let the others pass.',
+		igraKontrole: 'Move the basket with your finger, the mouse or the ← → keys. Space pauses the game.',
+		igraNivo: (n) => `Level ${n}`,
+		igraNapredakNivoa: (a, b, uk) => `Caught ${a}/${b} to the next level · ${uk} levels in total`,
+		igraHarfPobjeda: 'You cleared every rule – these letters hold no secrets for you!',
+		igraHarfKraj: (n) => `You reached level ${n}. Revise the letters and try again.`,
+		igraTrkaNaslov: 'Race through the rules',
+		igraTrkaUvod: (s) =>
+			`Spot the rule in the highlighted part of the word. You have ${s} seconds per question and three lives – a faster answer scores more.`,
+		igraTrkaPitanje: 'Which rule is in the highlighted part?',
+		igraTrkaKraj: (t, uk, niz) => `Correct answers: ${t} of ${uk}. Longest streak: ${niz}.`,
+		igraMemNaslov: 'Match the pairs',
+		igraMemUvod: 'Turn over two cards and match the name of a rule with an example from the lesson.',
+		igraMemBravo: 'All pairs matched!',
+		igraMemKraj: (p) => `You matched all ${p} pairs.`,
+		igraParova: (n) => `${n} pairs`,
+		igraParovaKratko: 'pairs',
+		igraTezina: 'Difficulty',
+		igraKarta: (n) => `Card ${n}`,
+		igre: {
+			harfovi: {
+				naslov: 'Catch the letter',
+				opis: 'An arcade game: catch the letters that belong to the rule shown and let the rest fall.',
+				kako: [
+					'Six levels: idgham, iqlab, idhhar, qalqalah and ikhfa',
+					'A wrong letter costs a life, a new level gives one back',
+					'A streak multiplies your points'
+				],
+				uputa: 'Move the basket with your finger, the mouse or the ← → keys. Space pauses the game.'
+			},
+			trka: {
+				naslov: 'Race through the rules',
+				opis: 'A word from the lessons with one part highlighted – name the rule before the time runs out.',
+				kako: [ '12 seconds per question', 'Examples and notes from every lesson', 'A faster answer scores more' ],
+				uputa: 'After every answer you get an explanation and a link to the lesson.'
+			},
+			memorija: {
+				naslov: 'Match the pairs',
+				opis: 'A memory game: match the name of a rule with an example that contains it.',
+				kako: [ '6 or 8 pairs', 'Every pair comes with an explanation', 'Aim for fewer moves and less time' ],
+				uputa: 'A good game for the mekteb: it works on a projector, with two teams.'
+			}
+		},
 
 		/* ----- admin ----- */
 		navAdmin: 'Admin',
