@@ -1,12 +1,28 @@
 import React from 'react';
 import videos from '../Data/videos.json';
 import { useUI } from '../i18n/ui';
+import { platforma } from '../native';
+
+/* Na iOS-u stranica ide s izvora `capacitor://localhost`, a WKWebView za takvu
+   shemu ne šalje Referer – YouTube tada odbije player s greškom 153. Zato se
+   tamo ugrađuje public/video.html s vlastitog https izvora, pa on ugrađuje
+   YouTube. Web i Android imaju http(s) izvor i idu ravno na YouTube. */
+const POSREDNIK = (process.env.REACT_APP_API_URL || '').replace(/\/$/, '');
+
+function izvorVidea(video) {
+	const params = new URLSearchParams({ rel: '0' });
+	if (video.list) params.set('list', videos.playlist);
+
+	if (platforma() === 'ios' && POSREDNIK) {
+		params.set('id', video.id);
+		return `${POSREDNIK}/video.html?${params.toString()}`;
+	}
+	return `https://www.youtube.com/embed/${video.id}?${params.toString()}`;
+}
 
 /* Responzivni YouTube embed (16:9) */
 export function VideoEmbed({ video, title }) {
-	const params = new URLSearchParams({ rel: '0' });
-	if (video.list) params.set('list', videos.playlist);
-	const src = `https://www.youtube.com/embed/${video.id}?${params.toString()}`;
+	const src = izvorVidea(video);
 	return (
 		<div className="video-embed">
 			<iframe
