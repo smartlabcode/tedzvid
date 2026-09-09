@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaGraduationCap, FaLock, FaCheck, FaRedo, FaClipboardCheck, FaSignInAlt, FaUserPlus } from 'react-icons/fa';
+import { FaGraduationCap, FaLock, FaCheck, FaRedo, FaLayerGroup, FaSignInAlt, FaUserPlus } from 'react-icons/fa';
 import { useAuth } from '../auth/AuthContext';
 import {
 	ZAVRSNI,
 	UKUPNO_ZAVRSNI,
 	jePolozenZavrsni,
-	trenutnaLekcija,
-	putanjaKviza,
+	trenutnaGrupa,
+	putanjaGrupnog,
 	putanjaZavrsnog
 } from '../auth/progress';
 import { useUI } from '../i18n/ui';
@@ -19,7 +19,7 @@ export default function FinalQuizCard() {
 	const p = progress[ZAVRSNI];
 	const polozen = jePolozenZavrsni(progress);
 	const locked = !loading && !isUnlocked(ZAVRSNI);
-	const trenutna = trenutnaLekcija(progress) || 1;
+	const trenutna = trenutnaGrupa(progress) || 1;
 
 	return (
 		<article className={'lessons__final' + (locked ? ' is-locked' : '') + (polozen ? ' is-done' : '')}>
@@ -43,8 +43,8 @@ export default function FinalQuizCard() {
 				<div className="lesson-card__actions">
 					{locked ? (
 						user ? (
-							<Link to={putanjaKviza(trenutna)} className="btn-t btn-t--navy btn-t--sm">
-								<FaClipboardCheck /> {ui.cardGoQuiz(trenutna)}
+							<Link to={putanjaGrupnog(trenutna)} className="btn-t btn-t--navy btn-t--sm">
+								<FaLayerGroup /> {ui.grupaKvizNaslov(trenutna)}
 							</Link>
 						) : (
 							<React.Fragment>

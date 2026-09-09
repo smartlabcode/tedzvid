@@ -7,8 +7,10 @@ import {
 	FaRedo,
 	FaSignOutAlt,
 	FaArrowRight,
+	FaChalkboardTeacher,
 	FaClipboardCheck,
 	FaGraduationCap,
+	FaLayerGroup,
 	FaTrophy,
 	FaUserShield
 } from 'react-icons/fa';
@@ -18,15 +20,21 @@ import PageBand from './PageBand';
 import data from '../Data/lessons.json';
 import { useAuth } from '../auth/AuthContext';
 import {
-	PROLAZ,
+	PROLAZ_GRUPA,
 	UKUPNO,
+	UKUPNO_GRUPA,
 	UKUPNO_ZAVRSNI,
 	BROJ_LEKCIJA,
+	BROJ_GRUPA,
+	GRUPE,
 	ZAVRSNI,
 	jePolozenZavrsni,
-	trenutnaLekcija,
-	putanjaLekcije,
+	jePolozenaGrupa,
+	kljucGrupe,
+	trenutnaGrupa,
+	putanjaGrupnog,
 	putanjaKviza,
+	putanjaMualima,
 	putanjaZavrsnog
 } from '../auth/progress';
 import { useLang, DEFAULT_LANG } from '../i18n/LanguageContext';
@@ -34,9 +42,9 @@ import { useUI } from '../i18n/ui';
 
 const pick = (field, lang) => (typeof field === 'string' ? field : field[lang] || field[DEFAULT_LANG]);
 
-/* Moj napredak: sažetak + status svake lekcije i završnog kviza + odjava */
+/* Moj napredak: sažetak + status lekcija, kvizova grupa i završnog kviza + odjava */
 export default function ProfilePage() {
-	const { user, loading, progress, isAdmin, isUnlocked, logout } = useAuth();
+	const { user, loading, progress, isAdmin, isMualim, isUnlocked, logout } = useAuth();
 	const { lang } = useLang();
 	const ui = useUI();
 	const history = useHistory();
@@ -49,8 +57,8 @@ export default function ProfilePage() {
 
 	const lekcije = data['lekcije'].reduce((acc, curr) => acc.concat(curr), []);
 	const polozenih = lekcije.filter((_, i) => progress[String(i + 1)] && progress[String(i + 1)].polozeno).length;
-	const trenutna = trenutnaLekcija(progress);
-	const otkljucanih = isAdmin || trenutna === null ? BROJ_LEKCIJA : trenutna;
+	const polozenihGrupa = GRUPE.filter((g) => jePolozenaGrupa(progress, g.broj)).length;
+	const trenutna = trenutnaGrupa(progress);
 	const zavrsniOtkljucan = isUnlocked(ZAVRSNI);
 	const zavrsniPolozen = jePolozenZavrsni(progress);
 	const pz = progress[ZAVRSNI];
@@ -97,7 +105,7 @@ export default function ProfilePage() {
 			<PageBand
 				eyebrow={ui.profilEyebrow + (user && user.korisnicko ? ' · @' + user.korisnicko : '')}
 				title={user ? user.ime : '…'}
-				text={ui.profilText(PROLAZ, UKUPNO)}
+				text={ui.profilText(PROLAZ_GRUPA, UKUPNO_GRUPA)}
 			/>
 			<main className="profil">
 				<div className="wrap">
@@ -113,16 +121,16 @@ export default function ProfilePage() {
 								</div>
 								<div className="profil__stat">
 									<b>
-										{otkljucanih}
-										<small>/{BROJ_LEKCIJA}</small>
+										{polozenihGrupa}
+										<small>/{BROJ_GRUPA}</small>
 									</b>
-									<span>{ui.profilUnlocked}</span>
+									<span>{ui.profilGrupe}</span>
 								</div>
 								<div className="profil__stat profil__stat--next">
 									<span>{ui.profilNext}</span>
 									{trenutna ? (
-										<Link to={putanjaLekcije(trenutna)} className="btn-t btn-t--gold btn-t--sm">
-											{ui.kvizNextLesson(trenutna)} – {pick(lekcije[trenutna - 1].title, lang).trim()}
+										<Link to={putanjaGrupnog(trenutna)} className="btn-t btn-t--gold btn-t--sm">
+											<FaLayerGroup /> {ui.grupaKvizNaslov(trenutna)}
 											<FaArrowRight />
 										</Link>
 									) : !zavrsniPolozen ? (
@@ -137,20 +145,35 @@ export default function ProfilePage() {
 							</div>
 
 							<ol className="profil__list">
-								{lekcije.map((lekcija, i) => {
-									const n = i + 1;
-									const p = progress[String(n)];
-									return renderRow(
-										n,
-										n,
-										pick(lekcija.title, lang).trim(),
-										pick(lekcija.subtitle, lang),
-										statusZa(p, isUnlocked(n)),
-										p,
-										UKUPNO,
-										putanjaKviza(n)
-									);
-								})}
+								{GRUPE.map((g) => (
+									<React.Fragment key={'g' + g.broj}>
+										{g.lekcije.map((n) => {
+											const lekcija = lekcije[n - 1];
+											const p = progress[String(n)];
+											return renderRow(
+												n,
+												n,
+												pick(lekcija.title, lang).trim(),
+												pick(lekcija.subtitle, lang),
+												statusZa(p, true),
+												p,
+												UKUPNO,
+												putanjaKviza(n)
+											);
+										})}
+										{renderRow(
+											kljucGrupe(g.broj),
+											null,
+											ui.grupaKvizNaslov(g.broj),
+											ui.grupaNaslov(g.od, g.do),
+											statusZa(progress[kljucGrupe(g.broj)], isUnlocked(kljucGrupe(g.broj))),
+											progress[kljucGrupe(g.broj)],
+											UKUPNO_GRUPA,
+											putanjaGrupnog(g.broj),
+											<FaLayerGroup />
+										)}
+									</React.Fragment>
+								))}
 								{renderRow(
 									ZAVRSNI,
 									null,
@@ -168,7 +191,12 @@ export default function ProfilePage() {
 								<Link to="/rang-lista" className="btn-t btn-t--gold">
 									<FaTrophy /> {ui.navRang}
 								</Link>
-								{user.uloga === 'admin' && (
+								{isMualim && (
+									<Link to={putanjaMualima} className="btn-t btn-t--navy">
+										<FaChalkboardTeacher /> {ui.navMualim}
+									</Link>
+								)}
+								{isAdmin && (
 									<Link to="/admin" className="btn-t btn-t--navy">
 										<FaUserShield /> {ui.navAdmin}
 									</Link>

@@ -1408,6 +1408,43 @@ textarea.field {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
+
+  /* lekcije su podijeljene u grupe (4+4+4+4+6); iza svake stoji kartica grupnog kviza */
+  &__grupe.is-loading {
+    opacity: 0.55;
+    pointer-events: none;
+  }
+
+  &__grupa + &__grupa {
+    margin-top: 44px;
+  }
+
+  &__grupa-head {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    margin: 0 0 16px;
+
+    h2 {
+      margin: 0;
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      letter-spacing: 0.03em;
+      color: var(--navy);
+    }
+  }
+
+  &__grupa-oznaka {
+    flex: none;
+    padding: 5px 12px;
+    border-radius: 999px;
+    background: var(--gold-100);
+    color: var(--gold-600);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
 }
 
 .lesson-card {
@@ -1874,6 +1911,53 @@ textarea.field {
   }
 }
 
+/* kviz grupe – svijetla kartica, da završni kviz ostane jedini tamni "cilj" */
+.lessons__final--grupa {
+  margin-top: 20px;
+  background: #fff;
+  background-image: none;
+  border: 1px solid var(--gold-200);
+  color: var(--navy);
+
+  .eyebrow {
+    color: var(--gold-600);
+  }
+
+  h3 {
+    color: var(--navy);
+  }
+
+  .lessons__final-text {
+    color: var(--muted);
+  }
+
+  .lessons__final-hint {
+    color: var(--muted);
+  }
+
+  .btn-t--ghost {
+    background: transparent;
+    border-color: var(--line);
+    color: var(--navy);
+
+    &:hover {
+      border-color: var(--gold-200);
+      color: var(--gold-600);
+    }
+  }
+
+  &.is-locked {
+    background: var(--cream-2);
+    border-style: dashed;
+    border-color: var(--line);
+
+    .lessons__final-icon {
+      background: #e7e1d4;
+      color: var(--muted);
+    }
+  }
+}
+
 /* rang lista */
 .rang {
   position: relative;
@@ -2248,6 +2332,11 @@ textarea.field {
       color: #9c2f28;
     }
 
+    &--grupa {
+      width: 46px;
+      color: var(--gold-600);
+    }
+
     &--final {
       width: 52px;
     }
@@ -2343,7 +2432,127 @@ textarea.field {
   }
 }
 
-/* zaključana lekcija – stranica s objašnjenjem */
+/* mualim: kviz od kombinacije lekcija */
+.mualim {
+  position: relative;
+  margin-top: -52px;
+  padding-bottom: 96px;
+
+  &__builder {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: 20px;
+    align-items: start;
+  }
+
+  &__blok {
+    padding: 24px 26px 26px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    box-shadow: var(--shadow-sm);
+
+    h3 {
+      margin: 0 0 14px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+  }
+
+  &__precice {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  &__lekcije {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__lekcija {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    padding: 9px 12px;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: border-color 0.16s ease, background 0.16s ease;
+
+    input {
+      flex: none;
+      accent-color: var(--navy);
+    }
+
+    b {
+      flex: none;
+      min-width: 22px;
+      color: var(--gold-600);
+    }
+
+    span {
+      font-size: 0.84rem;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: var(--navy);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    &.is-on {
+      background: var(--gold-100);
+      border-color: var(--gold-200);
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 12px;
+    font-size: 0.82rem;
+    color: var(--muted);
+  }
+
+  &__prazno {
+    margin: 0 0 12px;
+    font-size: 0.82rem;
+    color: #9c2f28;
+  }
+
+  &__nazad {
+    margin-bottom: 18px;
+  }
+
+  &__kviz .kviz {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .mualim__builder {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .mualim__lekcije {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* zaključan kviz – stranica s objašnjenjem */
 .gate {
   position: relative;
   margin-top: -52px;

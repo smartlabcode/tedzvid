@@ -19,7 +19,7 @@ function Home() {
 			<PageBand eyebrow={ui.lessonsEyebrow} title={ui.lessonsTitle} text={ui.lessonsText} />
 			<main className="lessons">
 				<div className="wrap">
-					<HomeFirst start={0} stop={23} />
+					<HomeFirst />
 					<FinalQuizCard />
 					<BonusKartica vrsta="fatiha" />
 					<BonusKartica vrsta="kursij" />

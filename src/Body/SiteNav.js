@@ -1,6 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { FaBars, FaTimes, FaArrowLeft, FaArrowRight, FaUserCircle, FaSignOutAlt, FaUserShield } from 'react-icons/fa';
+import {
+	FaBars,
+	FaTimes,
+	FaArrowLeft,
+	FaArrowRight,
+	FaUserCircle,
+	FaSignOutAlt,
+	FaChalkboardTeacher,
+	FaUserShield
+} from 'react-icons/fa';
 import Logo from './Logo';
 import LangSwitch from './LangSwitch';
 import { useAuth } from '../auth/AuthContext';
@@ -27,6 +36,8 @@ export default function SiteNav({ active, cta }) {
 		{ key: 'kontakt', to: '/#kontakt', label: ui.navKontakt }
 	];
 	const jeAdmin = !!(user && user.uloga === 'admin');
+	/* mualimu (i adminu) stoji na raspolaganju stranica za pravljenje kviza */
+	const jeMualim = !!(user && (user.uloga === 'mualim' || user.uloga === 'admin'));
 
 	useEffect(
 		() => {
@@ -53,9 +64,12 @@ export default function SiteNav({ active, cta }) {
 	const action = cta || { to: '/lekcije', label: ui.navLekcije };
 	const ime = user ? user.ime.split(' ')[0] : null;
 
-	/* u mobilnom meniju administrator dobiva i stavku Admin (u traci je to ikona) */
+	/* u mobilnom meniju mualim i administrator dobivaju i svoje stavke (u traci su to ikone) */
+	const dodatni = [];
+	if (jeMualim) dodatni.push({ key: 'mualim', to: '/mualim', label: ui.navMualim });
+	if (jeAdmin) dodatni.push({ key: 'admin', to: '/admin', label: ui.navAdmin });
 	const renderLinks = (mobile) =>
-		LINKS.concat(mobile && jeAdmin ? [ { key: 'admin', to: '/admin', label: ui.navAdmin } ] : []).map((l) => (
+		LINKS.concat(mobile ? dodatni : []).map((l) => (
 			<li key={l.key}>
 				<Link to={l.to} className={active === l.key ? 'is-active' : ''}>
 					{l.label}
@@ -68,7 +82,7 @@ export default function SiteNav({ active, cta }) {
 		user ? (
 			<Link
 				to="/profil"
-				className={'site-nav__user' + (jeAdmin ? ' site-nav__user--icon' : '') + (active === 'racun' ? ' is-active' : '')}
+				className={'site-nav__user' + (jeMualim ? ' site-nav__user--icon' : '') + (active === 'racun' ? ' is-active' : '')}
 				title={ui.navProfil}
 			>
 				<FaUserCircle />
@@ -96,6 +110,16 @@ export default function SiteNav({ active, cta }) {
 					</nav>
 					<div className="site-nav__actions">
 						<LangSwitch />
+						{jeMualim && (
+							<Link
+								to="/mualim"
+								className={'site-nav__admin' + (active === 'mualim' ? ' is-active' : '')}
+								title={ui.navMualim}
+								aria-label={ui.navMualim}
+							>
+								<FaChalkboardTeacher />
+							</Link>
+						)}
 						{jeAdmin && (
 							<Link
 								to="/admin"

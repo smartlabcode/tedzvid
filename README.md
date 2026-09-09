@@ -15,8 +15,9 @@ Produkcija (Railway): `npm run build`, zatim `npm run serve` – isti Node serve
 ### Korisnički računi i napredak
 
 - Registracija (`/registracija`: ime, korisničko ime, email, lozinka), prijava (`/prijava`, email ili korisničko ime), pregled napretka (`/profil`). Korisničko ime (3–20 znakova, jedinstveno) prikazuje se na rang listi.
-- Nakon svake lekcije je kviz od 10 pitanja (`src/Data/Quiz/L{n}.json`, bs + en). Lekcija 14 ima dva dijela; kviz je na kraju drugog dijela (`/lekcija14_2`).
-- Lekcije se otključavaju redom: lekcija N+1 je otključana kad je položen kviz lekcije N (najmanje 7 od 10 tačnih). Gost vidi samo lekciju 1. Adminu su sve lekcije i završni kviz uvijek otključani (provjera i na klijentu i na serveru).
+- **Sve lekcije su otvorene svima, bez prijave.** Zaključavaju se samo kvizovi grupa i završni kviz (provjera i na klijentu i na serveru).
+- Nakon svake lekcije je kviz od 10 pitanja (`src/Data/Quiz/L{n}.json`, bs + en) – vježba koja ništa ne otključava. Lekcija 14 ima dva dijela; kviz je na kraju drugog dijela (`/lekcija14_2`).
+- Lekcije su podijeljene u pet grupa – **4 + 4 + 4 + 4 + 6** (`VELICINE_GRUPA` u `src/auth/progress.js`, `BROJ_GRUPA` u `server/index.js`) – i iza svake grupe stoji kviz grupe (`/kviz-grupa1` … `/kviz-grupa5`, ključ napretka `g1`…`g5`): 20 pitanja nasumično izvučenih iz bazena cijele grupe, prolaz 14/20. Bazen jedne lekcije je njen kviz + njen dio završnog kviza (`src/Data/Quiz/bazen.js`), pa je svaki pokušaj drugačiji. Kviz grupe N+1 otključava se položenim kvizom grupe N; prvi je otvoren svima (napredak se čuva samo prijavljenima).
 - Uz svaki klikabilni primjer (riječ ili ajet) u lekcijama i vježbama stoji objašnjenje koje se dok zapis svira prikazuje kao oblačić uz istaknuti harf. Tekstovi žive u `src/Data/L{n}Data.json`, u polju `napomena` onog zapisa koji ima `url`:
 
 ```json
@@ -28,10 +29,11 @@ Produkcija (Railway): `npm run build`, zatim `npm run serve` – isti Node serve
   Oblačić nikad ne prekriva ajet koji se uči, ni kad se prelama u više redova: ide iznad ili ispod cijelog tog ajeta, na stranu koja prekriva manje ostalog teksta. Ako ni tamo ne stane, skraćuje se i u njemu se skroluje. Na ekranima do 700px oblačić se usidri pri dnu iznad plejera, a stranica dobije toliko praznog prostora da ajet koji se uči stoji iznad njega. Korisnik ga može odvući mišem ili prstom; taj pomak vrijedi do osvježavanja stranice.
 
   Kad grupa ima više zapisa, a samo prvi ima `url` (vježbe i `V(...)` redovi), napomena ide na taj prvi zapis i pokriva sve pojave u ajetu, redom čitanja. Dozvoljeni `tip` (određuje natpis i boju oznake, prijevodi su u `src/i18n/ui.js` pod `napomenaTip`): `dugo`, `kratko`, `krupno`, `tanko`, `duzina`, `stajanje`, `uklapanje`, `nos`, `odskakanje`, `pretvaranje`, `skrivanje`, `cisto`, `napomena`. Sam oblačić crta `src/Player/Oblak.js`.
-- Završni kviz (`/zavrsni-kviz`): 100 pitanja iz svih lekcija (`src/Data/Quiz/zavrsni/L{n}.json`, 5 po lekciji za lekcije 1–12, 4 za 13–22), izmiješanim redoslijedom; otključan kad su položene sve lekcije, prolaz 70/100. Započeti kviz se pamti u sessionStorage.
+- Završni kviz (`/zavrsni-kviz`): 100 pitanja iz svih lekcija (`src/Data/Quiz/zavrsni/L{n}.json`, 5 po lekciji za lekcije 1–12, 4 za 13–22), izmiješanim redoslijedom; otključan kad su položeni svi kvizovi grupa (stariji korisnici koji su po ranijim pravilima prešli svih 22 lekcije zadržavaju pristup), prolaz 70/100. Započeti kviz se pamti u sessionStorage.
 - Rang lista (`/rang-lista`): sedmica (od ponedjeljka), mjesec i ukupno, po vremenu Europe/Sarajevo; bodovi = zbir najboljeg rezultata svakog kviza u periodu (ponavljanje ne donosi bodove). Admin i demo korisnik nisu na listi.
-- Ugrađeni računi (prijava korisničkim imenom): admin `admin` / `admin123!` (promijeniti preko `ADMIN_USER` / `ADMIN_PASSWORD`), demo `user` / `user123!` (isključiti s `DEMO_USER=0`). Admin panel `/admin`: sažetak i napredak svih korisnika.
-- Prag prolaza je `PROLAZ` u `src/auth/progress.js` (7/10, 70/100) i `PROLAZ_UDIO` u `server/index.js` – mijenjati na oba mjesta.
+- **Mualim** (uloga `mualim`; admin ima ista prava): svi kvizovi su mu otključani, a na `/mualim` sastavlja kviz od proizvoljne kombinacije lekcija (izbor lekcija + 10/20/30 ili sva pitanja). Izbor stoji u adresi (`/mualim?l=1,2,5&n=20`) pa se kviz može spremiti u zabilješke; rezultat se ne upisuje u napredak.
+- Ugrađeni računi (prijava korisničkim imenom): admin `admin` / `admin123!` (promijeniti preko `ADMIN_USER` / `ADMIN_PASSWORD`), mualim `mualim` / `mualim123!` (`MUALIM_USER` / `MUALIM_PASSWORD`), demo `user` / `user123!` (isključiti s `DEMO_USER=0`). Admin panel `/admin`: sažetak i napredak svih korisnika.
+- Prag prolaza je `PROLAZ` / `PROLAZ_GRUPA` / `PROLAZ_ZAVRSNI` u `src/auth/progress.js` (7/10, 14/20, 70/100) i `PROLAZ_UDIO` u `server/index.js` – mijenjati na oba mjesta.
 
 Server (`server/index.js`) nema vanjskih paketa. Korisnici se čuvaju u `DATA_DIR/users.json` (lozinke: scrypt), sesije su HMAC tokeni (30 dana).
 
@@ -45,14 +47,15 @@ Okruženje:
 | `BUILD_DIR`      | mapa s buildom                                        | `./build`       |
 | `ADMIN_USER`     | korisničko ime administratora                         | `admin`         |
 | `ADMIN_PASSWORD` | lozinka administratora (obavezno postaviti u produkciji) | `admin123!`   |
+| `MUALIM_USER`    | korisničko ime mualima                                | `mualim`        |
+| `MUALIM_PASSWORD`| lozinka mualima (obavezno postaviti u produkciji)      | `mualim123!`    |
 | `DEMO_USER`      | `0` isključuje demo korisnika user / user123!          | uključen        |
 
 Na Railwayu je disk privremen: da korisnici prežive novi deploy, montirati Volume i postaviti `DATA_DIR` na tu putanju (npr. `/data`), a `SESSION_SECRET` postaviti kao varijablu.
 
 ### Bonus lekcije: sura Jasin i Amme džuz
 
-Dvije bonus lekcije s kur'anskim tekstom otključavaju se tek kad su položeni kvizovi svih
-22 lekcije (isto pravilo kao završni kviz; adminu su otključane odmah):
+Bonus lekcije s kur'anskim tekstom otvorene su svima, kao i ostale lekcije:
 
 * `/jasin` – cijela sura Jasin, razložena po stranicama mushafa (440–445),
 * `/amme-dzuz` – trideseti (Amme) džuz: 37 sura (En-Nebe’ … En-Nas), sura po sura, svaka s besmelom.

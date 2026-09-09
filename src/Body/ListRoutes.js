@@ -8,7 +8,8 @@ import ProfilePage from './ProfilePage';
 import FinalQuizPage from './FinalQuizPage';
 import LeaderboardPage from './LeaderboardPage';
 import AdminPage from './AdminPage';
-import LessonGate from './LessonGate';
+import MualimPage from './MualimPage';
+import GroupQuizPage from './GroupQuizPage';
 import BonusPage from './BonusPage';
 import IgraPage from '../Igra/IgraPage';
 import {
@@ -39,6 +40,7 @@ import {
 import ReactGA from 'react-ga';
 import NowPlayingBar from '../Player/NowPlayingBar';
 import { useLang } from '../i18n/LanguageContext';
+import { GRUPE, putanjaGrupnog } from '../auth/progress';
 import { Route, useHistory } from 'react-router-dom';
 
 const LEKCIJE = {
@@ -102,6 +104,15 @@ function ListRoutes() {
 			<Route path="/igra" exact render={() => <IgraPage />} />
 			<Route path="/igra/:igra" exact render={({ match }) => <IgraPage igra={match.params.igra} />} />
 			<Route path="/admin" exact component={AdminPage} />
+			<Route path="/mualim" exact component={MualimPage} />
+			{GRUPE.map((g) => (
+				<Route
+					key={g.broj}
+					path={putanjaGrupnog(g.broj)}
+					exact
+					render={() => <GroupQuizPage broj={g.broj} />}
+				/>
+			))}
 			{Object.keys(LEKCIJE).map((key) => {
 				const Lekcija = LEKCIJE[key];
 				return (
@@ -109,13 +120,11 @@ function ListRoutes() {
 						key={key}
 						path={'/lekcija' + key}
 						render={() => (
-							/* zaključana lekcija prikazuje objašnjenje umjesto sadržaja */
-							<LessonGate lekcija={key}>
-								<div className="lekcija-page">
-									<Lekcija />
-									<NowPlayingBar />
-								</div>
-							</LessonGate>
+							/* lekcije su otvorene svima – zaključavaju se samo kvizovi grupa */
+							<div className="lekcija-page">
+								<Lekcija />
+								<NowPlayingBar />
+							</div>
 						)}
 					/>
 				);

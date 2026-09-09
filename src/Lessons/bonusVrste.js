@@ -24,10 +24,7 @@ export default function vrstaTekstovi(ui, vrsta) {
 			nema: ui.jasinNemaNaStranici,
 			oznaka: (n) => ui.jasinOznaka(n),
 			karticaTekst: ui.jasinKarticaTekst,
-			otvori: ui.jasinOtvori,
-			zakljucanNaslov: ui.jasinZakljucanNaslov,
-			zakljucanKorisnik: ui.jasinZakljucanKorisnik,
-			zakljucanGost: ui.jasinZakljucanGost
+			otvori: ui.jasinOtvori
 		};
 	}
 
@@ -44,9 +41,6 @@ export default function vrstaTekstovi(ui, vrsta) {
 		nema: ui.ammeNemaUSuri,
 		oznaka: (n, ime) => ui.ammeOznaka(ime, n),
 		karticaTekst: ui.ammeKarticaTekst,
-		otvori: ui.ammeOtvori,
-		zakljucanNaslov: ui.ammeZakljucanNaslov,
-		zakljucanKorisnik: ui.ammeZakljucanKorisnik,
-		zakljucanGost: ui.ammeZakljucanGost
+		otvori: ui.ammeOtvori
 	};
 }

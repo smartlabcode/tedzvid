@@ -14,13 +14,15 @@
  *   POST /api/register  { ime, korisnicko, email, lozinka } → { token, user }
  *   POST /api/login     { email, lozinka }       → { token, user }   (email ili korisničko ime)
  *   GET  /api/me        (Authorization: Bearer)  → { user }
- *   POST /api/progress  { lekcija, tacno }       → { user }   (lekcija: 1–22 ili 'zavrsni')
+ *   POST /api/progress  { lekcija, tacno }       → { user }   (lekcija: 1–22, 'g1'–'g5' ili 'zavrsni')
  *   GET  /api/leaderboard?period=sedmica|mjesec|sve → { period, od, lista, moj }
  *   GET  /api/admin/users (samo admin)          → { sazetak, korisnici }
  *
  * Ugrađeni računi (prijava korisničkim imenom umjesto emaila):
  *   admin  – ADMIN_USER / ADMIN_PASSWORD (podrazumijevano admin / admin123! – promijeniti u produkciji);
- *            adminu su sve lekcije i završni kviz uvijek otključani
+ *            adminu su svi kvizovi uvijek otključani i ima mualimova prava
+ *   mualim – MUALIM_USER / MUALIM_PASSWORD (podrazumijevano mualim / mualim123!);
+ *            mualimu su svi kvizovi otključani i može praviti kviz od kombinacije lekcija
  *   user   – demo korisnik user / user123! (isključiti s DEMO_USER=0)
  *   GET  /api/health                             → { ok: true }
  */
@@ -42,14 +44,19 @@ const SECRET_FILE = path.join(DATA_DIR, 'secret');
 const TOKEN_TRAJANJE = 30 * 24 * 60 * 60 * 1000; /* 30 dana */
 const BROJ_LEKCIJA = 22;
 const UKUPNO_PITANJA = 10;
-const PROLAZ_UDIO = 0.7; /* udio tačnih odgovora za prolaz (7/10 po lekciji, 70/100 na završnom) */
+const PROLAZ_UDIO = 0.7; /* udio tačnih odgovora za prolaz (7/10 po lekciji, 14/20 na grupnom, 70/100 na završnom) */
 const ZAVRSNI = 'zavrsni'; /* ključ završnog kviza u napretku */
 const UKUPNO_ZAVRSNI = 100;
+/* lekcije su podijeljene u grupe 4+4+4+4+6; kviz grupe nosi ključ 'g1'…'g5' (mora pratiti src/auth/progress.js) */
+const BROJ_GRUPA = 5;
+const UKUPNO_GRUPA = 20;
 const MAX_BODY = 64 * 1024;
 const TZ = 'Europe/Sarajevo'; /* sedmica/mjesec na rang listi računaju se po lokalnom vremenu */
 const RANG_LIMIT = 25;
 const ADMIN_USER = String(process.env.ADMIN_USER || 'admin').trim().toLowerCase();
 const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || 'admin123!';
+const MUALIM_USER = String(process.env.MUALIM_USER || 'mualim').trim().toLowerCase();
+const MUALIM_PASSWORD = process.env.MUALIM_PASSWORD || 'mualim123!';
 const DEMO_USER = 'user';
 const DEMO_PASSWORD = 'user123!';
 const SEED_DEMO = process.env.DEMO_USER !== '0';
@@ -264,13 +271,23 @@ function jePolozena(user, key) {
 	return !!(p && p.polozeno);
 }
 
-/* Lekcija N je otključana ako je prva ili ako je položen kviz lekcije N-1;
-   završni kviz kad je položena posljednja lekcija. Adminu je sve uvijek otključano. */
+/* 'g3' → 3; sve ostalo → 0 */
+const brojGrupe = (key) => (/^g[1-9][0-9]*$/.test(String(key)) ? parseInt(String(key).slice(1), 10) : 0);
+const jeMualim = (user) => user.uloga === 'mualim' || user.uloga === 'admin';
+const svePolozeneGrupe = (user) => {
+	for (let b = 1; b <= BROJ_GRUPA; b++) if (!jePolozena(user, 'g' + b)) return false;
+	return true;
+};
+
+/* Lekcije su otvorene svima – zaključavaju se samo kvizovi: kviz grupe N traži položen kviz grupe N-1,
+   a završni sve grupne kvizove. Mualimu i adminu je sve otključano.
+   Stariji korisnici koji su po ranijim pravilima prešli svih 22 lekcije zadržavaju pristup završnom. */
 function jeOtkljucana(user, key) {
-	if (user.uloga === 'admin') return true;
-	if (key === ZAVRSNI) return jePolozena(user, BROJ_LEKCIJA);
-	if (key <= 1) return true;
-	return jePolozena(user, key - 1);
+	if (jeMualim(user)) return true;
+	if (key === ZAVRSNI) return svePolozeneGrupe(user) || jePolozena(user, BROJ_LEKCIJA);
+	const g = brojGrupe(key);
+	if (g) return g <= 1 || jePolozena(user, 'g' + (g - 1));
+	return true;
 }
 
 /* ---------- rang lista ---------- */
@@ -334,7 +351,8 @@ function dogadjajiKorisnika(u) {
 	if (Array.isArray(u.dogadjaji) && u.dogadjaji.length) return u.dogadjaji;
 	return Object.keys(u.progress || {}).map((k) => {
 		const p = u.progress[k];
-		return { k, t: p.najbolje || 0, u: k === ZAVRSNI ? UKUPNO_ZAVRSNI : UKUPNO_PITANJA, d: p.datum };
+		const ukupno = k === ZAVRSNI ? UKUPNO_ZAVRSNI : brojGrupe(k) ? UKUPNO_GRUPA : UKUPNO_PITANJA;
+		return { k, t: p.najbolje || 0, u: ukupno, d: p.datum };
 	});
 }
 
@@ -465,10 +483,12 @@ async function handleApi(req, res, url) {
 			return json(res, 400, { error: 'bad_request' });
 		}
 		const jeZavrsni = body.lekcija === ZAVRSNI;
-		const n = jeZavrsni ? ZAVRSNI : parseInt(body.lekcija, 10);
+		const grupa = brojGrupe(body.lekcija);
+		const n = jeZavrsni ? ZAVRSNI : grupa ? 'g' + grupa : parseInt(body.lekcija, 10);
 		const tacno = parseInt(body.tacno, 10);
-		const ukupno = jeZavrsni ? UKUPNO_ZAVRSNI : UKUPNO_PITANJA;
-		if (!jeZavrsni && !(n >= 1 && n <= BROJ_LEKCIJA)) return json(res, 400, { error: 'bad_lesson' });
+		const ukupno = jeZavrsni ? UKUPNO_ZAVRSNI : grupa ? UKUPNO_GRUPA : UKUPNO_PITANJA;
+		if (grupa && !(grupa >= 1 && grupa <= BROJ_GRUPA)) return json(res, 400, { error: 'bad_lesson' });
+		if (!jeZavrsni && !grupa && !(n >= 1 && n <= BROJ_LEKCIJA)) return json(res, 400, { error: 'bad_lesson' });
 		if (!(tacno >= 0 && tacno <= ukupno)) return json(res, 400, { error: 'bad_score' });
 		if (!jeOtkljucana(user, n)) return json(res, 403, { error: 'locked' });
 
@@ -612,7 +632,8 @@ function pregledKorisnika() {
 				if (t > zadnja) zadnja = t;
 			}
 			const progress = u.progress || {};
-			const polozeno = Object.keys(progress).filter((k) => k !== ZAVRSNI && progress[k].polozeno).length;
+			const polozeno = Object.keys(progress).filter((k) => /^[0-9]+$/.test(k) && progress[k].polozeno).length;
+			const grupe = Object.keys(progress).filter((k) => brojGrupe(k) && progress[k].polozeno).length;
 			const z = progress[ZAVRSNI];
 			return {
 				id: u.id,
@@ -624,6 +645,7 @@ function pregledKorisnika() {
 				zadnjaAktivnost: zadnja ? new Date(zadnja).toISOString() : null,
 				pokusaji: dog.length,
 				polozeno,
+				grupe,
 				zavrsni: z ? { najbolje: z.najbolje, polozeno: !!z.polozeno } : null,
 				progress
 			};
@@ -680,10 +702,14 @@ function osigurajRacun(email, ime, lozinka, uloga, azurirajLozinku) {
 
 function seedRacuni() {
 	let changed = osigurajRacun(ADMIN_USER, 'Administrator', ADMIN_PASSWORD, 'admin', !!process.env.ADMIN_PASSWORD);
+	changed = osigurajRacun(MUALIM_USER, 'Mualim', MUALIM_PASSWORD, 'mualim', !!process.env.MUALIM_PASSWORD) || changed;
 	if (SEED_DEMO) changed = osigurajRacun(DEMO_USER, 'Demo Korisnik', DEMO_PASSWORD, 'demo', false) || changed;
 	if (changed) saveUsers();
 	if (!process.env.ADMIN_PASSWORD) {
 		console.warn('UPOZORENJE: admin (' + ADMIN_USER + ') koristi podrazumijevanu lozinku – postavi ADMIN_PASSWORD.');
+	}
+	if (!process.env.MUALIM_PASSWORD) {
+		console.warn('UPOZORENJE: mualim (' + MUALIM_USER + ') koristi podrazumijevanu lozinku – postavi MUALIM_PASSWORD.');
 	}
 }
 

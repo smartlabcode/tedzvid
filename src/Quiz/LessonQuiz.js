@@ -5,6 +5,7 @@ import {
 	FaCheck,
 	FaClipboardCheck,
 	FaGraduationCap,
+	FaLayerGroup,
 	FaRedo,
 	FaSignInAlt,
 	FaTrophy,
@@ -12,14 +13,24 @@ import {
 } from 'react-icons/fa';
 import QUIZ from '../Data/Quiz';
 import ZAVRSNI_PITANJA from '../Data/Quiz/zavrsni';
+import { bazenGrupe } from '../Data/Quiz/bazen';
 import lessons from '../Data/lessons.json';
 import { useAuth } from '../auth/AuthContext';
 import {
 	PROLAZ,
+	PROLAZ_GRUPA,
 	PROLAZ_ZAVRSNI,
+	UKUPNO_GRUPA,
 	ZAVRSNI,
+	brojGrupe,
+	grupa,
+	grupaLekcije,
+	jeKljucGrupe,
 	jePolozena,
+	kljucGrupe,
+	sljedecaGrupa,
 	sljedecaLekcija,
+	putanjaGrupnog,
 	putanjaLekcije,
 	putanjaZavrsnog
 } from '../auth/progress';
@@ -45,7 +56,6 @@ export function Tekst({ children }) {
 }
 
 const LEKCIJE = lessons['lekcije'].reduce((acc, curr) => acc.concat(curr), []);
-const STORAGE_KEY = 'tedzvid-zavrsni-kviz';
 
 /* nasumičan redoslijed indeksa 0..n-1 (Fisher–Yates) */
 function promijesaj(n) {
@@ -60,70 +70,93 @@ function promijesaj(n) {
 	return a;
 }
 
-/* Započeti završni kviz se pamti u sessionStorage (osvježavanje stranice ne briše napredak) */
-function ucitajNastavak(n) {
+/* Započeti kviz se pamti u sessionStorage (osvježavanje stranice ne briše napredak) */
+function ucitajNastavak(kljuc, duzina, uBazenu) {
+	if (!kljuc) return null;
 	try {
-		const s = JSON.parse(window.sessionStorage.getItem(STORAGE_KEY));
+		const s = JSON.parse(window.sessionStorage.getItem(kljuc));
 		if (
 			s &&
 			Array.isArray(s.poredak) &&
-			s.poredak.length === n &&
+			s.poredak.length === duzina &&
+			s.poredak.every((i) => i >= 0 && i < uBazenu) &&
 			Array.isArray(s.rezultati) &&
 			s.rezultati.length === s.idx &&
 			s.idx > 0 &&
-			s.idx < n
+			s.idx < duzina
 		)
 			return s;
 	} catch (e) {}
 	return null;
 }
 
-function zapamti(stanje) {
+function zapamti(kljuc, stanje) {
+	if (!kljuc) return;
 	try {
-		if (stanje) window.sessionStorage.setItem(STORAGE_KEY, JSON.stringify(stanje));
-		else window.sessionStorage.removeItem(STORAGE_KEY);
+		if (stanje) window.sessionStorage.setItem(kljuc, JSON.stringify(stanje));
+		else window.sessionStorage.removeItem(kljuc);
 	} catch (e) {}
 }
 
 /*
  * Kviz: uvod → pitanja (jedno po jedno, s povratnom informacijom) → rezultat.
- * props.broj – broj lekcije ("14" i za drugi dio lekcije 14) ili "zavrsni" (100 pitanja iz svih lekcija).
- * Položen kviz (≥ prolaz tačnih) prijavljenom korisniku otključava sljedeću lekciju / završni kviz.
+ * props.broj – "1"…"22" (kviz lekcije, za vježbu), "g1"…"g5" (grupni kviz) ili "zavrsni".
+ * props.pitanja/props.koliko – mualimov kviz od proizvoljne kombinacije lekcija (rezultat se ne sprema).
+ * Položen grupni kviz prijavljenom korisniku otključava sljedeći grupni kviz, a posljednji završni.
  */
-export default function LessonQuiz({ broj }) {
+export default function LessonQuiz({ broj, pitanja: vlastitiBazen, koliko, naslov }) {
+	const jeVlastiti = !broj;
 	const jeZavrsni = broj === ZAVRSNI;
-	const n = jeZavrsni ? null : parseInt(broj, 10);
-	const kljuc = jeZavrsni ? ZAVRSNI : String(n);
-	const bazen = jeZavrsni ? ZAVRSNI_PITANJA : (QUIZ[n] && QUIZ[n].pitanja) || [];
-	const ukupno = bazen.length;
-	const prolaz = jeZavrsni ? PROLAZ_ZAVRSNI : PROLAZ;
+	const jeGrupni = !jeVlastiti && jeKljucGrupe(broj);
+	const g = jeGrupni ? brojGrupe(broj) : null;
+	const n = jeVlastiti || jeZavrsni || jeGrupni ? null : parseInt(broj, 10);
+
+	const kljuc = jeVlastiti ? null : jeZavrsni ? ZAVRSNI : jeGrupni ? broj : String(n);
+	const bazen = jeVlastiti
+		? vlastitiBazen || []
+		: jeZavrsni ? ZAVRSNI_PITANJA : jeGrupni ? bazenGrupe(g) : (QUIZ[n] && QUIZ[n].pitanja) || [];
+	/* grupni kviz izvlači 20 pitanja iz bazena cijele grupe; kviz lekcije ide redom */
+	const zeljeno = jeVlastiti ? koliko || bazen.length : jeGrupni ? UKUPNO_GRUPA : bazen.length;
+	const ukupno = Math.min(zeljeno, bazen.length);
+	const prolaz = jeZavrsni
+		? PROLAZ_ZAVRSNI
+		: jeGrupni ? PROLAZ_GRUPA : jeVlastiti ? Math.ceil(ukupno * 0.7) : PROLAZ;
+	const mijesa = jeZavrsni || jeGrupni || jeVlastiti;
+	/* pitanja iz bazena nose broj lekcije → moguća je preporuka za ponavljanje */
+	const poLekcijama = jeZavrsni || jeGrupni || jeVlastiti;
+	const storageKey = jeZavrsni ? 'tedzvid-zavrsni-kviz' : jeGrupni ? 'tedzvid-kviz-' + kljuc : null;
 
 	const { lang } = useLang();
 	const ui = useUI();
 	const location = useLocation();
-	const { user, progress, saveResult } = useAuth();
+	const { user, progress, isUnlocked, saveResult } = useAuth();
 	const ref = useRef(null);
 
 	const [ faza, setFaza ] = useState('uvod'); /* uvod | pitanja | rezultat */
-	const [ poredak, setPoredak ] = useState(null); /* redoslijed pitanja (završni: izmiješan) */
+	const [ poredak, setPoredak ] = useState(null); /* redoslijed pitanja (izmiješan osim kod kviza lekcije) */
 	const [ idx, setIdx ] = useState(0);
 	const [ izbor, setIzbor ] = useState(null);
 	const [ potvrdjeno, setPotvrdjeno ] = useState(false);
 	const [ rezultati, setRezultati ] = useState([]); /* true/false po pitanju */
 	const [ spremanje, setSpremanje ] = useState(''); /* '' | saving | saved | error */
-	const [ nastavak ] = useState(() => (jeZavrsni ? ucitajNastavak(ukupno) : null));
+	const [ nastavak ] = useState(() => ucitajNastavak(storageKey, ukupno, bazen.length));
 
 	if (!ukupno) return null;
 
 	const pick = (f) => (f && (f[lang] !== undefined ? f[lang] : f[DEFAULT_LANG])) || '';
-	const pitanja = poredak ? poredak.map((i) => bazen[i]) : bazen;
+	const izabrana = poredak ? poredak.map((i) => bazen[i]) : bazen;
 	const tacnih = rezultati.filter(Boolean).length;
 	const polozeno = tacnih >= prolaz;
-	const prije = progress[kljuc];
-	const vecPolozeno = jePolozena(progress, kljuc);
-	const sljedeca = jeZavrsni ? null : sljedecaLekcija(n);
-	const from = location.pathname + (jeZavrsni ? '' : '#kviz');
+	const prije = kljuc ? progress[kljuc] : null;
+	const vecPolozeno = !!kljuc && jePolozena(progress, kljuc);
+	const sljedeca = n ? sljedecaLekcija(n) : null;
+	const sljedecaG = jeGrupni ? sljedecaGrupa(g) : null;
+	const from = location.pathname + (jeZavrsni || jeGrupni || jeVlastiti ? '' : '#kviz');
 	const velikiKviz = ukupno > 20;
+	const info = jeGrupni ? grupa(g) : null;
+	/* sljedeći korak nudimo tek kad je stvarno otključan (rezultat je spremljen na server) */
+	const otkljucanSljedeci = jeGrupni && (sljedecaG ? isUnlocked(kljucGrupe(sljedecaG)) : isUnlocked(ZAVRSNI));
+	const mojaGrupa = n ? grupaLekcije(n) : null;
 
 	/* vrh kviza ostaje u vidnom polju kad se sadržaj mijenja */
 	const uVidnoPolje = () => {
@@ -144,16 +177,17 @@ export default function LessonQuiz({ broj }) {
 		setPotvrdjeno(false);
 		setSpremanje('');
 		setFaza('pitanja');
-		if (jeZavrsni) zapamti(stanje);
+		zapamti(storageKey, stanje);
 		uVidnoPolje();
 	};
 
-	const start = () => pokreni({ poredak: jeZavrsni ? promijesaj(ukupno) : null, idx: 0, rezultati: [] });
+	const start = () =>
+		pokreni({ poredak: mijesa ? promijesaj(bazen.length).slice(0, ukupno) : null, idx: 0, rezultati: [] });
 	const nastavi = () => nastavak && pokreni(nastavak);
 
 	const potvrdi = () => {
 		if (izbor === null) return;
-		setRezultati(rezultati.concat(izbor === pitanja[idx].tacno));
+		setRezultati(rezultati.concat(izbor === izabrana[idx].tacno));
 		setPotvrdjeno(true);
 	};
 
@@ -162,44 +196,56 @@ export default function LessonQuiz({ broj }) {
 			setIdx(idx + 1);
 			setIzbor(null);
 			setPotvrdjeno(false);
-			if (jeZavrsni) zapamti({ poredak, idx: idx + 1, rezultati });
+			zapamti(storageKey, { poredak, idx: idx + 1, rezultati });
 		} else {
 			setFaza('rezultat');
-			if (jeZavrsni) zapamti(null);
-			if (user) spremi(tacnih);
+			zapamti(storageKey, null);
+			if (user && kljuc) spremi(tacnih);
 		}
 		uVidnoPolje();
 	};
 
-	/* završni: lekcije u kojima je bilo grešaka, za ponavljanje */
+	/* lekcije u kojima je bilo grešaka, za ponavljanje */
 	const greskePoLekciji = {};
-	if (jeZavrsni && faza === 'rezultat') {
+	if (poLekcijama && faza === 'rezultat') {
 		rezultati.forEach((ok, i) => {
-			if (!ok) greskePoLekciji[pitanja[i].lekcija] = (greskePoLekciji[pitanja[i].lekcija] || 0) + 1;
+			if (!ok && izabrana[i].lekcija) greskePoLekciji[izabrana[i].lekcija] = (greskePoLekciji[izabrana[i].lekcija] || 0) + 1;
 		});
 	}
 	const zaPonavljanje = Object.keys(greskePoLekciji).map(Number).sort((a, b) => a - b);
 
-	const p = pitanja[idx];
+	const p = izabrana[idx];
+
+	const uvodniTekst = jeZavrsni
+		? ui.zavrsniIntroText(ukupno, prolaz)
+		: jeGrupni ? ui.grupaIntroText(ukupno, prolaz, info.od, info.do) : jeVlastiti ? ui.mualimIntroText(ukupno, prolaz) : ui.kvizIntroText(prolaz, ukupno);
+
+	const rezultatTekst = jeZavrsni
+		? polozeno ? ui.zavrsniPassedText : ui.zavrsniFailed(prolaz)
+		: jeGrupni
+			? polozeno ? (sljedecaG ? ui.grupaUnlocked(sljedecaG) : ui.grupaAllDone) : ui.kvizFailed(prolaz)
+			: jeVlastiti ? (polozeno ? ui.mualimPassedText : ui.kvizFailed(prolaz)) : polozeno ? ui.kvizVjezbaPassed(mojaGrupa ? mojaGrupa.broj : 1) : ui.kvizFailed(prolaz);
 
 	return (
-		<section className={'kviz' + (jeZavrsni ? ' kviz--zavrsni' : '')} id="kviz" ref={ref}>
+		<section className={'kviz' + (jeZavrsni ? ' kviz--zavrsni' : '') + (jeGrupni ? ' kviz--grupa' : '')} id="kviz" ref={ref}>
 			<h2 className="text-center">
-				<strong>{jeZavrsni ? ui.zavrsniTitle : ui.kviz}</strong>
+				<strong>{naslov || (jeZavrsni ? ui.zavrsniTitle : jeGrupni ? ui.grupaKvizNaslov(g) : ui.kviz)}</strong>
 			</h2>
 			<hr />
 			<div className="kviz__card">
 				{faza === 'uvod' && (
 					<div className="kviz__intro">
-						<div className="kviz__icon">{jeZavrsni ? <FaGraduationCap /> : <FaClipboardCheck />}</div>
+						<div className="kviz__icon">
+							{jeZavrsni ? <FaGraduationCap /> : jeGrupni ? <FaLayerGroup /> : <FaClipboardCheck />}
+						</div>
 						<h3>{ui.kvizIntroTitle}</h3>
-						<p>{jeZavrsni ? ui.zavrsniIntroText(ukupno, prolaz) : ui.kvizIntroText(prolaz, ukupno)}</p>
+						<p>{uvodniTekst}</p>
 						{prije && (
 							<p className="kviz__best">
 								{vecPolozeno && <FaCheck />} {ui.kvizBest(prije.najbolje, ukupno)}
 							</p>
 						)}
-						{vecPolozeno && !jeZavrsni && <p className="kviz__note">{ui.kvizAlreadyPassed}</p>}
+						{vecPolozeno && jeGrupni && <p className="kviz__note">{ui.grupaAlreadyPassed}</p>}
 						<div className="kviz__actions">
 							{nastavak && (
 								<button type="button" className="btn-t btn-t--gold" onClick={nastavi}>
@@ -218,7 +264,7 @@ export default function LessonQuiz({ broj }) {
 						<div className="kviz__top">
 							<span className="kviz__count">
 								{ui.kvizQuestion(idx + 1, ukupno)}
-								{jeZavrsni && <span className="kviz__tag">{ui.kvizNextLesson(p.lekcija)}</span>}
+								{poLekcijama && p.lekcija && <span className="kviz__tag">{ui.kvizNextLesson(p.lekcija)}</span>}
 							</span>
 							{velikiKviz ? (
 								<div
@@ -233,7 +279,7 @@ export default function LessonQuiz({ broj }) {
 								</div>
 							) : (
 								<ol className="kviz__dots" aria-label={ui.kvizProgressAria}>
-									{pitanja.map((_, i) => (
+									{izabrana.map((_, i) => (
 										<li
 											key={i}
 											className={
@@ -311,11 +357,7 @@ export default function LessonQuiz({ broj }) {
 							<b>{tacnih}</b> / {ukupno}
 						</p>
 						<h3>{polozeno ? (jeZavrsni ? ui.zavrsniPassed : ui.kvizPassed) : ui.kvizFailedTitle}</h3>
-						<p>
-							{jeZavrsni
-								? polozeno ? ui.zavrsniPassedText : ui.zavrsniFailed(prolaz)
-								: polozeno ? sljedeca ? ui.kvizUnlocked(sljedeca) : ui.kvizAllDone : ui.kvizFailed(prolaz)}
-						</p>
+						<p>{rezultatTekst}</p>
 						{velikiKviz ? (
 							<p className="kviz__counts">{ui.kvizCorrectCount(tacnih, ukupno)}</p>
 						) : (
@@ -342,7 +384,8 @@ export default function LessonQuiz({ broj }) {
 							</div>
 						)}
 
-						{user ? (
+						{kljuc &&
+						(user ? (
 							spremanje && (
 								<p className={'kviz__save is-' + spremanje} role="status">
 									{spremanje === 'saving' && ui.kvizSaving}
@@ -359,7 +402,7 @@ export default function LessonQuiz({ broj }) {
 							)
 						) : (
 							<div className="kviz__guest">
-								<p>{ui.kvizGuest}</p>
+								<p>{jeGrupni ? ui.kvizGuestGrupa : ui.kvizGuest}</p>
 								<div>
 									<Link to={{ pathname: '/prijava', state: { from } }} className="btn-t btn-t--outline btn-t--sm">
 										<FaSignInAlt /> {ui.navPrijava}
@@ -369,22 +412,37 @@ export default function LessonQuiz({ broj }) {
 									</Link>
 								</div>
 							</div>
-						)}
+						))}
 
 						<div className="kviz__actions">
 							<button type="button" className="btn-t btn-t--ghost" onClick={start}>
 								<FaRedo /> {ui.kvizRestart}
 							</button>
-							{sljedeca && jePolozena(progress, n) && (
+							{/* kviz lekcije je vježba: vodi dalje na sljedeću lekciju, a na kraju grupe na grupni kviz */}
+							{n &&
+							sljedeca && (
 								<Link to={putanjaLekcije(sljedeca)} className="btn-t btn-t--gold">
 									{ui.kvizNextLesson(sljedeca)} <FaArrowRight />
 								</Link>
 							)}
-							{!jeZavrsni && !sljedeca && jePolozena(progress, n) && (
+							{n &&
+							mojaGrupa &&
+							n === mojaGrupa.do && (
+								<Link to={putanjaGrupnog(mojaGrupa.broj)} className={'btn-t ' + (sljedeca ? 'btn-t--navy' : 'btn-t--gold')}>
+									<FaLayerGroup /> {ui.grupaKvizNaslov(mojaGrupa.broj)}
+								</Link>
+							)}
+							{jeGrupni &&
+							otkljucanSljedeci &&
+							(sljedecaG ? (
+								<Link to={putanjaGrupnog(sljedecaG)} className="btn-t btn-t--gold">
+									<FaLayerGroup /> {ui.grupaKvizNaslov(sljedecaG)} <FaArrowRight />
+								</Link>
+							) : (
 								<Link to={putanjaZavrsnog} className="btn-t btn-t--gold">
 									<FaGraduationCap /> {ui.zavrsniTitle}
 								</Link>
-							)}
+							))}
 							{jeZavrsni && (
 								<Link to={user && polozeno ? '/profil' : '/lekcije'} className="btn-t btn-t--gold">
 									{user && polozeno ? ui.navProfil : ui.sveLekcije} <FaArrowRight />

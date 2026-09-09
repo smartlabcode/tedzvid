@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Redirect } from 'react-router-dom';
-import { FaLock, FaUsers, FaBolt, FaGraduationCap, FaClipboardCheck } from 'react-icons/fa';
+import { FaLock, FaUsers, FaBolt, FaGraduationCap, FaLayerGroup, FaClipboardCheck } from 'react-icons/fa';
 import SiteNav from './SiteNav';
 import SiteFooter from './SiteFooter';
 import PageBand from './PageBand';
 import { api } from '../auth/api';
 import { useAuth } from '../auth/AuthContext';
-import { BROJ_LEKCIJA, ZAVRSNI, UKUPNO, UKUPNO_ZAVRSNI, PROLAZ_ZAVRSNI } from '../auth/progress';
+import { BROJ_LEKCIJA, GRUPE, ZAVRSNI, UKUPNO, UKUPNO_GRUPA, UKUPNO_ZAVRSNI, PROLAZ_ZAVRSNI, kljucGrupe } from '../auth/progress';
 import { useLang } from '../i18n/LanguageContext';
 import { useUI } from '../i18n/ui';
 import { formatDatum, formatDatumVrijeme } from '../i18n/datum';
@@ -174,6 +174,9 @@ export default function AdminPage() {
 														<td>{datumVrijeme(k.zadnjaAktivnost)}</td>
 														<td>
 															<b>{k.polozeno}</b>/{BROJ_LEKCIJA}
+															<small>
+																{k.grupe || 0}/{GRUPE.length} {ui.adminColGroups}
+															</small>
 														</td>
 														<td>
 															{k.zavrsni ? (
@@ -199,6 +202,19 @@ export default function AdminPage() {
 																				title={ui.adminCell(n, p)}
 																			>
 																				{n}
+																				{p && <small>{p.najbolje}</small>}
+																			</span>
+																		);
+																	})}
+																	{GRUPE.map((g) => {
+																		const p = k.progress[kljucGrupe(g.broj)];
+																		return (
+																			<span
+																				key={'g' + g.broj}
+																				className={'admin__cell admin__cell--grupa is-' + statusCelije(p, UKUPNO_GRUPA)}
+																				title={ui.adminCellGrupa(g.broj, p)}
+																			>
+																				<FaLayerGroup />
 																				{p && <small>{p.najbolje}</small>}
 																			</span>
 																		);

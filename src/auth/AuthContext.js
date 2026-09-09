@@ -1,14 +1,16 @@
 import React, { createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react';
 import { api, getToken, setToken } from './api';
-import { BONUS, ZAVRSNI, jeOtkljucana, jeOtkljucanBonus, jeOtkljucanZavrsni } from './progress';
+import { ZAVRSNI, brojGrupe, jeKljucGrupe, jeOtkljucanaGrupa, jeOtkljucanZavrsni } from './progress';
 
 /*
  * Prijavljeni korisnik i njegov napredak.
  *   user      – { id, ime, email, progress } ili null (gost)
  *   loading   – true dok se uz postojeći token provjerava /api/me
  *   progress  – { '1': { najbolje, zadnje, pokusaji, polozeno, datum }, ... }
- *   isAdmin   – korisnik s ulogom 'admin': njemu su sve lekcije i završni kviz uvijek otključani
- *   isUnlocked(key) – key je broj lekcije ('3', '14_2'), ZAVRSNI ili BONUS
+ *   isAdmin   – korisnik s ulogom 'admin'
+ *   isMualim  – mualim (i admin): njemu su svi kvizovi otključani i može praviti vlastite kvizove
+ *   isUnlocked(key) – lekcije su otvorene svima; zaključavaju se samo kvizovi:
+ *                     'g1'…'g5' (grupni kviz) i ZAVRSNI
  */
 const EMPTY = {};
 
@@ -17,6 +19,7 @@ const AuthContext = createContext({
 	loading: false,
 	progress: EMPTY,
 	isAdmin: false,
+	isMualim: false,
 	isUnlocked: () => true,
 	login: async () => null,
 	register: async () => null,
@@ -86,6 +89,8 @@ export function AuthProvider({ children }) {
 
 	const progress = (user && user.progress) || EMPTY;
 	const isAdmin = !!(user && user.uloga === 'admin');
+	/* mualimu su svi kvizovi otključani; admin ima i mualimova prava */
+	const isMualim = !!(user && (user.uloga === 'mualim' || user.uloga === 'admin'));
 
 	const value = useMemo(
 		() => ({
@@ -93,18 +98,19 @@ export function AuthProvider({ children }) {
 			loading,
 			progress,
 			isAdmin,
+			isMualim,
 			isUnlocked: (key) => {
-				if (isAdmin) return true;
+				if (isMualim) return true;
 				if (key === ZAVRSNI) return jeOtkljucanZavrsni(progress);
-				if (key === BONUS) return jeOtkljucanBonus(progress);
-				return jeOtkljucana(progress, key);
+				if (jeKljucGrupe(key)) return jeOtkljucanaGrupa(progress, brojGrupe(key));
+				return true; /* lekcije (i bonus lekcije) su otvorene svima */
 			},
 			login,
 			register,
 			logout,
 			saveResult
 		}),
-		[ user, loading, progress, isAdmin, login, register, logout, saveResult ]
+		[ user, loading, progress, isAdmin, isMualim, login, register, logout, saveResult ]
 	);
 
 	return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
