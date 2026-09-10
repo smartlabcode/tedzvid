@@ -49,7 +49,7 @@
     "app:android": "npm run app:sync && cap open android",
     "app:run:ios": "npm run app:sync && cap run ios",
     "app:run:android": "npm run app:sync && cap run android",
-    "app:assets": "printf '{}' > resources/pwa-manifest.json && capacitor-assets generate --pwaManifestPath resources/pwa-manifest.json --iconBackgroundColor \"#103b5c\" --iconBackgroundColorDark \"#103b5c\" --splashBackgroundColor \"#103b5c\" --splashBackgroundColorDark \"#0b2942\"; rm -rf public/assets/icons resources/pwa-manifest.json"
+    "app:assets": "printf '{}' > resources/pwa-manifest.json && capacitor-assets generate --pwaManifestPath resources/pwa-manifest.json --iconBackgroundColor \"#103b5c\" --iconBackgroundColorDark \"#103b5c\" --splashBackgroundColor \"#103b5c\" --splashBackgroundColorDark \"#0b2942\"; node scripts/ikone/adaptivna-ikona.js; rm -rf public/assets/icons resources/pwa-manifest.json"
   },
   "eslintConfig": {
     "extends": "react-app"
