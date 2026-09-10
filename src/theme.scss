@@ -715,6 +715,19 @@ img {
   }
 }
 
+/* kviz zaključan za goste – prijava je obavezna za sve kvizove */
+.kviz__gate {
+  .kviz__icon {
+    color: var(--gold-600);
+  }
+
+  p {
+    max-width: 56ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 /* "ekran" – mockup priručnika */
 .mock {
   background: #fff;
@@ -2383,6 +2396,45 @@ textarea.field {
     .is-partial::before {
       background: #fbe7e5;
       border-color: #f1c7c3;
+    }
+  }
+
+  /* promjena uloge: admin postavlja korisnika za mualima */
+  &__uloga {
+    margin-top: 18px;
+    padding-top: 16px;
+    border-top: 1px solid var(--line);
+
+    h6 {
+      margin: 0 0 4px;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--navy);
+    }
+
+    p {
+      max-width: 68ch;
+      margin: 0 0 12px;
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+  }
+
+  &__uloga-akcije {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__uloga-info {
+    font-size: 0.78rem;
+    color: var(--muted);
+
+    &.is-err {
+      color: #9c2f28;
     }
   }
 }

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Redirect } from 'react-router-dom';
-import { FaLock, FaUsers, FaBolt, FaGraduationCap, FaLayerGroup, FaClipboardCheck } from 'react-icons/fa';
+import { FaLock, FaUsers, FaBolt, FaGraduationCap, FaLayerGroup, FaClipboardCheck, FaChalkboardTeacher, FaUser } from 'react-icons/fa';
 import SiteNav from './SiteNav';
 import SiteFooter from './SiteFooter';
 import PageBand from './PageBand';
@@ -23,6 +23,8 @@ export default function AdminPage() {
 	const [ stanje, setStanje ] = useState('loading'); /* loading | ok | error | forbidden */
 	const [ trazi, setTrazi ] = useState('');
 	const [ otvoren, setOtvoren ] = useState(null);
+	const [ mijenjam, setMijenjam ] = useState(null); /* id korisnika kojem se upravo mijenja uloga */
+	const [ greska, setGreska ] = useState('');
 	const jeAdmin = !!(user && user.uloga === 'admin');
 
 	useEffect(() => {
@@ -51,6 +53,24 @@ export default function AdminPage() {
 	);
 
 	if (!loading && !user) return <Redirect to={{ pathname: '/prijava', state: { from: '/admin' } }} />;
+
+	/* ugrađeni računi i drugi administratori se ne mijenjaju (server to isto odbija) */
+	const smijeMijenjati = (k) => k.id !== (user && user.id) && k.uloga !== 'admin' && k.uloga !== 'demo';
+
+	const postaviUlogu = (k, uloga) => {
+		setMijenjam(k.id);
+		setGreska('');
+		api.adminUloga(k.id, uloga).then(
+			(d) => {
+				setData(d);
+				setMijenjam(null);
+			},
+			() => {
+				setGreska(k.id);
+				setMijenjam(null);
+			}
+		);
+	};
 
 	const datum = (iso) => (iso ? formatDatum(iso, lang) : '–');
 	const datumVrijeme = (iso) => (iso ? formatDatumVrijeme(iso, lang) : ui.adminNever);
@@ -231,6 +251,41 @@ export default function AdminPage() {
 																	<span className="is-ok">{ui.adminLegend.ok}</span>
 																	<span className="is-partial">{ui.adminLegend.partial}</span>
 																	<span className="is-none">{ui.adminLegend.none}</span>
+																</div>
+
+																<div className="admin__uloga">
+																	<h6>{ui.adminRoleTitle}</h6>
+																	<p>{smijeMijenjati(k) ? ui.adminRoleText : ui.adminRoleLocked}</p>
+																	{smijeMijenjati(k) && (
+																		<div className="admin__uloga-akcije">
+																			<button
+																				type="button"
+																				className={
+																					'btn-t btn-t--sm ' +
+																					(k.uloga === 'mualim' ? 'btn-t--navy' : 'btn-t--ghost')
+																				}
+																				disabled={mijenjam === k.id || k.uloga === 'mualim'}
+																				onClick={() => postaviUlogu(k, 'mualim')}
+																			>
+																				<FaChalkboardTeacher /> {ui.adminMakeMualim}
+																			</button>
+																			<button
+																				type="button"
+																				className={
+																					'btn-t btn-t--sm ' +
+																					(k.uloga === 'mualim' ? 'btn-t--ghost' : 'btn-t--navy')
+																				}
+																				disabled={mijenjam === k.id || k.uloga !== 'mualim'}
+																				onClick={() => postaviUlogu(k, 'korisnik')}
+																			>
+																				<FaUser /> {ui.adminMakeKorisnik}
+																			</button>
+																			{mijenjam === k.id && <span className="admin__uloga-info">{ui.adminRoleSaving}</span>}
+																			{greska === k.id && (
+																				<span className="admin__uloga-info is-err">{ui.adminRoleError}</span>
+																			)}
+																		</div>
+																	)}
 																</div>
 															</td>
 														</tr>

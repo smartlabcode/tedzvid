@@ -17,12 +17,15 @@
  *   POST /api/progress  { lekcija, tacno }       → { user }   (lekcija: 1–22, 'g1'–'g5' ili 'zavrsni')
  *   GET  /api/leaderboard?period=sedmica|mjesec|sve → { period, od, lista, moj }
  *   GET  /api/admin/users (samo admin)          → { sazetak, korisnici }
+ *   POST /api/admin/uloga { id, uloga } (samo admin) → { sazetak, korisnici }
+ *                       uloga: 'korisnik' ili 'mualim' (ugrađeni računi i drugi admini se ne mijenjaju)
  *
  * Ugrađeni računi (prijava korisničkim imenom umjesto emaila):
  *   admin  – ADMIN_USER / ADMIN_PASSWORD (podrazumijevano admin / admin123! – promijeniti u produkciji);
  *            adminu su svi kvizovi uvijek otključani i ima mualimova prava
  *   mualim – MUALIM_USER / MUALIM_PASSWORD (podrazumijevano mualim / mualim123!);
- *            mualimu su svi kvizovi otključani i može praviti kviz od kombinacije lekcija
+ *            mualimu su svi kvizovi otključani i može praviti kviz od kombinacije lekcija.
+ *            Admin bilo kojeg korisnika može postaviti za mualima (POST /api/admin/uloga).
  *   user   – demo korisnik user / user123! (isključiti s DEMO_USER=0)
  *   GET  /api/health                             → { ok: true }
  */
@@ -274,6 +277,10 @@ function jePolozena(user, key) {
 /* 'g3' → 3; sve ostalo → 0 */
 const brojGrupe = (key) => (/^g[1-9][0-9]*$/.test(String(key)) ? parseInt(String(key).slice(1), 10) : 0);
 const jeMualim = (user) => user.uloga === 'mualim' || user.uloga === 'admin';
+/* uloge koje admin smije dodijeliti; 'admin' i 'demo' se ne dodjeljuju kroz sučelje */
+const ULOGE_ZA_DODJELU = [ 'korisnik', 'mualim' ];
+/* ugrađeni računi se pri svakom pokretanju vraćaju na svoju ulogu (seedRacuni) */
+const jeUgradjeniRacun = (u) => [ ADMIN_USER, MUALIM_USER, DEMO_USER ].includes(u.email);
 const svePolozeneGrupe = (user) => {
 	for (let b = 1; b <= BROJ_GRUPA; b++) if (!jePolozena(user, 'g' + b)) return false;
 	return true;
@@ -466,6 +473,31 @@ async function handleApi(req, res, url) {
 	if (route === 'GET /api/admin/users') {
 		if (!user) return json(res, 401, { error: 'unauthorized' });
 		if (user.uloga !== 'admin') return json(res, 403, { error: 'forbidden' });
+		return json(res, 200, pregledKorisnika());
+	}
+
+	/* admin postavlja korisnika za mualima (ili ga vraća u obične korisnike) */
+	if (route === 'POST /api/admin/uloga') {
+		if (!user) return json(res, 401, { error: 'unauthorized' });
+		if (user.uloga !== 'admin') return json(res, 403, { error: 'forbidden' });
+		let body;
+		try {
+			body = await readBody(req);
+		} catch (e) {
+			return json(res, 400, { error: 'bad_request' });
+		}
+		const uloga = String(body.uloga || '');
+		if (!ULOGE_ZA_DODJELU.includes(uloga)) return json(res, 400, { error: 'bad_role' });
+		const cilj = findById(String(body.id || ''));
+		if (!cilj) return json(res, 404, { error: 'not_found' });
+		/* admin ne dira ni sebe ni druge administratore, ni ugrađene račune (seed ih ionako vrati) */
+		if (cilj.id === user.id || cilj.uloga === 'admin' || jeUgradjeniRacun(cilj)) {
+			return json(res, 403, { error: 'role_locked' });
+		}
+		if ((cilj.uloga || 'korisnik') !== uloga) {
+			cilj.uloga = uloga;
+			saveUsers();
+		}
 		return json(res, 200, pregledKorisnika());
 	}
 

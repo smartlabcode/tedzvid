@@ -9,8 +9,9 @@ import { ZAVRSNI, brojGrupe, jeKljucGrupe, jeOtkljucanaGrupa, jeOtkljucanZavrsni
  *   progress  – { '1': { najbolje, zadnje, pokusaji, polozeno, datum }, ... }
  *   isAdmin   – korisnik s ulogom 'admin'
  *   isMualim  – mualim (i admin): njemu su svi kvizovi otključani i može praviti vlastite kvizove
- *   isUnlocked(key) – lekcije su otvorene svima; zaključavaju se samo kvizovi:
- *                     'g1'…'g5' (grupni kviz) i ZAVRSNI
+ *   isUnlocked(key) – pita se samo za kvizove. Lekcije su otvorene svima, ali za svaki kviz
+ *                     je potrebna prijava; uz to grupni kviz traži položen prethodni,
+ *                     a završni sve grupne.
  */
 const EMPTY = {};
 
@@ -100,10 +101,11 @@ export function AuthProvider({ children }) {
 			isAdmin,
 			isMualim,
 			isUnlocked: (key) => {
+				if (!user) return false; /* za svaki kviz je potrebna prijava */
 				if (isMualim) return true;
 				if (key === ZAVRSNI) return jeOtkljucanZavrsni(progress);
 				if (jeKljucGrupe(key)) return jeOtkljucanaGrupa(progress, brojGrupe(key));
-				return true; /* lekcije (i bonus lekcije) su otvorene svima */
+				return true; /* kviz lekcije je vježba – otvoren je svakom prijavljenom */
 			},
 			login,
 			register,

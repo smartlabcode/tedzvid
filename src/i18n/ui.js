@@ -154,11 +154,12 @@ const UI = {
 		grupaLockedTitle: 'Kviz grupe je zaključan',
 		grupaLockedUser: (b) => `Prvo položi kviz grupe ${b}, pa se otključava sljedeći.`,
 		grupaLockedGuest:
-			'Kvizovi grupa se otključavaju redom, a napredak se čuva uz račun. Prijavi se ili napravi besplatan račun.',
+			'Za sve kvizove je potrebna prijava. Prijavi se ili napravi besplatan račun – kvizovi grupa se onda otključavaju redom.',
 		grupaUnlocked: (b) => `Otključan je kviz grupe ${b}.`,
 		grupaAllDone: 'Sve grupe su položene – slijedi završni kviz iz cijelog tedžvida.',
 		grupaAlreadyPassed: 'Kviz je već položen i sljedeći je otključan – vježbaj koliko želiš.',
-		grupaHint: 'Sve lekcije su otvorene. Kviz na kraju lekcije je vježba, a kviz grupe je prava provjera.',
+		grupaHint:
+			'Sve lekcije su otvorene svima; za kvizove je potrebna prijava. Kviz na kraju lekcije je vježba, a kviz grupe je prava provjera.',
 
 		/* ----- mualim: kviz od kombinacije lekcija ----- */
 		navMualim: 'Mualim',
@@ -308,8 +309,9 @@ const UI = {
 		kvizSaved: 'Napredak je sačuvan.',
 		kvizSaveError: 'Napredak nije sačuvan – provjeri vezu.',
 		kvizRetrySave: 'Pokušaj sačuvati ponovo',
-		kvizGuest: 'Prijavi se ili napravi račun da se rezultat sačuva i računa na rang listi.',
-		kvizGuestGrupa: 'Prijavi se ili napravi račun da se rezultat sačuva i otključa sljedeći kviz grupe.',
+		kvizLoginTitle: 'Za kviz je potrebna prijava',
+		kvizLoginText:
+			'Lekcije su otvorene svima, ali svi kvizovi traže prijavu – tako se rezultat sačuva, prati se napredak i računa se na rang listi. Račun je besplatan.',
 		kvizBest: (b, n) => `Najbolji rezultat: ${b} od ${n}`,
 		kvizCorrectCount: (t, n) => `Tačnih: ${t} · Netačnih: ${n - t}`,
 
@@ -327,7 +329,7 @@ const UI = {
 		zavrsniLockedTitle: 'Završni kviz je zaključan',
 		zavrsniLockedUser: (b) => `Završni kviz se otključava kad položiš svih pet kvizova grupa. Trenutno si na grupi ${b}.`,
 		zavrsniLockedGuest:
-			'Završni kviz se otključava kad se polože kvizovi svih pet grupa. Prijavi se ili napravi besplatan račun da bi se tvoj napredak sačuvao.',
+			'Za sve kvizove je potrebna prijava, a završni se otključava kad se polože kvizovi svih pet grupa. Prijavi se ili napravi besplatan račun.',
 		zavrsniPassed: 'Bravo, završni kviz je položen!',
 		zavrsniPassedText: 'Cijeli tedžvid je pređen i provjeren – svaka čast!',
 		zavrsniFailed: (prolaz) =>
@@ -513,7 +515,15 @@ const UI = {
 		adminRole: { admin: 'Admin', mualim: 'Mualim', demo: 'Demo', korisnik: 'Korisnik' },
 		adminNever: 'još ništa',
 		adminNoUsers: 'Nema korisnika koji odgovaraju pretrazi.',
-		adminDetailHint: 'Klikni red za napredak po lekcijama.',
+		adminDetailHint: 'Klikni red za napredak po lekcijama i promjenu uloge.',
+		adminRoleTitle: 'Uloga',
+		adminRoleText:
+			'Mualim ima pristup svemu osim administraciji: svi kvizovi su mu otključani i može napraviti kviz od proizvoljne kombinacije lekcija za svoj čas.',
+		adminRoleLocked: 'Uloga ovog računa se ne mijenja ovdje (administrator, ugrađeni ili vlastiti račun).',
+		adminMakeMualim: 'Postavi za mualima',
+		adminMakeKorisnik: 'Vrati u korisnike',
+		adminRoleSaving: 'Spremanje…',
+		adminRoleError: 'Uloga nije promijenjena – pokušaj ponovo.',
 		adminCell: (n, p) => (p ? `Lekcija ${n}: najbolje ${p.najbolje}/10, pokušaja: ${p.pokusaji}` : `Lekcija ${n}: nije rješavana`),
 		adminCellGrupa: (b, p) =>
 			p ? `Kviz grupe ${b}: najbolje ${p.najbolje}/20, pokušaja: ${p.pokusaji}` : `Kviz grupe ${b}: nije rješavan`,
@@ -780,11 +790,12 @@ const UI = {
 		grupaLockedTitle: 'This group quiz is locked',
 		grupaLockedUser: (b) => `Pass the group ${b} quiz first and the next one unlocks.`,
 		grupaLockedGuest:
-			'Group quizzes unlock in order and progress is kept with an account. Log in or create a free account.',
+			'All quizzes require an account. Log in or create a free one – group quizzes then unlock in order.',
 		grupaUnlocked: (b) => `The group ${b} quiz is now unlocked.`,
 		grupaAllDone: 'Every group is passed – next up is the final quiz on the whole handbook.',
 		grupaAlreadyPassed: 'You have already passed this quiz and the next one is unlocked – practise as often as you like.',
-		grupaHint: 'Every lesson is open. The quiz at the end of a lesson is practice; the group quiz is the real test.',
+		grupaHint:
+			'Every lesson is open to everyone; quizzes require an account. The quiz at the end of a lesson is practice; the group quiz is the real test.',
 
 		/* ----- teacher: a quiz from a combination of lessons ----- */
 		navMualim: 'Teacher',
@@ -933,8 +944,9 @@ const UI = {
 		kvizSaved: 'Progress saved.',
 		kvizSaveError: 'Progress was not saved – check your connection.',
 		kvizRetrySave: 'Try saving again',
-		kvizGuest: 'Log in or create an account so your result is saved and counts on the leaderboard.',
-		kvizGuestGrupa: 'Log in or create an account so your result is saved and the next group quiz unlocks.',
+		kvizLoginTitle: 'Log in to take the quiz',
+		kvizLoginText:
+			'Every lesson is open to everyone, but all quizzes require an account – that is how your result is saved, your progress is tracked and your score counts on the leaderboard. An account is free.',
 		kvizBest: (b, n) => `Best result: ${b} of ${n}`,
 		kvizCorrectCount: (t, n) => `Correct: ${t} · Wrong: ${n - t}`,
 
@@ -953,7 +965,7 @@ const UI = {
 		zavrsniLockedUser: (b) =>
 			`The final quiz unlocks once you have passed all five group quizzes. You are currently on group ${b}.`,
 		zavrsniLockedGuest:
-			'The final quiz unlocks once all five group quizzes are passed. Log in or create a free account so your progress is saved.',
+			'All quizzes require an account, and the final one unlocks once all five group quizzes are passed. Log in or create a free account.',
 		zavrsniPassed: 'Well done, you passed the final quiz!',
 		zavrsniPassedText: 'You have gone through and tested the whole handbook – well done!',
 		zavrsniFailed: (prolaz) =>
@@ -1134,7 +1146,15 @@ const UI = {
 		adminRole: { admin: 'Admin', mualim: 'Mualim', demo: 'Demo', korisnik: 'User' },
 		adminNever: 'nothing yet',
 		adminNoUsers: 'No users match the search.',
-		adminDetailHint: 'Click a row for progress per lesson.',
+		adminDetailHint: 'Click a row for progress per lesson and to change the role.',
+		adminRoleTitle: 'Role',
+		adminRoleText:
+			'A teacher has access to everything except administration: every quiz is unlocked and they can build a quiz from any combination of lessons for their class.',
+		adminRoleLocked: 'The role of this account cannot be changed here (administrator, built-in or your own account).',
+		adminMakeMualim: 'Make a teacher',
+		adminMakeKorisnik: 'Back to regular user',
+		adminRoleSaving: 'Saving…',
+		adminRoleError: 'The role was not changed – please try again.',
 		adminCell: (n, p) => (p ? `Lesson ${n}: best ${p.najbolje}/10, attempts: ${p.pokusaji}` : `Lesson ${n}: not taken`),
 		adminCellGrupa: (b, p) =>
 			p ? `Group ${b} quiz: best ${p.najbolje}/20, attempts: ${p.pokusaji}` : `Group ${b} quiz: not taken`,

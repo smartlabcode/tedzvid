@@ -6,6 +6,7 @@ import {
 	FaClipboardCheck,
 	FaGraduationCap,
 	FaLayerGroup,
+	FaLock,
 	FaRedo,
 	FaSignInAlt,
 	FaTrophy,
@@ -129,7 +130,7 @@ export default function LessonQuiz({ broj, pitanja: vlastitiBazen, koliko, naslo
 	const { lang } = useLang();
 	const ui = useUI();
 	const location = useLocation();
-	const { user, progress, isUnlocked, saveResult } = useAuth();
+	const { user, loading, progress, isUnlocked, saveResult } = useAuth();
 	const ref = useRef(null);
 
 	const [ faza, setFaza ] = useState('uvod'); /* uvod | pitanja | rezultat */
@@ -200,7 +201,7 @@ export default function LessonQuiz({ broj, pitanja: vlastitiBazen, koliko, naslo
 		} else {
 			setFaza('rezultat');
 			zapamti(storageKey, null);
-			if (user && kljuc) spremi(tacnih);
+			if (kljuc) spremi(tacnih);
 		}
 		uVidnoPolje();
 	};
@@ -215,6 +216,38 @@ export default function LessonQuiz({ broj, pitanja: vlastitiBazen, koliko, naslo
 	const zaPonavljanje = Object.keys(greskePoLekciji).map(Number).sort((a, b) => a - b);
 
 	const p = izabrana[idx];
+	const naslovKviza = naslov || (jeZavrsni ? ui.zavrsniTitle : jeGrupni ? ui.grupaKvizNaslov(g) : ui.kviz);
+
+	/* svaki kviz traži prijavu – gostu se umjesto pitanja nudi prijava/registracija */
+	if (!user) {
+		return (
+			<section className="kviz" id="kviz" ref={ref}>
+				<h2 className="text-center">
+					<strong>{naslovKviza}</strong>
+				</h2>
+				<hr />
+				<div className="kviz__card">
+					{!loading && (
+						<div className="kviz__intro kviz__gate">
+							<div className="kviz__icon">
+								<FaLock />
+							</div>
+							<h3>{ui.kvizLoginTitle}</h3>
+							<p>{ui.kvizLoginText}</p>
+							<div className="kviz__actions">
+								<Link to={{ pathname: '/prijava', state: { from } }} className="btn-t btn-t--gold">
+									<FaSignInAlt /> {ui.navPrijava}
+								</Link>
+								<Link to={{ pathname: '/registracija', state: { from } }} className="btn-t btn-t--outline">
+									<FaUserPlus /> {ui.navRegistracija}
+								</Link>
+							</div>
+						</div>
+					)}
+				</div>
+			</section>
+		);
+	}
 
 	const uvodniTekst = jeZavrsni
 		? ui.zavrsniIntroText(ukupno, prolaz)
@@ -229,7 +262,7 @@ export default function LessonQuiz({ broj, pitanja: vlastitiBazen, koliko, naslo
 	return (
 		<section className={'kviz' + (jeZavrsni ? ' kviz--zavrsni' : '') + (jeGrupni ? ' kviz--grupa' : '')} id="kviz" ref={ref}>
 			<h2 className="text-center">
-				<strong>{naslov || (jeZavrsni ? ui.zavrsniTitle : jeGrupni ? ui.grupaKvizNaslov(g) : ui.kviz)}</strong>
+				<strong>{naslovKviza}</strong>
 			</h2>
 			<hr />
 			<div className="kviz__card">
@@ -385,34 +418,20 @@ export default function LessonQuiz({ broj, pitanja: vlastitiBazen, koliko, naslo
 						)}
 
 						{kljuc &&
-						(user ? (
-							spremanje && (
-								<p className={'kviz__save is-' + spremanje} role="status">
-									{spremanje === 'saving' && ui.kvizSaving}
-									{spremanje === 'saved' && ui.kvizSaved}
-									{spremanje === 'error' && (
-										<React.Fragment>
-											{ui.kvizSaveError}{' '}
-											<button type="button" onClick={() => spremi(tacnih)}>
-												{ui.kvizRetrySave}
-											</button>
-										</React.Fragment>
-									)}
-								</p>
-							)
-						) : (
-							<div className="kviz__guest">
-								<p>{jeGrupni ? ui.kvizGuestGrupa : ui.kvizGuest}</p>
-								<div>
-									<Link to={{ pathname: '/prijava', state: { from } }} className="btn-t btn-t--outline btn-t--sm">
-										<FaSignInAlt /> {ui.navPrijava}
-									</Link>
-									<Link to={{ pathname: '/registracija', state: { from } }} className="btn-t btn-t--gold btn-t--sm">
-										<FaUserPlus /> {ui.navRegistracija}
-									</Link>
-								</div>
-							</div>
-						))}
+						spremanje && (
+							<p className={'kviz__save is-' + spremanje} role="status">
+								{spremanje === 'saving' && ui.kvizSaving}
+								{spremanje === 'saved' && ui.kvizSaved}
+								{spremanje === 'error' && (
+									<React.Fragment>
+										{ui.kvizSaveError}{' '}
+										<button type="button" onClick={() => spremi(tacnih)}>
+											{ui.kvizRetrySave}
+										</button>
+									</React.Fragment>
+								)}
+							</p>
+						)}
 
 						<div className="kviz__actions">
 							<button type="button" className="btn-t btn-t--ghost" onClick={start}>
@@ -444,8 +463,8 @@ export default function LessonQuiz({ broj, pitanja: vlastitiBazen, koliko, naslo
 								</Link>
 							))}
 							{jeZavrsni && (
-								<Link to={user && polozeno ? '/profil' : '/lekcije'} className="btn-t btn-t--gold">
-									{user && polozeno ? ui.navProfil : ui.sveLekcije} <FaArrowRight />
+								<Link to={polozeno ? '/profil' : '/lekcije'} className="btn-t btn-t--gold">
+									{polozeno ? ui.navProfil : ui.sveLekcije} <FaArrowRight />
 								</Link>
 							)}
 						</div>

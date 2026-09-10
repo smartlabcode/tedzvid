@@ -59,3 +59,5 @@ export const api = {
 /* rang lista (javno) i pregled korisnika (admin) */
 api.leaderboard = (period) => request('GET', '/api/leaderboard?period=' + encodeURIComponent(period || 'sedmica'));
 api.adminUsers = () => request('GET', '/api/admin/users');
+/* admin postavlja korisnika za mualima ('mualim') ili ga vraća u obične korisnike ('korisnik') */
+api.adminUloga = (id, uloga) => request('POST', '/api/admin/uloga', { id, uloga });
