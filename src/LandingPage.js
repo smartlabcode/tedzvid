@@ -2,7 +2,7 @@ import React from 'react';
 import Demo from './Body/LandingPage';
 import Home from './Body/HomePage';
 
-import Container from 'react-bootstrap/Container';
+import { Container } from './ui/Bootstrap';
 import { BrowserRouter, Route } from 'react-router-dom';
 
 function LandingPage() {

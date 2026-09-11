@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Container } from 'react-bootstrap';
+import { Container } from '../ui/Bootstrap';
 import { FaLock, FaLayerGroup, FaSignInAlt, FaUserPlus } from 'react-icons/fa';
 import SiteNav from './SiteNav';
 import SiteFooter from './SiteFooter';

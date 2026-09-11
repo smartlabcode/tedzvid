@@ -12,6 +12,23 @@ npm start        # CRA dev server (port 3000), /api se proxy-ra na 3002
 
 Produkcija (Railway): `npm run build`, zatim `npm run serve` – isti Node server poslužuje `build/` i API.
 
+### Okvir i stil
+
+React **19**, građeno s `react-scripts` 5 (CRA). Ulaz je `src/index.js` – montira se preko `createRoot`;
+`ReactDOM.render` više ne postoji, pa se splash u mobilnoj aplikaciji gasi iz efekta, a ne iz povratnog poziva.
+
+Izgled stoji na **Bootstrapu 4** (samo CSS, `bootstrap/dist/css/bootstrap.css`) i našem SCSS-u
+(`src/theme.scss`, `src/App.scss`, `src/igra.scss`).
+
+Paketa `react-bootstrap` **nema** – komponente koje smo koristili (`Container`, `Row`, `Col`, `Table`,
+`Button`, `Modal`) stoje u **`src/ui/Bootstrap.js`**. Razlog: react-bootstrap 1.x animira modal preko
+`react-transition-group`, a on zove `ReactDOM.findDOMNode` koji je u Reactu 19 uklonjen. Prelazak na
+react-bootstrap 2 tražio bi Bootstrap 5 i prekrštavanje klasa kroz cijeli SCSS, pa umjesto toga ovdje
+stoje iste komponente s **istim markupom i istim klasama** – zato `.modal-header .close`,
+`.modal-footer .btn-secondary` i `.table-responsive` u `App.scss` rade nepromijenjeni.
+
+Ako zatreba još neka Bootstrap komponenta, dopisuje se u taj fajl (ne vraćati react-bootstrap).
+
 ### Jezici
 
 Sajt je na **bosanskom (bs), engleskom (en) i njemačkom (de)**; bosanski je izvorni i podrazumijevani. Jezik se bira u traci navigacije (padajući izbornik `src/Body/LangSwitch.js`), pamti se u `localStorage`, a `?lang=de` u URL-u ima prednost – tako se dijeli link na određenom jeziku.

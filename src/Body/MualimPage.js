@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { Redirect, useHistory, useLocation } from 'react-router-dom';
-import { Container } from 'react-bootstrap';
+import { Container } from '../ui/Bootstrap';
 import { FaLock, FaChalkboardTeacher, FaClipboardCheck, FaRedo } from 'react-icons/fa';
 import SiteNav from './SiteNav';
 import SiteFooter from './SiteFooter';

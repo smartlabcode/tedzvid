@@ -7,15 +7,11 @@ import LekcijaMenu from '../Body/LekcijaMenu';
 import LessonVideo from '../Body/LessonVideo';
 import LessonQuiz from '../Quiz/LessonQuiz';
 import VjezbaToolbar from '../Player/VjezbaToolbar';
-import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
+import { Modal, Button, Row, Col, Container } from '../ui/Bootstrap';
 import { MdZoomOutMap } from 'react-icons/md';
 import { IconContext } from 'react-icons';
 import { useLang, DEFAULT_LANG } from '../i18n/LanguageContext';
 import { useUI } from '../i18n/ui';
-
-// Bootstrap
-import { Row, Col, Container } from 'react-bootstrap';
 
 // Other
 import '../App.scss';
