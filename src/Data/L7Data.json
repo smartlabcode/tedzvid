@@ -3,7 +3,7 @@
             "id": 1,
             "url": "./assets/audio/l7/1.mp3",
             "napomena": [
-                {"tip": "uklapanje", "bs": "U riječi وَيْلٌ je tenvin UN, a poslije dolazi لِ, zato se N iz tenvina nikako ne uči nego se potpuno uklapa u L, bez zraka kroz nos.", "en": "In وَيْلٌ there is the tanween UN and لِ follows, so the N of the tanween is not pronounced but merges completely into L, with no nasalisation."}
+                {"tip": "uklapanje", "bs": "U riječi وَيْلٌ je tenvin UN, a poslije dolazi لِ, zato se N iz tenvina nikako ne uči nego se potpuno uklapa u L, bez zraka kroz nos.", "en": "In وَيْلٌ there is the tanween UN and لِ follows, so the N of the tanween is not pronounced but merges completely into L, with no nasalisation.", "de": "Im Wort وَيْلٌ steht das Tanwin UN, und danach kommt لِ. Deshalb wird das N aus dem Tanwin gar nicht gesprochen, sondern verschmilzt vollständig in L, ohne Luft durch die Nase."}
             ],
             "highlight": "لٌ لِ",
             "word": "وَيْلٌ لِكُلِّ",
@@ -13,7 +13,7 @@
             "id": 2,
             "url": "./assets/audio/l7/2.mp3",
             "napomena": [
-                {"tip": "uklapanje", "bs": "U izgovoru se umjesto لٌ لِ uči لّـِ sa tešdidom, jer se N iz tenvina potpuno uklopilo u L, bez zraka kroz nos.", "en": "In recitation لٌ لِ is recited as لّـِ with a tashdeed, because the N of the tanween has merged completely into L, with no nasalisation."}
+                {"tip": "uklapanje", "bs": "U izgovoru se umjesto لٌ لِ uči لّـِ sa tešdidom, jer se N iz tenvina potpuno uklopilo u L, bez zraka kroz nos.", "en": "In recitation لٌ لِ is recited as لّـِ with a tashdeed, because the N of the tanween has merged completely into L, with no nasalisation.", "de": "Beim Lesen wird statt لٌ لِ ein لّـِ mit Schadda (Verdopplungszeichen) gesprochen, weil das N aus dem Tanwin vollständig in L verschmolzen ist, ohne Luft durch die Nase."}
             ],
             "highlight": "لّـِ",
             "word": "وَيْلُـلّـِكُلِّ",
@@ -23,7 +23,7 @@
             "id": 3,
             "url": "./assets/audio/l7/3.mp3",
             "napomena": [
-                {"tip": "uklapanje", "bs": "U riječi مِنْ je نْ sa sukunom, a poslije dolazi رَ, zato se N nikako ne uči nego se potpuno uklapa u R, bez zraka kroz nos.", "en": "In مِنْ the نْ has a sukun and رَ follows, so N is not pronounced at all but merges completely into R, with no nasalisation."}
+                {"tip": "uklapanje", "bs": "U riječi مِنْ je نْ sa sukunom, a poslije dolazi رَ, zato se N nikako ne uči nego se potpuno uklapa u R, bez zraka kroz nos.", "en": "In مِنْ the نْ has a sukun and رَ follows, so N is not pronounced at all but merges completely into R, with no nasalisation.", "de": "Im Wort مِنْ steht نْ mit Sukun, und danach kommt رَ. Deshalb wird das N gar nicht gesprochen, sondern verschmilzt vollständig in R, ohne Luft durch die Nase."}
             ],
             "highlight": "نْ رَ",
             "word": "مِنْ رَبِّـهِمْ",
@@ -33,7 +33,7 @@
             "id": 4,
             "url": "./assets/audio/l7/4.mp3",
             "napomena": [
-                {"tip": "uklapanje", "bs": "U izgovoru se umjesto نْ رَ uči رَّ sa tešdidom, jer se N sa sukunom potpuno uklopilo u R, bez zraka kroz nos.", "en": "In recitation نْ رَ is recited as رَّ with a tashdeed, because the N with a sukun has merged completely into R, with no nasalisation."}
+                {"tip": "uklapanje", "bs": "U izgovoru se umjesto نْ رَ uči رَّ sa tešdidom, jer se N sa sukunom potpuno uklopilo u R, bez zraka kroz nos.", "en": "In recitation نْ رَ is recited as رَّ with a tashdeed, because the N with a sukun has merged completely into R, with no nasalisation.", "de": "Beim Lesen wird statt نْ رَ ein رَّ mit Schadda gesprochen, weil das N mit Sukun vollständig in R verschmolzen ist, ohne Luft durch die Nase."}
             ],
             "highlight": "رَّ",
             "word": "مِرَّ بِّـهِمْ",
@@ -44,7 +44,7 @@
         "id": 5,
         "url": "./assets/audio/l7/5.mp3",
         "napomena": [
-            {"tip": "uklapanje", "bs": "U riječi غَفُورًا je tenvin EN, a poslije dolazi رَ u رَحِيمًا, zato se N iz tenvina nikako ne uči nego se potpuno uklapa u R, bez zraka kroz nos.", "en": "In غَفُورًا there is the tanween AN and رَ follows in رَحِيمًا, so the N of the tanween is not pronounced but merges completely into R, with no nasalisation."}
+            {"tip": "uklapanje", "bs": "U riječi غَفُورًا je tenvin EN, a poslije dolazi رَ u رَحِيمًا, zato se N iz tenvina nikako ne uči nego se potpuno uklapa u R, bez zraka kroz nos.", "en": "In غَفُورًا there is the tanween AN and رَ follows in رَحِيمًا, so the N of the tanween is not pronounced but merges completely into R, with no nasalisation.", "de": "Im Wort غَفُورًا steht das Tanwin AN, und danach kommt رَ in رَحِيمًا. Deshalb wird das N aus dem Tanwin gar nicht gesprochen, sondern verschmilzt vollständig in R, ohne Luft durch die Nase."}
         ],
         "highlight": "رًا رَ",
         "word": "وَكَانَ اللّٰهُ غَفُورًا رَحِيمًا",
@@ -55,8 +55,8 @@
                 "id": 6,
                 "url": "./assets/audio/l7/6.mp3",
                 "napomena": [
-                    {"tip": "uklapanje", "bs": "U riječi فَإِنْ je نْ sa sukunom, a poslije dolazi لَمْ, zato se N nikako ne uči nego se potpuno uklapa u L, bez zraka kroz nos.", "en": "In فَإِنْ there is نْ with a sukun followed by لَمْ, so the N is not pronounced but merges completely into L, with no nasalisation."},
-                    {"tip": "uklapanje", "bs": "I ovdje je نْ sa sukunom, a poslije dolazi لَهُ, zato se N nikako ne uči nego se potpuno uklapa u L, bez zraka kroz nos.", "en": "Here too there is نْ with a sukun followed by لَهُ, so the N is not pronounced but merges completely into L, with no nasalisation."}
+                    {"tip": "uklapanje", "bs": "U riječi فَإِنْ je نْ sa sukunom, a poslije dolazi لَمْ, zato se N nikako ne uči nego se potpuno uklapa u L, bez zraka kroz nos.", "en": "In فَإِنْ there is نْ with a sukun followed by لَمْ, so the N is not pronounced but merges completely into L, with no nasalisation.", "de": "Im Wort فَإِنْ steht نْ mit Sukun, und danach kommt لَمْ. Deshalb wird das N gar nicht gesprochen, sondern verschmilzt vollständig in L, ohne Luft durch die Nase."},
+                    {"tip": "uklapanje", "bs": "I ovdje je نْ sa sukunom, a poslije dolazi لَهُ, zato se N nikako ne uči nego se potpuno uklapa u L, bez zraka kroz nos.", "en": "Here too there is نْ with a sukun followed by لَهُ, so the N is not pronounced but merges completely into L, with no nasalisation.", "de": "Auch hier steht نْ mit Sukun, und danach kommt لَهُ. Deshalb wird das N gar nicht gesprochen, sondern verschmilzt vollständig in L, ohne Luft durch die Nase."}
                 ],
                 "highlight": "نْ لَ",
                 "word": "كُنْ لَهُ وَلَدٌ",
@@ -73,8 +73,8 @@
                 "id": 7,
                 "url": "./assets/audio/l7/7.mp3",
                 "napomena": [
-                    {"tip": "uklapanje", "bs": "U riječi فَوَيْلٌ je tenvin UN, a poslije dolazi لَهُ, zato se N iz tenvina nikako ne uči nego se potpuno uklapa u L, bez zraka kroz nos.", "en": "In فَوَيْلٌ there is the tanween UN followed by لَهُ, so the N of the tanween is not pronounced but merges completely into L, with no nasalisation."},
-                    {"tip": "uklapanje", "bs": "U riječi وَوَيْلٌ je tenvin UN, a poslije dolazi لَهُ, zato se N iz tenvina nikako ne uči nego se potpuno uklapa u L, bez zraka kroz nos.", "en": "In وَوَيْلٌ there is the tanween UN followed by لَهُ, so the N of the tanween is not pronounced but merges completely into L, with no nasalisation."}
+                    {"tip": "uklapanje", "bs": "U riječi فَوَيْلٌ je tenvin UN, a poslije dolazi لَهُ, zato se N iz tenvina nikako ne uči nego se potpuno uklapa u L, bez zraka kroz nos.", "en": "In فَوَيْلٌ there is the tanween UN followed by لَهُ, so the N of the tanween is not pronounced but merges completely into L, with no nasalisation.", "de": "Im Wort فَوَيْلٌ steht das Tanwin UN, und danach kommt لَهُ. Deshalb wird das N aus dem Tanwin gar nicht gesprochen, sondern verschmilzt vollständig in L, ohne Luft durch die Nase."},
+                    {"tip": "uklapanje", "bs": "U riječi وَوَيْلٌ je tenvin UN, a poslije dolazi لَهُ, zato se N iz tenvina nikako ne uči nego se potpuno uklapa u L, bez zraka kroz nos.", "en": "In وَوَيْلٌ there is the tanween UN followed by لَهُ, so the N of the tanween is not pronounced but merges completely into L, with no nasalisation.", "de": "Im Wort وَوَيْلٌ steht das Tanwin UN, und danach kommt لَهُ. Deshalb wird das N aus dem Tanwin gar nicht gesprochen, sondern verschmilzt vollständig in L, ohne Luft durch die Nase."}
                 ],
                 "highlight": "لٌ لَ",
                 "word": " وَوَيْلٌ لَهُمْ مِمَّا يَكْسِبُونَ",
@@ -93,8 +93,8 @@
                 "id": 8,
                 "url": "./assets/audio/l7/8.mp3",
                 "napomena": [
-                    {"tip": "uklapanje", "bs": "U riječi وَيْلٌ je tenvin UN, a poslije dolazi لِ, zato se N iz tenvina nikako ne uči nego se potpuno uklapa u L, bez zraka kroz nos.", "en": "In وَيْلٌ there is the tanween UN and لِ follows, so the N of the tanween is not pronounced but merges completely into L, with no nasalisation."},
-                    {"tip": "uklapanje", "bs": "U riječi هُـمَزَةٍ je tenvin IN, a poslije dolazi لُ, zato se N iz tenvina nikako ne uči nego se potpuno uklapa u L, bez zraka kroz nos.", "en": "In هُـمَزَةٍ there is the tanween IN and لُ follows, so the N of the tanween is not pronounced but merges completely into L, with no nasalisation."}
+                    {"tip": "uklapanje", "bs": "U riječi وَيْلٌ je tenvin UN, a poslije dolazi لِ, zato se N iz tenvina nikako ne uči nego se potpuno uklapa u L, bez zraka kroz nos.", "en": "In وَيْلٌ there is the tanween UN and لِ follows, so the N of the tanween is not pronounced but merges completely into L, with no nasalisation.", "de": "Im Wort وَيْلٌ steht das Tanwin UN, und danach kommt لِ. Deshalb wird das N aus dem Tanwin gar nicht gesprochen, sondern verschmilzt vollständig in L, ohne Luft durch die Nase."},
+                    {"tip": "uklapanje", "bs": "U riječi هُـمَزَةٍ je tenvin IN, a poslije dolazi لُ, zato se N iz tenvina nikako ne uči nego se potpuno uklapa u L, bez zraka kroz nos.", "en": "In هُـمَزَةٍ there is the tanween IN and لُ follows, so the N of the tanween is not pronounced but merges completely into L, with no nasalisation.", "de": "Im Wort هُـمَزَةٍ steht das Tanwin IN, und danach kommt لُ. Deshalb wird das N aus dem Tanwin gar nicht gesprochen, sondern verschmilzt vollständig in L, ohne Luft durch die Nase."}
                 ],
                 "highlight": "ةٍ لُ",
                 "word": " هُـمَزَةٍ لُمَزَةٍ",
@@ -111,7 +111,7 @@
             "id": 9,
             "url": "./assets/audio/l7/9.mp3",
             "napomena": [
-                {"tip": "uklapanje", "bs": "U riječi مِنْ je نْ sa sukunom, a poslije dolazi لَ u لَدُنْهُ, zato se N nikako ne uči nego se potpuno uklapa u L, bez zraka kroz nos.", "en": "In مِنْ the نْ has a sukun and لَ follows in لَدُنْهُ, so N is not pronounced at all but merges completely into L, with no nasalisation."}
+                {"tip": "uklapanje", "bs": "U riječi مِنْ je نْ sa sukunom, a poslije dolazi لَ u لَدُنْهُ, zato se N nikako ne uči nego se potpuno uklapa u L, bez zraka kroz nos.", "en": "In مِنْ the نْ has a sukun and لَ follows in لَدُنْهُ, so N is not pronounced at all but merges completely into L, with no nasalisation.", "de": "Im Wort مِنْ steht نْ mit Sukun, und danach kommt لَ in لَدُنْهُ. Deshalb wird das N gar nicht gesprochen, sondern verschmilzt vollständig in L, ohne Luft durch die Nase."}
             ],
             "highlight": "نْ لَ",
             "word": "وَيُؤْتِ مِنْ لَدُنْهُ أَجْرًا عَظِيمًا",
@@ -121,7 +121,7 @@
             "id": 10,
             "url": "./assets/audio/l7/10.mp3",
             "napomena": [
-                {"tip": "uklapanje", "bs": "U riječi مِـنْ je نْ sa sukunom, a poslije dolazi رَ u رَحْمَتِنَٓا, zato se N nikako ne uči nego se potpuno uklapa u R, bez zraka kroz nos.", "en": "In مِـنْ the نْ has a sukun and رَ follows in رَحْمَتِنَٓا, so N is not pronounced at all but merges completely into R, with no nasalisation."}
+                {"tip": "uklapanje", "bs": "U riječi مِـنْ je نْ sa sukunom, a poslije dolazi رَ u رَحْمَتِنَٓا, zato se N nikako ne uči nego se potpuno uklapa u R, bez zraka kroz nos.", "en": "In مِـنْ the نْ has a sukun and رَ follows in رَحْمَتِنَٓا, so N is not pronounced at all but merges completely into R, with no nasalisation.", "de": "Im Wort مِـنْ steht نْ mit Sukun, und danach kommt رَ in رَحْمَتِنَٓا. Deshalb wird das N gar nicht gesprochen, sondern verschmilzt vollständig in R, ohne Luft durch die Nase."}
             ],
             "highlight": "نْ رَ",
             "word": "وَوَهَبْنَا لَهُ مِـنْ رَحْمَتِنَٓا أَخَاهُ هَارُونَ نَبِيًّا ",
@@ -131,7 +131,7 @@
             "id": 11,
             "url": "./assets/audio/l7/11.mp3",
             "napomena": [
-                {"tip": "uklapanje", "bs": "U riječi رُجُومًا je tenvin EN, a poslije dolazi لِـ u لِـلشَّيَاطِينِ, zato se N iz tenvina nikako ne uči nego se potpuno uklapa u L, bez zraka kroz nos.", "en": "In رُجُومًا there is the tanween AN and لِـ follows in لِـلشَّيَاطِينِ, so the N of the tanween is not pronounced but merges completely into L, with no nasalisation."}
+                {"tip": "uklapanje", "bs": "U riječi رُجُومًا je tenvin EN, a poslije dolazi لِـ u لِـلشَّيَاطِينِ, zato se N iz tenvina nikako ne uči nego se potpuno uklapa u L, bez zraka kroz nos.", "en": "In رُجُومًا there is the tanween AN and لِـ follows in لِـلشَّيَاطِينِ, so the N of the tanween is not pronounced but merges completely into L, with no nasalisation.", "de": "Im Wort رُجُومًا steht das Tanwin AN, und danach kommt لِـ in لِـلشَّيَاطِينِ. Deshalb wird das N aus dem Tanwin gar nicht gesprochen, sondern verschmilzt vollständig in L, ohne Luft durch die Nase."}
             ],
             "highlight": "مًا لِـ",
             "word": "وَجَعَلْنَاهَا رُجُومًا لِـلشَّيَاطِينِ ",
@@ -141,7 +141,7 @@
             "id": 12,
             "url": "./assets/audio/l7/12.mp3",
             "napomena": [
-                {"tip": "uklapanje", "bs": "U riječi مِـنْ je نْ sa sukunom, a poslije dolazi رِ u رِزْقِ, zato se N nikako ne uči nego se potpuno uklapa u R, bez zraka kroz nos.", "en": "In مِـنْ the نْ has a sukun and رِ follows in رِزْقِ, so N is not pronounced at all but merges completely into R, with no nasalisation."}
+                {"tip": "uklapanje", "bs": "U riječi مِـنْ je نْ sa sukunom, a poslije dolazi رِ u رِزْقِ, zato se N nikako ne uči nego se potpuno uklapa u R, bez zraka kroz nos.", "en": "In مِـنْ the نْ has a sukun and رِ follows in رِزْقِ, so N is not pronounced at all but merges completely into R, with no nasalisation.", "de": "Im Wort مِـنْ steht نْ mit Sukun, und danach kommt رِ in رِزْقِ. Deshalb wird das N gar nicht gesprochen, sondern verschmilzt vollständig in R, ohne Luft durch die Nase."}
             ],
             "highlight": "نْ رِ",
             "word": "كُلُوا وَاشْرَبُوا مِـنْ رِزْقِ اللّٰهِ",
@@ -151,7 +151,7 @@
             "id": 13,
             "url": "./assets/audio/l7/13.mp3",
             "napomena": [
-                {"tip": "uklapanje", "bs": "U riječi مِـنْ je نْ sa sukunom, a poslije dolazi رَ u رَبِّـهِمْ, zato se N nikako ne uči nego se potpuno uklapa u R, bez zraka kroz nos.", "en": "In مِـنْ the نْ has a sukun and رَ follows in رَبِّـهِمْ, so N is not pronounced at all but merges completely into R, with no nasalisation."}
+                {"tip": "uklapanje", "bs": "U riječi مِـنْ je نْ sa sukunom, a poslije dolazi رَ u رَبِّـهِمْ, zato se N nikako ne uči nego se potpuno uklapa u R, bez zraka kroz nos.", "en": "In مِـنْ the نْ has a sukun and رَ follows in رَبِّـهِمْ, so N is not pronounced at all but merges completely into R, with no nasalisation.", "de": "Im Wort مِـنْ steht نْ mit Sukun, und danach kommt رَ in رَبِّـهِمْ. Deshalb wird das N gar nicht gesprochen, sondern verschmilzt vollständig in R, ohne Luft durch die Nase."}
             ],
             "highlight": "نْ رَ",
             "word": "فَيَعْلَمُونَ أَنَّـهُ الْحَقُّ مِـنْ رَبِّـهِمْ ",
@@ -161,8 +161,8 @@
                 "id": 14,
                 "url": "./assets/audio/l7/14.mp3",
                 "napomena": [
-                    {"tip": "uklapanje", "bs": "U riječi وَإِذًا je tenvin EN, a poslije dolazi لَاٰ, zato se N iz tenvina nikako ne uči nego se potpuno uklapa u L, bez zraka kroz nos.", "en": "In وَإِذًا there is the tanween AN and لَاٰ follows, so the N of the tanween is not pronounced but merges completely into L, with no nasalisation."},
-                    {"tip": "uklapanje", "bs": "U riječi مِنْ je نْ sa sukunom, a poslije dolazi لَ u لَدُنَّٓا, zato se N nikako ne uči nego se potpuno uklapa u L, bez zraka kroz nos.", "en": "In مِنْ the نْ has a sukun and لَ follows in لَدُنَّٓا, so N is not pronounced at all but merges completely into L, with no nasalisation."}
+                    {"tip": "uklapanje", "bs": "U riječi وَإِذًا je tenvin EN, a poslije dolazi لَاٰ, zato se N iz tenvina nikako ne uči nego se potpuno uklapa u L, bez zraka kroz nos.", "en": "In وَإِذًا there is the tanween AN and لَاٰ follows, so the N of the tanween is not pronounced but merges completely into L, with no nasalisation.", "de": "Im Wort وَإِذًا steht das Tanwin AN, und danach kommt لَاٰ. Deshalb wird das N aus dem Tanwin gar nicht gesprochen, sondern verschmilzt vollständig in L, ohne Luft durch die Nase."},
+                    {"tip": "uklapanje", "bs": "U riječi مِنْ je نْ sa sukunom, a poslije dolazi لَ u لَدُنَّٓا, zato se N nikako ne uči nego se potpuno uklapa u L, bez zraka kroz nos.", "en": "In مِنْ the نْ has a sukun and لَ follows in لَدُنَّٓا, so N is not pronounced at all but merges completely into L, with no nasalisation.", "de": "Im Wort مِنْ steht نْ mit Sukun, und danach kommt لَ in لَدُنَّٓا. Deshalb wird das N gar nicht gesprochen, sondern verschmilzt vollständig in L, ohne Luft durch die Nase."}
                 ],
                 "highlight": "نْ لَ",
                 "word": "تَـيْـنَاهُمْ مِنْ لَدُنَّٓا أَجْرًا عَظِيمًا ",
@@ -179,8 +179,8 @@
                 "id": 15,
                 "url": "./assets/audio/l7/15.mp3",
                 "napomena": [
-                    {"tip": "uklapanje", "bs": "U riječi مُصَدِّقٌ je tenvin UN, a poslije dolazi لِ u لِسَانًا, zato se N iz tenvina nikako ne uči nego se potpuno uklapa u L, bez zraka kroz nos.", "en": "In مُصَدِّقٌ there is the tanween UN and لِ follows in لِسَانًا, so the N of the tanween is not pronounced but merges completely into L, with no nasalisation."},
-                    {"tip": "uklapanje", "bs": "U riječi عَرَبِـيًّا je tenvin EN, a poslije dolazi لِـ u لِـيُنْذِرَ, zato se N iz tenvina nikako ne uči nego se potpuno uklapa u L, bez zraka kroz nos.", "en": "In عَرَبِـيًّا there is the tanween AN and لِـ follows in لِـيُنْذِرَ, so the N of the tanween is not pronounced but merges completely into L, with no nasalisation."}
+                    {"tip": "uklapanje", "bs": "U riječi مُصَدِّقٌ je tenvin UN, a poslije dolazi لِ u لِسَانًا, zato se N iz tenvina nikako ne uči nego se potpuno uklapa u L, bez zraka kroz nos.", "en": "In مُصَدِّقٌ there is the tanween UN and لِ follows in لِسَانًا, so the N of the tanween is not pronounced but merges completely into L, with no nasalisation.", "de": "Im Wort مُصَدِّقٌ steht das Tanwin UN, und danach kommt لِ in لِسَانًا. Deshalb wird das N aus dem Tanwin gar nicht gesprochen, sondern verschmilzt vollständig in L, ohne Luft durch die Nase."},
+                    {"tip": "uklapanje", "bs": "U riječi عَرَبِـيًّا je tenvin EN, a poslije dolazi لِـ u لِـيُنْذِرَ, zato se N iz tenvina nikako ne uči nego se potpuno uklapa u L, bez zraka kroz nos.", "en": "In عَرَبِـيًّا there is the tanween AN and لِـ follows in لِـيُنْذِرَ, so the N of the tanween is not pronounced but merges completely into L, with no nasalisation.", "de": "Im Wort عَرَبِـيًّا steht das Tanwin AN, und danach kommt لِـ in لِـيُنْذِرَ. Deshalb wird das N aus dem Tanwin gar nicht gesprochen, sondern verschmilzt vollständig in L, ohne Luft durch die Nase."}
                 ],
                 "highlight": "يًّا لِـ",
                 "word": " عَرَبِـيًّا لِـيُنْذِرَ الَّذِينَ ظَلَمُوا وَبُشْرٰى لِلْمُحْسِنِينَ ",
@@ -197,7 +197,7 @@
             "id": 16,
             "url": "./assets/audio/l7/16.mp3",
             "napomena": [
-                {"tip": "uklapanje", "bs": "U riječi مِنْ je نْ sa sukunom, a poslije dolazi رَ u رَحْمَةِ, zato se N nikako ne uči nego se potpuno uklapa u R, bez zraka kroz nos.", "en": "In مِنْ the نْ has a sukun and رَ follows in رَحْمَةِ, so N is not pronounced at all but merges completely into R, with no nasalisation."}
+                {"tip": "uklapanje", "bs": "U riječi مِنْ je نْ sa sukunom, a poslije dolazi رَ u رَحْمَةِ, zato se N nikako ne uči nego se potpuno uklapa u R, bez zraka kroz nos.", "en": "In مِنْ the نْ has a sukun and رَ follows in رَحْمَةِ, so N is not pronounced at all but merges completely into R, with no nasalisation.", "de": "Im Wort مِنْ steht نْ mit Sukun, und danach kommt رَ in رَحْمَةِ. Deshalb wird das N gar nicht gesprochen, sondern verschmilzt vollständig in R, ohne Luft durch die Nase."}
             ],
             "highlight": "نْ ر",
             "word": "قَالَ وَمَنْ يَقْنَطُ مِنْ رَحْمَةِ رَبِّـهِٓ إِلَّا الضَّآ لُّونَ ",

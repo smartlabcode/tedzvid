@@ -2,143 +2,153 @@
   "lekcija": 9,
   "pitanja": [
     {
-      "q": { "bs": "Šta znači izhar halkijj?", "en": "What does idhhar halqi mean?" },
+      "q": { "bs": "Šta znači izhar halkijj?", "en": "What does idhhar halqi mean?", "de": "Was bedeutet Idh-har Halqi?" },
       "opcije": [
-        { "bs": "Čisto izgovaranje harfa N (ن) ili tenvina", "en": "Clear pronunciation of the letter N (ن) or tanween" },
-        { "bs": "Čisto izgovaranje harfa M (م)", "en": "Clear pronunciation of the letter M (م)" },
-        { "bs": "Uklapanje harfa N (ن) u sljedeći harf", "en": "Merging the letter N (ن) into the next letter" },
-        { "bs": "Skrivanje harfa N (ن)", "en": "Hiding the letter N (ن)" }
+        { "bs": "Čisto izgovaranje harfa N (ن) ili tenvina", "en": "Clear pronunciation of the letter N (ن) or tanween", "de": "Das deutliche Aussprechen des Buchstabens N (ن) oder des Tanwins" },
+        { "bs": "Čisto izgovaranje harfa M (م)", "en": "Clear pronunciation of the letter M (م)", "de": "Das deutliche Aussprechen des Buchstabens M (م)" },
+        { "bs": "Uklapanje harfa N (ن) u sljedeći harf", "en": "Merging the letter N (ن) into the next letter", "de": "Die Verschmelzung des Buchstabens N (ن) in den nächsten Buchstaben" },
+        { "bs": "Skrivanje harfa N (ن)", "en": "Hiding the letter N (ن)", "de": "Das Verstecken des Buchstabens N (ن)" }
       ],
       "tacno": 0,
       "objasnjenje": {
         "bs": "Izhar halkijj je čisto izgovaranje harfa N (ن) ili tenvina, bez uklapanja.",
-        "en": "Idhhar halqi is the clear pronunciation of the letter N (ن) or tanween, without merging."
+        "en": "Idhhar halqi is the clear pronunciation of the letter N (ن) or tanween, without merging.",
+        "de": "Idh-har Halqi ist das deutliche Aussprechen des Buchstabens N (ن) oder des Tanwins, ohne Verschmelzung."
       }
     },
     {
-      "q": { "bs": "Koji harfovi izazivaju izhar halkijj?", "en": "Which letters cause idhhar halqi?" },
+      "q": { "bs": "Koji harfovi izazivaju izhar halkijj?", "en": "Which letters cause idhhar halqi?", "de": "Welche Buchstaben lösen Idh-har Halqi aus?" },
       "opcije": [
-        { "bs": "L i R (ل ر)", "en": "L and R (ل ر)" },
-        { "bs": "V, N, M, J (و ن م ي)", "en": "W, N, M, Y (و ن م ي)" },
-        { "bs": "Šest grlenih harfova (خ غ ح ع ه أ)", "en": "The six throat letters (خ غ ح ع ه أ)" },
-        { "bs": "B i M (ب م)", "en": "B and M (ب م)" }
+        { "bs": "L i R (ل ر)", "en": "L and R (ل ر)", "de": "L und R (ل ر)" },
+        { "bs": "V, N, M, J (و ن م ي)", "en": "W, N, M, Y (و ن م ي)", "de": "W, N, M, Y (و ن م ي)" },
+        { "bs": "Šest grlenih harfova (خ غ ح ع ه أ)", "en": "The six throat letters (خ غ ح ع ه أ)", "de": "Die sechs Kehlbuchstaben (خ غ ح ع ه أ)" },
+        { "bs": "B i M (ب م)", "en": "B and M (ب م)", "de": "B und M (ب م)" }
       ],
       "tacno": 2,
       "objasnjenje": {
         "bs": "Izhar halkijj nastaje kada poslije harfa N sa sukunom ili tenvina dođe jedan od šest grlenih harfova: خ غ ح ع ه أ.",
-        "en": "Idhhar halqi occurs when the letter N with a sukun or tanween is followed by one of the six throat letters: خ غ ح ع ه أ."
+        "en": "Idhhar halqi occurs when the letter N with a sukun or tanween is followed by one of the six throat letters: خ غ ح ع ه أ.",
+        "de": "Idh-har Halqi entsteht, wenn nach dem N mit Sukun oder nach dem Tanwin einer der sechs Kehlbuchstaben kommt: خ غ ح ع ه أ."
       }
     },
     {
-      "q": { "bs": "Koliko ima grlenih harfova?", "en": "How many throat letters are there?" },
+      "q": { "bs": "Koliko ima grlenih harfova?", "en": "How many throat letters are there?", "de": "Wie viele Kehlbuchstaben gibt es?" },
       "opcije": [
-        { "bs": "Četiri", "en": "Four" },
-        { "bs": "Šest", "en": "Six" },
-        { "bs": "Dva", "en": "Two" },
-        { "bs": "Petnaest", "en": "Fifteen" }
+        { "bs": "Četiri", "en": "Four", "de": "Vier" },
+        { "bs": "Šest", "en": "Six", "de": "Sechs" },
+        { "bs": "Dva", "en": "Two", "de": "Zwei" },
+        { "bs": "Petnaest", "en": "Fifteen", "de": "Fünfzehn" }
       ],
       "tacno": 1,
       "objasnjenje": {
         "bs": "Grlenih harfova ima šest: خ غ ح ع ه أ.",
-        "en": "There are six throat letters: خ غ ح ع ه أ."
+        "en": "There are six throat letters: خ غ ح ع ه أ.",
+        "de": "Es gibt sechs Kehlbuchstaben: خ غ ح ع ه أ."
       }
     },
     {
-      "q": { "bs": "Kako se izgovara harf N (ن) kod izhara halkijja?", "en": "How is the letter N (ن) pronounced in idhhar halqi?" },
+      "q": { "bs": "Kako se izgovara harf N (ن) kod izhara halkijja?", "en": "How is the letter N (ن) pronounced in idhhar halqi?", "de": "Wie wird der Buchstabe N (ن) bei Idh-har Halqi gesprochen?" },
       "opcije": [
-        { "bs": "Kroz nos u trajanju od 2 hareketa", "en": "Through the nose for 2 harakas" },
-        { "bs": "Pretvara se u harf M (م)", "en": "It turns into the letter M (م)" },
-        { "bs": "Potpuno se uklapa u sljedeći harf", "en": "It merges completely into the next letter" },
-        { "bs": "Čisto, bez uklapanja", "en": "Clearly, without merging" }
+        { "bs": "Kroz nos u trajanju od 2 hareketa", "en": "Through the nose for 2 harakas", "de": "Durch die Nase, 2 Harakat lang" },
+        { "bs": "Pretvara se u harf M (م)", "en": "It turns into the letter M (م)", "de": "Er verwandelt sich in den Buchstaben M (م)" },
+        { "bs": "Potpuno se uklapa u sljedeći harf", "en": "It merges completely into the next letter", "de": "Er verschmilzt vollständig in den nächsten Buchstaben" },
+        { "bs": "Čisto, bez uklapanja", "en": "Clearly, without merging", "de": "Deutlich, ohne Verschmelzung" }
       ],
       "tacno": 3,
       "objasnjenje": {
         "bs": "Kod izhara halkijja harf N (ن) se izgovara čisto, tj. bez uklapanja.",
-        "en": "In idhhar halqi the letter N (ن) is pronounced clearly, that is, without merging."
+        "en": "In idhhar halqi the letter N (ن) is pronounced clearly, that is, without merging.",
+        "de": "Bei Idh-har Halqi wird der Buchstabe N (ن) deutlich gesprochen, also ohne Verschmelzung."
       }
     },
     {
-      "q": { "bs": "Poslije čega dolazi do izhara halkijja?", "en": "After what does idhhar halqi occur?" },
+      "q": { "bs": "Poslije čega dolazi do izhara halkijja?", "en": "After what does idhhar halqi occur?", "de": "Wonach tritt Idh-har Halqi ein?" },
       "opcije": [
-        { "bs": "Poslije harfa M (م) sa sukunom", "en": "After the letter M (م) with a sukun" },
-        { "bs": "Poslije harfa N (ن) sa sukunom ili tenvina", "en": "After the letter N (ن) with a sukun or tanween" },
-        { "bs": "Poslije grlenog harfa sa sukunom", "en": "After a throat letter with a sukun" },
-        { "bs": "Poslije bilo kojeg harfa sa sukunom", "en": "After any letter with a sukun" }
+        { "bs": "Poslije harfa M (م) sa sukunom", "en": "After the letter M (م) with a sukun", "de": "Nach dem Buchstaben M (م) mit Sukun" },
+        { "bs": "Poslije harfa N (ن) sa sukunom ili tenvina", "en": "After the letter N (ن) with a sukun or tanween", "de": "Nach dem Buchstaben N (ن) mit Sukun oder nach dem Tanwin" },
+        { "bs": "Poslije grlenog harfa sa sukunom", "en": "After a throat letter with a sukun", "de": "Nach einem Kehlbuchstaben mit Sukun" },
+        { "bs": "Poslije bilo kojeg harfa sa sukunom", "en": "After any letter with a sukun", "de": "Nach jedem beliebigen Buchstaben mit Sukun" }
       ],
       "tacno": 1,
       "objasnjenje": {
         "bs": "Pravilo važi kada poslije harfa N sa sukunom (نْ) ili tenvina EN, IN, UN dođe grleni harf.",
-        "en": "The rule applies when the letter N with a sukun (نْ) or the tanween AN, IN, UN is followed by a throat letter."
+        "en": "The rule applies when the letter N with a sukun (نْ) or the tanween AN, IN, UN is followed by a throat letter.",
+        "de": "Die Regel gilt, wenn nach dem N mit Sukun (نْ) oder nach dem Tanwin AN, IN, UN ein Kehlbuchstabe kommt."
       }
     },
     {
-      "q": { "bs": "U kojem primjeru dolazi do izhara halkijja?", "en": "In which example does idhhar halqi occur?" },
+      "q": { "bs": "U kojem primjeru dolazi do izhara halkijja?", "en": "In which example does idhhar halqi occur?", "de": "In welchem Beispiel tritt Idh-har Halqi ein?" },
       "opcije": [
-        { "bs": "عَلِيمًا حَكِيمًا", "en": "عَلِيمًا حَكِيمًا" },
-        { "bs": "غَفُورًا رَحِيمًا", "en": "غَفُورًا رَحِيمًا" },
-        { "bs": "سَمِيعٌ بَصِيرٌ", "en": "سَمِيعٌ بَصِيرٌ" },
-        { "bs": "نِعْمَةً مِنْهُ", "en": "نِعْمَةً مِنْهُ" }
+        { "bs": "عَلِيمًا حَكِيمًا", "en": "عَلِيمًا حَكِيمًا", "de": "عَلِيمًا حَكِيمًا" },
+        { "bs": "غَفُورًا رَحِيمًا", "en": "غَفُورًا رَحِيمًا", "de": "غَفُورًا رَحِيمًا" },
+        { "bs": "سَمِيعٌ بَصِيرٌ", "en": "سَمِيعٌ بَصِيرٌ", "de": "سَمِيعٌ بَصِيرٌ" },
+        { "bs": "نِعْمَةً مِنْهُ", "en": "نِعْمَةً مِنْهُ", "de": "نِعْمَةً مِنْهُ" }
       ],
       "tacno": 0,
       "objasnjenje": {
         "bs": "U primjeru عَلِيمًا حَكِيمًا poslije tenvina dolazi grleni harf H (ح), pa se tenvin izgovara čisto.",
-        "en": "In عَلِيمًا حَكِيمًا the tanween is followed by the throat letter H (ح), so the tanween is pronounced clearly."
+        "en": "In عَلِيمًا حَكِيمًا the tanween is followed by the throat letter H (ح), so the tanween is pronounced clearly.",
+        "de": "Im Beispiel عَلِيمًا حَكِيمًا kommt nach dem Tanwin der Kehlbuchstabe H (ح), also wird das Tanwin deutlich gesprochen."
       }
     },
     {
-      "q": { "bs": "Šta je izhar mutlak?", "en": "What is idhhar mutlaq?" },
+      "q": { "bs": "Šta je izhar mutlak?", "en": "What is idhhar mutlaq?", "de": "Was ist Idh-har Mutlaq?" },
       "opcije": [
-        { "bs": "Kada poslije tenvina dođe harf V (و) ili J (ي), pa se tenvin uklapa", "en": "When tanween is followed by the letter W (و) or Y (ي) and merges" },
-        { "bs": "Kada poslije harfa N sa sukunom dođe grleni harf", "en": "When the letter N with a sukun is followed by a throat letter" },
-        { "bs": "Kada poslije harfa N sa sukunom u istoj riječi dođe harf V (و) ili J (ي), pa se N izgovara čisto", "en": "When the letter N with a sukun is followed within the same word by the letter W (و) or Y (ي), and N is pronounced clearly" },
-        { "bs": "Kada se harf M (م) sa sukunom izgovara čisto", "en": "When the letter M (م) with a sukun is pronounced clearly" }
+        { "bs": "Kada poslije tenvina dođe harf V (و) ili J (ي), pa se tenvin uklapa", "en": "When tanween is followed by the letter W (و) or Y (ي) and merges", "de": "Wenn nach dem Tanwin der Buchstabe W (و) oder Y (ي) kommt und das Tanwin verschmilzt" },
+        { "bs": "Kada poslije harfa N sa sukunom dođe grleni harf", "en": "When the letter N with a sukun is followed by a throat letter", "de": "Wenn nach dem N mit Sukun ein Kehlbuchstabe kommt" },
+        { "bs": "Kada poslije harfa N sa sukunom u istoj riječi dođe harf V (و) ili J (ي), pa se N izgovara čisto", "en": "When the letter N with a sukun is followed within the same word by the letter W (و) or Y (ي), and N is pronounced clearly", "de": "Wenn nach dem N mit Sukun im selben Wort der Buchstabe W (و) oder Y (ي) kommt und das N deutlich gesprochen wird" },
+        { "bs": "Kada se harf M (م) sa sukunom izgovara čisto", "en": "When the letter M (م) with a sukun is pronounced clearly", "de": "Wenn der Buchstabe M (م) mit Sukun deutlich gesprochen wird" }
       ],
       "tacno": 2,
       "objasnjenje": {
         "bs": "Izhar mutlak je čisto izgovaranje harfa N sa sukunom kada u istoj riječi poslije njega dođe harf V (و) ili J (ي).",
-        "en": "Idhhar mutlaq is the clear pronunciation of the letter N with a sukun when it is followed within the same word by the letter W (و) or Y (ي)."
+        "en": "Idhhar mutlaq is the clear pronunciation of the letter N with a sukun when it is followed within the same word by the letter W (و) or Y (ي).",
+        "de": "Idh-har Mutlaq ist das deutliche Aussprechen des N mit Sukun, wenn im selben Wort danach der Buchstabe W (و) oder Y (ي) kommt."
       }
     },
     {
-      "q": { "bs": "Koji od sljedećih primjera je izhar mutlak?", "en": "Which of the following examples is idhhar mutlaq?" },
+      "q": { "bs": "Koji od sljedećih primjera je izhar mutlak?", "en": "Which of the following examples is idhhar mutlaq?", "de": "Welches der folgenden Beispiele ist Idh-har Mutlaq?" },
       "opcije": [
-        { "bs": "يَهُودِيًّا وَلَا", "en": "يَهُودِيًّا وَلَا" },
-        { "bs": "عَنْهُ", "en": "عَنْهُ" },
-        { "bs": "مَنْ يَعْمَلْ", "en": "مَنْ يَعْمَلْ" },
-        { "bs": "اَلدُّنْيَا", "en": "اَلدُّنْيَا" }
+        { "bs": "يَهُودِيًّا وَلَا", "en": "يَهُودِيًّا وَلَا", "de": "يَهُودِيًّا وَلَا" },
+        { "bs": "عَنْهُ", "en": "عَنْهُ", "de": "عَنْهُ" },
+        { "bs": "مَنْ يَعْمَلْ", "en": "مَنْ يَعْمَلْ", "de": "مَنْ يَعْمَلْ" },
+        { "bs": "اَلدُّنْيَا", "en": "اَلدُّنْيَا", "de": "اَلدُّنْيَا" }
       ],
       "tacno": 3,
       "objasnjenje": {
         "bs": "U riječi اَلدُّنْيَا poslije harfa N sa sukunom u istoj riječi dolazi harf J (ي), pa se N izgovara čisto.",
-        "en": "In the word اَلدُّنْيَا the letter N with a sukun is followed within the same word by the letter Y (ي), so N is pronounced clearly."
+        "en": "In the word اَلدُّنْيَا the letter N with a sukun is followed within the same word by the letter Y (ي), so N is pronounced clearly.",
+        "de": "Im Wort اَلدُّنْيَا kommt nach dem N mit Sukun im selben Wort der Buchstabe Y (ي), also wird das N deutlich gesprochen."
       }
     },
     {
-      "q": { "bs": "Po čemu se izhar mutlak razlikuje od idgama meal-gunneh?", "en": "How does idhhar mutlaq differ from idgham ma'al-ghunnah?" },
+      "q": { "bs": "Po čemu se izhar mutlak razlikuje od idgama meal-gunneh?", "en": "How does idhhar mutlaq differ from idgham ma'al-ghunnah?", "de": "Worin unterscheidet sich Idh-har Mutlaq von Idgham ma’al-Ghunna?" },
       "opcije": [
-        { "bs": "Kod izhara mutlaka harf V (و) ili J (ي) dolazi u istoj riječi, pa se N izgovara čisto", "en": "In idhhar mutlaq the letter W (و) or Y (ي) comes within the same word, so N is pronounced clearly" },
-        { "bs": "Kod izhara mutlaka harf N se pretvara u M (م)", "en": "In idhhar mutlaq the letter N turns into M (م)" },
-        { "bs": "Kod izhara mutlaka poslije N dolazi grleni harf", "en": "In idhhar mutlaq N is followed by a throat letter" },
-        { "bs": "Kod izhara mutlaka zrak se propušta kroz nos 2 hareketa", "en": "In idhhar mutlaq air passes through the nose for 2 harakas" }
+        { "bs": "Kod izhara mutlaka harf V (و) ili J (ي) dolazi u istoj riječi, pa se N izgovara čisto", "en": "In idhhar mutlaq the letter W (و) or Y (ي) comes within the same word, so N is pronounced clearly", "de": "Bei Idh-har Mutlaq kommt W (و) oder Y (ي) im selben Wort, also wird das N deutlich gesprochen" },
+        { "bs": "Kod izhara mutlaka harf N se pretvara u M (م)", "en": "In idhhar mutlaq the letter N turns into M (م)", "de": "Bei Idh-har Mutlaq verwandelt sich das N in M (م)" },
+        { "bs": "Kod izhara mutlaka poslije N dolazi grleni harf", "en": "In idhhar mutlaq N is followed by a throat letter", "de": "Bei Idh-har Mutlaq kommt nach dem N ein Kehlbuchstabe" },
+        { "bs": "Kod izhara mutlaka zrak se propušta kroz nos 2 hareketa", "en": "In idhhar mutlaq air passes through the nose for 2 harakas", "de": "Bei Idh-har Mutlaq strömt die Luft 2 Harakat durch die Nase" }
       ],
       "tacno": 0,
       "objasnjenje": {
         "bs": "Kada V (و) ili J (ي) dođu u istoj riječi poslije N sa sukunom, nema uklapanja nego se N izgovara čisto.",
-        "en": "When W (و) or Y (ي) follow N with a sukun within the same word, there is no merging and N is pronounced clearly."
+        "en": "When W (و) or Y (ي) follow N with a sukun within the same word, there is no merging and N is pronounced clearly.",
+        "de": "Wenn W (و) oder Y (ي) im selben Wort nach dem N mit Sukun kommen, gibt es keine Verschmelzung, sondern das N wird deutlich gesprochen."
       }
     },
     {
-      "q": { "bs": "Koji od sljedećih harfova je grleni harf?", "en": "Which of the following letters is a throat letter?" },
+      "q": { "bs": "Koji od sljedećih harfova je grleni harf?", "en": "Which of the following letters is a throat letter?", "de": "Welcher der folgenden Buchstaben ist ein Kehlbuchstabe?" },
       "opcije": [
-        { "bs": "K (ك)", "en": "K (ك)" },
-        { "bs": "B (ب)", "en": "B (ب)" },
-        { "bs": "Gajn (غ)", "en": "Ghayn (غ)" },
-        { "bs": "L (ل)", "en": "L (ل)" }
+        { "bs": "K (ك)", "en": "K (ك)", "de": "Der Buchstabe K (ك)" },
+        { "bs": "B (ب)", "en": "B (ب)", "de": "Der Buchstabe B (ب)" },
+        { "bs": "Gajn (غ)", "en": "Ghayn (غ)", "de": "Der Buchstabe Ghain (غ)" },
+        { "bs": "L (ل)", "en": "L (ل)", "de": "Der Buchstabe L (ل)" }
       ],
       "tacno": 2,
       "objasnjenje": {
         "bs": "Harf غ je jedan od šest grlenih harfova خ غ ح ع ه أ.",
-        "en": "The letter غ is one of the six throat letters خ غ ح ع ه أ."
+        "en": "The letter غ is one of the six throat letters خ غ ح ع ه أ.",
+        "de": "Der Buchstabe غ ist einer der sechs Kehlbuchstaben خ غ ح ع ه أ."
       }
     }
   ]

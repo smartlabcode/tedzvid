@@ -2,59 +2,59 @@
   "lekcija": 4,
   "pitanja": [
     {
-      "q": { "bs": "U kojem primjeru ima idgam mislejn?", "en": "In which example is there idgham mithlayn?" },
+      "q": { "bs": "U kojem primjeru ima idgam mislejn?", "en": "In which example is there idgham mithlayn?", "de": "In welchem Beispiel steht ein Idgham Mithlain?" },
       "opcije": [
-        { "bs": "عَنْهُ", "en": "عَنْهُ" },
-        { "bs": "رَبِحَتْ تِجَارَتُهُمْ", "en": "رَبِحَتْ تِجَارَتُهُمْ" },
-        { "bs": "بِسْمِ اللّٰهِ", "en": "بِسْمِ اللّٰهِ" },
-        { "bs": "أَفْوَاجًا", "en": "أَفْوَاجًا" }
+        { "bs": "عَنْهُ", "en": "عَنْهُ", "de": "عَنْهُ" },
+        { "bs": "رَبِحَتْ تِجَارَتُهُمْ", "en": "رَبِحَتْ تِجَارَتُهُمْ", "de": "رَبِحَتْ تِجَارَتُهُمْ" },
+        { "bs": "بِسْمِ اللّٰهِ", "en": "بِسْمِ اللّٰهِ", "de": "بِسْمِ اللّٰهِ" },
+        { "bs": "أَفْوَاجًا", "en": "أَفْوَاجًا", "de": "أَفْوَاجًا" }
       ],
       "tacno": 1,
-      "objasnjenje": { "bs": "U رَبِحَتْ تِجَارَتُهُمْ poslije harfa T (ت) sa sukunom dođe isti harf T (ت) sa hareketom, pa se uklapaju.", "en": "In رَبِحَتْ تِجَارَتُهُمْ the letter T (ت) with a sukun is followed by the same letter T (ت) with a haraka, so they merge." }
+      "objasnjenje": { "bs": "U رَبِحَتْ تِجَارَتُهُمْ poslije harfa T (ت) sa sukunom dođe isti harf T (ت) sa hareketom, pa se uklapaju.", "en": "In رَبِحَتْ تِجَارَتُهُمْ the letter T (ت) with a sukun is followed by the same letter T (ت) with a haraka, so they merge.", "de": "In رَبِحَتْ تِجَارَتُهُمْ kommt nach dem T (ت) mit Sukun derselbe Buchstabe T (ت) mit Vokalzeichen, also verschmelzen sie." }
     },
     {
-      "q": { "bs": "U kojem primjeru NEMA idgam mislejna?", "en": "In which example is there NO idgham mithlayn?" },
+      "q": { "bs": "U kojem primjeru NEMA idgam mislejna?", "en": "In which example is there NO idgham mithlayn?", "de": "In welchem Beispiel steht KEIN Idgham Mithlain?" },
       "opcije": [
-        { "bs": "هَلْ لَنَا", "en": "هَلْ لَنَا" },
-        { "bs": "يُدْرِكْكُمُ", "en": "يُدْرِكْكُمُ" },
-        { "bs": "قَدْ خَرَجُوا", "en": "قَدْ خَرَجُوا" },
-        { "bs": "تَسْطِعْ عَلَيْهِ", "en": "تَسْطِعْ عَلَيْهِ" }
+        { "bs": "هَلْ لَنَا", "en": "هَلْ لَنَا", "de": "هَلْ لَنَا" },
+        { "bs": "يُدْرِكْكُمُ", "en": "يُدْرِكْكُمُ", "de": "يُدْرِكْكُمُ" },
+        { "bs": "قَدْ خَرَجُوا", "en": "قَدْ خَرَجُوا", "de": "قَدْ خَرَجُوا" },
+        { "bs": "تَسْطِعْ عَلَيْهِ", "en": "تَسْطِعْ عَلَيْهِ", "de": "تَسْطِعْ عَلَيْهِ" }
       ],
       "tacno": 2,
-      "objasnjenje": { "bs": "U قَدْ خَرَجُوا poslije harfa D (د) sa sukunom dođe drugačiji harf, H (خ), pa nema uklapanja.", "en": "In قَدْ خَرَجُوا the letter D (د) with a sukun is followed by a different letter, KH (خ), so there is no merging." }
+      "objasnjenje": { "bs": "U قَدْ خَرَجُوا poslije harfa D (د) sa sukunom dođe drugačiji harf, H (خ), pa nema uklapanja.", "en": "In قَدْ خَرَجُوا the letter D (د) with a sukun is followed by a different letter, KH (خ), so there is no merging.", "de": "In قَدْ خَرَجُوا kommt nach dem D (د) mit Sukun ein anderer Buchstabe, CH (خ), also gibt es keine Verschmelzung." }
     },
     {
-      "q": { "bs": "U riječi يُكْرِهْهُنَّ dolazi do idgam mislejna. Koji se harf uči sa tešdidom?", "en": "In the word يُكْرِهْهُنَّ idgham mithlayn takes place. Which letter is recited with a tashdeed?" },
+      "q": { "bs": "U riječi يُكْرِهْهُنَّ dolazi do idgam mislejna. Koji se harf uči sa tešdidom?", "en": "In the word يُكْرِهْهُنَّ idgham mithlayn takes place. Which letter is recited with a tashdeed?", "de": "Im Wort يُكْرِهْهُنَّ entsteht ein Idgham Mithlain. Welcher Buchstabe wird mit Schadda gesprochen?" },
       "opcije": [
-        { "bs": "ك", "en": "ك" },
-        { "bs": "ر", "en": "ر" },
-        { "bs": "ن", "en": "ن" },
-        { "bs": "ه", "en": "ه" }
+        { "bs": "ك", "en": "ك", "de": "ك" },
+        { "bs": "ر", "en": "ر", "de": "ر" },
+        { "bs": "ن", "en": "ن", "de": "ن" },
+        { "bs": "ه", "en": "ه", "de": "ه" }
       ],
       "tacno": 3,
-      "objasnjenje": { "bs": "Harf H (ه) sa sukunom uklapa se u harf H (ه) sa hareketom odmah iza njega, pa se taj drugi H uči sa tešdidom.", "en": "The letter H (ه) with a sukun merges into the letter H (ه) with a haraka right after it, so that second H is recited with a tashdeed." }
+      "objasnjenje": { "bs": "Harf H (ه) sa sukunom uklapa se u harf H (ه) sa hareketom odmah iza njega, pa se taj drugi H uči sa tešdidom.", "en": "The letter H (ه) with a sukun merges into the letter H (ه) with a haraka right after it, so that second H is recited with a tashdeed.", "de": "Das H (ه) mit Sukun verschmilzt in das H (ه) mit Vokalzeichen, das direkt danach kommt, also wird dieses zweite H mit Schadda gesprochen." }
     },
     {
-      "q": { "bs": "Kako se čita بَلْ لَهُ?", "en": "How is بَلْ لَهُ read?" },
+      "q": { "bs": "Kako se čita بَلْ لَهُ?", "en": "How is بَلْ لَهُ read?", "de": "Wie wird بَلْ لَهُ gelesen?" },
       "opcije": [
-        { "bs": "بَلَّهُ", "en": "بَلَّهُ" },
-        { "bs": "بَلَهُ", "en": "بَلَهُ" },
-        { "bs": "بَلْ لَهُ, bez promjene", "en": "بَلْ لَهُ, without change" },
-        { "bs": "بَلْ لَهُ, sa gunnehom", "en": "بَلْ لَهُ, with ghunnah" }
+        { "bs": "بَلَّهُ", "en": "بَلَّهُ", "de": "بَلَّهُ" },
+        { "bs": "بَلَهُ", "en": "بَلَهُ", "de": "بَلَهُ" },
+        { "bs": "بَلْ لَهُ, bez promjene", "en": "بَلْ لَهُ, without change", "de": "بَلْ لَهُ, ohne Änderung" },
+        { "bs": "بَلْ لَهُ, sa gunnehom", "en": "بَلْ لَهُ, with ghunnah", "de": "بَلْ لَهُ, mit Ghunna" }
       ],
       "tacno": 0,
-      "objasnjenje": { "bs": "Harf L (ل) sa sukunom se ne uči, a drugi harf L (ل) se uči sa tešdidom: بَلَّهُ.", "en": "The letter L (ل) with a sukun is not pronounced, and the second L (ل) is recited with a tashdeed: بَلَّهُ." }
+      "objasnjenje": { "bs": "Harf L (ل) sa sukunom se ne uči, a drugi harf L (ل) se uči sa tešdidom: بَلَّهُ.", "en": "The letter L (ل) with a sukun is not pronounced, and the second L (ل) is recited with a tashdeed: بَلَّهُ.", "de": "Das L (ل) mit Sukun wird nicht gesprochen, und das zweite L (ل) wird mit Schadda gesprochen: بَلَّهُ." }
     },
     {
-      "q": { "bs": "U primjeru فَلَا يُسْرِفْ فِي الْقَتْلِ koji se harf ne uči?", "en": "In the example فَلَا يُسْرِفْ فِي الْقَتْلِ which letter is not pronounced?" },
+      "q": { "bs": "U primjeru فَلَا يُسْرِفْ فِي الْقَتْلِ koji se harf ne uči?", "en": "In the example فَلَا يُسْرِفْ فِي الْقَتْلِ which letter is not pronounced?", "de": "Welcher Buchstabe wird im Beispiel فَلَا يُسْرِفْ فِي الْقَتْلِ nicht gesprochen?" },
       "opcije": [
-        { "bs": "Harf R (ر) u riječi يُسْرِفْ", "en": "The letter R (ر) in the word يُسْرِفْ" },
-        { "bs": "Harf F (ف) sa sukunom na kraju riječi يُسْرِفْ", "en": "The letter F (ف) with a sukun at the end of the word يُسْرِفْ" },
-        { "bs": "Harf F (ف) na početku riječi فِي", "en": "The letter F (ف) at the beginning of the word فِي" },
-        { "bs": "Harf L (ل) u riječi الْقَتْلِ", "en": "The letter L (ل) in the word الْقَتْلِ" }
+        { "bs": "Harf R (ر) u riječi يُسْرِفْ", "en": "The letter R (ر) in the word يُسْرِفْ", "de": "Das R (ر) im Wort يُسْرِفْ" },
+        { "bs": "Harf F (ف) sa sukunom na kraju riječi يُسْرِفْ", "en": "The letter F (ف) with a sukun at the end of the word يُسْرِفْ", "de": "Das F (ف) mit Sukun am Ende des Wortes يُسْرِفْ" },
+        { "bs": "Harf F (ف) na početku riječi فِي", "en": "The letter F (ف) at the beginning of the word فِي", "de": "Das F (ف) am Anfang des Wortes فِي" },
+        { "bs": "Harf L (ل) u riječi الْقَتْلِ", "en": "The letter L (ل) in the word الْقَتْلِ", "de": "Das L (ل) im Wort الْقَتْلِ" }
       ],
       "tacno": 1,
-      "objasnjenje": { "bs": "Kod idgam mislejna prvi harf, onaj sa sukunom (ف na kraju يُسْرِفْ), se ne uči, a drugi ف se uči sa tešdidom.", "en": "In idgham mithlayn the first letter, the one with the sukun (ف at the end of يُسْرِفْ), is not pronounced, and the second ف is recited with a tashdeed." }
+      "objasnjenje": { "bs": "Kod idgam mislejna prvi harf, onaj sa sukunom (ف na kraju يُسْرِفْ), se ne uči, a drugi ف se uči sa tešdidom.", "en": "In idgham mithlayn the first letter, the one with the sukun (ف at the end of يُسْرِفْ), is not pronounced, and the second ف is recited with a tashdeed.", "de": "Beim Idgham Mithlain wird der erste Buchstabe, also der mit Sukun (ف am Ende von يُسْرِفْ), nicht gesprochen, und das zweite ف wird mit Schadda gesprochen." }
     }
   ]
 }

@@ -3,7 +3,7 @@
         "id": 1,
         "url": "./assets/audio/l18/1.mp3",
         "napomena": [
-            {"tip": "duzina", "bs": "Poslije dugog vokala A (جَٓا) dolazi hemze (ءَ) u istoj riječi, zato se ova dužina uči 4 do 5 hareketa.", "en": "The long vowel A (جَٓا) is followed by a hamza (ءَ) in the same word, so this prolongation is recited for 4 to 5 harakas."}
+            {"tip": "duzina", "bs": "Poslije dugog vokala A (جَٓا) dolazi hemze (ءَ) u istoj riječi, zato se ova dužina uči 4 do 5 hareketa.", "en": "The long vowel A (جَٓا) is followed by a hamza (ءَ) in the same word, so this prolongation is recited for 4 to 5 harakas.", "de": "Auf den langen Vokal A (جَٓا) folgt eine Hamza (ءَ) im selben Wort, deshalb wird diese Dehnung 4 bis 5 Harakat lang gesprochen."}
         ],
         "highlight": "جَٓاءَ",
         "word": "جَٓاءَ",
@@ -13,7 +13,7 @@
         "id": 2,
         "url": "./assets/audio/l18/2.mp3",
         "napomena": [
-            {"tip": "duzina", "bs": "U riječi جَٓاءَ poslije dugog vokala A (جَٓا) dolazi hemze (ءَ) u istoj riječi, zato se ta dužina uči 4 do 5 hareketa.", "en": "In جَٓاءَ, the long vowel A (جَٓا) is followed by a hamza (ءَ) in the same word, so the prolongation is recited for 4 to 5 harakas."}
+            {"tip": "duzina", "bs": "U riječi جَٓاءَ poslije dugog vokala A (جَٓا) dolazi hemze (ءَ) u istoj riječi, zato se ta dužina uči 4 do 5 hareketa.", "en": "In جَٓاءَ, the long vowel A (جَٓا) is followed by a hamza (ءَ) in the same word, so the prolongation is recited for 4 to 5 harakas.", "de": "Im Wort جَٓاءَ folgt auf den langen Vokal A (جَٓا) eine Hamza (ءَ) im selben Wort, deshalb wird diese Dehnung 4 bis 5 Harakat lang gesprochen."}
         ],
         "highlight": " جَٓاءَ",
         "word": "إِذَا جَٓاءَ نَصْرُ اللّٰهِ وَالْفَتْحُ",
@@ -24,7 +24,7 @@
             "id": 3,
             "url": "./assets/audio/l18/3.mp3",
             "napomena": [
-                {"tip": "duzina", "bs": "U riječi أُولٰٓـئِكَ poslije dugog vokala A (لٰ) dolazi hemze (ئِ) u istoj riječi, zato se ta dužina uči 4 do 5 hareketa.", "en": "In أُولٰٓـئِكَ, the long vowel A (لٰ) is followed by a hamza (ئِ) in the same word, so the prolongation is recited for 4 to 5 harakas."}
+                {"tip": "duzina", "bs": "U riječi أُولٰٓـئِكَ poslije dugog vokala A (لٰ) dolazi hemze (ئِ) u istoj riječi, zato se ta dužina uči 4 do 5 hareketa.", "en": "In أُولٰٓـئِكَ, the long vowel A (لٰ) is followed by a hamza (ئِ) in the same word, so the prolongation is recited for 4 to 5 harakas.", "de": "Im Wort أُولٰٓـئِكَ folgt auf den langen Vokal A (لٰ) eine Hamza (ئِ) im selben Wort, deshalb wird diese Dehnung 4 bis 5 Harakat lang gesprochen."}
             ],
             "highlight": "لٰٓـئِ",
             "word": "أُولٰٓـئِكَ عَلٰى هُدًى مِنْ رَبِـهِمْ ۖ",
@@ -33,7 +33,7 @@
             "id": 4,
             "url": "./assets/audio/l18/4.mp3",
             "napomena": [
-                {"tip": "duzina", "bs": "U riječi أُولٰٓـئِكَ poslije dugog vokala A (لٰ) dolazi hemze (ئِ) u istoj riječi, zato se uči 4 do 5 hareketa.", "en": "In أُولٰٓـئِكَ, the long vowel A (لٰ) is followed by a hamza (ئِ) in the same word, so it is recited for 4 to 5 harakas."}
+                {"tip": "duzina", "bs": "U riječi أُولٰٓـئِكَ poslije dugog vokala A (لٰ) dolazi hemze (ئِ) u istoj riječi, zato se uči 4 do 5 hareketa.", "en": "In أُولٰٓـئِكَ, the long vowel A (لٰ) is followed by a hamza (ئِ) in the same word, so it is recited for 4 to 5 harakas.", "de": "Im Wort أُولٰٓـئِكَ folgt auf den langen Vokal A (لٰ) eine Hamza (ئِ) im selben Wort, deshalb wird diese Dehnung 4 bis 5 Harakat lang gesprochen."}
             ],
             "highlight": "لٰٓـئِ",
             "word": " وَ أُولٰٓـئِكَ هُمُ الْمُفْلِحُونَ",
@@ -46,8 +46,8 @@
                 "id": 51,
                 "url": "./assets/audio/l18/5.mp3",
                 "napomena": [
-                    {"tip": "duzina", "bs": "U riječi السُّٓوءَ poslije dugog vokala U (سُّٓو) dolazi hemze (ءَ) u istoj riječi, zato se ta dužina uči 4 do 5 hareketa.", "en": "In السُّٓوءَ, the long vowel U (سُّٓو) is followed by a hamza (ءَ) in the same word, so the prolongation is recited for 4 to 5 harakas."},
-                    {"tip": "duzina", "bs": "U riječi الْفَحْشَٓاءَ poslije dugog vokala A (شَٓا) dolazi hemze (ءَ) u istoj riječi, zato se uči 4 do 5 hareketa.", "en": "In الْفَحْشَٓاءَ, the long vowel A (شَٓا) is followed by a hamza (ءَ) in the same word, so it is recited for 4 to 5 harakas."}
+                    {"tip": "duzina", "bs": "U riječi السُّٓوءَ poslije dugog vokala U (سُّٓو) dolazi hemze (ءَ) u istoj riječi, zato se ta dužina uči 4 do 5 hareketa.", "en": "In السُّٓوءَ, the long vowel U (سُّٓو) is followed by a hamza (ءَ) in the same word, so the prolongation is recited for 4 to 5 harakas.", "de": "Im Wort السُّٓوءَ folgt auf den langen Vokal U (سُّٓو) eine Hamza (ءَ) im selben Wort, deshalb wird diese Dehnung 4 bis 5 Harakat lang gesprochen."},
+                    {"tip": "duzina", "bs": "U riječi الْفَحْشَٓاءَ poslije dugog vokala A (شَٓا) dolazi hemze (ءَ) u istoj riječi, zato se uči 4 do 5 hareketa.", "en": "In الْفَحْشَٓاءَ, the long vowel A (شَٓا) is followed by a hamza (ءَ) in the same word, so it is recited for 4 to 5 harakas.", "de": "Im Wort الْفَحْشَٓاءَ folgt auf den langen Vokal A (شَٓا) eine Hamza (ءَ) im selben Wort, deshalb wird diese Dehnung 4 bis 5 Harakat lang gesprochen."}
                 ],
                 "highlight": "شَٓاءَ",
                 "word": "الْفَحْشَٓاءَ",
@@ -66,8 +66,8 @@
             "id": 6,
             "url": "./assets/audio/l18/6.mp3",
             "napomena": [
-                {"tip": "duzina", "bs": "U riječi جِٓيءَ poslije dugog vokala I (جِٓي) dolazi hemze (ءَ) u istoj riječi, zato se ta dužina uči 4 do 5 hareketa.", "en": "In جِٓيءَ, the long vowel I (جِٓي) is followed by a hamza (ءَ) in the same word, so the prolongation is recited for 4 to 5 harakas."},
-                {"tip": "duzina", "bs": "U riječi الشُّهَدَٓاءِ poslije dugog vokala A (دَٓا) dolazi hemze (ءِ) u istoj riječi, zato se uči 4 do 5 hareketa.", "en": "In الشُّهَدَٓاءِ, the long vowel A (دَٓا) is followed by a hamza (ءِ) in the same word, so it is recited for 4 to 5 harakas."}
+                {"tip": "duzina", "bs": "U riječi جِٓيءَ poslije dugog vokala I (جِٓي) dolazi hemze (ءَ) u istoj riječi, zato se ta dužina uči 4 do 5 hareketa.", "en": "In جِٓيءَ, the long vowel I (جِٓي) is followed by a hamza (ءَ) in the same word, so the prolongation is recited for 4 to 5 harakas.", "de": "Im Wort جِٓيءَ folgt auf den langen Vokal I (جِٓي) eine Hamza (ءَ) im selben Wort, deshalb wird diese Dehnung 4 bis 5 Harakat lang gesprochen."},
+                {"tip": "duzina", "bs": "U riječi الشُّهَدَٓاءِ poslije dugog vokala A (دَٓا) dolazi hemze (ءِ) u istoj riječi, zato se uči 4 do 5 hareketa.", "en": "In الشُّهَدَٓاءِ, the long vowel A (دَٓا) is followed by a hamza (ءِ) in the same word, so it is recited for 4 to 5 harakas.", "de": "Im Wort الشُّهَدَٓاءِ folgt auf den langen Vokal A (دَٓا) eine Hamza (ءِ) im selben Wort, deshalb wird diese Dehnung 4 bis 5 Harakat lang gesprochen."}
             ],
             "highlight": "دَٓاءِ",
             "word": "بِالنَّبِـيِّـينَ وَالشُّهَدَٓاءِ وَقُضِيَ بَيْنَهُمْ بِالْحَـقِّ",
@@ -82,7 +82,7 @@
             "id": 7,
             "url": "./assets/audio/l18/7.mp3",
             "napomena": [
-                {"tip": "duzina", "bs": "U riječi جَٓاءَهُمُ poslije dugog vokala A (جَٓا) dolazi hemze (ءَ) u istoj riječi, zato se ta dužina uči 4 do 5 hareketa.", "en": "In جَٓاءَهُمُ, the long vowel A (جَٓا) is followed by a hamza (ءَ) in the same word, so the prolongation is recited for 4 to 5 harakas."}
+                {"tip": "duzina", "bs": "U riječi جَٓاءَهُمُ poslije dugog vokala A (جَٓا) dolazi hemze (ءَ) u istoj riječi, zato se ta dužina uči 4 do 5 hareketa.", "en": "In جَٓاءَهُمُ, the long vowel A (جَٓا) is followed by a hamza (ءَ) in the same word, so the prolongation is recited for 4 to 5 harakas.", "de": "Im Wort جَٓاءَهُمُ folgt auf den langen Vokal A (جَٓا) eine Hamza (ءَ) im selben Wort, deshalb wird diese Dehnung 4 bis 5 Harakat lang gesprochen."}
             ],
             "highlight": "جَٓاءَ",
             "word": " مِنْ بَعْدِ مَا جَٓاءَهُمُ الْبَـيِّــنَاتُ ۚ",
@@ -92,7 +92,7 @@
             "id": 8,
             "url": "./assets/audio/l18/8.mp3",
             "napomena": [
-                {"tip": "duzina", "bs": "U riječi أُولٰٓـئِكَ poslije dugog vokala A (لٰ) dolazi hemze (ئِ) u istoj riječi, zato se ta dužina uči 4 do 5 hareketa.", "en": "In أُولٰٓـئِكَ, the long vowel A (لٰ) is followed by a hamza (ئِ) in the same word, so the prolongation is recited for 4 to 5 harakas."}
+                {"tip": "duzina", "bs": "U riječi أُولٰٓـئِكَ poslije dugog vokala A (لٰ) dolazi hemze (ئِ) u istoj riječi, zato se ta dužina uči 4 do 5 hareketa.", "en": "In أُولٰٓـئِكَ, the long vowel A (لٰ) is followed by a hamza (ئِ) in the same word, so the prolongation is recited for 4 to 5 harakas.", "de": "Im Wort أُولٰٓـئِكَ folgt auf den langen Vokal A (لٰ) eine Hamza (ئِ) im selben Wort, deshalb wird diese Dehnung 4 bis 5 Harakat lang gesprochen."}
             ],
             "highlight": "لٰٓـئِ",
             "word": "وَأُولٰٓـئِكَ لَهُمْ عَذَابٌ عَظِيمٌ",
@@ -102,8 +102,8 @@
                 "id": 9,
                 "url": "./assets/audio/l18/9.mp3",
                 "napomena": [
-                    {"tip": "duzina", "bs": "U riječi أَهْوَٓاءَهُمْ poslije dugog vokala A (وَٓا) dolazi hemze (ءَ) u istoj riječi, zato se ta dužina uči 4 do 5 hareketa.", "en": "In أَهْوَٓاءَهُمْ, the long vowel A (وَٓا) is followed by a hamza (ءَ) in the same word, so the prolongation is recited for 4 to 5 harakas."},
-                    {"tip": "duzina", "bs": "U riječi جَٓاءَكَ poslije dugog vokala A (جَٓا) dolazi hemze (ءَ) u istoj riječi, zato se uči 4 do 5 hareketa.", "en": "In جَٓاءَكَ, the long vowel A (جَٓا) is followed by a hamza (ءَ) in the same word, so it is recited for 4 to 5 harakas."}
+                    {"tip": "duzina", "bs": "U riječi أَهْوَٓاءَهُمْ poslije dugog vokala A (وَٓا) dolazi hemze (ءَ) u istoj riječi, zato se ta dužina uči 4 do 5 hareketa.", "en": "In أَهْوَٓاءَهُمْ, the long vowel A (وَٓا) is followed by a hamza (ءَ) in the same word, so the prolongation is recited for 4 to 5 harakas.", "de": "Im Wort أَهْوَٓاءَهُمْ folgt auf den langen Vokal A (وَٓا) eine Hamza (ءَ) im selben Wort, deshalb wird diese Dehnung 4 bis 5 Harakat lang gesprochen."},
+                    {"tip": "duzina", "bs": "U riječi جَٓاءَكَ poslije dugog vokala A (جَٓا) dolazi hemze (ءَ) u istoj riječi, zato se uči 4 do 5 hareketa.", "en": "In جَٓاءَكَ, the long vowel A (جَٓا) is followed by a hamza (ءَ) in the same word, so it is recited for 4 to 5 harakas.", "de": "Im Wort جَٓاءَكَ folgt auf den langen Vokal A (جَٓا) eine Hamza (ءَ) im selben Wort, deshalb wird diese Dehnung 4 bis 5 Harakat lang gesprochen."}
                 ],
                 "highlight": "جَٓاءَ",
                 "word": "جَٓاءَكَ مِنَ الْـحَـقِّ ",
@@ -121,9 +121,9 @@
             "id": 10,
             "url": "./assets/audio/l18/10.mp3",
             "napomena": [
-                {"tip": "duzina", "bs": "U riječi وَالسَّمَٓاءَ poslije dugog vokala A (مَٓا) dolazi hemze (ءَ) u istoj riječi, zato se ta dužina uči 4 do 5 hareketa.", "en": "In وَالسَّمَٓاءَ, the long vowel A (مَٓا) is followed by a hamza (ءَ) in the same word, so the prolongation is recited for 4 to 5 harakas."},
-                {"tip": "duzina", "bs": "U riječi بِنَٓاءً poslije dugog vokala A (نَٓا) dolazi hemze (ءً) u istoj riječi, zato se uči 4 do 5 hareketa.", "en": "In بِنَٓاءً, the long vowel A (نَٓا) is followed by a hamza (ءً) in the same word, so it is recited for 4 to 5 harakas."},
-                {"tip": "duzina", "bs": "Još dva puta poslije dugog vokala A dolazi hemze u istoj riječi (مَٓاءِ, مَٓاءً), pa se obje dužine uče 4 do 5 hareketa.", "en": "Twice more the long vowel A is followed by a hamza in the same word (مَٓاءِ, مَٓاءً), so both prolongations are recited for 4 to 5 harakas."}
+                {"tip": "duzina", "bs": "U riječi وَالسَّمَٓاءَ poslije dugog vokala A (مَٓا) dolazi hemze (ءَ) u istoj riječi, zato se ta dužina uči 4 do 5 hareketa.", "en": "In وَالسَّمَٓاءَ, the long vowel A (مَٓا) is followed by a hamza (ءَ) in the same word, so the prolongation is recited for 4 to 5 harakas.", "de": "Im Wort وَالسَّمَٓاءَ folgt auf den langen Vokal A (مَٓا) eine Hamza (ءَ) im selben Wort, deshalb wird diese Dehnung 4 bis 5 Harakat lang gesprochen."},
+                {"tip": "duzina", "bs": "U riječi بِنَٓاءً poslije dugog vokala A (نَٓا) dolazi hemze (ءً) u istoj riječi, zato se uči 4 do 5 hareketa.", "en": "In بِنَٓاءً, the long vowel A (نَٓا) is followed by a hamza (ءً) in the same word, so it is recited for 4 to 5 harakas.", "de": "Im Wort بِنَٓاءً folgt auf den langen Vokal A (نَٓا) eine Hamza (ءً) im selben Wort, deshalb wird diese Dehnung 4 bis 5 Harakat lang gesprochen."},
+                {"tip": "duzina", "bs": "Još dva puta poslije dugog vokala A dolazi hemze u istoj riječi (مَٓاءِ, مَٓاءً), pa se obje dužine uče 4 do 5 hareketa.", "en": "Twice more the long vowel A is followed by a hamza in the same word (مَٓاءِ, مَٓاءً), so both prolongations are recited for 4 to 5 harakas.", "de": "Noch zweimal folgt auf den langen Vokal A eine Hamza im selben Wort (مَٓاءِ, مَٓاءً), deshalb werden beide Dehnungen 4 bis 5 Harakat lang gesprochen."}
             ],
             "highlight": "مَٓاءِ مَٓاءً",
             "word": "لسَّمَٓاءِ مَٓاءً فَأَخْرَجَ بِهِ مِنَ الثَّمَرَاتِ رِزْقًا لَكُمْ",
@@ -144,7 +144,7 @@
                 "id": 11,
                 "url": "./assets/audio/l18/11.mp3",
                 "napomena": [
-                    {"tip": "duzina", "bs": "U riječi الْمَلَٓائِكَةِ poslije dugog vokala A (لَٓا) dolazi hemze (ئِ) u istoj riječi, zato se ta dužina uči 4 do 5 hareketa.", "en": "In الْمَلَٓائِكَةِ, the long vowel A (لَٓا) is followed by a hamza (ئِ) in the same word, so the prolongation is recited for 4 to 5 harakas."}
+                    {"tip": "duzina", "bs": "U riječi الْمَلَٓائِكَةِ poslije dugog vokala A (لَٓا) dolazi hemze (ئِ) u istoj riječi, zato se ta dužina uči 4 do 5 hareketa.", "en": "In الْمَلَٓائِكَةِ, the long vowel A (لَٓا) is followed by a hamza (ئِ) in the same word, so the prolongation is recited for 4 to 5 harakas.", "de": "Im Wort الْمَلَٓائِكَةِ folgt auf den langen Vokal A (لَٓا) eine Hamza (ئِ) im selben Wort, deshalb wird diese Dehnung 4 bis 5 Harakat lang gesprochen."}
                 ],
                 "highlight": "لَٓائِ",
                 "word": " أَنَّ عَلَيْهِمْ لَعْنَةَ اللّٰهِ وَالْمَلَٓائِكَةِ  وَالنَّاسِ أَجْمَعِينَ",
@@ -156,7 +156,7 @@
                 "id": 112,
                 "url": "./assets/audio/l18/11.mp3",
                 "napomena": [
-                    {"tip": "duzina", "bs": "Poslije dugog vokala A (لٰ) dolazi hemze (ئِ) u istoj riječi, zato se ta dužina uči 4 do 5 hareketa.", "en": "The long vowel A (لٰ) is followed by a hamza (ئِ) in the same word, so the prolongation is recited for 4 to 5 harakas."}
+                    {"tip": "duzina", "bs": "Poslije dugog vokala A (لٰ) dolazi hemze (ئِ) u istoj riječi, zato se ta dužina uči 4 do 5 hareketa.", "en": "The long vowel A (لٰ) is followed by a hamza (ئِ) in the same word, so the prolongation is recited for 4 to 5 harakas.", "de": "Auf den langen Vokal A (لٰ) folgt eine Hamza (ئِ) im selben Wort, deshalb wird diese Dehnung 4 bis 5 Harakat lang gesprochen."}
                 ],
                 "highlight": "لٰٓـئِ",
                 "word": " أُولٰٓـئِ",
@@ -167,7 +167,7 @@
                 "id": 111,
                 "url": "./assets/audio/l18/11.mp3",
                 "napomena": [
-                    {"tip": "duzina", "bs": "U riječi جَزَٓاؤُهُمْ poslije dugog vokala A (زَٓا) dolazi hemze (ؤُ) u istoj riječi, zato se ta dužina uči 4 do 5 hareketa.", "en": "In جَزَٓاؤُهُمْ, the long vowel A (زَٓا) is followed by a hamza (ؤُ) in the same word, so the prolongation is recited for 4 to 5 harakas."}
+                    {"tip": "duzina", "bs": "U riječi جَزَٓاؤُهُمْ poslije dugog vokala A (زَٓا) dolazi hemze (ؤُ) u istoj riječi, zato se ta dužina uči 4 do 5 hareketa.", "en": "In جَزَٓاؤُهُمْ, the long vowel A (زَٓا) is followed by a hamza (ؤُ) in the same word, so the prolongation is recited for 4 to 5 harakas.", "de": "Im Wort جَزَٓاؤُهُمْ folgt auf den langen Vokal A (زَٓا) eine Hamza (ؤُ) im selben Wort, deshalb wird diese Dehnung 4 bis 5 Harakat lang gesprochen."}
                 ],
                 "highlight": "زَٓاؤُ",
                 "word": "كَ جَزَٓاؤُهُمْ",

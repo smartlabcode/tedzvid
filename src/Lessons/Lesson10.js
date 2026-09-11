@@ -247,6 +247,118 @@ const TXT = {
 				</Row>
 			</React.Fragment>
 		)
+	},
+
+	de: {
+		naziv: 'IDH-HAR SCHAFAWI',
+		naslov: '10 IDH-HAR SCHAFAWI',
+		podnaslov: (
+			<React.Fragment>
+				<strong>Das M (م) deutlich aussprechen</strong>
+			</React.Fragment>
+		),
+		lekcija: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Wenn der Buchstabe <strong>M</strong> mit <strong>Sukun</strong> (
+						<span className="arapski-lekcija">مْ</span>) vor <u>irgendeinem</u> Buchstaben steht, <u>außer</u>{' '}
+						vor den Buchstaben <strong>B</strong> (
+						<span className="arapski-lekcija">ب</span>) und{' '}
+						<strong>
+							M (<span className="arapski-lekcija">م</span>){' '}
+						</strong>
+						, dann wird der Buchstabe
+						<strong>
+							{' '}
+							M (<span className="arapski-lekcija">م</span>){' '}
+						</strong>{' '}
+						<u>deutlich</u> ausgesprochen, also ohne Verschmelzung, z. B.:
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row className="text-center  rtl">
+					<Col>
+						{P('row1')}
+						{V('multirow', 'word1')}
+					</Col>
+				</Row>
+				<Row className="text-center  reorder-basic rtl">
+					<Col>{V('multirow', 'word2')}</Col>
+				</Row>
+				<Row className="text-center  rtl">
+					<Col>{V('multirow', 'word3')}</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		),
+		lekcijaModal: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Wenn der Buchstabe <strong>M</strong> mit <strong>Sukun</strong> (
+						<span className="arapski-lekcija">مْ</span>) vor <u>irgendeinem</u> Buchstaben steht,{' '}
+						<u>außer</u> vor den Buchstaben <strong>B</strong> (<span className="arapski-lekcija">ب</span>) und{' '}
+						<strong>
+							M (<span className="arapski-lekcija">م</span>){' '}
+						</strong>
+						, dann wird der Buchstabe
+						<strong>
+							{' '}
+							M (<span className="arapski-lekcija">م</span>){' '}
+						</strong>{' '}
+						<u>deutlich</u> ausgesprochen, also ohne Verschmelzung, z. B.:
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row className="text-center reorder rtl">
+					<Col>
+						{P('row1')}
+						{V('multirow', 'word1')}
+					</Col>
+				</Row>
+				<Row className="text-center reorder rtl">
+					<Col>{V('multirow', 'word2')}</Col>
+				</Row>
+				<Row className="text-center reorder rtl">
+					<Col>{V('multirow', 'word3')}</Col>
+				</Row>
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		)
 	}
 };
 

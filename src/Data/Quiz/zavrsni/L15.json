@@ -2,48 +2,48 @@
   "lekcija": 15,
   "pitanja": [
     {
-      "q": { "bs": "Kako se čita يَا بُنَيَّ ارْكَبْ مَعَنَا?", "en": "How is يَا بُنَيَّ ارْكَبْ مَعَنَا read?" },
+      "q": { "bs": "Kako se čita يَا بُنَيَّ ارْكَبْ مَعَنَا?", "en": "How is يَا بُنَيَّ ارْكَبْ مَعَنَا read?", "de": "Wie wird يَا بُنَيَّ ارْكَبْ مَعَنَا gelesen?" },
       "opcije": [
-        { "bs": "يَا بُنَيَّ ارْكَبْ مَعَنَا (bez promjene)", "en": "يَا بُنَيَّ ارْكَبْ مَعَنَا (unchanged)" },
-        { "bs": "يَا بُنَيَّ ارْكَمَّعَنَا", "en": "يَا بُنَيَّ ارْكَمَّعَنَا" },
-        { "bs": "يَا بُنَيَّ ارْكَبَّعَنَا", "en": "يَا بُنَيَّ ارْكَبَّعَنَا" },
-        { "bs": "يَا بُنَيَّ ارْكَنْ مَعَنَا", "en": "يَا بُنَيَّ ارْكَنْ مَعَنَا" }
+        { "bs": "يَا بُنَيَّ ارْكَبْ مَعَنَا (bez promjene)", "en": "يَا بُنَيَّ ارْكَبْ مَعَنَا (unchanged)", "de": "يَا بُنَيَّ ارْكَبْ مَعَنَا (ohne Änderung)" },
+        { "bs": "يَا بُنَيَّ ارْكَمَّعَنَا", "en": "يَا بُنَيَّ ارْكَمَّعَنَا", "de": "يَا بُنَيَّ ارْكَمَّعَنَا" },
+        { "bs": "يَا بُنَيَّ ارْكَبَّعَنَا", "en": "يَا بُنَيَّ ارْكَبَّعَنَا", "de": "يَا بُنَيَّ ارْكَبَّعَنَا" },
+        { "bs": "يَا بُنَيَّ ارْكَنْ مَعَنَا", "en": "يَا بُنَيَّ ارْكَنْ مَعَنَا", "de": "يَا بُنَيَّ ارْكَنْ مَعَنَا" }
       ],
       "tacno": 1,
-      "objasnjenje": { "bs": "Harf ب sa sukunom uklapa se u harf م iz iste grupe (ب م), pa se čita ارْكَمَّعَنَا.", "en": "The letter ب with a sukun merges into the letter م from the same group (ب م), so it is read ارْكَمَّعَنَا." }
+      "objasnjenje": { "bs": "Harf ب sa sukunom uklapa se u harf م iz iste grupe (ب م), pa se čita ارْكَمَّعَنَا.", "en": "The letter ب with a sukun merges into the letter م from the same group (ب م), so it is read ارْكَمَّعَنَا.", "de": "Der Buchstabe ب mit Sukun verschmilzt in den Buchstaben م aus derselben Gruppe (ب م), also wird ارْكَمَّعَنَا gelesen." }
     },
     {
-      "q": { "bs": "U primjeru فَلَمَّا أَثْقَلَتْ دَعَوَا اللّٰهَ koji harf se uklapa u koji?", "en": "In the example فَلَمَّا أَثْقَلَتْ دَعَوَا اللّٰهَ which letter merges into which?" },
+      "q": { "bs": "U primjeru فَلَمَّا أَثْقَلَتْ دَعَوَا اللّٰهَ koji harf se uklapa u koji?", "en": "In the example فَلَمَّا أَثْقَلَتْ دَعَوَا اللّٰهَ which letter merges into which?", "de": "Welcher Buchstabe verschmilzt im Beispiel فَلَمَّا أَثْقَلَتْ دَعَوَا اللّٰهَ in welchen?" },
       "opcije": [
-        { "bs": "Harf ت u harf د", "en": "The letter ت into the letter د" },
-        { "bs": "Harf د u harf ت", "en": "The letter د into the letter ت" },
-        { "bs": "Harf ل u harf ت", "en": "The letter ل into the letter ت" },
-        { "bs": "Harf ث u harf ق", "en": "The letter ث into the letter ق" }
+        { "bs": "Harf ت u harf د", "en": "The letter ت into the letter د", "de": "Der Buchstabe ت in den Buchstaben د" },
+        { "bs": "Harf د u harf ت", "en": "The letter د into the letter ت", "de": "Der Buchstabe د in den Buchstaben ت" },
+        { "bs": "Harf ل u harf ت", "en": "The letter ل into the letter ت", "de": "Der Buchstabe ل in den Buchstaben ت" },
+        { "bs": "Harf ث u harf ق", "en": "The letter ث into the letter ق", "de": "Der Buchstabe ث in den Buchstaben ق" }
       ],
       "tacno": 0,
-      "objasnjenje": { "bs": "Harfovi ت i د su iz iste grupe (ط د ت), ت je sa sukunom, a د sa hareketom, pa se ت uklapa u د.", "en": "The letters ت and د are from the same group (ط د ت), ت carries a sukun and د a haraka, so ت merges into د." }
+      "objasnjenje": { "bs": "Harfovi ت i د su iz iste grupe (ط د ت), ت je sa sukunom, a د sa hareketom, pa se ت uklapa u د.", "en": "The letters ت and د are from the same group (ط د ت), ت carries a sukun and د a haraka, so ت merges into د.", "de": "Die Buchstaben ت und د gehören zur selben Gruppe (ط د ت), ت hat ein Sukun und د ein Vokalzeichen, also verschmilzt ت in د." }
     },
     {
-      "q": { "bs": "Zašto u primjeru وَقَالَتْ طَٓائِفَةٌ dolazi do idgam mutedžanisejna?", "en": "Why does idgham mutajanisayn occur in the example وَقَالَتْ طَٓائِفَةٌ?" },
+      "q": { "bs": "Zašto u primjeru وَقَالَتْ طَٓائِفَةٌ dolazi do idgam mutedžanisejna?", "en": "Why does idgham mutajanisayn occur in the example وَقَالَتْ طَٓائِفَةٌ?", "de": "Warum tritt im Beispiel وَقَالَتْ طَٓائِفَةٌ Idgham Mutadschanisain auf?" },
       "opcije": [
-        { "bs": "Jer su ت i ط isti harfovi", "en": "Because ت and ط are identical letters" },
-        { "bs": "Jer je harf ط krupni harf", "en": "Because the letter ط is a heavy letter" },
-        { "bs": "Jer su ت i ط srodni harfovi iz iste grupe, ت sa sukunom, a ط sa hareketom", "en": "Because ت and ط are related letters from the same group, ت with a sukun and ط with a haraka" },
-        { "bs": "Jer je harf ت na kraju riječi", "en": "Because the letter ت is at the end of the word" }
+        { "bs": "Jer su ت i ط isti harfovi", "en": "Because ت and ط are identical letters", "de": "Weil ت und ط gleiche Buchstaben sind" },
+        { "bs": "Jer je harf ط krupni harf", "en": "Because the letter ط is a heavy letter", "de": "Weil ط ein dicker Buchstabe ist" },
+        { "bs": "Jer su ت i ط srodni harfovi iz iste grupe, ت sa sukunom, a ط sa hareketom", "en": "Because ت and ط are related letters from the same group, ت with a sukun and ط with a haraka", "de": "Weil ت und ط verwandte Buchstaben aus derselben Gruppe sind, ت mit Sukun und ط mit Vokalzeichen" },
+        { "bs": "Jer je harf ت na kraju riječi", "en": "Because the letter ت is at the end of the word", "de": "Weil der Buchstabe ت am Ende des Wortes steht" }
       ],
       "tacno": 2,
-      "objasnjenje": { "bs": "Harfovi ت i ط pripadaju prvoj grupi srodnih harfova (ط د ت), pa se ت sa sukunom uklapa u ط sa hareketom.", "en": "The letters ت and ط belong to the first group of related letters (ط د ت), so ت with a sukun merges into ط with a haraka." }
+      "objasnjenje": { "bs": "Harfovi ت i ط pripadaju prvoj grupi srodnih harfova (ط د ت), pa se ت sa sukunom uklapa u ط sa hareketom.", "en": "The letters ت and ط belong to the first group of related letters (ط د ت), so ت with a sukun merges into ط with a haraka.", "de": "Die Buchstaben ت und ط gehören zur ersten Gruppe verwandter Buchstaben (ط د ت), also verschmilzt ت mit Sukun in ط mit Vokalzeichen." }
     },
     {
-      "q": { "bs": "U kojem od ovih parova harfova ne dolazi do idgam mutedžanisejna?", "en": "In which of these pairs of letters does idgham mutajanisayn not occur?" },
+      "q": { "bs": "U kojem od ovih parova harfova ne dolazi do idgam mutedžanisejna?", "en": "In which of these pairs of letters does idgham mutajanisayn not occur?", "de": "Bei welchem dieser Buchstabenpaare tritt kein Idgham Mutadschanisain auf?" },
       "opcije": [
-        { "bs": "دْ + ت", "en": "دْ + ت" },
-        { "bs": "ذْ + ظ", "en": "ذْ + ظ" },
-        { "bs": "بْ + م", "en": "بْ + م" },
-        { "bs": "تْ + ث", "en": "تْ + ث" }
+        { "bs": "دْ + ت", "en": "دْ + ت", "de": "دْ + ت" },
+        { "bs": "ذْ + ظ", "en": "ذْ + ظ", "de": "ذْ + ظ" },
+        { "bs": "بْ + م", "en": "بْ + م", "de": "بْ + م" },
+        { "bs": "تْ + ث", "en": "تْ + ث", "de": "تْ + ث" }
       ],
       "tacno": 3,
-      "objasnjenje": { "bs": "Harfovi ت i ث nisu iz iste grupe (ت je u grupi ط د ت, a ث u grupi ظ ذ ث), pa se ne uklapaju.", "en": "The letters ت and ث are not from the same group (ت is in the group ط د ت, and ث in the group ظ ذ ث), so they do not merge." }
+      "objasnjenje": { "bs": "Harfovi ت i ث nisu iz iste grupe (ت je u grupi ط د ت, a ث u grupi ظ ذ ث), pa se ne uklapaju.", "en": "The letters ت and ث are not from the same group (ت is in the group ط د ت, and ث in the group ظ ذ ث), so they do not merge.", "de": "Die Buchstaben ت und ث gehören nicht zur selben Gruppe (ت steht in der Gruppe ط د ت, ث in der Gruppe ظ ذ ث), also verschmelzen sie nicht." }
     }
   ]
 }

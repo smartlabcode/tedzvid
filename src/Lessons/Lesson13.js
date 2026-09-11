@@ -246,6 +246,117 @@ const TXT = {
 				</Row>
 			</React.Fragment>
 		)
+	},
+
+	de: {
+		naziv: 'QALQALA',
+		naslov: '13 QALQALA',
+		podnaslov: (
+			<React.Fragment>
+				<strong>Abprallen der Buchstaben</strong>
+			</React.Fragment>
+		),
+		lekcija: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Wenn einer dieser fünf Buchstaben ein <strong>Sukun</strong> (
+						<span className="arapski-lekcija">ـــْـــ</span>) trägt:{' '}
+						<Arabic key="ar1l13" arabic="د ج ب ط ق">
+							د ج ب ط ق
+						</Arabic>{' '}
+						(enthalten im Ausdruck <strong>qutbu dschaddin</strong> -{' '}
+						<span className="arapski-lekcija" style={{ fontSize: '1.675em' }}>
+							قُطْبُ جَدٍّ
+						</span>{' '}
+						), kommt es zum <u>Abprallen</u> dieser Buchstaben, z. B.:
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row className="text-center  rtl">
+					<Col>{P('row1')}</Col>
+				</Row>
+
+				<Row className="text-center reorder-basic rtl">
+					<Col>
+						{V('multirow', 'row2')}
+						{P('row2')}
+					</Col>
+				</Row>
+
+				<Row className="text-center ">
+					<Col>{V('multirow', 'row3')}</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		),
+		lekcijaModal: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Wenn einer dieser fünf Buchstaben ein <strong>Sukun</strong> (
+						<span className="arapski-lekcija">ـــْـــ</span>) trägt:{' '}
+						<Arabic key="ar1l13" arabic="د ج ب ط ق">
+							د ج ب ط ق
+						</Arabic>{' '}
+						(enthalten im Ausdruck <strong>qutbu dschaddin</strong> -{' '}
+						<span className="arapski-lekcija" style={{ fontSize: '1.675em' }}>
+							قُطْبُ جَدٍّ
+						</span>{' '}
+						), kommt es zum <u>Abprallen</u> dieser Buchstaben, z. B.:
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row className="text-center  rtl">
+					<Col>{P('row1')}</Col>
+				</Row>
+
+				<Row className="text-center  rtl">
+					<Col>
+						{V('multirow', 'row2')}
+						{P('row2')}
+					</Col>
+				</Row>
+
+				<Row className="text-center ">
+					<Col>{V('multirow', 'row3')}</Col>
+				</Row>
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		)
 	}
 };
 

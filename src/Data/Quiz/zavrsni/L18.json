@@ -2,48 +2,48 @@
   "lekcija": 18,
   "pitanja": [
     {
-      "q": { "bs": "U primjeru إِذَا جَٓاءَ koja dužina je medd muttesil?", "en": "In the example إِذَا جَٓاءَ, which prolongation is madd muttasil?" },
+      "q": { "bs": "U primjeru إِذَا جَٓاءَ koja dužina je medd muttesil?", "en": "In the example إِذَا جَٓاءَ, which prolongation is madd muttasil?", "de": "Welche Dehnung ist im Beispiel إِذَا جَٓاءَ ein Madd Muttasil?" },
       "opcije": [
-        { "bs": "Dugi vokal A u riječi إِذَا", "en": "The long vowel A in the word إِذَا" },
-        { "bs": "Dugi vokal A u riječi جَٓاءَ", "en": "The long vowel A in the word جَٓاءَ" },
-        { "bs": "Obje dužine", "en": "Both prolongations" },
-        { "bs": "Nijedna, obje su medd tabijj", "en": "Neither, both are madd tabi'i" }
+        { "bs": "Dugi vokal A u riječi إِذَا", "en": "The long vowel A in the word إِذَا", "de": "Der lange Vokal A im Wort إِذَا" },
+        { "bs": "Dugi vokal A u riječi جَٓاءَ", "en": "The long vowel A in the word جَٓاءَ", "de": "Der lange Vokal A im Wort جَٓاءَ" },
+        { "bs": "Obje dužine", "en": "Both prolongations", "de": "Beide Dehnungen" },
+        { "bs": "Nijedna, obje su medd tabijj", "en": "Neither, both are madd tabi'i", "de": "Keine von beiden, beide sind Madd Tabi’i" }
       ],
       "tacno": 1,
-      "objasnjenje": { "bs": "U riječi جَٓاءَ poslije dugog vokala A dolazi hemze u istoj riječi, a u riječi إِذَا poslije dugog vokala A dolazi harf ج sa hareketom, pa je to medd tabijj.", "en": "In جَٓاءَ the long vowel A is followed by a hamza in the same word, while in إِذَا the long vowel A is followed by the letter ج with a haraka, so that is madd tabi'i." }
+      "objasnjenje": { "bs": "U riječi جَٓاءَ poslije dugog vokala A dolazi hemze u istoj riječi, a u riječi إِذَا poslije dugog vokala A dolazi harf ج sa hareketom, pa je to medd tabijj.", "en": "In جَٓاءَ the long vowel A is followed by a hamza in the same word, while in إِذَا the long vowel A is followed by the letter ج with a haraka, so that is madd tabi'i.", "de": "Im Wort جَٓاءَ kommt nach dem langen Vokal A eine Hamza im selben Wort, im Wort إِذَا kommt nach dem langen Vokal A der Buchstabe ج mit Vokalzeichen, also ist das ein Madd Tabi’i." }
     },
     {
-      "q": { "bs": "U riječi أُولٰٓـئِكَ medd muttesil je na dugom vokalu A (لٰٓ), jer poslije njega dolazi:", "en": "In the word أُولٰٓـئِكَ the madd muttasil is on the long vowel A (لٰٓ), because it is followed by:" },
+      "q": { "bs": "U riječi أُولٰٓـئِكَ medd muttesil je na dugom vokalu A (لٰٓ), jer poslije njega dolazi:", "en": "In the word أُولٰٓـئِكَ the madd muttasil is on the long vowel A (لٰٓ), because it is followed by:", "de": "Im Wort أُولٰٓـئِكَ ist das Madd Muttasil auf dem langen Vokal A (لٰٓ), weil danach Folgendes kommt:" },
       "opcije": [
-        { "bs": "sukun", "en": "a sukun" },
-        { "bs": "tešdid", "en": "a tashdeed" },
-        { "bs": "hemze u istoj riječi (ئِ)", "en": "a hamza in the same word (ئِ)" },
-        { "bs": "elif na početku sljedeće riječi", "en": "an alif at the beginning of the next word" }
+        { "bs": "sukun", "en": "a sukun", "de": "ein Sukun" },
+        { "bs": "tešdid", "en": "a tashdeed", "de": "eine Schadda" },
+        { "bs": "hemze u istoj riječi (ئِ)", "en": "a hamza in the same word (ئِ)", "de": "eine Hamza im selben Wort (ئِ)" },
+        { "bs": "elif na početku sljedeće riječi", "en": "an alif at the beginning of the next word", "de": "ein Alif am Anfang des nächsten Wortes" }
       ],
       "tacno": 2,
-      "objasnjenje": { "bs": "Poslije dugog vokala A dolazi hemze (ئِ) u istoj riječi, pa je to medd muttesil od 4-5 hareketa.", "en": "The long vowel A is followed by a hamza (ئِ) in the same word, so it is madd muttasil of 4–5 harakas." }
+      "objasnjenje": { "bs": "Poslije dugog vokala A dolazi hemze (ئِ) u istoj riječi, pa je to medd muttesil od 4-5 hareketa.", "en": "The long vowel A is followed by a hamza (ئِ) in the same word, so it is madd muttasil of 4–5 harakas.", "de": "Nach dem langen Vokal A kommt eine Hamza (ئِ) im selben Wort, also ist das ein Madd Muttasil von 4–5 Harakat." }
     },
     {
-      "q": { "bs": "Koliko medd muttesila ima u primjeru السَّمَٓاءِ مَٓاءً?", "en": "How many madd muttasil are there in the example السَّمَٓاءِ مَٓاءً?" },
+      "q": { "bs": "Koliko medd muttesila ima u primjeru السَّمَٓاءِ مَٓاءً?", "en": "How many madd muttasil are there in the example السَّمَٓاءِ مَٓاءً?", "de": "Wie viele Madd Muttasil gibt es im Beispiel السَّمَٓاءِ مَٓاءً?" },
       "opcije": [
-        { "bs": "Jedan, samo u riječi السَّمَٓاءِ", "en": "One, only in the word السَّمَٓاءِ" },
-        { "bs": "Jedan, samo u riječi مَٓاءً", "en": "One, only in the word مَٓاءً" },
-        { "bs": "Nijedan", "en": "None" },
-        { "bs": "Dva, po jedan u svakoj riječi", "en": "Two, one in each word" }
+        { "bs": "Jedan, samo u riječi السَّمَٓاءِ", "en": "One, only in the word السَّمَٓاءِ", "de": "Eines, nur im Wort السَّمَٓاءِ" },
+        { "bs": "Jedan, samo u riječi مَٓاءً", "en": "One, only in the word مَٓاءً", "de": "Eines, nur im Wort مَٓاءً" },
+        { "bs": "Nijedan", "en": "None", "de": "Keines" },
+        { "bs": "Dva, po jedan u svakoj riječi", "en": "Two, one in each word", "de": "Zwei, je eines in jedem Wort" }
       ],
       "tacno": 3,
-      "objasnjenje": { "bs": "U obje riječi poslije dugog vokala A dolazi hemze u istoj riječi, pa su oba medd muttesil od 4-5 hareketa.", "en": "In both words the long vowel A is followed by a hamza in the same word, so both are madd muttasil of 4–5 harakas." }
+      "objasnjenje": { "bs": "U obje riječi poslije dugog vokala A dolazi hemze u istoj riječi, pa su oba medd muttesil od 4-5 hareketa.", "en": "In both words the long vowel A is followed by a hamza in the same word, so both are madd muttasil of 4–5 harakas.", "de": "In beiden Wörtern kommt nach dem langen Vokal A eine Hamza im selben Wort, also sind beide Madd Muttasil von 4–5 Harakat." }
     },
     {
-      "q": { "bs": "Koja riječ ima medd muttesil poslije dugog vokala I?", "en": "Which word has madd muttasil after the long vowel I?" },
+      "q": { "bs": "Koja riječ ima medd muttesil poslije dugog vokala I?", "en": "Which word has madd muttasil after the long vowel I?", "de": "Welches Wort hat ein Madd Muttasil nach dem langen Vokal I?" },
       "opcije": [
-        { "bs": "وَجِٓيءَ", "en": "وَجِٓيءَ" },
-        { "bs": "جَٓاءَ", "en": "جَٓاءَ" },
-        { "bs": "السُّٓوءَ", "en": "السُّٓوءَ" },
-        { "bs": "بِنَٓاءً", "en": "بِنَٓاءً" }
+        { "bs": "وَجِٓيءَ", "en": "وَجِٓيءَ", "de": "وَجِٓيءَ" },
+        { "bs": "جَٓاءَ", "en": "جَٓاءَ", "de": "جَٓاءَ" },
+        { "bs": "السُّٓوءَ", "en": "السُّٓوءَ", "de": "السُّٓوءَ" },
+        { "bs": "بِنَٓاءً", "en": "بِنَٓاءً", "de": "بِنَٓاءً" }
       ],
       "tacno": 0,
-      "objasnjenje": { "bs": "U riječi وَجِٓيءَ poslije dugog vokala I dolazi hemze u istoj riječi, a u ostalim riječima hemze dolazi poslije dugog vokala A ili U.", "en": "In وَجِٓيءَ the long vowel I is followed by a hamza in the same word, while in the other words the hamza follows the long vowel A or U." }
+      "objasnjenje": { "bs": "U riječi وَجِٓيءَ poslije dugog vokala I dolazi hemze u istoj riječi, a u ostalim riječima hemze dolazi poslije dugog vokala A ili U.", "en": "In وَجِٓيءَ the long vowel I is followed by a hamza in the same word, while in the other words the hamza follows the long vowel A or U.", "de": "Im Wort وَجِٓيءَ kommt nach dem langen Vokal I eine Hamza im selben Wort, in den anderen Wörtern kommt die Hamza nach dem langen Vokal A oder U." }
     }
   ]
 }

@@ -173,6 +173,82 @@ const TXT = {
 				</Row>
 			</React.Fragment>
 		)
+	},
+
+	de: {
+		naziv: 'IDGHAM MITHLAIN',
+		naslov: '4 IDGHAM MITHLAIN',
+		podnaslov: (
+			<React.Fragment>
+				<strong>Gleiche Buchstaben verschmelzen</strong>
+			</React.Fragment>
+		),
+		lekcija: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Wenn nach einem beliebigen Buchstaben mit{' '}
+						<strong>
+							Sukun <span className="arapski-lekcija">ـــْــ</span>
+						</strong>{' '}
+						der <u>gleiche</u> Buchstabe mit <strong>Vokalzeichen</strong> kommt, verschmelzen beide{' '}
+						<u>vollständig</u>: Der erste Buchstabe wird nicht gesprochen, der zweite wird mit{' '}
+						<strong>Schadda</strong> (Verdopplungszeichen) gesprochen, z. B.:
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row className="text-center reorder">
+					<Col>{P('row1')}</Col>,
+				</Row>
+
+				<Row className="text-center mobile-row rtl ">
+					<Col>{P('row2')}</Col>
+				</Row>
+
+				<Row className="text-center mobile-row  rtl">
+					<Col>{P('row3')}</Col>
+				</Row>
+			</React.Fragment>
+		),
+		lekcijaModal: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Wenn nach einem beliebigen Buchstaben mit{' '}
+						<strong>
+							Sukun <span className="arapski-lekcija">ـــْــ</span>
+						</strong>{' '}
+						der <u>gleiche</u> Buchstabe mit <strong>Vokalzeichen</strong> kommt, verschmelzen beide{' '}
+						<u>vollständig</u>: Der erste Buchstabe wird nicht gesprochen, der zweite wird mit{' '}
+						<strong>Schadda</strong> (Verdopplungszeichen) gesprochen, z. B.:
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row className="text-center reorder">
+					<Col>{P('row1')}</Col>,
+				</Row>
+
+				<Row className="text-center">
+					<Col>{P('row2')}</Col>
+				</Row>
+
+				<Row className="text-center">
+					<Col>{P('row3')}</Col>
+				</Row>
+			</React.Fragment>
+		)
 	}
 };
 

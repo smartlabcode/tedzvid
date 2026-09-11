@@ -260,6 +260,124 @@ const TXT = {
 				</Row>
 			</React.Fragment>
 		)
+	},
+
+	de: {
+		naziv: 'ICHFA',
+		naslov: '11 ICHFA',
+		podnaslov: (
+			<React.Fragment>
+				<strong>Den Buchstaben N (ن) verstecken</strong>
+			</React.Fragment>
+		),
+		lekcija: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Wenn nach dem Buchstaben <strong>N</strong> mit <strong>Sukun</strong> (
+						<span className="arapski-lekcija">نْ</span>) oder nach dem <strong>Tanwin</strong> AN{' '}
+						<span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
+						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
+						<span className="arapski-lekcija">ــٌــ</span> einer dieser 15 Buchstaben kommt:{' '}
+						<span style={{ display: 'inline-flex' }}>
+							<Arabic arabic="ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق " key="arL11">
+								{' '}
+								ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق {' '}
+							</Arabic>
+						</span>
+						, dann wird der Buchstabe <strong>N</strong> (
+						<span className="arapski-lekcija">ن</span>) 2 Harakat lang durch die Nase gesprochen, ohne
+						dass die Zunge den Gaumen berührt, z. B.:
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row className="text-center reorder-basic-display-after">
+					<Col>{P('row1')}</Col>
+				</Row>
+				<Row className="text-center reorder-basic rtl">
+					<Col>{P('row2')}</Col>
+				</Row>
+
+				<Row className="text-center  rtl">
+					<Col>
+						{V('multirow', 'word1')}
+						{P('row3')}
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		),
+		lekcijaModal: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Wenn nach dem Buchstaben <strong>N</strong> mit <strong>Sukun</strong> (
+						<span className="arapski-lekcija">نْ</span>) oder nach dem <strong>Tanwin</strong> AN{' '}
+						<span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
+						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
+						<span className="arapski-lekcija">ــٌــ</span> einer dieser 15 Buchstaben kommt:{' '}
+						<span style={{ display: 'inline-flex' }}>
+							<Arabic arabic="ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق " key="arL11">
+								{' '}
+								ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق {' '}
+							</Arabic>
+						</span>
+						, dann wird der Buchstabe <strong>N</strong> (
+						<span className="arapski-lekcija">ن</span>) 2 Harakat lang durch die Nase gesprochen,
+						ohne dass die Zunge den Gaumen berührt, z. B.:
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row className="text-center reorder-basic-display-after">
+					<Col>{P('row1')}</Col>
+				</Row>
+				<Row className="text-center reorder-basic rtl">
+					<Col>{P('row2')}</Col>
+				</Row>
+
+				<Row className="text-center  rtl">
+					<Col>
+						{V('multirow', 'word1')}
+						{P('row3')}
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		)
 	}
 };
 

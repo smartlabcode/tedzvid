@@ -5,7 +5,8 @@
 		"boja": "#b9962f",
 		"grupa": "stajanje",
 		"bs": "Vakf – znak za stajanje",
-		"en": "Waqf – stopping sign"
+		"en": "Waqf – stopping sign",
+		"de": "Waqf – das Pausenzeichen"
 	},
 	{
 		"id": "ne-uci-se",
@@ -13,7 +14,8 @@
 		"boja": "#bdb5a8",
 		"grupa": "stajanje",
 		"bs": "Harf koji se ne uči",
-		"en": "Silent letter"
+		"en": "Silent letter",
+		"de": "Stummer Buchstabe"
 	},
 	{
 		"id": "damir",
@@ -21,7 +23,8 @@
 		"boja": "#ba68c8",
 		"grupa": "ostalo",
 		"bs": "Damir – zamjenica HU",
-		"en": "Damir – the pronoun HU"
+		"en": "Damir – the pronoun HU",
+		"de": "Damir – das Pronomen HU"
 	},
 	{
 		"id": "lafzatullah",
@@ -29,7 +32,8 @@
 		"boja": "#00897b",
 		"grupa": "ostalo",
 		"bs": "Lafzatullah – riječ Allah",
-		"en": "Lafdhatullah – the word Allah"
+		"en": "Lafdhatullah – the word Allah",
+		"de": "Lafdhatullah – das Wort Allah"
 	},
 	{
 		"id": "kalkala",
@@ -37,7 +41,8 @@
 		"boja": "#e8590c",
 		"grupa": "ostalo",
 		"bs": "Kalkala – odskakanje",
-		"en": "Qalqalah – bouncing"
+		"en": "Qalqalah – bouncing",
+		"de": "Qalqala – das Abprallen"
 	},
 	{
 		"id": "hukmurra",
@@ -45,7 +50,8 @@
 		"boja": "#3949ab",
 		"grupa": "ostalo",
 		"bs": "Hukmurra – izgovor harfa R",
-		"en": "Hukm ar-ra – pronouncing R"
+		"en": "Hukm ar-ra – pronouncing R",
+		"de": "Hukm ar-Ra – die Aussprache des R"
 	},
 	{
 		"id": "gunne",
@@ -53,7 +59,8 @@
 		"boja": "#d6336c",
 		"grupa": "ostalo",
 		"bs": "Gunne – N i M sa šeddom",
-		"en": "Ghunnah – N and M with shadda"
+		"en": "Ghunnah – N and M with shadda",
+		"de": "Ghunna – N und M mit Schadda"
 	},
 	{
 		"id": "izhar-halkij",
@@ -61,7 +68,8 @@
 		"boja": "#37474f",
 		"grupa": "nun",
 		"bs": "Izhar hallkijj",
-		"en": "Idhhar halqi"
+		"en": "Idhhar halqi",
+		"de": "Idh-har Halqi"
 	},
 	{
 		"id": "ihfa",
@@ -69,7 +77,8 @@
 		"boja": "#2f8f3e",
 		"grupa": "nun",
 		"bs": "Ihfa",
-		"en": "Ikhfa"
+		"en": "Ikhfa",
+		"de": "Ichfa"
 	},
 	{
 		"id": "iklab",
@@ -77,7 +86,8 @@
 		"boja": "#7b2fbe",
 		"grupa": "nun",
 		"bs": "Iklab",
-		"en": "Iqlab"
+		"en": "Iqlab",
+		"de": "Iqlab"
 	},
 	{
 		"id": "idgam-gunneh",
@@ -85,7 +95,8 @@
 		"boja": "#0277bd",
 		"grupa": "nun",
 		"bs": "Idgam mea-l-gunneh",
-		"en": "Idgham ma'al-ghunnah"
+		"en": "Idgham ma'al-ghunnah",
+		"de": "Idgham ma’al-Ghunna"
 	},
 	{
 		"id": "idgam-bila-gunneh",
@@ -93,7 +104,8 @@
 		"boja": "#4fc3f7",
 		"grupa": "nun",
 		"bs": "Idgam bila gunneh",
-		"en": "Idgham bila ghunnah"
+		"en": "Idgham bila ghunnah",
+		"de": "Idgham bila Ghunna"
 	},
 	{
 		"id": "izhar-sefevijj",
@@ -101,7 +113,8 @@
 		"boja": "#8a9aa4",
 		"grupa": "mim",
 		"bs": "Izhar šefevijj",
-		"en": "Idhhar shafawi"
+		"en": "Idhhar shafawi",
+		"de": "Idh-har Schafawi"
 	},
 	{
 		"id": "ihfa-sefevijj",
@@ -109,7 +122,8 @@
 		"boja": "#8bc34a",
 		"grupa": "mim",
 		"bs": "Ihfa šefevijj",
-		"en": "Ikhfa shafawi"
+		"en": "Ikhfa shafawi",
+		"de": "Ichfa Schafawi"
 	},
 	{
 		"id": "idgam-mislejn-gunneh",
@@ -117,7 +131,8 @@
 		"boja": "#a1887f",
 		"grupa": "mim",
 		"bs": "Idgam mislejn mea-l-gunneh",
-		"en": "Idgham mithlayn ma'al-ghunnah"
+		"en": "Idgham mithlayn ma'al-ghunnah",
+		"de": "Idgham Mithlain ma’al-Ghunna"
 	},
 	{
 		"id": "idgam-mislejn",
@@ -125,7 +140,8 @@
 		"boja": "#6d4c41",
 		"grupa": "idgam",
 		"bs": "Idgam mislejn",
-		"en": "Idgham mithlayn"
+		"en": "Idgham mithlayn",
+		"de": "Idgham Mithlain"
 	},
 	{
 		"id": "idgam-mutedzanisejn",
@@ -133,7 +149,8 @@
 		"boja": "#7d7a12",
 		"grupa": "idgam",
 		"bs": "Idgam mutedžanisejn",
-		"en": "Idgham mutajanisayn"
+		"en": "Idgham mutajanisayn",
+		"de": "Idgham Mutadschanisain"
 	},
 	{
 		"id": "idgam-mutekaribejn",
@@ -141,7 +158,8 @@
 		"boja": "#b0a92e",
 		"grupa": "idgam",
 		"bs": "Idgam mutekaribejn",
-		"en": "Idgham mutaqaribayn"
+		"en": "Idgham mutaqaribayn",
+		"de": "Idgham Mutaqaribain"
 	},
 	{
 		"id": "medd-tabii",
@@ -149,7 +167,8 @@
 		"boja": "#c0392b",
 		"grupa": "medd",
 		"bs": "Medd tabi'ijj",
-		"en": "Madd tabi'i"
+		"en": "Madd tabi'i",
+		"de": "Madd Tabi’i"
 	},
 	{
 		"id": "medd-muttesil",
@@ -157,7 +176,8 @@
 		"boja": "#7d1128",
 		"grupa": "medd",
 		"bs": "Medd muttesil",
-		"en": "Madd muttasil"
+		"en": "Madd muttasil",
+		"de": "Madd Muttasil"
 	},
 	{
 		"id": "medd-munfesil",
@@ -165,7 +185,8 @@
 		"boja": "#e0664f",
 		"grupa": "medd",
 		"bs": "Medd munfesil",
-		"en": "Madd munfasil"
+		"en": "Madd munfasil",
+		"de": "Madd Munfasil"
 	},
 	{
 		"id": "medd-lazim",
@@ -173,7 +194,8 @@
 		"boja": "#8e0e63",
 		"grupa": "medd",
 		"bs": "Medd lazim",
-		"en": "Madd lazim"
+		"en": "Madd lazim",
+		"de": "Madd Lazim"
 	},
 	{
 		"id": "medd-arid",
@@ -181,7 +203,8 @@
 		"boja": "#b9607a",
 		"grupa": "medd",
 		"bs": "Medd arid",
-		"en": "Madd 'arid"
+		"en": "Madd 'arid",
+		"de": "Madd Arid"
 	},
 	{
 		"id": "medd-lin",
@@ -189,6 +212,7 @@
 		"boja": "#8d5524",
 		"grupa": "medd",
 		"bs": "Medd lin",
-		"en": "Madd lin"
+		"en": "Madd lin",
+		"de": "Madd Lin"
 	}
 ]

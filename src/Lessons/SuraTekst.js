@@ -48,6 +48,14 @@ const NASLOV_GRUPE = {
 		medd: 'Prolongations',
 		ostalo: 'Individual rules',
 		stajanje: 'Stopping and silent letters'
+	},
+	de: {
+		nun: 'N mit Sukun und Tanwin',
+		mim: 'M mit Sukun',
+		idgam: 'Weitere Verschmelzungen',
+		medd: 'Dehnungen',
+		ostalo: 'Einzelne Regeln',
+		stajanje: 'Anhalten und stumme Buchstaben'
 	}
 };
 /* pravila koja se ponavljaju u gotovo svakoj riječi – u pogledu „manje boja” su isključena */

@@ -4,7 +4,7 @@
         "id": 1,
         "url": "./assets/audio/l10/1.mp3",
         "napomena": [
-            {"tip": "cisto", "bs": "U riječi أَلَـمْ harf مْ sa sukunom prati تَ, a to nije ni ب ni م, zato se مْ uči čisto, bez uklapanja.", "en": "In أَلَـمْ the letter مْ with a sukun is followed by تَ, which is neither ب nor م, so مْ is recited clearly, without merging."}
+            {"tip": "cisto", "bs": "U riječi أَلَـمْ harf مْ sa sukunom prati تَ, a to nije ni ب ni م, zato se مْ uči čisto, bez uklapanja.", "en": "In أَلَـمْ the letter مْ with a sukun is followed by تَ, which is neither ب nor م, so مْ is recited clearly, without merging.", "de": "Im Wort أَلَـمْ folgt auf den Buchstaben مْ mit Sukun ein تَ, und das ist weder ب noch م, deshalb wird مْ deutlich ausgesprochen, ohne Verschmelzung."}
         ],
         "highlight": "مْ تَ",
         "word": "أَلَـمْ تَرَ",
@@ -13,7 +13,7 @@
         "id": 2,
         "url": "./assets/audio/l10/2.mp3",
         "napomena": [
-            {"tip": "cisto", "bs": "U riječi لَكُمْ harf مْ sa sukunom dolazi ispred دِ, a ne ispred ب ili م, zato se uči čisto, bez uklapanja.", "en": "In لَكُمْ the letter مْ with a sukun comes before دِ, not before ب or م, so it is recited clearly, without merging."}
+            {"tip": "cisto", "bs": "U riječi لَكُمْ harf مْ sa sukunom dolazi ispred دِ, a ne ispred ب ili م, zato se uči čisto, bez uklapanja.", "en": "In لَكُمْ the letter مْ with a sukun comes before دِ, not before ب or م, so it is recited clearly, without merging.", "de": "Im Wort لَكُمْ steht der Buchstabe مْ mit Sukun vor دِ, nicht vor ب oder م, deshalb wird das M deutlich ausgesprochen, ohne Verschmelzung."}
         ],
         "highlight": "مْ دِ",
         "word": "لَكُمْ دِينُكُمْ",
@@ -25,8 +25,8 @@
                 "id": 3,
                 "url": "./assets/audio/l10/3.mp3",
                 "napomena": [
-                    {"tip": "cisto", "bs": "U riječi أَلَـمْ harf مْ ima sukun, a iza njega dolazi يَ, zato se مْ uči čisto, bez uklapanja.", "en": "In أَلَـمْ the letter مْ has a sukun and is followed by يَ, so مْ is recited clearly, without merging."},
-                    {"tip": "cisto", "bs": "U riječi هُمْ iza مْ sa sukunom dolazi فِ, zato se مْ izgovara čisto i ne uklapa se u sljedeći harf.", "en": "In هُمْ the letter مْ with a sukun is followed by فِ, so مْ is pronounced clearly and does not merge into the next letter."}
+                    {"tip": "cisto", "bs": "U riječi أَلَـمْ harf مْ ima sukun, a iza njega dolazi يَ, zato se مْ uči čisto, bez uklapanja.", "en": "In أَلَـمْ the letter مْ has a sukun and is followed by يَ, so مْ is recited clearly, without merging.", "de": "Im Wort أَلَـمْ hat der Buchstabe مْ ein Sukun, und danach kommt يَ, deshalb wird مْ deutlich ausgesprochen, ohne Verschmelzung."},
+                    {"tip": "cisto", "bs": "U riječi هُمْ iza مْ sa sukunom dolazi فِ, zato se مْ izgovara čisto i ne uklapa se u sljedeći harf.", "en": "In هُمْ the letter مْ with a sukun is followed by فِ, so مْ is pronounced clearly and does not merge into the next letter.", "de": "Im Wort هُمْ kommt nach مْ mit Sukun ein فِ, deshalb wird مْ deutlich ausgesprochen und verschmilzt nicht in den nächsten Buchstaben."}
                 ],
                 "highlight": "مْ فِ",
                 "word": "هُمْ فِي تَضْلِيلٍ",
@@ -43,8 +43,8 @@
                 "id": 4,
                 "url": "./assets/audio/l10/4.mp3",
                 "napomena": [
-                    {"tip": "cisto", "bs": "U riječi عَلَيْهِمْ harf مْ ima sukun, a iza njega dolazi غَ, zato se مْ uči čisto, bez uklapanja.", "en": "In عَلَيْهِمْ the letter مْ has a sukun and is followed by غَ, so مْ is recited clearly, without merging."},
-                    {"tip": "cisto", "bs": "U riječi عَلَيْهِمْ iza مْ sa sukunom dolazi وَ, zato se مْ izgovara čisto i ne uklapa se u sljedeći harf.", "en": "In عَلَيْهِمْ the letter مْ with a sukun is followed by وَ, so مْ is pronounced clearly and does not merge into the next letter."}
+                    {"tip": "cisto", "bs": "U riječi عَلَيْهِمْ harf مْ ima sukun, a iza njega dolazi غَ, zato se مْ uči čisto, bez uklapanja.", "en": "In عَلَيْهِمْ the letter مْ has a sukun and is followed by غَ, so مْ is recited clearly, without merging.", "de": "Im Wort عَلَيْهِمْ hat der Buchstabe مْ ein Sukun, und danach kommt غَ, deshalb wird مْ deutlich ausgesprochen, ohne Verschmelzung."},
+                    {"tip": "cisto", "bs": "U riječi عَلَيْهِمْ iza مْ sa sukunom dolazi وَ, zato se مْ izgovara čisto i ne uklapa se u sljedeći harf.", "en": "In عَلَيْهِمْ the letter مْ with a sukun is followed by وَ, so مْ is pronounced clearly and does not merge into the next letter.", "de": "Im Wort عَلَيْهِمْ kommt nach مْ mit Sukun ein وَ, deshalb wird مْ deutlich ausgesprochen und verschmilzt nicht in den nächsten Buchstaben."}
                 ],
                 "highlight": "مْ وَ",
                 "word": "الْمَغْضُوبِ عَلَيْهِمْ وَلَاالضَّٓالِّـينَ",
@@ -61,8 +61,8 @@
                 "id": 5,
                 "url": "./assets/audio/l10/5.mp3",
                 "napomena": [
-                    {"tip": "cisto", "bs": "U riječima لَمْ يَلِدْ harf مْ ima sukun, a iza njega dolazi يَ, zato se مْ uči čisto i ne uklapa se u sljedeći harf.", "en": "In لَمْ يَلِدْ the letter مْ has a sukun and is followed by يَ, so مْ is recited clearly and does not merge into the next letter."},
-                    {"tip": "cisto", "bs": "U riječima وَلَمْ يُولَدْ harf مْ ima sukun, a iza njega dolazi يُ, zato se مْ uči čisto i ne uklapa se u sljedeći harf.", "en": "In وَلَمْ يُولَدْ the letter مْ has a sukun and is followed by يُ, so مْ is recited clearly and does not merge into the next letter."}
+                    {"tip": "cisto", "bs": "U riječima لَمْ يَلِدْ harf مْ ima sukun, a iza njega dolazi يَ, zato se مْ uči čisto i ne uklapa se u sljedeći harf.", "en": "In لَمْ يَلِدْ the letter مْ has a sukun and is followed by يَ, so مْ is recited clearly and does not merge into the next letter.", "de": "In den Wörtern لَمْ يَلِدْ hat der Buchstabe مْ ein Sukun, und danach kommt يَ, deshalb wird مْ deutlich ausgesprochen und verschmilzt nicht in den nächsten Buchstaben."},
+                    {"tip": "cisto", "bs": "U riječima وَلَمْ يُولَدْ harf مْ ima sukun, a iza njega dolazi يُ, zato se مْ uči čisto i ne uklapa se u sljedeći harf.", "en": "In وَلَمْ يُولَدْ the letter مْ has a sukun and is followed by يُ, so مْ is recited clearly and does not merge into the next letter.", "de": "In den Wörtern وَلَمْ يُولَدْ hat der Buchstabe مْ ein Sukun, und danach kommt يُ, deshalb wird مْ deutlich ausgesprochen und verschmilzt nicht in den nächsten Buchstaben."}
                 ],
                 "highlight": "مْ يُ",
                 "word": "وَلَمْ يُولَدْ",
@@ -81,7 +81,7 @@
             "id": 6,
             "url": "./assets/audio/l10/6.mp3",
             "napomena": [
-                {"tip": "cisto", "bs": "U riječi لَهُمْ harf مْ ima sukun, a iza njega dolazi نَ, zato se مْ uči čisto, bez uklapanja.", "en": "In لَهُمْ the letter مْ has a sukun and is followed by نَ, so مْ is recited clearly, without merging."}
+                {"tip": "cisto", "bs": "U riječi لَهُمْ harf مْ ima sukun, a iza njega dolazi نَ, zato se مْ uči čisto, bez uklapanja.", "en": "In لَهُمْ the letter مْ has a sukun and is followed by نَ, so مْ is recited clearly, without merging.", "de": "Im Wort لَهُمْ hat der Buchstabe مْ ein Sukun, und danach kommt نَ, deshalb wird مْ deutlich ausgesprochen, ohne Verschmelzung."}
             ],
             "highlight": "",
             "word": "نَـبِيُّهُمْ",
@@ -96,7 +96,7 @@
             "id": 7,
             "url": "./assets/audio/l10/7.mp3",
             "napomena": [
-                {"tip": "cisto", "bs": "U riječi أَنْـتُمْ harf مْ ima sukun, a iza njega dolazi عَ, zato se مْ uči čisto, bez uklapanja.", "en": "In أَنْـتُمْ the letter مْ has a sukun and is followed by عَ, so مْ is recited clearly, without merging."}
+                {"tip": "cisto", "bs": "U riječi أَنْـتُمْ harf مْ ima sukun, a iza njega dolazi عَ, zato se مْ uči čisto, bez uklapanja.", "en": "In أَنْـتُمْ the letter مْ has a sukun and is followed by عَ, so مْ is recited clearly, without merging.", "de": "Im Wort أَنْـتُمْ hat der Buchstabe مْ ein Sukun, und danach kommt عَ, deshalb wird مْ deutlich ausgesprochen, ohne Verschmelzung."}
             ],
             "highlight": "مْ",
             "word": " وَلَٓاأَنْـتُمْ عَابِدُونَ مَٓا أَعْبُدُ",
@@ -106,7 +106,7 @@
             "id": 8,
             "url": "./assets/audio/l10/8.mp3",
             "napomena": [
-                {"tip": "cisto", "bs": "U riječi إِيلَافِهِمْ harf مْ ima sukun, a iza njega dolazi رِ, zato se مْ uči čisto, bez uklapanja.", "en": "In إِيلَافِهِمْ the letter مْ has a sukun and is followed by رِ, so مْ is recited clearly, without merging."}
+                {"tip": "cisto", "bs": "U riječi إِيلَافِهِمْ harf مْ ima sukun, a iza njega dolazi رِ, zato se مْ uči čisto, bez uklapanja.", "en": "In إِيلَافِهِمْ the letter مْ has a sukun and is followed by رِ, so مْ is recited clearly, without merging.", "de": "Im Wort إِيلَافِهِمْ hat der Buchstabe مْ ein Sukun, und danach kommt رِ, deshalb wird مْ deutlich ausgesprochen, ohne Verschmelzung."}
             ],
             "highlight": "مْ",
             "word": "إِيلَافِهِمْ رِحْلَةَ الشِّـتَٓاءِ وَالصَّيْفِ",
@@ -116,8 +116,8 @@
             "id": 9,
             "url": "./assets/audio/l10/9.mp3",
             "napomena": [
-                {"tip": "cisto", "bs": "U riječi أَلَمْ harf مْ ima sukun, a iza njega dolazi يَ, zato se مْ uči čisto, bez uklapanja.", "en": "In أَلَمْ the letter مْ has a sukun and is followed by يَ, so مْ is recited clearly, without merging."},
-                {"tip": "cisto", "bs": "U riječi كَيْدَهُمْ iza مْ sa sukunom dolazi فِ, zato se مْ izgovara čisto i ne uklapa se u sljedeći harf.", "en": "In كَيْدَهُمْ the letter مْ with a sukun is followed by فِ, so مْ is pronounced clearly and does not merge into the next letter."}
+                {"tip": "cisto", "bs": "U riječi أَلَمْ harf مْ ima sukun, a iza njega dolazi يَ, zato se مْ uči čisto, bez uklapanja.", "en": "In أَلَمْ the letter مْ has a sukun and is followed by يَ, so مْ is recited clearly, without merging.", "de": "Im Wort أَلَمْ hat der Buchstabe مْ ein Sukun, und danach kommt يَ, deshalb wird مْ deutlich ausgesprochen, ohne Verschmelzung."},
+                {"tip": "cisto", "bs": "U riječi كَيْدَهُمْ iza مْ sa sukunom dolazi فِ, zato se مْ izgovara čisto i ne uklapa se u sljedeći harf.", "en": "In كَيْدَهُمْ the letter مْ with a sukun is followed by فِ, so مْ is pronounced clearly and does not merge into the next letter.", "de": "Im Wort كَيْدَهُمْ kommt nach مْ mit Sukun ein فِ, deshalb wird مْ deutlich ausgesprochen und verschmilzt nicht in den nächsten Buchstaben."}
             ],
             "highlight": "مْ",
             "word": " كَيْدَهُمْ فِي تَضْلِيلٍ",
@@ -132,9 +132,9 @@
                 "id": 10,
                 "url": "./assets/audio/l10/10.mp3",
                 "napomena": [
-                    {"tip": "cisto", "bs": "U riječima عَلَيْهِمْ i نْذَرْتَهُمْ iza مْ dolazi أَ, zato se مْ na oba mjesta uči čisto, bez uklapanja.", "en": "In عَلَيْهِمْ and نْذَرْتَهُمْ, مْ is followed by أَ, so مْ is recited clearly in both places, without merging."},
-                    {"tip": "cisto", "bs": "U riječima أَمْ i لَمْ iza مْ sa sukunom dolaze لَ i تُ, zato se مْ i tu uči čisto, bez uklapanja.", "en": "In أَمْ and لَمْ the letter مْ with a sukun is followed by لَ and تُ, so مْ is recited clearly there too, without merging."},
-                    {"tip": "cisto", "bs": "U riječi هُمْ harf مْ ima sukun, a iza njega dolazi لَ, zato se مْ uči čisto, bez uklapanja.", "en": "In هُمْ the letter مْ has a sukun and is followed by لَ, so مْ is recited clearly, without merging."}
+                    {"tip": "cisto", "bs": "U riječima عَلَيْهِمْ i نْذَرْتَهُمْ iza مْ dolazi أَ, zato se مْ na oba mjesta uči čisto, bez uklapanja.", "en": "In عَلَيْهِمْ and نْذَرْتَهُمْ, مْ is followed by أَ, so مْ is recited clearly in both places, without merging.", "de": "In den Wörtern عَلَيْهِمْ und نْذَرْتَهُمْ kommt nach مْ ein أَ, deshalb wird مْ an beiden Stellen deutlich ausgesprochen, ohne Verschmelzung."},
+                    {"tip": "cisto", "bs": "U riječima أَمْ i لَمْ iza مْ sa sukunom dolaze لَ i تُ, zato se مْ i tu uči čisto, bez uklapanja.", "en": "In أَمْ and لَمْ the letter مْ with a sukun is followed by لَ and تُ, so مْ is recited clearly there too, without merging.", "de": "In den Wörtern أَمْ und لَمْ kommen nach مْ mit Sukun ein لَ und ein تُ, deshalb wird مْ auch dort deutlich ausgesprochen, ohne Verschmelzung."},
+                    {"tip": "cisto", "bs": "U riječi هُمْ harf مْ ima sukun, a iza njega dolazi لَ, zato se مْ uči čisto, bez uklapanja.", "en": "In هُمْ the letter مْ has a sukun and is followed by لَ, so مْ is recited clearly, without merging.", "de": "Im Wort هُمْ hat der Buchstabe مْ ein Sukun, und danach kommt لَ, deshalb wird مْ deutlich ausgesprochen, ohne Verschmelzung."}
                 ],
                 "highlight": "مْ",
                 "word": "هُمْ لَا يُؤْمِنُونَ",
@@ -170,9 +170,9 @@
                 "id": 11,
                 "url": "./assets/audio/l10/11.mp3",
                 "napomena": [
-                    {"tip": "cisto", "bs": "U riječi أَرَأَيْتُمْ harf مْ ima sukun, a iza njega dolazi إِ, zato se مْ uči čisto, bez uklapanja.", "en": "In أَرَأَيْتُمْ the letter مْ has a sukun and is followed by إِ, so مْ is recited clearly, without merging."},
-                    {"tip": "cisto", "bs": "U riječi سَمْعَكُمْ iza prvog مْ dolazi عَ, a iza drugog وَ, zato se مْ na oba mjesta uči čisto, bez uklapanja.", "en": "In سَمْعَكُمْ the first مْ is followed by عَ and the second by وَ, so مْ is recited clearly in both places, without merging."},
-                    {"tip": "cisto", "bs": "U riječi وَأَبْصَارَكُمْ iza مْ sa sukunom dolazi وَ, zato se مْ izgovara čisto i ne uklapa se u sljedeći harf.", "en": "In وَأَبْصَارَكُمْ the letter مْ with a sukun is followed by وَ, so مْ is pronounced clearly and does not merge into the next letter."}
+                    {"tip": "cisto", "bs": "U riječi أَرَأَيْتُمْ harf مْ ima sukun, a iza njega dolazi إِ, zato se مْ uči čisto, bez uklapanja.", "en": "In أَرَأَيْتُمْ the letter مْ has a sukun and is followed by إِ, so مْ is recited clearly, without merging.", "de": "Im Wort أَرَأَيْتُمْ hat der Buchstabe مْ ein Sukun, und danach kommt إِ, deshalb wird مْ deutlich ausgesprochen, ohne Verschmelzung."},
+                    {"tip": "cisto", "bs": "U riječi سَمْعَكُمْ iza prvog مْ dolazi عَ, a iza drugog وَ, zato se مْ na oba mjesta uči čisto, bez uklapanja.", "en": "In سَمْعَكُمْ the first مْ is followed by عَ and the second by وَ, so مْ is recited clearly in both places, without merging.", "de": "Im Wort سَمْعَكُمْ kommt nach dem ersten مْ ein عَ und nach dem zweiten ein وَ, deshalb wird مْ an beiden Stellen deutlich ausgesprochen, ohne Verschmelzung."},
+                    {"tip": "cisto", "bs": "U riječi وَأَبْصَارَكُمْ iza مْ sa sukunom dolazi وَ, zato se مْ izgovara čisto i ne uklapa se u sljedeći harf.", "en": "In وَأَبْصَارَكُمْ the letter مْ with a sukun is followed by وَ, so مْ is pronounced clearly and does not merge into the next letter.", "de": "Im Wort وَأَبْصَارَكُمْ kommt nach مْ mit Sukun ein وَ, deshalb wird مْ deutlich ausgesprochen und verschmilzt nicht in den nächsten Buchstaben."}
                 ],
                 "highlight": "",
                 "word": " قُلُوبِكُمْ",
@@ -196,9 +196,9 @@
                 "id": 12,
                 "url": "./assets/audio/l10/12.mp3",
                 "napomena": [
-                    {"tip": "cisto", "bs": "U riječi دَفَعْتُمْ harf مْ ima sukun, a iza njega dolazi إِ, zato se مْ uči čisto, bez uklapanja.", "en": "In دَفَعْتُمْ the letter مْ has a sukun and is followed by إِ, so مْ is recited clearly, without merging."},
-                    {"tip": "cisto", "bs": "U riječi إِلَيْهِمْ iza مْ sa sukunom dolazi أَ, zato se مْ izgovara čisto i ne uklapa se u sljedeći harf.", "en": "In إِلَيْهِمْ the letter مْ with a sukun is followed by أَ, so مْ is pronounced clearly and does not merge into the next letter."},
-                    {"tip": "cisto", "bs": "U riječi أَمْوَالَهُمْ iza prvog مْ dolazi وَ, a iza drugog فَ, zato se مْ na oba mjesta uči čisto, bez uklapanja.", "en": "In أَمْوَالَهُمْ the first مْ is followed by وَ and the second by فَ, so مْ is recited clearly in both places, without merging."}
+                    {"tip": "cisto", "bs": "U riječi دَفَعْتُمْ harf مْ ima sukun, a iza njega dolazi إِ, zato se مْ uči čisto, bez uklapanja.", "en": "In دَفَعْتُمْ the letter مْ has a sukun and is followed by إِ, so مْ is recited clearly, without merging.", "de": "Im Wort دَفَعْتُمْ hat der Buchstabe مْ ein Sukun, und danach kommt إِ, deshalb wird مْ deutlich ausgesprochen, ohne Verschmelzung."},
+                    {"tip": "cisto", "bs": "U riječi إِلَيْهِمْ iza مْ sa sukunom dolazi أَ, zato se مْ izgovara čisto i ne uklapa se u sljedeći harf.", "en": "In إِلَيْهِمْ the letter مْ with a sukun is followed by أَ, so مْ is pronounced clearly and does not merge into the next letter.", "de": "Im Wort إِلَيْهِمْ kommt nach مْ mit Sukun ein أَ, deshalb wird مْ deutlich ausgesprochen und verschmilzt nicht in den nächsten Buchstaben."},
+                    {"tip": "cisto", "bs": "U riječi أَمْوَالَهُمْ iza prvog مْ dolazi وَ, a iza drugog فَ, zato se مْ na oba mjesta uči čisto, bez uklapanja.", "en": "In أَمْوَالَهُمْ the first مْ is followed by وَ and the second by فَ, so مْ is recited clearly in both places, without merging.", "de": "Im Wort أَمْوَالَهُمْ kommt nach dem ersten مْ ein وَ und nach dem zweiten ein فَ, deshalb wird مْ an beiden Stellen deutlich ausgesprochen, ohne Verschmelzung."}
                 ],
                 "highlight": "",
                 "word": " فَأَشْهِدُوا عَلَيْهِمْ",
@@ -222,9 +222,9 @@
                 "id": 13,
                 "url": "./assets/audio/l10/13.mp3",
                 "napomena": [
-                    {"tip": "cisto", "bs": "U riječi قُلُوبِهِمْ harf مْ ima sukun, a iza njega dolazi وَ, zato se مْ uči čisto, bez uklapanja.", "en": "In قُلُوبِهِمْ the letter مْ has a sukun and is followed by وَ, so مْ is recited clearly, without merging."},
-                    {"tip": "cisto", "bs": "U riječi سَمْعِهِمْ iza prvog مْ dolazi عِ, a iza drugog وَ, zato se مْ na oba mjesta uči čisto, bez uklapanja.", "en": "In سَمْعِهِمْ the first مْ is followed by عِ and the second by وَ, so مْ is recited clearly in both places, without merging."},
-                    {"tip": "cisto", "bs": "U riječi أَبْصَارِهِمْ iza مْ sa sukunom dolazi غِ, zato se مْ izgovara čisto i ne uklapa se u sljedeći harf.", "en": "In أَبْصَارِهِمْ the letter مْ with a sukun is followed by غِ, so مْ is pronounced clearly and does not merge into the next letter."}
+                    {"tip": "cisto", "bs": "U riječi قُلُوبِهِمْ harf مْ ima sukun, a iza njega dolazi وَ, zato se مْ uči čisto, bez uklapanja.", "en": "In قُلُوبِهِمْ the letter مْ has a sukun and is followed by وَ, so مْ is recited clearly, without merging.", "de": "Im Wort قُلُوبِهِمْ hat der Buchstabe مْ ein Sukun, und danach kommt وَ, deshalb wird مْ deutlich ausgesprochen, ohne Verschmelzung."},
+                    {"tip": "cisto", "bs": "U riječi سَمْعِهِمْ iza prvog مْ dolazi عِ, a iza drugog وَ, zato se مْ na oba mjesta uči čisto, bez uklapanja.", "en": "In سَمْعِهِمْ the first مْ is followed by عِ and the second by وَ, so مْ is recited clearly in both places, without merging.", "de": "Im Wort سَمْعِهِمْ kommt nach dem ersten مْ ein عِ und nach dem zweiten ein وَ, deshalb wird مْ an beiden Stellen deutlich ausgesprochen, ohne Verschmelzung."},
+                    {"tip": "cisto", "bs": "U riječi أَبْصَارِهِمْ iza مْ sa sukunom dolazi غِ, zato se مْ izgovara čisto i ne uklapa se u sljedeći harf.", "en": "In أَبْصَارِهِمْ the letter مْ with a sukun is followed by غِ, so مْ is pronounced clearly and does not merge into the next letter.", "de": "Im Wort أَبْصَارِهِمْ kommt nach مْ mit Sukun ein غِ, deshalb wird مْ deutlich ausgesprochen und verschmilzt nicht in den nächsten Buchstaben."}
                 ],
                 "highlight": "مْ",
                 "word": "عَلٰٓى أَبْصَارِهِمْ غِشَاوَةٌ",
@@ -247,8 +247,8 @@
             "id": 14,
             "url": "./assets/audio/l10/14.mp3",
             "napomena": [
-                {"tip": "cisto", "bs": "U riječi عَلَيْهِمْ harf مْ ima sukun, a iza njega dolazi وَ, zato se مْ uči čisto, bez uklapanja.", "en": "In عَلَيْهِمْ the letter مْ has a sukun and is followed by وَ, so مْ is recited clearly, without merging."},
-                {"tip": "cisto", "bs": "U riječi هُمْ iza مْ sa sukunom dolazi يَ, zato se مْ izgovara čisto i ne uklapa se u sljedeći harf.", "en": "In هُمْ the letter مْ with a sukun is followed by يَ, so مْ is pronounced clearly and does not merge into the next letter."}
+                {"tip": "cisto", "bs": "U riječi عَلَيْهِمْ harf مْ ima sukun, a iza njega dolazi وَ, zato se مْ uči čisto, bez uklapanja.", "en": "In عَلَيْهِمْ the letter مْ has a sukun and is followed by وَ, so مْ is recited clearly, without merging.", "de": "Im Wort عَلَيْهِمْ hat der Buchstabe مْ ein Sukun, und danach kommt وَ, deshalb wird مْ deutlich ausgesprochen, ohne Verschmelzung."},
+                {"tip": "cisto", "bs": "U riječi هُمْ iza مْ sa sukunom dolazi يَ, zato se مْ izgovara čisto i ne uklapa se u sljedeći harf.", "en": "In هُمْ the letter مْ with a sukun is followed by يَ, so مْ is pronounced clearly and does not merge into the next letter.", "de": "Im Wort هُمْ kommt nach مْ mit Sukun ein يَ, deshalb wird مْ deutlich ausgesprochen und verschmilzt nicht in den nächsten Buchstaben."}
             ],
             "highlight": "مْ",
             "word": " فَلَا خَوْفٌ عَلَيْهِمْ وَلَا هُمْ يَحْزَنُونَ",

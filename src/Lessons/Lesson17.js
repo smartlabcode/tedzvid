@@ -166,6 +166,77 @@ const TXT = {
 				</Row>
 			</React.Fragment>
 		)
+	},
+
+	de: {
+		naziv: 'MADD TABI’I',
+		naslov: '17 MADD TABI’I',
+		podnaslov: 'Natürliche Dehnung',
+		lekcija: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Wenn nach dem <strong>langen Vokal </strong>A <span className="arapski-lekcija">ـــَــ ا</span> , I{' '}
+						<span className="arapski-lekcija">ـــِـ ى </span>, U{' '}
+						<span className="arapski-lekcija">ـــُــ و</span> weder eine <strong>Hamza</strong> noch ein{' '}
+						<strong>Sukun</strong> folgt, ist es Madd Tabi’i. Es dauert 2 Harakat, z. B.:{P('row1')}
+					</Col>
+				</Row>
+
+				<Row className="text-center rtl ">
+					<Col>{P('row2')}</Col>
+				</Row>
+
+				<Row className="text-center reorder-basic-display-after ">
+					<Col>{P('row3')}</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		),
+		lekcijaModal: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Wenn nach dem <strong>langen Vokal </strong>A{' '}
+						<span className="arapski-lekcija">ـــَــ ا</span> , I{' '}
+						<span className="arapski-lekcija">ـــِـ ى </span>, U{' '}
+						<span className="arapski-lekcija">ـــُــ و</span> weder eine <strong>Hamza</strong> noch ein{' '}
+						<strong>Sukun</strong> folgt, ist es Madd Tabi’i. Es dauert 2 Harakat, z. B.:{P('row1')}
+					</Col>
+				</Row>
+
+				<Row className="text-center rtl ">
+					<Col>{P('row2')}</Col>
+				</Row>
+
+				<Row className="text-center reorder-basic-display-after ">
+					<Col>{P('row3')}</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		)
 	}
 };
 

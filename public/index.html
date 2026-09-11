@@ -14,10 +14,18 @@
   <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/icons/apple-touch-icon.png" />
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
+  <!-- isti sadržaj na tri jezika; jezik se bira u stranici, a ?lang= je dijeljivi link -->
+  <link rel="alternate" hreflang="bs" href="https://tedzvid.ba/" />
+  <link rel="alternate" hreflang="en" href="https://tedzvid.ba/?lang=en" />
+  <link rel="alternate" hreflang="de" href="https://tedzvid.ba/?lang=de" />
+  <link rel="alternate" hreflang="x-default" href="https://tedzvid.ba/" />
+
   <!-- sličica i opis kad se link dijeli (Facebook, WhatsApp, Viber, X…) -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Tedžvid.ba" />
   <meta property="og:locale" content="bs_BA" />
+  <meta property="og:locale:alternate" content="en_GB" />
+  <meta property="og:locale:alternate" content="de_DE" />
   <meta property="og:url" content="https://tedzvid.ba/" />
   <meta property="og:title" content="Tedžvid.ba – Uči tedžvid jednostavno, interaktivno, korak po korak" />
   <meta property="og:description"
@@ -42,7 +50,7 @@
 </head>
 
 <body>
-  <noscript>Morate uključiti JavaScript u vašem pregledniku. / Please enable JavaScript in your browser.</noscript>
+  <noscript>Morate uključiti JavaScript u vašem pregledniku. / Please enable JavaScript in your browser. / Bitte aktivieren Sie JavaScript in Ihrem Browser.</noscript>
   <div id="root"></div>
   <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 </body>

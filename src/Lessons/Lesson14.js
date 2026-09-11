@@ -391,6 +391,192 @@ const TXT = {
 				</Row>
 			</React.Fragment>
 		)
+	},
+
+	de: {
+		naziv: 'HUKM AR-RA',
+		naslov: '14 HUKM AR-RA',
+		podnaslov: (
+			<React.Fragment>
+				<strong>
+					Den Buchstaben R <span className="arapski-lekcija">(ر)</span> aussprechen
+				</strong>
+			</React.Fragment>
+		),
+		lekcija: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Der Buchstabe<strong> R </strong>
+						<span className="arapski-lekcija">(ر)</span> wird in diesen Fällen <u>dick</u> gesprochen:
+					</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije">
+						<strong>1.</strong> wenn der Buchstabe<strong> R </strong>den <strong>Vokal</strong> A trägt ({' '}
+						{P('row1')}) oder den <strong>Vokal</strong> U ( {P('row2')}), z. B.:{' '}
+						<br />
+						{P('row3')}
+					</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije">
+						<strong>2.</strong> wenn der Buchstabe<strong> R </strong>ein <strong>Sukun</strong> trägt und davor
+						ein Buchstabe mit dem <strong>Vokal</strong> A steht (
+						<span className="arapski-lekcija" style={{ color: 'red' }}>
+							{' '}
+							ــَـ رْ{' '}
+						</span>
+						) oder U (
+						<span className="arapski-lekcija" style={{ color: 'red' }}>
+							ــُـ رْ
+						</span>
+						), z. B.:
+						<br />
+						{P('row4')}
+					</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije">
+						<strong>3.</strong> wenn der Buchstabe
+						<strong>
+							<strong> R </strong>
+						</strong>
+						ein <strong>Sukun</strong> trägt, davor ein Buchstabe mit <strong>Sukun</strong> steht und davor ein Buchstabe mit dem{' '} 
+						<strong>Vokal</strong> A (
+						<span className="arapski-lekcija" style={{ color: 'red' }}>
+							{' '}
+							ــَـ ــْـ رْ{' '}
+						</span>
+						) oder U (
+						<span className="arapski-lekcija" style={{ color: 'red' }}>
+							{' '}
+							ــُـ ــْـ رْ{' '}
+						</span>
+						), z. B.:<br /> {P('row5')}
+					</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije">
+						<strong>4.</strong> wenn der Buchstabe<strong> R </strong>ein <strong>Sukun</strong> trägt (
+						<span className="arapski-lekcija" style={{ color: 'red' }}>
+							رْ
+						</span>
+						) und davor ein Laut mit vorübergehender Kasra steht, z. B.: <br />
+						{P('row6')}
+					</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije">
+						<strong>5.</strong> wenn der Buchstabe<strong> R </strong>ein <strong>Sukun</strong> trägt (
+						<span className="arapski-lekcija" style={{ color: 'red' }}>
+							رْ
+						</span>
+						) und danach einer der dicken Buchstaben kommt, z. B.:<br /> {P('row7')}
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+			</React.Fragment>
+		),
+		lekcijaModal: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Der Buchstabe<strong> R </strong>
+						<span className="arapski-lekcija">(ر)</span> wird in diesen Fällen <u>dick</u>
+						gesprochen:
+					</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije">
+						<strong>1.</strong> wenn der Buchstabe<strong> R </strong>den <strong>Vokal</strong> A trägt ({' '}
+						{P('row1')}) oder den <strong>Vokal</strong> U ( {P('row2')}),
+						z. B.: <br />
+						{P('row3')}
+					</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije">
+						<strong>2.</strong> wenn der Buchstabe<strong> R </strong>ein <strong>Sukun</strong> trägt und
+						davor ein Buchstabe mit dem <strong>Vokal</strong> A steht (
+						<span className="arapski-lekcija" style={{ color: 'red' }}>
+							{' '}
+							ــَـ رْ{' '}
+						</span>
+						) oder U (
+						<span className="arapski-lekcija" style={{ color: 'red' }}>
+							ــُـ رْ
+						</span>
+						), z. B.:
+						<br />
+						{P('row4')}
+					</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije">
+						<strong>3.</strong> wenn der Buchstabe
+						<strong>
+							<strong> R </strong>
+						</strong>
+						ein <strong>Sukun</strong> trägt, davor ein Buchstabe mit <strong>Sukun</strong> steht und
+						davor ein Buchstabe mit dem{' '} 
+						<strong>Vokal</strong> A (
+						<span className="arapski-lekcija" style={{ color: 'red' }}>
+							{' '}
+							ــَـ ــْـ رْ{' '}
+						</span>
+						) oder U (
+						<span className="arapski-lekcija" style={{ color: 'red' }}>
+							{' '}
+							ــُـ ــْـ رْ{' '}
+						</span>
+						), z. B.:<br /> {P('row5')}
+					</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije">
+						<strong>4.</strong> wenn der Buchstabe<strong> R </strong>ein <strong>Sukun</strong> trägt (
+						<span className="arapski-lekcija" style={{ color: 'red' }}>
+							رْ
+						</span>
+						) und davor ein Laut mit vorübergehender Kasra steht, z. B.: <br />
+						{P('row6')}
+					</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije">
+						<strong>5.</strong> wenn der Buchstabe<strong> R </strong>ein <strong>Sukun</strong> trägt (
+						<span className="arapski-lekcija" style={{ color: 'red' }}>
+							رْ
+						</span>
+						) und danach einer der dicken Buchstaben kommt, z. B.:<br /> {P('row7')}
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+			</React.Fragment>
+		)
 	}
 };
 

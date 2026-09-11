@@ -4,7 +4,7 @@
             "id": 5,
             "url": "./assets/audio/l13/5.mp3",
             "napomena": [
-                {"tip": "odskakanje", "bs": "Harf دْ na kraju riječi ima sukun, a د je jedan od pet harfova kutbu džeddin, zato odskače.", "en": "The letter دْ at the end of the word carries a sukun, and د is one of the five qutbu jaddin letters, so it bounces."}
+                {"tip": "odskakanje", "bs": "Harf دْ na kraju riječi ima sukun, a د je jedan od pet harfova kutbu džeddin, zato odskače.", "en": "The letter دْ at the end of the word carries a sukun, and د is one of the five qutbu jaddin letters, so it bounces.", "de": "Der Buchstabe دْ am Wortende hat ein Sukun, und د ist einer der fünf Qutbu-dschaddin-Buchstaben, deshalb prallt er ab."}
             ],
             "highlight": "دْ",
             "word": "قَــدْ",
@@ -15,7 +15,7 @@
             "id": 4,
             "url": "./assets/audio/l13/4.mp3",
             "napomena": [
-                {"tip": "odskakanje", "bs": "Harf جْ u sredini riječi ima sukun, a ج je jedan od pet harfova kutbu džeddin, zato odskače prije رٌ.", "en": "The letter جْ in the middle of the word carries a sukun, and ج is one of the five qutbu jaddin letters, so it bounces before رٌ."}
+                {"tip": "odskakanje", "bs": "Harf جْ u sredini riječi ima sukun, a ج je jedan od pet harfova kutbu džeddin, zato odskače prije رٌ.", "en": "The letter جْ in the middle of the word carries a sukun, and ج is one of the five qutbu jaddin letters, so it bounces before رٌ.", "de": "Der Buchstabe جْ in der Wortmitte hat ein Sukun, und ج ist einer der fünf Qutbu-dschaddin-Buchstaben, deshalb prallt er vor رٌ ab."}
             ],
             "highlight": "جْ",
             "word": "أَجْــرٌ",
@@ -24,7 +24,7 @@
             "id": 3,
             "url": "./assets/audio/l13/3.mp3",
             "napomena": [
-                {"tip": "odskakanje", "bs": "Harf بْ u sredini riječi ima sukun, a ب je jedan od pet harfova kutbu džeddin, zato odskače prije تَ.", "en": "The letter بْ in the middle of the word carries a sukun, and ب is one of the five qutbu jaddin letters, so it bounces before تَ."}
+                {"tip": "odskakanje", "bs": "Harf بْ u sredini riječi ima sukun, a ب je jedan od pet harfova kutbu džeddin, zato odskače prije تَ.", "en": "The letter بْ in the middle of the word carries a sukun, and ب is one of the five qutbu jaddin letters, so it bounces before تَ.", "de": "Der Buchstabe بْ in der Wortmitte hat ein Sukun, und ب ist einer der fünf Qutbu-dschaddin-Buchstaben, deshalb prallt er vor تَ ab."}
             ],
             "highlight": "بْ",
             "word": "اَلْأَبْتَرُ",
@@ -33,7 +33,7 @@
             "id": 2,
             "url": "./assets/audio/l13/2.mp3",
             "napomena": [
-                {"tip": "odskakanje", "bs": "Na kraju riječi je قْ sa sukunom, a ق je jedan od pet harfova kutbu džeddin, zato se uči sa odskakanjem.", "en": "At the end of the word there is قْ with a sukun, and ق is one of the five qutbu jaddin letters, so it is recited with a bounce."}
+                {"tip": "odskakanje", "bs": "Na kraju riječi je قْ sa sukunom, a ق je jedan od pet harfova kutbu džeddin, zato se uči sa odskakanjem.", "en": "At the end of the word there is قْ with a sukun, and ق is one of the five qutbu jaddin letters, so it is recited with a bounce.", "de": "Am Wortende steht قْ mit Sukun, und ق ist einer der fünf Qutbu-dschaddin-Buchstaben, deshalb wird er mit Abprallen gesprochen."}
             ],
             "highlight": "قْ",
             "word": "اَلْفَلَــقْ",
@@ -42,7 +42,7 @@
             "id": 1,
             "url": "./assets/audio/l13/1.mp3",
             "napomena": [
-                {"tip": "odskakanje", "bs": "Iza سْ na kraju riječi je طْ sa sukunom, a ط je jedan od pet harfova kutbu džeddin, zato odskače.", "en": "After سْ at the end of the word there is طْ with a sukun, and ط is one of the five qutbu jaddin letters, so it bounces."}
+                {"tip": "odskakanje", "bs": "Iza سْ na kraju riječi je طْ sa sukunom, a ط je jedan od pet harfova kutbu džeddin, zato odskače.", "en": "After سْ at the end of the word there is طْ with a sukun, and ط is one of the five qutbu jaddin letters, so it bounces.", "de": "Nach سْ steht am Wortende طْ mit Sukun, und ط ist einer der fünf Qutbu-dschaddin-Buchstaben, deshalb prallt er ab."}
             ],
             "highlight": "طْ",
             "word": "قِـسْـطْ",
@@ -53,7 +53,7 @@
         "id": 7,
         "url": "./assets/audio/l13/7.mp3",
         "napomena": [
-            {"tip": "odskakanje", "bs": "U riječi أَطْـعَمَهُمْ harf طْ ima sukun, a ط je jedan od pet harfova kutbu džeddin, zato odskače prije عَ.", "en": "In أَطْـعَمَهُمْ the letter طْ carries a sukun, and ط is one of the five qutbu jaddin letters, so it bounces before عَ."}
+            {"tip": "odskakanje", "bs": "U riječi أَطْـعَمَهُمْ harf طْ ima sukun, a ط je jedan od pet harfova kutbu džeddin, zato odskače prije عَ.", "en": "In أَطْـعَمَهُمْ the letter طْ carries a sukun, and ط is one of the five qutbu jaddin letters, so it bounces before عَ.", "de": "Im Wort أَطْـعَمَهُمْ hat der Buchstabe طْ ein Sukun, und ط ist einer der fünf Qutbu-dschaddin-Buchstaben, deshalb prallt er vor عَ ab."}
         ],
         "highlight": "طْـ",
         "word": "أَلَّذِٓي أَطْـعَمَهُمْ مِنْ جُوعٍ",
@@ -64,8 +64,8 @@
                 "id": 6,
                 "url": "./assets/audio/l13/6.mp3",
                 "napomena": [
-                    {"tip": "odskakanje", "bs": "U riječi فَرَقْـنَاهُ harf قْ ima sukun, a ق je jedan od pet harfova kutbu džeddin, zato odskače prije نَ.", "en": "In فَرَقْـنَاهُ the letter قْ carries a sukun, and ق is one of the five qutbu jaddin letters, so it bounces before نَ."},
-                    {"tip": "odskakanje", "bs": "I u riječi تَـقْرَأَهُ harf قْ ima sukun, a ق je harf kutbu džeddin, zato i tu odskače prije رَ.", "en": "In تَـقْرَأَهُ too the letter قْ carries a sukun, and ق is a qutbu jaddin letter, so it bounces there as well, before رَ."}
+                    {"tip": "odskakanje", "bs": "U riječi فَرَقْـنَاهُ harf قْ ima sukun, a ق je jedan od pet harfova kutbu džeddin, zato odskače prije نَ.", "en": "In فَرَقْـنَاهُ the letter قْ carries a sukun, and ق is one of the five qutbu jaddin letters, so it bounces before نَ.", "de": "Im Wort فَرَقْـنَاهُ hat der Buchstabe قْ ein Sukun, und ق ist einer der fünf Qutbu-dschaddin-Buchstaben, deshalb prallt er vor نَ ab."},
+                    {"tip": "odskakanje", "bs": "I u riječi تَـقْرَأَهُ harf قْ ima sukun, a ق je harf kutbu džeddin, zato i tu odskače prije رَ.", "en": "In تَـقْرَأَهُ too the letter قْ carries a sukun, and ق is a qutbu jaddin letter, so it bounces there as well, before رَ.", "de": "Auch im Wort تَـقْرَأَهُ hat der Buchstabe قْ ein Sukun, und ق ist ein Qutbu-dschaddin-Buchstabe, deshalb prallt er auch hier vor رَ ab."}
                 ],
                 "highlight": "ـقْ",
                 "word": "تَـقْرَأَهُ عَلَى النَّاسِ",
@@ -82,9 +82,9 @@
                 "id": 8,
                 "url": "./assets/audio/l13/8.mp3",
                 "napomena": [
-                    {"tip": "odskakanje", "bs": "U riječi عَدْنٍ harf دْ ima sukun, a د je jedan od pet harfova kutbu džeddin, zato odskače prije نٍ.", "en": "In عَدْنٍ the letter دْ carries a sukun, and د is one of the five qutbu jaddin letters, so it bounces before نٍ."},
-                    {"tip": "odskakanje", "bs": "I u riječi يَدْخُلُونَهَا harf دْ ima sukun, a د je harf kutbu džeddin, zato i tu odskače prije خُ.", "en": "In يَدْخُلُونَهَا too the letter دْ carries a sukun, and د is a qutbu jaddin letter, so it bounces there as well, before خُ."},
-                    {"tip": "odskakanje", "bs": "U riječi تَجْرِي harf جْ ima sukun, a ج je jedan od pet harfova kutbu džeddin, zato odskače prije رِ.", "en": "In تَجْرِي the letter جْ carries a sukun, and ج is one of the five qutbu jaddin letters, so it bounces before رِ."}
+                    {"tip": "odskakanje", "bs": "U riječi عَدْنٍ harf دْ ima sukun, a د je jedan od pet harfova kutbu džeddin, zato odskače prije نٍ.", "en": "In عَدْنٍ the letter دْ carries a sukun, and د is one of the five qutbu jaddin letters, so it bounces before نٍ.", "de": "Im Wort عَدْنٍ hat der Buchstabe دْ ein Sukun, und د ist einer der fünf Qutbu-dschaddin-Buchstaben, deshalb prallt er vor نٍ ab."},
+                    {"tip": "odskakanje", "bs": "I u riječi يَدْخُلُونَهَا harf دْ ima sukun, a د je harf kutbu džeddin, zato i tu odskače prije خُ.", "en": "In يَدْخُلُونَهَا too the letter دْ carries a sukun, and د is a qutbu jaddin letter, so it bounces there as well, before خُ.", "de": "Auch im Wort يَدْخُلُونَهَا hat der Buchstabe دْ ein Sukun, und د ist ein Qutbu-dschaddin-Buchstabe, deshalb prallt er auch hier vor خُ ab."},
+                    {"tip": "odskakanje", "bs": "U riječi تَجْرِي harf جْ ima sukun, a ج je jedan od pet harfova kutbu džeddin, zato odskače prije رِ.", "en": "In تَجْرِي the letter جْ carries a sukun, and ج is one of the five qutbu jaddin letters, so it bounces before رِ.", "de": "Im Wort تَجْرِي hat der Buchstabe جْ ein Sukun, und ج ist einer der fünf Qutbu-dschaddin-Buchstaben, deshalb prallt er vor رِ ab."}
                 ],
                 "highlight": "جْ",
                 "word": "تَجْرِي مِنْ تَحْتِهَا الْأَنْهَارُ",
@@ -103,7 +103,7 @@
             "id": 9,
             "url": "./assets/audio/l13/9.mp3",
             "napomena": [
-                {"tip": "odskakanje", "bs": "U riječi يَـقْـبَلُ harf قْ ima sukun, a ق je jedan od pet harfova kutbu džeddin, zato odskače prije بَ.", "en": "In يَـقْـبَلُ the letter قْ carries a sukun, and ق is one of the five qutbu jaddin letters, so it bounces before بَ."}
+                {"tip": "odskakanje", "bs": "U riječi يَـقْـبَلُ harf قْ ima sukun, a ق je jedan od pet harfova kutbu džeddin, zato odskače prije بَ.", "en": "In يَـقْـبَلُ the letter قْ carries a sukun, and ق is one of the five qutbu jaddin letters, so it bounces before بَ.", "de": "Im Wort يَـقْـبَلُ hat der Buchstabe قْ ein Sukun, und ق ist einer der fünf Qutbu-dschaddin-Buchstaben, deshalb prallt er vor بَ ab."}
             ],
             "highlight": "قْـ",
             "word": "وَهُوَ الَّذِي يَـقْـبَلُ التَّوْبَةَ عَنْ عِبَادِهِ ",
@@ -113,7 +113,7 @@
             "id": 10,
             "url": "./assets/audio/l13/10.mp3",
             "napomena": [
-                {"tip": "odskakanje", "bs": "U riječi أَطْـعَمَهُمْ harf طْ ima sukun, a ط je jedan od pet harfova kutbu džeddin, zato odskače prije عَ.", "en": "In أَطْـعَمَهُمْ the letter طْ carries a sukun, and ط is one of the five qutbu jaddin letters, so it bounces before عَ."}
+                {"tip": "odskakanje", "bs": "U riječi أَطْـعَمَهُمْ harf طْ ima sukun, a ط je jedan od pet harfova kutbu džeddin, zato odskače prije عَ.", "en": "In أَطْـعَمَهُمْ the letter طْ carries a sukun, and ط is one of the five qutbu jaddin letters, so it bounces before عَ.", "de": "Im Wort أَطْـعَمَهُمْ hat der Buchstabe طْ ein Sukun, und ط ist einer der fünf Qutbu-dschaddin-Buchstaben, deshalb prallt er vor عَ ab."}
             ],
             "highlight": "طْـ",
             "word": "أَلَّذِٓي أَطْـعَمَهُمْ مِنْ جُوعٍ ",
@@ -123,9 +123,9 @@
                 "id": 11,
                 "url": "./assets/audio/l13/11.mp3",
                 "napomena": [
-                    {"tip": "odskakanje", "bs": "U riječi أَبْـوَابُ harf بْ ima sukun, a ب je jedan od pet harfova kutbu džeddin, zato odskače prije وَ.", "en": "In أَبْـوَابُ the letter بْ carries a sukun, and ب is one of the five qutbu jaddin letters, so it bounces before وَ."},
-                    {"tip": "odskakanje", "bs": "U riječi يَدْ harf دْ ima sukun, a د je harf kutbu džeddin, zato odskače prije خُلُونَ na početku novog reda.", "en": "In يَدْ the letter دْ carries a sukun, and د is a qutbu jaddin letter, so it bounces before خُلُونَ at the start of the new line."},
-                    {"tip": "odskakanje", "bs": "Na kraju ajeta staje se na الْخِيَاطِ, pa طِ ostaje sa sukunom, a ط je harf kutbu džeddin, zato odskače.", "en": "At the end of the verse one stops on الْخِيَاطِ, so طِ is left with a sukun, and ط is a qutbu jaddin letter, so it bounces."}
+                    {"tip": "odskakanje", "bs": "U riječi أَبْـوَابُ harf بْ ima sukun, a ب je jedan od pet harfova kutbu džeddin, zato odskače prije وَ.", "en": "In أَبْـوَابُ the letter بْ carries a sukun, and ب is one of the five qutbu jaddin letters, so it bounces before وَ.", "de": "Im Wort أَبْـوَابُ hat der Buchstabe بْ ein Sukun, und ب ist einer der fünf Qutbu-dschaddin-Buchstaben, deshalb prallt er vor وَ ab."},
+                    {"tip": "odskakanje", "bs": "U riječi يَدْ harf دْ ima sukun, a د je harf kutbu džeddin, zato odskače prije خُلُونَ na početku novog reda.", "en": "In يَدْ the letter دْ carries a sukun, and د is a qutbu jaddin letter, so it bounces before خُلُونَ at the start of the new line.", "de": "Im Wort يَدْ hat der Buchstabe دْ ein Sukun, und د ist ein Qutbu-dschaddin-Buchstabe, deshalb prallt er vor خُلُونَ am Anfang der neuen Zeile ab."},
+                    {"tip": "odskakanje", "bs": "Na kraju ajeta staje se na الْخِيَاطِ, pa طِ ostaje sa sukunom, a ط je harf kutbu džeddin, zato odskače.", "en": "At the end of the verse one stops on الْخِيَاطِ, so طِ is left with a sukun, and ط is a qutbu jaddin letter, so it bounces.", "de": "Am Versende hält man bei الْخِيَاطِ an, dann bleibt طِ mit Sukun, und ط ist ein Qutbu-dschaddin-Buchstabe, deshalb prallt er ab."}
                 ],
                 "highlight": "طِ",
                 "word": "خُلُونَ الْجَنَّةَ حَتّٰى يَلِجَ الْجَمَلُ فِي سَـمِّ الْخِيَاطِ ",
@@ -148,8 +148,8 @@
                 "id": 12,
                 "url": "./assets/audio/l13/12.mp3",
                 "napomena": [
-                    {"tip": "odskakanje", "bs": "U riječi يَجْعَلُ harf جْ ima sukun, a ج je jedan od pet harfova kutbu džeddin, zato odskače prije عَ.", "en": "In يَجْعَلُ the letter جْ carries a sukun, and ج is one of the five qutbu jaddin letters, so it bounces before عَ."},
-                    {"tip": "odskakanje", "bs": "I u riječi الرِّجْسَ harf جْ ima sukun, a ج je harf kutbu džeddin, zato i tu odskače prije سَ.", "en": "In الرِّجْسَ too the letter جْ carries a sukun, and ج is a qutbu jaddin letter, so it bounces there as well, before سَ."}
+                    {"tip": "odskakanje", "bs": "U riječi يَجْعَلُ harf جْ ima sukun, a ج je jedan od pet harfova kutbu džeddin, zato odskače prije عَ.", "en": "In يَجْعَلُ the letter جْ carries a sukun, and ج is one of the five qutbu jaddin letters, so it bounces before عَ.", "de": "Im Wort يَجْعَلُ hat der Buchstabe جْ ein Sukun, und ج ist einer der fünf Qutbu-dschaddin-Buchstaben, deshalb prallt er vor عَ ab."},
+                    {"tip": "odskakanje", "bs": "I u riječi الرِّجْسَ harf جْ ima sukun, a ج je harf kutbu džeddin, zato i tu odskače prije سَ.", "en": "In الرِّجْسَ too the letter جْ carries a sukun, and ج is a qutbu jaddin letter, so it bounces there as well, before سَ.", "de": "Auch im Wort الرِّجْسَ hat der Buchstabe جْ ein Sukun, und ج ist ein Qutbu-dschaddin-Buchstabe, deshalb prallt er auch hier vor سَ ab."}
                 ],
                 "highlight": "جْ",
                 "word": " اللّٰهُ الرِّجْسَ عَلَى الَّذِينَ لَا يُؤْمِنُونَ",
@@ -166,8 +166,8 @@
                 "id": 13,
                 "url": "./assets/audio/l13/13.mp3",
                 "napomena": [
-                    {"tip": "odskakanje", "bs": "U riječi ادْ harf دْ ima sukun, a د je jedan od pet harfova kutbu džeddin, zato odskače prije خُلُٓوا.", "en": "In ادْ the letter دْ carries a sukun, and د is one of the five qutbu jaddin letters, so it bounces before خُلُٓوا."},
-                    {"tip": "odskakanje", "bs": "U riječi أَبْـوَابَ harf بْ ima sukun, a ب je harf kutbu džeddin, zato i on odskače prije وَ.", "en": "In أَبْـوَابَ the letter بْ carries a sukun, and ب is a qutbu jaddin letter, so it too bounces before وَ."}
+                    {"tip": "odskakanje", "bs": "U riječi ادْ harf دْ ima sukun, a د je jedan od pet harfova kutbu džeddin, zato odskače prije خُلُٓوا.", "en": "In ادْ the letter دْ carries a sukun, and د is one of the five qutbu jaddin letters, so it bounces before خُلُٓوا.", "de": "Im Wort ادْ hat der Buchstabe دْ ein Sukun, und د ist einer der fünf Qutbu-dschaddin-Buchstaben, deshalb prallt er vor خُلُٓوا ab."},
+                    {"tip": "odskakanje", "bs": "U riječi أَبْـوَابَ harf بْ ima sukun, a ب je harf kutbu džeddin, zato i on odskače prije وَ.", "en": "In أَبْـوَابَ the letter بْ carries a sukun, and ب is a qutbu jaddin letter, so it too bounces before وَ.", "de": "Im Wort أَبْـوَابَ hat der Buchstabe بْ ein Sukun, und ب ist ein Qutbu-dschaddin-Buchstabe, deshalb prallt auch er vor وَ ab."}
                 ],
                 "highlight": "بْـ",
                 "word": "خُلُٓوا أَبْـوَابَ جَهَنَّمَ خَالِدِينَ فِيهَا ",
@@ -184,7 +184,7 @@
             "id": 14,
             "url": "./assets/audio/l13/14.mp3",
             "napomena": [
-                {"tip": "odskakanje", "bs": "Kad se stane na kraju ajeta, دٌ u riječi أَحَدٌ ostaje bez tenvina i sa sukunom, a د je harf kutbu džeddin, zato odskače.", "en": "When one stops at the end of the verse, دٌ in أَحَدٌ is left without its tanween and with a sukun, and د is a qutbu jaddin letter, so it bounces."}
+                {"tip": "odskakanje", "bs": "Kad se stane na kraju ajeta, دٌ u riječi أَحَدٌ ostaje bez tenvina i sa sukunom, a د je harf kutbu džeddin, zato odskače.", "en": "When one stops at the end of the verse, دٌ in أَحَدٌ is left without its tanween and with a sukun, and د is a qutbu jaddin letter, so it bounces.", "de": "Wenn man am Versende anhält, bleibt دٌ im Wort أَحَدٌ ohne Tanwin und mit Sukun, und د ist ein Qutbu-dschaddin-Buchstabe, deshalb prallt er ab."}
             ],
             "highlight": "دٌ",
             "word": "قُلْ هُوَ اللّٰهُ أَحَدٌ",
@@ -194,7 +194,7 @@
             "id": 15,
             "url": "./assets/audio/l13/15.mp3",
             "napomena": [
-                {"tip": "odskakanje", "bs": "Kad se stane na kraju ajeta, دُ u riječi الصَّمَدُ ostaje bez hareketa i sa sukunom, a د je harf kutbu džeddin, zato odskače.", "en": "When one stops at the end of the verse, دُ in الصَّمَدُ is left without its haraka and with a sukun, and د is a qutbu jaddin letter, so it bounces."}
+                {"tip": "odskakanje", "bs": "Kad se stane na kraju ajeta, دُ u riječi الصَّمَدُ ostaje bez hareketa i sa sukunom, a د je harf kutbu džeddin, zato odskače.", "en": "When one stops at the end of the verse, دُ in الصَّمَدُ is left without its haraka and with a sukun, and د is a qutbu jaddin letter, so it bounces.", "de": "Wenn man am Versende anhält, bleibt دُ im Wort الصَّمَدُ ohne Vokalzeichen und mit Sukun, und د ist ein Qutbu-dschaddin-Buchstabe, deshalb prallt er ab."}
             ],
             "highlight": "دُ",
             "word": "اَللّٰهُ الصَّمَدُ",
@@ -204,8 +204,8 @@
             "id": 16,
             "url": "./assets/audio/l13/16.mp3",
             "napomena": [
-                {"tip": "odskakanje", "bs": "U riječi يَلِدْ harf دْ ima sukun, a د je jedan od pet harfova kutbu džeddin, zato odskače prije وَلَمْ.", "en": "In يَلِدْ the letter دْ carries a sukun, and د is one of the five qutbu jaddin letters, so it bounces before وَلَمْ."},
-                {"tip": "odskakanje", "bs": "I na kraju ajeta, u riječi يُولَدْ harf دْ ima sukun, a د je harf kutbu džeddin, zato i tu odskače.", "en": "At the end of the verse too, in يُولَدْ the letter دْ carries a sukun, and د is a qutbu jaddin letter, so it bounces there as well."}
+                {"tip": "odskakanje", "bs": "U riječi يَلِدْ harf دْ ima sukun, a د je jedan od pet harfova kutbu džeddin, zato odskače prije وَلَمْ.", "en": "In يَلِدْ the letter دْ carries a sukun, and د is one of the five qutbu jaddin letters, so it bounces before وَلَمْ.", "de": "Im Wort يَلِدْ hat der Buchstabe دْ ein Sukun, und د ist einer der fünf Qutbu-dschaddin-Buchstaben, deshalb prallt er vor وَلَمْ ab."},
+                {"tip": "odskakanje", "bs": "I na kraju ajeta, u riječi يُولَدْ harf دْ ima sukun, a د je harf kutbu džeddin, zato i tu odskače.", "en": "At the end of the verse too, in يُولَدْ the letter دْ carries a sukun, and د is a qutbu jaddin letter, so it bounces there as well.", "de": "Auch am Versende, im Wort يُولَدْ, hat der Buchstabe دْ ein Sukun, und د ist ein Qutbu-dschaddin-Buchstabe, deshalb prallt er auch hier ab."}
             ],
             "highlight": "دْ",
             "word": "لَمْ يَلِدْ وَلَمْ يُولَدْ",
@@ -215,7 +215,7 @@
             "id": 17,
             "url": "./assets/audio/l13/17.mp3",
             "napomena": [
-                {"tip": "odskakanje", "bs": "Na kraju ajeta staje se na أَحَدٌ, pa دٌ ostaje bez tenvina i sa sukunom, a د je harf kutbu džeddin, zato odskače.", "en": "At the end of the verse one stops on أَحَدٌ, so دٌ is left without its tanween and with a sukun, and د is a qutbu jaddin letter, so it bounces."}
+                {"tip": "odskakanje", "bs": "Na kraju ajeta staje se na أَحَدٌ, pa دٌ ostaje bez tenvina i sa sukunom, a د je harf kutbu džeddin, zato odskače.", "en": "At the end of the verse one stops on أَحَدٌ, so دٌ is left without its tanween and with a sukun, and د is a qutbu jaddin letter, so it bounces.", "de": "Am Versende hält man bei أَحَدٌ an, dann bleibt دٌ ohne Tanwin und mit Sukun, und د ist ein Qutbu-dschaddin-Buchstabe, deshalb prallt er ab."}
             ],
             "highlight": "دٌ",
             "word": "وَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ",

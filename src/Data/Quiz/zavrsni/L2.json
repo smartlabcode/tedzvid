@@ -2,59 +2,59 @@
   "lekcija": 2,
   "pitanja": [
     {
-      "q": { "bs": "Kako se uči zamjenica HU (هُ) u riječima عَنْهُ i عِنْدَهُ?", "en": "How is the pronoun HU (هُ) recited in the words عَنْهُ and عِنْدَهُ?" },
+      "q": { "bs": "Kako se uči zamjenica HU (هُ) u riječima عَنْهُ i عِنْدَهُ?", "en": "How is the pronoun HU (هُ) recited in the words عَنْهُ and عِنْدَهُ?", "de": "Wie wird das Pronomen HU (هُ) in den Wörtern عَنْهُ und عِنْدَهُ gesprochen?" },
       "opcije": [
-        { "bs": "U obje riječi kratko", "en": "Short in both words" },
-        { "bs": "U obje riječi dugo", "en": "Long in both words" },
-        { "bs": "U عَنْهُ kratko, a u عِنْدَهُ dugo", "en": "Short in عَنْهُ, long in عِنْدَهُ" },
-        { "bs": "U عَنْهُ dugo, a u عِنْدَهُ kratko", "en": "Long in عَنْهُ, short in عِنْدَهُ" }
+        { "bs": "U obje riječi kratko", "en": "Short in both words", "de": "In beiden Wörtern kurz" },
+        { "bs": "U obje riječi dugo", "en": "Long in both words", "de": "In beiden Wörtern lang" },
+        { "bs": "U عَنْهُ kratko, a u عِنْدَهُ dugo", "en": "Short in عَنْهُ, long in عِنْدَهُ", "de": "In عَنْهُ kurz, in عِنْدَهُ lang" },
+        { "bs": "U عَنْهُ dugo, a u عِنْدَهُ kratko", "en": "Long in عَنْهُ, short in عِنْدَهُ", "de": "In عَنْهُ lang, in عِنْدَهُ kurz" }
       ],
       "tacno": 2,
-      "objasnjenje": { "bs": "U عَنْهُ prije zamjenice dođe sukun, pa se uči kratko, a u عِنْدَهُ kratki vokal E, pa se uči dugo.", "en": "In عَنْهُ the pronoun is preceded by a sukun, so it is short, while in عِنْدَهُ it is preceded by the short vowel A, so it is long." }
+      "objasnjenje": { "bs": "U عَنْهُ prije zamjenice dođe sukun, pa se uči kratko, a u عِنْدَهُ kratki vokal E, pa se uči dugo.", "en": "In عَنْهُ the pronoun is preceded by a sukun, so it is short, while in عِنْدَهُ it is preceded by the short vowel A, so it is long.", "de": "In عَنْهُ steht vor dem Pronomen ein Sukun, deshalb wird HU kurz gesprochen. In عِنْدَهُ steht davor der kurze Vokal A, deshalb wird HU lang gesprochen." }
     },
     {
-      "q": { "bs": "U kojoj se riječi zamjenica HU (هُ) uči dugo?", "en": "In which word is the pronoun HU (هُ) recited long?" },
+      "q": { "bs": "U kojoj se riječi zamjenica HU (هُ) uči dugo?", "en": "In which word is the pronoun HU (هُ) recited long?", "de": "In welchem Wort wird das Pronomen HU (هُ) lang gesprochen?" },
       "opcije": [
-        { "bs": "عَلَيْهِ", "en": "عَلَيْهِ" },
-        { "bs": "مِنْهُ", "en": "مِنْهُ" },
-        { "bs": "يَدَاهُ", "en": "يَدَاهُ" },
-        { "bs": "رِزْقُهُ", "en": "رِزْقُهُ" }
+        { "bs": "عَلَيْهِ", "en": "عَلَيْهِ", "de": "عَلَيْهِ" },
+        { "bs": "مِنْهُ", "en": "مِنْهُ", "de": "مِنْهُ" },
+        { "bs": "يَدَاهُ", "en": "يَدَاهُ", "de": "يَدَاهُ" },
+        { "bs": "رِزْقُهُ", "en": "رِزْقُهُ", "de": "رِزْقُهُ" }
       ],
       "tacno": 3,
-      "objasnjenje": { "bs": "U رِزْقُهُ prije zamjenice dođe kratki vokal U, pa se uči dugo; u ostalim riječima prije nje je sukun ili dugi vokal.", "en": "In رِزْقُهُ the pronoun is preceded by the short vowel U, so it is long; in the other words it is preceded by a sukun or a long vowel." }
+      "objasnjenje": { "bs": "U رِزْقُهُ prije zamjenice dođe kratki vokal U, pa se uči dugo; u ostalim riječima prije nje je sukun ili dugi vokal.", "en": "In رِزْقُهُ the pronoun is preceded by the short vowel U, so it is long; in the other words it is preceded by a sukun or a long vowel.", "de": "In رِزْقُهُ steht vor dem Pronomen der kurze Vokal U, deshalb wird HU lang gesprochen; in den anderen Wörtern steht davor ein Sukun oder ein langer Vokal." }
     },
     {
-      "q": { "bs": "U primjeru وَمَلَائِكَتِهِ وَكُتُبِهِ وَرُسُلِهِ kako se uči zamjenica HU (هُ)?", "en": "In the example وَمَلَائِكَتِهِ وَكُتُبِهِ وَرُسُلِهِ how is the pronoun HU (هُ) recited?" },
+      "q": { "bs": "U primjeru وَمَلَائِكَتِهِ وَكُتُبِهِ وَرُسُلِهِ kako se uči zamjenica HU (هُ)?", "en": "In the example وَمَلَائِكَتِهِ وَكُتُبِهِ وَرُسُلِهِ how is the pronoun HU (هُ) recited?", "de": "Wie wird das Pronomen HU (هُ) im Beispiel وَمَلَائِكَتِهِ وَكُتُبِهِ وَرُسُلِهِ gesprochen?" },
       "opcije": [
-        { "bs": "U sve tri riječi kratko", "en": "Short in all three words" },
-        { "bs": "U sve tri riječi dugo", "en": "Long in all three words" },
-        { "bs": "Dugo samo u prvoj riječi", "en": "Long only in the first word" },
-        { "bs": "Kratko samo u zadnjoj riječi", "en": "Short only in the last word" }
+        { "bs": "U sve tri riječi kratko", "en": "Short in all three words", "de": "In allen drei Wörtern kurz" },
+        { "bs": "U sve tri riječi dugo", "en": "Long in all three words", "de": "In allen drei Wörtern lang" },
+        { "bs": "Dugo samo u prvoj riječi", "en": "Long only in the first word", "de": "Nur im ersten Wort lang" },
+        { "bs": "Kratko samo u zadnjoj riječi", "en": "Short only in the last word", "de": "Nur im letzten Wort kurz" }
       ],
       "tacno": 1,
-      "objasnjenje": { "bs": "U sve tri riječi prije zamjenice dođe kratki vokal I, pa se HU uči dugo.", "en": "In all three words the pronoun is preceded by the short vowel I, so HU is recited long." }
+      "objasnjenje": { "bs": "U sve tri riječi prije zamjenice dođe kratki vokal I, pa se HU uči dugo.", "en": "In all three words the pronoun is preceded by the short vowel I, so HU is recited long.", "de": "In allen drei Wörtern steht vor dem Pronomen der kurze Vokal I, deshalb wird HU lang gesprochen." }
     },
     {
-      "q": { "bs": "Zašto se zamjenica HU (هُ) u riječi اِسْمُهُ uči dugo?", "en": "Why is the pronoun HU (هُ) in the word اِسْمُهُ recited long?" },
+      "q": { "bs": "Zašto se zamjenica HU (هُ) u riječi اِسْمُهُ uči dugo?", "en": "Why is the pronoun HU (هُ) in the word اِسْمُهُ recited long?", "de": "Warum wird das Pronomen HU (هُ) im Wort اِسْمُهُ lang gesprochen?" },
       "opcije": [
-        { "bs": "Jer prije nje dođe dugi vokal U", "en": "Because it is preceded by the long vowel U" },
-        { "bs": "Jer prije nje dođe kratki vokal U", "en": "Because it is preceded by the short vowel U" },
-        { "bs": "Jer prije nje dođe sukun", "en": "Because it is preceded by a sukun" },
-        { "bs": "Jer je na kraju riječi", "en": "Because it is at the end of the word" }
+        { "bs": "Jer prije nje dođe dugi vokal U", "en": "Because it is preceded by the long vowel U", "de": "Weil davor der lange Vokal U steht" },
+        { "bs": "Jer prije nje dođe kratki vokal U", "en": "Because it is preceded by the short vowel U", "de": "Weil davor der kurze Vokal U steht" },
+        { "bs": "Jer prije nje dođe sukun", "en": "Because it is preceded by a sukun", "de": "Weil davor ein Sukun steht" },
+        { "bs": "Jer je na kraju riječi", "en": "Because it is at the end of the word", "de": "Weil es am Wortende steht" }
       ],
       "tacno": 1,
-      "objasnjenje": { "bs": "U اِسْمُهُ na harfu M (م) prije zamjenice je kratki vokal U, a poslije kratkog vokala HU se uči dugo.", "en": "In اِسْمُهُ the letter M (م) before the pronoun carries the short vowel U, and after a short vowel HU is recited long." }
+      "objasnjenje": { "bs": "U اِسْمُهُ na harfu M (م) prije zamjenice je kratki vokal U, a poslije kratkog vokala HU se uči dugo.", "en": "In اِسْمُهُ the letter M (م) before the pronoun carries the short vowel U, and after a short vowel HU is recited long.", "de": "In اِسْمُهُ trägt der Buchstabe M (م) vor dem Pronomen den kurzen Vokal U, und nach einem kurzen Vokal wird HU lang gesprochen." }
     },
     {
-      "q": { "bs": "U primjeru إِذْ قَالَ لِبَنِيهِ مَا تَعْبُدُونَ kako se uči zamjenica HU (هُ) u riječi لِبَنِيهِ?", "en": "In the example إِذْ قَالَ لِبَنِيهِ مَا تَعْبُدُونَ how is the pronoun HU (هُ) recited in the word لِبَنِيهِ?" },
+      "q": { "bs": "U primjeru إِذْ قَالَ لِبَنِيهِ مَا تَعْبُدُونَ kako se uči zamjenica HU (هُ) u riječi لِبَنِيهِ?", "en": "In the example إِذْ قَالَ لِبَنِيهِ مَا تَعْبُدُونَ how is the pronoun HU (هُ) recited in the word لِبَنِيهِ?", "de": "Wie wird das Pronomen HU (هُ) im Beispiel إِذْ قَالَ لِبَنِيهِ مَا تَعْبُدُونَ im Wort لِبَنِيهِ gesprochen?" },
       "opcije": [
-        { "bs": "Kratko, jer prije nje dođe dugi vokal I", "en": "Short, because it is preceded by the long vowel I" },
-        { "bs": "Dugo, jer prije nje dođe kratki vokal I", "en": "Long, because it is preceded by the short vowel I" },
-        { "bs": "Dugo, jer prije nje dođe dugi vokal I", "en": "Long, because it is preceded by the long vowel I" },
-        { "bs": "Kratko, jer prije nje dođe sukun", "en": "Short, because it is preceded by a sukun" }
+        { "bs": "Kratko, jer prije nje dođe dugi vokal I", "en": "Short, because it is preceded by the long vowel I", "de": "Kurz, weil davor der lange Vokal I steht" },
+        { "bs": "Dugo, jer prije nje dođe kratki vokal I", "en": "Long, because it is preceded by the short vowel I", "de": "Lang, weil davor der kurze Vokal I steht" },
+        { "bs": "Dugo, jer prije nje dođe dugi vokal I", "en": "Long, because it is preceded by the long vowel I", "de": "Lang, weil davor der lange Vokal I steht" },
+        { "bs": "Kratko, jer prije nje dođe sukun", "en": "Short, because it is preceded by a sukun", "de": "Kurz, weil davor ein Sukun steht" }
       ],
       "tacno": 0,
-      "objasnjenje": { "bs": "U لِبَنِيهِ prije zamjenice dođe dugi vokal I (ـِي), pa se HU uči kratko.", "en": "In لِبَنِيهِ the pronoun is preceded by the long vowel I (ـِي), so HU is recited short." }
+      "objasnjenje": { "bs": "U لِبَنِيهِ prije zamjenice dođe dugi vokal I (ـِي), pa se HU uči kratko.", "en": "In لِبَنِيهِ the pronoun is preceded by the long vowel I (ـِي), so HU is recited short.", "de": "In لِبَنِيهِ steht vor dem Pronomen der lange Vokal I (ـِي), deshalb wird HU kurz gesprochen." }
     }
   ]
 }

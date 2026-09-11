@@ -2,59 +2,59 @@
   "lekcija": 1,
   "pitanja": [
     {
-      "q": { "bs": "Kako se čita riječ ضَبْحًا kada na njoj stanemo?", "en": "How is the word ضَبْحًا read when we stop on it?" },
+      "q": { "bs": "Kako se čita riječ ضَبْحًا kada na njoj stanemo?", "en": "How is the word ضَبْحًا read when we stop on it?", "de": "Wie wird das Wort ضَبْحًا gelesen, wenn wir darauf anhalten?" },
       "opcije": [
-        { "bs": "ضَبْحْ", "en": "ضَبْحْ" },
-        { "bs": "ضَبْحَا", "en": "ضَبْحَا" },
-        { "bs": "ضَبْحَهْ", "en": "ضَبْحَهْ" },
-        { "bs": "ضَبْحًا, bez promjene", "en": "ضَبْحًا, without change" }
+        { "bs": "ضَبْحْ", "en": "ضَبْحْ", "de": "ضَبْحْ" },
+        { "bs": "ضَبْحَا", "en": "ضَبْحَا", "de": "ضَبْحَا" },
+        { "bs": "ضَبْحَهْ", "en": "ضَبْحَهْ", "de": "ضَبْحَهْ" },
+        { "bs": "ضَبْحًا, bez promjene", "en": "ضَبْحًا, without change", "de": "ضَبْحًا, ohne Änderung" }
       ],
       "tacno": 1,
-      "objasnjenje": { "bs": "Riječ završava tenvinom EN, pa pri stajanju učimo kao da je dugo A: ضَبْحَا.", "en": "The word ends in the tanween AN, so when stopping we read it as if it were a long A: ضَبْحَا." }
+      "objasnjenje": { "bs": "Riječ završava tenvinom EN, pa pri stajanju učimo kao da je dugo A: ضَبْحَا.", "en": "The word ends in the tanween AN, so when stopping we read it as if it were a long A: ضَبْحَا.", "de": "Das Wort endet auf dem Tanwin AN, deshalb lesen wir es beim Anhalten wie ein langes A: ضَبْحَا." }
     },
     {
-      "q": { "bs": "Riječ أَفْئِدَةً završava okruglim T sa tenvinom EN. Kako je čitamo kada na njoj stanemo?", "en": "The word أَفْئِدَةً ends in the round T with the tanween AN. How do we read it when we stop on it?" },
+      "q": { "bs": "Riječ أَفْئِدَةً završava okruglim T sa tenvinom EN. Kako je čitamo kada na njoj stanemo?", "en": "The word أَفْئِدَةً ends in the round T with the tanween AN. How do we read it when we stop on it?", "de": "Das Wort أَفْئِدَةً endet auf einem runden T mit dem Tanwin AN. Wie lesen wir es, wenn wir darauf anhalten?" },
       "opcije": [
-        { "bs": "أَفْئِدَتْ", "en": "أَفْئِدَتْ" },
-        { "bs": "أَفْئِدَتَا", "en": "أَفْئِدَتَا" },
-        { "bs": "أَفْئِدَةً, bez promjene", "en": "أَفْئِدَةً, without change" },
-        { "bs": "أَفْئِدَهْ", "en": "أَفْئِدَهْ" }
+        { "bs": "أَفْئِدَتْ", "en": "أَفْئِدَتْ", "de": "أَفْئِدَتْ" },
+        { "bs": "أَفْئِدَتَا", "en": "أَفْئِدَتَا", "de": "أَفْئِدَتَا" },
+        { "bs": "أَفْئِدَةً, bez promjene", "en": "أَفْئِدَةً, without change", "de": "أَفْئِدَةً, ohne Änderung" },
+        { "bs": "أَفْئِدَهْ", "en": "أَفْئِدَهْ", "de": "أَفْئِدَهْ" }
       ],
       "tacno": 3,
-      "objasnjenje": { "bs": "Na okruglom T stajemo kao da je napisano slovo H, bez obzira koji je vokal ili tenvin na njemu, pa se čita أَفْئِدَهْ.", "en": "On the round T we stop as if the letter H were written, no matter which vowel or tanween is on it, so it is read أَفْئِدَهْ." }
+      "objasnjenje": { "bs": "Na okruglom T stajemo kao da je napisano slovo H, bez obzira koji je vokal ili tenvin na njemu, pa se čita أَفْئِدَهْ.", "en": "On the round T we stop as if the letter H were written, no matter which vowel or tanween is on it, so it is read أَفْئِدَهْ.", "de": "Beim runden T halten wir an, als stünde dort der Buchstabe H, egal welcher Vokal oder welches Tanwin darauf steht, also wird أَفْئِدَهْ gelesen." }
     },
     {
-      "q": { "bs": "Na kojoj od ovih riječi stajemo bez ikakve promjene?", "en": "On which of these words do we stop without any change?" },
+      "q": { "bs": "Na kojoj od ovih riječi stajemo bez ikakve promjene?", "en": "On which of these words do we stop without any change?", "de": "Auf welchem dieser Wörter halten wir ohne jede Änderung an?" },
       "opcije": [
-        { "bs": "مَاخَلَقَ", "en": "مَاخَلَقَ" },
-        { "bs": "أَفْوَاجًا", "en": "أَفْوَاجًا" },
-        { "bs": "حُسْنَى", "en": "حُسْنَى" },
-        { "bs": "أَلْقَارِعَةُ", "en": "أَلْقَارِعَةُ" }
+        { "bs": "مَاخَلَقَ", "en": "مَاخَلَقَ", "de": "مَاخَلَقَ" },
+        { "bs": "أَفْوَاجًا", "en": "أَفْوَاجًا", "de": "أَفْوَاجًا" },
+        { "bs": "حُسْنَى", "en": "حُسْنَى", "de": "حُسْنَى" },
+        { "bs": "أَلْقَارِعَةُ", "en": "أَلْقَارِعَةُ", "de": "أَلْقَارِعَةُ" }
       ],
       "tacno": 2,
-      "objasnjenje": { "bs": "Riječ حُسْنَى završava dugim vokalom I, a na dugim vokalima stajemo bez ikakve promjene.", "en": "The word حُسْنَى ends in the long vowel I, and on long vowels we stop without any change." }
+      "objasnjenje": { "bs": "Riječ حُسْنَى završava dugim vokalom I, a na dugim vokalima stajemo bez ikakve promjene.", "en": "The word حُسْنَى ends in the long vowel I, and on long vowels we stop without any change.", "de": "Das Wort حُسْنَى endet auf dem langen Vokal I, und auf langen Vokalen halten wir ohne jede Änderung an." }
     },
     {
-      "q": { "bs": "Šta označava znak قصر ispod riječi?", "en": "What does the sign قصر beneath a word mean?" },
+      "q": { "bs": "Šta označava znak قصر ispod riječi?", "en": "What does the sign قصر beneath a word mean?", "de": "Was bedeutet das Zeichen قصر unter einem Wort?" },
       "opcije": [
-        { "bs": "Vokal ispod kojeg se nalazi uči se kratko", "en": "The vowel it stands under is recited short" },
-        { "bs": "Vokal ispod kojeg se nalazi uči se dugo", "en": "The vowel it stands under is recited long" },
-        { "bs": "Na toj riječi se mora stati", "en": "One must stop on that word" },
-        { "bs": "Pauzira se bez prekidanja daha", "en": "One pauses without breaking the breath" }
+        { "bs": "Vokal ispod kojeg se nalazi uči se kratko", "en": "The vowel it stands under is recited short", "de": "Der Vokal, unter dem das Zeichen steht, wird kurz gesprochen" },
+        { "bs": "Vokal ispod kojeg se nalazi uči se dugo", "en": "The vowel it stands under is recited long", "de": "Der Vokal, unter dem das Zeichen steht, wird lang gesprochen" },
+        { "bs": "Na toj riječi se mora stati", "en": "One must stop on that word", "de": "Auf diesem Wort muss man anhalten" },
+        { "bs": "Pauzira se bez prekidanja daha", "en": "One pauses without breaking the breath", "de": "Man pausiert kurz, ohne Luft zu holen" }
       ],
       "tacno": 0,
-      "objasnjenje": { "bs": "Znak قصر znači da se vokal uči kratko, a znak مد da se uči dugo.", "en": "The sign قصر means the vowel is recited short, while مد means it is recited long." }
+      "objasnjenje": { "bs": "Znak قصر znači da se vokal uči kratko, a znak مد da se uči dugo.", "en": "The sign قصر means the vowel is recited short, while مد means it is recited long.", "de": "Das Zeichen قصر bedeutet, dass der Vokal kurz gesprochen wird, und das Zeichen مد, dass er lang gesprochen wird." }
     },
     {
-      "q": { "bs": "Šta označava znak ط iznad riječi?", "en": "What does the sign ط above a word mean?" },
+      "q": { "bs": "Šta označava znak ط iznad riječi?", "en": "What does the sign ط above a word mean?", "de": "Was bedeutet das Zeichen ط über einem Wort?" },
       "opcije": [
-        { "bs": "Mora se stati", "en": "One must stop" },
-        { "bs": "Bolje je stati", "en": "It is better to stop" },
-        { "bs": "Bolje je preći", "en": "It is better to continue" },
-        { "bs": "Ne smije se stati", "en": "One must not stop" }
+        { "bs": "Mora se stati", "en": "One must stop", "de": "Muss anhalten" },
+        { "bs": "Bolje je stati", "en": "It is better to stop", "de": "Besser anhalten" },
+        { "bs": "Bolje je preći", "en": "It is better to continue", "de": "Besser weiterlesen" },
+        { "bs": "Ne smije se stati", "en": "One must not stop", "de": "Darf nicht anhalten" }
       ],
       "tacno": 1,
-      "objasnjenje": { "bs": "Znakovi قف, قلي, ج i ط označavaju da je bolje stati.", "en": "The signs قف, قلي, ج and ط show that it is better to stop." }
+      "objasnjenje": { "bs": "Znakovi قف, قلي, ج i ط označavaju da je bolje stati.", "en": "The signs قف, قلي, ج and ط show that it is better to stop.", "de": "Die Zeichen قف, قلي, ج und ط zeigen, dass es besser ist anzuhalten." }
     }
   ]
 }

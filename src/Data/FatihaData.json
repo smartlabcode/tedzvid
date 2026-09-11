@@ -38,6 +38,22 @@
 			"A natural prolongation on the letter W (و): 2 harakas (madd tabi’i).",
 			"M with a sukun (مْ) before the letter W (و): pronounced clearly, without ghunnah (idhhar shafawi).",
 			"The prolongation is followed by a letter with a sukun or a shadda: madd lazim – 6 harakas."
+		],
+		"de": [
+			"Vor dem Wort Allah (اللّٰه) steht der Vokal I: Das Wort wird dünn gesprochen.",
+			"Der Buchstabe R (ر) wird dick gesprochen, weil er den Vokal A trägt.",
+			"Natürliche Dehnung auf dem Buchstaben A (ا): wird 2 Harakat lang gesprochen (Madd Tabi’i).",
+			"Beim Anhalten bekommt der letzte Buchstabe M (م) nach der Dehnung ein Sukun: Madd Arid – wird 2, 4 oder 6 Harakat lang gesprochen.",
+			"M mit Sukun (مْ) vor dem Buchstaben D (د): wird deutlich ausgesprochen, ohne Ghunna (Idh-har Schafawi).",
+			"Beim Anhalten bekommt der letzte Buchstabe N (ن) nach der Dehnung ein Sukun: Madd Arid – wird 2, 4 oder 6 Harakat lang gesprochen.",
+			"Natürliche Dehnung auf dem Buchstaben Y (ي): wird 2 Harakat lang gesprochen (Madd Tabi’i).",
+			"N mit Sukun (نْ) vor dem Kehlbuchstaben A (ع): wird deutlich ausgesprochen, ohne Ghunna (Idh-har Halqi).",
+			"M mit Sukun (مْ) vor dem Buchstaben T (ت): wird deutlich ausgesprochen, ohne Ghunna (Idh-har Schafawi).",
+			"M mit Sukun (مْ) vor dem Buchstaben GH (غ): wird deutlich ausgesprochen, ohne Ghunna (Idh-har Schafawi).",
+			"Der Buchstabe R (ر) wird dünn gesprochen, weil er den Vokal I trägt.",
+			"Natürliche Dehnung auf dem Buchstaben W (و): wird 2 Harakat lang gesprochen (Madd Tabi’i).",
+			"M mit Sukun (مْ) vor dem Buchstaben W (و): wird deutlich ausgesprochen, ohne Ghunna (Idh-har Schafawi).",
+			"Nach der Dehnung kommt ein Buchstabe mit Sukun oder Schadda: Madd Lazim – wird 6 Harakat lang gesprochen."
 		]
 	},
 	"odjeljci": [
@@ -51,11 +67,13 @@
 			"naziv": {
 				"bs": "El-Fatiha",
 				"en": "Al-Fatihah",
+				"de": "Al-Fatiha",
 				"ar": "ٱلْفَاتِحَةِ"
 			},
 			"znacenje": {
 				"bs": "Pristup",
-				"en": "The Opening"
+				"en": "The Opening",
+				"de": "Die Eröffnung"
 			},
 			"ajeti": [
 				{

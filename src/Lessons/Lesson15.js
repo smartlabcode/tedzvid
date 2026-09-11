@@ -266,6 +266,128 @@ const TXT = {
 				</Row>
 			</React.Fragment>
 		)
+	},
+
+	de: {
+		naziv: 'IDGHAM MUTADSCHANISAIN',
+		naslov: '15 IDGHAM MUTADSCHANISAIN',
+		podnaslov: (
+			<React.Fragment>
+				<strong>Verwandte Buchstaben verschmelzen</strong>
+			</React.Fragment>
+		),
+		lekcija: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Wenn zwei <u>verwandte</u> Buchstaben nebeneinander stehen und der erste ein{' '}
+						<strong>Sukun</strong> trägt, der zweite ein <strong>Vokalzeichen</strong>, dann
+						verschmilzt der erste in den zweiten aus <u>derselben Gruppe</u>:
+					</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije text-left">
+						<strong className="">1.</strong>
+						<span className="arapski-lekcija"> ط د ت </span> z. B.: {P('row1')}
+					</Col>
+				</Row>
+
+				<Row className="text-center  rtl">
+					<Col className="opisLekcije text-center">{P('row2')}</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije text-left">
+						<strong>2.</strong> <span className="arapski-lekcija"> ظ ذ ث </span> z. B.:{' '}
+						{P('row3')}
+					</Col>
+				</Row>
+
+				<Row className="text-center  rtl">
+					<Col className="opisLekcije text-center">{P('row4')}</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije text-left">
+						<strong>3.</strong> <span className="arapski-lekcija"> ب م </span> z. B.:{' '}
+						{P('row5')}
+					</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije text-center">{P('row6')}</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		),
+		lekcijaModal: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Wenn zwei <u>verwandte</u> Buchstaben nebeneinander stehen und der erste ein{' '}
+						<strong>Sukun</strong> trägt, der zweite ein <strong>Vokalzeichen</strong>, dann
+						verschmilzt der erste in den zweiten aus <u>derselben Gruppe</u>:
+					</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije text-left">
+						<strong className="">1.</strong>
+						<span className="arapski-lekcija"> ط د ت </span> z. B.: {P('row1')}
+					</Col>
+				</Row>
+
+				<Row className="text-center  rtl">
+					<Col className="opisLekcije text-center">{P('row2')}</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije text-left">
+						<strong>2.</strong> <span className="arapski-lekcija"> ظ ذ ث </span> z. B.:{' '}
+						{P('row3')}
+					</Col>
+				</Row>
+
+				<Row className="text-center  rtl">
+					<Col className="opisLekcije text-center">{P('row4')}</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije text-left">
+						<strong>3.</strong> <span className="arapski-lekcija"> ب م </span> z. B.:{' '}
+						{P('row5')}
+					</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije text-center">{P('row6')}</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		)
 	}
 };
 

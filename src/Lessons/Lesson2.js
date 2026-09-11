@@ -320,7 +320,156 @@ const TXT = {
 				</Row>
 			</React.Fragment>
 		)
+	},
+
+	de: {
+		naziv: 'DAMIR',
+		naslov: '2 Damir',
+		podnaslov: (
+			<React.Fragment>
+				<strong>Das Pronomen HU(</strong>هُ<strong>) aussprechen</strong>
+			</React.Fragment>
+		),
+		lekcija: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Kommt vor dem Pronomen{' '}
+						<strong>
+							HU (<span className="arapski-lekcija ">هُ</span>)
+						</strong>{' '}
+						ein <strong>langer Vokal </strong>A <span className="arapski-lekcija">ـــَــ ا</span> , I{' '}
+						<span className="arapski-lekcija">ـــِـ ى </span>, U{' '}
+						<span className="arapski-lekcija">ـــُــ و</span> oder ein
+						<strong>
+							{' '}
+							Sukun <span className="arapski-lekcija">ــــْـــ</span>
+						</strong>{' '}
+						, wird das Pronomen{' '}
+						<strong>
+							HU (<span className="arapski-lekcija">هُ</span>)
+						</strong>{' '}
+						<u>kurz</u> gesprochen:
+					</Col>
+				</Row>
+
+				<Row className="text-center ">
+					<Col>{P('row1')}</Col>
+				</Row>
+
+				<Row className="text-center reorder-basic rtl ">
+					<Col>{P('row2')}</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije">
+						Kommt vor dem Pronomen{' '}
+						<strong>
+							HU (<span className="arapski-lekcija">هُ</span>)
+						</strong>{' '}
+						ein
+						<strong> kurzer Vokal</strong> A <span className="arapski-lekcija">ــــَـــ</span> , I{' '}
+						<strong>
+							<span className="arapski-lekcija">ــــِــ </span>
+						</strong>
+						oder U{' '}
+						<strong>
+							<span className="arapski-lekcija">ــــُـــ</span>
+						</strong>
+						, wird das Pronomen{' '}
+						<strong>
+							HU (<span className="arapski-lekcija">هُ</span>)
+						</strong>{' '}
+						<u>lang</u> gesprochen:
+					</Col>
+				</Row>
+
+				<Row className="text-center">
+					<Col>{P('row3')}</Col>
+				</Row>
+
+				<Row className="text-center   reorder-basic rtl">
+					<Col>{P('row4')}</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		),
+		lekcijaModal: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Kommt vor dem Pronomen{' '}
+						<strong>
+							HU (<span className="arapski-lekcija "> هُ</span>)
+						</strong>{' '}
+						ein <strong>langer Vokal </strong>A <span className="arapski-lekcija">ـــَــ ا</span> , I{' '}
+						<span className="arapski-lekcija">ـــِـ ى </span>, U{' '}
+						<span className="arapski-lekcija">ـــُــ و</span> oder ein
+						<strong>
+							{' '}
+							Sukun <span className="arapski-lekcija">ــــْـــ</span>
+						</strong>{' '}
+						, wird das Pronomen{' '}
+						<strong>
+							HU (<span className="arapski-lekcija">هُ</span>)
+						</strong>{' '}
+						<u>kurz</u> gesprochen:
+					</Col>
+				</Row>
+
+				<Row className="text-center">
+					<Col>{P('row1')}</Col>
+				</Row>
+
+				<Row className="text-center rtl">
+					<Col>{P('row2')}</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije">
+						Kommt vor dem Pronomen{' '}
+						<strong>
+							HU (<span className="arapski-lekcija">هُ</span>)
+						</strong>{' '}
+						ein
+						<strong> kurzer Vokal</strong> A <span className="arapski-lekcija">ــــَـــ</span> , I{' '}
+						<strong>
+							<span className="arapski-lekcija">ــــِــ </span>
+						</strong>
+						oder U {' '}
+						<strong>
+							<span className="arapski-lekcija">ــــُـــ</span>
+						</strong>
+						, wird das Pronomen{' '}
+						<strong>
+							HU (<span className="arapski-lekcija">هُ</span>)
+						</strong>{' '}
+						<u>lang</u> gesprochen:
+					</Col>
+				</Row>
+
+				<Row className="text-center">
+					<Col>{P('row3')}</Col>
+				</Row>
+
+				<Row className="text-center rtl">
+					<Col>{P('row4')}</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		)
 	}
+
 };
 
 function scrollToHash() {

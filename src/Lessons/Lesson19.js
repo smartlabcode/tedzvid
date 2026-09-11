@@ -295,6 +295,143 @@ const TXT = {
 				</Row>
 			</React.Fragment>
 		)
+	},
+
+	de: {
+		naziv: 'MADD MUNFASIL',
+		naslov: '19 MADD MUNFASIL',
+		podnaslov: (
+			<React.Fragment>
+				<strong>Getrennte Dehnung</strong>
+			</React.Fragment>
+		),
+		lekcija: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije ">
+						Wenn nach dem <strong>langen Vokal</strong> A <span className="arapski-lekcija">ـــَــ ا</span> ,
+						I <span className="arapski-lekcija"> ـــِـ ى</span> , U{' '}
+						<span className="arapski-lekcija" style={{ lineHeight: '1.8em' }}>
+							ـــُــ و
+						</span>{' '}
+						eine <strong>Hamza</strong> oder ein <strong>Alif</strong>{' '}
+						<u>am Anfang des nächsten</u> Wortes kommt, ist es Madd Munfasil. Es dauert 4–5 Harakat, z. B.:
+						<span style={{ lineHeight: '1.5em' }}>{P('row1')}</span>
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row className="opisLekcije text-center  reorder-basic-display-after">
+					<Col>
+						<pre> „türkischer Druck“</pre>
+					</Col>
+					-
+					<Col>
+						<pre> „Medina-Druck“</pre>
+					</Col>
+				</Row>
+
+				<Row className="text-center  reorder-basic-display-after">
+					<Col>
+						{V('rows', 'row2lijevi')}
+						{V('rows', 'row2desni')}
+					</Col>
+				</Row>
+				<Row className="text-center  reorder-basic-display-after">
+					<Col>
+						{V('rows', 'row3lijevi')}
+						{V('rows', 'row3desni')}
+					</Col>
+				</Row>
+				<Row className="text-center reorder-basic-display-after">
+					<Col>
+						{V('rows', 'row4lijevi')}
+						{V('rows', 'row4desni')}
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		),
+		lekcijaModal: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije ">
+						Wenn nach dem <strong>langen Vokal</strong> A{' '}
+						<span className="arapski-lekcija">ـــَــ ا</span> , I{' '}
+						<span className="arapski-lekcija"> ـــِـ ى</span> , U{' '}
+						<span className="arapski-lekcija" style={{ lineHeight: '1.8em' }}>
+							ـــُــ و
+						</span>{' '}
+						eine <strong>Hamza</strong> oder ein <strong>Alif</strong>{' '}
+						<u>am Anfang des nächsten</u> Wortes kommt, ist es Madd Munfasil. Es dauert 4–5 Harakat,
+						z. B.:
+						<span style={{ lineHeight: '1.5em' }}>{P('row1')}</span>
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row className="opisLekcije text-center">
+					<Col>
+						<pre> „türkischer Druck“</pre>
+					</Col>
+					<Col>
+						<pre> „Medina-Druck“</pre>
+					</Col>
+				</Row>
+
+				<Row className="text-center reorder-basic">
+					<Col>
+						{V('rows', 'row2lijevi')}
+						{V('rows', 'row2desni')}
+					</Col>
+				</Row>
+				<Row className="text-center reorder-basic">
+					<Col>
+						{V('rows', 'row3lijevi')}
+						{V('rows', 'row3desni')}
+					</Col>
+				</Row>
+				<Row className="text-center reorder-basic">
+					<Col>
+						{V('rows', 'row4lijevi')}
+						{V('rows', 'row4desni')}
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		)
 	}
 };
 

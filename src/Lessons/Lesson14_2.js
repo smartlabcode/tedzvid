@@ -309,6 +309,150 @@ const TXT = {
 				</Row>
 			</React.Fragment>
 		)
+	},
+
+	de: {
+		naziv: 'HUKM AR-RA',
+		lekcija: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Der Buchstabe<strong> R </strong>
+						<span className="arapski-lekcija">(ر)</span> wird in diesen Fällen <u>dünn</u> gesprochen:
+					</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije">
+						<strong>1.</strong> wenn der Buchstabe<strong> R </strong>den <strong>Vokal</strong> I trägt ({' '}
+						{P('row9')} ), z. B.: <br />
+						{P('row8')}
+					</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije">
+						<strong>2.</strong> wenn der Buchstabe<strong> R </strong>ein <strong>Sukun</strong> trägt und davor
+						ein Buchstabe mit dem <strong>Vokal</strong> I steht (
+						<span className="arapski-lekcija" style={{ color: 'red' }}>
+							ــــِـــ رْ{' '}
+						</span>
+						), z. B.:
+						<br />
+						{P('row10')}
+					</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije">
+						<strong>3.</strong> wenn der Buchstabe<strong> R </strong>ein <strong>Sukun</strong> trägt, davor ein
+						Buchstabe mit <strong>Sukun</strong> steht und davor ein Buchstabe mit dem <strong>Vokal</strong> I (
+						<span className="arapski-lekcija" style={{ color: 'red' }}>
+							{' '}
+							ــِـ ــْـ رْ{' '}
+						</span>
+						), z. B.:<br />
+						{P('row11')}
+					</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije">
+						<strong>4.</strong> wenn der Buchstabe<strong> R </strong>ein <strong>Sukun</strong> trägt, davor der
+						Buchstabe <strong>Y</strong> ebenfalls mit <strong>Sukun</strong> steht und davor ein Buchstabe mit dem{' '}
+						<strong>Vokal</strong> A (
+						<span className="arapski-lekcija" style={{ color: 'red' }}>
+							{' '}
+							ــــَـــ يْـــرْ{' '}
+						</span>
+						), z. B.: {P('row12')}
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		),
+		lekcijaModal: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Der Buchstabe<strong> R </strong>
+						<span className="arapski-lekcija">(ر)</span> wird in diesen Fällen <u>dünn</u>
+						gesprochen:
+					</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije">
+						<strong>1.</strong> wenn der Buchstabe<strong> R </strong>den <strong>Vokal</strong> I trägt ({' '}
+						{P('row9')} ), z. B.: {P('row8')}
+					</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije">
+						<strong>2.</strong> wenn der Buchstabe<strong> R </strong>ein <strong>Sukun</strong> trägt und
+						davor ein Buchstabe mit dem <strong>Vokal</strong> I steht (
+						<span className="arapski-lekcija" style={{ color: 'red' }}>
+							ــــِـــ رْ{' '}
+						</span>
+						), z. B.:
+						<br />
+						{P('row10')}
+					</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije">
+						<strong>3.</strong> wenn der Buchstabe<strong> R </strong>ein <strong>Sukun</strong> trägt, davor
+						ein Buchstabe mit <strong>Sukun</strong> steht und davor ein Buchstabe mit dem
+						<strong>Vokal</strong> I (
+						<span className="arapski-lekcija" style={{ color: 'red' }}>
+							{' '}
+							ــِـ ــْـ رْ{' '}
+						</span>
+						), z. B.:
+						{P('row11')}
+					</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije">
+						<strong>4.</strong> wenn der Buchstabe<strong> R </strong>ein <strong>Sukun</strong> trägt, davor
+						der Buchstabe <strong>Y</strong> ebenfalls mit <strong>Sukun</strong> steht und davor ein
+						Buchstabe mit dem{' '}
+						<strong>Vokal</strong> A (
+						<span className="arapski-lekcija" style={{ color: 'red' }}>
+							{' '}
+							ــــَـــ يْـــرْ{' '}
+						</span>
+						), z. B.:<br /> {P('row12')}
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		)
 	}
 };
 

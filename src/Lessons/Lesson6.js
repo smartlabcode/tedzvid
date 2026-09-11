@@ -287,6 +287,137 @@ const TXT = {
 				</Row>
 			</React.Fragment>
 		)
+	},
+
+	de: {
+		naziv: 'IDGHAM MA’AL-GHUNNA',
+		naslov: '6 IDGHAM MA’AL-GHUNNA',
+		podnaslov: (
+			<React.Fragment>
+				<strong>Verschmelzen, mit Luft durch die Nase</strong>
+			</React.Fragment>
+		),
+		lekcija: (P, V, r3) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Wenn nach dem Buchstaben <strong>N</strong> mit <strong>Sukun</strong> (
+						<span className="arapski-lekcija">نْ</span>) oder nach dem <strong>Tanwin</strong> AN{' '}
+						<span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
+						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
+						<span className="arapski-lekcija">ــٌــ</span> einer dieser vier Buchstaben kommt:&nbsp;
+						<span
+							className="arapski-lekcija"
+							style={{ color: 'red', fontSize: '3rem', whiteSpace: 'nowrap' }}
+						>
+							و ن م ي
+						</span>{' '}
+						(enthalten im Wort <strong>yamnu</strong> –
+						<span className="arapski-lekcija">يَمْنُو</span>), verschmilzt der Buchstabe <strong>N</strong>(
+						<span className="arapski-lekcija">ن</span>) in einen dieser vier Buchstaben, wobei die Luft
+						2 Harakat lang durch die Nase strömt, z. B.:
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row className="text-center reorder">
+					<Col>{P('row1')}</Col>
+				</Row>
+
+				<Row className="text-center reorder-basic rtl">
+					<Col>{P('row2')}</Col>
+				</Row>
+
+				<Row className="text-center reorder-basic ">
+					<Col>
+						<span key={'key' + data.row3[2].id}>
+							<Player url={data.row3[2].url} note={data.row3[2].napomena} key={'p' + data.row3[2].id}>
+								{r3}
+							</Player>
+						</span>{' '}
+						{data.row3[0].after}
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		),
+		lekcijaModal: (P, V, r3) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Wenn nach dem Buchstaben <strong>N</strong> mit <strong>Sukun</strong> (
+						<span className="arapski-lekcija">نْ</span>) oder nach dem <strong>Tanwin</strong> AN{' '}
+						<span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
+						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
+						<span className="arapski-lekcija">ــٌــ</span> einer dieser vier Buchstaben kommt:{' '}
+						<span
+							className="arapski-lekcija"
+							style={{ color: 'red', fontSize: '3rem', whiteSpace: 'nowrap' }}
+						>
+							و ن م ي
+						</span>{' '}
+						(enthalten im Wort <strong>yamnu</strong> –
+						<span className="arapski-lekcija">يَمْنُو</span>), verschmilzt der Buchstabe{' '}
+						<strong>N</strong>(
+						<span className="arapski-lekcija">ن</span>) in einen dieser vier Buchstaben, wobei die
+						Luft 2 Harakat lang durch die Nase strömt, z. B.:
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row className="text-center reorder">
+					<Col>{P('row1')}</Col>
+				</Row>
+
+				<Row className="text-center reorder-basic rtl">
+					<Col>{P('row2')}</Col>
+				</Row>
+
+				<Row className="text-center ">
+					<Col>
+						<span key={'key' + data.row3[2].id}>
+							<Player url={data.row3[2].url} note={data.row3[2].napomena} key={'p' + data.row3[2].id}>
+								{r3}
+							</Player>
+						</span>{' '}
+						{data.row3[0].after}
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		)
 	}
 };
 

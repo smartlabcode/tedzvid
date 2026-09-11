@@ -359,6 +359,174 @@ const TXT = {
 				</Row>
 			</React.Fragment>
 		)
+	},
+
+	de: {
+		naziv: 'IDH-HAR HALQI',
+		naslov: '9 IDH-HAR HALQI',
+		podnaslov: (
+			<React.Fragment>
+				<strong>Das N (ن) oder das Tanwin deutlich aussprechen</strong>
+			</React.Fragment>
+		),
+		lekcija: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Wenn nach dem Buchstaben <strong>N</strong> mit <strong>Sukun</strong> (<span className="arapski-lekcija">نْ</span>)
+						oder nach dem <strong>Tanwin</strong> AN <span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
+						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
+						<span className="arapski-lekcija">ــٌــ</span> einer der sechs Kehlbuchstaben kommt:<pre style={{ display: 'inline' }}> </pre>
+						<span className="arapski-lekcija" style={{ color: 'red' }}>
+							{' '}
+							خ
+						</span>
+						<pre style={{ display: 'inline' }}> </pre>
+						<span className="arapski-lekcija" style={{ color: 'red' }}>
+							{' '}
+							غ
+						</span>
+						<pre style={{ display: 'inline' }}> </pre>
+						<span className="arapski-lekcija" style={{ color: 'red' }}>
+							{' '}
+							ح
+						</span>
+						<pre style={{ display: 'inline' }}> </pre>
+						<span className="arapski-lekcija" style={{ color: 'red' }}>
+							{' '}
+							ع
+						</span>
+						<pre style={{ display: 'inline' }}> </pre>
+						<span className="arapski-lekcija" style={{ color: 'red' }}>
+							{' '}
+							ه
+						</span>{' '}
+						<pre style={{ display: 'inline' }}> </pre>
+						<span className="arapski-lekcija" style={{ color: 'red' }}>
+							{' '}
+							أ{' '}
+						</span>{' '}
+						<pre style={{ display: 'inline' }}> </pre>dann wird der Buchstabe <strong>N</strong> (<span className="arapski-lekcija">ن</span>){' '}
+						<u>deutlich</u> ausgesprochen, also ohne Verschmelzung, z. B.:
+					</Col>
+				</Row>
+
+				<Row className="text-center reorder-basic-display-after rtl">
+					<Col>{P('row1')}</Col>
+				</Row>
+
+				<Row className="text-center  rtl">
+					<Col>
+						{V('multirow', 'word1')}
+						{P('row2')}
+					</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije">
+						<strong>IDH-HAR MUTLAQ</strong> – wenn nach dem Buchstaben <strong>N</strong> mit Sukun (<span className="arapski-lekcija">نْ</span>){' '}
+						<u>im selben Wort</u> der Buchstabe <strong>W</strong> (<span className="arapski-lekcija">و</span>)
+						oder <strong>Y</strong> (<span className="arapski-lekcija">ي</span>) kommt, wird der Buchstabe <strong>N</strong> (<span className="arapski-lekcija">ن</span>){' '}
+						<u>deutlich</u> ausgesprochen, also ohne Verschmelzung, z. B.:
+					</Col>
+				</Row>
+
+				<Row className="text-center rtl">
+					<Col>{P('row3')}</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		),
+		lekcijaModal: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Wenn nach dem Buchstaben <strong>N</strong> mit <strong>Sukun</strong> (<span className="arapski-lekcija">نْ</span>)
+						oder nach dem <strong>Tanwin</strong> AN <span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
+						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
+						<span className="arapski-lekcija">ــٌــ</span> einer der sechs Kehlbuchstaben kommt:<pre style={{ display: 'inline' }}> </pre>
+						<span className="arapski-lekcija" style={{ color: 'red' }}>
+							{' '}
+							خ
+						</span>
+						<pre style={{ display: 'inline' }}> </pre>
+						<span className="arapski-lekcija" style={{ color: 'red' }}>
+							{' '}
+							غ
+						</span>
+						<pre style={{ display: 'inline' }}> </pre>
+						<span className="arapski-lekcija" style={{ color: 'red' }}>
+							{' '}
+							ح
+						</span>
+						<pre style={{ display: 'inline' }}> </pre>
+						<span className="arapski-lekcija" style={{ color: 'red' }}>
+							{' '}
+							ع
+						</span>
+						<pre style={{ display: 'inline' }}> </pre>
+						<span className="arapski-lekcija" style={{ color: 'red' }}>
+							{' '}
+							ه
+						</span>{' '}
+						<pre style={{ display: 'inline' }}> </pre>
+						<span className="arapski-lekcija" style={{ color: 'red' }}>
+							{' '}
+							أ{' '}
+						</span>{' '}
+						<pre style={{ display: 'inline' }}> </pre>dann wird der Buchstabe <strong>N</strong> (<span className="arapski-lekcija">ن</span>){' '}
+						<u>deutlich</u> ausgesprochen, also ohne Verschmelzung, z. B.:
+					</Col>
+				</Row>
+
+				<Row className="text-center reorder rtl">
+					<Col>{P('row1')}</Col>
+				</Row>
+
+				<Row className="text-center reorder rtl">
+					<Col>
+						{V('multirow', 'word1')}
+						{P('row2')}
+					</Col>
+				</Row>
+				<Row>
+					<Col className="opisLekcije">
+						<strong>IDH-HAR MUTLAQ</strong> – wenn nach dem Buchstaben <strong>N</strong> mit Sukun (<span className="arapski-lekcija">نْ</span>){' '}
+						<u>im selben Wort</u> der Buchstabe <strong>W</strong> (<span className="arapski-lekcija">و</span>)
+						oder <strong>Y</strong> (<span className="arapski-lekcija">ي</span>) kommt, wird der Buchstabe{' '}
+						<strong>N</strong> (<span className="arapski-lekcija">ن</span>) <u>deutlich</u> ausgesprochen,
+						also ohne Verschmelzung, z. B.:
+					</Col>
+				</Row>
+
+				<Row className="text-center">
+					<Col>{P('row3')}</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		)
 	}
 };
 

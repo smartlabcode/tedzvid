@@ -223,6 +223,102 @@ const TXT = {
 				</Row>
 			</React.Fragment>
 		)
+	},
+
+	de: {
+		naziv: 'LAFDHATULLAH',
+		naslov: '3 LAFDHATULLAH',
+		podnaslov: (
+			<React.Fragment>
+				<strong>
+					Das Wort Allah <span className="arapski-lekcija"> اللّٰه </span> aussprechen
+				</strong>
+			</React.Fragment>
+		),
+		lekcija: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Wenn vor dem Wort Allah <span className="arapski-lekcija"> اللّٰه </span>der{' '}
+						<strong>Vokal</strong> A <span className="arapski-lekcija"> ــــَـــ </span>oder der{' '}
+						<strong>Vokal</strong> U
+						<span className="arapski-lekcija">ــــُـــ </span>steht, wird das Wort Allah
+						<span className="arapski-lekcija">اللّٰه </span><u>dick</u> gesprochen, z. B.:
+					</Col>
+				</Row>
+				<Row className="text-center  reorder-basic ">
+					<Col>{P('row1')}</Col>
+				</Row>
+				<Row className="text-center  ">
+					<Col>{V('multirow', 'row2')}</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije">
+						Wenn vor dem Wort Allah
+						<span className="arapski-lekcija"> اللّٰه</span> der <strong>Vokal</strong> I
+						<span className="arapski-lekcija"> ــــِــ</span> steht, wird das Wort Allah
+						<span className="arapski-lekcija"> اللّٰه</span> <u>dünn</u> gesprochen, z. B.:
+					</Col>
+				</Row>
+
+				<Row className="text-center  reorder-basic ">
+					<Col>{P('row3')}</Col>
+				</Row>
+
+				<Row className="text-center  reorder-basic rtl">
+					<Col>{P('row4')}</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		),
+		lekcijaModal: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Wenn vor dem Wort Allah <span className="arapski-lekcija"> اللّٰه </span>der{' '}
+						<strong>Vokal</strong> A <span className="arapski-lekcija"> ــــَـــ </span>oder der{' '}
+						<strong>Vokal</strong> U
+						<span className="arapski-lekcija">ــــُـــ </span>steht, wird das Wort Allah
+						<span className="arapski-lekcija">اللّٰه </span><u>dick</u> gesprochen, z. B.:
+					</Col>
+				</Row>
+				<Row className="text-center  reorder-basic ">
+					<Col>{P('row1')}</Col>
+				</Row>
+				<Row className="text-center  ">
+					<Col>{V('multirow', 'row2')}</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije">
+						Wenn vor dem Wort Allah
+						<span className="arapski-lekcija"> اللّٰه</span> der <strong>Vokal</strong> I
+						<span className="arapski-lekcija"> ــــِــ</span> steht, wird das Wort Allah
+						<span className="arapski-lekcija"> اللّٰه</span> <u>dünn</u> gesprochen, z. B.:
+					</Col>
+				</Row>
+
+				<Row className="text-center  reorder-basic ">
+					<Col>{P('row3')}</Col>
+				</Row>
+
+				<Row className="text-center  reorder-basic rtl">
+					<Col>{P('row4')}</Col>
+				</Row>
+			</React.Fragment>
+		)
 	}
 };
 

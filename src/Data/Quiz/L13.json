@@ -2,114 +2,114 @@
   "lekcija": 13,
   "pitanja": [
     {
-      "q": { "bs": "Šta znači kalkala?", "en": "What does qalqalah mean?" },
+      "q": { "bs": "Šta znači kalkala?", "en": "What does qalqalah mean?", "de": "Was bedeutet Qalqala?" },
       "opcije": [
-        { "bs": "Skrivanje harfova", "en": "Hiding of the letters" },
-        { "bs": "Odskakanje harfova", "en": "Bouncing of the letters" },
-        { "bs": "Uklapanje harfova", "en": "Merging of the letters" },
-        { "bs": "Produžavanje harfova", "en": "Prolonging of the letters" }
+        { "bs": "Skrivanje harfova", "en": "Hiding of the letters", "de": "Verstecken der Buchstaben" },
+        { "bs": "Odskakanje harfova", "en": "Bouncing of the letters", "de": "Abprallen der Buchstaben" },
+        { "bs": "Uklapanje harfova", "en": "Merging of the letters", "de": "Verschmelzen der Buchstaben" },
+        { "bs": "Produžavanje harfova", "en": "Prolonging of the letters", "de": "Dehnen der Buchstaben" }
       ],
       "tacno": 1,
-      "objasnjenje": { "bs": "Kalkala znači odskakanje harfova.", "en": "Qalqalah means the bouncing of the letters." }
+      "objasnjenje": { "bs": "Kalkala znači odskakanje harfova.", "en": "Qalqalah means the bouncing of the letters.", "de": "Qalqala bedeutet das Abprallen der Buchstaben." }
     },
     {
-      "q": { "bs": "Koliko ima harfova kalkale?", "en": "How many qalqalah letters are there?" },
+      "q": { "bs": "Koliko ima harfova kalkale?", "en": "How many qalqalah letters are there?", "de": "Wie viele Qalqala-Buchstaben gibt es?" },
       "opcije": [
-        { "bs": "3", "en": "3" },
-        { "bs": "4", "en": "4" },
-        { "bs": "5", "en": "5" },
-        { "bs": "6", "en": "6" }
+        { "bs": "3", "en": "3", "de": "3" },
+        { "bs": "4", "en": "4", "de": "4" },
+        { "bs": "5", "en": "5", "de": "5" },
+        { "bs": "6", "en": "6", "de": "6" }
       ],
       "tacno": 2,
-      "objasnjenje": { "bs": "Harfova kalkale ima pet: د ج ب ط ق.", "en": "There are five qalqalah letters: د ج ب ط ق." }
+      "objasnjenje": { "bs": "Harfova kalkale ima pet: د ج ب ط ق.", "en": "There are five qalqalah letters: د ج ب ط ق.", "de": "Es gibt fünf Qalqala-Buchstaben: د ج ب ط ق." }
     },
     {
-      "q": { "bs": "Koji su harfovi kalkale?", "en": "Which are the qalqalah letters?" },
+      "q": { "bs": "Koji su harfovi kalkale?", "en": "Which are the qalqalah letters?", "de": "Welche sind die Qalqala-Buchstaben?" },
       "opcije": [
-        { "bs": "د ج ب ط ق", "en": "د ج ب ط ق" },
-        { "bs": "ن م و ي", "en": "ن م و ي" },
-        { "bs": "ص ض ط ظ", "en": "ص ض ط ظ" },
-        { "bs": "ح خ ع غ", "en": "ح خ ع غ" }
+        { "bs": "د ج ب ط ق", "en": "د ج ب ط ق", "de": "د ج ب ط ق" },
+        { "bs": "ن م و ي", "en": "ن م و ي", "de": "ن م و ي" },
+        { "bs": "ص ض ط ظ", "en": "ص ض ط ظ", "de": "ص ض ط ظ" },
+        { "bs": "ح خ ع غ", "en": "ح خ ع غ", "de": "ح خ ع غ" }
       ],
       "tacno": 0,
-      "objasnjenje": { "bs": "Harfovi kalkale su د ج ب ط ق, sadržani u izrazu kutbu džeddin.", "en": "The qalqalah letters are د ج ب ط ق, contained in the phrase qutbu jaddin." }
+      "objasnjenje": { "bs": "Harfovi kalkale su د ج ب ط ق, sadržani u izrazu kutbu džeddin.", "en": "The qalqalah letters are د ج ب ط ق, contained in the phrase qutbu jaddin.", "de": "Die Qalqala-Buchstaben sind د ج ب ط ق, enthalten im Ausdruck qutbu dschaddin." }
     },
     {
-      "q": { "bs": "U kojem izrazu su sadržani harfovi kalkale?", "en": "Which phrase contains the qalqalah letters?" },
+      "q": { "bs": "U kojem izrazu su sadržani harfovi kalkale?", "en": "Which phrase contains the qalqalah letters?", "de": "In welchem Ausdruck sind die Qalqala-Buchstaben enthalten?" },
       "opcije": [
-        { "bs": "بِسْمِ اللّٰهِ", "en": "بِسْمِ اللّٰهِ" },
-        { "bs": "أَلْحَمْدُ لِلّٰهِ", "en": "أَلْحَمْدُ لِلّٰهِ" },
-        { "bs": "قُلْ هُوَ اللّٰهُ", "en": "قُلْ هُوَ اللّٰهُ" },
-        { "bs": "قُطْبُ جَدٍّ (kutbu džeddin)", "en": "قُطْبُ جَدٍّ (qutbu jaddin)" }
+        { "bs": "بِسْمِ اللّٰهِ", "en": "بِسْمِ اللّٰهِ", "de": "بِسْمِ اللّٰهِ" },
+        { "bs": "أَلْحَمْدُ لِلّٰهِ", "en": "أَلْحَمْدُ لِلّٰهِ", "de": "أَلْحَمْدُ لِلّٰهِ" },
+        { "bs": "قُلْ هُوَ اللّٰهُ", "en": "قُلْ هُوَ اللّٰهُ", "de": "قُلْ هُوَ اللّٰهُ" },
+        { "bs": "قُطْبُ جَدٍّ (kutbu džeddin)", "en": "قُطْبُ جَدٍّ (qutbu jaddin)", "de": "قُطْبُ جَدٍّ (qutbu dschaddin)" }
       ],
       "tacno": 3,
-      "objasnjenje": { "bs": "Harfovi kalkale su sadržani u izrazu kutbu džeddin (قُطْبُ جَدٍّ).", "en": "The qalqalah letters are contained in the phrase qutbu jaddin (قُطْبُ جَدٍّ)." }
+      "objasnjenje": { "bs": "Harfovi kalkale su sadržani u izrazu kutbu džeddin (قُطْبُ جَدٍّ).", "en": "The qalqalah letters are contained in the phrase qutbu jaddin (قُطْبُ جَدٍّ).", "de": "Die Qalqala-Buchstaben sind im Ausdruck qutbu dschaddin (قُطْبُ جَدٍّ) enthalten." }
     },
     {
-      "q": { "bs": "Koji znak mora imati harf kalkale da bi odskakao?", "en": "Which sign must a qalqalah letter carry in order to bounce?" },
+      "q": { "bs": "Koji znak mora imati harf kalkale da bi odskakao?", "en": "Which sign must a qalqalah letter carry in order to bounce?", "de": "Welches Zeichen muss ein Qalqala-Buchstabe haben, damit er abprallt?" },
       "opcije": [
-        { "bs": "Vokal E", "en": "The vowel A" },
-        { "bs": "Sukun", "en": "A sukun" },
-        { "bs": "Tenvin", "en": "A tanween" },
-        { "bs": "Tešdid", "en": "A tashdeed" }
+        { "bs": "Vokal E", "en": "The vowel A", "de": "Der Vokal A" },
+        { "bs": "Sukun", "en": "A sukun", "de": "Das Sukun" },
+        { "bs": "Tenvin", "en": "A tanween", "de": "Das Tanwin" },
+        { "bs": "Tešdid", "en": "A tashdeed", "de": "Die Schadda" }
       ],
       "tacno": 1,
-      "objasnjenje": { "bs": "Harfovi kalkale odskaču kada su sa sukunom.", "en": "The qalqalah letters bounce when they carry a sukun." }
+      "objasnjenje": { "bs": "Harfovi kalkale odskaču kada su sa sukunom.", "en": "The qalqalah letters bounce when they carry a sukun.", "de": "Die Qalqala-Buchstaben prallen ab, wenn sie ein Sukun haben." }
     },
     {
-      "q": { "bs": "Koji od ovih harfova je harf kalkale?", "en": "Which of these letters is a qalqalah letter?" },
+      "q": { "bs": "Koji od ovih harfova je harf kalkale?", "en": "Which of these letters is a qalqalah letter?", "de": "Welcher dieser Buchstaben ist ein Qalqala-Buchstabe?" },
       "opcije": [
-        { "bs": "ك", "en": "ك" },
-        { "bs": "ت", "en": "ت" },
-        { "bs": "ط", "en": "ط" },
-        { "bs": "ن", "en": "ن" }
+        { "bs": "ك", "en": "ك", "de": "ك" },
+        { "bs": "ت", "en": "ت", "de": "ت" },
+        { "bs": "ط", "en": "ط", "de": "ط" },
+        { "bs": "ن", "en": "ن", "de": "ن" }
       ],
       "tacno": 2,
-      "objasnjenje": { "bs": "Harf ط je jedan od pet harfova kalkale (د ج ب ط ق).", "en": "The letter ط is one of the five qalqalah letters (د ج ب ط ق)." }
+      "objasnjenje": { "bs": "Harf ط je jedan od pet harfova kalkale (د ج ب ط ق).", "en": "The letter ط is one of the five qalqalah letters (د ج ب ط ق).", "de": "Der Buchstabe ط ist einer der fünf Qalqala-Buchstaben (د ج ب ط ق)." }
     },
     {
-      "q": { "bs": "U kojoj od ovih riječi dolazi do kalkale?", "en": "In which of these words does qalqalah occur?" },
+      "q": { "bs": "U kojoj od ovih riječi dolazi do kalkale?", "en": "In which of these words does qalqalah occur?", "de": "In welchem dieser Wörter kommt Qalqala vor?" },
       "opcije": [
-        { "bs": "قَدْ", "en": "قَدْ" },
-        { "bs": "قُلْ", "en": "قُلْ" },
-        { "bs": "مِنْ", "en": "مِنْ" },
-        { "bs": "هُمْ", "en": "هُمْ" }
+        { "bs": "قَدْ", "en": "قَدْ", "de": "قَدْ" },
+        { "bs": "قُلْ", "en": "قُلْ", "de": "قُلْ" },
+        { "bs": "مِنْ", "en": "مِنْ", "de": "مِنْ" },
+        { "bs": "هُمْ", "en": "هُمْ", "de": "هُمْ" }
       ],
       "tacno": 0,
-      "objasnjenje": { "bs": "U riječi قَدْ harf د je sa sukunom, pa odskače.", "en": "In the word قَدْ the letter د carries a sukun, so it bounces." }
+      "objasnjenje": { "bs": "U riječi قَدْ harf د je sa sukunom, pa odskače.", "en": "In the word قَدْ the letter د carries a sukun, so it bounces.", "de": "Im Wort قَدْ hat der Buchstabe د ein Sukun, also prallt er ab." }
     },
     {
-      "q": { "bs": "Koji harf odskače u riječi أَجْرٌ?", "en": "Which letter bounces in the word أَجْرٌ?" },
+      "q": { "bs": "Koji harf odskače u riječi أَجْرٌ?", "en": "Which letter bounces in the word أَجْرٌ?", "de": "Welcher Buchstabe prallt im Wort أَجْرٌ ab?" },
       "opcije": [
-        { "bs": "أ", "en": "أ" },
-        { "bs": "ر", "en": "ر" },
-        { "bs": "Tenvin", "en": "The tanween" },
-        { "bs": "ج", "en": "ج" }
+        { "bs": "أ", "en": "أ", "de": "أ" },
+        { "bs": "ر", "en": "ر", "de": "ر" },
+        { "bs": "Tenvin", "en": "The tanween", "de": "Das Tanwin" },
+        { "bs": "ج", "en": "ج", "de": "ج" }
       ],
       "tacno": 3,
-      "objasnjenje": { "bs": "Harf ج je harf kalkale i u riječi أَجْرٌ je sa sukunom.", "en": "The letter ج is a qalqalah letter and in the word أَجْرٌ it carries a sukun." }
+      "objasnjenje": { "bs": "Harf ج je harf kalkale i u riječi أَجْرٌ je sa sukunom.", "en": "The letter ج is a qalqalah letter and in the word أَجْرٌ it carries a sukun.", "de": "Der Buchstabe ج ist ein Qalqala-Buchstabe und hat im Wort أَجْرٌ ein Sukun." }
     },
     {
-      "q": { "bs": "Zašto u riječi قِسْطْ dolazi do kalkale?", "en": "Why does qalqalah occur in the word قِسْطْ?" },
+      "q": { "bs": "Zašto u riječi قِسْطْ dolazi do kalkale?", "en": "Why does qalqalah occur in the word قِسْطْ?", "de": "Warum kommt es im Wort قِسْطْ zu Qalqala?" },
       "opcije": [
-        { "bs": "Jer je harf ق na početku riječi", "en": "Because the letter ق is at the beginning of the word" },
-        { "bs": "Jer je harf ط sa sukunom", "en": "Because the letter ط carries a sukun" },
-        { "bs": "Jer je harf س sa sukunom", "en": "Because the letter س carries a sukun" },
-        { "bs": "Jer harf ق ima kesru", "en": "Because the letter ق carries a kasra" }
+        { "bs": "Jer je harf ق na početku riječi", "en": "Because the letter ق is at the beginning of the word", "de": "Weil der Buchstabe ق am Wortanfang steht" },
+        { "bs": "Jer je harf ط sa sukunom", "en": "Because the letter ط carries a sukun", "de": "Weil der Buchstabe ط ein Sukun hat" },
+        { "bs": "Jer je harf س sa sukunom", "en": "Because the letter س carries a sukun", "de": "Weil der Buchstabe س ein Sukun hat" },
+        { "bs": "Jer harf ق ima kesru", "en": "Because the letter ق carries a kasra", "de": "Weil der Buchstabe ق eine Kasra hat" }
       ],
       "tacno": 1,
-      "objasnjenje": { "bs": "Harf ط je harf kalkale i ovdje je sa sukunom, pa odskače.", "en": "The letter ط is a qalqalah letter and here it carries a sukun, so it bounces." }
+      "objasnjenje": { "bs": "Harf ط je harf kalkale i ovdje je sa sukunom, pa odskače.", "en": "The letter ط is a qalqalah letter and here it carries a sukun, so it bounces.", "de": "Der Buchstabe ط ist ein Qalqala-Buchstabe und hat hier ein Sukun, also prallt er ab." }
     },
     {
-      "q": { "bs": "Kada harf kalkale odskače?", "en": "When does a qalqalah letter bounce?" },
+      "q": { "bs": "Kada harf kalkale odskače?", "en": "When does a qalqalah letter bounce?", "de": "Wann prallt ein Qalqala-Buchstabe ab?" },
       "opcije": [
-        { "bs": "Uvijek, bez obzira na znak", "en": "Always, regardless of the sign" },
-        { "bs": "Samo kada je sa vokalom", "en": "Only when it carries a vowel" },
-        { "bs": "Samo kada je sa sukunom", "en": "Only when it carries a sukun" },
-        { "bs": "Samo na početku riječi", "en": "Only at the beginning of a word" }
+        { "bs": "Uvijek, bez obzira na znak", "en": "Always, regardless of the sign", "de": "Immer, egal welches Zeichen er hat" },
+        { "bs": "Samo kada je sa vokalom", "en": "Only when it carries a vowel", "de": "Nur wenn er einen Vokal hat" },
+        { "bs": "Samo kada je sa sukunom", "en": "Only when it carries a sukun", "de": "Nur wenn er ein Sukun hat" },
+        { "bs": "Samo na početku riječi", "en": "Only at the beginning of a word", "de": "Nur am Wortanfang" }
       ],
       "tacno": 2,
-      "objasnjenje": { "bs": "Do odskakanja dolazi samo kada je harf kalkale sa sukunom.", "en": "Bouncing happens only when the qalqalah letter carries a sukun." }
+      "objasnjenje": { "bs": "Do odskakanja dolazi samo kada je harf kalkale sa sukunom.", "en": "Bouncing happens only when the qalqalah letter carries a sukun.", "de": "Das Abprallen geschieht nur, wenn der Qalqala-Buchstabe ein Sukun hat." }
     }
   ]
 }

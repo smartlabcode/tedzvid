@@ -52,6 +52,29 @@
 			"N with a sukun (نْ) before the throat letter 'A (ع): pronounced clearly, without ghunnah (idhhar halqi).",
 			"The prolongation is followed by a hamza in the same word: madd muttasil – 4 or 5 harakas.",
 			"The letter R (ر) is recited heavy because it has a sukun and is preceded by the vowel U."
+		],
+		"de": [
+			"Vor dem Wort Allah (اللّٰه) steht der Vokal A oder U: Das Wort wird dick gesprochen.",
+			"Die Dehnung steht am Wortende und das nächste Wort beginnt mit einer Hamza: Madd Munfasil – wird 2, 4 oder 5 Harakat lang gesprochen.",
+			"Natürliche Dehnung auf dem Buchstaben A (ا): wird 2 Harakat lang gesprochen (Madd Tabi’i).",
+			"Beim Anhalten bekommt der letzte Buchstabe M (م) nach der Dehnung ein Sukun: Madd Arid – wird 2, 4 oder 6 Harakat lang gesprochen.",
+			"Pausenzeichen ۚ (osmanisch ج): Hier besser anhalten.",
+			"Das Pronomen HU (هُ): Davor steht ein kurzer Vokal, deshalb wird es lang gesprochen (2 Harakat).",
+			"Tanwin UN (ـٌ) vor dem Buchstaben W (و): verschmilzt in ihn, mit Ghunna 2 Harakat (Idgham ma’al-Ghunna).",
+			"Vor dem W (و) mit Sukun steht der kurze Vokal A, danach folgt ein Buchstabe mit Sukun: Madd Lin – wird 2, 4 oder 6 Harakat lang gesprochen.",
+			"Tanwin UN (ـٌ) vor dem Buchstaben L (ل): verschmilzt in ihn, ohne Ghunna (Idgham bila Ghunna).",
+			"Der Buchstabe R (ر) wird dick gesprochen, weil er ein Sukun hat und danach der dicke Buchstabe D (ض) kommt.",
+			"Pausenzeichen ۗ (osmanisch قلي): Hier besser anhalten.",
+			"N (ن) mit Sukun vor dem Buchstaben DH (ذ): wird mit Ghunna 2 Harakat lang versteckt (Ichfa).",
+			"N (ن) mit Sukun vor dem Buchstaben D (د): wird mit Ghunna 2 Harakat lang versteckt (Ichfa).",
+			"Natürliche Dehnung auf dem Buchstaben Y (ي): wird 2 Harakat lang gesprochen (Madd Tabi’i).",
+			"M mit Sukun (مْ) vor dem Buchstaben W (و): wird deutlich ausgesprochen, ohne Ghunna (Idh-har Schafawi).",
+			"Pausenzeichen ۖ (osmanisch صلي): Hier besser weiterlesen.",
+			"Natürliche Dehnung auf dem Buchstaben W (و): wird 2 Harakat lang gesprochen (Madd Tabi’i).",
+			"Tanwin IN (ـٍ) vor dem Buchstaben M (م): verschmilzt in ihn, mit Ghunna 2 Harakat (Idgham ma’al-Ghunna).",
+			"N mit Sukun (نْ) vor dem Kehlbuchstaben A (ع): wird deutlich ausgesprochen, ohne Ghunna (Idh-har Halqi).",
+			"Nach der Dehnung kommt im selben Wort eine Hamza: Madd Muttasil – wird 4 oder 5 Harakat lang gesprochen.",
+			"Der Buchstabe R (ر) wird dick gesprochen, weil er ein Sukun hat und davor der Vokal U steht."
 		]
 	},
 	"odjeljci": [
@@ -65,11 +88,13 @@
 			"naziv": {
 				"bs": "Ajetul-kursij",
 				"en": "Ayat al-Kursi",
+				"de": "Ayat al-Kursi",
 				"ar": "آيَةُ الْكُرْسِيِّ"
 			},
 			"znacenje": {
 				"bs": "Ajet o Prijestolju",
-				"en": "The Verse of the Throne"
+				"en": "The Verse of the Throne",
+				"de": "Der Thronvers"
 			},
 			"ajeti": [
 				{

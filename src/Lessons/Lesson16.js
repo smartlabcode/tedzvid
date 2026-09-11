@@ -229,6 +229,110 @@ const TXT = {
 				</Row>
 			</React.Fragment>
 		)
+	},
+
+	de: {
+		naziv: 'IDGHAM MUTAQARIBAIN',
+		naslov: '16 IDGHAM MUTAQARIBAIN',
+		podnaslov: (
+			<React.Fragment>
+				<strong>Benachbarte Buchstaben verschmelzen</strong>
+			</React.Fragment>
+		),
+		lekcija: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Wenn zwei <u>benachbarte</u> Buchstaben nebeneinander stehen, der erste mit{' '}
+						<strong>Sukun</strong> und der zweite mit <strong>Vokalzeichen</strong>, dann verschmilzt
+						der erste in den zweiten aus <u>derselben Gruppe</u>:
+					</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije ">
+						1. Wenn nach dem Buchstaben <strong>Q</strong> mit <strong>Sukun</strong>{' '}
+						<span className="arapski">(قْ)</span> der Buchstabe <strong>K</strong>{' '}
+						<span className="arapski">(ك)</span> mit <strong>Vokalzeichen</strong> kommt:
+					</Col>
+				</Row>
+
+				<Row className="text-center">
+					<Col>{P('row1')}</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije ">
+						2. Wenn nach dem Buchstaben <strong>L</strong> mit <strong>Sukun</strong>{' '}
+						<span className="arapski">(لْ)</span> der Buchstabe <strong>R</strong>{' '}
+						<span className="arapski">(ر)</span> mit <strong>Vokalzeichen</strong> kommt:
+					</Col>
+				</Row>
+
+				<Row className="text-center">
+					<Col>{P('row2')}</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		),
+		lekcijaModal: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Wenn zwei <u>benachbarte</u> Buchstaben nebeneinander stehen, der erste mit{' '}
+						<strong>Sukun</strong> und der zweite mit <strong>Vokalzeichen</strong>, dann
+						verschmilzt der erste in den zweiten aus <u>derselben Gruppe</u>:
+					</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije my-3">
+						1. Wenn nach dem Buchstaben <strong>Q</strong> mit <strong>Sukun</strong>{' '}
+						<span className="arapski">(قْ)</span> der Buchstabe <strong>K</strong>{' '}
+						<span className="arapski">(ك)</span> mit <strong>Vokalzeichen</strong> kommt:
+					</Col>
+				</Row>
+
+				<Row className="text-center">
+					<Col>{P('row1')}</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije my-3">
+						2. Wenn nach dem Buchstaben <strong>L</strong> mit <strong>Sukun</strong>{' '}
+						<span className="arapski">(لْ)</span> der Buchstabe <strong>R</strong>{' '}
+						<span className="arapski">(ر)</span> mit <strong>Vokalzeichen</strong> kommt:
+					</Col>
+				</Row>
+
+				<Row className="text-center">
+					<Col>{P('row2')}</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		)
 	}
 };
 

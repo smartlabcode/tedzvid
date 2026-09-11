@@ -163,6 +163,76 @@ const TXT = {
 				</Row>
 			</React.Fragment>
 		)
+	},
+
+	de: {
+		naziv: 'ICHFA SCHAFAWI',
+		naslov: '12 ICHFA SCHAFAWI',
+		podnaslov: (
+			<React.Fragment>
+				<strong>Den Buchstaben M (م) verstecken</strong>
+			</React.Fragment>
+		),
+		lekcija: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Wenn nach dem Buchstaben <strong>M</strong> mit <strong>Sukun</strong> (
+						<span className="arapski-lekcija">مْ</span>) der Buchstabe <strong>B</strong> (<span className="arapski-lekcija">ب</span>) kommt,
+						wird der Buchstabe <strong>M</strong> (
+						<span className="arapski-lekcija">م</span>) 2 Harakat lang gesprochen, z. B.:
+					</Col>
+				</Row>
+
+				<Row className="text-center  rtl">
+					<Col>{P('row1')}</Col>
+				</Row>
+
+				<Row className="text-center reorder-basic  rtl">
+					<Col>{P('row2')}</Col>
+				</Row>
+
+				<Row className="text-center  rtl">
+					<Col>{P('row3')}</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		),
+		lekcijaModal: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Wenn nach dem Buchstaben <strong>M</strong> mit <strong>Sukun</strong> (
+						<span className="arapski-lekcija">مْ</span>) der Buchstabe <strong>B</strong> (<span className="arapski-lekcija">ب</span>) kommt,
+						wird der Buchstabe <strong>M</strong> (
+						<span className="arapski-lekcija">م</span>) 2 Harakat lang gesprochen, z. B.:
+					</Col>
+				</Row>
+
+				<Row className="text-center  rtl">
+					<Col>{P('row1')}</Col>
+				</Row>
+
+				<Row className="text-center  rtl">
+					<Col>{P('row2')}</Col>
+				</Row>
+
+				<Row className="text-center  rtl">
+					<Col>{P('row3')}</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		)
 	}
 };
 

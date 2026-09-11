@@ -2,48 +2,48 @@
   "lekcija": 17,
   "pitanja": [
     {
-      "q": { "bs": "Gdje je medd tabijj u riječi رَبِّي?", "en": "Where is the madd tabi'i in the word رَبِّي?" },
+      "q": { "bs": "Gdje je medd tabijj u riječi رَبِّي?", "en": "Where is the madd tabi'i in the word رَبِّي?", "de": "Wo ist das Madd Tabi’i im Wort رَبِّي?" },
       "opcije": [
-        { "bs": "Na harfu R sa kratkim vokalom E (رَ)", "en": "On the letter R with the short vowel A (رَ)" },
-        { "bs": "Na harfu B sa tešdidom (بِّ)", "en": "On the letter B with the tashdeed (بِّ)" },
-        { "bs": "Na dugom vokalu I (بِّي)", "en": "On the long vowel I (بِّي)" },
-        { "bs": "U riječi رَبِّي nema medd tabijja, jer ima tešdid", "en": "There is no madd tabi'i in رَبِّي, because it has a tashdeed" }
+        { "bs": "Na harfu R sa kratkim vokalom E (رَ)", "en": "On the letter R with the short vowel A (رَ)", "de": "Auf dem Buchstaben R mit dem kurzen Vokal A (رَ)" },
+        { "bs": "Na harfu B sa tešdidom (بِّ)", "en": "On the letter B with the tashdeed (بِّ)", "de": "Auf dem Buchstaben B mit der Schadda (بِّ)" },
+        { "bs": "Na dugom vokalu I (بِّي)", "en": "On the long vowel I (بِّي)", "de": "Auf dem langen Vokal I (بِّي)" },
+        { "bs": "U riječi رَبِّي nema medd tabijja, jer ima tešdid", "en": "There is no madd tabi'i in رَبِّي, because it has a tashdeed", "de": "Im Wort رَبِّي gibt es kein Madd Tabi’i, weil es eine Schadda hat" }
       ],
       "tacno": 2,
-      "objasnjenje": { "bs": "Tešdid je prije dugog vokala I, a poslije njega nema ni hemzeta ni sukuna, pa je بِّي medd tabijj od 2 hareketa.", "en": "The tashdeed comes before the long vowel I, and after it there is neither a hamza nor a sukun, so بِّي is madd tabi'i of 2 harakas." }
+      "objasnjenje": { "bs": "Tešdid je prije dugog vokala I, a poslije njega nema ni hemzeta ni sukuna, pa je بِّي medd tabijj od 2 hareketa.", "en": "The tashdeed comes before the long vowel I, and after it there is neither a hamza nor a sukun, so بِّي is madd tabi'i of 2 harakas.", "de": "Die Schadda steht vor dem langen Vokal I, und nach diesem Vokal kommt weder eine Hamza noch ein Sukun, deshalb ist بِّي ein Madd Tabi’i von 2 Harakat." }
     },
     {
-      "q": { "bs": "Koja riječ nema medd tabijj?", "en": "Which word has no madd tabi'i?" },
+      "q": { "bs": "Koja riječ nema medd tabijj?", "en": "Which word has no madd tabi'i?", "de": "Welches Wort hat kein Madd Tabi’i?" },
       "opcije": [
-        { "bs": "هُنَا", "en": "هُنَا" },
-        { "bs": "ظَلَمْتُمْ", "en": "ظَلَمْتُمْ" },
-        { "bs": "كَانَ", "en": "كَانَ" },
-        { "bs": "لَنَا", "en": "لَنَا" }
+        { "bs": "هُنَا", "en": "هُنَا", "de": "هُنَا" },
+        { "bs": "ظَلَمْتُمْ", "en": "ظَلَمْتُمْ", "de": "ظَلَمْتُمْ" },
+        { "bs": "كَانَ", "en": "كَانَ", "de": "كَانَ" },
+        { "bs": "لَنَا", "en": "لَنَا", "de": "لَنَا" }
       ],
       "tacno": 1,
-      "objasnjenje": { "bs": "U riječi ظَلَمْتُمْ nema dugog vokala, a u ostalim riječima je dugi vokal A poslije kojeg nema ni hemzeta ni sukuna.", "en": "The word ظَلَمْتُمْ has no long vowel, while the other words have a long vowel A followed by neither a hamza nor a sukun." }
+      "objasnjenje": { "bs": "U riječi ظَلَمْتُمْ nema dugog vokala, a u ostalim riječima je dugi vokal A poslije kojeg nema ni hemzeta ni sukuna.", "en": "The word ظَلَمْتُمْ has no long vowel, while the other words have a long vowel A followed by neither a hamza nor a sukun.", "de": "Im Wort ظَلَمْتُمْ steht kein langer Vokal, in den anderen Wörtern steht der lange Vokal A, nach dem weder eine Hamza noch ein Sukun kommt." }
     },
     {
-      "q": { "bs": "Učenik je dugi vokal U (دُو) u riječi يُبْدُونَ učio 6 hareketa. Je li to ispravno?", "en": "A student read the long vowel U (دُو) in the word يُبْدُونَ for 6 harakas. Is that correct?" },
+      "q": { "bs": "Učenik je dugi vokal U (دُو) u riječi يُبْدُونَ učio 6 hareketa. Je li to ispravno?", "en": "A student read the long vowel U (دُو) in the word يُبْدُونَ for 6 harakas. Is that correct?", "de": "Ein Schüler hat den langen Vokal U (دُو) im Wort يُبْدُونَ 6 Harakat lang gesprochen. Ist das richtig?" },
       "opcije": [
-        { "bs": "Da, svaka dužina traje 6 hareketa", "en": "Yes, every prolongation lasts 6 harakas" },
-        { "bs": "Da, ali samo kada je dugi vokal U", "en": "Yes, but only when it is the long vowel U" },
-        { "bs": "Ne, treba ga učiti 4-5 hareketa", "en": "No, it should be read for 4–5 harakas" },
-        { "bs": "Ne, to je medd tabijj i traje 2 hareketa", "en": "No, it is madd tabi'i and lasts 2 harakas" }
+        { "bs": "Da, svaka dužina traje 6 hareketa", "en": "Yes, every prolongation lasts 6 harakas", "de": "Ja, jede Dehnung dauert 6 Harakat" },
+        { "bs": "Da, ali samo kada je dugi vokal U", "en": "Yes, but only when it is the long vowel U", "de": "Ja, aber nur beim langen Vokal U" },
+        { "bs": "Ne, treba ga učiti 4-5 hareketa", "en": "No, it should be read for 4–5 harakas", "de": "Nein, er muss 4–5 Harakat lang gesprochen werden" },
+        { "bs": "Ne, to je medd tabijj i traje 2 hareketa", "en": "No, it is madd tabi'i and lasts 2 harakas", "de": "Nein, das ist Madd Tabi’i und dauert 2 Harakat" }
       ],
       "tacno": 3,
-      "objasnjenje": { "bs": "Poslije dugog vokala U u riječi يُبْدُونَ dolazi harf N sa hareketom, pa je to medd tabijj i traje samo 2 hareketa.", "en": "In يُبْدُونَ the long vowel U is followed by the letter N with a haraka, so it is madd tabi'i and lasts only 2 harakas." }
+      "objasnjenje": { "bs": "Poslije dugog vokala U u riječi يُبْدُونَ dolazi harf N sa hareketom, pa je to medd tabijj i traje samo 2 hareketa.", "en": "In يُبْدُونَ the long vowel U is followed by the letter N with a haraka, so it is madd tabi'i and lasts only 2 harakas.", "de": "Nach dem langen Vokal U im Wort يُبْدُونَ kommt der Buchstabe N mit Vokalzeichen, deshalb ist das Madd Tabi’i und dauert nur 2 Harakat." }
     },
     {
-      "q": { "bs": "Koliko traju dugi vokal A u riječi كَانَ i dugi vokal I u riječi الَّذِينَ?", "en": "How long do the long vowel A in كَانَ and the long vowel I in الَّذِينَ last?" },
+      "q": { "bs": "Koliko traju dugi vokal A u riječi كَانَ i dugi vokal I u riječi الَّذِينَ?", "en": "How long do the long vowel A in كَانَ and the long vowel I in الَّذِينَ last?", "de": "Wie lange dauern der lange Vokal A im Wort كَانَ und der lange Vokal I im Wort الَّذِينَ?" },
       "opcije": [
-        { "bs": "Oba jednako, po 2 hareketa", "en": "Both the same, 2 harakas each" },
-        { "bs": "Dugi vokal A 2 hareketa, a dugi vokal I 4 hareketa", "en": "The long vowel A 2 harakas and the long vowel I 4 harakas" },
-        { "bs": "Dugi vokal A 6 hareketa, a dugi vokal I 2 hareketa", "en": "The long vowel A 6 harakas and the long vowel I 2 harakas" },
-        { "bs": "Oba jednako, po 4-5 hareketa", "en": "Both the same, 4–5 harakas each" }
+        { "bs": "Oba jednako, po 2 hareketa", "en": "Both the same, 2 harakas each", "de": "Beide gleich, je 2 Harakat" },
+        { "bs": "Dugi vokal A 2 hareketa, a dugi vokal I 4 hareketa", "en": "The long vowel A 2 harakas and the long vowel I 4 harakas", "de": "Der lange Vokal A 2 Harakat und der lange Vokal I 4 Harakat" },
+        { "bs": "Dugi vokal A 6 hareketa, a dugi vokal I 2 hareketa", "en": "The long vowel A 6 harakas and the long vowel I 2 harakas", "de": "Der lange Vokal A 6 Harakat und der lange Vokal I 2 Harakat" },
+        { "bs": "Oba jednako, po 4-5 hareketa", "en": "Both the same, 4–5 harakas each", "de": "Beide gleich, je 4–5 Harakat" }
       ],
       "tacno": 0,
-      "objasnjenje": { "bs": "U obje riječi poslije dugog vokala nema ni hemzeta ni sukuna, pa su oba medd tabijj i traju po 2 hareketa.", "en": "In both words the long vowel is followed by neither a hamza nor a sukun, so both are madd tabi'i and last 2 harakas each." }
+      "objasnjenje": { "bs": "U obje riječi poslije dugog vokala nema ni hemzeta ni sukuna, pa su oba medd tabijj i traju po 2 hareketa.", "en": "In both words the long vowel is followed by neither a hamza nor a sukun, so both are madd tabi'i and last 2 harakas each.", "de": "In beiden Wörtern kommt nach dem langen Vokal weder eine Hamza noch ein Sukun, deshalb sind beide Madd Tabi’i und dauern je 2 Harakat." }
     }
   ]
 }

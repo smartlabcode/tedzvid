@@ -200,6 +200,95 @@ const TXT = {
 				</Row>
 			</React.Fragment>
 		)
+	},
+
+	de: {
+		naziv: 'MADD ARID',
+		naslov: '21 MADD ARID',
+		podnaslov: 'Vorübergehende Dehnung',
+		lekcija: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Wenn nach dem <strong>langen Vokal</strong> A <span className="arapski-lekcija">ـــَــ ا</span> ,
+						I <span className="arapski-lekcija"> ـــِـ ى </span>, U{' '}
+						<span className="arapski-lekcija">ـــُــ و</span> ein <strong>vorübergehendes Sukun</strong> kommt,
+						ist es Madd Arid. Es dauert 2, 4 oder 6 Harakat.
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row className="text-center  rtl">
+					<Col className="text-center">{P('row1')}</Col>
+				</Row>
+				<Row className="text-center  rtl">
+					<Col className="text-center">{P('row2')}</Col>
+				</Row>
+
+				<Row className="text-center ">
+					<Col className="text-center">{P('row3')}</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		),
+		lekcijaModal: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Wenn nach dem <strong>langen Vokal</strong> A{' '}
+						<span className="arapski-lekcija">ـــَــ ا</span> , I{' '}
+						<span className="arapski-lekcija"> ـــِـ ى </span>, U{' '}
+						<span className="arapski-lekcija">ـــُــ و</span> ein <strong>vorübergehendes Sukun</strong> kommt,
+						ist es Madd Arid. Es dauert 2, 4 oder 6 Harakat.
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row className="text-center  rtl">
+					<Col className="text-center">{P('row1')}</Col>
+				</Row>
+				<Row className="text-center  rtl">
+					<Col className="text-center">{P('row2')}</Col>
+				</Row>
+
+				<Row className="text-center ">
+					<Col className="text-center">{P('row3')}</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		)
 	}
 };
 

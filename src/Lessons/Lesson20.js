@@ -214,6 +214,102 @@ const TXT = {
 				</Row>
 			</React.Fragment>
 		)
+	},
+
+	de: {
+		naziv: 'MADD LAZIM',
+		naslov: '20 MADD LAZIM',
+		podnaslov: (
+			<React.Fragment>
+				<strong>Feste Dehnung</strong>
+			</React.Fragment>
+		),
+		lekcija: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Wenn nach dem <strong>langen Vokal</strong> A <span className="arapski-lekcija">ـــَــ ا</span> ,
+						I
+						<span className="arapski-lekcija"> ـــِـ ى </span>, U{' '}
+						<span className="arapski-lekcija">ـــُــ و</span> ein Buchstabe mit{' '}
+						<strong>
+							festem Sukun <span className="arapski-lekcija"> ـــْــ </span>
+						</strong>{' '}
+						<strong>
+							oder einer Schadda (Verdopplungszeichen) <span className="arapski-lekcija"> ـــّــ </span>
+						</strong>
+						kommt, ist es Madd Lazim. Es muss 6 Harakat dauern, z. B.:
+						{P('row1')}
+					</Col>
+				</Row>
+
+				<Row className="text-center  reorder">
+					<Col style={{ flexWrap: 'wrap-reverse' }}>{P('row2')}</Col>
+				</Row>
+				<Row className="text-center  reorder-basic-display-after rtl">
+					<Col>{P('row3')}</Col>
+				</Row>
+
+				<Row className="text-center  ">
+					<Col>{P('row4')}</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		),
+		lekcijaModal: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Wenn nach dem <strong>langen Vokal</strong> A{' '}
+						<span className="arapski-lekcija">ـــَــ ا</span> , I
+						<span className="arapski-lekcija"> ـــِـ ى </span>, U{' '}
+						<span className="arapski-lekcija">ـــُــ و</span> ein Buchstabe mit{' '}
+						<strong>
+							festem Sukun <span className="arapski-lekcija"> ـــْــ </span>
+						</strong>{' '}
+						<strong>
+							oder einer Schadda (Verdopplungszeichen) <span className="arapski-lekcija"> ـــّــ </span>
+						</strong>
+						kommt, ist es Madd Lazim. Es muss 6 Harakat dauern, z. B.:
+						{P('row1')}
+					</Col>
+				</Row>
+
+				<Row className="text-center  reorder">
+					<Col style={{ flexWrap: 'wrap-reverse' }}>{P('row2')}</Col>
+				</Row>
+				<Row className="text-center  reorder-basic-display-after rtl">
+					<Col>{P('row3')}</Col>
+				</Row>
+
+				<Row className="text-center  ">
+					<Col>{P('row4')}</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		)
 	}
 };
 

@@ -328,6 +328,157 @@ const TXT = {
 				</Row>
 			</React.Fragment>
 		)
+	},
+
+	de: {
+		naziv: 'MADD LIN',
+		naslov: '22 MADD LIN',
+		podnaslov: (
+			<React.Fragment>
+				<strong>Dehnung des weichen Buchstabens</strong>
+			</React.Fragment>
+		),
+		lekcija: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Wenn die Buchstaben <strong>W</strong> oder <strong>Y</strong> ein{' '}
+						<strong>
+							Sukun <span className="arapski-lekcija">(يْ / وْ)</span>
+						</strong>
+						, davor einen <strong>kurzen Vokal</strong> A <span className="arapski-lekcija">ـــَـــ </span> und
+						danach einen Buchstaben mit <strong>Sukun</strong> haben, ist es Madd Lin, z. B.:
+					</Col>
+				</Row>
+
+				<Row className="text-center reorder-basic-display-after rtl">
+					<Col>
+						<span>
+							{P('row1desni')}
+							<span className="arapski">( ـــَــ يْ ـــْــ ) </span>
+						</span>
+						<span className="after">;</span>
+						<span>
+							{P('row1lijevi')}
+							<span className="arapski">( ـــَــ وْ ـــْــ )</span>
+						</span>
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije">
+						Diese Dehnung auf dem Buchstaben <strong>W</strong> <span className="arapski-lekcija"> (و)</span> oder{' '}
+						<strong>Y</strong> <span className="arapski-lekcija"> (ى)</span> dauert 2, 4 oder 6 Harakat.
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row className="text-center reorder-basic rtl ">
+					<Col>{P('row2')}</Col>
+				</Row>
+
+				<Row className="text-center reorder-basic rtl ">
+					<Col>{P('row3')}</Col>
+				</Row>
+
+				<Row className="text-center ">
+					<Col>{P('row4')}</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		),
+		lekcijaModal: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Wenn die Buchstaben <strong>W</strong> oder <strong>Y</strong> ein{' '}
+						<strong>
+							Sukun <span className="arapski-lekcija">(يْ / وْ)</span>
+						</strong>
+						, davor einen <strong>kurzen Vokal</strong> A{' '}
+						<span className="arapski-lekcija">ـــَـــ </span> und danach einen Buchstaben mit{' '}
+						<strong>Sukun</strong> haben, ist es Madd Lin, z. B.:
+					</Col>
+				</Row>
+
+				<Row className="text-center ">
+					<Col>
+						<span>
+							<span className="arapski">( ـــَــ يْ ـــْــ ) </span>{' '}
+							{P('row1desni')}
+						</span>
+						<span>
+							<span className="arapski">( ـــَــ وْ ـــْــ )</span>{' '}
+							{P('row1lijevi')}
+						</span>
+					</Col>
+				</Row>
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col className="opisLekcije">
+						Diese Dehnung auf dem Buchstaben <strong>W</strong> <span className="arapski-lekcija"> (و)</span> oder{' '}
+						<strong>Y</strong> <span className="arapski-lekcija"> (ى)</span> dauert 2, 4 oder 6 Harakat.
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row className="text-center rtl">
+					<Col>{P('row2')}</Col>
+				</Row>
+
+				<Row className="text-center rtl">
+					<Col>{P('row3')}</Col>
+				</Row>
+
+				<Row className="text-center">
+					<Col>{P('row4')}</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		)
 	}
 };
 

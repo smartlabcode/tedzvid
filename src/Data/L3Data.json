@@ -3,7 +3,7 @@
         "id": 1,
         "url": "./assets/audio/l3/2.mp3",
         "napomena": [
-            {"tip": "krupno", "bs": "U وَاللّٰهِ prije riječi Allah stoji harf و s vokalom E (وَ), zato se riječ Allah uči krupno.", "en": "In وَاللّٰهِ the word Allah is preceded by the letter و with the vowel A (وَ), so it is recited heavy."}
+            {"tip": "krupno", "bs": "U وَاللّٰهِ prije riječi Allah stoji harf و s vokalom E (وَ), zato se riječ Allah uči krupno.", "en": "In وَاللّٰهِ the word Allah is preceded by the letter و with the vowel A (وَ), so it is recited heavy.", "de": "In وَاللّٰهِ steht vor dem Wort Allah der Buchstabe و mit dem Vokal A (وَ), deshalb wird es dick gesprochen."}
         ],
         "highlight": "وَاللّٰهِ",
         "word": "وَاللّٰهِ",
@@ -12,7 +12,7 @@
         "id": 2,
         "url": "./assets/audio/l3/1.mp3",
         "napomena": [
-            {"tip": "krupno", "bs": "U riječi رَسُولُ prije riječi Allah stoji harf ل s vokalom U (لُ), zato se riječ Allah uči krupno.", "en": "In رَسُولُ the word Allah is preceded by the letter ل with the vowel U (لُ), so it is recited heavy."}
+            {"tip": "krupno", "bs": "U riječi رَسُولُ prije riječi Allah stoji harf ل s vokalom U (لُ), zato se riječ Allah uči krupno.", "en": "In رَسُولُ the word Allah is preceded by the letter ل with the vowel U (لُ), so it is recited heavy.", "de": "Im Wort رَسُولُ steht vor dem Wort Allah der Buchstabe ل mit dem Vokal U (لُ), deshalb wird es dick gesprochen."}
         ],
         "highlight": "لُ اللّٰهِ",
         "word": "رَسُولُ اللّٰهِ",
@@ -22,7 +22,7 @@
             "id": 5,
             "url": "./assets/audio/l3/5.mp3",
             "napomena": [
-                {"tip": "tanko", "bs": "U riječi بِسْمِ prije riječi Allah stoji harf م s vokalom I (مِ), zato se riječ Allah uči tanko.", "en": "In بِسْمِ the word Allah is preceded by the letter م with the vowel I (مِ), so it is recited light."}
+                {"tip": "tanko", "bs": "U riječi بِسْمِ prije riječi Allah stoji harf م s vokalom I (مِ), zato se riječ Allah uči tanko.", "en": "In بِسْمِ the word Allah is preceded by the letter م with the vowel I (مِ), so it is recited light.", "de": "Im Wort بِسْمِ steht vor dem Wort Allah der Buchstabe م mit dem Vokal I (مِ), deshalb wird es dünn gesprochen."}
             ],
             "highlight": "مِ اللّٰهِ",
             "word": "بِسْمِ اللّٰهِ",
@@ -32,7 +32,7 @@
             "id": 4,
             "url": "./assets/audio/l3/4.mp3",
             "napomena": [
-                {"tip": "tanko", "bs": "U بِا اللّٰهِ prije riječi Allah stoji harf ب s vokalom I (بِ), zato se riječ Allah uči tanko.", "en": "In بِا اللّٰهِ the word Allah is preceded by the letter ب with the vowel I (بِ), so it is recited light."}
+                {"tip": "tanko", "bs": "U بِا اللّٰهِ prije riječi Allah stoji harf ب s vokalom I (بِ), zato se riječ Allah uči tanko.", "en": "In بِا اللّٰهِ the word Allah is preceded by the letter ب with the vowel I (بِ), so it is recited light.", "de": "In بِا اللّٰهِ steht vor dem Wort Allah der Buchstabe ب mit dem Vokal I (بِ), deshalb wird es dünn gesprochen."}
             ],
             "highlight": "بِا اللّٰهِ",
             "word": "بِا اللّٰهِ",
@@ -44,7 +44,7 @@
         "id": 6,
         "url": "./assets/audio/l3/6.mp3",
         "napomena": [
-            {"tip": "tanko", "bs": "U riječi بِسْمِ prije riječi Allah stoji harf م s vokalom I (مِ), zato se riječ Allah uči tanko.", "en": "In بِسْمِ the word Allah is preceded by the letter م with the vowel I (مِ), so it is recited light."}
+            {"tip": "tanko", "bs": "U riječi بِسْمِ prije riječi Allah stoji harf م s vokalom I (مِ), zato se riječ Allah uči tanko.", "en": "In بِسْمِ the word Allah is preceded by the letter م with the vowel I (مِ), so it is recited light.", "de": "Im Wort بِسْمِ steht vor dem Wort Allah der Buchstabe م mit dem Vokal I (مِ), deshalb wird es dünn gesprochen."}
         ],
         "highlight": "مِ اللّٰهِ",
         "word": "بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيمِ",
@@ -53,7 +53,7 @@
         "id": 7,
         "url": "./assets/audio/l3/7.mp3",
         "napomena": [
-            {"tip": "tanko", "bs": "U بِاللّٰهِ prije riječi Allah stoji harf ب s vokalom I (بِ), zato se riječ Allah uči tanko.", "en": "In بِاللّٰهِ the word Allah is preceded by the letter ب with the vowel I (بِ), so it is recited light."}
+            {"tip": "tanko", "bs": "U بِاللّٰهِ prije riječi Allah stoji harf ب s vokalom I (بِ), zato se riječ Allah uči tanko.", "en": "In بِاللّٰهِ the word Allah is preceded by the letter ب with the vowel I (بِ), so it is recited light.", "de": "In بِاللّٰهِ steht vor dem Wort Allah der Buchstabe ب mit dem Vokal I (بِ), deshalb wird es dünn gesprochen."}
         ],
         "highlight": "بِاللّٰهِ",
         "word": "وَكَفٰى بِاللّٰهِ نَصِيرًا",
@@ -65,8 +65,8 @@
                 "id": 18,
                 "url": "./assets/audio/l3/3.mp3",
                 "napomena": [
-                    {"tip": "krupno", "bs": "U riječi أَطِيعُوا prije riječi Allah stoji harf ع s dugim vokalom U (عُوا), zato se riječ Allah uči krupno.", "en": "In أَطِيعُوا the word Allah is preceded by the letter ع with the long vowel U (عُوا), so it is recited heavy."},
-                    {"tip": "krupno", "bs": "U riječi فَإِنَّ prije riječi Allah stoji harf ن s tešdidom i vokalom E (نْ), zato se riječ Allah uči krupno.", "en": "In فَإِنَّ the word Allah is preceded by the letter ن with a tashdeed and the vowel A (نْ), so it is recited heavy."}
+                    {"tip": "krupno", "bs": "U riječi أَطِيعُوا prije riječi Allah stoji harf ع s dugim vokalom U (عُوا), zato se riječ Allah uči krupno.", "en": "In أَطِيعُوا the word Allah is preceded by the letter ع with the long vowel U (عُوا), so it is recited heavy.", "de": "Im Wort أَطِيعُوا steht vor dem Wort Allah der Buchstabe ع mit dem langen Vokal U (عُوا), deshalb wird es dick gesprochen."},
+                    {"tip": "krupno", "bs": "U riječi فَإِنَّ prije riječi Allah stoji harf ن s tešdidom i vokalom E (نْ), zato se riječ Allah uči krupno.", "en": "In فَإِنَّ the word Allah is preceded by the letter ن with a tashdeed and the vowel A (نْ), so it is recited heavy.", "de": "Im Wort فَإِنَّ steht vor dem Wort Allah der Buchstabe ن mit Schadda (Verdopplungszeichen) und dem Vokal A (نْ), deshalb wird es dick gesprochen."}
                 ],
                 "highlight": "نَّ اللّٰهَ",
                 "word": "تَوَلَّوْا فَإِنَّ اللّٰهَ لَا يُحِبُّ الْكَافِرِينَ",
@@ -94,8 +94,8 @@
                 "id": 8,
                 "url": "./assets/audio/l3/8.mp3",
                 "napomena": [
-                    {"tip": "krupno", "bs": "U riječi وَاتَّقُوا prije riječi Allah stoji harf ق s dugim vokalom U (قُوا), zato se riječ Allah uči krupno.", "en": "In وَاتَّقُوا the word Allah is preceded by the letter ق with the long vowel U (قُوا), so it is recited heavy."},
-                    {"tip": "krupno", "bs": "U riječi إِنَّ prije riječi Allah stoji harf ن s tešdidom i vokalom E (نَّ), zato se riječ Allah uči krupno.", "en": "In إِنَّ the word Allah is preceded by the letter ن with a tashdeed and the vowel A (نَّ), so it is recited heavy."}
+                    {"tip": "krupno", "bs": "U riječi وَاتَّقُوا prije riječi Allah stoji harf ق s dugim vokalom U (قُوا), zato se riječ Allah uči krupno.", "en": "In وَاتَّقُوا the word Allah is preceded by the letter ق with the long vowel U (قُوا), so it is recited heavy.", "de": "Im Wort وَاتَّقُوا steht vor dem Wort Allah der Buchstabe ق mit dem langen Vokal U (قُوا), deshalb wird es dick gesprochen."},
+                    {"tip": "krupno", "bs": "U riječi إِنَّ prije riječi Allah stoji harf ن s tešdidom i vokalom E (نَّ), zato se riječ Allah uči krupno.", "en": "In إِنَّ the word Allah is preceded by the letter ن with a tashdeed and the vowel A (نَّ), so it is recited heavy.", "de": "Im Wort إِنَّ steht vor dem Wort Allah der Buchstabe ن mit Schadda und dem Vokal A (نَّ), deshalb wird es dick gesprochen."}
                 ],
                 "highlight": "اللّٰه",
                 "word": "اللّٰهَ شَدِيدُ الْعِقَابِ",
@@ -112,7 +112,7 @@
             "id": 9,
             "url": "./assets/audio/l3/9.mp3",
             "napomena": [
-                {"tip": "krupno", "bs": "U riječi أَنَّ prije riječi Allah stoji harf ن s tešdidom i vokalom E (نَّ), zato se riječ Allah uči krupno.", "en": "In أَنَّ the word Allah is preceded by the letter ن with a tashdeed and the vowel A (نَّ), so it is recited heavy."}
+                {"tip": "krupno", "bs": "U riječi أَنَّ prije riječi Allah stoji harf ن s tešdidom i vokalom E (نَّ), zato se riječ Allah uči krupno.", "en": "In أَنَّ the word Allah is preceded by the letter ن with a tashdeed and the vowel A (نَّ), so it is recited heavy.", "de": "Im Wort أَنَّ steht vor dem Wort Allah der Buchstabe ن mit Schadda und dem Vokal A (نَّ), deshalb wird es dick gesprochen."}
             ],
             "highlight": "اللّٰهَ",
             "word": "إِعْلَمُٓوا أَنَّ اللّٰهَ شَدِيدُ الْعِقَابِ ",
@@ -122,7 +122,7 @@
             "id": 10,
             "url": "./assets/audio/l3/10.mp3",
             "napomena": [
-                {"tip": "krupno", "bs": "U riječi كِتَابَ prije riječi Allah stoji harf ب s vokalom E (بَ), zato se riječ Allah uči krupno.", "en": "In كِتَابَ the word Allah is preceded by the letter ب with the vowel A (بَ), so it is recited heavy."}
+                {"tip": "krupno", "bs": "U riječi كِتَابَ prije riječi Allah stoji harf ب s vokalom E (بَ), zato se riječ Allah uči krupno.", "en": "In كِتَابَ the word Allah is preceded by the letter ب with the vowel A (بَ), so it is recited heavy.", "de": "Im Wort كِتَابَ steht vor dem Wort Allah der Buchstabe ب mit dem Vokal A (بَ), deshalb wird es dick gesprochen."}
             ],
             "highlight": "اللّٰهِ",
             "word": "كِتَابَ اللّٰهِ وَرَآءَ ظُهُورِهِمْ ",
@@ -132,7 +132,7 @@
             "id": 11,
             "url": "./assets/audio/l3/11.mp3",
             "napomena": [
-                {"tip": "tanko", "bs": "U لِلّٰهِ prije riječi Allah stoji harf ل s vokalom I (لِ), zato se riječ Allah uči tanko.", "en": "In لِلّٰهِ the word Allah is preceded by the letter ل with the vowel I (لِ), so it is recited light."}
+                {"tip": "tanko", "bs": "U لِلّٰهِ prije riječi Allah stoji harf ل s vokalom I (لِ), zato se riječ Allah uči tanko.", "en": "In لِلّٰهِ the word Allah is preceded by the letter ل with the vowel I (لِ), so it is recited light.", "de": "In لِلّٰهِ steht vor dem Wort Allah der Buchstabe ل mit dem Vokal I (لِ), deshalb wird es dünn gesprochen."}
             ],
             "highlight": "لِلّٰه",
             "word": "وَ لِلّٰهِ مُلْكُ السَّمَاوَاتِ وَالْأَرْضِ",
@@ -142,7 +142,7 @@
             "id": 12,
             "url": "./assets/audio/l3/12.mp3",
             "napomena": [
-                {"tip": "tanko", "bs": "U riječi لٰـكِنِ prije riječi Allah stoji harf ن s vokalom I (نِ), zato se riječ Allah uči tanko.", "en": "In لٰـكِنِ the word Allah is preceded by the letter ن with the vowel I (نِ), so it is recited light."}
+                {"tip": "tanko", "bs": "U riječi لٰـكِنِ prije riječi Allah stoji harf ن s vokalom I (نِ), zato se riječ Allah uči tanko.", "en": "In لٰـكِنِ the word Allah is preceded by the letter ن with the vowel I (نِ), so it is recited light.", "de": "Im Wort لٰـكِنِ steht vor dem Wort Allah der Buchstabe ن mit dem Vokal I (نِ), deshalb wird es dünn gesprochen."}
             ],
             "highlight": "اللّٰه",
             "word": "لٰـكِنِ اللّٰهُ يَشْهَدُ بِمَٓا أَنْـزَلَ إِلَيْكَ ",
@@ -152,7 +152,7 @@
             "id": 13,
             "url": "./assets/audio/l3/13.mp3",
             "napomena": [
-                {"tip": "tanko", "bs": "U بِاللّٰهِ prije riječi Allah stoji harf ب s vokalom I (بِ), zato se riječ Allah uči tanko.", "en": "In بِاللّٰهِ the word Allah is preceded by the letter ب with the vowel I (بِ), so it is recited light."}
+                {"tip": "tanko", "bs": "U بِاللّٰهِ prije riječi Allah stoji harf ب s vokalom I (بِ), zato se riječ Allah uči tanko.", "en": "In بِاللّٰهِ the word Allah is preceded by the letter ب with the vowel I (بِ), so it is recited light.", "de": "In بِاللّٰهِ steht vor dem Wort Allah der Buchstabe ب mit dem Vokal I (بِ), deshalb wird es dünn gesprochen."}
             ],
             "highlight": "اللّٰهِ",
             "word": "وَكَـفٰى بِاللّٰهِ شَهِيدًا",
@@ -162,8 +162,8 @@
                 "id": 14,
                 "url": "./assets/audio/l3/14.mp3",
                 "napomena": [
-                    {"tip": "krupno", "bs": "U riječi رَسُولُ prije riječi Allah stoji harf ل s vokalom U (لُ), zato se riječ Allah uči krupno.", "en": "In رَسُولُ the word Allah is preceded by the letter ل with the vowel U (لُ), so it is recited heavy."},
-                    {"tip": "krupno", "bs": "U riječi نَاقَةَ prije riječi Allah stoji harf ة s vokalom E (ةَ), zato se riječ Allah uči krupno.", "en": "In نَاقَةَ the word Allah is preceded by the letter ة with the vowel A (ةَ), so it is recited heavy."}
+                    {"tip": "krupno", "bs": "U riječi رَسُولُ prije riječi Allah stoji harf ل s vokalom U (لُ), zato se riječ Allah uči krupno.", "en": "In رَسُولُ the word Allah is preceded by the letter ل with the vowel U (لُ), so it is recited heavy.", "de": "Im Wort رَسُولُ steht vor dem Wort Allah der Buchstabe ل mit dem Vokal U (لُ), deshalb wird es dick gesprochen."},
+                    {"tip": "krupno", "bs": "U riječi نَاقَةَ prije riječi Allah stoji harf ة s vokalom E (ةَ), zato se riječ Allah uči krupno.", "en": "In نَاقَةَ the word Allah is preceded by the letter ة with the vowel A (ةَ), so it is recited heavy.", "de": "Im Wort نَاقَةَ steht vor dem Wort Allah der Buchstabe ة mit dem Vokal A (ةَ), deshalb wird es dick gesprochen."}
                 ],
                 "highlight": "اللّٰهِ",
                 "word": " اللّٰهِ وَسُقْيَاهَا",
@@ -180,8 +180,8 @@
             "id": 15,
             "url": "./assets/audio/l3/15.mp3",
             "napomena": [
-                {"tip": "tanko", "bs": "U prvom عِنْدِ اللّٰهِ prije riječi Allah stoji harf د s vokalom I (دِ), zato se riječ Allah uči tanko.", "en": "In the first عِنْدِ اللّٰهِ the word Allah is preceded by the letter د with the vowel I (دِ), so it is recited light."},
-                {"tip": "tanko", "bs": "I u drugom عِنْدِ اللّٰهِ prije riječi Allah je isti harf د s vokalom I (دِ), pa se riječ Allah i tu uči tanko.", "en": "In the second عِنْدِ اللّٰهِ the word Allah is preceded by the same letter د with the vowel I (دِ), so it is recited light there too."}
+                {"tip": "tanko", "bs": "U prvom عِنْدِ اللّٰهِ prije riječi Allah stoji harf د s vokalom I (دِ), zato se riječ Allah uči tanko.", "en": "In the first عِنْدِ اللّٰهِ the word Allah is preceded by the letter د with the vowel I (دِ), so it is recited light.", "de": "Im ersten عِنْدِ اللّٰهِ steht vor dem Wort Allah der Buchstabe د mit dem Vokal I (دِ), deshalb wird es dünn gesprochen."},
+                {"tip": "tanko", "bs": "I u drugom عِنْدِ اللّٰهِ prije riječi Allah je isti harf د s vokalom I (دِ), pa se riječ Allah i tu uči tanko.", "en": "In the second عِنْدِ اللّٰهِ the word Allah is preceded by the same letter د with the vowel I (دِ), so it is recited light there too.", "de": "Auch im zweiten عِنْدِ اللّٰهِ steht vor dem Wort Allah derselbe Buchstabe د mit dem Vokal I (دِ), deshalb wird es auch dort dünn gesprochen."}
             ],
             "highlight": "اللّٰهِ",
             "word": "وَيَقُولُونَ هُوَ مِنْ عِنْدِ اللّٰهِ وَمَا هُوَ مِنْ عِنْدِ اللّٰهِ ",
@@ -191,7 +191,7 @@
             "id": 16,
             "url": "./assets/audio/l3/16.mp3",
             "napomena": [
-                {"tip": "krupno", "bs": "U riječi عَلَى prije riječi Allah stoji harf ل s dugim vokalom E (لَى), zato se riječ Allah uči krupno.", "en": "In عَلَى the word Allah is preceded by the letter ل with the long vowel A (لَى), so it is recited heavy."}
+                {"tip": "krupno", "bs": "U riječi عَلَى prije riječi Allah stoji harf ل s dugim vokalom E (لَى), zato se riječ Allah uči krupno.", "en": "In عَلَى the word Allah is preceded by the letter ل with the long vowel A (لَى), so it is recited heavy.", "de": "Im Wort عَلَى steht vor dem Wort Allah der Buchstabe ل mit dem langen Vokal A (لَى), deshalb wird es dick gesprochen."}
             ],
             "highlight": "اللّٰهِ",
             "word": "وَيَقُولُونَ عَلَى اللّٰهِ الْكَذِبَ وَهُمْ يَعْلَمُونَ",
@@ -201,7 +201,7 @@
             "id": 17,
             "url": "./assets/audio/l3/17.mp3",
             "napomena": [
-                {"tip": "krupno", "bs": "U riječi وَجْهُ prije riječi Allah stoji harf ه s vokalom U (هُ), zato se riječ Allah uči krupno.", "en": "In وَجْهُ the word Allah is preceded by the letter ه with the vowel U (هُ), so it is recited heavy."}
+                {"tip": "krupno", "bs": "U riječi وَجْهُ prije riječi Allah stoji harf ه s vokalom U (هُ), zato se riječ Allah uči krupno.", "en": "In وَجْهُ the word Allah is preceded by the letter ه with the vowel U (هُ), so it is recited heavy.", "de": "Im Wort وَجْهُ steht vor dem Wort Allah der Buchstabe ه mit dem Vokal U (هُ), deshalb wird es dick gesprochen."}
             ],
             "highlight": "اللّٰهِ",
             "word": "فَأَيْـنَمَا تُوَلُّوا فَـثَمَّ وَجْهُ اللّٰهِ إِنَّ اللّٰهَ وَاسِعٌ عَلِيمٌ",

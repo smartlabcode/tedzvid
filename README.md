@@ -12,6 +12,22 @@ npm start        # CRA dev server (port 3000), /api se proxy-ra na 3002
 
 Produkcija (Railway): `npm run build`, zatim `npm run serve` – isti Node server poslužuje `build/` i API.
 
+### Jezici
+
+Sajt je na **bosanskom (bs), engleskom (en) i njemačkom (de)**; bosanski je izvorni i podrazumijevani. Jezik se bira u traci navigacije (padajući izbornik `src/Body/LangSwitch.js`), pamti se u `localStorage`, a `?lang=de` u URL-u ima prednost – tako se dijeli link na određenom jeziku.
+
+Gdje živi koji tekst:
+
+- `src/i18n/LanguageContext.js` – popis jezika (`LANGS`), imena jezika (`LANG_NAMES`), `<title>` i meta opis po jeziku.
+- `src/i18n/ui.js` – svi tekstovi zajedničkog okvira (navigacija, naslovna, kviz, igre, admin, bonus lekcije), po jednom bloku za svaki jezik s **istim ključevima istim redom**.
+- `src/Lessons/Lesson{n}.js` – tekst same lekcije, u objektu `TXT` (isto: `bs`, `en`, `de`).
+- `src/Data/**.json` – primjeri, napomene i pitanja: svaki prevodivi tekst je objekat `{ "bs": …, "en": …, "de": … }`.
+- `src/i18n/datum.js` – format datuma po jeziku; `src/i18n/vezniTekst.js` – vezni tekst („čita se:“) koji stoji u podacima na bosanskom.
+
+Novi jezik se dodaje tako što se doda u `LANGS` i `LANG_NAMES` i dopiše blok/ključ svugdje gore. Ako neki ključ nedostaje, prikaz tiho pada na bosanski (`usePick`, `TXT[lang] || TXT[DEFAULT_LANG]`), pa nepotpun prijevod ne ruši stranicu.
+
+Njemačka terminologija (transkripcija arapskih pojmova, nazivi 22 pravila, stil obraćanja) drži se jednog dogovora zapisanog u **`src/i18n/njemacki-rjecnik.md`** – npr. *Tadschwid*, *Idgham Mithlain*, *Ichfa Schafawi*, *Madd Tabi’i*, *der Koran*, obraćanje na „du“. Ko dopisuje njemački tekst, prvo pročita taj fajl; bez njega isto pravilo brzo dobije dva imena.
+
 ### Korisnički računi i napredak
 
 - Registracija (`/registracija`: ime, korisničko ime, email, lozinka), prijava (`/prijava`, email ili korisničko ime), pregled napretka (`/profil`). Korisničko ime (3–20 znakova, jedinstveno) prikazuje se na rang listi.

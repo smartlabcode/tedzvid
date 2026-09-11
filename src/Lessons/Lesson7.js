@@ -212,6 +212,101 @@ const TXT = {
 				</Row>
 			</React.Fragment>
 		)
+	},
+
+	de: {
+		naziv: 'IDGHAM BILA GHUNNA',
+		naslov: '7 IDGHAM BILA GHUNNA',
+		podnaslov: (
+			<React.Fragment>
+				<strong>Verschmelzen, ohne Luft durch die Nase</strong>
+			</React.Fragment>
+		),
+		lekcija: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Wenn auf den Buchstaben <strong>N</strong> mit <strong>Sukun</strong> (
+						<span className="arapski-lekcija">نْ</span>) oder auf das <strong>Tanwin</strong> AN{' '}
+						<span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
+						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
+						<span className="arapski-lekcija">ــٌــ</span> der Buchstabe <strong>L</strong>{' '}
+						<span className="arapski-lekcija">(ل) </span>oder <strong>R</strong>{' '}
+						<span className="arapski-lekcija">(ر)</span> folgt, kommt es zu einer{' '}
+						<u>vollständigen</u> Verschmelzung des Buchstabens <strong>N </strong>
+						<span className="arapski-lekcija"> (ن)</span> in den Buchstaben <strong>L</strong>{' '}
+						<span className="arapski-lekcija">(ل)</span> beziehungsweise <strong>R</strong>{' '}
+						<span className="arapski-lekcija">(ر)</span>, das heißt, <strong>N</strong>{' '}
+						<span className="arapski-lekcija">(ن)&nbsp;</span>wird gar nicht gesprochen, z. B.:
+					</Col>
+				</Row>
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+				<Row className="text-center reorder">
+					<Col>{P('row1')}</Col>
+				</Row>
+				<Row className="text-center reorder-basic-display-after  rtl">
+					<Col>
+						{P('row2')}
+						{V('multirow', 'word1')}
+					</Col>
+				</Row>
+				<Row className="text-center reorder-basic ">
+					<Col>{V('multirow', 'word2')}</Col>
+				</Row>
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		),
+		lekcijaModal: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Wenn auf den Buchstaben <strong>N</strong> mit <strong>Sukun</strong> (
+						<span className="arapski-lekcija">نْ</span>) oder auf das <strong>Tanwin</strong> AN{' '}
+						<span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
+						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
+						<span className="arapski-lekcija">ــٌــ</span> der Buchstabe <strong>L</strong>{' '}
+						<span className="arapski-lekcija">(ل) </span>
+						oder <strong>R</strong> <span className="arapski-lekcija">(ر)</span> folgt, kommt es zu{' '}
+						einer <u>vollständigen</u> Verschmelzung des Buchstabens <strong>N </strong>
+						<span className="arapski-lekcija"> (ن)</span> in den Buchstaben <strong>L</strong>{' '}
+						<span className="arapski-lekcija">(ل)</span> beziehungsweise <strong>R</strong>{' '}
+						<span className="arapski-lekcija">(ر)</span>, das heißt, <strong>N</strong>{' '}
+						<span className="arapski-lekcija">(ن)</span>
+						wird gar nicht gesprochen, z. B.:
+					</Col>
+				</Row>
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+				<Row className="text-center reorder">
+					<Col>{P('row1')}</Col>
+				</Row>
+				<Row className="text-center reorder-basic  rtl">
+					<Col>
+						{P('row2')}
+						{V('multirow', 'word1')}
+					</Col>
+				</Row>
+				<Row className="text-center reorder-basic ">
+					<Col>{V('multirow', 'word2')}</Col>
+				</Row>
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		)
 	}
 };
 

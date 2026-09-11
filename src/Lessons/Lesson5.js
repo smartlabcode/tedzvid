@@ -203,6 +203,96 @@ const TXT = {
 				</Row>
 			</React.Fragment>
 		)
+	},
+
+	de: {
+		naziv: 'IDGHAM MITHLAIN MA’AL-GHUNNA',
+		naslov: '5 IDGHAM MITHLAIN MA’AL-GHUNNA',
+		podnaslov: (
+			<React.Fragment>
+				<strong>Gleiche Buchstaben verschmelzen, mit Luft durch die Nase</strong>
+			</React.Fragment>
+		),
+		lekcija: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Wenn nach dem Buchstaben <strong>M</strong> <span className="arapski-lekcija">(م)</span> mit{' '}
+						<strong>Sukun</strong> ein Buchstabe <strong>M</strong>
+						<span className="arapski-lekcija"> (م) </span>mit <strong>Vokalzeichen</strong> kommt, dann kommt es zur{' '}
+						<u>Verschmelzung</u> des Buchstabens <strong>M</strong>
+						<span className="arapski-lekcija"> (م)</span> mit <strong>Sukun</strong> in den Buchstaben{' '}
+						<strong>M</strong>
+						<span className="arapski-lekcija"> (م)</span> mit <strong>Vokalzeichen</strong> – dabei strömt die Luft
+						2 Harakat lang durch die Nase, z. B.:
+					</Col>
+				</Row>
+
+				<Row className="text-center reorder">
+					<Col>{P('row1')}</Col>
+				</Row>
+
+				<Row className="text-center rtl">
+					<Col>{P('row2')}</Col>
+				</Row>
+
+				<Row className="text-center reorder-basic rtl">
+					<Col>{P('row3')}</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		),
+		lekcijaModal: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Wenn nach dem Buchstaben <strong>M</strong> <span className="arapski-lekcija">(م)</span> mit{' '}
+						<strong>Sukun</strong> ein Buchstabe <strong>M</strong>
+						<span className="arapski-lekcija"> (م) </span>mit <strong>Vokalzeichen</strong> kommt, dann kommt es zur{' '}
+						<u>Verschmelzung</u> des Buchstabens <strong>M</strong>
+						<span className="arapski-lekcija"> (م)</span> mit <strong>Sukun</strong> in den Buchstaben{' '}
+						<strong>M</strong>
+						<span className="arapski-lekcija"> (م)</span> mit <strong>Vokalzeichen</strong> – dabei strömt die
+						Luft 2 Harakat lang durch die Nase, z. B.:
+					</Col>
+				</Row>
+
+				<Row className="text-center">
+					<Col>{P('row1')}</Col>
+				</Row>
+
+				<Row className="text-center rtl">
+					<Col>{P('row2')}</Col>
+				</Row>
+
+				<Row className="text-center rtl">
+					<Col>{P('row3')}</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		)
 	}
 };
 

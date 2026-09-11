@@ -2,143 +2,153 @@
   "lekcija": 7,
   "pitanja": [
     {
-      "q": { "bs": "Šta znači idgam bila gunneh?", "en": "What does idgham bila ghunnah mean?" },
+      "q": { "bs": "Šta znači idgam bila gunneh?", "en": "What does idgham bila ghunnah mean?", "de": "Was bedeutet Idgham bila Ghunna?" },
       "opcije": [
-        { "bs": "Skrivanje harfa N (ن)", "en": "Hiding the letter N (ن)" },
-        { "bs": "Uklapanje sa propuštanjem zraka kroz nos", "en": "Merging with nasalisation" },
-        { "bs": "Uklapanje bez propuštanja zraka kroz nos", "en": "Merging without nasalisation" },
-        { "bs": "Čisto izgovaranje harfa N (ن)", "en": "Clear pronunciation of the letter N (ن)" }
+        { "bs": "Skrivanje harfa N (ن)", "en": "Hiding the letter N (ن)", "de": "Den Buchstaben N (ن) verstecken" },
+        { "bs": "Uklapanje sa propuštanjem zraka kroz nos", "en": "Merging with nasalisation", "de": "Verschmelzen, mit Luft durch die Nase" },
+        { "bs": "Uklapanje bez propuštanja zraka kroz nos", "en": "Merging without nasalisation", "de": "Verschmelzen, ohne Luft durch die Nase" },
+        { "bs": "Čisto izgovaranje harfa N (ن)", "en": "Clear pronunciation of the letter N (ن)", "de": "Den Buchstaben N (ن) deutlich aussprechen" }
       ],
       "tacno": 2,
       "objasnjenje": {
         "bs": "Idgam bila gunneh je potpuno uklapanje harfa N (ن) bez propuštanja zraka kroz nos.",
-        "en": "Idgham bila ghunnah is the complete merging of the letter N (ن) without nasalisation."
+        "en": "Idgham bila ghunnah is the complete merging of the letter N (ن) without nasalisation.",
+        "de": "Idgham bila Ghunna ist die vollständige Verschmelzung des Buchstabens N (ن), ohne Luft durch die Nase."
       }
     },
     {
-      "q": { "bs": "Koji harfovi izazivaju idgam bila gunneh?", "en": "Which letters cause idgham bila ghunnah?" },
+      "q": { "bs": "Koji harfovi izazivaju idgam bila gunneh?", "en": "Which letters cause idgham bila ghunnah?", "de": "Welche Buchstaben lösen Idgham bila Ghunna aus?" },
       "opcije": [
-        { "bs": "L i R (ل ر)", "en": "L and R (ل ر)" },
-        { "bs": "V, N, M, J (و ن م ي)", "en": "W, N, M, Y (و ن م ي)" },
-        { "bs": "B i M (ب م)", "en": "B and M (ب م)" },
-        { "bs": "Grleni harfovi (خ غ ح ع ه أ)", "en": "The throat letters (خ غ ح ع ه أ)" }
+        { "bs": "L i R (ل ر)", "en": "L and R (ل ر)", "de": "L und R (ل ر)" },
+        { "bs": "V, N, M, J (و ن م ي)", "en": "W, N, M, Y (و ن م ي)", "de": "W, N, M, Y (و ن م ي)" },
+        { "bs": "B i M (ب م)", "en": "B and M (ب م)", "de": "B und M (ب م)" },
+        { "bs": "Grleni harfovi (خ غ ح ع ه أ)", "en": "The throat letters (خ غ ح ع ه أ)", "de": "Die Kehlbuchstaben (خ غ ح ع ه أ)" }
       ],
       "tacno": 0,
       "objasnjenje": {
         "bs": "Idgam bila gunneh nastaje kada poslije harfa N sa sukunom ili tenvina dođe harf L (ل) ili R (ر).",
-        "en": "Idgham bila ghunnah occurs when the letter N with a sukun or tanween is followed by the letter L (ل) or R (ر)."
+        "en": "Idgham bila ghunnah occurs when the letter N with a sukun or tanween is followed by the letter L (ل) or R (ر).",
+        "de": "Idgham bila Ghunna entsteht, wenn nach dem N mit Sukun oder nach dem Tanwin der Buchstabe L (ل) oder R (ر) kommt."
       }
     },
     {
-      "q": { "bs": "Koliko harfova izaziva idgam bila gunneh?", "en": "How many letters cause idgham bila ghunnah?" },
+      "q": { "bs": "Koliko harfova izaziva idgam bila gunneh?", "en": "How many letters cause idgham bila ghunnah?", "de": "Wie viele Buchstaben lösen Idgham bila Ghunna aus?" },
       "opcije": [
-        { "bs": "Jedan", "en": "One" },
-        { "bs": "Dva", "en": "Two" },
-        { "bs": "Četiri", "en": "Four" },
-        { "bs": "Šest", "en": "Six" }
+        { "bs": "Jedan", "en": "One", "de": "Einer" },
+        { "bs": "Dva", "en": "Two", "de": "Zwei" },
+        { "bs": "Četiri", "en": "Four", "de": "Vier" },
+        { "bs": "Šest", "en": "Six", "de": "Sechs" }
       ],
       "tacno": 1,
       "objasnjenje": {
         "bs": "Idgam bila gunneh izazivaju dva harfa: L (ل) i R (ر).",
-        "en": "Two letters cause idgham bila ghunnah: L (ل) and R (ر)."
+        "en": "Two letters cause idgham bila ghunnah: L (ل) and R (ر).",
+        "de": "Zwei Buchstaben lösen Idgham bila Ghunna aus: L (ل) und R (ر)."
       }
     },
     {
-      "q": { "bs": "Kakvo je uklapanje harfa N (ن) kod idgama bila gunneh?", "en": "What kind of merging of the letter N (ن) happens in idgham bila ghunnah?" },
+      "q": { "bs": "Kakvo je uklapanje harfa N (ن) kod idgama bila gunneh?", "en": "What kind of merging of the letter N (ن) happens in idgham bila ghunnah?", "de": "Wie verschmilzt der Buchstabe N (ن) bei Idgham bila Ghunna?" },
       "opcije": [
-        { "bs": "Djelimično, uz propuštanje zraka kroz nos", "en": "Partial, with air passing through the nose" },
-        { "bs": "Nema uklapanja, N se izgovara čisto", "en": "No merging, N is pronounced clearly" },
-        { "bs": "N se pretvara u harf M (م)", "en": "N turns into the letter M (م)" },
-        { "bs": "Potpuno, N se nikako ne uči", "en": "Complete, N is not pronounced at all" }
+        { "bs": "Djelimično, uz propuštanje zraka kroz nos", "en": "Partial, with air passing through the nose", "de": "Teilweise, mit Luft durch die Nase" },
+        { "bs": "Nema uklapanja, N se izgovara čisto", "en": "No merging, N is pronounced clearly", "de": "Keine Verschmelzung, N wird deutlich ausgesprochen" },
+        { "bs": "N se pretvara u harf M (م)", "en": "N turns into the letter M (م)", "de": "N verwandelt sich in den Buchstaben M (م)" },
+        { "bs": "Potpuno, N se nikako ne uči", "en": "Complete, N is not pronounced at all", "de": "Vollständig, N wird gar nicht gesprochen" }
       ],
       "tacno": 3,
       "objasnjenje": {
         "bs": "Harf N (ن) se potpuno uklapa u harf L (ل) ili R (ر), tako da se nikako ne uči.",
-        "en": "The letter N (ن) merges completely into the letter L (ل) or R (ر), so it is not pronounced at all."
+        "en": "The letter N (ن) merges completely into the letter L (ل) or R (ر), so it is not pronounced at all.",
+        "de": "Der Buchstabe N (ن) verschmilzt vollständig in L (ل) oder R (ر), so dass er gar nicht gesprochen wird."
       }
     },
     {
-      "q": { "bs": "Kako se čita مِنْ رَبِّهِمْ po pravilu idgama bila gunneh?", "en": "How is مِنْ رَبِّهِمْ read according to idgham bila ghunnah?" },
+      "q": { "bs": "Kako se čita مِنْ رَبِّهِمْ po pravilu idgama bila gunneh?", "en": "How is مِنْ رَبِّهِمْ read according to idgham bila ghunnah?", "de": "Wie wird مِنْ رَبِّهِمْ nach der Regel Idgham bila Ghunna gelesen?" },
       "opcije": [
-        { "bs": "مِرَّبِّهِمْ", "en": "مِرَّبِّهِمْ" },
-        { "bs": "مِنْ رَبِّهِمْ (N se izgovara čisto)", "en": "مِنْ رَبِّهِمْ (N pronounced clearly)" },
-        { "bs": "مِمْرَبِّهِمْ", "en": "مِمْرَبِّهِمْ" },
-        { "bs": "مِنَّبِّهِمْ", "en": "مِنَّبِّهِمْ" }
+        { "bs": "مِرَّبِّهِمْ", "en": "مِرَّبِّهِمْ", "de": "مِرَّبِّهِمْ" },
+        { "bs": "مِنْ رَبِّهِمْ (N se izgovara čisto)", "en": "مِنْ رَبِّهِمْ (N pronounced clearly)", "de": "مِنْ رَبِّهِمْ (N wird deutlich ausgesprochen)" },
+        { "bs": "مِمْرَبِّهِمْ", "en": "مِمْرَبِّهِمْ", "de": "مِمْرَبِّهِمْ" },
+        { "bs": "مِنَّبِّهِمْ", "en": "مِنَّبِّهِمْ", "de": "مِنَّبِّهِمْ" }
       ],
       "tacno": 0,
       "objasnjenje": {
         "bs": "Harf N se potpuno uklapa u harf R (ر), pa se čita مِرَّبِّهِمْ.",
-        "en": "The letter N merges completely into the letter R (ر), so it is read مِرَّبِّهِمْ."
+        "en": "The letter N merges completely into the letter R (ر), so it is read مِرَّبِّهِمْ.",
+        "de": "Das N verschmilzt vollständig in R (ر), deshalb liest man مِرَّبِّهِمْ."
       }
     },
     {
-      "q": { "bs": "Po čemu se idgam bila gunneh razlikuje od idgama meal-gunneh?", "en": "How does idgham bila ghunnah differ from idgham ma'al-ghunnah?" },
+      "q": { "bs": "Po čemu se idgam bila gunneh razlikuje od idgama meal-gunneh?", "en": "How does idgham bila ghunnah differ from idgham ma'al-ghunnah?", "de": "Worin unterscheidet sich Idgham bila Ghunna von Idgham ma’al-Ghunna?" },
       "opcije": [
-        { "bs": "Kod idgama bila gunneh harf N (ن) se pretvara u M (م)", "en": "In idgham bila ghunnah the letter N (ن) turns into M (م)" },
-        { "bs": "Idgam bila gunneh dolazi samo poslije harfa N sa sukunom, a ne poslije tenvina", "en": "Idgham bila ghunnah occurs only after the letter N with a sukun, not after tanween" },
-        { "bs": "Kod idgama bila gunneh zrak se ne propušta kroz nos", "en": "In idgham bila ghunnah air does not pass through the nose" },
-        { "bs": "Kod idgama bila gunneh uklapanje traje 2 hareketa", "en": "In idgham bila ghunnah the merging lasts 2 harakas" }
+        { "bs": "Kod idgama bila gunneh harf N (ن) se pretvara u M (م)", "en": "In idgham bila ghunnah the letter N (ن) turns into M (م)", "de": "Bei Idgham bila Ghunna verwandelt sich das N (ن) in M (م)" },
+        { "bs": "Idgam bila gunneh dolazi samo poslije harfa N sa sukunom, a ne poslije tenvina", "en": "Idgham bila ghunnah occurs only after the letter N with a sukun, not after tanween", "de": "Idgham bila Ghunna kommt nur nach dem N mit Sukun vor, nicht nach dem Tanwin" },
+        { "bs": "Kod idgama bila gunneh zrak se ne propušta kroz nos", "en": "In idgham bila ghunnah air does not pass through the nose", "de": "Bei Idgham bila Ghunna strömt keine Luft durch die Nase" },
+        { "bs": "Kod idgama bila gunneh uklapanje traje 2 hareketa", "en": "In idgham bila ghunnah the merging lasts 2 harakas", "de": "Bei Idgham bila Ghunna dauert die Verschmelzung 2 Harakat" }
       ],
       "tacno": 2,
       "objasnjenje": {
         "bs": "Kod idgama bila gunneh uklapanje je potpuno i bez propuštanja zraka kroz nos, a kod idgama meal-gunneh zrak se propušta kroz nos 2 hareketa.",
-        "en": "In idgham bila ghunnah the merging is complete and without nasalisation, while in idgham ma'al-ghunnah air passes through the nose for 2 harakas."
+        "en": "In idgham bila ghunnah the merging is complete and without nasalisation, while in idgham ma'al-ghunnah air passes through the nose for 2 harakas.",
+        "de": "Bei Idgham bila Ghunna ist die Verschmelzung vollständig und ohne Luft durch die Nase, bei Idgham ma’al-Ghunna strömt die Luft 2 Harakat durch die Nase."
       }
     },
     {
-      "q": { "bs": "U kojem primjeru dolazi do idgama bila gunneh?", "en": "In which example does idgham bila ghunnah occur?" },
+      "q": { "bs": "U kojem primjeru dolazi do idgama bila gunneh?", "en": "In which example does idgham bila ghunnah occur?", "de": "In welchem Beispiel kommt Idgham bila Ghunna vor?" },
       "opcije": [
-        { "bs": "نِعْمَةً مِنْهُ", "en": "نِعْمَةً مِنْهُ" },
-        { "bs": "سَمِيعٌ بَصِيرٌ", "en": "سَمِيعٌ بَصِيرٌ" },
-        { "bs": "عَلِيمًا حَكِيمًا", "en": "عَلِيمًا حَكِيمًا" },
-        { "bs": "غَفُورًا رَحِيمًا", "en": "غَفُورًا رَحِيمًا" }
+        { "bs": "نِعْمَةً مِنْهُ", "en": "نِعْمَةً مِنْهُ", "de": "نِعْمَةً مِنْهُ" },
+        { "bs": "سَمِيعٌ بَصِيرٌ", "en": "سَمِيعٌ بَصِيرٌ", "de": "سَمِيعٌ بَصِيرٌ" },
+        { "bs": "عَلِيمًا حَكِيمًا", "en": "عَلِيمًا حَكِيمًا", "de": "عَلِيمًا حَكِيمًا" },
+        { "bs": "غَفُورًا رَحِيمًا", "en": "غَفُورًا رَحِيمًا", "de": "غَفُورًا رَحِيمًا" }
       ],
       "tacno": 3,
       "objasnjenje": {
         "bs": "U primjeru غَفُورًا رَحِيمًا poslije tenvina dolazi harf R (ر), pa se tenvin potpuno uklapa u R.",
-        "en": "In غَفُورًا رَحِيمًا the tanween is followed by the letter R (ر), so it merges completely into R."
+        "en": "In غَفُورًا رَحِيمًا the tanween is followed by the letter R (ر), so it merges completely into R.",
+        "de": "Im Beispiel غَفُورًا رَحِيمًا kommt nach dem Tanwin der Buchstabe R (ر), deshalb verschmilzt das Tanwin vollständig in R."
       }
     },
     {
-      "q": { "bs": "Poslije čega dolazi do idgama bila gunneh?", "en": "After what does idgham bila ghunnah occur?" },
+      "q": { "bs": "Poslije čega dolazi do idgama bila gunneh?", "en": "After what does idgham bila ghunnah occur?", "de": "Wonach tritt Idgham bila Ghunna auf?" },
       "opcije": [
-        { "bs": "Poslije harfa M (م) sa sukunom", "en": "After the letter M (م) with a sukun" },
-        { "bs": "Poslije harfa N (ن) sa sukunom ili tenvina", "en": "After the letter N (ن) with a sukun or tanween" },
-        { "bs": "Poslije harfa L (ل) sa sukunom", "en": "After the letter L (ل) with a sukun" },
-        { "bs": "Poslije bilo kojeg harfa sa sukunom", "en": "After any letter with a sukun" }
+        { "bs": "Poslije harfa M (م) sa sukunom", "en": "After the letter M (م) with a sukun", "de": "Nach dem Buchstaben M (م) mit Sukun" },
+        { "bs": "Poslije harfa N (ن) sa sukunom ili tenvina", "en": "After the letter N (ن) with a sukun or tanween", "de": "Nach dem Buchstaben N (ن) mit Sukun oder nach dem Tanwin" },
+        { "bs": "Poslije harfa L (ل) sa sukunom", "en": "After the letter L (ل) with a sukun", "de": "Nach dem Buchstaben L (ل) mit Sukun" },
+        { "bs": "Poslije bilo kojeg harfa sa sukunom", "en": "After any letter with a sukun", "de": "Nach jedem beliebigen Buchstaben mit Sukun" }
       ],
       "tacno": 1,
       "objasnjenje": {
         "bs": "Pravilo važi kada poslije harfa N sa sukunom (نْ) ili tenvina EN, IN, UN dođe harf L (ل) ili R (ر).",
-        "en": "The rule applies when the letter N with a sukun (نْ) or the tanween AN, IN, UN is followed by the letter L (ل) or R (ر)."
+        "en": "The rule applies when the letter N with a sukun (نْ) or the tanween AN, IN, UN is followed by the letter L (ل) or R (ر).",
+        "de": "Die Regel gilt, wenn nach dem N mit Sukun (نْ) oder nach dem Tanwin AN, IN, UN der Buchstabe L (ل) oder R (ر) kommt."
       }
     },
     {
-      "q": { "bs": "U primjeru يَكُنْ لَهُ, u koji harf se potpuno uklapa harf N (ن)?", "en": "In the example يَكُنْ لَهُ, into which letter does the letter N (ن) merge completely?" },
+      "q": { "bs": "U primjeru يَكُنْ لَهُ, u koji harf se potpuno uklapa harf N (ن)?", "en": "In the example يَكُنْ لَهُ, into which letter does the letter N (ن) merge completely?", "de": "In welchen Buchstaben verschmilzt im Beispiel يَكُنْ لَهُ das N (ن) vollständig?" },
       "opcije": [
-        { "bs": "U harf L (ل)", "en": "Into the letter L (ل)" },
-        { "bs": "U harf R (ر)", "en": "Into the letter R (ر)" },
-        { "bs": "U harf H (ه)", "en": "Into the letter H (ه)" },
-        { "bs": "U harf K (ك)", "en": "Into the letter K (ك)" }
+        { "bs": "U harf L (ل)", "en": "Into the letter L (ل)", "de": "In den Buchstaben L (ل)" },
+        { "bs": "U harf R (ر)", "en": "Into the letter R (ر)", "de": "In den Buchstaben R (ر)" },
+        { "bs": "U harf H (ه)", "en": "Into the letter H (ه)", "de": "In den Buchstaben H (ه)" },
+        { "bs": "U harf K (ك)", "en": "Into the letter K (ك)", "de": "In den Buchstaben K (ك)" }
       ],
       "tacno": 0,
       "objasnjenje": {
         "bs": "Poslije harfa N sa sukunom dolazi harf L (ل), pa se N potpuno uklapa u L.",
-        "en": "The letter N with a sukun is followed by the letter L (ل), so N merges completely into L."
+        "en": "The letter N with a sukun is followed by the letter L (ل), so N merges completely into L.",
+        "de": "Nach dem N mit Sukun kommt der Buchstabe L (ل), deshalb verschmilzt das N vollständig in L."
       }
     },
     {
-      "q": { "bs": "Koji od sljedećih harfova izaziva idgam bila gunneh?", "en": "Which of the following letters causes idgham bila ghunnah?" },
+      "q": { "bs": "Koji od sljedećih harfova izaziva idgam bila gunneh?", "en": "Which of the following letters causes idgham bila ghunnah?", "de": "Welcher der folgenden Buchstaben löst Idgham bila Ghunna aus?" },
       "opcije": [
-        { "bs": "M (م)", "en": "M (م)" },
-        { "bs": "B (ب)", "en": "B (ب)" },
-        { "bs": "V (و)", "en": "W (و)" },
-        { "bs": "R (ر)", "en": "R (ر)" }
+        { "bs": "M (م)", "en": "M (م)", "de": "Der Buchstabe M (م)" },
+        { "bs": "B (ب)", "en": "B (ب)", "de": "Der Buchstabe B (ب)" },
+        { "bs": "V (و)", "en": "W (و)", "de": "Der Buchstabe W (و)" },
+        { "bs": "R (ر)", "en": "R (ر)", "de": "Der Buchstabe R (ر)" }
       ],
       "tacno": 3,
       "objasnjenje": {
         "bs": "Harf R (ر) je, uz harf L (ل), jedan od dva harfa idgama bila gunneh.",
-        "en": "The letter R (ر), together with L (ل), is one of the two letters of idgham bila ghunnah."
+        "en": "The letter R (ر), together with L (ل), is one of the two letters of idgham bila ghunnah.",
+        "de": "Der Buchstabe R (ر) ist neben dem L (ل) einer der beiden Buchstaben von Idgham bila Ghunna."
       }
     }
   ]

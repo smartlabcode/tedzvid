@@ -1,7 +1,10 @@
 import React, { createContext, useCallback, useContext, useEffect, useState } from 'react';
 
-/* Podržani jezici – bosanski je podrazumijevani. */
-export const LANGS = [ 'bs', 'en' ];
+/* Podržani jezici – bosanski je podrazumijevani. Redoslijed je i redoslijed u izborniku jezika. */
+export const LANGS = [ 'bs', 'en', 'de' ];
+
+/* Ime jezika na tom istom jeziku – tako ga prepozna i onaj ko trenutni jezik ne razumije. */
+export const LANG_NAMES = { bs: 'Bosanski', en: 'English', de: 'Deutsch' };
 export const DEFAULT_LANG = 'bs';
 
 /* novi ključ: ranije verzije su automatski odabrani jezik preglednika spremale pod 'tedzvid-lang',
@@ -19,10 +22,20 @@ const META = {
 		title: 'Tedzvid.ba – Learn tajweed simply, interactively, step by step',
 		description:
 			'Tedzvid.ba – an interactive handbook for learning the rules of tajweed. Simple, interactive, step by step – for children and adults, beginners and advanced reciters.'
+	},
+	de: {
+		title: 'Tedzvid.ba – Tadschwid lernen: einfach, interaktiv, Schritt für Schritt',
+		description:
+			'Tedzvid.ba – interaktives Handbuch zum Lernen der Tadschwid-Regeln. Einfach, interaktiv, Schritt für Schritt – für Kinder und Erwachsene, Anfänger und Fortgeschrittene.'
 	}
 };
 
 const LanguageContext = createContext({ lang: DEFAULT_LANG, setLang: () => {} });
+
+/* Tekući jezik i izvan Reacta: pomoćnici uz primjere (PlayerHelper, VjezbeHelper) nisu komponente
+   pa ne mogu do hookova, a moraju znati na kojem se jeziku ispisuje vezni tekst između riječi. */
+let tekuciJezik = DEFAULT_LANG;
+export const jezik = () => tekuciJezik;
 
 /* ?lang=en u URL-u ima prednost (dijeljivi linkovi), zatim jezik koji je korisnik sam odabrao (localStorage);
    inače je uvijek bosanski – jezik preglednika se ne uzima u obzir. */
@@ -41,6 +54,7 @@ function detectLang() {
 
 export function LanguageProvider({ children }) {
 	const [ lang, setLangState ] = useState(detectLang);
+	tekuciJezik = lang; /* još u toku iscrtavanja, da ga djeca vide odmah pri prvom prikazu */
 
 	useEffect(
 		() => {

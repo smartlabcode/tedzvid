@@ -2,114 +2,114 @@
   "lekcija": 14,
   "pitanja": [
     {
-      "q": { "bs": "Na šta se odnosi pravilo hukmurra?", "en": "What does the rule hukm ar-ra concern?" },
+      "q": { "bs": "Na šta se odnosi pravilo hukmurra?", "en": "What does the rule hukm ar-ra concern?", "de": "Worauf bezieht sich die Regel Hukm ar-Ra?" },
       "opcije": [
-        { "bs": "Na izgovor harfa L (ل)", "en": "Pronouncing the letter L (ل)" },
-        { "bs": "Na izgovor harfa M (م)", "en": "Pronouncing the letter M (م)" },
-        { "bs": "Na izgovor harfa R (ر)", "en": "Pronouncing the letter R (ر)" },
-        { "bs": "Na izgovor harfa N (ن)", "en": "Pronouncing the letter N (ن)" }
+        { "bs": "Na izgovor harfa L (ل)", "en": "Pronouncing the letter L (ل)", "de": "Auf die Aussprache des Buchstabens L (ل)" },
+        { "bs": "Na izgovor harfa M (م)", "en": "Pronouncing the letter M (م)", "de": "Auf die Aussprache des Buchstabens M (م)" },
+        { "bs": "Na izgovor harfa R (ر)", "en": "Pronouncing the letter R (ر)", "de": "Auf die Aussprache des Buchstabens R (ر)" },
+        { "bs": "Na izgovor harfa N (ن)", "en": "Pronouncing the letter N (ن)", "de": "Auf die Aussprache des Buchstabens N (ن)" }
       ],
       "tacno": 2,
-      "objasnjenje": { "bs": "Hukmurra je pravilo o izgovoru harfa R (ر).", "en": "Hukm ar-ra is the rule about pronouncing the letter R (ر)." }
+      "objasnjenje": { "bs": "Hukmurra je pravilo o izgovoru harfa R (ر).", "en": "Hukm ar-ra is the rule about pronouncing the letter R (ر).", "de": "Hukm ar-Ra ist die Regel über die Aussprache des Buchstabens R (ر)." }
     },
     {
-      "q": { "bs": "Kako se uči harf R (ر) kada je sa vokalom E ili U (رَ, رُ)?", "en": "How is the letter R (ر) recited when it carries the vowel A or U (رَ, رُ)?" },
+      "q": { "bs": "Kako se uči harf R (ر) kada je sa vokalom E ili U (رَ, رُ)?", "en": "How is the letter R (ر) recited when it carries the vowel A or U (رَ, رُ)?", "de": "Wie wird der Buchstabe R (ر) gesprochen, wenn er den Vokal A oder U hat (رَ, رُ)?" },
       "opcije": [
-        { "bs": "Krupno", "en": "Heavy" },
-        { "bs": "Tanko", "en": "Light" },
-        { "bs": "Kroz nos", "en": "Through the nose" },
-        { "bs": "Sa odskakanjem", "en": "With bouncing" }
+        { "bs": "Krupno", "en": "Heavy", "de": "Dick" },
+        { "bs": "Tanko", "en": "Light", "de": "Dünn" },
+        { "bs": "Kroz nos", "en": "Through the nose", "de": "Durch die Nase" },
+        { "bs": "Sa odskakanjem", "en": "With bouncing", "de": "Mit Abprallen" }
       ],
       "tacno": 0,
-      "objasnjenje": { "bs": "Harf R sa vokalom E ili U uči se krupno, npr. رُبَمَا.", "en": "The letter R with the vowel A or U is recited heavy, e.g. رُبَمَا." }
+      "objasnjenje": { "bs": "Harf R sa vokalom E ili U uči se krupno, npr. رُبَمَا.", "en": "The letter R with the vowel A or U is recited heavy, e.g. رُبَمَا.", "de": "Der Buchstabe R mit dem Vokal A oder U wird dick gesprochen, z. B. رُبَمَا." }
     },
     {
-      "q": { "bs": "Kako se uči harf R (ر) kada je sa vokalom I (رِ)?", "en": "How is the letter R (ر) recited when it carries the vowel I (رِ)?" },
+      "q": { "bs": "Kako se uči harf R (ر) kada je sa vokalom I (رِ)?", "en": "How is the letter R (ر) recited when it carries the vowel I (رِ)?", "de": "Wie wird der Buchstabe R (ر) gesprochen, wenn er den Vokal I hat (رِ)?" },
       "opcije": [
-        { "bs": "Krupno", "en": "Heavy" },
-        { "bs": "Tanko", "en": "Light" },
-        { "bs": "Kroz nos", "en": "Through the nose" },
-        { "bs": "Sa odskakanjem", "en": "With bouncing" }
+        { "bs": "Krupno", "en": "Heavy", "de": "Dick" },
+        { "bs": "Tanko", "en": "Light", "de": "Dünn" },
+        { "bs": "Kroz nos", "en": "Through the nose", "de": "Durch die Nase" },
+        { "bs": "Sa odskakanjem", "en": "With bouncing", "de": "Mit Abprallen" }
       ],
       "tacno": 1,
-      "objasnjenje": { "bs": "Harf R sa vokalom I uči se tanko, npr. مِنْ شَرِّ.", "en": "The letter R with the vowel I is recited light, e.g. مِنْ شَرِّ." }
+      "objasnjenje": { "bs": "Harf R sa vokalom I uči se tanko, npr. مِنْ شَرِّ.", "en": "The letter R with the vowel I is recited light, e.g. مِنْ شَرِّ.", "de": "Der Buchstabe R mit dem Vokal I wird dünn gesprochen, z. B. مِنْ شَرِّ." }
     },
     {
-      "q": { "bs": "U koliko situacija se harf R (ر) uči krupno?", "en": "In how many situations is the letter R (ر) recited heavy?" },
+      "q": { "bs": "U koliko situacija se harf R (ر) uči krupno?", "en": "In how many situations is the letter R (ر) recited heavy?", "de": "In wie vielen Situationen wird der Buchstabe R (ر) dick gesprochen?" },
       "opcije": [
-        { "bs": "2", "en": "2" },
-        { "bs": "3", "en": "3" },
-        { "bs": "4", "en": "4" },
-        { "bs": "5", "en": "5" }
+        { "bs": "2", "en": "2", "de": "2" },
+        { "bs": "3", "en": "3", "de": "3" },
+        { "bs": "4", "en": "4", "de": "4" },
+        { "bs": "5", "en": "5", "de": "5" }
       ],
       "tacno": 3,
-      "objasnjenje": { "bs": "Lekcija navodi pet situacija u kojima se harf R uči krupno.", "en": "The lesson lists five situations in which the letter R is recited heavy." }
+      "objasnjenje": { "bs": "Lekcija navodi pet situacija u kojima se harf R uči krupno.", "en": "The lesson lists five situations in which the letter R is recited heavy.", "de": "Die Lektion nennt fünf Situationen, in denen der Buchstabe R dick gesprochen wird." }
     },
     {
-      "q": { "bs": "U koliko situacija se harf R (ر) uči tanko?", "en": "In how many situations is the letter R (ر) recited light?" },
+      "q": { "bs": "U koliko situacija se harf R (ر) uči tanko?", "en": "In how many situations is the letter R (ر) recited light?", "de": "In wie vielen Situationen wird der Buchstabe R (ر) dünn gesprochen?" },
       "opcije": [
-        { "bs": "2", "en": "2" },
-        { "bs": "3", "en": "3" },
-        { "bs": "4", "en": "4" },
-        { "bs": "5", "en": "5" }
+        { "bs": "2", "en": "2", "de": "2" },
+        { "bs": "3", "en": "3", "de": "3" },
+        { "bs": "4", "en": "4", "de": "4" },
+        { "bs": "5", "en": "5", "de": "5" }
       ],
       "tacno": 2,
-      "objasnjenje": { "bs": "Lekcija navodi četiri situacije u kojima se harf R uči tanko.", "en": "The lesson lists four situations in which the letter R is recited light." }
+      "objasnjenje": { "bs": "Lekcija navodi četiri situacije u kojima se harf R uči tanko.", "en": "The lesson lists four situations in which the letter R is recited light.", "de": "Die Lektion nennt vier Situationen, in denen der Buchstabe R dünn gesprochen wird." }
     },
     {
-      "q": { "bs": "U kojoj od ovih riječi se harf R (ر) uči krupno?", "en": "In which of these words is the letter R (ر) recited heavy?" },
+      "q": { "bs": "U kojoj od ovih riječi se harf R (ر) uči krupno?", "en": "In which of these words is the letter R (ر) recited heavy?", "de": "In welchem dieser Wörter wird der Buchstabe R (ر) dick gesprochen?" },
       "opcije": [
-        { "bs": "تَرْجُفُ", "en": "تَرْجُفُ" },
-        { "bs": "مِنْ شَرِّ", "en": "مِنْ شَرِّ" },
-        { "bs": "أَنْذِرْ", "en": "أَنْذِرْ" },
-        { "bs": "حِجْرْ", "en": "حِجْرْ" }
+        { "bs": "تَرْجُفُ", "en": "تَرْجُفُ", "de": "تَرْجُفُ" },
+        { "bs": "مِنْ شَرِّ", "en": "مِنْ شَرِّ", "de": "مِنْ شَرِّ" },
+        { "bs": "أَنْذِرْ", "en": "أَنْذِرْ", "de": "أَنْذِرْ" },
+        { "bs": "حِجْرْ", "en": "حِجْرْ", "de": "حِجْرْ" }
       ],
       "tacno": 0,
-      "objasnjenje": { "bs": "U تَرْجُفُ harf R je sa sukunom, a prije njega je harf sa vokalom E, pa se uči krupno.", "en": "In تَرْجُفُ the letter R carries a sukun and is preceded by a letter with the vowel A, so it is recited heavy." }
+      "objasnjenje": { "bs": "U تَرْجُفُ harf R je sa sukunom, a prije njega je harf sa vokalom E, pa se uči krupno.", "en": "In تَرْجُفُ the letter R carries a sukun and is preceded by a letter with the vowel A, so it is recited heavy.", "de": "In تَرْجُفُ hat der Buchstabe R ein Sukun, und davor steht ein Buchstabe mit dem Vokal A, deshalb wird das R dick gesprochen." }
     },
     {
-      "q": { "bs": "U kojoj od ovih riječi se harf R (ر) uči tanko?", "en": "In which of these words is the letter R (ر) recited light?" },
+      "q": { "bs": "U kojoj od ovih riječi se harf R (ر) uči tanko?", "en": "In which of these words is the letter R (ر) recited light?", "de": "In welchem dieser Wörter wird der Buchstabe R (ر) dünn gesprochen?" },
       "opcije": [
-        { "bs": "رُبَمَا", "en": "رُبَمَا" },
-        { "bs": "قَدْرْ", "en": "قَدْرْ" },
-        { "bs": "فِرْقَةٍ", "en": "فِرْقَةٍ" },
-        { "bs": "فَهُوَ خَيْرْ", "en": "فَهُوَ خَيْرْ" }
+        { "bs": "رُبَمَا", "en": "رُبَمَا", "de": "رُبَمَا" },
+        { "bs": "قَدْرْ", "en": "قَدْرْ", "de": "قَدْرْ" },
+        { "bs": "فِرْقَةٍ", "en": "فِرْقَةٍ", "de": "فِرْقَةٍ" },
+        { "bs": "فَهُوَ خَيْرْ", "en": "فَهُوَ خَيْرْ", "de": "فَهُوَ خَيْرْ" }
       ],
       "tacno": 3,
-      "objasnjenje": { "bs": "U خَيْرْ prije harfa R sa sukunom dolazi harf J sa sukunom, a prije toga vokal E, pa se uči tanko.", "en": "In خَيْرْ the letter R with a sukun is preceded by the letter Y with a sukun and before that the vowel A, so it is recited light." }
+      "objasnjenje": { "bs": "U خَيْرْ prije harfa R sa sukunom dolazi harf J sa sukunom, a prije toga vokal E, pa se uči tanko.", "en": "In خَيْرْ the letter R with a sukun is preceded by the letter Y with a sukun and before that the vowel A, so it is recited light.", "de": "In خَيْرْ steht vor dem R mit Sukun der Buchstabe Y mit Sukun und davor der Vokal A, deshalb wird das R dünn gesprochen." }
     },
     {
-      "q": { "bs": "Zašto se u riječi فَهُوَ خَيْرْ harf R (ر) uči tanko?", "en": "Why is the letter R (ر) in the word فَهُوَ خَيْرْ recited light?" },
+      "q": { "bs": "Zašto se u riječi فَهُوَ خَيْرْ harf R (ر) uči tanko?", "en": "Why is the letter R (ر) in the word فَهُوَ خَيْرْ recited light?", "de": "Warum wird der Buchstabe R (ر) im Wort فَهُوَ خَيْرْ dünn gesprochen?" },
       "opcije": [
-        { "bs": "Jer je harf R sa vokalom I", "en": "Because the letter R carries the vowel I" },
-        { "bs": "Jer je prije harfa R harf J (ي) sa sukunom, a prije toga vokal E", "en": "Because the letter R is preceded by the letter Y (ي) with a sukun, and before that comes the vowel A" },
-        { "bs": "Jer je harf R na početku riječi", "en": "Because the letter R is at the beginning of the word" },
-        { "bs": "Jer poslije harfa R dolazi krupni harf", "en": "Because the letter R is followed by a heavy letter" }
+        { "bs": "Jer je harf R sa vokalom I", "en": "Because the letter R carries the vowel I", "de": "Weil der Buchstabe R den Vokal I hat" },
+        { "bs": "Jer je prije harfa R harf J (ي) sa sukunom, a prije toga vokal E", "en": "Because the letter R is preceded by the letter Y (ي) with a sukun, and before that comes the vowel A", "de": "Weil vor dem R der Buchstabe Y (ي) mit Sukun steht und davor der Vokal A" },
+        { "bs": "Jer je harf R na početku riječi", "en": "Because the letter R is at the beginning of the word", "de": "Weil der Buchstabe R am Wortanfang steht" },
+        { "bs": "Jer poslije harfa R dolazi krupni harf", "en": "Because the letter R is followed by a heavy letter", "de": "Weil nach dem R ein dicker Buchstabe kommt" }
       ],
       "tacno": 1,
-      "objasnjenje": { "bs": "To je četvrta situacija tankog izgovora: ــَ يْرْ.", "en": "This is the fourth situation of light pronunciation: ــَ يْرْ." }
+      "objasnjenje": { "bs": "To je četvrta situacija tankog izgovora: ــَ يْرْ.", "en": "This is the fourth situation of light pronunciation: ــَ يْرْ.", "de": "Das ist die vierte Situation der dünnen Aussprache: ــَ يْرْ." }
     },
     {
-      "q": { "bs": "Kako se uči harf R sa sukunom (رْ) kada je prije njega glas sa nestalnom kesrom, npr. لِمَنِ ارْتَضٰى?", "en": "How is the letter R with a sukun (رْ) recited when it is preceded by a sound with a temporary kasra, e.g. لِمَنِ ارْتَضٰى?" },
+      "q": { "bs": "Kako se uči harf R sa sukunom (رْ) kada je prije njega glas sa nestalnom kesrom, npr. لِمَنِ ارْتَضٰى?", "en": "How is the letter R with a sukun (رْ) recited when it is preceded by a sound with a temporary kasra, e.g. لِمَنِ ارْتَضٰى?", "de": "Wie wird der Buchstabe R mit Sukun (رْ) gesprochen, wenn davor ein Laut mit vorübergehender Kasra steht, z. B. لِمَنِ ارْتَضٰى?" },
       "opcije": [
-        { "bs": "Krupno", "en": "Heavy" },
-        { "bs": "Tanko", "en": "Light" },
-        { "bs": "Kroz nos", "en": "Through the nose" },
-        { "bs": "Sa odskakanjem", "en": "With bouncing" }
+        { "bs": "Krupno", "en": "Heavy", "de": "Dick" },
+        { "bs": "Tanko", "en": "Light", "de": "Dünn" },
+        { "bs": "Kroz nos", "en": "Through the nose", "de": "Durch die Nase" },
+        { "bs": "Sa odskakanjem", "en": "With bouncing", "de": "Mit Abprallen" }
       ],
       "tacno": 0,
-      "objasnjenje": { "bs": "Nestalna kesra ne čini harf R tankim, pa se u لِمَنِ ارْتَضٰى uči krupno.", "en": "A temporary kasra does not make the letter R light, so in لِمَنِ ارْتَضٰى it is recited heavy." }
+      "objasnjenje": { "bs": "Nestalna kesra ne čini harf R tankim, pa se u لِمَنِ ارْتَضٰى uči krupno.", "en": "A temporary kasra does not make the letter R light, so in لِمَنِ ارْتَضٰى it is recited heavy.", "de": "Eine vorübergehende Kasra macht den Buchstaben R nicht dünn, deshalb wird er in لِمَنِ ارْتَضٰى dick gesprochen." }
     },
     {
-      "q": { "bs": "Zašto se u riječi قِرْطَاسٍ harf R (ر) uči krupno iako je prije njega kesra?", "en": "Why is the letter R (ر) in the word قِرْطَاسٍ recited heavy even though it is preceded by a kasra?" },
+      "q": { "bs": "Zašto se u riječi قِرْطَاسٍ harf R (ر) uči krupno iako je prije njega kesra?", "en": "Why is the letter R (ر) in the word قِرْطَاسٍ recited heavy even though it is preceded by a kasra?", "de": "Warum wird der Buchstabe R (ر) im Wort قِرْطَاسٍ dick gesprochen, obwohl davor eine Kasra steht?" },
       "opcije": [
-        { "bs": "Jer je harf R sa vokalom U", "en": "Because the letter R carries the vowel U" },
-        { "bs": "Jer je prije harfa R harf sa sukunom", "en": "Because the letter R is preceded by a letter with a sukun" },
-        { "bs": "Jer je harf R na kraju riječi", "en": "Because the letter R is at the end of the word" },
-        { "bs": "Jer poslije harfa R dolazi jedan od krupnih harfova (ط)", "en": "Because the letter R is followed by one of the heavy letters (ط)" }
+        { "bs": "Jer je harf R sa vokalom U", "en": "Because the letter R carries the vowel U", "de": "Weil der Buchstabe R den Vokal U hat" },
+        { "bs": "Jer je prije harfa R harf sa sukunom", "en": "Because the letter R is preceded by a letter with a sukun", "de": "Weil vor dem R ein Buchstabe mit Sukun steht" },
+        { "bs": "Jer je harf R na kraju riječi", "en": "Because the letter R is at the end of the word", "de": "Weil der Buchstabe R am Wortende steht" },
+        { "bs": "Jer poslije harfa R dolazi jedan od krupnih harfova (ط)", "en": "Because the letter R is followed by one of the heavy letters (ط)", "de": "Weil nach dem R einer der dicken Buchstaben (ط) kommt" }
       ],
       "tacno": 3,
-      "objasnjenje": { "bs": "Harf R sa sukunom uči se krupno kada poslije njega dođe krupni harf, npr. قِرْطَاسٍ, فِرْقَةٍ.", "en": "The letter R with a sukun is recited heavy when followed by a heavy letter, e.g. قِرْطَاسٍ, فِرْقَةٍ." }
+      "objasnjenje": { "bs": "Harf R sa sukunom uči se krupno kada poslije njega dođe krupni harf, npr. قِرْطَاسٍ, فِرْقَةٍ.", "en": "The letter R with a sukun is recited heavy when followed by a heavy letter, e.g. قِرْطَاسٍ, فِرْقَةٍ.", "de": "Der Buchstabe R mit Sukun wird dick gesprochen, wenn nach ihm ein dicker Buchstabe kommt, z. B. قِرْطَاسٍ, فِرْقَةٍ." }
     }
   ]
 }

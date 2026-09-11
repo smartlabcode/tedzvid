@@ -223,6 +223,106 @@ const TXT = {
 				</Row>
 			</React.Fragment>
 		)
+	},
+
+	de: {
+		naziv: 'IQLAB',
+		naslov: '8 IQLAB',
+		podnaslov: (
+			<React.Fragment>
+				<strong>Den Buchstaben N (ن) in M (م) verwandeln</strong>
+			</React.Fragment>
+		),
+		lekcija: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Wenn nach dem Buchstaben <strong>N</strong> mit <strong>Sukun</strong> (
+						<span className="arapski-lekcija">نْ</span>) oder nach dem <strong>Tanwin</strong> AN{' '}
+						<span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
+						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
+						<span className="arapski-lekcija">ــٌــ</span> der Buchstabe <strong>B</strong> (<span className="arapski-lekcija">ب</span>) kommt,
+						dann gilt: Der Buchstabe <strong>N</strong> (
+						<span className="arapski-lekcija">ن</span>) <u>verwandelt</u> sich in den Buchstaben{' '}
+						<strong>
+							M (<span className="arapski-lekcija">م</span>){' '}
+						</strong>
+						für die Dauer von 2 Harakat:
+					</Col>
+				</Row>
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+				<Row className="text-center reorder">
+					<Col>{P('row1')}</Col>
+				</Row>
+				<Row className="text-center  reorder-basic rtl">
+					<Col>{P('row2')}</Col>
+				</Row>
+				<Row className="text-center reorder-basic ">
+					<Col>{P('row3')}</Col>
+				</Row>
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		),
+		lekcijaModal: (P, V) => (
+			<React.Fragment>
+				<Row>
+					<Col className="opisLekcije">
+						Wenn nach dem Buchstaben <strong>N</strong> mit <strong>Sukun</strong> (
+						<span className="arapski-lekcija">نْ</span>) oder nach dem <strong>Tanwin</strong> AN{' '}
+						<span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
+						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
+						<span className="arapski-lekcija">ــٌــ</span> der Buchstabe <strong>B</strong> (<span className="arapski-lekcija">ب</span>) kommt,
+						dann gilt: Der Buchstabe <strong>N</strong> (
+						<span className="arapski-lekcija">ن</span>) <u>verwandelt</u> sich in den Buchstaben{' '}
+						<strong>
+							M (<span className="arapski-lekcija">م</span>){' '}
+						</strong>
+						für die Dauer von 2 Harakat:
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row className="text-center reorder">
+					<Col>{P('row1')}</Col>
+				</Row>
+				<Row className="text-center reorder rtl">
+					<Col>{P('row2')}</Col>
+				</Row>
+				<Row className="text-center reorder">
+					<Col>{P('row3')}</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+			</React.Fragment>
+		)
 	}
 };
 

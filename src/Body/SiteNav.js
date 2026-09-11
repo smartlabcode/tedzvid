@@ -188,7 +188,7 @@ export default function SiteNav({ active, cta }) {
 						</React.Fragment>
 					)}
 				</div>
-				<LangSwitch light className="lang-switch--mobile" />
+				<LangSwitch light up className="lang-switch--mobile" />
 			</div>
 		</header>
 	);

@@ -7,66 +7,72 @@
 		{
 			"id": "idgam-gunneh",
 			"lekcija": 6,
-			"naziv": { "bs": "IDGAM MEAL-GUNNEH", "en": "IDGHAM MA'AL-GHUNNAH" },
-			"kontekst": { "bs": "poslije harfa نْ ili tenvina", "en": "after the letter نْ or tanween" },
+			"naziv": { "bs": "IDGAM MEAL-GUNNEH", "en": "IDGHAM MA'AL-GHUNNAH", "de": "IDGHAM MA’AL-GHUNNA" },
+			"kontekst": { "bs": "poslije harfa نْ ili tenvina", "en": "after the letter نْ or tanween", "de": "Nach dem Buchstaben نْ oder dem Tanwin" },
 			"pomoc": {
 				"bs": "Četiri harfa sadržana u riječi jemnu (يَمْنُو).",
-				"en": "The four letters contained in the word yamnu (يَمْنُو)."
+				"en": "The four letters contained in the word yamnu (يَمْنُو).",
+				"de": "Die vier Buchstaben aus dem Wort yamnu (يَمْنُو)."
 			},
 			"harfovi": [ "ي", "ن", "م", "و" ]
 		},
 		{
 			"id": "idgam-bila-gunneh",
 			"lekcija": 7,
-			"naziv": { "bs": "IDGAM BILA GUNNEH", "en": "IDGHAM BILA GHUNNAH" },
-			"kontekst": { "bs": "poslije harfa نْ ili tenvina", "en": "after the letter نْ or tanween" },
+			"naziv": { "bs": "IDGAM BILA GUNNEH", "en": "IDGHAM BILA GHUNNAH", "de": "IDGHAM BILA GHUNNA" },
+			"kontekst": { "bs": "poslije harfa نْ ili tenvina", "en": "after the letter نْ or tanween", "de": "Nach dem Buchstaben نْ oder dem Tanwin" },
 			"pomoc": {
 				"bs": "Samo dva harfa: L (ل) i R (ر).",
-				"en": "Only two letters: L (ل) and R (ر)."
+				"en": "Only two letters: L (ل) and R (ر).",
+				"de": "Nur zwei Buchstaben: L (ل) und R (ر)."
 			},
 			"harfovi": [ "ل", "ر" ]
 		},
 		{
 			"id": "iklab",
 			"lekcija": 8,
-			"naziv": { "bs": "IKLAB", "en": "IQLAB" },
-			"kontekst": { "bs": "poslije harfa نْ ili tenvina", "en": "after the letter نْ or tanween" },
+			"naziv": { "bs": "IKLAB", "en": "IQLAB", "de": "IQLAB" },
+			"kontekst": { "bs": "poslije harfa نْ ili tenvina", "en": "after the letter نْ or tanween", "de": "Nach dem Buchstaben نْ oder dem Tanwin" },
 			"pomoc": {
 				"bs": "Jedan jedini harf: B (ب).",
-				"en": "A single letter: B (ب)."
+				"en": "A single letter: B (ب).",
+				"de": "Ein einziger Buchstabe: B (ب)."
 			},
 			"harfovi": [ "ب" ]
 		},
 		{
 			"id": "izhar",
 			"lekcija": 9,
-			"naziv": { "bs": "IZHAR HALLKIJ", "en": "IDHHAR HALQI" },
-			"kontekst": { "bs": "poslije harfa نْ ili tenvina", "en": "after the letter نْ or tanween" },
+			"naziv": { "bs": "IZHAR HALLKIJ", "en": "IDHHAR HALQI", "de": "IDH-HAR HALQI" },
+			"kontekst": { "bs": "poslije harfa نْ ili tenvina", "en": "after the letter نْ or tanween", "de": "Nach dem Buchstaben نْ oder dem Tanwin" },
 			"pomoc": {
 				"bs": "Šest grlenih harfova: خ غ ح ع ه ء.",
-				"en": "The six throat letters: خ غ ح ع ه ء."
+				"en": "The six throat letters: خ غ ح ع ه ء.",
+				"de": "Die sechs Kehlbuchstaben: خ غ ح ع ه ء."
 			},
 			"harfovi": [ "ء", "ه", "ع", "ح", "غ", "خ" ]
 		},
 		{
 			"id": "kalkala",
 			"lekcija": 13,
-			"naziv": { "bs": "KALKALA", "en": "QALQALAH" },
-			"kontekst": { "bs": "kada harf ima sukun", "en": "when the letter carries a sukun" },
+			"naziv": { "bs": "KALKALA", "en": "QALQALAH", "de": "QALQALA" },
+			"kontekst": { "bs": "kada harf ima sukun", "en": "when the letter carries a sukun", "de": "Wenn der Buchstabe ein Sukun hat" },
 			"pomoc": {
 				"bs": "Pet harfova iz izraza kutbu džeddin (قُطْبُ جَدٍّ).",
-				"en": "The five letters of the phrase qutbu jaddin (قُطْبُ جَدٍّ)."
+				"en": "The five letters of the phrase qutbu jaddin (قُطْبُ جَدٍّ).",
+				"de": "Die fünf Buchstaben aus dem Ausdruck qutbu dschaddin (قُطْبُ جَدٍّ)."
 			},
 			"harfovi": [ "ق", "ط", "ب", "ج", "د" ]
 		},
 		{
 			"id": "ihfa",
 			"lekcija": 11,
-			"naziv": { "bs": "IHFA", "en": "IKHFA" },
-			"kontekst": { "bs": "poslije harfa نْ ili tenvina", "en": "after the letter نْ or tanween" },
+			"naziv": { "bs": "IHFA", "en": "IKHFA", "de": "ICHFA" },
+			"kontekst": { "bs": "poslije harfa نْ ili tenvina", "en": "after the letter نْ or tanween", "de": "Nach dem Buchstaben نْ oder dem Tanwin" },
 			"pomoc": {
 				"bs": "Petnaest harfova – svi osim harfova idgama, izhara i iklaba.",
-				"en": "Fifteen letters – all except the letters of idgham, idhhar and iqlab."
+				"en": "Fifteen letters – all except the letters of idgham, idhhar and iqlab.",
+				"de": "Fünfzehn Buchstaben – alle außer den Buchstaben von Idgham, Idh-har und Iqlab."
 			},
 			"harfovi": [
 				"ت", "ث", "ج", "د", "ذ", "ز", "س", "ش", "ص", "ض", "ط", "ظ", "ف", "ق", "ك"
