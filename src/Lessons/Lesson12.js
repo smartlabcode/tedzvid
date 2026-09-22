@@ -96,7 +96,7 @@ const TXT = {
 		naslov: '12 IKHFA SHAFAWI',
 		podnaslov: (
 			<React.Fragment>
-				<strong>Hiding the letter M (م)</strong>
+				<strong>Concealment of M (م)</strong>
 			</React.Fragment>
 		),
 		lekcija: (P, V) => (

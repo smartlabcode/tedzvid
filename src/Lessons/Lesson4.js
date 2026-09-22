@@ -109,7 +109,7 @@ const TXT = {
 					<Col className="opisLekcije">
 						When the letter with{' '}
 						<strong>
-							sukunom <span className="arapski-lekcija">ـــْــ</span>
+							sukoon <span className="arapski-lekcija">ـــْــ</span>
 						</strong>{' '}
 						is followed by the <u>same</u> letter with a short{' '}
 						<strong>vowel/haraka</strong>, a complete assimilation occurs, i.e.
@@ -143,7 +143,7 @@ const TXT = {
 					<Col className="opisLekcije">
 						When the letter with{' '}
 						<strong>
-							sukunom <span className="arapski-lekcija">ـــْــ</span>
+							sukoon <span className="arapski-lekcija">ـــْــ</span>
 						</strong>{' '}
 						is followed by the <u>same</u> letter with a short{' '}
 						<strong>vowel/haraka</strong>, a complete assimilation occurs,

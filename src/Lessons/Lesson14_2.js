@@ -171,7 +171,7 @@ const TXT = {
 					<Col className="opisLekcije">
 						The letter<strong> R </strong>
 						<span className="arapski-lekcija">(ر)</span> is recited{' '}
-						<u>non-emphatically</u> y in the following situations:
+						<u>non-emphatically</u> in the following situations:
 					</Col>
 				</Row>
 
@@ -247,7 +247,7 @@ const TXT = {
 					<Col className="opisLekcije">
 						The letter<strong> R </strong>
 						<span className="arapski-lekcija">(ر)</span> is recited{' '}
-						<u>non-emphatically</u> y in the following situations:
+						<u>non-emphatically</u> in the following situations:
 					</Col>
 				</Row>
 

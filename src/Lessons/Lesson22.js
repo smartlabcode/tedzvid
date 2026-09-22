@@ -177,7 +177,7 @@ const TXT = {
 		naslov: '22 MADDU AL-LEEN',
 		podnaslov: (
 			<React.Fragment>
-				<strong>Soft-letter prolongation</strong>
+				<strong>Semi-vocal length</strong>
 			</React.Fragment>
 		),
 		lekcija: (P, V) => (

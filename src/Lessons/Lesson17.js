@@ -94,7 +94,7 @@ const TXT = {
 	en: {
 		naziv: 'AL-MADD AL-TABEE’EE',
 		naslov: '17 AL-MADD AL-TABEE’EE',
-		podnaslov: 'Natural prolongation',
+		podnaslov: 'Normal extension',
 		lekcija: (P, V) => (
 			<React.Fragment>
 				<Row>

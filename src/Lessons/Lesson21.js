@@ -112,7 +112,7 @@ const TXT = {
 	en: {
 		naziv: 'AL-MADD AL-‘AARID',
 		naslov: '21 AL-MADD AL-‘AARID',
-		podnaslov: 'Temporary prolongation',
+		podnaslov: 'Temporary extension',
 		lekcija: (P, V) => (
 			<React.Fragment>
 				<Row>
