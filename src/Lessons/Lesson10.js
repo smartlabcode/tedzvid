@@ -134,8 +134,8 @@ const TXT = {
 	},
 
 	en: {
-		naziv: 'IDHHAR SHAFAWI',
-		naslov: '10 IDHHAR SHAFAWI',
+		naziv: 'IZHAAR SHAFAWI',
+		naslov: '10 IZHAAR SHAFAWI',
 		podnaslov: (
 			<React.Fragment>
 				<strong>Clear pronunciation of the letter M (م)</strong>
@@ -145,19 +145,13 @@ const TXT = {
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						When the letter <strong>M</strong> with a <strong>sukun</strong> (
-						<span className="arapski-lekcija">مْ</span>) comes before <u>any</u> letter <u>except</u>{' '}
-						the letters <strong>B</strong> (
-						<span className="arapski-lekcija">ب</span>) and{' '}
-						<strong>
-							M (<span className="arapski-lekcija">م</span>){' '}
-						</strong>
-						, then the letter
-						<strong>
-							{' '}
-							M (<span className="arapski-lekcija">م</span>){' '}
-						</strong>{' '}
-						is pronounced <u>clearly</u>, that is, without merging, e.g.:
+						When the letter <strong>M</strong> with <strong>sukoon</strong> (
+						<span className="arapski-lekcija">مْ</span>) precedes <u>any</u>{' '}
+						letter, <u>except for</u> the letters <strong>B</strong> (
+						<span className="arapski-lekcija">ب</span>) and <strong>M</strong> (
+						<span className="arapski-lekcija">م</span>), then the letter{' '}
+						<strong>M</strong> (<span className="arapski-lekcija">م</span>) is
+						pronounced <u>clearly</u>, without assimilation. For example:
 					</Col>
 				</Row>
 
@@ -197,18 +191,14 @@ const TXT = {
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						When the letter <strong>M</strong> with a <strong>sukun</strong> (
-						<span className="arapski-lekcija">مْ</span>) comes before <u>any</u> letter,{' '}
-						<u>except</u> the letters <strong>B</strong> (<span className="arapski-lekcija">ب</span>) and{' '}
-						<strong>
-							M (<span className="arapski-lekcija">م</span>){' '}
-						</strong>
-						, then the letter
-						<strong>
-							{' '}
-							M (<span className="arapski-lekcija">م</span>){' '}
-						</strong>{' '}
-						is pronounced <u>clearly</u>, that is, without merging, e.g.:
+						When the letter <strong>M</strong> with <strong>sukoon</strong>{' '}
+						(<span className="arapski-lekcija">مْ</span>) precedes{' '}
+						<u>any</u> letter, <u>except for</u> the letters{' '}
+						<strong>B</strong> (<span className="arapski-lekcija">ب</span>)
+						and <strong>M</strong> (
+						<span className="arapski-lekcija">م</span>), then the letter{' '}
+						<strong>M</strong> (<span className="arapski-lekcija">م</span>)
+						is pronounced <u>clearly</u>, without assimilation. For example:
 					</Col>
 				</Row>
 

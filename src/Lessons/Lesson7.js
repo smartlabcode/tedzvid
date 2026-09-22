@@ -117,28 +117,29 @@ const TXT = {
 	},
 
 	en: {
-		naziv: 'IDGHAM BILA GHUNNAH',
-		naslov: '7 IDGHAM BILA GHUNNAH',
+		naziv: 'IDGHAM WITHOUT GHUNNAH',
+		naslov: '7 IDGHAM WITHOUT GHUNNAH',
 		podnaslov: (
 			<React.Fragment>
-				<strong>Merging without nasalisation</strong>
+				<strong>Assimilation without the airflow through the nose</strong>
 			</React.Fragment>
 		),
 		lekcija: (P, V) => (
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						When the letter <strong>N</strong> with a <strong>sukun</strong> (
-						<span className="arapski-lekcija">نْ</span>) or the <strong>tanween</strong> AN{' '}
-						<span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
-						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
-						<span className="arapski-lekcija">ــٌــ</span> is followed by the letter <strong>L</strong>{' '}
-						<span className="arapski-lekcija">(ل) </span>or <strong>R</strong>{' '}
-						<span className="arapski-lekcija">(ر)</span>, the letter <strong>N </strong>
-						<span className="arapski-lekcija"> (ن)</span> <u>merges completely</u> into the letter{' '}
-						<strong>L</strong> <span className="arapski-lekcija">(ل)</span>, or into <strong>R</strong>{' '}
-						<span className="arapski-lekcija">(ر)</span> respectively, which means that <strong>N</strong>{' '}
-						<span className="arapski-lekcija">(ن)&nbsp;</span>is not pronounced at all, e.g.:
+						When the letter N with sukoon (
+						<span className="arapski-lekcija">نْ</span>) or nunation/tanwin EN{' '}
+						<span className="arapski-lekcija">ـــًـــ</span>, IN{' '}
+						<span className="arapski-lekcija">ـــٍــ</span>, UN{' '}
+						<span className="arapski-lekcija">ــٌــ</span> is followed by the
+						letter L (<span className="arapski-lekcija">ل</span>) or R (
+						<span className="arapski-lekcija">ر</span>), the letter N (
+						<span className="arapski-lekcija">ن</span>) fully assimilates into
+						the letter L (<span className="arapski-lekcija">ل</span>) or R (
+						<span className="arapski-lekcija">ر</span>) respectively, i.e. N (
+						<span className="arapski-lekcija">ن</span>) is not pronounced. For
+						instance:
 					</Col>
 				</Row>
 				<Row>
@@ -169,19 +170,18 @@ const TXT = {
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						When the letter <strong>N</strong> with a <strong>sukun</strong> (
-						<span className="arapski-lekcija">نْ</span>) or the <strong>tanween</strong> AN{' '}
-						<span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
-						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
-						<span className="arapski-lekcija">ــٌــ</span> is followed by the letter <strong>L</strong>{' '}
-						<span className="arapski-lekcija">(ل) </span>
-						or <strong>R</strong> <span className="arapski-lekcija">(ر)</span>, the letter{' '}
-						<strong>N </strong>
-						<span className="arapski-lekcija"> (ن)</span> <u>merges completely</u> into the letter{' '}
-						<strong>L</strong> <span className="arapski-lekcija">(ل)</span>, or into <strong>R</strong>{' '}
-						<span className="arapski-lekcija">(ر)</span> respectively, which means that <strong>N</strong>{' '}
-						<span className="arapski-lekcija">(ن)</span>
-						is not pronounced at all, e.g.:
+						When the letter N with sukoon (
+						<span className="arapski-lekcija">نْ</span>) or nunation/tanwin
+						EN <span className="arapski-lekcija">ـــًـــ</span>, IN{' '}
+						<span className="arapski-lekcija">ـــٍــ</span>, UN{' '}
+						<span className="arapski-lekcija">ــٌــ</span> is followed by
+						the letter L (<span className="arapski-lekcija">ل</span>) or R (
+						<span className="arapski-lekcija">ر</span>), the letter N (
+						<span className="arapski-lekcija">ن</span>) fully assimilates
+						into the letter L (<span className="arapski-lekcija">ل</span>)
+						or R (<span className="arapski-lekcija">ر</span>) respectively,
+						i.e. N (<span className="arapski-lekcija">ن</span>) is not
+						pronounced. For instance:
 					</Col>
 				</Row>
 				<Row>

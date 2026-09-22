@@ -102,11 +102,12 @@ const TXT = {
 		lekcija: (P, V) => (
 			<React.Fragment>
 				<Row>
-					<Col className="opisLekcije">
-						When the letter <strong>M</strong> with a <strong>sukun</strong> (
-						<span className="arapski-lekcija">مْ</span>) is followed by the letter <strong>B</strong> (<span className="arapski-lekcija">ب</span>),
-						the pronunciation of the letter <strong>M</strong> (
-						<span className="arapski-lekcija">م</span>) is prolonged for the length of 2 harakas, e.g.:
+					<Col className='opisLekcije'>
+															When the letter <strong>M</strong> with <strong>sukoon</strong> (
+					<span className='arapski-lekcija'>مْ</span>) is followed by the letter{' '}
+					<strong>B</strong> (<span className='arapski-lekcija'>ب</span>),
+					the pronunciation of <strong>M</strong> (
+					<span className='arapski-lekcija'>م</span>) is prolonged for two counts, for example:
 					</Col>
 				</Row>
 
@@ -132,11 +133,12 @@ const TXT = {
 		lekcijaModal: (P, V) => (
 			<React.Fragment>
 				<Row>
-					<Col className="opisLekcije">
-						When the letter <strong>M</strong> with a <strong>sukun</strong> (
-						<span className="arapski-lekcija">مْ</span>) is followed by the letter <strong>B</strong> (<span className="arapski-lekcija">ب</span>),
-						the pronunciation of the letter <strong>M</strong> (
-						<span className="arapski-lekcija">م</span>) is prolonged for the length of 2 harakas, e.g.:
+																	<Col className='opisLekcije'>
+															When the letter <strong>M</strong> with <strong>sukoon</strong> (
+					<span className='arapski-lekcija'>مْ</span>) is followed by the letter{' '}
+					<strong>B</strong> (<span className='arapski-lekcija'>ب</span>),
+					the pronunciation of <strong>M</strong> (
+					<span className='arapski-lekcija'>م</span>) is prolonged for two counts, for example:
 					</Col>
 				</Row>
 

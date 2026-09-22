@@ -141,31 +141,37 @@ const TXT = {
 	},
 
 	en: {
-		naziv: 'IKHFA',
-		naslov: '11 IKHFA',
+		naziv: 'IHFA',
+		naslov: '11 IKHFAA',
 		podnaslov: (
 			<React.Fragment>
-				<strong>Hiding the letter N (ن)</strong>
+				<strong>Concealment of N (ن)</strong>
 			</React.Fragment>
 		),
 		lekcija: (P, V) => (
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						When the letter <strong>N</strong> with a <strong>sukun</strong> (
-						<span className="arapski-lekcija">نْ</span>) or the <strong>tanween</strong> AN{' '}
+						When the letter <strong>N</strong> with <strong>sukoon</strong> (
+						<span className="arapski-lekcija">نْ</span>) or{' '}
+						<strong>nunation/tanwin</strong> EN{' '}
 						<span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
 						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
-						<span className="arapski-lekcija">ــٌــ</span> is followed by one of these 15 letters:{' '}
+						<span className="arapski-lekcija">ــٌــ</span> is following by one
+						of the 15 letters:{' '}
 						<span style={{ display: 'inline-flex' }}>
-							<Arabic arabic="ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق " key="arL11">
+							<Arabic arabic="ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق" key="arL11">
 								{' '}
-								ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق {' '}
+								<span style={{ color: 'red', fontSize: '2.5rem' }}>
+									ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق
+								</span>
+								{" ,"}
 							</Arabic>
-						</span>
-						, then the letter <strong>N</strong> (
-						<span className="arapski-lekcija">ن</span>) is recited through the nose for the length of 2
-						harakas, without the tongue touching the palate, e.g.:
+						</span>{' '}
+						then a two-beat <strong>N</strong> (
+						<span className="arapski-lekcija">ن</span>) is pronounced{' '}
+						<u>through nose</u>, without the tongue touching the palate, for
+						example:
 					</Col>
 				</Row>
 
@@ -206,20 +212,26 @@ const TXT = {
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						When the letter <strong>N</strong> with a <strong>sukun</strong> (
-						<span className="arapski-lekcija">نْ</span>) or the <strong>tanween</strong> AN{' '}
+						When the letter <strong>N</strong> with <strong>sukoon</strong>{' '}
+						(<span className="arapski-lekcija">نْ</span>) or{' '}
+						<strong>nunation/tanwin</strong> EN{' '}
 						<span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
 						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
-						<span className="arapski-lekcija">ــٌــ</span> is followed by one of these 15 letters:{' '}
+						<span className="arapski-lekcija">ــٌــ</span> is following by
+						one of the 15 letters:{' '}
 						<span style={{ display: 'inline-flex' }}>
-							<Arabic arabic="ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق " key="arL11">
+							<Arabic arabic="ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق" key="arL11">
 								{' '}
-								ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق {' '}
+								<span style={{ color: 'red', fontSize: '2.5rem' }}>
+									ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق
+								</span>
+								{" ,"}
 							</Arabic>
-						</span>
-						, then the letter <strong>N</strong> (
-						<span className="arapski-lekcija">ن</span>) is recited through the nose for the length
-						of 2 harakas, without the tongue touching the palate, e.g.:
+						</span>{' '}
+						then a two-beat <strong>N</strong> (
+						<span className="arapski-lekcija">ن</span>) is pronounced{' '}
+						<u>through nose</u>, without the tongue touching the palate, for
+						example:
 					</Col>
 				</Row>
 

@@ -190,21 +190,27 @@ const TXT = {
 	},
 
 	en: {
-		naziv: 'IDHHAR HALQI',
-		naslov: '9 IDHHAR HALQI',
+		naziv: 'IZHAAR HALQIJJ',
+		naslov: '9 IZHAAR HALQIJJ',
 		podnaslov: (
 			<React.Fragment>
-				<strong>Clear pronunciation of the letter N (ن) or tanween</strong>
+				<strong>
+					Clear pronunciation of the letter N (ن) or nunation/tanwin
+				</strong>
 			</React.Fragment>
 		),
 		lekcija: (P, V) => (
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						When the letter <strong>N</strong> with a <strong>sukun</strong> (<span className="arapski-lekcija">نْ</span>)
-						or the <strong>tanween</strong> AN <span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
-						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
-						<span className="arapski-lekcija">ــٌــ</span> is followed by one of the six throat letters:<pre style={{ display: 'inline' }}> </pre>
+						When the letter <strong>N</strong> with <strong>sukoon</strong> (
+						<span className="arapski-lekcija">نْ</span>) or{' '}
+						<strong>nunation/tanwin</strong> EN{' '}
+						<span className="arapski-lekcija ">ـــًـــ </span>, IN{' '}
+						<span className="arapski-lekcija ">ـــٍــ </span>, UN
+						<span className="arapski-lekcija "> ــٌــ</span> is followed by one
+						of the six throat letters:{' '}
+						<pre style={{ display: 'inline' }}> </pre>
 						<span className="arapski-lekcija" style={{ color: 'red' }}>
 							{' '}
 							خ
@@ -234,8 +240,9 @@ const TXT = {
 							{' '}
 							أ{' '}
 						</span>{' '}
-						<pre style={{ display: 'inline' }}> </pre>then the letter <strong>N</strong> (<span className="arapski-lekcija">ن</span>)
-						is pronounced <u>clearly</u>, that is, without merging, e.g.:
+						, then the letter <strong>N</strong> (
+						<span className="arapski-lekcija">ن</span>) is pronounced{' '}
+						<u>clearly</u>, without assimilation, for example:
 					</Col>
 				</Row>
 
@@ -252,10 +259,20 @@ const TXT = {
 
 				<Row>
 					<Col className="opisLekcije">
-						<strong>IDHHAR MUTLAQ</strong> – when the letter <strong>N</strong> with a sukun (<span className="arapski-lekcija">نْ</span>){' '}
-						is followed <u>within the same word</u> by the letter <strong>W</strong> (<span className="arapski-lekcija">و</span>)
-						or <strong>Y</strong> (<span className="arapski-lekcija">ي</span>), the letter <strong>N</strong> (<span className="arapski-lekcija">ن</span>)
-						is pronounced <u>clearly</u>, that is, without merging, e.g.:
+						<strong>IZHAR MUTLAK</strong> – when the letter <strong>N</strong>{' '}
+						with <strong>sukoon</strong> (
+						<span className="arapski-lekcija">نْ</span>) is followed by the
+						letters <strong>W</strong> (
+						<span className="arapski-lekcija" style={{ color: 'black' }}>
+							و
+						</span>
+						) or <strong>J</strong> (
+						<span className="arapski-lekcija" style={{ color: 'black' }}>
+							ي
+						</span>
+						) <u>within the same word</u>, the letter <strong>N</strong> (
+						<span className="arapski-lekcija">ن</span>) is pronounced{' '}
+						<u>clearly</u>, without assimilation, for example:
 					</Col>
 				</Row>
 
@@ -280,10 +297,14 @@ const TXT = {
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						When the letter <strong>N</strong> with a <strong>sukun</strong> (<span className="arapski-lekcija">نْ</span>)
-						or the <strong>tanween</strong> AN <span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
-						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
-						<span className="arapski-lekcija">ــٌــ</span> is followed by one of the six throat letters:<pre style={{ display: 'inline' }}> </pre>
+						When the letter <strong>N</strong> with <strong>sukoon</strong>{' '}
+						(<span className="arapski-lekcija">نْ</span>) or{' '}
+						<strong>nunation/tanwin</strong> EN{' '}
+						<span className="arapski-lekcija ">ـــًـــ</span> , IN{' '}
+						<span className="arapski-lekcija ">ـــٍــ </span>, UN
+						<span className="arapski-lekcija "> ــٌــ </span>is followed by
+						one of the six throat letters:{' '}
+						<pre style={{ display: 'inline' }}> </pre>
 						<span className="arapski-lekcija" style={{ color: 'red' }}>
 							{' '}
 							خ
@@ -313,8 +334,9 @@ const TXT = {
 							{' '}
 							أ{' '}
 						</span>{' '}
-						<pre style={{ display: 'inline' }}> </pre>then the letter <strong>N</strong> (<span className="arapski-lekcija">ن</span>)
-						is pronounced <u>clearly</u>, that is, without merging, e.g.:
+						, then the letter <strong>N</strong> (
+						<span className="arapski-lekcija">ن</span>) is pronounced{' '}
+						<u>clearly</u>, without assimilation, for example:
 					</Col>
 				</Row>
 
@@ -330,11 +352,20 @@ const TXT = {
 				</Row>
 				<Row>
 					<Col className="opisLekcije">
-						<strong>IDHHAR MUTLAQ</strong> – when the letter <strong>N</strong> with a sukun (<span className="arapski-lekcija">نْ</span>){' '}
-						is followed <u>within the same word</u> by the letter <strong>W</strong> (<span className="arapski-lekcija">و</span>)
-						or <strong>Y</strong> (<span className="arapski-lekcija">ي</span>), the letter{' '}
-						<strong>N</strong> (<span className="arapski-lekcija">ن</span>) is pronounced <u>clearly</u>,
-						that is, without merging, e.g.:
+						<strong>IZHAR MUTLAK</strong> – when the letter{' '}
+						<strong>N</strong> with <strong>sukoon</strong> (
+						<span className="arapski-lekcija">نْ</span>) is followed by the
+						letters <strong>W</strong> (
+						<span className="arapski-lekcija" style={{ color: 'black' }}>
+							و
+						</span>
+						) or <strong>J</strong> (
+						<span className="arapski-lekcija" style={{ color: 'black' }}>
+							ي
+						</span>
+						) <u>within the same word</u>, the letter <strong>N</strong> (
+						<span className="arapski-lekcija">ن</span>) is pronounced{' '}
+						<u>clearly</u>, without assimilation, for example:
 					</Col>
 				</Row>
 

@@ -122,28 +122,28 @@ const TXT = {
 	},
 
 	en: {
-		naziv: 'IQLAB',
-		naslov: '8 IQLAB',
+		naziv: 'IQLAAB',
+		naslov: '8 IQLAAB',
 		podnaslov: (
 			<React.Fragment>
-				<strong>Turning the letter N (ن) into the letter M (م)</strong>
+				<strong>Converting the letter N (ن) into M (م)</strong>
 			</React.Fragment>
 		),
 		lekcija: (P, V) => (
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						When the letter <strong>N</strong> with a <strong>sukun</strong> (
-						<span className="arapski-lekcija">نْ</span>) or the <strong>tanween</strong> AN{' '}
-						<span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
-						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
-						<span className="arapski-lekcija">ــٌــ</span> is followed by the letter <strong>B</strong> (<span className="arapski-lekcija">ب</span>),
-						then the letter <strong>N</strong> (
-						<span className="arapski-lekcija">ن</span>) <u>turns into</u> the letter{' '}
-						<strong>
-							M (<span className="arapski-lekcija">م</span>){' '}
-						</strong>
-						for the length of 2 harakas:
+						When the letter N with <strong>sukoon</strong> (
+						<span className="arapski-lekcija">نْ</span>) or nunation/
+						<strong>tanwin</strong> EN (
+						<span className="arapski-lekcija">ـــًـــ</span>), IN (
+						<span className="arapski-lekcija">ـــٍــ</span>), UN (
+						<span className="arapski-lekcija">ــٌــ</span>) is followed by the
+						letter <strong>B</strong> (
+						<span className="arapski-lekcija">ب</span>), then the letter{' '}
+						<strong>N</strong> (<span className="arapski-lekcija">ن</span>) is{' '}
+						<u>converted</u> into the letter <strong>M</strong> (
+						<span className="arapski-lekcija">م</span>) lasting for two counts.
 					</Col>
 				</Row>
 				<Row>
@@ -176,17 +176,18 @@ const TXT = {
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						When the letter <strong>N</strong> with a <strong>sukun</strong> (
-						<span className="arapski-lekcija">نْ</span>) or the <strong>tanween</strong> AN{' '}
-						<span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
-						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
-						<span className="arapski-lekcija">ــٌــ</span> is followed by the letter <strong>B</strong> (<span className="arapski-lekcija">ب</span>),
-						then the letter <strong>N</strong> (
-						<span className="arapski-lekcija">ن</span>) <u>turns into</u> the letter{' '}
-						<strong>
-							M (<span className="arapski-lekcija">م</span>){' '}
-						</strong>
-						for the length of 2 harakas:
+						When the letter N with <strong>sukoon</strong> (
+						<span className="arapski-lekcija">نْ</span>) or nunation/
+						<strong>tanwin</strong> EN (
+						<span className="arapski-lekcija">ـــًـــ</span>), IN (
+						<span className="arapski-lekcija">ـــٍــ</span>), UN (
+						<span className="arapski-lekcija">ــٌــ</span>) is followed by
+						the letter <strong>B</strong> (
+						<span className="arapski-lekcija">ب</span>), then the letter{' '}
+						<strong>N</strong> (<span className="arapski-lekcija">ن</span>)
+						is <u>converted</u> into the letter <strong>M</strong> (
+						<span className="arapski-lekcija">م</span>) lasting for two
+						counts.
 					</Col>
 				</Row>
 
