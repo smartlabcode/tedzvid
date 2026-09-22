@@ -144,6 +144,8 @@ const UI = {
 		/* ----- grupe lekcija i grupni kvizovi ----- */
 		grupaEyebrow: (b) => `Grupa ${b}`,
 		grupaNaslov: (od, doLekcije) => `Lekcije ${od}–${doLekcije}`,
+		grupaMeta: (n) => `${n} ${n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 'lekcije' : 'lekcija'} · kviz grupe`,
+		grupeNavAria: 'Grupe lekcija',
 		grupaKvizNaslov: (b) => `Kviz grupe ${b}`,
 		grupaKvizEyebrow: (b) => `Provjera grupe ${b}`,
 		grupaKarticaTekst: (n, od, doLekcije, prolaz) =>
@@ -780,6 +782,8 @@ const UI = {
 		/* ----- lesson groups and group quizzes ----- */
 		grupaEyebrow: (b) => `Group ${b}`,
 		grupaNaslov: (od, doLekcije) => `Lessons ${od}–${doLekcije}`,
+		grupaMeta: (n) => `${n} lessons · group quiz`,
+		grupeNavAria: 'Lesson groups',
 		grupaKvizNaslov: (b) => `Group ${b} quiz`,
 		grupaKvizEyebrow: (b) => `Test of group ${b}`,
 		grupaKarticaTekst: (n, od, doLekcije, prolaz) =>
@@ -1414,6 +1418,8 @@ const UI = {
 		/* ----- Lektionsgruppen und Gruppenquiz ----- */
 		grupaEyebrow: (b) => `Gruppe ${b}`,
 		grupaNaslov: (od, doLekcije) => `Lektionen ${od}–${doLekcije}`,
+		grupaMeta: (n) => `${n} Lektionen · Gruppenquiz`,
+		grupeNavAria: 'Lektionsgruppen',
 		grupaKvizNaslov: (b) => `Gruppenquiz ${b}`,
 		grupaKvizEyebrow: (b) => `Test zu Gruppe ${b}`,
 		grupaKarticaTekst: (n, od, doLekcije, prolaz) =>

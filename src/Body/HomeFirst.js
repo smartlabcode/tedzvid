@@ -13,14 +13,44 @@ import {
 import GroupQuizCard from './GroupQuizCard';
 import data from '../Data/lessons.json';
 import { useAuth } from '../auth/AuthContext';
-import { GRUPE, UKUPNO, putanjaKviza } from '../auth/progress';
+import { GRUPE, UKUPNO, putanjaKviza, jePolozenaGrupa } from '../auth/progress';
 import { useLang, DEFAULT_LANG } from '../i18n/LanguageContext';
 import { useUI } from '../i18n/ui';
 
 /* Naslovi lekcija su u lessons.json po jezicima: { bs: '…', en: '…' } */
 const pick = (field, lang) => (typeof field === 'string' ? field : field[lang] || field[DEFAULT_LANG]);
 
-/* Lekcije po grupama (4+4+4+4+6); iza svake grupe stoji kartica grupnog kviza. */
+/* Broj grupe u krugu; kad je kviz grupe položen, umjesto broja stoji kvačica */
+function BrojGrupe({ broj, polozena }) {
+	const ui = useUI();
+	return (
+		<span
+			className={'grupa-broj' + (polozena ? ' is-done' : '')}
+			aria-label={polozena ? ui.grupaEyebrow(broj) + ' – ' + ui.statusPolozeno : undefined}
+		>
+			{polozena ? <FaCheck /> : broj}
+		</span>
+	);
+}
+
+/* Traka za skok na grupu – stoji na dnu tamnoplave trake iznad lekcija */
+export function GrupeNav() {
+	const ui = useUI();
+	const { progress } = useAuth();
+	return (
+		<nav className="grupe-nav" aria-label={ui.grupeNavAria}>
+			{GRUPE.map((g) => (
+				<a className="grupe-nav__item" href={'#grupa' + g.broj} key={g.broj}>
+					<BrojGrupe broj={g.broj} polozena={jePolozenaGrupa(progress, g.broj)} />
+					<span className="grupe-nav__oznaka">{ui.grupaEyebrow(g.broj)}</span>
+					<span className="grupe-nav__lekcije">{ui.grupaNaslov(g.od, g.do)}</span>
+				</a>
+			))}
+		</nav>
+	);
+}
+
+/* Lekcije po grupama (4+4+4+4+6); svaka grupa je panel s karticom grupnog kviza na dnu. */
 function HomeFirst() {
 	const { lang } = useLang();
 	const ui = useUI();
@@ -89,8 +119,12 @@ function HomeFirst() {
 			{GRUPE.map((g) => (
 				<section className="lessons__grupa" key={g.broj} id={'grupa' + g.broj}>
 					<header className="lessons__grupa-head">
-						<span className="lessons__grupa-oznaka">{ui.grupaEyebrow(g.broj)}</span>
-						<h2>{ui.grupaNaslov(g.od, g.do)}</h2>
+						<BrojGrupe broj={g.broj} polozena={jePolozenaGrupa(progress, g.broj)} />
+						<div className="lessons__grupa-naslov">
+							<span className="lessons__grupa-oznaka">{ui.grupaEyebrow(g.broj)}</span>
+							<h2>{ui.grupaNaslov(g.od, g.do)}</h2>
+						</div>
+						<span className="lessons__grupa-meta">{ui.grupaMeta(g.lekcije.length)}</span>
 					</header>
 					<div className="lessons__grid">{g.lekcije.map(kartica)}</div>
 					<GroupQuizCard grupa={g} />

@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import SiteNav from './SiteNav';
 import SiteFooter from './SiteFooter';
 import PageBand from './PageBand';
-import HomeFirst from './HomeFirst';
+import HomeFirst, { GrupeNav } from './HomeFirst';
 import FinalQuizCard from './FinalQuizCard';
 import BonusKartica from './BonusKartica';
 import { useUI } from '../i18n/ui';
@@ -16,7 +16,9 @@ function Home() {
 	return (
 		<React.Fragment>
 			<SiteNav active="lekcije" cta={{ to: '/', label: ui.navNaslovna, back: true }} />
-			<PageBand eyebrow={ui.lessonsEyebrow} title={ui.lessonsTitle} text={ui.lessonsText} />
+			<PageBand eyebrow={ui.lessonsEyebrow} title={ui.lessonsTitle} text={ui.lessonsText}>
+				<GrupeNav />
+			</PageBand>
 			<main className="lessons">
 				<div className="wrap">
 					<HomeFirst />

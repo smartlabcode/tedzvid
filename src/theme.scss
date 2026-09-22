@@ -1567,35 +1567,161 @@ textarea.field {
     pointer-events: none;
   }
 
+  /* svaka grupa je kremasti panel sa zlatnom unutrašnjom linijom (kao okvir vježbe u lekciji);
+     prvi panel prelazi preko tamnoplave trake, pa oznaka grupe uvijek stoji na svijetloj podlozi */
+  &__grupa {
+    position: relative;
+    padding: 26px;
+    background: linear-gradient(180deg, #fffdf8 0%, #faf5ea 100%);
+    border: 1px solid var(--gold-200);
+    border-radius: 26px;
+    box-shadow: 0 10px 30px rgba(16, 59, 92, 0.08);
+    /* skok s trake grupa ne smije završiti pod ljepljivom navigacijom */
+    scroll-margin-top: 96px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 9px;
+      border: 1px solid rgba(185, 150, 47, 0.35);
+      border-radius: 19px;
+      pointer-events: none;
+    }
+
+    .lesson-card {
+      position: relative;
+      box-shadow: none;
+    }
+
+    .lessons__final--grupa {
+      position: relative;
+      box-shadow: none;
+    }
+  }
+
   &__grupa + &__grupa {
-    margin-top: 44px;
+    margin-top: 36px;
   }
 
   &__grupa-head {
+    position: relative;
     display: flex;
-    align-items: baseline;
-    gap: 14px;
-    margin: 0 0 16px;
+    align-items: center;
+    gap: 16px;
+    margin: 4px 6px 22px;
+  }
+
+  &__grupa-naslov {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
 
     h2 {
       margin: 0;
       font-family: var(--font-display);
-      font-size: 1.5rem;
+      font-size: 1.7rem;
       letter-spacing: 0.03em;
       color: var(--navy);
     }
   }
 
   &__grupa-oznaka {
-    flex: none;
-    padding: 5px 12px;
-    border-radius: 999px;
-    background: var(--gold-100);
     color: var(--gold-600);
-    font-size: 0.7rem;
+    font-size: 0.72rem;
     font-weight: 700;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
+  }
+
+  &__grupa-meta {
+    margin-left: auto;
+    font-size: 0.8rem;
+    letter-spacing: 0.04em;
+    color: var(--muted);
+    text-align: right;
+  }
+}
+
+/* broj grupe u krugu (zaglavlje grupe i traka za skok); položena grupa dobije kvačicu */
+.grupa-broj {
+  flex: none;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--navy);
+  color: var(--gold-200);
+  font-family: var(--font-display);
+  font-size: 1.7rem;
+  line-height: 1;
+  box-shadow: 0 0 0 4px var(--gold-100);
+
+  svg {
+    font-size: 0.6em;
+  }
+
+  &.is-done {
+    background: var(--green);
+    color: #fff;
+  }
+}
+
+/* traka za skok na grupu – na dnu tamnoplave trake stranice s lekcijama */
+.grupe-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 30px auto 0;
+
+  &__item {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 6px 16px 6px 6px;
+    border-radius: 999px;
+    border: 1px solid rgba(233, 213, 160, 0.35);
+    background: rgba(255, 255, 255, 0.06);
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.18s ease, border-color 0.18s ease;
+
+    &:hover,
+    &:focus-visible {
+      background: rgba(255, 255, 255, 0.14);
+      border-color: var(--gold-200);
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .grupa-broj {
+      width: 28px;
+      height: 28px;
+      font-size: 1rem;
+      background: var(--gold);
+      color: var(--navy-900);
+      box-shadow: none;
+
+      &.is-done {
+        background: var(--green);
+        color: #fff;
+      }
+    }
+  }
+
+  &__oznaka {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  &__lekcije {
+    font-size: 0.78rem;
+    color: rgba(255, 255, 255, 0.7);
   }
 }
 
@@ -3056,6 +3182,49 @@ textarea.field {
 
   .lessons__grid {
     grid-template-columns: 1fr;
+  }
+
+  .lessons__grupa {
+    padding: 16px 12px;
+    border-radius: 20px;
+
+    &::before {
+      inset: 6px;
+      border-radius: 15px;
+    }
+  }
+
+  .lessons__grupa-head {
+    gap: 12px;
+    margin: 6px 4px 16px;
+  }
+
+  .lessons__grupa-naslov h2 {
+    font-size: 1.4rem;
+  }
+
+  .lessons__grupa-meta {
+    display: none;
+  }
+
+  .grupa-broj {
+    width: 44px;
+    height: 44px;
+    font-size: 1.4rem;
+  }
+
+  /* na mobitelu u traci ostaje samo "Grupa N" */
+  .grupe-nav {
+    gap: 8px;
+    margin-top: 24px;
+
+    &__item {
+      padding-right: 12px;
+    }
+
+    &__lekcije {
+      display: none;
+    }
   }
 }
 
