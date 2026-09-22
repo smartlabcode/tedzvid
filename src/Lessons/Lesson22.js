@@ -113,15 +113,16 @@ const TXT = {
 					</Col>
 				</Row>
 
-				<Row className="text-center ">
+				<Row className="text-center reorder-basic-display-after rtl">
 					<Col>
 						<span>
-							<span className="arapski">( ـــَــ يْ ـــْــ ) </span>{' '}
 							{P('row1desni')}
+							<span className="arapski">( ـــَــ يْ ـــْــ ) </span>
 						</span>
+						<span className="after">;</span>
 						<span>
-							<span className="arapski">( ـــَــ وْ ـــْــ )</span>{' '}
 							{P('row1lijevi')}
+							<span className="arapski">( ـــَــ وْ ـــْــ )</span>
 						</span>
 					</Col>
 				</Row>
@@ -198,7 +199,7 @@ const TXT = {
 				<Row className="text-center reorder-basic-display-after rtl">
 					<Col>
 						<span>
-							. {P('row1desni')}
+							{P('row1desni')}
 							<span className="arapski">( ـــَــ يْ ـــْــ ) </span>
 						</span>
 						<span className="after">;</span>
@@ -272,7 +273,7 @@ const TXT = {
 				<Row className="text-center ">
 					<Col>
 						<span>
-							. {P('row1desni')}
+							{P('row1desni')}
 							<span className="arapski">( ـــَــ يْ ـــْــ ) </span>
 						</span>
 						<span className="after">;</span>
@@ -571,21 +572,10 @@ function L22() {
 				<Row className="text-center">
 					<Col className="mobile-row">
 						<span className="tacka">
-							<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj8')} ۞</span>
+							<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj8')}&nbsp;۞</span>
 						</span>
 						<span className="tacka">
-							<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj9')} ۞</span>
-						</span>
-					</Col>
-				</Row>
-
-				<Row className="text-center">
-					<Col className="mobile-row">
-						<span className="tacka">
-							<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj10')} ۞</span>
-						</span>
-						<span className="tacka">
-							<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj11')} ۞</span>
+							<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj9')}&nbsp;۞</span>
 						</span>
 					</Col>
 				</Row>
@@ -593,10 +583,10 @@ function L22() {
 				<Row className="text-center">
 					<Col className="mobile-row">
 						<span className="tacka">
-							<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj12')} ۞</span>
+							<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj10')}&nbsp;۞</span>
 						</span>
 						<span className="tacka">
-							<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj13')} ۞</span>
+							<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj11')}&nbsp;۞</span>
 						</span>
 					</Col>
 				</Row>
@@ -604,10 +594,21 @@ function L22() {
 				<Row className="text-center">
 					<Col className="mobile-row">
 						<span className="tacka">
-							<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj14')} ۞</span>
+							<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj12')}&nbsp;۞</span>
 						</span>
 						<span className="tacka">
-							<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj15')} ۞</span>
+							<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj13')}&nbsp;۞</span>
+						</span>
+					</Col>
+				</Row>
+
+				<Row className="text-center">
+					<Col className="mobile-row">
+						<span className="tacka">
+							<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj14')}&nbsp;۞</span>
+						</span>
+						<span className="tacka">
+							<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj15')}&nbsp;۞</span>
 						</span>
 					</Col>
 				</Row>
@@ -620,21 +621,10 @@ function L22() {
 						<Row className="text-center">
 							<Col className="mobile-row">
 								<span className="tacka">
-									<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj8')} ۞</span>
+									<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj8')}&nbsp;۞</span>
 								</span>
 								<span className="tacka">
-									<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj9')} ۞</span>
-								</span>
-							</Col>
-						</Row>
-
-						<Row className="text-center">
-							<Col className="mobile-row">
-								<span className="tacka">
-									<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj10')} ۞</span>
-								</span>
-								<span className="tacka">
-									<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj11')} ۞</span>
+									<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj9')}&nbsp;۞</span>
 								</span>
 							</Col>
 						</Row>
@@ -642,10 +632,10 @@ function L22() {
 						<Row className="text-center">
 							<Col className="mobile-row">
 								<span className="tacka">
-									<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj12')} ۞</span>
+									<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj10')}&nbsp;۞</span>
 								</span>
 								<span className="tacka">
-									<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj13')} ۞</span>
+									<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj11')}&nbsp;۞</span>
 								</span>
 							</Col>
 						</Row>
@@ -653,10 +643,21 @@ function L22() {
 						<Row className="text-center">
 							<Col className="mobile-row">
 								<span className="tacka">
-									<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj14')} ۞</span>
+									<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj12')}&nbsp;۞</span>
 								</span>
 								<span className="tacka">
-									<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj15')} ۞</span>
+									<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj13')}&nbsp;۞</span>
+								</span>
+							</Col>
+						</Row>
+
+						<Row className="text-center">
+							<Col className="mobile-row">
+								<span className="tacka">
+									<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj14')}&nbsp;۞</span>
+								</span>
+								<span className="tacka">
+									<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj15')}&nbsp;۞</span>
 								</span>
 							</Col>
 						</Row>

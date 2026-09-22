@@ -199,7 +199,7 @@ const TXT = {
 	en: {
 		naziv: 'WAQF',
 		naslov: '1 WAQF',
-		podnaslov: "Stopping during the recitation of the Qur'an",
+		podnaslov: "WAQF – stopping during the recitation of the Qur'an",
 		lekcija: (P, V) => (
 			<React.Fragment>
 				<Row>
@@ -720,51 +720,51 @@ function L1() {
 					</Row>
 					<Row id="vjezba" className="text-center">
 						<Col className="mobile-row rtl">
-							<span style={{ marginLeft: '25px' }}> {VjezbeRow(data, 'vjezba', 'red18')}</span>
-							<span>{VjezbeRow(data, 'vjezba', 'red19')}</span>
+							<span style={{ marginLeft: '25px' }}> {VjezbeRow(data, 'vjezba', 'red18')}{' '}</span>
+							<span>{VjezbeRow(data, 'vjezba', 'red19')}{' '}</span>
 						</Col>
 					</Row>
 					<Row className="text-center">
 						<Col className="mobile-row">
 							<span>
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'red20')} ۞</span>
+								<span className="tacka">{VjezbeRow(data, 'vjezba', 'red20')}&nbsp;۞</span>
 							</span>
 							<span>
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'red21')} ۞</span>
+								<span className="tacka">{VjezbeRow(data, 'vjezba', 'red21')}&nbsp;۞</span>
 							</span>
 						</Col>
 					</Row>
 					<Row className="text-center">
 						<Col className="mobile-row">
 							<span className="mobile-row">
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'red22')} ۞</span>
+								<span className="tacka">{VjezbeRow(data, 'vjezba', 'red22')}&nbsp;۞</span>
 							</span>
-							<span className="mobile-row">{VjezbeRow(data, 'vjezba', 'red23')}</span>
+							<span className="mobile-row">{VjezbeRow(data, 'vjezba', 'red23')}{' '}</span>
 							<span>
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'red24')} ۞</span>
+								<span className="tacka">{VjezbeRow(data, 'vjezba', 'red24')}&nbsp;۞</span>
 							</span>
 						</Col>
 					</Row>
 					<Row className="text-center">
 						<Col className="mobile-row">
 							<span>
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'red25')} ۞</span>
+								<span className="tacka">{VjezbeRow(data, 'vjezba', 'red25')}&nbsp;۞</span>
 							</span>
 							<span>
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'red26')} ۞</span>
+								<span className="tacka">{VjezbeRow(data, 'vjezba', 'red26')}&nbsp;۞</span>
 							</span>
 						</Col>
 					</Row>
 					<Row className="text-center">
 						<Col className="mobile-row">
 							<span>
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'red28')} ۞</span>
+								<span className="tacka">{VjezbeRow(data, 'vjezba', 'red28')}&nbsp;۞</span>
 							</span>
 							<span>
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'red29')} ۞</span>
+								<span className="tacka">{VjezbeRow(data, 'vjezba', 'red29')}&nbsp;۞</span>
 							</span>
-							<span className="tacka">{VjezbeRow(data, 'vjezba', 'red30')} ۞</span>
-							<span className="tacka">{VjezbeRow(data, 'vjezba', 'red31')} ۞</span>
+							<span className="tacka">{VjezbeRow(data, 'vjezba', 'red30')}&nbsp;۞</span>
+							<span className="tacka">{VjezbeRow(data, 'vjezba', 'red31')}&nbsp;۞</span>
 						</Col>
 					</Row>
 				</section>
@@ -780,51 +780,51 @@ function L1() {
 						</Row>
 						<Row id="vjezba" className="text-center">
 							<Col className="mobile-row rtl">
-								<span style={{ marginLeft: '50px' }}> {VjezbeRow(data, 'vjezba', 'red18')}</span>
-								<span>{VjezbeRow(data, 'vjezba', 'red19')}</span>
+								<span style={{ marginLeft: '50px' }}> {VjezbeRow(data, 'vjezba', 'red18')}{' '}</span>
+								<span>{VjezbeRow(data, 'vjezba', 'red19')}{' '}</span>
 							</Col>
 						</Row>
 						<Row className="text-center">
 							<Col className="mobile-row">
 								<span>
-									<span className="tacka">{VjezbeRow(data, 'vjezba', 'red20')} ۞</span>
+									<span className="tacka">{VjezbeRow(data, 'vjezba', 'red20')}&nbsp;۞</span>
 								</span>
 								<span>
-									<span className="tacka">{VjezbeRow(data, 'vjezba', 'red21')} ۞</span>
+									<span className="tacka">{VjezbeRow(data, 'vjezba', 'red21')}&nbsp;۞</span>
 								</span>
 							</Col>
 						</Row>
 						<Row className="text-center">
 							<Col className="mobile-row">
 								<span className="mobile-row">
-									<span className="tacka">{VjezbeRow(data, 'vjezba', 'red22')} ۞</span>
+									<span className="tacka">{VjezbeRow(data, 'vjezba', 'red22')}&nbsp;۞</span>
 								</span>
-								<span className="mobile-row">{VjezbeRow(data, 'vjezba', 'red23')}</span>
+								<span className="mobile-row">{VjezbeRow(data, 'vjezba', 'red23')}{' '}</span>
 								<span>
-									<span className="tacka">{VjezbeRow(data, 'vjezba', 'red24')} ۞</span>
+									<span className="tacka">{VjezbeRow(data, 'vjezba', 'red24')}&nbsp;۞</span>
 								</span>
 							</Col>
 						</Row>
 						<Row className="text-center">
 							<Col className="mobile-row">
 								<span>
-									<span className="tacka">{VjezbeRow(data, 'vjezba', 'red25')} ۞</span>
+									<span className="tacka">{VjezbeRow(data, 'vjezba', 'red25')}&nbsp;۞</span>
 								</span>
 								<span>
-									<span className="tacka">{VjezbeRow(data, 'vjezba', 'red26')} ۞</span>
+									<span className="tacka">{VjezbeRow(data, 'vjezba', 'red26')}&nbsp;۞</span>
 								</span>
 							</Col>
 						</Row>
 						<Row className="text-center">
 							<Col className="mobile-row">
 								<span>
-									<span className="tacka">{VjezbeRow(data, 'vjezba', 'red28')} ۞</span>
+									<span className="tacka">{VjezbeRow(data, 'vjezba', 'red28')}&nbsp;۞</span>
 								</span>
 								<span>
-									<span className="tacka">{VjezbeRow(data, 'vjezba', 'red29')} ۞</span>
+									<span className="tacka">{VjezbeRow(data, 'vjezba', 'red29')}&nbsp;۞</span>
 								</span>
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'red30')} ۞</span>
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'red31')} ۞</span>
+								<span className="tacka">{VjezbeRow(data, 'vjezba', 'red30')}&nbsp;۞</span>
+								<span className="tacka">{VjezbeRow(data, 'vjezba', 'red31')}&nbsp;۞</span>
 							</Col>
 						</Row>
 					</Modal.Body>

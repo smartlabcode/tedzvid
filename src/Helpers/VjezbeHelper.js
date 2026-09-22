@@ -13,6 +13,14 @@ function Vjezbe(data, mainrow, rows) {
 			myClassName = 'after';
 		}
 
+		/* U vježbi iza ajeta u lekciji ide `&nbsp;۞`. Običan razmak na kraju ajeta (u podacima ili
+		   prazan vezni tekst) bi pregledniku dao mjesto za prelom, pa bi ۞ ostajao sam u novom redu. */
+		const vjezba = rowmain === 'vjezba';
+		const bezRazmaka = (s) => (vjezba && typeof s === 'string' ? s.replace(/\s+$/, '') : s);
+		const word = bezRazmaka(data[0].word);
+		const highlight = bezRazmaka(data[0].highlight);
+		const imaVezni = !!data[0].after && data[0].after.trim() !== '';
+
 		for (let ind = 1; ind < data.length; ind++) {
 			ar.push(
 				<Arabic arabic={data[ind].highlight} key={'a' + data[ind].id}>
@@ -31,13 +39,18 @@ function Vjezbe(data, mainrow, rows) {
 			<span key={'key' + data[0].id}>
 				<Player url={data[0].url} note={data[0].napomena} key={'p' + data[0].id}>
 					{
-						<Arabic arabic={data[0].highlight} key={'a' + data[0].id}>
+						<Arabic arabic={highlight} key={'a' + data[0].id}>
 							{ar}
-							{data[0].word}
+							{word}
 						</Arabic>
 					}
-				</Player>{' '}
-				<span className={myClassName}> {data[0].after === 'break' ? <br /> : vezniTekst(data[0].after)}</span>
+				</Player>
+				{(!vjezba || imaVezni) && (
+					<React.Fragment>
+						{' '}
+						<span className={myClassName}> {data[0].after === 'break' ? <br /> : vezniTekst(data[0].after)}</span>
+					</React.Fragment>
+				)}
 			</span>
 		);
 	};

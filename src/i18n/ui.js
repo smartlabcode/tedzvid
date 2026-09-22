@@ -829,7 +829,7 @@ const UI = {
 		sveLekcije: 'All lessons',
 		prethodnaAria: 'Previous lesson',
 		sljedecaAria: 'Next lesson',
-		tabelaNaslov: 'Overview in a table:',
+		tabelaNaslov: 'TABULAR OVERVIEW:',
 		napomena: 'NOTE',
 
 		/* ----- audio ----- */

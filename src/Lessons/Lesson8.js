@@ -411,37 +411,37 @@ function L8() {
 				</IconContext.Provider>
 				<Row className="text-center">
 					<Col className="mobile-row">
-						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj8')} ۞</span>
-						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj9')} ۞</span>
-						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj10')} ۞</span>
+						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj8')}&nbsp;۞</span>
+						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj9')}&nbsp;۞</span>
+						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj10')}&nbsp;۞</span>
 					</Col>
 				</Row>
 				<Row className="text-center">
 					<Col className="mobile-row">
-						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj11')} ۞</span>
-						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj12')} ۞</span>
+						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj11')}&nbsp;۞</span>
+						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj12')}&nbsp;۞</span>
 					</Col>
 				</Row>
 				<Row className="text-center">
 					<Col className="mobile-row">
-						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj13')} ۞</span>
-						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj14')} ۞</span>
+						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj13')}&nbsp;۞</span>
+						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj14')}&nbsp;۞</span>
 					</Col>
 				</Row>
 				<Row className="text-center">
 					<Col className="mobile-row">
-						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj15')} ۞</span>
-						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj16')} ۞</span>
+						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj15')}&nbsp;۞</span>
+						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj16')}&nbsp;۞</span>
 					</Col>
 				</Row>
 				<Row className="text-center">
 					<Col className="mobile-row">
-						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj17')} ۞</span>
+						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj17')}&nbsp;۞</span>
 					</Col>
 				</Row>{' '}
 				<Row className="text-center">
 					<Col className="mobile-row">
-						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj18')} ۞</span>
+						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj18')}&nbsp;۞</span>
 					</Col>
 				</Row>
 				</section>
@@ -452,37 +452,37 @@ function L8() {
 					<Modal.Body className="custom-modal">
 						<Row className="text-center">
 							<Col className="mobile-row">
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj8')} ۞</span>
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj9')} ۞</span>
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj10')} ۞</span>
+								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj8')}&nbsp;۞</span>
+								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj9')}&nbsp;۞</span>
+								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj10')}&nbsp;۞</span>
 							</Col>
 						</Row>
 						<Row className="text-center">
 							<Col className="mobile-row">
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj11')} ۞</span>
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj12')} ۞</span>
+								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj11')}&nbsp;۞</span>
+								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj12')}&nbsp;۞</span>
 							</Col>
 						</Row>
 						<Row className="text-center">
 							<Col className="mobile-row">
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj13')} ۞</span>
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj14')} ۞</span>
+								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj13')}&nbsp;۞</span>
+								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj14')}&nbsp;۞</span>
 							</Col>
 						</Row>
 						<Row className="text-center">
 							<Col className="mobile-row">
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj15')} ۞</span>
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj16')} ۞</span>
+								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj15')}&nbsp;۞</span>
+								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj16')}&nbsp;۞</span>
 							</Col>
 						</Row>
 						<Row className="text-center">
 							<Col className="mobile-row">
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj17')} ۞</span>
+								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj17')}&nbsp;۞</span>
 							</Col>
 						</Row>{' '}
 						<Row className="text-center">
 							<Col className="mobile-row">
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj18')} ۞</span>
+								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj18')}&nbsp;۞</span>
 							</Col>
 						</Row>
 					</Modal.Body>

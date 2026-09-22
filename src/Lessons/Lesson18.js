@@ -375,24 +375,24 @@ function L18() {
 				</Row>
 				<Row className="text-center">
 					<Col className="mobile-row">
-						{VjezbeRow(data, 'vjezba', 'broj7')}
-						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj8')} ۞</span>
+						{VjezbeRow(data, 'vjezba', 'broj7')}{' '}
+						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj8')}&nbsp;۞</span>
 					</Col>
 				</Row>
 				<Row className="text-center">
 					<Col className="mobile-row">
-						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj9')} ۞</span>
+						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj9')}&nbsp;۞</span>
 					</Col>
 				</Row>
 
 				<Row className="text-center">
 					<Col className="mobile-row">
-						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj10')} ۞</span>
+						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj10')}&nbsp;۞</span>
 					</Col>
 				</Row>
 				<Row className="text-center">
 					<Col className="mobile-row">
-						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj11')} ۞</span>
+						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj11')}&nbsp;۞</span>
 					</Col>
 				</Row>
 				</section>
@@ -409,24 +409,24 @@ function L18() {
 						</Row>
 						<Row className="text-center">
 							<Col className="mobile-row">
-								{VjezbeRow(data, 'vjezba', 'broj7')}
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj8')} ۞</span>
+								{VjezbeRow(data, 'vjezba', 'broj7')}{' '}
+								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj8')}&nbsp;۞</span>
 							</Col>
 						</Row>
 						<Row className="text-center">
 							<Col className="mobile-row">
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj9')} ۞</span>
+								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj9')}&nbsp;۞</span>
 							</Col>
 						</Row>
 
 						<Row className="text-center">
 							<Col className="mobile-row">
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj10')} ۞</span>
+								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj10')}&nbsp;۞</span>
 							</Col>
 						</Row>
 						<Row className="text-center">
 							<Col className="mobile-row">
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj11')} ۞</span>
+								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj11')}&nbsp;۞</span>
 							</Col>
 						</Row>
 					</Modal.Body>
