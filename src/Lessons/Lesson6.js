@@ -45,7 +45,7 @@ const TXT = {
 							و ن م ي
 						</span>{' '}
 						(sadržana u riječi <strong>jemnu</strong> –
-						<span className="arapski-lekcija">يَمْنُو</span>), dolazi do uklapanja harfa <strong>N</strong>(
+						<span className="arapski-lekcija">يَمْنُو</span>), dolazi do uklapanja harfa <strong>N</strong> (
 						<span className="arapski-lekcija">ن</span>) u jedan od spomenuta četiri harfa, propuštajući zrak
 						kroz nos u trajanju od 2 hareketa, npr.:
 					</Col>
