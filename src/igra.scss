@@ -1,0 +1,1265 @@
+/* =========================================================
+   IGRAONICA – tri mini-igre uz lekcije
+   Prati paletu i tipografiju ostatka sajta (theme.scss).
+   ========================================================= */
+
+.igra-strana {
+  padding: 48px 0 72px;
+
+  &--jedna {
+    padding-top: 28px;
+  }
+}
+
+/* ---------- vrh stranice pojedine igre ---------- */
+.igra-vrh {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+
+  h1 {
+    font-family: var(--font-display);
+    letter-spacing: 0.5px;
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
+    color: var(--navy);
+    margin: 0;
+    flex: 1 1 auto;
+  }
+}
+
+.igra-nazad {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 0.92rem;
+  text-decoration: none;
+
+  &:hover {
+    color: var(--gold-600);
+  }
+}
+
+.igra-zvuk {
+  border: 1px solid var(--line);
+  background: var(--white);
+  color: var(--muted);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 0.82rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+
+  &:hover {
+    border-color: var(--gold);
+    color: var(--gold-600);
+  }
+}
+
+/* ---------- izbor igre ---------- */
+.igra-mreza {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.igra-kartica {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  padding: 28px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow);
+  }
+
+  h2 {
+    font-family: var(--font-display);
+    font-size: 1.45rem;
+    letter-spacing: 0.4px;
+    color: var(--navy);
+    margin: 14px 0 6px;
+  }
+
+  &__ikona {
+    width: 54px;
+    height: 54px;
+    border-radius: 16px;
+    display: grid;
+    place-items: center;
+    font-size: 1.5rem;
+    background: var(--gold-100);
+    color: var(--gold-600);
+  }
+
+  &--trka &__ikona {
+    background: rgba(42, 140, 134, 0.12);
+    color: var(--teal);
+  }
+
+  &--memorija &__ikona {
+    background: rgba(93, 90, 142, 0.12);
+    color: var(--purple);
+  }
+
+  &--nadji &__ikona {
+    background: rgba(16, 59, 92, 0.1);
+    color: var(--navy);
+  }
+
+  &--povezi &__ikona {
+    background: rgba(211, 71, 91, 0.12);
+    color: #b8384a;
+  }
+
+  &--razvrstaj &__ikona {
+    background: rgba(47, 143, 91, 0.12);
+    color: var(--green);
+  }
+
+  &__opis {
+    color: var(--muted);
+    margin: 0 0 12px;
+  }
+
+  &__kako {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 16px;
+    font-size: 0.9rem;
+    color: var(--ink);
+
+    li {
+      position: relative;
+      padding-left: 18px;
+      margin-bottom: 4px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0.62em;
+        width: 7px;
+        height: 7px;
+        border-radius: 2px;
+        transform: rotate(45deg);
+        background: var(--gold);
+      }
+    }
+  }
+
+  &__rekord {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--gold-600);
+    background: var(--gold-100);
+    border-radius: 999px;
+    padding: 5px 12px;
+    margin: auto 0 16px; /* dugme "Igraj" ostaje poravnato na dnu svih kartica */
+
+    &.je-prazan {
+      color: var(--muted);
+      background: var(--cream-2);
+      font-weight: 500;
+    }
+  }
+}
+
+.igra-napomena,
+.igra-uputa {
+  margin-top: 28px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* ---------- zajedničko za sve igre ---------- */
+.igra {
+  max-width: 760px;
+  margin: 0 auto;
+
+  &__hud {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+  }
+
+  &__srca {
+    display: inline-flex;
+    gap: 4px;
+    color: #d3475b;
+    font-size: 1.05rem;
+
+    .je-prazno {
+      color: var(--line);
+    }
+  }
+
+  &__bodovi,
+  &__vrijeme {
+    color: var(--muted);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    b {
+      color: var(--navy);
+      font-size: 1.15rem;
+    }
+  }
+
+  &__vrijeme {
+    margin-left: auto;
+  }
+
+  &__niz {
+    font-weight: 700;
+    color: var(--muted);
+    background: var(--cream-2);
+    border-radius: 999px;
+    padding: 2px 10px;
+    font-size: 0.85rem;
+
+    &.je-vruc {
+      color: var(--white);
+      background: var(--gold);
+    }
+  }
+
+  &__pauza {
+    margin-left: auto;
+    border: 1px solid var(--line);
+    background: var(--white);
+    color: var(--navy);
+    border-radius: 999px;
+    width: 34px;
+    height: 34px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+
+    &:hover {
+      border-color: var(--gold);
+      color: var(--gold-600);
+    }
+  }
+
+  /* poluprozirni sloj preko polja (uvod, pauza, kraj, najava nivoa) */
+  &__sloj {
+    position: absolute;
+    inset: 0;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    padding: 24px;
+    background: rgba(8, 34, 56, 0.86);
+    backdrop-filter: blur(3px);
+    color: var(--white);
+    border-radius: var(--radius);
+
+    h3 {
+      font-family: var(--font-display);
+      font-size: clamp(1.5rem, 5vw, 2rem);
+      letter-spacing: 0.6px;
+      color: var(--gold-200);
+      margin: 0;
+    }
+
+    p {
+      margin: 0;
+      max-width: 44ch;
+      color: rgba(255, 255, 255, 0.88);
+    }
+
+    &--stranica {
+      position: static;
+      background: var(--navy);
+      background-image: var(--pattern-light);
+      padding: 44px 24px;
+      min-height: 340px;
+    }
+  }
+
+  &__uputa {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.62) !important;
+  }
+
+  &__rekord {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--gold-200) !important;
+    font-weight: 600;
+  }
+
+  &__krajBodovi {
+    font-size: 1.1rem;
+
+    b {
+      font-family: var(--font-display);
+      font-size: 2.4rem;
+      color: var(--gold);
+      line-height: 1;
+    }
+  }
+
+  /* veća specifičnost od pravila .igra__sloj p (inače bi sve zvjezdice bile bijele) */
+  &__sloj &__zvjezde {
+    font-size: 2rem;
+    letter-spacing: 6px;
+    color: rgba(255, 255, 255, 0.22);
+    margin: 0;
+
+    .je-puna {
+      color: var(--gold);
+    }
+  }
+}
+
+/* dok se igra dovlači, mjesto joj je već rezervisano */
+.igra--ucitava {
+  min-height: 340px;
+}
+
+/* arapski primjer u igrama (vlastite klase – lekcijska pravila imaju !important) */
+.igra__ar {
+  font-family: HamdullahMushaf, serif;
+  display: inline-block;
+}
+
+.igra__ozn {
+  color: var(--gold-600);
+}
+
+/* ---------- 1. PREPOZNAJ PO ZVUKU ---------- */
+.igra--uho {
+  /* zapis je glavni junak ove igre, pa je i najveći element na kartici */
+  .igra-uho__zapis {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 18px;
+    margin-bottom: 14px;
+    border-radius: 16px;
+    background: var(--cream);
+    border: 1px solid var(--line);
+  }
+
+  .igra-uho__dugme {
+    width: 58px;
+    height: 58px;
+    flex: 0 0 auto;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    border: none;
+    background: var(--gold);
+    color: var(--white);
+    font-size: 1.4rem;
+    cursor: pointer;
+    box-shadow: var(--shadow-sm);
+
+    &:hover {
+      background: var(--gold-600);
+    }
+  }
+
+  /* stupci se njišu samo dok zapis svira */
+  .igra-uho__val {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    height: 34px;
+
+    i {
+      display: block;
+      width: 5px;
+      height: 8px;
+      border-radius: 3px;
+      background: var(--line);
+    }
+  }
+
+  .igra-uho__zapis.je-svira .igra-uho__val i {
+    background: var(--teal);
+    animation: igra-val 0.9s ease-in-out infinite;
+  }
+
+  .igra-uho__natpis {
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+
+  /* riječ pod zavjesom – otkriva se tek odgovorom ili namjernim zavirivanjem */
+  .igra-uho__rijec {
+    min-height: 96px;
+    display: grid;
+    place-items: center;
+    border-radius: 16px;
+    border: 1px dashed var(--line);
+    background: var(--white);
+    padding: 10px;
+
+    .igra__ar {
+      font-size: clamp(1.6rem, 6vw, 2.6rem);
+      line-height: 2;
+    }
+
+    .igra__ozn {
+      background: var(--gold-100);
+      border-radius: 6px;
+    }
+
+    &.je-otkrivena {
+      border-style: solid;
+      background: var(--cream);
+    }
+  }
+
+  .igra-uho__zaviri {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid var(--line);
+    background: var(--white);
+    color: var(--muted);
+    border-radius: 999px;
+    padding: 8px 16px;
+    font-size: 0.85rem;
+    cursor: pointer;
+
+    &:hover {
+      border-color: var(--gold);
+      color: var(--gold-600);
+    }
+  }
+
+  .igra-uho__stanje {
+    margin: 8px 0 0;
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+
+  .igra__opcije {
+    margin-top: 14px;
+  }
+}
+
+/* kratak trzaj kod netačnog poteza (nađi pravilo, poveži, prisloni harf) */
+@keyframes igra-udar {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-7px);
+  }
+  75% {
+    transform: translateX(7px);
+  }
+}
+
+@keyframes igra-val {
+  0%,
+  100% {
+    height: 8px;
+  }
+  50% {
+    height: 30px;
+  }
+}
+
+/* ---------- 2. TRKA KROZ PRAVILA (kartu s pitanjem dijele i „po zvuku” i „nađi pravilo”) ---------- */
+.igra--trka,
+.igra--uho,
+.igra--nadji {
+  .igra__sat {
+    height: 8px;
+    border-radius: 999px;
+    background: var(--cream-2);
+    overflow: hidden;
+    margin-bottom: 14px;
+
+    span {
+      display: block;
+      height: 100%;
+      background: var(--teal);
+      border-radius: 999px;
+
+      &.je-hitno {
+        background: #d3475b;
+      }
+    }
+  }
+
+  .igra__karta {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    padding: 22px;
+  }
+
+  .igra__pitanje {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0 0 6px;
+  }
+
+  .igra__rijec {
+    text-align: center;
+    margin: 0;
+
+    .igra__ar {
+      font-size: clamp(1.8rem, 7vw, 3rem);
+      line-height: 2;
+    }
+
+    .igra__ozn {
+      background: var(--gold-100);
+      border-radius: 6px;
+    }
+  }
+
+  .igra__pomoc-red {
+    text-align: center;
+    min-height: 34px;
+  }
+
+  .igra__zvuk {
+    border: 1px solid var(--line);
+    background: var(--white);
+    color: var(--navy);
+    border-radius: 999px;
+    padding: 5px 14px;
+    font-size: 0.82rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+
+    &:hover {
+      border-color: var(--gold);
+      color: var(--gold-600);
+    }
+  }
+
+  .igra__opcije {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 14px;
+  }
+
+  .igra__opcija {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+    padding: 12px 14px;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: var(--cream);
+    color: var(--navy);
+    font-weight: 600;
+    font-size: 0.92rem;
+    line-height: 1.25;
+    cursor: pointer;
+    transition: border-color 0.15s ease, background 0.15s ease, transform 0.1s ease;
+
+    &:hover:not(:disabled) {
+      border-color: var(--gold);
+      background: var(--gold-100);
+    }
+
+    &:active:not(:disabled) {
+      transform: scale(0.985);
+    }
+
+    &-broj {
+      flex: 0 0 auto;
+      width: 26px;
+      height: 26px;
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      background: var(--white);
+      border: 1px solid var(--line);
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+
+    &.je-tacna {
+      border-color: var(--green);
+      background: rgba(47, 143, 91, 0.12);
+      color: #1f6b42;
+    }
+
+    &.je-netacna {
+      border-color: #d3475b;
+      background: rgba(211, 71, 91, 0.1);
+      color: #a12a3c;
+    }
+
+    &:disabled {
+      cursor: default;
+      opacity: 0.95;
+    }
+  }
+
+  .igra__odgovor {
+    margin-top: 14px;
+    padding: 14px 16px;
+    border-radius: 14px;
+    font-size: 0.92rem;
+    background: var(--cream-2);
+    border-left: 4px solid var(--muted);
+
+    &.je-tacna {
+      background: rgba(47, 143, 91, 0.1);
+      border-left-color: var(--green);
+    }
+
+    &.je-netacna {
+      background: rgba(211, 71, 91, 0.08);
+      border-left-color: #d3475b;
+    }
+
+    &-akcije {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+    }
+  }
+
+  .igra__lekcija-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--navy);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--gold-600);
+    }
+  }
+}
+
+/* ---------- 3. MEMORIJA ---------- */
+.igra--memorija {
+  .igra__mreza {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 600px; /* i 8 parova (4 reda) staje na ekran bez skrolanja */
+    margin: 0 auto;
+  }
+
+  .igra__karta-m {
+    position: relative;
+    border: 0;
+    padding: 0;
+    background: transparent;
+    aspect-ratio: 1 / 1;
+    perspective: 900px;
+    cursor: pointer;
+
+    &:disabled {
+      cursor: default;
+    }
+  }
+
+  .igra__karta-lice {
+    position: absolute;
+    inset: 0;
+    border-radius: 14px;
+    display: grid;
+    place-items: center;
+    padding: 8px;
+    overflow: hidden; /* dugačak primjer ne smije iscuriti izvan kartice */
+    backface-visibility: hidden;
+    transition: transform 0.35s ease;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .igra__karta-nalicje {
+    background: var(--navy);
+    background-image: var(--pattern-light);
+    color: var(--gold-200);
+    transform: rotateY(0deg);
+
+    svg {
+      width: 60%;
+      opacity: 0.75;
+    }
+  }
+
+  .igra__karta-prednja {
+    background: var(--white);
+    border: 1px solid var(--line);
+    transform: rotateY(180deg);
+  }
+
+  .igra__karta-m.je-otvorena {
+    .igra__karta-nalicje {
+      transform: rotateY(-180deg);
+    }
+
+    .igra__karta-prednja {
+      transform: rotateY(0deg);
+    }
+  }
+
+  .igra__karta-m.je-spojena .igra__karta-prednja {
+    border-color: var(--green);
+    background: rgba(47, 143, 91, 0.08);
+  }
+
+  .igra__karta-naziv {
+    font-family: var(--font-display);
+    letter-spacing: 0.3px;
+    font-size: clamp(0.68rem, 1.9vw, 0.88rem);
+    line-height: 1.2;
+    color: var(--navy);
+    text-align: center;
+    overflow-wrap: anywhere;
+  }
+
+  /* primjer od dvije riječi mora stati u kvadratnu karticu */
+  .igra__karta-rijec {
+    text-align: center;
+
+    .igra__ar {
+      font-size: clamp(1.35rem, 4vw, 1.6rem);
+      line-height: 1.7;
+      color: var(--ink);
+    }
+  }
+
+  .igra__karta-kvaka {
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    font-size: 0.7rem;
+    color: var(--green);
+  }
+
+  .igra__tezine {
+    display: inline-flex;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 4px;
+    border-radius: 999px;
+  }
+
+  .igra__tezina {
+    border: 0;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.75);
+    border-radius: 999px;
+    padding: 6px 16px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+
+    &.je-izabrana {
+      background: var(--gold);
+      color: var(--navy-900);
+    }
+  }
+
+}
+
+/* poruka ispod ploče (memorija, poveži, prisloni harf) */
+.igra__poruka {
+  margin: 16px 0 0;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: var(--gold-100);
+  border-left: 4px solid var(--gold);
+  font-size: 0.9rem;
+
+  b {
+    color: var(--navy);
+  }
+
+  &.je-netacna {
+    background: rgba(211, 71, 91, 0.1);
+    border-left-color: #d3475b;
+  }
+}
+
+
+/* ---------- 4. NAĐI PRAVILO ---------- */
+.igra--nadji {
+  .igra-nadji__trazeno {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 0 0 14px;
+
+    strong {
+      font-family: var(--font-display);
+      letter-spacing: 0.4px;
+      color: var(--navy);
+      font-size: 1.05rem;
+    }
+  }
+
+  .igra-nadji__tacka {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: var(--boja);
+  }
+
+  .igra-nadji__lekcija {
+    font-size: 0.75rem;
+    color: var(--muted);
+    text-decoration: none;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 2px 9px;
+
+    &:hover {
+      border-color: var(--gold);
+      color: var(--gold-600);
+    }
+  }
+
+  .igra-nadji__ajet {
+    background: var(--cream);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 16px 14px 8px;
+  }
+
+  .igra-nadji__tekst {
+    font-family: HamdullahMushaf, serif;
+    font-size: clamp(1.45rem, 6vw, 2.2rem);
+    line-height: 2.5;
+    text-align: center;
+    margin: 0;
+  }
+
+  /* riječ je meta klika: dovoljno velika za prst, bez pomjeranja teksta */
+  .igra-nadji__rijec {
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 0 3px;
+    transition: background 0.15s ease;
+
+    &:hover {
+      background: var(--gold-100);
+    }
+
+    &.je-tacna {
+      background: var(--white);
+      border-bottom: 3px solid var(--boja);
+      cursor: default;
+    }
+
+    &.je-netacna {
+      background: rgba(211, 71, 91, 0.14);
+      animation: igra-udar 0.4s ease;
+    }
+  }
+
+  .igra-nadji__ozn {
+    color: var(--boja);
+  }
+
+  .igra-nadji__izvor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 10px 0 0;
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+
+  .igra-nadji__rijec-odg {
+    font-family: HamdullahMushaf, serif;
+    font-size: 1.3rem;
+    color: var(--navy);
+  }
+}
+
+/* ---------- 5. POVEŽI PRAVILA ---------- */
+.igra--povezi {
+  .igra-povezi__ploca {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(34px, 14vw, 110px);
+  }
+
+  /* niti se crtaju ispod kartica, pa se vide samo u razmaku između kolona */
+  .igra-povezi__niti {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .igra-povezi__kolona {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .igra-povezi__kartica {
+    position: relative;
+    min-height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-align: center;
+    padding: 10px 12px;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: var(--white);
+    color: var(--navy);
+    font-weight: 600;
+    font-size: 0.88rem;
+    line-height: 1.25;
+    cursor: pointer;
+    transition: border-color 0.15s ease, background 0.15s ease, transform 0.1s ease;
+
+    &:hover {
+      border-color: var(--gold);
+    }
+
+    &:active {
+      transform: scale(0.985);
+    }
+
+    &.je-izabrana {
+      border-color: var(--gold);
+      background: var(--gold-100);
+    }
+
+    &.je-netacna {
+      border-color: #d3475b;
+      background: rgba(211, 71, 91, 0.1);
+      animation: igra-udar 0.4s ease;
+    }
+
+    &.je-spojena {
+      border-color: var(--boja);
+      box-shadow: inset 0 0 0 1px var(--boja);
+      cursor: default;
+    }
+  }
+
+  .igra-povezi__kartica--rijec .igra__ar {
+    font-size: clamp(1.15rem, 5vw, 1.7rem);
+    line-height: 1.9;
+  }
+
+  .igra-povezi__zvuk {
+    position: absolute;
+    top: 4px;
+    right: 6px;
+    color: var(--muted);
+    font-size: 0.7rem;
+
+    &:hover {
+      color: var(--gold-600);
+    }
+  }
+}
+
+/* ---------- 6. PRISLONI HARF ---------- */
+.igra--razvrstaj {
+  .igra-razvrstaj__pomoc-gumb {
+    margin-left: auto;
+    border: 1px solid var(--line);
+    background: var(--white);
+    color: var(--muted);
+    border-radius: 999px;
+    padding: 4px 12px;
+    font-size: 0.8rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+
+    &.je-ukljucena {
+      border-color: var(--gold);
+      color: var(--gold-600);
+      background: var(--gold-100);
+    }
+  }
+
+  .igra-razvrstaj__kutije {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+
+    &.je-4 {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .igra-razvrstaj__kutija {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 12px 10px;
+    border: 2px dashed var(--line);
+    border-radius: 16px;
+    background: var(--white);
+    text-align: center;
+    transition: border-color 0.15s ease, background 0.15s ease;
+
+    h4 {
+      margin: 0;
+      font-family: var(--font-display);
+      font-size: 0.82rem;
+      letter-spacing: 0.3px;
+      color: var(--boja);
+    }
+
+    /* dok je harf u ruci, kutije se ponašaju kao mete */
+    &.je-meta {
+      border-color: var(--boja);
+      background: var(--cream);
+      cursor: pointer;
+    }
+
+    &.je-trese {
+      border-color: #d3475b;
+      animation: igra-udar 0.4s ease;
+    }
+  }
+
+  .igra-razvrstaj__kontekst {
+    margin: 0;
+    font-size: 0.72rem;
+    color: var(--muted);
+  }
+
+  .igra-razvrstaj__pomoc {
+    margin: 0;
+    font-size: 0.72rem;
+    color: var(--navy);
+    background: var(--gold-100);
+    border-radius: 8px;
+    padding: 4px 6px;
+  }
+
+  .igra-razvrstaj__polje {
+    min-height: 56px;
+    margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 6px;
+    border-radius: 12px;
+    background: var(--cream);
+  }
+
+  .igra-razvrstaj__lekcija {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-size: 0.72rem;
+    color: var(--muted);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--gold-600);
+    }
+  }
+
+  .igra-razvrstaj__zaliha {
+    margin-top: 16px;
+    min-height: 66px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .igra-razvrstaj__harf {
+    width: 58px;
+    height: 58px;
+    display: grid;
+    place-items: center;
+    font-family: HamdullahMushaf, serif;
+    font-size: 1.9rem;
+    color: var(--navy);
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    box-shadow: var(--shadow-sm);
+    cursor: grab;
+    touch-action: none; /* bez ovoga povlačenje po telefonu skrola stranicu */
+    user-select: none;
+    transition: border-color 0.15s ease, transform 0.1s ease;
+
+    &:hover {
+      border-color: var(--gold);
+    }
+
+    &.je-izabran {
+      border-color: var(--gold);
+      background: var(--gold-100);
+      transform: translateY(-4px);
+    }
+
+    &.je-vucen {
+      z-index: 10;
+      cursor: grabbing;
+      box-shadow: var(--shadow);
+      transition: none;
+    }
+
+    &.je-postavljen {
+      width: auto;
+      height: auto;
+      min-width: 34px;
+      padding: 2px 8px;
+      font-size: 1.4rem;
+      border-color: var(--boja);
+      box-shadow: none;
+      cursor: default;
+    }
+  }
+
+  .igra-razvrstaj__prazno {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  .igra-razvrstaj__harf-poruka {
+    font-family: HamdullahMushaf, serif;
+    font-size: 1.3rem;
+    color: var(--navy);
+  }
+}
+
+/* ---------- manji ekrani ---------- */
+@media (max-width: 600px) {
+  .igra-strana {
+    padding: 28px 0 56px;
+  }
+
+  /* na telefonu naslov ide u svoj red, a zvuk ostaje samo ikona */
+  .igra-vrh {
+    gap: 10px;
+
+    h1 {
+      order: 3;
+      flex: 1 0 100%;
+      font-size: 1.5rem;
+    }
+  }
+
+  .igra-zvuk span {
+    display: none;
+  }
+
+  .igra--trka .igra__opcije,
+  .igra--uho .igra__opcije {
+    grid-template-columns: 1fr;
+  }
+
+  .igra--memorija .igra__mreza {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .igra--nadji .igra-nadji__tekst {
+    line-height: 2.3;
+  }
+
+  /* kolone moraju ostati jedna nasuprot druge, inače nit nema smisla */
+  .igra--povezi .igra-povezi__ploca {
+    gap: 30px;
+  }
+
+  .igra--povezi .igra-povezi__kartica {
+    min-height: 54px;
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+
+  .igra--razvrstaj {
+    .igra-razvrstaj__kutije,
+    .igra-razvrstaj__kutije.je-4 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .igra-razvrstaj__harf {
+      width: 50px;
+      height: 50px;
+      font-size: 1.7rem;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .igra-kartica,
+  .igra__karta-lice,
+  .igra__opcija,
+  .igra-povezi__kartica,
+  .igra-razvrstaj__harf,
+  .igra-razvrstaj__kutija {
+    transition: none;
+  }
+
+  .igra-nadji__rijec.je-netacna,
+  .igra-povezi__kartica.je-netacna,
+  .igra-razvrstaj__kutija.je-trese {
+    animation: none;
+  }
+
+  .igra-uho__zapis.je-svira .igra-uho__val i {
+    animation: none;
+  }
+}

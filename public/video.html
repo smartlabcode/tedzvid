@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="bs">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="robots" content="noindex" />
+		<title>Video</title>
+		<!--
+			Posrednik za YouTube ugradnju u mobilnoj aplikaciji.
+
+			Na iOS-u Capacitor stranicu servira s izvora `capacitor://localhost`.
+			WKWebView za takvu shemu ne šalje zaglavlje Referer, pa YouTube ne
+			isporuči player nego javi "Video player configuration error (153)".
+			Shema se ne može promijeniti u https – Capacitor odbacuje svaku shemu
+			koju WKWebView već obrađuje i vraća se na `capacitor`.
+
+			Zato aplikacija ugrađuje ovu stranicu (s https izvora same stranice),
+			a ona onda ugrađuje YouTube. Referer tada postoji i player radi.
+			Vidi src/Body/LessonVideo.js.
+		-->
+		<style>
+			html,
+			body {
+				margin: 0;
+				height: 100%;
+				background: #000;
+			}
+			iframe,
+			.greska {
+				border: 0;
+				width: 100%;
+				height: 100%;
+			}
+			.greska {
+				display: grid;
+				place-items: center;
+				color: #fff;
+				font: 14px/1.5 system-ui, sans-serif;
+				padding: 16px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<script>
+			(function () {
+				var p = new URLSearchParams(window.location.search);
+				/* identifikatori se propuštaju samo ako odgovaraju obliku koji YouTube koristi */
+				var oblik = /^[A-Za-z0-9_-]{5,64}$/;
+				var id = p.get('id');
+				var list = p.get('list');
+
+				if (!id || !oblik.test(id)) {
+					document.body.innerHTML = '<div class="greska">Video nije naveden.</div>';
+					return;
+				}
+
+				var q = new URLSearchParams({ rel: '0', playsinline: '1' });
+				if (list && oblik.test(list)) q.set('list', list);
+
+				var okvir = document.createElement('iframe');
+				okvir.src = 'https://www.youtube.com/embed/' + id + '?' + q.toString();
+				okvir.title = 'YouTube video';
+				okvir.allow =
+					'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+				okvir.allowFullscreen = true;
+				document.body.appendChild(okvir);
+			})();
+		</script>
+	</body>
+</html>

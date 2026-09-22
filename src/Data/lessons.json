@@ -1,241 +1,191 @@
 {
     "lekcije": [
         [{
-                "title": "VAKF",
-                "subtitle": "Stajanje prilikom učenja"
+                "title": { "bs": "VAKF", "en": "WAQF", "de": "WAQF" },
+                "subtitle": {
+                    "bs": "Stajanje prilikom učenja",
+                    "en": "Stopping during recitation",
+                    "de": "Anhalten beim Lesen"
+                }
             },
             {
-                "title": "DAMIR",
-                "subtitle": "Izgovaranje zamjenice HU (هُ)"
+                "title": { "bs": "DAMIR", "en": "DAMIR", "de": "DAMIR" },
+                "subtitle": {
+                    "bs": "Izgovaranje zamjenice HU (هُ)",
+                    "en": "Pronouncing the pronoun HU (هُ)",
+                    "de": "Das Pronomen HU (هُ) aussprechen"
+                }
             }
         ],
         [{
-                "title": "LAFZATULLAH",
-                "subtitle": "Izgovaranje riječi Allah اللّٰه"
+                "title": { "bs": "LAFZATULLAH", "en": "LAFDHATULLAH", "de": "LAFDHATULLAH" },
+                "subtitle": {
+                    "bs": "Izgovaranje riječi Allah اللّٰه",
+                    "en": "Pronouncing the word Allah اللّٰه",
+                    "de": "Das Wort Allah اللّٰه aussprechen"
+                }
             },
             {
-                "title": "IDGAM MISLEJN ",
-                "subtitle": "Uklapanje istih harfova"
+                "title": { "bs": "IDGAM MISLEJN", "en": "IDGHAM MITHLAYN", "de": "IDGHAM MITHLAIN" },
+                "subtitle": {
+                    "bs": "Uklapanje istih harfova",
+                    "en": "Merging identical letters",
+                    "de": "Gleiche Buchstaben verschmelzen"
+                }
             }
         ],
         [{
-                "title": "IDGAM MISLEJN MEAL-GUNNEH",
-                "subtitle": "Uklapanje istih harfova sa propuštanjem zraka kroz nos"
+                "title": { "bs": "IDGAM MISLEJN MEAL-GUNNEH", "en": "IDGHAM MITHLAYN MA'AL-GHUNNAH", "de": "IDGHAM MITHLAIN MA’AL-GHUNNA" },
+                "subtitle": {
+                    "bs": "Uklapanje istih harfova sa propuštanjem zraka kroz nos",
+                    "en": "Merging identical letters with nasalisation",
+                    "de": "Gleiche Buchstaben verschmelzen, mit Luft durch die Nase"
+                }
             },
             {
-                "title": "IDGAM MEAL-GUNNEH ",
-                "subtitle": "Uklapanje sa propuštanjem zraka kroz nos"
+                "title": { "bs": "IDGAM MEAL-GUNNEH", "en": "IDGHAM MA'AL-GHUNNAH", "de": "IDGHAM MA’AL-GHUNNA" },
+                "subtitle": {
+                    "bs": "Uklapanje sa propuštanjem zraka kroz nos",
+                    "en": "Merging with nasalisation",
+                    "de": "Verschmelzen, mit Luft durch die Nase"
+                }
             }
         ],
         [{
-                "title": " IDGAM BILA GUNNEH ",
-                "subtitle": "Uklapanje bez propuštanja zraka kroz nos"
+                "title": { "bs": "IDGAM BILA GUNNEH", "en": "IDGHAM BILA GHUNNAH", "de": "IDGHAM BILA GHUNNA" },
+                "subtitle": {
+                    "bs": "Uklapanje bez propuštanja zraka kroz nos",
+                    "en": "Merging without nasalisation",
+                    "de": "Verschmelzen, ohne Luft durch die Nase"
+                }
             },
             {
-                "title": "IKLAB",
-                "subtitle": "Pretvaranje harfa N (ن) u harf M (م)"
+                "title": { "bs": "IKLAB", "en": "IQLAB", "de": "IQLAB" },
+                "subtitle": {
+                    "bs": "Pretvaranje harfa N (ن) u harf M (م)",
+                    "en": "Turning the letter N (ن) into the letter M (م)",
+                    "de": "Den Buchstaben N (ن) in M (م) verwandeln"
+                }
             }
         ],
         [{
-                "title": "IZHAR HALLKIJ ",
-                "subtitle": "Čisto izgovaranje harfa N (ن) ili tenvina"
+                "title": { "bs": "IZHAR HALLKIJ", "en": "IDHHAR HALQI", "de": "IDH-HAR HALQI" },
+                "subtitle": {
+                    "bs": "Čisto izgovaranje harfa N (ن) ili tenvina",
+                    "en": "Clear pronunciation of the letter N (ن) or tanween",
+                    "de": "Das N (ن) oder das Tanwin deutlich aussprechen"
+                }
             },
-
             {
-                "title": "IZHAR ŠEFEVIJJ ",
-                "subtitle": "Čisto izgovaranje harfa M (م)"
+                "title": { "bs": "IZHAR ŠEFEVIJJ", "en": "IDHHAR SHAFAWI", "de": "IDH-HAR SCHAFAWI" },
+                "subtitle": {
+                    "bs": "Čisto izgovaranje harfa M (م)",
+                    "en": "Clear pronunciation of the letter M (م)",
+                    "de": "Das M (م) deutlich aussprechen"
+                }
             }
         ],
         [{
-                "title": "IHFA",
-                "subtitle": "Skrivanje harfa N (ن)"
+                "title": { "bs": "IHFA", "en": "IKHFA", "de": "ICHFA" },
+                "subtitle": {
+                    "bs": "Skrivanje harfa N (ن)",
+                    "en": "Hiding the letter N (ن)",
+                    "de": "Den Buchstaben N (ن) verstecken"
+                }
             },
-
             {
-
-                "title": "IHFA SEVIJJ",
-                "subtitle": "Skrivanje harfa M (م)"
-
+                "title": { "bs": "IHFA SEVIJJ", "en": "IKHFA SHAFAWI", "de": "ICHFA SCHAFAWI" },
+                "subtitle": {
+                    "bs": "Skrivanje harfa M (م)",
+                    "en": "Hiding the letter M (م)",
+                    "de": "Den Buchstaben M (م) verstecken"
+                }
             }
         ],
         [{
-                "title": "KALKALA",
-                "subtitle": "Odskakanje harfova"
+                "title": { "bs": "KALKALA", "en": "QALQALAH", "de": "QALQALA" },
+                "subtitle": {
+                    "bs": "Odskakanje harfova",
+                    "en": "Bouncing of the letters",
+                    "de": "Abprallen der Buchstaben"
+                }
             },
-
             {
-
-                "title": "HUKMURRA",
-                "subtitle": "Izgovaranje harfa R (ر)"
-
+                "title": { "bs": "HUKMURRA", "en": "HUKM AR-RA", "de": "HUKM AR-RA" },
+                "subtitle": {
+                    "bs": "Izgovaranje harfa R (ر)",
+                    "en": "Pronouncing the letter R (ر)",
+                    "de": "Den Buchstaben R (ر) aussprechen"
+                }
             }
         ],
         [{
-                "title": "IDGAM MUTEDŽANISEJN",
-                "subtitle": "Uklapanje srodnih harfova"
+                "title": { "bs": "IDGAM MUTEDŽANISEJN", "en": "IDGHAM MUTAJANISAYN", "de": "IDGHAM MUTADSCHANISAIN" },
+                "subtitle": {
+                    "bs": "Uklapanje srodnih harfova",
+                    "en": "Merging related letters",
+                    "de": "Verwandte Buchstaben verschmelzen"
+                }
             },
-
             {
-
-                "title": "IDGAM MUTEKARIBEJN",
-                "subtitle": "Uklapanje bliskih harfova"
-
+                "title": { "bs": "IDGAM MUTEKARIBEJN", "en": "IDGHAM MUTAQARIBAYN", "de": "IDGHAM MUTAQARIBAIN" },
+                "subtitle": {
+                    "bs": "Uklapanje bliskih harfova",
+                    "en": "Merging close letters",
+                    "de": "Benachbarte Buchstaben verschmelzen"
+                }
             }
         ],
         [{
-                "title": "MEDD TABI'IJJ ",
-                "subtitle": "Obična dužina"
-            },
-
-            {
-
-                "title": "MEDD MUTTESIL",
-                "subtitle": "Spojena dužina"
-
-            }
-        ],
-
-        [{
-
-                "title": "MEDD MUNFESIL",
-                "subtitle": "Rastavljena dužina"
-
+                "title": { "bs": "MEDD TABI'IJJ", "en": "MADD TABI'I", "de": "MADD TABI’I" },
+                "subtitle": {
+                    "bs": "Obična dužina",
+                    "en": "Natural prolongation",
+                    "de": "Natürliche Dehnung"
+                }
             },
             {
-
-                "title": "MEDD LAZIM",
-                "subtitle": "Stalna dužina"
-
+                "title": { "bs": "MEDD MUTTESIL", "en": "MADD MUTTASIL", "de": "MADD MUTTASIL" },
+                "subtitle": {
+                    "bs": "Spojena dužina",
+                    "en": "Connected prolongation",
+                    "de": "Verbundene Dehnung"
+                }
             }
         ],
         [{
-
-                "title": "MEDD ARID",
-                "subtitle": "Nestalna dužina"
-
+                "title": { "bs": "MEDD MUNFESIL", "en": "MADD MUNFASIL", "de": "MADD MUNFASIL" },
+                "subtitle": {
+                    "bs": "rastavljena dužina",
+                    "en": "separated prolongation",
+                    "de": "Getrennte Dehnung"
+                }
             },
             {
-
-                "title": "MED LIN",
-                "subtitle": "Poluvokalna dužina"
-
+                "title": { "bs": "MEDD LAZIM", "en": "MADD LAZIM", "de": "MADD LAZIM" },
+                "subtitle": {
+                    "bs": "stalna dužina",
+                    "en": "obligatory prolongation",
+                    "de": "Feste Dehnung"
+                }
+            }
+        ],
+        [{
+                "title": { "bs": "MEDD ARID", "en": "MADD 'ARID", "de": "MADD ARID" },
+                "subtitle": {
+                    "bs": "nestalna dužina",
+                    "en": "temporary prolongation",
+                    "de": "Vorübergehende Dehnung"
+                }
+            },
+            {
+                "title": { "bs": "MED LIN", "en": "MADD LIN", "de": "MADD LIN" },
+                "subtitle": {
+                    "bs": "poluvokalna dužina",
+                    "en": "soft-letter prolongation",
+                    "de": "Dehnung des weichen Buchstabens"
+                }
             }
         ]
-
-    ],
-    "lekcije_en": [
-        [{
-                "title": "WAQF",
-                "subtitle": "Stopping during the recitation of the Qur'an"
-            },
-            {
-                "title": "DAMIR",
-                "subtitle": "The pronunciation of the pronoun HU (هُ)"
-            }
-        ],
-        [{
-                "title": "LAFZATULLAH",
-                "subtitle": "The pronunciation of the word Allah اللّٰه"
-            },
-            {
-                "title": "IDGHAAM MITHLAYN",
-                "subtitle": "Assimilation of two identical letters"
-            }
-        ],
-        [{
-                "title": "IDGHAM MITHLAYN WITH GHUNNAH",
-                "subtitle": "Assimilation of two identical letters with the airflow through the nose"
-            },
-            {
-                "title": "IDGHAM WITH GHUNNAH",
-                "subtitle": "Assimilation with the airflow through the nose"
-            }
-        ],
-        [{
-                "title": "IDGHAM WITHOUT GHUNNAH",
-                "subtitle": "Assimilation without the airflow through the nose"
-            },
-            {
-                "title": "IQLAAB",
-                "subtitle": "Converting the letter N (ن) into M (م)"
-            }
-        ],
-        [{
-                "title": "IZHAAR HALQIJJ",
-                "subtitle": "Clear pronunciation of the letter N (ن) or nunation/tanwin"
-            },
-            {
-                "title": "IZHAAR SHAFAWI",
-                "subtitle": "Clear pronunciation of the letter M (م)"
-            }
-        ],
-        [{
-                "title": "IHFA",
-                "subtitle": "Concealment of N (ن)"
-            },
-            {
-
-                "title": "IKHFAA’ SHAFAWI",
-                "subtitle": "Concealment of M (م)"
-
-            }
-        ],
-        [{
-                "title": "THE QALQALAH",
-                "subtitle": "Echoing sounds"
-            },
-            {
-
-                "title": "HUKMURRA",
-                "subtitle": "Pronunciation of the letter R (ر)"
-
-            }
-        ],
-        [{
-                "title": "IDGHAM MUTAJAANISAYN",
-                "subtitle": "Assimilation of letters of the same origin"
-            },
-            {
-
-                "title": "IDGHAM MUTAQAARIBAYN",
-                "subtitle": "Assimilation of letters with similar origin"
-
-            }
-        ],
-        [{
-                "title": "AL-MADD AL-TABEE’EE",
-                "subtitle": "Normal extension"
-            },
-            {
-
-                "title": "AL-MADD AL-MUTTASIL",
-                "subtitle": "Connected extension"
-
-            }
-        ],
-
-        [{
-
-                "title": "AL-MADD AL-MUNFASIL",
-                "subtitle": "Disconnected extension"
-
-            },
-            {
-
-                "title": "AL-MADD AL-LAZIM",
-                "subtitle": "Mandatory extension"
-
-            }
-        ],
-       [{
-            "title": "AL-MADD AL-‘AARID",
-            "subtitle": "Temporary extension"
-            },
-            {
-            "title": "MADDU AL-LEEN",
-            "subtitle": "Semi-vocal length"
-            }
-        ]
-
     ]
 }

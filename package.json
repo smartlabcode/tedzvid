@@ -4,39 +4,47 @@
   "private": false,
   "homepage": "https://tedzvid.ba/",
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.18",
-    "@fortawesome/free-solid-svg-icons": "^5.8.2",
-    "@fortawesome/react-fontawesome": "^0.1.4",
-    "babel-jest": "^24.9.0",
+    "@capacitor/android": "^8.5.1",
+    "@capacitor/app": "^8.1.1",
+    "@capacitor/core": "^8.5.1",
+    "@capacitor/ios": "^8.5.1",
+    "@capacitor/keyboard": "^8.0.5",
+    "@capacitor/network": "^8.0.1",
+    "@capacitor/splash-screen": "^8.0.2",
+    "@capacitor/status-bar": "^8.0.3",
     "bootstrap": "^4.5.0",
     "gh-pages": "^2.0.1",
     "history": "^5.0.0",
-    "i18next": "^22.4.14",
-    "i18next-browser-languagedetector": "^7.0.1",
     "raf": "^3.4.1",
-    "react": "^16.8.6",
+    "react": "^19.3.0",
     "react-app-polyfill": "^1.0.6",
-    "react-bootstrap": "^1.0.1",
-    "react-dom": "^16.8.6",
+    "react-dom": "^19.3.0",
     "react-ga": "^3.1.2",
-    "react-i18next": "^12.2.0",
     "react-icons": "^3.10.0",
-    "react-markdown": "^8.0.7",
     "react-router": "^5.0.0",
     "react-router-dom": "^5.0.0",
-    "react-scripts": "^3.4.1",
+    "react-scripts": "5.0.1",
     "react-string-replace": "^0.4.4",
     "roboto-fontface": "^0.10.0",
-    "sass": "^1.62.0",
-    "semantic-ui-react": "^0.88.2"
+    "sass": "^1.77.0",
+    "serve": "^14.2.6"
   },
   "scripts": {
-    "start": "react-scripts --openssl-legacy-provider start",
+    "start": "react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "serve": "node server/index.js",
+    "server": "node server/index.js",
+    "build:app": "REACT_APP_API_URL=${TEDZVID_API:-https://tedzvidapp.up.railway.app} react-scripts build",
+    "app:sync": "npm run build:app && cap sync",
+    "app:ios": "npm run app:sync && cap open ios",
+    "app:android": "npm run app:sync && cap open android",
+    "app:run:ios": "npm run app:sync && cap run ios",
+    "app:run:android": "npm run app:sync && cap run android",
+    "app:assets": "printf '{}' > resources/pwa-manifest.json && capacitor-assets generate --pwaManifestPath resources/pwa-manifest.json --iconBackgroundColor \"#103b5c\" --iconBackgroundColorDark \"#103b5c\" --splashBackgroundColor \"#103b5c\" --splashBackgroundColorDark \"#0b2942\"; node scripts/ikone/adaptivna-ikona.js; rm -rf public/assets/icons resources/pwa-manifest.json"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -52,5 +60,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^3.0.5",
+    "@capacitor/cli": "^8.5.1",
+    "ajv": "^8.20.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "proxy": "http://localhost:3002"
 }

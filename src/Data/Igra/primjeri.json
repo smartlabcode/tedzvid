@@ -1,0 +1,1212 @@
+[
+	{
+		"lekcija": 4,
+		"word": "إِذْ ذَهَبَ",
+		"highlight": "ذْ ذَ",
+		"url": "./assets/audio/l4/1.mp3",
+		"napomena": {
+			"bs": "Harf ذْ ima sukun, a iza njega dolazi isti harf ذَ sa hareketom, zato se prvi ne uči nego se oba uče kao jedan ذ sa tešdidom.",
+			"en": "The letter ذْ carries a sukun and is followed by the same letter ذَ with a haraka, so the first is not pronounced and both are recited as one ذ with a tashdeed.",
+			"de": "Der Buchstabe ذْ hat ein Sukun, und danach kommt derselbe Buchstabe ذَ mit Vokalzeichen, deshalb wird der erste nicht gesprochen, sondern beide werden als ein ذ mit Schadda gesprochen."
+		}
+	},
+	{
+		"lekcija": 4,
+		"word": "قُــلْ لَــمْ",
+		"highlight": "لْ لَ",
+		"url": "./assets/audio/l4/3.mp3",
+		"napomena": {
+			"bs": "Harf لْ ima sukun, a odmah iza njega je isti harf لَ sa hareketom, zato se prvi ne uči, a drugi se uči sa tešdidom.",
+			"en": "The letter لْ carries a sukun and is immediately followed by the same letter لَ with a haraka, so the first is not pronounced and the second is recited with a tashdeed.",
+			"de": "Der Buchstabe لْ hat ein Sukun, und gleich danach folgt derselbe Buchstabe لَ mit Vokalzeichen, deshalb wird der erste nicht gesprochen und der zweite mit Schadda."
+		}
+	},
+	{
+		"lekcija": 4,
+		"word": "قُلْ لِمَنِ الْأَرْضُ",
+		"highlight": "لْ لِ",
+		"url": "./assets/audio/l4/7.mp3",
+		"napomena": {
+			"bs": "U riječima قُلْ لِمَنِ harf لْ sa sukunom prati isti harf لِ sa hareketom, zato se prvi ne uči, a drugi se uči sa tešdidom.",
+			"en": "In قُلْ لِمَنِ the letter لْ with a sukun is followed by the same letter لِ with a haraka, so the first is not pronounced and the second is recited with a tashdeed.",
+			"de": "In قُلْ لِمَنِ folgt auf den Buchstaben لْ mit Sukun derselbe Buchstabe لِ mit Vokalzeichen, deshalb wird der erste nicht gesprochen und der zweite mit Schadda."
+		}
+	},
+	{
+		"lekcija": 4,
+		"word": "إِذْ ذَهَبَ مُغَاضِبًا",
+		"highlight": "ذْ ذَ",
+		"url": "./assets/audio/l4/6.mp3",
+		"napomena": {
+			"bs": "U riječima إِذْ ذَهَبَ harf ذْ sa sukunom i isti harf ذَ sa hareketom potpuno se uklapaju, pa se uči samo ذ sa tešdidom.",
+			"en": "In إِذْ ذَهَبَ the letter ذْ with a sukun and the same letter ذَ with a haraka merge completely, so only ذ with a tashdeed is recited.",
+			"de": "In إِذْ ذَهَبَ verschmelzen der Buchstabe ذْ mit Sukun und derselbe Buchstabe ذَ mit Vokalzeichen vollständig, deshalb wird nur ذ mit Schadda gesprochen."
+		}
+	},
+	{
+		"lekcija": 4,
+		"word": "يُكْرِهْهُنَّ",
+		"highlight": "هْهُ",
+		"url": "./assets/audio/l4/5.mp3",
+		"napomena": {
+			"bs": "U riječi يُكْرِهْهُنَّ harf هْ sa sukunom prati isti harf هُ, zato se prvi ne uči nego se oba uče kao jedan ه sa tešdidom.",
+			"en": "In يُكْرِهْهُنَّ the letter هْ with a sukun is followed by the same letter هُ, so the first is not pronounced and both are recited as one ه with a tashdeed.",
+			"de": "Im Wort يُكْرِهْهُنَّ folgt auf den Buchstaben هْ mit Sukun derselbe Buchstabe هُ, deshalb wird der erste nicht gesprochen, sondern beide werden als ein ه mit Schadda gesprochen."
+		}
+	},
+	{
+		"lekcija": 4,
+		"word": "إِذْهَـبْ بِـكِـتَابِي هٰـذَا",
+		"highlight": "بْ بِـ",
+		"url": "./assets/audio/l4/8.mp3",
+		"napomena": {
+			"bs": "Na kraju riječi إِذْهَـبْ je بْ sa sukunom, a iza njega dolazi isti harf بِـ sa hareketom, zato se uči samo jedan ب sa tešdidom.",
+			"en": "At the end of إِذْهَـبْ there is بْ with a sukun, followed by the same letter بِـ with a haraka, so only one ب with a tashdeed is recited.",
+			"de": "Am Ende von إِذْهَـبْ steht بْ mit Sukun, und danach kommt derselbe Buchstabe بِـ mit Vokalzeichen, deshalb wird nur ein ب mit Schadda gesprochen."
+		}
+	},
+	{
+		"lekcija": 4,
+		"word": "وَاذْكُـرْ رَبَّـكَ كَـثِـيـرًا",
+		"highlight": "رْ رَ",
+		"url": "./assets/audio/l4/9.mp3",
+		"napomena": {
+			"bs": "U riječima وَاذْكُـرْ رَبَّـكَ harf رْ sa sukunom prati isti harf رَ sa hareketom, zato se prvi ne uči, a drugi se uči sa tešdidom.",
+			"en": "In وَاذْكُـرْ رَبَّـكَ the letter رْ with a sukun is followed by the same letter رَ with a haraka, so the first is not pronounced and the second is recited with a tashdeed.",
+			"de": "In وَاذْكُـرْ رَبَّـكَ folgt auf den Buchstaben رْ mit Sukun derselbe Buchstabe رَ mit Vokalzeichen, deshalb wird der erste nicht gesprochen und der zweite mit Schadda."
+		}
+	},
+	{
+		"lekcija": 5,
+		"word": "هُمْ مِنْ",
+		"highlight": "مْ مِ",
+		"url": "./assets/audio/l5/1.mp3",
+		"napomena": {
+			"bs": "U riječi هُمْ zadnje مْ ima sukun, a poslije dolazi مِ sa hareketom, zato se uklapaju u jedno M uz zrak kroz nos u trajanju od 2 hareketa.",
+			"en": "In هُمْ the final مْ carries a sukun and مِ with a haraka follows, so they merge into one M with air through the nose for 2 harakas.",
+			"de": "Im Wort هُمْ hat das letzte مْ ein Sukun, danach kommt مِ mit Vokalzeichen, deshalb verschmelzen sie zu einem M mit Luft durch die Nase, 2 Harakat lang."
+		}
+	},
+	{
+		"lekcija": 5,
+		"word": "إِنَّهَا عَلَيْهِمْ مُـؤْصَدَةٌ",
+		"highlight": "مْ مُـ",
+		"url": "./assets/audio/l5/3.mp3",
+		"napomena": {
+			"bs": "U riječi عَلَيْهِمْ zadnje مْ ima sukun, a sljedeća riječ počinje sa مُـ sa hareketom, zato se uklapaju uz zrak kroz nos u trajanju od 2 hareketa.",
+			"en": "In عَلَيْهِمْ the final مْ carries a sukun and the next word begins with مُـ carrying a haraka, so they merge with air through the nose for 2 harakas.",
+			"de": "Im Wort عَلَيْهِمْ hat das letzte مْ ein Sukun, und das nächste Wort beginnt mit مُـ mit Vokalzeichen, deshalb verschmelzen sie mit Luft durch die Nase, 2 Harakat lang."
+		}
+	},
+	{
+		"lekcija": 5,
+		"word": "أَطْعَمَهُمْ مِنْ",
+		"highlight": "مْ مِ",
+		"url": "./assets/audio/l5/4.mp3",
+		"napomena": {
+			"bs": "U riječi أَطْعَمَهُمْ zadnje مْ je sa sukunom, a slijedi ga مِ sa hareketom, zato se ta dva M uklapaju uz zrak kroz nos u trajanju od 2 hareketa.",
+			"en": "In أَطْعَمَهُمْ the final مْ has a sukun and مِ with a haraka follows it, so the two Ms merge with air through the nose for 2 harakas.",
+			"de": "Im Wort أَطْعَمَهُمْ hat das letzte مْ ein Sukun, und darauf folgt مِ mit Vokalzeichen, deshalb verschmelzen die beiden M mit Luft durch die Nase, 2 Harakat lang."
+		}
+	},
+	{
+		"lekcija": 5,
+		"word": "وَاٰمَنَهُمْ مِنْ خَوْفٍ",
+		"highlight": "مْ م",
+		"url": "./assets/audio/l5/5.mp3",
+		"napomena": {
+			"bs": "U riječi وَاٰمَنَهُمْ zadnje مْ ima sukun, a riječ مِنْ počinje sa M sa hareketom, zato se uklapaju uz zrak kroz nos u trajanju od 2 hareketa.",
+			"en": "In وَاٰمَنَهُمْ the final مْ carries a sukun and the word مِنْ begins with M with a haraka, so they merge with air through the nose for 2 harakas.",
+			"de": "Im Wort وَاٰمَنَهُمْ hat das letzte مْ ein Sukun, und das Wort مِنْ beginnt mit M mit Vokalzeichen, deshalb verschmelzen sie mit Luft durch die Nase, 2 Harakat lang."
+		}
+	},
+	{
+		"lekcija": 5,
+		"word": "اَلَّذِينَ يَظُـنُّونَ أَنَّهُمْ مُلَاقُو رَبِّـهِمْ",
+		"highlight": "مْ مُ",
+		"url": "./assets/audio/l5/6.mp3",
+		"napomena": {
+			"bs": "U riječi أَنَّهُمْ zadnje مْ ima sukun, a riječ مُلَاقُو počinje sa مُ sa hareketom, zato se uklapaju uz zrak kroz nos u trajanju od 2 hareketa.",
+			"en": "In أَنَّهُمْ the final مْ carries a sukun and مُلَاقُو begins with مُ carrying a haraka, so they merge with air through the nose for 2 harakas.",
+			"de": "Im Wort أَنَّهُمْ hat das letzte مْ ein Sukun, und das Wort مُلَاقُو beginnt mit مُ mit Vokalzeichen, deshalb verschmelzen sie mit Luft durch die Nase, 2 Harakat lang."
+		}
+	},
+	{
+		"lekcija": 5,
+		"word": "فَإِنَّ لَكُمْ مَا سَأَلْـتُمْ",
+		"highlight": "مْ مَ",
+		"url": "./assets/audio/l5/7.mp3",
+		"napomena": {
+			"bs": "U riječi لَكُمْ zadnje مْ je sa sukunom, a slijedi riječ مَا sa hareketom na M, zato se uklapaju uz zrak kroz nos u trajanju od 2 hareketa.",
+			"en": "In لَكُمْ the final مْ has a sukun and the word مَا follows with a haraka on the M, so they merge with air through the nose for 2 harakas.",
+			"de": "Im Wort لَكُمْ hat das letzte مْ ein Sukun, und es folgt das Wort مَا mit Vokalzeichen auf dem M, deshalb verschmelzen sie mit Luft durch die Nase, 2 Harakat lang."
+		}
+	},
+	{
+		"lekcija": 6,
+		"word": "مَ‍نْ نَ‍‍شَٓاءُ",
+		"highlight": "نْ نَ‍‍",
+		"url": "./assets/audio/l6/1.mp3",
+		"napomena": {
+			"bs": "Ovdje je نْ sa sukunom, a poslije njega dolazi نَ, zato se N uklapa u ن uz zrak kroz nos u trajanju od 2 hareketa.",
+			"en": "Here نْ has a sukun and is followed by نَ, so the N merges into ن with air passing through the nose for 2 harakas.",
+			"de": "Hier hat نْ ein Sukun, und danach kommt نَ, deshalb verschmilzt das N in ن mit Luft durch die Nase, 2 Harakat lang."
+		}
+	},
+	{
+		"lekcija": 6,
+		"word": "نِعْمَ‍‍ةً مِ‍‍نْهُ",
+		"highlight": "ةً مِ‍",
+		"url": "./assets/audio/l6/3.mp3",
+		"napomena": {
+			"bs": "Na ةً je tenvin UN, a poslije dolazi مِ, zato se N iz tenvina uklapa u م uz zrak kroz nos u trajanju od 2 hareketa.",
+			"en": "On ةً there is the tanween UN followed by مِ, so the N of the tanween merges into م with air through the nose for 2 harakas.",
+			"de": "Auf ةً steht das Tanwin UN, und danach kommt مِ, deshalb verschmilzt das N des Tanwins in م mit Luft durch die Nase, 2 Harakat lang."
+		}
+	},
+	{
+		"lekcija": 6,
+		"word": "لَـقَدْ جِئْتَ شَيْـئًا نُكْرًا",
+		"highlight": "ئًا نُ",
+		"url": "./assets/audio/l6/5.mp3",
+		"napomena": {
+			"bs": "U riječi شَيْـئًا je tenvin EN, a poslije dolazi نُ, zato se N uklapa u ن uz zrak kroz nos u trajanju od 2 hareketa.",
+			"en": "In شَيْـئًا there is the tanween AN followed by نُ, so the N merges into ن with air through the nose for 2 harakas.",
+			"de": "Im Wort شَيْـئًا steht das Tanwin AN, und danach kommt نُ, deshalb verschmilzt das N in ن mit Luft durch die Nase, 2 Harakat lang."
+		}
+	},
+	{
+		"lekcija": 6,
+		"word": "فِي جِيدِهَا حَبْلٌ مِنْ مَسَدٍ",
+		"highlight": "لٌ مِنْ مَ",
+		"url": "./assets/audio/l6/6.mp3",
+		"napomena": {
+			"bs": "U riječi حَبْلٌ je tenvin UN, a poslije dolazi مِ, zato se N uklapa u م uz zrak kroz nos u trajanju od 2 hareketa.",
+			"en": "In حَبْلٌ there is the tanween UN followed by مِ, so the N merges into م with air through the nose for 2 harakas.",
+			"de": "Im Wort حَبْلٌ steht das Tanwin UN, und danach kommt مِ, deshalb verschmilzt das N in م mit Luft durch die Nase, 2 Harakat lang."
+		}
+	},
+	{
+		"lekcija": 6,
+		"word": "حَنِيفًا مُـسْلِمًا",
+		"highlight": "فًا مُـ",
+		"url": "./assets/audio/l6/7.mp3",
+		"napomena": {
+			"bs": "U riječi يَهُودِيًّا je tenvin EN, a poslije dolazi وَ, zato se N uklapa u و uz zrak kroz nos u trajanju od 2 hareketa.",
+			"en": "In يَهُودِيًّا there is the tanween AN followed by وَ, so the N merges into و with air through the nose for 2 harakas.",
+			"de": "Im Wort يَهُودِيًّا steht das Tanwin AN, und danach kommt وَ, deshalb verschmilzt das N in و mit Luft durch die Nase, 2 Harakat lang."
+		}
+	},
+	{
+		"lekcija": 7,
+		"word": "وَيْلٌ لِكُلِّ",
+		"highlight": "لٌ لِ",
+		"url": "./assets/audio/l7/1.mp3",
+		"napomena": {
+			"bs": "U riječi وَيْلٌ je tenvin UN, a poslije dolazi لِ, zato se N iz tenvina nikako ne uči nego se potpuno uklapa u L, bez zraka kroz nos.",
+			"en": "In وَيْلٌ there is the tanween UN and لِ follows, so the N of the tanween is not pronounced but merges completely into L, with no nasalisation.",
+			"de": "Im Wort وَيْلٌ steht das Tanwin UN, und danach kommt لِ, deshalb wird das N des Tanwins gar nicht gesprochen, sondern verschmilzt vollständig in L, ohne Luft durch die Nase."
+		}
+	},
+	{
+		"lekcija": 7,
+		"word": "مِنْ رَبِّـهِمْ",
+		"highlight": "نْ رَ",
+		"url": "./assets/audio/l7/3.mp3",
+		"napomena": {
+			"bs": "U riječi مِنْ je نْ sa sukunom, a poslije dolazi رَ, zato se N nikako ne uči nego se potpuno uklapa u R, bez zraka kroz nos.",
+			"en": "In مِنْ the نْ has a sukun and رَ follows, so N is not pronounced at all but merges completely into R, with no nasalisation.",
+			"de": "Im Wort مِنْ hat نْ ein Sukun, und danach kommt رَ, deshalb wird das N gar nicht gesprochen, sondern verschmilzt vollständig in R, ohne Luft durch die Nase."
+		}
+	},
+	{
+		"lekcija": 7,
+		"word": "وَكَانَ اللّٰهُ غَفُورًا رَحِيمًا",
+		"highlight": "رًا رَ",
+		"url": "./assets/audio/l7/5.mp3",
+		"napomena": {
+			"bs": "U riječi غَفُورًا je tenvin EN, a poslije dolazi رَ u رَحِيمًا, zato se N iz tenvina nikako ne uči nego se potpuno uklapa u R, bez zraka kroz nos.",
+			"en": "In غَفُورًا there is the tanween AN and رَ follows in رَحِيمًا, so the N of the tanween is not pronounced but merges completely into R, with no nasalisation.",
+			"de": "Im Wort غَفُورًا steht das Tanwin AN, und danach kommt رَ in رَحِيمًا, deshalb wird das N des Tanwins gar nicht gesprochen, sondern verschmilzt vollständig in R, ohne Luft durch die Nase."
+		}
+	},
+	{
+		"lekcija": 7,
+		"word": "كُنْ لَهُ وَلَدٌ",
+		"highlight": "نْ لَ",
+		"url": "./assets/audio/l7/6.mp3",
+		"napomena": {
+			"bs": "U riječi فَإِنْ je نْ sa sukunom, a poslije dolazi لَمْ, zato se N nikako ne uči nego se potpuno uklapa u L, bez zraka kroz nos.",
+			"en": "In فَإِنْ there is نْ with a sukun followed by لَمْ, so the N is not pronounced but merges completely into L, with no nasalisation.",
+			"de": "Im Wort فَإِنْ hat نْ ein Sukun, und danach kommt لَمْ, deshalb wird das N gar nicht gesprochen, sondern verschmilzt vollständig in L, ohne Luft durch die Nase."
+		}
+	},
+	{
+		"lekcija": 7,
+		"word": "وَوَيْلٌ لَهُمْ مِمَّا يَكْسِبُونَ",
+		"highlight": "لٌ لَ",
+		"url": "./assets/audio/l7/7.mp3",
+		"napomena": {
+			"bs": "U riječi فَوَيْلٌ je tenvin UN, a poslije dolazi لَهُ, zato se N iz tenvina nikako ne uči nego se potpuno uklapa u L, bez zraka kroz nos.",
+			"en": "In فَوَيْلٌ there is the tanween UN followed by لَهُ, so the N of the tanween is not pronounced but merges completely into L, with no nasalisation.",
+			"de": "Im Wort فَوَيْلٌ steht das Tanwin UN, und danach kommt لَهُ, deshalb wird das N des Tanwins gar nicht gesprochen, sondern verschmilzt vollständig in L, ohne Luft durch die Nase."
+		}
+	},
+	{
+		"lekcija": 8,
+		"word": "مِنْ بَعْدِ",
+		"highlight": "نْ بَ",
+		"url": "./assets/audio/l8/1.mp3",
+		"napomena": {
+			"bs": "Harf N ima sukun (نْ), a iza njega dolazi harf B (بَ), zato se نْ uči kao مْ u trajanju od 2 hareketa.",
+			"en": "The letter N has a sukun (نْ) and is followed by the letter B (بَ), so نْ is recited as مْ for the length of 2 harakas.",
+			"de": "Der Buchstabe N hat ein Sukun (نْ), und danach kommt der Buchstabe B (بَ), deshalb wird نْ als مْ gesprochen, 2 Harakat lang."
+		}
+	},
+	{
+		"lekcija": 8,
+		"word": "سَـمِيعٌ بَصِيرٌ",
+		"highlight": "عٌ بَ",
+		"url": "./assets/audio/l8/3.mp3",
+		"napomena": {
+			"bs": "U riječi سَـمِيعٌ je tenvin UN (عٌ), a iza njega dolazi harf B (بَ), zato se glas N uči kao م u trajanju od 2 hareketa.",
+			"en": "In سَـمِيعٌ there is the tanween UN (عٌ) followed by the letter B (بَ), so the N sound is recited as م for the length of 2 harakas.",
+			"de": "Im Wort سَـمِيعٌ steht das Tanwin UN (عٌ), und danach kommt der Buchstabe B (بَ), deshalb wird der Laut N als م gesprochen, 2 Harakat lang."
+		}
+	},
+	{
+		"lekcija": 8,
+		"word": "مِنْ بَـقْلِهَا وَقِـثَّٓائِهَا",
+		"highlight": "نْ بَـ",
+		"url": "./assets/audio/l8/5.mp3",
+		"napomena": {
+			"bs": "U riječi مِنْ harf N ima sukun (نْ), a iza njega dolazi harf B (بَـ), zato se نْ uči kao م u trajanju od 2 hareketa.",
+			"en": "In مِنْ the letter N has a sukun (نْ) and is followed by the letter B (بَـ), so نْ is recited as م for the length of 2 harakas.",
+			"de": "Im Wort مِنْ hat der Buchstabe N ein Sukun (نْ), und danach kommt der Buchstabe B (بَـ), deshalb wird نْ als م gesprochen, 2 Harakat lang."
+		}
+	},
+	{
+		"lekcija": 8,
+		"word": "إِذْ قَالَ لِـبَـنِيـهِ مَا تَعْبُدُونَ مِنْ بَـعْدِي",
+		"highlight": "نْ بَـ",
+		"url": "./assets/audio/l8/6.mp3",
+		"napomena": {
+			"bs": "U riječima مِنْ بَـعْدِي harf N ima sukun (نْ), a iza njega dolazi harf B (بَـ), zato se نْ uči kao م u trajanju od 2 hareketa.",
+			"en": "In مِنْ بَـعْدِي the letter N has a sukun (نْ) and is followed by the letter B (بَـ), so نْ is recited as م for the length of 2 harakas.",
+			"de": "In مِنْ بَـعْدِي hat der Buchstabe N ein Sukun (نْ), und danach kommt der Buchstabe B (بَـ), deshalb wird نْ als م gesprochen, 2 Harakat lang."
+		}
+	},
+	{
+		"lekcija": 8,
+		"word": "صُمٌّ بُـكْمٌ عُمْيٌ فَهُمْ لَا يَرْجِعُونَ",
+		"highlight": "مٌّ بُ",
+		"url": "./assets/audio/l8/7.mp3",
+		"napomena": {
+			"bs": "U riječi صُمٌّ je tenvin UN (مٌّ), a iza njega dolazi harf B (بُ), zato se glas N uči kao م u trajanju od 2 hareketa.",
+			"en": "In صُمٌّ there is the tanween UN (مٌّ) followed by the letter B (بُ), so the N sound is recited as م for the length of 2 harakas.",
+			"de": "Im Wort صُمٌّ steht das Tanwin UN (مٌّ), und danach kommt der Buchstabe B (بُ), deshalb wird der Laut N als م gesprochen, 2 Harakat lang."
+		}
+	},
+	{
+		"lekcija": 9,
+		"word": "قَالَ أَعُوذُ بِاللّٰهِ أَنْ أَكُونَ مِنَ الْجَاهِلِينَ",
+		"highlight": "نْ أَ",
+		"url": "./assets/audio/l9/2.mp3",
+		"napomena": {
+			"bs": "U riječi أَنْ harf نْ ima sukun, a iza njega dolazi grleni harf أَ, zato se harf N uči čisto, bez uklapanja.",
+			"en": "In أَنْ the letter نْ carries a sukun and is followed by the throat letter أَ, so N is pronounced clearly, without merging.",
+			"de": "Im Wort أَنْ hat der Buchstabe نْ ein Sukun, und danach kommt der Kehlbuchstabe أَ, deshalb wird das N deutlich ausgesprochen, ohne Verschmelzung."
+		}
+	},
+	{
+		"lekcija": 9,
+		"word": "عَنْهُ",
+		"highlight": "نْهُ",
+		"url": "./assets/audio/l9/1.mp3",
+		"napomena": {
+			"bs": "U riječi عَنْهُ harf نْ ima sukun, a iza njega dolazi grleni harf هُ, zato se harf N uči čisto, bez uklapanja.",
+			"en": "In عَنْهُ the letter نْ carries a sukun and is followed by the throat letter هُ, so N is pronounced clearly, without merging.",
+			"de": "Im Wort عَنْهُ hat der Buchstabe نْ ein Sukun, und danach kommt der Kehlbuchstabe هُ, deshalb wird das N deutlich ausgesprochen, ohne Verschmelzung."
+		}
+	},
+	{
+		"lekcija": 9,
+		"word": "عَلِيمـًا حَكِيمًا",
+		"highlight": "ـًا حَ",
+		"url": "./assets/audio/l9/4.mp3",
+		"napomena": {
+			"bs": "Na kraju riječi عَلِيمـًا je tenvin EN, a iza njega dolazi grleni harf حَ, zato se harf N iz tenvina uči čisto, bez uklapanja.",
+			"en": "At the end of عَلِيمـًا there is the tanween AN, followed by the throat letter حَ, so the N of the tanween is pronounced clearly, without merging.",
+			"de": "Am Ende von عَلِيمـًا steht das Tanwin AN, und danach kommt der Kehlbuchstabe حَ, deshalb wird das N des Tanwins deutlich ausgesprochen, ohne Verschmelzung."
+		}
+	},
+	{
+		"lekcija": 9,
+		"word": "اَلدُّنْيَا",
+		"highlight": "ُّنْيَ",
+		"url": "./assets/audio/l9/8.mp3",
+		"napomena": {
+			"bs": "U riječi اَلدُّنْيَا iza harfa نْ sa sukunom dolazi يَ u istoj riječi, zato je ovo izhar mutlak i harf N se uči čisto.",
+			"en": "In اَلدُّنْيَا the letter نْ with a sukun is followed by يَ within the same word, so this is idhhar mutlaq and N is pronounced clearly.",
+			"de": "Im Wort اَلدُّنْيَا folgt auf den Buchstaben نْ mit Sukun ein يَ im selben Wort, deshalb ist das Idh-har Mutlaq und das N wird deutlich ausgesprochen."
+		}
+	},
+	{
+		"lekcija": 9,
+		"word": "بُنْيَانٌ",
+		"highlight": "نْيَ",
+		"url": "./assets/audio/l9/7.mp3",
+		"napomena": {
+			"bs": "U riječi بُنْيَانٌ iza harfa نْ sa sukunom dolazi يَ u istoj riječi, zato je ovo izhar mutlak i harf N se uči čisto.",
+			"en": "In بُنْيَانٌ the letter نْ with a sukun is followed by يَ within the same word, so this is idhhar mutlaq and N is pronounced clearly.",
+			"de": "Im Wort بُنْيَانٌ folgt auf den Buchstaben نْ mit Sukun ein يَ im selben Wort, deshalb ist das Idh-har Mutlaq und das N wird deutlich ausgesprochen."
+		}
+	},
+	{
+		"lekcija": 9,
+		"word": "صِنْوَانٌ",
+		"highlight": "نْوَ",
+		"url": "./assets/audio/l9/6.mp3",
+		"napomena": {
+			"bs": "U riječi صِنْوَانٌ iza harfa نْ sa sukunom dolazi وَ u istoj riječi, zato je ovo izhar mutlak i harf N se uči čisto.",
+			"en": "In صِنْوَانٌ the letter نْ with a sukun is followed by وَ within the same word, so this is idhhar mutlaq and N is pronounced clearly.",
+			"de": "Im Wort صِنْوَانٌ folgt auf den Buchstaben نْ mit Sukun ein وَ im selben Wort, deshalb ist das Idh-har Mutlaq und das N wird deutlich ausgesprochen."
+		}
+	},
+	{
+		"lekcija": 9,
+		"word": "قِنْوَانٌ",
+		"highlight": "نْوَ",
+		"url": "./assets/audio/l9/5.mp3",
+		"napomena": {
+			"bs": "U riječi قِنْوَانٌ iza harfa نْ sa sukunom dolazi وَ u istoj riječi, zato je ovo izhar mutlak i harf N se uči čisto.",
+			"en": "In قِنْوَانٌ the letter نْ with a sukun is followed by وَ within the same word, so this is idhhar mutlaq and N is pronounced clearly.",
+			"de": "Im Wort قِنْوَانٌ folgt auf den Buchstaben نْ mit Sukun ein وَ im selben Wort, deshalb ist das Idh-har Mutlaq und das N wird deutlich ausgesprochen."
+		}
+	},
+	{
+		"lekcija": 9,
+		"word": "نَ عَنْهُ",
+		"highlight": "نْهُ",
+		"url": "./assets/audio/l9/3.mp3",
+		"napomena": {
+			"bs": "U riječi يَـنْـهَـوْ harf نْ ima sukun, a iza njega dolazi grleni harf هَ, zato se harf N uči čisto, bez uklapanja.",
+			"en": "In يَـنْـهَـوْ the letter نْ carries a sukun and is followed by the throat letter هَ, so N is pronounced clearly, without merging.",
+			"de": "Im Wort يَـنْـهَـوْ hat der Buchstabe نْ ein Sukun, und danach kommt der Kehlbuchstabe هَ, deshalb wird das N deutlich ausgesprochen, ohne Verschmelzung."
+		}
+	},
+	{
+		"lekcija": 10,
+		"word": "أَلَـمْ تَرَ",
+		"highlight": "مْ تَ",
+		"url": "./assets/audio/l10/1.mp3",
+		"napomena": {
+			"bs": "U riječi أَلَـمْ harf مْ sa sukunom prati تَ, a to nije ni ب ni م, zato se مْ uči čisto, bez uklapanja.",
+			"en": "In أَلَـمْ the letter مْ with a sukun is followed by تَ, which is neither ب nor م, so مْ is recited clearly, without merging.",
+			"de": "Im Wort أَلَـمْ folgt auf den Buchstaben مْ mit Sukun ein تَ, und das ist weder ب noch م, deshalb wird مْ deutlich ausgesprochen, ohne Verschmelzung."
+		}
+	},
+	{
+		"lekcija": 10,
+		"word": "لَكُمْ دِينُكُمْ",
+		"highlight": "مْ دِ",
+		"url": "./assets/audio/l10/2.mp3",
+		"napomena": {
+			"bs": "U riječi لَكُمْ harf مْ sa sukunom dolazi ispred دِ, a ne ispred ب ili م, zato se uči čisto, bez uklapanja.",
+			"en": "In لَكُمْ the letter مْ with a sukun comes before دِ, not before ب or م, so it is recited clearly, without merging.",
+			"de": "Im Wort لَكُمْ steht der Buchstabe مْ mit Sukun vor دِ und nicht vor ب oder م, deshalb wird er deutlich ausgesprochen, ohne Verschmelzung."
+		}
+	},
+	{
+		"lekcija": 10,
+		"word": "هُمْ فِي تَضْلِيلٍ",
+		"highlight": "مْ فِ",
+		"url": "./assets/audio/l10/3.mp3",
+		"napomena": {
+			"bs": "U riječi أَلَـمْ harf مْ ima sukun, a iza njega dolazi يَ, zato se مْ uči čisto, bez uklapanja.",
+			"en": "In أَلَـمْ the letter مْ has a sukun and is followed by يَ, so مْ is recited clearly, without merging.",
+			"de": "Im Wort أَلَـمْ hat der Buchstabe مْ ein Sukun, und danach kommt يَ, deshalb wird مْ deutlich ausgesprochen, ohne Verschmelzung."
+		}
+	},
+	{
+		"lekcija": 10,
+		"word": "الْمَغْضُوبِ عَلَيْهِمْ وَلَاالضَّٓالِّـينَ",
+		"highlight": "مْ وَ",
+		"url": "./assets/audio/l10/4.mp3",
+		"napomena": {
+			"bs": "U riječi عَلَيْهِمْ harf مْ ima sukun, a iza njega dolazi غَ, zato se مْ uči čisto, bez uklapanja.",
+			"en": "In عَلَيْهِمْ the letter مْ has a sukun and is followed by غَ, so مْ is recited clearly, without merging.",
+			"de": "Im Wort عَلَيْهِمْ hat der Buchstabe مْ ein Sukun, und danach kommt غَ, deshalb wird مْ deutlich ausgesprochen, ohne Verschmelzung."
+		}
+	},
+	{
+		"lekcija": 10,
+		"word": "وَلَمْ يُولَدْ",
+		"highlight": "مْ يُ",
+		"url": "./assets/audio/l10/5.mp3",
+		"napomena": {
+			"bs": "U riječima لَمْ يَلِدْ harf مْ ima sukun, a iza njega dolazi يَ, zato se مْ uči čisto i ne uklapa se u sljedeći harf.",
+			"en": "In لَمْ يَلِدْ the letter مْ has a sukun and is followed by يَ, so مْ is recited clearly and does not merge into the next letter.",
+			"de": "In لَمْ يَلِدْ hat der Buchstabe مْ ein Sukun, und danach kommt يَ, deshalb wird مْ deutlich ausgesprochen und verschmilzt nicht in den nächsten Buchstaben."
+		}
+	},
+	{
+		"lekcija": 11,
+		"word": "أَنْـتُمْ",
+		"highlight": "نْـتُ",
+		"url": "./assets/audio/l11/1.mp3",
+		"napomena": {
+			"bs": "Harf نْ ima sukun, a iza njega dolazi تُ, zato se N uči kroz nos u trajanju od 2 hareketa, a jezik ne dotakne nepce.",
+			"en": "The letter نْ carries a sukun and is followed by تُ, so N is recited through the nose for 2 harakas, without the tongue touching the palate.",
+			"de": "Der Buchstabe نْ hat ein Sukun, und danach kommt تُ, deshalb wird das N 2 Harakat lang durch die Nase gesprochen, und die Zunge berührt den Gaumen nicht."
+		}
+	},
+	{
+		"lekcija": 11,
+		"word": "أَجْرٍ كَرِيمٍ",
+		"highlight": "رٍ كَ",
+		"url": "./assets/audio/l11/2.mp3",
+		"napomena": {
+			"bs": "Harf رٍ ima tenvin IN, a iza njega dolazi كَ, zato se N iz tenvina uči kroz nos 2 hareketa, a jezik ne dotakne nepce.",
+			"en": "The letter رٍ carries the tanween IN and is followed by كَ, so the N of the tanween is recited through the nose for 2 harakas, without the tongue touching the palate.",
+			"de": "Der Buchstabe رٍ hat das Tanwin IN, und danach kommt كَ, deshalb wird das N des Tanwins 2 Harakat lang durch die Nase gesprochen, und die Zunge berührt den Gaumen nicht."
+		}
+	},
+	{
+		"lekcija": 11,
+		"word": "إِنْ كُـنْـتُمْ صَادِقِينَ",
+		"highlight": "نْ كُـنْـتُ",
+		"url": "./assets/audio/l11/3.mp3",
+		"napomena": {
+			"bs": "U riječi إِنْ iza نْ sa sukunom dolazi كُ, zato se N uči kroz nos 2 hareketa, a jezik ne dotakne nepce.",
+			"en": "In إِنْ the نْ with a sukun is followed by كُ, so N is recited through the nose for 2 harakas, without the tongue touching the palate.",
+			"de": "Im Wort إِنْ folgt auf نْ mit Sukun ein كُ, deshalb wird das N 2 Harakat lang durch die Nase gesprochen, und die Zunge berührt den Gaumen nicht."
+		}
+	},
+	{
+		"lekcija": 11,
+		"word": "إِنَّ اللّٰهَ قَوِيٌّ شَدِيدُ الْعِقَابِ",
+		"highlight": "يٌّ شَ",
+		"url": "./assets/audio/l11/4.mp3",
+		"napomena": {
+			"bs": "U riječi قَوِيٌّ je tenvin UN, a iza njega dolazi شَ, zato se N iz tenvina uči kroz nos 2 hareketa, a jezik ne dotakne nepce.",
+			"en": "In قَوِيٌّ there is the tanween UN followed by شَ, so the N of the tanween is recited through the nose for 2 harakas, without the tongue touching the palate.",
+			"de": "Im Wort قَوِيٌّ steht das Tanwin UN, und danach kommt شَ, deshalb wird das N des Tanwins 2 Harakat lang durch die Nase gesprochen, und die Zunge berührt den Gaumen nicht."
+		}
+	},
+	{
+		"lekcija": 11,
+		"word": "وَمِمَّا رَزَقْنَاهُمْ يُـنْـفِقُونَ",
+		"highlight": "نْـفِ",
+		"url": "./assets/audio/l11/6.mp3",
+		"napomena": {
+			"bs": "U riječi يُـنْـفِقُونَ iza نْ sa sukunom dolazi فِ, zato se N ne uči jasno nego kroz nos 2 hareketa, a jezik ne dotakne nepce.",
+			"en": "In يُـنْـفِقُونَ the نْ with a sukun is followed by فِ, so N is not recited clearly but through the nose for 2 harakas, without the tongue touching the palate.",
+			"de": "Im Wort يُـنْـفِقُونَ folgt auf نْ mit Sukun ein فِ, deshalb wird das N nicht deutlich gesprochen, sondern 2 Harakat lang durch die Nase, und die Zunge berührt den Gaumen nicht."
+		}
+	},
+	{
+		"lekcija": 11,
+		"word": "مِنْ تَحْتِهَا الْأَنْهَارُ",
+		"highlight": "نْ تَ",
+		"url": "./assets/audio/l11/5.mp3",
+		"napomena": {
+			"bs": "U riječi وَجَنَّاتٌ je tenvin UN, a iza njega dolazi تَ u riječi تَجْرِي, zato se N iz tenvina uči kroz nos 2 hareketa.",
+			"en": "In وَجَنَّاتٌ there is the tanween UN followed by تَ in تَجْرِي, so the N of the tanween is recited through the nose for 2 harakas.",
+			"de": "Im Wort وَجَنَّاتٌ steht das Tanwin UN, und danach kommt تَ im Wort تَجْرِي, deshalb wird das N des Tanwins 2 Harakat lang durch die Nase gesprochen."
+		}
+	},
+	{
+		"lekcija": 12,
+		"word": "تَرْمِيهِمْ بِحِجَارَةٍ",
+		"highlight": "مْ بِ",
+		"url": "./assets/audio/l12/3.mp3",
+		"napomena": {
+			"bs": "U riječima تَرْمِيهِمْ بِحِجَارَةٍ poslije harfa مْ sa sukunom dolazi harf بِ, zato se izgovor harfa م skriva i produžava u trajanju od 2 hareketa.",
+			"en": "In تَرْمِيهِمْ بِحِجَارَةٍ the letter مْ with a sukun is followed by the letter بِ, so the letter م is hidden and prolonged for the length of 2 harakas.",
+			"de": "In تَرْمِيهِمْ بِحِجَارَةٍ kommt nach dem Buchstaben مْ mit Sukun der Buchstabe بِ, deshalb wird der Buchstabe م versteckt und 2 Harakat lang gedehnt."
+		}
+	},
+	{
+		"lekcija": 12,
+		"word": "أَمْ بِـهِ",
+		"highlight": "مْ بِ",
+		"url": "./assets/audio/l12/2.mp3",
+		"napomena": {
+			"bs": "Na kraju riječi أَمْ je harf مْ sa sukunom, a odmah iza njega je harf بِ, zato se م uči skriveno i produženo u trajanju od 2 hareketa.",
+			"en": "At the end of أَمْ there is مْ with a sukun, immediately followed by بِ, so م is recited hidden and prolonged for the length of 2 harakas.",
+			"de": "Am Ende von أَمْ steht der Buchstabe مْ mit Sukun, und gleich danach kommt der Buchstabe بِ, deshalb wird م versteckt und gedehnt gesprochen, 2 Harakat lang."
+		}
+	},
+	{
+		"lekcija": 12,
+		"word": "فَهُمْ بِـهِ مُسْتَمْسِكُونَ",
+		"highlight": "مْ بِـ",
+		"url": "./assets/audio/l12/1.mp3",
+		"napomena": {
+			"bs": "U riječima فَهُمْ بِـهِ harf مْ sa sukunom prati harf بِ, zato se م ne uči kratko nego skriveno, uz produženje od 2 hareketa.",
+			"en": "In فَهُمْ بِـهِ the letter مْ with a sukun is followed by the letter بِ, so م is not recited short but hidden, with a prolongation of 2 harakas.",
+			"de": "In فَهُمْ بِـهِ folgt auf den Buchstaben مْ mit Sukun der Buchstabe بِ, deshalb wird م nicht kurz, sondern versteckt gesprochen, mit einer Dehnung von 2 Harakat."
+		}
+	},
+	{
+		"lekcija": 12,
+		"word": "يَدْعُونَ رَبَّهُمْ بِالْغَدَاةِ وَالْعَشِيِّ",
+		"highlight": "مْ بِ",
+		"url": "./assets/audio/l12/4.mp3",
+		"napomena": {
+			"bs": "U riječima رَبَّهُمْ بِالْغَدَاةِ poslije harfa مْ sa sukunom dolazi harf بِ, zato se izgovor harfa م skriva i produžava u trajanju od 2 hareketa.",
+			"en": "In رَبَّهُمْ بِالْغَدَاةِ the letter مْ with a sukun is followed by the letter بِ, so the letter م is hidden and prolonged for the length of 2 harakas.",
+			"de": "In رَبَّهُمْ بِالْغَدَاةِ kommt nach dem Buchstaben مْ mit Sukun der Buchstabe بِ, deshalb wird der Buchstabe م versteckt und 2 Harakat lang gedehnt."
+		}
+	},
+	{
+		"lekcija": 12,
+		"word": "إِنَّ اللّٰـهَ نِعِمَّا يَعِظُكُمْ بِهِ",
+		"highlight": "مْ بِ",
+		"url": "./assets/audio/l12/5.mp3",
+		"napomena": {
+			"bs": "U riječima يَعِظُكُمْ بِهِ harf مْ sa sukunom prati harf بِ, zato se م ne uči kratko nego skriveno, uz produženje od 2 hareketa.",
+			"en": "In يَعِظُكُمْ بِهِ the letter مْ with a sukun is followed by the letter بِ, so م is not recited short but hidden, with a prolongation of 2 harakas.",
+			"de": "In يَعِظُكُمْ بِهِ folgt auf den Buchstaben مْ mit Sukun der Buchstabe بِ, deshalb wird م nicht kurz, sondern versteckt gesprochen, mit einer Dehnung von 2 Harakat."
+		}
+	},
+	{
+		"lekcija": 12,
+		"word": "ذٰلِكُمْ وَصَّاكُمْ بِهِ لَعَلَّكُمْ تَعْقِلُونَ",
+		"highlight": "مْ بِ",
+		"url": "./assets/audio/l12/6.mp3",
+		"napomena": {
+			"bs": "U riječima وَصَّاكُمْ بِهِ poslije harfa مْ sa sukunom dolazi harf بِ, zato se izgovor harfa م skriva i produžava u trajanju od 2 hareketa.",
+			"en": "In وَصَّاكُمْ بِهِ the letter مْ with a sukun is followed by the letter بِ, so the letter م is hidden and prolonged for the length of 2 harakas.",
+			"de": "In وَصَّاكُمْ بِهِ kommt nach dem Buchstaben مْ mit Sukun der Buchstabe بِ, deshalb wird der Buchstabe م versteckt und 2 Harakat lang gedehnt."
+		}
+	},
+	{
+		"lekcija": 13,
+		"word": "قَــدْ",
+		"highlight": "دْ",
+		"url": "./assets/audio/l13/5.mp3",
+		"napomena": {
+			"bs": "Harf دْ na kraju riječi ima sukun, a د je jedan od pet harfova kutbu džeddin, zato odskače.",
+			"en": "The letter دْ at the end of the word carries a sukun, and د is one of the five qutbu jaddin letters, so it bounces.",
+			"de": "Der Buchstabe دْ am Wortende hat ein Sukun, und د ist einer der fünf Buchstaben aus qutbu dschaddin, deshalb prallt er ab."
+		}
+	},
+	{
+		"lekcija": 13,
+		"word": "أَجْــرٌ",
+		"highlight": "جْ",
+		"url": "./assets/audio/l13/4.mp3",
+		"napomena": {
+			"bs": "Harf جْ u sredini riječi ima sukun, a ج je jedan od pet harfova kutbu džeddin, zato odskače prije رٌ.",
+			"en": "The letter جْ in the middle of the word carries a sukun, and ج is one of the five qutbu jaddin letters, so it bounces before رٌ.",
+			"de": "Der Buchstabe جْ in der Wortmitte hat ein Sukun, und ج ist einer der fünf Buchstaben aus qutbu dschaddin, deshalb prallt er vor رٌ ab."
+		}
+	},
+	{
+		"lekcija": 13,
+		"word": "اَلْأَبْتَرُ",
+		"highlight": "بْ",
+		"url": "./assets/audio/l13/3.mp3",
+		"napomena": {
+			"bs": "Harf بْ u sredini riječi ima sukun, a ب je jedan od pet harfova kutbu džeddin, zato odskače prije تَ.",
+			"en": "The letter بْ in the middle of the word carries a sukun, and ب is one of the five qutbu jaddin letters, so it bounces before تَ.",
+			"de": "Der Buchstabe بْ in der Wortmitte hat ein Sukun, und ب ist einer der fünf Buchstaben aus qutbu dschaddin, deshalb prallt er vor تَ ab."
+		}
+	},
+	{
+		"lekcija": 13,
+		"word": "اَلْفَلَــقْ",
+		"highlight": "قْ",
+		"url": "./assets/audio/l13/2.mp3",
+		"napomena": {
+			"bs": "Na kraju riječi je قْ sa sukunom, a ق je jedan od pet harfova kutbu džeddin, zato se uči sa odskakanjem.",
+			"en": "At the end of the word there is قْ with a sukun, and ق is one of the five qutbu jaddin letters, so it is recited with a bounce.",
+			"de": "Am Wortende steht قْ mit Sukun, und ق ist einer der fünf Buchstaben aus qutbu dschaddin, deshalb wird er mit Abprallen gesprochen."
+		}
+	},
+	{
+		"lekcija": 13,
+		"word": "قِـسْـطْ",
+		"highlight": "طْ",
+		"url": "./assets/audio/l13/1.mp3",
+		"napomena": {
+			"bs": "Iza سْ na kraju riječi je طْ sa sukunom, a ط je jedan od pet harfova kutbu džeddin, zato odskače.",
+			"en": "After سْ at the end of the word there is طْ with a sukun, and ط is one of the five qutbu jaddin letters, so it bounces.",
+			"de": "Nach سْ steht am Wortende طْ mit Sukun, und ط ist einer der fünf Buchstaben aus qutbu dschaddin, deshalb prallt er ab."
+		}
+	},
+	{
+		"lekcija": 13,
+		"word": "أَلَّذِٓي أَطْـعَمَهُمْ مِنْ جُوعٍ",
+		"highlight": "طْـ",
+		"url": "./assets/audio/l13/7.mp3",
+		"napomena": {
+			"bs": "U riječi أَطْـعَمَهُمْ harf طْ ima sukun, a ط je jedan od pet harfova kutbu džeddin, zato odskače prije عَ.",
+			"en": "In أَطْـعَمَهُمْ the letter طْ carries a sukun, and ط is one of the five qutbu jaddin letters, so it bounces before عَ.",
+			"de": "Im Wort أَطْـعَمَهُمْ hat der Buchstabe طْ ein Sukun, und ط ist einer der fünf Buchstaben aus qutbu dschaddin, deshalb prallt er vor عَ ab."
+		}
+	},
+	{
+		"lekcija": 13,
+		"word": "تَـقْرَأَهُ عَلَى النَّاسِ",
+		"highlight": "ـقْ",
+		"url": "./assets/audio/l13/6.mp3",
+		"napomena": {
+			"bs": "U riječi فَرَقْـنَاهُ harf قْ ima sukun, a ق je jedan od pet harfova kutbu džeddin, zato odskače prije نَ.",
+			"en": "In فَرَقْـنَاهُ the letter قْ carries a sukun, and ق is one of the five qutbu jaddin letters, so it bounces before نَ.",
+			"de": "Im Wort فَرَقْـنَاهُ hat der Buchstabe قْ ein Sukun, und ق ist einer der fünf Buchstaben aus qutbu dschaddin, deshalb prallt er vor نَ ab."
+		}
+	},
+	{
+		"lekcija": 13,
+		"word": "تَجْرِي مِنْ تَحْتِهَا الْأَنْهَارُ",
+		"highlight": "جْ",
+		"url": "./assets/audio/l13/8.mp3",
+		"napomena": {
+			"bs": "U riječi عَدْنٍ harf دْ ima sukun, a د je jedan od pet harfova kutbu džeddin, zato odskače prije نٍ.",
+			"en": "In عَدْنٍ the letter دْ carries a sukun, and د is one of the five qutbu jaddin letters, so it bounces before نٍ.",
+			"de": "Im Wort عَدْنٍ hat der Buchstabe دْ ein Sukun, und د ist einer der fünf Buchstaben aus qutbu dschaddin, deshalb prallt er vor نٍ ab."
+		}
+	},
+	{
+		"lekcija": 15,
+		"word": "عَــبَــدْتُـمْ",
+		"highlight": "دْتُـ",
+		"url": "./assets/audio/l15/1.mp3",
+		"napomena": {
+			"bs": "Harf دْ ima sukun, a iza njega je srodni harf تُ sa hareketom iz grupe ط د ت, zato se دْ uklapa u تُ.",
+			"en": "The letter دْ has a sukun and is followed by the related letter تُ with a haraka from the group ط د ت, so دْ merges into تُ.",
+			"de": "Der Buchstabe دْ hat ein Sukun, und danach steht der verwandte Buchstabe تُ mit Vokalzeichen aus der Gruppe ط د ت, deshalb verschmilzt دْ in تُ."
+		}
+	},
+	{
+		"lekcija": 15,
+		"word": "وَلَآ أَنَا عَابِدٌ مَا عَبَدْتُـمْ",
+		"highlight": "دْتُ",
+		"url": "./assets/audio/l15/3.mp3",
+		"napomena": {
+			"bs": "U riječi عَبَدْتُـمْ harf دْ sa sukunom prati srodni harf تُ sa hareketom iz grupe ط د ت, zato se oba uče kao jedan ت sa tešdidom.",
+			"en": "In عَبَدْتُـمْ the letter دْ with a sukun is followed by the related letter تُ with a haraka from the group ط د ت, so both are recited as one ت with a tashdeed.",
+			"de": "Im Wort عَبَدْتُـمْ folgt auf den Buchstaben دْ mit Sukun der verwandte Buchstabe تُ mit Vokalzeichen aus der Gruppe ط د ت, deshalb werden beide als ein ت mit Schadda gesprochen."
+		}
+	},
+	{
+		"lekcija": 15,
+		"word": "وَقَالَتْ طَٓائِفَةٌ مِنْ أَهْلِ الْكِتَابِ",
+		"highlight": "تْ طَٓ",
+		"url": "./assets/audio/l15/4.mp3",
+		"napomena": {
+			"bs": "U riječima وَقَالَتْ طَٓائِفَةٌ harf تْ sa sukunom prati srodni harf طَٓ sa hareketom iz grupe ط د ت, zato se تْ ne uči nego se uklapa u ط.",
+			"en": "In وَقَالَتْ طَٓائِفَةٌ the letter تْ with a sukun is followed by the related letter طَٓ with a haraka from the group ط د ت, so تْ is not pronounced but merges into ط.",
+			"de": "In وَقَالَتْ طَٓائِفَةٌ folgt auf den Buchstaben تْ mit Sukun der verwandte Buchstabe طَٓ mit Vokalzeichen aus der Gruppe ط د ت, deshalb wird تْ nicht gesprochen, sondern verschmilzt in ط."
+		}
+	},
+	{
+		"lekcija": 15,
+		"word": "إِذْ ظَــلَـمُوا",
+		"highlight": "ذْ ظَ",
+		"url": "./assets/audio/l15/5.mp3",
+		"napomena": {
+			"bs": "Harf ذْ ima sukun, a iza njega je srodni harf ظَ sa hareketom iz grupe ظ ذ ث, zato se ذْ uklapa u ظ.",
+			"en": "The letter ذْ has a sukun and is followed by the related letter ظَ with a haraka from the group ظ ذ ث, so ذْ merges into ظ.",
+			"de": "Der Buchstabe ذْ hat ein Sukun, und danach steht der verwandte Buchstabe ظَ mit Vokalzeichen aus der Gruppe ظ ذ ث, deshalb verschmilzt ذْ in ظ."
+		}
+	},
+	{
+		"lekcija": 15,
+		"word": "وَلَوْ أَنَّهُمْ إِذْ ظَلَمُٓوا أَنْفُسَهُمْ",
+		"highlight": "ذْ ظَ",
+		"url": "./assets/audio/l15/7.mp3",
+		"napomena": {
+			"bs": "U riječima إِذْ ظَلَمُٓوا harf ذْ sa sukunom prati srodni harf ظَ sa hareketom iz grupe ظ ذ ث, zato se oba uče kao jedan ظ sa tešdidom.",
+			"en": "In إِذْ ظَلَمُٓوا the letter ذْ with a sukun is followed by the related letter ظَ with a haraka from the group ظ ذ ث, so both are recited as one ظ with a tashdeed.",
+			"de": "In إِذْ ظَلَمُٓوا folgt auf den Buchstaben ذْ mit Sukun der verwandte Buchstabe ظَ mit Vokalzeichen aus der Gruppe ظ ذ ث, deshalb werden beide als ein ظ mit Schadda gesprochen."
+		}
+	},
+	{
+		"lekcija": 15,
+		"word": "يَلْهَثْ ذٰلِكَ",
+		"highlight": "ثْ ذٰ",
+		"url": "./assets/audio/l15/8.mp3",
+		"napomena": {
+			"bs": "U riječima يَلْهَثْ ذٰلِكَ harf ثْ sa sukunom prati srodni harf ذٰ sa hareketom iz grupe ظ ذ ث, zato se ثْ ne uči nego se uklapa u ذ.",
+			"en": "In يَلْهَثْ ذٰلِكَ the letter ثْ with a sukun is followed by the related letter ذٰ with a haraka from the group ظ ذ ث, so ثْ is not pronounced but merges into ذ.",
+			"de": "In يَلْهَثْ ذٰلِكَ folgt auf den Buchstaben ثْ mit Sukun der verwandte Buchstabe ذٰ mit Vokalzeichen aus der Gruppe ظ ذ ث, deshalb wird ثْ nicht gesprochen, sondern verschmilzt in ذ."
+		}
+	},
+	{
+		"lekcija": 15,
+		"word": "يَا بُــنَـيَّ ارْكَبْ مَعَــنَا",
+		"highlight": "بْ مَ",
+		"url": "./assets/audio/l15/9.mp3",
+		"napomena": {
+			"bs": "U riječima ارْكَبْ مَعَــنَا harf بْ sa sukunom prati srodni harf مَ sa hareketom iz grupe ب م, zato se بْ uklapa u م.",
+			"en": "In ارْكَبْ مَعَــنَا the letter بْ with a sukun is followed by the related letter مَ with a haraka from the group ب م, so بْ merges into م.",
+			"de": "In ارْكَبْ مَعَــنَا folgt auf den Buchstaben بْ mit Sukun der verwandte Buchstabe مَ mit Vokalzeichen aus der Gruppe ب م, deshalb verschmilzt بْ in م."
+		}
+	},
+	{
+		"lekcija": 15,
+		"word": "يَا بُنَيَّ ارْكَبْ مَعَنَا وَلَا تَكُنْ مَعَ الْكَافِرِينَ",
+		"highlight": "بْ مَ",
+		"url": "./assets/audio/l15/11.mp3",
+		"napomena": {
+			"bs": "U riječima ارْكَبْ مَعَنَا harf بْ sa sukunom prati srodni harf مَ sa hareketom iz grupe ب م, zato se oba uče kao jedan م sa tešdidom.",
+			"en": "In ارْكَبْ مَعَنَا the letter بْ with a sukun is followed by the related letter مَ with a haraka from the group ب م, so both are recited as one م with a tashdeed.",
+			"de": "In ارْكَبْ مَعَنَا folgt auf den Buchstaben بْ mit Sukun der verwandte Buchstabe مَ mit Vokalzeichen aus der Gruppe ب م, deshalb werden beide als ein م mit Schadda gesprochen."
+		}
+	},
+	{
+		"lekcija": 16,
+		"word": "أَلَـمْ نَـخْلُـقْكُمْ",
+		"highlight": "قْكُ",
+		"url": "./assets/audio/l16/1.mp3",
+		"napomena": {
+			"bs": "U riječi نَـخْلُـقْكُمْ harf قْ sa sukunom prati harf كُ sa hareketom, zato se prvi uklapa u drugi i uči se samo ك sa tešdidom.",
+			"en": "In نَـخْلُـقْكُمْ the letter قْ with a sukun is followed by كُ with a haraka, so the first merges into the second and only ك with a tashdeed is recited.",
+			"de": "Im Wort نَـخْلُـقْكُمْ folgt auf den Buchstaben قْ mit Sukun der Buchstabe كُ mit Vokalzeichen, deshalb verschmilzt der erste in den zweiten und es wird nur ك mit Schadda gesprochen."
+		}
+	},
+	{
+		"lekcija": 16,
+		"word": "وَقُلْ رَبِّ",
+		"highlight": "لْ ر",
+		"url": "./assets/audio/l16/3.mp3",
+		"napomena": {
+			"bs": "U riječima وَقُلْ رَبِّ harf لْ sa sukunom prati harf رَ sa hareketom, zato se لْ ne uči nego se uklapa u ر sa tešdidom.",
+			"en": "In وَقُلْ رَبِّ the letter لْ with a sukun is followed by رَ with a haraka, so لْ is not pronounced but merges into ر with a tashdeed.",
+			"de": "In وَقُلْ رَبِّ folgt auf den Buchstaben لْ mit Sukun der Buchstabe رَ mit Vokalzeichen, deshalb wird لْ nicht gesprochen, sondern verschmilzt in ر mit Schadda."
+		}
+	},
+	{
+		"lekcija": 17,
+		"word": "ءَا تُـو نِـي",
+		"highlight": "ءَا تُـو نِـي",
+		"url": "./assets/audio/l17/1.mp3",
+		"napomena": {
+			"bs": "Ovdje su tri duga vokala, A (ءَا), U (تُـو) i I (نِـي), a ni iza jednog nema hemzeta ni sukuna, pa se svaki uči 2 hareketa.",
+			"en": "Here there are three long vowels, A (ءَا), U (تُـو) and I (نِـي), and none is followed by a hamza or a sukun, so each is recited for 2 harakas.",
+			"de": "Hier stehen drei lange Vokale, A (ءَا), U (تُـو) und I (نِـي), und auf keinen von ihnen folgt eine Hamza oder ein Sukun, deshalb wird jeder 2 Harakat lang gesprochen."
+		}
+	},
+	{
+		"lekcija": 17,
+		"word": "اٰزَرُ",
+		"highlight": "اٰ",
+		"url": "./assets/audio/l17/2.mp3",
+		"napomena": {
+			"bs": "Riječ počinje dugim vokalom A (اٰ), a poslije njega nema ni hemzeta ni sukuna, zato je to medd tabijj i uči se 2 hareketa.",
+			"en": "The word begins with the long vowel A (اٰ), which is followed by neither a hamza nor a sukun, so it is madd tabi'i and is recited for 2 harakas.",
+			"de": "Das Wort beginnt mit dem langen Vokal A (اٰ), und danach kommt weder eine Hamza noch ein Sukun, deshalb ist das Madd Tabi’i und wird 2 Harakat lang gesprochen."
+		}
+	},
+	{
+		"lekcija": 17,
+		"word": "اٰوَوْ",
+		"highlight": "اٰ",
+		"url": "./assets/audio/l17/3.mp3",
+		"napomena": {
+			"bs": "I ovdje je na početku dugi vokal A (اٰ), a iza njega dolazi وَ bez hemzeta i bez sukuna, pa se uči kao medd tabijj, 2 hareketa.",
+			"en": "Here too the word begins with the long vowel A (اٰ), followed by وَ with neither a hamza nor a sukun, so it is recited as madd tabi'i, for 2 harakas.",
+			"de": "Auch hier steht am Anfang der lange Vokal A (اٰ), und danach kommt وَ ohne Hamza und ohne Sukun, deshalb wird er als Madd Tabi’i gesprochen, 2 Harakat lang."
+		}
+	},
+	{
+		"lekcija": 17,
+		"word": "دَارَ",
+		"highlight": "دَا",
+		"url": "./assets/audio/l17/4.mp3",
+		"napomena": {
+			"bs": "Poslije dugog vokala A (دَا) dolazi رَ sa hareketom, dakle ni hemze ni sukun, zato je to medd tabijj i uči se 2 hareketa.",
+			"en": "The long vowel A (دَا) is followed by رَ with a haraka, so neither a hamza nor a sukun, hence it is madd tabi'i and is recited for 2 harakas.",
+			"de": "Nach dem langen Vokal A (دَا) kommt رَ mit Vokalzeichen, also weder Hamza noch Sukun, deshalb ist das Madd Tabi’i und wird 2 Harakat lang gesprochen."
+		}
+	},
+	{
+		"lekcija": 17,
+		"word": "قَالَ",
+		"highlight": "قَا",
+		"url": "./assets/audio/l17/5.mp3",
+		"napomena": {
+			"bs": "Poslije dugog vokala A (قَا) dolazi لَ sa hareketom, nema ni hemzeta ni sukuna, zato je to medd tabijj i uči se 2 hareketa.",
+			"en": "The long vowel A (قَا) is followed by لَ with a haraka, with neither a hamza nor a sukun, so it is madd tabi'i and is recited for 2 harakas.",
+			"de": "Nach dem langen Vokal A (قَا) kommt لَ mit Vokalzeichen, weder Hamza noch Sukun, deshalb ist das Madd Tabi’i und wird 2 Harakat lang gesprochen."
+		}
+	},
+	{
+		"lekcija": 17,
+		"word": "ذَوَي",
+		"highlight": "وَي",
+		"url": "./assets/audio/l17/6.mp3",
+		"napomena": {
+			"bs": "Na kraju je dugi vokal A (وَي), a poslije njega nema ni hemzeta ni sukuna, zato je to medd tabijj i uči se 2 hareketa.",
+			"en": "At the end there is the long vowel A (وَي), which is followed by neither a hamza nor a sukun, so it is madd tabi'i and is recited for 2 harakas.",
+			"de": "Am Ende steht der lange Vokal A (وَي), und danach kommt weder eine Hamza noch ein Sukun, deshalb ist das Madd Tabi’i und wird 2 Harakat lang gesprochen."
+		}
+	},
+	{
+		"lekcija": 17,
+		"word": "يُـرِيدُ",
+		"highlight": "رِي",
+		"url": "./assets/audio/l17/10.mp3",
+		"napomena": {
+			"bs": "U sredini riječi je dugi vokal I (رِي), a iza njega dolazi دُ bez hemzeta i bez sukuna, pa se uči kao medd tabijj, 2 hareketa.",
+			"en": "In the middle of the word there is the long vowel I (رِي), followed by دُ with neither a hamza nor a sukun, so it is recited as madd tabi'i, for 2 harakas.",
+			"de": "In der Wortmitte steht der lange Vokal I (رِي), und danach kommt دُ ohne Hamza und ohne Sukun, deshalb wird er als Madd Tabi’i gesprochen, 2 Harakat lang."
+		}
+	},
+	{
+		"lekcija": 17,
+		"word": "رَبِّــي",
+		"highlight": "بِّــي",
+		"url": "./assets/audio/l17/9.mp3",
+		"napomena": {
+			"bs": "Poslije tešdida dolazi dugi vokal I (بِّــي) na kraju riječi, a iza njega nema ni hemzeta ni sukuna, pa se uči 2 hareketa.",
+			"en": "After the tashdeed comes the long vowel I (بِّــي) at the end of the word, followed by neither a hamza nor a sukun, so it is recited for 2 harakas.",
+			"de": "Nach der Schadda kommt am Wortende der lange Vokal I (بِّــي), und danach folgt weder eine Hamza noch ein Sukun, deshalb wird er 2 Harakat lang gesprochen."
+		}
+	},
+	{
+		"lekcija": 17,
+		"word": "صُدُورِ",
+		"highlight": "دُو",
+		"url": "./assets/audio/l17/8.mp3",
+		"napomena": {
+			"bs": "Poslije dugog vokala U (دُو) dolazi رِ sa hareketom, nema ni hemzeta ni sukuna, zato je to medd tabijj i uči se 2 hareketa.",
+			"en": "The long vowel U (دُو) is followed by رِ with a haraka, with neither a hamza nor a sukun, so it is madd tabi'i and is recited for 2 harakas.",
+			"de": "Nach dem langen Vokal U (دُو) kommt رِ mit Vokalzeichen, weder Hamza noch Sukun, deshalb ist das Madd Tabi’i und wird 2 Harakat lang gesprochen."
+		}
+	},
+	{
+		"lekcija": 17,
+		"word": "ذُو",
+		"highlight": "ذُو",
+		"url": "./assets/audio/l17/7.mp3",
+		"napomena": {
+			"bs": "Riječ se završava dugim vokalom U (ذُو), a poslije njega nema ni hemzeta ni sukuna, zato se uči kao medd tabijj, 2 hareketa.",
+			"en": "The word ends with the long vowel U (ذُو), which is followed by neither a hamza nor a sukun, so it is recited as madd tabi'i, for 2 harakas.",
+			"de": "Das Wort endet auf den langen Vokal U (ذُو), und danach kommt weder eine Hamza noch ein Sukun, deshalb wird er als Madd Tabi’i gesprochen, 2 Harakat lang."
+		}
+	},
+	{
+		"lekcija": 18,
+		"word": "جَٓاءَ",
+		"highlight": "جَٓاءَ",
+		"url": "./assets/audio/l18/1.mp3",
+		"napomena": {
+			"bs": "Poslije dugog vokala A (جَٓا) dolazi hemze (ءَ) u istoj riječi, zato se ova dužina uči 4 do 5 hareketa.",
+			"en": "The long vowel A (جَٓا) is followed by a hamza (ءَ) in the same word, so this prolongation is recited for 4 to 5 harakas.",
+			"de": "Nach dem langen Vokal A (جَٓا) kommt eine Hamza (ءَ) im selben Wort, deshalb wird diese Dehnung 4 bis 5 Harakat lang gesprochen."
+		}
+	},
+	{
+		"lekcija": 18,
+		"word": "إِذَا جَٓاءَ نَصْرُ اللّٰهِ وَالْفَتْحُ",
+		"highlight": "جَٓاءَ",
+		"url": "./assets/audio/l18/2.mp3",
+		"napomena": {
+			"bs": "U riječi جَٓاءَ poslije dugog vokala A (جَٓا) dolazi hemze (ءَ) u istoj riječi, zato se ta dužina uči 4 do 5 hareketa.",
+			"en": "In جَٓاءَ, the long vowel A (جَٓا) is followed by a hamza (ءَ) in the same word, so the prolongation is recited for 4 to 5 harakas.",
+			"de": "Im Wort جَٓاءَ kommt nach dem langen Vokal A (جَٓا) eine Hamza (ءَ) im selben Wort, deshalb wird diese Dehnung 4 bis 5 Harakat lang gesprochen."
+		}
+	},
+	{
+		"lekcija": 18,
+		"word": "أُولٰٓـئِكَ عَلٰى هُدًى مِنْ رَبِـهِمْ ۖ",
+		"highlight": "لٰٓـئِ",
+		"url": "./assets/audio/l18/3.mp3",
+		"napomena": {
+			"bs": "U riječi أُولٰٓـئِكَ poslije dugog vokala A (لٰ) dolazi hemze (ئِ) u istoj riječi, zato se ta dužina uči 4 do 5 hareketa.",
+			"en": "In أُولٰٓـئِكَ, the long vowel A (لٰ) is followed by a hamza (ئِ) in the same word, so the prolongation is recited for 4 to 5 harakas.",
+			"de": "Im Wort أُولٰٓـئِكَ kommt nach dem langen Vokal A (لٰ) eine Hamza (ئِ) im selben Wort, deshalb wird diese Dehnung 4 bis 5 Harakat lang gesprochen."
+		}
+	},
+	{
+		"lekcija": 18,
+		"word": "وَ أُولٰٓـئِكَ هُمُ الْمُفْلِحُونَ",
+		"highlight": "لٰٓـئِ",
+		"url": "./assets/audio/l18/4.mp3",
+		"napomena": {
+			"bs": "U riječi أُولٰٓـئِكَ poslije dugog vokala A (لٰ) dolazi hemze (ئِ) u istoj riječi, zato se uči 4 do 5 hareketa.",
+			"en": "In أُولٰٓـئِكَ, the long vowel A (لٰ) is followed by a hamza (ئِ) in the same word, so it is recited for 4 to 5 harakas.",
+			"de": "Im Wort أُولٰٓـئِكَ kommt nach dem langen Vokal A (لٰ) eine Hamza (ئِ) im selben Wort, deshalb wird er 4 bis 5 Harakat lang gesprochen."
+		}
+	},
+	{
+		"lekcija": 18,
+		"word": "الْفَحْشَٓاءَ",
+		"highlight": "شَٓاءَ",
+		"url": "./assets/audio/l18/5.mp3",
+		"napomena": {
+			"bs": "U riječi السُّٓوءَ poslije dugog vokala U (سُّٓو) dolazi hemze (ءَ) u istoj riječi, zato se ta dužina uči 4 do 5 hareketa.",
+			"en": "In السُّٓوءَ, the long vowel U (سُّٓو) is followed by a hamza (ءَ) in the same word, so the prolongation is recited for 4 to 5 harakas.",
+			"de": "Im Wort السُّٓوءَ kommt nach dem langen Vokal U (سُّٓو) eine Hamza (ءَ) im selben Wort, deshalb wird diese Dehnung 4 bis 5 Harakat lang gesprochen."
+		}
+	},
+	{
+		"lekcija": 19,
+		"word": "وَمَآ أَنْـــتُـمْ",
+		"highlight": "مَآ أَ",
+		"url": "./assets/audio/l19/1.mp3",
+		"napomena": {
+			"bs": "U riječima وَمَآ أَنْـــتُـمْ poslije dugog vokala A مَآ dolazi hemze na početku sljedeće riječi, zato ta dužina traje 4 do 5 hareketa.",
+			"en": "In وَمَآ أَنْـــتُـمْ the long vowel A مَآ is followed by a hamza at the beginning of the next word, so the prolongation lasts 4 to 5 harakas.",
+			"de": "In وَمَآ أَنْـــتُـمْ kommt nach dem langen Vokal A مَآ eine Hamza am Anfang des nächsten Wortes, deshalb dauert diese Dehnung 4 bis 5 Harakat."
+		}
+	},
+	{
+		"lekcija": 19,
+		"word": "نْتُمْ عَابِدُونَ مَٓا اَعْبُدُ",
+		"highlight": "مَٓا اَ",
+		"url": "./assets/audio/l19/2.mp3",
+		"napomena": {
+			"bs": "U riječi وَلَٓا poslije dugog vokala A لَٓا dolazi elif اَ na početku sljedeće riječi, zato ta dužina traje 4 do 5 hareketa.",
+			"en": "In وَلَٓا the long vowel A لَٓا is followed by an alif اَ at the beginning of the next word, so the prolongation lasts 4 to 5 harakas.",
+			"de": "Im Wort وَلَٓا kommt nach dem langen Vokal A لَٓا ein Alif اَ am Anfang des nächsten Wortes, deshalb dauert diese Dehnung 4 bis 5 Harakat."
+		}
+	},
+	{
+		"lekcija": 19,
+		"word": "نْـتُمْ عَابِدُونَ مَآ أَعْبُدُ",
+		"highlight": "مَآ أَ",
+		"url": "./assets/audio/l19/2.mp3",
+		"napomena": {
+			"bs": "U riječi وَلَٓا poslije dugog vokala A لَٓا dolazi hemze أَ na početku sljedeće riječi, zato ta dužina traje 4 do 5 hareketa.",
+			"en": "In وَلَٓا the long vowel A لَٓا is followed by a hamza أَ at the beginning of the next word, so the prolongation lasts 4 to 5 harakas.",
+			"de": "Im Wort وَلَٓا kommt nach dem langen Vokal A لَٓا eine Hamza أَ am Anfang des nächsten Wortes, deshalb dauert diese Dehnung 4 bis 5 Harakat."
+		}
+	},
+	{
+		"lekcija": 19,
+		"word": "وَلَٓا اَنَا۬ عَابِدٌ مَا عَبَدْتُمْ",
+		"highlight": "لَٓا اَ",
+		"url": "./assets/audio/l19/3.mp3",
+		"napomena": {
+			"bs": "U riječima وَلَٓا اَنَا۬ poslije dugog vokala A لَٓا dolazi elif na početku sljedeće riječi, zato ta dužina traje 4 do 5 hareketa.",
+			"en": "In وَلَٓا اَنَا۬ the long vowel A لَٓا is followed by an alif at the beginning of the next word, so the prolongation lasts 4 to 5 harakas.",
+			"de": "In وَلَٓا اَنَا۬ kommt nach dem langen Vokal A لَٓا ein Alif am Anfang des nächsten Wortes, deshalb dauert diese Dehnung 4 bis 5 Harakat."
+		}
+	},
+	{
+		"lekcija": 19,
+		"word": "وَلَآ أَنَا عَابِدٌ مَا عَبَدْتُمْ",
+		"highlight": "لَآ أَ",
+		"url": "./assets/audio/l19/3.mp3",
+		"napomena": {
+			"bs": "U riječima وَلَآ أَنَا poslije dugog vokala A لَآ dolazi hemze na početku sljedeće riječi, zato ta dužina traje 4 do 5 hareketa.",
+			"en": "In وَلَآ أَنَا the long vowel A لَآ is followed by a hamza at the beginning of the next word, so the prolongation lasts 4 to 5 harakas.",
+			"de": "In وَلَآ أَنَا kommt nach dem langen Vokal A لَآ eine Hamza am Anfang des nächsten Wortes, deshalb dauert diese Dehnung 4 bis 5 Harakat."
+		}
+	},
+	{
+		"lekcija": 19,
+		"word": "مَٓا اَغْنٰى عَنْهُ مَالُهُ",
+		"highlight": "مَٓا اَ",
+		"url": "./assets/audio/l19/4.mp3",
+		"napomena": {
+			"bs": "U riječima مَٓا اَغْنٰى poslije dugog vokala A مَٓا dolazi elif na početku sljedeće riječi, zato ta dužina traje 4 do 5 hareketa.",
+			"en": "In مَٓا اَغْنٰى the long vowel A مَٓا is followed by an alif at the beginning of the next word, so the prolongation lasts 4 to 5 harakas.",
+			"de": "In مَٓا اَغْنٰى kommt nach dem langen Vokal A مَٓا ein Alif am Anfang des nächsten Wortes, deshalb dauert diese Dehnung 4 bis 5 Harakat."
+		}
+	},
+	{
+		"lekcija": 19,
+		"word": "مَٓا أَغْنٰى عَنْهُ مَالُهُ",
+		"highlight": "مَٓا أَ",
+		"url": "./assets/audio/l19/4.mp3",
+		"napomena": {
+			"bs": "U riječima مَٓا أَغْنٰى poslije dugog vokala A مَٓا dolazi hemze na početku sljedeće riječi, zato ta dužina traje 4 do 5 hareketa.",
+			"en": "In مَٓا أَغْنٰى the long vowel A مَٓا is followed by a hamza at the beginning of the next word, so the prolongation lasts 4 to 5 harakas.",
+			"de": "In مَٓا أَغْنٰى kommt nach dem langen Vokal A مَٓا eine Hamza am Anfang des nächsten Wortes, deshalb dauert diese Dehnung 4 bis 5 Harakat."
+		}
+	},
+	{
+		"lekcija": 20,
+		"word": "آٰ لْاٰنَ",
+		"highlight": "آٰ لْ",
+		"url": "./assets/audio/l20/2.mp3",
+		"napomena": {
+			"bs": "Poslije dugog vokala A (آٰ) dolazi لْ sa stalnim sukunom, zato se ta dužina uči 6 hareketa.",
+			"en": "The long vowel A (آٰ) is followed by لْ with a permanent sukun, so this prolongation is recited for 6 harakas.",
+			"de": "Nach dem langen Vokal A (آٰ) kommt لْ mit festem Sukun, deshalb wird diese Dehnung 6 Harakat lang gesprochen."
+		}
+	},
+	{
+		"lekcija": 20,
+		"word": "حَآجَّ",
+		"highlight": "آجَّ",
+		"url": "./assets/audio/l20/1.mp3",
+		"napomena": {
+			"bs": "Poslije dugog vokala A (حَآ) dolazi ج sa tešdidom (جَّ), zato se ta dužina uči 6 hareketa.",
+			"en": "The long vowel A (حَآ) is followed by ج with a tashdeed (جَّ), so this prolongation is recited for 6 harakas.",
+			"de": "Nach dem langen Vokal A (حَآ) kommt ج mit Schadda (جَّ), deshalb wird diese Dehnung 6 Harakat lang gesprochen."
+		}
+	},
+	{
+		"lekcija": 20,
+		"word": "وَالصَّـآ فَّاتِ صَفًّا",
+		"highlight": "صَّـآ فَّ",
+		"url": "./assets/audio/l20/6.mp3",
+		"napomena": {
+			"bs": "U riječi الصَّـآ فَّاتِ poslije dugog vokala A (صَّـآ) dolazi ف sa tešdidom (فَّ), zato se ta dužina uči 6 hareketa.",
+			"en": "In الصَّـآ فَّاتِ the long vowel A (صَّـآ) is followed by ف with a tashdeed (فَّ), so this prolongation is recited for 6 harakas.",
+			"de": "Im Wort الصَّـآ فَّاتِ kommt nach dem langen Vokal A (صَّـآ) ف mit Schadda (فَّ), deshalb wird diese Dehnung 6 Harakat lang gesprochen."
+		}
+	},
+	{
+		"lekcija": 20,
+		"word": "وَمَآ أَدْرَاكَ مَا الْحَـآ قَّـةُ",
+		"highlight": "حَـآ قَّـ",
+		"url": "./assets/audio/l20/7.mp3",
+		"napomena": {
+			"bs": "U riječi الْحَـآ قَّـةُ poslije dugog vokala A (حَـآ) dolazi ق sa tešdidom (قَّ), zato se ta dužina uči 6 hareketa.",
+			"en": "In الْحَـآ قَّـةُ the long vowel A (حَـآ) is followed by ق with a tashdeed (قَّ), so this prolongation is recited for 6 harakas.",
+			"de": "Im Wort الْحَـآ قَّـةُ kommt nach dem langen Vokal A (حَـآ) ق mit Schadda (قَّ), deshalb wird diese Dehnung 6 Harakat lang gesprochen."
+		}
+	},
+	{
+		"lekcija": 20,
+		"word": "غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّآ لِّـيـنَ",
+		"highlight": "ضَّآ ل",
+		"url": "./assets/audio/l20/8.mp3",
+		"napomena": {
+			"bs": "U riječi الضَّآ لِّـيـنَ poslije dugog vokala A (ضَّآ) dolazi ل sa tešdidom (لِّ), zato se ta dužina uči 6 hareketa.",
+			"en": "In الضَّآ لِّـيـنَ the long vowel A (ضَّآ) is followed by ل with a tashdeed (لِّ), so this prolongation is recited for 6 harakas.",
+			"de": "Im Wort الضَّآ لِّـيـنَ kommt nach dem langen Vokal A (ضَّآ) ل mit Schadda (لِّ), deshalb wird diese Dehnung 6 Harakat lang gesprochen."
+		}
+	},
+	{
+		"lekcija": 21,
+		"word": "أَلْـحَمْدُ لِلّٰهِ رَبِّ الْعَالَمِينَ",
+		"highlight": "مِينَ",
+		"url": "./assets/audio/l21/1.mp3",
+		"napomena": {
+			"bs": "U riječi الْعَالَمِينَ poslije dugog vokala I (مِي) staje se na نَ, hareket otpada i dolazi nestalni sukun, zato je to medd arid koji traje 2, 4 ili 6 hareketa.",
+			"en": "In الْعَالَمِينَ, after the long vowel I (مِي) we stop on نَ, the haraka drops and a temporary sukun appears, so this is madd 'arid, lasting 2, 4 or 6 harakas.",
+			"de": "Im Wort الْعَالَمِينَ hält man nach dem langen Vokal I (مِي) auf نَ an, das Vokalzeichen fällt weg und es entsteht ein vorübergehendes Sukun, deshalb ist das Madd Arid, das 2, 4 oder 6 Harakat dauert."
+		}
+	},
+	{
+		"lekcija": 21,
+		"word": "وَعَلَى اللّٰهِ فَلْيَتَوَكَّلِ الْمُؤْمِنُونَ",
+		"highlight": "نُون",
+		"url": "./assets/audio/l21/2.mp3",
+		"napomena": {
+			"bs": "U riječi الْمُؤْمِنُونَ poslije dugog vokala U (نُو) staje se na نَ, hareket otpada i dolazi nestalni sukun, zato je to medd arid koji traje 2, 4 ili 6 hareketa.",
+			"en": "In الْمُؤْمِنُونَ, after the long vowel U (نُو) we stop on نَ, the haraka drops and a temporary sukun appears, so this is madd 'arid, lasting 2, 4 or 6 harakas.",
+			"de": "Im Wort الْمُؤْمِنُونَ hält man nach dem langen Vokal U (نُو) auf نَ an, das Vokalzeichen fällt weg und es entsteht ein vorübergehendes Sukun, deshalb ist das Madd Arid, das 2, 4 oder 6 Harakat dauert."
+		}
+	},
+	{
+		"lekcija": 21,
+		"word": "فَبِأَيِّ اٰلَآءِ رَبِّـكُمَا تُـكَـذِّبَانِ",
+		"highlight": "بَانِ",
+		"url": "./assets/audio/l21/3.mp3",
+		"napomena": {
+			"bs": "U riječi تُـكَـذِّبَانِ poslije dugog vokala A (بَا) staje se na نِ, hareket otpada i dolazi nestalni sukun, zato je to medd arid koji traje 2, 4 ili 6 hareketa.",
+			"en": "In تُـكَـذِّبَانِ, after the long vowel A (بَا) we stop on نِ, the haraka drops and a temporary sukun appears, so this is madd 'arid, lasting 2, 4 or 6 harakas.",
+			"de": "Im Wort تُـكَـذِّبَانِ hält man nach dem langen Vokal A (بَا) auf نِ an, das Vokalzeichen fällt weg und es entsteht ein vorübergehendes Sukun, deshalb ist das Madd Arid, das 2, 4 oder 6 Harakat dauert."
+		}
+	},
+	{
+		"lekcija": 21,
+		"word": "وَمَا يُضِلُّ بِهِٓ إِلَّا الْفَاسِقِينَ",
+		"highlight": "قِينَ",
+		"url": "./assets/audio/l21/4.mp3",
+		"napomena": {
+			"bs": "U riječi الْفَاسِقِينَ poslije dugog vokala I (قِي) staje se na نَ, hareket otpada i dolazi nestalni sukun, zato je to medd arid koji traje 2, 4 ili 6 hareketa.",
+			"en": "In الْفَاسِقِينَ, after the long vowel I (قِي) we stop on نَ, the haraka drops and a temporary sukun appears, so this is madd 'arid, lasting 2, 4 or 6 harakas.",
+			"de": "Im Wort الْفَاسِقِينَ hält man nach dem langen Vokal I (قِي) auf نَ an, das Vokalzeichen fällt weg und es entsteht ein vorübergehendes Sukun, deshalb ist das Madd Arid, das 2, 4 oder 6 Harakat dauert."
+		}
+	},
+	{
+		"lekcija": 21,
+		"word": "فَلَا خَوْفٌ عَلَيْهِمْ وَلَا هُمْ يَحْزَنُونَ",
+		"highlight": "نُونَ",
+		"url": "./assets/audio/l21/5.mp3",
+		"napomena": {
+			"bs": "U riječi يَحْزَنُونَ poslije dugog vokala U (نُو) staje se na نَ, hareket otpada i dolazi nestalni sukun, zato je to medd arid koji traje 2, 4 ili 6 hareketa.",
+			"en": "In يَحْزَنُونَ, after the long vowel U (نُو) we stop on نَ, the haraka drops and a temporary sukun appears, so this is madd 'arid, lasting 2, 4 or 6 harakas.",
+			"de": "Im Wort يَحْزَنُونَ hält man nach dem langen Vokal U (نُو) auf نَ an, das Vokalzeichen fällt weg und es entsteht ein vorübergehendes Sukun, deshalb ist das Madd Arid, das 2, 4 oder 6 Harakat dauert."
+		}
+	},
+	{
+		"lekcija": 22,
+		"word": "خَـوْفْ",
+		"highlight": "ـوْ",
+		"url": "./assets/audio/l22/1.mp3",
+		"napomena": {
+			"bs": "Prije وْ sa sukunom je kratki vokal E (خَـ), a poslije njega je فْ sa sukunom, zato je to medd lin: dužina traje 2, 4 ili 6 hareketa.",
+			"en": "وْ with a sukun is preceded by the short vowel A (خَـ) and followed by فْ with a sukun, so this is madd lin: the prolongation lasts 2, 4 or 6 harakas.",
+			"de": "Vor وْ mit Sukun steht der kurze Vokal A (خَـ), und danach steht فْ mit Sukun, deshalb ist das Madd Lin: die Dehnung dauert 2, 4 oder 6 Harakat."
+		}
+	},
+	{
+		"lekcija": 22,
+		"word": "خَـيْـــرْ",
+		"highlight": "يْ",
+		"url": "./assets/audio/l22/2.mp3",
+		"napomena": {
+			"bs": "Prije يْ sa sukunom je kratki vokal E (خَـ), a poslije njega je رْ sa sukunom, zato je to medd lin: dužina traje 2, 4 ili 6 hareketa.",
+			"en": "يْ with a sukun is preceded by the short vowel A (خَـ) and followed by رْ with a sukun, so this is madd lin: the prolongation lasts 2, 4 or 6 harakas.",
+			"de": "Vor يْ mit Sukun steht der kurze Vokal A (خَـ), und danach steht رْ mit Sukun, deshalb ist das Madd Lin: die Dehnung dauert 2, 4 oder 6 Harakat."
+		}
+	},
+	{
+		"lekcija": 22,
+		"word": "وَلَا تَهِنُوا فِي ابْتِغَٓاءِ الْقَوْمِ",
+		"highlight": "قَوْمِ",
+		"url": "./assets/audio/l22/3.mp3",
+		"napomena": {
+			"bs": "U riječi الْقَوْمِ prije وْ je kratki vokal E (قَ), a zadnji harf مِ pri stajanju ima sukun, zato je to medd lin: dužina traje 2, 4 ili 6 hareketa.",
+			"en": "In الْقَوْمِ, وْ is preceded by the short vowel A (قَ) and the final مِ takes a sukun when stopping, so this is madd lin: the prolongation lasts 2, 4 or 6 harakas.",
+			"de": "Im Wort الْقَوْمِ steht vor وْ der kurze Vokal A (قَ), und der letzte Buchstabe مِ hat beim Anhalten ein Sukun, deshalb ist das Madd Lin: die Dehnung dauert 2, 4 oder 6 Harakat."
+		}
+	},
+	{
+		"lekcija": 22,
+		"word": "وَلِلّٰهِ عَلَى النَّاسِ حِجُّ الْـبَـيْـتِ",
+		"highlight": "بَـيْـتِ",
+		"url": "./assets/audio/l22/4.mp3",
+		"napomena": {
+			"bs": "U riječi الْـبَـيْـتِ prije يْ je kratki vokal E (بَـ), a zadnji harf تِ pri stajanju ima sukun, zato je to medd lin: dužina traje 2, 4 ili 6 hareketa.",
+			"en": "In الْـبَـيْـتِ, يْ is preceded by the short vowel A (بَـ) and the final تِ takes a sukun when stopping, so this is madd lin: the prolongation lasts 2, 4 or 6 harakas.",
+			"de": "Im Wort الْـبَـيْـتِ steht vor يْ der kurze Vokal A (بَـ), und der letzte Buchstabe تِ hat beim Anhalten ein Sukun, deshalb ist das Madd Lin: die Dehnung dauert 2, 4 oder 6 Harakat."
+		}
+	},
+	{
+		"lekcija": 22,
+		"word": "قَالُوا لَا طَاقَةَ لَنَا الْـيَـوْمَ",
+		"highlight": "يَـوْمَ",
+		"url": "./assets/audio/l22/5.mp3",
+		"napomena": {
+			"bs": "U riječi الْـيَـوْمَ prije وْ je kratki vokal E (يَـ), a zadnji harf مَ pri stajanju ima sukun, zato je to medd lin: dužina traje 2, 4 ili 6 hareketa.",
+			"en": "In الْـيَـوْمَ, وْ is preceded by the short vowel A (يَـ) and the final مَ takes a sukun when stopping, so this is madd lin: the prolongation lasts 2, 4 or 6 harakas.",
+			"de": "Im Wort الْـيَـوْمَ steht vor وْ der kurze Vokal A (يَـ), und der letzte Buchstabe مَ hat beim Anhalten ein Sukun, deshalb ist das Madd Lin: die Dehnung dauert 2, 4 oder 6 Harakat."
+		}
+	},
+	{
+		"lekcija": 22,
+		"word": "يَرَوْنَهُمْ مِثْلَيْهِمْ رَأْيَ الْـعَـيْـنِ",
+		"highlight": "عَـيْـنِ",
+		"url": "./assets/audio/l22/6.mp3",
+		"napomena": {
+			"bs": "U riječi الْـعَـيْـنِ prije يْ je kratki vokal E (عَـ), a zadnji harf نِ pri stajanju ima sukun, zato je to medd lin: dužina traje 2, 4 ili 6 hareketa.",
+			"en": "In الْـعَـيْـنِ, يْ is preceded by the short vowel A (عَـ) and the final نِ takes a sukun when stopping, so this is madd lin: the prolongation lasts 2, 4 or 6 harakas.",
+			"de": "Im Wort الْـعَـيْـنِ steht vor يْ der kurze Vokal A (عَـ), und der letzte Buchstabe نِ hat beim Anhalten ein Sukun, deshalb ist das Madd Lin: die Dehnung dauert 2, 4 oder 6 Harakat."
+		}
+	},
+	{
+		"lekcija": 22,
+		"word": "وَكَتَبْنَا عَلَيْهِمْ فِيهَٓا أَنَّ الـنَّـفْسَ بِالـنَّـفْسِ وَالْعَيْنَ بِالْـعَـيْـنِ",
+		"highlight": "عَـيْـنِ",
+		"url": "./assets/audio/l22/7.mp3",
+		"napomena": {
+			"bs": "U riječi بِالْـعَـيْـنِ prije يْ je kratki vokal E (عَـ), a zadnji harf نِ pri stajanju ima sukun, zato je to medd lin: dužina traje 2, 4 ili 6 hareketa.",
+			"en": "In بِالْـعَـيْـنِ, يْ is preceded by the short vowel A (عَـ) and the final نِ takes a sukun when stopping, so this is madd lin: the prolongation lasts 2, 4 or 6 harakas.",
+			"de": "Im Wort بِالْـعَـيْـنِ steht vor يْ der kurze Vokal A (عَـ), und der letzte Buchstabe نِ hat beim Anhalten ein Sukun, deshalb ist das Madd Lin: die Dehnung dauert 2, 4 oder 6 Harakat."
+		}
+	}
+]

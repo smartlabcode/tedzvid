@@ -1,0 +1,49 @@
+{
+  "lekcija": 22,
+  "pitanja": [
+    {
+      "q": { "bs": "Koja riječ nema medd lin?", "en": "Which word has no madd lin?", "de": "Welches Wort hat kein Madd Lin?" },
+      "opcije": [
+        { "bs": "الْبَيْتِ", "en": "الْبَيْتِ", "de": "الْبَيْتِ" },
+        { "bs": "عَلَيْهِمْ", "en": "عَلَيْهِمْ", "de": "عَلَيْهِمْ" },
+        { "bs": "قُرَيْشٍ", "en": "قُرَيْشٍ", "de": "قُرَيْشٍ" },
+        { "bs": "الصَّيْفِ", "en": "الصَّيْفِ", "de": "الصَّيْفِ" }
+      ],
+      "tacno": 1,
+      "objasnjenje": { "bs": "U riječi عَلَيْهِمْ poslije harfa J sa sukunom dolazi harf H sa hareketom, a ne harf sa sukunom, pa nema medd lina.", "en": "In عَلَيْهِمْ the letter Y with a sukun is followed by the letter H with a haraka, not by a letter with a sukun, so there is no madd lin.", "de": "Im Wort عَلَيْهِمْ kommt nach dem Y mit Sukun der Buchstabe H mit Vokalzeichen und kein Buchstabe mit Sukun, deshalb gibt es kein Madd Lin." }
+    },
+    {
+      "q": { "bs": "Zašto u riječi تَهِنُوا nema medd lina, iako ima harf V (و)?", "en": "Why is there no madd lin in the word تَهِنُوا, although it has the letter W (و)?", "de": "Warum gibt es im Wort تَهِنُوا kein Madd Lin, obwohl es den Buchstaben W (و) hat?" },
+      "opcije": [
+        { "bs": "Jer je prije harfa V kratki vokal U, a ne kratki vokal E", "en": "Because the letter W is preceded by the short vowel U, not the short vowel A", "de": "Weil vor dem Buchstaben W der kurze Vokal U steht und nicht der kurze Vokal A" },
+        { "bs": "Jer poslije harfa V dolazi elif", "en": "Because the letter W is followed by an alif", "de": "Weil nach dem Buchstaben W ein Alif kommt" },
+        { "bs": "Jer prije harfa V dolazi harf N", "en": "Because the letter W is preceded by the letter N", "de": "Weil vor dem Buchstaben W der Buchstabe N kommt" },
+        { "bs": "Jer je harf V na kraju riječi", "en": "Because the letter W is at the end of the word", "de": "Weil der Buchstabe W am Ende des Wortes steht" }
+      ],
+      "tacno": 0,
+      "objasnjenje": { "bs": "Medd lin je samo kada je prije harfa V ili J sa sukunom kratki vokal E; ovdje je prije harfa V kratki vokal U, pa je نُو dugi vokal U.", "en": "Madd lin only occurs when the letter W or Y with a sukun is preceded by the short vowel A; here the letter W is preceded by the short vowel U, so نُو is the long vowel U.", "de": "Madd Lin gibt es nur, wenn vor dem W oder Y mit Sukun der kurze Vokal A steht; hier steht vor dem W der kurze Vokal U, deshalb ist نُو der lange Vokal U." }
+    },
+    {
+      "q": { "bs": "Gdje je medd lin u riječi شَيْءٍ kada na njoj stanemo?", "en": "Where is the madd lin in the word شَيْءٍ when we stop on it?", "de": "Wo ist das Madd Lin im Wort شَيْءٍ, wenn wir darauf anhalten?" },
+      "opcije": [
+        { "bs": "Na hemzetu (ء)", "en": "On the hamza (ء)", "de": "Auf der Hamza (ء)" },
+        { "bs": "Na kratkom vokalu E (شَ)", "en": "On the short vowel A (شَ)", "de": "Auf dem kurzen Vokal A (شَ)" },
+        { "bs": "Na harfu J sa sukunom (شَيْ)", "en": "On the letter Y with a sukun (شَيْ)", "de": "Auf dem Buchstaben Y mit Sukun (شَيْ)" },
+        { "bs": "Nema medd lina, jer poslije harfa J dolazi hemze", "en": "There is no madd lin, because the letter Y is followed by a hamza", "de": "Es gibt kein Madd Lin, weil nach dem Y eine Hamza kommt" }
+      ],
+      "tacno": 2,
+      "objasnjenje": { "bs": "Prije harfa J sa sukunom je kratki vokal E, a poslije njega hemze koje pri stajanju dobija sukun, pa je to medd lin od 2-4-6 hareketa.", "en": "The letter Y with a sukun is preceded by the short vowel A and followed by a hamza that gets a sukun when stopping, so it is madd lin of 2, 4 or 6 harakas.", "de": "Vor dem Y mit Sukun steht der kurze Vokal A und danach kommt eine Hamza, die beim Anhalten ein Sukun bekommt – das ist Madd Lin von 2, 4 oder 6 Harakat." }
+    },
+    {
+      "q": { "bs": "Kako se čita riječ الْخَوْفِ kada na njoj stanemo?", "en": "How is the word الْخَوْفِ read when we stop on it?", "de": "Wie wird das Wort الْخَوْفِ gelesen, wenn wir darauf anhalten?" },
+      "opcije": [
+        { "bs": "الْخَوْفِ, bez promjene i bez dužine", "en": "الْخَوْفِ, without change and without prolongation", "de": "الْخَوْفِ, ohne Änderung und ohne Dehnung" },
+        { "bs": "الْخَوْفَا, sa dugim vokalom A na kraju", "en": "الْخَوْفَا, with a long vowel A at the end", "de": "الْخَوْفَا, mit langem Vokal A am Ende" },
+        { "bs": "الْخَوْفْ, sa medd lazimom od 6 hareketa", "en": "الْخَوْفْ, with madd lazim of 6 harakas", "de": "الْخَوْفْ, mit Madd Lazim von 6 Harakat" },
+        { "bs": "الْخَوْفْ, sa medd linom na harfu V (خَوْ)", "en": "الْخَوْفْ, with madd lin on the letter W (خَوْ)", "de": "الْخَوْفْ, mit Madd Lin auf dem Buchstaben W (خَوْ)" }
+      ],
+      "tacno": 3,
+      "objasnjenje": { "bs": "Pri stajanju harf F dobija sukun, pa je prije harfa V sa sukunom kratki vokal E, a poslije njega harf sa sukunom – medd lin od 2-4-6 hareketa.", "en": "When stopping, the letter F gets a sukun, so the letter W with a sukun is preceded by the short vowel A and followed by a letter with a sukun – madd lin of 2, 4 or 6 harakas.", "de": "Beim Anhalten bekommt der Buchstabe F ein Sukun, also steht vor dem W mit Sukun der kurze Vokal A und danach ein Buchstabe mit Sukun – Madd Lin von 2, 4 oder 6 Harakat." }
+    }
+  ]
+}

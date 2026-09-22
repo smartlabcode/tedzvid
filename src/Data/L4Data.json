@@ -2,6 +2,9 @@
     "row1": [{
             "id": 1,
             "url": "./assets/audio/l4/1.mp3",
+            "napomena": [
+                {"tip": "uklapanje", "bs": "Harf ذْ ima sukun, a iza njega dolazi isti harf ذَ sa hareketom, zato se prvi ne uči nego se oba uče kao jedan ذ sa tešdidom.", "en": "The letter ذْ carries a sukun and is followed by the same letter ذَ with a haraka, so the first is not pronounced and both are recited as one ذ with a tashdeed.", "de": "Der Buchstabe ذْ hat ein Sukun, und danach kommt derselbe Buchstabe ذَ mit Vokalzeichen, darum wird der erste nicht gesprochen, sondern beide werden als ein ذ mit Schadda (Verdopplungszeichen) gesprochen."}
+            ],
             "highlight": "ذْ ذَ",
             "word": "إِذْ ذَهَبَ",
             "after": " čita se: "
@@ -9,6 +12,9 @@
         {
             "id": 2,
             "url": "./assets/audio/l4/2.mp3",
+            "napomena": [
+                {"tip": "napomena", "bs": "Ovo je zapis izgovora: dva harfa ذ uklopila su se u jedan ذَّ sa tešdidom, pa se prvi harf uopće ne uči.", "en": "This is how the recitation is written: the two ذ letters have merged into a single ذَّ with a tashdeed, so the first letter is not pronounced at all.", "de": "So wird die Aussprache geschrieben: Die zwei Buchstaben ذ sind zu einem ذَّ mit Schadda verschmolzen, darum wird der erste Buchstabe gar nicht gesprochen."}
+            ],
             "highlight": "ذَّ",
             "word": "إِذَّهَبَ",
             "after": " ;    "
@@ -16,6 +22,9 @@
         {
             "id": 3,
             "url": "./assets/audio/l4/3.mp3",
+            "napomena": [
+                {"tip": "uklapanje", "bs": "Harf لْ ima sukun, a odmah iza njega je isti harf لَ sa hareketom, zato se prvi ne uči, a drugi se uči sa tešdidom.", "en": "The letter لْ carries a sukun and is immediately followed by the same letter لَ with a haraka, so the first is not pronounced and the second is recited with a tashdeed.", "de": "Der Buchstabe لْ hat ein Sukun, und gleich danach steht derselbe Buchstabe لَ mit Vokalzeichen, darum wird der erste nicht gesprochen und der zweite mit Schadda gesprochen."}
+            ],
             "highlight": "لْ لَ",
             "word": "قُــلْ لَــمْ",
             "after": " čita se: "
@@ -23,35 +32,9 @@
         {
             "id": 4,
             "url": "./assets/audio/l4/4.mp3",
-            "highlight": "لَّ",
-            "word": "قُلَّمْ",
-            "after": null
-        }
-    ],
-    "row1_en": [{
-            "id": 1,
-            "url": "./assets/audio/l4/1.mp3",
-            "highlight": "ذْ ذَ",
-            "word": "إِذْ ذَهَبَ",
-            "after": "  is recited as:  "
-        },
-        {
-            "id": 2,
-            "url": "./assets/audio/l4/2.mp3",
-            "highlight": "ذَّ",
-            "word": "إِذَّهَبَ",
-            "after": " ;    "
-        },
-        {
-            "id": 3,
-            "url": "./assets/audio/l4/3.mp3",
-            "highlight": "لْ لَ",
-            "word": "قُــلْ لَــمْ",
-            "after": "  is recited as:  "
-        },
-        {
-            "id": 4,
-            "url": "./assets/audio/l4/4.mp3",
+            "napomena": [
+                {"tip": "napomena", "bs": "Ovo je zapis izgovora: dva harfa ل uklopila su se u jedan لَّ sa tešdidom, pa se u učenju čuje samo jedan ل.", "en": "This is how the recitation is written: the two ل letters have merged into a single لَّ with a tashdeed, so only one ل is heard in recitation.", "de": "So wird die Aussprache geschrieben: Die zwei Buchstaben ل sind zu einem لَّ mit Schadda verschmolzen, darum hört man beim Lesen nur ein ل."}
+            ],
             "highlight": "لَّ",
             "word": "قُلَّمْ",
             "after": null
@@ -61,6 +44,9 @@
 
             "id": 7,
             "url": "./assets/audio/l4/7.mp3",
+            "napomena": [
+                {"tip": "uklapanje", "bs": "U riječima قُلْ لِمَنِ harf لْ sa sukunom prati isti harf لِ sa hareketom, zato se prvi ne uči, a drugi se uči sa tešdidom.", "en": "In قُلْ لِمَنِ the letter لْ with a sukun is followed by the same letter لِ with a haraka, so the first is not pronounced and the second is recited with a tashdeed.", "de": "In den Wörtern قُلْ لِمَنِ folgt auf den Buchstaben لْ mit Sukun derselbe Buchstabe لِ mit Vokalzeichen, darum wird der erste nicht gesprochen und der zweite mit Schadda gesprochen."}
+            ],
             "highlight": "لْ لِ",
             "word": "قُلْ لِمَنِ الْأَرْضُ",
             "after": " ; "
@@ -69,6 +55,9 @@
 
             "id": 6,
             "url": "./assets/audio/l4/6.mp3",
+            "napomena": [
+                {"tip": "uklapanje", "bs": "U riječima إِذْ ذَهَبَ harf ذْ sa sukunom i isti harf ذَ sa hareketom potpuno se uklapaju, pa se uči samo ذ sa tešdidom.", "en": "In إِذْ ذَهَبَ the letter ذْ with a sukun and the same letter ذَ with a haraka merge completely, so only ذ with a tashdeed is recited.", "de": "In den Wörtern إِذْ ذَهَبَ verschmelzen der Buchstabe ذْ mit Sukun und derselbe Buchstabe ذَ mit Vokalzeichen vollständig, darum wird nur ذ mit Schadda gesprochen."}
+            ],
             "highlight": "ذْ ذَ",
             "word": "إِذْ ذَهَبَ مُغَاضِبًا",
             "after": " ; "
@@ -76,6 +65,9 @@
         }, {
             "id": 5,
             "url": "./assets/audio/l4/5.mp3",
+            "napomena": [
+                {"tip": "uklapanje", "bs": "U riječi يُكْرِهْهُنَّ harf هْ sa sukunom prati isti harf هُ, zato se prvi ne uči nego se oba uče kao jedan ه sa tešdidom.", "en": "In يُكْرِهْهُنَّ the letter هْ with a sukun is followed by the same letter هُ, so the first is not pronounced and both are recited as one ه with a tashdeed.", "de": "Im Wort يُكْرِهْهُنَّ folgt auf den Buchstaben هْ mit Sukun derselbe Buchstabe هُ, darum wird der erste nicht gesprochen, sondern beide werden als ein ه mit Schadda gesprochen."}
+            ],
             "highlight": "هْهُ",
             "word": "يُكْرِهْهُنَّ",
             "after": null
@@ -85,12 +77,18 @@
 
         "id": 8,
         "url": "./assets/audio/l4/8.mp3",
+        "napomena": [
+            {"tip": "uklapanje", "bs": "Na kraju riječi إِذْهَـبْ je بْ sa sukunom, a iza njega dolazi isti harf بِـ sa hareketom, zato se uči samo jedan ب sa tešdidom.", "en": "At the end of إِذْهَـبْ there is بْ with a sukun, followed by the same letter بِـ with a haraka, so only one ب with a tashdeed is recited.", "de": "Am Ende von إِذْهَـبْ steht بْ mit Sukun, und danach kommt derselbe Buchstabe بِـ mit Vokalzeichen, darum wird nur ein ب mit Schadda gesprochen."}
+        ],
         "highlight": "بْ بِـ",
         "word": "إِذْهَـبْ بِـكِـتَابِي هٰـذَا",
         "after": " ; "
     }, {
         "id": 9,
         "url": "./assets/audio/l4/9.mp3",
+        "napomena": [
+            {"tip": "uklapanje", "bs": "U riječima وَاذْكُـرْ رَبَّـكَ harf رْ sa sukunom prati isti harf رَ sa hareketom, zato se prvi ne uči, a drugi se uči sa tešdidom.", "en": "In وَاذْكُـرْ رَبَّـكَ the letter رْ with a sukun is followed by the same letter رَ with a haraka, so the first is not pronounced and the second is recited with a tashdeed.", "de": "In den Wörtern وَاذْكُـرْ رَبَّـكَ folgt auf den Buchstaben رْ mit Sukun derselbe Buchstabe رَ mit Vokalzeichen, darum wird der erste nicht gesprochen und der zweite mit Schadda gesprochen."}
+        ],
         "highlight": "رْ رَ",
         "word": "وَاذْكُـرْ رَبَّـكَ كَـثِـيـرًا",
         "after": null
@@ -99,6 +97,9 @@
         "broj10": [{
             "id": 10,
             "url": "./assets/audio/l4/10.mp3",
+            "napomena": [
+                {"tip": "uklapanje", "bs": "U riječima بَلْ لَهُ harf لْ sa sukunom prati isti harf لَ sa hareketom, zato se prvi ne uči nego se oba uče kao jedan ل sa tešdidom.", "en": "In بَلْ لَهُ the letter لْ with a sukun is followed by the same letter لَ with a haraka, so the first is not pronounced and both are recited as one ل with a tashdeed.", "de": "In den Wörtern بَلْ لَهُ folgt auf den Buchstaben لْ mit Sukun derselbe Buchstabe لَ mit Vokalzeichen, darum wird der erste nicht gesprochen, sondern beide werden als ein ل mit Schadda gesprochen."}
+            ],
             "highlight": "لْ لَ",
             "word": "بَلْ لَهُ مَا فِي السَّمَاوَاتِ وَالْأَرْضِ",
             "after": null
@@ -106,6 +107,9 @@
         "broj11": [{
             "id": 11,
             "url": "./assets/audio/l4/11.wav",
+            "napomena": [
+                {"tip": "uklapanje", "bs": "U riječima اضْـرِبْ بِـعَصَاكَ harf بْ sa sukunom prati isti harf بِـ sa hareketom, zato se prvi ne uči, a drugi se uči sa tešdidom.", "en": "In اضْـرِبْ بِـعَصَاكَ the letter بْ with a sukun is followed by the same letter بِـ with a haraka, so the first is not pronounced and the second is recited with a tashdeed.", "de": "In den Wörtern اضْـرِبْ بِـعَصَاكَ folgt auf den Buchstaben بْ mit Sukun derselbe Buchstabe بِـ mit Vokalzeichen, darum wird der erste nicht gesprochen und der zweite mit Schadda gesprochen."}
+            ],
             "highlight": "بْ بِـ",
             "word": " أَنِ اضْـرِبْ بِـعَصَاكَ الْبَـحْـرَ",
             "after": null
@@ -113,6 +117,9 @@
         "broj12": [{
             "id": 12,
             "url": "./assets/audio/l4/12.mp3",
+            "napomena": [
+                {"tip": "uklapanje", "bs": "U riječima قُلْ لَوْ harf لْ sa sukunom prati isti harf لَ sa hareketom, zato se prvi ne uči, a drugi se uči kao jedan ل sa tešdidom.", "en": "In قُلْ لَوْ the letter لْ with a sukun is followed by the same letter لَ with a haraka, so the first is not pronounced and the second is recited as one ل with a tashdeed.", "de": "In den Wörtern قُلْ لَوْ folgt auf den Buchstaben لْ mit Sukun derselbe Buchstabe لَ mit Vokalzeichen, darum wird der erste nicht gesprochen und der zweite als ein ل mit Schadda gesprochen."}
+            ],
             "highlight": "لْ لَ",
             "word": " قُلْ لَوْ كُـنْـتُمْ فِي بُـيُـوتِكُمْ",
             "after": null
@@ -120,6 +127,9 @@
         "broj13": [{
             "id": 13,
             "url": "./assets/audio/l4/13.mp3",
+            "napomena": [
+                {"tip": "uklapanje", "bs": "U riječima هَلْ لَـنَا harf لْ sa sukunom prati isti harf لَ sa hareketom, zato se prvi ne uči, a drugi se uči sa tešdidom.", "en": "In هَلْ لَـنَا the letter لْ with a sukun is followed by the same letter لَ with a haraka, so the first is not pronounced and the second is recited with a tashdeed.", "de": "In den Wörtern هَلْ لَـنَا folgt auf den Buchstaben لْ mit Sukun derselbe Buchstabe لَ mit Vokalzeichen, darum wird der erste nicht gesprochen und der zweite mit Schadda gesprochen."}
+            ],
             "highlight": "لْ لَ",
             "word": " يَقُولُونَ هَلْ لَـنَا مِنَ الْأَمْرِ مِنْ شَيْءٍ",
             "after": null
@@ -127,6 +137,9 @@
         "broj14": [{
             "id": 14,
             "url": "./assets/audio/l4/14.mp3",
+            "napomena": [
+                {"tip": "uklapanje", "bs": "U riječima وَقَـدْ دَخَلُوا harf دْ sa sukunom prati isti harf دَ sa hareketom, zato se prvi ne uči, a drugi se uči sa tešdidom.", "en": "In وَقَـدْ دَخَلُوا the letter دْ with a sukun is followed by the same letter دَ with a haraka, so the first is not pronounced and the second is recited with a tashdeed.", "de": "In den Wörtern وَقَـدْ دَخَلُوا folgt auf den Buchstaben دْ mit Sukun derselbe Buchstabe دَ mit Vokalzeichen, darum wird der erste nicht gesprochen und der zweite mit Schadda gesprochen."}
+            ],
             "highlight": "دْ د",
             "word": " وَقَـدْ دَخَلُوا بِالْكُفْرِ وَهُمْ قَدْ خَرَجُوا بِهِ",
             "after": null
@@ -134,6 +147,9 @@
         "broj15": [{
             "id": 15,
             "url": "./assets/audio/l4/15.mp3",
+            "napomena": [
+                {"tip": "uklapanje", "bs": "U riječima تَسْطِـعْ عَـلَيْهِ harf عْ sa sukunom prati isti harf عَ sa hareketom, zato se oba uče kao jedan ع sa tešdidom.", "en": "In تَسْطِـعْ عَـلَيْهِ the letter عْ with a sukun is followed by the same letter عَ with a haraka, so both are recited as one ع with a tashdeed.", "de": "In den Wörtern تَسْطِـعْ عَـلَيْهِ folgt auf den Buchstaben عْ mit Sukun derselbe Buchstabe عَ mit Vokalzeichen, darum werden beide als ein ع mit Schadda gesprochen."}
+            ],
             "highlight": "عْ عَ",
             "word": " مَا لَمْ تَسْطِـعْ عَـلَيْهِ صَبْرًا",
             "after": null
@@ -141,6 +157,9 @@
         "broj16": [{
             "id": 16,
             "url": "./assets/audio/l4/16.mp3",
+            "napomena": [
+                {"tip": "uklapanje", "bs": "U riječi يُدْرِكْـكُمُ harf كْ sa sukunom prati isti harf كُ, zato se prvi ne uči nego se oba uče kao jedan ك sa tešdidom.", "en": "In يُدْرِكْـكُمُ the letter كْ with a sukun is followed by the same letter كُ, so the first is not pronounced and both are recited as one ك with a tashdeed.", "de": "Im Wort يُدْرِكْـكُمُ folgt auf den Buchstaben كْ mit Sukun derselbe Buchstabe كُ, darum wird der erste nicht gesprochen, sondern beide werden als ein ك mit Schadda gesprochen."}
+            ],
             "highlight": "كْـكُ",
             "word": "أَيْـنَمَا تَكُونُوا يُدْرِكْـكُمُ الْمَوْتُ",
             "after": null
@@ -148,6 +167,9 @@
         "broj17": [{
             "id": 17,
             "url": "./assets/audio/l4/17.mp3",
+            "napomena": [
+                {"tip": "uklapanje", "bs": "U riječima رَبِحَتْ تِجَارَتُهُمْ harf تْ sa sukunom prati isti harf تِ sa hareketom, zato se uči samo jedan ت sa tešdidom.", "en": "In رَبِحَتْ تِجَارَتُهُمْ the letter تْ with a sukun is followed by the same letter تِ with a haraka, so only one ت with a tashdeed is recited.", "de": "In den Wörtern رَبِحَتْ تِجَارَتُهُمْ folgt auf den Buchstaben تْ mit Sukun derselbe Buchstabe تِ mit Vokalzeichen, darum wird nur ein ت mit Schadda gesprochen."}
+            ],
             "highlight": "تْ تِ",
             "word": " فَمَا رَبِحَتْ تِجَارَتُهُمْ وَمَا كَانُوا مُهْتَدِينَ",
             "after": null
@@ -155,6 +177,9 @@
         "broj18": [{
             "id": 18,
             "url": "./assets/audio/l4/18.mp3",
+            "napomena": [
+                {"tip": "uklapanje", "bs": "U riječima يُسْرِفْ فِـي harf فْ sa sukunom prati isti harf فِ sa hareketom, zato se prvi ne uči, a drugi se uči sa tešdidom.", "en": "In يُسْرِفْ فِـي the letter فْ with a sukun is followed by the same letter فِ with a haraka, so the first is not pronounced and the second is recited with a tashdeed.", "de": "In den Wörtern يُسْرِفْ فِـي folgt auf den Buchstaben فْ mit Sukun derselbe Buchstabe فِ mit Vokalzeichen, darum wird der erste nicht gesprochen und der zweite mit Schadda gesprochen."}
+            ],
             "highlight": "فْ فِـ",
             "word": "فَلَا يُسْرِفْ فِـي الْقَتْلِ",
             "after": null
@@ -162,6 +187,9 @@
         "broj19": [{
             "id": 19,
             "url": "./assets/audio/l4/19.mp3",
+            "napomena": [
+                {"tip": "uklapanje", "bs": "U riječima وَقُلْ لِـلَّـذِينَ harf لْ sa sukunom prati isti harf لِ sa hareketom, zato se prvi ne uči, a drugi se uči sa tešdidom.", "en": "In وَقُلْ لِـلَّـذِينَ the letter لْ with a sukun is followed by the same letter لِ with a haraka, so the first is not pronounced and the second is recited with a tashdeed.", "de": "In den Wörtern وَقُلْ لِـلَّـذِينَ folgt auf den Buchstaben لْ mit Sukun derselbe Buchstabe لِ mit Vokalzeichen, darum wird der erste nicht gesprochen und der zweite mit Schadda gesprochen."}
+            ],
             "highlight": "لْ لِ",
             "word": "وَقُلْ لِـلَّـذِينَ أُوتُوا الْكِتَابَ",
             "after": null

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Player from '../Player/Player';
 import Arabic from '../Letters/Arabic';
+import vezniTekst from '../i18n/vezniTekst';
 
 function PRow(data, rowname) {
 	const [ playing, setPlaying ] = useState(false);
@@ -15,12 +16,12 @@ function PRow(data, rowname) {
 			}
 			return (
 				<span key={'key' + dat.id} onClick={toggle}>
-					<Player url={dat.url} key={'p' + dat.id} playr={playing ? true : false}>
+					<Player url={dat.url} note={dat.napomena} key={'p' + dat.id} playr={playing ? true : false}>
 						<Arabic arabic={dat.highlight} key={'a' + dat.id}>
 							{dat.word}
 						</Arabic>
 					</Player>{' '}
-					<span className={myClassName}> {dat.after === 'break' ? <br /> : dat.after}</span>
+					<span className={myClassName}> {dat.after === 'break' ? <br /> : vezniTekst(dat.after)}</span>
 				</span>
 			);
 		});

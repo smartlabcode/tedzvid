@@ -1,0 +1,60 @@
+{
+  "lekcija": 12,
+  "pitanja": [
+    {
+      "q": { "bs": "Koliko puta se u primjeru يَأْمُرُهُمْ بِالْمَعْرُوفِ وَيَنْهَاهُمْ عَنِ الْمُنْكَرِ javlja ihfa šefevijj?", "en": "How many times does ikhfa shafawi occur in the example يَأْمُرُهُمْ بِالْمَعْرُوفِ وَيَنْهَاهُمْ عَنِ الْمُنْكَرِ?", "de": "Wie oft kommt im Beispiel يَأْمُرُهُمْ بِالْمَعْرُوفِ وَيَنْهَاهُمْ عَنِ الْمُنْكَرِ Ichfa Schafawi vor?" },
+      "opcije": [
+        { "bs": "0", "en": "0", "de": "0" },
+        { "bs": "1", "en": "1", "de": "1" },
+        { "bs": "2", "en": "2", "de": "2" },
+        { "bs": "3", "en": "3", "de": "3" }
+      ],
+      "tacno": 1,
+      "objasnjenje": { "bs": "Samo u يَأْمُرُهُمْ بِالْمَعْرُوفِ poslije harfa M sa sukunom dolazi harf B, a u يَنْهَاهُمْ عَنِ poslije مْ dolazi harf ع.", "en": "Only in يَأْمُرُهُمْ بِالْمَعْرُوفِ is the letter M with a sukun followed by the letter B, while in يَنْهَاهُمْ عَنِ the مْ is followed by the letter ع.", "de": "Nur in يَأْمُرُهُمْ بِالْمَعْرُوفِ folgt auf das M mit Sukun der Buchstabe B, in يَنْهَاهُمْ عَنِ dagegen folgt auf مْ der Buchstabe ع." }
+    },
+    {
+      "q": { "bs": "U kojem od ovih primjera nema ihfa šefevijja?", "en": "In which of these examples is there no ikhfa shafawi?", "de": "In welchem dieser Beispiele gibt es kein Ichfa Schafawi?" },
+      "opcije": [
+        { "bs": "تَرْمِيهِمْ بِحِجَارَةٍ", "en": "تَرْمِيهِمْ بِحِجَارَةٍ", "de": "تَرْمِيهِمْ بِحِجَارَةٍ" },
+        { "bs": "لِيُعَذِّبَهُمْ بِهَا", "en": "لِيُعَذِّبَهُمْ بِهَا", "de": "لِيُعَذِّبَهُمْ بِهَا" },
+        { "bs": "قُلُوبُهُمْ بِذِكْرِ اللّٰهِ", "en": "قُلُوبُهُمْ بِذِكْرِ اللّٰهِ", "de": "قُلُوبُهُمْ بِذِكْرِ اللّٰهِ" },
+        { "bs": "مِنْ أَمْوَالِهِمْ صَدَقَةً", "en": "مِنْ أَمْوَالِهِمْ صَدَقَةً", "de": "مِنْ أَمْوَالِهِمْ صَدَقَةً" }
+      ],
+      "tacno": 3,
+      "objasnjenje": { "bs": "U مِنْ أَمْوَالِهِمْ صَدَقَةً poslije harfa M sa sukunom dolazi harf ص, a ne harf B (ب).", "en": "In مِنْ أَمْوَالِهِمْ صَدَقَةً the letter M with a sukun is followed by the letter ص, not the letter B (ب).", "de": "In مِنْ أَمْوَالِهِمْ صَدَقَةً folgt auf das M mit Sukun der Buchstabe ص und nicht der Buchstabe B (ب)." }
+    },
+    {
+      "q": { "bs": "U primjeru فَإِنْ اٰمَنُوا بِمِثْلِ مَٓا اٰمَنْتُمْ بِهِ na kojem mjestu se nalazi ihfa šefevijj?", "en": "In the example فَإِنْ اٰمَنُوا بِمِثْلِ مَٓا اٰمَنْتُمْ بِهِ where is the ikhfa shafawi?", "de": "An welcher Stelle steht im Beispiel فَإِنْ اٰمَنُوا بِمِثْلِ مَٓا اٰمَنْتُمْ بِهِ das Ichfa Schafawi?" },
+      "opcije": [
+        { "bs": "اٰمَنْتُمْ بِهِ", "en": "اٰمَنْتُمْ بِهِ", "de": "اٰمَنْتُمْ بِهِ" },
+        { "bs": "اٰمَنُوا بِمِثْلِ", "en": "اٰمَنُوا بِمِثْلِ", "de": "اٰمَنُوا بِمِثْلِ" },
+        { "bs": "بِمِثْلِ مَٓا", "en": "بِمِثْلِ مَٓا", "de": "بِمِثْلِ مَٓا" },
+        { "bs": "فَإِنْ اٰمَنُوا", "en": "فَإِنْ اٰمَنُوا", "de": "فَإِنْ اٰمَنُوا" }
+      ],
+      "tacno": 0,
+      "objasnjenje": { "bs": "Samo u اٰمَنْتُمْ بِهِ harf M je sa sukunom i poslije njega dolazi harf B, dok u اٰمَنُوا harf M ima vokal.", "en": "Only in اٰمَنْتُمْ بِهِ does the letter M carry a sukun and is followed by the letter B, while in اٰمَنُوا the letter M carries a vowel.", "de": "Nur in اٰمَنْتُمْ بِهِ hat das M ein Sukun und danach kommt der Buchstabe B, in اٰمَنُوا dagegen hat das M einen Vokal." }
+    },
+    {
+      "q": { "bs": "U primjeru قُلُوبُهُمْ بِذِكْرِ اللّٰهِ koji harf se produžava u trajanju od 2 hareketa?", "en": "In the example قُلُوبُهُمْ بِذِكْرِ اللّٰهِ which letter is prolonged for the length of 2 harakas?", "de": "Welcher Buchstabe wird im Beispiel قُلُوبُهُمْ بِذِكْرِ اللّٰهِ 2 Harakat lang gedehnt?" },
+      "opcije": [
+        { "bs": "Harf B (ب)", "en": "The letter B (ب)", "de": "Der Buchstabe B (ب)" },
+        { "bs": "Harf H (ه)", "en": "The letter H (ه)", "de": "Der Buchstabe H (ه)" },
+        { "bs": "Harf M (م)", "en": "The letter M (م)", "de": "Der Buchstabe M (م)" },
+        { "bs": "Harf K (ك)", "en": "The letter K (ك)", "de": "Der Buchstabe K (ك)" }
+      ],
+      "tacno": 2,
+      "objasnjenje": { "bs": "Kod ihfa šefevijja produžava se izgovor harfa M sa sukunom (مْ) ispred harfa B.", "en": "In ikhfa shafawi it is the letter M with a sukun (مْ) before the letter B whose pronunciation is prolonged.", "de": "Bei Ichfa Schafawi wird die Aussprache des M mit Sukun (مْ) vor dem Buchstaben B gedehnt." }
+    },
+    {
+      "q": { "bs": "Koji od ovih zapisa prikazuje ihfa šefevijj?", "en": "Which of these combinations shows ikhfa shafawi?", "de": "Welche dieser Schreibweisen zeigt Ichfa Schafawi?" },
+      "opcije": [
+        { "bs": "مْ بِ", "en": "مْ بِ", "de": "مْ بِ" },
+        { "bs": "نْ بِ", "en": "نْ بِ", "de": "نْ بِ" },
+        { "bs": "مَ بْ", "en": "مَ بْ", "de": "مَ بْ" },
+        { "bs": "مْ مِ", "en": "مْ مِ", "de": "مْ مِ" }
+      ],
+      "tacno": 0,
+      "objasnjenje": { "bs": "Ihfa šefevijj je samo مْ بِ: harf M sa sukunom ispred harfa B.", "en": "Ikhfa shafawi is only مْ بِ: the letter M with a sukun before the letter B.", "de": "Ichfa Schafawi ist nur مْ بِ: das M mit Sukun vor dem Buchstaben B." }
+    }
+  ]
+}

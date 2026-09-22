@@ -2,6 +2,9 @@
     "row1": [{
             "id": 1,
             "url": "./assets/audio/l6/1.mp3",
+            "napomena": [
+                {"tip": "uklapanje", "bs": "Ovdje je نْ sa sukunom, a poslije njega dolazi نَ, zato se N uklapa u ن uz zrak kroz nos u trajanju od 2 hareketa.", "en": "Here نْ has a sukun and is followed by نَ, so the N merges into ن with air passing through the nose for 2 harakas.", "de": "Hier steht نْ mit Sukun, danach kommt نَ, deshalb verschmilzt das N in ن mit Luft durch die Nase, 2 Harakat lang."}
+            ],
             "highlight": "نْ نَ‍‍",
             "word": "مَ‍نْ نَ‍‍شَٓاءُ",
             "after": " čita se: "
@@ -9,6 +12,9 @@
         {
             "id": 2,
             "url": "./assets/audio/l6/2.mp3",
+            "napomena": [
+                {"tip": "nos", "bs": "U izgovoru se umjesto نْ نَ uči نَّ sa tešdidom, uz zrak kroz nos u trajanju od 2 hareketa.", "en": "In recitation نْ نَ is read as نَّ with a tashdeed, letting air pass through the nose for the length of 2 harakas.", "de": "Beim Sprechen wird statt نْ نَ das نَّ mit Schadda (Verdopplungszeichen) gelesen, mit Luft durch die Nase, 2 Harakat lang."}
+            ],
             "highlight": "نَّ‍",
             "word": "مَ‍‍نَّ‍‍شَٓاءُ",
             "after": " ; "
@@ -16,6 +22,9 @@
         {
             "id": 3,
             "url": "./assets/audio/l6/3.mp3",
+            "napomena": [
+                {"tip": "uklapanje", "bs": "Na ةً je tenvin UN, a poslije dolazi مِ, zato se N iz tenvina uklapa u م uz zrak kroz nos u trajanju od 2 hareketa.", "en": "On ةً there is the tanween UN followed by مِ, so the N of the tanween merges into م with air through the nose for 2 harakas.", "de": "Auf ةً steht das Tanwin UN, danach kommt مِ, deshalb verschmilzt das N aus dem Tanwin in م mit Luft durch die Nase, 2 Harakat lang."}
+            ],
             "highlight": "ةً مِ‍",
             "word": "نِعْمَ‍‍ةً مِ‍‍نْهُ",
             "after": " čita se: "
@@ -23,35 +32,9 @@
         {
             "id": 4,
             "url": "./assets/audio/l6/4.mp3",
-            "highlight": "ةَ مِّ",
-            "word": "نِعْمَةَ مِّنْهُ",
-            "after": null
-        }
-    ],
-    "row1_en": [{
-            "id": 1,
-            "url": "./assets/audio/l6/1.mp3",
-            "highlight": "نْ نَ‍‍",
-            "word": "مَ‍نْ نَ‍‍شَٓاءُ",
-            "after": " is recited as: "
-        },
-        {
-            "id": 2,
-            "url": "./assets/audio/l6/2.mp3",
-            "highlight": "نَّ‍",
-            "word": "مَ‍‍نَّ‍‍شَٓاءُ",
-            "after": " ; "
-        },
-        {
-            "id": 3,
-            "url": "./assets/audio/l6/3.mp3",
-            "highlight": "ةً مِ‍",
-            "word": "نِعْمَ‍‍ةً مِ‍‍نْهُ",
-            "after": " is recited as: "
-        },
-        {
-            "id": 4,
-            "url": "./assets/audio/l6/4.mp3",
+            "napomena": [
+                {"tip": "nos", "bs": "U izgovoru se tenvin ne čuje, pa se uči ةَ مِّ sa tešdidom na م, uz zrak kroz nos u trajanju od 2 hareketa.", "en": "In recitation the tanween is not heard, so ةَ مِّ is read with a tashdeed on م, letting air pass through the nose for 2 harakas.", "de": "Beim Sprechen hört man das Tanwin nicht, deshalb wird ةَ مِّ mit Schadda auf م gelesen, mit Luft durch die Nase, 2 Harakat lang."}
+            ],
             "highlight": "ةَ مِّ",
             "word": "نِعْمَةَ مِّنْهُ",
             "after": null
@@ -61,12 +44,19 @@
 
         "id": 5,
         "url": "./assets/audio/l6/5.mp3",
+        "napomena": [
+            {"tip": "uklapanje", "bs": "U riječi شَيْـئًا je tenvin EN, a poslije dolazi نُ, zato se N uklapa u ن uz zrak kroz nos u trajanju od 2 hareketa.", "en": "In شَيْـئًا there is the tanween AN followed by نُ, so the N merges into ن with air through the nose for 2 harakas.", "de": "Im Wort شَيْـئًا steht das Tanwin AN, danach kommt نُ, deshalb verschmilzt das N in ن mit Luft durch die Nase, 2 Harakat lang."}
+        ],
         "highlight": "ئًا نُ",
         "word": "لَـقَدْ جِئْتَ شَيْـئًا نُكْرًا",
         "after": " ؛ "
     }, {
         "id": 6,
         "url": "./assets/audio/l6/6.mp3",
+        "napomena": [
+            {"tip": "uklapanje", "bs": "U riječi حَبْلٌ je tenvin UN, a poslije dolazi مِ, zato se N uklapa u م uz zrak kroz nos u trajanju od 2 hareketa.", "en": "In حَبْلٌ there is the tanween UN followed by مِ, so the N merges into م with air through the nose for 2 harakas.", "de": "Im Wort حَبْلٌ steht das Tanwin UN, danach kommt مِ, deshalb verschmilzt das N in م mit Luft durch die Nase, 2 Harakat lang."},
+            {"tip": "uklapanje", "bs": "U riječi مِنْ je نْ sa sukunom, a poslije dolazi مَ, zato se N uklapa u م uz zrak kroz nos u trajanju od 2 hareketa.", "en": "In مِنْ the نْ has a sukun and is followed by مَ, so the N merges into م with air through the nose for 2 harakas.", "de": "Im Wort مِنْ steht نْ mit Sukun, danach kommt مَ, deshalb verschmilzt das N in م mit Luft durch die Nase, 2 Harakat lang."}
+        ],
         "highlight": "لٌ مِنْ مَ",
         "word": "فِي جِيدِهَا حَبْلٌ مِنْ مَسَدٍ",
         "after": null
@@ -87,6 +77,11 @@
         {
             "id": 7,
             "url": "./assets/audio/l6/7.mp3",
+            "napomena": [
+                {"tip": "uklapanje", "bs": "U riječi يَهُودِيًّا je tenvin EN, a poslije dolazi وَ, zato se N uklapa u و uz zrak kroz nos u trajanju od 2 hareketa.", "en": "In يَهُودِيًّا there is the tanween AN followed by وَ, so the N merges into و with air through the nose for 2 harakas.", "de": "Im Wort يَهُودِيًّا steht das Tanwin AN, danach kommt وَ, deshalb verschmilzt das N in و mit Luft durch die Nase, 2 Harakat lang."},
+                {"tip": "uklapanje", "bs": "U riječi نَصْرَانـِيًّا je opet tenvin EN, a poslije dolazi وَ, zato se N uklapa u و uz zrak kroz nos, 2 hareketa.", "en": "In نَصْرَانـِيًّا there is again the tanween AN followed by وَ, so the N merges into و with air through the nose, 2 harakas.", "de": "Im Wort نَصْرَانـِيًّا steht wieder das Tanwin AN, danach kommt وَ, deshalb verschmilzt das N in و mit Luft durch die Nase, 2 Harakat."},
+                {"tip": "uklapanje", "bs": "U riječi حَنِيفًا je tenvin EN, a poslije dolazi مُ, zato se N uklapa u م uz zrak kroz nos u trajanju od 2 hareketa.", "en": "In حَنِيفًا there is the tanween AN followed by مُ, so the N merges into م with air through the nose for 2 harakas.", "de": "Im Wort حَنِيفًا steht das Tanwin AN, danach kommt مُ, deshalb verschmilzt das N in م mit Luft durch die Nase, 2 Harakat lang."}
+            ],
             "highlight": "فًا مُـ",
             "word": "حَنِيفًا مُـسْلِمًا",
             "after": null
@@ -96,6 +91,10 @@
         "broj8": [{
                 "id": 8,
                 "url": "./assets/audio/l6/8.mp3",
+                "napomena": [
+                    {"tip": "uklapanje", "bs": "U riječi فَمَنْ je نْ sa sukunom, a poslije dolazi يَ, zato se N uklapa u ي uz zrak kroz nos u trajanju od 2 hareketa.", "en": "In فَمَنْ the نْ has a sukun and is followed by يَ, so the N merges into ي with air through the nose for 2 harakas.", "de": "Im Wort فَمَنْ steht نْ mit Sukun, danach kommt يَ, deshalb verschmilzt das N in ي mit Luft durch die Nase, 2 Harakat lang."},
+                    {"tip": "uklapanje", "bs": "U riječi خَيْـرًا je tenvin EN, a poslije dolazi يَ, zato se N uklapa u ي uz zrak kroz nos u trajanju od 2 hareketa.", "en": "In خَيْـرًا there is the tanween AN followed by يَ, so the N merges into ي with air through the nose for 2 harakas.", "de": "Im Wort خَيْـرًا steht das Tanwin AN, danach kommt يَ, deshalb verschmilzt das N in ي mit Luft durch die Nase, 2 Harakat lang."}
+                ],
                 "highlight": "رًا يَ",
                 "word": " مِثْقَالَ ذَرَّةٍ خَيْـرًا يَرَهُ",
                 "after": null
@@ -110,6 +109,10 @@
         "broj9": [{
                 "id": 9,
                 "url": "./assets/audio/l6/9.mp3",
+                "napomena": [
+                    {"tip": "uklapanje", "bs": "U riječi أَمْـوَالًا je tenvin EN, a poslije dolazi وَ, zato se N uklapa u و uz zrak kroz nos u trajanju od 2 hareketa.", "en": "In أَمْـوَالًا there is the tanween AN followed by وَ, so the N merges into و with air through the nose for 2 harakas.", "de": "Im Wort أَمْـوَالًا steht das Tanwin AN, danach kommt وَ, deshalb verschmilzt das N in و mit Luft durch die Nase, 2 Harakat lang."},
+                    {"tip": "uklapanje", "bs": "Zatim je na دًا tenvin EN, a poslije dolazi وَ, zato se N uklapa u و uz zrak kroz nos u trajanju od 2 hareketa.", "en": "Then on دًا there is the tanween AN followed by وَ, so the N merges into و with air through the nose for 2 harakas.", "de": "Dann steht auf دًا das Tanwin AN, danach kommt وَ, deshalb verschmilzt das N in و mit Luft durch die Nase, 2 Harakat lang."}
+                ],
                 "highlight": "دًا وَ",
                 "word": "دًا وَمَا نَحْنُ بِمُعَذَّبِينَ",
                 "after": null
@@ -124,6 +127,10 @@
         "broj10": [{
             "id": 10,
             "url": "./assets/audio/l6/10.mp3",
+            "napomena": [
+                {"tip": "uklapanje", "bs": "U riječi فِرَاشًا je tenvin EN, a poslije dolazi وَ, zato se N uklapa u و uz zrak kroz nos u trajanju od 2 hareketa.", "en": "In فِرَاشًا there is the tanween AN followed by وَ, so the N merges into و with air through the nose for 2 harakas.", "de": "Im Wort فِرَاشًا steht das Tanwin AN, danach kommt وَ, deshalb verschmilzt das N in و mit Luft durch die Nase, 2 Harakat lang."},
+                {"tip": "uklapanje", "bs": "U riječi بِنَٓاءً je tenvin EN, a poslije dolazi وَ, zato se N uklapa u و uz zrak kroz nos u trajanju od 2 hareketa.", "en": "In بِنَٓاءً there is the tanween AN followed by وَ, so the N merges into و with air through the nose for 2 harakas.", "de": "Im Wort بِنَٓاءً steht das Tanwin AN, danach kommt وَ, deshalb verschmilzt das N in و mit Luft durch die Nase, 2 Harakat lang."}
+            ],
             "highlight": "ءً وَ",
             "word": " بِنَٓاءً وَأَنْـزَلَ مِنَ السَّمَٓاءِ مَٓاءً",
             "after": null
@@ -136,6 +143,9 @@
         "broj11": [{
             "id": 11,
             "url": "./assets/audio/l6/11.mp3",
+            "napomena": [
+                {"tip": "uklapanje", "bs": "U riječi مَالًا je tenvin EN, a poslije dolazi وَ, zato se N uklapa u و uz zrak kroz nos u trajanju od 2 hareketa.", "en": "In مَالًا there is the tanween AN followed by وَ, so the N merges into و with air through the nose for 2 harakas.", "de": "Im Wort مَالًا steht das Tanwin AN, danach kommt وَ, deshalb verschmilzt das N in و mit Luft durch die Nase, 2 Harakat lang."}
+            ],
             "highlight": "لًا وَ",
             "word": " اَلَّذِي جَمَعَ مَالًا وَعَدَّدَهُ",
             "after": null
@@ -143,6 +153,11 @@
         "broj12": [{
             "id": 12,
             "url": "./assets/audio/l6/12.mp3",
+            "napomena": [
+                {"tip": "uklapanje", "bs": "U riječi كَصَيِّبٍ je tenvin IN, a poslije dolazi مِ, zato se N uklapa u م uz zrak kroz nos u trajanju od 2 hareketa.", "en": "In كَصَيِّبٍ there is the tanween IN followed by مِ, so the N merges into م with air through the nose for 2 harakas.", "de": "Im Wort كَصَيِّبٍ steht das Tanwin IN, danach kommt مِ, deshalb verschmilzt das N in م mit Luft durch die Nase, 2 Harakat lang."},
+                {"tip": "uklapanje", "bs": "U riječi ظُلُمَاتٌ je tenvin UN, a poslije dolazi وَ, zato se N uklapa u و uz zrak kroz nos u trajanju od 2 hareketa.", "en": "In ظُلُمَاتٌ there is the tanween UN followed by وَ, so the N merges into و with air through the nose for 2 harakas.", "de": "Im Wort ظُلُمَاتٌ steht das Tanwin UN, danach kommt وَ, deshalb verschmilzt das N in و mit Luft durch die Nase, 2 Harakat lang."},
+                {"tip": "uklapanje", "bs": "Zatim je na دٌ tenvin UN, a poslije dolazi وَ, zato se N uklapa u و uz zrak kroz nos u trajanju od 2 hareketa.", "en": "Then on دٌ there is the tanween UN followed by وَ, so the N merges into و with air through the nose for 2 harakas.", "de": "Dann steht auf دٌ das Tanwin UN, danach kommt وَ, deshalb verschmilzt das N in و mit Luft durch die Nase, 2 Harakat lang."}
+            ],
             "highlight": "دٌ وَ",
             "word": "عْدٌ وَبَرْقٌ",
             "after": null
@@ -160,6 +175,11 @@
         "broj14": [{
             "id": 13,
             "url": "./assets/audio/l6/13.mp3",
+            "napomena": [
+                {"tip": "uklapanje", "bs": "U riječi وَأَزْوَاجٌ je tenvin UN, a poslije dolazi مُ, zato se N uklapa u م uz zrak kroz nos u trajanju od 2 hareketa.", "en": "In وَأَزْوَاجٌ there is the tanween UN followed by مُ, so the N merges into م with air through the nose for 2 harakas.", "de": "Im Wort وَأَزْوَاجٌ steht das Tanwin UN, danach kommt مُ, deshalb verschmilzt das N in م mit Luft durch die Nase, 2 Harakat lang."},
+                {"tip": "uklapanje", "bs": "Zatim je na ةٌ tenvin UN, a poslije dolazi وَ, zato se N uklapa u و uz zrak kroz nos u trajanju od 2 hareketa.", "en": "Then on ةٌ there is the tanween UN followed by وَ, so the N merges into و with air through the nose for 2 harakas.", "de": "Dann steht auf ةٌ das Tanwin UN, danach kommt وَ, deshalb verschmilzt das N in و mit Luft durch die Nase, 2 Harakat lang."},
+                {"tip": "uklapanje", "bs": "Na kraju je na نٌ tenvin UN, a poslije dolazi مِ, zato se N uklapa u م uz zrak kroz nos u trajanju od 2 hareketa.", "en": "Finally on نٌ there is the tanween UN followed by مِ, so the N merges into م with air through the nose for 2 harakas.", "de": "Am Ende steht auf نٌ das Tanwin UN, danach kommt مِ, deshalb verschmilzt das N in م mit Luft durch die Nase, 2 Harakat lang."}
+            ],
             "highlight": "نٌ مِ",
             "word": "ضْوَانٌ مِنَ اللّٰهِ ",
             "after": null
@@ -177,6 +197,10 @@
         "broj13": [{
             "id": 14,
             "url": "./assets/audio/l6/14.mp3",
+            "napomena": [
+                {"tip": "uklapanje", "bs": "U riječi وَلْتَكُـنْ je نْ sa sukunom, a poslije dolazi مِ, zato se N uklapa u م uz zrak kroz nos, 2 hareketa.", "en": "In وَلْتَكُـنْ the نْ has a sukun and is followed by مِ, so the N merges into م with air through the nose, 2 harakas.", "de": "Im Wort وَلْتَكُـنْ steht نْ mit Sukun, danach kommt مِ, deshalb verschmilzt das N in م mit Luft durch die Nase, 2 Harakat."},
+                {"tip": "uklapanje", "bs": "U riječi أُمَّةٌ je tenvin UN, a poslije dolazi يَ, zato se N uklapa u ي uz zrak kroz nos u trajanju od 2 hareketa.", "en": "In أُمَّةٌ there is the tanween UN followed by يَ, so the N merges into ي with air through the nose for 2 harakas.", "de": "Im Wort أُمَّةٌ steht das Tanwin UN, danach kommt يَ, deshalb verschmilzt das N in ي mit Luft durch die Nase, 2 Harakat lang."}
+            ],
             "highlight": "ةٌ يَ",
             "word": " أُمَّةٌ يَدْعُونَ إِلَى الْخَيْرِ",
             "after": null

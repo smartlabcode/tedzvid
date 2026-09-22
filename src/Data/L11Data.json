@@ -2,6 +2,9 @@
     "row1": [{
             "id": 1,
             "url": "./assets/audio/l11/1.mp3",
+            "napomena": [
+                {"tip": "skrivanje", "bs": "Harf نْ ima sukun, a iza njega dolazi تُ, zato se N uči kroz nos u trajanju od 2 hareketa, a jezik ne dotakne nepce.", "en": "The letter نْ carries a sukun and is followed by تُ, so N is recited through the nose for 2 harakas, without the tongue touching the palate.", "de": "Der Buchstabe نْ hat ein Sukun, und danach kommt تُ, deshalb wird das N für die Dauer von 2 Harakat durch die Nase gesprochen, die Zunge berührt dabei den Gaumen nicht."}
+            ],
             "highlight": "نْـتُ",
             "word": "أَنْـتُمْ",
             "after": " ; "
@@ -9,6 +12,9 @@
         {
             "id": 2,
             "url": "./assets/audio/l11/2.mp3",
+            "napomena": [
+                {"tip": "skrivanje", "bs": "Harf رٍ ima tenvin IN, a iza njega dolazi كَ, zato se N iz tenvina uči kroz nos 2 hareketa, a jezik ne dotakne nepce.", "en": "The letter رٍ carries the tanween IN and is followed by كَ, so the N of the tanween is recited through the nose for 2 harakas, without the tongue touching the palate.", "de": "Der Buchstabe رٍ hat das Tanwin IN, und danach kommt كَ, deshalb wird das N des Tanwins 2 Harakat lang durch die Nase gesprochen, die Zunge berührt dabei den Gaumen nicht."}
+            ],
             "highlight": "رٍ كَ",
             "word": "أَجْرٍ كَرِيمٍ",
             "after": null
@@ -18,12 +24,19 @@
 
         "id": 3,
         "url": "./assets/audio/l11/3.mp3",
+        "napomena": [
+            {"tip": "skrivanje", "bs": "U riječi إِنْ iza نْ sa sukunom dolazi كُ, zato se N uči kroz nos 2 hareketa, a jezik ne dotakne nepce.", "en": "In إِنْ the نْ with a sukun is followed by كُ, so N is recited through the nose for 2 harakas, without the tongue touching the palate.", "de": "Im Wort إِنْ kommt nach dem نْ mit Sukun ein كُ, deshalb wird das N 2 Harakat lang durch die Nase gesprochen, die Zunge berührt dabei den Gaumen nicht."},
+            {"tip": "skrivanje", "bs": "U riječi كُـنْـتُمْ iza نْ sa sukunom dolazi تُ, pa se i tu N uči kroz nos 2 hareketa, bez dodira jezika o nepce.", "en": "In كُـنْـتُمْ the نْ with a sukun is followed by تُ, so here too N is recited through the nose for 2 harakas, without the tongue touching the palate.", "de": "Im Wort كُـنْـتُمْ kommt nach dem نْ mit Sukun ein تُ, deshalb wird auch hier das N 2 Harakat lang durch die Nase gesprochen, ohne dass die Zunge den Gaumen berührt."}
+        ],
         "highlight": "نْ كُـنْـتُ",
         "word": "إِنْ كُـنْـتُمْ صَادِقِينَ",
         "after": " ; "
     }, {
         "id": 4,
         "url": "./assets/audio/l11/4.mp3",
+        "napomena": [
+            {"tip": "skrivanje", "bs": "U riječi قَوِيٌّ je tenvin UN, a iza njega dolazi شَ, zato se N iz tenvina uči kroz nos 2 hareketa, a jezik ne dotakne nepce.", "en": "In قَوِيٌّ there is the tanween UN followed by شَ, so the N of the tanween is recited through the nose for 2 harakas, without the tongue touching the palate.", "de": "Im Wort قَوِيٌّ steht das Tanwin UN, und danach kommt شَ, deshalb wird das N des Tanwins 2 Harakat lang durch die Nase gesprochen, die Zunge berührt dabei den Gaumen nicht."}
+        ],
         "highlight": "يٌّ شَ",
         "word": "إِنَّ اللّٰهَ قَوِيٌّ شَدِيدُ الْعِقَابِ",
         "after": null
@@ -31,6 +44,9 @@
     "row3": [{
         "id": 6,
         "url": "./assets/audio/l11/6.mp3",
+        "napomena": [
+            {"tip": "skrivanje", "bs": "U riječi يُـنْـفِقُونَ iza نْ sa sukunom dolazi فِ, zato se N ne uči jasno nego kroz nos 2 hareketa, a jezik ne dotakne nepce.", "en": "In يُـنْـفِقُونَ the نْ with a sukun is followed by فِ, so N is not recited clearly but through the nose for 2 harakas, without the tongue touching the palate.", "de": "Im Wort يُـنْـفِقُونَ kommt nach dem نْ mit Sukun ein فِ, deshalb wird das N nicht deutlich gesprochen, sondern 2 Harakat lang durch die Nase, die Zunge berührt dabei den Gaumen nicht."}
+        ],
         "highlight": "نْـفِ",
         "word": "وَمِمَّا رَزَقْنَاهُمْ يُـنْـفِقُونَ",
         "after": null
@@ -39,6 +55,10 @@
         "word1": [{
                 "id": 5,
                 "url": "./assets/audio/l11/5.mp3",
+                "napomena": [
+                    {"tip": "skrivanje", "bs": "U riječi وَجَنَّاتٌ je tenvin UN, a iza njega dolazi تَ u riječi تَجْرِي, zato se N iz tenvina uči kroz nos 2 hareketa.", "en": "In وَجَنَّاتٌ there is the tanween UN followed by تَ in تَجْرِي, so the N of the tanween is recited through the nose for 2 harakas.", "de": "Im Wort وَجَنَّاتٌ steht das Tanwin UN, und danach kommt تَ im Wort تَجْرِي, deshalb wird das N des Tanwins 2 Harakat lang durch die Nase gesprochen."},
+                    {"tip": "skrivanje", "bs": "U riječi مِنْ iza نْ sa sukunom dolazi تَ u riječi تَحْتِهَا, zato se N uči kroz nos 2 hareketa, a jezik ne dotakne nepce.", "en": "In مِنْ the نْ with a sukun is followed by تَ in تَحْتِهَا, so N is recited through the nose for 2 harakas, without the tongue touching the palate.", "de": "Im Wort مِنْ kommt nach dem نْ mit Sukun ein تَ im Wort تَحْتِهَا, deshalb wird das N 2 Harakat lang durch die Nase gesprochen, die Zunge berührt dabei den Gaumen nicht."}
+                ],
                 "highlight": "نْ تَ",
                 "word": "مِنْ تَحْتِهَا الْأَنْهَارُ",
                 "after": " ; "
@@ -55,6 +75,11 @@
         "broj7": [{
                 "id": 7,
                 "url": "./assets/audio/l11/7.mp3",
+                "napomena": [
+                    {"tip": "skrivanje", "bs": "U riječi أُنْـزِلَ iza نْ sa sukunom dolazi زِ, zato se N uči kroz nos 2 hareketa, a jezik ne dotakne nepce.", "en": "In أُنْـزِلَ the نْ with a sukun is followed by زِ, so N is recited through the nose for 2 harakas, without the tongue touching the palate.", "de": "Im Wort أُنْـزِلَ kommt nach dem نْ mit Sukun ein زِ, deshalb wird das N 2 Harakat lang durch die Nase gesprochen, die Zunge berührt dabei den Gaumen nicht."},
+                    {"tip": "skrivanje", "bs": "Isto je i u drugom أُنْـزِلَ, iza نْ sa sukunom opet dolazi زِ, pa se N uči kroz nos 2 hareketa.", "en": "The same applies to the second أُنْـزِلَ, where the نْ with a sukun is again followed by زِ, so N is recited through the nose for 2 harakas.", "de": "Genauso ist es im zweiten أُنْـزِلَ: nach dem نْ mit Sukun kommt wieder ein زِ, deshalb wird das N 2 Harakat lang durch die Nase gesprochen."},
+                    {"tip": "skrivanje", "bs": "U riječi مِنْ iza نْ sa sukunom dolazi قَـ, zato se N ne uči jasno nego kroz nos 2 hareketa.", "en": "In مِنْ the نْ with a sukun is followed by قَـ, so N is not recited clearly but through the nose for 2 harakas.", "de": "Im Wort مِنْ kommt nach dem نْ mit Sukun ein قَـ, deshalb wird das N nicht deutlich gesprochen, sondern 2 Harakat lang durch die Nase."}
+                ],
                 "highlight": "ِنْ قَـ",
                 "word": " مِنْ قَـبْلِكَ",
                 "after": null
@@ -76,6 +101,10 @@
         "broj8": [{
                 "id": 8,
                 "url": "./assets/audio/l11/8.mp3",
+                "napomena": [
+                    {"tip": "skrivanje", "bs": "Na kraju reda, u أَأَنْـذَ iza نْ sa sukunom dolazi ذَ, zato se N uči kroz nos 2 hareketa, a jezik ne dotakne nepce.", "en": "At the end of the line, in أَأَنْـذَ the نْ with a sukun is followed by ذَ, so N is recited through the nose for 2 harakas, without the tongue touching the palate.", "de": "Am Ende der Zeile kommt in أَأَنْـذَ nach dem نْ mit Sukun ein ذَ, deshalb wird das N 2 Harakat lang durch die Nase gesprochen, die Zunge berührt dabei den Gaumen nicht."},
+                    {"tip": "skrivanje", "bs": "U riječi تُـنْذِرْهُمْ iza نْ sa sukunom dolazi ذِ, pa se i tu N uči kroz nos 2 hareketa, bez dodira jezika o nepce.", "en": "In تُـنْذِرْهُمْ the نْ with a sukun is followed by ذِ, so here too N is recited through the nose for 2 harakas, without the tongue touching the palate.", "de": "Im Wort تُـنْذِرْهُمْ kommt nach dem نْ mit Sukun ein ذِ, deshalb wird auch hier das N 2 Harakat lang durch die Nase gesprochen, ohne dass die Zunge den Gaumen berührt."}
+                ],
                 "highlight": "نْذِ",
                 "word": "رْتَهُمْ أَمْ لَمْ تُـنْذِرْهُمْ لَا يُؤْمِنُونَ ",
                 "after": null
@@ -90,6 +119,9 @@
         "broj9": [{
             "id": 9,
             "url": "./assets/audio/l11/9.mp3",
+            "napomena": [
+                {"tip": "skrivanje", "bs": "U riječi يَـنْـقُضُونَ iza نْ sa sukunom dolazi قُ, zato se N uči kroz nos u trajanju od 2 hareketa, a jezik ne dotakne nepce.", "en": "In يَـنْـقُضُونَ the نْ with a sukun is followed by قُ, so N is recited through the nose for 2 harakas, without the tongue touching the palate.", "de": "Im Wort يَـنْـقُضُونَ kommt nach dem نْ mit Sukun ein قُ, deshalb wird das N für die Dauer von 2 Harakat durch die Nase gesprochen, die Zunge berührt dabei den Gaumen nicht."}
+            ],
             "highlight": "نْـقُ",
             "word": "وَلَا يَـنْـقُضُونَ الْمِيثَاقَ",
             "after": null
@@ -98,6 +130,10 @@
 
             "id": 10,
             "url": "./assets/audio/l11/10.mp3",
+            "napomena": [
+                {"tip": "skrivanje", "bs": "U riječi إِنْ iza نْ sa sukunom dolazi تَ, zato se N uči kroz nos 2 hareketa, a jezik ne dotakne nepce.", "en": "In إِنْ the نْ with a sukun is followed by تَ, so N is recited through the nose for 2 harakas, without the tongue touching the palate.", "de": "Im Wort إِنْ kommt nach dem نْ mit Sukun ein تَ, deshalb wird das N 2 Harakat lang durch die Nase gesprochen, die Zunge berührt dabei den Gaumen nicht."},
+                {"tip": "skrivanje", "bs": "U riječi تَـنْـتَهُوا iza نْ sa sukunom dolazi تَ, pa se i tu N uči kroz nos 2 hareketa, bez dodira jezika o nepce.", "en": "In تَـنْـتَهُوا the نْ with a sukun is followed by تَ, so here too N is recited through the nose for 2 harakas, without the tongue touching the palate.", "de": "Im Wort تَـنْـتَهُوا kommt nach dem نْ mit Sukun ein تَ, deshalb wird auch hier das N 2 Harakat lang durch die Nase gesprochen, ohne dass die Zunge den Gaumen berührt."}
+            ],
             "highlight": "نْ تَـنْـتَ",
             "word": "إِنْ تَـنْـتَهُوا فَهُوَ خَيْرٌ لَـكُمْ  ۖ ",
             "after": null
@@ -105,6 +141,11 @@
         "broj11": [{
                 "id": 11,
                 "url": "./assets/audio/l11/11.mp3",
+                "napomena": [
+                    {"tip": "skrivanje", "bs": "U riječi وَإِنْ iza نْ sa sukunom dolazi تَ, zato se N uči kroz nos 2 hareketa, a jezik ne dotakne nepce.", "en": "In وَإِنْ the نْ with a sukun is followed by تَ, so N is recited through the nose for 2 harakas, without the tongue touching the palate.", "de": "Im Wort وَإِنْ kommt nach dem نْ mit Sukun ein تَ, deshalb wird das N 2 Harakat lang durch die Nase gesprochen, die Zunge berührt dabei den Gaumen nicht."},
+                    {"tip": "skrivanje", "bs": "U riječi وَلَنْ iza نْ sa sukunom dolazi تُ, pa se i tu N uči kroz nos 2 hareketa.", "en": "In وَلَنْ the نْ with a sukun is followed by تُ, so here too N is recited through the nose for 2 harakas.", "de": "Im Wort وَلَنْ kommt nach dem نْ mit Sukun ein تُ, deshalb wird auch hier das N 2 Harakat lang durch die Nase gesprochen."},
+                    {"tip": "skrivanje", "bs": "U ـنْـكُمْ iza نْ sa sukunom dolazi كُ, zato se N ne uči jasno nego kroz nos 2 hareketa.", "en": "In ـنْـكُمْ the نْ with a sukun is followed by كُ, so N is not recited clearly but through the nose for 2 harakas.", "de": "In ـنْـكُمْ kommt nach dem نْ mit Sukun ein كُ, deshalb wird das N nicht deutlich gesprochen, sondern 2 Harakat lang durch die Nase."}
+                ],
                 "highlight": "ـنْـكُ",
                 "word": "ـنْـكُمْ فِـئَتُكُمْ شَيْئًا",
                 "after": null
@@ -112,6 +153,9 @@
             {
                 "id": 112,
                 "url": "./assets/audio/l11/11.mp3",
+                "napomena": [
+                    {"tip": "skrivanje", "bs": "U riječi وَإِنْ iza نْ sa sukunom dolazi تَ, zato se N uči kroz nos 2 hareketa, a jezik ne dotakne nepce.", "en": "In وَإِنْ the نْ with a sukun is followed by تَ, so N is recited through the nose for 2 harakas, without the tongue touching the palate.", "de": "Im Wort وَإِنْ kommt nach dem نْ mit Sukun ein تَ, deshalb wird das N 2 Harakat lang durch die Nase gesprochen, die Zunge berührt dabei den Gaumen nicht."}
+                ],
                 "highlight": "نْ تَ",
                 "word": "وَإِنْ تَعُودُوا",
                 "after": null
@@ -125,6 +169,9 @@
         "broj12": [{
             "id": 12,
             "url": "./assets/audio/l11/12.mp3",
+            "napomena": [
+                {"tip": "skrivanje", "bs": "U riječi وَمَنْ iza نْ sa sukunom dolazi دَ, zato se N uči kroz nos u trajanju od 2 hareketa, a jezik ne dotakne nepce.", "en": "In وَمَنْ the نْ with a sukun is followed by دَ, so N is recited through the nose for 2 harakas, without the tongue touching the palate.", "de": "Im Wort وَمَنْ kommt nach dem نْ mit Sukun ein دَ, deshalb wird das N für die Dauer von 2 Harakat durch die Nase gesprochen, die Zunge berührt dabei den Gaumen nicht."}
+            ],
             "highlight": "نْ دَ",
             "word": "وَمَنْ دَخَلَهُ كَانَ اٰمِنًا ",
             "after": null
@@ -132,6 +179,9 @@
         "broj13": [{
             "id": 13,
             "url": "./assets/audio/l11/13.mp3",
+            "napomena": [
+                {"tip": "skrivanje", "bs": "U riječi أَفَمَنْ iza نْ sa sukunom dolazi زُ, zato se N ne uči jasno nego kroz nos 2 hareketa, a jezik ne dotakne nepce.", "en": "In أَفَمَنْ the نْ with a sukun is followed by زُ, so N is not recited clearly but through the nose for 2 harakas, without the tongue touching the palate.", "de": "Im Wort أَفَمَنْ kommt nach dem نْ mit Sukun ein زُ, deshalb wird das N nicht deutlich gesprochen, sondern 2 Harakat lang durch die Nase, die Zunge berührt dabei den Gaumen nicht."}
+            ],
             "highlight": "نْ زُ",
             "word": "أَفَمَنْ زُيِّـنَ لَهُ سُٓوءُ عَمَلِهِ ",
             "after": null
@@ -139,6 +189,9 @@
         "broj14": [{
             "id": 14,
             "url": "./assets/audio/l11/14.mp3",
+            "napomena": [
+                {"tip": "skrivanje", "bs": "U riječi وَمَنْ iza نْ sa sukunom dolazi صَ, zato se N uči kroz nos 2 hareketa, bez dodira jezika o nepce.", "en": "In وَمَنْ the نْ with a sukun is followed by صَ, so N is recited through the nose for 2 harakas, without the tongue touching the palate.", "de": "Im Wort وَمَنْ kommt nach dem نْ mit Sukun ein صَ, deshalb wird das N 2 Harakat lang durch die Nase gesprochen, ohne dass die Zunge den Gaumen berührt."}
+            ],
             "highlight": "نْ صَ",
             "word": "وَمَنْ صَلَحَ مِنْ اٰبَٓائِهِمْ",
             "after": null
@@ -146,6 +199,9 @@
         "broj15": [{
             "id": 15,
             "url": "./assets/audio/l11/15.mp3",
+            "napomena": [
+                {"tip": "skrivanje", "bs": "U riječi عَنْ iza نْ sa sukunom dolazi صَ, zato se N uči kroz nos u trajanju od 2 hareketa, a jezik ne dotakne nepce.", "en": "In عَنْ the نْ with a sukun is followed by صَ, so N is recited through the nose for 2 harakas, without the tongue touching the palate.", "de": "Im Wort عَنْ kommt nach dem نْ mit Sukun ein صَ, deshalb wird das N für die Dauer von 2 Harakat durch die Nase gesprochen, die Zunge berührt dabei den Gaumen nicht."}
+            ],
             "highlight": "نْ صَ",
             "word": " أَلَّذِينَ هُمْ عَنْ صَلَاتِهِمْ سَاهُونَ",
             "after": null
@@ -153,6 +209,9 @@
         "broj16": [{
             "id": 16,
             "url": "./assets/audio/l11/16.mp3",
+            "napomena": [
+                {"tip": "skrivanje", "bs": "U riječi مِنْ iza نْ sa sukunom dolazi طَـ, zato se N uči kroz nos 2 hareketa, a jezik ne dotakne nepce.", "en": "In مِنْ the نْ with a sukun is followed by طَـ, so N is recited through the nose for 2 harakas, without the tongue touching the palate.", "de": "Im Wort مِنْ kommt nach dem نْ mit Sukun ein طَـ, deshalb wird das N 2 Harakat lang durch die Nase gesprochen, die Zunge berührt dabei den Gaumen nicht."}
+            ],
             "highlight": "نْ طَ",
             "word": "كُلُوا مِنْ طَـيِّـبَاتِ مَا رَزَقْـنَاكُمْ ",
             "after": null

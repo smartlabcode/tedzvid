@@ -1,817 +1,1769 @@
-/* Kenan Babačić - SmartLab.ba */
+/* =========================================================
+   Stilovi sadržaja lekcija (arapski tekst, primjeri, vježbe,
+   tabele, modali, navigacija između lekcija).
+   Globalna tema (boje, fontovi, navigacija) je u theme.scss.
+   ========================================================= */
 
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&subset=latin-ext');
+/* ---------- kartica sa sadržajem lekcije ---------- */
+.lekcija-page {
+  padding-bottom: 24px;
 
-@font-face {
-	font-family: KuranKerimFontHamdullah;
-	font-style: normal;
-	font-weight: 900;
-	src: url('./fonts/KuranKerimFontHamdullah.ttf');
-	/* IE9 Compat Modes */
+  .container {
+    position: relative;
+    z-index: 1;
+    margin-top: -52px;
+    margin-bottom: 72px;
+    padding: 44px 56px 36px;
+    background: #fff;
+    border-radius: 22px;
+    box-shadow: var(--shadow);
+    font-size: 1.25rem;
+    line-height: 1.7;
+    color: var(--ink);
+  }
+
+  /* stari mobilni naslov – naslov je sada u traci iznad */
+  .mobileTop {
+    display: none !important;
+  }
+
+  /* sidra (#lekcija, #vjezba, #tabela, #znakovi) ne smiju ostati pod ljepljivom navigacijom */
+  [id] {
+    scroll-margin-top: 96px;
+  }
+
+  h4 {
+    margin: 0;
+    font-size: 1.15rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--muted);
+
+    strong {
+      font-weight: 500;
+    }
+  }
+
+  h3 {
+    margin: 12px 0 14px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--navy);
+  }
+
+  h2 {
+    margin: 48px 0 0;
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: 2.6rem;
+    letter-spacing: 0.06em;
+    color: var(--navy);
+
+    strong {
+      font-weight: 400;
+    }
+  }
+
+  hr {
+    border: 0;
+    height: 3px;
+    width: 72px;
+    margin: 18px auto 28px;
+    border-radius: 3px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  }
+
+  p {
+    color: var(--ink);
+  }
+
+  u {
+    text-decoration-color: var(--gold);
+    text-decoration-thickness: 2px;
+  }
 }
 
-@font-face {
-	font-family: 'HamdullahMushaf';
-	src: url('./fonts/ShaikhHamdullahMushaf.eot');
-	src: url('./fonts/ShaikhHamdullahMushaf.eot?#iefix')
-			format('embedded-opentype'),
-		url('./fonts/ShaikhHamdullahMushaf.woff2') format('woff2'),
-		url('./fonts/ShaikhHamdullahMushaf.woff') format('woff'),
-		url('./fonts/ShaikhHamdullahMushaf.ttf') format('truetype'),
-		url('./fonts/ShaikhHamdullahMushaf.svg#ShaikhHamdullahMushaf') format('svg');
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
+/* osnovna veličina teksta u primjerima/vježbama – :where() drži specifičnost na nuli,
+   pa arapski (.arapski, .oznaceno, .after) i .bosanski pravila ispod uvijek pobjeđuju */
+:where(.lekcija-page .container, .custom-modal) span {
+  font-size: 1.5rem;
 }
 
-*,
-::after,
-::before {
-	box-sizing: border-box;
+/* ikona za uvećanje (otvara modal) */
+.zoomIcon {
+  width: 36px !important;
+  height: 36px !important;
+  padding: 7px;
+  border-radius: 50%;
+  background: var(--gold-100);
+  color: var(--gold-600);
+  cursor: pointer;
+  transition: background 0.18s ease, color 0.18s ease, transform 0.18s ease;
+
+  &:hover {
+    background: var(--navy);
+    color: #fff;
+    transform: scale(1.05);
+  }
 }
 
-body {
-	// font-family: "Palatino Linotype" !important;
-	//font-size: 1.4rem !important;
-}
-//Desktop
-@media only screen and (min-width: 768px) {
-	.video {
-		margin-top: 3rem;
-		iframe {
-			width: 743px;
-			height: 412px;
-		}
-	}
-}
-//Desktop
-@media only screen and (max-width: 768px) {
-	.video {
-		margin-top: 3rem;
-		iframe {
-			width: 100%;
-			height: 173px;
-		}
-	}
+/* ---------- opis pravila ---------- */
+.opisLekcije {
+  padding: 0.5rem 2.5rem;
+  font-size: 1.35rem;
+  line-height: 1.8;
+
+  strong {
+    color: var(--navy);
+  }
 }
 
-#root {
-	display: grid;
-	grid-template-columns: 1fr;
-	place-items: center center;
-	height: 100vh;
-}
-
+/* ---------- arapski tekst ---------- */
 .underLine {
-	font-family: HamdullahMushaf, serif;
+  font-family: HamdullahMushaf, serif;
 }
 
 span.ne-svira {
-	color: inherit;
+  color: inherit;
 }
 
 .oznaceno {
-	color: red;
+  color: #c8322b;
 }
 
-span.svira {
-	font-family: HamdullahMushaf, serif;
-	/* display: inline-block; */
-	/* border: 1px solid #ddd; */
-	/* padding: 0 .25em; */
-	/* border-radius: .15em; */
-	/* padding-top: .35em; */
-	/* margin-left: .5rem; */
-	color: green;
-	font-weight: 500;
+.rijec-audio {
+  cursor: pointer;
+  outline: none;
+  padding: 0.02em 0.28em;
+  border-radius: 0.35em;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  transition: color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
 
-	.oznaceno {
-		/* color: green; */
-	}
+  &:hover,
+  &:focus-visible {
+    color: var(--gold-600);
+    background-color: var(--gold-100);
+  }
+}
+
+/* Zapis koji ide: pri dnu riječi raste traka napretka (--napredak), zdesna nalijevo kao i učenje.
+   Traka stoji ispod harfova, a ne kao ton preko njih, da čitljivost ostane ista kao i bez nje.
+   `slice` je nužan: uz `clone` bi se kod prelomljene fraze isti napredak iscrtao u svakom redu. */
+span.svira {
+  font-family: HamdullahMushaf, serif;
+  color: #1e8e5a;
+  font-weight: 500;
+  background-color: #e6f4ec;
+  background-image: linear-gradient(rgba(30, 142, 90, 0.85), rgba(30, 142, 90, 0.85)),
+    linear-gradient(rgba(30, 142, 90, 0.25), rgba(30, 142, 90, 0.25));
+  background-repeat: no-repeat;
+  background-size: var(--napredak, 0%) 0.13em, 100% 0.13em;
+  background-position: 100% 100%, 0 100%;
+  -webkit-box-decoration-break: slice;
+  box-decoration-break: slice;
+}
+
+span.pauzirano {
+  color: var(--gold-600);
+  background-color: var(--gold-100);
+  background-image: linear-gradient(rgba(185, 150, 47, 0.9), rgba(185, 150, 47, 0.9)),
+    linear-gradient(rgba(185, 150, 47, 0.28), rgba(185, 150, 47, 0.28));
+  background-repeat: no-repeat;
+  background-size: var(--napredak, 0%) 0.13em, 100% 0.13em;
+  background-position: 100% 100%, 0 100%;
+  -webkit-box-decoration-break: slice;
+  box-decoration-break: slice;
+}
+
+/* ---------- plutajući audio plejer ---------- */
+.now-playing {
+  position: fixed;
+  left: 50%;
+  bottom: 22px;
+  z-index: 1060; /* iznad bootstrap modala */
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: min(580px, calc(100% - 32px));
+  padding: 10px 12px 10px 10px;
+  background: var(--navy-900);
+  background-image: var(--pattern-light);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  box-shadow: 0 18px 44px rgba(8, 34, 56, 0.38);
+  animation: np-in 0.25s ease;
+
+  &__btn {
+    flex: none;
+    width: 46px;
+    height: 46px;
+    border: 0;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.18s ease, color 0.18s ease, transform 0.18s ease;
+
+    &:hover {
+      transform: scale(1.06);
+    }
+
+    &--main {
+      background: var(--gold);
+      color: var(--navy-900);
+
+      &:hover {
+        background: var(--gold-200);
+      }
+    }
+
+    &--close {
+      width: 36px;
+      height: 36px;
+      font-size: 0.85rem;
+      background: rgba(255, 255, 255, 0.08);
+      color: rgba(255, 255, 255, 0.75);
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.18);
+        color: #fff;
+      }
+    }
+  }
+
+  &__body {
+    flex: 1;
+    min-width: 0;
+  }
+
+  &__label {
+    font-family: HamdullahMushaf, serif;
+    font-size: 1.6rem;
+    line-height: 1.35;
+    color: var(--gold-200);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  &__queue {
+    flex: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.72rem;
+    color: rgba(255, 255, 255, 0.8);
+
+    b {
+      font-variant-numeric: tabular-nums;
+      min-width: 3.4em;
+      text-align: center;
+    }
+
+    button {
+      width: 26px;
+      height: 26px;
+      border: 0;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      font-size: 0.65rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      &:hover:not(:disabled) {
+        background: var(--gold);
+        color: var(--navy-900);
+      }
+
+      &:disabled {
+        opacity: 0.35;
+        cursor: default;
+      }
+    }
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__time {
+    flex: none;
+    min-width: 2.8em;
+    font-weight: 500;
+    font-size: 0.72rem;
+    font-variant-numeric: tabular-nums;
+    color: rgba(255, 255, 255, 0.78);
+    text-align: center;
+  }
+
+  &__range {
+    flex: 1;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 6px;
+    margin: 0;
+    border-radius: 3px;
+    background: linear-gradient(90deg, var(--gold) var(--pct, 0%), rgba(255, 255, 255, 0.18) var(--pct, 0%));
+    outline: none;
+    cursor: pointer;
+
+    &:disabled {
+      cursor: default;
+    }
+
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: #fff;
+      border: 2px solid var(--gold);
+    }
+
+    &::-moz-range-thumb {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: #fff;
+      border: 2px solid var(--gold);
+    }
+
+    &::-moz-range-track {
+      background: transparent;
+    }
+  }
+
+  &__err {
+    margin-top: 2px;
+    font-size: 0.72rem;
+    color: #ffb4a8;
+  }
+}
+
+@keyframes np-in {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+body.has-player .lekcija-page {
+  padding-bottom: 120px;
 }
 
 .bosanski {
-	font-size: 1.8rem;
-	padding: 0 0.25rem;
-}
-
-span {
-	font-size: 1.5rem;
+  font-size: 1.8rem;
+  padding: 0 0.25rem;
 }
 
 span.oznaceno,
 span.arapski {
-	font-size: 2.5rem;
+  font-size: 3.2rem;
 }
 
 span.tacka {
-	padding-left: 0.3em;
-	padding-right: 0.3em;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
 }
 
-// .text-center.row{
-//   direction: rtl;
-// }
-
 .rtl {
-	direction: rtl;
+  direction: rtl;
 }
 
 .ltr {
-	direction: ltr;
+  direction: ltr;
 }
 
 span.after {
-	padding-left: 0.3em;
-	padding-right: 0.3em;
-	font-size: 2em;
-	font-family: HamdullahMushaf;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  font-size: 2em;
+  font-family: HamdullahMushaf;
 }
 
 span.arapski {
-	font-family: HamdullahMushaf, serif;
-	//padding: 0 .25em;
-	border-radius: 0.15em;
-	line-height: 3.5rem;
-	// margin-right: 0.2rem;
+  font-family: HamdullahMushaf, serif;
+  border-radius: 0.15em;
+  line-height: 4.6rem;
+}
+
+/* vježba (redovi .mobile-row) – veći arapski nego u primjerima */
+.lekcija-page .mobile-row {
+  span.arapski,
+  span.oznaceno {
+    font-size: 3.7rem;
+  }
+
+  span.arapski {
+    line-height: 5.4rem;
+  }
+
+  span.tacka {
+    font-size: 1.9rem;
+  }
 }
 
 span.arapski-lekcija {
-	font-family: HamdullahMushaf, serif;
-	//padding: 0 .25em;
-	border-radius: 0.15em;
-	font-size: 2rem;
-	font-weight: normal;
+  font-family: HamdullahMushaf, serif;
+  border-radius: 0.15em;
+  font-size: 2.6rem;
+  font-weight: normal;
+  /* veliki inline harf ne smije razvlačiti razmak između redova opisa */
+  line-height: 1;
+  vertical-align: middle;
 }
 
 .text-center.col > span {
-	display: inline-block;
+  display: inline-block;
 }
 
 span.arap-red {
-	font-family: HamdullahMushaf, serif;
-	color: red;
+  font-family: HamdullahMushaf, serif;
+  color: #c8322b;
 }
 
-div.opisLekcije {
-	padding: 0.8rem;
-	padding-left: 4em;
-	padding-right: 4em;
-	font-size: 1.5rem;
-	text-underline-offset: 6px;
+/* ---------- tabele ---------- */
+.lekcija-page,
+.custom-modal {
+  .table-responsive {
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    overflow: hidden;
+    background: #fff;
+  }
 
-	// span.arapski {
-	//   display: inline-flex;
-	// }
+  .table {
+    margin-bottom: 0;
+    border: 0 !important;
+
+    th,
+    td {
+      border: 1px solid var(--line) !important;
+      vertical-align: middle;
+      padding: 0.9rem 1rem;
+    }
+
+    thead th {
+      background: var(--navy);
+      color: #fff;
+      border-color: var(--navy-700) !important;
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+
+      &.text-danger {
+        color: var(--gold-200) !important;
+      }
+    }
+
+    thead.text-danger th {
+      color: var(--gold-200) !important;
+    }
+
+    tbody tr:hover td {
+      background: var(--gold-100);
+    }
+  }
 }
 
-.lekcije-wrapper {
-	border: 20px solid;
-	border-image-slice: 24 33 25 34;
-	border-image-width: 20px 20px 20px 20px;
-	border-image-outset: 0px 0px 0px 0px;
-	border-image-repeat: repeat repeat;
-	border-image-source: url('https://i.imgur.com/t6U68wJ.jpg');
-	padding: 0.5em 1em;
-	position: relative;
-}
-
-footer.mainfooter {
-	padding-top: 3.5em;
-	border-top: 1px solid #ddd;
-	margin-top: 0.5em;
-}
-
-.homearea {
-	font-size: initial;
-
-	a:hover {
-		text-decoration: none;
-	}
-}
-
-.card-body {
-	&:hover {
-		background: #f6f6f6;
-	}
-}
-
-.container {
-	margin-top: 50px;
-	box-shadow: 0px 4px 7px 0px rgba(214, 214, 214, 1);
-	padding: 30px !important;
-	background-color: white !important;
-	// font-family: "Palatino Linotype" !important;
-}
-
-.card-title {
-	color: #ab752f !important;
-}
-
-.card {
-	border: unset !important;
-	height: 100% !important;
-	border-bottom: 1px solid beige !important;
-}
-
-#rijeciAudio {
-	cursor: pointer;
-}
-
-span.imelekcije {
-	float: left;
-	font-size: 27px;
-	font-weight: 400;
-	color: #ab752f;
-	display: inline-block;
-	width: 2em;
-	padding-right: 1rem;
-	margin-right: 1em;
-}
-
-/* MENI */
-nav.mainmenu {
-	margin-bottom: 1em;
-}
-
-ul.mainmenulist {
-	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	list-style-type: none;
-	text-align: center;
-	padding: 0;
-	margin-left: -1em;
-	margin-right: -1em;
-	margin-top: -0.5em;
-	margin-bottom: 0;
-
-	li {
-		background: green;
-		color: white;
-		padding: 0.25em 0;
-
-		&:nth-child(1),
-		&:nth-child(2),
-		&:nth-child(3),
-		&:nth-child(4) {
-			border-right: 1px solid white;
-		}
-
-		&:hover {
-			background: #3ca84b;
-		}
-	}
-}
-
-.table {
-	td {
-		vertical-align: middle;
-	}
-
-	border: 2px solid #777 !important;
-
-	td,
-	th {
-		border: 2px solid #777 !important;
-	}
-}
-
-ul.bottomMenu {
-	list-style-type: none;
-	padding: 0;
-	background: #f2f2f2;
-
-	li {
-		padding: 0.25em;
-
-		&:nth-child(1),
-		&:nth-child(2),
-		&:nth-child(3) {
-			border-right: 1px solid white;
-			border-bottom: 1px solid white;
-		}
-	}
-
-	a.menulink {
-		color: #666;
-	}
-}
-
-.bottomMenuMain {
-	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	position: absolute;
-	width: 100%;
-	z-index: 1;
-	margin-left: -1em;
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-	left: 0;
-	right: 0;
-}
-
-.iconWrapper {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-content: stretch;
-	align-items: flex-start;
-}
-
-/*FRONT PAGE*/
-.wrapper {
-	width: 100%;
-}
-
-/*TOP NAV*/
-.topNav {
-	width: 100%;
-	height: 123px;
-}
-
-.pristupiBtn,
-.videoBtn {
-	position: relative;
-	float: right;
-	top: -51px;
-	width: 108px;
-	height: 30px;
-
-	border-radius: 40px;
-	margin-top: 10px;
-	margin-left: 10px;
-	font-size: 1rem;
-}
-.pristupiBtn {
-	background-color: white;
-	border: 2px solid #ab752f;
-}
-.videoBtn {
-	background-color: #ab752f;
-	color: white;
-	border: none;
-}
-
-.height50px {
-	height: 50px;
-}
-
-h3 {
-	font-size: 17px;
-}
-
-.sectonRight {
-	float: right;
-	width: 60%;
-}
-
+/* ---------- modal (uvećani prikaz) ---------- */
 .modal-dialog {
-	width: 95vw !important;
-	max-width: unset !important;
+  width: 95vw !important;
+  max-width: unset !important;
+}
+
+.modal-content {
+  border: 0;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.modal-header {
+  background: var(--navy);
+  background-image: var(--pattern-light);
+  color: #fff;
+  border-bottom: 0;
+  align-items: center;
+
+  .modal-title {
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    letter-spacing: 0.06em;
+  }
+
+  .close {
+    color: #fff;
+    opacity: 0.85;
+    text-shadow: none;
+
+    &:hover {
+      color: var(--gold-200);
+      opacity: 1;
+    }
+  }
+}
+
+.modal-footer {
+  border-top: 1px solid var(--line);
+
+  .btn-secondary {
+    background: var(--navy);
+    border-color: var(--navy);
+    border-radius: 999px;
+    padding: 0.55rem 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+
+    &:hover {
+      background: var(--navy-700);
+      border-color: var(--navy-700);
+    }
+  }
 }
 
 .custom-modal {
-	zoom: 140%;
-}
+  zoom: 140%;
+  font-size: 1.25rem;
+  line-height: 1.7;
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-	.opisLekcije {
-		font-size: unset !important;
-	}
-
-	.card-body {
-		padding-left: unset !important;
-		padding-right: unset !important;
-	}
-
-	.container {
-		width: 90% !important;
-		padding: 0px !important;
-		margin-bottom: 90px;
-	}
-
-	span.imelekcije {
-		font-size: 38px !important;
-		margin-right: unset !important;
-		margin-left: unset !important;
-	}
-	.pristupiBtn,
-	.videoBtn {
-		position: unset;
-		right: 45px;
-		top: 45px;
-		width: 95px;
-		height: 30px;
-
-		border-radius: 40px;
-		margin-top: 15px;
-		margin-right: 5px;
-		margin-left: unset !important;
-	}
-	.pristupiBtn {
-		background-color: white;
-		border: 2px solid #ab752f;
-	}
-	.videoBtn {
-		background-color: #ab752f;
-		border: none;
-	}
-
-	.card {
-		height: 100% !important;
-	}
-
-	.card-subtitle {
-	}
-
-	.sectonRight {
-		float: left;
-		width: 200px;
-	}
-
-	.col {
-		padding-right: unset !important;
-		padding-left: unset !important;
-	}
-
-	.row {
-		width: 95%;
-		margin: auto !important;
-	}
-}
-
-.lekcijaTop {
-	margin-top: -18px;
-	color: #92623c;
-
-	h2 {
-		font-size: 27px;
-	}
-}
-
-h2 strong {
-	font-size: 27px;
-}
-
-.btnRight {
-	width: 30px;
-	margin-top: 0px;
-	/* left: 0; */
-	float: left;
-	margin-left: 0;
-	/* offset-rotate: reverse; */
-	transform: scaleX(-1);
-}
-
-.mobileTop {
-	display: none;
-}
-
-.mobilefooter {
-	display: none;
-}
-
-.hide {
-	display: none;
-}
-
-@media only screen and (max-width: 600px) {
-	.reorder-basic {
-		width: 100%;
-
-		.col {
-			.after {
-				display: none;
-			}
-		}
-	}
-
-	.reorder-basic-display-after {
-		width: 100%;
-	}
-
-	.reorder {
-		width: 100%;
-
-		.col {
-			// display: flex;
-			// flex-direction: row-reverse !important;
-			// align-items: center;
-			justify-content: flex-start !important;
-
-			// flex-wrap: wrap;
-			span {
-				&:nth-of-type(odd) {
-					text-align: right;
-					width: 55%;
-				}
-
-				&:nth-of-type(even) {
-					width: 40%;
-					margin-left: 10px;
-					text-align: left;
-				}
-			}
-
-			// &>span {
-			//   flex: 0 50%;
-			// }
-
-			.after {
-				display: none;
-			}
-		}
-	}
-
-	body {
-		font-size: 0.9rem !important;
-	}
-
-	span.after {
-		font-size: 1.8rem;
-	}
-
-	span {
-		font-size: 1rem;
-	}
-
-	.zoomIcon {
-		display: none;
-	}
-
-	h4 {
-		font-size: 15px !important;
-	}
-
-	.height50px {
-		display: none;
-	}
-
-	.alignMobile {
-		width: 74%;
-		float: right;
-	}
-
-	.mobileTop {
-		display: unset;
-		margin-top: 15px;
-
-		h2 {
-			font-size: 15px;
-		}
-
-		img {
-			margin: auto;
-		}
-	}
-
-	.mainfooter {
-		display: none;
-	}
-
-	.mobilefooter {
-		display: unset;
-		position: fixed;
-		bottom: 0;
-		left: 0;
-		width: 100%;
-		height: 70px;
-		background-color: #8a552b;
-
-		.mobileNavButtons {
-			position: relative;
-			/* bottom: 10px; */
-			margin-top: 20px !important;
-			justify-content: center;
-		}
-	}
-
-	.mobNavSearch {
-		float: right;
-		margin-top: 28px;
-		margin-right: 10%;
-	}
-
-	.oznaceno,
-	.arapski,
-	.arapski-lekcija {
-		font-size: 1.8rem !important;
-	}
-
-	.mobile-row {
-		display: grid;
-		// flex-direction: row;
-		// flex-wrap: wrap-reverse;
-		// justify-content: center;
-		// align-content: flex-start;
-		// align-items: flex-start;
-		direction: rtl;
-	}
-}
-
-@media only screen and (min-width: 601px) and (max-width: 1000px) {
-	// .mobile-row {
-	//   display: grid !important;
-	//   // flex-direction: row;
-	//   // flex-wrap: wrap-reverse;
-	//   // justify-content: center;
-	//   // align-content: flex-start;
-	//   // align-items: flex-start;
-	//   direction: rtl !important;
-	// }
-	.oznaceno,
-	.arapski,
-	.arapski-lekcija {
-		font-size: 2.2rem !important;
-	}
-}
-
-/* MENI */
-/* nav.mainmenu {
-  position: relative;
-  margin-left: -1em;
-  margin-right: -1.03em;
-  margin-top: -.5em;
-  margin-bottom: 1rem;
-  li.bottommenuitem {
-      background: #f2f2f2 !important;
-      color: #28a745 !important;
-      &:hover {
-        color: green !important;
-        cursor: pointer;
-      }
+  h3 {
+    color: var(--navy);
+    font-weight: 700;
+    font-size: 1.3rem;
   }
-  ul {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    list-style-type: none;
-    padding: 0;
+}
+
+/* ---------- panel vježbe ("mushaf" okvir) ---------- */
+.vjezba-panel {
+  position: relative;
+  margin-top: 48px;
+  padding: 34px 40px 30px;
+  background: linear-gradient(180deg, #fffdf8 0%, #faf5ea 100%);
+  border: 1px solid var(--gold-200);
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(16, 59, 92, 0.06);
+
+  /* unutrašnja zlatna linija */
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 10px;
+    border: 1px solid rgba(185, 150, 47, 0.4);
+    border-radius: 17px;
+    pointer-events: none;
+  }
+
+  /* rozeta na vrhu okvira */
+  &::after {
+    content: '✿';
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 12px;
+    background: #fff;
+    color: var(--gold);
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+
+  .zoomIcon {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    z-index: 1;
+    float: none;
+  }
+
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .mobile-row {
+    row-gap: 6px;
+    padding: 0 8px;
+  }
+
+  /* zlatna oznaka kraja ajeta (۞) i separatori, sama riječ ostaje tamna */
+  .tacka {
+    color: var(--gold-600);
+  }
+
+  .tacka .rijec-audio.ne-svira {
+    color: var(--ink);
+
+    &:hover,
+    &:focus-visible {
+      color: var(--gold-600);
+    }
+  }
+
+  span.after {
+    color: var(--gold-600);
+  }
+}
+
+.vjezba-toolbar {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  margin: -6px 0 22px;
+  padding: 12px 18px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+
+  &__hint {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     margin: 0;
-    background: #f2f2f2;
-    li {
-      background: green;
-      color: white;
-      text-align: center;
-      padding: 0.3em 0;
-      font-size: 1.25rem;
-      border-right: 1px solid white;
-      &:nth-child(5) {
-        border-right: 0;
-      }
+    font-size: 0.92rem;
+    color: var(--muted);
+
+    svg {
+      flex: none;
+      color: var(--gold);
+      font-size: 1.1rem;
+    }
+  }
+}
+
+/* ---------- video lekcija ---------- */
+.lesson-video {
+  margin-top: 40px;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 820px;
+    margin: 0 auto;
+
+    &--two {
+      grid-template-columns: 1fr 1fr;
+      max-width: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .lesson-video__grid--two {
+    grid-template-columns: 1fr;
+    max-width: 820px;
+  }
+}
+
+/* ---------- navigacija između lekcija ---------- */
+.lesson-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 44px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+
+  &__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0.75rem 1.3rem;
+    border-radius: 999px;
+    border: 2px solid var(--navy);
+    color: var(--navy);
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background 0.18s ease, color 0.18s ease, transform 0.18s ease;
+
+    em {
+      font-style: normal;
+    }
+
+    &:hover {
+      background: var(--navy);
+      color: #fff;
+      text-decoration: none;
+      transform: translateY(-2px);
+    }
+
+    &--home {
+      border-color: var(--line);
+      color: var(--gold-600);
+
       &:hover {
-        background: #28a745;
+        background: var(--gold);
+        border-color: var(--gold);
+        color: #fff;
       }
     }
   }
-} */
-
-.reorder-basic {
-	.col {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: center;
-		flex-wrap: wrap;
-	}
 }
 
-.reorder-basic-display-after {
-	.col {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: center;
-		flex-wrap: wrap;
-	}
-}
-
+/* ---------- raspored primjera (funkcionalno, ne mijenjati) ---------- */
+.reorder-basic,
+.reorder-basic-display-after,
 .reorder {
-	.col {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: center;
-		flex-wrap: wrap;
-	}
-}
-
-.footerLanding {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 20px;
-
-	h2 {
-		color: white;
-		font-size: 1.3rem;
-	}
-
-	ul {
-		list-style-type: none;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		padding: 0;
-		margin: 0;
-
-		li {
-			border-radius: 50%;
-			background-color: white;
-			padding: 10px;
-			margin-left: 10px;
-
-			width: 100px;
-			height: 100px;
-			display: flex;
-			align-items: center;
-
-			a {
-				width: 100%;
-
-				img {
-					max-width: 100%;
-					height: auto;
-				}
-			}
-		}
-	}
+  .col {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 
 @media only screen and (min-width: 600px) {
-	.mobile-row {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-content: flex-start;
-		align-items: flex-start;
-		direction: rtl;
-	}
+  .mobile-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: flex-start;
+    direction: rtl;
+  }
 }
 
-.browser-message {
-	font-family: 'Century Gothic', CenturyGothic, Geneva, AppleGothic, sans-serif;
-	border-radius: 10px;
-	padding: 15px 0;
-	background: #f7f8fb;
-	border: 1px solid rgba(0, 0, 0, 0.15);
-	box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.05),
-		0 10px 10px 2px rgba(0, 0, 0, 0.05);
-	font-size: 12px;
-	line-height: 40px;
-	border-top: 1px solid #e4e4e4;
-	position: fixed;
-	z-index: 100;
-	bottom: 10%;
-	right: 2%;
-	margin: auto;
-	max-width: 1040px;
-	display: flex;
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
+  .oznaceno,
+  .arapski,
+  .arapski-lekcija {
+    font-size: 2.8rem !important;
+  }
+
+  span.arapski {
+    line-height: 4rem;
+  }
+
+  .lekcija-page .mobile-row {
+    span.arapski,
+    span.oznaceno {
+      font-size: 3.3rem !important;
+    }
+
+    span.arapski {
+      line-height: 4.8rem;
+    }
+  }
 }
 
-.browser-message img {
-	height: 50px;
-	width: 50px;
-	margin: 0 15px;
-	-ms-grid-row-align: center;
-	align-self: center;
+/* ---------- mobitel ---------- */
+@media only screen and (max-width: 600px) {
+  .lekcija-page {
+    padding-bottom: 96px;
+
+    .container {
+      width: auto;
+      max-width: none;
+      margin: -40px 12px 24px;
+      padding: 24px 14px 20px;
+      border-radius: 18px;
+      font-size: 1rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-top: 32px;
+    }
+
+    h4 {
+      font-size: 1rem;
+    }
+  }
+
+  .opisLekcije {
+    padding: 0.25rem 0.25rem;
+    font-size: 1rem !important;
+  }
+
+  .zoomIcon {
+    display: none;
+  }
+
+  .col {
+    padding-right: unset !important;
+    padding-left: unset !important;
+  }
+
+  .row {
+    width: 95%;
+    margin: auto !important;
+  }
+
+  span.after {
+    font-size: 1.8rem;
+  }
+
+  :where(.lekcija-page .container) span {
+    font-size: 1rem;
+  }
+
+  .oznaceno,
+  .arapski,
+  .arapski-lekcija {
+    font-size: 2.3rem !important;
+  }
+
+  span.arapski {
+    line-height: 3.4rem;
+  }
+
+  .lekcija-page .mobile-row {
+    span.arapski,
+    span.oznaceno {
+      font-size: 2.7rem !important;
+    }
+
+    span.arapski {
+      line-height: 4rem;
+    }
+
+    span.tacka {
+      font-size: 1.3rem;
+    }
+  }
+
+  .mobile-row {
+    display: grid;
+    direction: rtl;
+  }
+
+  .reorder-basic {
+    width: 100%;
+
+    .col .after {
+      display: none;
+    }
+  }
+
+  .reorder-basic-display-after {
+    width: 100%;
+  }
+
+  .reorder {
+    width: 100%;
+
+    .col {
+      justify-content: flex-start !important;
+
+      span {
+        &:nth-of-type(odd) {
+          text-align: right;
+          width: 55%;
+        }
+
+        &:nth-of-type(even) {
+          width: 40%;
+          margin-left: 10px;
+          text-align: left;
+        }
+      }
+
+      .after {
+        display: none;
+      }
+    }
+  }
+
+  .vjezba-panel {
+    margin-top: 32px;
+    padding: 26px 14px 20px;
+    border-radius: 18px;
+
+    &::before {
+      inset: 7px;
+      border-radius: 12px;
+    }
+
+    .mobile-row {
+      padding: 0;
+    }
+  }
+
+  .vjezba-toolbar {
+    border-radius: 18px;
+    padding: 12px 14px;
+    justify-content: center;
+    text-align: center;
+
+    &__hint {
+      font-size: 0.82rem;
+    }
+  }
+
+  .now-playing {
+    bottom: 84px;
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-radius: 22px;
+
+    &__label {
+      font-size: 1.35rem;
+    }
+  }
+
+  body.has-player .lekcija-page {
+    padding-bottom: 200px;
+  }
+
+  /* fiksirana traka: prethodna / sve lekcije / sljedeća */
+  .lesson-nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 40;
+    margin: 0;
+    padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
+    border-top: 0;
+    background: var(--navy-900);
+    background-image: var(--pattern-light);
+    box-shadow: 0 -8px 24px rgba(8, 34, 56, 0.25);
+    justify-content: space-around;
+
+    &__btn {
+      border-color: transparent;
+      color: var(--gold-200);
+      padding: 0.6rem 1rem;
+
+      em {
+        display: none;
+      }
+
+      svg {
+        font-size: 1.4rem;
+      }
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.1);
+        color: #fff;
+        transform: none;
+      }
+
+      &--home {
+        width: 48px;
+        height: 48px;
+        padding: 0;
+        justify-content: center;
+        border-radius: 50%;
+        background: var(--gold);
+        color: var(--navy-900);
+
+        &:hover {
+          background: var(--gold-200);
+          color: var(--navy-900);
+        }
+      }
+    }
+  }
 }
 
-.browser-message span {
-	display: inline-block;
-	line-height: 1.5;
-	padding-right: 16px;
-	border-right: 1px solid rgba(0, 0, 0, 0.1);
+/* ---------- kviz nakon lekcije ---------- */
+.kviz {
+  margin-top: 44px;
+  font-size: 1rem;
+
+  h2 {
+    margin-top: 0;
+  }
+
+  &__card {
+    position: relative;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 32px 36px;
+    background: linear-gradient(180deg, #fffdf8 0%, #faf5ea 100%);
+    border: 1px solid var(--gold-200);
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(16, 59, 92, 0.06);
+  }
+
+  &__intro,
+  &__result {
+    text-align: center;
+
+    h3 {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      letter-spacing: 0.03em;
+      color: var(--navy);
+      margin: 0 0 8px;
+    }
+
+    p {
+      color: var(--muted);
+      max-width: 52ch;
+      margin: 0 auto 10px;
+    }
+  }
+
+  &__icon {
+    width: 72px;
+    height: 72px;
+    margin: 0 auto 16px;
+    border-radius: 50%;
+    background: var(--gold-100);
+    color: var(--gold-600);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__result.is-pass &__icon {
+    background: #e6f4ec;
+    color: #1f6b43;
+  }
+
+  &__result.is-fail &__icon {
+    background: #fbe7e5;
+    color: #9c2f28;
+  }
+
+  &__best {
+    font-weight: 600;
+    color: var(--navy) !important;
+
+    svg {
+      color: var(--green);
+      vertical-align: -2px;
+    }
+  }
+
+  &__note {
+    font-size: 0.9rem;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+
+  &__count {
+    font-size: 0.74rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold-600);
+  }
+
+  &__dots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--line);
+      font-size: 0;
+
+      &.is-now {
+        background: var(--navy);
+        box-shadow: 0 0 0 3px rgba(16, 59, 92, 0.18);
+      }
+
+      &.is-ok {
+        background: var(--green);
+      }
+
+      &.is-bad {
+        background: #c2453c;
+      }
+    }
+
+    &--big {
+      justify-content: center;
+      margin: 14px 0 18px;
+
+      li {
+        width: 30px;
+        height: 30px;
+        font-size: 0.78rem;
+        font-weight: 700;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+  &__text {
+    font-size: 1.18rem;
+    font-weight: 600;
+    line-height: 1.6;
+    color: var(--ink);
+    margin: 0 0 18px;
+  }
+
+  &__opts {
+    display: grid;
+    gap: 10px;
+  }
+
+  &__opt {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 14px;
+    border: 1.5px solid var(--line);
+    background: #fff;
+    color: var(--ink);
+    font: inherit;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: left;
+    cursor: pointer;
+    transition: border-color 0.15s ease, background 0.15s ease, transform 0.15s ease;
+
+    &:hover:not(:disabled) {
+      border-color: var(--gold);
+      transform: translateX(2px);
+    }
+
+    &:focus-visible {
+      outline: 3px solid var(--gold-200);
+      outline-offset: 2px;
+    }
+
+    &:disabled {
+      cursor: default;
+    }
+
+    &.is-selected {
+      border-color: var(--navy);
+      background: #eef4f8;
+
+      .kviz__letter {
+        background: var(--navy);
+        color: #fff;
+      }
+    }
+
+    &.is-correct {
+      border-color: var(--green);
+      background: #e6f4ec;
+
+      .kviz__letter {
+        background: var(--green);
+        color: #fff;
+      }
+    }
+
+    &.is-wrong {
+      border-color: #c2453c;
+      background: #fbe7e5;
+
+      .kviz__letter {
+        background: #c2453c;
+        color: #fff;
+      }
+    }
+  }
+
+  &__letter {
+    flex: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--gold-100);
+    color: var(--gold-600);
+    font-size: 0.8rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* arapski isječak u pitanju/odgovoru */
+  &__ar {
+    font-family: HamdullahMushaf, serif;
+    font-size: 1.7em;
+    line-height: 1;
+    vertical-align: middle;
+    padding: 0 0.15em;
+    unicode-bidi: isolate;
+  }
+
+  &__feedback {
+    margin-top: 16px;
+    padding: 12px 16px;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+
+    &.is-ok {
+      background: #e6f4ec;
+      color: #1f6b43;
+    }
+
+    &.is-bad {
+      background: #fbe7e5;
+      color: #9c2f28;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 22px;
+
+    .btn-t:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      transform: none;
+      box-shadow: none;
+    }
+  }
+
+  &__score {
+    font-family: var(--font-display);
+    font-size: 3rem;
+    line-height: 1;
+    color: var(--navy) !important;
+    margin: 0 0 10px !important;
+
+    b {
+      font-weight: 400;
+      color: var(--gold);
+    }
+  }
+
+  &__save {
+    font-size: 0.88rem;
+
+    &.is-saved {
+      color: #1f6b43 !important;
+    }
+
+    &.is-error {
+      color: #9c2f28 !important;
+    }
+
+    button {
+      border: 0;
+      background: none;
+      color: inherit;
+      font: inherit;
+      font-weight: 700;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  &__guest {
+    margin-top: 10px;
+    padding: 16px;
+    border-radius: 14px;
+    background: #fff;
+    border: 1px dashed var(--gold);
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    > div {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+  }
 }
 
-.browser-message div.close {
-	flex: 1 1 auto;
-	border: none;
-	font-size: 24px;
-	padding: 0 20px 0 16px;
-	position: relative;
-	-ms-grid-row-align: center;
-	align-self: center;
-	color: #919191;
-	transition: color 0.2s;
-	cursor: pointer;
+/* sljedeća lekcija zaključana (traka na dnu lekcije) */
+.lesson-nav__btn.is-locked {
+  border-style: dashed;
+  opacity: 0.75;
 }
 
-.browser-message a.close:hover {
-	color: #795548;
+@media only screen and (max-width: 600px) {
+  .kviz {
+    margin-top: 32px;
+
+    &__card {
+      padding: 22px 14px;
+      border-radius: 18px;
+    }
+
+    &__text {
+      font-size: 1.05rem;
+    }
+
+    &__opt {
+      padding: 10px 12px;
+      gap: 10px;
+    }
+
+    &__ar {
+      font-size: 1.5em;
+    }
+
+    &__intro h3,
+    &__result h3 {
+      font-size: 1.6rem;
+    }
+  }
 }
 
-.browser-message a {
-	display: inline-block;
-	color: red;
-	text-decoration: none;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+/* ---------- završni kviz (100 pitanja) ---------- */
+.kviz {
+  /* traka napretka umjesto tačkica kad je pitanja mnogo */
+  &__bar {
+    flex: 1;
+    min-width: 140px;
+    max-width: 320px;
+    height: 8px;
+    border-radius: 999px;
+    background: var(--line);
+    overflow: hidden;
+
+    span {
+      display: block;
+      height: 100%;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--gold), var(--gold-600));
+      transition: width 0.25s ease;
+    }
+  }
+
+  /* oznaka lekcije uz broj pitanja */
+  &__tag {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 2px 9px;
+    border-radius: 999px;
+    background: var(--gold-100);
+    color: var(--gold-600);
+    font-size: 0.66rem;
+    letter-spacing: 0.1em;
+  }
+
+  &__counts {
+    font-weight: 600;
+    color: var(--navy) !important;
+  }
+
+  /* lekcije za ponavljanje (rezultat završnog kviza) */
+  &__review {
+    margin: 6px auto 16px;
+    padding: 16px;
+    max-width: 640px;
+    border-radius: 14px;
+    background: #fff;
+    border: 1px solid var(--line);
+
+    p {
+      margin: 0 0 10px;
+      font-size: 0.74rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold-600) !important;
+    }
+
+    > div {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+    }
+  }
+
+  &__chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px 6px 6px;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    background: var(--cream);
+    color: var(--navy);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: border-color 0.15s ease, color 0.15s ease;
+
+    b {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: var(--navy);
+      color: #fff;
+      font-size: 0.72rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    small {
+      font-size: 0.68rem;
+      font-weight: 500;
+      text-transform: none;
+      color: #9c2f28;
+    }
+
+    &:hover {
+      border-color: var(--gold);
+      color: var(--gold-600);
+      text-decoration: none;
+    }
+  }
 }
 
-.vjezba-row {
-	margin-top: 1.75rem;
-	margin-bottom: 1.75rem;
+/* sidra unutar lekcije (#lekcija, #vjezba, #video, #kviz …): pri skoku ostaje mjesta za ljepljivu navigaciju */
+#lekcija,
+#tabela,
+#znakovi,
+#vjezba,
+#video,
+#kviz {
+  scroll-margin-top: 96px;
+}
+
+/* ==========================================================================
+   Mobilna aplikacija (Capacitor – iOS / Android)
+   Vrijedi samo kad je <html> označen klasom `is-native` (vidi src/native).
+   Na webu ništa od ovoga se ne primjenjuje.
+   ========================================================================== */
+
+html.is-native {
+  /* sigurne zone: urez (notch), dinamički otok, traka za gestu */
+  --sa-top: env(safe-area-inset-top, 0px);
+  --sa-bottom: env(safe-area-inset-bottom, 0px);
+  --sa-left: env(safe-area-inset-left, 0px);
+  --sa-right: env(safe-area-inset-right, 0px);
+
+  /* WebView se ne smije "rastezati" kao stranica u pregledniku */
+  overscroll-behavior-y: none;
+
+  body {
+    overscroll-behavior-y: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    user-select: none;
+  }
+
+  /* unos teksta ostaje normalan (odabir, kopiranje, kontekstni meni) */
+  input,
+  textarea,
+  [contenteditable='true'] {
+    user-select: text;
+    -webkit-user-select: text;
+    -webkit-touch-callout: default;
+  }
+
+  /* traka navigacije ide ispod ureza */
+  .site-nav__bar {
+    padding-top: var(--sa-top);
+  }
+
+  /* urez sa strane postoji samo u pejzažnoj orijentaciji; tada je .wrap na 24px,
+     pa max() zadržava postojeći razmak i samo ga poveća koliko treba */
+  @media (orientation: landscape) {
+    .wrap {
+      padding-left: max(var(--sa-left), 24px);
+      padding-right: max(var(--sa-right), 24px);
+    }
+  }
+
+  /* mobilni meni preko cijelog ekrana */
+  .site-nav__mobile {
+    padding-top: var(--sa-top);
+    padding-bottom: var(--sa-bottom);
+  }
+
+  /* plutajući audio plejer iznad trake za gestu */
+  .now-playing {
+    bottom: calc(22px + var(--sa-bottom));
+  }
+
+  /* podnožje: zadnji red ne smije pod traku za gestu (osnovno je 26px) */
+  .site-footer {
+    padding-bottom: calc(26px + var(--sa-bottom));
+  }
+
+  /* dok je tastatura otvorena nema smisla držati fiksirane trake
+     (traka lekcije je fiksirana samo do 600px i tamo već sama računa sigurnu zonu) */
+  body.tipkovnica {
+    .now-playing {
+      display: none;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .lesson-nav {
+        display: none;
+      }
+    }
+  }
+
+  /* unutar same aplikacije nema smisla nuditi preuzimanje aplikacije */
+  .store-links {
+    display: none !important;
+  }
+}
+
+/* ---------- oblačić s objašnjenjem uz riječ koja svira (Player/Oblak.js) ---------- */
+.oblak {
+  position: fixed;
+  z-index: 1055; /* iznad bootstrap modala (1050), ispod plutajućeg plejera (1060) */
+  width: max-content;
+  max-width: min(380px, calc(100vw - 16px));
+  padding: 10px 14px 12px;
+  background: #fff;
+  background-image: linear-gradient(180deg, #fffdf8 0%, #fff 60%);
+  color: var(--ink);
+  border: 1px solid var(--gold-200);
+  border-radius: 14px;
+  box-shadow: 0 14px 34px rgba(16, 59, 92, 0.16);
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+  line-height: 1.5;
+  text-align: left;
+  direction: ltr;
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+  animation: oblak-in 0.2s ease;
+
+  /* samo kad tekst ne stane ni iznad ni ispod ajeta */
+  &--skrolabilan {
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    touch-action: pan-y;
+  }
+
+  &--vuce {
+    cursor: grabbing;
+    animation: none;
+    box-shadow: 0 20px 46px rgba(16, 59, 92, 0.24);
+  }
+
+  /* strelica prema istaknutom harfu */
+  &::after {
+    content: '';
+    position: absolute;
+    left: var(--strelica, 50%);
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border: 1px solid var(--gold-200);
+    transform: translateX(-50%) rotate(45deg);
+  }
+
+  &--above {
+    transform-origin: var(--strelica, 50%) 100%;
+
+    &::after {
+      bottom: -7px;
+      border-top: 0;
+      border-left: 0;
+    }
+  }
+
+  &--below {
+    transform-origin: var(--strelica, 50%) 0;
+
+    &::after {
+      top: -7px;
+      background: #fffdf8;
+      border-bottom: 0;
+      border-right: 0;
+    }
+  }
+
+  &--skriven {
+    visibility: hidden;
+    opacity: 0;
+    animation: none;
+  }
+
+  /* odvučen ustranu: strelica bi pokazivala u prazno */
+  &--bez-strelice::after {
+    display: none;
+  }
+
+  &__stavka + &__stavka {
+    margin-top: 9px;
+    padding-top: 9px;
+    border-top: 1px dashed var(--gold-200);
+  }
+
+  &__tip {
+    display: inline-block;
+    margin-bottom: 4px;
+    padding: 2px 9px;
+    border-radius: 999px;
+    font-size: 0.64rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    background: var(--gold-100);
+    color: var(--gold-600);
+
+    /* parovi suprotnosti: tamnoplavo = duže/krupnije, zlatno = kraće/tanje */
+    &--dugo,
+    &--krupno,
+    &--duzina {
+      background: var(--navy);
+      color: #fff;
+    }
+
+    &--kratko,
+    &--tanko,
+    &--stajanje {
+      background: var(--gold-100);
+      color: var(--gold-600);
+      box-shadow: inset 0 0 0 1px var(--gold-200);
+    }
+
+    /* imenovana pravila */
+    &--uklapanje,
+    &--nos,
+    &--odskakanje {
+      background: var(--teal);
+      color: #fff;
+    }
+
+    &--pretvaranje,
+    &--skrivanje {
+      background: var(--purple);
+      color: #fff;
+    }
+
+    &--cisto {
+      background: var(--green);
+      color: #fff;
+    }
+
+    &--napomena {
+      background: var(--cream-2);
+      color: var(--muted);
+    }
+  }
+
+  &__tekst {
+    display: block;
+  }
+
+  &__grupa {
+    white-space: nowrap;
+  }
+
+  /* arapski unutar napomene – mushaf font, malo veći od okolnog teksta */
+  &__ar {
+    display: inline-block;
+    padding: 0 0.12em;
+    font-family: HamdullahMushaf, serif;
+    font-size: 1.6em;
+    line-height: 1;
+    vertical-align: -0.1em;
+    color: var(--navy);
+    unicode-bidi: isolate;
+    white-space: nowrap;
+  }
+}
+
+@keyframes oblak-in {
+  from {
+    opacity: 0;
+    transform: scale(0.94);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .oblak {
+    animation: none;
+  }
+}
+
+/* uski ekran: oblačić je usidren pri dnu, iznad plejera, a vježba dobije prostor
+   ispod sebe da tekst koji se uči može doći iznad njega */
+.oblak--dokiran {
+  position: fixed;
+  left: 8px;
+  right: 8px;
+  bottom: var(--oblak-dno, 12px);
+  width: auto;
+  max-width: none;
+  cursor: default;
+  touch-action: auto;
+
+  &::after {
+    display: none;
+  }
+}
+
+body.ima-oblak .lekcija-page {
+  padding-bottom: calc(var(--oblak-visina, 0px) + var(--oblak-dno, 0px) + 24px);
+}
+
+@media only screen and (max-width: 600px) {
+  .oblak {
+    max-width: calc(100vw - 16px);
+    padding: 9px 12px 10px;
+    font-size: 0.86rem;
+  }
+
+  .oblak--dokiran {
+    max-width: none;
+  }
 }

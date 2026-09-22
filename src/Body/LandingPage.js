@@ -1,520 +1,352 @@
-import React, { useState, useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
-// import { BrowserRouter, Route } from 'react-router-dom';
-import { IconContext } from "react-icons";
-import { AiOutlineCloseCircle } from "react-icons/ai";
-import { FiPhoneCall } from "react-icons/fi";
-import { BsFillPersonFill, BsArrowRight } from "react-icons/bs";
-import { MdEmail } from "react-icons/md";
-import BrowserMessage from "./BrowserMessage";
-import { detect } from "../Helpers/BrowserDetect";
-import { useTranslation } from "react-i18next";
+import React, { useState, useEffect, useRef } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import {
+	FaBookOpen,
+	FaHeadphones,
+	FaPencilAlt,
+	FaVolumeUp,
+	FaGraduationCap,
+	FaMobileAlt,
+	FaSyncAlt,
+	FaUsers,
+	FaMosque,
+	FaUser,
+	FaEnvelope,
+	FaViber,
+	FaArrowRight,
+	FaPaperPlane,
+	FaPlayCircle,
+	FaGooglePlay,
+	FaApple
+} from 'react-icons/fa';
+import SiteNav from './SiteNav';
+import SiteFooter from './SiteFooter';
+import { Ornament, LOGO_SRC } from './Logo';
+import { VideoEmbed } from './LessonVideo';
+import videos from '../Data/videos.json';
+import { APP_LINKS } from './SiteFooter';
+import { useUI } from '../i18n/ui';
 
-import LanguageSwitcher from "../Components/Dropdown";
+/* Ikone i boje su iste za sve jezike; naslovi i opisi dolaze iz i18n/ui.js */
+const FEATURE_STYLE = [
+	{ icon: <FaBookOpen />, tone: 'navy' },
+	{ icon: <FaVolumeUp />, tone: 'green' },
+	{ icon: <FaGraduationCap />, tone: 'purple' },
+	{ icon: <FaMobileAlt />, tone: 'teal' },
+	{ icon: <FaSyncAlt />, tone: 'gold' }
+];
 
-function LandingPage(props) {
-  const { i18n } = useTranslation();
-  const { t } = useTranslation();
+const BENEFIT_STYLE = [
+	{ icon: <FaBookOpen />, tone: 'navy' },
+	{ icon: <FaHeadphones />, tone: 'green' },
+	{ icon: <FaPlayCircle />, tone: 'gold' },
+	{ icon: <FaUsers />, tone: 'purple' },
+	{ icon: <FaMosque />, tone: 'teal' }
+];
 
-  function handleChangeLanguage(event) {
-    i18n.changeLanguage(event.target.value);
-  }
-  const [isHidden, setIsHidden] = useState(true);
-  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
-  const [showErrorMessage, setShowErrorMessage] = useState(false);
-  const [fullName, setFullName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
-  const [message, setMessage] = useState("");
-  const timerToClearSomewhere = useRef(null); //now you can pass timer to another component
-  const [browserVersion, setBrowserVersion] = useState("");
-  const [browser, setBrowser] = useState("");
+function scrollToHash(hash) {
+	const id = (hash || '').replace('#', '');
+	if (!id) return;
+	const el = document.getElementById(id);
+	if (el) {
+		const top = el.getBoundingClientRect().top + window.pageYOffset - 90;
+		window.scrollTo({ top, behavior: 'smooth' });
+	}
+}
 
-  useEffect(() => {
-    const [browser, version] = detect().split(" ");
-    setBrowser(browser);
-    setBrowserVersion(version);
-    return () => clearTimeout(timerToClearSomewhere.current);
-  }, []);
+function LandingPage() {
+	const ui = useUI();
+	const [ showSuccessMessage, setShowSuccessMessage ] = useState(false);
+	const [ showErrorMessage, setShowErrorMessage ] = useState(false);
+	const [ fullName, setFullName ] = useState('');
+	const [ email, setEmail ] = useState('');
+	const [ phone, setPhone ] = useState('');
+	const [ message, setMessage ] = useState('');
+	const timer = useRef(null);
+	const location = useLocation();
 
-  const toggleIsHiddenHandler = () => {
-    setIsHidden(!isHidden);
-  };
+	useEffect(() => () => clearTimeout(timer.current), []);
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const data = {
-      "Ime i Prezime": fullName,
-      Email: email,
-      "Broj Telefona": phone,
-      Poruka: message,
-    };
-    window.Pageclip.send(
-      "wRH1bp6IBZe5paTzYnZGFFEt4NhsZmh9",
-      "default",
-      data,
-      function (error, response) {
-        // console.log('saved?', !!error, '; response:', error || response);
-        if (!error) {
-          setShowSuccessMessage(true);
-          timerToClearSomewhere.current = setTimeout(
-            () => setShowSuccessMessage(false),
-            3000
-          );
-        } else {
-          setShowErrorMessage(true);
-          timerToClearSomewhere.current = setTimeout(() => {
-            setShowErrorMessage(false);
-          }, 3000);
-        }
-        setFullName("");
-        setEmail("");
-        setPhone("");
-        setMessage("");
-      }
-    );
-  };
-  return (
-    <React.Fragment>
-      <div className="wrapper">
-        <div className="topNav">
-          <div className="logoNavBox">
-            <Link to="/">
-              <img
-                className="logoUrl"
-                src={process.env.PUBLIC_URL + "/assets/svg/logoUrl.png"}
-                alt="logo"
-              />
-            </Link>
-          </div>
-          <div className="nav">
-            <ul>
-              <a href="#kontakt">
-                <li>{t("kontakt")}</li>
-              </a>
-              <a href="#printano">
-                <li>{t("printizd")}</li>
-              </a>
-              <a href="#o-nama">
-                <li>{t("onama")}</li>
-              </a>
-              <a
-                href="https://sufara.ba/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <li>SUFARA.BA</li>
-              </a>
-              <Link to={"/lekcije"}>
-                <li className="selectedBtn">{t("lekcije")}</li>
-              </Link>
-              <div className="languageSwitch">
-                <LanguageSwitcher
-                  onChange={handleChangeLanguage}
-                  value={i18n.language}
-                />
-              </div>
+	useEffect(
+		() => {
+			if (location.hash) {
+				// sačekaj da se sadržaj iscrta
+				const t = setTimeout(() => scrollToHash(location.hash), 60);
+				return () => clearTimeout(t);
+			}
+			window.scrollTo(0, 0);
+		},
+		[ location.hash ]
+	);
 
-              {/*
-								<select onChange={handleChangeLanguage} value={i18n.language} className='selectorItem' >
-								<option value="bs">Bosanski</option>
-								<option value="en">English</option>
-								</select>
-							*/}
-            </ul>
-          </div>
-        </div>
+	const handleSubmit = (event) => {
+		event.preventDefault();
+		const data = { 'Ime i Prezime': fullName, Email: email, 'Broj Telefona': phone, Poruka: message };
+		if (!window.Pageclip) {
+			setShowErrorMessage(true);
+			timer.current = setTimeout(() => setShowErrorMessage(false), 4000);
+			return;
+		}
+		window.Pageclip.send('wRH1bp6IBZe5paTzYnZGFFEt4NhsZmh9', 'default', data, function(error) {
+			if (!error) {
+				setShowSuccessMessage(true);
+				timer.current = setTimeout(() => setShowSuccessMessage(false), 4000);
+			} else {
+				setShowErrorMessage(true);
+				timer.current = setTimeout(() => setShowErrorMessage(false), 4000);
+			}
+			setFullName('');
+			setEmail('');
+			setPhone('');
+			setMessage('');
+		});
+	};
 
-        <div className="topMobileNav">
-          <img
-            className="hamburger"
-            src={process.env.PUBLIC_URL + "/assets/svg/hamburger.svg"}
-            alt="hamburger menu icon"
-            onClick={toggleIsHiddenHandler}
-          />
+	return (
+		<React.Fragment>
+			<SiteNav active="home" />
 
-          <Link to={"/"}>
-            <img
-              className="mobileLogo"
-              src={process.env.PUBLIC_URL + "/assets/svg/mobileLogo.png"}
-              alt="mobile logo"
-            />
-          </Link>
-          <div>
-            <Link to={"/lekcije"}>
-              <BsArrowRight size={32} className="mobNavArrow" />
-            </Link>
-          </div>
-        </div>
-        <div className={isHidden ? "hide" : "fullMenu"}>
-          <h3 className="closeBTN" onClick={toggleIsHiddenHandler}>
-            <AiOutlineCloseCircle />
-          </h3>
-          <center>
-            <ul>
-              <Link to={"/lekcije"}>
-                <li className="selectedBtn">{t("lekcije")}</li>
-              </Link>
-              <a href="#o-nama" onClick={toggleIsHiddenHandler}>
-                <li>{t("onama")}</li>
-              </a>
-              <a href="#printano" onClick={toggleIsHiddenHandler}>
-                <li>{t("printizd")}</li>
-              </a>
-
-              <a href="#kontakt" onClick={toggleIsHiddenHandler}>
-                <li>{t("kontakt")}</li>
-              </a>
-              <a
-                href="https://sufara.ba/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <li>SUFARA.BA</li>
-              </a>
-              <div
-                className="languageSwitchFullMenu"
-                style={{ width: "100px", marginTop: "20px" }}
-              >
-                <LanguageSwitcher
-                  onChange={handleChangeLanguage}
-                  value={i18n.language}
-                />
-              </div>
-            </ul>
-          </center>
-        </div>
-
-        <div className="innerWrapper">
-          {/* <img
-						className='quranbg'
-						src={process.env.PUBLIC_URL + '/assets/svg/quranbg.svg'}
-						alt='quran background'
-					/> */}
-          <div className="sectionOne">
-            {/* <div className='left'>
-							<h2>
-								<b>Tedžvid.ba</b>
-							</h2>
-							<p>Priručnik za učenje tedžvidskih pravila</p>
-
-							<Link to={'/lekcije'}>
-								<button type='submit' className='contactBTN btn-lekcije'>
-									LEKCIJE
-								</button>
-							</Link>
+			<main>
+				{/* ---------- HERO ---------- */}
+				<section className="hero">
+					<div className="hero__glow" aria-hidden="true" />
+					<div className="wrap hero__grid">
+						<div className="hero__text">
+							{/* na mobitelu: naslovni blok → mockup → ornament → ostatak teksta (display: contents + order) */}
+							<div className="hero__head">
+								<p className="eyebrow">{ui.heroEyebrow}</p>
+								<h1 className="h-display">{ui.heroTitle}</h1>
+								<p className="hero__sub">{ui.heroSub}</p>
+							</div>
+							<Ornament />
+							<div className="hero__body">
+								<p className="hero__lead">{ui.heroLead}</p>
+								<div className="hero__cta">
+									<Link to="/lekcije" className="btn-t btn-t--gold">
+										{ui.heroCtaStart} <FaArrowRight />
+									</Link>
+									<Link to="/#o-nama" className="btn-t btn-t--outline">
+										{ui.heroCtaMore}
+									</Link>
+								</div>
+								<div className="store-links">
+									<span className="store-links__label">{ui.storeIntro}</span>
+									<a className="store-badge" href={APP_LINKS.android} target="_blank" rel="noopener noreferrer">
+										<FaGooglePlay />
+										<span>
+											<small>{ui.storeGet}</small>
+											<b>Google Play</b>
+										</span>
+									</a>
+									<a className="store-badge" href={APP_LINKS.ios} target="_blank" rel="noopener noreferrer">
+										<FaApple />
+										<span>
+											<small>{ui.storeGet}</small>
+											<b>App Store</b>
+										</span>
+									</a>
+								</div>
+							</div>
 						</div>
 
-						<div className='right'>
-							<img
-								className='quran'
-								src={process.env.PUBLIC_URL + '/assets/svg/quran03.png'}
-								alt='Quran'
-							/>
-						</div> */}
-            <div className="title">
-              <h1>Tedžvid.ba</h1>
-              <p>{t("appTitle")}</p>
-            </div>
-            <div className="headerImage">
-              <img
-                className="quran"
-                src={process.env.PUBLIC_URL + "/assets/svg/quran03.png"}
-                alt="Quran"
-              />
-            </div>
-            <div className="actionsBtn">
-              <Link to={"/lekcije"}>
-                <button type="submit" className="btn-lekcije">
-                  {t("lekcije")}
-                </button>
-              </Link>
-            </div>
-            <div className="download-section">
-              <p>{t("appAvailableOn")}</p>
-              <div className="download-icons">
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.tedzvidba.app&hl=en&gl=US"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    className="android"
-                    src={process.env.PUBLIC_URL + "/assets/svg/androidIcon.svg"}
-                    alt="Android aplikacija"
-                  />
-                </a>
-                <a
-                  href="https://apps.apple.com/rs/app/tedzvid-ba/id1561588495"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    className="ios"
-                    src={process.env.PUBLIC_URL + "/assets/svg/iosIcon.svg"}
-                    alt="iOS Aplikacija"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-          <center>
-            <div className="description" id="o-nama">
-              <img
-                className="quranbg"
-                src={process.env.PUBLIC_URL + "/assets/svg/quranbg.svg"}
-                alt="quran background"
-              />
-              <p dangerouslySetInnerHTML={{ __html: t("aboutUsContent") }} />
-              <div className="video">
-                <iframe
-                  src="https://www.youtube.com/embed/2Yk_8zotx_8"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen="true"
-                  webkitallowfullscreen="true"
-                  mozallowfullscreen="true"
-                ></iframe>
-              </div>
-            </div>
-          </center>
-          <div className="sectionTwo" id="printano">
-            <div className="book">
-              <img
-                className="bookImg"
-                src={process.env.PUBLIC_URL + "/assets/svg/book.png"}
-                alt="Book"
-              />
-            </div>
-            <IconContext.Provider
-              value={{ color: "white", className: "global-className-name" }}
-            >
-              <div className="bookInfo">
-                <b>
-                  <h2>{t("printedEdition")}</h2>
-                </b>
-                <br />
-                <h6>{t("printedEditionInfo")}</h6>
-                <br />
-                <div className="iconWrapper">
-                  <div className="firstRow">
-                    <div className="iconInfo">
-                      <div className="iconbg">
-                        <BsFillPersonFill size={32} />
-                      </div>
+						<div className="hero__visual">
+							<div className="mock">
+								<div className="mock__bar" aria-hidden="true">
+									<i />
+									<i />
+									<i />
+								</div>
+								<div className="mock__screen">
+									<img className="mock__logo" src={LOGO_SRC} alt="" aria-hidden="true" />
+									<h2 className="mock__title">{ui.mockTitle}</h2>
+									<div className="mock__subtitle">{ui.mockSubtitle}</div>
+									<p className="mock__arabic" lang="ar">
+										وَرَتِّلِ الْقُرْاٰنَ تَرْت۪يلًا
+									</p>
+								</div>
+								<div className="mock__tiles">
+									<Link to="/lekcije" className="mock__tile">
+										<FaBookOpen /> {ui.mockRules}
+									</Link>
+									<Link to="/lekcije" className="mock__tile">
+										<FaHeadphones /> {ui.mockAudio}
+									</Link>
+									<Link to="/lekcija1#video" className="mock__tile">
+										<FaPlayCircle /> {ui.mockVideo}
+									</Link>
+									<Link to="/lekcija1#vjezba" className="mock__tile">
+										<FaPencilAlt /> {ui.mockVjezbe}
+									</Link>
+								</div>
+							</div>
+							<div className="hero__badge">{ui.heroBadge}</div>
+						</div>
+					</div>
+				</section>
 
-                      <p>mr. Sejid ef. Strika</p>
-                    </div>
-                    <div className="iconInfo">
-                      <a href="mailto:tedzvidba@gmail.com">
-                        <div className="iconbg">
-                          <MdEmail size={32} />
-                        </div>
-                      </a>
-                      <p>tedzvidba@gmail.com</p>
-                    </div>
-                  </div>
+				{/* ---------- ŠTA ĆETE PRONAĆI ---------- */}
+				<section className="features">
+					<div className="wrap">
+						<p className="eyebrow">{ui.featEyebrow}</p>
+						<h2 className="h-section">{ui.featTitle}</h2>
+						<Ornament className="ornament--center" />
+						<div className="features__grid">
+							{ui.features.map((f, i) => (
+								<div className="feature" key={f.title}>
+									<span className={'icon-circle icon-circle--' + FEATURE_STYLE[i].tone}>
+										{FEATURE_STYLE[i].icon}
+									</span>
+									<h4>{f.title}</h4>
+									<p>{f.text}</p>
+								</div>
+							))}
+						</div>
+					</div>
+				</section>
 
-                  <div className="iconInfo">
-                    <a href="viber://chat?number=0038761617606">
-                      <div className="iconbg">
-                        <FiPhoneCall size={32} />
-                      </div>
-                    </a>
-                    <p>+38761 617 606</p>
-                  </div>
-                </div>
-              </div>
-            </IconContext.Provider>
-          </div>
+				{/* ---------- O NAMA ---------- */}
+				<section className="about" id="o-nama">
+					<div className="wrap about__grid">
+						<div>
+							<p className="eyebrow">{ui.aboutEyebrow}</p>
+							<h2 className="h-section">{ui.aboutTitle}</h2>
+							<Ornament light />
+							<p>{ui.aboutP1}</p>
+							<p>{ui.aboutP2}</p>
+							<p>{ui.aboutP3}</p>
+							<blockquote className="quote">
+								<p>{ui.quoteText}</p>
+								<cite>{ui.quoteCite}</cite>
+							</blockquote>
+						</div>
+						<div className="benefits">
+							{ui.benefits.map((b, i) => (
+								<div className="benefit" key={b.title}>
+									<span className={'icon-circle icon-circle--sm icon-circle--' + BENEFIT_STYLE[i].tone}>
+										{BENEFIT_STYLE[i].icon}
+									</span>
+									<div>
+										<h5>{b.title}</h5>
+										<p>{b.text}</p>
+									</div>
+								</div>
+							))}
+						</div>
+					</div>
+					<div className="wrap about__video">
+						<p className="eyebrow">{ui.aboutVideoEyebrow}</p>
+						<h3>{ui.aboutVideoTitle}</h3>
+						<VideoEmbed video={videos.about} title={ui.aboutVideoAlt} />
+					</div>
+				</section>
 
-          <div className="sectionThree" id="kontakt">
-            <center>
-              <h2>{t("contact")}</h2>
-              <br />
-              <p>{t("contactInfo")}</p>
+				{/* ---------- PRINTANO IZDANJE ---------- */}
+				<section className="print" id="printano">
+					<div className="wrap print__grid">
+						<div className="print__book">
+							<img src={process.env.PUBLIC_URL + '/assets/svg/book.png'} alt={ui.printAlt} />
+						</div>
+						<div className="print__text">
+							<p className="eyebrow">{ui.printEyebrow}</p>
+							<h2 className="h-section">{ui.printTitle}</h2>
+							<Ornament />
+							<p>{ui.printText}</p>
+							<div className="chips">
+								<span className="chip">
+									<span className="icon-circle icon-circle--navy">
+										<FaUser />
+									</span>
+									{ui.author}
+								</span>
+								<a className="chip" href="mailto:sejidstrika@tedzvid.ba">
+									<span className="icon-circle icon-circle--teal">
+										<FaEnvelope />
+									</span>
+									sejidstrika@tedzvid.ba
+								</a>
+								<a className="chip" href="viber://chat?number=0038761617606">
+									<span className="icon-circle icon-circle--purple">
+										<FaViber />
+									</span>
+									+387 61 617 606
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
 
-              <form onSubmit={handleSubmit}>
-                <input
-                  type="text"
-                  placeholder={t("nameSurname")}
-                  name="ime i prezime"
-                  value={fullName}
-                  onChange={(e) => {
-                    setFullName(e.target.value);
-                  }}
-                  required
-                />
-                <input
-                  type="email"
-                  placeholder={t("email")}
-                  name="email"
-                  id=""
-                  required
-                  value={email}
-                  onChange={(e) => {
-                    setEmail(e.target.value);
-                  }}
-                />
-                <input
-                  type="tel"
-                  placeholder={t("phoneNumber")}
-                  name="broj telefona"
-                  id=""
-                  value={phone}
-                  onChange={(e) => {
-                    setPhone(e.target.value);
-                  }}
-                />
-                <textarea
-                  className="textInput"
-                  placeholder={t("enterMessage")}
-                  type="text"
-                  name="poruka"
-                  id=""
-                  required
-                  value={message}
-                  onChange={(e) => {
-                    setMessage(e.target.value);
-                  }}
-                />
-                <div
-                  className={showSuccessMessage ? "success_message" : "hide"}
-                >
-                  <span
-                    className="closebtn"
-                    onClick={() => setShowSuccessMessage(false)}
-                  >
-                    &times;
-                  </span>
-                  {t("sendS")}
-                </div>
-                <div className={showErrorMessage ? "error_message" : "hide"}>
-                  <span
-                    className="closebtn"
-                    onClick={() => setShowErrorMessage(false)}
-                  >
-                    &times;
-                  </span>
-                  {t("sendF")}
-                </div>
-                <button
-                  type="submit"
-                  className="pageclip-form__submit contactBTN "
-                >
-                  {t("send")}
-                </button>
-              </form>
-            </center>
-          </div>
-        </div>
-        <footer className="footerLandingNew">
-          <div className="innerFooter">
-            <div className="footerLogo">
-              <Link to="/">
-                <img
-                  className="logoUrl"
-                  src={process.env.PUBLIC_URL + "/assets/svg/logoUrl.png"}
-                  alt="logo"
-                />
-              </Link>
-            </div>
-            <div className="footerInfo">
-              <div className="footerLinks">
-                <div className="footerNav">
-                  <ul>
-                    <a href="#kontakt">
-                      <li>{t("kontakt")}</li>
-                    </a>
-                    <a href="#printano">
-                      <li>{t("printizd")}</li>
-                    </a>
-                    <a href="#o-nama">
-                      <li>{t("onama")}</li>
-                    </a>
-                    <a
-                      href="https://sufara.ba/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <li>Sufara.ba</li>
-                    </a>
-                  </ul>
-                </div>
-                <div className="footerPartners">
-                  <p>{t("partners")}</p>
-                  <ul>
-                    <li>
-                      <a
-                        href="https://imtec.ba/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <img
-                          className="imtec-logo"
-                          src={
-                            process.env.PUBLIC_URL +
-                            "/assets/svg/imtec_logo.png"
-                          }
-                          alt=""
-                        />
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://smartlab.ba/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <img
-                          className="smartlab-logo"
-                          src={
-                            process.env.PUBLIC_URL +
-                            "/assets/svg/smartlab_logo.svg"
-                          }
-                          alt=""
-                        />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div className="copyright">Copyright © 2021 | tedzvid.ba</div>
-            </div>
-          </div>
-          {/* <h2>Prijatelji projekta:</h2>
-					<ul>
-						<li>
-							<a
-								href='https://imtec.ba/'
-								target='_blank'
-								rel='noopener noreferrer'>
-								<img
-									src={process.env.PUBLIC_URL + '/assets/svg/imtec_logo.png'}
-									alt=''
+				{/* ---------- KONTAKT ---------- */}
+				<section className="contact" id="kontakt">
+					<div className="wrap">
+						<div className="contact__card">
+							<p className="eyebrow">{ui.contactEyebrow}</p>
+							<h2 className="h-section">{ui.contactTitle}</h2>
+							<Ornament className="ornament--center" />
+							<p>{ui.contactText}</p>
+
+							<form className="contact__form" onSubmit={handleSubmit}>
+								<input
+									className="field"
+									type="text"
+									placeholder={ui.fieldName}
+									name="ime i prezime"
+									value={fullName}
+									onChange={(e) => setFullName(e.target.value)}
+									required
 								/>
-							</a>
-						</li>
-						<li>
-							<a
-								href='https://smartlab.ba/'
-								target='_blank'
-								rel='noopener noreferrer'>
-								<img
-									src={process.env.PUBLIC_URL + '/assets/svg/smartlab_logo.svg'}
-									alt=''
+								<input
+									className="field"
+									type="email"
+									placeholder={ui.fieldEmail}
+									name="email"
+									required
+									value={email}
+									onChange={(e) => setEmail(e.target.value)}
 								/>
-							</a>
-						</li>
-					</ul> */}
-        </footer>
-        <BrowserMessage browser={browser} browserVersion={browserVersion} />
-      </div>
-    </React.Fragment>
-  );
+								<input
+									className="field span-2"
+									type="tel"
+									placeholder={ui.fieldPhone}
+									name="broj telefona"
+									value={phone}
+									onChange={(e) => setPhone(e.target.value)}
+								/>
+								<textarea
+									className="field span-2"
+									placeholder={ui.fieldMessage}
+									name="poruka"
+									required
+									value={message}
+									onChange={(e) => setMessage(e.target.value)}
+								/>
+								{showSuccessMessage && (
+									<div className="notice notice--ok" role="status">
+										<span>{ui.formOk}</span>
+										<button type="button" aria-label={ui.formClose} onClick={() => setShowSuccessMessage(false)}>
+											&times;
+										</button>
+									</div>
+								)}
+								{showErrorMessage && (
+									<div className="notice notice--err" role="alert">
+										<span>{ui.formErr}</span>
+										<button type="button" aria-label={ui.formClose} onClick={() => setShowErrorMessage(false)}>
+											&times;
+										</button>
+									</div>
+								)}
+								<button type="submit" className="btn-t btn-t--navy span-2 pageclip-form__submit">
+									<FaPaperPlane /> {ui.formSend}
+								</button>
+							</form>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<SiteFooter />
+		</React.Fragment>
+	);
 }
-// function closeMobileNav() {
-//     document.getElementsByClassName("fullMenu")[0].style.display = "none";
-// }
+
 export default LandingPage;

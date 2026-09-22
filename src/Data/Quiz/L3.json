@@ -1,0 +1,115 @@
+{
+  "lekcija": 3,
+  "pitanja": [
+    {
+      "q": { "bs": "Šta znači lafzatullah?", "en": "What does lafdhatullah mean?", "de": "Was bedeutet Lafdhatullah?" },
+      "opcije": [
+        { "bs": "Izgovaranje zamjenice HU", "en": "Pronouncing the pronoun HU", "de": "Das Pronomen HU aussprechen" },
+        { "bs": "Stajanje prilikom učenja", "en": "Stopping during recitation", "de": "Anhalten beim Lesen" },
+        { "bs": "Uklapanje istih harfova", "en": "Merging identical letters", "de": "Gleiche Buchstaben verschmelzen" },
+        { "bs": "Izgovaranje riječi Allah (اللّٰه)", "en": "Pronouncing the word Allah (اللّٰه)", "de": "Das Wort Allah (اللّٰه) aussprechen" }
+      ],
+      "tacno": 3,
+      "objasnjenje": { "bs": "Lafzatullah je pravilo o tome kako se izgovara riječ Allah (اللّٰه).", "en": "Lafdhatullah is the rule about how the word Allah (اللّٰه) is pronounced.", "de": "Lafdhatullah ist die Regel darüber, wie das Wort Allah (اللّٰه) ausgesprochen wird." }
+    },
+    {
+      "q": { "bs": "Kada se riječ Allah (اللّٰه) uči krupno?", "en": "When is the word Allah (اللّٰه) recited heavy?", "de": "Wann wird das Wort Allah (اللّٰه) dick gesprochen?" },
+      "opcije": [
+        { "bs": "Kada prije nje dođe vokal I", "en": "When it is preceded by the vowel I", "de": "Wenn davor der Vokal I steht" },
+        { "bs": "Kada prije nje dođe vokal E ili U", "en": "When it is preceded by the vowel A or U", "de": "Wenn davor der Vokal A oder U steht" },
+        { "bs": "Kada prije nje dođe sukun", "en": "When it is preceded by a sukun", "de": "Wenn davor ein Sukun steht" },
+        { "bs": "Kada je na kraju ajeta", "en": "When it is at the end of a verse", "de": "Wenn es am Ende eines Verses steht" }
+      ],
+      "tacno": 1,
+      "objasnjenje": { "bs": "Poslije vokala E ili U riječ Allah se uči krupno, npr. وَاللّٰهِ, رَسُولُ اللّٰهِ.", "en": "After the vowel A or U the word Allah is recited heavy, e.g. وَاللّٰهِ, رَسُولُ اللّٰهِ.", "de": "Nach dem Vokal A oder U wird das Wort Allah dick gesprochen, z. B. وَاللّٰهِ, رَسُولُ اللّٰهِ." }
+    },
+    {
+      "q": { "bs": "Kada se riječ Allah (اللّٰه) uči tanko?", "en": "When is the word Allah (اللّٰه) recited light?", "de": "Wann wird das Wort Allah (اللّٰه) dünn gesprochen?" },
+      "opcije": [
+        { "bs": "Kada prije nje dođe vokal I", "en": "When it is preceded by the vowel I", "de": "Wenn davor der Vokal I steht" },
+        { "bs": "Kada prije nje dođe vokal E", "en": "When it is preceded by the vowel A", "de": "Wenn davor der Vokal A steht" },
+        { "bs": "Kada prije nje dođe vokal U", "en": "When it is preceded by the vowel U", "de": "Wenn davor der Vokal U steht" },
+        { "bs": "Kada prije nje dođe tenvin", "en": "When it is preceded by a tanween", "de": "Wenn davor ein Tanwin steht" }
+      ],
+      "tacno": 0,
+      "objasnjenje": { "bs": "Poslije vokala I riječ Allah se uči tanko, npr. بِسْمِ اللّٰهِ.", "en": "After the vowel I the word Allah is recited light, e.g. بِسْمِ اللّٰهِ.", "de": "Nach dem Vokal I wird das Wort Allah dünn gesprochen, z. B. بِسْمِ اللّٰهِ." }
+    },
+    {
+      "q": { "bs": "Kako se uči riječ Allah u بِسْمِ اللّٰهِ?", "en": "How is the word Allah recited in بِسْمِ اللّٰهِ?", "de": "Wie wird das Wort Allah in بِسْمِ اللّٰهِ gesprochen?" },
+      "opcije": [
+        { "bs": "Krupno, jer prije nje dođe vokal E", "en": "Heavy, because it is preceded by the vowel A", "de": "Dick, weil davor der Vokal A steht" },
+        { "bs": "Krupno, jer prije nje dođe vokal U", "en": "Heavy, because it is preceded by the vowel U", "de": "Dick, weil davor der Vokal U steht" },
+        { "bs": "Tanko, jer prije nje dođe vokal I", "en": "Light, because it is preceded by the vowel I", "de": "Dünn, weil davor der Vokal I steht" },
+        { "bs": "Tanko, jer prije nje dođe sukun", "en": "Light, because it is preceded by a sukun", "de": "Dünn, weil davor ein Sukun steht" }
+      ],
+      "tacno": 2,
+      "objasnjenje": { "bs": "U بِسْمِ اللّٰهِ prije riječi Allah je vokal I, pa se uči tanko.", "en": "In بِسْمِ اللّٰهِ the word Allah is preceded by the vowel I, so it is recited light.", "de": "In بِسْمِ اللّٰهِ steht vor dem Wort Allah der Vokal I, deshalb wird es dünn gesprochen." }
+    },
+    {
+      "q": { "bs": "Kako se uči riječ Allah u رَسُولُ اللّٰهِ?", "en": "How is the word Allah recited in رَسُولُ اللّٰهِ?", "de": "Wie wird das Wort Allah in رَسُولُ اللّٰهِ gesprochen?" },
+      "opcije": [
+        { "bs": "Tanko, jer prije nje dođe vokal I", "en": "Light, because it is preceded by the vowel I", "de": "Dünn, weil davor der Vokal I steht" },
+        { "bs": "Tanko, jer prije nje dođe vokal U", "en": "Light, because it is preceded by the vowel U", "de": "Dünn, weil davor der Vokal U steht" },
+        { "bs": "Krupno, jer prije nje dođe vokal I", "en": "Heavy, because it is preceded by the vowel I", "de": "Dick, weil davor der Vokal I steht" },
+        { "bs": "Krupno, jer prije nje dođe vokal U", "en": "Heavy, because it is preceded by the vowel U", "de": "Dick, weil davor der Vokal U steht" }
+      ],
+      "tacno": 3,
+      "objasnjenje": { "bs": "U رَسُولُ اللّٰهِ prije riječi Allah je vokal U, pa se uči krupno.", "en": "In رَسُولُ اللّٰهِ the word Allah is preceded by the vowel U, so it is recited heavy.", "de": "In رَسُولُ اللّٰهِ steht vor dem Wort Allah der Vokal U, deshalb wird es dick gesprochen." }
+    },
+    {
+      "q": { "bs": "U kojem se primjeru riječ Allah uči krupno?", "en": "In which example is the word Allah recited heavy?", "de": "In welchem Beispiel wird das Wort Allah dick gesprochen?" },
+      "opcije": [
+        { "bs": "وَاللّٰهِ", "en": "وَاللّٰهِ", "de": "وَاللّٰهِ" },
+        { "bs": "بِاللّٰهِ", "en": "بِاللّٰهِ", "de": "بِاللّٰهِ" },
+        { "bs": "بِسْمِ اللّٰهِ", "en": "بِسْمِ اللّٰهِ", "de": "بِسْمِ اللّٰهِ" },
+        { "bs": "بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيمِ", "en": "بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيمِ", "de": "بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيمِ" }
+      ],
+      "tacno": 0,
+      "objasnjenje": { "bs": "U وَاللّٰهِ prije riječi Allah je vokal E, pa se uči krupno; u ostalim primjerima je vokal I.", "en": "In وَاللّٰهِ the word Allah is preceded by the vowel A, so it is recited heavy; in the other examples it is preceded by the vowel I.", "de": "In وَاللّٰهِ steht vor dem Wort Allah der Vokal A, deshalb wird es dick gesprochen; in den anderen Beispielen steht der Vokal I." }
+    },
+    {
+      "q": { "bs": "U kojem se primjeru riječ Allah uči tanko?", "en": "In which example is the word Allah recited light?", "de": "In welchem Beispiel wird das Wort Allah dünn gesprochen?" },
+      "opcije": [
+        { "bs": "رَسُولُ اللّٰهِ", "en": "رَسُولُ اللّٰهِ", "de": "رَسُولُ اللّٰهِ" },
+        { "bs": "وَكَفٰى بِاللّٰهِ نَصِيرًا", "en": "وَكَفٰى بِاللّٰهِ نَصِيرًا", "de": "وَكَفٰى بِاللّٰهِ نَصِيرًا" },
+        { "bs": "وَاللّٰهِ", "en": "وَاللّٰهِ", "de": "وَاللّٰهِ" },
+        { "bs": "فَإِنَّ اللّٰهَ", "en": "فَإِنَّ اللّٰهَ", "de": "فَإِنَّ اللّٰهَ" }
+      ],
+      "tacno": 1,
+      "objasnjenje": { "bs": "U بِاللّٰهِ prije riječi Allah je vokal I, pa se uči tanko.", "en": "In بِاللّٰهِ the word Allah is preceded by the vowel I, so it is recited light.", "de": "In بِاللّٰهِ steht vor dem Wort Allah der Vokal I, deshalb wird es dünn gesprochen." }
+    },
+    {
+      "q": { "bs": "Koji vokal dolazi prije riječi Allah u فَإِنَّ اللّٰهَ?", "en": "Which vowel comes before the word Allah in فَإِنَّ اللّٰهَ?", "de": "Welcher Vokal steht vor dem Wort Allah in فَإِنَّ اللّٰهَ?" },
+      "opcije": [
+        { "bs": "Vokal I", "en": "The vowel I", "de": "Der Vokal I" },
+        { "bs": "Vokal U", "en": "The vowel U", "de": "Der Vokal U" },
+        { "bs": "Vokal E", "en": "The vowel A", "de": "Der Vokal A" },
+        { "bs": "Sukun", "en": "A sukun", "de": "Ein Sukun" }
+      ],
+      "tacno": 2,
+      "objasnjenje": { "bs": "U فَإِنَّ اللّٰهَ prije riječi Allah je vokal E na harfu N (ن), pa se uči krupno.", "en": "In فَإِنَّ اللّٰهَ the word Allah is preceded by the vowel A on the letter N (ن), so it is recited heavy.", "de": "In فَإِنَّ اللّٰهَ steht vor dem Wort Allah der Vokal A auf dem Buchstaben N (ن), deshalb wird es dick gesprochen." }
+    },
+    {
+      "q": { "bs": "Šta odlučuje hoće li se riječ Allah učiti krupno ili tanko?", "en": "What decides whether the word Allah is recited heavy or light?", "de": "Was entscheidet, ob das Wort Allah dick oder dünn gesprochen wird?" },
+      "opcije": [
+        { "bs": "Vokal koji dolazi prije riječi Allah", "en": "The vowel that comes before the word Allah", "de": "Der Vokal, der vor dem Wort Allah steht" },
+        { "bs": "Vokal na kraju riječi Allah", "en": "The vowel at the end of the word Allah", "de": "Der Vokal am Ende des Wortes Allah" },
+        { "bs": "Harf koji dolazi poslije riječi Allah", "en": "The letter that comes after the word Allah", "de": "Der Buchstabe, der nach dem Wort Allah kommt" },
+        { "bs": "Da li je riječ na kraju ajeta", "en": "Whether the word is at the end of a verse", "de": "Ob das Wort am Ende eines Verses steht" }
+      ],
+      "tacno": 0,
+      "objasnjenje": { "bs": "Izgovor riječi Allah zavisi od vokala koji dolazi prije nje: E ili U – krupno, I – tanko.", "en": "The pronunciation of the word Allah depends on the vowel before it: A or U – heavy, I – light.", "de": "Die Aussprache des Wortes Allah hängt vom Vokal davor ab: A oder U – dick, I – dünn." }
+    },
+    {
+      "q": { "bs": "Na koliko se načina izgovara riječ Allah (اللّٰه)?", "en": "In how many ways is the word Allah (اللّٰه) pronounced?", "de": "Auf wie viele Arten wird das Wort Allah (اللّٰه) ausgesprochen?" },
+      "opcije": [
+        { "bs": "Uvijek isto", "en": "Always the same", "de": "Immer gleich" },
+        { "bs": "Na dva načina: krupno ili tanko", "en": "In two ways: heavy or light", "de": "Auf zwei Arten: dick oder dünn" },
+        { "bs": "Na tri načina", "en": "In three ways", "de": "Auf drei Arten" },
+        { "bs": "Na četiri načina", "en": "In four ways", "de": "Auf vier Arten" }
+      ],
+      "tacno": 1,
+      "objasnjenje": { "bs": "Riječ Allah se uči krupno ili tanko, zavisno od vokala ispred nje.", "en": "The word Allah is recited heavy or light, depending on the vowel before it.", "de": "Das Wort Allah wird dick oder dünn gesprochen, je nach dem Vokal davor." }
+    }
+  ]
+}

@@ -1,40 +1,29 @@
 import 'react-app-polyfill/ie9';
 import 'react-app-polyfill/ie11';
 import 'react-app-polyfill/stable';
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './LandingPage.scss';
+import React, { useEffect } from 'react';
+import { createRoot } from 'react-dom/client';
+import 'bootstrap/dist/css/bootstrap.css';
+import './theme.scss';
+import './App.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import 'bootstrap/dist/css/bootstrap.css';
+import { oznaciPlatformu, pokreniNativno } from './native';
 
-import i18n from "i18next";
-import { initReactI18next } from "react-i18next";
-import LanguageDetector from "i18next-browser-languagedetector";
-import en from "./Body/locales/en.json";
-import bs from "./Body/locales/bs.json";
-import ReactMarkdown from 'react-markdown';
+/* mobilna aplikacija (Capacitor): klasa na <html> prije prvog iscrtavanja */
+oznaciPlatformu();
 
-i18n
-  .use(LanguageDetector)
-  .use(initReactI18next)
-  .init({
-    resources: {
-      bs: {
-        translation: bs
-      },
-      en: {
-        translation: en
-      }
-    },
-    fallbackLng: "bs",
-    interpolation: {
-      escapeValue: false
-    }
-  });
+/* createRoot nema povratni poziv kao stari ReactDOM.render, pa splash gasi
+   efekat – on se izvršava tek nakon što je prvi ekran iscrtan. */
+function Aplikacija() {
+	useEffect(() => {
+		pokreniNativno();
+	}, []);
 
+	return <App />;
+}
 
-ReactDOM.render(<App />, document.getElementById('root'));
+createRoot(document.getElementById('root')).render(<Aplikacija />);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

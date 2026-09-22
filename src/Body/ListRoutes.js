@@ -3,7 +3,15 @@
 import React, { useEffect } from 'react';
 import Home from './HomePage';
 import Demo from './LandingPage';
-import Obavijest from './Obavijest';
+import AuthPage from './AuthPage';
+import ProfilePage from './ProfilePage';
+import FinalQuizPage from './FinalQuizPage';
+import LeaderboardPage from './LeaderboardPage';
+import AdminPage from './AdminPage';
+import MualimPage from './MualimPage';
+import GroupQuizPage from './GroupQuizPage';
+import BonusPage from './BonusPage';
+import IgraPage from '../Igra/IgraPage';
 import {
 	L1,
 	L2,
@@ -30,56 +38,98 @@ import {
 	L22
 } from '../Helpers/LessonsHelper';
 import ReactGA from 'react-ga';
+import NowPlayingBar from '../Player/NowPlayingBar';
+import { useLang } from '../i18n/LanguageContext';
+import { GRUPE, putanjaGrupnog } from '../auth/progress';
+import { Route, useHistory } from 'react-router-dom';
 
-// import Container from 'react-bootstrap/Container';
-import {  Route,useHistory } from 'react-router-dom';
+const LEKCIJE = {
+	'1': L1,
+	'2': L2,
+	'3': L3,
+	'4': L4,
+	'5': L5,
+	'6': L6,
+	'7': L7,
+	'8': L8,
+	'9': L9,
+	'10': L10,
+	'11': L11,
+	'12': L12,
+	'13': L13,
+	'14': L14,
+	'14_2': L14_2,
+	'15': L15,
+	'16': L16,
+	'17': L17,
+	'18': L18,
+	'19': L19,
+	'20': L20,
+	'21': L21,
+	'22': L22
+};
 
 function ListRoutes() {
 	let history = useHistory();
+	const { lang } = useLang();
 	useEffect(() => {
-		ReactGA.initialize('UA-179006564-1'); // put your tracking id here
-		ReactGA.set({ page: '/' }); // Update the user's current page
-		ReactGA.pageview('/'); // Record a pageview for the given page
+		ReactGA.initialize('UA-179006564-1');
+		ReactGA.set({ page: '/' });
+		ReactGA.pageview('/');
 	}, []);
 	useEffect(
 		() => {
 			return history.listen((location) => {
-				console.log(`You changed the page to: ${location.pathname} `);
-				ReactGA.set({ page: location.pathname }); // Update the user's current page
-  				ReactGA.pageview(location.pathname); // Record a pageview for the given page
+				ReactGA.set({ page: location.pathname });
+				ReactGA.pageview(location.pathname);
 			});
 		},
 		[ history ]
 	);
 	return (
-		<>
+		/* ključ na fragmentu: promjena jezika ponovo iscrtava stranice iz početka */
+		<React.Fragment key={lang}>
 			<Route path="/" exact component={Demo} />
 			<Route path="/lekcije" exact component={Home} />
-			<Route path="/lekcija1" component={L1} />
-			<Route path="/lekcija2" component={L2} />
-			<Route path="/lekcija3" component={L3} />
-			<Route path="/lekcija4" component={L4} />
-			<Route path="/lekcija5" component={L5} />
-			<Route path="/lekcija6" component={L6} />
-			<Route path="/lekcija7" component={L7} />
-			<Route path="/lekcija8" component={L8} />
-			<Route path="/lekcija9" component={L9} />
-			<Route path="/lekcija10" component={L10} />
-			<Route path="/lekcija11" component={L11} />
-			<Route path="/lekcija12" component={L12} />
-			<Route path="/lekcija13" component={L13} />
-			<Route path="/lekcija14" component={L14} />
-			<Route path="/lekcija14_2" component={L14_2} />
-			<Route path="/lekcija15" component={L15} />
-			<Route path="/lekcija16" component={L16} />
-			<Route path="/lekcija17" component={L17} />
-			<Route path="/lekcija18" component={L18} />
-			<Route path="/lekcija19" component={L19} />
-			<Route path="/lekcija20" component={L20} />
-			<Route path="/lekcija21" component={L21} />
-			<Route path="/lekcija22" component={L22} />
-			<Route path="/obavijest" component={Obavijest} />
-			</>
+			<Route path="/prijava" exact render={() => <AuthPage mode="login" />} />
+			<Route path="/registracija" exact render={() => <AuthPage mode="register" />} />
+			<Route path="/profil" exact component={ProfilePage} />
+			<Route path="/zavrsni-kviz" exact component={FinalQuizPage} />
+			<Route path="/rang-lista" exact component={LeaderboardPage} />
+			<Route path="/fatiha" exact render={() => <BonusPage vrsta="fatiha" />} />
+			<Route path="/ajetul-kursij" exact render={() => <BonusPage vrsta="kursij" />} />
+			<Route path="/mulk" exact render={() => <BonusPage vrsta="mulk" />} />
+			<Route path="/jasin" exact render={() => <BonusPage vrsta="jasin" />} />
+			<Route path="/amme-dzuz" exact render={() => <BonusPage vrsta="amme" />} />
+			<Route path="/igra" exact render={() => <IgraPage />} />
+			<Route path="/igra/:igra" exact render={({ match }) => <IgraPage igra={match.params.igra} />} />
+			<Route path="/admin" exact component={AdminPage} />
+			<Route path="/mualim" exact component={MualimPage} />
+			{GRUPE.map((g) => (
+				<Route
+					key={g.broj}
+					path={putanjaGrupnog(g.broj)}
+					exact
+					render={() => <GroupQuizPage broj={g.broj} />}
+				/>
+			))}
+			{Object.keys(LEKCIJE).map((key) => {
+				const Lekcija = LEKCIJE[key];
+				return (
+					<Route
+						key={key}
+						path={'/lekcija' + key}
+						render={() => (
+							/* lekcije su otvorene svima – zaključavaju se samo kvizovi grupa */
+							<div className="lekcija-page">
+								<Lekcija />
+								<NowPlayingBar />
+							</div>
+						)}
+					/>
+				);
+			})}
+		</React.Fragment>
 	);
 }
 

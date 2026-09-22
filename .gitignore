@@ -22,3 +22,38 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 node_modules
+
+# korisnički računi i napredak (lokalni server)
+/data
+
+# mobilne aplikacije (Capacitor) – generisano, ne ide u repozitorij
+/ios/App/App/public
+/android/app/src/main/assets/public
+/dist
+
+# Android – generisano pri buildu (Gradle keš, APK/AAB, međurezultati)
+/android/.gradle
+/android/build
+/android/app/build
+/android/captures
+/android/local.properties
+/android/.idea
+/android/app/release
+/android/capacitor-cordova-android-plugins/build
+
+# iOS – generisano (CocoaPods, Xcode build i korisnički podaci)
+/ios/App/Pods
+/ios/App/build
+/ios/App/output
+/ios/DerivedData
+/ios/App/App.xcworkspace/xcuserdata
+/ios/App/App.xcodeproj/xcuserdata
+*.xcuserstate
+
+# potpisivanje aplikacije – ne ide u repozitorij
+*.jks
+*.keystore
+/android/keystore.properties
+
+# keš preuzetih kur'anskih izvora za bonus lekcije (skripta ih ponovo preuzme)
+/scripts/sure/.cache

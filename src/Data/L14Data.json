@@ -2,6 +2,9 @@
     "row1": [{
         "id": 1,
         "url": "./assets/audio/l14/1.mp3",
+        "napomena": [
+            {"tip": "krupno", "bs": "Harf R nosi vokal E (رَ), a R sa vokalom E uči se krupno, punim i debelim glasom: ra.", "en": "The letter R carries the vowel A (رَ), and R with the vowel A is recited heavy, with a full, thick sound: ra.", "de": "Der Buchstabe R trägt den Vokal A (رَ), und R mit dem Vokal A wird dick gesprochen, mit vollem, dickem Klang: ra."}
+        ],
         "highlight": "رَ",
         "word": "رَ",
         "after": null
@@ -9,6 +12,9 @@
     "row2": [{
         "id": 2,
         "url": "./assets/audio/l14/2.mp3",
+        "napomena": [
+            {"tip": "krupno", "bs": "Harf R nosi vokal U (رُ), a R sa vokalom U uči se krupno, punim i debelim glasom: ru.", "en": "The letter R carries the vowel U (رُ), and R with the vowel U is recited heavy, with a full, thick sound: ru.", "de": "Der Buchstabe R trägt den Vokal U (رُ), und R mit dem Vokal U wird dick gesprochen, mit vollem, dickem Klang: ru."}
+        ],
         "highlight": "رُ",
         "word": "رُ",
         "after": null
@@ -16,12 +22,18 @@
     "row3": [{
         "id": 4,
         "url": "./assets/audio/l14/4.mp3",
+        "napomena": [
+            {"tip": "krupno", "bs": "U riječi رُبـَمَا harf R na početku nosi vokal U (رُ), a R sa vokalom U uči se krupno.", "en": "In رُبـَمَا the letter R at the beginning carries the vowel U (رُ), and R with the vowel U is recited heavy.", "de": "Im Wort رُبـَمَا trägt der Buchstabe R am Anfang den Vokal U (رُ), und R mit dem Vokal U wird dick gesprochen."}
+        ],
         "highlight": "رُ",
         "word": "رُبـَمَا",
         "after": " ; "
     }, {
         "id": 3,
         "url": "./assets/audio/l14/3.mp3",
+        "napomena": [
+            {"tip": "krupno", "bs": "U riječima أَلَـمْ تَرَ posljednji harf je R sa vokalom E (تَرَ), zato se uči krupno.", "en": "In أَلَـمْ تَرَ the last letter is R with the vowel A (تَرَ), so it is recited heavy.", "de": "In den Wörtern أَلَـمْ تَرَ ist der letzte Buchstabe ein R mit dem Vokal A (تَرَ), darum wird R dick gesprochen."}
+        ],
         "highlight": "رَ",
         "word": "أَلَـمْ تَرَ",
         "after": null
@@ -29,12 +41,18 @@
     "row4": [{
         "id": 6,
         "url": "./assets/audio/l14/6.mp3",
+        "napomena": [
+            {"tip": "krupno", "bs": "U riječi فَاهْجُـرْ harf R ima sukun, a prije njeg je harf sa vokalom U (جُـرْ), zato se R uči krupno.", "en": "In فَاهْجُـرْ the letter R carries a sukun and is preceded by a letter with the vowel U (جُـرْ), so R is recited heavy.", "de": "Im Wort فَاهْجُـرْ hat der Buchstabe R ein Sukun, und davor steht ein Buchstabe mit dem Vokal U (جُـرْ), darum wird R dick gesprochen."}
+        ],
         "highlight": "جُـر",
         "word": "فَاهْجُـرْ",
         "after": " ; "
     }, {
         "id": 5,
         "url": "./assets/audio/l14/5.mp3",
+        "napomena": [
+            {"tip": "krupno", "bs": "U riječi تَرْجُفُ harf R ima sukun, a prije njeg je harf sa vokalom E (تَرْ), zato se R uči krupno.", "en": "In تَرْجُفُ the letter R carries a sukun and is preceded by a letter with the vowel A (تَرْ), so R is recited heavy.", "de": "Im Wort تَرْجُفُ hat der Buchstabe R ein Sukun, und davor steht ein Buchstabe mit dem Vokal A (تَرْ), darum wird R dick gesprochen."}
+        ],
         "highlight": "تَرْ",
         "word": "تَرْجُفُ",
         "after": null
@@ -42,12 +60,18 @@
     "row5": [{
         "id": 8,
         "url": "./assets/audio/l14/8.mp3",
+        "napomena": [
+            {"tip": "krupno", "bs": "U riječi صُدُورْ harf R ima sukun, prije njeg je و sa sukunom, a prije toga harf sa vokalom U (دُورْ), zato se R uči krupno.", "en": "In صُدُورْ the letter R carries a sukun, before it comes و with a sukun, and before that a letter with the vowel U (دُورْ), so R is recited heavy.", "de": "Im Wort صُدُورْ hat der Buchstabe R ein Sukun, davor steht و mit Sukun, und davor ein Buchstabe mit dem Vokal U (دُورْ), darum wird R dick gesprochen."}
+        ],
         "highlight": "دُورْ",
         "word": "صُدُورْ",
         "after": " ; "
     }, {
         "id": 7,
         "url": "./assets/audio/l14/7.mp3",
+        "napomena": [
+            {"tip": "krupno", "bs": "U riječi قَــدْرْ harf R ima sukun, prije njeg je دْ sa sukunom, a prije toga harf sa vokalom E (قَـ), zato se R uči krupno.", "en": "In قَــدْرْ the letter R carries a sukun, before it comes دْ with a sukun, and before that a letter with the vowel A (قَـ), so R is recited heavy.", "de": "Im Wort قَــدْرْ hat der Buchstabe R ein Sukun, davor steht دْ mit Sukun, und davor ein Buchstabe mit dem Vokal A (قَـ), darum wird R dick gesprochen."}
+        ],
         "highlight": "قَــدْرْ",
         "word": "قَــدْرْ",
         "after": null
@@ -55,6 +79,9 @@
     "row6": [{
         "id": 9,
         "url": "./assets/audio/l14/9.mp3",
+        "napomena": [
+            {"tip": "krupno", "bs": "U riječima لِمَنِ ارْتَضٰى harf R ima sukun, a prije njeg je nestalna kesra na نِ, zato se R ipak uči krupno.", "en": "In لِمَنِ ارْتَضٰى the letter R carries a sukun and is preceded by a temporary kasra on نِ, so R is still recited heavy.", "de": "In den Wörtern لِمَنِ ارْتَضٰى hat der Buchstabe R ein Sukun, und davor steht eine vorübergehende Kasra auf نِ, darum wird R trotzdem dick gesprochen."}
+        ],
         "highlight": "ارْ",
         "word": "لِمَنِ ارْتَضٰى",
         "after": null
@@ -62,12 +89,18 @@
     "row7": [{
         "id": 11,
         "url": "./assets/audio/l14/11.mp3",
+        "napomena": [
+            {"tip": "krupno", "bs": "U riječi فِرْقَةٍ harf R ima sukun, a iza njega dolazi krupni harf ق (رْقَ), zato se R uči krupno iako je prije njeg kesra.", "en": "In فِرْقَةٍ the letter R carries a sukun and is followed by the heavy letter ق (رْقَ), so R is recited heavy even though a kasra precedes it.", "de": "Im Wort فِرْقَةٍ hat der Buchstabe R ein Sukun, und danach kommt der dicke Buchstabe ق (رْقَ), darum wird R dick gesprochen, obwohl davor eine Kasra steht."}
+        ],
         "highlight": "رْقَ",
         "word": "فِرْقَةٍ",
         "after": " ; "
     }, {
         "id": 10,
         "url": "./assets/audio/l14/10.mp3",
+        "napomena": [
+            {"tip": "krupno", "bs": "U riječi قِرْطَاسٍ harf R ima sukun, a iza njega dolazi krupni harf ط (رْطَا), zato se R uči krupno iako je prije njeg kesra.", "en": "In قِرْطَاسٍ the letter R carries a sukun and is followed by the heavy letter ط (رْطَا), so R is recited heavy even though a kasra precedes it.", "de": "Im Wort قِرْطَاسٍ hat der Buchstabe R ein Sukun, und danach kommt der dicke Buchstabe ط (رْطَا), darum wird R dick gesprochen, obwohl davor eine Kasra steht."}
+        ],
         "highlight": "رْطَا",
         "word": "قِرْطَاسٍ",
         "after": null
@@ -75,6 +108,9 @@
     "row8": [{
         "id": 24,
         "url": "./assets/audio/l14/24.mp3",
+        "napomena": [
+            {"tip": "tanko", "bs": "U riječi شَـرِّ harf R ima tešdid i nosi vokal I (رِّ), a R sa vokalom I uči se tanko.", "en": "In شَـرِّ the letter R has a tashdeed and carries the vowel I (رِّ), and R with the vowel I is recited light.", "de": "Im Wort شَـرِّ hat der Buchstabe R eine Schadda (Verdopplungszeichen) und trägt den Vokal I (رِّ), und R mit dem Vokal I wird dünn gesprochen."}
+        ],
         "highlight": "رِ",
         "word": "مِنْ شَـرِّ مَا خَلَقَ",
         "after": null
@@ -82,6 +118,9 @@
     "row9": [{
         "id": 23,
         "url": "./assets/audio/l14/23.mp3",
+        "napomena": [
+            {"tip": "tanko", "bs": "Harf R nosi vokal I (رِ), a R sa vokalom I uči se tanko, mekim i tankim glasom: ri.", "en": "The letter R carries the vowel I (رِ), and R with the vowel I is recited light, with a soft, thin sound: ri.", "de": "Der Buchstabe R trägt den Vokal I (رِ), und R mit dem Vokal I wird dünn gesprochen, mit weichem, dünnem Klang: ri."}
+        ],
         "highlight": "رِ",
         "word": "رِ",
         "after": null
@@ -89,6 +128,9 @@
     "row10": [{
         "id": 25,
         "url": "./assets/audio/l14/25.mp3",
+        "napomena": [
+            {"tip": "tanko", "bs": "U riječi أَنْـذِرْ harf R ima sukun, a prije njeg je harf sa vokalom I (ذِرْ), zato se R uči tanko.", "en": "In أَنْـذِرْ the letter R carries a sukun and is preceded by a letter with the vowel I (ذِرْ), so R is recited light.", "de": "Im Wort أَنْـذِرْ hat der Buchstabe R ein Sukun, und davor steht ein Buchstabe mit dem Vokal I (ذِرْ), darum wird R dünn gesprochen."}
+        ],
         "highlight": "ذِر",
         "word": "أَنْ أَنْـذِرْ قَـوْمَكَ مِنْ قَـبْلْ",
         "after": null
@@ -96,6 +138,9 @@
     "row11": [{
         "id": 26,
         "url": "./assets/audio/l14/26.mp3",
+        "napomena": [
+            {"tip": "tanko", "bs": "U riječi حِجْرْ harf R ima sukun, prije njeg je جْ sa sukunom, a prije toga harf sa vokalom I (حِ), zato se R uči tanko.", "en": "In حِجْرْ the letter R carries a sukun, before it comes جْ with a sukun, and before that a letter with the vowel I (حِ), so R is recited light.", "de": "Im Wort حِجْرْ hat der Buchstabe R ein Sukun, davor steht جْ mit Sukun, und davor ein Buchstabe mit dem Vokal I (حِ), darum wird R dünn gesprochen."}
+        ],
         "highlight": "حِجْرْ",
         "word": "هَلْ فِي ذٰلِكَ قَسَمٌ لِـذِي حِجْرْ",
         "after": null
@@ -103,6 +148,9 @@
     "row12": [{
         "id": 27,
         "url": "./assets/audio/l14/27.mp3",
+        "napomena": [
+            {"tip": "tanko", "bs": "U riječi خَيْرْ harf R ima sukun, a prije njeg je يْ sa sukunom, zato se R uči tanko iako je prije toga vokal E.", "en": "In خَيْرْ the letter R carries a sukun and is preceded by يْ with a sukun, so R is recited light even though the vowel A comes before that.", "de": "Im Wort خَيْرْ hat der Buchstabe R ein Sukun, und davor steht يْ mit Sukun, darum wird R dünn gesprochen, obwohl noch davor der Vokal A steht."}
+        ],
         "highlight": "خَيْرْ",
         "word": "فَهُوَ خَيْرْ",
         "after": null
@@ -128,6 +176,9 @@
         "broj12": [{
             "id": 12,
             "url": "./assets/audio/l14/12.mp3",
+            "napomena": [
+                {"tip": "krupno", "bs": "U riječima رَبَّنَا i رَسُولًا harf R nosi vokal E (رَ), zato se u oba slučaja uči krupno.", "en": "In رَبَّنَا and رَسُولًا the letter R carries the vowel A (رَ), so in both cases it is recited heavy.", "de": "In den Wörtern رَبَّنَا und رَسُولًا trägt der Buchstabe R den Vokal A (رَ), darum wird er in beiden Fällen dick gesprochen."}
+            ],
             "highlight": "رَ",
             "word": "رَبَّنَا وَابْعَثْ فِيهِمْ رَسُولًا",
             "after": null
@@ -135,6 +186,9 @@
         "broj13": [{
             "id": 13,
             "url": "./assets/audio/l14/13.mp3",
+            "napomena": [
+                {"tip": "krupno", "bs": "U riječi الرُّوحِ harf R ima tešdid i nosi vokal U (رُّ), a R sa vokalom U uči se krupno.", "en": "In الرُّوحِ the letter R has a tashdeed and carries the vowel U (رُّ), and R with the vowel U is recited heavy.", "de": "Im Wort الرُّوحِ hat der Buchstabe R eine Schadda und trägt den Vokal U (رُّ), und R mit dem Vokal U wird dick gesprochen."}
+            ],
             "highlight": "رُّ",
             "word": "وَيَسْأَلُونَكَ عَنِ الرُّوحِ",
             "after": null
@@ -142,26 +196,25 @@
         "broj14": [{
             "id": 14,
             "url": "./assets/audio/l14/14.mp3",
+            "napomena": [
+                {"tip": "krupno", "bs": "U riječi تَرْجُفُ harf R ima sukun, a prije njeg je harf sa vokalom E (تَرْ), zato se R uči krupno.", "en": "In تَرْجُفُ the letter R carries a sukun and is preceded by a letter with the vowel A (تَرْ), so R is recited heavy.", "de": "Im Wort تَرْجُفُ hat der Buchstabe R ein Sukun, und davor steht ein Buchstabe mit dem Vokal A (تَرْ), darum wird R dick gesprochen."},
+                {"tip": "krupno", "bs": "U riječi الْـأَرْضُ harf R ima sukun, a prije njeg je harf sa vokalom E (أَرْ), zato se i tu uči krupno.", "en": "In الْـأَرْضُ the letter R carries a sukun and is preceded by a letter with the vowel A (أَرْ), so here too it is recited heavy.", "de": "Im Wort الْـأَرْضُ hat der Buchstabe R ein Sukun, und davor steht ein Buchstabe mit dem Vokal A (أَرْ), darum wird R auch hier dick gesprochen."}
+            ],
             "highlight": "أَرْ",
             "word": "الْـأَرْضُ وَالْجِبَالُ",
             "after": null
-        },
-        {
+        }, {
             "id": 141,
             "highlight": "تَرْ",
             "word": " يَوْمَ تَرْجُفُ",
             "after": null
-        },
-        {
-            "id": 143,
-            "highlight": "",
-            "word": " ",
-            "after": null
-        }
-    ],
+        }],
         "broj15": [{
             "id": 15,
             "url": "./assets/audio/l14/15.mp3",
+            "napomena": [
+                {"tip": "krupno", "bs": "U riječi الْمُرْسَلِينَ harf R ima sukun, a prije njeg je harf sa vokalom U (مُرْ), zato se R uči krupno.", "en": "In الْمُرْسَلِينَ the letter R carries a sukun and is preceded by a letter with the vowel U (مُرْ), so R is recited heavy.", "de": "Im Wort الْمُرْسَلِينَ hat der Buchstabe R ein Sukun, und davor steht ein Buchstabe mit dem Vokal U (مُرْ), darum wird R dick gesprochen."}
+            ],
             "highlight": "مُرْ",
             "word": "وَلَنَسْأَلَنَّ الْمُرْسَلِينَ",
             "after": null
@@ -169,6 +222,10 @@
         "broj16": [{
             "id": 16,
             "url": "./assets/audio/l14/16.mp3",
+            "napomena": [
+                {"tip": "krupno", "bs": "U riječi نَفَرَ posljednji harf je R sa vokalom E (رَ), a R sa vokalom E uči se krupno.", "en": "In نَفَرَ the last letter is R with the vowel A (رَ), and R with the vowel A is recited heavy.", "de": "Im Wort نَفَرَ ist der letzte Buchstabe ein R mit dem Vokal A (رَ), und R mit dem Vokal A wird dick gesprochen."},
+                {"tip": "krupno", "bs": "Ovdje harf R ima sukun, a iza njega dolazi krupni harf ق (رْقَ), zato se R uči krupno iako je prije njeg kesra.", "en": "Here the letter R carries a sukun and is followed by the heavy letter ق (رْقَ), so R is recited heavy even though a kasra precedes it.", "de": "Hier hat der Buchstabe R ein Sukun, und danach kommt der dicke Buchstabe ق (رْقَ), darum wird R dick gesprochen, obwohl davor eine Kasra steht."}
+            ],
             "highlight": "رْقَ",
             "word": "رْقَةٍ مِنْهُمْ طَٓائِفَةٌ",
             "after": null
@@ -181,6 +238,10 @@
         "broj17": [{
             "id": 17,
             "url": "./assets/audio/l14/17.mp3",
+            "napomena": [
+                {"tip": "krupno", "bs": "U riječi رَبَّكَ prvi harf je R sa vokalom E (رَ), a R sa vokalom E uči se krupno.", "en": "In رَبَّكَ the first letter is R with the vowel A (رَ), and R with the vowel A is recited heavy.", "de": "Im Wort رَبَّكَ ist der erste Buchstabe ein R mit dem Vokal A (رَ), und R mit dem Vokal A wird dick gesprochen."},
+                {"tip": "krupno", "bs": "Ovdje harf R ima sukun, a iza njega dolazi krupni harf ص (رْصَ), zato se R uči krupno iako je prije njeg kesra.", "en": "Here the letter R carries a sukun and is followed by the heavy letter ص (رْصَ), so R is recited heavy even though a kasra precedes it.", "de": "Hier hat der Buchstabe R ein Sukun, und danach kommt der dicke Buchstabe ص (رْصَ), darum wird R dick gesprochen, obwohl davor eine Kasra steht."}
+            ],
             "highlight": "رْصَ",
             "word": "لْمِرْصَادِ",
             "after": null
@@ -193,6 +254,9 @@
         "broj18": [{
             "id": 18,
             "url": "./assets/audio/l14/18.mp3",
+            "napomena": [
+                {"tip": "krupno", "bs": "U riječima لِمَنِ ارْتَضٰى harf R ima sukun, a prije njeg je nestalna kesra na نِ, zato se R ipak uči krupno.", "en": "In لِمَنِ ارْتَضٰى the letter R carries a sukun and is preceded by a temporary kasra on نِ, so R is still recited heavy.", "de": "In den Wörtern لِمَنِ ارْتَضٰى hat der Buchstabe R ein Sukun, und davor steht eine vorübergehende Kasra auf نِ, darum wird R trotzdem dick gesprochen."}
+            ],
             "highlight": "نِ ارْ",
             "word": "وَلَا يَشْفَعُونَ إِلَّا لِمَنِ ارْتَضٰى",
             "after": null
@@ -200,6 +264,9 @@
         "broj19": [{
             "id": 19,
             "url": "./assets/audio/l14/19.mp3",
+            "napomena": [
+                {"tip": "krupno", "bs": "Na kraju ajeta staje se na الْقَدْرِ, pa R dobije sukun, prije njeg je دْ sa sukunom, a prije toga harf sa vokalom E, zato se R uči krupno.", "en": "At the end of the verse one stops on الْقَدْرِ, so R takes a sukun, before it comes دْ with a sukun, and before that a letter with the vowel A, so R is recited heavy.", "de": "Am Ende des Verses hält man bei الْقَدْرِ an, dann bekommt R ein Sukun, davor steht دْ mit Sukun, und davor ein Buchstabe mit dem Vokal A, darum wird R dick gesprochen."}
+            ],
             "highlight": "قَدْرِ",
             "word": " إِنَّـآ أَنْـزَلْنَاهُ فِي لَيْلَةِ الْقَدْرِ",
             "after": null
@@ -207,6 +274,10 @@
         "broj20": [{
             "id": 20,
             "url": "./assets/audio/l14/20.mp3",
+            "napomena": [
+                {"tip": "krupno", "bs": "U riječi أَدْرَاكَ harf R nosi vokal E (رَا), a R sa vokalom E uči se krupno.", "en": "In أَدْرَاكَ the letter R carries the vowel A (رَا), and R with the vowel A is recited heavy.", "de": "Im Wort أَدْرَاكَ trägt der Buchstabe R den Vokal A (رَا), und R mit dem Vokal A wird dick gesprochen."},
+                {"tip": "krupno", "bs": "Na kraju ajeta staje se na الْقَدْرِ, pa R dobije sukun, prije njeg je دْ sa sukunom, a prije toga harf sa vokalom E, zato se R uči krupno.", "en": "At the end of the verse one stops on الْقَدْرِ, so R takes a sukun, before it comes دْ with a sukun, and before that a letter with the vowel A, so R is recited heavy.", "de": "Am Ende des Verses hält man bei الْقَدْرِ an, dann bekommt R ein Sukun, davor steht دْ mit Sukun, und davor ein Buchstabe mit dem Vokal A, darum wird R dick gesprochen."}
+            ],
             "highlight": "قَدْرِ",
             "word": "لَيْلَةُ الْقَدْرِ",
             "after": null
@@ -219,6 +290,10 @@
         "broj21": [{
             "id": 21,
             "url": "./assets/audio/l14/21.mp3",
+            "napomena": [
+                {"tip": "krupno", "bs": "Ovdje harf R ima sukun, a prije njeg je harf sa vokalom U (يُـرْ), zato se R uči krupno.", "en": "Here the letter R carries a sukun and is preceded by a letter with the vowel U (يُـرْ), so R is recited heavy.", "de": "Hier hat der Buchstabe R ein Sukun, und davor steht ein Buchstabe mit dem Vokal U (يُـرْ), darum wird R dick gesprochen."},
+                {"tip": "krupno", "bs": "U riječi الْأَمْـرُ posljednji harf je R sa vokalom U (مْـرُ), a R sa vokalom U uči se krupno.", "en": "In الْأَمْـرُ the last letter is R with the vowel U (مْـرُ), and R with the vowel U is recited heavy.", "de": "Im Wort الْأَمْـرُ ist der letzte Buchstabe ein R mit dem Vokal U (مْـرُ), und R mit dem Vokal U wird dick gesprochen."}
+            ],
             "highlight": "مْـرُ",
             "word": "جَعُ الْأَمْـرُ",
             "after": null
@@ -231,6 +306,9 @@
         "broj22": [{
             "id": 22,
             "url": "./assets/audio/l14/22.mp3",
+            "napomena": [
+                {"tip": "krupno", "bs": "Na kraju ajeta staje se na الصُّدُورِ, pa R dobije sukun, prije njeg je و sa sukunom, a prije toga دُ sa vokalom U, zato se R uči krupno.", "en": "At the end of the verse one stops on الصُّدُورِ, so R takes a sukun, before it comes و with a sukun, and before that دُ with the vowel U, so R is recited heavy.", "de": "Am Ende des Verses hält man bei الصُّدُورِ an, dann bekommt R ein Sukun, davor steht و mit Sukun, und davor دُ mit dem Vokal U, darum wird R dick gesprochen."}
+            ],
             "highlight": "دُورِ",
             "word": "إِنَّـهُ عَلِيمٌ بِذَاتِ الصُّدُورِ",
             "after": null
@@ -238,6 +316,9 @@
         "broj28": [{
             "id": 28,
             "url": "./assets/audio/l14/28.mp3",
+            "napomena": [
+                {"tip": "tanko", "bs": "U riječi تُرِيدُونَ harf R nosi vokal I (رِ), a R sa vokalom I uči se tanko.", "en": "In تُرِيدُونَ the letter R carries the vowel I (رِ), and R with the vowel I is recited light.", "de": "Im Wort تُرِيدُونَ trägt der Buchstabe R den Vokal I (رِ), und R mit dem Vokal I wird dünn gesprochen."}
+            ],
             "highlight": "رِ",
             "word": "أَمْ تُرِيدُونَ أَنْ تَسْأَلُوا رَسُولَكُمْ",
             "after": null
@@ -245,6 +326,9 @@
         "broj29": [{
             "id": 29,
             "url": "./assets/audio/l14/29.mp3",
+            "napomena": [
+                {"tip": "tanko", "bs": "U riječi بِالْـبِـرِّ harf R ima tešdid i nosi vokal I (رِّ), a R sa vokalom I uči se tanko.", "en": "In بِالْـبِـرِّ the letter R has a tashdeed and carries the vowel I (رِّ), and R with the vowel I is recited light.", "de": "Im Wort بِالْـبِـرِّ hat der Buchstabe R eine Schadda und trägt den Vokal I (رِّ), und R mit dem Vokal I wird dünn gesprochen."}
+            ],
             "highlight": "رِّ",
             "word": " وَتَنَاجَوْا بِالْـبِـرِّ وَالتَّقْوٰى",
             "after": null
@@ -252,6 +336,10 @@
         "broj30": [{
             "id": 30,
             "url": "./assets/audio/l14/30.mp3",
+            "napomena": [
+                {"tip": "tanko", "bs": "U riječi الـرِّقَابِ harf R ima tešdid i nosi vokal I (رِّ), a R sa vokalom I uči se tanko.", "en": "In الـرِّقَابِ the letter R has a tashdeed and carries the vowel I (رِّ), and R with the vowel I is recited light.", "de": "Im Wort الـرِّقَابِ hat der Buchstabe R eine Schadda und trägt den Vokal I (رِّ), und R mit dem Vokal I wird dünn gesprochen."},
+                {"tip": "tanko", "bs": "Ovdje harf R ponovo nosi vokal I (رِ), zato se i on uči tanko, mekim i tankim glasom.", "en": "Here the letter R again carries the vowel I (رِ), so it too is recited light, with a soft, thin sound.", "de": "Hier trägt der Buchstabe R wieder den Vokal I (رِ), darum wird auch er dünn gesprochen, mit weichem, dünnem Klang."}
+            ],
             "highlight": "رِ",
             "word": "رِمِينَ",
             "after": null
@@ -264,6 +352,9 @@
         "broj31": [{
             "id": 31,
             "url": "./assets/audio/l14/31.mp3",
+            "napomena": [
+                {"tip": "tanko", "bs": "Na kraju ajeta staje se na قَدِيرٌ, pa R dobije sukun, prije njeg je ي sa sukunom, a prije toga دِ sa vokalom I, zato se R uči tanko.", "en": "At the end of the verse one stops on قَدِيرٌ, so R takes a sukun, before it comes ي with a sukun, and before that دِ with the vowel I, so R is recited light.", "de": "Am Ende des Verses hält man bei قَدِيرٌ an, dann bekommt R ein Sukun, davor steht ي mit Sukun, und davor دِ mit dem Vokal I, darum wird R dünn gesprochen."}
+            ],
             "highlight": "دِيرٌ",
             "word": " إِنَّ اللّٰهَ عَلٰى كُـلِّ شَيْءٍ قَدِيرٌ ",
             "after": null
@@ -271,6 +362,10 @@
         "broj32": [{
             "id": 32,
             "url": "./assets/audio/l14/32.mp3",
+            "napomena": [
+                {"tip": "tanko", "bs": "U riječi الْمَشْرِقِ harf R nosi vokal I (رِ), a R sa vokalom I uči se tanko.", "en": "In الْمَشْرِقِ the letter R carries the vowel I (رِ), and R with the vowel I is recited light.", "de": "Im Wort الْمَشْرِقِ trägt der Buchstabe R den Vokal I (رِ), und R mit dem Vokal I wird dünn gesprochen."},
+                {"tip": "tanko", "bs": "Isto je i u riječi مَغْرِبِ: harf R nosi vokal I (رِ), zato se i tu uči tanko.", "en": "The same holds in مَغْرِبِ: the letter R carries the vowel I (رِ), so here too it is recited light.", "de": "Genauso ist es im Wort مَغْرِبِ: Der Buchstabe R trägt den Vokal I (رِ), darum wird er auch hier dünn gesprochen."}
+            ],
             "highlight": "رِ",
             "word": "لْمَغْرِبِ",
             "after": null
@@ -283,6 +378,9 @@
         "broj33": [{
             "id": 33,
             "url": "./assets/audio/l14/33.mp3",
+            "napomena": [
+                {"tip": "tanko", "bs": "U riječima فَرِحُوا i رِيحٌ harf R nosi vokal I (رِ), zato se u oba slučaja uči tanko.", "en": "In فَرِحُوا and رِيحٌ the letter R carries the vowel I (رِ), so in both cases it is recited light.", "de": "In den Wörtern فَرِحُوا und رِيحٌ trägt der Buchstabe R den Vokal I (رِ), darum wird er in beiden Fällen dünn gesprochen."}
+            ],
             "highlight": "رِ",
             "word": "وَفَرِحُوا بِهَا جَآءَتْهَا رِيحٌ عَاصِفٌ",
             "after": null
@@ -290,6 +388,9 @@
         "broj34": [{
             "id": 34,
             "url": "./assets/audio/l14/34.mp3",
+            "napomena": [
+                {"tip": "tanko", "bs": "U riječi وَأَنْـذِرْ harf R ima sukun, a prije njeg je harf sa vokalom I (ذِرْ), zato se R uči tanko.", "en": "In وَأَنْـذِرْ the letter R carries a sukun and is preceded by a letter with the vowel I (ذِرْ), so R is recited light.", "de": "Im Wort وَأَنْـذِرْ hat der Buchstabe R ein Sukun, und davor steht ein Buchstabe mit dem Vokal I (ذِرْ), darum wird R dünn gesprochen."}
+            ],
             "highlight": "ذِرْ",
             "word": " وَأَنْـذِرْ عَشِـيرَتَكَ الْأَقْرَبِينَ",
             "after": null
@@ -297,6 +398,9 @@
         "broj35": [{
             "id": 35,
             "url": "./assets/audio/l14/35.mp3",
+            "napomena": [
+                {"tip": "tanko", "bs": "U riječi وَاصْطَبِرْ harf R ima sukun, a prije njeg je harf sa vokalom I (بِرْ), zato se R uči tanko.", "en": "In وَاصْطَبِرْ the letter R carries a sukun and is preceded by a letter with the vowel I (بِرْ), so R is recited light.", "de": "Im Wort وَاصْطَبِرْ hat der Buchstabe R ein Sukun, und davor steht ein Buchstabe mit dem Vokal I (بِرْ), darum wird R dünn gesprochen."}
+            ],
             "highlight": "بِرْ",
             "word": "وَأْمُرْ أَهْلَكَ بِالصَّلَاةِ وَاصْطَبِرْ عَلَيْهَا",
             "after": null
@@ -304,6 +408,9 @@
         "broj36": [{
             "id": 36,
             "url": "./assets/audio/l14/36.mp3",
+            "napomena": [
+                {"tip": "tanko", "bs": "U riječi فَاغْفِرْ harf R ima sukun, a prije njeg je harf sa vokalom I (فِرْ), zato se R uči tanko.", "en": "In فَاغْفِرْ the letter R carries a sukun and is preceded by a letter with the vowel I (فِرْ), so R is recited light.", "de": "Im Wort فَاغْفِرْ hat der Buchstabe R ein Sukun, und davor steht ein Buchstabe mit dem Vokal I (فِرْ), darum wird R dünn gesprochen."}
+            ],
             "highlight": "فِرْ",
             "word": "فَاغْفِرْ لَنَا ذُنُوبَنَا",
             "after": null
@@ -311,6 +418,9 @@
         "broj37": [{
             "id": 37,
             "url": "./assets/audio/l14/37.mp3",
+            "napomena": [
+                {"tip": "tanko", "bs": "Na kraju ajeta staje se na السَّيْرَ, pa R dobije sukun, a prije njeg je يْ sa sukunom, zato se R uči tanko iako je prije toga vokal E.", "en": "At the end of the verse one stops on السَّيْرَ, so R takes a sukun and is preceded by يْ with a sukun, so R is recited light even though the vowel A comes before that.", "de": "Am Ende des Verses hält man bei السَّيْرَ an, dann bekommt R ein Sukun, und davor steht يْ mit Sukun, darum wird R dünn gesprochen, obwohl noch davor der Vokal A steht."}
+            ],
             "highlight": "سَّيْرَ",
             "word": " وَقَدَّرْنَا فِيهَا السَّيْرَ",
             "after": null
@@ -318,6 +428,9 @@
         "broj38": [{
             "id": 38,
             "url": "./assets/audio/l14/38.mp3",
+            "napomena": [
+                {"tip": "tanko", "bs": "Na kraju ajeta staje se na ضَيْرَ, pa R dobije sukun, a prije njeg je يْ sa sukunom, zato se R uči tanko iako je prije toga vokal E.", "en": "At the end of the verse one stops on ضَيْرَ, so R takes a sukun and is preceded by يْ with a sukun, so R is recited light even though the vowel A comes before that.", "de": "Am Ende des Verses hält man bei ضَيْرَ an, dann bekommt R ein Sukun, und davor steht يْ mit Sukun, darum wird R dünn gesprochen, obwohl noch davor der Vokal A steht."}
+            ],
             "highlight": "ضَيْرَ",
             "word": " قَالُوا لَا ضَيْرَ",
             "after": null
@@ -325,6 +438,9 @@
         "broj39": [{
             "id": 39,
             "url": "./assets/audio/l14/39.mp3",
+            "napomena": [
+                {"tip": "tanko", "bs": "Na kraju ajeta staje se na خَيْرٌ, pa R dobije sukun, a prije njeg je يْ sa sukunom, zato se R uči tanko iako je prije toga vokal E.", "en": "At the end of the verse one stops on خَيْرٌ, so R takes a sukun and is preceded by يْ with a sukun, so R is recited light even though the vowel A comes before that.", "de": "Am Ende des Verses hält man bei خَيْرٌ an, dann bekommt R ein Sukun, und davor steht يْ mit Sukun, darum wird R dünn gesprochen, obwohl noch davor der Vokal A steht."}
+            ],
             "highlight": "خَيْرٌ",
             "word": " هُوَ أَدْنٰى بِالَّذِي هُوَ خَيْرٌ",
             "after": null

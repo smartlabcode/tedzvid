@@ -1,0 +1,41 @@
+/*
+ * Katalog tedžvidskih pravila za bonus lekciju: boja, veza s lekcijom i naziv.
+ * Redoslijed određuje i redoslijed u legendi.
+ */
+module.exports = [
+	/* stajanje i pomoćne oznake */
+	{ id: 'vakf', lekcija: 1, boja: '#b9962f', grupa: 'stajanje', bs: 'Vakf – znak za stajanje', en: 'Waqf – stopping sign' },
+	{ id: 'ne-uci-se', lekcija: null, boja: '#bdb5a8', grupa: 'stajanje', bs: 'Harf koji se ne uči', en: 'Silent letter' },
+
+	/* pojedinačna pravila */
+	{ id: 'damir', lekcija: 2, boja: '#ba68c8', grupa: 'ostalo', bs: 'Damir – zamjenica HU', en: 'Damir – the pronoun HU' },
+	{ id: 'lafzatullah', lekcija: 3, boja: '#00897b', grupa: 'ostalo', bs: 'Lafzatullah – riječ Allah', en: 'Lafdhatullah – the word Allah' },
+	{ id: 'kalkala', lekcija: 13, boja: '#e8590c', grupa: 'ostalo', bs: 'Kalkala – odskakanje', en: 'Qalqalah – bouncing' },
+	{ id: 'hukmurra', lekcija: 14, boja: '#3949ab', grupa: 'ostalo', bs: 'Hukmurra – izgovor harfa R', en: 'Hukm ar-ra – pronouncing R' },
+	{ id: 'gunne', lekcija: null, boja: '#d6336c', grupa: 'ostalo', bs: 'Gunne – N i M sa šeddom', en: 'Ghunnah – N and M with shadda' },
+
+	/* N sa sukunom i tenvin */
+	{ id: 'izhar-halkij', lekcija: 9, boja: '#37474f', grupa: 'nun', bs: 'Izhar hallkijj', en: 'Idhhar halqi' },
+	{ id: 'ihfa', lekcija: 11, boja: '#2f8f3e', grupa: 'nun', bs: 'Ihfa', en: 'Ikhfa' },
+	{ id: 'iklab', lekcija: 8, boja: '#7b2fbe', grupa: 'nun', bs: 'Iklab', en: 'Iqlab' },
+	{ id: 'idgam-gunneh', lekcija: 6, boja: '#0277bd', grupa: 'nun', bs: 'Idgam mea-l-gunneh', en: "Idgham ma'al-ghunnah" },
+	{ id: 'idgam-bila-gunneh', lekcija: 7, boja: '#4fc3f7', grupa: 'nun', bs: 'Idgam bila gunneh', en: 'Idgham bila ghunnah' },
+
+	/* M sa sukunom */
+	{ id: 'izhar-sefevijj', lekcija: 10, boja: '#8a9aa4', grupa: 'mim', bs: 'Izhar šefevijj', en: 'Idhhar shafawi' },
+	{ id: 'ihfa-sefevijj', lekcija: 12, boja: '#8bc34a', grupa: 'mim', bs: 'Ihfa šefevijj', en: 'Ikhfa shafawi' },
+	{ id: 'idgam-mislejn-gunneh', lekcija: 5, boja: '#a1887f', grupa: 'mim', bs: 'Idgam mislejn mea-l-gunneh', en: "Idgham mithlayn ma'al-ghunnah" },
+
+	/* uklapanja */
+	{ id: 'idgam-mislejn', lekcija: 4, boja: '#6d4c41', grupa: 'idgam', bs: 'Idgam mislejn', en: 'Idgham mithlayn' },
+	{ id: 'idgam-mutedzanisejn', lekcija: 15, boja: '#7d7a12', grupa: 'idgam', bs: 'Idgam mutedžanisejn', en: 'Idgham mutajanisayn' },
+	{ id: 'idgam-mutekaribejn', lekcija: 16, boja: '#b0a92e', grupa: 'idgam', bs: 'Idgam mutekaribejn', en: 'Idgham mutaqaribayn' },
+
+	/* dužine */
+	{ id: 'medd-tabii', lekcija: 17, boja: '#c0392b', grupa: 'medd', bs: "Medd tabi'ijj", en: "Madd tabi'i" },
+	{ id: 'medd-muttesil', lekcija: 18, boja: '#7d1128', grupa: 'medd', bs: 'Medd muttesil', en: 'Madd muttasil' },
+	{ id: 'medd-munfesil', lekcija: 19, boja: '#e0664f', grupa: 'medd', bs: 'Medd munfesil', en: 'Madd munfasil' },
+	{ id: 'medd-lazim', lekcija: 20, boja: '#8e0e63', grupa: 'medd', bs: 'Medd lazim', en: 'Madd lazim' },
+	{ id: 'medd-arid', lekcija: 21, boja: '#b9607a', grupa: 'medd', bs: 'Medd arid', en: "Madd 'arid" },
+	{ id: 'medd-lin', lekcija: 22, boja: '#8d5524', grupa: 'medd', bs: 'Medd lin', en: 'Madd lin' }
+];

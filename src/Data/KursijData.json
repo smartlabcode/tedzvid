@@ -1,0 +1,770 @@
+{
+	"vrsta": "kursij",
+	"sura": 2,
+	"brojAjeta": 1,
+	"audio": {
+		"baza": "https://everyayah.com/data/Husary_128kbps/",
+		"ucac": "Mahmud Halil el-Husari"
+	},
+	"objasnjenja": {
+		"bs": [
+			"Prije riječi Allah (اللّٰه) je vokal E ili U: riječ se uči krupno.",
+			"Dužina je na kraju riječi, a sljedeća riječ počinje hemzetom: medd munfesil – uči se 2, 4 ili 5 hareketa.",
+			"Obična dužina na harfu A (ا): uči se 2 hareketa (medd tabi’ijj).",
+			"Pri stajanju zadnji harf M (م) dobija sukun poslije dužine: medd arid – uči se 2, 4 ili 6 hareketa.",
+			"Znak za stajanje ۚ (osmanski ج): ovdje bolje je stati.",
+			"Zamjenica HU (هُ): prije nje je kratki vokal, pa se uči dugo (2 hareketa).",
+			"Tenvin UN (ـٌ) ispred harfa V (و): uklapa se u njeg uz gunnu 2 hareketa (idgam mea-l-gunneh).",
+			"Prije harfa V (و) sa sukunom je kratki vokal E, a poslije njeg harf sa sukunom: medd lin – uči se 2, 4 ili 6 hareketa.",
+			"Tenvin UN (ـٌ) ispred harfa L (ل): uklapa se u njeg bez gunne (idgam bila gunneh).",
+			"Harf R (ر) se uči krupno jer je sa sukunom, a poslije njeg dolazi krupni harf D (ض).",
+			"Znak za stajanje ۗ (osmanski قلي): ovdje bolje je stati.",
+			"N (ن) sa sukunom ispred harfa Z (ذ): skriva se uz gunnu 2 hareketa (ihfa).",
+			"N (ن) sa sukunom ispred harfa D (د): skriva se uz gunnu 2 hareketa (ihfa).",
+			"Obična dužina na harfu J (ي): uči se 2 hareketa (medd tabi’ijj).",
+			"M sa sukunom (مْ) ispred harfa V (و): izgovara se čisto, bez gunne (izhar šefevijj).",
+			"Znak za stajanje ۖ (osmanski صلي): ovdje bolje je preći.",
+			"Obična dužina na harfu V (و): uči se 2 hareketa (medd tabi’ijj).",
+			"Tenvin IN (ـٍ) ispred harfa M (م): uklapa se u njeg uz gunnu 2 hareketa (idgam mea-l-gunneh).",
+			"N sa sukunom (نْ) ispred grlenog harfa A (ع): izgovara se čisto, bez gunne (izhar hallkijj).",
+			"Poslije dužine, u istoj riječi, dolazi hemze: medd muttesil – uči se 4 ili 5 hareketa.",
+			"Harf R (ر) se uči krupno jer je sa sukunom, a prije njeg je vokal U."
+		],
+		"en": [
+			"The word Allah (اللّٰه) is preceded by the vowel A or U: it is recited heavy (tafkhim).",
+			"The prolongation ends the word and the next word begins with a hamza: madd munfasil – 2, 4 or 5 harakas.",
+			"A natural prolongation on the letter A (ا): 2 harakas (madd tabi’i).",
+			"When stopping, the final letter M (م) takes a sukun after the prolongation: madd ’arid – 2, 4 or 6 harakas.",
+			"Stopping sign ۚ (Ottoman ج): here better to stop.",
+			"The pronoun HU (هُ) is preceded by a short vowel, so it is prolonged (2 harakas).",
+			"Tanween UN (ـٌ) before the letter W (و): merged into it with ghunnah for 2 harakas (idgham ma’al-ghunnah).",
+			"The letter W (و) with a sukun is preceded by the short vowel A and followed by a letter with a sukun: madd lin – 2, 4 or 6 harakas.",
+			"Tanween UN (ـٌ) before the letter L (ل): merged into it without ghunnah (idgham bila ghunnah).",
+			"The letter R (ر) is recited heavy because it has a sukun and is followed by the heavy letter D (ض).",
+			"Stopping sign ۗ (Ottoman قلي): here better to stop.",
+			"N (ن) with a sukun before the letter DH (ذ): hidden with ghunnah for 2 harakas (ikhfa).",
+			"N (ن) with a sukun before the letter D (د): hidden with ghunnah for 2 harakas (ikhfa).",
+			"A natural prolongation on the letter Y (ي): 2 harakas (madd tabi’i).",
+			"M with a sukun (مْ) before the letter W (و): pronounced clearly, without ghunnah (idhhar shafawi).",
+			"Stopping sign ۖ (Ottoman صلي): here better to continue.",
+			"A natural prolongation on the letter W (و): 2 harakas (madd tabi’i).",
+			"Tanween IN (ـٍ) before the letter M (م): merged into it with ghunnah for 2 harakas (idgham ma’al-ghunnah).",
+			"N with a sukun (نْ) before the throat letter 'A (ع): pronounced clearly, without ghunnah (idhhar halqi).",
+			"The prolongation is followed by a hamza in the same word: madd muttasil – 4 or 5 harakas.",
+			"The letter R (ر) is recited heavy because it has a sukun and is preceded by the vowel U."
+		],
+		"de": [
+			"Vor dem Wort Allah (اللّٰه) steht der Vokal A oder U: Das Wort wird dick gesprochen.",
+			"Die Dehnung steht am Wortende und das nächste Wort beginnt mit einer Hamza: Madd Munfasil – wird 2, 4 oder 5 Harakat lang gesprochen.",
+			"Natürliche Dehnung auf dem Buchstaben A (ا): wird 2 Harakat lang gesprochen (Madd Tabi’i).",
+			"Beim Anhalten bekommt der letzte Buchstabe M (م) nach der Dehnung ein Sukun: Madd Arid – wird 2, 4 oder 6 Harakat lang gesprochen.",
+			"Pausenzeichen ۚ (osmanisch ج): Hier besser anhalten.",
+			"Das Pronomen HU (هُ): Davor steht ein kurzer Vokal, deshalb wird es lang gesprochen (2 Harakat).",
+			"Tanwin UN (ـٌ) vor dem Buchstaben W (و): verschmilzt in ihn, mit Ghunna 2 Harakat (Idgham ma’al-Ghunna).",
+			"Vor dem W (و) mit Sukun steht der kurze Vokal A, danach folgt ein Buchstabe mit Sukun: Madd Lin – wird 2, 4 oder 6 Harakat lang gesprochen.",
+			"Tanwin UN (ـٌ) vor dem Buchstaben L (ل): verschmilzt in ihn, ohne Ghunna (Idgham bila Ghunna).",
+			"Der Buchstabe R (ر) wird dick gesprochen, weil er ein Sukun hat und danach der dicke Buchstabe D (ض) kommt.",
+			"Pausenzeichen ۗ (osmanisch قلي): Hier besser anhalten.",
+			"N (ن) mit Sukun vor dem Buchstaben DH (ذ): wird mit Ghunna 2 Harakat lang versteckt (Ichfa).",
+			"N (ن) mit Sukun vor dem Buchstaben D (د): wird mit Ghunna 2 Harakat lang versteckt (Ichfa).",
+			"Natürliche Dehnung auf dem Buchstaben Y (ي): wird 2 Harakat lang gesprochen (Madd Tabi’i).",
+			"M mit Sukun (مْ) vor dem Buchstaben W (و): wird deutlich ausgesprochen, ohne Ghunna (Idh-har Schafawi).",
+			"Pausenzeichen ۖ (osmanisch صلي): Hier besser weiterlesen.",
+			"Natürliche Dehnung auf dem Buchstaben W (و): wird 2 Harakat lang gesprochen (Madd Tabi’i).",
+			"Tanwin IN (ـٍ) vor dem Buchstaben M (م): verschmilzt in ihn, mit Ghunna 2 Harakat (Idgham ma’al-Ghunna).",
+			"N mit Sukun (نْ) vor dem Kehlbuchstaben A (ع): wird deutlich ausgesprochen, ohne Ghunna (Idh-har Halqi).",
+			"Nach der Dehnung kommt im selben Wort eine Hamza: Madd Muttasil – wird 4 oder 5 Harakat lang gesprochen.",
+			"Der Buchstabe R (ر) wird dick gesprochen, weil er ein Sukun hat und davor der Vokal U steht."
+		]
+	},
+	"odjeljci": [
+		{
+			"kljuc": "k255",
+			"sura": 2,
+			"od": 255,
+			"do": 255,
+			"brojAjeta": 1,
+			"mekkanska": false,
+			"naziv": {
+				"bs": "Ajetul-kursij",
+				"en": "Ayat al-Kursi",
+				"de": "Ayat al-Kursi",
+				"ar": "آيَةُ الْكُرْسِيِّ"
+			},
+			"znacenje": {
+				"bs": "Ajet o Prijestolju",
+				"en": "The Verse of the Throne",
+				"de": "Der Thronvers"
+			},
+			"ajeti": [
+				{
+					"n": 255,
+					"audio": "002255.mp3",
+					"vrijeme": [[1200,2040],[2050,3930],[3940,4710],[4720,5410],[5420,5800],[5810,6670],[6680,9500],[10250,10510],[10520,11680],[11690,12980],[12990,13650],[13660,15850],[16250,16840],[16850,17210],[17220,17430],[17440,18950],[18960,19520],[19530,19770],[19780,21250],[22500,23310],[23320,23530],[23540,24330],[24340,25250],[25260,28120],[28130,28840],[28850,30450],[31100,31680],[31690,32160],[32170,32820],[32830,33940],[33950,34560],[34570,35670],[35680,36230],[36240,37430],[37440,39010],[39020,39240],[39250,41500],[41510,42280],[42290,42970],[42980,44700],[44710,48420],[48430,49540],[49550,51030],[51040,51940],[51950,52450],[52460,53590],[53600,56100],[56300,56780],[56790,57700],[57710,59830]],
+					"dijelovi": [
+						{
+							"t": "ا"
+						},
+						{
+							"t": "للَّهُ",
+							"i": 0
+						},
+						{
+							"t": " لَ"
+						},
+						{
+							"t": "آ",
+							"i": 1
+						},
+						{
+							"t": " إِلَ"
+						},
+						{
+							"t": "ـٰ",
+							"i": 2
+						},
+						{
+							"t": "هَ إِلَّ"
+						},
+						{
+							"t": "ا",
+							"i": 3
+						},
+						{
+							"t": " هُوَ الْحَيُّ الْقَيُّ"
+						},
+						{
+							"t": "و",
+							"i": 4
+						},
+						{
+							"t": "مُ "
+						},
+						{
+							"t": "ۚ",
+							"i": 5
+						},
+						{
+							"t": " لَ"
+						},
+						{
+							"t": "ا",
+							"i": 6
+						},
+						{
+							"t": " تَأْخُذُ"
+						},
+						{
+							"t": "هُ",
+							"i": 7
+						},
+						{
+							"t": " سِنَ"
+						},
+						{
+							"t": "ةٌ",
+							"i": 8
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "وَ",
+							"i": 8
+						},
+						{
+							"t": "لَ"
+						},
+						{
+							"t": "ا",
+							"i": 9
+						},
+						{
+							"t": " نَ"
+						},
+						{
+							"t": "وْ",
+							"i": 10
+						},
+						{
+							"t": "مٌ",
+							"i": 11
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "ۚ",
+							"i": 12
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "لَّ",
+							"i": 11
+						},
+						{
+							"t": "هُ",
+							"i": 13
+						},
+						{
+							"t": " مَ"
+						},
+						{
+							"t": "ا",
+							"i": 14
+						},
+						{
+							"t": " فِى السَّمَ"
+						},
+						{
+							"t": "ـٰ",
+							"i": 15
+						},
+						{
+							"t": "وَٰ",
+							"i": 16
+						},
+						{
+							"t": "تِ وَمَ"
+						},
+						{
+							"t": "ا",
+							"i": 17
+						},
+						{
+							"t": " فِى الْأَ"
+						},
+						{
+							"t": "رْ",
+							"i": 18
+						},
+						{
+							"t": "ضِ "
+						},
+						{
+							"t": "ۗ",
+							"i": 19
+						},
+						{
+							"t": " مَ"
+						},
+						{
+							"t": "ن",
+							"i": 20
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "ذَ",
+							"i": 20
+						},
+						{
+							"t": "ا",
+							"i": 21
+						},
+						{
+							"t": " الَّذِى يَشْفَعُ عِ"
+						},
+						{
+							"t": "ندَ",
+							"i": 22
+						},
+						{
+							"t": "هُ",
+							"i": 23
+						},
+						{
+							"t": " إِلَّ"
+						},
+						{
+							"t": "ا",
+							"i": 24
+						},
+						{
+							"t": " بِإِذْنِ"
+						},
+						{
+							"t": "هِ",
+							"i": 25
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "ۚ",
+							"i": 26
+						},
+						{
+							"t": " يَعْلَمُ مَ"
+						},
+						{
+							"t": "ا",
+							"i": 27
+						},
+						{
+							"t": " بَيْنَ أَيْدِ"
+						},
+						{
+							"t": "ي",
+							"i": 28
+						},
+						{
+							"t": "هِ"
+						},
+						{
+							"t": "مْ",
+							"i": 29
+						},
+						{
+							"t": " وَمَ"
+						},
+						{
+							"t": "ا",
+							"i": 30
+						},
+						{
+							"t": " خَلْفَهُ"
+						},
+						{
+							"t": "مْ",
+							"i": 31
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "ۖ",
+							"i": 32
+						},
+						{
+							"t": " وَلَ"
+						},
+						{
+							"t": "ا",
+							"i": 33
+						},
+						{
+							"t": " يُحِ"
+						},
+						{
+							"t": "ي",
+							"i": 34
+						},
+						{
+							"t": "طُ"
+						},
+						{
+							"t": "و",
+							"i": 35
+						},
+						{
+							"t": "نَ بِشَ"
+						},
+						{
+							"t": "يْءٍ",
+							"i": 36
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "مِّ",
+							"i": 36
+						},
+						{
+							"t": "نْ",
+							"i": 37
+						},
+						{
+							"t": " عِلْمِ"
+						},
+						{
+							"t": "هِ",
+							"i": 38
+						},
+						{
+							"t": " إِلَّ"
+						},
+						{
+							"t": "ا",
+							"i": 39
+						},
+						{
+							"t": " بِمَ"
+						},
+						{
+							"t": "ا",
+							"i": 40
+						},
+						{
+							"t": " شَ"
+						},
+						{
+							"t": "آ",
+							"i": 41
+						},
+						{
+							"t": "ءَ "
+						},
+						{
+							"t": "ۚ",
+							"i": 42
+						},
+						{
+							"t": " وَسِعَ كُ"
+						},
+						{
+							"t": "رْ",
+							"i": 43
+						},
+						{
+							"t": "سِيُّهُ السَّمَ"
+						},
+						{
+							"t": "ـٰ",
+							"i": 44
+						},
+						{
+							"t": "وَٰ",
+							"i": 45
+						},
+						{
+							"t": "تِ وَالْأَ"
+						},
+						{
+							"t": "رْ",
+							"i": 46
+						},
+						{
+							"t": "ضَ "
+						},
+						{
+							"t": "ۖ",
+							"i": 47
+						},
+						{
+							"t": " وَلَ"
+						},
+						{
+							"t": "ا",
+							"i": 48
+						},
+						{
+							"t": " يَـُٔ"
+						},
+						{
+							"t": "و",
+							"i": 49
+						},
+						{
+							"t": "دُ"
+						},
+						{
+							"t": "هُ",
+							"i": 50
+						},
+						{
+							"t": " حِفْظُهُمَ"
+						},
+						{
+							"t": "ا",
+							"i": 51
+						},
+						{
+							"t": " "
+						},
+						{
+							"t": "ۚ",
+							"i": 52
+						},
+						{
+							"t": " وَهُوَ الْعَلِيُّ الْعَظِ"
+						},
+						{
+							"t": "ي",
+							"i": 53
+						},
+						{
+							"t": "مُ"
+						}
+					],
+					"pravila": [
+						{
+							"id": "lafzatullah",
+							"rijec": "اللَّهُ",
+							"t": 0
+						},
+						{
+							"id": "medd-munfesil",
+							"rijec": "لَآ",
+							"t": 1
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "إِلَـٰهَ",
+							"t": 2
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "إِلَّا",
+							"t": 2
+						},
+						{
+							"id": "medd-arid",
+							"rijec": "الْقَيُّومُ",
+							"t": 3
+						},
+						{
+							"id": "vakf",
+							"rijec": "ۚ",
+							"t": 4
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "لَا",
+							"t": 2
+						},
+						{
+							"id": "damir",
+							"rijec": "تَأْخُذُهُ",
+							"t": 5
+						},
+						{
+							"id": "idgam-gunneh",
+							"rijec": "سِنَةٌ",
+							"t": 6
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "وَلَا",
+							"t": 2
+						},
+						{
+							"id": "medd-lin",
+							"rijec": "نَوْمٌ",
+							"t": 7
+						},
+						{
+							"id": "idgam-bila-gunneh",
+							"rijec": "نَوْمٌ",
+							"t": 8
+						},
+						{
+							"id": "vakf",
+							"rijec": "ۚ",
+							"t": 4
+						},
+						{
+							"id": "damir",
+							"rijec": "لَّهُ",
+							"t": 5
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "مَا",
+							"t": 2
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "السَّمَـٰوَٰتِ",
+							"t": 2
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "السَّمَـٰوَٰتِ",
+							"t": 2
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "وَمَا",
+							"t": 2
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "الْأَرْضِ",
+							"t": 9
+						},
+						{
+							"id": "vakf",
+							"rijec": "ۗ",
+							"t": 10
+						},
+						{
+							"id": "ihfa",
+							"rijec": "مَن",
+							"t": 11
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "ذَا",
+							"t": 2
+						},
+						{
+							"id": "ihfa",
+							"rijec": "عِندَهُ",
+							"t": 12
+						},
+						{
+							"id": "damir",
+							"rijec": "عِندَهُ",
+							"t": 5
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "إِلَّا",
+							"t": 2
+						},
+						{
+							"id": "damir",
+							"rijec": "بِإِذْنِهِ",
+							"t": 5
+						},
+						{
+							"id": "vakf",
+							"rijec": "ۚ",
+							"t": 4
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "مَا",
+							"t": 2
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "أَيْدِيهِمْ",
+							"t": 13
+						},
+						{
+							"id": "izhar-sefevijj",
+							"rijec": "أَيْدِيهِمْ",
+							"t": 14
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "وَمَا",
+							"t": 2
+						},
+						{
+							"id": "izhar-sefevijj",
+							"rijec": "خَلْفَهُمْ",
+							"t": 14
+						},
+						{
+							"id": "vakf",
+							"rijec": "ۖ",
+							"t": 15
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "وَلَا",
+							"t": 2
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "يُحِيطُونَ",
+							"t": 13
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "يُحِيطُونَ",
+							"t": 16
+						},
+						{
+							"id": "idgam-gunneh",
+							"rijec": "بِشَيْءٍ",
+							"t": 17
+						},
+						{
+							"id": "izhar-halkij",
+							"rijec": "مِّنْ",
+							"t": 18
+						},
+						{
+							"id": "damir",
+							"rijec": "عِلْمِهِ",
+							"t": 5
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "إِلَّا",
+							"t": 2
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "بِمَا",
+							"t": 2
+						},
+						{
+							"id": "medd-muttesil",
+							"rijec": "شَآءَ",
+							"t": 19
+						},
+						{
+							"id": "vakf",
+							"rijec": "ۚ",
+							"t": 4
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "كُرْسِيُّهُ",
+							"t": 20
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "السَّمَـٰوَٰتِ",
+							"t": 2
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "السَّمَـٰوَٰتِ",
+							"t": 2
+						},
+						{
+							"id": "hukmurra",
+							"rijec": "وَالْأَرْضَ",
+							"t": 9
+						},
+						{
+							"id": "vakf",
+							"rijec": "ۖ",
+							"t": 15
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "وَلَا",
+							"t": 2
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "يَـُٔودُهُ",
+							"t": 16
+						},
+						{
+							"id": "damir",
+							"rijec": "يَـُٔودُهُ",
+							"t": 5
+						},
+						{
+							"id": "medd-tabii",
+							"rijec": "حِفْظُهُمَا",
+							"t": 2
+						},
+						{
+							"id": "vakf",
+							"rijec": "ۚ",
+							"t": 4
+						},
+						{
+							"id": "medd-arid",
+							"rijec": "الْعَظِيمُ",
+							"t": 3
+						}
+					]
+				}
+			]
+		}
+	]
+}

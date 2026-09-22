@@ -1,6 +1,7 @@
 import React from 'react';
 import Player from '../Player/Player';
 import Arabic from '../Letters/Arabic';
+import vezniTekst from '../i18n/vezniTekst';
 
 function Vjezbe(data, mainrow, rows) {
 	const VjezbeRow = (dat, rowmain, rows) => {
@@ -28,7 +29,7 @@ function Vjezbe(data, mainrow, rows) {
 
 		return (
 			<span key={'key' + data[0].id}>
-				<Player url={data[0].url} key={'p' + data[0].id}>
+				<Player url={data[0].url} note={data[0].napomena} key={'p' + data[0].id}>
 					{
 						<Arabic arabic={data[0].highlight} key={'a' + data[0].id}>
 							{ar}
@@ -36,7 +37,7 @@ function Vjezbe(data, mainrow, rows) {
 						</Arabic>
 					}
 				</Player>{' '}
-				<span className={myClassName}> {data[0].after === 'break' ? <br /> : data[0].after}</span>
+				<span className={myClassName}> {data[0].after === 'break' ? <br /> : vezniTekst(data[0].after)}</span>
 			</span>
 		);
 	};

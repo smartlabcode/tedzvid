@@ -1,0 +1,60 @@
+{
+  "lekcija": 3,
+  "pitanja": [
+    {
+      "q": { "bs": "Kako se uči riječ Allah u primjeru وَجْهُ اللّٰهِ?", "en": "How is the word Allah recited in the example وَجْهُ اللّٰهِ?", "de": "Wie wird das Wort Allah im Beispiel وَجْهُ اللّٰهِ gesprochen?" },
+      "opcije": [
+        { "bs": "Tanko, jer na kraju riječi Allah stoji vokal I", "en": "Light, because the word Allah ends in the vowel I", "de": "Dünn, weil am Ende des Wortes Allah der Vokal I steht" },
+        { "bs": "Tanko, jer prije nje dođe vokal I", "en": "Light, because it is preceded by the vowel I", "de": "Dünn, weil davor der Vokal I kommt" },
+        { "bs": "Krupno, jer prije nje dođe vokal U", "en": "Heavy, because it is preceded by the vowel U", "de": "Dick, weil davor der Vokal U kommt" },
+        { "bs": "Krupno, jer prije nje dođe vokal E", "en": "Heavy, because it is preceded by the vowel A", "de": "Dick, weil davor der Vokal A kommt" }
+      ],
+      "tacno": 2,
+      "objasnjenje": { "bs": "Gleda se vokal prije riječi Allah: u وَجْهُ اللّٰهِ to je vokal U na harfu H (ه), pa se uči krupno.", "en": "We look at the vowel before the word Allah: in وَجْهُ اللّٰهِ it is the vowel U on the letter H (ه), so it is recited heavy.", "de": "Man schaut auf den Vokal vor dem Wort Allah: in وَجْهُ اللّٰهِ ist das der Vokal U auf dem Buchstaben H (ه), deshalb wird es dick gesprochen." }
+    },
+    {
+      "q": { "bs": "Kako se uči riječ Allah u primjeru لٰكِنِ اللّٰهُ يَشْهَدُ?", "en": "How is the word Allah recited in the example لٰكِنِ اللّٰهُ يَشْهَدُ?", "de": "Wie wird das Wort Allah im Beispiel لٰكِنِ اللّٰهُ يَشْهَدُ gesprochen?" },
+      "opcije": [
+        { "bs": "Krupno, jer prije nje dođe vokal U", "en": "Heavy, because it is preceded by the vowel U", "de": "Dick, weil davor der Vokal U kommt" },
+        { "bs": "Krupno, jer na kraju riječi Allah stoji vokal U", "en": "Heavy, because the word Allah ends in the vowel U", "de": "Dick, weil am Ende des Wortes Allah der Vokal U steht" },
+        { "bs": "Tanko, jer prije nje dođe sukun", "en": "Light, because it is preceded by a sukun", "de": "Dünn, weil davor ein Sukun kommt" },
+        { "bs": "Tanko, jer prije nje dođe vokal I", "en": "Light, because it is preceded by the vowel I", "de": "Dünn, weil davor der Vokal I kommt" }
+      ],
+      "tacno": 3,
+      "objasnjenje": { "bs": "U لٰكِنِ اللّٰهُ prije riječi Allah je vokal I na harfu N (ن), pa se uči tanko; vokal na kraju riječi Allah nije važan.", "en": "In لٰكِنِ اللّٰهُ the word Allah is preceded by the vowel I on the letter N (ن), so it is recited light; the vowel at the end of the word Allah does not matter.", "de": "In لٰكِنِ اللّٰهُ steht vor dem Wort Allah der Vokal I auf dem Buchstaben N (ن), deshalb wird es dünn gesprochen; der Vokal am Ende des Wortes Allah spielt keine Rolle." }
+    },
+    {
+      "q": { "bs": "U kojem se primjeru riječ Allah uči tanko?", "en": "In which example is the word Allah recited light?", "de": "In welchem Beispiel wird das Wort Allah dünn gesprochen?" },
+      "opcije": [
+        { "bs": "أَطِيعُوا اللّٰهَ", "en": "أَطِيعُوا اللّٰهَ", "de": "أَطِيعُوا اللّٰهَ" },
+        { "bs": "أَنَّ اللّٰهَ", "en": "أَنَّ اللّٰهَ", "de": "أَنَّ اللّٰهَ" },
+        { "bs": "مِنْ عِنْدِ اللّٰهِ", "en": "مِنْ عِنْدِ اللّٰهِ", "de": "مِنْ عِنْدِ اللّٰهِ" },
+        { "bs": "كِتَابَ اللّٰهِ", "en": "كِتَابَ اللّٰهِ", "de": "كِتَابَ اللّٰهِ" }
+      ],
+      "tacno": 2,
+      "objasnjenje": { "bs": "U عِنْدِ اللّٰهِ prije riječi Allah je vokal I, pa se uči tanko; u ostalim primjerima je vokal U ili E, pa se uči krupno.", "en": "In عِنْدِ اللّٰهِ the word Allah is preceded by the vowel I, so it is light; in the other examples it is preceded by the vowel U or A, so it is heavy.", "de": "In عِنْدِ اللّٰهِ steht vor dem Wort Allah der Vokal I, deshalb wird es dünn gesprochen; in den anderen Beispielen steht davor der Vokal U oder A, deshalb wird es dick gesprochen." }
+    },
+    {
+      "q": { "bs": "U primjeru وَاتَّقُوا اللّٰهَ إِنَّ اللّٰهَ شَدِيدُ الْعِقَابِ riječ Allah se javlja dva puta. Kako se uči?", "en": "In the example وَاتَّقُوا اللّٰهَ إِنَّ اللّٰهَ شَدِيدُ الْعِقَابِ the word Allah appears twice. How is it recited?", "de": "Im Beispiel وَاتَّقُوا اللّٰهَ إِنَّ اللّٰهَ شَدِيدُ الْعِقَابِ kommt das Wort Allah zweimal vor. Wie wird es gesprochen?" },
+      "opcije": [
+        { "bs": "Oba puta krupno", "en": "Heavy both times", "de": "Beide Male dick" },
+        { "bs": "Oba puta tanko", "en": "Light both times", "de": "Beide Male dünn" },
+        { "bs": "Prvi put krupno, drugi put tanko", "en": "Heavy the first time, light the second", "de": "Beim ersten Mal dick, beim zweiten Mal dünn" },
+        { "bs": "Prvi put tanko, drugi put krupno", "en": "Light the first time, heavy the second", "de": "Beim ersten Mal dünn, beim zweiten Mal dick" }
+      ],
+      "tacno": 0,
+      "objasnjenje": { "bs": "Prvi put prije riječi Allah dođe vokal U (وَاتَّقُوا), a drugi put vokal E (إِنَّ), pa se oba puta uči krupno.", "en": "The first time the word Allah is preceded by the vowel U (وَاتَّقُوا) and the second time by the vowel A (إِنَّ), so it is heavy both times.", "de": "Beim ersten Mal kommt vor dem Wort Allah der Vokal U (وَاتَّقُوا) und beim zweiten Mal der Vokal A (إِنَّ), deshalb wird es beide Male dick gesprochen." }
+    },
+    {
+      "q": { "bs": "Šta je zajedničko primjerima بِسْمِ اللّٰهِ i بِاللّٰهِ?", "en": "What do the examples بِسْمِ اللّٰهِ and بِاللّٰهِ have in common?", "de": "Was haben die Beispiele بِسْمِ اللّٰهِ und بِاللّٰهِ gemeinsam?" },
+      "opcije": [
+        { "bs": "U oba se riječ Allah uči krupno", "en": "In both the word Allah is recited heavy", "de": "In beiden wird das Wort Allah dick gesprochen" },
+        { "bs": "U oba se riječ Allah uči tanko", "en": "In both the word Allah is recited light", "de": "In beiden wird das Wort Allah dünn gesprochen" },
+        { "bs": "U prvom se uči tanko, a u drugom krupno", "en": "In the first it is light, in the second heavy", "de": "Im ersten wird das Wort Allah dünn gesprochen, im zweiten dick" },
+        { "bs": "U prvom se uči krupno, a u drugom tanko", "en": "In the first it is heavy, in the second light", "de": "Im ersten wird das Wort Allah dick gesprochen, im zweiten dünn" }
+      ],
+      "tacno": 1,
+      "objasnjenje": { "bs": "U oba primjera prije riječi Allah dođe vokal I, pa se u oba uči tanko.", "en": "In both examples the word Allah is preceded by the vowel I, so it is recited light in both.", "de": "In beiden Beispielen kommt vor dem Wort Allah der Vokal I, deshalb wird es in beiden dünn gesprochen." }
+    }
+  ]
+}

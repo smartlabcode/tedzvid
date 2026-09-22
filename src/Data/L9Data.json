@@ -3,12 +3,18 @@
 
         "id": 2,
         "url": "./assets/audio/l9/2.mp3",
+        "napomena": [
+            {"tip": "cisto", "bs": "U riječi أَنْ harf نْ ima sukun, a iza njega dolazi grleni harf أَ, zato se harf N uči čisto, bez uklapanja.", "en": "In أَنْ the letter نْ carries a sukun and is followed by the throat letter أَ, so N is pronounced clearly, without merging.", "de": "Im Wort أَنْ hat der Buchstabe نْ ein Sukun, und danach kommt der Kehlbuchstabe أَ, deshalb wird das N deutlich ausgesprochen, ohne Verschmelzung."}
+        ],
         "highlight": "نْ أَ",
         "word": "قَالَ أَعُوذُ بِاللّٰهِ أَنْ أَكُونَ مِنَ الْجَاهِلِينَ",
         "after": " ; "
     }, {
         "id": 1,
         "url": "./assets/audio/l9/1.mp3",
+        "napomena": [
+            {"tip": "cisto", "bs": "U riječi عَنْهُ harf نْ ima sukun, a iza njega dolazi grleni harf هُ, zato se harf N uči čisto, bez uklapanja.", "en": "In عَنْهُ the letter نْ carries a sukun and is followed by the throat letter هُ, so N is pronounced clearly, without merging.", "de": "Im Wort عَنْهُ hat der Buchstabe نْ ein Sukun, und danach kommt der Kehlbuchstabe هُ, deshalb wird das N deutlich ausgesprochen, ohne Verschmelzung."}
+        ],
         "highlight": "نْهُ",
         "word": "عَنْهُ",
         "after": null
@@ -16,6 +22,9 @@
     "row2": [{
         "id": 4,
         "url": "./assets/audio/l9/4.mp3",
+        "napomena": [
+            {"tip": "cisto", "bs": "Na kraju riječi عَلِيمـًا je tenvin EN, a iza njega dolazi grleni harf حَ, zato se harf N iz tenvina uči čisto, bez uklapanja.", "en": "At the end of عَلِيمـًا there is the tanween AN, followed by the throat letter حَ, so the N of the tanween is pronounced clearly, without merging.", "de": "Am Ende von عَلِيمـًا steht das Tanwin AN, und danach kommt der Kehlbuchstabe حَ, deshalb wird das N des Tanwins deutlich ausgesprochen, ohne Verschmelzung."}
+        ],
         "highlight": "ـًا حَ",
         "word": "عَلِيمـًا حَكِيمًا",
         "after": null
@@ -25,12 +34,18 @@
         {
             "id": 8,
             "url": "./assets/audio/l9/8.mp3",
+            "napomena": [
+                {"tip": "cisto", "bs": "U riječi اَلدُّنْيَا iza harfa نْ sa sukunom dolazi يَ u istoj riječi, zato je ovo izhar mutlak i harf N se uči čisto.", "en": "In اَلدُّنْيَا the letter نْ with a sukun is followed by يَ within the same word, so this is idhhar mutlaq and N is pronounced clearly.", "de": "Im Wort اَلدُّنْيَا folgt auf den Buchstaben نْ mit Sukun ein يَ im selben Wort, deshalb ist das Idh-har Mutlaq und das N wird deutlich ausgesprochen."}
+            ],
             "highlight": "ُّنْيَ",
             "word": "اَلدُّنْيَا",
             "after": " ; "
         }, {
             "id": 7,
             "url": "./assets/audio/l9/7.mp3",
+            "napomena": [
+                {"tip": "cisto", "bs": "U riječi بُنْيَانٌ iza harfa نْ sa sukunom dolazi يَ u istoj riječi, zato je ovo izhar mutlak i harf N se uči čisto.", "en": "In بُنْيَانٌ the letter نْ with a sukun is followed by يَ within the same word, so this is idhhar mutlaq and N is pronounced clearly.", "de": "Im Wort بُنْيَانٌ folgt auf den Buchstaben نْ mit Sukun ein يَ im selben Wort, deshalb ist das Idh-har Mutlaq und das N wird deutlich ausgesprochen."}
+            ],
             "highlight": "نْيَ",
             "word": "بُنْيَانٌ",
             "after": " ; "
@@ -38,12 +53,18 @@
         {
             "id": 6,
             "url": "./assets/audio/l9/6.mp3",
+            "napomena": [
+                {"tip": "cisto", "bs": "U riječi صِنْوَانٌ iza harfa نْ sa sukunom dolazi وَ u istoj riječi, zato je ovo izhar mutlak i harf N se uči čisto.", "en": "In صِنْوَانٌ the letter نْ with a sukun is followed by وَ within the same word, so this is idhhar mutlaq and N is pronounced clearly.", "de": "Im Wort صِنْوَانٌ folgt auf den Buchstaben نْ mit Sukun ein وَ im selben Wort, deshalb ist das Idh-har Mutlaq und das N wird deutlich ausgesprochen."}
+            ],
             "highlight": "نْوَ",
             "word": "صِنْوَانٌ",
             "after": " ; "
         }, {
             "id": 5,
             "url": "./assets/audio/l9/5.mp3",
+            "napomena": [
+                {"tip": "cisto", "bs": "U riječi قِنْوَانٌ iza harfa نْ sa sukunom dolazi وَ u istoj riječi, zato je ovo izhar mutlak i harf N se uči čisto.", "en": "In قِنْوَانٌ the letter نْ with a sukun is followed by وَ within the same word, so this is idhhar mutlaq and N is pronounced clearly.", "de": "Im Wort قِنْوَانٌ folgt auf den Buchstaben نْ mit Sukun ein وَ im selben Wort, deshalb ist das Idh-har Mutlaq und das N wird deutlich ausgesprochen."}
+            ],
             "highlight": "نْوَ",
             "word": "قِنْوَانٌ",
             "after": null
@@ -53,6 +74,11 @@
         "word1": [{
                 "id": 3,
                 "url": "./assets/audio/l9/3.mp3",
+                "napomena": [
+                    {"tip": "cisto", "bs": "U riječi يَـنْـهَـوْ harf نْ ima sukun, a iza njega dolazi grleni harf هَ, zato se harf N uči čisto, bez uklapanja.", "en": "In يَـنْـهَـوْ the letter نْ carries a sukun and is followed by the throat letter هَ, so N is pronounced clearly, without merging.", "de": "Im Wort يَـنْـهَـوْ hat der Buchstabe نْ ein Sukun, und danach kommt der Kehlbuchstabe هَ, deshalb wird das N deutlich ausgesprochen, ohne Verschmelzung."},
+                    {"tip": "cisto", "bs": "U riječima عَـنْـهُ i عَنْهُ iza harfa نْ sa sukunom stoji grleni harf هُ, zato se harf N u oba slučaja uči čisto.", "en": "In عَـنْـهُ and عَنْهُ the letter نْ with a sukun is followed by the throat letter هُ, so N is pronounced clearly in both cases.", "de": "In den Wörtern عَـنْـهُ und عَنْهُ steht nach dem Buchstaben نْ mit Sukun der Kehlbuchstabe هُ, deshalb wird das N in beiden Fällen deutlich ausgesprochen."},
+                    {"tip": "cisto", "bs": "U riječi يَنْأَوْ iza harfa نْ sa sukunom dolazi grleni harf أَ, zato se harf N i tu uči čisto, bez uklapanja.", "en": "In يَنْأَوْ the letter نْ with a sukun is followed by the throat letter أَ, so N is pronounced clearly here as well, without merging.", "de": "Im Wort يَنْأَوْ folgt auf den Buchstaben نْ mit Sukun der Kehlbuchstabe أَ, deshalb wird das N auch hier deutlich ausgesprochen, ohne Verschmelzung."}
+                ],
                 "highlight": "نْهُ",
                 "word": "نَ عَنْهُ",
                 "after": " ; "
@@ -82,6 +108,9 @@
         "broj9": [{
             "id": 9,
             "url": "./assets/audio/l9/9.mp3",
+            "napomena": [
+                {"tip": "cisto", "bs": "U riječi مِنْهُ harf نْ ima sukun, a iza njega dolazi grleni harf هُ, zato se harf N uči čisto, bez uklapanja.", "en": "In مِنْهُ the letter نْ carries a sukun and is followed by the throat letter هُ, so N is pronounced clearly, without merging.", "de": "Im Wort مِنْهُ hat der Buchstabe نْ ein Sukun, und danach kommt der Kehlbuchstabe هُ, deshalb wird das N deutlich ausgesprochen, ohne Verschmelzung."}
+            ],
             "highlight": "نْهُ",
             "word": "وَإِخْرَاجُ أَهْلِهِ مِنْهُ أَكْبَرُ عِنْدَ اللّٰهِ ",
             "after": null
@@ -89,6 +118,9 @@
         "broj10": [{
             "id": 10,
             "url": "./assets/audio/l9/10.mp3",
+            "napomena": [
+                {"tip": "cisto", "bs": "U riječi مِمَّنْ harf نْ ima sukun, a iza njega dolazi grleni harf خَ, zato se harf N uči čisto, bez uklapanja.", "en": "In مِمَّنْ the letter نْ carries a sukun and is followed by the throat letter خَ, so N is pronounced clearly, without merging.", "de": "Im Wort مِمَّنْ hat der Buchstabe نْ ein Sukun, und danach kommt der Kehlbuchstabe خَ, deshalb wird das N deutlich ausgesprochen, ohne Verschmelzung."}
+            ],
             "highlight": "نْ خَ",
             "word": "مِمَّنْ خَلَقْنَا تَفْضِيلًا ",
             "after": null
@@ -96,6 +128,10 @@
         "broj11": [{
                 "id": 11,
                 "url": "./assets/audio/l9/11.mp3",
+                "napomena": [
+                    {"tip": "cisto", "bs": "U riječi مِنْهُمْ harf نْ ima sukun, a iza njega dolazi grleni harf هُ, zato se harf N uči čisto, bez uklapanja.", "en": "In مِنْهُمْ the letter نْ carries a sukun and is followed by the throat letter هُ, so N is pronounced clearly, without merging.", "de": "Im Wort مِنْهُمْ hat der Buchstabe نْ ein Sukun, und danach kommt der Kehlbuchstabe هُ, deshalb wird das N deutlich ausgesprochen, ohne Verschmelzung."},
+                    {"tip": "cisto", "bs": "Iza tenvina EN قًا dolazi grleni harf غَ, zato se harf N iz tenvina uči čisto, bez uklapanja.", "en": "The tanween AN in قًا is followed by the throat letter غَ, so the N of the tanween is pronounced clearly, without merging.", "de": "Nach dem Tanwin AN in قًا kommt der Kehlbuchstabe غَ, deshalb wird das N des Tanwins deutlich ausgesprochen, ohne Verschmelzung."}
+                ],
                 "highlight": "قًا غَ",
                 "word": "قًا غَلِيظًا",
                 "after": null
@@ -110,6 +146,10 @@
         "broj12": [{
                 "id": 12,
                 "url": "./assets/audio/l9/12.mp3",
+                "napomena": [
+                    {"tip": "cisto", "bs": "U riječi مِنْهَا harf نْ ima sukun, a iza njega dolazi grleni harf هَ, zato se harf N uči čisto, bez uklapanja.", "en": "In مِنْهَا the letter نْ carries a sukun and is followed by the throat letter هَ, so N is pronounced clearly, without merging.", "de": "Im Wort مِنْهَا hat der Buchstabe نْ ein Sukun, und danach kommt der Kehlbuchstabe هَ, deshalb wird das N deutlich ausgesprochen, ohne Verschmelzung."},
+                    {"tip": "cisto", "bs": "Na kraju riječi رَغَدًا je tenvin EN, a iza njega dolazi grleni harf حَ, zato se harf N iz tenvina uči čisto, bez uklapanja.", "en": "At the end of رَغَدًا there is the tanween AN, followed by the throat letter حَ, so the N of the tanween is pronounced clearly, without merging.", "de": "Am Ende von رَغَدًا steht das Tanwin AN, und danach kommt der Kehlbuchstabe حَ, deshalb wird das N des Tanwins deutlich ausgesprochen, ohne Verschmelzung."}
+                ],
                 "highlight": "دًا حَ",
                 "word": "رَغَدًا حَيْثُ شِـئْـتُمَا",
                 "after": null
@@ -124,6 +164,9 @@
         "broj13": [{
             "id": 13,
             "url": "./assets/audio/l9/13.mp3",
+            "napomena": [
+                {"tip": "cisto", "bs": "U riječi مِنْ harf نْ ima sukun, a iza njega dolazi grleni harf حَ, zato se harf N uči čisto, bez uklapanja.", "en": "In مِنْ the letter نْ carries a sukun and is followed by the throat letter حَ, so N is pronounced clearly, without merging.", "de": "Im Wort مِنْ hat der Buchstabe نْ ein Sukun, und danach kommt der Kehlbuchstabe حَ, deshalb wird das N deutlich ausgesprochen, ohne Verschmelzung."}
+            ],
             "highlight": "نْ حَ",
             "word": "وَمِنْ حَيْثُ خَرَجْتَ",
             "after": null
@@ -131,6 +174,9 @@
         "broj14": [{
             "id": 14,
             "url": "./assets/audio/l9/14.mp3",
+            "napomena": [
+                {"tip": "cisto", "bs": "U riječi لِمَنْ harf نْ sa sukunom prati grleni harf خَ, zato se harf N izgovara čisto, bez uklapanja.", "en": "In لِمَنْ the letter نْ with a sukun is followed by the throat letter خَ, so N is pronounced clearly, without merging.", "de": "Im Wort لِمَنْ folgt auf den Buchstaben نْ mit Sukun der Kehlbuchstabe خَ, deshalb wird das N deutlich ausgesprochen, ohne Verschmelzung."}
+            ],
             "highlight": "نْ خَ",
             "word": "ذٰلِكَ لِمَنْ خَشِيَ رَبَّهُ",
             "after": null
@@ -138,6 +184,9 @@
         "broj15": [{
             "id": 15,
             "url": "./assets/audio/l9/15.mp3",
+            "napomena": [
+                {"tip": "cisto", "bs": "U riječi وَانْحَرْ harf نْ ima sukun, a iza njega dolazi grleni harf حَ, zato se harf N uči čisto, bez uklapanja.", "en": "In وَانْحَرْ the letter نْ carries a sukun and is followed by the throat letter حَ, so N is pronounced clearly, without merging.", "de": "Im Wort وَانْحَرْ hat der Buchstabe نْ ein Sukun, und danach kommt der Kehlbuchstabe حَ, deshalb wird das N deutlich ausgesprochen, ohne Verschmelzung."}
+            ],
             "highlight": "نْحَ",
             "word": "فَصَلِّ لِـرَبِّكَ وَانْحَرْ ",
             "after": null
@@ -145,6 +194,9 @@
         "broj16": [{
             "id": 16,
             "url": "./assets/audio/l9/16.mp3",
+            "napomena": [
+                {"tip": "cisto", "bs": "U riječi أَنْـعَمْتَ harf نْ ima sukun, a iza njega dolazi grleni harf عَ, zato se harf N uči čisto, bez uklapanja.", "en": "In أَنْـعَمْتَ the letter نْ carries a sukun and is followed by the throat letter عَ, so N is pronounced clearly, without merging.", "de": "Im Wort أَنْـعَمْتَ hat der Buchstabe نْ ein Sukun, und danach kommt der Kehlbuchstabe عَ, deshalb wird das N deutlich ausgesprochen, ohne Verschmelzung."}
+            ],
             "highlight": "نْـعَ",
             "word": "صِرَاطَ الَّذِينَ أَنْـعَمْتَ عَلَيْهِمْ",
             "after": null
@@ -152,6 +204,9 @@
         "broj17": [{
             "id": 17,
             "url": "./assets/audio/l9/17.mp3",
+            "napomena": [
+                {"tip": "cisto", "bs": "Na kraju riječi مَٓاءً je tenvin EN, a iza njega dolazi grleni harf غَ, zato se harf N iz tenvina uči čisto, bez uklapanja.", "en": "At the end of مَٓاءً there is the tanween AN, followed by the throat letter غَ, so the N of the tanween is pronounced clearly, without merging.", "de": "Am Ende von مَٓاءً steht das Tanwin AN, und danach kommt der Kehlbuchstabe غَ, deshalb wird das N des Tanwins deutlich ausgesprochen, ohne Verschmelzung."}
+            ],
             "highlight": "ءً غَ",
             "word": "لَأَسْقَيْنَاهُمْ مَٓاءً غَدَقًا",
             "after": null
@@ -159,6 +214,9 @@
         "broj18": [{
             "id": 18,
             "url": "./assets/audio/l9/18.mp3",
+            "napomena": [
+                {"tip": "cisto", "bs": "U riječi مِنْ harf نْ sa sukunom prati grleni harf أَ, zato se harf N izgovara čisto, bez uklapanja.", "en": "In مِنْ the letter نْ with a sukun is followed by the throat letter أَ, so N is pronounced clearly, without merging.", "de": "Im Wort مِنْ folgt auf den Buchstaben نْ mit Sukun der Kehlbuchstabe أَ, deshalb wird das N deutlich ausgesprochen, ohne Verschmelzung."}
+            ],
             "highlight": "نْ أَ",
             "word": "وَأْتُوا الْبُيُوتَ مِنْ أَبْوَابِهَا ",
             "after": null
@@ -166,6 +224,9 @@
         "broj19": [{
             "id": 19,
             "url": "./assets/audio/l9/19.mp3",
+            "napomena": [
+                {"tip": "cisto", "bs": "Na kraju riječi غَفُورٌ je tenvin UN, a iza njega dolazi grleni harf حَ, zato se harf N iz tenvina uči čisto, bez uklapanja.", "en": "At the end of غَفُورٌ there is the tanween UN, followed by the throat letter حَ, so the N of the tanween is pronounced clearly, without merging.", "de": "Am Ende von غَفُورٌ steht das Tanwin UN, und danach kommt der Kehlbuchstabe حَ, deshalb wird das N des Tanwins deutlich ausgesprochen, ohne Verschmelzung."}
+            ],
             "highlight": "رٌ حَ",
             "word": "وَاللّٰهُ غَفُورٌ حَلِيمٌ",
             "after": null
@@ -173,6 +234,9 @@
         "broj20": [{
             "id": 20,
             "url": "./assets/audio/l9/20.mp3",
+            "napomena": [
+                {"tip": "cisto", "bs": "U riječi قِنْوَانٌ iza harfa نْ sa sukunom dolazi وَ u istoj riječi, zato je ovo izhar mutlak i harf N se uči čisto.", "en": "In قِنْوَانٌ the letter نْ with a sukun is followed by وَ within the same word, so this is idhhar mutlaq and N is pronounced clearly.", "de": "Im Wort قِنْوَانٌ folgt auf den Buchstaben نْ mit Sukun ein وَ im selben Wort, deshalb ist das Idh-har Mutlaq und das N wird deutlich ausgesprochen."}
+            ],
             "highlight": "نْوَ",
             "word": "وَمِنَ النَّخْلِ مِنْ طَلْعِهَا قِنْوَانٌ دَانِيَةٌ ",
             "after": null
@@ -180,6 +244,10 @@
         "broj21": [{
                 "id": 21,
                 "url": "./assets/audio/l9/21.mp3",
+                "napomena": [
+                    {"tip": "cisto", "bs": "U riječi أَفَمَنْ harf نْ ima sukun, a iza njega dolazi grleni harf أَ, zato se harf N uči čisto, bez uklapanja.", "en": "In أَفَمَنْ the letter نْ carries a sukun and is followed by the throat letter أَ, so N is pronounced clearly, without merging.", "de": "Im Wort أَفَمَنْ hat der Buchstabe نْ ein Sukun, und danach kommt der Kehlbuchstabe أَ, deshalb wird das N deutlich ausgesprochen, ohne Verschmelzung."},
+                    {"tip": "cisto", "bs": "U riječi بُنْيَانَهُ iza harfa نْ sa sukunom dolazi يَ u istoj riječi, zato je ovo izhar mutlak i harf N se uči čisto.", "en": "In بُنْيَانَهُ the letter نْ with a sukun is followed by يَ within the same word, so this is idhhar mutlaq and N is pronounced clearly.", "de": "Im Wort بُنْيَانَهُ folgt auf den Buchstaben نْ mit Sukun ein يَ im selben Wort, deshalb ist das Idh-har Mutlaq und das N wird deutlich ausgesprochen."}
+                ],
                 "highlight": "نْيَ",
                 "word": "سَّسَ بُنْيَانَهُ عَلٰى تَقْوٰى مِنَ اللّٰهِ ",
                 "after": null
@@ -194,6 +262,9 @@
         "broj22": [{
             "id": 22,
             "url": "./assets/audio/l9/22.mp3",
+            "napomena": [
+                {"tip": "cisto", "bs": "U riječi الدُّنْيَا iza harfa نْ sa sukunom dolazi يَ u istoj riječi, zato je ovo izhar mutlak i harf N se uči čisto.", "en": "In الدُّنْيَا the letter نْ with a sukun is followed by يَ within the same word, so this is idhhar mutlaq and N is pronounced clearly.", "de": "Im Wort الدُّنْيَا folgt auf den Buchstaben نْ mit Sukun ein يَ im selben Wort, deshalb ist das Idh-har Mutlaq und das N wird deutlich ausgesprochen."}
+            ],
             "highlight": "نْيَ",
             "word": "وَغَرَّتْهُمُ الْحَيٰوةُ الدُّنْيَا",
             "after": null
