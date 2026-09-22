@@ -164,32 +164,35 @@ const TXT = {
 	},
 
 	en: {
-		naziv: 'HUKM AR-RA',
+		naziv: 'HUKMURRA',
 		lekcija: (P, V) => (
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
 						The letter<strong> R </strong>
-						<span className="arapski-lekcija">(ر)</span> is recited <u>light</u> in the following situations:
+						<span className="arapski-lekcija">(ر)</span> is recited{' '}
+						<u>non-emphatically</u> y in the following situations:
 					</Col>
 				</Row>
 
 				<Row>
 					<Col className="opisLekcije">
-						<strong>1.</strong> when the letter<strong> R </strong>carries the <strong>vowel</strong> I ({' '}
-						{P('row9')} ), e.g.: <br />
+						<strong>1.</strong> When the letter<strong> R </strong>appears with
+						the <strong>vowel</strong> I ( {P('row9')} ), as in:{' '}
+						<br />
 						{P('row8')}
 					</Col>
 				</Row>
 
 				<Row>
 					<Col className="opisLekcije">
-						<strong>2.</strong> when the letter<strong> R </strong>carries a <strong>sukun</strong> and is
-						preceded by a letter with the <strong>vowel</strong> I (
+						<strong>2.</strong> When the letter<strong> R </strong>has{' '}
+						<strong>sukoon</strong>, and is preceded by the letter with the{' '}
+						<strong>vowel</strong> I (
 						<span className="arapski-lekcija" style={{ color: 'red' }}>
 							ــــِـــ رْ{' '}
 						</span>
-						), e.g.:
+						), as in:
 						<br />
 						{P('row10')}
 					</Col>
@@ -197,28 +200,31 @@ const TXT = {
 
 				<Row>
 					<Col className="opisLekcije">
-						<strong>3.</strong> when the letter<strong> R </strong>carries a <strong>sukun</strong>, is
-						preceded by a letter with a <strong>sukun</strong>, and before that comes a letter with the{' '}
-						<strong>vowel</strong> I (
+						<strong>3.</strong> When the letter<strong> R </strong>has{' '}
+						<strong>sukoon</strong>, and is preceded by the{' '}
+						<strong>letter with sukoon</strong>, which is in turn preceded by
+						the letter with the <strong>vowel</strong> I (
 						<span className="arapski-lekcija" style={{ color: 'red' }}>
 							{' '}
 							ــِـ ــْـ رْ{' '}
 						</span>
-						), e.g.:<br />
+						), as in:
+						<br />
 						{P('row11')}
 					</Col>
 				</Row>
 
 				<Row>
 					<Col className="opisLekcije">
-						<strong>4.</strong> when the letter<strong> R </strong>carries a <strong>sukun</strong> and is
-						preceded by the letter <strong>Y</strong> also carrying a <strong>sukun</strong>, and before
-						that comes a letter with the <strong>vowel</strong> A (
+						<strong>4.</strong> When the letter<strong> R </strong>has{' '}
+						<strong>sukoon</strong>, and is preceded by the letter{' '}
+						<strong>J</strong> with <strong>sukoon</strong>, which is in turn
+						preceded by a letter with the <strong>vowel</strong> E (
 						<span className="arapski-lekcija" style={{ color: 'red' }}>
 							{' '}
 							ــــَـــ يْـــرْ{' '}
 						</span>
-						), e.g.: {P('row12')}
+						), as in: {P('row12')}
 					</Col>
 				</Row>
 
@@ -240,26 +246,29 @@ const TXT = {
 				<Row>
 					<Col className="opisLekcije">
 						The letter<strong> R </strong>
-						<span className="arapski-lekcija">(ر)</span> is recited <u>light</u> in the following
-						situations:
+						<span className="arapski-lekcija">(ر)</span> is recited{' '}
+						<u>non-emphatically</u> y in the following situations:
 					</Col>
 				</Row>
 
 				<Row>
 					<Col className="opisLekcije">
-						<strong>1.</strong> when the letter<strong> R </strong>carries the <strong>vowel</strong> I ({' '}
-						{P('row9')} ), e.g.: {P('row8')}
+						<strong>1.</strong> When the letter<strong> R </strong>appears
+						with the <strong>vowel</strong> I ( {P('row9')} ),
+						as in: <br />
+						{P('row8')}
 					</Col>
 				</Row>
 
 				<Row>
 					<Col className="opisLekcije">
-						<strong>2.</strong> when the letter<strong> R </strong>carries a <strong>sukun</strong> and is
-						preceded by a letter with the <strong>vowel</strong> I (
+						<strong>2.</strong> When the letter<strong> R </strong>has{' '}
+						<strong>sukoon</strong>, and is preceded by the letter with the{' '}
+						<strong>vowel</strong> I (
 						<span className="arapski-lekcija" style={{ color: 'red' }}>
 							ــــِـــ رْ{' '}
 						</span>
-						), e.g.:
+						), as in:
 						<br />
 						{P('row10')}
 					</Col>
@@ -267,28 +276,31 @@ const TXT = {
 
 				<Row>
 					<Col className="opisLekcije">
-						<strong>3.</strong> when the letter<strong> R </strong>carries a <strong>sukun</strong>, is
-						preceded by a letter with a <strong>sukun</strong>, and before that comes a letter with the
-						<strong>vowel</strong> I (
+						<strong>3.</strong> When the letter<strong> R </strong>has{' '}
+						<strong>sukoon</strong>, and is preceded by the{' '}
+						<strong>letter with sukoon</strong>, which is in turn preceded
+						by the letter with the <strong>vowel</strong> I (
 						<span className="arapski-lekcija" style={{ color: 'red' }}>
 							{' '}
 							ــِـ ــْـ رْ{' '}
 						</span>
-						), e.g.:
+						), as in:
+						<br />
 						{P('row11')}
 					</Col>
 				</Row>
 
 				<Row>
 					<Col className="opisLekcije">
-						<strong>4.</strong> when the letter<strong> R </strong>carries a <strong>sukun</strong> and is
-						preceded by the letter <strong>Y</strong> also carrying a <strong>sukun</strong>, and before
-						that comes a letter with the <strong>vowel</strong> A (
+						<strong>4.</strong> When the letter<strong> R </strong>has{' '}
+						<strong>sukoon</strong>, and is preceded by the letter{' '}
+						<strong>J</strong> with <strong>sukoon</strong>, which is in
+						turn preceded by a letter with the <strong>vowel</strong> E (
 						<span className="arapski-lekcija" style={{ color: 'red' }}>
 							{' '}
 							ــــَـــ يْـــرْ{' '}
 						</span>
-						), e.g.:<br /> {P('row12')}
+						), as in: {P('row12')}
 					</Col>
 				</Row>
 

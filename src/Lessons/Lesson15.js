@@ -143,27 +143,29 @@ const TXT = {
 	},
 
 	en: {
-		naziv: 'IDGHAM MUTAJANISAYN',
-		naslov: '15 IDGHAM MUTAJANISAYN',
+		naziv: 'IDGHAM MUTAJAANISAYN',
+		naslov: '15 IDGHAM MUTAJAANISAYN',
 		podnaslov: (
 			<React.Fragment>
-				<strong>Merging related letters</strong>
+				<strong>Assimilation of letters of the same origin</strong>
 			</React.Fragment>
 		),
 		lekcija: (P, V) => (
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						When two <u>related</u> letters come next to each other, the first carrying a{' '}
-						<strong>sukun</strong> and the second a <strong>haraka</strong>, the first merges into the
-						second one from the <u>same group</u>:
+						When letters of the same origin stand next to each other, and the
+						first letter has <strong>sukoon</strong> while the second has{' '}
+						<strong>a short vowel/haraka</strong>, then the former assimilates
+						into the latter one from the same group: <u></u>:
 					</Col>
 				</Row>
 
 				<Row>
 					<Col className="opisLekcije text-left">
 						<strong className="">1.</strong>
-						<span className="arapski-lekcija"> ط د ت </span> e.g.: {P('row1')}
+						<span className="arapski-lekcija"> ط د ت </span> as in:{' '}
+						{P('row1')}
 					</Col>
 				</Row>
 
@@ -173,8 +175,8 @@ const TXT = {
 
 				<Row>
 					<Col className="opisLekcije text-left">
-						<strong>2.</strong> <span className="arapski-lekcija"> ظ ذ ث </span> e.g.:{' '}
-						{P('row3')}
+						<strong>2.</strong> <span className="arapski-lekcija"> ظ ذ ث </span>{' '}
+						as in: {P('row3')}
 					</Col>
 				</Row>
 
@@ -184,8 +186,8 @@ const TXT = {
 
 				<Row>
 					<Col className="opisLekcije text-left">
-						<strong>3.</strong> <span className="arapski-lekcija"> ب م </span> e.g.:{' '}
-						{P('row5')}
+						<strong>3.</strong> <span className="arapski-lekcija"> ب م </span>{' '}
+						as in: {P('row5')}
 					</Col>
 				</Row>
 
@@ -210,16 +212,18 @@ const TXT = {
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						When two <u>related</u> letters come next to each other, the first carrying a{' '}
-						<strong>sukun</strong> and the second a <strong>haraka</strong>, the first merges into
-						the second one from the <u>same group</u>:
+						When letters of the same origin stand next to each other, and
+						the first letter has <strong>sukoon</strong> while the second
+						has <strong>a short vowel/haraka</strong>, then the former
+						assimilates into the latter one from the same group: <u></u>:
 					</Col>
 				</Row>
 
 				<Row>
 					<Col className="opisLekcije text-left">
 						<strong className="">1.</strong>
-						<span className="arapski-lekcija"> ط د ت </span> e.g.: {P('row1')}
+						<span className="arapski-lekcija"> ط د ت </span> as in:{' '}
+						{P('row1')}
 					</Col>
 				</Row>
 
@@ -229,7 +233,8 @@ const TXT = {
 
 				<Row>
 					<Col className="opisLekcije text-left">
-						<strong>2.</strong> <span className="arapski-lekcija"> ظ ذ ث </span> e.g.:{' '}
+						<strong>2.</strong>{' '}
+						<span className="arapski-lekcija"> ظ ذ ث </span> as in:{' '}
 						{P('row3')}
 					</Col>
 				</Row>
@@ -240,7 +245,8 @@ const TXT = {
 
 				<Row>
 					<Col className="opisLekcije text-left">
-						<strong>3.</strong> <span className="arapski-lekcija"> ب م </span> e.g.:{' '}
+						<strong>3.</strong>{' '}
+						<span className="arapski-lekcija"> ب م </span> as in:{' '}
 						{P('row5')}
 					</Col>
 				</Row>

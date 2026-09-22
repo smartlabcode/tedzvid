@@ -92,18 +92,20 @@ const TXT = {
 	},
 
 	en: {
-		naziv: "MADD TABI'I",
-		naslov: "17 MADD TABI'I",
+		naziv: 'AL-MADD AL-TABEE’EE',
+		naslov: '17 AL-MADD AL-TABEE’EE',
 		podnaslov: 'Natural prolongation',
 		lekcija: (P, V) => (
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						When the <strong>long vowel </strong>A <span className="arapski-lekcija">ـــَــ ا</span> , I{' '}
+						When the <strong>long vowel </strong>A{' '}
+						<span className="arapski-lekcija">ـــَــ ا</span> , I{' '}
 						<span className="arapski-lekcija">ـــِـ ى </span>, U{' '}
-						<span className="arapski-lekcija">ـــُــ و</span> is followed by neither a{' '}
-						<strong>hamza</strong> nor a <strong>sukun,</strong> it is madd tabi'i. It lasts 2 harakas,
-						e.g.:{P('row1')}
+						<span className="arapski-lekcija">ـــُــ و</span> does not have{' '}
+						<strong>a hamzah</strong> or <strong>sukoon,</strong> al-madd
+						al-ttabee’ee occurs. The reciter must extend it for 2 counts, as in:
+						{P('row1')}
 					</Col>
 				</Row>
 
@@ -135,9 +137,10 @@ const TXT = {
 						When the <strong>long vowel </strong>A{' '}
 						<span className="arapski-lekcija">ـــَــ ا</span> , I{' '}
 						<span className="arapski-lekcija">ـــِـ ى </span>, U{' '}
-						<span className="arapski-lekcija">ـــُــ و</span> is followed by neither a{' '}
-						<strong>hamza</strong> nor a <strong>sukun,</strong> it is madd tabi'i. It lasts 2 harakas,
-						e.g.:{P('row1')}
+						<span className="arapski-lekcija">ـــُــ و</span> does not have{' '}
+						<strong>a hamzah</strong> or <strong>sukoon,</strong> al-madd
+						al-ttabee’ee occurs. The reciter must extend it for 2 counts, as
+						in: {P('row1')}
 					</Col>
 				</Row>
 

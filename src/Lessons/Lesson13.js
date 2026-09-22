@@ -134,27 +134,29 @@ const TXT = {
 	},
 
 	en: {
-		naziv: 'QALQALAH',
-		naslov: '13 QALQALAH',
+		naziv: 'THE QALQALAH',
+		naslov: '13 THE QALQALAH',
 		podnaslov: (
 			<React.Fragment>
-				<strong>Bouncing of the letters</strong>
+				<strong>Echoing sounds</strong>
 			</React.Fragment>
 		),
 		lekcija: (P, V) => (
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						When one of these five letters carries a <strong>sukun</strong> (
-						<span className="arapski-lekcija">ـــْـــ</span>):{' '}
-						<Arabic key="ar1l13" arabic="د ج ب ط ق">
-							د ج ب ط ق
+						When one of the five letters{' '}
+						<Arabic key="ar1l13" arabic="ق ط ب ج د">
+							ق ط ب ج د
 						</Arabic>{' '}
-						(contained in the phrase <strong>qutbu jaddin</strong> -{' '}
+						(contained within the phrase <strong>kutbu džeddin</strong> -{' '}
 						<span className="arapski-lekcija" style={{ fontSize: '1.675em' }}>
-							قُطْبُ جَدٍّ
+							قُطْبُ جَدٍّ)
 						</span>{' '}
-						), those letters <u>bounce</u>, e.g.:
+						, appears with <strong>sukoon </strong> (
+						<span className="arapski-lekcija">ـــْـــ</span>) , it will be
+						pronounced with an <u>echoing</u> or <u>bouncing</u> sound, for
+						example:
 					</Col>
 				</Row>
 
@@ -196,16 +198,21 @@ const TXT = {
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						When one of these five letters carries a <strong>sukun</strong> (
-						<span className="arapski-lekcija">ـــْـــ</span>):{' '}
-						<Arabic key="ar1l13" arabic="د ج ب ط ق">
-							د ج ب ط ق
+						When one of the five letters{' '}
+						<Arabic key="ar1l13" arabic="ق ط ب ج د">
+							ق ط ب ج د
 						</Arabic>{' '}
-						(contained in the phrase <strong>qutbu jaddin</strong> -{' '}
-						<span className="arapski-lekcija" style={{ fontSize: '1.675em' }}>
-							قُطْبُ جَدٍّ
+						(contained within the phrase <strong>kutbu džeddin</strong> -{' '}
+						<span
+							className="arapski-lekcija"
+							style={{ fontSize: '1.675em' }}
+						>
+							قُطْبُ جَدٍّ)
 						</span>{' '}
-						), those letters <u>bounce</u>, e.g.:
+						, appears with <strong>sukoon </strong> (
+						<span className="arapski-lekcija">ـــْـــ</span>) , it will be
+						pronounced with an <u>echoing</u> or <u>bouncing</u> sound, for
+						example:
 					</Col>
 				</Row>
 

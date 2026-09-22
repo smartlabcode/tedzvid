@@ -205,12 +205,13 @@ const TXT = {
 	},
 
 	en: {
-		naziv: 'HUKM AR-RA',
-		naslov: '14 HUKM AR-RA',
+		naziv: 'HUKMURRA',
+		naslov: '14 HUKMURRA',
 		podnaslov: (
 			<React.Fragment>
 				<strong>
-					Pronouncing the letter R <span className="arapski-lekcija">(ر)</span>
+					Pronunciation of the letter R{' '}
+					<span className="arapski-lekcija">(ر)</span>
 				</strong>
 			</React.Fragment>
 		),
@@ -219,15 +220,16 @@ const TXT = {
 				<Row>
 					<Col className="opisLekcije">
 						The letter<strong> R </strong>
-						<span className="arapski-lekcija">(ر)</span> is recited <u>heavy</u> in the following
-						situations:
+						<span className="arapski-lekcija">(ر)</span> is recited{' '}
+						<u>emphatically</u> in the following situations:
 					</Col>
 				</Row>
 
 				<Row>
 					<Col className="opisLekcije">
-						<strong>1.</strong> when the letter<strong> R </strong>carries the <strong>vowel</strong> A ({' '}
-						{P('row1')}) or the <strong>vowel</strong> U ( {P('row2')}), e.g.:{' '}
+						<strong>1.</strong> When the letter<strong> R </strong>appears with
+						the <strong>vowel</strong> E ( {P('row1')}) or{' '}
+						<strong>vowel </strong> U ( {P('row2')}), as in:{' '}
 						<br />
 						{P('row3')}
 					</Col>
@@ -235,8 +237,9 @@ const TXT = {
 
 				<Row>
 					<Col className="opisLekcije">
-						<strong>2.</strong> when the letter<strong> R </strong>carries a <strong>sukun</strong> and is
-						preceded by a letter with the <strong>vowel</strong> A (
+						<strong>2.</strong> When the letter<strong> R </strong>has{' '}
+						<strong>sukoon</strong>, and is preceded by the{' '}
+						<strong>vowel </strong> E (
 						<span className="arapski-lekcija" style={{ color: 'red' }}>
 							{' '}
 							ــَـ رْ{' '}
@@ -245,7 +248,7 @@ const TXT = {
 						<span className="arapski-lekcija" style={{ color: 'red' }}>
 							ــُـ رْ
 						</span>
-						), e.g.:
+						), as in:
 						<br />
 						{P('row4')}
 					</Col>
@@ -253,12 +256,13 @@ const TXT = {
 
 				<Row>
 					<Col className="opisLekcije">
-						<strong>3.</strong> when the letter
+						<strong>3.</strong> When the letter
 						<strong>
 							<strong> R </strong>
 						</strong>
-						carries a <strong>sukun</strong>, is preceded by a letter with a <strong>sukun</strong>, and
-						before that comes a letter with the <strong>vowel</strong> A (
+						has <strong>sukoon</strong>, and is preceded by the{' '}
+						<strong>letter with sukoon,</strong>, which is in turn preceded by
+						the letter with the <strong>vowel</strong> E (
 						<span className="arapski-lekcija" style={{ color: 'red' }}>
 							{' '}
 							ــَـ ــْـ رْ{' '}
@@ -268,28 +272,33 @@ const TXT = {
 							{' '}
 							ــُـ ــْـ رْ{' '}
 						</span>
-						), e.g.:<br /> {P('row5')}
+						), as in:
+						<br /> {P('row5')}
 					</Col>
 				</Row>
 
 				<Row>
 					<Col className="opisLekcije">
-						<strong>4.</strong> when the letter<strong> R </strong>carries a <strong>sukun</strong> (
+						<strong>4.</strong> When the letter<strong> R </strong>has{' '}
+						<strong>sukoon</strong> (
 						<span className="arapski-lekcija" style={{ color: 'red' }}>
 							رْ
 						</span>
-						) and is preceded by a sound with a temporary kasra, e.g.: <br />
+						), and is preceded by the sound with unstable vowel I/kesra, as in:{' '}
+						<br />
 						{P('row6')}
 					</Col>
 				</Row>
 
 				<Row>
 					<Col className="opisLekcije">
-						<strong>5.</strong> when the letter<strong> R </strong>carries a <strong>sukun</strong> (
+						<strong>5.</strong> When the letter<strong> R </strong>has{' '}
+						<strong>sukoon</strong> (
 						<span className="arapski-lekcija" style={{ color: 'red' }}>
 							رْ
 						</span>
-						) and is followed by one of the heavy letters, e.g.:<br /> {P('row7')}
+						), and is followed by a heavy letter, for example:
+						<br /> {P('row7')}
 					</Col>
 				</Row>
 
@@ -305,24 +314,26 @@ const TXT = {
 				<Row>
 					<Col className="opisLekcije">
 						The letter<strong> R </strong>
-						<span className="arapski-lekcija">(ر)</span> is recited <u>heavy</u> in the following
-						situations:
+						<span className="arapski-lekcija">(ر)</span> is recited{' '}
+						<u>emphatically</u> in the following situations:
 					</Col>
 				</Row>
 
 				<Row>
 					<Col className="opisLekcije">
-						<strong>1.</strong> when the letter<strong> R </strong>carries the <strong>vowel</strong> A ({' '}
-						{P('row1')}) or the <strong>vowel</strong> U ( {P('row2')}),
-						e.g.: <br />
+						<strong>1.</strong> When the letter<strong> R </strong>appears
+						with the <strong>vowel</strong> E ( {P('row1')})
+						or <strong>vowel </strong> U ( {P('row2')}), as
+						in: <br />
 						{P('row3')}
 					</Col>
 				</Row>
 
 				<Row>
 					<Col className="opisLekcije">
-						<strong>2.</strong> when the letter<strong> R </strong>carries a <strong>sukun</strong> and is
-						preceded by a letter with the <strong>vowel</strong> A (
+						<strong>2.</strong> When the letter<strong> R </strong>has{' '}
+						<strong>sukoon</strong>, and is preceded by the{' '}
+						<strong>vowel </strong> E (
 						<span className="arapski-lekcija" style={{ color: 'red' }}>
 							{' '}
 							ــَـ رْ{' '}
@@ -331,7 +342,7 @@ const TXT = {
 						<span className="arapski-lekcija" style={{ color: 'red' }}>
 							ــُـ رْ
 						</span>
-						), e.g.:
+						), as in:
 						<br />
 						{P('row4')}
 					</Col>
@@ -339,13 +350,13 @@ const TXT = {
 
 				<Row>
 					<Col className="opisLekcije">
-						<strong>3.</strong> when the letter
+						<strong>3.</strong> When the letter
 						<strong>
 							<strong> R </strong>
 						</strong>
-						carries a <strong>sukun</strong>, is preceded by a letter with a <strong>sukun</strong>,
-						and before that comes a letter with the{' '}
-						<strong>vowel</strong> A (
+						has <strong>sukoon</strong>, and is preceded by the{' '}
+						<strong>letter with sukoon,</strong>, which is in turn preceded
+						by the letter with the <strong>vowel</strong> E (
 						<span className="arapski-lekcija" style={{ color: 'red' }}>
 							{' '}
 							ــَـ ــْـ رْ{' '}
@@ -355,28 +366,33 @@ const TXT = {
 							{' '}
 							ــُـ ــْـ رْ{' '}
 						</span>
-						), e.g.:<br /> {P('row5')}
+						), as in:
+						<br /> {P('row5')}
 					</Col>
 				</Row>
 
 				<Row>
 					<Col className="opisLekcije">
-						<strong>4.</strong> when the letter<strong> R </strong>carries a <strong>sukun</strong> (
+						<strong>4.</strong> When the letter<strong> R </strong>has{' '}
+						<strong>sukoon</strong> (
 						<span className="arapski-lekcija" style={{ color: 'red' }}>
 							رْ
 						</span>
-						) and is preceded by a sound with a temporary kasra, e.g.: <br />
+						), and is preceded by the sound with unstable vowel I/kesra, as
+						in: <br />
 						{P('row6')}
 					</Col>
 				</Row>
 
 				<Row>
 					<Col className="opisLekcije">
-						<strong>5.</strong> when the letter<strong> R </strong>carries a <strong>sukun</strong> (
+						<strong>5.</strong> When the letter<strong> R </strong>has{' '}
+						<strong>sukoon</strong> (
 						<span className="arapski-lekcija" style={{ color: 'red' }}>
 							رْ
 						</span>
-						) and is followed by one of the heavy letters, e.g.:<br /> {P('row7')}
+						), and is followed by a heavy letter, for example:
+						<br /> {P('row7')}
 					</Col>
 				</Row>
 

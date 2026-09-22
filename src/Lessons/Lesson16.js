@@ -124,28 +124,30 @@ const TXT = {
 	},
 
 	en: {
-		naziv: 'IDGHAM MUTAQARIBAYN',
-		naslov: '16 IDGHAM MUTAQARIBAYN',
+		naziv: 'IDGHAM MUTAQAARIBAYN',
+		naslov: '16 IDGHAM MUTAQAARIBAYN',
 		podnaslov: (
 			<React.Fragment>
-				<strong>Merging close letters</strong>
+				<strong>Assimilation of letters with similar origin</strong>
 			</React.Fragment>
 		),
 		lekcija: (P, V) => (
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						When two <u>close</u> letters come next to each other, the first carrying a{' '}
-						<strong>sukun</strong> and the second a <strong>haraka</strong>, the first merges into the
-						second one from the <u>same group</u>:
+						When two letters close in proximity but with different
+						characteristics stand next to each other, with first having sukoon
+						and the second having a short vowel/haraka, the former assimilates
+						into the latter from the same group:
 					</Col>
 				</Row>
 
 				<Row>
 					<Col className="opisLekcije ">
-						1. When the letter <strong>Q</strong> with a <strong>sukun</strong>{' '}
-						<span className="arapski">(قْ)</span> is followed by the letter <strong>K</strong>{' '}
-						<span className="arapski">(ك)</span> with a <strong>haraka</strong>:
+						1. When the letter <strong>Q</strong> with <strong>sukoon</strong>{' '}
+						<span className="arapski">(قْ)</span> is followed by the letter{' '}
+						<strong>K</strong> <span className="arapski">(ك)</span> with{' '}
+						<strong>a short vowel/haraka</strong>:
 					</Col>
 				</Row>
 
@@ -155,9 +157,10 @@ const TXT = {
 
 				<Row>
 					<Col className="opisLekcije ">
-						2. When the letter <strong>L</strong> with a <strong>sukun</strong>{' '}
-						<span className="arapski">(لْ)</span> is followed by the letter <strong>R</strong>{' '}
-						<span className="arapski">(ر)</span> with a <strong>haraka</strong>:
+						2. When the letter <strong>L</strong> with <strong>sukoon</strong>{' '}
+						<span className="arapski">(لْ)</span> is followed by the letter{' '}
+						<strong>R</strong> <span className="arapski">(ر)</span> with{' '}
+						<strong>a short vowel/haraka</strong>:
 					</Col>
 				</Row>
 
@@ -182,17 +185,20 @@ const TXT = {
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						When two <u>close</u> letters come next to each other, the first carrying a{' '}
-						<strong>sukun</strong> and the second a <strong>haraka</strong>, the first merges into
-						the second one from the <u>same group</u>:
+						When two letters close in proximity but with different
+						characteristics stand next to each other, with first having
+						sukoon and the second having a short vowel/haraka, the former
+						assimilates into the latter from the same group:
 					</Col>
 				</Row>
 
 				<Row>
-					<Col className="opisLekcije my-3">
-						1. When the letter <strong>Q</strong> with a <strong>sukun</strong>{' '}
-						<span className="arapski">(قْ)</span> is followed by the letter <strong>K</strong>{' '}
-						<span className="arapski">(ك)</span> with a <strong>haraka</strong>:
+					<Col className="opisLekcije ">
+						1. When the letter <strong>Q</strong> with{' '}
+						<strong>sukoon</strong> <span className="arapski">(قْ)</span> is
+						followed by the letter <strong>K</strong>{' '}
+						<span className="arapski">(ك)</span> with{' '}
+						<strong>a short vowel/haraka</strong>:
 					</Col>
 				</Row>
 
@@ -201,10 +207,12 @@ const TXT = {
 				</Row>
 
 				<Row>
-					<Col className="opisLekcije my-3">
-						2. When the letter <strong>L</strong> with a <strong>sukun</strong>{' '}
-						<span className="arapski">(لْ)</span> is followed by the letter <strong>R</strong>{' '}
-						<span className="arapski">(ر)</span> with a <strong>haraka</strong>:
+					<Col className="opisLekcije ">
+						2. When the letter <strong>L</strong> with{' '}
+						<strong>sukoon</strong> <span className="arapski">(لْ)</span> is
+						followed by the letter <strong>R</strong>{' '}
+						<span className="arapski">(ر)</span> with{' '}
+						<strong>a short vowel/haraka</strong>:
 					</Col>
 				</Row>
 

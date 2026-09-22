@@ -106,21 +106,25 @@ const TXT = {
 	},
 
 	en: {
-		naziv: 'MADD MUTTASIL',
-		naslov: '18 MADD MUTTASIL',
+		naziv: 'AL-MADD AL-MUTTASIL',
+		naslov: '18 AL-MADD AL-MUTTASIL',
 		podnaslov: (
 			<React.Fragment>
-				<strong>Connected prolongation</strong>
+				<strong>Connected extension</strong>
 			</React.Fragment>
 		),
 		lekcija: (P, V) => (
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						When the <strong>long vowel</strong> A <span className="arapski-lekcija">ـــَــ ا</span> , I{' '}
+						When <strong>the long vowel</strong> A{' '}
+						<span className="arapski-lekcija">ـــَــ ا</span> , I{' '}
 						<span className="arapski-lekcija">ـــِـ ى </span>, U{' '}
-						<span className="arapski-lekcija">ـــُــ و</span> is followed by a <strong>hamza</strong> in the{' '}
-						<u>same</u> word, it is madd muttasil. It must last 4–5 harakas, e.g.: {P('row1')}
+						<span className="arapski-lekcija">ـــُــ و</span> is followed by{' '}
+						<strong>a hamzah</strong>
+						<u></u> within the same word, al-madd al-muttasil occurs. The
+						reciter must extend the word for 4 to 5 counts, as in:{' '}
+						{P('row1')}
 					</Col>
 				</Row>
 
@@ -153,11 +157,13 @@ const TXT = {
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						When the <strong>long vowel</strong> A{' '}
+						When <strong>the long vowel</strong> A{' '}
 						<span className="arapski-lekcija">ـــَــ ا</span> , I{' '}
 						<span className="arapski-lekcija">ـــِـ ى </span>, U{' '}
-						<span className="arapski-lekcija">ـــُــ و</span> is followed by a <strong>hamza</strong> in the{' '}
-						<u>same</u> word, it is madd muttasil. It must last 4–5 harakas, e.g.:{' '}
+						<span className="arapski-lekcija">ـــُــ و</span> is followed by{' '}
+						<strong>a hamzah</strong>
+						<u></u> within the same word, al-madd al-muttasil occurs. The
+						reciter must extend the word for 4 to 5 counts, as in:{' '}
 						{P('row1')}
 					</Col>
 				</Row>
