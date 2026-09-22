@@ -409,19 +409,19 @@ span.arapski {
   line-height: 4.6rem;
 }
 
-/* vježba (redovi .mobile-row) – veći arapski nego u primjerima */
+/* vježba (redovi .mobile-row) – veličine kao na starom tedzvid.ba, da u red stanu po dva ajeta */
 .lekcija-page .mobile-row {
   span.arapski,
   span.oznaceno {
-    font-size: 3.7rem;
+    font-size: 2.5rem;
   }
 
   span.arapski {
-    line-height: 5.4rem;
+    line-height: 4.4rem;
   }
 
   span.tacka {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -563,7 +563,7 @@ span.arap-red {
 .vjezba-panel {
   position: relative;
   margin-top: 48px;
-  padding: 34px 40px 30px;
+  padding: 34px 24px 30px;
   background: linear-gradient(180deg, #fffdf8 0%, #faf5ea 100%);
   border: 1px solid var(--gold-200);
   border-radius: 24px;
@@ -613,6 +613,11 @@ span.arap-red {
   .mobile-row {
     row-gap: 6px;
     padding: 0 8px;
+  }
+
+  /* malo zraka između redova vježbe */
+  .row.text-center {
+    margin-bottom: 0.5rem;
   }
 
   /* zlatna oznaka kraja ajeta (۞) i separatori, sama riječ ostaje tamna */
@@ -777,11 +782,11 @@ span.arap-red {
   .lekcija-page .mobile-row {
     span.arapski,
     span.oznaceno {
-      font-size: 3.3rem !important;
+      font-size: 2.2rem !important;
     }
 
     span.arapski {
-      line-height: 4.8rem;
+      line-height: 3.9rem;
     }
   }
 }
@@ -850,11 +855,11 @@ span.arap-red {
   .lekcija-page .mobile-row {
     span.arapski,
     span.oznaceno {
-      font-size: 2.7rem !important;
+      font-size: 1.8rem !important;
     }
 
     span.arapski {
-      line-height: 4rem;
+      line-height: 3.3rem;
     }
 
     span.tacka {
@@ -906,7 +911,7 @@ span.arap-red {
 
   .vjezba-panel {
     margin-top: 32px;
-    padding: 26px 14px 20px;
+    padding: 26px 10px 20px;
     border-radius: 18px;
 
     &::before {
@@ -916,6 +921,10 @@ span.arap-red {
 
     .mobile-row {
       padding: 0;
+    }
+
+    .row {
+      width: 100%;
     }
   }
 
