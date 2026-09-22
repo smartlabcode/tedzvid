@@ -96,24 +96,25 @@ const TXT = {
 	},
 
 	en: {
-		naziv: 'IDGHAM MITHLAYN',
-		naslov: '4 IDGHAM MITHLAYN',
+		naziv: 'IDGHAAM MITHLAYN',
+		naslov: '4 IDGHAAM MITHLAYN',
 		podnaslov: (
 			<React.Fragment>
-				<strong>Merging identical letters</strong>
+				<strong>Assimilation of two identical letters</strong>
 			</React.Fragment>
 		),
 		lekcija: (P, V) => (
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						When any letter carrying a{' '}
+						When the letter with{' '}
 						<strong>
-							sukun <span className="arapski-lekcija">ـــْــ</span>
+							sukunom <span className="arapski-lekcija">ـــْــ</span>
 						</strong>{' '}
-						is followed by <u>the same</u> letter carrying a <strong>haraka</strong>, a <u>complete</u>{' '}
-						merging takes place: the first letter is not pronounced, and the second is recited with a{' '}
-						<strong>tashdeed</strong>, e.g.:
+						is followed by the <u>same</u> letter with a short{' '}
+						<strong>vowel/haraka</strong>, a complete assimilation occurs, i.e.
+						the first letter is not recited, and the second one is recited with{' '}
+						<strong>shaddah</strong>, for example:
 					</Col>
 				</Row>
 
@@ -140,13 +141,14 @@ const TXT = {
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						When any letter carrying a{' '}
+						When the letter with{' '}
 						<strong>
-							sukun <span className="arapski-lekcija">ـــْــ</span>
+							sukunom <span className="arapski-lekcija">ـــْــ</span>
 						</strong>{' '}
-						is followed by <u>the same</u> letter carrying a <strong>haraka</strong>, a <u>complete</u>{' '}
-						merging takes place: the first letter is not pronounced, and the second is recited with a{' '}
-						<strong>tashdeed</strong>, e.g.:
+						is followed by the <u>same</u> letter with a short{' '}
+						<strong>vowel/haraka</strong>, a complete assimilation occurs,
+						i.e. the first letter is not recited, and the second one is
+						recited with <strong>shaddah</strong>, for example:
 					</Col>
 				</Row>
 

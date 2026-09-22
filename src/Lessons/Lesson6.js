@@ -155,32 +155,35 @@ const TXT = {
 	},
 
 	en: {
-		naziv: "IDGHAM MA'AL-GHUNNAH",
-		naslov: "6 IDGHAM MA'AL-GHUNNAH",
+		naziv: 'IDGHAM WITH GHUNNAH',
+		naslov: '6 IDGHAM WITH GHUNNAH',
 		podnaslov: (
 			<React.Fragment>
-				<strong>Merging with nasalisation</strong>
+				<strong>Assimilation with the airflow through the nose</strong>
 			</React.Fragment>
 		),
 		lekcija: (P, V, r3) => (
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						When the letter <strong>N</strong> with a <strong>sukun</strong> (
-						<span className="arapski-lekcija">نْ</span>) or the <strong>tanween</strong> AN{' '}
+						When the letter <strong>N</strong> with <strong>sukoon</strong> (
+						<span className="arapski-lekcija">نْ</span>) or nunation/{' '}
+						<strong>tanwin</strong> EN{' '}
 						<span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
 						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
-						<span className="arapski-lekcija">ــٌــ</span> is followed by one of these four letters:&nbsp;
+						<span className="arapski-lekcija">ــٌــ</span> is followed by one of
+						the four letters: &nbsp;
 						<span
 							className="arapski-lekcija"
-							style={{ color: 'red', fontSize: '3rem', whiteSpace: 'nowrap' }}
+							style={{ color: "red", fontSize: "3rem", whiteSpace: "nowrap" }}
 						>
 							و ن م ي
 						</span>{' '}
-						(contained in the word <strong>yamnu</strong> –
-						<span className="arapski-lekcija">يَمْنُو</span>), the letter <strong>N</strong>(
-						<span className="arapski-lekcija">ن</span>) merges into one of those four letters, while letting
-						air pass through the nose for the length of 2 harakas, e.g.:
+						(contained in the word <strong>jemnu</strong> –
+						<span className="arapski-lekcija">يَمْنُو</span>), the letter{' '}
+						<strong>N</strong>(<span className="arapski-lekcija">ن</span>)
+						assimilates into one of the aforementioned letters, with the airflow
+						through the nose lasting 2 counts, for example:
 					</Col>
 				</Row>
 
@@ -226,22 +229,28 @@ const TXT = {
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						When the letter <strong>N</strong> with a <strong>sukun</strong> (
-						<span className="arapski-lekcija">نْ</span>) or the <strong>tanween</strong> AN{' '}
+						When the letter <strong>N</strong> with <strong>sukoon</strong>{' '}
+						(<span className="arapski-lekcija">نْ</span>) or nunation/{' '}
+						<strong>tanwin</strong> EN{' '}
 						<span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
 						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
-						<span className="arapski-lekcija">ــٌــ</span> is followed by one of these four letters:{' '}
+						<span className="arapski-lekcija">ــٌــ</span> is followed by
+						one of the four letters: &nbsp;
 						<span
 							className="arapski-lekcija"
-							style={{ color: 'red', fontSize: '3rem', whiteSpace: 'nowrap' }}
+							style={{
+								color: "red",
+								fontSize: "3rem",
+								whiteSpace: "nowrap",
+							}}
 						>
 							و ن م ي
 						</span>{' '}
-						(contained in the word <strong>yamnu</strong> –
+						(contained in the word <strong>jemnu</strong> –
 						<span className="arapski-lekcija">يَمْنُو</span>), the letter{' '}
-						<strong>N</strong>(
-						<span className="arapski-lekcija">ن</span>) merges into one of those four letters,
-						while letting air pass through the nose for the length of 2 harakas, e.g.:
+						<strong>N</strong>(<span className="arapski-lekcija">ن</span>)
+						assimilates into one of the aforementioned letters, with the
+						airflow through the nose lasting 2 counts, for example:
 					</Col>
 				</Row>
 

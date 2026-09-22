@@ -122,12 +122,13 @@ const TXT = {
 	},
 
 	en: {
-		naziv: 'LAFDHATULLAH',
-		naslov: '3 LAFDHATULLAH',
+		naziv: 'LAFZATULLAH',
+		naslov: '3 LAFZATULLAH',
 		podnaslov: (
 			<React.Fragment>
 				<strong>
-					Pronouncing the word Allah <span className="arapski-lekcija"> اللّٰه </span>
+					The pronunciation of the word Allah{' '}
+					<span className="arapski-lekcija"> اللّٰه </span>
 				</strong>
 			</React.Fragment>
 		),
@@ -135,12 +136,14 @@ const TXT = {
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						When the word Allah <span className="arapski-lekcija"> اللّٰه </span>is preceded by the{' '}
-						<strong>vowel</strong> A <span className="arapski-lekcija"> ــــَـــ </span>or the{' '}
-						<strong>vowel</strong> U
-						<span className="arapski-lekcija">ــــُـــ </span>, the word Allah
-						<span className="arapski-lekcija">اللّٰه </span>is recited <u>heavy</u>
-						, e.g.:
+						When the word Allah{' '}
+						<span className="arapski-lekcija"> اللّٰه </span>is preceded by the{' '}
+						<strong>vowel</strong> E{' '}
+						<span className="arapski-lekcija"> ــــَـــ </span>or{' '}
+						<strong>vowel</strong> U{' '}
+						<span className="arapski-lekcija">ــــُـــ </span>, word{' '}
+						<span className="arapski-lekcija">اللّٰه </span>is recited{' '}
+						<u>emphatically</u>, for example:
 					</Col>
 				</Row>
 				<Row className="text-center  reorder-basic ">
@@ -153,10 +156,11 @@ const TXT = {
 				<Row>
 					<Col className="opisLekcije">
 						When the word Allah
-						<span className="arapski-lekcija"> اللّٰه</span> is preceded by the <strong>vowel</strong> I
-						<span className="arapski-lekcija"> ــــِــ</span>, the word Allah
-						<span className="arapski-lekcija"> اللّٰه</span> is recited <u>light</u>
-						, e.g.:
+						<span className="arapski-lekcija"> اللّٰه</span> is preceded by the{' '}
+						<strong>vowel</strong> I
+						<span className="arapski-lekcija"> ــــِــ</span> , word{' '}
+						<span className="arapski-lekcija"> اللّٰه</span> is recited{' '}
+						<u>nonemphatically</u>, for example:
 					</Col>
 				</Row>
 
@@ -185,12 +189,14 @@ const TXT = {
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						When the word Allah <span className="arapski-lekcija"> اللّٰه </span>is preceded by the{' '}
-						<strong>vowel</strong> A <span className="arapski-lekcija"> ــــَـــ </span>or the{' '}
-						<strong>vowel</strong> U
-						<span className="arapski-lekcija">ــــُـــ </span>, the word Allah
-						<span className="arapski-lekcija">اللّٰه </span>is recited <u>heavy</u>
-						, e.g.:
+						When the word Allah{' '}
+						<span className="arapski-lekcija"> اللّٰه </span>is preceded by
+						the <strong>vowel</strong> E{' '}
+						<span className="arapski-lekcija"> ــــَـــ </span>or{' '}
+						<strong>vowel</strong> U{' '}
+						<span className="arapski-lekcija">ــــُـــ </span>, word{' '}
+						<span className="arapski-lekcija">اللّٰه </span>is recited{' '}
+						<u>emphatically</u>, for example:
 					</Col>
 				</Row>
 				<Row className="text-center  reorder-basic ">
@@ -203,10 +209,11 @@ const TXT = {
 				<Row>
 					<Col className="opisLekcije">
 						When the word Allah
-						<span className="arapski-lekcija"> اللّٰه</span> is preceded by the <strong>vowel</strong> I
-						<span className="arapski-lekcija"> ــــِــ</span>, the word Allah
-						<span className="arapski-lekcija"> اللّٰه</span> is recited <u>light</u>
-						, e.g.:
+						<span className="arapski-lekcija"> اللّٰه</span> is preceded by
+						the <strong>vowel</strong> I
+						<span className="arapski-lekcija"> ــــِــ</span> , word{' '}
+						<span className="arapski-lekcija"> اللّٰه</span> is recited{' '}
+						<u>nonemphatically</u>, for example:
 					</Col>
 				</Row>
 

@@ -198,23 +198,30 @@ const TXT = {
 
 	en: {
 		naziv: 'WAQF',
-		naslov: '1 Waqf',
-		podnaslov: 'Stopping during recitation',
+		naslov: '1 WAQF',
+		podnaslov: "Stopping during the recitation of the Qur'an",
 		lekcija: (P, V) => (
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						While reciting the Qur'an, the reciter may stop in the following situations: at the end of a
-						verse, where there is a sign for stopping, and when they run out of breath. This is done as
-						follows:
+						During the recitation of the Qur'an, the reader can stop in the
+						following situations: at the end of the verse, if there is a
+						stopping sign and when he is out of breath. It can be done the
+						following way:
 					</Col>
 				</Row>
 				<Row>
 					<Col className="opisLekcije my-3">
-						<strong>1.</strong> When the word on which the reciter stops ends in the{' '}
-						<strong>short vowel</strong> A <A> ــــَـــ</A> , I <A> ــــِــ</A> , U <A> ــــُـــ </A>or in
-						the <strong>tanween</strong> IN <A> ــــٍــ </A> , UN <A> ـــٌـــ</A> , they stop as if the word
-						carried a <strong>sukun</strong> <A> ــــْـــ</A> , e.g.:
+						<strong>1.</strong> When the word (at which he stops) ends{' '}
+						<strong>in the short vowel</strong> E{' '}
+						<A> ــــَـــ</A> , I{' '}
+						<A> ــــِــ</A> , U{' '}
+						<A> ــــُـــ </A>or{' '}
+						<strong>nunation/tanwin</strong> IN{' '}
+						<A> ــــٍــ </A> , UN{' '}
+						<A> ـــٌـــ</A> , he will stop as
+						if the word ends in <strong>sukoon</strong>{' '}
+						<A> ــــْـــ</A> , for example:
 					</Col>
 				</Row>
 				<Row className="text-center reorder">
@@ -222,8 +229,10 @@ const TXT = {
 				</Row>
 				<Row>
 					<Col className="opisLekcije my-3">
-						<strong>2.</strong> When the word ends in the <strong>tanween</strong> AN <A> ــــًــ</A> , they
-						stop as if it were a <strong>long</strong> A <A> ـــَـــ ا </A> , e.g.:
+						<strong>2.</strong> When the word ends in <strong>tanwin</strong> EN{' '}
+						<A> ــــًــ</A> , he will stop as
+						if it ends in <strong>the long vowel</strong> A{' '}
+						<A> ـــَـــ ا </A> , for example:
 					</Col>
 				</Row>
 				<Row className="text-center reorder">
@@ -231,9 +240,14 @@ const TXT = {
 				</Row>
 				<Row>
 					<Col className="opisLekcije my-3">
-						<strong>3.</strong> When the word ends in the <strong>long vowel</strong> A <A> ــــَـــ ا </A>{' '}
-						, the <strong>long vowel</strong> I <A>ـــِــ ى</A> or the <strong>long vowel</strong> U{' '}
-						<A>ـــُــ و</A> , they stop <u>without any change</u> , e.g.:
+						<strong>3.</strong> When the word ends in{' '}
+						<strong>the long vowel</strong> A{' '}
+						<A> ــــَـــ ا </A> ,{' '}
+						<strong>the long vowel </strong> I{' '}
+						<A>ـــِــ ى</A> or{' '}
+						<strong>the long vowel </strong> U{' '}
+						<A>ـــُــ و</A> , he will stop
+						without making any change, for example:
 					</Col>
 				</Row>
 				<Row className="text-center ">
@@ -247,9 +261,11 @@ const TXT = {
 				</Row>
 				<Row>
 					<Col className="opisLekcije my-3">
-						<strong>4.</strong> When the word ends in the round <strong>T</strong> <A>(ة/ـة)</A> , they stop
-						as if the letter <strong>H </strong>
-						<A>(ه)</A> were written , no matter which vowel or tanween is written on it, e.g.:
+						<strong>4.</strong> When the word ends in round <strong>T</strong>{' '}
+						<A>(ة/ـة)</A> , he will stop as if
+						the letter <strong>H </strong>
+						<A>(ه)</A> , were written
+						regardless of which vowel or tanwin is written on it, for example:
 					</Col>
 				</Row>
 				<Row className="text-center reorder">
@@ -261,62 +277,71 @@ const TXT = {
 			<Table className="tabela-opis text-center" bordered hover responsive>
 				<thead className="text-danger text-uppercase">
 					<tr>
-						<th>When the word ends in</th>
-						<th>We stop</th>
+						<th>WHEN THE WORD ENDS IN</th>
+						<th>WE SHOULD STOP</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
 						<td>
-							A <A>ــــَـــ</A> , I <A> ــــِــ</A> , U <A> ــــُـــ</A> , IN <A> ـــٍـــ </A> , UN{' '}
+							E <A>ــــَـــ</A> , I{' '}
+							<A> ــــِــ</A> , U{' '}
+							<A> ــــُـــ</A> , IN{' '}
+							<A> ـــٍـــ </A> , UN{' '}
 							<A> ـــٌــ</A>
 						</td>
 						<td>
-							as if there were a sukun <A> ـــْــ</A>
+							as if it ends in{' '}
+							<A> ـــْــ</A>
 						</td>
 					</tr>
 					<tr>
 						<td>
-							AN <A> ـــًــ</A>
+							EN <A> ـــًــ</A>
 						</td>
 						<td>
-							as if it were a long A
+							as if it ends in long A
 							<br />
 							<A> ــَــ ا</A>
 						</td>
 					</tr>
 					<tr>
 						<td>
-							long A <A>ـــَــ ا</A> , long I <A>ـــِـ ى</A> , long U <A>ـــُــ و</A>
+							long A <A>ـــَــ ا</A> ,
+							long I <A>ـــِـ ى</A> ,
+							long U <A>ـــُــ و</A>
 						</td>
-						<td>with no change at all</td>
+						<td>without any change</td>
 					</tr>
 					<tr>
 						<td>
 							round T <A> (ة/ـة)</A>
 						</td>
 						<td>
-							as if it were H <A> (ه)</A>
+							as if it ends in H{' '}
+							<A> (ه)</A>
 						</td>
 					</tr>
 				</tbody>
 			</Table>
 		),
-		znakoviNaslov: 'Signs for stopping:',
+		znakoviNaslov: 'STOPPING SIGNS:',
 		znakovi: (
 			<React.Fragment>
 				<p>
-					Above some words in the Qur'an there are <strong>signs</strong> which show whether one must stop on
-					that word or must not, whether it is better to stop or better to continue. These signs are:
+					Some <strong>signs</strong> are placed above certain words in the
+					Qur'an to indicate whether the reader must or must not stop at
+					that word, or whether it is better to stop or to continue reading.
+					Those signs are:
 				</p>
 				<br />
 				<Table className="tabela-opis text-center" bordered hover responsive>
 					<thead className="text-uppercase">
 						<tr>
-							<th className="text-danger">Must stop</th>
-							<th>Better to stop</th>
-							<th>Better to continue</th>
-							<th className="text-danger">Must not stop</th>
+							<th className="text-danger">MUST STOP</th>
+							<th>IT IS BETTER TO STOP</th>
+							<th>IT IS BETTER TO CONTINUE</th>
+							<th className="text-danger">MUSTN'T STOP</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -336,14 +361,12 @@ const TXT = {
 						</tr>
 					</tbody>
 				</Table>
-
 				<br />
-
 				<Table className="tabela-opis text-center" bordered hover responsive>
 					<thead className="text-uppercase">
 						<tr>
-							<th>Saktah</th>
-							<th>Three dots</th>
+							<th>THE SAKT</th>
+							<th>THREE DOTS</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -351,22 +374,24 @@ const TXT = {
 							<td>
 								<A> سكتة ؛ س</A>
 								<br />
-								One pauses without breaking the breath.
+								Pause without taking a new breath when reciting.
 							</td>
 							<td>
 								<A> رَيْبَۚۛ ف۪يهِۚۛ </A>
 								<br />
-								If you pause at the first sign, then at the second one you must continue, and vice versa.
+								If the reciter stops at the first sign, then he must
+								continue without stopping at the second sign.
 							</td>
 						</tr>
 					</tbody>
 				</Table>
-
 				<br />
-
 				<p>
-					<strong>NOTE</strong>: The sign <A> قصر</A> beneath a word means that the vowel it stands under is
-					recited <u>short</u> , while <A> مد </A>means that the vowel is recited <u>long</u>.
+					<strong>NOTE</strong>: The sign{' '}
+					<A> قصر</A> below the word
+					indicates that the vowel under which it is written is <u>short</u>{' '}
+					, and <A> مد </A>is a sign that
+					the vowel is recited as a <u>long</u> vowel.
 				</p>
 			</React.Fragment>
 		)

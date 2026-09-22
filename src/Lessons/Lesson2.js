@@ -171,11 +171,12 @@ const TXT = {
 	},
 
 	en: {
-		naziv: 'DAMIR',
+		naziv: 'Damir',
 		naslov: '2 Damir',
 		podnaslov: (
 			<React.Fragment>
-				<strong>Pronouncing the pronoun HU(</strong>هُ<strong>)</strong>
+				<strong>The pronunciation of the pronoun HU(</strong>هُ
+				<strong>)</strong>
 			</React.Fragment>
 		),
 		lekcija: (P, V) => (
@@ -186,18 +187,19 @@ const TXT = {
 						<strong>
 							HU (<span className="arapski-lekcija ">هُ</span>)
 						</strong>{' '}
-						is preceded by the <strong>long vowel </strong>A <span className="arapski-lekcija">ـــَــ ا</span>{' '}
-						, I <span className="arapski-lekcija">ـــِـ ى </span>, U{' '}
-						<span className="arapski-lekcija">ـــُــ و</span> or by a
+						is preceded by the <strong>long vowel </strong>A{' '}
+						<span className="arapski-lekcija">ـــَــ ا</span> , I{' '}
+						<span className="arapski-lekcija">ـــِـ ى </span>, U{' '}
+						<span className="arapski-lekcija">ـــُــ و</span> or
 						<strong>
 							{' '}
-							sukun <span className="arapski-lekcija">ــــْـــ</span>
+							sukoon <span className="arapski-lekcija">ــــْـــ</span>
 						</strong>{' '}
-						, the pronoun{' '}
+						, its{' '}
 						<strong>
 							HU (<span className="arapski-lekcija">هُ</span>)
 						</strong>{' '}
-						is recited <u>short</u>:
+						recitation is <u>short</u>:
 					</Col>
 				</Row>
 
@@ -216,7 +218,8 @@ const TXT = {
 							HU (<span className="arapski-lekcija">هُ</span>)
 						</strong>{' '}
 						is preceded by the
-						<strong> short vowel</strong> A <span className="arapski-lekcija">ــــَـــ</span> , I{' '}
+						<strong> short vowel</strong> E{' '}
+						<span className="arapski-lekcija">ــــَـــ</span> , I{' '}
 						<strong>
 							<span className="arapski-lekcija">ــــِــ </span>
 						</strong>
@@ -224,11 +227,11 @@ const TXT = {
 						<strong>
 							<span className="arapski-lekcija">ــــُـــ</span>
 						</strong>
-						, the pronoun{' '}
+						, its{' '}
 						<strong>
 							HU (<span className="arapski-lekcija">هُ</span>)
 						</strong>{' '}
-						is recited <u>long</u>:
+						recitation is <u>long</u>:
 					</Col>
 				</Row>
 
@@ -253,20 +256,21 @@ const TXT = {
 					<Col className="opisLekcije">
 						When the pronoun{' '}
 						<strong>
-							HU (<span className="arapski-lekcija "> هُ</span>)
+							HU (<span className="arapski-lekcija ">هُ</span>)
 						</strong>{' '}
-						is preceded by the <strong>long vowel </strong>A <span className="arapski-lekcija">ـــَــ ا</span>{' '}
-						, I <span className="arapski-lekcija">ـــِـ ى </span>, U{' '}
-						<span className="arapski-lekcija">ـــُــ و</span> or by a
+						is preceded by the <strong>long vowel </strong>A{' '}
+						<span className="arapski-lekcija">ـــَــ ا</span> , I{' '}
+						<span className="arapski-lekcija">ـــِـ ى </span>, U{' '}
+						<span className="arapski-lekcija">ـــُــ و</span> or
 						<strong>
 							{' '}
-							sukun <span className="arapski-lekcija">ــــْـــ</span>
+							sukoon <span className="arapski-lekcija">ــــْـــ</span>
 						</strong>{' '}
-						, the pronoun{' '}
+						, its{' '}
 						<strong>
 							HU (<span className="arapski-lekcija">هُ</span>)
 						</strong>{' '}
-						is recited <u>short</u>:
+						recitation is <u>short</u>:
 					</Col>
 				</Row>
 
@@ -285,19 +289,20 @@ const TXT = {
 							HU (<span className="arapski-lekcija">هُ</span>)
 						</strong>{' '}
 						is preceded by the
-						<strong> short vowel</strong> A <span className="arapski-lekcija">ــــَـــ</span> , I{' '}
+						<strong> short vowel</strong> E{' '}
+						<span className="arapski-lekcija">ــــَـــ</span> , I{' '}
 						<strong>
 							<span className="arapski-lekcija">ــــِــ </span>
 						</strong>
-						or U {' '}
+						or U{' '}
 						<strong>
 							<span className="arapski-lekcija">ــــُـــ</span>
 						</strong>
-						, the pronoun{' '}
+						, its{' '}
 						<strong>
 							HU (<span className="arapski-lekcija">هُ</span>)
 						</strong>{' '}
-						is recited <u>long</u>:
+						recitation is <u>long</u>:
 					</Col>
 				</Row>
 

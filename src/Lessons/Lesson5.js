@@ -112,25 +112,27 @@ const TXT = {
 	},
 
 	en: {
-		naziv: "IDGHAM MITHLAYN MA'AL-GHUNNAH",
-		naslov: "5 IDGHAM MITHLAYN MA'AL-GHUNNAH",
+		naziv: 'IDGHAM MITHLAYN WITH GHUNNAH',
+		naslov: '5 IDGHAM MITHLAYN WITH GHUNNAH',
 		podnaslov: (
 			<React.Fragment>
-				<strong>Merging identical letters with nasalisation</strong>
+				<strong>Merging of identical letters with nasal emission</strong>
 			</React.Fragment>
 		),
 		lekcija: (P, V) => (
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						When the letter <strong>M</strong> <span className="arapski-lekcija">(م)</span> carrying a{' '}
-						<strong>sukun</strong> is followed by the letter <strong>M</strong>
-						<span className="arapski-lekcija"> (م) </span>carrying a <strong>haraka</strong>, the letter{' '}
-						<strong>M</strong>
-						<span className="arapski-lekcija"> (م)</span> with the <strong>sukun</strong> <u>merges</u> into
-						the letter <strong>M</strong>
-						<span className="arapski-lekcija"> (م)</span> with the <strong>haraka</strong>, while letting air
-						pass through the nose for the length of 2 harakas, e.g.:
+						When the letter <strong>M</strong>{' '}
+						<span className="arapski-lekcija">(م)</span> with{' '}
+						<strong>sukoon</strong> is followed by the letter <strong>M</strong>
+						<span className="arapski-lekcija"> (م) </span>with a short{' '}
+						<strong>vowel/haraka</strong>, the letter <strong>M</strong>
+						<span className="arapski-lekcija"> (م)</span> with{' '}
+						<strong>sukoon</strong> is merged with <strong>the letter M</strong>
+						<span className="arapski-lekcija"> (م)</span> with the{' '}
+						<strong>vowel/haraka</strong>, with the airflow through the nose
+						lasting two counts, for example:
 					</Col>
 				</Row>
 
@@ -163,14 +165,18 @@ const TXT = {
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						When the letter <strong>M</strong> <span className="arapski-lekcija">(م)</span> carrying a{' '}
-						<strong>sukun</strong> is followed by the letter <strong>M</strong>
-						<span className="arapski-lekcija"> (م) </span>carrying a <strong>haraka</strong>, the letter{' '}
+						When the letter <strong>M</strong>{' '}
+						<span className="arapski-lekcija">(م)</span> with{' '}
+						<strong>sukoon</strong> is followed by the letter{' '}
 						<strong>M</strong>
-						<span className="arapski-lekcija"> (م)</span> with the <strong>sukun</strong> <u>merges</u> into
-						the letter <strong>M</strong>
-						<span className="arapski-lekcija"> (م)</span> with the <strong>haraka</strong>, while letting
-						air pass through the nose for the length of 2 harakas, e.g.:
+						<span className="arapski-lekcija"> (م) </span>with a short{' '}
+						<strong>vowel/haraka</strong>, the letter <strong>M</strong>
+						<span className="arapski-lekcija"> (م)</span> with{' '}
+						<strong>sukoon</strong> is merged with{' '}
+						<strong>the letter M</strong>
+						<span className="arapski-lekcija"> (م)</span> with the{' '}
+						<strong>vowel/haraka</strong>, with the airflow through the nose
+						lasting two counts, for example:
 					</Col>
 				</Row>
 
