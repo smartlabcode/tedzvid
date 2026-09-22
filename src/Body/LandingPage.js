@@ -258,11 +258,11 @@ function LandingPage() {
 									</span>
 									{ui.author}
 								</span>
-								<a className="chip" href="mailto:sejidstrika@tedzvid.ba">
+								<a className="chip" href="mailto:tedzvidba@gmail.com">
 									<span className="icon-circle icon-circle--teal">
 										<FaEnvelope />
 									</span>
-									sejidstrika@tedzvid.ba
+									tedzvidba@gmail.com
 								</a>
 								<a className="chip" href="viber://chat?number=0038761617606">
 									<span className="icon-circle icon-circle--purple">
