@@ -158,25 +158,33 @@ const TXT = {
 	},
 
 	en: {
-		naziv: 'MADD MUNFASIL',
-		naslov: '19 MADD MUNFASIL',
+		naziv: 'AL-MADD AL-MUNFASIL',
+		naslov: '19 AL-MADD AL-MUNFASIL',
 		podnaslov: (
 			<React.Fragment>
-				<strong>Separated prolongation</strong>
+				<strong>Disconnected extension</strong>
 			</React.Fragment>
 		),
 		lekcija: (P, V) => (
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije ">
-						When the <strong>long vowel</strong> A <span className="arapski-lekcija">ـــَــ ا</span> , I{' '}
-						<span className="arapski-lekcija"> ـــِـ ى</span> , U{' '}
+						When the <strong>long vowel</strong> A{' '}
+						<span className="arapski-lekcija">ـــَــ ا</span> , I{' '}
+						<span className="arapski-lekcija"> ـــِـ ى</span> , or U{' '}
 						<span className="arapski-lekcija" style={{ lineHeight: '1.8em' }}>
 							ـــُــ و
 						</span>{' '}
-						is followed by a <strong>hamza</strong> or an <strong>alif</strong>{' '}
-						<u>at the beginning of the next</u> word, it is madd munfasil. It lasts 4–5 harakas, e.g.:
-						<span style={{ lineHeight: '1.5em' }}>{P('row1')}</span>
+						is followed by <strong>a hamzah</strong> or <strong>elif</strong> at
+						the beginning of
+						<strong>
+							<u> the adjacent word,</u>
+						</strong>{' '}
+						al-madd al-munfasil occurs. The reciter must extend the word for 4
+						to 5 counts, as in:
+						<span style={{ lineHeight: '1.5em' }}>
+							{P('row1')}
+						</span>
 					</Col>
 				</Row>
 
@@ -188,11 +196,11 @@ const TXT = {
 
 				<Row className="opisLekcije text-center  reorder-basic-display-after">
 					<Col>
-						<pre> “Turkish print”</pre>
+						<pre> „Turkish print“</pre>
 					</Col>
 					-
 					<Col>
-						<pre> “Medina print”</pre>
+						<pre> „Madinah print“</pre>
 					</Col>
 				</Row>
 
@@ -234,13 +242,23 @@ const TXT = {
 					<Col className="opisLekcije ">
 						When the <strong>long vowel</strong> A{' '}
 						<span className="arapski-lekcija">ـــَــ ا</span> , I{' '}
-						<span className="arapski-lekcija"> ـــِـ ى</span> , U{' '}
-						<span className="arapski-lekcija" style={{ lineHeight: '1.8em' }}>
+						<span className="arapski-lekcija"> ـــِـ ى</span> or U{' '}
+						<span
+							className="arapski-lekcija"
+							style={{ lineHeight: '1.8em' }}
+						>
 							ـــُــ و
 						</span>{' '}
-						is followed by a <strong>hamza</strong> or an <strong>alif</strong>{' '}
-						<u>at the beginning of the next</u> word, it is madd munfasil. It lasts 4–5 harakas, e.g.:
-						<span style={{ lineHeight: '1.5em' }}>{P('row1')}</span>
+						is followed by <strong>a hamzah</strong> or{' '}
+						<strong>elif</strong> at the beginning of
+						<strong>
+							<u> the adjacent word,</u>
+						</strong>{' '}
+						al-madd al-munfasil occurs. The reciter must extend the word for
+						4 to 5 counts, as in:
+						<span style={{ lineHeight: '1.5em' }}>
+							{P('row1')}
+						</span>
 					</Col>
 				</Row>
 
@@ -252,10 +270,10 @@ const TXT = {
 
 				<Row className="opisLekcije text-center">
 					<Col>
-						<pre> “Turkish print”</pre>
+						<pre> „Turkish print“</pre>
 					</Col>
 					<Col>
-						<pre> “Medina print”</pre>
+						<pre> „Madinah print“</pre>
 					</Col>
 				</Row>
 

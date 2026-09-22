@@ -118,27 +118,32 @@ const TXT = {
 	},
 
 	en: {
-		naziv: 'MADD LAZIM',
-		naslov: '20 MADD LAZIM',
+		naziv: 'AL-MADD AL-LAZIM',
+		naslov: '20 AL-MADD AL-LAZIM',
 		podnaslov: (
 			<React.Fragment>
-				<strong>Obligatory prolongation</strong>
+				<strong>Mandatory extension</strong>
 			</React.Fragment>
 		),
 		lekcija: (P, V) => (
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						When the <strong>long vowel</strong> A <span className="arapski-lekcija">ـــَــ ا</span> , I
-						<span className="arapski-lekcija"> ـــِـ ى </span>, U{' '}
-						<span className="arapski-lekcija">ـــُــ و</span> is followed by a letter with a{' '}
+						When the <strong>long vowel</strong> A{' '}
+						<span className="arapski-lekcija">ـــَــ ا</span> , I
+						<span className="arapski-lekcija"> ـــِـ ى </span>, or U{' '}
+						<span className="arapski-lekcija">ـــُــ و</span> is followed by{' '}
 						<strong>
-							permanent sukun <span className="arapski-lekcija"> ـــْــ </span>
+							a permanent sukoon{' '}
+							<span className="arapski-lekcija"> ـــْــ </span>
 						</strong>{' '}
+						or{' '}
 						<strong>
-							or a tashdeed <span className="arapski-lekcija"> ـــّــ </span>
+							shaddah <span className="arapski-lekcija">ـــّــ </span>{' '}
+							{/*dodo sam "alt+0160" nevidljivi znak umjesto space-a kako bi sastavilo shaddah i arapski znak, kako bi uvijek bili u istom redu */}
 						</strong>
-						, it is madd lazim. It must last 6 harakas, e.g.:
+						, al-madd al-lazim occurs. The reciter must extend the word for 6
+						counts, as in:<br></br>
 						{P('row1')}
 					</Col>
 				</Row>
@@ -173,15 +178,19 @@ const TXT = {
 					<Col className="opisLekcije">
 						When the <strong>long vowel</strong> A{' '}
 						<span className="arapski-lekcija">ـــَــ ا</span> , I
-						<span className="arapski-lekcija"> ـــِـ ى </span>, U{' '}
-						<span className="arapski-lekcija">ـــُــ و</span> is followed by a letter with a{' '}
+						<span className="arapski-lekcija"> ـــِـ ى </span>, or U{' '}
+						<span className="arapski-lekcija">ـــُــ و</span> is followed by{' '}
 						<strong>
-							permanent sukun <span className="arapski-lekcija"> ـــْــ </span>
+							a permanent sukoon{' '}
+							<span className="arapski-lekcija"> ـــْــ </span>
 						</strong>{' '}
+						or{' '}
 						<strong>
-							or a tashdeed <span className="arapski-lekcija"> ـــّــ </span>
+							shaddah <span className="arapski-lekcija">ـــّــ </span>{' '}
+							{/*dodo sam "alt+0160" nevidljivi znak umjesto space-a kako bi sastavilo shaddah i arapski znak, kako bi uvijek bili u istom redu */}
 						</strong>
-						, it is madd lazim. It must last 6 harakas, e.g.:
+						, al-madd al-lazim occurs. The reciter must extend the word for
+						6 counts, as in:<br></br>
 						{P('row1')}
 					</Col>
 				</Row>

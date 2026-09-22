@@ -110,17 +110,19 @@ const TXT = {
 	},
 
 	en: {
-		naziv: "MADD 'ARID",
-		naslov: "21 MADD 'ARID",
+		naziv: 'AL-MADD AL-‘AARID',
+		naslov: '21 AL-MADD AL-‘AARID',
 		podnaslov: 'Temporary prolongation',
 		lekcija: (P, V) => (
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						When the <strong>long vowel</strong> A <span className="arapski-lekcija">ـــَــ ا</span> , I{' '}
-						<span className="arapski-lekcija"> ـــِـ ى </span>, U{' '}
+						When the <strong>long vowel</strong> A{' '}
+						<span className="arapski-lekcija">ـــَــ ا</span> , I{' '}
+						<span className="arapski-lekcija"> ـــِـ ى </span>, or U{' '}
 						<span className="arapski-lekcija">ـــُــ و</span> is followed by a{' '}
-						<strong>temporary sukun</strong>, it is madd 'arid. It lasts 2, 4 or 6 harakas.
+						<strong>temporary sukoon,</strong> al-madd al’aarid occurs. The
+						reciter must extend the word for 2-4-6 counts.
 					</Col>
 				</Row>
 
@@ -160,9 +162,10 @@ const TXT = {
 					<Col className="opisLekcije">
 						When the <strong>long vowel</strong> A{' '}
 						<span className="arapski-lekcija">ـــَــ ا</span> , I{' '}
-						<span className="arapski-lekcija"> ـــِـ ى </span>, U{' '}
-						<span className="arapski-lekcija">ـــُــ و</span> is followed by a{' '}
-						<strong>temporary sukun</strong>, it is madd 'arid. It lasts 2, 4 or 6 harakas.
+						<span className="arapski-lekcija"> ـــِـ ى </span>, or U{' '}
+						<span className="arapski-lekcija">ـــُــ و</span> is followed by
+						a <strong>temporary sukoon,</strong> al-madd al’aarid occurs.
+						The reciter must extend the word for 2-4-6 counts.
 					</Col>
 				</Row>
 

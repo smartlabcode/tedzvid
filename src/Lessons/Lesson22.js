@@ -173,8 +173,8 @@ const TXT = {
 	},
 
 	en: {
-		naziv: 'MADD LIN',
-		naslov: '22 MADD LIN',
+		naziv: 'MADDU AL-LEEN',
+		naslov: '22 MADDU AL-LEEN',
 		podnaslov: (
 			<React.Fragment>
 				<strong>Soft-letter prolongation</strong>
@@ -184,20 +184,21 @@ const TXT = {
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						When the letters <strong>W</strong> or <strong>Y</strong> carry a{' '}
+						When the letters <strong>W</strong> or <strong>J</strong> have{' '}
 						<strong>
-							sukun <span className="arapski-lekcija">(يْ / وْ)</span>
+							sukoon <span className="arapski-lekcija">(يْ / وْ)</span>
 						</strong>
-						, are preceded by the <strong>short vowel</strong> A{' '}
-						<span className="arapski-lekcija">ـــَـــ </span> and followed by a letter with a{' '}
-						<strong>sukun</strong>, it is madd lin, e.g.:
+						, and are preceded by <strong>a short vowel</strong> E{' '}
+						<span className="arapski-lekcija">ـــَـــ </span>, and followed by
+						the letter with <strong>sukoon</strong>, maddu al-leen occurs, as
+						in:
 					</Col>
 				</Row>
 
 				<Row className="text-center reorder-basic-display-after rtl">
 					<Col>
 						<span>
-							{P('row1desni')}
+							. {P('row1desni')}
 							<span className="arapski">( ـــَــ يْ ـــْــ ) </span>
 						</span>
 						<span className="after">;</span>
@@ -216,9 +217,9 @@ const TXT = {
 
 				<Row>
 					<Col className="opisLekcije">
-						That prolongation on the letter <strong>W</strong>{' '}
-						<span className="arapski-lekcija"> (و)</span> or <strong>Y</strong>{' '}
-						<span className="arapski-lekcija"> (ى)</span> lasts 2, 4 or 6 harakas.
+						The extension on the letter <strong>W</strong>{' '}
+						<span className="arapski-lekcija"> (و)</span> or <strong>J</strong>{' '}
+						<span className="arapski-lekcija"> (ى)</span> lasts 2-4-6 counts.
 					</Col>
 				</Row>
 
@@ -257,25 +258,27 @@ const TXT = {
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						When the letters <strong>W</strong> or <strong>Y</strong> carry a{' '}
+						When the letters <strong>W</strong> or <strong>J</strong> have{' '}
 						<strong>
-							sukun <span className="arapski-lekcija">(يْ / وْ)</span>
+							sukoon <span className="arapski-lekcija">(يْ / وْ)</span>
 						</strong>
-						, are preceded by the <strong>short vowel</strong> A{' '}
-						<span className="arapski-lekcija">ـــَـــ </span> and followed by a letter with a{' '}
-						<strong>sukun</strong>, it is madd lin, e.g.:
+						, and are preceded by <strong>a short vowel</strong> E{' '}
+						<span className="arapski-lekcija">ـــَـــ </span>, and followed
+						by the letter with <strong>sukoon</strong>, maddu al-leen
+						occurs, as in:
 					</Col>
 				</Row>
 
 				<Row className="text-center ">
 					<Col>
 						<span>
-							<span className="arapski">( ـــَــ يْ ـــْــ ) </span>{' '}
-							{P('row1desni')}
+							. {P('row1desni')}
+							<span className="arapski">( ـــَــ يْ ـــْــ ) </span>
 						</span>
+						<span className="after">;</span>
 						<span>
-							<span className="arapski">( ـــَــ وْ ـــْــ )</span>{' '}
 							{P('row1lijevi')}
+							<span className="arapski">( ـــَــ وْ ـــْــ )</span>
 						</span>
 					</Col>
 				</Row>
@@ -287,9 +290,10 @@ const TXT = {
 
 				<Row>
 					<Col className="opisLekcije">
-						That prolongation on the letter <strong>W</strong>{' '}
-						<span className="arapski-lekcija"> (و)</span> or <strong>Y</strong>{' '}
-						<span className="arapski-lekcija"> (ى)</span> lasts 2, 4 or 6 harakas.
+						The extension on the letter <strong>W</strong>{' '}
+						<span className="arapski-lekcija"> (و)</span> or{' '}
+						<strong>J</strong> <span className="arapski-lekcija"> (ى)</span>{' '}
+						lasts 2-4-6 counts.
 					</Col>
 				</Row>
 
