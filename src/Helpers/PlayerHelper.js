@@ -26,7 +26,22 @@ function PRow(data, rowname) {
 			);
 		});
 
-		return row;
+		/* "X čita se: Y" je jedan par: prelama se u novi red kao cjelina, a ne između X i Y */
+		const grupisano = [];
+		for (let i = 0; i < row.length; i++) {
+			const dat = datarr[rowname][i];
+			if (i + 1 < row.length && typeof dat.after === 'string' && dat.after.trim().endsWith(':')) {
+				grupisano.push(
+					<span className="par-primjera" key={'par' + dat.id}>
+						{row[i]}
+						{row[i + 1]}
+					</span>
+				);
+				i++;
+			} else grupisano.push(row[i]);
+		}
+
+		return grupisano;
 	};
 
 	return PlayerRow(data, rowname);

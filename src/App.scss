@@ -744,6 +744,15 @@ span.arap-red {
 }
 
 /* ---------- raspored primjera (funkcionalno, ne mijenjati) ---------- */
+/* par primjera ("X čita se: Y"): u novi red ide cijeli, iznutra se lomi samo ako je sam širi od reda */
+.par-primjera {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+
 .reorder-basic,
 .reorder-basic-display-after,
 .reorder {
@@ -882,6 +891,16 @@ span.arap-red {
 
   .reorder-basic-display-after {
     width: 100%;
+  }
+
+  /* L20: na telefonu redovi idu obrnuto (kao na tedzvid.ba); na širem ekranu redoslijed čitanja ostaje */
+  .wrap-reverse-mobitel {
+    flex-wrap: wrap-reverse !important;
+  }
+
+  /* na telefonu se primjeri slažu dva po dva (55% / 40%), pa par ne treba svoj okvir */
+  .par-primjera {
+    display: contents;
   }
 
   .reorder {

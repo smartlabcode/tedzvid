@@ -290,10 +290,10 @@ const TXT = {
 						<span style={{ display: 'inline-flex' }}>
 							<Arabic arabic="ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق " key="arL11">
 								{' '}
-								ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق {' '}
+								ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق ,
 							</Arabic>
-						</span>
-						, dann wird <strong>N</strong> (<span className="arapski-lekcija">ن</span>) oder <strong>tanwin</strong>{' '}
+						</span>{' '}
+						dann wird <strong>N</strong> (<span className="arapski-lekcija">ن</span>) oder <strong>tanwin</strong>{' '}
 						EN <span className="arapski-lekcija">ـــًـــ</span> , in oder un nasal ausgesprochen. Zum Beispiel:
 					</Col>
 				</Row>
@@ -343,10 +343,10 @@ const TXT = {
 						<span style={{ display: 'inline-flex' }}>
 							<Arabic arabic="ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق " key="arL11">
 								{' '}
-								ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق {' '}
+								ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق ,
 							</Arabic>
-						</span>
-						, dann wird <strong>N</strong> (<span className="arapski-lekcija">ن</span>) oder <strong>tanwin</strong>{' '}
+						</span>{' '}
+						dann wird <strong>N</strong> (<span className="arapski-lekcija">ن</span>) oder <strong>tanwin</strong>{' '}
 						EN <span className="arapski-lekcija">ـــًـــ</span> , in oder un nasal ausgesprochen. Zum Beispiel:
 					</Col>
 				</Row>

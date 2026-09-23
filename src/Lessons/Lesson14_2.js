@@ -376,7 +376,9 @@ const TXT = {
 							{' '}
 							ــــَـــ يْـــرْ{' '}
 						</span>
-						), zum Beispiel: {P('row12')}
+						), zum Beispiel:
+						<br />
+						{P('row12')}
 					</Col>
 				</Row>
 
@@ -448,7 +450,9 @@ const TXT = {
 							{' '}
 							ــــَـــ يْـــرْ{' '}
 						</span>
-						), zum Beispiel: {P('row12')}
+						), zum Beispiel:
+						<br />
+						{P('row12')}
 					</Col>
 				</Row>
 

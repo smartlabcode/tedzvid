@@ -47,7 +47,7 @@ const TXT = {
 				</Row>
 
 				<Row className="text-center  reorder">
-					<Col style={{ flexWrap: 'wrap-reverse' }}>{P('row2')}</Col>
+					<Col className="wrap-reverse-mobitel">{P('row2')}</Col>
 				</Row>
 				<Row className="text-center  reorder-basic-display-after rtl">
 					<Col>{P('row3')}</Col>
@@ -91,7 +91,7 @@ const TXT = {
 				</Row>
 
 				<Row className="text-center  reorder">
-					<Col style={{ flexWrap: 'wrap-reverse' }}>{P('row2')}</Col>
+					<Col className="wrap-reverse-mobitel">{P('row2')}</Col>
 				</Row>
 				<Row className="text-center  reorder-basic-display-after rtl">
 					<Col>{P('row3')}</Col>
@@ -149,7 +149,7 @@ const TXT = {
 				</Row>
 
 				<Row className="text-center  reorder">
-					<Col style={{ flexWrap: 'wrap-reverse' }}>{P('row2')}</Col>
+					<Col className="wrap-reverse-mobitel">{P('row2')}</Col>
 				</Row>
 				<Row className="text-center  reorder-basic-display-after rtl">
 					<Col>{P('row3')}</Col>
@@ -196,7 +196,7 @@ const TXT = {
 				</Row>
 
 				<Row className="text-center  reorder">
-					<Col style={{ flexWrap: 'wrap-reverse' }}>{P('row2')}</Col>
+					<Col className="wrap-reverse-mobitel">{P('row2')}</Col>
 				</Row>
 				<Row className="text-center  reorder-basic-display-after rtl">
 					<Col>{P('row3')}</Col>
@@ -245,7 +245,7 @@ const TXT = {
 				</Row>
 
 				<Row className="text-center  reorder">
-					<Col style={{ flexWrap: 'wrap-reverse' }}>{P('row2')}</Col>
+					<Col className="wrap-reverse-mobitel">{P('row2')}</Col>
 				</Row>
 				<Row className="text-center  reorder-basic-display-after rtl">
 					<Col>{P('row3')}</Col>
@@ -284,7 +284,7 @@ const TXT = {
 				</Row>
 
 				<Row className="text-center  reorder">
-					<Col style={{ flexWrap: 'wrap-reverse' }}>{P('row2')}</Col>
+					<Col className="wrap-reverse-mobitel">{P('row2')}</Col>
 				</Row>
 				<Row className="text-center  reorder-basic-display-after rtl">
 					<Col>{P('row3')}</Col>
