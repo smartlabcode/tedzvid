@@ -2,48 +2,48 @@
   "lekcija": 15,
   "pitanja": [
     {
-      "q": { "bs": "Šta znači idgam mutedžanisejn?", "en": "What does idgham mutajanisayn mean?", "de": "Was bedeutet Idgham Mutadschanisain?" },
+      "q": { "bs": "Šta znači idgam mutedžanisejn?", "en": "What does idgham mutajanisayn mean?", "de": "Was bedeutet Idgham Mutajanissayn?" },
       "opcije": [
-        { "bs": "Uklapanje istih harfova", "en": "Merging identical letters", "de": "Gleiche Buchstaben verschmelzen" },
-        { "bs": "Uklapanje srodnih harfova", "en": "Merging related letters", "de": "Verwandte Buchstaben verschmelzen" },
-        { "bs": "Uklapanje bliskih harfova", "en": "Merging close letters", "de": "Benachbarte Buchstaben verschmelzen" },
-        { "bs": "Skrivanje harfa M (م)", "en": "Hiding the letter M (م)", "de": "Den Buchstaben M (م) verstecken" }
+        { "bs": "Uklapanje istih harfova", "en": "Merging identical letters", "de": "Vollständige Assimilation der gleichen Buchstaben" },
+        { "bs": "Uklapanje srodnih harfova", "en": "Merging related letters", "de": "Vollständige Assimilation der verwandten Buchstaben" },
+        { "bs": "Uklapanje bliskih harfova", "en": "Merging close letters", "de": "Vollständige Assimilation der sich nahe stehenden Buchstaben" },
+        { "bs": "Skrivanje harfa M (م)", "en": "Hiding the letter M (م)", "de": "Den Buchstaben M (م) verbergen" }
       ],
       "tacno": 1,
-      "objasnjenje": { "bs": "Idgam mutedžanisejn znači uklapanje srodnih harfova.", "en": "Idgham mutajanisayn means merging related letters.", "de": "Idgham Mutadschanisain bedeutet, dass verwandte Buchstaben verschmelzen." }
+      "objasnjenje": { "bs": "Idgam mutedžanisejn znači uklapanje srodnih harfova.", "en": "Idgham mutajanisayn means merging related letters.", "de": "Idgham Mutajanissayn bedeutet, dass verwandte Buchstaben vollständig ineinander assimiliert werden." }
     },
     {
-      "q": { "bs": "Koji znak nosi prvi od dva srodna harfa kod idgam mutedžanisejna?", "en": "Which sign does the first of the two related letters carry in idgham mutajanisayn?", "de": "Welches Zeichen trägt der erste der beiden verwandten Buchstaben beim Idgham Mutadschanisain?" },
+      "q": { "bs": "Koji znak nosi prvi od dva srodna harfa kod idgam mutedžanisejna?", "en": "Which sign does the first of the two related letters carry in idgham mutajanisayn?", "de": "Welches Zeichen trägt der erste der beiden verwandten Buchstaben beim Idgham Mutajanissayn?" },
       "opcije": [
         { "bs": "Sukun", "en": "A sukun", "de": "Ein Sukun" },
-        { "bs": "Hareket", "en": "A haraka", "de": "Ein Vokalzeichen" },
+        { "bs": "Hareket", "en": "A haraka", "de": "Ein Vokal" },
         { "bs": "Tenvin", "en": "A tanween", "de": "Ein Tanwin" },
         { "bs": "Tešdid", "en": "A tashdeed", "de": "Eine Schadda" }
       ],
       "tacno": 0,
-      "objasnjenje": { "bs": "Prvi harf je sa sukunom, a drugi sa hareketom.", "en": "The first letter carries a sukun and the second a haraka.", "de": "Der erste Buchstabe hat ein Sukun, der zweite ein Vokalzeichen." }
+      "objasnjenje": { "bs": "Prvi harf je sa sukunom, a drugi sa hareketom.", "en": "The first letter carries a sukun and the second a haraka.", "de": "Der erste Buchstabe hat ein Sukun, der zweite einen Vokal." }
     },
     {
-      "q": { "bs": "Koji znak nosi drugi od dva srodna harfa kod idgam mutedžanisejna?", "en": "Which sign does the second of the two related letters carry in idgham mutajanisayn?", "de": "Welches Zeichen trägt der zweite der beiden verwandten Buchstaben beim Idgham Mutadschanisain?" },
+      "q": { "bs": "Koji znak nosi drugi od dva srodna harfa kod idgam mutedžanisejna?", "en": "Which sign does the second of the two related letters carry in idgham mutajanisayn?", "de": "Welches Zeichen trägt der zweite der beiden verwandten Buchstaben beim Idgham Mutajanissayn?" },
       "opcije": [
         { "bs": "Sukun", "en": "A sukun", "de": "Ein Sukun" },
         { "bs": "Tenvin", "en": "A tanween", "de": "Ein Tanwin" },
-        { "bs": "Hareket", "en": "A haraka", "de": "Ein Vokalzeichen" },
+        { "bs": "Hareket", "en": "A haraka", "de": "Ein Vokal" },
         { "bs": "Tešdid", "en": "A tashdeed", "de": "Eine Schadda" }
       ],
       "tacno": 2,
-      "objasnjenje": { "bs": "Drugi harf mora biti sa hareketom da bi se prvi uklopio u njega.", "en": "The second letter must carry a haraka so that the first merges into it.", "de": "Der zweite Buchstabe muss ein Vokalzeichen haben, damit der erste in ihn verschmilzt." }
+      "objasnjenje": { "bs": "Drugi harf mora biti sa hareketom da bi se prvi uklopio u njega.", "en": "The second letter must carry a haraka so that the first merges into it.", "de": "Der zweite Buchstabe muss einen Vokal haben, damit der erste in ihn assimiliert wird." }
     },
     {
       "q": { "bs": "Šta se dešava kada dođu jedan do drugog srodni harfovi iz iste grupe?", "en": "What happens when two related letters from the same group come next to each other?", "de": "Was passiert, wenn zwei verwandte Buchstaben aus derselben Gruppe nebeneinanderstehen?" },
       "opcije": [
         { "bs": "Oba se izgovaraju čisto", "en": "Both are pronounced clearly", "de": "Beide werden deutlich ausgesprochen" },
-        { "bs": "Drugi se uklapa u prvi", "en": "The second merges into the first", "de": "Der zweite verschmilzt in den ersten" },
-        { "bs": "Prvi se izgovara kroz nos", "en": "The first is pronounced through the nose", "de": "Der erste wird durch die Nase gesprochen" },
-        { "bs": "Prvi se uklapa u drugi", "en": "The first merges into the second", "de": "Der erste verschmilzt in den zweiten" }
+        { "bs": "Drugi se uklapa u prvi", "en": "The second merges into the first", "de": "Der zweite wird in den ersten assimiliert" },
+        { "bs": "Prvi se izgovara kroz nos", "en": "The first is pronounced through the nose", "de": "Der erste wird nasal ausgesprochen" },
+        { "bs": "Prvi se uklapa u drugi", "en": "The first merges into the second", "de": "Der erste wird in den zweiten assimiliert" }
       ],
       "tacno": 3,
-      "objasnjenje": { "bs": "Prvi harf (sa sukunom) uklapa se u drugi (sa hareketom).", "en": "The first letter (with a sukun) merges into the second (with a haraka).", "de": "Der erste Buchstabe (mit Sukun) verschmilzt in den zweiten (mit Vokalzeichen)." }
+      "objasnjenje": { "bs": "Prvi harf (sa sukunom) uklapa se u drugi (sa hareketom).", "en": "The first letter (with a sukun) merges into the second (with a haraka).", "de": "Der erste Buchstabe (mit Sukun) wird in den zweiten (mit Vokal) assimiliert." }
     },
     {
       "q": { "bs": "Koliko grupa srodnih harfova navodi ova lekcija?", "en": "How many groups of related letters does this lesson list?", "de": "Wie viele Gruppen verwandter Buchstaben nennt diese Lektion?" },
@@ -87,7 +87,7 @@
         { "bs": "عَبَتُّمْ", "en": "عَبَتُّمْ", "de": "عَبَتُّمْ" }
       ],
       "tacno": 3,
-      "objasnjenje": { "bs": "Harf د sa sukunom uklapa se u harf ت, pa se čita عَبَتُّمْ.", "en": "The letter د with a sukun merges into the letter ت, so it is read عَبَتُّمْ.", "de": "Der Buchstabe د mit Sukun verschmilzt in den Buchstaben ت, deshalb wird عَبَتُّمْ gelesen." }
+      "objasnjenje": { "bs": "Harf د sa sukunom uklapa se u harf ت, pa se čita عَبَتُّمْ.", "en": "The letter د with a sukun merges into the letter ت, so it is read عَبَتُّمْ.", "de": "Der Buchstabe د mit Sukun wird in den Buchstaben ت assimiliert, deshalb wird عَبَتُّمْ gelesen." }
     },
     {
       "q": { "bs": "Kako se čita إِذْ ظَلَمُوا?", "en": "How is إِذْ ظَلَمُوا read?", "de": "Wie wird إِذْ ظَلَمُوا gelesen?" },
@@ -98,10 +98,10 @@
         { "bs": "إِزَّلَمُوا", "en": "إِزَّلَمُوا", "de": "إِزَّلَمُوا" }
       ],
       "tacno": 1,
-      "objasnjenje": { "bs": "Harf ذ sa sukunom uklapa se u harf ظ, pa se čita إِظَّلَمُوا.", "en": "The letter ذ with a sukun merges into the letter ظ, so it is read إِظَّلَمُوا.", "de": "Der Buchstabe ذ mit Sukun verschmilzt in den Buchstaben ظ, deshalb wird إِظَّلَمُوا gelesen." }
+      "objasnjenje": { "bs": "Harf ذ sa sukunom uklapa se u harf ظ, pa se čita إِظَّلَمُوا.", "en": "The letter ذ with a sukun merges into the letter ظ, so it is read إِظَّلَمُوا.", "de": "Der Buchstabe ذ mit Sukun wird in den Buchstaben ظ assimiliert, deshalb wird إِظَّلَمُوا gelesen." }
     },
     {
-      "q": { "bs": "U kojem od ovih primjera se nalazi idgam mutedžanisejn?", "en": "In which of these examples is there idgham mutajanisayn?", "de": "In welchem dieser Beispiele steht ein Idgham Mutadschanisain?" },
+      "q": { "bs": "U kojem od ovih primjera se nalazi idgam mutedžanisejn?", "en": "In which of these examples is there idgham mutajanisayn?", "de": "In welchem dieser Beispiele steht ein Idgham Mutajanissayn?" },
       "opcije": [
         { "bs": "ارْكَبْ مَعَنَا", "en": "ارْكَبْ مَعَنَا", "de": "ارْكَبْ مَعَنَا" },
         { "bs": "وَقُلْ رَبِّ", "en": "وَقُلْ رَبِّ", "de": "وَقُلْ رَبِّ" },
@@ -109,7 +109,7 @@
         { "bs": "مِنْ تَحْتِهَا", "en": "مِنْ تَحْتِهَا", "de": "مِنْ تَحْتِهَا" }
       ],
       "tacno": 0,
-      "objasnjenje": { "bs": "U ارْكَبْ مَعَنَا harf ب sa sukunom uklapa se u harf م iz iste grupe.", "en": "In ارْكَبْ مَعَنَا the letter ب with a sukun merges into the letter م from the same group.", "de": "In ارْكَبْ مَعَنَا verschmilzt der Buchstabe ب mit Sukun in den Buchstaben م aus derselben Gruppe." }
+      "objasnjenje": { "bs": "U ارْكَبْ مَعَنَا harf ب sa sukunom uklapa se u harf م iz iste grupe.", "en": "In ارْكَبْ مَعَنَا the letter ب with a sukun merges into the letter م from the same group.", "de": "In ارْكَبْ مَعَنَا wird der Buchstabe ب mit Sukun in den Buchstaben م aus derselben Gruppe assimiliert." }
     }
   ]
 }

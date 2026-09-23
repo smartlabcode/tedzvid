@@ -3,7 +3,7 @@
             "id": 1,
             "url": "./assets/audio/l1/1.wav",
             "napomena": [
-                {"tip": "stajanje", "bs": "Riječ završava kratkim vokalom E (قَ), zato se staje kao da je na njoj sukun (قْ): maa halek.", "en": "The word ends in the short vowel A (قَ), so we stop as if it carried a sukūn (قْ): mā khalaq.", "de": "Das Wort endet auf dem kurzen Vokal A (قَ), deshalb hält man an, als stünde ein Sukun darauf (قْ): ma chalaq."}
+                {"tip": "stajanje", "bs": "Riječ završava kratkim vokalom E (قَ), zato se staje kao da je na njoj sukun (قْ): maa halek.", "en": "The word ends in the short vowel A (قَ), so we stop as if it carried a sukūn (قْ): mā khalaq.", "de": "Das Wort endet auf dem kurzen Vokal E (قَ), deshalb hält man an, als stünde ein Sukun darauf (قْ): ma chalaq."}
             ],
             "highlight": "قَ",
             "word": "مَاخَلَقَ",
@@ -44,7 +44,7 @@
             "id": 5,
             "url": "./assets/audio/l1/5.wav",
             "napomena": [
-                {"tip": "stajanje", "bs": "Riječ završava tenvinom EN (جًا), zato se pri stajanju uči kao dugo A (جَا): efvaadžaa.", "en": "The word ends in the tanween AN (جًا), so when stopping it is recited as a long A (جَا): afwājā.", "de": "Das Wort endet auf dem Tanwin AN (جًا), deshalb wird es beim Anhalten als langes A (جَا) gelesen: afwadscha."}
+                {"tip": "stajanje", "bs": "Riječ završava tenvinom EN (جًا), zato se pri stajanju uči kao dugo A (جَا): efvaadžaa.", "en": "The word ends in the tanween AN (جًا), so when stopping it is recited as a long A (جَا): afwājā.", "de": "Das Wort endet auf dem Tanwin EN (جًا), deshalb wird es beim Anhalten als langes A (جَا) gelesen: afwadscha."}
             ],
             "highlight": "جًا",
             "word": "أَفْوَاجًا",
@@ -54,7 +54,7 @@
             "id": 6,
             "url": "./assets/audio/l1/6.wav",
             "napomena": [
-                {"tip": "stajanje", "bs": "Ovako se أَفْوَاجًا uči pri stajanju: tenvin EN prelazi u dugo A (جَا), pa se uči efvaadžaa.", "en": "This is how أَفْوَاجًا is recited when stopping: the tanween AN becomes a long A (جَا), giving afwājā.", "de": "So wird أَفْوَاجًا beim Anhalten gelesen: das Tanwin AN wird zu einem langen A (جَا), man liest also afwadscha."}
+                {"tip": "stajanje", "bs": "Ovako se أَفْوَاجًا uči pri stajanju: tenvin EN prelazi u dugo A (جَا), pa se uči efvaadžaa.", "en": "This is how أَفْوَاجًا is recited when stopping: the tanween AN becomes a long A (جَا), giving afwājā.", "de": "So wird أَفْوَاجًا beim Anhalten gelesen: das Tanwin EN wird zu einem langen A (جَا), man liest also afwadscha."}
             ],
             "highlight": "جَا",
             "word": "أَفْوَاجَا",
@@ -64,7 +64,7 @@
             "id": 7,
             "url": "./assets/audio/l1/7.wav",
             "napomena": [
-                {"tip": "stajanje", "bs": "Riječ završava tenvinom EN (حًا), zato se pri stajanju uči kao dugo A, kao da je napisano حَا: dabhaa.", "en": "The word ends in the tanween AN (حًا), so when stopping it is recited as a long A, as if حَا were written: dabhā.", "de": "Das Wort endet auf dem Tanwin AN (حًا), deshalb wird es beim Anhalten als langes A gelesen, als stünde da حَا: dabha."}
+                {"tip": "stajanje", "bs": "Riječ završava tenvinom EN (حًا), zato se pri stajanju uči kao dugo A, kao da je napisano حَا: dabhaa.", "en": "The word ends in the tanween AN (حًا), so when stopping it is recited as a long A, as if حَا were written: dabhā.", "de": "Das Wort endet auf dem Tanwin EN (حًا), deshalb wird es beim Anhalten als langes A gelesen, als stünde da حَا: dabha."}
             ],
             "highlight": "حًا",
             "word": " ضَبْحًا",
@@ -74,7 +74,7 @@
             "id": 8,
             "url": "./assets/audio/l1/8.wav",
             "napomena": [
-                {"tip": "stajanje", "bs": "Ovako se ضَبْحًا uči pri stajanju: tenvin EN prelazi u dugo A (حَا), pa se uči dabhaa.", "en": "This is how ضَبْحًا is recited when stopping: the tanween AN becomes a long A (حَا), giving dabhā.", "de": "So wird ضَبْحًا beim Anhalten gelesen: das Tanwin AN wird zu einem langen A (حَا), man liest also dabha."}
+                {"tip": "stajanje", "bs": "Ovako se ضَبْحًا uči pri stajanju: tenvin EN prelazi u dugo A (حَا), pa se uči dabhaa.", "en": "This is how ضَبْحًا is recited when stopping: the tanween AN becomes a long A (حَا), giving dabhā.", "de": "So wird ضَبْحًا beim Anhalten gelesen: das Tanwin EN wird zu einem langen A (حَا), man liest also dabha."}
             ],
             "highlight": "حَا",
             "word": "ضَبْحَا",
@@ -172,7 +172,7 @@
             "id": 16,
             "url": "./assets/audio/l1/16.wav",
             "napomena": [
-                {"tip": "stajanje", "bs": "Riječ završava okruglim T s tenvinom EN (ةً), ali se i tada pri stajanju uči kao H sa sukunom (هْ): ef'ideh.", "en": "The word ends in the round T with the tanween AN (ةً), yet when stopping it is still recited as H with a sukūn (هْ): af'idah.", "de": "Das Wort endet auf einem runden T mit dem Tanwin AN (ةً), trotzdem wird es beim Anhalten als H mit Sukun (هْ) gelesen: af’idah."}
+                {"tip": "stajanje", "bs": "Riječ završava okruglim T s tenvinom EN (ةً), ali se i tada pri stajanju uči kao H sa sukunom (هْ): ef'ideh.", "en": "The word ends in the round T with the tanween AN (ةً), yet when stopping it is still recited as H with a sukūn (هْ): af'idah.", "de": "Das Wort endet auf einem runden T mit dem Tanwin EN (ةً), trotzdem wird es beim Anhalten als H mit Sukun (هْ) gelesen: af’idah."}
             ],
             "highlight": "ةً",
             "word": " أَفْئِدَةً",
@@ -182,7 +182,7 @@
             "id": 17,
             "url": "./assets/audio/l1/17.wav",
             "napomena": [
-                {"tip": "stajanje", "bs": "Ovako se أَفْئِدَةً uči pri stajanju: okruglo T s tenvinom EN prelazi u H sa sukunom (هْ), pa se uči ef'ideh.", "en": "This is how أَفْئِدَةً is recited when stopping: the round T with the tanween AN becomes H with a sukūn (هْ), giving af'idah.", "de": "So wird أَفْئِدَةً beim Anhalten gelesen: das runde T mit dem Tanwin AN wird zu H mit Sukun (هْ), man liest also af’idah."}
+                {"tip": "stajanje", "bs": "Ovako se أَفْئِدَةً uči pri stajanju: okruglo T s tenvinom EN prelazi u H sa sukunom (هْ), pa se uči ef'ideh.", "en": "This is how أَفْئِدَةً is recited when stopping: the round T with the tanween AN becomes H with a sukūn (هْ), giving af'idah.", "de": "So wird أَفْئِدَةً beim Anhalten gelesen: das runde T mit dem Tanwin EN wird zu H mit Sukun (هْ), man liest also af’idah."}
             ],
             "highlight": "هْ",
             "word": "أَفْئِدَهْ",
@@ -222,7 +222,7 @@
             "id": 21,
             "url": "./assets/audio/l1/21.mp3",
             "napomena": [
-                {"tip": "stajanje", "bs": "Riječ ضَبْحًا završava tenvinom EN (حًا), zato se pri stajanju uči kao dugo A: dabhaa.", "en": "The word ضَبْحًا ends in the tanween AN (حًا), so when stopping it is recited as a long A: dabhā.", "de": "Das Wort ضَبْحًا endet auf dem Tanwin AN (حًا), deshalb wird es beim Anhalten als langes A gelesen: dabha."}
+                {"tip": "stajanje", "bs": "Riječ ضَبْحًا završava tenvinom EN (حًا), zato se pri stajanju uči kao dugo A: dabhaa.", "en": "The word ضَبْحًا ends in the tanween AN (حًا), so when stopping it is recited as a long A: dabhā.", "de": "Das Wort ضَبْحًا endet auf dem Tanwin EN (حًا), deshalb wird es beim Anhalten als langes A gelesen: dabha."}
             ],
             "highlight": "حًا",
             "word": "وَالْعَادِيَاتِ ضَبْحًا",
@@ -250,7 +250,7 @@
             "id": 24,
             "url": "./assets/audio/l1/24.mp3",
             "napomena": [
-                {"tip": "stajanje", "bs": "Ajet završava kratkim vokalom E (نَ), zato se staje kao da je na njemu sukun: lilmuttekiin.", "en": "The verse ends in the short vowel A (نَ), so we stop as if it carried a sukūn: lilmuttaqīn.", "de": "Der Vers endet auf dem kurzen Vokal A (نَ), deshalb hält man an, als stünde ein Sukun darauf: lilmuttaqin."}
+                {"tip": "stajanje", "bs": "Ajet završava kratkim vokalom E (نَ), zato se staje kao da je na njemu sukun: lilmuttekiin.", "en": "The verse ends in the short vowel A (نَ), so we stop as if it carried a sukūn: lilmuttaqīn.", "de": "Der Vers endet auf dem kurzen Vokal E (نَ), deshalb hält man an, als stünde ein Sukun darauf: lilmuttaqin."}
             ],
             "highlight": "نَ",
             "word": "هُدًى لِلْمُتَّق۪ينَ",
@@ -260,8 +260,8 @@
             "id": 23,
             "url": "./assets/audio/l1/23.mp3",
             "napomena": [
-                {"tip": "napomena", "bs": "Znak ۚۛ stoji na dva mjesta: ako se stane na رَيْبَۚۛ, onda se na ف۪يهِۚۛ mora preći, i obrnuto.", "en": "The sign ۚۛ appears in two places: if you stop at رَيْبَۚۛ, then at ف۪يهِۚۛ you must continue, and vice versa.", "de": "Das Zeichen ۚۛ steht an zwei Stellen: hältst du bei رَيْبَۚۛ an, dann musst du bei ف۪يهِۚۛ weiterlesen, und umgekehrt."},
-                {"tip": "stajanje", "bs": "Ako se stane na رَيْبَۚۛ, kratki vokal E se uči kao sukun i uči se rajb, a na ف۪يهِۚۛ isto tako fiih.", "en": "If you stop at رَيْبَۚۛ, the short vowel A is recited as a sukūn, giving rayb, and at ف۪يهِۚۛ likewise fīh.", "de": "Hältst du bei رَيْبَۚۛ an, wird der kurze Vokal A als Sukun gelesen und man liest raib, und bei ف۪يهِۚۛ ebenso fih."}
+                {"tip": "napomena", "bs": "Znak ۚۛ stoji na dva mjesta: ako se stane na رَيْبَۚۛ, onda se na ف۪يهِۚۛ mora preći, i obrnuto.", "en": "The sign ۚۛ appears in two places: if you stop at رَيْبَۚۛ, then at ف۪يهِۚۛ you must continue, and vice versa.", "de": "Das Zeichen ۚۛ steht an zwei Stellen: Halten Sie bei رَيْبَۚۛ an, dann müssen Sie bei ف۪يهِۚۛ weiterlesen, und umgekehrt."},
+                {"tip": "stajanje", "bs": "Ako se stane na رَيْبَۚۛ, kratki vokal E se uči kao sukun i uči se rajb, a na ف۪يهِۚۛ isto tako fiih.", "en": "If you stop at رَيْبَۚۛ, the short vowel A is recited as a sukūn, giving rayb, and at ف۪يهِۚۛ likewise fīh.", "de": "Halten Sie bei رَيْبَۚۛ an, wird der kurze Vokal E als Sukun gelesen und man liest raib, und bei ف۪يهِۚۛ ebenso fih."}
             ],
             "highlight": null,
             "word": "ذٰلِكَ الْكِتَابُ لَا رَيْبَۚۛ ف۪يهِۚۛ ",
@@ -329,7 +329,7 @@
             "id": 30,
             "url": "./assets/audio/l1/30.mp3",
             "napomena": [
-                {"tip": "stajanje", "bs": "Riječ بِنَٓاءًۖ završava tenvinom EN (ءً), zato se pri stajanju uči kao dugo A: binaa'aa.", "en": "The word بِنَٓاءًۖ ends in the tanween AN (ءً), so when stopping it is recited as a long A: binā'ā.", "de": "Das Wort بِنَٓاءًۖ endet auf dem Tanwin AN (ءً), deshalb wird es beim Anhalten als langes A gelesen: bina’a."}
+                {"tip": "stajanje", "bs": "Riječ بِنَٓاءًۖ završava tenvinom EN (ءً), zato se pri stajanju uči kao dugo A: binaa'aa.", "en": "The word بِنَٓاءًۖ ends in the tanween AN (ءً), so when stopping it is recited as a long A: binā'ā.", "de": "Das Wort بِنَٓاءًۖ endet auf dem Tanwin EN (ءً), deshalb wird es beim Anhalten als langes A gelesen: bina’a."}
             ],
             "highlight": "ءًۖ",
             "word": "وَالسَّمَٓاءَ بِنَٓاءًۖ",
@@ -339,7 +339,7 @@
             "id": 31,
             "url": "./assets/audio/l1/31.mp3",
             "napomena": [
-                {"tip": "stajanje", "bs": "Riječ هُوَ završava kratkim vokalom E (وَ), zato se staje kao da je na njoj sukun: huv.", "en": "The word هُوَ ends in the short vowel A (وَ), so we stop as if it carried a sukūn: huw.", "de": "Das Wort هُوَ endet auf dem kurzen Vokal A (وَ), deshalb hält man an, als stünde ein Sukun darauf: huw."}
+                {"tip": "stajanje", "bs": "Riječ هُوَ završava kratkim vokalom E (وَ), zato se staje kao da je na njoj sukun: huv.", "en": "The word هُوَ ends in the short vowel A (وَ), so we stop as if it carried a sukūn: huw.", "de": "Das Wort هُوَ endet auf dem kurzen Vokal E (وَ), deshalb hält man an, als stünde ein Sukun darauf: huw."}
             ],
             "highlight": "وَ",
             "word": "اَللّٰهُ لَٓا إِلٰهَ إِلَّا هُوَ ",

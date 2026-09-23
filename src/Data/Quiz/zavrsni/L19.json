@@ -2,29 +2,29 @@
   "lekcija": 19,
   "pitanja": [
     {
-      "q": { "bs": "U primjeru لَٓا اَعْبُدُ مَا تَعْبُدُونَ koja riječ ima medd munfesil?", "en": "In the example لَٓا اَعْبُدُ مَا تَعْبُدُونَ, which word has madd munfasil?", "de": "Welches Wort hat im Beispiel لَٓا اَعْبُدُ مَا تَعْبُدُونَ Madd Munfasil?" },
+      "q": { "bs": "U primjeru لَٓا اَعْبُدُ مَا تَعْبُدُونَ koja riječ ima medd munfesil?", "en": "In the example لَٓا اَعْبُدُ مَا تَعْبُدُونَ, which word has madd munfasil?", "de": "Welches Wort hat im Beispiel لَٓا اَعْبُدُ مَا تَعْبُدُونَ Medd Munfesil?" },
       "opcije": [
         { "bs": "لَٓا, jer sljedeća riječ اَعْبُدُ počinje elifom", "en": "لَٓا, because the next word اَعْبُدُ begins with an alif", "de": "لَٓا, weil das nächste Wort اَعْبُدُ mit einem Alif beginnt" },
         { "bs": "مَا, jer sljedeća riječ تَعْبُدُونَ počinje harfom T", "en": "مَا, because the next word تَعْبُدُونَ begins with the letter T", "de": "مَا, weil das nächste Wort تَعْبُدُونَ mit dem Buchstaben T beginnt" },
         { "bs": "Obje riječi, لَٓا i مَا", "en": "Both words, لَٓا and مَا", "de": "Beide Wörter, لَٓا und مَا" },
-        { "bs": "Nijedna, obje su medd tabijj", "en": "Neither, both are madd tabi'i", "de": "Keines von beiden, beide sind Madd Tabi’i" }
+        { "bs": "Nijedna, obje su medd tabijj", "en": "Neither, both are madd tabi'i", "de": "Keines von beiden, beide sind Medd Tabi’i" }
       ],
       "tacno": 0,
-      "objasnjenje": { "bs": "Poslije dugog vokala A u riječi لَٓا dolazi elif na početku sljedeće riječi, a poslije مَا dolazi harf T, pa je to medd tabijj od 2 hareketa.", "en": "The long vowel A in لَٓا is followed by an alif at the beginning of the next word, while مَا is followed by the letter T, so that is madd tabi'i of 2 harakas.", "de": "Nach dem langen Vokal A in لَٓا kommt ein Alif am Anfang des nächsten Wortes, nach مَا kommt aber der Buchstabe T, also ist das Madd Tabi’i von 2 Harakat." }
+      "objasnjenje": { "bs": "Poslije dugog vokala A u riječi لَٓا dolazi elif na početku sljedeće riječi, a poslije مَا dolazi harf T, pa je to medd tabijj od 2 hareketa.", "en": "The long vowel A in لَٓا is followed by an alif at the beginning of the next word, while مَا is followed by the letter T, so that is madd tabi'i of 2 harakas.", "de": "Nach dem langen Vokal A in لَٓا kommt ein Alif am Anfang des nächsten Wortes, nach مَا kommt aber der Buchstabe T, also ist das Medd Tabi’i von 2 Harakat." }
     },
     {
       "q": { "bs": "Šta je zajedničko primjerima وَمَآ أَنْتُمْ i وَلَٓا اَنَا?", "en": "What do the examples وَمَآ أَنْتُمْ and وَلَٓا اَنَا have in common?", "de": "Was haben die Beispiele وَمَآ أَنْتُمْ und وَلَٓا اَنَا gemeinsam?" },
       "opcije": [
-        { "bs": "U prvom je medd muttesil, a u drugom medd munfesil", "en": "The first is madd muttasil and the second madd munfasil", "de": "Im ersten ist Madd Muttasil, im zweiten Madd Munfasil" },
-        { "bs": "U oba je medd munfesil, iako je jednom napisano hemze, a drugi put elif", "en": "Both are madd munfasil, although one is written with a hamza and the other with an alif", "de": "In beiden ist Madd Munfasil, obwohl einmal eine Hamza und einmal ein Alif geschrieben ist" },
-        { "bs": "U prvom je medd munfesil, a u drugom medd tabijj", "en": "The first is madd munfasil and the second madd tabi'i", "de": "Im ersten ist Madd Munfasil, im zweiten Madd Tabi’i" },
-        { "bs": "Ni u jednom nema dužine", "en": "Neither has a prolongation", "de": "In keinem von beiden gibt es eine Dehnung" }
+        { "bs": "U prvom je medd muttesil, a u drugom medd munfesil", "en": "The first is madd muttasil and the second madd munfasil", "de": "Im ersten ist Medd Muttesil, im zweiten Medd Munfesil" },
+        { "bs": "U oba je medd munfesil, iako je jednom napisano hemze, a drugi put elif", "en": "Both are madd munfasil, although one is written with a hamza and the other with an alif", "de": "In beiden ist Medd Munfesil, obwohl einmal eine Hamza und einmal ein Alif geschrieben ist" },
+        { "bs": "U prvom je medd munfesil, a u drugom medd tabijj", "en": "The first is madd munfasil and the second madd tabi'i", "de": "Im ersten ist Medd Munfesil, im zweiten Medd Tabi’i" },
+        { "bs": "Ni u jednom nema dužine", "en": "Neither has a prolongation", "de": "In keinem von beiden gibt es eine Verlängerung" }
       ],
       "tacno": 1,
-      "objasnjenje": { "bs": "U oba primjera poslije dugog vokala A sljedeća riječ počinje hemzetom ili elifom, pa se oba uče kao medd munfesil od 4-5 hareketa.", "en": "In both examples the long vowel A is followed by a next word beginning with a hamza or an alif, so both are read as madd munfasil of 4–5 harakas.", "de": "In beiden Beispielen beginnt nach dem langen Vokal A das nächste Wort mit einer Hamza oder einem Alif, darum werden beide als Madd Munfasil von 4–5 Harakat gelesen." }
+      "objasnjenje": { "bs": "U oba primjera poslije dugog vokala A sljedeća riječ počinje hemzetom ili elifom, pa se oba uče kao medd munfesil od 4-5 hareketa.", "en": "In both examples the long vowel A is followed by a next word beginning with a hamza or an alif, so both are read as madd munfasil of 4–5 harakas.", "de": "In beiden Beispielen beginnt nach dem langen Vokal A das nächste Wort mit einer Hamza oder einem Alif, darum werden beide als Medd Munfesil von 4–5 Harakat gelesen." }
     },
     {
-      "q": { "bs": "Koji primjer ima medd munfesil poslije dugog vokala U?", "en": "Which example has madd munfasil after the long vowel U?", "de": "Welches Beispiel hat Madd Munfasil nach dem langen Vokal U?" },
+      "q": { "bs": "Koji primjer ima medd munfesil poslije dugog vokala U?", "en": "Which example has madd munfasil after the long vowel U?", "de": "Welches Beispiel hat Medd Munfesil nach dem langen Vokal U?" },
       "opcije": [
         { "bs": "وَمَآ أَنْتُمْ", "en": "وَمَآ أَنْتُمْ", "de": "وَمَآ أَنْتُمْ" },
         { "bs": "يَٓا اَيُّهَا الْكَافِرُونَ", "en": "يَٓا اَيُّهَا الْكَافِرُونَ", "de": "يَٓا اَيُّهَا الْكَافِرُونَ" },
@@ -32,10 +32,10 @@
         { "bs": "فَاقْتُلُٓوا أَنْفُسَكُمْ", "en": "فَاقْتُلُٓوا أَنْفُسَكُمْ", "de": "فَاقْتُلُٓوا أَنْفُسَكُمْ" }
       ],
       "tacno": 3,
-      "objasnjenje": { "bs": "Riječ فَاقْتُلُٓوا završava dugim vokalom U, a sljedeća riječ أَنْفُسَكُمْ počinje hemzetom, pa je to medd munfesil.", "en": "The word فَاقْتُلُٓوا ends with the long vowel U and the next word أَنْفُسَكُمْ begins with a hamza, so it is madd munfasil.", "de": "Das Wort فَاقْتُلُٓوا endet auf den langen Vokal U, und das nächste Wort أَنْفُسَكُمْ beginnt mit einer Hamza, also ist das Madd Munfasil." }
+      "objasnjenje": { "bs": "Riječ فَاقْتُلُٓوا završava dugim vokalom U, a sljedeća riječ أَنْفُسَكُمْ počinje hemzetom, pa je to medd munfesil.", "en": "The word فَاقْتُلُٓوا ends with the long vowel U and the next word أَنْفُسَكُمْ begins with a hamza, so it is madd munfasil.", "de": "Das Wort فَاقْتُلُٓوا endet auf den langen Vokal U, und das nächste Wort أَنْفُسَكُمْ beginnt mit einer Hamza, also ist das Medd Munfesil." }
     },
     {
-      "q": { "bs": "Riječ يَا završava dugim vokalom A. Uz koju od navedenih riječi taj dugi vokal postaje medd munfesil?", "en": "The word يَا ends with the long vowel A. With which of these next words does that long vowel become madd munfasil?", "de": "Das Wort يَا endet auf den langen Vokal A. Bei welchem der folgenden Wörter wird dieser lange Vokal zu Madd Munfasil?" },
+      "q": { "bs": "Riječ يَا završava dugim vokalom A. Uz koju od navedenih riječi taj dugi vokal postaje medd munfesil?", "en": "The word يَا ends with the long vowel A. With which of these next words does that long vowel become madd munfasil?", "de": "Das Wort يَا endet auf den langen Vokal A. Bei welchem der folgenden Wörter wird dieser lange Vokal zu Medd Munfesil?" },
       "opcije": [
         { "bs": "قَوْمِ", "en": "قَوْمِ", "de": "قَوْمِ" },
         { "bs": "تَعْبُدُونَ", "en": "تَعْبُدُونَ", "de": "تَعْبُدُونَ" },
@@ -43,7 +43,7 @@
         { "bs": "مَالُهُ", "en": "مَالُهُ", "de": "مَالُهُ" }
       ],
       "tacno": 2,
-      "objasnjenje": { "bs": "Riječ اَيُّهَا počinje elifom, pa je dugi vokal A u يَٓا اَيُّهَا medd munfesil; uz ostale riječi bio bi medd tabijj.", "en": "The word اَيُّهَا begins with an alif, so the long vowel A in يَٓا اَيُّهَا is madd munfasil; with the other words it would be madd tabi'i.", "de": "Das Wort اَيُّهَا beginnt mit einem Alif, darum ist der lange Vokal A in يَٓا اَيُّهَا Madd Munfasil; bei den anderen Wörtern wäre es Madd Tabi’i." }
+      "objasnjenje": { "bs": "Riječ اَيُّهَا počinje elifom, pa je dugi vokal A u يَٓا اَيُّهَا medd munfesil; uz ostale riječi bio bi medd tabijj.", "en": "The word اَيُّهَا begins with an alif, so the long vowel A in يَٓا اَيُّهَا is madd munfasil; with the other words it would be madd tabi'i.", "de": "Das Wort اَيُّهَا beginnt mit einem Alif, darum ist der lange Vokal A in يَٓا اَيُّهَا Medd Munfesil; bei den anderen Wörtern wäre es Medd Tabi’i." }
     }
   ]
 }

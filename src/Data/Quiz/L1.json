@@ -2,15 +2,15 @@
   "lekcija": 1,
   "pitanja": [
     {
-      "q": { "bs": "Šta znači vakf?", "en": "What does waqf mean?", "de": "Was bedeutet Waqf?" },
+      "q": { "bs": "Šta znači vakf?", "en": "What does waqf mean?", "de": "Was bedeutet Vakf?" },
       "opcije": [
-        { "bs": "Uklapanje istih harfova", "en": "Merging identical letters", "de": "Gleiche Buchstaben verschmelzen" },
+        { "bs": "Uklapanje istih harfova", "en": "Merging identical letters", "de": "Vollständige Assimilation der gleichen Buchstaben" },
         { "bs": "Stajanje prilikom učenja Kur'ana", "en": "Stopping during recitation of the Qur'an", "de": "Anhalten beim Koranlesen" },
         { "bs": "Dugo izgovaranje vokala", "en": "Pronouncing a vowel long", "de": "Einen Vokal lang sprechen" },
-        { "bs": "Propuštanje zraka kroz nos", "en": "Letting air pass through the nose", "de": "Luft durch die Nase strömen lassen" }
+        { "bs": "Propuštanje zraka kroz nos", "en": "Letting air pass through the nose", "de": "Nasal aussprechen" }
       ],
       "tacno": 1,
-      "objasnjenje": { "bs": "Vakf je stajanje prilikom učenja Kur'ana, npr. na kraju ajeta, na znaku za stajanje ili kada ponestane daha.", "en": "Waqf is stopping during recitation of the Qur'an, e.g. at the end of a verse, at a sign for stopping or when out of breath.", "de": "Waqf ist das Anhalten beim Koranlesen, z. B. am Ende eines Verses, an einem Pausenzeichen oder wenn dir die Luft ausgeht." }
+      "objasnjenje": { "bs": "Vakf je stajanje prilikom učenja Kur'ana, npr. na kraju ajeta, na znaku za stajanje ili kada ponestane daha.", "en": "Waqf is stopping during recitation of the Qur'an, e.g. at the end of a verse, at a sign for stopping or when out of breath.", "de": "Vakf ist das Anhalten beim Koranlesen, z. B. am Ende eines Verses, an einem Haltezeichen oder wenn der Leser Luft holen muss." }
     },
     {
       "q": { "bs": "Kako se čita riječ سَوَآءٌ kada na njoj stanemo?", "en": "How is the word سَوَآءٌ read when we stop on it?", "de": "Wie wird das Wort سَوَآءٌ gelesen, wenn wir darauf anhalten?" },
@@ -24,7 +24,7 @@
       "objasnjenje": { "bs": "Tenvin UN pri stajanju učimo kao sukun, pa se سَوَآءٌ čita سَوَآءْ.", "en": "When stopping, the tanween UN becomes a sukun, so سَوَآءٌ is read سَوَآءْ.", "de": "Das Tanwin UN wird beim Anhalten wie ein Sukun gelesen, deshalb liest man سَوَآءٌ als سَوَآءْ." }
     },
     {
-      "q": { "bs": "Kako stajemo na riječi koja završava kratkim vokalom E, I ili U?", "en": "How do we stop on a word that ends in the short vowel A, I or U?", "de": "Wie halten wir auf einem Wort an, das auf den kurzen Vokal A, I oder U endet?" },
+      "q": { "bs": "Kako stajemo na riječi koja završava kratkim vokalom E, I ili U?", "en": "How do we stop on a word that ends in the short vowel A, I or U?", "de": "Wie halten wir auf einem Wort an, das auf den kurzen Vokal E, I oder U endet?" },
       "opcije": [
         { "bs": "Kao da je na riječi sukun", "en": "As if the word carried a sukun", "de": "Als ob auf dem Wort ein Sukun stünde" },
         { "bs": "Kao da je dugo A", "en": "As if it were a long A", "de": "Als ob dort ein langes A stünde" },
@@ -35,7 +35,7 @@
       "objasnjenje": { "bs": "Kratki vokal i tenvin IN, UN pri stajanju učimo kao sukun, npr. مَاخَلَقَ čita se مَاخَلَقْ.", "en": "When stopping, a short vowel and the tanween IN, UN are read as a sukun, e.g. مَاخَلَقَ is read مَاخَلَقْ.", "de": "Ein kurzer Vokal und das Tanwin IN, UN werden beim Anhalten wie ein Sukun gelesen, z. B. مَاخَلَقَ wird مَاخَلَقْ gelesen." }
     },
     {
-      "q": { "bs": "Riječ završava tenvinom EN (ــًــ). Kako stajemo na njoj?", "en": "The word ends in the tanween AN (ــًــ). How do we stop on it?", "de": "Ein Wort endet auf das Tanwin AN (ــًــ). Wie halten wir darauf an?" },
+      "q": { "bs": "Riječ završava tenvinom EN (ــًــ). Kako stajemo na njoj?", "en": "The word ends in the tanween AN (ــًــ). How do we stop on it?", "de": "Ein Wort endet auf das Tanwin EN (ــًــ). Wie halten wir darauf an?" },
       "opcije": [
         { "bs": "Kao da je sukun", "en": "As if there were a sukun", "de": "Als ob dort ein Sukun stünde" },
         { "bs": "Bez ikakve promjene", "en": "Without any change", "de": "Ohne jede Änderung" },
@@ -43,7 +43,7 @@
         { "bs": "Kao da je slovo H", "en": "As if it were the letter H", "de": "Als ob dort der Buchstabe H stünde" }
       ],
       "tacno": 2,
-      "objasnjenje": { "bs": "Tenvin EN pri stajanju učimo kao dugo A, npr. أَفْوَاجًا čita se أَفْوَاجَا.", "en": "When stopping, the tanween AN is read as a long A, e.g. أَفْوَاجًا is read أَفْوَاجَا.", "de": "Das Tanwin AN wird beim Anhalten wie ein langes A gelesen, z. B. أَفْوَاجًا wird أَفْوَاجَا gelesen." }
+      "objasnjenje": { "bs": "Tenvin EN pri stajanju učimo kao dugo A, npr. أَفْوَاجًا čita se أَفْوَاجَا.", "en": "When stopping, the tanween AN is read as a long A, e.g. أَفْوَاجًا is read أَفْوَاجَا.", "de": "Das Tanwin EN wird beim Anhalten wie ein langes A gelesen, z. B. أَفْوَاجًا wird أَفْوَاجَا gelesen." }
     },
     {
       "q": { "bs": "Kako stajemo na riječi koja završava dugim vokalom A, I ili U?", "en": "How do we stop on a word that ends in the long vowel A, I or U?", "de": "Wie halten wir auf einem Wort an, das auf den langen Vokal A, I oder U endet?" },
@@ -90,7 +90,7 @@
       "objasnjenje": { "bs": "Znak لا znači da se na toj riječi ne smije stati.", "en": "The sign لا means that one must not stop on that word.", "de": "Das Zeichen لا bedeutet, dass man auf diesem Wort nicht anhalten darf." }
     },
     {
-      "q": { "bs": "Šta se radi kod znaka sekta (س)?", "en": "What do we do at the sign saktah (س)?", "de": "Was macht man beim Zeichen Sakta (س)?" },
+      "q": { "bs": "Šta se radi kod znaka sekta (س)?", "en": "What do we do at the sign saktah (س)?", "de": "Was macht man beim Zeichen Sekta (س)?" },
       "opcije": [
         { "bs": "Staje se i uzima novi dah", "en": "One stops and takes a new breath", "de": "Man hält an und holt neu Luft" },
         { "bs": "Pauzira se bez prekidanja daha", "en": "One pauses without breaking the breath", "de": "Man pausiert kurz, ohne Luft zu holen" },
@@ -98,10 +98,10 @@
         { "bs": "Obavezno se prelazi bez pauze", "en": "One must continue without a pause", "de": "Man muss ohne Pause weiterlesen" }
       ],
       "tacno": 1,
-      "objasnjenje": { "bs": "Sekta je kratka pauza bez prekidanja daha.", "en": "Saktah is a short pause without breaking the breath.", "de": "Die Sakta ist eine kurze Pause, ohne Luft zu holen." }
+      "objasnjenje": { "bs": "Sekta je kratka pauza bez prekidanja daha.", "en": "Saktah is a short pause without breaking the breath.", "de": "Die Sekta ist eine kurze Pause, ohne Luft zu holen." }
     },
     {
-      "q": { "bs": "Ako se pauzira na prvom od dva znaka sa tri tačkice, šta se radi na drugom?", "en": "If you pause at the first of the two three-dot signs, what do you do at the second one?", "de": "Wenn du beim ersten der beiden Zeichen mit drei Punkten pausierst, was machst du beim zweiten?" },
+      "q": { "bs": "Ako se pauzira na prvom od dva znaka sa tri tačkice, šta se radi na drugom?", "en": "If you pause at the first of the two three-dot signs, what do you do at the second one?", "de": "Wenn Sie beim ersten der beiden Zeichen mit drei Punkten anhalten, was machen Sie beim zweiten?" },
       "opcije": [
         { "bs": "Obavezno se prelazi", "en": "One must continue", "de": "Man muss weiterlesen" },
         { "bs": "Obavezno se staje", "en": "One must stop", "de": "Man muss anhalten" },
@@ -109,7 +109,7 @@
         { "bs": "Može se stati ili preći", "en": "One may stop or continue", "de": "Man kann anhalten oder weiterlesen" }
       ],
       "tacno": 0,
-      "objasnjenje": { "bs": "Kod tri tačkice, ako se pauzira na prvom znaku, na drugom je obavezno preći, i obrnuto.", "en": "With the three dots, if you pause at the first sign you must continue at the second, and vice versa.", "de": "Bei den drei Punkten gilt: Pausierst du beim ersten Zeichen, musst du beim zweiten weiterlesen, und umgekehrt." }
+      "objasnjenje": { "bs": "Kod tri tačkice, ako se pauzira na prvom znaku, na drugom je obavezno preći, i obrnuto.", "en": "With the three dots, if you pause at the first sign you must continue at the second, and vice versa.", "de": "Bei den drei Punkten gilt: Halten Sie beim ersten Zeichen an, müssen Sie beim zweiten weiterlesen, und umgekehrt." }
     }
   ]
 }

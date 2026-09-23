@@ -7,7 +7,7 @@
         { "bs": "O stajanju prilikom učenja", "en": "Stopping during recitation", "de": "Um das Anhalten beim Lesen" },
         { "bs": "O izgovaranju riječi Allah", "en": "Pronouncing the word Allah", "de": "Um die Aussprache des Wortes Allah" },
         { "bs": "O izgovaranju zamjenice HU (هُ)", "en": "Pronouncing the pronoun HU (هُ)", "de": "Um die Aussprache des Pronomens HU (هُ)" },
-        { "bs": "O uklapanju istih harfova", "en": "Merging identical letters", "de": "Um das Verschmelzen gleicher Buchstaben" }
+        { "bs": "O uklapanju istih harfova", "en": "Merging identical letters", "de": "Um die Assimilation gleicher Buchstaben" }
       ],
       "tacno": 2,
       "objasnjenje": { "bs": "Damir je pravilo o tome kada se zamjenica HU (هُ) uči kratko, a kada dugo.", "en": "Damir is the rule about when the pronoun HU (هُ) is recited short and when long.", "de": "Damir ist die Regel darüber, wann das Pronomen HU (هُ) kurz und wann lang gesprochen wird." }
@@ -29,7 +29,7 @@
         { "bs": "Kada prije nje dođe sukun", "en": "When it is preceded by a sukun", "de": "Wenn davor ein Sukun steht" },
         { "bs": "Kada prije nje dođe dugi vokal", "en": "When it is preceded by a long vowel", "de": "Wenn davor ein langer Vokal steht" },
         { "bs": "Kada je riječ na kraju ajeta", "en": "When the word is at the end of a verse", "de": "Wenn das Wort am Ende eines Verses steht" },
-        { "bs": "Kada prije nje dođe kratki vokal E, I ili U", "en": "When it is preceded by the short vowel A, I or U", "de": "Wenn davor der kurze Vokal A, I oder U steht" }
+        { "bs": "Kada prije nje dođe kratki vokal E, I ili U", "en": "When it is preceded by the short vowel A, I or U", "de": "Wenn davor der kurze Vokal E, I oder U steht" }
       ],
       "tacno": 3,
       "objasnjenje": { "bs": "Poslije kratkog vokala zamjenica HU se uči dugo, npr. لَهُ, بِهِ.", "en": "After a short vowel the pronoun HU is recited long, e.g. لَهُ, بِهِ.", "de": "Nach einem kurzen Vokal wird das Pronomen HU lang gesprochen, z. B. لَهُ, بِهِ." }
@@ -43,18 +43,18 @@
         { "bs": "Kratko, jer prije nje dođe kratki vokal", "en": "Short, because it is preceded by a short vowel", "de": "Kurz, weil davor ein kurzer Vokal steht" }
       ],
       "tacno": 1,
-      "objasnjenje": { "bs": "U riječi إِلَيْهِ prije zamjenice je harf J (ي) sa sukunom, pa se HU uči kratko.", "en": "In إِلَيْهِ the pronoun is preceded by the letter Y (ي) with a sukun, so HU is recited short.", "de": "Im Wort إِلَيْهِ steht vor dem Pronomen der Buchstabe Y (ي) mit Sukun, deshalb wird HU kurz gesprochen." }
+      "objasnjenje": { "bs": "U riječi إِلَيْهِ prije zamjenice je harf J (ي) sa sukunom, pa se HU uči kratko.", "en": "In إِلَيْهِ the pronoun is preceded by the letter Y (ي) with a sukun, so HU is recited short.", "de": "Im Wort إِلَيْهِ steht vor dem Pronomen der Buchstabe J (ي) mit Sukun, deshalb wird HU kurz gesprochen." }
     },
     {
       "q": { "bs": "Kako se uči zamjenica HU u riječi لَهُ?", "en": "How is the pronoun HU recited in the word لَهُ?", "de": "Wie wird das Pronomen HU im Wort لَهُ gesprochen?" },
       "opcije": [
         { "bs": "Dugo", "en": "Long", "de": "Lang" },
         { "bs": "Kratko", "en": "Short", "de": "Kurz" },
-        { "bs": "Sa gunnehom", "en": "With ghunnah", "de": "Mit Ghunna" },
+        { "bs": "Sa gunnehom", "en": "With ghunnah", "de": "Mit Nasalisierung" },
         { "bs": "Kao da je na njoj sukun", "en": "As if it carried a sukun", "de": "Als ob darauf ein Sukun stünde" }
       ],
       "tacno": 0,
-      "objasnjenje": { "bs": "U riječi لَهُ prije zamjenice je kratki vokal E, pa se HU uči dugo.", "en": "In لَهُ the pronoun is preceded by the short vowel A, so HU is recited long.", "de": "Im Wort لَهُ steht vor dem Pronomen der kurze Vokal A, deshalb wird HU lang gesprochen." }
+      "objasnjenje": { "bs": "U riječi لَهُ prije zamjenice je kratki vokal E, pa se HU uči dugo.", "en": "In لَهُ the pronoun is preceded by the short vowel A, so HU is recited long.", "de": "Im Wort لَهُ steht vor dem Pronomen der kurze Vokal E, deshalb wird HU lang gesprochen." }
     },
     {
       "q": { "bs": "U kojoj se riječi zamjenica HU uči kratko?", "en": "In which word is the pronoun HU recited short?", "de": "In welchem Wort wird das Pronomen HU kurz gesprochen?" },

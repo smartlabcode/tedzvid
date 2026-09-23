@@ -2,7 +2,7 @@
   "lekcija": 16,
   "pitanja": [
     {
-      "q": { "bs": "Koliko puta se u primjeru وَقُلْ رَبِّ أَدْخِلْنِي مُدْخَلَ صِدْقٍ javlja idgam mutekaribejn?", "en": "How many times does idgham mutaqaribayn occur in the example وَقُلْ رَبِّ أَدْخِلْنِي مُدْخَلَ صِدْقٍ?", "de": "Wie oft kommt im Beispiel وَقُلْ رَبِّ أَدْخِلْنِي مُدْخَلَ صِدْقٍ Idgham Mutaqaribain vor?" },
+      "q": { "bs": "Koliko puta se u primjeru وَقُلْ رَبِّ أَدْخِلْنِي مُدْخَلَ صِدْقٍ javlja idgam mutekaribejn?", "en": "How many times does idgham mutaqaribayn occur in the example وَقُلْ رَبِّ أَدْخِلْنِي مُدْخَلَ صِدْقٍ?", "de": "Wie oft kommt im Beispiel وَقُلْ رَبِّ أَدْخِلْنِي مُدْخَلَ صِدْقٍ Idgham Mutaqaribayn vor?" },
       "opcije": [
         { "bs": "0", "en": "0", "de": "0" },
         { "bs": "1", "en": "1", "de": "1" },
@@ -10,10 +10,10 @@
         { "bs": "3", "en": "3", "de": "3" }
       ],
       "tacno": 1,
-      "objasnjenje": { "bs": "Samo u قُلْ رَبِّ poslije لْ dolazi harf R, dok u أَدْخِلْنِي poslije لْ dolazi harf N, pa tu nema uklapanja.", "en": "Only in قُلْ رَبِّ is لْ followed by the letter R, while in أَدْخِلْنِي the لْ is followed by the letter N, so there is no merging there.", "de": "Nur in قُلْ رَبِّ kommt nach لْ der Buchstabe R, in أَدْخِلْنِي dagegen kommt nach لْ der Buchstabe N, also gibt es dort keine Verschmelzung." }
+      "objasnjenje": { "bs": "Samo u قُلْ رَبِّ poslije لْ dolazi harf R, dok u أَدْخِلْنِي poslije لْ dolazi harf N, pa tu nema uklapanja.", "en": "Only in قُلْ رَبِّ is لْ followed by the letter R, while in أَدْخِلْنِي the لْ is followed by the letter N, so there is no merging there.", "de": "Nur in قُلْ رَبِّ kommt nach لْ der Buchstabe R, in أَدْخِلْنِي dagegen kommt nach لْ der Buchstabe N, also gibt es dort keine Assimilation." }
     },
     {
-      "q": { "bs": "U kojem od ovih primjera nema idgam mutekaribejna?", "en": "In which of these examples is there no idgham mutaqaribayn?", "de": "In welchem dieser Beispiele gibt es kein Idgham Mutaqaribain?" },
+      "q": { "bs": "U kojem od ovih primjera nema idgam mutekaribejna?", "en": "In which of these examples is there no idgham mutaqaribayn?", "de": "In welchem dieser Beispiele gibt es kein Idgham Mutaqaribayn?" },
       "opcije": [
         { "bs": "بَلْ رَفَعَهُ اللّٰهُ", "en": "بَلْ رَفَعَهُ اللّٰهُ", "de": "بَلْ رَفَعَهُ اللّٰهُ" },
         { "bs": "فَقُلْ رَبُّكُمْ ذُو رَحْمَةٍ", "en": "فَقُلْ رَبُّكُمْ ذُو رَحْمَةٍ", "de": "فَقُلْ رَبُّكُمْ ذُو رَحْمَةٍ" },
@@ -21,10 +21,10 @@
         { "bs": "قُلْ هُوَ اللّٰهُ أَحَدٌ", "en": "قُلْ هُوَ اللّٰهُ أَحَدٌ", "de": "قُلْ هُوَ اللّٰهُ أَحَدٌ" }
       ],
       "tacno": 3,
-      "objasnjenje": { "bs": "U قُلْ هُوَ poslije harfa L sa sukunom dolazi harf ه, a ne harf R, pa nema uklapanja.", "en": "In قُلْ هُوَ the letter L with a sukun is followed by the letter ه, not the letter R, so there is no merging.", "de": "In قُلْ هُوَ kommt nach dem L mit Sukun der Buchstabe ه und nicht der Buchstabe R, also gibt es keine Verschmelzung." }
+      "objasnjenje": { "bs": "U قُلْ هُوَ poslije harfa L sa sukunom dolazi harf ه, a ne harf R, pa nema uklapanja.", "en": "In قُلْ هُوَ the letter L with a sukun is followed by the letter ه, not the letter R, so there is no merging.", "de": "In قُلْ هُوَ kommt nach dem L mit Sukun der Buchstabe ه und nicht der Buchstabe R, also gibt es keine Assimilation." }
     },
     {
-      "q": { "bs": "Koji znak dobija harf R (ر) kada se لْ uklopi u njega, npr. وَقُرَّبِّ?", "en": "Which sign does the letter R (ر) receive when لْ merges into it, e.g. وَقُرَّبِّ?", "de": "Welches Zeichen bekommt der Buchstabe R (ر), wenn لْ in ihn verschmilzt, z. B. وَقُرَّبِّ?" },
+      "q": { "bs": "Koji znak dobija harf R (ر) kada se لْ uklopi u njega, npr. وَقُرَّبِّ?", "en": "Which sign does the letter R (ر) receive when لْ merges into it, e.g. وَقُرَّبِّ?", "de": "Welches Zeichen bekommt der Buchstabe R (ر), wenn لْ in ihn assimiliert wird, z. B. وَقُرَّبِّ?" },
       "opcije": [
         { "bs": "Sukun", "en": "A sukun", "de": "Ein Sukun" },
         { "bs": "Tenvin", "en": "A tanween", "de": "Ein Tanwin" },
@@ -32,10 +32,10 @@
         { "bs": "Kesra", "en": "A kasra", "de": "Eine Kasra" }
       ],
       "tacno": 2,
-      "objasnjenje": { "bs": "Uklopljeni harf se izgovara udvojeno, pa harf R dobija tešdid: وَقُرَّبِّ, kao i ك u نَخْلُكُّمْ.", "en": "The merged letter is pronounced doubled, so the letter R receives a tashdeed: وَقُرَّبِّ, just like ك in نَخْلُكُّمْ.", "de": "Der verschmolzene Buchstabe wird doppelt gesprochen, also bekommt das R eine Schadda: وَقُرَّبِّ, genau wie ك in نَخْلُكُّمْ." }
+      "objasnjenje": { "bs": "Uklopljeni harf se izgovara udvojeno, pa harf R dobija tešdid: وَقُرَّبِّ, kao i ك u نَخْلُكُّمْ.", "en": "The merged letter is pronounced doubled, so the letter R receives a tashdeed: وَقُرَّبِّ, just like ك in نَخْلُكُّمْ.", "de": "Der assimilierte Buchstabe wird doppelt gesprochen, also bekommt das R eine Schadda: وَقُرَّبِّ, genau wie ك in نَخْلُكُّمْ." }
     },
     {
-      "q": { "bs": "Koji od ovih zapisa prikazuje idgam mutekaribejn?", "en": "Which of these combinations shows idgham mutaqaribayn?", "de": "Welche dieser Schreibweisen zeigt Idgham Mutaqaribain?" },
+      "q": { "bs": "Koji od ovih zapisa prikazuje idgam mutekaribejn?", "en": "Which of these combinations shows idgham mutaqaribayn?", "de": "Welche dieser Schreibweisen zeigt Idgham Mutaqaribayn?" },
       "opcije": [
         { "bs": "لْ رَ", "en": "لْ رَ", "de": "لْ رَ" },
         { "bs": "رْ لَ", "en": "رْ لَ", "de": "رْ لَ" },
@@ -43,7 +43,7 @@
         { "bs": "كْ قَ", "en": "كْ قَ", "de": "كْ قَ" }
       ],
       "tacno": 0,
-      "objasnjenje": { "bs": "Uklapanje nastaje samo kada je prvi harf L sa sukunom, a poslije njega harf R sa hareketom (لْ رَ), ili قْ pa ك.", "en": "Merging occurs only when the first letter is L with a sukun followed by R with a haraka (لْ رَ), or قْ followed by ك.", "de": "Die Verschmelzung entsteht nur, wenn der erste Buchstabe ein L mit Sukun ist und danach ein R mit Vokalzeichen kommt (لْ رَ), oder قْ und danach ك." }
+      "objasnjenje": { "bs": "Uklapanje nastaje samo kada je prvi harf L sa sukunom, a poslije njega harf R sa hareketom (لْ رَ), ili قْ pa ك.", "en": "Merging occurs only when the first letter is L with a sukun followed by R with a haraka (لْ رَ), or قْ followed by ك.", "de": "Die Assimilation entsteht nur, wenn der erste Buchstabe ein L mit Sukun ist und danach ein R mit Vokal kommt (لْ رَ), oder قْ und danach ك." }
     }
   ]
 }

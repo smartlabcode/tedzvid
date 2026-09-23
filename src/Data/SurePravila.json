@@ -6,7 +6,7 @@
 		"grupa": "stajanje",
 		"bs": "Vakf – znak za stajanje",
 		"en": "Waqf – stopping sign",
-		"de": "Waqf – das Pausenzeichen"
+		"de": "Vakf – das Haltezeichen"
 	},
 	{
 		"id": "ne-uci-se",
@@ -33,7 +33,7 @@
 		"grupa": "ostalo",
 		"bs": "Lafzatullah – riječ Allah",
 		"en": "Lafdhatullah – the word Allah",
-		"de": "Lafdhatullah – das Wort Allah"
+		"de": "Lafzatullah – das Wort Allah"
 	},
 	{
 		"id": "kalkala",
@@ -42,7 +42,7 @@
 		"grupa": "ostalo",
 		"bs": "Kalkala – odskakanje",
 		"en": "Qalqalah – bouncing",
-		"de": "Qalqala – das Abprallen"
+		"de": "Qalqala – die kraftvoll federnde Aussprache"
 	},
 	{
 		"id": "hukmurra",
@@ -51,7 +51,7 @@
 		"grupa": "ostalo",
 		"bs": "Hukmurra – izgovor harfa R",
 		"en": "Hukm ar-ra – pronouncing R",
-		"de": "Hukm ar-Ra – die Aussprache des R"
+		"de": "Hukmurra – die Aussprache des R"
 	},
 	{
 		"id": "gunne",
@@ -60,7 +60,7 @@
 		"grupa": "ostalo",
 		"bs": "Gunne – N i M sa šeddom",
 		"en": "Ghunnah – N and M with shadda",
-		"de": "Ghunna – N und M mit Schadda"
+		"de": "Ghunnah – N und M mit Schadda"
 	},
 	{
 		"id": "izhar-halkij",
@@ -69,7 +69,7 @@
 		"grupa": "nun",
 		"bs": "Izhar hallkijj",
 		"en": "Idhhar halqi",
-		"de": "Idh-har Halqi"
+		"de": "Izhar Halqi"
 	},
 	{
 		"id": "ihfa",
@@ -78,7 +78,7 @@
 		"grupa": "nun",
 		"bs": "Ihfa",
 		"en": "Ikhfa",
-		"de": "Ichfa"
+		"de": "Ihfa"
 	},
 	{
 		"id": "iklab",
@@ -96,7 +96,7 @@
 		"grupa": "nun",
 		"bs": "Idgam mea-l-gunneh",
 		"en": "Idgham ma'al-ghunnah",
-		"de": "Idgham ma’al-Ghunna"
+		"de": "Idgam meal-Gunneh"
 	},
 	{
 		"id": "idgam-bila-gunneh",
@@ -105,7 +105,7 @@
 		"grupa": "nun",
 		"bs": "Idgam bila gunneh",
 		"en": "Idgham bila ghunnah",
-		"de": "Idgham bila Ghunna"
+		"de": "Idgam bila Gunneh"
 	},
 	{
 		"id": "izhar-sefevijj",
@@ -114,7 +114,7 @@
 		"grupa": "mim",
 		"bs": "Izhar šefevijj",
 		"en": "Idhhar shafawi",
-		"de": "Idh-har Schafawi"
+		"de": "Izhar Shafawi"
 	},
 	{
 		"id": "ihfa-sefevijj",
@@ -123,7 +123,7 @@
 		"grupa": "mim",
 		"bs": "Ihfa šefevijj",
 		"en": "Ikhfa shafawi",
-		"de": "Ichfa Schafawi"
+		"de": "Ihfa Shafawi"
 	},
 	{
 		"id": "idgam-mislejn-gunneh",
@@ -132,7 +132,7 @@
 		"grupa": "mim",
 		"bs": "Idgam mislejn mea-l-gunneh",
 		"en": "Idgham mithlayn ma'al-ghunnah",
-		"de": "Idgham Mithlain ma’al-Ghunna"
+		"de": "Idgam Mithlayn mit Ghunnah"
 	},
 	{
 		"id": "idgam-mislejn",
@@ -141,7 +141,7 @@
 		"grupa": "idgam",
 		"bs": "Idgam mislejn",
 		"en": "Idgham mithlayn",
-		"de": "Idgham Mithlain"
+		"de": "Idgham Mithlayn"
 	},
 	{
 		"id": "idgam-mutedzanisejn",
@@ -150,7 +150,7 @@
 		"grupa": "idgam",
 		"bs": "Idgam mutedžanisejn",
 		"en": "Idgham mutajanisayn",
-		"de": "Idgham Mutadschanisain"
+		"de": "Idgham Mutajanissayn"
 	},
 	{
 		"id": "idgam-mutekaribejn",
@@ -159,7 +159,7 @@
 		"grupa": "idgam",
 		"bs": "Idgam mutekaribejn",
 		"en": "Idgham mutaqaribayn",
-		"de": "Idgham Mutaqaribain"
+		"de": "Idgham Mutaqaribayn"
 	},
 	{
 		"id": "medd-tabii",
@@ -168,7 +168,7 @@
 		"grupa": "medd",
 		"bs": "Medd tabi'ijj",
 		"en": "Madd tabi'i",
-		"de": "Madd Tabi’i"
+		"de": "Medd Tabi’i"
 	},
 	{
 		"id": "medd-muttesil",
@@ -177,7 +177,7 @@
 		"grupa": "medd",
 		"bs": "Medd muttesil",
 		"en": "Madd muttasil",
-		"de": "Madd Muttasil"
+		"de": "Medd Muttesil"
 	},
 	{
 		"id": "medd-munfesil",
@@ -186,7 +186,7 @@
 		"grupa": "medd",
 		"bs": "Medd munfesil",
 		"en": "Madd munfasil",
-		"de": "Madd Munfasil"
+		"de": "Medd Munfesil"
 	},
 	{
 		"id": "medd-lazim",
@@ -195,7 +195,7 @@
 		"grupa": "medd",
 		"bs": "Medd lazim",
 		"en": "Madd lazim",
-		"de": "Madd Lazim"
+		"de": "Medd Lazim"
 	},
 	{
 		"id": "medd-arid",
@@ -204,7 +204,7 @@
 		"grupa": "medd",
 		"bs": "Medd arid",
 		"en": "Madd 'arid",
-		"de": "Madd Arid"
+		"de": "Medd Arid"
 	},
 	{
 		"id": "medd-lin",
@@ -213,6 +213,6 @@
 		"grupa": "medd",
 		"bs": "Medd lin",
 		"en": "Madd lin",
-		"de": "Madd Lin"
+		"de": "Medd Lin"
 	}
 ]

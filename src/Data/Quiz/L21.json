@@ -2,18 +2,18 @@
   "lekcija": 21,
   "pitanja": [
     {
-      "q": { "bs": "Šta znači „medd arid“?", "en": "What does “madd 'arid” mean?", "de": "Was bedeutet „Madd Arid“?" },
+      "q": { "bs": "Šta znači „medd arid“?", "en": "What does “madd 'arid” mean?", "de": "Was bedeutet „Medd Arid“?" },
       "opcije": [
-        { "bs": "Stalna dužina", "en": "Obligatory prolongation", "de": "Feste Dehnung" },
-        { "bs": "Spojena dužina", "en": "Connected prolongation", "de": "Verbundene Dehnung" },
-        { "bs": "Nestalna dužina", "en": "Temporary prolongation", "de": "Vorübergehende Dehnung" },
-        { "bs": "Obična dužina", "en": "Natural prolongation", "de": "Natürliche Dehnung" }
+        { "bs": "Stalna dužina", "en": "Obligatory prolongation", "de": "Feste Verlängerung" },
+        { "bs": "Spojena dužina", "en": "Connected prolongation", "de": "Verbundene Verlängerung" },
+        { "bs": "Nestalna dužina", "en": "Temporary prolongation", "de": "Vorübergehende Verlängerung" },
+        { "bs": "Obična dužina", "en": "Natural prolongation", "de": "Natürliche Verlängerung" }
       ],
       "tacno": 2,
-      "objasnjenje": { "bs": "Medd arid je nestalna dužina.", "en": "Madd 'arid is the temporary prolongation.", "de": "Madd Arid ist die vorübergehende Dehnung." }
+      "objasnjenje": { "bs": "Medd arid je nestalna dužina.", "en": "Madd 'arid is the temporary prolongation.", "de": "Medd Arid ist die vorübergehende Verlängerung." }
     },
     {
-      "q": { "bs": "Kada nastaje medd arid?", "en": "When does madd 'arid occur?", "de": "Wann entsteht Madd Arid?" },
+      "q": { "bs": "Kada nastaje medd arid?", "en": "When does madd 'arid occur?", "de": "Wann entsteht Medd Arid?" },
       "opcije": [
         { "bs": "Kada poslije dugog vokala dođe nestalni sukun", "en": "When the long vowel is followed by a temporary sukun", "de": "Wenn nach dem langen Vokal ein vorübergehendes Sukun kommt" },
         { "bs": "Kada poslije dugog vokala dođe stalni sukun", "en": "When the long vowel is followed by a permanent sukun", "de": "Wenn nach dem langen Vokal ein festes Sukun kommt" },
@@ -21,10 +21,10 @@
         { "bs": "Kada poslije dugog vokala dođe tešdid", "en": "When the long vowel is followed by a tashdeed", "de": "Wenn nach dem langen Vokal eine Schadda kommt" }
       ],
       "tacno": 0,
-      "objasnjenje": { "bs": "Medd arid je kada poslije dugog vokala dođe nestalni sukun.", "en": "Madd 'arid is when the long vowel is followed by a temporary sukun.", "de": "Madd Arid entsteht, wenn nach dem langen Vokal ein vorübergehendes Sukun kommt." }
+      "objasnjenje": { "bs": "Medd arid je kada poslije dugog vokala dođe nestalni sukun.", "en": "Madd 'arid is when the long vowel is followed by a temporary sukun.", "de": "Medd Arid entsteht, wenn nach dem langen Vokal ein vorübergehendes Sukun kommt." }
     },
     {
-      "q": { "bs": "Koliko traje medd arid?", "en": "How long does madd 'arid last?", "de": "Wie lange dauert Madd Arid?" },
+      "q": { "bs": "Koliko traje medd arid?", "en": "How long does madd 'arid last?", "de": "Wie lange dauert Medd Arid?" },
       "opcije": [
         { "bs": "Obavezno 6 hareketa", "en": "It must last 6 harakas", "de": "Immer 6 Harakat" },
         { "bs": "Obavezno 4-5 hareketa", "en": "It must last 4–5 harakas", "de": "Immer 4–5 Harakat" },
@@ -32,32 +32,32 @@
         { "bs": "2-4-6 hareketa", "en": "2, 4 or 6 harakas", "de": "2, 4 oder 6 Harakat" }
       ],
       "tacno": 3,
-      "objasnjenje": { "bs": "Medd arid traje 2-4-6 hareketa.", "en": "Madd 'arid lasts 2, 4 or 6 harakas.", "de": "Madd Arid dauert 2, 4 oder 6 Harakat." }
+      "objasnjenje": { "bs": "Medd arid traje 2-4-6 hareketa.", "en": "Madd 'arid lasts 2, 4 or 6 harakas.", "de": "Medd Arid dauert 2, 4 oder 6 Harakat." }
     },
     {
-      "q": { "bs": "Po čemu se medd arid razlikuje od medd lazima?", "en": "How does madd 'arid differ from madd lazim?", "de": "Wodurch unterscheidet sich Madd Arid von Madd Lazim?" },
+      "q": { "bs": "Po čemu se medd arid razlikuje od medd lazima?", "en": "How does madd 'arid differ from madd lazim?", "de": "Wodurch unterscheidet sich Medd Arid von Medd Lazim?" },
       "opcije": [
-        { "bs": "Medd arid dolazi poslije hemzeta", "en": "Madd 'arid comes after a hamza", "de": "Madd Arid kommt nach einer Hamza" },
-        { "bs": "Kod medd arida sukun je nestalan, a kod medd lazima stalan", "en": "In madd 'arid the sukun is temporary, while in madd lazim it is permanent", "de": "Bei Madd Arid ist das Sukun vorübergehend, bei Madd Lazim fest" },
-        { "bs": "Medd arid traje duže od medd lazima", "en": "Madd 'arid lasts longer than madd lazim", "de": "Madd Arid dauert länger als Madd Lazim" },
-        { "bs": "Medd arid dolazi samo poslije dugog vokala U", "en": "Madd 'arid comes only after the long vowel U", "de": "Madd Arid kommt nur nach dem langen Vokal U" }
+        { "bs": "Medd arid dolazi poslije hemzeta", "en": "Madd 'arid comes after a hamza", "de": "Medd Arid kommt nach einer Hamza" },
+        { "bs": "Kod medd arida sukun je nestalan, a kod medd lazima stalan", "en": "In madd 'arid the sukun is temporary, while in madd lazim it is permanent", "de": "Bei Medd Arid ist das Sukun vorübergehend, bei Medd Lazim fest" },
+        { "bs": "Medd arid traje duže od medd lazima", "en": "Madd 'arid lasts longer than madd lazim", "de": "Medd Arid dauert länger als Medd Lazim" },
+        { "bs": "Medd arid dolazi samo poslije dugog vokala U", "en": "Madd 'arid comes only after the long vowel U", "de": "Medd Arid kommt nur nach dem langen Vokal U" }
       ],
       "tacno": 1,
-      "objasnjenje": { "bs": "Medd lazim ima stalni sukun i traje 6 hareketa, a medd arid ima nestalni sukun i traje 2-4-6 hareketa.", "en": "Madd lazim has a permanent sukun and lasts 6 harakas, while madd 'arid has a temporary sukun and lasts 2, 4 or 6 harakas.", "de": "Madd Lazim hat ein festes Sukun und dauert 6 Harakat, Madd Arid hat ein vorübergehendes Sukun und dauert 2, 4 oder 6 Harakat." }
+      "objasnjenje": { "bs": "Medd lazim ima stalni sukun i traje 6 hareketa, a medd arid ima nestalni sukun i traje 2-4-6 hareketa.", "en": "Madd lazim has a permanent sukun and lasts 6 harakas, while madd 'arid has a temporary sukun and lasts 2, 4 or 6 harakas.", "de": "Medd Lazim hat ein festes Sukun und dauert 6 Harakat, Medd Arid hat ein vorübergehendes Sukun und dauert 2, 4 oder 6 Harakat." }
     },
     {
-      "q": { "bs": "Gdje je medd arid u primjeru الْعَالَمِينَ?", "en": "Where is the madd 'arid in the example الْعَالَمِينَ?", "de": "Wo ist das Madd Arid im Beispiel الْعَالَمِينَ?" },
+      "q": { "bs": "Gdje je medd arid u primjeru الْعَالَمِينَ?", "en": "Where is the madd 'arid in the example الْعَالَمِينَ?", "de": "Wo ist das Medd Arid im Beispiel الْعَالَمِينَ?" },
       "opcije": [
         { "bs": "Na dugom vokalu A (عَا)", "en": "On the long vowel A (عَا)", "de": "Auf dem langen Vokal A (عَا)" },
         { "bs": "Na harfu L (ل)", "en": "On the letter L (ل)", "de": "Auf dem Buchstaben L (ل)" },
-        { "bs": "Na kratkom vokalu E", "en": "On the short vowel A", "de": "Auf dem kurzen Vokal A" },
+        { "bs": "Na kratkom vokalu E", "en": "On the short vowel A", "de": "Auf dem kurzen Vokal E" },
         { "bs": "Na dugom vokalu I (مِينَ), jer poslije njega dolazi nestalni sukun", "en": "On the long vowel I (مِينَ), because a temporary sukun follows it", "de": "Auf dem langen Vokal I (مِينَ), weil danach ein vorübergehendes Sukun kommt" }
       ],
       "tacno": 3,
-      "objasnjenje": { "bs": "Medd arid je na dugom vokalu I (مِينَ), jer harf N na kraju dobija nestalni sukun.", "en": "The madd 'arid is on the long vowel I (مِينَ), because the final letter N gets a temporary sukun.", "de": "Das Madd Arid ist auf dem langen Vokal I (مِينَ), weil das N am Ende ein vorübergehendes Sukun bekommt." }
+      "objasnjenje": { "bs": "Medd arid je na dugom vokalu I (مِينَ), jer harf N na kraju dobija nestalni sukun.", "en": "The madd 'arid is on the long vowel I (مِينَ), because the final letter N gets a temporary sukun.", "de": "Das Medd Arid ist auf dem langen Vokal I (مِينَ), weil das N am Ende ein vorübergehendes Sukun bekommt." }
     },
     {
-      "q": { "bs": "Koji primjer iz lekcije sadrži medd arid?", "en": "Which example from the lesson contains madd 'arid?", "de": "Welches Beispiel aus der Lektion enthält Madd Arid?" },
+      "q": { "bs": "Koji primjer iz lekcije sadrži medd arid?", "en": "Which example from the lesson contains madd 'arid?", "de": "Welches Beispiel aus der Lektion enthält Medd Arid?" },
       "opcije": [
         { "bs": "حَآجَّ", "en": "حَآجَّ", "de": "حَآجَّ" },
         { "bs": "جَٓاءَ", "en": "جَٓاءَ", "de": "جَٓاءَ" },
@@ -65,10 +65,10 @@
         { "bs": "وَمَآ أَنْتُمْ", "en": "وَمَآ أَنْتُمْ", "de": "وَمَآ أَنْتُمْ" }
       ],
       "tacno": 2,
-      "objasnjenje": { "bs": "U primjeru الْمُؤْمِنُونَ poslije dugog vokala U (نُو) dolazi nestalni sukun, pa je to medd arid.", "en": "In الْمُؤْمِنُونَ the long vowel U (نُو) is followed by a temporary sukun, so it is madd 'arid.", "de": "Im Beispiel الْمُؤْمِنُونَ kommt nach dem langen Vokal U (نُو) ein vorübergehendes Sukun, darum ist das Madd Arid." }
+      "objasnjenje": { "bs": "U primjeru الْمُؤْمِنُونَ poslije dugog vokala U (نُو) dolazi nestalni sukun, pa je to medd arid.", "en": "In الْمُؤْمِنُونَ the long vowel U (نُو) is followed by a temporary sukun, so it is madd 'arid.", "de": "Im Beispiel الْمُؤْمِنُونَ kommt nach dem langen Vokal U (نُو) ein vorübergehendes Sukun, darum ist das Medd Arid." }
     },
     {
-      "q": { "bs": "Zašto se medd arid zove „nestalna dužina“?", "en": "Why is madd 'arid called the “temporary prolongation”?", "de": "Warum heißt Madd Arid „vorübergehende Dehnung“?" },
+      "q": { "bs": "Zašto se medd arid zove „nestalna dužina“?", "en": "Why is madd 'arid called the “temporary prolongation”?", "de": "Warum heißt Medd Arid „vorübergehende Verlängerung“?" },
       "opcije": [
         { "bs": "Jer nastaje zbog nestalnog sukuna", "en": "Because it arises from a temporary sukun", "de": "Weil es durch ein vorübergehendes Sukun entsteht" },
         { "bs": "Jer se uvijek čita kratko", "en": "Because it is always read short", "de": "Weil es immer kurz gesprochen wird" },
@@ -76,10 +76,10 @@
         { "bs": "Jer uvijek traje 6 hareketa", "en": "Because it always lasts 6 harakas", "de": "Weil es immer 6 Harakat dauert" }
       ],
       "tacno": 0,
-      "objasnjenje": { "bs": "Medd arid nastaje zbog nestalnog sukuna, pa se zove nestalna dužina.", "en": "Madd 'arid arises from a temporary sukun, so it is called the temporary prolongation.", "de": "Madd Arid entsteht durch ein vorübergehendes Sukun, darum heißt es vorübergehende Dehnung." }
+      "objasnjenje": { "bs": "Medd arid nastaje zbog nestalnog sukuna, pa se zove nestalna dužina.", "en": "Madd 'arid arises from a temporary sukun, so it is called the temporary prolongation.", "de": "Medd Arid entsteht durch ein vorübergehendes Sukun, darum heißt es vorübergehende Verlängerung." }
     },
     {
-      "q": { "bs": "Smije li se medd arid učiti 4 hareketa?", "en": "May madd 'arid be read for 4 harakas?", "de": "Darf Madd Arid 4 Harakat lang gesprochen werden?" },
+      "q": { "bs": "Smije li se medd arid učiti 4 hareketa?", "en": "May madd 'arid be read for 4 harakas?", "de": "Darf Medd Arid 4 Harakat lang gesprochen werden?" },
       "opcije": [
         { "bs": "Ne, samo 2 hareketa", "en": "No, only 2 harakas", "de": "Nein, nur 2 Harakat" },
         { "bs": "Da, može 2, 4 ili 6 hareketa", "en": "Yes, it may be 2, 4 or 6 harakas", "de": "Ja, es dürfen 2, 4 oder 6 Harakat sein" },
@@ -87,10 +87,10 @@
         { "bs": "Da, ali samo poslije dugog vokala A", "en": "Yes, but only after the long vowel A", "de": "Ja, aber nur nach dem langen Vokal A" }
       ],
       "tacno": 1,
-      "objasnjenje": { "bs": "Medd arid traje 2-4-6 hareketa, pa se može učiti i 4 hareketa.", "en": "Madd 'arid lasts 2, 4 or 6 harakas, so it may also be read for 4 harakas.", "de": "Madd Arid dauert 2, 4 oder 6 Harakat, darum darf es auch 4 Harakat lang gesprochen werden." }
+      "objasnjenje": { "bs": "Medd arid traje 2-4-6 hareketa, pa se može učiti i 4 hareketa.", "en": "Madd 'arid lasts 2, 4 or 6 harakas, so it may also be read for 4 harakas.", "de": "Medd Arid dauert 2, 4 oder 6 Harakat, darum darf es auch 4 Harakat lang gesprochen werden." }
     },
     {
-      "q": { "bs": "Poslije kojih dugih vokala može nastati medd arid?", "en": "After which long vowels can madd 'arid occur?", "de": "Nach welchen langen Vokalen kann Madd Arid entstehen?" },
+      "q": { "bs": "Poslije kojih dugih vokala može nastati medd arid?", "en": "After which long vowels can madd 'arid occur?", "de": "Nach welchen langen Vokalen kann Medd Arid entstehen?" },
       "opcije": [
         { "bs": "Samo poslije dugog vokala I", "en": "Only after the long vowel I", "de": "Nur nach dem langen Vokal I" },
         { "bs": "Samo poslije dugog vokala U", "en": "Only after the long vowel U", "de": "Nur nach dem langen Vokal U" },
@@ -98,18 +98,18 @@
         { "bs": "Samo poslije dugog vokala A", "en": "Only after the long vowel A", "de": "Nur nach dem langen Vokal A" }
       ],
       "tacno": 2,
-      "objasnjenje": { "bs": "Medd arid može doći poslije dugog vokala A, I ili U.", "en": "Madd 'arid can come after the long vowel A, I or U.", "de": "Madd Arid kann nach dem langen Vokal A, I oder U kommen." }
+      "objasnjenje": { "bs": "Medd arid može doći poslije dugog vokala A, I ili U.", "en": "Madd 'arid can come after the long vowel A, I or U.", "de": "Medd Arid kann nach dem langen Vokal A, I oder U kommen." }
     },
     {
-      "q": { "bs": "U primjeru يَحْزَنُونَ medd arid je na:", "en": "In the example يَحْزَنُونَ the madd 'arid is on:", "de": "Im Beispiel يَحْزَنُونَ ist das Madd Arid auf:" },
+      "q": { "bs": "U primjeru يَحْزَنُونَ medd arid je na:", "en": "In the example يَحْزَنُونَ the madd 'arid is on:", "de": "Im Beispiel يَحْزَنُونَ ist das Medd Arid auf:" },
       "opcije": [
         { "bs": "dugom vokalu U (نُونَ)", "en": "the long vowel U (نُونَ)", "de": "dem langen Vokal U (نُونَ)" },
         { "bs": "harfu ح sa sukunom", "en": "the letter ح with a sukun", "de": "dem Buchstaben ح mit Sukun" },
-        { "bs": "kratkom vokalu E", "en": "the short vowel A", "de": "dem kurzen Vokal A" },
+        { "bs": "kratkom vokalu E", "en": "the short vowel A", "de": "dem kurzen Vokal E" },
         { "bs": "harfu ي na početku", "en": "the letter ي at the beginning", "de": "dem Buchstaben ي am Anfang" }
       ],
       "tacno": 0,
-      "objasnjenje": { "bs": "Poslije dugog vokala U (نُو) dolazi nestalni sukun na harfu N, pa je to medd arid.", "en": "The long vowel U (نُو) is followed by a temporary sukun on the letter N, so it is madd 'arid.", "de": "Nach dem langen Vokal U (نُو) kommt ein vorübergehendes Sukun auf dem Buchstaben N, darum ist das Madd Arid." }
+      "objasnjenje": { "bs": "Poslije dugog vokala U (نُو) dolazi nestalni sukun na harfu N, pa je to medd arid.", "en": "The long vowel U (نُو) is followed by a temporary sukun on the letter N, so it is madd 'arid.", "de": "Nach dem langen Vokal U (نُو) kommt ein vorübergehendes Sukun auf dem Buchstaben N, darum ist das Medd Arid." }
     }
   ]
 }

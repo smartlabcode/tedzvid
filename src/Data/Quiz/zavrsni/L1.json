@@ -10,10 +10,10 @@
         { "bs": "ضَبْحًا, bez promjene", "en": "ضَبْحًا, without change", "de": "ضَبْحًا, ohne Änderung" }
       ],
       "tacno": 1,
-      "objasnjenje": { "bs": "Riječ završava tenvinom EN, pa pri stajanju učimo kao da je dugo A: ضَبْحَا.", "en": "The word ends in the tanween AN, so when stopping we read it as if it were a long A: ضَبْحَا.", "de": "Das Wort endet auf dem Tanwin AN, deshalb lesen wir es beim Anhalten wie ein langes A: ضَبْحَا." }
+      "objasnjenje": { "bs": "Riječ završava tenvinom EN, pa pri stajanju učimo kao da je dugo A: ضَبْحَا.", "en": "The word ends in the tanween AN, so when stopping we read it as if it were a long A: ضَبْحَا.", "de": "Das Wort endet auf dem Tanwin EN, deshalb lesen wir es beim Anhalten wie ein langes A: ضَبْحَا." }
     },
     {
-      "q": { "bs": "Riječ أَفْئِدَةً završava okruglim T sa tenvinom EN. Kako je čitamo kada na njoj stanemo?", "en": "The word أَفْئِدَةً ends in the round T with the tanween AN. How do we read it when we stop on it?", "de": "Das Wort أَفْئِدَةً endet auf einem runden T mit dem Tanwin AN. Wie lesen wir es, wenn wir darauf anhalten?" },
+      "q": { "bs": "Riječ أَفْئِدَةً završava okruglim T sa tenvinom EN. Kako je čitamo kada na njoj stanemo?", "en": "The word أَفْئِدَةً ends in the round T with the tanween AN. How do we read it when we stop on it?", "de": "Das Wort أَفْئِدَةً endet auf einem runden T mit dem Tanwin EN. Wie lesen wir es, wenn wir darauf anhalten?" },
       "opcije": [
         { "bs": "أَفْئِدَتْ", "en": "أَفْئِدَتْ", "de": "أَفْئِدَتْ" },
         { "bs": "أَفْئِدَتَا", "en": "أَفْئِدَتَا", "de": "أَفْئِدَتَا" },

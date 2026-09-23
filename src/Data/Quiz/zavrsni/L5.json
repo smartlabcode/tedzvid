@@ -2,18 +2,18 @@
   "lekcija": 5,
   "pitanja": [
     {
-      "q": { "bs": "U primjeru إِنْ كُنْتُمْ مُؤْمِنِينَ u koji se harf uklapa harf M (م) sa sukunom na kraju riječi كُنْتُمْ?", "en": "In the example إِنْ كُنْتُمْ مُؤْمِنِينَ into which letter does the letter M (م) with a sukun at the end of كُنْتُمْ merge?", "de": "In welchen Buchstaben verschmilzt im Beispiel إِنْ كُنْتُمْ مُؤْمِنِينَ das M (م) mit Sukun am Ende von كُنْتُمْ?" },
+      "q": { "bs": "U primjeru إِنْ كُنْتُمْ مُؤْمِنِينَ u koji se harf uklapa harf M (م) sa sukunom na kraju riječi كُنْتُمْ?", "en": "In the example إِنْ كُنْتُمْ مُؤْمِنِينَ into which letter does the letter M (م) with a sukun at the end of كُنْتُمْ merge?", "de": "In welchen Buchstaben wird im Beispiel إِنْ كُنْتُمْ مُؤْمِنِينَ das M (م) mit Sukun am Ende von كُنْتُمْ assimiliert?" },
       "opcije": [
         { "bs": "U harf N (ن) u riječi كُنْتُمْ", "en": "Into the letter N (ن) in the word كُنْتُمْ", "de": "In das N (ن) im Wort كُنْتُمْ" },
         { "bs": "U harf T (ت) u riječi كُنْتُمْ", "en": "Into the letter T (ت) in the word كُنْتُمْ", "de": "In das T (ت) im Wort كُنْتُمْ" },
         { "bs": "U harf M (م) na početku riječi مُؤْمِنِينَ", "en": "Into the letter M (م) at the beginning of the word مُؤْمِنِينَ", "de": "In das M (م) am Anfang des Wortes مُؤْمِنِينَ" },
-        { "bs": "Ne uklapa se ni u koji harf", "en": "It does not merge into any letter", "de": "Das M verschmilzt in keinen Buchstaben" }
+        { "bs": "Ne uklapa se ni u koji harf", "en": "It does not merge into any letter", "de": "Das M wird in keinen Buchstaben assimiliert" }
       ],
       "tacno": 2,
-      "objasnjenje": { "bs": "Harf M sa sukunom uklapa se u harf M sa hareketom koji dolazi odmah poslije njega, uz propuštanje zraka kroz nos.", "en": "The letter M with a sukun merges into the letter M with a haraka that comes right after it, letting air pass through the nose.", "de": "Das M mit Sukun verschmilzt in das M mit Vokalzeichen, das direkt danach kommt, mit Luft durch die Nase." }
+      "objasnjenje": { "bs": "Harf M sa sukunom uklapa se u harf M sa hareketom koji dolazi odmah poslije njega, uz propuštanje zraka kroz nos.", "en": "The letter M with a sukun merges into the letter M with a haraka that comes right after it, letting air pass through the nose.", "de": "Das M mit Sukun wird in das M mit Vokal assimiliert, das direkt danach kommt, mit Nasalisierung." }
     },
     {
-      "q": { "bs": "U kojem primjeru NEMA idgam mislejn meal-gunneha?", "en": "In which example is there NO idgham mithlayn ma'al-ghunnah?", "de": "In welchem Beispiel gibt es KEIN Idgham Mithlain ma’al-Ghunna?" },
+      "q": { "bs": "U kojem primjeru NEMA idgam mislejn meal-gunneha?", "en": "In which example is there NO idgham mithlayn ma'al-ghunnah?", "de": "In welchem Beispiel gibt es KEIN Idgam Mithlayn mit Ghunnah?" },
       "opcije": [
         { "bs": "وَمِنْهُمْ مَنْ", "en": "وَمِنْهُمْ مَنْ", "de": "وَمِنْهُمْ مَنْ" },
         { "bs": "قُلْتُمْ أَنّٰى", "en": "قُلْتُمْ أَنّٰى", "de": "قُلْتُمْ أَنّٰى" },
@@ -21,10 +21,10 @@
         { "bs": "عَلَيْهِمْ مُؤْصَدَةٌ", "en": "عَلَيْهِمْ مُؤْصَدَةٌ", "de": "عَلَيْهِمْ مُؤْصَدَةٌ" }
       ],
       "tacno": 1,
-      "objasnjenje": { "bs": "U قُلْتُمْ أَنّٰى poslije harfa M sa sukunom ne dolazi harf M, pa nema uklapanja; u ostalim primjerima poslije M sa sukunom dolazi M sa hareketom.", "en": "In قُلْتُمْ أَنّٰى the letter M with a sukun is not followed by the letter M, so there is no merging; in the other examples M with a sukun is followed by M with a haraka.", "de": "In قُلْتُمْ أَنّٰى kommt nach dem M mit Sukun kein M, also gibt es keine Verschmelzung; in den anderen Beispielen kommt nach dem M mit Sukun ein M mit Vokalzeichen." }
+      "objasnjenje": { "bs": "U قُلْتُمْ أَنّٰى poslije harfa M sa sukunom ne dolazi harf M, pa nema uklapanja; u ostalim primjerima poslije M sa sukunom dolazi M sa hareketom.", "en": "In قُلْتُمْ أَنّٰى the letter M with a sukun is not followed by the letter M, so there is no merging; in the other examples M with a sukun is followed by M with a haraka.", "de": "In قُلْتُمْ أَنّٰى kommt nach dem M mit Sukun kein M, also gibt es keine Assimilation; in den anderen Beispielen kommt nach dem M mit Sukun ein M mit Vokal." }
     },
     {
-      "q": { "bs": "U primjeru اَلَّذِينَ يَظُنُّونَ أَنَّهُمْ مُلَاقُو رَبِّهِمْ koliko puta dolazi do idgam mislejn meal-gunneha?", "en": "In the example اَلَّذِينَ يَظُنُّونَ أَنَّهُمْ مُلَاقُو رَبِّهِمْ how many times does idgham mithlayn ma'al-ghunnah take place?", "de": "Wie oft kommt im Beispiel اَلَّذِينَ يَظُنُّونَ أَنَّهُمْ مُلَاقُو رَبِّهِمْ ein Idgham Mithlain ma’al-Ghunna vor?" },
+      "q": { "bs": "U primjeru اَلَّذِينَ يَظُنُّونَ أَنَّهُمْ مُلَاقُو رَبِّهِمْ koliko puta dolazi do idgam mislejn meal-gunneha?", "en": "In the example اَلَّذِينَ يَظُنُّونَ أَنَّهُمْ مُلَاقُو رَبِّهِمْ how many times does idgham mithlayn ma'al-ghunnah take place?", "de": "Wie oft kommt im Beispiel اَلَّذِينَ يَظُنُّونَ أَنَّهُمْ مُلَاقُو رَبِّهِمْ ein Idgam Mithlayn mit Ghunnah vor?" },
       "opcije": [
         { "bs": "Nijednom", "en": "Not once", "de": "Kein einziges Mal" },
         { "bs": "Jednom", "en": "Once", "de": "Einmal" },
@@ -32,7 +32,7 @@
         { "bs": "Tri puta", "en": "Three times", "de": "Dreimal" }
       ],
       "tacno": 1,
-      "objasnjenje": { "bs": "Samo u أَنَّهُمْ مُلَاقُو poslije harfa M sa sukunom dolazi harf M sa hareketom; poslije رَبِّهِمْ ne dolazi harf M.", "en": "Only in أَنَّهُمْ مُلَاقُو is the letter M with a sukun followed by the letter M with a haraka; رَبِّهِمْ is not followed by the letter M.", "de": "Nur in أَنَّهُمْ مُلَاقُو kommt nach dem M mit Sukun ein M mit Vokalzeichen; nach رَبِّهِمْ kommt kein M." }
+      "objasnjenje": { "bs": "Samo u أَنَّهُمْ مُلَاقُو poslije harfa M sa sukunom dolazi harf M sa hareketom; poslije رَبِّهِمْ ne dolazi harf M.", "en": "Only in أَنَّهُمْ مُلَاقُو is the letter M with a sukun followed by the letter M with a haraka; رَبِّهِمْ is not followed by the letter M.", "de": "Nur in أَنَّهُمْ مُلَاقُو kommt nach dem M mit Sukun ein M mit Vokal; nach رَبِّهِمْ kommt kein M." }
     },
     {
       "q": { "bs": "Kako se čita رَبِّهِمْ مِنْ?", "en": "How is رَبِّهِمْ مِنْ read?", "de": "Wie wird رَبِّهِمْ مِنْ gelesen?" },
@@ -40,21 +40,21 @@
         { "bs": "رَبِّهِمْ مِنْ, bez promjene", "en": "رَبِّهِمْ مِنْ, without change", "de": "رَبِّهِمْ مِنْ, ohne Änderung" },
         { "bs": "رَبِّهِمِنْ", "en": "رَبِّهِمِنْ", "de": "رَبِّهِمِنْ" },
         { "bs": "رَبِّهِنْ مِنْ", "en": "رَبِّهِنْ مِنْ", "de": "رَبِّهِنْ مِنْ" },
-        { "bs": "رَبِّهِمِّنْ, uz propuštanje zraka kroz nos", "en": "رَبِّهِمِّنْ, letting air pass through the nose", "de": "رَبِّهِمِّنْ, mit Luft durch die Nase" }
+        { "bs": "رَبِّهِمِّنْ, uz propuštanje zraka kroz nos", "en": "رَبِّهِمِّنْ, letting air pass through the nose", "de": "رَبِّهِمِّنْ, mit Nasalisierung" }
       ],
       "tacno": 3,
-      "objasnjenje": { "bs": "Harf M sa sukunom uklapa se u harf M sa hareketom, pa se čita رَبِّهِمِّنْ uz propuštanje zraka kroz nos u trajanju od 2 hareketa.", "en": "The letter M with a sukun merges into the letter M with a haraka, so it is read رَبِّهِمِّنْ while letting air pass through the nose for 2 harakas.", "de": "Das M mit Sukun verschmilzt in das M mit Vokalzeichen, also wird رَبِّهِمِّنْ gelesen, mit Luft durch die Nase, 2 Harakat lang." }
+      "objasnjenje": { "bs": "Harf M sa sukunom uklapa se u harf M sa hareketom, pa se čita رَبِّهِمِّنْ uz propuštanje zraka kroz nos u trajanju od 2 hareketa.", "en": "The letter M with a sukun merges into the letter M with a haraka, so it is read رَبِّهِمِّنْ while letting air pass through the nose for 2 harakas.", "de": "Das M mit Sukun wird in das M mit Vokal assimiliert, also wird رَبِّهِمِّنْ gelesen, mit Nasalisierung, 2 Harakat lang." }
     },
     {
       "q": { "bs": "U primjeru لَمْ تَكُونُوا poslije harfa M (م) sa sukunom dolazi harf T (ت). Šta se dešava?", "en": "In the example لَمْ تَكُونُوا the letter M (م) with a sukun is followed by the letter T (ت). What happens?", "de": "Im Beispiel لَمْ تَكُونُوا kommt nach dem M (م) mit Sukun das T (ت). Was passiert?" },
       "opcije": [
-        { "bs": "Harf M se uklapa u harf T uz propuštanje zraka kroz nos", "en": "The letter M merges into the letter T with air passing through the nose", "de": "Das M verschmilzt in das T, mit Luft durch die Nase" },
-        { "bs": "Harf M se uklapa u harf T bez propuštanja zraka kroz nos", "en": "The letter M merges into the letter T without air passing through the nose", "de": "Das M verschmilzt in das T, ohne Luft durch die Nase" },
-        { "bs": "Nema uklapanja, jer poslije harfa M ne dolazi harf M", "en": "There is no merging, because the letter M is not followed by the letter M", "de": "Es gibt keine Verschmelzung, weil nach dem M kein M kommt" },
+        { "bs": "Harf M se uklapa u harf T uz propuštanje zraka kroz nos", "en": "The letter M merges into the letter T with air passing through the nose", "de": "Das M wird in das T assimiliert, mit Nasalisierung" },
+        { "bs": "Harf M se uklapa u harf T bez propuštanja zraka kroz nos", "en": "The letter M merges into the letter T without air passing through the nose", "de": "Das M wird in das T assimiliert, ohne Nasalisierung" },
+        { "bs": "Nema uklapanja, jer poslije harfa M ne dolazi harf M", "en": "There is no merging, because the letter M is not followed by the letter M", "de": "Es gibt keine Assimilation, weil nach dem M kein M kommt" },
         { "bs": "Harf T se ne uči", "en": "The letter T is not pronounced", "de": "Das T wird nicht gesprochen" }
       ],
       "tacno": 2,
-      "objasnjenje": { "bs": "Idgam mislejn meal-gunneh nastaje samo kada poslije harfa M sa sukunom dođe harf M sa hareketom, a ne drugi harf.", "en": "Idgham mithlayn ma'al-ghunnah occurs only when the letter M with a sukun is followed by the letter M with a haraka, not by another letter.", "de": "Ein Idgham Mithlain ma’al-Ghunna entsteht nur, wenn nach dem M mit Sukun ein M mit Vokalzeichen kommt und kein anderer Buchstabe." }
+      "objasnjenje": { "bs": "Idgam mislejn meal-gunneh nastaje samo kada poslije harfa M sa sukunom dođe harf M sa hareketom, a ne drugi harf.", "en": "Idgham mithlayn ma'al-ghunnah occurs only when the letter M with a sukun is followed by the letter M with a haraka, not by another letter.", "de": "Ein Idgam Mithlayn mit Ghunnah entsteht nur, wenn nach dem M mit Sukun ein M mit Vokal kommt und kein anderer Buchstabe." }
     }
   ]
 }

@@ -2,18 +2,18 @@
   "lekcija": 19,
   "pitanja": [
     {
-      "q": { "bs": "Šta znači „medd munfesil“?", "en": "What does “madd munfasil” mean?", "de": "Was bedeutet „Madd Munfasil“?" },
+      "q": { "bs": "Šta znači „medd munfesil“?", "en": "What does “madd munfasil” mean?", "de": "Was bedeutet „Medd Munfesil“?" },
       "opcije": [
-        { "bs": "Rastavljena dužina", "en": "Separated prolongation", "de": "Getrennte Dehnung" },
-        { "bs": "Spojena dužina", "en": "Connected prolongation", "de": "Verbundene Dehnung" },
-        { "bs": "Obična dužina", "en": "Natural prolongation", "de": "Natürliche Dehnung" },
-        { "bs": "Poluvokalna dužina", "en": "Soft-letter prolongation", "de": "Dehnung des weichen Buchstabens" }
+        { "bs": "Rastavljena dužina", "en": "Separated prolongation", "de": "Getrennte Verlängerung" },
+        { "bs": "Spojena dužina", "en": "Connected prolongation", "de": "Verbundene Verlängerung" },
+        { "bs": "Obična dužina", "en": "Natural prolongation", "de": "Natürliche Verlängerung" },
+        { "bs": "Poluvokalna dužina", "en": "Soft-letter prolongation", "de": "Verlängerung des weichen Buchstabens" }
       ],
       "tacno": 0,
-      "objasnjenje": { "bs": "Medd munfesil je rastavljena dužina.", "en": "Madd munfasil is the separated prolongation.", "de": "Madd Munfasil ist die getrennte Dehnung." }
+      "objasnjenje": { "bs": "Medd munfesil je rastavljena dužina.", "en": "Madd munfasil is the separated prolongation.", "de": "Medd Munfesil ist die getrennte Verlängerung." }
     },
     {
-      "q": { "bs": "Kada nastaje medd munfesil?", "en": "When does madd munfasil occur?", "de": "Wann entsteht Madd Munfasil?" },
+      "q": { "bs": "Kada nastaje medd munfesil?", "en": "When does madd munfasil occur?", "de": "Wann entsteht Medd Munfesil?" },
       "opcije": [
         { "bs": "Kada poslije dugog vokala dođe hemze u istoj riječi", "en": "When the long vowel is followed by a hamza in the same word", "de": "Wenn nach dem langen Vokal eine Hamza im selben Wort kommt" },
         { "bs": "Kada poslije dugog vokala dođe sukun", "en": "When the long vowel is followed by a sukun", "de": "Wenn nach dem langen Vokal ein Sukun kommt" },
@@ -21,10 +21,10 @@
         { "bs": "Kada poslije dugog vokala nema ni hemzeta ni sukuna", "en": "When the long vowel is followed by neither a hamza nor a sukun", "de": "Wenn nach dem langen Vokal weder eine Hamza noch ein Sukun kommt" }
       ],
       "tacno": 2,
-      "objasnjenje": { "bs": "Medd munfesil je kada poslije dugog vokala dođe hemze ili elif na početku sljedeće riječi.", "en": "Madd munfasil is when the long vowel is followed by a hamza or an alif at the beginning of the next word.", "de": "Madd Munfasil ist es, wenn nach dem langen Vokal eine Hamza oder ein Alif am Anfang des nächsten Wortes kommt." }
+      "objasnjenje": { "bs": "Medd munfesil je kada poslije dugog vokala dođe hemze ili elif na početku sljedeće riječi.", "en": "Madd munfasil is when the long vowel is followed by a hamza or an alif at the beginning of the next word.", "de": "Medd Munfesil ist es, wenn nach dem langen Vokal eine Hamza oder ein Alif am Anfang des nächsten Wortes kommt." }
     },
     {
-      "q": { "bs": "Koliko traje medd munfesil?", "en": "How long does madd munfasil last?", "de": "Wie lange dauert Madd Munfasil?" },
+      "q": { "bs": "Koliko traje medd munfesil?", "en": "How long does madd munfasil last?", "de": "Wie lange dauert Medd Munfesil?" },
       "opcije": [
         { "bs": "2 hareketa", "en": "2 harakas", "de": "2 Harakat" },
         { "bs": "4-5 hareketa", "en": "4–5 harakas", "de": "4–5 Harakat" },
@@ -32,21 +32,21 @@
         { "bs": "2-4-6 hareketa", "en": "2, 4 or 6 harakas", "de": "2, 4 oder 6 Harakat" }
       ],
       "tacno": 1,
-      "objasnjenje": { "bs": "Medd munfesil traje 4-5 hareketa.", "en": "Madd munfasil lasts 4–5 harakas.", "de": "Madd Munfasil dauert 4–5 Harakat." }
+      "objasnjenje": { "bs": "Medd munfesil traje 4-5 hareketa.", "en": "Madd munfasil lasts 4–5 harakas.", "de": "Medd Munfesil dauert 4–5 Harakat." }
     },
     {
-      "q": { "bs": "Po čemu se medd munfesil razlikuje od medd muttesila?", "en": "How does madd munfasil differ from madd muttasil?", "de": "Wodurch unterscheidet sich Madd Munfasil von Madd Muttasil?" },
+      "q": { "bs": "Po čemu se medd munfesil razlikuje od medd muttesila?", "en": "How does madd munfasil differ from madd muttasil?", "de": "Wodurch unterscheidet sich Medd Munfesil von Medd Muttesil?" },
       "opcije": [
-        { "bs": "Medd munfesil traje duže", "en": "Madd munfasil lasts longer", "de": "Madd Munfasil dauert länger" },
-        { "bs": "Kod medd munfesila nema hemzeta", "en": "Madd munfasil has no hamza", "de": "Bei Madd Munfasil gibt es keine Hamza" },
-        { "bs": "Medd munfesil dolazi samo poslije dugog vokala A", "en": "Madd munfasil comes only after the long vowel A", "de": "Madd Munfasil kommt nur nach dem langen Vokal A" },
-        { "bs": "Kod medd munfesila hemze ili elif je na početku sljedeće riječi, a kod medd muttesila u istoj riječi", "en": "In madd munfasil the hamza or alif is at the beginning of the next word, while in madd muttasil it is in the same word", "de": "Bei Madd Munfasil steht die Hamza oder das Alif am Anfang des nächsten Wortes, bei Madd Muttasil im selben Wort" }
+        { "bs": "Medd munfesil traje duže", "en": "Madd munfasil lasts longer", "de": "Medd Munfesil dauert länger" },
+        { "bs": "Kod medd munfesila nema hemzeta", "en": "Madd munfasil has no hamza", "de": "Bei Medd Munfesil gibt es keine Hamza" },
+        { "bs": "Medd munfesil dolazi samo poslije dugog vokala A", "en": "Madd munfasil comes only after the long vowel A", "de": "Medd Munfesil kommt nur nach dem langen Vokal A" },
+        { "bs": "Kod medd munfesila hemze ili elif je na početku sljedeće riječi, a kod medd muttesila u istoj riječi", "en": "In madd munfasil the hamza or alif is at the beginning of the next word, while in madd muttasil it is in the same word", "de": "Bei Medd Munfesil steht die Hamza oder das Alif am Anfang des nächsten Wortes, bei Medd Muttesil im selben Wort" }
       ],
       "tacno": 3,
-      "objasnjenje": { "bs": "Kod medd muttesila hemze je u istoj riječi, a kod medd munfesila hemze ili elif je na početku sljedeće riječi.", "en": "In madd muttasil the hamza is in the same word, while in madd munfasil the hamza or alif is at the beginning of the next word.", "de": "Bei Madd Muttasil steht die Hamza im selben Wort, bei Madd Munfasil steht die Hamza oder das Alif am Anfang des nächsten Wortes." }
+      "objasnjenje": { "bs": "Kod medd muttesila hemze je u istoj riječi, a kod medd munfesila hemze ili elif je na početku sljedeće riječi.", "en": "In madd muttasil the hamza is in the same word, while in madd munfasil the hamza or alif is at the beginning of the next word.", "de": "Bei Medd Muttesil steht die Hamza im selben Wort, bei Medd Munfesil steht die Hamza oder das Alif am Anfang des nächsten Wortes." }
     },
     {
-      "q": { "bs": "Šta osim hemzeta može doći na početku sljedeće riječi da bi bio medd munfesil?", "en": "Besides a hamza, what can come at the beginning of the next word for it to be madd munfasil?", "de": "Was kann außer einer Hamza am Anfang des nächsten Wortes stehen, damit der lange Vokal ein Madd Munfasil ist?" },
+      "q": { "bs": "Šta osim hemzeta može doći na početku sljedeće riječi da bi bio medd munfesil?", "en": "Besides a hamza, what can come at the beginning of the next word for it to be madd munfasil?", "de": "Was kann außer einer Hamza am Anfang des nächsten Wortes stehen, damit der lange Vokal ein Medd Munfesil ist?" },
       "opcije": [
         { "bs": "Sukun", "en": "A sukun", "de": "Ein Sukun" },
         { "bs": "Tešdid", "en": "A tashdeed", "de": "Eine Schadda" },
@@ -54,32 +54,32 @@
         { "bs": "Harf N (ن)", "en": "The letter N (ن)", "de": "Der Buchstabe N (ن)" }
       ],
       "tacno": 2,
-      "objasnjenje": { "bs": "Medd munfesil nastaje kada na početku sljedeće riječi dođe hemze ili elif.", "en": "Madd munfasil occurs when the next word begins with a hamza or an alif.", "de": "Madd Munfasil entsteht, wenn das nächste Wort mit einer Hamza oder einem Alif beginnt." }
+      "objasnjenje": { "bs": "Medd munfesil nastaje kada na početku sljedeće riječi dođe hemze ili elif.", "en": "Madd munfasil occurs when the next word begins with a hamza or an alif.", "de": "Medd Munfesil entsteht, wenn das nächste Wort mit einer Hamza oder einem Alif beginnt." }
     },
     {
-      "q": { "bs": "Gdje je medd munfesil u primjeru وَمَآ أَنْتُمْ?", "en": "Where is the madd munfasil in the example وَمَآ أَنْتُمْ?", "de": "Wo ist das Madd Munfasil im Beispiel وَمَآ أَنْتُمْ?" },
+      "q": { "bs": "Gdje je medd munfesil u primjeru وَمَآ أَنْتُمْ?", "en": "Where is the madd munfasil in the example وَمَآ أَنْتُمْ?", "de": "Wo ist das Medd Munfesil im Beispiel وَمَآ أَنْتُمْ?" },
       "opcije": [
         { "bs": "Na dugom vokalu A u riječi مَآ, jer sljedeća riječ أَنْتُمْ počinje hemzetom", "en": "On the long vowel A in the word مَآ, because the next word أَنْتُمْ begins with a hamza", "de": "Auf dem langen Vokal A im Wort مَآ, weil das nächste Wort أَنْتُمْ mit einer Hamza beginnt" },
         { "bs": "Na harfu N sa sukunom (نْ)", "en": "On the letter N with a sukun (نْ)", "de": "Auf dem Buchstaben N mit Sukun (نْ)" },
         { "bs": "Na kratkom vokalu U na kraju", "en": "On the short vowel U at the end", "de": "Auf dem kurzen Vokal U am Ende" },
-        { "bs": "U ovom primjeru nema medd munfesila", "en": "There is no madd munfasil in this example", "de": "In diesem Beispiel gibt es kein Madd Munfasil" }
+        { "bs": "U ovom primjeru nema medd munfesila", "en": "There is no madd munfasil in this example", "de": "In diesem Beispiel gibt es kein Medd Munfesil" }
       ],
       "tacno": 0,
-      "objasnjenje": { "bs": "Dugi vokal A u riječi مَآ je medd munfesil jer sljedeća riječ počinje hemzetom.", "en": "The long vowel A in مَآ is madd munfasil because the next word begins with a hamza.", "de": "Der lange Vokal A im Wort مَآ ist Madd Munfasil, weil das nächste Wort mit einer Hamza beginnt." }
+      "objasnjenje": { "bs": "Dugi vokal A u riječi مَآ je medd munfesil jer sljedeća riječ počinje hemzetom.", "en": "The long vowel A in مَآ is madd munfasil because the next word begins with a hamza.", "de": "Der lange Vokal A im Wort مَآ ist Medd Munfesil, weil das nächste Wort mit einer Hamza beginnt." }
     },
     {
       "q": { "bs": "Šta pokazuje poređenje „turske štampe“ i „medinske štampe“ u lekciji?", "en": "What does the comparison of the “Turkish print” and the “Medina print” in the lesson show?", "de": "Was zeigt der Vergleich der „türkischen Druckausgabe“ und der „Medina-Druckausgabe“ in der Lektion?" },
       "opcije": [
-        { "bs": "Da se medd munfesil u turskoj štampi čita kraće", "en": "That madd munfasil is read shorter in the Turkish print", "de": "Dass Madd Munfasil in der türkischen Druckausgabe kürzer gesprochen wird" },
-        { "bs": "Da u turskoj štampi nema medd munfesila", "en": "That the Turkish print has no madd munfasil", "de": "Dass es in der türkischen Druckausgabe kein Madd Munfasil gibt" },
-        { "bs": "Da u medinskoj štampi nema dužina", "en": "That the Medina print has no prolongations", "de": "Dass es in der Medina-Druckausgabe keine Dehnungen gibt" },
-        { "bs": "Da se isti medd munfesil u turskoj štampi piše sa elifom (اَ), a u medinskoj sa hemzetom (أَ)", "en": "That the same madd munfasil is written with an alif (اَ) in the Turkish print and with a hamza (أَ) in the Medina print", "de": "Dass dasselbe Madd Munfasil in der türkischen Druckausgabe mit einem Alif (اَ) und in der Medina-Druckausgabe mit einer Hamza (أَ) geschrieben wird" }
+        { "bs": "Da se medd munfesil u turskoj štampi čita kraće", "en": "That madd munfasil is read shorter in the Turkish print", "de": "Dass Medd Munfesil in der türkischen Druckausgabe kürzer gesprochen wird" },
+        { "bs": "Da u turskoj štampi nema medd munfesila", "en": "That the Turkish print has no madd munfasil", "de": "Dass es in der türkischen Druckausgabe kein Medd Munfesil gibt" },
+        { "bs": "Da u medinskoj štampi nema dužina", "en": "That the Medina print has no prolongations", "de": "Dass es in der Medina-Druckausgabe keine Verlängerungen gibt" },
+        { "bs": "Da se isti medd munfesil u turskoj štampi piše sa elifom (اَ), a u medinskoj sa hemzetom (أَ)", "en": "That the same madd munfasil is written with an alif (اَ) in the Turkish print and with a hamza (أَ) in the Medina print", "de": "Dass dasselbe Medd Munfesil in der türkischen Druckausgabe mit einem Alif (اَ) und in der Medina-Druckausgabe mit einer Hamza (أَ) geschrieben wird" }
       ],
       "tacno": 3,
-      "objasnjenje": { "bs": "Isti medd munfesil se u turskoj štampi piše sa elifom, a u medinskoj sa hemzetom, a čita se isto.", "en": "The same madd munfasil is written with an alif in the Turkish print and with a hamza in the Medina print, but it is read the same.", "de": "Dasselbe Madd Munfasil wird in der türkischen Druckausgabe mit einem Alif geschrieben und in der Medina-Druckausgabe mit einer Hamza, gesprochen wird es gleich." }
+      "objasnjenje": { "bs": "Isti medd munfesil se u turskoj štampi piše sa elifom, a u medinskoj sa hemzetom, a čita se isto.", "en": "The same madd munfasil is written with an alif in the Turkish print and with a hamza in the Medina print, but it is read the same.", "de": "Dasselbe Medd Munfesil wird in der türkischen Druckausgabe mit einem Alif geschrieben und in der Medina-Druckausgabe mit einer Hamza, gesprochen wird es gleich." }
     },
     {
-      "q": { "bs": "Koji primjer sadrži medd munfesil?", "en": "Which example contains madd munfasil?", "de": "Welches Beispiel enthält Madd Munfasil?" },
+      "q": { "bs": "Koji primjer sadrži medd munfesil?", "en": "Which example contains madd munfasil?", "de": "Welches Beispiel enthält Medd Munfesil?" },
       "opcije": [
         { "bs": "جَٓاءَ", "en": "جَٓاءَ", "de": "جَٓاءَ" },
         { "bs": "لَٓا اَعْبُدُ", "en": "لَٓا اَعْبُدُ", "de": "لَٓا اَعْبُدُ" },
@@ -98,18 +98,18 @@
         { "bs": "Nema dugog vokala", "en": "There is no long vowel", "de": "Es gibt keinen langen Vokal" }
       ],
       "tacno": 2,
-      "objasnjenje": { "bs": "Riječ فِٓي završava dugim vokalom I, a sljedeća riječ počinje hemzetom, pa je to medd munfesil.", "en": "The word فِٓي ends with the long vowel I and the next word begins with a hamza, so it is madd munfasil.", "de": "Das Wort فِٓي endet auf den langen Vokal I und das nächste Wort beginnt mit einer Hamza, also ist es Madd Munfasil." }
+      "objasnjenje": { "bs": "Riječ فِٓي završava dugim vokalom I, a sljedeća riječ počinje hemzetom, pa je to medd munfesil.", "en": "The word فِٓي ends with the long vowel I and the next word begins with a hamza, so it is madd munfasil.", "de": "Das Wort فِٓي endet auf den langen Vokal I und das nächste Wort beginnt mit einer Hamza, also ist es Medd Munfesil." }
     },
     {
-      "q": { "bs": "Kako se čita dužina u primjeru قُٓوا أَنْفُسَكُمْ?", "en": "How is the prolongation in the example قُٓوا أَنْفُسَكُمْ read?", "de": "Wie wird die Dehnung im Beispiel قُٓوا أَنْفُسَكُمْ gesprochen?" },
+      "q": { "bs": "Kako se čita dužina u primjeru قُٓوا أَنْفُسَكُمْ?", "en": "How is the prolongation in the example قُٓوا أَنْفُسَكُمْ read?", "de": "Wie wird die Verlängerung im Beispiel قُٓوا أَنْفُسَكُمْ gesprochen?" },
       "opcije": [
-        { "bs": "4-5 hareketa, jer je medd munfesil", "en": "4–5 harakas, because it is madd munfasil", "de": "4–5 Harakat, weil es Madd Munfasil ist" },
-        { "bs": "2 hareketa, jer je medd tabijj", "en": "2 harakas, because it is madd tabi'i", "de": "2 Harakat, weil es Madd Tabi’i ist" },
-        { "bs": "6 hareketa, jer je medd lazim", "en": "6 harakas, because it is madd lazim", "de": "6 Harakat, weil es Madd Lazim ist" },
-        { "bs": "Bez dužine", "en": "Without prolongation", "de": "Ohne Dehnung" }
+        { "bs": "4-5 hareketa, jer je medd munfesil", "en": "4–5 harakas, because it is madd munfasil", "de": "4–5 Harakat, weil es Medd Munfesil ist" },
+        { "bs": "2 hareketa, jer je medd tabijj", "en": "2 harakas, because it is madd tabi'i", "de": "2 Harakat, weil es Medd Tabi’i ist" },
+        { "bs": "6 hareketa, jer je medd lazim", "en": "6 harakas, because it is madd lazim", "de": "6 Harakat, weil es Medd Lazim ist" },
+        { "bs": "Bez dužine", "en": "Without prolongation", "de": "Ohne Verlängerung" }
       ],
       "tacno": 0,
-      "objasnjenje": { "bs": "Poslije dugog vokala U dolazi hemze na početku sljedeće riječi, pa je to medd munfesil od 4-5 hareketa.", "en": "The long vowel U is followed by a hamza at the beginning of the next word, so it is madd munfasil of 4–5 harakas.", "de": "Nach dem langen Vokal U kommt eine Hamza am Anfang des nächsten Wortes, also ist es Madd Munfasil von 4–5 Harakat." }
+      "objasnjenje": { "bs": "Poslije dugog vokala U dolazi hemze na početku sljedeće riječi, pa je to medd munfesil od 4-5 hareketa.", "en": "The long vowel U is followed by a hamza at the beginning of the next word, so it is madd munfasil of 4–5 harakas.", "de": "Nach dem langen Vokal U kommt eine Hamza am Anfang des nächsten Wortes, also ist es Medd Munfesil von 4–5 Harakat." }
     }
   ]
 }

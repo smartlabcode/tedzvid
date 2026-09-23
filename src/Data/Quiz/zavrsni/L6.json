@@ -2,37 +2,37 @@
   "lekcija": 6,
   "pitanja": [
     {
-      "q": { "bs": "U primjeru نِعْمَةً مِنْهُ, kako se uči tenvin EN?", "en": "In the example نِعْمَةً مِنْهُ, how is the tanween AN recited?", "de": "Wie wird im Beispiel نِعْمَةً مِنْهُ das Tanwin AN gesprochen?" },
+      "q": { "bs": "U primjeru نِعْمَةً مِنْهُ, kako se uči tenvin EN?", "en": "In the example نِعْمَةً مِنْهُ, how is the tanween AN recited?", "de": "Wie wird im Beispiel نِعْمَةً مِنْهُ das Tanwin EN gesprochen?" },
       "opcije": [
-        { "bs": "Izgovara se čisto, bez uklapanja", "en": "It is pronounced clearly, without merging", "de": "Das Tanwin wird deutlich gesprochen, ohne Verschmelzung" },
-        { "bs": "Uklapa se u harf M (م), a zrak se propušta kroz nos 2 hareketa", "en": "It merges into the letter M (م) while air passes through the nose for 2 harakas", "de": "Das Tanwin verschmilzt in den Buchstaben M (م), und die Luft strömt 2 Harakat lang durch die Nase" },
-        { "bs": "Potpuno se uklapa u harf M (م), bez propuštanja zraka kroz nos", "en": "It merges completely into the letter M (م), without air passing through the nose", "de": "Das Tanwin verschmilzt ganz in den Buchstaben M (م), ohne Luft durch die Nase" },
-        { "bs": "Skriva se, a jezik ne dotiče nepce", "en": "It is hidden, without the tongue touching the palate", "de": "Das Tanwin wird versteckt, und die Zunge berührt den Gaumen nicht" }
+        { "bs": "Izgovara se čisto, bez uklapanja", "en": "It is pronounced clearly, without merging", "de": "Das Tanwin wird deutlich gesprochen, ohne Assimilation" },
+        { "bs": "Uklapa se u harf M (م), a zrak se propušta kroz nos 2 hareketa", "en": "It merges into the letter M (م) while air passes through the nose for 2 harakas", "de": "Das Tanwin wird in den Buchstaben M (م) assimiliert und 2 Harakat lang nasal ausgesprochen" },
+        { "bs": "Potpuno se uklapa u harf M (م), bez propuštanja zraka kroz nos", "en": "It merges completely into the letter M (م), without air passing through the nose", "de": "Das Tanwin wird ganz in den Buchstaben M (م) assimiliert, ohne Nasalisierung" },
+        { "bs": "Skriva se, a jezik ne dotiče nepce", "en": "It is hidden, without the tongue touching the palate", "de": "Das Tanwin wird verborgen, und die Zunge berührt den Gaumen nicht" }
       ],
       "tacno": 1,
       "objasnjenje": {
         "bs": "Poslije tenvina EN dolazi harf M (م), jedan od četiri harfa و ن م ي, pa se tenvin uklapa u M uz propuštanje zraka kroz nos.",
         "en": "The tanween AN is followed by the letter M (م), one of the four letters و ن م ي, so it merges into M with air passing through the nose.",
-        "de": "Nach dem Tanwin AN kommt der Buchstabe M (م), einer der vier Buchstaben و ن م ي, also verschmilzt das Tanwin in M, und die Luft strömt durch die Nase."
+        "de": "Nach dem Tanwin EN kommt der Buchstabe M (م), einer der vier Buchstaben و ن م ي, also wird das Tanwin in M assimiliert und nasal ausgesprochen."
       }
     },
     {
       "q": { "bs": "Koje pravilo se primjenjuje u primjeru أُمَّةٌ يَدْعُونَ?", "en": "Which rule applies in the example أُمَّةٌ يَدْعُونَ?", "de": "Welche Regel gilt im Beispiel أُمَّةٌ يَدْعُونَ?" },
       "opcije": [
-        { "bs": "Izhar mutlak", "en": "Idhhar mutlaq", "de": "Idh-har Mutlaq" },
-        { "bs": "Ihfa", "en": "Ikhfa", "de": "Ichfa" },
-        { "bs": "Idgam meal-gunneh", "en": "Idgham ma'al-ghunnah", "de": "Idgham ma’al-Ghunna" },
-        { "bs": "Idgam bila gunneh", "en": "Idgham bila ghunnah", "de": "Idgham bila Ghunna" }
+        { "bs": "Izhar mutlak", "en": "Idhhar mutlaq", "de": "Izhar Mutlak" },
+        { "bs": "Ihfa", "en": "Ikhfa", "de": "Ihfa" },
+        { "bs": "Idgam meal-gunneh", "en": "Idgham ma'al-ghunnah", "de": "Idgam meal-Gunneh" },
+        { "bs": "Idgam bila gunneh", "en": "Idgham bila ghunnah", "de": "Idgam bila Gunneh" }
       ],
       "tacno": 2,
       "objasnjenje": {
         "bs": "Poslije tenvina UN dolazi harf J (ي) na početku sljedeće riječi, pa dolazi do idgama meal-gunneh.",
         "en": "The tanween UN is followed by the letter Y (ي) at the start of the next word, so idgham ma'al-ghunnah occurs.",
-        "de": "Nach dem Tanwin UN kommt der Buchstabe Y (ي) am Anfang des nächsten Wortes, also entsteht Idgham ma’al-Ghunna."
+        "de": "Nach dem Tanwin UN kommt der Buchstabe J (ي) am Anfang des nächsten Wortes, also entsteht Idgam meal-Gunneh."
       }
     },
     {
-      "q": { "bs": "Koliko puta u primjeru حَبْلٌ مِنْ مَسَدٍ dolazi do idgama meal-gunneh?", "en": "How many times does idgham ma'al-ghunnah occur in the example حَبْلٌ مِنْ مَسَدٍ?", "de": "Wie oft entsteht im Beispiel حَبْلٌ مِنْ مَسَدٍ Idgham ma’al-Ghunna?" },
+      "q": { "bs": "Koliko puta u primjeru حَبْلٌ مِنْ مَسَدٍ dolazi do idgama meal-gunneh?", "en": "How many times does idgham ma'al-ghunnah occur in the example حَبْلٌ مِنْ مَسَدٍ?", "de": "Wie oft entsteht im Beispiel حَبْلٌ مِنْ مَسَدٍ Idgam meal-Gunneh?" },
       "opcije": [
         { "bs": "Jedanput", "en": "Once", "de": "Einmal" },
         { "bs": "Dva puta", "en": "Twice", "de": "Zweimal" },
@@ -47,22 +47,22 @@
       }
     },
     {
-      "q": { "bs": "Kada poslije harfa N (ن) sa sukunom dođe harf R (ر), da li dolazi do idgama meal-gunneh?", "en": "When the letter N (ن) with a sukun is followed by the letter R (ر), does idgham ma'al-ghunnah occur?", "de": "Wenn nach dem Buchstaben N (ن) mit Sukun der Buchstabe R (ر) kommt, entsteht dann Idgham ma’al-Ghunna?" },
+      "q": { "bs": "Kada poslije harfa N (ن) sa sukunom dođe harf R (ر), da li dolazi do idgama meal-gunneh?", "en": "When the letter N (ن) with a sukun is followed by the letter R (ر), does idgham ma'al-ghunnah occur?", "de": "Wenn nach dem Buchstaben N (ن) mit Sukun der Buchstabe R (ر) kommt, entsteht dann Idgam meal-Gunneh?" },
       "opcije": [
         { "bs": "Da, jer je R (ر) jedan od četiri harfa", "en": "Yes, because R (ر) is one of the four letters", "de": "Ja, denn R (ر) ist einer der vier Buchstaben" },
         { "bs": "Ne, harf N (ن) se izgovara čisto", "en": "No, the letter N (ن) is pronounced clearly", "de": "Nein, der Buchstabe N (ن) wird deutlich gesprochen" },
         { "bs": "Ne, harf N (ن) se pretvara u harf M (م)", "en": "No, the letter N (ن) turns into the letter M (م)", "de": "Nein, der Buchstabe N (ن) verwandelt sich in den Buchstaben M (م)" },
-        { "bs": "Ne, dolazi do idgama bila gunneh, bez propuštanja zraka kroz nos", "en": "No, idgham bila ghunnah occurs, without air passing through the nose", "de": "Nein, es entsteht Idgham bila Ghunna, ohne Luft durch die Nase" }
+        { "bs": "Ne, dolazi do idgama bila gunneh, bez propuštanja zraka kroz nos", "en": "No, idgham bila ghunnah occurs, without air passing through the nose", "de": "Nein, es entsteht Idgam bila Gunneh, ohne Nasalisierung" }
       ],
       "tacno": 3,
       "objasnjenje": {
         "bs": "Harf R (ر) nije među harfovima و ن م ي, nego uz harf L (ل) izaziva idgam bila gunneh.",
         "en": "The letter R (ر) is not among the letters و ن م ي; together with L (ل) it causes idgham bila ghunnah.",
-        "de": "Der Buchstabe R (ر) gehört nicht zu den Buchstaben و ن م ي, sondern löst zusammen mit L (ل) Idgham bila Ghunna aus."
+        "de": "Der Buchstabe R (ر) gehört nicht zu den Buchstaben و ن م ي, sondern löst zusammen mit L (ل) Idgam bila Gunneh aus."
       }
     },
     {
-      "q": { "bs": "U primjeru شَيْئًا نُكْرًا, u koji harf se uklapa tenvin EN?", "en": "In the example شَيْئًا نُكْرًا, into which letter does the tanween AN merge?", "de": "In welchen Buchstaben verschmilzt im Beispiel شَيْئًا نُكْرًا das Tanwin AN?" },
+      "q": { "bs": "U primjeru شَيْئًا نُكْرًا, u koji harf se uklapa tenvin EN?", "en": "In the example شَيْئًا نُكْرًا, into which letter does the tanween AN merge?", "de": "In welchen Buchstaben wird im Beispiel شَيْئًا نُكْرًا das Tanwin EN assimiliert?" },
       "opcije": [
         { "bs": "U harf N (ن)", "en": "Into the letter N (ن)", "de": "In den Buchstaben N (ن)" },
         { "bs": "U harf K (ك)", "en": "Into the letter K (ك)", "de": "In den Buchstaben K (ك)" },
@@ -73,7 +73,7 @@
       "objasnjenje": {
         "bs": "Poslije tenvina EN dolazi harf N (ن) na početku riječi نُكْرًا, pa se tenvin uklapa u N uz propuštanje zraka kroz nos.",
         "en": "The tanween AN is followed by the letter N (ن) at the start of the word نُكْرًا, so the tanween merges into N with air passing through the nose.",
-        "de": "Nach dem Tanwin AN kommt der Buchstabe N (ن) am Anfang des Wortes نُكْرًا, also verschmilzt das Tanwin in N, und die Luft strömt durch die Nase."
+        "de": "Nach dem Tanwin EN kommt der Buchstabe N (ن) am Anfang des Wortes نُكْرًا, also wird das Tanwin in N assimiliert und nasal ausgesprochen."
       }
     }
   ]

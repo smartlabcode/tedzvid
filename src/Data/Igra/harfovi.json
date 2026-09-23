@@ -7,7 +7,7 @@
 		{
 			"id": "idgam-gunneh",
 			"lekcija": 6,
-			"naziv": { "bs": "IDGAM MEAL-GUNNEH", "en": "IDGHAM MA'AL-GHUNNAH", "de": "IDGHAM MA’AL-GHUNNA" },
+			"naziv": { "bs": "IDGAM MEAL-GUNNEH", "en": "IDGHAM MA'AL-GHUNNAH", "de": "IDGAM MEAL-GUNNEH" },
 			"kontekst": { "bs": "poslije harfa نْ ili tenvina", "en": "after the letter نْ or tanween", "de": "Nach dem Buchstaben نْ oder dem Tanwin" },
 			"pomoc": {
 				"bs": "Četiri harfa sadržana u riječi jemnu (يَمْنُو).",
@@ -19,7 +19,7 @@
 		{
 			"id": "idgam-bila-gunneh",
 			"lekcija": 7,
-			"naziv": { "bs": "IDGAM BILA GUNNEH", "en": "IDGHAM BILA GHUNNAH", "de": "IDGHAM BILA GHUNNA" },
+			"naziv": { "bs": "IDGAM BILA GUNNEH", "en": "IDGHAM BILA GHUNNAH", "de": "IDGAM BILA GUNNEH" },
 			"kontekst": { "bs": "poslije harfa نْ ili tenvina", "en": "after the letter نْ or tanween", "de": "Nach dem Buchstaben نْ oder dem Tanwin" },
 			"pomoc": {
 				"bs": "Samo dva harfa: L (ل) i R (ر).",
@@ -43,7 +43,7 @@
 		{
 			"id": "izhar",
 			"lekcija": 9,
-			"naziv": { "bs": "IZHAR HALLKIJ", "en": "IDHHAR HALQI", "de": "IDH-HAR HALQI" },
+			"naziv": { "bs": "IZHAR HALLKIJ", "en": "IDHHAR HALQI", "de": "IZHAR HALQI" },
 			"kontekst": { "bs": "poslije harfa نْ ili tenvina", "en": "after the letter نْ or tanween", "de": "Nach dem Buchstaben نْ oder dem Tanwin" },
 			"pomoc": {
 				"bs": "Šest grlenih harfova: خ غ ح ع ه ء.",
@@ -67,12 +67,12 @@
 		{
 			"id": "ihfa",
 			"lekcija": 11,
-			"naziv": { "bs": "IHFA", "en": "IKHFA", "de": "ICHFA" },
+			"naziv": { "bs": "IHFA", "en": "IKHFA", "de": "IHFA" },
 			"kontekst": { "bs": "poslije harfa نْ ili tenvina", "en": "after the letter نْ or tanween", "de": "Nach dem Buchstaben نْ oder dem Tanwin" },
 			"pomoc": {
 				"bs": "Petnaest harfova – svi osim harfova idgama, izhara i iklaba.",
 				"en": "Fifteen letters – all except the letters of idgham, idhhar and iqlab.",
-				"de": "Fünfzehn Buchstaben – alle außer den Buchstaben von Idgham, Idh-har und Iqlab."
+				"de": "Fünfzehn Buchstaben – alle außer den Buchstaben von Idgham, Izhar und Iqlab."
 			},
 			"harfovi": [
 				"ت", "ث", "ج", "د", "ذ", "ز", "س", "ش", "ص", "ض", "ط", "ظ", "ف", "ق", "ك"

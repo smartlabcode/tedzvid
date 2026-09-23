@@ -2,18 +2,18 @@
   "lekcija": 17,
   "pitanja": [
     {
-      "q": { "bs": "Šta znači „medd tabijj“?", "en": "What does “madd tabi'i” mean?", "de": "Was bedeutet Madd Tabi’i?" },
+      "q": { "bs": "Šta znači „medd tabijj“?", "en": "What does “madd tabi'i” mean?", "de": "Was bedeutet Medd Tabi’i?" },
       "opcije": [
-        { "bs": "Spojena dužina", "en": "Connected prolongation", "de": "Verbundene Dehnung" },
-        { "bs": "Stalna dužina", "en": "Obligatory prolongation", "de": "Feste Dehnung" },
-        { "bs": "Obična dužina", "en": "Natural prolongation", "de": "Natürliche Dehnung" },
-        { "bs": "Nestalna dužina", "en": "Temporary prolongation", "de": "Vorübergehende Dehnung" }
+        { "bs": "Spojena dužina", "en": "Connected prolongation", "de": "Verbundene Verlängerung" },
+        { "bs": "Stalna dužina", "en": "Obligatory prolongation", "de": "Feste Verlängerung" },
+        { "bs": "Obična dužina", "en": "Natural prolongation", "de": "Natürliche Verlängerung" },
+        { "bs": "Nestalna dužina", "en": "Temporary prolongation", "de": "Vorübergehende Verlängerung" }
       ],
       "tacno": 2,
-      "objasnjenje": { "bs": "Medd tabijj je obična dužina.", "en": "Madd tabi'i is the natural prolongation.", "de": "Madd Tabi’i ist die natürliche Dehnung." }
+      "objasnjenje": { "bs": "Medd tabijj je obična dužina.", "en": "Madd tabi'i is the natural prolongation.", "de": "Medd Tabi’i ist die natürliche Verlängerung." }
     },
     {
-      "q": { "bs": "Poslije kojih vokala može doći medd tabijj?", "en": "After which vowels can madd tabi'i occur?", "de": "Nach welchen Vokalen kann ein Madd Tabi’i kommen?" },
+      "q": { "bs": "Poslije kojih vokala može doći medd tabijj?", "en": "After which vowels can madd tabi'i occur?", "de": "Nach welchen Vokalen kann ein Medd Tabi’i kommen?" },
       "opcije": [
         { "bs": "Poslije dugih vokala A, I i U", "en": "After the long vowels A, I and U", "de": "Nach den langen Vokalen A, I und U" },
         { "bs": "Samo poslije dugog vokala A", "en": "Only after the long vowel A", "de": "Nur nach dem langen Vokal A" },
@@ -21,10 +21,10 @@
         { "bs": "Samo poslije dugog vokala U", "en": "Only after the long vowel U", "de": "Nur nach dem langen Vokal U" }
       ],
       "tacno": 0,
-      "objasnjenje": { "bs": "Medd tabijj dolazi poslije dugog vokala A, I ili U.", "en": "Madd tabi'i comes after the long vowel A, I or U.", "de": "Madd Tabi’i kommt nach dem langen Vokal A, I oder U." }
+      "objasnjenje": { "bs": "Medd tabijj dolazi poslije dugog vokala A, I ili U.", "en": "Madd tabi'i comes after the long vowel A, I or U.", "de": "Medd Tabi’i kommt nach dem langen Vokal A, I oder U." }
     },
     {
-      "q": { "bs": "Kada će poslije dugog vokala biti medd tabijj?", "en": "When is there madd tabi'i after a long vowel?", "de": "Wann gibt es nach einem langen Vokal ein Madd Tabi’i?" },
+      "q": { "bs": "Kada će poslije dugog vokala biti medd tabijj?", "en": "When is there madd tabi'i after a long vowel?", "de": "Wann gibt es nach einem langen Vokal ein Medd Tabi’i?" },
       "opcije": [
         { "bs": "Kada poslije dugog vokala dođe hemze", "en": "When the long vowel is followed by a hamza", "de": "Wenn nach dem langen Vokal eine Hamza kommt" },
         { "bs": "Kada poslije dugog vokala dođe sukun", "en": "When the long vowel is followed by a sukun", "de": "Wenn nach dem langen Vokal ein Sukun kommt" },
@@ -32,10 +32,10 @@
         { "bs": "Kada poslije dugog vokala nema ni hemzeta ni sukuna", "en": "When the long vowel is followed by neither a hamza nor a sukun", "de": "Wenn nach dem langen Vokal weder eine Hamza noch ein Sukun kommt" }
       ],
       "tacno": 3,
-      "objasnjenje": { "bs": "Medd tabijj je kada poslije dugog vokala nema ni hemzeta ni sukuna.", "en": "Madd tabi'i is when the long vowel is followed by neither a hamza nor a sukun.", "de": "Ein Madd Tabi’i ist es, wenn nach dem langen Vokal weder eine Hamza noch ein Sukun kommt." }
+      "objasnjenje": { "bs": "Medd tabijj je kada poslije dugog vokala nema ni hemzeta ni sukuna.", "en": "Madd tabi'i is when the long vowel is followed by neither a hamza nor a sukun.", "de": "Ein Medd Tabi’i ist es, wenn nach dem langen Vokal weder eine Hamza noch ein Sukun kommt." }
     },
     {
-      "q": { "bs": "Koliko traje medd tabijj?", "en": "How long does madd tabi'i last?", "de": "Wie lange dauert Madd Tabi’i?" },
+      "q": { "bs": "Koliko traje medd tabijj?", "en": "How long does madd tabi'i last?", "de": "Wie lange dauert Medd Tabi’i?" },
       "opcije": [
         { "bs": "1 hareket", "en": "1 haraka", "de": "1 Haraka" },
         { "bs": "2 hareketa", "en": "2 harakas", "de": "2 Harakat" },
@@ -43,7 +43,7 @@
         { "bs": "6 hareketa", "en": "6 harakas", "de": "6 Harakat" }
       ],
       "tacno": 1,
-      "objasnjenje": { "bs": "Medd tabijj traje 2 hareketa.", "en": "Madd tabi'i lasts 2 harakas.", "de": "Madd Tabi’i dauert 2 Harakat." }
+      "objasnjenje": { "bs": "Medd tabijj traje 2 hareketa.", "en": "Madd tabi'i lasts 2 harakas.", "de": "Medd Tabi’i dauert 2 Harakat." }
     },
     {
       "q": { "bs": "Kojim znakom se piše dugi vokal U?", "en": "Which sign shows the long vowel U?", "de": "Mit welchem Zeichen wird der lange Vokal U geschrieben?" },
@@ -57,29 +57,29 @@
       "objasnjenje": { "bs": "Dugi vokal U piše se znakom ـــُــ و.", "en": "The long vowel U is written as ـــُــ و.", "de": "Der lange Vokal U wird mit dem Zeichen ـــُــ و geschrieben." }
     },
     {
-      "q": { "bs": "Gdje je medd tabijj u riječi قَالَ?", "en": "Where is the madd tabi'i in the word قَالَ?", "de": "Wo ist das Madd Tabi’i im Wort قَالَ?" },
+      "q": { "bs": "Gdje je medd tabijj u riječi قَالَ?", "en": "Where is the madd tabi'i in the word قَالَ?", "de": "Wo ist das Medd Tabi’i im Wort قَالَ?" },
       "opcije": [
         { "bs": "Na harfu L (ل)", "en": "On the letter L (ل)", "de": "Auf dem Buchstaben L (ل)" },
-        { "bs": "Na kratkom vokalu E na kraju riječi", "en": "On the short vowel A at the end of the word", "de": "Auf dem kurzen Vokal A am Ende des Wortes" },
+        { "bs": "Na kratkom vokalu E na kraju riječi", "en": "On the short vowel A at the end of the word", "de": "Auf dem kurzen Vokal E am Ende des Wortes" },
         { "bs": "Na dugom vokalu A (قَا)", "en": "On the long vowel A (قَا)", "de": "Auf dem langen Vokal A (قَا)" },
-        { "bs": "U riječi قَالَ nema medd tabijja", "en": "There is no madd tabi'i in the word قَالَ", "de": "Im Wort قَالَ gibt es kein Madd Tabi’i" }
+        { "bs": "U riječi قَالَ nema medd tabijja", "en": "There is no madd tabi'i in the word قَالَ", "de": "Im Wort قَالَ gibt es kein Medd Tabi’i" }
       ],
       "tacno": 2,
-      "objasnjenje": { "bs": "U riječi قَالَ poslije dugog vokala A nema ni hemzeta ni sukuna, pa je to medd tabijj.", "en": "In قَالَ the long vowel A is followed by neither a hamza nor a sukun, so it is madd tabi'i.", "de": "Im Wort قَالَ kommt nach dem langen Vokal A weder eine Hamza noch ein Sukun, also ist das ein Madd Tabi’i." }
+      "objasnjenje": { "bs": "U riječi قَالَ poslije dugog vokala A nema ni hemzeta ni sukuna, pa je to medd tabijj.", "en": "In قَالَ the long vowel A is followed by neither a hamza nor a sukun, so it is madd tabi'i.", "de": "Im Wort قَالَ kommt nach dem langen Vokal A weder eine Hamza noch ein Sukun, also ist das ein Medd Tabi’i." }
     },
     {
-      "q": { "bs": "Ako poslije dugog vokala dođe hemze, hoće li to biti medd tabijj?", "en": "If a hamza comes after the long vowel, is it madd tabi'i?", "de": "Wenn nach dem langen Vokal eine Hamza kommt, ist das dann ein Madd Tabi’i?" },
+      "q": { "bs": "Ako poslije dugog vokala dođe hemze, hoće li to biti medd tabijj?", "en": "If a hamza comes after the long vowel, is it madd tabi'i?", "de": "Wenn nach dem langen Vokal eine Hamza kommt, ist das dann ein Medd Tabi’i?" },
       "opcije": [
-        { "bs": "Da, uvijek je medd tabijj", "en": "Yes, it is always madd tabi'i", "de": "Ja, das ist immer ein Madd Tabi’i" },
-        { "bs": "Ne, medd tabijj je samo kada nema ni hemzeta ni sukuna", "en": "No, madd tabi'i is only when there is neither a hamza nor a sukun", "de": "Nein, ein Madd Tabi’i ist es nur, wenn weder eine Hamza noch ein Sukun kommt" },
-        { "bs": "Da, ali tada traje 6 hareketa", "en": "Yes, but then it lasts 6 harakas", "de": "Ja, aber dann dauert das Madd 6 Harakat" },
+        { "bs": "Da, uvijek je medd tabijj", "en": "Yes, it is always madd tabi'i", "de": "Ja, das ist immer ein Medd Tabi’i" },
+        { "bs": "Ne, medd tabijj je samo kada nema ni hemzeta ni sukuna", "en": "No, madd tabi'i is only when there is neither a hamza nor a sukun", "de": "Nein, ein Medd Tabi’i ist es nur, wenn weder eine Hamza noch ein Sukun kommt" },
+        { "bs": "Da, ali tada traje 6 hareketa", "en": "Yes, but then it lasts 6 harakas", "de": "Ja, aber dann dauert das Medd 6 Harakat" },
         { "bs": "Da, ali samo poslije dugog vokala A", "en": "Yes, but only after the long vowel A", "de": "Ja, aber nur nach dem langen Vokal A" }
       ],
       "tacno": 1,
-      "objasnjenje": { "bs": "Medd tabijj je samo kada poslije dugog vokala nema ni hemzeta ni sukuna.", "en": "Madd tabi'i is only when the long vowel is followed by neither a hamza nor a sukun.", "de": "Ein Madd Tabi’i ist es nur, wenn nach dem langen Vokal weder eine Hamza noch ein Sukun kommt." }
+      "objasnjenje": { "bs": "Medd tabijj je samo kada poslije dugog vokala nema ni hemzeta ni sukuna.", "en": "Madd tabi'i is only when the long vowel is followed by neither a hamza nor a sukun.", "de": "Ein Medd Tabi’i ist es nur, wenn nach dem langen Vokal weder eine Hamza noch ein Sukun kommt." }
     },
     {
-      "q": { "bs": "Koja riječ ima medd tabijj na dugom vokalu I?", "en": "Which word has madd tabi'i on the long vowel I?", "de": "Welches Wort hat ein Madd Tabi’i auf dem langen Vokal I?" },
+      "q": { "bs": "Koja riječ ima medd tabijj na dugom vokalu I?", "en": "Which word has madd tabi'i on the long vowel I?", "de": "Welches Wort hat ein Medd Tabi’i auf dem langen Vokal I?" },
       "opcije": [
         { "bs": "ذُو", "en": "ذُو", "de": "ذُو" },
         { "bs": "دَارَ", "en": "دَارَ", "de": "دَارَ" },
@@ -87,10 +87,10 @@
         { "bs": "يُرِيدُ", "en": "يُرِيدُ", "de": "يُرِيدُ" }
       ],
       "tacno": 3,
-      "objasnjenje": { "bs": "U riječi يُرِيدُ dugi vokal I (رِي) je medd tabijj.", "en": "In the word يُرِيدُ the long vowel I (رِي) is madd tabi'i.", "de": "Im Wort يُرِيدُ ist der lange Vokal I (رِي) ein Madd Tabi’i." }
+      "objasnjenje": { "bs": "U riječi يُرِيدُ dugi vokal I (رِي) je medd tabijj.", "en": "In the word يُرِيدُ the long vowel I (رِي) is madd tabi'i.", "de": "Im Wort يُرِيدُ ist der lange Vokal I (رِي) ein Medd Tabi’i." }
     },
     {
-      "q": { "bs": "Koliko medd tabijja ima u riječi ءَاتُونِي?", "en": "How many madd tabi'i are there in the word ءَاتُونِي?", "de": "Wie viele Madd Tabi’i gibt es im Wort ءَاتُونِي?" },
+      "q": { "bs": "Koliko medd tabijja ima u riječi ءَاتُونِي?", "en": "How many madd tabi'i are there in the word ءَاتُونِي?", "de": "Wie viele Medd Tabi’i gibt es im Wort ءَاتُونِي?" },
       "opcije": [
         { "bs": "Tri: na dugom vokalu A, U i I", "en": "Three: on the long vowels A, U and I", "de": "Drei: auf den langen Vokalen A, U und I" },
         { "bs": "Jedan: samo na dugom vokalu A", "en": "One: only on the long vowel A", "de": "Eines: nur auf dem langen Vokal A" },
@@ -98,18 +98,18 @@
         { "bs": "Nijedan", "en": "None", "de": "Keines" }
       ],
       "tacno": 0,
-      "objasnjenje": { "bs": "U riječi ءَاتُونِي su tri duga vokala (ءَا، تُو، نِي) i svaki je medd tabijj od 2 hareketa.", "en": "The word ءَاتُونِي has three long vowels (ءَا، تُو، نِي) and each is madd tabi'i of 2 harakas.", "de": "Im Wort ءَاتُونِي stehen drei lange Vokale (ءَا، تُو، نِي), und jeder ist ein Madd Tabi’i von 2 Harakat." }
+      "objasnjenje": { "bs": "U riječi ءَاتُونِي su tri duga vokala (ءَا، تُو، نِي) i svaki je medd tabijj od 2 hareketa.", "en": "The word ءَاتُونِي has three long vowels (ءَا، تُو، نِي) and each is madd tabi'i of 2 harakas.", "de": "Im Wort ءَاتُونِي stehen drei lange Vokale (ءَا، تُو، نِي), und jeder ist ein Medd Tabi’i von 2 Harakat." }
     },
     {
       "q": { "bs": "Koje pravilo vrijedi za dugi vokal U (دُو) u riječi صُدُورِ?", "en": "Which rule applies to the long vowel U (دُو) in the word صُدُورِ?", "de": "Welche Regel gilt für den langen Vokal U (دُو) im Wort صُدُورِ?" },
       "opcije": [
-        { "bs": "Medd muttesil, jer poslije dolazi hemze", "en": "Madd muttasil, because a hamza follows", "de": "Madd Muttasil, weil danach eine Hamza kommt" },
-        { "bs": "Medd lazim, jer poslije dolazi tešdid", "en": "Madd lazim, because a tashdeed follows", "de": "Madd Lazim, weil danach eine Schadda kommt" },
-        { "bs": "Medd tabijj, jer poslije ne dolazi ni hemze ni sukun", "en": "Madd tabi'i, because neither a hamza nor a sukun follows", "de": "Madd Tabi’i, weil danach weder eine Hamza noch ein Sukun kommt" },
-        { "bs": "Nema dužine", "en": "There is no prolongation", "de": "Es gibt keine Dehnung" }
+        { "bs": "Medd muttesil, jer poslije dolazi hemze", "en": "Madd muttasil, because a hamza follows", "de": "Medd Muttesil, weil danach eine Hamza kommt" },
+        { "bs": "Medd lazim, jer poslije dolazi tešdid", "en": "Madd lazim, because a tashdeed follows", "de": "Medd Lazim, weil danach eine Schadda kommt" },
+        { "bs": "Medd tabijj, jer poslije ne dolazi ni hemze ni sukun", "en": "Madd tabi'i, because neither a hamza nor a sukun follows", "de": "Medd Tabi’i, weil danach weder eine Hamza noch ein Sukun kommt" },
+        { "bs": "Nema dužine", "en": "There is no prolongation", "de": "Es gibt keine Verlängerung" }
       ],
       "tacno": 2,
-      "objasnjenje": { "bs": "Poslije dugog vokala U u riječi صُدُورِ dolazi harf R sa hareketom, pa je to medd tabijj od 2 hareketa.", "en": "In صُدُورِ the long vowel U is followed by the letter R with a haraka, so it is madd tabi'i of 2 harakas.", "de": "Nach dem langen Vokal U im Wort صُدُورِ kommt der Buchstabe R mit Vokalzeichen, also ist das ein Madd Tabi’i von 2 Harakat." }
+      "objasnjenje": { "bs": "Poslije dugog vokala U u riječi صُدُورِ dolazi harf R sa hareketom, pa je to medd tabijj od 2 hareketa.", "en": "In صُدُورِ the long vowel U is followed by the letter R with a haraka, so it is madd tabi'i of 2 harakas.", "de": "Nach dem langen Vokal U im Wort صُدُورِ kommt der Buchstabe R mit Vokal, also ist das ein Medd Tabi’i von 2 Harakat." }
     }
   ]
 }
