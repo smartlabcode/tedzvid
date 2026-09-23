@@ -1908,6 +1908,38 @@ textarea.field {
   }
 }
 
+/* njemački: labele su duže (STARTSEITE, BESTENLISTE, DRUCKAUSGABE…) – do 1440px uži razmaci
+   i slova linkova, a do 1280px linkovi idu u mobilni meni kao ispod 1200px */
+@media (max-width: 1440px) {
+  html[lang='de'] {
+    .site-nav__links a {
+      padding: 10px 6px;
+      letter-spacing: 0.03em;
+    }
+
+    .site-nav__inner {
+      gap: 12px;
+    }
+
+    .site-nav__actions {
+      gap: 8px;
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  html[lang='de'] {
+    .site-nav__links,
+    .site-nav__bar nav {
+      display: none;
+    }
+
+    .site-nav__toggle {
+      display: inline-flex;
+    }
+  }
+}
+
 /* ispod 1200px korisnik u traci je samo ikona (tekst ostaje u mobilnom meniju) */
 @media (max-width: 1200px) {
   .site-nav__user {
