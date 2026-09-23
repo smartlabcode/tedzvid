@@ -256,23 +256,19 @@ const TXT = {
 		naslov: '13 QALQALA',
 		podnaslov: (
 			<React.Fragment>
-				<strong>Abprallen der Buchstaben</strong>
+				<strong>Kraftvoll federnde Aussprache</strong>
 			</React.Fragment>
 		),
 		lekcija: (P, V) => (
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						Wenn einer dieser fünf Buchstaben ein <strong>Sukun</strong> (
-						<span className="arapski-lekcija">ـــْـــ</span>) trägt:{' '}
+						Wenn einer der Kalkala Buchstaben{' '}
 						<Arabic key="ar1l13" arabic="د ج ب ط ق">
 							د ج ب ط ق
 						</Arabic>{' '}
-						(enthalten im Ausdruck <strong>qutbu dschaddin</strong> -{' '}
-						<span className="arapski-lekcija" style={{ fontSize: '1.675em' }}>
-							قُطْبُ جَدٍّ
-						</span>{' '}
-						), kommt es zum <u>Abprallen</u> dieser Buchstaben, z. B.:
+						mit <strong>sukun</strong> (<span className="arapski-lekcija">ـــْـــ</span>) vorkommt, dann werden
+						die oben genannten Buchstaben kraftvoll federnd ausgesprochen. Zum Beispiel:
 					</Col>
 				</Row>
 
@@ -314,16 +310,12 @@ const TXT = {
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						Wenn einer dieser fünf Buchstaben ein <strong>Sukun</strong> (
-						<span className="arapski-lekcija">ـــْـــ</span>) trägt:{' '}
+						Wenn einer der Kalkala Buchstaben{' '}
 						<Arabic key="ar1l13" arabic="د ج ب ط ق">
 							د ج ب ط ق
 						</Arabic>{' '}
-						(enthalten im Ausdruck <strong>qutbu dschaddin</strong> -{' '}
-						<span className="arapski-lekcija" style={{ fontSize: '1.675em' }}>
-							قُطْبُ جَدٍّ
-						</span>{' '}
-						), kommt es zum <u>Abprallen</u> dieser Buchstaben, z. B.:
+						mit <strong>sukun</strong> (<span className="arapski-lekcija">ـــْـــ</span>) vorkommt, dann werden
+						die oben genannten Buchstaben kraftvoll federnd ausgesprochen. Zum Beispiel:
 					</Col>
 				</Row>
 

@@ -320,32 +320,33 @@ const TXT = {
 	},
 
 	de: {
-		naziv: 'HUKM AR-RA',
+		naziv: 'HUKMURRA',
 		lekcija: (P, V) => (
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
 						Der Buchstabe<strong> R </strong>
-						<span className="arapski-lekcija">(ر)</span> wird in diesen Fällen <u>dünn</u> gesprochen:
+						<span className="arapski-lekcija">(ر)</span> wird <u>nicht emphatisch</u> in folgenden Situationen
+						gelesen:
 					</Col>
 				</Row>
 
 				<Row>
 					<Col className="opisLekcije">
-						<strong>1.</strong> wenn der Buchstabe<strong> R </strong>den <strong>Vokal</strong> I trägt ({' '}
-						{P('row9')} ), z. B.: <br />
+						<strong>1.</strong> Wenn der Buchstabe<strong> R </strong>mit dem <strong>Vokal</strong> I ( {P('row9')} )
+						vorkommt, z.B.: <br />
 						{P('row8')}
 					</Col>
 				</Row>
 
 				<Row>
 					<Col className="opisLekcije">
-						<strong>2.</strong> wenn der Buchstabe<strong> R </strong>ein <strong>Sukun</strong> trägt und davor
-						ein Buchstabe mit dem <strong>Vokal</strong> I steht (
+						<strong>2.</strong> Wenn der Buchstabe<strong> R </strong> <strong>sukun</strong> hat und ihm ein Buchstabe
+						mit dem <strong>Vokal</strong> I vorausgeht (
 						<span className="arapski-lekcija" style={{ color: 'red' }}>
 							ــــِـــ رْ{' '}
 						</span>
-						), z. B.:
+						), z.B.:
 						<br />
 						{P('row10')}
 					</Col>
@@ -353,27 +354,29 @@ const TXT = {
 
 				<Row>
 					<Col className="opisLekcije">
-						<strong>3.</strong> wenn der Buchstabe<strong> R </strong>ein <strong>Sukun</strong> trägt, davor ein
-						Buchstabe mit <strong>Sukun</strong> steht und davor ein Buchstabe mit dem <strong>Vokal</strong> I (
+						<strong>3.</strong> Wenn der Buchstabe<strong> R </strong> <strong>sukun</strong> hat und ihm ein Buchstabe
+						mit <strong>sukun</strong> vorausgeht, dem wiederum ein Buchstabe mit dem <strong>Vokal</strong> I
+						vorausgeht (
 						<span className="arapski-lekcija" style={{ color: 'red' }}>
 							{' '}
 							ــِـ ــْـ رْ{' '}
 						</span>
-						), z. B.:<br />
+						), z.B.:
+						<br />
 						{P('row11')}
 					</Col>
 				</Row>
 
 				<Row>
 					<Col className="opisLekcije">
-						<strong>4.</strong> wenn der Buchstabe<strong> R </strong>ein <strong>Sukun</strong> trägt, davor der
-						Buchstabe <strong>Y</strong> ebenfalls mit <strong>Sukun</strong> steht und davor ein Buchstabe mit dem{' '}
-						<strong>Vokal</strong> A (
+						<strong>4.</strong> Wenn der Buchstabe<strong> R </strong> <strong>sukun</strong> hat und ihm der Buchstabe{' '}
+						<strong>J</strong> mit <strong>sukun</strong> vorausgeht, dem wiederum ein Buchstabe mit dem{' '}
+						<strong>Vokal</strong> E vorausgeht (
 						<span className="arapski-lekcija" style={{ color: 'red' }}>
 							{' '}
 							ــــَـــ يْـــرْ{' '}
 						</span>
-						), z. B.: {P('row12')}
+						), zum Beispiel: {P('row12')}
 					</Col>
 				</Row>
 
@@ -395,26 +398,27 @@ const TXT = {
 				<Row>
 					<Col className="opisLekcije">
 						Der Buchstabe<strong> R </strong>
-						<span className="arapski-lekcija">(ر)</span> wird in diesen Fällen <u>dünn</u>
-						gesprochen:
+						<span className="arapski-lekcija">(ر)</span> wird <u>nicht emphatisch</u> in folgenden Situationen
+						gelesen:
 					</Col>
 				</Row>
 
 				<Row>
 					<Col className="opisLekcije">
-						<strong>1.</strong> wenn der Buchstabe<strong> R </strong>den <strong>Vokal</strong> I trägt ({' '}
-						{P('row9')} ), z. B.: {P('row8')}
+						<strong>1.</strong> Wenn der Buchstabe<strong> R </strong>mit dem <strong>Vokal</strong> I ( {P('row9')} )
+						vorkommt, z.B.: <br />
+						{P('row8')}
 					</Col>
 				</Row>
 
 				<Row>
 					<Col className="opisLekcije">
-						<strong>2.</strong> wenn der Buchstabe<strong> R </strong>ein <strong>Sukun</strong> trägt und
-						davor ein Buchstabe mit dem <strong>Vokal</strong> I steht (
+						<strong>2.</strong> Wenn der Buchstabe<strong> R </strong> <strong>sukun</strong> hat und ihm ein Buchstabe
+						mit dem <strong>Vokal</strong> I vorausgeht (
 						<span className="arapski-lekcija" style={{ color: 'red' }}>
 							ــــِـــ رْ{' '}
 						</span>
-						), z. B.:
+						), z.B.:
 						<br />
 						{P('row10')}
 					</Col>
@@ -422,29 +426,29 @@ const TXT = {
 
 				<Row>
 					<Col className="opisLekcije">
-						<strong>3.</strong> wenn der Buchstabe<strong> R </strong>ein <strong>Sukun</strong> trägt, davor
-						ein Buchstabe mit <strong>Sukun</strong> steht und davor ein Buchstabe mit dem
-						<strong>Vokal</strong> I (
+						<strong>3.</strong> Wenn der Buchstabe<strong> R </strong> <strong>sukun</strong> hat und ihm ein Buchstabe
+						mit <strong>sukun</strong> vorausgeht, dem wiederum ein Buchstabe mit dem <strong>Vokal</strong> I
+						vorausgeht (
 						<span className="arapski-lekcija" style={{ color: 'red' }}>
 							{' '}
 							ــِـ ــْـ رْ{' '}
 						</span>
-						), z. B.:
+						), z.B.:
+						<br />
 						{P('row11')}
 					</Col>
 				</Row>
 
 				<Row>
 					<Col className="opisLekcije">
-						<strong>4.</strong> wenn der Buchstabe<strong> R </strong>ein <strong>Sukun</strong> trägt, davor
-						der Buchstabe <strong>Y</strong> ebenfalls mit <strong>Sukun</strong> steht und davor ein
-						Buchstabe mit dem{' '}
-						<strong>Vokal</strong> A (
+						<strong>4.</strong> Wenn der Buchstabe<strong> R </strong> <strong>sukun</strong> hat und ihm der Buchstabe{' '}
+						<strong>J</strong> mit <strong>sukun</strong> vorausgeht, dem wiederum ein Buchstabe mit dem{' '}
+						<strong>Vokal</strong> E vorausgeht (
 						<span className="arapski-lekcija" style={{ color: 'red' }}>
 							{' '}
 							ــــَـــ يْـــرْ{' '}
 						</span>
-						), z. B.:<br /> {P('row12')}
+						), zum Beispiel: {P('row12')}
 					</Col>
 				</Row>
 

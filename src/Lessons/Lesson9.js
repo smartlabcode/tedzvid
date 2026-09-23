@@ -389,21 +389,22 @@ const TXT = {
 	},
 
 	de: {
-		naziv: 'IDH-HAR HALQI',
-		naslov: '9 IDH-HAR HALQI',
+		naziv: 'IZHAR HALQI',
+		naslov: '9 IZHAR HALQI',
 		podnaslov: (
 			<React.Fragment>
-				<strong>Das N (ن) oder das Tanwin deutlich aussprechen</strong>
+				<strong>Deutlich klare Aussprache von nun mit sukun (ن) oder tanwin en, in, un</strong>
 			</React.Fragment>
 		),
 		lekcija: (P, V) => (
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						Wenn nach dem Buchstaben <strong>N</strong> mit <strong>Sukun</strong> (<span className="arapski-lekcija">نْ</span>)
-						oder nach dem <strong>Tanwin</strong> AN <span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
+						Wenn nach dem Buchstaben <strong>nun</strong> mit <strong>sukun</strong> (
+						<span className="arapski-lekcija">نْ</span>) oder <strong>tanwin</strong> EN{' '}
+						<span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
 						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
-						<span className="arapski-lekcija">ــٌــ</span> einer der sechs Kehlbuchstaben kommt:<pre style={{ display: 'inline' }}> </pre>
+						<span className="arapski-lekcija">ــٌــ</span> einer der IZHAR Buchstaben:<pre style={{ display: 'inline' }}> </pre>
 						<span className="arapski-lekcija" style={{ color: 'red' }}>
 							{' '}
 							خ
@@ -432,9 +433,8 @@ const TXT = {
 						<span className="arapski-lekcija" style={{ color: 'red' }}>
 							{' '}
 							أ{' '}
-						</span>{' '}
-						<pre style={{ display: 'inline' }}> </pre>dann wird der Buchstabe <strong>N</strong> (<span className="arapski-lekcija">ن</span>){' '}
-						<u>deutlich</u> ausgesprochen, also ohne Verschmelzung, z. B.:
+						</span>
+						folgt, dann liest man <u>diesen klar</u> und deutlich ohne Assimilation. Zum Beispiel:
 					</Col>
 				</Row>
 
@@ -451,10 +451,12 @@ const TXT = {
 
 				<Row>
 					<Col className="opisLekcije">
-						<strong>IDH-HAR MUTLAQ</strong> – wenn nach dem Buchstaben <strong>N</strong> mit Sukun (<span className="arapski-lekcija">نْ</span>){' '}
-						<u>im selben Wort</u> der Buchstabe <strong>W</strong> (<span className="arapski-lekcija">و</span>)
-						oder <strong>Y</strong> (<span className="arapski-lekcija">ي</span>) kommt, wird der Buchstabe <strong>N</strong> (<span className="arapski-lekcija">ن</span>){' '}
-						<u>deutlich</u> ausgesprochen, also ohne Verschmelzung, z. B.:
+						<strong>IZHAR MUTLAK</strong> – Wenn nach dem Buchstaben <strong>nun mit sukun</strong> (
+						<span className="arapski-lekcija">نْ</span>) der Buchstabe <strong>V</strong> (
+						<span className="arapski-lekcija">و</span>) oder <strong>J</strong> (
+						<span className="arapski-lekcija">ي</span>) im selben Wort vorkommt, dann liest man{' '}
+						<strong>nun mit sukun</strong> (<span className="arapski-lekcija">ن</span>){' '}
+						<u>deutlich und klar</u> ohne Assimilation. Zum Beispiel:
 					</Col>
 				</Row>
 
@@ -479,10 +481,11 @@ const TXT = {
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						Wenn nach dem Buchstaben <strong>N</strong> mit <strong>Sukun</strong> (<span className="arapski-lekcija">نْ</span>)
-						oder nach dem <strong>Tanwin</strong> AN <span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
+						Wenn nach dem Buchstaben <strong>nun</strong> mit <strong>sukun</strong> (
+						<span className="arapski-lekcija">نْ</span>) oder <strong>tanwin</strong> EN{' '}
+						<span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
 						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
-						<span className="arapski-lekcija">ــٌــ</span> einer der sechs Kehlbuchstaben kommt:<pre style={{ display: 'inline' }}> </pre>
+						<span className="arapski-lekcija">ــٌــ</span> einer der IZHAR Buchstaben:<pre style={{ display: 'inline' }}> </pre>
 						<span className="arapski-lekcija" style={{ color: 'red' }}>
 							{' '}
 							خ
@@ -511,9 +514,8 @@ const TXT = {
 						<span className="arapski-lekcija" style={{ color: 'red' }}>
 							{' '}
 							أ{' '}
-						</span>{' '}
-						<pre style={{ display: 'inline' }}> </pre>dann wird der Buchstabe <strong>N</strong> (<span className="arapski-lekcija">ن</span>){' '}
-						<u>deutlich</u> ausgesprochen, also ohne Verschmelzung, z. B.:
+						</span>
+						folgt, dann liest man <u>diesen klar</u> und deutlich ohne Assimilation. Zum Beispiel:
 					</Col>
 				</Row>
 
@@ -529,11 +531,12 @@ const TXT = {
 				</Row>
 				<Row>
 					<Col className="opisLekcije">
-						<strong>IDH-HAR MUTLAQ</strong> – wenn nach dem Buchstaben <strong>N</strong> mit Sukun (<span className="arapski-lekcija">نْ</span>){' '}
-						<u>im selben Wort</u> der Buchstabe <strong>W</strong> (<span className="arapski-lekcija">و</span>)
-						oder <strong>Y</strong> (<span className="arapski-lekcija">ي</span>) kommt, wird der Buchstabe{' '}
-						<strong>N</strong> (<span className="arapski-lekcija">ن</span>) <u>deutlich</u> ausgesprochen,
-						also ohne Verschmelzung, z. B.:
+						<strong>IZHAR MUTLAK</strong> – Wenn nach dem Buchstaben <strong>nun mit sukun</strong> (
+						<span className="arapski-lekcija">نْ</span>) der Buchstabe <strong>V</strong> (
+						<span className="arapski-lekcija">و</span>) oder <strong>J</strong> (
+						<span className="arapski-lekcija">ي</span>) im selben Wort vorkommt, dann liest man{' '}
+						<strong>nun mit sukun</strong> (<span className="arapski-lekcija">ن</span>){' '}
+						<u>deutlich und klar</u> ohne Assimilation. Zum Beispiel:
 					</Col>
 				</Row>
 

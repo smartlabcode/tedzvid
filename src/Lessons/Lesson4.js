@@ -174,24 +174,23 @@ const TXT = {
 	},
 
 	de: {
-		naziv: 'IDGHAM MITHLAIN',
-		naslov: '4 IDGHAM MITHLAIN',
+		naziv: 'IDGHAM MITHLAYN',
+		naslov: '4 IDGHAM MITHLAYN',
 		podnaslov: (
 			<React.Fragment>
-				<strong>Gleiche Buchstaben verschmelzen</strong>
+				<strong>Vollständige Assimilation der gleichen Buchstaben</strong>
 			</React.Fragment>
 		),
 		lekcija: (P, V) => (
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						Wenn nach einem beliebigen Buchstaben mit{' '}
+						Wenn zwei gleiche Buchstaben hintereinander vorkommen, der Erste mit{' '}
 						<strong>
-							Sukun <span className="arapski-lekcija">ـــْــ</span>
+							sukun <span className="arapski-lekcija">ـــْــ</span>
 						</strong>{' '}
-						der <u>gleiche</u> Buchstabe mit <strong>Vokalzeichen</strong> kommt, verschmelzen beide{' '}
-						<u>vollständig</u>: Der erste Buchstabe wird nicht gesprochen, der zweite wird mit{' '}
-						<strong>Schadda</strong> (Verdopplungszeichen) gesprochen, z. B.:
+						und der zweite mit <strong>Vokal</strong>, werden beide vollständig ineinander assimiliert und mit
+						teschdid ausgesprochen. Zum Beispiel:
 					</Col>
 				</Row>
 
@@ -218,13 +217,12 @@ const TXT = {
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						Wenn nach einem beliebigen Buchstaben mit{' '}
+						Wenn zwei gleiche Buchstaben hintereinander vorkommen, der Erste mit{' '}
 						<strong>
-							Sukun <span className="arapski-lekcija">ـــْــ</span>
+							sukun <span className="arapski-lekcija">ـــْــ</span>
 						</strong>{' '}
-						der <u>gleiche</u> Buchstabe mit <strong>Vokalzeichen</strong> kommt, verschmelzen beide{' '}
-						<u>vollständig</u>: Der erste Buchstabe wird nicht gesprochen, der zweite wird mit{' '}
-						<strong>Schadda</strong> (Verdopplungszeichen) gesprochen, z. B.:
+						und der zweite mit <strong>Vokal</strong>, werden beide vollständig ineinander assimiliert und mit
+						teschdid ausgesprochen. Zum Beispiel:
 					</Col>
 				</Row>
 

@@ -196,21 +196,22 @@ const TXT = {
 	},
 
 	de: {
-		naziv: 'MADD MUTTASIL',
-		naslov: '18 MADD MUTTASIL',
+		naziv: 'MEDD MUTTESIL',
+		naslov: '18 MEDD MUTTESIL',
 		podnaslov: (
 			<React.Fragment>
-				<strong>Verbundene Dehnung</strong>
+				<strong>Verbundene Länge</strong>
 			</React.Fragment>
 		),
 		lekcija: (P, V) => (
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						Wenn nach dem <strong>langen Vokal</strong> A <span className="arapski-lekcija">ـــَــ ا</span> ,
-						I <span className="arapski-lekcija">ـــِـ ى </span>, U{' '}
-						<span className="arapski-lekcija">ـــُــ و</span> eine <strong>Hamza</strong> im <u>gleichen</u>{' '}
-						Wort kommt, ist es Madd Muttasil. Es muss 4–5 Harakat dauern, z. B.: {P('row1')}
+						Wenn nach <strong>den langen Vokalen</strong> A <span className="arapski-lekcija">ـــَــ ا</span> , I{' '}
+						<span className="arapski-lekcija">ـــِـ ى </span>, oder U{' '}
+						<span className="arapski-lekcija">ـــُــ و</span> <strong>hamze</strong> im <u>gleichen</u> Wort
+						vorkommt, dann ist es medd muttesil. Die Länge der Aussprache beträgt 4-5 kurze Vokale. Zum
+						Beispiel: {P('row1')}
 					</Col>
 				</Row>
 
@@ -243,12 +244,11 @@ const TXT = {
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						Wenn nach dem <strong>langen Vokal</strong> A{' '}
-						<span className="arapski-lekcija">ـــَــ ا</span> , I{' '}
-						<span className="arapski-lekcija">ـــِـ ى </span>, U{' '}
-						<span className="arapski-lekcija">ـــُــ و</span> eine <strong>Hamza</strong> im{' '}
-						<u>gleichen</u> Wort kommt, ist es Madd Muttasil. Es muss 4–5 Harakat dauern, z. B.:{' '}
-						{P('row1')}
+						Wenn nach <strong>den langen Vokalen</strong> A <span className="arapski-lekcija">ـــَــ ا</span> , I{' '}
+						<span className="arapski-lekcija">ـــِـ ى </span>, oder U{' '}
+						<span className="arapski-lekcija">ـــُــ و</span> <strong>hamze</strong> im <u>gleichen</u> Wort
+						vorkommt, dann ist es medd muttesil. Die Länge der Aussprache beträgt 4-5 kurze Vokale. Zum
+						Beispiel: {P('row1')}
 					</Col>
 				</Row>
 

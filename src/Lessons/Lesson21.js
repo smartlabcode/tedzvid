@@ -202,17 +202,17 @@ const TXT = {
 	},
 
 	de: {
-		naziv: 'MADD ARID',
-		naslov: '21 MADD ARID',
-		podnaslov: 'Vorübergehende Dehnung',
+		naziv: 'MEDD ARID',
+		naslov: '21 MEDD ARID',
+		podnaslov: 'Vorübergehende Verlängerung',
 		lekcija: (P, V) => (
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						Wenn nach dem <strong>langen Vokal</strong> A <span className="arapski-lekcija">ـــَــ ا</span> ,
-						I <span className="arapski-lekcija"> ـــِـ ى </span>, U{' '}
-						<span className="arapski-lekcija">ـــُــ و</span> ein <strong>vorübergehendes Sukun</strong> kommt,
-						ist es Madd Arid. Es dauert 2, 4 oder 6 Harakat.
+						Wenn nach <strong>einem langen Vokal</strong> A <span className="arapski-lekcija">ـــَــ ا</span> , I{' '}
+						<span className="arapski-lekcija"> ـــِـ ى </span>, oder U{' '}
+						<span className="arapski-lekcija">ـــُــ و</span> <strong>ein vorübergehender Sukūn</strong> folgt,
+						nennt man das medd arid. Die Länge der Aussprache beträgt 2-4-6 kurze Vokale.
 					</Col>
 				</Row>
 
@@ -250,11 +250,10 @@ const TXT = {
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						Wenn nach dem <strong>langen Vokal</strong> A{' '}
-						<span className="arapski-lekcija">ـــَــ ا</span> , I{' '}
-						<span className="arapski-lekcija"> ـــِـ ى </span>, U{' '}
-						<span className="arapski-lekcija">ـــُــ و</span> ein <strong>vorübergehendes Sukun</strong> kommt,
-						ist es Madd Arid. Es dauert 2, 4 oder 6 Harakat.
+						Wenn nach <strong>einem langen Vokal</strong> A <span className="arapski-lekcija">ـــَــ ا</span> , I{' '}
+						<span className="arapski-lekcija"> ـــِـ ى </span>, oder U{' '}
+						<span className="arapski-lekcija">ـــُــ و</span> <strong>ein vorübergehender Sukūn</strong> folgt,
+						nennt man das medd arid. Die Länge der Aussprache beträgt 2-4-6 kurze Vokale.
 					</Col>
 				</Row>
 

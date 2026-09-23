@@ -295,32 +295,32 @@ const TXT = {
 	},
 
 	de: {
-		naziv: 'IDGHAM MA’AL-GHUNNA',
-		naslov: '6 IDGHAM MA’AL-GHUNNA',
+		naziv: 'IDGAM MEAL-GUNNEH',
+		naslov: '6 IDGAM MEAL-GUNNEH',
 		podnaslov: (
 			<React.Fragment>
-				<strong>Verschmelzen, mit Luft durch die Nase</strong>
+				<strong>Partielle Assimilation mit Nasalisierung</strong>
 			</React.Fragment>
 		),
 		lekcija: (P, V, r3) => (
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						Wenn nach dem Buchstaben <strong>N</strong> mit <strong>Sukun</strong> (
-						<span className="arapski-lekcija">نْ</span>) oder nach dem <strong>Tanwin</strong> AN{' '}
+						Wenn nach dem <strong>N</strong> mit <strong>sukun</strong> (
+						<span className="arapski-lekcija">نْ</span>) oder <strong>tanwin</strong> EN{' '}
 						<span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
 						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
-						<span className="arapski-lekcija">ــٌــ</span> einer dieser vier Buchstaben kommt:&nbsp;
+						<span className="arapski-lekcija">ــٌــ</span> einer der vier idgam Buchstaben:&nbsp;
 						<span
 							className="arapski-lekcija"
 							style={{ color: 'red', fontSize: '3rem', whiteSpace: 'nowrap' }}
 						>
 							و ن م ي
 						</span>{' '}
-						(enthalten im Wort <strong>yamnu</strong> –
-						<span className="arapski-lekcija">يَمْنُو</span>), verschmilzt der Buchstabe <strong>N</strong>(
-						<span className="arapski-lekcija">ن</span>) in einen dieser vier Buchstaben, wobei die Luft
-						2 Harakat lang durch die Nase strömt, z. B.:
+						(unmittelbar danach folgt <strong>jemnu</strong> –
+						<span className="arapski-lekcija">يَمْنُو</span>), wird nun <strong>N</strong> (
+						<span className="arapski-lekcija">ن</span>) oder tanwin partiell in einen der zuvor genannten
+						Buchstaben assimiliert und nasal ausgesprochen. Zum Beispiel:
 					</Col>
 				</Row>
 
@@ -366,22 +366,21 @@ const TXT = {
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						Wenn nach dem Buchstaben <strong>N</strong> mit <strong>Sukun</strong> (
-						<span className="arapski-lekcija">نْ</span>) oder nach dem <strong>Tanwin</strong> AN{' '}
+						Wenn nach dem <strong>N</strong> mit <strong>sukun</strong> (
+						<span className="arapski-lekcija">نْ</span>) oder <strong>tanwin</strong> EN{' '}
 						<span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
 						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
-						<span className="arapski-lekcija">ــٌــ</span> einer dieser vier Buchstaben kommt:{' '}
+						<span className="arapski-lekcija">ــٌــ</span> einer der vier idgam Buchstaben:&nbsp;
 						<span
 							className="arapski-lekcija"
 							style={{ color: 'red', fontSize: '3rem', whiteSpace: 'nowrap' }}
 						>
 							و ن م ي
 						</span>{' '}
-						(enthalten im Wort <strong>yamnu</strong> –
-						<span className="arapski-lekcija">يَمْنُو</span>), verschmilzt der Buchstabe{' '}
-						<strong>N</strong>(
-						<span className="arapski-lekcija">ن</span>) in einen dieser vier Buchstaben, wobei die
-						Luft 2 Harakat lang durch die Nase strömt, z. B.:
+						(unmittelbar danach folgt <strong>jemnu</strong> –
+						<span className="arapski-lekcija">يَمْنُو</span>), wird nun <strong>N</strong> (
+						<span className="arapski-lekcija">ن</span>) oder tanwin partiell in einen der zuvor genannten
+						Buchstaben assimiliert und nasal ausgesprochen. Zum Beispiel:
 					</Col>
 				</Row>
 

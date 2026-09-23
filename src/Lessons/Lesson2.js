@@ -324,33 +324,33 @@ const TXT = {
 	},
 
 	de: {
-		naziv: 'DAMIR',
+		naziv: 'Damir',
 		naslov: '2 Damir',
 		podnaslov: (
 			<React.Fragment>
-				<strong>Das Pronomen HU(</strong>هُ<strong>) aussprechen</strong>
+				<strong>Aussprache des Personalpronomens HU (</strong>هُ<strong>)</strong>
 			</React.Fragment>
 		),
 		lekcija: (P, V) => (
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						Kommt vor dem Pronomen{' '}
+						Wenn vor dem Personalpronomen{' '}
 						<strong>
-							HU (<span className="arapski-lekcija ">هُ</span>)
+							HU (<span className="arapski-lekcija "> هُ</span>)
 						</strong>{' '}
-						ein <strong>langer Vokal </strong>A <span className="arapski-lekcija">ـــَــ ا</span> , I{' '}
+						einer der <strong>langen Vokale </strong>A <span className="arapski-lekcija">ـــَــ ا</span> , I{' '}
 						<span className="arapski-lekcija">ـــِـ ى </span>, U{' '}
-						<span className="arapski-lekcija">ـــُــ و</span> oder ein
+						<span className="arapski-lekcija">ـــُــ و</span> oder
 						<strong>
 							{' '}
-							Sukun <span className="arapski-lekcija">ــــْـــ</span>
+							sukun <span className="arapski-lekcija">ــــْـــ</span>
 						</strong>{' '}
-						, wird das Pronomen{' '}
+						vorkommt, dann liest man{' '}
 						<strong>
 							HU (<span className="arapski-lekcija">هُ</span>)
 						</strong>{' '}
-						<u>kurz</u> gesprochen:
+						<u>kurz</u>:
 					</Col>
 				</Row>
 
@@ -364,24 +364,23 @@ const TXT = {
 
 				<Row>
 					<Col className="opisLekcije">
-						Kommt vor dem Pronomen{' '}
+						Wenn vor dem Personalpronomen{' '}
 						<strong>
 							HU (<span className="arapski-lekcija">هُ</span>)
 						</strong>{' '}
-						ein
-						<strong> kurzer Vokal</strong> A <span className="arapski-lekcija">ــــَـــ</span> , I{' '}
+						einer der kurzen Vokale E <span className="arapski-lekcija">ــــَـــ</span> , I{' '}
 						<strong>
 							<span className="arapski-lekcija">ــــِــ </span>
 						</strong>
 						oder U{' '}
 						<strong>
 							<span className="arapski-lekcija">ــــُـــ</span>
-						</strong>
-						, wird das Pronomen{' '}
+						</strong>{' '}
+						vorkommt, dann liest man{' '}
 						<strong>
 							HU (<span className="arapski-lekcija">هُ</span>)
 						</strong>{' '}
-						<u>lang</u> gesprochen:
+						lang:
 					</Col>
 				</Row>
 
@@ -404,22 +403,22 @@ const TXT = {
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						Kommt vor dem Pronomen{' '}
+						Wenn vor dem Personalpronomen{' '}
 						<strong>
 							HU (<span className="arapski-lekcija "> هُ</span>)
 						</strong>{' '}
-						ein <strong>langer Vokal </strong>A <span className="arapski-lekcija">ـــَــ ا</span> , I{' '}
+						einer der <strong>langen Vokale </strong>A <span className="arapski-lekcija">ـــَــ ا</span> , I{' '}
 						<span className="arapski-lekcija">ـــِـ ى </span>, U{' '}
-						<span className="arapski-lekcija">ـــُــ و</span> oder ein
+						<span className="arapski-lekcija">ـــُــ و</span> oder
 						<strong>
 							{' '}
-							Sukun <span className="arapski-lekcija">ــــْـــ</span>
+							sukun <span className="arapski-lekcija">ــــْـــ</span>
 						</strong>{' '}
-						, wird das Pronomen{' '}
+						vorkommt, dann liest man{' '}
 						<strong>
 							HU (<span className="arapski-lekcija">هُ</span>)
 						</strong>{' '}
-						<u>kurz</u> gesprochen:
+						<u>kurz</u>:
 					</Col>
 				</Row>
 
@@ -433,24 +432,23 @@ const TXT = {
 
 				<Row>
 					<Col className="opisLekcije">
-						Kommt vor dem Pronomen{' '}
+						Wenn vor dem Personalpronomen{' '}
 						<strong>
 							HU (<span className="arapski-lekcija">هُ</span>)
 						</strong>{' '}
-						ein
-						<strong> kurzer Vokal</strong> A <span className="arapski-lekcija">ــــَـــ</span> , I{' '}
+						einer der kurzen Vokale E <span className="arapski-lekcija">ــــَـــ</span> , I{' '}
 						<strong>
 							<span className="arapski-lekcija">ــــِــ </span>
 						</strong>
-						oder U {' '}
+						oder U{' '}
 						<strong>
 							<span className="arapski-lekcija">ــــُـــ</span>
-						</strong>
-						, wird das Pronomen{' '}
+						</strong>{' '}
+						vorkommt, dann liest man{' '}
 						<strong>
 							HU (<span className="arapski-lekcija">هُ</span>)
 						</strong>{' '}
-						<u>lang</u> gesprochen:
+						lang:
 					</Col>
 				</Row>
 

@@ -211,29 +211,26 @@ const TXT = {
 	},
 
 	de: {
-		naziv: 'IDGHAM BILA GHUNNA',
-		naslov: '7 IDGHAM BILA GHUNNA',
+		naziv: 'IDGAM BILA GUNNEH',
+		naslov: '7 IDGAM BILA GUNNEH',
 		podnaslov: (
 			<React.Fragment>
-				<strong>Verschmelzen, ohne Luft durch die Nase</strong>
+				<strong>Vollständige Assimilation ohne Nasalisierung</strong>
 			</React.Fragment>
 		),
 		lekcija: (P, V) => (
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						Wenn auf den Buchstaben <strong>N</strong> mit <strong>Sukun</strong> (
-						<span className="arapski-lekcija">نْ</span>) oder auf das <strong>Tanwin</strong> AN{' '}
+						Wenn nach dem Buchstaben <strong>nun</strong> mit <strong>sukun</strong> (
+						<span className="arapski-lekcija">نْ</span>) oder <strong>tanwin</strong> EN{' '}
 						<span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
 						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
-						<span className="arapski-lekcija">ــٌــ</span> der Buchstabe <strong>L</strong>{' '}
-						<span className="arapski-lekcija">(ل) </span>oder <strong>R</strong>{' '}
-						<span className="arapski-lekcija">(ر)</span> folgt, kommt es zu einer{' '}
-						<u>vollständigen</u> Verschmelzung des Buchstabens <strong>N </strong>
-						<span className="arapski-lekcija"> (ن)</span> in den Buchstaben <strong>L</strong>{' '}
-						<span className="arapski-lekcija">(ل)</span> beziehungsweise <strong>R</strong>{' '}
-						<span className="arapski-lekcija">(ر)</span>, das heißt, <strong>N</strong>{' '}
-						<span className="arapski-lekcija">(ن)&nbsp;</span>wird gar nicht gesprochen, z. B.:
+						<span className="arapski-lekcija">ــٌــ</span> einer der zwei idgam Buchstaben <strong>L</strong>{' '}
+						<span className="arapski-lekcija">(ل) </span>und <strong>R</strong>{' '}
+						<span className="arapski-lekcija">(ر)</span>, unmittelbar danach folgt, wird <strong>N </strong>
+						<span className="arapski-lekcija"> (ن)</span> oder tanwin vollständig in die zuvor genannten
+						Buchstaben <strong>ohne</strong> Nasalisierung assimiliert. Zum Beispiel:
 					</Col>
 				</Row>
 				<Row>
@@ -264,19 +261,15 @@ const TXT = {
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						Wenn auf den Buchstaben <strong>N</strong> mit <strong>Sukun</strong> (
-						<span className="arapski-lekcija">نْ</span>) oder auf das <strong>Tanwin</strong> AN{' '}
+						Wenn nach dem Buchstaben <strong>nun</strong> mit <strong>sukun</strong> (
+						<span className="arapski-lekcija">نْ</span>) oder <strong>tanwin</strong> EN{' '}
 						<span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
 						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
-						<span className="arapski-lekcija">ــٌــ</span> der Buchstabe <strong>L</strong>{' '}
-						<span className="arapski-lekcija">(ل) </span>
-						oder <strong>R</strong> <span className="arapski-lekcija">(ر)</span> folgt, kommt es zu{' '}
-						einer <u>vollständigen</u> Verschmelzung des Buchstabens <strong>N </strong>
-						<span className="arapski-lekcija"> (ن)</span> in den Buchstaben <strong>L</strong>{' '}
-						<span className="arapski-lekcija">(ل)</span> beziehungsweise <strong>R</strong>{' '}
-						<span className="arapski-lekcija">(ر)</span>, das heißt, <strong>N</strong>{' '}
-						<span className="arapski-lekcija">(ن)</span>
-						wird gar nicht gesprochen, z. B.:
+						<span className="arapski-lekcija">ــٌــ</span> einer der zwei idgam Buchstaben <strong>L</strong>{' '}
+						<span className="arapski-lekcija">(ل) </span>und <strong>R</strong>{' '}
+						<span className="arapski-lekcija">(ر)</span>, unmittelbar danach folgt, wird <strong>N </strong>
+						<span className="arapski-lekcija"> (ن)</span> oder tanwin vollständig in die zuvor genannten
+						Buchstaben <strong>ohne</strong> Nasalisierung assimiliert. Zum Beispiel:
 					</Col>
 				</Row>
 				<Row>

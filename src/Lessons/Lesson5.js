@@ -208,25 +208,25 @@ const TXT = {
 	},
 
 	de: {
-		naziv: 'IDGHAM MITHLAIN MA’AL-GHUNNA',
-		naslov: '5 IDGHAM MITHLAIN MA’AL-GHUNNA',
+		naziv: 'IDGAM MITHLAYN MIT GHUNNAH',
+		naslov: '5 IDGAM MITHLAYN MIT GHUNNAH',
 		podnaslov: (
 			<React.Fragment>
-				<strong>Gleiche Buchstaben verschmelzen, mit Luft durch die Nase</strong>
+				<strong>Verschmelzung identischer Buchstaben mit Nasalausstoß</strong>
 			</React.Fragment>
 		),
 		lekcija: (P, V) => (
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						Wenn nach dem Buchstaben <strong>M</strong> <span className="arapski-lekcija">(م)</span> mit{' '}
-						<strong>Sukun</strong> ein Buchstabe <strong>M</strong>
-						<span className="arapski-lekcija"> (م) </span>mit <strong>Vokalzeichen</strong> kommt, dann kommt es zur{' '}
-						<u>Verschmelzung</u> des Buchstabens <strong>M</strong>
-						<span className="arapski-lekcija"> (م)</span> mit <strong>Sukun</strong> in den Buchstaben{' '}
+						Wenn der Buchstabe <strong>M</strong> <span className="arapski-lekcija">(م)</span> mit{' '}
+						<strong>sukoon</strong> auf den Buchstaben <strong>M</strong>
+						<span className="arapski-lekcija"> (م) </span>mit einer <strong>haraka</strong> folgt, wird der
+						Buchstabe <strong>M</strong>
+						<span className="arapski-lekcija"> (م)</span> mit <strong>sukoon</strong> mit dem Buchstaben{' '}
 						<strong>M</strong>
-						<span className="arapski-lekcija"> (م)</span> mit <strong>Vokalzeichen</strong> – dabei strömt die Luft
-						2 Harakat lang durch die Nase, z. B.:
+						<span className="arapski-lekcija"> (م)</span> mit <strong>haraka</strong> verschmolzen, wobei der
+						Luftstrom durch die Nase über zwei harakat anhält, zum Beispiel:
 					</Col>
 				</Row>
 
@@ -259,14 +259,14 @@ const TXT = {
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						Wenn nach dem Buchstaben <strong>M</strong> <span className="arapski-lekcija">(م)</span> mit{' '}
-						<strong>Sukun</strong> ein Buchstabe <strong>M</strong>
-						<span className="arapski-lekcija"> (م) </span>mit <strong>Vokalzeichen</strong> kommt, dann kommt es zur{' '}
-						<u>Verschmelzung</u> des Buchstabens <strong>M</strong>
-						<span className="arapski-lekcija"> (م)</span> mit <strong>Sukun</strong> in den Buchstaben{' '}
+						Wenn der Buchstabe <strong>M</strong> <span className="arapski-lekcija">(م)</span> mit{' '}
+						<strong>sukoon</strong> auf den Buchstaben <strong>M</strong>
+						<span className="arapski-lekcija"> (م) </span>mit einer <strong>haraka</strong> folgt, wird der
+						Buchstabe <strong>M</strong>
+						<span className="arapski-lekcija"> (م)</span> mit <strong>sukoon</strong> mit dem Buchstaben{' '}
 						<strong>M</strong>
-						<span className="arapski-lekcija"> (م)</span> mit <strong>Vokalzeichen</strong> – dabei strömt die
-						Luft 2 Harakat lang durch die Nase, z. B.:
+						<span className="arapski-lekcija"> (م)</span> mit <strong>haraka</strong> verschmolzen, wobei der
+						Luftstrom durch die Nase über zwei harakat anhält, zum Beispiel:
 					</Col>
 				</Row>
 

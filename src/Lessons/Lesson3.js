@@ -229,12 +229,12 @@ const TXT = {
 	},
 
 	de: {
-		naziv: 'LAFDHATULLAH',
-		naslov: '3 LAFDHATULLAH',
+		naziv: 'LAFZATULLAH',
+		naslov: '3 LAFZATULLAH',
 		podnaslov: (
 			<React.Fragment>
 				<strong>
-					Das Wort Allah <span className="arapski-lekcija"> اللّٰه </span> aussprechen
+					Aussprache des Wortes <span className="arapski-lekcija"> اللّٰه </span>
 				</strong>
 			</React.Fragment>
 		),
@@ -242,11 +242,10 @@ const TXT = {
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						Wenn vor dem Wort Allah <span className="arapski-lekcija"> اللّٰه </span>der{' '}
-						<strong>Vokal</strong> A <span className="arapski-lekcija"> ــــَـــ </span>oder der{' '}
-						<strong>Vokal</strong> U
-						<span className="arapski-lekcija">ــــُـــ </span>steht, wird das Wort Allah
-						<span className="arapski-lekcija">اللّٰه </span><u>dick</u> gesprochen, z. B.:
+						Wenn vor dem Wort Allah <span className="arapski-lekcija"> اللّٰه </span>der <strong>Vokal</strong>{' '}
+						fatha <span className="arapski-lekcija"> ــــَـــ </span>oder <strong>Vokal</strong> damma{' '}
+						<span className="arapski-lekcija">ــــُـــ </span>steht, dann liest man das Wort Allah{' '}
+						<span className="arapski-lekcija">اللّٰه </span>kraftvoll. Zum Beispiel:
 					</Col>
 				</Row>
 				<Row className="text-center  reorder-basic ">
@@ -258,10 +257,8 @@ const TXT = {
 
 				<Row>
 					<Col className="opisLekcije">
-						Wenn vor dem Wort Allah
-						<span className="arapski-lekcija"> اللّٰه</span> der <strong>Vokal</strong> I
-						<span className="arapski-lekcija"> ــــِــ</span> steht, wird das Wort Allah
-						<span className="arapski-lekcija"> اللّٰه</span> <u>dünn</u> gesprochen, z. B.:
+						Wenn aber davor eine kasra <span className="arapski-lekcija"> ــــِــ</span> steht, wird das Wort
+						Allah <span className="arapski-lekcija"> اللّٰه</span> weich ausgesprochen. Zum Beispiel:
 					</Col>
 				</Row>
 
@@ -290,11 +287,10 @@ const TXT = {
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						Wenn vor dem Wort Allah <span className="arapski-lekcija"> اللّٰه </span>der{' '}
-						<strong>Vokal</strong> A <span className="arapski-lekcija"> ــــَـــ </span>oder der{' '}
-						<strong>Vokal</strong> U
-						<span className="arapski-lekcija">ــــُـــ </span>steht, wird das Wort Allah
-						<span className="arapski-lekcija">اللّٰه </span><u>dick</u> gesprochen, z. B.:
+						Wenn vor dem Wort Allah <span className="arapski-lekcija"> اللّٰه </span>der <strong>Vokal</strong>{' '}
+						fatha <span className="arapski-lekcija"> ــــَـــ </span>oder <strong>Vokal</strong> damma{' '}
+						<span className="arapski-lekcija">ــــُـــ </span>steht, dann liest man das Wort Allah{' '}
+						<span className="arapski-lekcija">اللّٰه </span>kraftvoll. Zum Beispiel:
 					</Col>
 				</Row>
 				<Row className="text-center  reorder-basic ">
@@ -306,10 +302,8 @@ const TXT = {
 
 				<Row>
 					<Col className="opisLekcije">
-						Wenn vor dem Wort Allah
-						<span className="arapski-lekcija"> اللّٰه</span> der <strong>Vokal</strong> I
-						<span className="arapski-lekcija"> ــــِــ</span> steht, wird das Wort Allah
-						<span className="arapski-lekcija"> اللّٰه</span> <u>dünn</u> gesprochen, z. B.:
+						Wenn aber davor eine kasra <span className="arapski-lekcija"> ــــِــ</span> steht, wird das Wort
+						Allah <span className="arapski-lekcija"> اللّٰه</span> weich ausgesprochen. Zum Beispiel:
 					</Col>
 				</Row>
 

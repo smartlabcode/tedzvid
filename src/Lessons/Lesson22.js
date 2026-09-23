@@ -332,23 +332,24 @@ const TXT = {
 	},
 
 	de: {
-		naziv: 'MADD LIN',
-		naslov: '22 MADD LIN',
+		naziv: 'MEDD LIN',
+		naslov: '22 MEDD LIN',
 		podnaslov: (
 			<React.Fragment>
-				<strong>Dehnung des weichen Buchstabens</strong>
+				<strong>Halbvokalische Verlängerung</strong>
 			</React.Fragment>
 		),
 		lekcija: (P, V) => (
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						Wenn die Buchstaben <strong>W</strong> oder <strong>Y</strong> ein{' '}
+						Wenn die Buchstaben <strong>W</strong> oder <strong>J</strong>{' '}
 						<strong>
-							Sukun <span className="arapski-lekcija">(يْ / وْ)</span>
-						</strong>
-						, davor einen <strong>kurzen Vokal</strong> A <span className="arapski-lekcija">ـــَـــ </span> und
-						danach einen Buchstaben mit <strong>Sukun</strong> haben, ist es Madd Lin, z. B.:
+							mit Sukūn <span className="arapski-lekcija">(يْ / وْ)</span>
+						</strong>{' '}
+						vorkommen, ihnen ein <strong>kurzer Vokal</strong> E <span className="arapski-lekcija">ـــَـــ </span>{' '}
+						vorausgeht und ihnen ein Buchstabe mit <strong>sukun</strong> folgt, nennt man das medd lin. Zum
+						Beispiel:
 					</Col>
 				</Row>
 
@@ -374,8 +375,8 @@ const TXT = {
 
 				<Row>
 					<Col className="opisLekcije">
-						Diese Dehnung auf dem Buchstaben <strong>W</strong> <span className="arapski-lekcija"> (و)</span> oder{' '}
-						<strong>Y</strong> <span className="arapski-lekcija"> (ى)</span> dauert 2, 4 oder 6 Harakat.
+						Die Verlängerung auf dem Buchstaben <strong>W</strong> <span className="arapski-lekcija"> (و)</span> oder{' '}
+						<strong>J</strong> <span className="arapski-lekcija"> (ى)</span> beträgt 2-4-6 kurze Vokale.
 					</Col>
 				</Row>
 
@@ -414,13 +415,13 @@ const TXT = {
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						Wenn die Buchstaben <strong>W</strong> oder <strong>Y</strong> ein{' '}
+						Wenn die Buchstaben <strong>W</strong> oder <strong>J</strong>{' '}
 						<strong>
-							Sukun <span className="arapski-lekcija">(يْ / وْ)</span>
-						</strong>
-						, davor einen <strong>kurzen Vokal</strong> A{' '}
-						<span className="arapski-lekcija">ـــَـــ </span> und danach einen Buchstaben mit{' '}
-						<strong>Sukun</strong> haben, ist es Madd Lin, z. B.:
+							mit Sukūn <span className="arapski-lekcija">(يْ / وْ)</span>
+						</strong>{' '}
+						vorkommen, ihnen ein <strong>kurzer Vokal</strong> E <span className="arapski-lekcija">ـــَـــ </span>{' '}
+						vorausgeht und ihnen ein Buchstabe mit <strong>sukun</strong> folgt, nennt man das medd lin. Zum
+						Beispiel:
 					</Col>
 				</Row>
 
@@ -444,8 +445,8 @@ const TXT = {
 
 				<Row>
 					<Col className="opisLekcije">
-						Diese Dehnung auf dem Buchstaben <strong>W</strong> <span className="arapski-lekcija"> (و)</span> oder{' '}
-						<strong>Y</strong> <span className="arapski-lekcija"> (ى)</span> dauert 2, 4 oder 6 Harakat.
+						Die Verlängerung auf dem Buchstaben <strong>W</strong> <span className="arapski-lekcija"> (و)</span> oder{' '}
+						<strong>J</strong> <span className="arapski-lekcija"> (ى)</span> beträgt 2-4-6 kurze Vokale.
 					</Col>
 				</Row>
 

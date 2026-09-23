@@ -6,7 +6,7 @@ import { jezik } from './LanguageContext';
  * znakovi koji su isti u svim jezicima, pa se ovdje prevode samo riječi.
  */
 const VEZNICI = {
-	'čita se:': { en: 'is recited as:', de: 'wird gelesen:' }
+	'čita se:': { en: 'is recited as:', de: 'wird ausgesprochen:' }
 };
 
 export default function vezniTekst(after) {

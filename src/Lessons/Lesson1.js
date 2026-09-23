@@ -398,23 +398,23 @@ const TXT = {
 	},
 
 	de: {
-		naziv: 'WAQF',
-		naslov: '1 Waqf',
-		podnaslov: 'Anhalten beim Lesen',
+		naziv: 'VAKF',
+		naslov: '1 Vakf',
+		podnaslov: 'Das Anhalten',
 		lekcija: (P, V) => (
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						Beim Koranlesen darfst du in diesen Fällen anhalten: am Ende eines Verses, wo ein
-						Pausenzeichen steht, und wenn dir die Luft ausgeht. So machst du es:
+						Während der Koranrezitation ist es in folgenden Situationen erlaubt anzuhalten: am Ende des
+						Verses, beim Haltezeichen, und wenn der Leser Luft holen muss. In diesen Fällen muss der
+						Koranleser wie folgt anhalten:
 					</Col>
 				</Row>
 				<Row>
 					<Col className="opisLekcije my-3">
-						<strong>1.</strong> Endet das Wort, bei dem du anhältst, auf den{' '}
-						<strong>kurzen Vokal</strong> A <A> ــــَـــ</A> , I <A> ــــِــ</A> , U <A> ــــُـــ </A>oder auf
-						das <strong>Tanwin</strong> IN <A> ــــٍــ </A> , UN <A> ـــٌـــ</A> , hältst du an, als stünde
-						auf dem Wort ein <strong>Sukun</strong> <A> ــــْـــ</A> , z. B.:
+						<strong>1.</strong> Wenn das Wort, bei dem er anhält, mit E <A> ــــَـــ</A> , I <A> ــــِــ</A> , U{' '}
+						<A> ــــُـــ </A>oder <strong>tanwin</strong> IN <A> ــــٍــ </A> , UN <A> ـــٌـــ</A> endet, dann
+						liest er das Wort mit <strong>sukun</strong> <A> ــــْـــ</A> , zum Beispiel:
 					</Col>
 				</Row>
 				<Row className="text-center reorder">
@@ -422,8 +422,8 @@ const TXT = {
 				</Row>
 				<Row>
 					<Col className="opisLekcije my-3">
-						<strong>2.</strong> Endet das Wort auf das <strong>Tanwin</strong> AN <A> ــــًــ</A> , hältst
-						du an, als wäre dort ein <strong>langes</strong> A <A> ـــَـــ ا </A> , z. B.:
+						<strong>2.</strong> Wenn das Wort mit <strong>tanwin</strong> EN <A> ــــًــ</A> endet, dann hält
+						der Leser an, als wäre es ein <strong>langes</strong> A <A> ـــَـــ ا </A> , zum Beispiel:
 					</Col>
 				</Row>
 				<Row className="text-center reorder">
@@ -431,9 +431,9 @@ const TXT = {
 				</Row>
 				<Row>
 					<Col className="opisLekcije my-3">
-						<strong>3.</strong> Endet das Wort auf den <strong>langen Vokal</strong> A <A> ــــَـــ ا </A>{' '}
-						, den <strong>langen Vokal</strong> I <A>ـــِــ ى</A> oder den <strong>langen Vokal</strong> U{' '}
-						<A>ـــُــ و</A> , hältst du an, <u>ohne etwas zu ändern</u>, z. B.:
+						<strong>3.</strong> Wenn das Wort mit <strong>langem Vokal</strong> A <A> ــــَـــ ا </A> , I{' '}
+						<A>ـــِــ ى</A> oder U <A>ـــُــ و</A> endet, dann bleibt das Wortende <u>unverändert</u>, zum
+						Beispiel:
 					</Col>
 				</Row>
 				<Row className="text-center ">
@@ -447,9 +447,9 @@ const TXT = {
 				</Row>
 				<Row>
 					<Col className="opisLekcije my-3">
-						<strong>4.</strong> Endet das Wort auf das runde <strong>T</strong> <A>(ة/ـة)</A> , hältst du an,
-						als stünde dort der Buchstabe <strong>H </strong>
-						<A>(ه)</A> , ganz gleich, welcher Vokal oder welches Tanwin darauf steht, z. B.:
+						<strong>4.</strong> Wenn das Wort mit rundem <strong>T</strong> <A>(ة/ـة)</A> endet, dann liest
+						man es mit dem <strong>H </strong>
+						<A>(ه)</A> am Ende, unabhängig davon, ob es mit einem Vokal oder tanwin endet, zum Beispiel:
 					</Col>
 				</Row>
 				<Row className="text-center reorder">
@@ -461,63 +461,61 @@ const TXT = {
 			<Table className="tabela-opis text-center" bordered hover responsive>
 				<thead className="text-danger text-uppercase">
 					<tr>
-						<th>Das Wort endet auf</th>
-						<th>Wir halten an</th>
+						<th>Wenn das Wort mit … endet</th>
+						<th>Dann halten wir …</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
 						<td>
-							A <A>ــــَـــ</A> , I <A> ــــِــ</A> , U <A> ــــُـــ</A> , IN <A> ـــٍـــ </A> , UN{' '}
+							E <A>ــــَـــ</A> , I <A> ــــِــ</A> , U <A> ــــُـــ</A> , IN <A> ـــٍـــ </A> , oder UN{' '}
 							<A> ـــٌــ</A>
 						</td>
 						<td>
-							als wäre dort ein Sukun <A> ـــْــ</A>
+							als wäre es ein sukun <A> ـــْــ</A>
 						</td>
 					</tr>
 					<tr>
 						<td>
-							AN <A> ـــًــ</A>
+							EN <A> ـــًــ</A>
 						</td>
 						<td>
-							als wäre dort ein langes A
-							<br />
-							<A> ــَــ ا</A>
+							als wäre es ein A <A> ــَــ ا</A>
 						</td>
 					</tr>
 					<tr>
 						<td>
-							langes A <A>ـــَــ ا</A> , langes I <A>ـــِـ ى</A> , langes U <A>ـــُــ و</A>
+							langem A <A>ـــَــ ا</A> , I <A>ـــِـ ى</A> , oder U <A>ـــُــ و</A>
 						</td>
-						<td>ohne jede Änderung</td>
+						<td>ohne Veränderung</td>
 					</tr>
 					<tr>
 						<td>
-							rundes T <A> (ة/ـة)</A>
+							rundem T <A> (ة/ـة)</A>
 						</td>
 						<td>
-							als wäre dort ein H <A> (ه)</A>
+							als wäre es ein H <A> (ه)</A>
 						</td>
 					</tr>
 				</tbody>
 			</Table>
 		),
-		znakoviNaslov: 'Pausenzeichen:',
+		znakoviNaslov: 'Haltezeichen:',
 		znakovi: (
 			<React.Fragment>
 				<p>
-					Über manchen Wörtern im Koran stehen <strong>Zeichen</strong>. Sie sagen dir, ob du bei diesem
-					Wort anhalten musst oder nicht anhalten darfst, ob du besser anhältst oder besser weiterliest.
-					Das sind die Zeichen:
+					Über manchen Wörtern im Koran stehen <strong>Haltezeichen</strong>, die darauf hinweisen, ob man
+					bei diesem Wort halten muss oder nicht, oder ob es vorteilhafter wäre anzuhalten oder
+					weiterzulesen. Diese Haltezeichen sind:
 				</p>
 				<br />
 				<Table className="tabela-opis text-center" bordered hover responsive>
 					<thead className="text-uppercase">
 						<tr>
-							<th className="text-danger">Muss anhalten</th>
-							<th>Besser anhalten</th>
-							<th>Besser weiterlesen</th>
-							<th className="text-danger">Darf nicht anhalten</th>
+							<th className="text-danger">Haltepflicht</th>
+							<th>es ist besser anzuhalten</th>
+							<th>es ist besser weiterzulesen</th>
+							<th className="text-danger">Halteverbot</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -543,7 +541,7 @@ const TXT = {
 				<Table className="tabela-opis text-center" bordered hover responsive>
 					<thead className="text-uppercase">
 						<tr>
-							<th>Sakta</th>
+							<th>Sekta</th>
 							<th>Drei Punkte</th>
 						</tr>
 					</thead>
@@ -552,12 +550,13 @@ const TXT = {
 							<td>
 								<A> سكتة ؛ س</A>
 								<br />
-								Hier machst du eine kurze Pause, ohne Luft zu holen.
+								Atempause.
 							</td>
 							<td>
 								<A> رَيْبَۚۛ ف۪يهِۚۛ </A>
 								<br />
-								Hältst du beim ersten Zeichen an, musst du beim zweiten weiterlesen – und umgekehrt.
+								Anhalten an einem der zwei Wörter mit den drei Punkten ∴ und verpflichtendes Weiterlesen
+								beim zweiten.
 							</td>
 						</tr>
 					</tbody>
@@ -566,9 +565,9 @@ const TXT = {
 				<br />
 
 				<p>
-					<strong>HINWEIS</strong>: Das Zeichen <A> قصر</A> unter einem Wort bedeutet, dass der Vokal
-					darüber <u>kurz</u> gesprochen wird, und <A> مد </A>bedeutet, dass der Vokal <u>lang</u>{' '}
-					gesprochen wird.
+					<strong>WICHTIG</strong>: Wenn sich das Zeichen kurz <A> قصر</A> unter einem Wort befindet, dann
+					liest man es <u>kurz</u>. Wenn sich dieses Zeichen lang <A> مد </A> unter einem Wort befindet,
+					dann liest man es <u>lang</u>.
 				</p>
 			</React.Fragment>
 		)

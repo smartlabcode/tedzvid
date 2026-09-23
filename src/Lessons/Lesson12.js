@@ -164,21 +164,20 @@ const TXT = {
 	},
 
 	de: {
-		naziv: 'ICHFA SCHAFAWI',
-		naslov: '12 ICHFA SCHAFAWI',
+		naziv: 'IHFA SHAFAWI',
+		naslov: '12 IHFA SHAFAWI',
 		podnaslov: (
 			<React.Fragment>
-				<strong>Den Buchstaben M (م) verstecken</strong>
+				<strong>Verbergen des Buchstabens M (م)</strong>
 			</React.Fragment>
 		),
 		lekcija: (P, V) => (
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						Wenn nach dem Buchstaben <strong>M</strong> mit <strong>Sukun</strong> (
-						<span className="arapski-lekcija">مْ</span>) der Buchstabe <strong>B</strong> (<span className="arapski-lekcija">ب</span>) kommt,
-						wird der Buchstabe <strong>M</strong> (
-						<span className="arapski-lekcija">م</span>) 2 Harakat lang gesprochen, z. B.:
+						Wenn nach dem Buchstaben <strong>M</strong> mit <strong>sukun</strong> (
+						<span className="arapski-lekcija">مْ</span>) der Buchstabe <strong>B</strong> (
+						<span className="arapski-lekcija">ب</span>) folgt, wird M nasal ausgesprochen. Zum Beispiel:
 					</Col>
 				</Row>
 
@@ -205,10 +204,9 @@ const TXT = {
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						Wenn nach dem Buchstaben <strong>M</strong> mit <strong>Sukun</strong> (
-						<span className="arapski-lekcija">مْ</span>) der Buchstabe <strong>B</strong> (<span className="arapski-lekcija">ب</span>) kommt,
-						wird der Buchstabe <strong>M</strong> (
-						<span className="arapski-lekcija">م</span>) 2 Harakat lang gesprochen, z. B.:
+						Wenn nach dem Buchstaben <strong>M</strong> mit <strong>sukun</strong> (
+						<span className="arapski-lekcija">مْ</span>) der Buchstabe <strong>B</strong> (
+						<span className="arapski-lekcija">ب</span>) folgt, wird M nasal ausgesprochen. Zum Beispiel:
 					</Col>
 				</Row>
 

@@ -236,30 +236,29 @@ const TXT = {
 	},
 
 	de: {
-		naziv: 'IDH-HAR SCHAFAWI',
-		naslov: '10 IDH-HAR SCHAFAWI',
+		naziv: 'IZHAR SHAFAWI',
+		naslov: '10 IZHAR SHAFAWI',
 		podnaslov: (
 			<React.Fragment>
-				<strong>Das M (م) deutlich aussprechen</strong>
+				<strong>Deutlich klare Aussprache des Buchstabens M (م)</strong>
 			</React.Fragment>
 		),
 		lekcija: (P, V) => (
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						Wenn der Buchstabe <strong>M</strong> mit <strong>Sukun</strong> (
-						<span className="arapski-lekcija">مْ</span>) vor <u>irgendeinem</u> Buchstaben steht, <u>außer</u>{' '}
-						vor den Buchstaben <strong>B</strong> (
-						<span className="arapski-lekcija">ب</span>) und{' '}
+						Wenn der Buchstabe <strong>M</strong> mit <strong>sukun</strong> (
+						<span className="arapski-lekcija">مْ</span>) <u>vor irgendeinem beliebigen</u> <u>außer</u> Buchstaben{' '}
+						<strong>B</strong> (<span className="arapski-lekcija">ب</span>) oder{' '}
 						<strong>
 							M (<span className="arapski-lekcija">م</span>){' '}
-						</strong>
-						, dann wird der Buchstabe
+						</strong>{' '}
+						vorkommt, dann liest man
 						<strong>
 							{' '}
 							M (<span className="arapski-lekcija">م</span>){' '}
 						</strong>{' '}
-						<u>deutlich</u> ausgesprochen, also ohne Verschmelzung, z. B.:
+						<u>deutlich und klar</u> ohne Assimilation. Zum Beispiel:
 					</Col>
 				</Row>
 
@@ -299,18 +298,18 @@ const TXT = {
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						Wenn der Buchstabe <strong>M</strong> mit <strong>Sukun</strong> (
-						<span className="arapski-lekcija">مْ</span>) vor <u>irgendeinem</u> Buchstaben steht,{' '}
-						<u>außer</u> vor den Buchstaben <strong>B</strong> (<span className="arapski-lekcija">ب</span>) und{' '}
+						Wenn der Buchstabe <strong>M</strong> mit <strong>sukun</strong> (
+						<span className="arapski-lekcija">مْ</span>) <u>vor irgendeinem beliebigen</u> <u>außer</u> Buchstaben{' '}
+						<strong>B</strong> (<span className="arapski-lekcija">ب</span>) oder{' '}
 						<strong>
 							M (<span className="arapski-lekcija">م</span>){' '}
-						</strong>
-						, dann wird der Buchstabe
+						</strong>{' '}
+						vorkommt, dann liest man
 						<strong>
 							{' '}
 							M (<span className="arapski-lekcija">م</span>){' '}
 						</strong>{' '}
-						<u>deutlich</u> ausgesprochen, also ohne Verschmelzung, z. B.:
+						<u>deutlich und klar</u> ohne Assimilation. Zum Beispiel:
 					</Col>
 				</Row>
 

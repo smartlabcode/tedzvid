@@ -222,28 +222,24 @@ const TXT = {
 	},
 
 	de: {
-		naziv: 'MADD LAZIM',
-		naslov: '20 MADD LAZIM',
+		naziv: 'MEDD LAZIM',
+		naslov: '20 MEDD LAZIM',
 		podnaslov: (
 			<React.Fragment>
-				<strong>Feste Dehnung</strong>
+				<strong>Verpflichtende Länge</strong>
 			</React.Fragment>
 		),
 		lekcija: (P, V) => (
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						Wenn nach dem <strong>langen Vokal</strong> A <span className="arapski-lekcija">ـــَــ ا</span> ,
-						I
-						<span className="arapski-lekcija"> ـــِـ ى </span>, U{' '}
-						<span className="arapski-lekcija">ـــُــ و</span> ein Buchstabe mit{' '}
-						<strong>
-							festem Sukun <span className="arapski-lekcija"> ـــْــ </span>
-						</strong>{' '}
-						<strong>
-							oder einer Schadda (Verdopplungszeichen) <span className="arapski-lekcija"> ـــّــ </span>
-						</strong>
-						kommt, ist es Madd Lazim. Es muss 6 Harakat dauern, z. B.:
+						Wenn nach <strong>einem langen Vokal</strong> A <span className="arapski-lekcija">ـــَــ ا</span> , I
+						<span className="arapski-lekcija"> ـــِـ ى </span>, oder U{' '}
+						<span className="arapski-lekcija">ـــُــ و</span> ein Buchstabe mit <strong>dauerhaftem sukun</strong>{' '}
+						<span className="arapski-lekcija"> ـــْــ </span> (sichtbar oder verborgen) oder <strong>Schadda</strong>
+						<span className="arapski-lekcija"> ـــّــ</span> folgt, nennt man das <strong>Medd Lāzim</strong>. Die
+						Länge der Aussprache ist verpflichtend 6 kurze Vokale. Zum Beispiel:
+						<br />
 						{P('row1')}
 					</Col>
 				</Row>
@@ -276,17 +272,13 @@ const TXT = {
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						Wenn nach dem <strong>langen Vokal</strong> A{' '}
-						<span className="arapski-lekcija">ـــَــ ا</span> , I
-						<span className="arapski-lekcija"> ـــِـ ى </span>, U{' '}
-						<span className="arapski-lekcija">ـــُــ و</span> ein Buchstabe mit{' '}
-						<strong>
-							festem Sukun <span className="arapski-lekcija"> ـــْــ </span>
-						</strong>{' '}
-						<strong>
-							oder einer Schadda (Verdopplungszeichen) <span className="arapski-lekcija"> ـــّــ </span>
-						</strong>
-						kommt, ist es Madd Lazim. Es muss 6 Harakat dauern, z. B.:
+						Wenn nach <strong>einem langen Vokal</strong> A <span className="arapski-lekcija">ـــَــ ا</span> , I
+						<span className="arapski-lekcija"> ـــِـ ى </span>, oder U{' '}
+						<span className="arapski-lekcija">ـــُــ و</span> ein Buchstabe mit <strong>dauerhaftem sukun</strong>{' '}
+						<span className="arapski-lekcija"> ـــْــ </span> (sichtbar oder verborgen) oder <strong>Schadda</strong>
+						<span className="arapski-lekcija"> ـــّــ</span> folgt, nennt man das <strong>Medd Lāzim</strong>. Die
+						Länge der Aussprache ist verpflichtend 6 kurze Vokale. Zum Beispiel:
+						<br />
 						{P('row1')}
 					</Col>
 				</Row>

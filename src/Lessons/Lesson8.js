@@ -224,27 +224,27 @@ const TXT = {
 
 	de: {
 		naziv: 'IQLAB',
-		naslov: '8 IQLAB',
+		naslov: '8 IKLAB',
 		podnaslov: (
 			<React.Fragment>
-				<strong>Den Buchstaben N (ن) in M (م) verwandeln</strong>
+				<strong>Partielle Verwandlung von N (ن) und tanwin in den Buchstaben M (م) mit Nasalisierung</strong>
 			</React.Fragment>
 		),
 		lekcija: (P, V) => (
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						Wenn nach dem Buchstaben <strong>N</strong> mit <strong>Sukun</strong> (
-						<span className="arapski-lekcija">نْ</span>) oder nach dem <strong>Tanwin</strong> AN{' '}
+						Wenn nach dem Buchstaben <strong>N</strong> mit <strong>sukun</strong> (
+						<span className="arapski-lekcija">نْ</span>) oder <strong>tanwin</strong> EN{' '}
 						<span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
 						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
-						<span className="arapski-lekcija">ــٌــ</span> der Buchstabe <strong>B</strong> (<span className="arapski-lekcija">ب</span>) kommt,
-						dann gilt: Der Buchstabe <strong>N</strong> (
-						<span className="arapski-lekcija">ن</span>) <u>verwandelt</u> sich in den Buchstaben{' '}
+						<span className="arapski-lekcija">ــٌــ</span> der Buchstabe <strong>B</strong> (
+						<span className="arapski-lekcija">ب</span>) folgt, wird nun mit sukun <strong>N</strong> (
+						<span className="arapski-lekcija">ن</span>) oder tanwin <u>partiell zu mim</u>{' '}
 						<strong>
 							M (<span className="arapski-lekcija">م</span>){' '}
 						</strong>
-						für die Dauer von 2 Harakat:
+						verwandelt. Zum Beispiel:
 					</Col>
 				</Row>
 				<Row>
@@ -277,17 +277,17 @@ const TXT = {
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						Wenn nach dem Buchstaben <strong>N</strong> mit <strong>Sukun</strong> (
-						<span className="arapski-lekcija">نْ</span>) oder nach dem <strong>Tanwin</strong> AN{' '}
+						Wenn nach dem Buchstaben <strong>N</strong> mit <strong>sukun</strong> (
+						<span className="arapski-lekcija">نْ</span>) oder <strong>tanwin</strong> EN{' '}
 						<span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
 						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
-						<span className="arapski-lekcija">ــٌــ</span> der Buchstabe <strong>B</strong> (<span className="arapski-lekcija">ب</span>) kommt,
-						dann gilt: Der Buchstabe <strong>N</strong> (
-						<span className="arapski-lekcija">ن</span>) <u>verwandelt</u> sich in den Buchstaben{' '}
+						<span className="arapski-lekcija">ــٌــ</span> der Buchstabe <strong>B</strong> (
+						<span className="arapski-lekcija">ب</span>) folgt, wird nun mit sukun <strong>N</strong> (
+						<span className="arapski-lekcija">ن</span>) oder tanwin <u>partiell zu mim</u>{' '}
 						<strong>
 							M (<span className="arapski-lekcija">م</span>){' '}
 						</strong>
-						für die Dauer von 2 Harakat:
+						verwandelt. Zum Beispiel:
 					</Col>
 				</Row>
 

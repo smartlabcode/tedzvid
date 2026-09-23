@@ -406,12 +406,12 @@ const TXT = {
 	},
 
 	de: {
-		naziv: 'HUKM AR-RA',
-		naslov: '14 HUKM AR-RA',
+		naziv: 'HUKMURRA',
+		naslov: '14 HUKMURRA',
 		podnaslov: (
 			<React.Fragment>
 				<strong>
-					Den Buchstaben R <span className="arapski-lekcija">(ر)</span> aussprechen
+					Aussprache des Buchstabens R <span className="arapski-lekcija">(ر)</span>
 				</strong>
 			</React.Fragment>
 		),
@@ -420,23 +420,22 @@ const TXT = {
 				<Row>
 					<Col className="opisLekcije">
 						Der Buchstabe<strong> R </strong>
-						<span className="arapski-lekcija">(ر)</span> wird in diesen Fällen <u>dick</u> gesprochen:
+						<span className="arapski-lekcija">(ر)</span> wird <u>kraftvoll</u> ausgesprochen, wenn:
 					</Col>
 				</Row>
 
 				<Row>
 					<Col className="opisLekcije">
-						<strong>1.</strong> wenn der Buchstabe<strong> R </strong>den <strong>Vokal</strong> A trägt ({' '}
-						{P('row1')}) oder den <strong>Vokal</strong> U ( {P('row2')}), z. B.:{' '}
-						<br />
+						<strong>1.</strong> Auf dem<strong> R </strong>einer <strong>der Vokale</strong> E ( {P('row1')}) oder U
+						vorkommt ( {P('row2')}), zum Beispiel: <br />
 						{P('row3')}
 					</Col>
 				</Row>
 
 				<Row>
 					<Col className="opisLekcije">
-						<strong>2.</strong> wenn der Buchstabe<strong> R </strong>ein <strong>Sukun</strong> trägt und davor
-						ein Buchstabe mit dem <strong>Vokal</strong> A steht (
+						<strong>2.</strong> Wenn vor dem <strong> R </strong>mit <strong>sukun</strong>, ein Buchstabe mit{' '}
+						<strong>Vokal</strong> E (
 						<span className="arapski-lekcija" style={{ color: 'red' }}>
 							{' '}
 							ــَـ رْ{' '}
@@ -445,7 +444,7 @@ const TXT = {
 						<span className="arapski-lekcija" style={{ color: 'red' }}>
 							ــُـ رْ
 						</span>
-						), z. B.:
+						) vorkommt, zum Beispiel:
 						<br />
 						{P('row4')}
 					</Col>
@@ -453,12 +452,12 @@ const TXT = {
 
 				<Row>
 					<Col className="opisLekcije">
-						<strong>3.</strong> wenn der Buchstabe
+						<strong>3.</strong> Wenn der Buchstabe
 						<strong>
 							<strong> R </strong>
 						</strong>
-						ein <strong>Sukun</strong> trägt, davor ein Buchstabe mit <strong>Sukun</strong> steht und davor ein Buchstabe mit dem{' '} 
-						<strong>Vokal</strong> A (
+						mit <strong>sukun</strong>, und vor dem R ein anderer Buchstabe ebenfalls mit <strong>sukun</strong>,
+						vorkommt und vor diesem ein Buchstabe mit <strong>Vokal</strong> E (
 						<span className="arapski-lekcija" style={{ color: 'red' }}>
 							{' '}
 							ــَـ ــْـ رْ{' '}
@@ -468,28 +467,30 @@ const TXT = {
 							{' '}
 							ــُـ ــْـ رْ{' '}
 						</span>
-						), z. B.:<br /> {P('row5')}
+						) steht, zum Beispiel:
+						<br /> {P('row5')}
 					</Col>
 				</Row>
 
 				<Row>
 					<Col className="opisLekcije">
-						<strong>4.</strong> wenn der Buchstabe<strong> R </strong>ein <strong>Sukun</strong> trägt (
+						<strong>4.</strong> Wenn der Buchstabe <strong> R </strong>mit <strong>sukun</strong> (
 						<span className="arapski-lekcija" style={{ color: 'red' }}>
 							رْ
 						</span>
-						) und davor ein Laut mit vorübergehender Kasra steht, z. B.: <br />
+						), und vor ihm ein anderer Buchstabe mit einer nicht ursprünglichen Kasra steht, zum Beispiel: <br />
 						{P('row6')}
 					</Col>
 				</Row>
 
 				<Row>
 					<Col className="opisLekcije">
-						<strong>5.</strong> wenn der Buchstabe<strong> R </strong>ein <strong>Sukun</strong> trägt (
+						<strong>5.</strong> Auf dem <strong> R </strong> ein <strong>sukun</strong> ist (
 						<span className="arapski-lekcija" style={{ color: 'red' }}>
 							رْ
 						</span>
-						) und danach einer der dicken Buchstaben kommt, z. B.:<br /> {P('row7')}
+						) , und ihm einer der kraftvollen Buchstaben folgt, zum Beispiel:
+						<br /> {P('row7')}
 					</Col>
 				</Row>
 
@@ -506,24 +507,22 @@ const TXT = {
 				<Row>
 					<Col className="opisLekcije">
 						Der Buchstabe<strong> R </strong>
-						<span className="arapski-lekcija">(ر)</span> wird in diesen Fällen <u>dick</u>
-						gesprochen:
+						<span className="arapski-lekcija">(ر)</span> wird <u>kraftvoll</u> ausgesprochen, wenn:
 					</Col>
 				</Row>
 
 				<Row>
 					<Col className="opisLekcije">
-						<strong>1.</strong> wenn der Buchstabe<strong> R </strong>den <strong>Vokal</strong> A trägt ({' '}
-						{P('row1')}) oder den <strong>Vokal</strong> U ( {P('row2')}),
-						z. B.: <br />
+						<strong>1.</strong> Auf dem<strong> R </strong>einer <strong>der Vokale</strong> E ( {P('row1')}) oder U
+						vorkommt ( {P('row2')}), zum Beispiel: <br />
 						{P('row3')}
 					</Col>
 				</Row>
 
 				<Row>
 					<Col className="opisLekcije">
-						<strong>2.</strong> wenn der Buchstabe<strong> R </strong>ein <strong>Sukun</strong> trägt und
-						davor ein Buchstabe mit dem <strong>Vokal</strong> A steht (
+						<strong>2.</strong> Wenn vor dem <strong> R </strong>mit <strong>sukun</strong>, ein Buchstabe mit{' '}
+						<strong>Vokal</strong> E (
 						<span className="arapski-lekcija" style={{ color: 'red' }}>
 							{' '}
 							ــَـ رْ{' '}
@@ -532,7 +531,7 @@ const TXT = {
 						<span className="arapski-lekcija" style={{ color: 'red' }}>
 							ــُـ رْ
 						</span>
-						), z. B.:
+						) vorkommt, zum Beispiel:
 						<br />
 						{P('row4')}
 					</Col>
@@ -540,13 +539,12 @@ const TXT = {
 
 				<Row>
 					<Col className="opisLekcije">
-						<strong>3.</strong> wenn der Buchstabe
+						<strong>3.</strong> Wenn der Buchstabe
 						<strong>
 							<strong> R </strong>
 						</strong>
-						ein <strong>Sukun</strong> trägt, davor ein Buchstabe mit <strong>Sukun</strong> steht und
-						davor ein Buchstabe mit dem{' '} 
-						<strong>Vokal</strong> A (
+						mit <strong>sukun</strong>, und vor dem R ein anderer Buchstabe ebenfalls mit <strong>sukun</strong>,
+						vorkommt und vor diesem ein Buchstabe mit <strong>Vokal</strong> E (
 						<span className="arapski-lekcija" style={{ color: 'red' }}>
 							{' '}
 							ــَـ ــْـ رْ{' '}
@@ -556,28 +554,30 @@ const TXT = {
 							{' '}
 							ــُـ ــْـ رْ{' '}
 						</span>
-						), z. B.:<br /> {P('row5')}
+						) steht, zum Beispiel:
+						<br /> {P('row5')}
 					</Col>
 				</Row>
 
 				<Row>
 					<Col className="opisLekcije">
-						<strong>4.</strong> wenn der Buchstabe<strong> R </strong>ein <strong>Sukun</strong> trägt (
+						<strong>4.</strong> Wenn der Buchstabe <strong> R </strong>mit <strong>sukun</strong> (
 						<span className="arapski-lekcija" style={{ color: 'red' }}>
 							رْ
 						</span>
-						) und davor ein Laut mit vorübergehender Kasra steht, z. B.: <br />
+						), und vor ihm ein anderer Buchstabe mit einer nicht ursprünglichen Kasra steht, zum Beispiel: <br />
 						{P('row6')}
 					</Col>
 				</Row>
 
 				<Row>
 					<Col className="opisLekcije">
-						<strong>5.</strong> wenn der Buchstabe<strong> R </strong>ein <strong>Sukun</strong> trägt (
+						<strong>5.</strong> Auf dem <strong> R </strong> ein <strong>sukun</strong> ist (
 						<span className="arapski-lekcija" style={{ color: 'red' }}>
 							رْ
 						</span>
-						) und danach einer der dicken Buchstaben kommt, z. B.:<br /> {P('row7')}
+						) , und ihm einer der kraftvollen Buchstaben folgt, zum Beispiel:
+						<br /> {P('row7')}
 					</Col>
 				</Row>
 

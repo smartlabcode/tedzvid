@@ -271,31 +271,30 @@ const TXT = {
 	},
 
 	de: {
-		naziv: 'ICHFA',
-		naslov: '11 ICHFA',
+		naziv: 'IHFA',
+		naslov: '11 IHFA',
 		podnaslov: (
 			<React.Fragment>
-				<strong>Den Buchstaben N (ن) verstecken</strong>
+				<strong>Verbergen des Buchstabens N (ن)</strong>
 			</React.Fragment>
 		),
 		lekcija: (P, V) => (
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						Wenn nach dem Buchstaben <strong>N</strong> mit <strong>Sukun</strong> (
-						<span className="arapski-lekcija">نْ</span>) oder nach dem <strong>Tanwin</strong> AN{' '}
+						Wenn nach dem Buchstaben <strong>N</strong> mit <strong>sukun</strong> (
+						<span className="arapski-lekcija">نْ</span>) oder <strong>tanwin</strong> EN{' '}
 						<span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
-						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
-						<span className="arapski-lekcija">ــٌــ</span> einer dieser 15 Buchstaben kommt:{' '}
+						<span className="arapski-lekcija">ـــٍــ</span> , oder UN{' '}
+						<span className="arapski-lekcija">ــٌــ</span> einer der 15 Buchstaben folgt:{' '}
 						<span style={{ display: 'inline-flex' }}>
 							<Arabic arabic="ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق " key="arL11">
 								{' '}
 								ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق {' '}
 							</Arabic>
 						</span>
-						, dann wird der Buchstabe <strong>N</strong> (
-						<span className="arapski-lekcija">ن</span>) 2 Harakat lang durch die Nase gesprochen, ohne
-						dass die Zunge den Gaumen berührt, z. B.:
+						, dann wird <strong>N</strong> (<span className="arapski-lekcija">ن</span>) oder <strong>tanwin</strong>{' '}
+						EN <span className="arapski-lekcija">ـــًـــ</span> , in oder un nasal ausgesprochen. Zum Beispiel:
 					</Col>
 				</Row>
 
@@ -336,20 +335,19 @@ const TXT = {
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						Wenn nach dem Buchstaben <strong>N</strong> mit <strong>Sukun</strong> (
-						<span className="arapski-lekcija">نْ</span>) oder nach dem <strong>Tanwin</strong> AN{' '}
+						Wenn nach dem Buchstaben <strong>N</strong> mit <strong>sukun</strong> (
+						<span className="arapski-lekcija">نْ</span>) oder <strong>tanwin</strong> EN{' '}
 						<span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
-						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
-						<span className="arapski-lekcija">ــٌــ</span> einer dieser 15 Buchstaben kommt:{' '}
+						<span className="arapski-lekcija">ـــٍــ</span> , oder UN{' '}
+						<span className="arapski-lekcija">ــٌــ</span> einer der 15 Buchstaben folgt:{' '}
 						<span style={{ display: 'inline-flex' }}>
 							<Arabic arabic="ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق " key="arL11">
 								{' '}
 								ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق {' '}
 							</Arabic>
 						</span>
-						, dann wird der Buchstabe <strong>N</strong> (
-						<span className="arapski-lekcija">ن</span>) 2 Harakat lang durch die Nase gesprochen,
-						ohne dass die Zunge den Gaumen berührt, z. B.:
+						, dann wird <strong>N</strong> (<span className="arapski-lekcija">ن</span>) oder <strong>tanwin</strong>{' '}
+						EN <span className="arapski-lekcija">ـــًـــ</span> , in oder un nasal ausgesprochen. Zum Beispiel:
 					</Col>
 				</Row>
 

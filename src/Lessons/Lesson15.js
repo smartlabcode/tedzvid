@@ -271,27 +271,26 @@ const TXT = {
 	},
 
 	de: {
-		naziv: 'IDGHAM MUTADSCHANISAIN',
-		naslov: '15 IDGHAM MUTADSCHANISAIN',
+		naziv: 'IDGHAM MUTAJANISSAYN',
+		naslov: '15 IDGHAM MUTAJAANISAYN',
 		podnaslov: (
 			<React.Fragment>
-				<strong>Verwandte Buchstaben verschmelzen</strong>
+				<strong>Vollständige Assimilation</strong>
 			</React.Fragment>
 		),
 		lekcija: (P, V) => (
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						Wenn zwei <u>verwandte</u> Buchstaben nebeneinander stehen und der erste ein{' '}
-						<strong>Sukun</strong> trägt, der zweite ein <strong>Vokalzeichen</strong>, dann
-						verschmilzt der erste in den zweiten aus <u>derselben Gruppe</u>:
+						Wenn zwei verwandte Buchstaben hintereinander vorkommen, der Erste mit <strong>sukun</strong> und der
+						Folgende mit einem der Vokale E, I, U, werden beide ineinander vollständig assimiliert.
 					</Col>
 				</Row>
 
 				<Row>
 					<Col className="opisLekcije text-left">
 						<strong className="">1.</strong>
-						<span className="arapski-lekcija"> ط د ت </span> z. B.: {P('row1')}
+						<span className="arapski-lekcija"> ط د ت </span> Zum Beispiel: {P('row1')}
 					</Col>
 				</Row>
 
@@ -301,7 +300,7 @@ const TXT = {
 
 				<Row>
 					<Col className="opisLekcije text-left">
-						<strong>2.</strong> <span className="arapski-lekcija"> ظ ذ ث </span> z. B.:{' '}
+						<strong>2.</strong> <span className="arapski-lekcija"> ظ ذ ث </span> Zum Beispiel:{' '}
 						{P('row3')}
 					</Col>
 				</Row>
@@ -312,7 +311,7 @@ const TXT = {
 
 				<Row>
 					<Col className="opisLekcije text-left">
-						<strong>3.</strong> <span className="arapski-lekcija"> ب م </span> z. B.:{' '}
+						<strong>3.</strong> <span className="arapski-lekcija"> ب م </span> Zum Beispiel:{' '}
 						{P('row5')}
 					</Col>
 				</Row>
@@ -338,16 +337,15 @@ const TXT = {
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						Wenn zwei <u>verwandte</u> Buchstaben nebeneinander stehen und der erste ein{' '}
-						<strong>Sukun</strong> trägt, der zweite ein <strong>Vokalzeichen</strong>, dann
-						verschmilzt der erste in den zweiten aus <u>derselben Gruppe</u>:
+						Wenn zwei verwandte Buchstaben hintereinander vorkommen, der Erste mit <strong>sukun</strong> und der
+						Folgende mit einem der Vokale E, I, U, werden beide ineinander vollständig assimiliert.
 					</Col>
 				</Row>
 
 				<Row>
 					<Col className="opisLekcije text-left">
 						<strong className="">1.</strong>
-						<span className="arapski-lekcija"> ط د ت </span> z. B.: {P('row1')}
+						<span className="arapski-lekcija"> ط د ت </span> Zum Beispiel: {P('row1')}
 					</Col>
 				</Row>
 
@@ -357,7 +355,7 @@ const TXT = {
 
 				<Row>
 					<Col className="opisLekcije text-left">
-						<strong>2.</strong> <span className="arapski-lekcija"> ظ ذ ث </span> z. B.:{' '}
+						<strong>2.</strong> <span className="arapski-lekcija"> ظ ذ ث </span> Zum Beispiel:{' '}
 						{P('row3')}
 					</Col>
 				</Row>
@@ -368,7 +366,7 @@ const TXT = {
 
 				<Row>
 					<Col className="opisLekcije text-left">
-						<strong>3.</strong> <span className="arapski-lekcija"> ب م </span> z. B.:{' '}
+						<strong>3.</strong> <span className="arapski-lekcija"> ب م </span> Zum Beispiel:{' '}
 						{P('row5')}
 					</Col>
 				</Row>

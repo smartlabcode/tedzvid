@@ -168,17 +168,18 @@ const TXT = {
 	},
 
 	de: {
-		naziv: 'MADD TABI’I',
-		naslov: '17 MADD TABI’I',
-		podnaslov: 'Natürliche Dehnung',
+		naziv: 'MEDD TABI’I',
+		naslov: '17 MEDD TABI’I',
+		podnaslov: 'Natürliche Länge',
 		lekcija: (P, V) => (
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						Wenn nach dem <strong>langen Vokal </strong>A <span className="arapski-lekcija">ـــَــ ا</span> , I{' '}
-						<span className="arapski-lekcija">ـــِـ ى </span>, U{' '}
-						<span className="arapski-lekcija">ـــُــ و</span> weder eine <strong>Hamza</strong> noch ein{' '}
-						<strong>Sukun</strong> folgt, ist es Madd Tabi’i. Es dauert 2 Harakat, z. B.:{P('row1')}
+						Wenn nach den <strong>langen Vokalen</strong> A <span className="arapski-lekcija">ـــَــ ا</span> , I{' '}
+						<span className="arapski-lekcija">ـــِـ ى </span>, oder U{' '}
+						<span className="arapski-lekcija">ـــُــ و</span> <strong>kein hamze</strong> oder{' '}
+						<strong>sukun</strong> vorkommt, dann nennt man es medd tabi’i. Die Länge der Aussprache beträgt
+						zwei kurze Vokale. Zum Beispiel: {P('row1')}
 					</Col>
 				</Row>
 
@@ -207,11 +208,11 @@ const TXT = {
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						Wenn nach dem <strong>langen Vokal </strong>A{' '}
-						<span className="arapski-lekcija">ـــَــ ا</span> , I{' '}
-						<span className="arapski-lekcija">ـــِـ ى </span>, U{' '}
-						<span className="arapski-lekcija">ـــُــ و</span> weder eine <strong>Hamza</strong> noch ein{' '}
-						<strong>Sukun</strong> folgt, ist es Madd Tabi’i. Es dauert 2 Harakat, z. B.:{P('row1')}
+						Wenn nach den <strong>langen Vokalen</strong> A <span className="arapski-lekcija">ـــَــ ا</span> , I{' '}
+						<span className="arapski-lekcija">ـــِـ ى </span>, oder U{' '}
+						<span className="arapski-lekcija">ـــُــ و</span> <strong>kein hamze</strong> oder{' '}
+						<strong>sukun</strong> vorkommt, dann nennt man es medd tabi’i. Die Länge der Aussprache beträgt
+						zwei kurze Vokale. Zum Beispiel: {P('row1')}
 					</Col>
 				</Row>
 

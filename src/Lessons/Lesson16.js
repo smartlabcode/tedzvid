@@ -236,28 +236,27 @@ const TXT = {
 	},
 
 	de: {
-		naziv: 'IDGHAM MUTAQARIBAIN',
-		naslov: '16 IDGHAM MUTAQARIBAIN',
+		naziv: 'IDGHAM MUTAQARIBAYN',
+		naslov: '16 IDGHAM MUTAQARIBAYN',
 		podnaslov: (
 			<React.Fragment>
-				<strong>Benachbarte Buchstaben verschmelzen</strong>
+				<strong>Vollständige Assimilation der sich nahe stehenden Buchstaben.</strong>
 			</React.Fragment>
 		),
 		lekcija: (P, V) => (
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						Wenn zwei <u>benachbarte</u> Buchstaben nebeneinander stehen, der erste mit{' '}
-						<strong>Sukun</strong> und der zweite mit <strong>Vokalzeichen</strong>, dann verschmilzt
-						der erste in den zweiten aus <u>derselben Gruppe</u>:
+						Wenn nach dem Buchstaben L mit sukun (<span className="arapski-lekcija">لْ</span>) der Buchstabe R (
+						<span className="arapski-lekcija">ر</span>) mit Vokal vorkommt, wird L in R vollständig assimiliert.
 					</Col>
 				</Row>
 
 				<Row>
 					<Col className="opisLekcije ">
-						1. Wenn nach dem Buchstaben <strong>Q</strong> mit <strong>Sukun</strong>{' '}
+						1. Wenn nach dem Buchstaben <strong>Q</strong> mit <strong>sukun</strong>{' '}
 						<span className="arapski">(قْ)</span> der Buchstabe <strong>K</strong>{' '}
-						<span className="arapski">(ك)</span> mit <strong>Vokalzeichen</strong> kommt:
+						<span className="arapski">(ك)</span> mit <strong>Vokal</strong> kommt:
 					</Col>
 				</Row>
 
@@ -267,9 +266,9 @@ const TXT = {
 
 				<Row>
 					<Col className="opisLekcije ">
-						2. Wenn nach dem Buchstaben <strong>L</strong> mit <strong>Sukun</strong>{' '}
+						2. Wenn nach dem Buchstaben <strong>L</strong> mit <strong>sukun</strong>{' '}
 						<span className="arapski">(لْ)</span> der Buchstabe <strong>R</strong>{' '}
-						<span className="arapski">(ر)</span> mit <strong>Vokalzeichen</strong> kommt:
+						<span className="arapski">(ر)</span> mit <strong>Vokal</strong> kommt:
 					</Col>
 				</Row>
 
@@ -294,17 +293,16 @@ const TXT = {
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						Wenn zwei <u>benachbarte</u> Buchstaben nebeneinander stehen, der erste mit{' '}
-						<strong>Sukun</strong> und der zweite mit <strong>Vokalzeichen</strong>, dann
-						verschmilzt der erste in den zweiten aus <u>derselben Gruppe</u>:
+						Wenn nach dem Buchstaben L mit sukun (<span className="arapski-lekcija">لْ</span>) der Buchstabe R (
+						<span className="arapski-lekcija">ر</span>) mit Vokal vorkommt, wird L in R vollständig assimiliert.
 					</Col>
 				</Row>
 
 				<Row>
 					<Col className="opisLekcije my-3">
-						1. Wenn nach dem Buchstaben <strong>Q</strong> mit <strong>Sukun</strong>{' '}
+						1. Wenn nach dem Buchstaben <strong>Q</strong> mit <strong>sukun</strong>{' '}
 						<span className="arapski">(قْ)</span> der Buchstabe <strong>K</strong>{' '}
-						<span className="arapski">(ك)</span> mit <strong>Vokalzeichen</strong> kommt:
+						<span className="arapski">(ك)</span> mit <strong>Vokal</strong> kommt:
 					</Col>
 				</Row>
 
@@ -314,9 +312,9 @@ const TXT = {
 
 				<Row>
 					<Col className="opisLekcije my-3">
-						2. Wenn nach dem Buchstaben <strong>L</strong> mit <strong>Sukun</strong>{' '}
+						2. Wenn nach dem Buchstaben <strong>L</strong> mit <strong>sukun</strong>{' '}
 						<span className="arapski">(لْ)</span> der Buchstabe <strong>R</strong>{' '}
-						<span className="arapski">(ر)</span> mit <strong>Vokalzeichen</strong> kommt:
+						<span className="arapski">(ر)</span> mit <strong>Vokal</strong> kommt:
 					</Col>
 				</Row>
 

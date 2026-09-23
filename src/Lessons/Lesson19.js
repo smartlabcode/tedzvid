@@ -312,24 +312,24 @@ const TXT = {
 	},
 
 	de: {
-		naziv: 'MADD MUNFASIL',
-		naslov: '19 MADD MUNFASIL',
+		naziv: 'MEDD MUNFESIL',
+		naslov: '19 MEDD MUNFESIL',
 		podnaslov: (
 			<React.Fragment>
-				<strong>Getrennte Dehnung</strong>
+				<strong>Getrennte Länge</strong>
 			</React.Fragment>
 		),
 		lekcija: (P, V) => (
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije ">
-						Wenn nach dem <strong>langen Vokal</strong> A <span className="arapski-lekcija">ـــَــ ا</span> ,
-						I <span className="arapski-lekcija"> ـــِـ ى</span> , U{' '}
+						Wenn nach <strong>einem langen Vokal</strong> A <span className="arapski-lekcija">ـــَــ ا</span> , I{' '}
+						<span className="arapski-lekcija"> ـــِـ ى</span> , oder U{' '}
 						<span className="arapski-lekcija" style={{ lineHeight: '1.8em' }}>
 							ـــُــ و
 						</span>{' '}
-						eine <strong>Hamza</strong> oder ein <strong>Alif</strong>{' '}
-						<u>am Anfang des nächsten</u> Wortes kommt, ist es Madd Munfasil. Es dauert 4–5 Harakat, z. B.:
+						eine <strong>Hamza</strong> oder ein <strong>Alif</strong> am Anfang <u>des nächsten Wortes</u> folgt,
+						nennt man das Medd Munfasil. Die Länge der Aussprache beträgt 4–5 kurze Vokale. Zum Beispiel:
 						<span style={{ lineHeight: '1.5em' }}>{P('row1')}</span>
 					</Col>
 				</Row>
@@ -342,11 +342,11 @@ const TXT = {
 
 				<Row className="opisLekcije text-center  reorder-basic-display-after">
 					<Col>
-						<pre> „türkischer Druck“</pre>
+						<pre>„türkischer Druck“</pre>
 					</Col>
 					-
 					<Col>
-						<pre> „Medina-Druck“</pre>
+						<pre>„Madinah-Druck“</pre>
 					</Col>
 				</Row>
 
@@ -386,15 +386,13 @@ const TXT = {
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije ">
-						Wenn nach dem <strong>langen Vokal</strong> A{' '}
-						<span className="arapski-lekcija">ـــَــ ا</span> , I{' '}
-						<span className="arapski-lekcija"> ـــِـ ى</span> , U{' '}
+						Wenn nach <strong>einem langen Vokal</strong> A <span className="arapski-lekcija">ـــَــ ا</span> , I{' '}
+						<span className="arapski-lekcija"> ـــِـ ى</span> , oder U{' '}
 						<span className="arapski-lekcija" style={{ lineHeight: '1.8em' }}>
 							ـــُــ و
 						</span>{' '}
-						eine <strong>Hamza</strong> oder ein <strong>Alif</strong>{' '}
-						<u>am Anfang des nächsten</u> Wortes kommt, ist es Madd Munfasil. Es dauert 4–5 Harakat,
-						z. B.:
+						eine <strong>Hamza</strong> oder ein <strong>Alif</strong> am Anfang <u>des nächsten Wortes</u> folgt,
+						nennt man das Medd Munfasil. Die Länge der Aussprache beträgt 4–5 kurze Vokale. Zum Beispiel:
 						<span style={{ lineHeight: '1.5em' }}>{P('row1')}</span>
 					</Col>
 				</Row>
@@ -407,10 +405,10 @@ const TXT = {
 
 				<Row className="opisLekcije text-center">
 					<Col>
-						<pre> „türkischer Druck“</pre>
+						<pre>„türkischer Druck“</pre>
 					</Col>
 					<Col>
-						<pre> „Medina-Druck“</pre>
+						<pre>„Madinah-Druck“</pre>
 					</Col>
 				</Row>
 
