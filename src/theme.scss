@@ -1908,8 +1908,8 @@ textarea.field {
   }
 }
 
-/* njemački: labele su duže (STARTSEITE, BESTENLISTE, DRUCKAUSGABE…) – do 1440px uži razmaci
-   i slova linkova, a do 1280px linkovi idu u mobilni meni kao ispod 1200px */
+/* njemački: labele su duže (STARTSEITE, BESTENLISTE, GEDRUCKTE AUSGABE…) – do 1440px uži razmaci
+   i slova linkova, a do 1300px linkovi idu u mobilni meni kao ispod 1200px */
 @media (max-width: 1440px) {
   html[lang='de'] {
     .site-nav__links a {
@@ -1927,7 +1927,7 @@ textarea.field {
   }
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1300px) {
   html[lang='de'] {
     .site-nav__links,
     .site-nav__bar nav {

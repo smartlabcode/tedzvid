@@ -24,9 +24,9 @@ const META = {
 			'Tedzvid.ba – an interactive handbook for learning the rules of tajweed. Simple, interactive, step by step – for children and adults, beginners and advanced reciters.'
 	},
 	de: {
-		title: 'Tedzvid.ba – Tadschwid lernen: einfach, interaktiv, Schritt für Schritt',
+		title: 'Tedzvid.ba – Tejwid lernen: einfach, interaktiv, Schritt für Schritt',
 		description:
-			'Tedzvid.ba – interaktives Handbuch zum Lernen der Tadschwid-Regeln. Einfach, interaktiv, Schritt für Schritt – für Kinder und Erwachsene, Anfänger und Fortgeschrittene.'
+			'Tedzvid.ba – interaktives Handbuch zum Lernen der Tejwid-Regeln. Einfach, interaktiv, Schritt für Schritt – für Kinder und Erwachsene, Anfänger und Fortgeschrittene.'
 	}
 };
 

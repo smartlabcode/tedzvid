@@ -1282,7 +1282,7 @@ const UI = {
 	de: {
 		/* ----- Logo / Allgemeines ----- */
 		logoAria: 'Tedzvid.ba – Startseite',
-		logoTag: 'Wissen, das dich dem Koran näherbringt',
+		logoTag: 'Wissen, das Sie dem Koran näherbringt',
 
 		/* ----- Navigation ----- */
 		navMain: 'Hauptnavigation',
@@ -1291,7 +1291,7 @@ const UI = {
 		navHome: 'Startseite',
 		navLekcije: 'Lektionen',
 		navONama: 'Über uns',
-		navPrintano: 'Druckausgabe',
+		navPrintano: 'Gedruckte Ausgabe',
 		navKontakt: 'Kontakt',
 		navNaslovna: 'Startseite',
 		navSveLekcije: 'Alle Lektionen',
@@ -1299,25 +1299,25 @@ const UI = {
 		langName: { bs: 'Bosnisch', en: 'Englisch', de: 'Deutsch' },
 
 		/* ----- Startseite: Hero ----- */
-		heroEyebrow: 'Interaktives Tadschwid-Handbuch',
+		heroEyebrow: 'Interaktives Tejwid-Handbuch',
 		heroTitle: (
 			<React.Fragment>
-				Lerne <em>Tadschwid</em>
+				Lernen Sie <em>Tejwid</em>
 			</React.Fragment>
 		),
 		heroSub: 'Einfach, interaktiv, Schritt für Schritt',
 		heroLead: (
 			<React.Fragment>
-				<strong>Tedzvid.ba</strong> ist die moderne, interaktive, elektronische Ausgabe des Tadschwid-Handbuchs
-				von Sejid Strika, M.A. – gemacht für Anfänger, für Kinder in der Koranschule, für Lehrerinnen und Lehrer
-				und für alle, die den Koran lieben.
+				<strong>Tedzvid.ba</strong> ist die moderne, interaktive, elektronische Ausgabe des Tejwid-Handbuchs von
+				mr. Sejid ef. Strika – gemacht für Anfänger, für Kinder in der Koranschule, für Lehrerinnen und Lehrer und
+				für alle, die den Koran lieben.
 			</React.Fragment>
 		),
-		heroCtaStart: 'Lernen beginnen',
+		heroCtaStart: 'Mit dem Lernen beginnen',
 		heroCtaMore: 'Mehr erfahren',
-		storeIntro: 'App verfügbar bei',
+		storeIntro: 'Die Anwendung ist verfügbar auf:',
 		storeGet: 'Jetzt bei',
-		mockTitle: 'Tadschwid',
+		mockTitle: 'Tejwid',
 		mockSubtitle: 'Interaktives Handbuch',
 		mockRules: 'Regeln',
 		mockAudio: 'Audio',
@@ -1325,12 +1325,12 @@ const UI = {
 		mockVjezbe: 'Übungen',
 		heroBadge: 'Für Kinder und Erwachsene, Anfänger und Fortgeschrittene',
 
-		/* ----- Startseite: Was findest du hier ----- */
+		/* ----- Startseite: Was finden Sie hier ----- */
 		featEyebrow: 'Inhalt',
-		featTitle: 'Was findest du auf tedzvid.ba?',
+		featTitle: 'Was finden Sie auf tedzvid.ba?',
 		features: [
 			{ title: 'Alle Regeln', text: 'übersichtlich und der Reihe nach' },
-			{ title: 'Praktische Übungen', text: 'um dein Wissen zu testen' },
+			{ title: 'Praktische Übungen', text: 'um Ihr Wissen zu testen' },
 			{ title: 'Für den Unterricht', text: 'ideal für Koranschule und Unterricht' },
 			{ title: 'Überall dabei', text: 'am Computer, Tablet und Handy' },
 			{ title: 'Lernen, üben, wiederholen', text: 'jeden Tag ein Stück weiter' }
@@ -1338,77 +1338,78 @@ const UI = {
 
 		/* ----- Startseite: Über uns ----- */
 		aboutEyebrow: 'Über uns',
-		aboutTitle: 'Tadschwid für alle',
+		aboutTitle: 'Tejwid für alle',
 		aboutP1: (
 			<React.Fragment>
-				<strong>Tedzvid.ba</strong> ist die elektronische, interaktive Ausgabe des gedruckten Tadschwid-Handbuchs
-				von Sejid ef. Strika, M.A. Es soll allen helfen, die anfangen, den Koran zu lesen – Kindern in der
-				Koranschule ebenso wie Erwachsenen –, die grundlegenden Tadschwid-Regeln leichter zu lernen.
+				<strong>Tedzvid.ba</strong> ist eine elektronische, interaktive Version des gedruckten Tejwid vom Autor
+				mr. Sejid ef. Strika. Dieser Tejwid zielt darauf ab, neuen Koran-Schülern, sowohl Schülern als auch
+				Erwachsenen, beim leichteren Erlernen der grundlegenden Tejwid-Regeln zu helfen.
 			</React.Fragment>
 		),
 		aboutP2:
-			'Einfache Sprache und der Verzicht auf Fachwörter, so weit das möglich war, machen es für viel mehr Leserinnen und Leser zugänglich.',
+			'Ein einfaches Vokabular und die Vermeidung von Fachbegriffen machen ihn der breiten Leserschaft zugänglicher.',
 		aboutP3: (
 			<React.Fragment>
-				Das Besondere an dieser Seite sind die <strong>interaktiven Beispiele</strong>: Ihre Aufnahme kannst du
-				mit einem Klick auf das Wort anhören. Wir hoffen, dass tedzvid.ba den Muallimen (Koranlehrern) hilft, die
-				Tadschwid-Regeln zu erklären – den Kindern in der Koranschule ebenso wie Erwachsenen, die gerade die
-				arabische Schrift gelernt haben.
+				Die Besonderheit der Website tedzvid.ba sind <strong>interaktive Beispiele</strong>, deren Audioaufnahme
+				Sie durch Klicken anhören können, und die Videoaufnahme nach der Übung wird Ihnen helfen, die
+				Tejwid-Regel, die Sie erlernen möchten, leichter zu verstehen. Wir hoffen, dass tedzvid.ba Lehrern bei der
+				Erklärung von Tejwid-Regeln helfen wird, sowohl für Kinder in der Schule als auch für Erwachsene nach
+				Abschluss der Sura.
 			</React.Fragment>
 		),
 		quoteText: '„Die Besten unter euch sind die, die den Koran lernen und ihn lehren.“',
 		quoteCite: 'Al-Buchari',
 		benefits: [
-			{ title: 'Klare Erklärungen', text: 'der Tadschwid-Regeln, ohne komplizierte Fachwörter' },
+			{ title: 'Klare Erklärungen', text: 'der Tejwid-Regeln, ohne komplizierte Fachwörter' },
 			{ title: 'Audio-Beispiele', text: 'anhören und gleich anwenden' },
 			{ title: 'Videolektionen', text: 'visuelles Lernen, das im Kopf bleibt' },
 			{ title: 'Für jede Generation', text: 'nützlich für Kinder, Erwachsene und Lehrer' },
 			{ title: 'Hilfe für die Praxis', text: 'Material, das Lernen, Lehren und Wiederholen leichter macht' }
 		],
 		aboutVideoEyebrow: 'Video',
-		aboutVideoTitle: 'Sieh dir an, wie das Lernen auf tedzvid.ba aussieht',
+		aboutVideoTitle: 'Sehen Sie sich an, wie das Lernen auf tedzvid.ba aussieht',
 		aboutVideoAlt: 'Tedzvid.ba – das Projekt stellt sich vor',
 
-		/* ----- Startseite: Druckausgabe ----- */
-		printEyebrow: 'Druckausgabe',
-		printTitle: 'Ich möchte die Druckausgabe',
-		printAlt: 'Druckausgabe des Tadschwid-Handbuchs',
+		/* ----- Startseite: Gedruckte Ausgabe ----- */
+		printEyebrow: 'Gedruckte Ausgabe',
+		printTitle: 'Ich möchte eine gedruckte Ausgabe',
+		printAlt: 'Gedruckte Ausgabe des Tejwid',
 		printText:
-			'Tadschwid – das Handbuch für richtiges Koranlesen mit Übungen gibt es auch gedruckt. Informationen zur Druckausgabe bekommst du beim Autor:',
-		author: 'Sejid ef. Strika, M.A.',
+			'Tejwid – das Handbuch für das richtige Lesen des Korans mit Übungen gibt es auch gedruckt. Informationen zur gedruckten Ausgabe des Tejwid erhalten Sie beim Autor:',
+		author: 'mr. Sejid ef. Strika',
 
 		/* ----- Startseite: Kontakt ----- */
 		contactEyebrow: 'Kontakt',
-		contactTitle: 'Schreib uns',
+		contactTitle: 'Schreiben Sie uns',
 		contactText:
-			'Wenn du Vorschläge, Anmerkungen oder Eindrücke hast, schreib sie uns ruhig – so können wir diese Seite besser machen.',
-		fieldName: 'Vor- und Nachname',
-		fieldEmail: 'E-Mail-Adresse',
+			'Wenn Sie Vorschläge, Bemerkungen oder Eindrücke haben, zögern Sie nicht, diese zu schreiben, damit wir diese Website verbessern können.',
+		fieldName: 'Name und Nachname',
+		fieldEmail: 'E-Mail',
 		fieldPhone: 'Telefonnummer (optional)',
-		fieldMessage: 'Schreib deine Nachricht',
+		fieldMessage: 'Geben Sie Ihre Nachricht ein',
 		formOk: (
 			<React.Fragment>
-				Deine Nachricht wurde <strong>erfolgreich</strong> gesendet!
+				Sie haben Ihre Nachricht <strong>erfolgreich</strong> gesendet!
 			</React.Fragment>
 		),
-		formErr: 'Beim Senden der Nachricht ist ein Fehler aufgetreten.',
+		formErr: 'Beim Senden der Nachricht ist ein Fehler aufgetreten!',
 		formClose: 'Schließen',
 		formSend: 'Senden',
 
 		/* ----- Fußzeile ----- */
-		footVisit: 'Besuche',
-		footVisitText: 'und beginne deinen Weg zu einem richtigeren Lesen von Allahs Buch.',
+		footVisit: 'Besuchen Sie',
+		footVisitText: 'und beginnen Sie Ihren Weg zu einem richtigeren Lesen von Allahs Buch.',
 		footAbout:
-			'Interaktives Handbuch für die Tadschwid-Regeln – einfach, Schritt für Schritt, für Kinder und Erwachsene, Anfänger und Fortgeschrittene.',
+			'Interaktives Handbuch für die Tejwid-Regeln – einfach, Schritt für Schritt, für Kinder und Erwachsene, Anfänger und Fortgeschrittene.',
 		footNav: 'Navigation',
-		footPartners: 'Freunde des Projekts',
-		footAuthor: 'Autor: Sejid ef. Strika, M.A.',
+		footPartners: 'Projektpartner',
+		footAuthor: 'Autor: mr. Sejid ef. Strika',
 
 		/* ----- Übersicht der Lektionen ----- */
 		lessonsEyebrow: 'Interaktives Handbuch',
 		lessonsTitle: 'Lektionen',
 		lessonsText:
-			'Zweiundzwanzig Tadschwid-Regeln, Schritt für Schritt – alle Lektionen sind offen, ganz ohne Anmeldung. Die Lektionen sind in fünf Gruppen aufgeteilt, und am Ende jeder Gruppe steht ein Quiz.',
+			'Zweiundzwanzig Tejwid-Regeln, Schritt für Schritt – alle Lektionen sind offen, ganz ohne Anmeldung. Die Lektionen sind in fünf Gruppen aufgeteilt, und am Ende jeder Gruppe steht ein Quiz.',
 		cardLekcija: 'Lektion',
 		cardVjezba: 'Übung',
 		cardVideo: 'Video',
@@ -1423,25 +1424,25 @@ const UI = {
 		grupaKvizNaslov: (b) => `Gruppenquiz ${b}`,
 		grupaKvizEyebrow: (b) => `Test zu Gruppe ${b}`,
 		grupaKarticaTekst: (n, od, doLekcije, prolaz) =>
-			`${n} Fragen aus den Lektionen ${od}–${doLekcije}. Zum Bestehen brauchst du mindestens ${prolaz} richtige Antworten.`,
+			`${n} Fragen aus den Lektionen ${od}–${doLekcije}. Zum Bestehen brauchen Sie mindestens ${prolaz} richtige Antworten.`,
 		grupaOpen: 'Gruppenquiz öffnen',
 		grupaIntroText: (n, prolaz, od, doLekcije) =>
-			`${n} Fragen aus den Lektionen ${od}–${doLekcije}, in gemischter Reihenfolge und jedes Mal anders. Zum Bestehen brauchst du mindestens ${prolaz} richtige Antworten.`,
+			`${n} Fragen aus den Lektionen ${od}–${doLekcije}, in gemischter Reihenfolge und jedes Mal anders. Zum Bestehen brauchen Sie mindestens ${prolaz} richtige Antworten.`,
 		grupaLockedTitle: 'Dieses Gruppenquiz ist gesperrt',
-		grupaLockedUser: (b) => `Bestehe zuerst das Gruppenquiz ${b}, dann wird das nächste freigeschaltet.`,
+		grupaLockedUser: (b) => `Bestehen Sie zuerst das Gruppenquiz ${b}, dann wird das nächste freigeschaltet.`,
 		grupaLockedGuest:
-			'Für alle Quiz brauchst du ein Konto. Melde dich an oder erstelle ein kostenloses Konto – die Gruppenquiz werden dann der Reihe nach freigeschaltet.',
+			'Für alle Quiz brauchen Sie ein Konto. Melden Sie sich an oder erstellen Sie ein kostenloses Konto – die Gruppenquiz werden dann der Reihe nach freigeschaltet.',
 		grupaUnlocked: (b) => `Das Gruppenquiz ${b} ist jetzt freigeschaltet.`,
-		grupaAllDone: 'Alle Gruppen sind bestanden – jetzt kommt das Abschlussquiz über den ganzen Tadschwid.',
-		grupaAlreadyPassed: 'Das Quiz ist schon bestanden und das nächste ist freigeschaltet – üb so oft du willst.',
+		grupaAllDone: 'Alle Gruppen sind bestanden – jetzt kommt das Abschlussquiz über den ganzen Tejwid.',
+		grupaAlreadyPassed: 'Das Quiz ist schon bestanden und das nächste ist freigeschaltet – üben Sie, so oft Sie wollen.',
 		grupaHint:
-			'Alle Lektionen sind für alle offen; für die Quiz brauchst du ein Konto. Das Quiz am Ende einer Lektion ist eine Übung, das Gruppenquiz ist der richtige Test.',
+			'Alle Lektionen sind für alle offen; für die Quiz brauchen Sie ein Konto. Das Quiz am Ende einer Lektion ist eine Übung, das Gruppenquiz ist der richtige Test.',
 
 		/* ----- Lehrer: Quiz aus mehreren Lektionen ----- */
 		navMualim: 'Lehrer',
 		mualimEyebrow: 'Für Lehrer',
 		mualimTitle: 'Quiz erstellen',
-		mualimText: 'Wähle die Lektionen und die Anzahl der Fragen – das Quiz wird aus den Fragen dieser Lektionen zusammengestellt.',
+		mualimText: 'Wählen Sie die Lektionen und die Anzahl der Fragen – das Quiz wird aus den Fragen dieser Lektionen zusammengestellt.',
 		mualimSelect: 'Lektionen',
 		mualimAll: 'Alle',
 		mualimNone: 'Keine',
@@ -1450,30 +1451,30 @@ const UI = {
 		mualimCreate: 'Quiz erstellen',
 		mualimNew: 'Neue Auswahl',
 		mualimPicked: (l, p) => `Ausgewählte Lektionen: ${l} · verfügbare Fragen: ${p}`,
-		mualimEmpty: 'Wähle mindestens eine Lektion.',
+		mualimEmpty: 'Wählen Sie mindestens eine Lektion.',
 		mualimForbidden: 'Diese Seite ist für Lehrerinnen und Lehrer gedacht.',
 		mualimQuizTitle: 'Lehrer-Quiz',
 		mualimIntroText: (n, prolaz) =>
-			`${n} Fragen aus den ausgewählten Lektionen, in zufälliger Reihenfolge. Zum Bestehen brauchst du mindestens ${prolaz} richtige Antworten. Das Ergebnis wird nicht im Fortschritt gespeichert.`,
+			`${n} Fragen aus den ausgewählten Lektionen, in zufälliger Reihenfolge. Zum Bestehen brauchen Sie mindestens ${prolaz} richtige Antworten. Das Ergebnis wird nicht im Fortschritt gespeichert.`,
 		mualimPassedText: 'Das Quiz ist bestanden. Das Ergebnis eines Lehrer-Quiz wird nicht im Fortschritt gespeichert.',
 
 		/* ----- einzelne Lektion ----- */
 		lekcijaEyebrow: 'Lektion',
 		lekcija: 'LEKTION',
 		vjezba: 'ÜBUNG',
-		videoLekcija: 'VIDEOLEKTION',
-		videoTitle: 'Videolektion',
+		videoLekcija: 'VIDEO LEKTION',
+		videoTitle: 'Video Lektion',
 		zatvori: 'Schließen',
 		prethodna: 'Zurück',
 		sljedeca: 'Weiter',
 		sveLekcije: 'Alle Lektionen',
 		prethodnaAria: 'Vorherige Lektion',
 		sljedecaAria: 'Nächste Lektion',
-		tabelaNaslov: 'Übersicht in der Tabelle:',
-		napomena: 'HINWEIS',
+		tabelaNaslov: 'Tabellenansicht:',
+		napomena: 'WICHTIG',
 
 		/* ----- Audio ----- */
-		audioHint: 'Klick auf ein Wort oder einen Vers, um es zu hören. Ein neuer Klick stoppt die vorherige Aufnahme.',
+		audioHint: 'Klicken Sie auf ein Wort oder einen Vers, um es zu hören. Ein neuer Klick stoppt die vorherige Aufnahme.',
 		audioPlayAll: 'Alles abspielen',
 		audioStopAll: 'Stoppen',
 		audioWordTitle: 'Zum Anhören klicken',
@@ -1493,15 +1494,15 @@ const UI = {
 		napomenaTip: {
 			dugo: 'Wird lang gesprochen',
 			kratko: 'Wird kurz gesprochen',
-			krupno: 'Wird dick gesprochen',
-			tanko: 'Wird dünn gesprochen',
-			duzina: 'Dehnung',
+			krupno: 'Wird kraftvoll ausgesprochen',
+			tanko: 'Wird weich ausgesprochen',
+			duzina: 'Verlängerung',
 			stajanje: 'Anhalten',
-			uklapanje: 'Verschmelzung',
-			nos: 'Durch die Nase',
-			odskakanje: 'Abprallen',
+			uklapanje: 'Assimilation',
+			nos: 'Nasalisierung',
+			odskakanje: 'Kraftvoll federnd',
 			pretvaranje: 'Verwandlung',
-			skrivanje: 'Verstecken',
+			skrivanje: 'Verbergen',
 			cisto: 'Deutlich',
 			napomena: 'Hinweis'
 		},
@@ -1511,12 +1512,12 @@ const UI = {
 		navRegistracija: 'Registrieren',
 		navProfil: 'Mein Fortschritt',
 		navOdjava: 'Abmelden',
-		authEyebrow: 'Dein Konto',
+		authEyebrow: 'Ihr Konto',
 		loginTitle: 'Anmelden',
-		loginText: 'Melde dich an, damit dein Fortschritt gespeichert wird und die nächsten Quiz freigeschaltet werden.',
+		loginText: 'Melden Sie sich an, damit Ihr Fortschritt gespeichert wird und die nächsten Quiz freigeschaltet werden.',
 		registerTitle: 'Konto erstellen',
 		registerText:
-			'Erstelle ein kostenloses Konto: Dein Fortschritt wird gespeichert, und ein bestandenes Gruppenquiz schaltet das nächste frei.',
+			'Erstellen Sie ein kostenloses Konto: Ihr Fortschritt wird gespeichert, und ein bestandenes Gruppenquiz schaltet das nächste frei.',
 		fieldPassword: 'Passwort',
 		fieldPassword2: 'Passwort wiederholen',
 		passwordHint: 'Mindestens 6 Zeichen.',
@@ -1524,31 +1525,31 @@ const UI = {
 		btnRegister: 'Konto erstellen',
 		btnWorking: 'Einen Moment…',
 		switchToRegister: 'Noch kein Konto?',
-		switchToLogin: 'Hast du schon ein Konto?',
+		switchToLogin: 'Haben Sie schon ein Konto?',
 		authErrors: {
 			bad_credentials: 'E-Mail-Adresse oder Passwort ist falsch.',
 			email_exists: 'Ein Konto mit dieser E-Mail-Adresse gibt es schon.',
-			bad_email: 'Gib eine gültige E-Mail-Adresse ein.',
+			bad_email: 'Geben Sie eine gültige E-Mail-Adresse ein.',
 			bad_password: 'Das Passwort muss mindestens 6 Zeichen haben.',
-			bad_name: 'Gib deinen Namen ein (mindestens 2 Zeichen).',
+			bad_name: 'Geben Sie Ihren Namen ein (mindestens 2 Zeichen).',
 			bad_username: 'Benutzername: 3–20 Zeichen, Kleinbuchstaben, Ziffern, Punkt, Bindestrich oder Unterstrich.',
-			username_exists: 'Dieser Benutzername ist vergeben – wähle einen anderen.',
+			username_exists: 'Dieser Benutzername ist vergeben – wählen Sie einen anderen.',
 			passwords_differ: 'Die Passwörter stimmen nicht überein.',
-			too_many: 'Zu viele Versuche. Probier es in ein paar Minuten noch einmal.',
-			network: 'Der Server ist nicht erreichbar. Prüfe deine Verbindung und probier es noch einmal.',
-			unauthorized: 'Deine Sitzung ist abgelaufen – melde dich noch einmal an.',
+			too_many: 'Zu viele Versuche. Versuchen Sie es in ein paar Minuten noch einmal.',
+			network: 'Der Server ist nicht erreichbar. Prüfen Sie Ihre Verbindung und versuchen Sie es noch einmal.',
+			unauthorized: 'Ihre Sitzung ist abgelaufen – melden Sie sich noch einmal an.',
 			locked: 'Dieses Quiz ist noch gesperrt.',
-			server: 'Etwas ist schiefgelaufen. Probier es noch einmal.'
+			server: 'Etwas ist schiefgelaufen. Versuchen Sie es noch einmal.'
 		},
 
 		/* ----- mein Fortschritt ----- */
 		profilEyebrow: 'Mein Fortschritt',
 		profilText: (prolaz, ukupno) =>
-			`Alle Lektionen sind offen. Der Fortschritt wird über die Gruppenquiz verfolgt: Zum Bestehen brauchst du mindestens ${prolaz} von ${ukupno} richtigen Antworten.`,
+			`Alle Lektionen sind offen. Der Fortschritt wird über die Gruppenquiz verfolgt: Zum Bestehen brauchen Sie mindestens ${prolaz} von ${ukupno} richtigen Antworten.`,
 		profilPassed: 'Bestandene Lektionen',
 		profilGrupe: 'Bestandene Gruppen',
 		profilNext: 'Nächster Schritt',
-		profilAllDone: 'Alle Lektionen sind bestanden – super gemacht!',
+		profilAllDone: 'Alle Lektionen sind bestanden – sehr gut gemacht!',
 		statusPolozeno: 'Bestanden',
 		statusNijePolozeno: 'Nicht bestanden',
 		statusOtkljucano: 'Freigeschaltet',
@@ -1556,14 +1557,14 @@ const UI = {
 
 		/* ----- Lektionskarten ----- */
 		cardKviz: 'Quiz',
-		cardUnlockGuest: 'Melde dich an oder erstelle ein kostenloses Konto, damit dein Fortschritt gespeichert wird und die nächsten Quiz freigeschaltet werden.',
+		cardUnlockGuest: 'Melden Sie sich an oder erstellen Sie ein kostenloses Konto, damit Ihr Fortschritt gespeichert wird und die nächsten Quiz freigeschaltet werden.',
 		cardGoQuiz: (n) => `Quiz zu Lektion ${n}`,
 
 		/* ----- Quiz ----- */
 		kviz: 'QUIZ',
-		kvizIntroTitle: 'Teste dein Wissen',
+		kvizIntroTitle: 'Testen Sie Ihr Wissen',
 		kvizIntroText: (prolaz, ukupno) =>
-			`${ukupno} Fragen zu dieser Lektion – eine Übung vor dem Gruppenquiz. Zum Bestehen brauchst du mindestens ${prolaz} richtige Antworten.`,
+			`${ukupno} Fragen zu dieser Lektion – eine Übung vor dem Gruppenquiz. Zum Bestehen brauchen Sie mindestens ${prolaz} richtige Antworten.`,
 		kvizStart: 'Quiz starten',
 		kvizRestart: 'Erneut versuchen',
 		kvizQuestion: (i, n) => `Frage ${i} von ${n}`,
@@ -1575,44 +1576,44 @@ const UI = {
 		kvizWrong: 'Nicht ganz.',
 		kvizCorrectIs: 'Die richtige Antwort:',
 		kvizScore: (t, n) => `${t} von ${n} richtig`,
-		kvizPassed: 'Super gemacht, das Quiz ist bestanden!',
+		kvizPassed: 'Sehr gut, das Quiz ist bestanden!',
 		kvizFailedTitle: 'Nicht bestanden',
 		kvizFailed: (prolaz) =>
-			`Zum Bestehen brauchst du mindestens ${prolaz} richtige Antworten. Lies die Lektion noch einmal und probier es erneut.`,
-		kvizVjezbaPassed: (b) => `Die Lektion sitzt. Teste dein Wissen über die ganze Gruppe im Gruppenquiz ${b}.`,
+			`Zum Bestehen brauchen Sie mindestens ${prolaz} richtige Antworten. Lesen Sie die Lektion noch einmal und versuchen Sie es erneut.`,
+		kvizVjezbaPassed: (b) => `Die Lektion sitzt. Testen Sie Ihr Wissen über die ganze Gruppe im Gruppenquiz ${b}.`,
 		kvizNextLesson: (n) => `Lektion ${n}`,
 		kvizSaving: 'Fortschritt wird gespeichert…',
 		kvizSaved: 'Der Fortschritt ist gespeichert.',
-		kvizSaveError: 'Der Fortschritt wurde nicht gespeichert – prüfe deine Verbindung.',
+		kvizSaveError: 'Der Fortschritt wurde nicht gespeichert – prüfen Sie Ihre Verbindung.',
 		kvizRetrySave: 'Noch einmal speichern',
-		kvizLoginTitle: 'Für das Quiz musst du dich anmelden',
+		kvizLoginTitle: 'Für das Quiz müssen Sie sich anmelden',
 		kvizLoginText:
-			'Alle Lektionen sind für alle offen, aber für jedes Quiz musst du dich anmelden – so wird dein Ergebnis gespeichert, dein Fortschritt verfolgt und deine Punkte zählen in der Bestenliste. Das Konto ist kostenlos.',
+			'Alle Lektionen sind für alle offen, aber für jedes Quiz müssen Sie sich anmelden – so wird Ihr Ergebnis gespeichert, Ihr Fortschritt verfolgt und Ihre Punkte zählen in der Bestenliste. Das Konto ist kostenlos.',
 		kvizBest: (b, n) => `Bestes Ergebnis: ${b} von ${n}`,
 		kvizCorrectCount: (t, n) => `Richtig: ${t} · Falsch: ${n - t}`,
 
 		/* ----- Abschlussquiz ----- */
-		zavrsniEyebrow: 'Test über den ganzen Tadschwid',
+		zavrsniEyebrow: 'Test über den ganzen Tejwid',
 		zavrsniTitle: 'Abschlussquiz',
 		zavrsniText: (n, prolaz) =>
-			`${n} Fragen aus allen 22 Lektionen, in zufälliger Reihenfolge. Zum Bestehen brauchst du mindestens ${prolaz} richtige Antworten.`,
-		zavrsniCardText: (n) => `${n} Fragen aus allen Lektionen – ein Test über den ganzen Tadschwid.`,
+			`${n} Fragen aus allen 22 Lektionen, in zufälliger Reihenfolge. Zum Bestehen brauchen Sie mindestens ${prolaz} richtige Antworten.`,
+		zavrsniCardText: (n) => `${n} Fragen aus allen Lektionen – ein Test über den ganzen Tejwid.`,
 		zavrsniOpen: 'Abschlussquiz öffnen',
 		zavrsniIntroText: (n, prolaz) =>
-			`${n} Fragen aus allen 22 Lektionen, in zufälliger Reihenfolge. Zum Bestehen brauchst du mindestens ${prolaz} richtige Antworten. Wenn du die Seite schließt, kannst du dort weitermachen, wo du aufgehört hast, solange der Browser offen bleibt.`,
+			`${n} Fragen aus allen 22 Lektionen, in zufälliger Reihenfolge. Zum Bestehen brauchen Sie mindestens ${prolaz} richtige Antworten. Wenn Sie die Seite schließen, können Sie dort weitermachen, wo Sie aufgehört haben, solange der Browser offen bleibt.`,
 		zavrsniResume: (i, n) => `Weiter (Frage ${i} von ${n})`,
 		zavrsniRestart: 'Von vorn beginnen',
 		zavrsniLockedTitle: 'Das Abschlussquiz ist gesperrt',
-		zavrsniLockedUser: (b) => `Das Abschlussquiz wird freigeschaltet, wenn du alle fünf Gruppenquiz bestanden hast. Gerade bist du bei Gruppe ${b}.`,
+		zavrsniLockedUser: (b) => `Das Abschlussquiz wird freigeschaltet, wenn Sie alle fünf Gruppenquiz bestanden haben. Gerade sind Sie bei Gruppe ${b}.`,
 		zavrsniLockedGuest:
-			'Für jedes Quiz musst du dich anmelden, und das Abschlussquiz wird freigeschaltet, wenn alle fünf Gruppenquiz bestanden sind. Melde dich an oder erstelle ein kostenloses Konto.',
-		zavrsniPassed: 'Super gemacht, das Abschlussquiz ist bestanden!',
-		zavrsniPassedText: 'Der ganze Tadschwid ist durchgearbeitet und geprüft – super gemacht!',
+			'Für jedes Quiz müssen Sie sich anmelden, und das Abschlussquiz wird freigeschaltet, wenn alle fünf Gruppenquiz bestanden sind. Melden Sie sich an oder erstellen Sie ein kostenloses Konto.',
+		zavrsniPassed: 'Sehr gut, das Abschlussquiz ist bestanden!',
+		zavrsniPassedText: 'Der ganze Tejwid ist durchgearbeitet und geprüft – sehr gut gemacht!',
 		zavrsniFailed: (prolaz) =>
-			`Zum Bestehen brauchst du mindestens ${prolaz} richtige Antworten. Wiederhole die Lektionen mit Fehlern und probier es erneut.`,
+			`Zum Bestehen brauchen Sie mindestens ${prolaz} richtige Antworten. Wiederholen Sie die Lektionen mit Fehlern und versuchen Sie es erneut.`,
 		zavrsniReview: 'Empfehlung zum Wiederholen:',
 		zavrsniMistakes: (n) => (n === 1 ? '1 Fehler' : `${n} Fehler`),
-		profilEverything: 'Alle Lektionen und das Abschlussquiz sind bestanden – super gemacht!',
+		profilEverything: 'Alle Lektionen und das Abschlussquiz sind bestanden – sehr gut gemacht!',
 		fieldLogin: 'E-Mail-Adresse oder Benutzername',
 		fieldUsername: 'Benutzername',
 		usernameHint: '3–20 Zeichen: Kleinbuchstaben, Ziffern, Punkt, Bindestrich oder Unterstrich. Wird in der Bestenliste angezeigt.',
@@ -1626,23 +1627,23 @@ const UI = {
 		rangPeriod: { sedmica: 'Diese Woche', mjesec: 'Dieser Monat', sve: 'Insgesamt' },
 		rangOd: (d) => `Seit dem ${d}`,
 		rangLoading: 'Wird geladen…',
-		rangEmpty: 'In diesem Zeitraum gibt es noch keine Ergebnisse. Mach ein Quiz und sei der Erste!',
-		rangYou: 'du',
+		rangEmpty: 'In diesem Zeitraum gibt es noch keine Ergebnisse. Machen Sie ein Quiz und seien Sie der Erste!',
+		rangYou: 'Sie',
 		rangPoints: 'Punkte',
 		rangPassed: (n) => (n === 1 ? '1 bestandenes Quiz' : `${n} bestandene Quiz`),
-		rangYourRank: (r, b) => `Dein Platz: Platz ${r} (${b} Punkte).`,
-		rangNoPoints: 'Du hast in diesem Zeitraum noch keine Punkte – mach ein Quiz!',
-		rangGuest: 'Melde dich an oder erstelle ein Konto, damit auch deine Ergebnisse auf der Liste stehen.',
-		rangRules: 'Dasselbe Quiz noch einmal zu machen bringt keine zusätzlichen Punkte – es zählt nur dein bestes Ergebnis. Die Woche beginnt am Montag.',
+		rangYourRank: (r, b) => `Ihr Platz: Platz ${r} (${b} Punkte).`,
+		rangNoPoints: 'Sie haben in diesem Zeitraum noch keine Punkte – machen Sie ein Quiz!',
+		rangGuest: 'Melden Sie sich an oder erstellen Sie ein Konto, damit auch Ihre Ergebnisse auf der Liste stehen.',
+		rangRules: 'Dasselbe Quiz noch einmal zu machen bringt keine zusätzlichen Punkte – es zählt nur Ihr bestes Ergebnis. Die Woche beginnt am Montag.',
 
 		/* ----- Spielecke ----- */
 		navIgra: 'Spiele',
 		igraEyebrow: 'Spielen und lernen',
 		igraNaslov: 'Spielecke',
 		igraOpis:
-			'Sechs kurze Spiele zum Üben der Tadschwid-Regeln: die Regel nach Gehör erkennen, sie im Wort und im Vers finden, eine Regel mit ihrem Beispiel verbinden, Buchstaben einsortieren und Paare finden. Aufnahmen, Buchstaben, Beispiele und Verse kommen aus den Lektionen selbst.',
+			'Sechs kurze Spiele zum Üben der Tejwid-Regeln: die Regel nach Gehör erkennen, sie im Wort und im Vers finden, eine Regel mit ihrem Beispiel verbinden, Buchstaben einsortieren und Paare finden. Aufnahmen, Buchstaben, Beispiele und Verse kommen aus den Lektionen selbst.',
 		igraNapomena:
-			'Die Spiele sind eine Ergänzung zu den Lektionen und wirken sich nicht auf deinen Fortschritt und nicht auf die Bestenliste aus – die Ergebnisse bleiben nur in diesem Browser.',
+			'Die Spiele sind eine Ergänzung zu den Lektionen und wirken sich nicht auf Ihren Fortschritt und nicht auf die Bestenliste aus – die Ergebnisse bleiben nur in diesem Browser.',
 		igraBezRekorda: 'Noch kein Rekord',
 		igraZvukUkljucen: 'Ton an',
 		igraZvukIskljucen: 'Ton aus',
@@ -1658,110 +1659,110 @@ const UI = {
 		igraRekordBodovi: (n) => `Bestes Ergebnis: ${n} Punkte`,
 		igraRekordMem: (p, v) => `Bestwert: ${p} Züge, ${v}`,
 		igraKraj: 'Spiel vorbei',
-		igraPobjeda: 'Super, du hast alle Stufen geschafft!',
+		igraPobjeda: 'Sehr gut, Sie haben alle Stufen geschafft!',
 		igraBravo: 'Richtig!',
 		igraNetacno: 'Nicht ganz.',
 		igraIsteklo: 'Die Zeit ist um.',
 		igraTacnoJe: (naziv) => `Richtig ist: ${naziv}.`,
 		igraOtvoriLekciju: (n) => `Lektion ${n} öffnen`,
 		igraPoslusaj: 'Anhören',
-		igraUhoNaslov: 'Erkenne, was du hörst',
+		igraUhoNaslov: 'Erkennen Sie, was Sie hören',
 		igraUhoUvod: (n) =>
-			`Die Aufnahme läuft, das Wort bleibt versteckt – die Regel musst du mit dem Ohr erkennen. ${n} Aufnahmen und drei Leben.`,
-		igraUhoPitanje: 'Welche Regel hörst du?',
+			`Die Aufnahme läuft, das Wort bleibt verborgen – die Regel müssen Sie mit dem Ohr erkennen. ${n} Aufnahmen und drei Leben.`,
+		igraUhoPitanje: 'Welche Regel hören Sie?',
 		igraUhoPonovo: 'Noch einmal anhören',
 		igraUhoPokazi: 'Wort zeigen',
-		igraUhoSkriveno: 'Das Wort ist versteckt – hör dir die Aufnahme an.',
+		igraUhoSkriveno: 'Das Wort ist verborgen – hören Sie sich die Aufnahme an.',
 		igraUhoZavirio: 'Das Wort ist zu sehen, darum bringt die Antwort nur halbe Punkte.',
 		igraUhoNemaZapisa: 'Die Aufnahme lässt sich nicht abspielen, darum ist das Wort zu sehen.',
 		igraUhoGotovo: 'Gutes Gehör!',
 		igraUhoKraj: (t, uk) => `Richtig erkannt: ${t} von ${uk} Aufnahmen.`,
 		igraTrkaNaslov: 'Wettlauf durch die Regeln',
 		igraTrkaUvod: (s) =>
-			`Erkenne die Regel im hervorgehobenen Teil des Wortes. Du hast ${s} Sekunden pro Frage und drei Leben – eine schnellere Antwort bringt mehr Punkte.`,
+			`Erkennen Sie die Regel im hervorgehobenen Teil des Wortes. Sie haben ${s} Sekunden pro Frage und drei Leben – eine schnellere Antwort bringt mehr Punkte.`,
 		igraTrkaPitanje: 'Welche Regel steckt im hervorgehobenen Teil?',
 		igraTrkaKraj: (t, uk, niz) => `Richtige Antworten: ${t} von ${uk}. Längste Serie: ${niz}.`,
-		igraMemNaslov: 'Finde die Paare',
-		igraMemUvod: 'Dreh zwei Karten um und verbinde den Namen der Regel mit einem Beispiel aus der Lektion.',
+		igraMemNaslov: 'Finden Sie die Paare',
+		igraMemUvod: 'Drehen Sie zwei Karten um und verbinden Sie den Namen der Regel mit einem Beispiel aus der Lektion.',
 		igraMemBravo: 'Alle Paare gefunden!',
-		igraMemKraj: (p) => `Du hast alle ${p} Paare gefunden.`,
+		igraMemKraj: (p) => `Sie haben alle ${p} Paare gefunden.`,
 		igraParova: (n) => `${n} Paare`,
 		igraParovaKratko: 'Paare',
 		igraTezina: 'Schwierigkeit',
 		igraKarta: (n) => `Karte ${n}`,
 		igraKolo: (n) => `Runde ${n}`,
 		igraPomoc: 'Tipp',
-		igraNadjiNaslov: 'Finde die Regel',
+		igraNadjiNaslov: 'Finden Sie die Regel',
 		igraNadjiUvod: (n) =>
-			`In ${n} Versen sollst du das Wort zeigen, in dem die gesuchte Regel steckt. Nach drei Fehlern ist das Spiel vorbei.`,
+			`In ${n} Versen sollen Sie das Wort zeigen, in dem die gesuchte Regel steckt. Nach drei Fehlern ist das Spiel vorbei.`,
 		igraNadjiPitanje: 'In welchem Wort steckt diese Regel?',
 		igraNadjiAjet: (n) => `Vers ${n}`,
-		igraNadjiUToj: (imena) => `In diesem Wort steckt: ${imena}. Such weiter.`,
+		igraNadjiUToj: (imena) => `In diesem Wort steckt: ${imena}. Suchen Sie weiter.`,
 		igraNadjiNemaPravila: 'In diesem Wort ist keine einzige Regel markiert.',
 		igraNadjiGotovo: 'Alle Verse geschafft!',
 		igraNadjiKraj: (t, uk) => `Auf Anhieb getroffen: ${t} von ${uk} Versen.`,
-		igraPoveziNaslov: 'Verbinde die Regeln',
+		igraPoveziNaslov: 'Verbinden Sie die Regeln',
 		igraPoveziUvod: (p, k) =>
-			`Tipp links auf eine Regel und rechts auf das Beispiel – ein richtiges Paar bleibt mit einem Faden in der Farbe der Regel verbunden. ${k} Runden mit je ${p} Paaren.`,
-		igraPoveziPitanje: 'Verbinde jede Regel mit dem Beispiel, in dem sie steckt.',
+			`Tippen Sie links auf eine Regel und rechts auf das Beispiel – ein richtiges Paar bleibt mit einem Faden in der Farbe der Regel verbunden. ${k} Runden mit je ${p} Paaren.`,
+		igraPoveziPitanje: 'Verbinden Sie jede Regel mit dem Beispiel, in dem sie steckt.',
 		igraPoveziKolo: (b) => `Punkte bisher: ${b}. Die nächste Runde bringt fünf neue Regeln.`,
 		igraPoveziGotovo: 'Alles verbunden!',
 		igraPoveziKraj: (uk, g, v) => `${uk} Paare verbunden, Fehler: ${g}, Zeit: ${v}.`,
 		igraRazvrstajNaslov: 'Buchstaben einsortieren',
 		igraRazvrstajUvod: (k) =>
-			`Zieh einen Buchstaben in die Kiste der Regel, zu der er gehört – oder tipp erst den Buchstaben an, dann die Kiste. ${k} Runden und drei Leben.`,
+			`Ziehen Sie einen Buchstaben in die Kiste der Regel, zu der er gehört – oder tippen Sie erst den Buchstaben an, dann die Kiste. ${k} Runden und drei Leben.`,
 		igraRazvrstajPitanje: 'Welcher Buchstabe gehört zu welcher Regel?',
 		igraRazvrstajTacno: (naziv) => `gehört zu ${naziv}.`,
 		igraRazvrstajNetacno: (naziv) => `ist kein Buchstabe der Regel ${naziv}.`,
 		igraRazvrstajGotovo: 'Jeder Buchstabe ist an seinem Platz.',
 		igraRazvrstajKolo: (b) => `Punkte bisher: ${b}. Die nächste Runde bringt andere Regeln.`,
-		igraRazvrstajKraj: (k, uk) => `Du hast ${k} von ${uk} Runden geschafft.`,
+		igraRazvrstajKraj: (k, uk) => `Sie haben ${k} von ${uk} Runden geschafft.`,
 		igre: {
 			uho: {
-				naslov: 'Erkenne, was du hörst',
-				opis: 'Die Aufnahme läuft, das Wort bleibt versteckt – die Regel musst du mit dem Ohr erkennen, wie im Unterricht.',
+				naslov: 'Erkennen Sie, was Sie hören',
+				opis: 'Die Aufnahme läuft, das Wort bleibt verborgen – die Regel müssen Sie mit dem Ohr erkennen, wie im Unterricht.',
 				kako: [
-					'110 Aufnahmen aus allen Lektionen, das Wort erscheint erst nach deiner Antwort',
-					'Du kannst die Aufnahme so oft anhören, wie du willst',
+					'110 Aufnahmen aus allen Lektionen, das Wort erscheint erst nach Ihrer Antwort',
+					'Sie können die Aufnahme so oft anhören, wie Sie wollen',
 					'Wer beim Wort spickt, bekommt nur halbe Punkte'
 				],
-				uputa: 'Am besten mit Kopfhörern: Ghunna und Verschmelzung hört man leichter, als man sie sieht.'
+				uputa: 'Am besten mit Kopfhörern: Nasalisierung und Assimilation hört man leichter, als man sie sieht.'
 			},
 			trka: {
 				naslov: 'Wettlauf durch die Regeln',
-				opis: 'Ein Wort aus der Lektion mit einem hervorgehobenen Teil – erkenne die Regel, bevor die Zeit um ist.',
+				opis: 'Ein Wort aus der Lektion mit einem hervorgehobenen Teil – erkennen Sie die Regel, bevor die Zeit um ist.',
 				kako: [
 					'12 Sekunden pro Frage',
 					'Beispiele und Erklärungen aus allen Lektionen',
 					'Eine schnellere Antwort bringt mehr Punkte'
 				],
-				uputa: 'Nach jeder Antwort bekommst du eine Erklärung und einen Link zur Lektion.'
+				uputa: 'Nach jeder Antwort bekommen Sie eine Erklärung und einen Link zur Lektion.'
 			},
 			nadji: {
-				naslov: 'Finde die Regel',
-				opis: 'Ein echter Vers aus den Bonuslektionen – zeig das Wort, in dem die gesuchte Regel steckt.',
+				naslov: 'Finden Sie die Regel',
+				opis: 'Ein echter Vers aus den Bonuslektionen – zeigen Sie das Wort, in dem die gesuchte Regel steckt.',
 				kako: [
 					'Verse aus Al-Fatiha, Ayat al-Kursi, Al-Mulk, Ya-Sin und dem Dschuz Amma',
-					'Ein Fehler verrät dir, welche Regel in diesem Wort steckt',
-					'Jeden Vers kannst du dir auch anhören'
+					'Ein Fehler verrät Ihnen, welche Regel in diesem Wort steckt',
+					'Jeden Vers können Sie sich auch anhören'
 				],
-				uputa: 'Tipp das Wort an, in dem du die gesuchte Regel siehst; Farbe und Erklärung kommen nach der Antwort.'
+				uputa: 'Tippen Sie das Wort an, in dem Sie die gesuchte Regel sehen; Farbe und Erklärung kommen nach der Antwort.'
 			},
 			povezi: {
-				naslov: 'Verbinde die Regeln',
-				opis: 'Links die Namen der Regeln, rechts die Beispiele – zieh einen Faden zwischen die, die zusammengehören.',
+				naslov: 'Verbinden Sie die Regeln',
+				opis: 'Links die Namen der Regeln, rechts die Beispiele – ziehen Sie einen Faden zwischen die, die zusammengehören.',
 				kako: [ 'Drei Runden mit je fünf Paaren', 'Eine Runde ohne Fehler bringt zusätzliche Punkte', 'Die Fäden haben dieselben Farben wie in den Bonuslektionen' ],
-				uputa: 'Tipp erst die eine, dann die andere Seite. Zu jedem verbundenen Paar gibt es eine Erklärung und eine Aufnahme.'
+				uputa: 'Tippen Sie erst die eine, dann die andere Seite an. Zu jedem verbundenen Paar gibt es eine Erklärung und eine Aufnahme.'
 			},
 			razvrstaj: {
 				naslov: 'Buchstaben einsortieren',
-				opis: 'Sortier die Buchstaben: Jeder Buchstabe kommt in die Kiste der Regel, zu der er gehört.',
-				kako: [ 'Fünf Runden, drei bis vier Kisten', 'Den Buchstaben ziehen oder antippen und dann einsortieren', 'Der Tipp erinnert dich, welche Buchstaben zu welcher Regel gehören' ],
+				opis: 'Sortieren Sie die Buchstaben: Jeder Buchstabe kommt in die Kiste der Regel, zu der er gehört.',
+				kako: [ 'Fünf Runden, drei bis vier Kisten', 'Den Buchstaben ziehen oder antippen und dann einsortieren', 'Der Tipp erinnert Sie daran, welche Buchstaben zu welcher Regel gehören' ],
 				uputa: 'Auf dem Touchscreen am leichtesten: Finger auf den Buchstaben, dann auf die Kiste.'
 			},
 			memorija: {
-				naslov: 'Finde die Paare',
-				opis: 'Memory: Verbinde den Namen der Regel mit einem Beispiel, in dem diese Regel steckt.',
+				naslov: 'Finden Sie die Paare',
+				opis: 'Memory: Verbinden Sie den Namen der Regel mit einem Beispiel, in dem diese Regel steckt.',
 				kako: [ '6 oder 8 Paare', 'Zu jedem Paar gibt es eine Erklärung', 'Ziel sind weniger Züge und weniger Zeit' ],
 				uputa: 'Ein gutes Spiel für die Koranschule: Es geht auch am Beamer, in zwei Mannschaften.'
 			}
@@ -1791,7 +1792,7 @@ const UI = {
 		adminRole: { admin: 'Admin', mualim: 'Muallim', demo: 'Demo', korisnik: 'Benutzer' },
 		adminNever: 'noch nichts',
 		adminNoUsers: 'Kein Benutzer passt zur Suche.',
-		adminDetailHint: 'Klick eine Zeile an: Fortschritt pro Lektion und Rolle ändern.',
+		adminDetailHint: 'Klicken Sie eine Zeile an: Fortschritt pro Lektion und Rolle ändern.',
 		adminRoleTitle: 'Rolle',
 		adminRoleText:
 			'Ein Lehrer hat Zugang zu allem außer der Verwaltung: alle Quiz sind für ihn freigeschaltet und er kann für seinen Unterricht ein Quiz aus beliebigen Lektionen zusammenstellen.',
@@ -1799,7 +1800,7 @@ const UI = {
 		adminMakeMualim: 'Als Lehrer festlegen',
 		adminMakeKorisnik: 'Zurück zum Benutzer',
 		adminRoleSaving: 'Wird gespeichert…',
-		adminRoleError: 'Die Rolle wurde nicht geändert – probier es noch einmal.',
+		adminRoleError: 'Die Rolle wurde nicht geändert – versuchen Sie es noch einmal.',
 		adminCell: (n, p) => (p ? `Lektion ${n}: bestes Ergebnis ${p.najbolje}/10, Versuche: ${p.pokusaji}` : `Lektion ${n}: nicht bearbeitet`),
 		adminCellGrupa: (b, p) =>
 			p ? `Gruppenquiz ${b}: bestes Ergebnis ${p.najbolje}/20, Versuche: ${p.pokusaji}` : `Gruppenquiz ${b}: nicht bearbeitet`,
@@ -1809,9 +1810,9 @@ const UI = {
 		/* ----- Bonuslektion: Sure Ya-Sin ----- */
 		jasinEyebrow: 'Bonuslektion',
 		jasinNaslov: 'Sure Ya-Sin',
-		jasinPodnaslov: 'Die ganze Sure, Seite für Seite, mit Farben und Erklärungen zu allen Tadschwid-Regeln aus den 22 Lektionen.',
+		jasinPodnaslov: 'Die ganze Sure, Seite für Seite, mit Farben und Erklärungen zu allen Tejwid-Regeln aus den 22 Lektionen.',
 		jasinUvod:
-			'Jede Farbe im Text ist eine Regel. Klick auf einen farbigen Buchstaben und lies, warum die Regel dort gilt, oder öffne die Liste aller Regeln unter dem Vers. Gelesen von Mahmud Chalil al-Husari.',
+			'Jede Farbe im Text ist eine Regel. Klicken Sie auf einen farbigen Buchstaben und lesen Sie, warum die Regel dort gilt, oder öffnen Sie die Liste aller Regeln unter dem Vers. Gelesen von Mahmud Chalil al-Husari.',
 		suraPrivremeniZvuk: 'Die Aufnahme kommt vorübergehend aus einer externen Quelle (everyayah.com), bis wir eine eigene aufgenommen haben.',
 		jasinOSuri: (n, a, b) =>
 			`Die Sure Ya-Sin ist die 36. Sure des Korans: ${n} Verse, in Mekka offenbart. Im Mus-haf umfasst sie die Seiten ${a}–${b}, und genau so ist sie hier aufgeteilt.`,
@@ -1836,15 +1837,15 @@ const UI = {
 		jasinOznaka: (n) => `Ya-Sin, Vers ${n}`,
 		jasinPrethodna: 'Vorherige Seite',
 		jasinSljedeca: 'Nächste Seite',
-		jasinKarticaTekst: 'Die ganze Sure Ya-Sin mit Farben und Erklärungen zu allen Regeln, die du gelernt hast – als Belohnung am Ende des Kurses.',
+		jasinKarticaTekst: 'Die ganze Sure Ya-Sin mit Farben und Erklärungen zu allen Regeln, die Sie gelernt haben – als Belohnung am Ende des Kurses.',
 		jasinOtvori: 'Sure Ya-Sin öffnen',
 
 		/* ----- Bonuslektion: die Suren des Dschuz Amma ----- */
 		ammeEyebrow: 'Bonuslektion',
 		ammeNaslov: 'Dschuz Amma',
-		ammePodnaslov: 'Der dreißigste Dschuz des Korans – die Suren, die am häufigsten auswendig gelernt werden – mit Farben und Erklärungen zu allen Tadschwid-Regeln.',
+		ammePodnaslov: 'Der dreißigste Dschuz des Korans – die Suren, die am häufigsten auswendig gelernt werden – mit Farben und Erklärungen zu allen Tejwid-Regeln.',
 		ammeUvod:
-			'Die Sure wählst du aus der Liste, zu jeder gehört die Basmala. Jede Farbe im Text ist eine Regel: klick auf einen farbigen Buchstaben und lies, warum sie dort gilt, oder öffne die Liste der Regeln unter dem Vers. Die Farben in der Legende zählen für die geöffnete Sure.',
+			'Die Sure wählen Sie aus der Liste, zu jeder gehört die Basmala. Jede Farbe im Text ist eine Regel: Klicken Sie auf einen farbigen Buchstaben und lesen Sie, warum sie dort gilt, oder öffnen Sie die Liste der Regeln unter dem Vers. Die Farben in der Legende zählen für die geöffnete Sure.',
 		ammeODzuzu: (n, a, b) =>
 			`Der Dschuz Amma ist der dreißigste und letzte Dschuz des Korans: ${n} Suren, von der ${a}. Sure An-Naba bis zur ${b}. Sure An-Nas. Es sind dieselben Farben und dieselben Erklärungen wie in der Bonuslektion zur Sure Ya-Sin.`,
 		ammeNemaUSuri: 'nicht in dieser Sure',
@@ -1857,7 +1858,7 @@ const UI = {
 		ammePrethodna: 'Vorherige Sure',
 		ammeSljedeca: 'Nächste Sure',
 		ammeOznaka: (naziv, n) => `${naziv}, Vers ${n}`,
-		ammeKarticaTekst: 'Der dreißigste Dschuz des Korans, Sure für Sure, mit Basmala, Farben und Erklärungen zu allen Regeln, die du gelernt hast.',
+		ammeKarticaTekst: 'Der dreißigste Dschuz des Korans, Sure für Sure, mit Basmala, Farben und Erklärungen zu allen Regeln, die Sie gelernt haben.',
 		ammeOtvori: 'Dschuz Amma öffnen',
 
 		/* ----- Bonuslektionen mit kürzeren Abschnitten (Al-Fatiha, Ayat al-Kursi, Al-Mulk) ----- */
@@ -1867,9 +1868,9 @@ const UI = {
 				eyebrow: 'Bonuslektion',
 				naslov: 'Sure Al-Fatiha',
 				podnaslov:
-					'Die Sure, die in jeder Gebetseinheit gelesen wird, mit Farben und Erklärungen zu allen Tadschwid-Regeln aus den 22 Lektionen.',
+					'Die Sure, die in jeder Gebetseinheit gelesen wird, mit Farben und Erklärungen zu allen Tejwid-Regeln aus den 22 Lektionen.',
 				uvod:
-					'Jede Farbe im Text ist eine Regel. Klick auf einen farbigen Buchstaben und lies, warum die Regel dort gilt, oder öffne die Liste aller Regeln unter dem Vers. Gelesen von Mahmud Chalil al-Husari.',
+					'Jede Farbe im Text ist eine Regel. Klicken Sie auf einen farbigen Buchstaben und lesen Sie, warum die Regel dort gilt, oder öffnen Sie die Liste aller Regeln unter dem Vers. Gelesen von Mahmud Chalil al-Husari.',
 				osuri: (d) =>
 					`Die Sure Al-Fatiha ist die erste Sure des Korans: ${d.brojAjeta} Verse, in Mekka offenbart. Sie wird in jeder Gebetseinheit gelesen, darum lohnt es sich, sie Buchstabe für Buchstabe durchzugehen.`,
 				pusti: 'Ganze Sure abspielen',
@@ -1877,16 +1878,16 @@ const UI = {
 				sljedeca: 'Nächster Teil',
 				nema: 'nicht in dieser Sure',
 				oznaka: (n) => `Al-Fatiha, Vers ${n}`,
-				karticaTekst: 'Die Sure, die du in jeder Gebetseinheit liest, Buchstabe für Buchstabe, mit einer Erklärung zu jeder Regel, die du gelernt hast.',
+				karticaTekst: 'Die Sure, die Sie in jeder Gebetseinheit lesen, Buchstabe für Buchstabe, mit einer Erklärung zu jeder Regel, die Sie gelernt haben.',
 				otvori: 'Sure Al-Fatiha öffnen'
 			},
 			kursij: {
 				poStranicama: false,
 				eyebrow: 'Bonuslektion',
 				naslov: 'Ayat al-Kursi',
-				podnaslov: 'Der Vers, der am häufigsten auswendig gelernt wird, Wort für Wort, mit Erklärungen zu allen Tadschwid-Regeln.',
+				podnaslov: 'Der Vers, der am häufigsten auswendig gelernt wird, Wort für Wort, mit Erklärungen zu allen Tejwid-Regeln.',
 				uvod:
-					'Jede Farbe im Text ist eine Regel. Klick auf einen farbigen Buchstaben und lies, warum die Regel dort gilt, oder öffne die Liste aller Regeln unter dem Vers. Gelesen von Mahmud Chalil al-Husari.',
+					'Jede Farbe im Text ist eine Regel. Klicken Sie auf einen farbigen Buchstaben und lesen Sie, warum die Regel dort gilt, oder öffnen Sie die Liste aller Regeln unter dem Vers. Gelesen von Mahmud Chalil al-Husari.',
 				osuri: () =>
 					'Ayat al-Kursi ist der 255. Vers der Sure Al-Baqara und einer der Verse, die am häufigsten auswendig gelernt werden. Hier ist er in alle Regeln aus den 22 Lektionen zerlegt.',
 				pusti: 'Vers abspielen',
@@ -1894,7 +1895,7 @@ const UI = {
 				sljedeca: 'Nächster Teil',
 				nema: 'nicht in diesem Vers',
 				oznaka: () => 'Ayat al-Kursi',
-				karticaTekst: 'Ayat al-Kursi, Wort für Wort, mit einer Erklärung zu jeder Regel, die du gelernt hast.',
+				karticaTekst: 'Ayat al-Kursi, Wort für Wort, mit einer Erklärung zu jeder Regel, die Sie gelernt haben.',
 				otvori: 'Ayat al-Kursi öffnen'
 			},
 			mulk: {
@@ -1902,9 +1903,9 @@ const UI = {
 				eyebrow: 'Bonuslektion',
 				naslov: 'Sure Al-Mulk',
 				podnaslov:
-					'Die ganze Sure, Seite für Seite, mit Farben und Erklärungen zu allen Tadschwid-Regeln aus den 22 Lektionen.',
+					'Die ganze Sure, Seite für Seite, mit Farben und Erklärungen zu allen Tejwid-Regeln aus den 22 Lektionen.',
 				uvod:
-					'Jede Farbe im Text ist eine Regel. Klick auf einen farbigen Buchstaben und lies, warum die Regel dort gilt, oder öffne die Liste aller Regeln unter dem Vers. Gelesen von Mahmud Chalil al-Husari.',
+					'Jede Farbe im Text ist eine Regel. Klicken Sie auf einen farbigen Buchstaben und lesen Sie, warum die Regel dort gilt, oder öffnen Sie die Liste aller Regeln unter dem Vers. Gelesen von Mahmud Chalil al-Husari.',
 				osuri: (d) =>
 					`Die Sure Al-Mulk ist die 67. Sure des Korans: ${d.brojAjeta} Verse, in Mekka offenbart. Im Mus-haf umfasst sie die Seiten ${d
 						.odjeljci[0].stranica}–${d.odjeljci[d.odjeljci.length - 1].stranica}, und genau so ist sie hier aufgeteilt.`,
@@ -1913,7 +1914,7 @@ const UI = {
 				sljedeca: 'Nächste Seite',
 				nema: 'nicht auf dieser Seite',
 				oznaka: (n) => `Al-Mulk, Vers ${n}`,
-				karticaTekst: 'Die ganze Sure Al-Mulk mit Farben und Erklärungen zu allen Regeln, die du gelernt hast.',
+				karticaTekst: 'Die ganze Sure Al-Mulk mit Farben und Erklärungen zu allen Regeln, die Sie gelernt haben.',
 				otvori: 'Sure Al-Mulk öffnen'
 			}
 		}

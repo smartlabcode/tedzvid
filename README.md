@@ -59,7 +59,7 @@ primjera i njihov zvuk, vježba i oba pop-upa. Tekst se poklapa, uz ove **namjer
   `reorder-basic-display-after`, razmaci preko `<span className="tacka">`) – novi raspored to radi sam;
 - L1 tabela: „Boje preći“ (tipfeler na tedzvid.ba) je ovdje „Bolje preći“.
 
-Njemački nema uzor na tedzvid.ba, pa se provjerava uz `src/i18n/njemacki-rjecnik.md`.
+Njemački nema uzor na tedzvid.ba; uzor mu je grana `feature/deutch-lang` (ručno preveden tekst lekcija), a ostalo se provjerava uz `src/i18n/njemacki-rjecnik.md`.
 
 #### Vježba: ۞ i veličina teksta
 
@@ -96,7 +96,7 @@ Gdje živi koji tekst:
 
 Novi jezik se dodaje tako što se doda u `LANGS` i `LANG_NAMES` i dopiše blok/ključ svugdje gore. Ako neki ključ nedostaje, prikaz tiho pada na bosanski (`usePick`, `TXT[lang] || TXT[DEFAULT_LANG]`), pa nepotpun prijevod ne ruši stranicu.
 
-Njemačka terminologija (transkripcija arapskih pojmova, nazivi 22 pravila, stil obraćanja) drži se jednog dogovora zapisanog u **`src/i18n/njemacki-rjecnik.md`** – npr. *Tadschwid*, *Idgham Mithlain*, *Ichfa Schafawi*, *Madd Tabi’i*, *der Koran*, obraćanje na „du“. Ko dopisuje njemački tekst, prvo pročita taj fajl; bez njega isto pravilo brzo dobije dva imena.
+Njemački tekst lekcija je ručno preveden i provjeren na grani `feature/deutch-lang`, koja je izvor istine za njemački; kvizovi, igre, napomene uz sure i `ui.js` usklađeni su s njim. Terminologija (nazivi 22 pravila, pojmovi u objašnjenjima, obraćanje) zapisana je u **`src/i18n/njemacki-rjecnik.md`** – npr. *Tejwid*, *Idgam meal-Gunneh*, *Ihfa Shafawi*, *Medd Tabi’i*, *Assimilation*, *Nasalisierung*, obraćanje sa „Sie“. Ko dopisuje njemački tekst, prvo pročita taj fajl.
 
 ### Korisnički računi i napredak
 

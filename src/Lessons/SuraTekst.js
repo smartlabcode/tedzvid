@@ -52,8 +52,8 @@ const NASLOV_GRUPE = {
 	de: {
 		nun: 'N mit Sukun und Tanwin',
 		mim: 'M mit Sukun',
-		idgam: 'Weitere Verschmelzungen',
-		medd: 'Dehnungen',
+		idgam: 'Weitere Assimilationen',
+		medd: 'Verlängerungen',
 		ostalo: 'Einzelne Regeln',
 		stajanje: 'Anhalten und stumme Buchstaben'
 	}
