@@ -29,6 +29,59 @@ stoje iste komponente s **istim markupom i istim klasama** – zato `.modal-head
 
 Ako zatreba još neka Bootstrap komponenta, dopisuje se u taj fajl (ne vraćati react-bootstrap).
 
+### Redizajn i odnos prema tedzvid.ba
+
+Grana **`redesign-migration`** nosi novi izgled (došao iz `tedzvidapp`, spojen u `40a90a8`) i sav
+sadržaj sa `master`-a. Objavljeni **tedzvid.ba je stari izgled (`master`, i18next) i izvor je istine
+za sadržaj**: iste lekcije, isti primjeri istim redoslijedom, isto crveno označavanje, isti zvučni
+zapisi i isti vezni tekst. Izgled je namjerno drugačiji; kad se nešto razlikuje u *tekstu*, ispravlja
+se ovdje, a ne tamo.
+
+Iste rute su na obje strane (`/lekcija1` … `/lekcija22`, `/lekcija14_2`). Jezik je na tedzvid.ba
+`?lng=bs|en`, ovdje `?lang=bs|en|de`. Poređenje ide na lokalnom buildu:
+
+```
+npm ci && npm run build && npx serve -s build -l 5055
+```
+
+Lekcije su u septembru 2026. redom upoređene sa tedzvid.ba (bs i en, na desktopu i na 375px):
+naslov i podnaslov, opis pravila s podebljanim/podvučenim dijelovima i arapskim znakovima, redovi
+primjera i njihov zvuk, vježba i oba pop-upa. Tekst se poklapa, uz ove **namjerne razlike**:
+
+- ispravke tipfelera u engleskom: L1 „ili“ → „or“, uklonjen „⦁“, „STOPPING SINGS“ → „STOPPING SIGNS“;
+  L4 „sukunom“ → „sukoon“; L14_2 uklonjeno zalutalo „y“; L17 „occurs.The“ → „occurs. The“;
+- vježba se na engleskom zove **EXERCISE** (`ui.js`, `vjezba`), a na tedzvid.ba „PRACTICE“ – cijeli
+  repozitorij koristi *Exercise* za vježbu (`cardVjezba`, `mockVjezbe`, njemački rječnik);
+- pop-up lekcije ima naslov **LESSON**; na tedzvid.ba u L1, L3 i L5 greškom piše „PRACTICE“;
+- vezni tekst („čita se:“) prevodi `src/i18n/vezniTekst.js`, umjesto zasebnih `row*_en` redova u
+  podacima – zato ti redovi ovdje i ne postoje;
+- stari trikovi za raspored se ne koriste (vodeća „. “ ispred reda, `mobile-row`,
+  `reorder-basic-display-after`, razmaci preko `<span className="tacka">`) – novi raspored to radi sam;
+- L1 tabela: „Boje preći“ (tipfeler na tedzvid.ba) je ovdje „Bolje preći“.
+
+Njemački nema uzor na tedzvid.ba, pa se provjerava uz `src/i18n/njemacki-rjecnik.md`.
+
+#### Vježba: ۞ i veličina teksta
+
+Iza svakog ajeta u vježbi ide **`&nbsp;۞`**, a `src/Helpers/VjezbeHelper.js` u redovima vježbe
+(`rowmain === 'vjezba'`) skida razmak s kraja ajeta i ne ispisuje prazan vezni tekst. Razlog:
+Chrome smije prelomiti red na svakom običnom razmaku, pa je uz obični razmak ۞ ostajao sam u novom
+redu (prije popravke 179 takvih mjesta kroz lekcije). **Ne vraćati obični razmak ispred ۞.** Ni
+`white-space: nowrap`, ni `word-joiner`, ni `text-wrap: pretty` ne pomažu – jedino nema li razmaka
+uopšte. Ako ajet nije odmah praćen sa ۞ (dva ajeta u jednom redu, ۞ u zasebnom spanu: L1, L17, L18,
+L19), razmak se dopisuje ručno kao `{' '}`.
+
+Arapski u vježbi je namjerno iste veličine kao na tedzvid.ba – **2.5rem** (desktop), **2.2rem**
+(601–1000px), **1.8rem** (mobitel), u `src/App.scss` pod `.lekcija-page .mobile-row`. Veći font je
+značio da u red stane samo jedan ajet, pa je vježba imala dva do tri puta više redova nego original.
+
+#### Stranica `/lekcije`
+
+Svaka grupa lekcija je kremasti panel sa zlatnom unutrašnjom linijom (isti okvir kao vježba u
+lekciji), s krugom u kojem stoji broj grupe – ili kvačica kad je kviz grupe položen – naslovom i
+karticom kviza grupe na dnu. Na dnu tamnoplave trake je traka za skok na grupu (`GrupeNav` u
+`src/Body/HomeFirst.js`). Grupe nemaju naziv po temi; ako se doda, ide u `lessons.json`/`ui.js`.
+
 ### Jezici
 
 Sajt je na **bosanskom (bs), engleskom (en) i njemačkom (de)**; bosanski je izvorni i podrazumijevani. Jezik se bira u traci navigacije (padajući izbornik `src/Body/LangSwitch.js`), pamti se u `localStorage`, a `?lang=de` u URL-u ima prednost – tako se dijeli link na određenom jeziku.
