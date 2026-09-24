@@ -41,7 +41,7 @@ const TXT = {
 						, npr.:
 					</Col>
 				</Row>
-				<Row className="text-center  reorder-basic ">
+				<Row className="text-center reorder-basic rtl">
 					<Col>{P('row1')}</Col>
 				</Row>
 				<Row className="text-center  ">
@@ -58,7 +58,7 @@ const TXT = {
 					</Col>
 				</Row>
 
-				<Row className="text-center  reorder-basic ">
+				<Row className="text-center reorder-basic rtl">
 					<Col>{P('row3')}</Col>
 				</Row>
 
@@ -92,7 +92,7 @@ const TXT = {
 						, npr.:
 					</Col>
 				</Row>
-				<Row className="text-center  reorder-basic ">
+				<Row className="text-center reorder-basic rtl">
 					<Col>{P('row1')}</Col>
 				</Row>
 				<Row className="text-center  ">
@@ -109,7 +109,7 @@ const TXT = {
 					</Col>
 				</Row>
 
-				<Row className="text-center  reorder-basic ">
+				<Row className="text-center reorder-basic rtl">
 					<Col>{P('row3')}</Col>
 				</Row>
 
@@ -146,7 +146,7 @@ const TXT = {
 						<u>emphatically</u>, for example:
 					</Col>
 				</Row>
-				<Row className="text-center  reorder-basic ">
+				<Row className="text-center reorder-basic rtl">
 					<Col>{P('row1')}</Col>
 				</Row>
 				<Row className="text-center  ">
@@ -164,7 +164,7 @@ const TXT = {
 					</Col>
 				</Row>
 
-				<Row className="text-center  reorder-basic ">
+				<Row className="text-center reorder-basic rtl">
 					<Col>{P('row3')}</Col>
 				</Row>
 
@@ -199,7 +199,7 @@ const TXT = {
 						<u>emphatically</u>, for example:
 					</Col>
 				</Row>
-				<Row className="text-center  reorder-basic ">
+				<Row className="text-center reorder-basic rtl">
 					<Col>{P('row1')}</Col>
 				</Row>
 				<Row className="text-center  ">
@@ -217,7 +217,7 @@ const TXT = {
 					</Col>
 				</Row>
 
-				<Row className="text-center  reorder-basic ">
+				<Row className="text-center reorder-basic rtl">
 					<Col>{P('row3')}</Col>
 				</Row>
 
@@ -248,7 +248,7 @@ const TXT = {
 						<span className="arapski-lekcija">اللّٰه </span>kraftvoll. Zum Beispiel:
 					</Col>
 				</Row>
-				<Row className="text-center  reorder-basic ">
+				<Row className="text-center reorder-basic rtl">
 					<Col>{P('row1')}</Col>
 				</Row>
 				<Row className="text-center  ">
@@ -262,7 +262,7 @@ const TXT = {
 					</Col>
 				</Row>
 
-				<Row className="text-center  reorder-basic ">
+				<Row className="text-center reorder-basic rtl">
 					<Col>{P('row3')}</Col>
 				</Row>
 
@@ -293,7 +293,7 @@ const TXT = {
 						<span className="arapski-lekcija">اللّٰه </span>kraftvoll. Zum Beispiel:
 					</Col>
 				</Row>
-				<Row className="text-center  reorder-basic ">
+				<Row className="text-center reorder-basic rtl">
 					<Col>{P('row1')}</Col>
 				</Row>
 				<Row className="text-center  ">
@@ -307,7 +307,7 @@ const TXT = {
 					</Col>
 				</Row>
 
-				<Row className="text-center  reorder-basic ">
+				<Row className="text-center reorder-basic rtl">
 					<Col>{P('row3')}</Col>
 				</Row>
 
