@@ -247,8 +247,9 @@ const TXT = {
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						Wenn nach dem Buchstaben L mit sukun (<span className="arapski-lekcija">لْ</span>) der Buchstabe R (
-						<span className="arapski-lekcija">ر</span>) mit Vokal vorkommt, wird L in R vollständig assimiliert.
+						Wenn zwei <u>sich nahe stehende</u> Buchstaben hintereinander vorkommen, der Erste mit{' '}
+						<strong>sukun</strong> und der Folgende mit <strong>Vokal</strong>, dann wird der Erste in den Folgenden
+						aus <u>derselben Gruppe</u> vollständig assimiliert:
 					</Col>
 				</Row>
 
@@ -256,7 +257,7 @@ const TXT = {
 					<Col className="opisLekcije ">
 						1. Wenn nach dem Buchstaben <strong>Q</strong> mit <strong>sukun</strong>{' '}
 						<span className="arapski">(قْ)</span> der Buchstabe <strong>K</strong>{' '}
-						<span className="arapski">(ك)</span> mit <strong>Vokal</strong> kommt:
+						<span className="arapski">(ك)</span> mit <strong>Vokal</strong> folgt:
 					</Col>
 				</Row>
 
@@ -268,7 +269,7 @@ const TXT = {
 					<Col className="opisLekcije ">
 						2. Wenn nach dem Buchstaben <strong>L</strong> mit <strong>sukun</strong>{' '}
 						<span className="arapski">(لْ)</span> der Buchstabe <strong>R</strong>{' '}
-						<span className="arapski">(ر)</span> mit <strong>Vokal</strong> kommt:
+						<span className="arapski">(ر)</span> mit <strong>Vokal</strong> folgt:
 					</Col>
 				</Row>
 
@@ -293,8 +294,9 @@ const TXT = {
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						Wenn nach dem Buchstaben L mit sukun (<span className="arapski-lekcija">لْ</span>) der Buchstabe R (
-						<span className="arapski-lekcija">ر</span>) mit Vokal vorkommt, wird L in R vollständig assimiliert.
+						Wenn zwei <u>sich nahe stehende</u> Buchstaben hintereinander vorkommen, der Erste mit{' '}
+						<strong>sukun</strong> und der Folgende mit <strong>Vokal</strong>, dann wird der Erste in den Folgenden
+						aus <u>derselben Gruppe</u> vollständig assimiliert:
 					</Col>
 				</Row>
 
@@ -302,7 +304,7 @@ const TXT = {
 					<Col className="opisLekcije my-3">
 						1. Wenn nach dem Buchstaben <strong>Q</strong> mit <strong>sukun</strong>{' '}
 						<span className="arapski">(قْ)</span> der Buchstabe <strong>K</strong>{' '}
-						<span className="arapski">(ك)</span> mit <strong>Vokal</strong> kommt:
+						<span className="arapski">(ك)</span> mit <strong>Vokal</strong> folgt:
 					</Col>
 				</Row>
 
@@ -314,7 +316,7 @@ const TXT = {
 					<Col className="opisLekcije my-3">
 						2. Wenn nach dem Buchstaben <strong>L</strong> mit <strong>sukun</strong>{' '}
 						<span className="arapski">(لْ)</span> der Buchstabe <strong>R</strong>{' '}
-						<span className="arapski">(ر)</span> mit <strong>Vokal</strong> kommt:
+						<span className="arapski">(ر)</span> mit <strong>Vokal</strong> folgt:
 					</Col>
 				</Row>
 
