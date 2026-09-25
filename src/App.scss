@@ -744,47 +744,6 @@ span.arap-red {
 }
 
 /* ---------- raspored primjera (funkcionalno, ne mijenjati) ---------- */
-/* veznik na de/en: na telefonu strelica umjesto "wird ausgesprochen:" / "is recited as:" */
-.veznik-strelica {
-  display: none;
-
-  &::before {
-    content: '→';
-  }
-
-  &:dir(rtl)::before {
-    content: '←';
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .veznik-dug {
-    .veznik-tekst {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      overflow: hidden;
-      clip: rect(0 0 0 0);
-      white-space: nowrap;
-    }
-
-    .veznik-strelica {
-      display: inline-block;
-      padding: 0 0.6em;
-      font-size: 1.2rem;
-    }
-  }
-
-  /* par u rečenici (L15, L16): na telefonu u svom redu, "X → Y" */
-  .opisLekcije .par-primjera {
-    display: flex;
-    width: 100%;
-    flex-wrap: nowrap;
-    justify-content: center;
-    direction: ltr;
-  }
-}
-
 /* par primjera ("X čita se: Y"): u novi red ide cijeli, iznutra se lomi samo ako je sam širi od reda */
 .par-primjera {
   display: inline-flex;
@@ -1834,5 +1793,55 @@ body.ima-oblak .lekcija-page {
 
   .oblak--dokiran {
     max-width: none;
+  }
+}
+
+/* de/en na telefonu i tabletu: "wird ausgesprochen:" / "is recited as:" ne stane uz riječ, pa par ide ovako:
+   X   Y
+   veznik (sitnije, ispod, centrirano) */
+@media only screen and (max-width: 1000px) {
+  .col .par-primjera.par-dug {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: 'x y' 'v v';
+    justify-content: center;
+    align-items: center;
+    column-gap: 1.4em;
+    row-gap: 0;
+    /* inače ga pogodi .reorder .col span:nth-of-type(…) (55% / 40%) */
+    width: 100% !important;
+    margin: 0.2em 0 0.6em !important;
+    direction: ltr;
+
+    span {
+      width: auto !important;
+      margin-left: 0 !important;
+      text-align: center !important;
+    }
+
+    > span {
+      display: contents;
+    }
+
+    > span:first-child > .rijec-audio {
+      grid-area: x;
+    }
+
+    > span:first-child > span:last-child {
+      grid-area: v;
+      font-size: 0.8rem;
+      line-height: 1.2;
+      opacity: 0.75;
+      white-space: nowrap;
+    }
+
+    > span:last-child > .rijec-audio {
+      grid-area: y;
+    }
+
+    /* ";" između parova ne treba – svaki par je u svom redu */
+    > span:last-child > span:last-child {
+      display: none;
+    }
   }
 }
