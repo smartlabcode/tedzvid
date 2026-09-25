@@ -512,10 +512,10 @@ const TXT = {
 				<Table className="tabela-opis text-center" bordered hover responsive>
 					<thead className="text-uppercase">
 						<tr>
-							<th className="text-danger">Haltepflicht</th>
-							<th>es ist besser anzuhalten</th>
-							<th>es ist besser weiterzulesen</th>
-							<th className="text-danger">Halteverbot</th>
+							<th className="text-danger">Halte&shy;pflicht</th>
+							<th>es ist besser anzu&shy;halten</th>
+							<th>es ist besser weiter&shy;zulesen</th>
+							<th className="text-danger">Halte&shy;verbot</th>
 						</tr>
 					</thead>
 					<tbody>

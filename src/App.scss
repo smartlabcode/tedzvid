@@ -450,7 +450,8 @@ span.arap-red {
   .table-responsive {
     border: 1px solid var(--line);
     border-radius: 14px;
-    overflow: hidden;
+    /* auto, ne hidden: ako tabela ipak ne stane, ostaje horizontalni scroll umjesto odsječenih kolona */
+    overflow-x: auto;
     background: #fff;
   }
 
@@ -485,6 +486,24 @@ span.arap-red {
 
     tbody tr:hover td {
       background: var(--gold-100);
+    }
+  }
+
+  /* telefon: sve kolone moraju stati u širinu ekrana; duge njemačke riječi
+     u zaglavlju imaju &shy; u Lesson1.js (Halte&shy;pflicht, weiter&shy;zulesen) */
+  @media only screen and (max-width: 600px) {
+    .table {
+      th,
+      td {
+        padding: 0.6rem 0.35rem;
+        overflow-wrap: break-word;
+      }
+
+      thead th {
+        font-size: 0.68rem;
+        letter-spacing: 0.02em;
+        line-height: 1.35;
+      }
     }
   }
 }
