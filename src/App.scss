@@ -1796,21 +1796,19 @@ body.ima-oblak .lekcija-page {
   }
 }
 
-/* de/en na telefonu i tabletu: "wird ausgesprochen:" / "is recited as:" ne stane uz riječ, pa par ide ovako:
-   X   Y
-   veznik (sitnije, ispod, centrirano) */
+/* de/en na telefonu i tabletu: "wird ausgesprochen:" / "is recited as:" ne stane uz riječ, pa je par
+   jedan red "X → Y" (tekst veznika ostaje za čitače ekrana). Ako par baš ne stane, Y ide u novi red,
+   a strelica ostaje uz X. */
 @media only screen and (max-width: 1000px) {
   .col .par-primjera.par-dug {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-areas: 'x y' 'v v';
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    column-gap: 1.4em;
-    row-gap: 0;
+    column-gap: 0.35em;
     /* inače ga pogodi .reorder .col span:nth-of-type(…) (55% / 40%) */
     width: 100% !important;
-    margin: 0.2em 0 0.6em !important;
+    margin: 0.1em 0 !important;
     direction: ltr;
 
     span {
@@ -1823,20 +1821,17 @@ body.ima-oblak .lekcija-page {
       display: contents;
     }
 
-    > span:first-child > .rijec-audio {
-      grid-area: x;
-    }
-
+    /* veznik: umjesto teksta strelica */
     > span:first-child > span:last-child {
-      grid-area: v;
-      font-size: 0.8rem;
-      line-height: 1.2;
-      opacity: 0.75;
-      white-space: nowrap;
-    }
+      display: inline-flex;
+      align-items: center;
+      font-size: 0;
 
-    > span:last-child > .rijec-audio {
-      grid-area: y;
+      &::before {
+        content: '→';
+        font-size: 1.15rem;
+        opacity: 0.7;
+      }
     }
 
     /* ";" između parova ne treba – svaki par je u svom redu */
