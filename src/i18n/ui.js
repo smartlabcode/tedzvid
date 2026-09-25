@@ -1353,8 +1353,8 @@ const UI = {
 				Die Besonderheit der Website tedzvid.ba sind <strong>interaktive Beispiele</strong>, deren Audioaufnahme
 				Sie durch Klicken anhören können, und die Videoaufnahme nach der Übung wird Ihnen helfen, die
 				Tejwid-Regel, die Sie erlernen möchten, leichter zu verstehen. Wir hoffen, dass tedzvid.ba Lehrern bei der
-				Erklärung von Tejwid-Regeln helfen wird, sowohl für Kinder in der Schule als auch für Erwachsene nach
-				Abschluss der Sura.
+				Erklärung von Tejwid-Regeln helfen wird, sowohl für Kinder in der Koranschule als auch für Erwachsene nach
+				Abschluss der Sufara (der Fibel des arabischen Alphabets).
 			</React.Fragment>
 		),
 		quoteText: '„Die Besten unter euch sind die, die den Koran lernen und ihn lehren.“',
