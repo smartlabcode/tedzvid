@@ -1896,6 +1896,18 @@ textarea.field {
   }
 }
 
+/* 1201–1280px: na stranicama lekcija (bs/en) traka je bila za ~20px šira od prozora – uži razmaci
+   linkova i trake (njemački ima svoja, još uža pravila ispod) */
+@media (max-width: 1280px) {
+  .site-nav__links a {
+    padding: 10px 6px;
+  }
+
+  .site-nav__inner {
+    gap: 12px;
+  }
+}
+
 /* do 1200px: linkovi idu u mobilni meni, dugme ostaje */
 @media (max-width: 1200px) {
   .site-nav__links,
