@@ -2,6 +2,20 @@ import React, { useState } from 'react';
 import Player from '../Player/Player';
 import Arabic from '../Letters/Arabic';
 import vezniTekst from '../i18n/vezniTekst';
+import { jezik } from '../i18n/LanguageContext';
+
+/* Veznik "čita se:" je na njemačkom i engleskom predug za telefon – tamo se umjesto njega vidi strelica
+   (CSS .veznik-dug), a puni tekst ostaje za čitače ekrana i za širi ekran. */
+function veznik(after) {
+	const tekst = vezniTekst(after);
+	if (typeof after !== 'string' || !after.trim().endsWith(':') || jezik() === 'bs') return tekst;
+	return (
+		<span className="veznik-dug">
+			<span className="veznik-tekst">{tekst}</span>
+			<span className="veznik-strelica" aria-hidden="true" />
+		</span>
+	);
+}
 
 function PRow(data, rowname) {
 	const [ playing, setPlaying ] = useState(false);
@@ -21,7 +35,7 @@ function PRow(data, rowname) {
 							{dat.word}
 						</Arabic>
 					</Player>{' '}
-					<span className={myClassName}> {dat.after === 'break' ? <br /> : vezniTekst(dat.after)}</span>
+					<span className={myClassName}> {dat.after === 'break' ? <br /> : veznik(dat.after)}</span>
 				</span>
 			);
 		});

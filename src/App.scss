@@ -744,6 +744,47 @@ span.arap-red {
 }
 
 /* ---------- raspored primjera (funkcionalno, ne mijenjati) ---------- */
+/* veznik na de/en: na telefonu strelica umjesto "wird ausgesprochen:" / "is recited as:" */
+.veznik-strelica {
+  display: none;
+
+  &::before {
+    content: '→';
+  }
+
+  &:dir(rtl)::before {
+    content: '←';
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .veznik-dug {
+    .veznik-tekst {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      white-space: nowrap;
+    }
+
+    .veznik-strelica {
+      display: inline-block;
+      padding: 0 0.6em;
+      font-size: 1.2rem;
+    }
+  }
+
+  /* par u rečenici (L15, L16): na telefonu u svom redu, "X → Y" */
+  .opisLekcije .par-primjera {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: center;
+    direction: ltr;
+  }
+}
+
 /* par primjera ("X čita se: Y"): u novi red ide cijeli, iznutra se lomi samo ako je sam širi od reda */
 .par-primjera {
   display: inline-flex;
