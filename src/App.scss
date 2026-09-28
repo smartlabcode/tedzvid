@@ -803,25 +803,16 @@ span.arap-red {
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1000px) {
+  /* kao na starom tedzvid.ba (master): 2.2rem na tabletu */
   .oznaceno,
   .arapski,
   .arapski-lekcija {
-    font-size: 2.8rem !important;
+    font-size: 2.2rem !important;
   }
 
-  span.arapski {
-    line-height: 4rem;
-  }
-
-  .lekcija-page .mobile-row {
-    span.arapski,
-    span.oznaceno {
-      font-size: 2.2rem !important;
-    }
-
-    span.arapski {
-      line-height: 3.9rem;
-    }
+  span.arapski,
+  .lekcija-page .mobile-row span.arapski {
+    line-height: 3.9rem;
   }
 }
 
@@ -876,29 +867,20 @@ span.arap-red {
     font-size: 1rem;
   }
 
+  /* kao na starom tedzvid.ba (master): 1.8rem na telefonu */
   .oznaceno,
   .arapski,
   .arapski-lekcija {
-    font-size: 2.3rem !important;
+    font-size: 1.8rem !important;
   }
 
-  span.arapski {
-    line-height: 3.4rem;
+  span.arapski,
+  .lekcija-page .mobile-row span.arapski {
+    line-height: 3.3rem;
   }
 
-  .lekcija-page .mobile-row {
-    span.arapski,
-    span.oznaceno {
-      font-size: 1.8rem !important;
-    }
-
-    span.arapski {
-      line-height: 3.3rem;
-    }
-
-    span.tacka {
-      font-size: 1.3rem;
-    }
+  .lekcija-page .mobile-row span.tacka {
+    font-size: 1.3rem;
   }
 
   .mobile-row {
