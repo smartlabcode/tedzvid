@@ -487,6 +487,12 @@ span.arap-red {
     tbody tr:hover td {
       background: var(--gold-100);
     }
+
+    /* u ćeliji line-height: 1 (vidi span.arapski-lekcija) pušta harakate iznad
+       slova do samog zaglavlja; ovdje treba puna visina reda */
+    td .arapski-lekcija {
+      line-height: 1.7;
+    }
   }
 
   /* telefon: sve kolone moraju stati u širinu ekrana; duge njemačke riječi
