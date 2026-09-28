@@ -41,7 +41,7 @@ const TXT = {
 					<Col className="opisLekcije">
 						<strong>2.</strong> kada je harf<strong> R </strong>sa <strong>sukunom</strong>, a prije njeg
 						harf sa <strong>vokalom</strong> I (
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							ــــِـــ رْ{' '}
 						</span>
 						), npr.:
@@ -54,7 +54,7 @@ const TXT = {
 					<Col className="opisLekcije">
 						<strong>3.</strong> kada je harf<strong> R </strong>sa <strong>sukunom</strong>, prije njeg harf
 						sa <strong>sukunom</strong>, a prije toga harf sa <strong>vokalom</strong> I (
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							{' '}
 							ــِـ ــْـ رْ{' '}
 						</span>
@@ -68,7 +68,7 @@ const TXT = {
 						<strong>4.</strong> kada je harf<strong> R </strong>sa <strong>sukunom</strong>, a prije njeg
 						harf <strong>J</strong> također sa <strong>sukunom</strong>, a prije toga harf sa{' '}
 						<strong>vokalom</strong> E (
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							{' '}
 							ــــَـــ يْـــرْ{' '}
 						</span>
@@ -111,7 +111,7 @@ const TXT = {
 					<Col className="opisLekcije">
 						<strong>2.</strong> kada je harf<strong> R </strong>sa <strong>sukunom</strong>, a prije
 						njeg harf sa <strong>vokalom</strong> I (
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							ــــِـــ رْ{' '}
 						</span>
 						), npr.:
@@ -125,7 +125,7 @@ const TXT = {
 						<strong>3.</strong> kada je harf<strong> R </strong>sa <strong>sukunom</strong>, prije
 						njeg harf sa <strong>sukunom</strong>, a prije toga harf sa
 						<strong>vokalom</strong> I (
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							{' '}
 							ــِـ ــْـ رْ{' '}
 						</span>
@@ -139,7 +139,7 @@ const TXT = {
 						<strong>4.</strong> kada je harf<strong> R </strong>sa <strong>sukunom</strong>, a prije
 						njeg harf <strong>J</strong> također sa <strong>sukunom</strong>, a prije toga harf sa{' '}
 						<strong>vokalom</strong> E (
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							{' '}
 							ــــَـــ يْـــرْ{' '}
 						</span>
@@ -189,7 +189,7 @@ const TXT = {
 						<strong>2.</strong> When the letter<strong> R </strong>has{' '}
 						<strong>sukoon</strong>, and is preceded by the letter with the{' '}
 						<strong>vowel</strong> I (
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							ــــِـــ رْ{' '}
 						</span>
 						), as in:
@@ -204,7 +204,7 @@ const TXT = {
 						<strong>sukoon</strong>, and is preceded by the{' '}
 						<strong>letter with sukoon</strong>, which is in turn preceded by
 						the letter with the <strong>vowel</strong> I (
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							{' '}
 							ــِـ ــْـ رْ{' '}
 						</span>
@@ -220,7 +220,7 @@ const TXT = {
 						<strong>sukoon</strong>, and is preceded by the letter{' '}
 						<strong>J</strong> with <strong>sukoon</strong>, which is in turn
 						preceded by a letter with the <strong>vowel</strong> E (
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							{' '}
 							ــــَـــ يْـــرْ{' '}
 						</span>
@@ -265,7 +265,7 @@ const TXT = {
 						<strong>2.</strong> When the letter<strong> R </strong>has{' '}
 						<strong>sukoon</strong>, and is preceded by the letter with the{' '}
 						<strong>vowel</strong> I (
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							ــــِـــ رْ{' '}
 						</span>
 						), as in:
@@ -280,7 +280,7 @@ const TXT = {
 						<strong>sukoon</strong>, and is preceded by the{' '}
 						<strong>letter with sukoon</strong>, which is in turn preceded
 						by the letter with the <strong>vowel</strong> I (
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							{' '}
 							ــِـ ــْـ رْ{' '}
 						</span>
@@ -296,7 +296,7 @@ const TXT = {
 						<strong>sukoon</strong>, and is preceded by the letter{' '}
 						<strong>J</strong> with <strong>sukoon</strong>, which is in
 						turn preceded by a letter with the <strong>vowel</strong> E (
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							{' '}
 							ــــَـــ يْـــرْ{' '}
 						</span>
@@ -343,7 +343,7 @@ const TXT = {
 					<Col className="opisLekcije">
 						<strong>2.</strong> Wenn der Buchstabe<strong> R </strong> <strong>sukun</strong> hat und ihm ein Buchstabe
 						mit dem <strong>Vokal</strong> I vorausgeht (
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							ــــِـــ رْ{' '}
 						</span>
 						), z.B.:
@@ -357,7 +357,7 @@ const TXT = {
 						<strong>3.</strong> Wenn der Buchstabe<strong> R </strong> <strong>sukun</strong> hat und ihm ein Buchstabe
 						mit <strong>sukun</strong> vorausgeht, dem wiederum ein Buchstabe mit dem <strong>Vokal</strong> I
 						vorausgeht (
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							{' '}
 							ــِـ ــْـ رْ{' '}
 						</span>
@@ -372,13 +372,11 @@ const TXT = {
 						<strong>4.</strong> Wenn der Buchstabe<strong> R </strong> <strong>sukun</strong> hat und ihm der Buchstabe{' '}
 						<strong>J</strong> mit <strong>sukun</strong> vorausgeht, dem wiederum ein Buchstabe mit dem{' '}
 						<strong>Vokal</strong> E vorausgeht (
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							{' '}
 							ــــَـــ يْـــرْ{' '}
 						</span>
-						), zum Beispiel:
-						<br />
-						{P('row12')}
+						), zum Beispiel: {P('row12')}
 					</Col>
 				</Row>
 
@@ -417,7 +415,7 @@ const TXT = {
 					<Col className="opisLekcije">
 						<strong>2.</strong> Wenn der Buchstabe<strong> R </strong> <strong>sukun</strong> hat und ihm ein Buchstabe
 						mit dem <strong>Vokal</strong> I vorausgeht (
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							ــــِـــ رْ{' '}
 						</span>
 						), z.B.:
@@ -431,7 +429,7 @@ const TXT = {
 						<strong>3.</strong> Wenn der Buchstabe<strong> R </strong> <strong>sukun</strong> hat und ihm ein Buchstabe
 						mit <strong>sukun</strong> vorausgeht, dem wiederum ein Buchstabe mit dem <strong>Vokal</strong> I
 						vorausgeht (
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							{' '}
 							ــِـ ــْـ رْ{' '}
 						</span>
@@ -446,13 +444,11 @@ const TXT = {
 						<strong>4.</strong> Wenn der Buchstabe<strong> R </strong> <strong>sukun</strong> hat und ihm der Buchstabe{' '}
 						<strong>J</strong> mit <strong>sukun</strong> vorausgeht, dem wiederum ein Buchstabe mit dem{' '}
 						<strong>Vokal</strong> E vorausgeht (
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							{' '}
 							ــــَـــ يْـــرْ{' '}
 						</span>
-						), zum Beispiel:
-						<br />
-						{P('row12')}
+						), zum Beispiel: {P('row12')}
 					</Col>
 				</Row>
 

@@ -35,32 +35,32 @@ const TXT = {
 						ili <strong>tenvina</strong> EN <span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
 						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
 						<span className="arapski-lekcija">ــٌــ</span> dođe jedan od šest grlenih harfova:<pre style={{ display: 'inline' }}> </pre>
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							{' '}
 							خ
 						</span>
 						<pre style={{ display: 'inline' }}> </pre>
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							{' '}
 							غ
 						</span>
 						<pre style={{ display: 'inline' }}> </pre>
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							{' '}
 							ح
 						</span>
 						<pre style={{ display: 'inline' }}> </pre>
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							{' '}
 							ع
 						</span>
 						<pre style={{ display: 'inline' }}> </pre>
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							{' '}
 							ه
 						</span>{' '}
 						<pre style={{ display: 'inline' }}> </pre>
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							{' '}
 							أ{' '}
 						</span>{' '}
@@ -115,32 +115,32 @@ const TXT = {
 						ili <strong>tenvina</strong> EN <span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
 						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
 						<span className="arapski-lekcija">ــٌــ</span> dođe jedan od šest grlenih harfova:<pre style={{ display: 'inline' }}> </pre>
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							{' '}
 							خ
 						</span>
 						<pre style={{ display: 'inline' }}> </pre>
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							{' '}
 							غ
 						</span>
 						<pre style={{ display: 'inline' }}> </pre>
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							{' '}
 							ح
 						</span>
 						<pre style={{ display: 'inline' }}> </pre>
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							{' '}
 							ع
 						</span>
 						<pre style={{ display: 'inline' }}> </pre>
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							{' '}
 							ه
 						</span>{' '}
 						<pre style={{ display: 'inline' }}> </pre>
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							{' '}
 							أ{' '}
 						</span>{' '}
@@ -211,32 +211,32 @@ const TXT = {
 						<span className="arapski-lekcija "> ــٌــ</span> is followed by one
 						of the six throat letters:{' '}
 						<pre style={{ display: 'inline' }}> </pre>
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							{' '}
 							خ
 						</span>
 						<pre style={{ display: 'inline' }}> </pre>
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							{' '}
 							غ
 						</span>
 						<pre style={{ display: 'inline' }}> </pre>
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							{' '}
 							ح
 						</span>
 						<pre style={{ display: 'inline' }}> </pre>
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							{' '}
 							ع
 						</span>
 						<pre style={{ display: 'inline' }}> </pre>
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							{' '}
 							ه
 						</span>{' '}
 						<pre style={{ display: 'inline' }}> </pre>
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							{' '}
 							أ{' '}
 						</span>{' '}
@@ -263,11 +263,11 @@ const TXT = {
 						with <strong>sukoon</strong> (
 						<span className="arapski-lekcija">نْ</span>) is followed by the
 						letters <strong>W</strong> (
-						<span className="arapski-lekcija" style={{ color: 'black' }}>
+						<span className="arapski-lekcija">
 							و
 						</span>
 						) or <strong>J</strong> (
-						<span className="arapski-lekcija" style={{ color: 'black' }}>
+						<span className="arapski-lekcija">
 							ي
 						</span>
 						) <u>within the same word</u>, the letter <strong>N</strong> (
@@ -305,32 +305,32 @@ const TXT = {
 						<span className="arapski-lekcija "> ــٌــ </span>is followed by
 						one of the six throat letters:{' '}
 						<pre style={{ display: 'inline' }}> </pre>
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							{' '}
 							خ
 						</span>
 						<pre style={{ display: 'inline' }}> </pre>
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							{' '}
 							غ
 						</span>
 						<pre style={{ display: 'inline' }}> </pre>
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							{' '}
 							ح
 						</span>
 						<pre style={{ display: 'inline' }}> </pre>
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							{' '}
 							ع
 						</span>
 						<pre style={{ display: 'inline' }}> </pre>
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							{' '}
 							ه
 						</span>{' '}
 						<pre style={{ display: 'inline' }}> </pre>
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							{' '}
 							أ{' '}
 						</span>{' '}
@@ -356,11 +356,11 @@ const TXT = {
 						<strong>N</strong> with <strong>sukoon</strong> (
 						<span className="arapski-lekcija">نْ</span>) is followed by the
 						letters <strong>W</strong> (
-						<span className="arapski-lekcija" style={{ color: 'black' }}>
+						<span className="arapski-lekcija">
 							و
 						</span>
 						) or <strong>J</strong> (
-						<span className="arapski-lekcija" style={{ color: 'black' }}>
+						<span className="arapski-lekcija">
 							ي
 						</span>
 						) <u>within the same word</u>, the letter <strong>N</strong> (
@@ -405,32 +405,32 @@ const TXT = {
 						<span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
 						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
 						<span className="arapski-lekcija">ــٌــ</span> einer der IZHAR Buchstaben:<pre style={{ display: 'inline' }}> </pre>
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							{' '}
 							خ
 						</span>
 						<pre style={{ display: 'inline' }}> </pre>
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							{' '}
 							غ
 						</span>
 						<pre style={{ display: 'inline' }}> </pre>
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							{' '}
 							ح
 						</span>
 						<pre style={{ display: 'inline' }}> </pre>
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							{' '}
 							ع
 						</span>
 						<pre style={{ display: 'inline' }}> </pre>
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							{' '}
 							ه
 						</span>{' '}
 						<pre style={{ display: 'inline' }}> </pre>
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							{' '}
 							أ{' '}
 						</span>
@@ -486,32 +486,32 @@ const TXT = {
 						<span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
 						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
 						<span className="arapski-lekcija">ــٌــ</span> einer der IZHAR Buchstaben:<pre style={{ display: 'inline' }}> </pre>
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							{' '}
 							خ
 						</span>
 						<pre style={{ display: 'inline' }}> </pre>
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							{' '}
 							غ
 						</span>
 						<pre style={{ display: 'inline' }}> </pre>
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							{' '}
 							ح
 						</span>
 						<pre style={{ display: 'inline' }}> </pre>
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							{' '}
 							ع
 						</span>
 						<pre style={{ display: 'inline' }}> </pre>
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							{' '}
 							ه
 						</span>{' '}
 						<pre style={{ display: 'inline' }}> </pre>
-						<span className="arapski-lekcija" style={{ color: 'red' }}>
+						<span className="arapski-lekcija arap-red">
 							{' '}
 							أ{' '}
 						</span>

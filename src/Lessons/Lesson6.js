@@ -39,8 +39,8 @@ const TXT = {
 						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
 						<span className="arapski-lekcija">ــٌــ</span> dođe jedan od četiri harfa:&nbsp;
 						<span
-							className="arapski-lekcija"
-							style={{ color: 'red', fontSize: '3rem', whiteSpace: 'nowrap' }}
+							className="arapski-lekcija arap-red"
+							style={{ whiteSpace: 'nowrap' }}
 						>
 							و ن م ي
 						</span>{' '}
@@ -100,8 +100,8 @@ const TXT = {
 						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
 						<span className="arapski-lekcija">ــٌــ</span> dođe jedan od četiri harfa:{' '}
 						<span
-							className="arapski-lekcija"
-							style={{ color: 'red', fontSize: '3rem', whiteSpace: 'nowrap' }}
+							className="arapski-lekcija arap-red"
+							style={{ whiteSpace: 'nowrap' }}
 						>
 							و ن م ي
 						</span>{' '}
@@ -174,8 +174,8 @@ const TXT = {
 						<span className="arapski-lekcija">ــٌــ</span> is followed by one of
 						the four letters: &nbsp;
 						<span
-							className="arapski-lekcija"
-							style={{ color: "red", fontSize: "3rem", whiteSpace: "nowrap" }}
+							className="arapski-lekcija arap-red"
+							style={{ whiteSpace: 'nowrap' }}
 						>
 							و ن م ي
 						</span>{' '}
@@ -237,12 +237,8 @@ const TXT = {
 						<span className="arapski-lekcija">ــٌــ</span> is followed by
 						one of the four letters: &nbsp;
 						<span
-							className="arapski-lekcija"
-							style={{
-								color: "red",
-								fontSize: "3rem",
-								whiteSpace: "nowrap",
-							}}
+							className="arapski-lekcija arap-red"
+							style={{ whiteSpace: 'nowrap' }}
 						>
 							و ن م ي
 						</span>{' '}
@@ -312,8 +308,8 @@ const TXT = {
 						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
 						<span className="arapski-lekcija">ــٌــ</span> einer der vier idgam Buchstaben:&nbsp;
 						<span
-							className="arapski-lekcija"
-							style={{ color: 'red', fontSize: '3rem', whiteSpace: 'nowrap' }}
+							className="arapski-lekcija arap-red"
+							style={{ whiteSpace: 'nowrap' }}
 						>
 							و ن م ي
 						</span>{' '}
@@ -372,8 +368,8 @@ const TXT = {
 						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
 						<span className="arapski-lekcija">ــٌــ</span> einer der vier idgam Buchstaben:&nbsp;
 						<span
-							className="arapski-lekcija"
-							style={{ color: 'red', fontSize: '3rem', whiteSpace: 'nowrap' }}
+							className="arapski-lekcija arap-red"
+							style={{ whiteSpace: 'nowrap' }}
 						>
 							و ن م ي
 						</span>{' '}

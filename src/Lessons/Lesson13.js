@@ -3,7 +3,6 @@ import data from '../Data/L13Data.json';
 import PlayerRow from '../Helpers/PlayerHelper';
 import VjezbeRow from '../Helpers/VjezbeHelper';
 import Footer from '../Body/MainFooter';
-import Arabic from '../Letters/Arabic';
 import LekcijaMenu from '../Body/LekcijaMenu';
 import LessonVideo from '../Body/LessonVideo';
 import LessonQuiz from '../Quiz/LessonQuiz';
@@ -34,11 +33,9 @@ const TXT = {
 					<Col className="opisLekcije">
 						Kada sa <strong>sukunom</strong> (
 						<span className="arapski-lekcija">ـــْـــ</span>) dođe jedan od pet harfova:{' '}
-						<Arabic key="ar1l13" arabic="د ج ب ط ق">
-							د ج ب ط ق
-						</Arabic>{' '}
+						<span lang="ar" className="arapski-lekcija arap-red">د ج ب ط ق</span>{' '}
 						(sadržanih u izrazu <strong>kutbu džeddin</strong> -{' '}
-						<span className="arapski-lekcija" style={{ fontSize: '1.675em' }}>
+						<span className="arapski-lekcija">
 							قُطْبُ جَدٍّ
 						</span>{' '}
 						), dolazi do <u>odskakanja</u> navedenih harfova, npr.:
@@ -86,11 +83,9 @@ const TXT = {
 					<Col className="opisLekcije">
 						Kada sa <strong>sukunom</strong> (
 						<span className="arapski-lekcija">ـــْـــ</span>) dođe jedan od pet harfova:{' '}
-						<Arabic key="ar1l13" arabic="د ج ب ط ق">
-							د ج ب ط ق
-						</Arabic>{' '}
+						<span lang="ar" className="arapski-lekcija arap-red">د ج ب ط ق</span>{' '}
 						(sadržanih u izrazu <strong>kutbu džeddin</strong> -{' '}
-						<span className="arapski-lekcija" style={{ fontSize: '1.675em' }}>
+						<span className="arapski-lekcija">
 							قُطْبُ جَدٍّ
 						</span>{' '}
 						), dolazi do <u>odskakanja</u> navedenih harfova, npr.:
@@ -146,11 +141,9 @@ const TXT = {
 				<Row>
 					<Col className="opisLekcije">
 						When one of the five letters{' '}
-						<Arabic key="ar1l13" arabic="ق ط ب ج د">
-							ق ط ب ج د
-						</Arabic>{' '}
+						<span lang="ar" className="arapski-lekcija arap-red">ق ط ب ج د</span>{' '}
 						(contained within the phrase <strong>kutbu džeddin</strong> -{' '}
-						<span className="arapski-lekcija" style={{ fontSize: '1.675em' }}>
+						<span className="arapski-lekcija">
 							قُطْبُ جَدٍّ)
 						</span>{' '}
 						, appears with <strong>sukoon </strong> (
@@ -199,14 +192,9 @@ const TXT = {
 				<Row>
 					<Col className="opisLekcije">
 						When one of the five letters{' '}
-						<Arabic key="ar1l13" arabic="ق ط ب ج د">
-							ق ط ب ج د
-						</Arabic>{' '}
+						<span lang="ar" className="arapski-lekcija arap-red">ق ط ب ج د</span>{' '}
 						(contained within the phrase <strong>kutbu džeddin</strong> -{' '}
-						<span
-							className="arapski-lekcija"
-							style={{ fontSize: '1.675em' }}
-						>
+						<span className="arapski-lekcija">
 							قُطْبُ جَدٍّ)
 						</span>{' '}
 						, appears with <strong>sukoon </strong> (
@@ -264,9 +252,7 @@ const TXT = {
 				<Row>
 					<Col className="opisLekcije">
 						Wenn einer der Kalkala Buchstaben{' '}
-						<Arabic key="ar1l13" arabic="د ج ب ط ق">
-							د ج ب ط ق
-						</Arabic>{' '}
+						<span lang="ar" className="arapski-lekcija arap-red">د ج ب ط ق</span>{' '}
 						mit <strong>sukun</strong> (<span className="arapski-lekcija">ـــْـــ</span>) vorkommt, dann werden
 						die oben genannten Buchstaben kraftvoll federnd ausgesprochen. Zum Beispiel:
 					</Col>
@@ -311,9 +297,7 @@ const TXT = {
 				<Row>
 					<Col className="opisLekcije">
 						Wenn einer der Kalkala Buchstaben{' '}
-						<Arabic key="ar1l13" arabic="د ج ب ط ق">
-							د ج ب ط ق
-						</Arabic>{' '}
+						<span lang="ar" className="arapski-lekcija arap-red">د ج ب ط ق</span>{' '}
 						mit <strong>sukun</strong> (<span className="arapski-lekcija">ـــْـــ</span>) vorkommt, dann werden
 						die oben genannten Buchstaben kraftvoll federnd ausgesprochen. Zum Beispiel:
 					</Col>

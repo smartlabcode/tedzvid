@@ -3,7 +3,6 @@ import data from '../Data/L11Data.json';
 import PlayerRow from '../Helpers/PlayerHelper';
 import VjezbeRow from '../Helpers/VjezbeHelper';
 import Footer from '../Body/MainFooter';
-import Arabic from '../Letters/Arabic';
 import LekcijaMenu from '../Body/LekcijaMenu';
 import LessonVideo from '../Body/LessonVideo';
 import LessonQuiz from '../Quiz/LessonQuiz';
@@ -37,12 +36,7 @@ const TXT = {
 						<span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
 						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
 						<span className="arapski-lekcija">ــٌــ</span> dođe jedan od 15 harfova:{' '}
-						<span style={{ display: 'inline-flex' }}>
-							<Arabic arabic="ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق " key="arL11">
-								{' '}
-								ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق ,
-							</Arabic>
-						</span>{' '}
+						<span lang="ar" className="arapski-lekcija arap-red">ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق</span> ,{' '}
 						onda se harf <strong>N</strong> (
 						<span className="arapski-lekcija">ن</span>) uči kroz nos u trajanju od 2 hareketa, s tim da
 						jezik ne dotakne nepce, npr.:
@@ -92,12 +86,7 @@ const TXT = {
 						<span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
 						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
 						<span className="arapski-lekcija">ــٌــ</span> dođe jedan od 15 harfova:{' '}
-						<span style={{ display: 'inline-flex' }}>
-							<Arabic arabic="ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق " key="arL11">
-								{' '}
-								ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق ,
-							</Arabic>
-						</span>{' '}
+						<span lang="ar" className="arapski-lekcija arap-red">ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق</span> ,{' '}
 						onda se harf <strong>N</strong> (
 						<span className="arapski-lekcija">ن</span>) uči kroz nos u trajanju od 2 hareketa, s tim
 						da jezik ne dotakne nepce, npr.:
@@ -159,15 +148,7 @@ const TXT = {
 						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
 						<span className="arapski-lekcija">ــٌــ</span> is following by one
 						of the 15 letters:{' '}
-						<span style={{ display: 'inline-flex' }}>
-							<Arabic arabic="ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق" key="arL11">
-								{' '}
-								<span style={{ color: 'red', fontSize: '2.5rem' }}>
-									ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق
-								</span>
-								{" ,"}
-							</Arabic>
-						</span>{' '}
+						<span lang="ar" className="arapski-lekcija arap-red">ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق</span> ,{' '}
 						then a two-beat <strong>N</strong> (
 						<span className="arapski-lekcija">ن</span>) is pronounced{' '}
 						<u>through nose</u>, without the tongue touching the palate, for
@@ -219,15 +200,7 @@ const TXT = {
 						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
 						<span className="arapski-lekcija">ــٌــ</span> is following by
 						one of the 15 letters:{' '}
-						<span style={{ display: 'inline-flex' }}>
-							<Arabic arabic="ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق" key="arL11">
-								{' '}
-								<span style={{ color: 'red', fontSize: '2.5rem' }}>
-									ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق
-								</span>
-								{" ,"}
-							</Arabic>
-						</span>{' '}
+						<span lang="ar" className="arapski-lekcija arap-red">ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق</span> ,{' '}
 						then a two-beat <strong>N</strong> (
 						<span className="arapski-lekcija">ن</span>) is pronounced{' '}
 						<u>through nose</u>, without the tongue touching the palate, for
@@ -287,12 +260,7 @@ const TXT = {
 						<span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
 						<span className="arapski-lekcija">ـــٍــ</span> , oder UN{' '}
 						<span className="arapski-lekcija">ــٌــ</span> einer der 15 Buchstaben folgt:{' '}
-						<span style={{ display: 'inline-flex' }}>
-							<Arabic arabic="ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق " key="arL11">
-								{' '}
-								ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق ,
-							</Arabic>
-						</span>{' '}
+						<span lang="ar" className="arapski-lekcija arap-red">ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق</span> ,{' '}
 						dann wird <strong>N</strong> (<span className="arapski-lekcija">ن</span>) oder <strong>tanwin</strong>{' '}
 						EN <span className="arapski-lekcija">ـــًـــ</span> , in oder un nasal ausgesprochen. Zum Beispiel:
 					</Col>
@@ -340,12 +308,7 @@ const TXT = {
 						<span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
 						<span className="arapski-lekcija">ـــٍــ</span> , oder UN{' '}
 						<span className="arapski-lekcija">ــٌــ</span> einer der 15 Buchstaben folgt:{' '}
-						<span style={{ display: 'inline-flex' }}>
-							<Arabic arabic="ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق " key="arL11">
-								{' '}
-								ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق ,
-							</Arabic>
-						</span>{' '}
+						<span lang="ar" className="arapski-lekcija arap-red">ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق</span> ,{' '}
 						dann wird <strong>N</strong> (<span className="arapski-lekcija">ن</span>) oder <strong>tanwin</strong>{' '}
 						EN <span className="arapski-lekcija">ـــًـــ</span> , in oder un nasal ausgesprochen. Zum Beispiel:
 					</Col>

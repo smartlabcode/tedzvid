@@ -39,8 +39,8 @@ const TXT = {
 				<Row>
 					<Col className="opisLekcije ">
 						1. Kada poslije harfa <strong>Q</strong> sa <strong>sukunom</strong>{' '}
-						<span className="arapski">(قْ)</span> dođe harf <strong>K</strong>{' '}
-						<span className="arapski">(ك)</span> sa <strong>hareketom</strong>:
+						<span className="arapski-lekcija">(قْ)</span> dođe harf <strong>K</strong>{' '}
+						<span className="arapski-lekcija">(ك)</span> sa <strong>hareketom</strong>:
 					</Col>
 				</Row>
 
@@ -51,8 +51,8 @@ const TXT = {
 				<Row>
 					<Col className="opisLekcije ">
 						2. Kada poslije harfa <strong>L</strong> sa <strong>sukunom</strong>{' '}
-						<span className="arapski">(لْ)</span> dođe harf <strong>R</strong>{' '}
-						<span className="arapski">(ر)</span> sa <strong>hareketom</strong>:
+						<span className="arapski-lekcija">(لْ)</span> dođe harf <strong>R</strong>{' '}
+						<span className="arapski-lekcija">(ر)</span> sa <strong>hareketom</strong>:
 					</Col>
 				</Row>
 
@@ -86,8 +86,8 @@ const TXT = {
 				<Row>
 					<Col className="opisLekcije my-3">
 						1. Kada poslije harfa <strong>Q</strong> sa <strong>sukunom</strong>{' '}
-						<span className="arapski">(قْ)</span> dođe harf <strong>K</strong>{' '}
-						<span className="arapski">(ك)</span> sa <strong>hareketom</strong>:
+						<span className="arapski-lekcija">(قْ)</span> dođe harf <strong>K</strong>{' '}
+						<span className="arapski-lekcija">(ك)</span> sa <strong>hareketom</strong>:
 					</Col>
 				</Row>
 
@@ -98,8 +98,8 @@ const TXT = {
 				<Row>
 					<Col className="opisLekcije my-3">
 						2. Kada poslije harfa <strong>L</strong> sa <strong>sukunom</strong>{' '}
-						<span className="arapski">(لْ)</span> dođe harf <strong>R</strong>{' '}
-						<span className="arapski">(ر)</span> sa <strong>hareketom</strong>:
+						<span className="arapski-lekcija">(لْ)</span> dođe harf <strong>R</strong>{' '}
+						<span className="arapski-lekcija">(ر)</span> sa <strong>hareketom</strong>:
 					</Col>
 				</Row>
 
@@ -145,8 +145,8 @@ const TXT = {
 				<Row>
 					<Col className="opisLekcije ">
 						1. When the letter <strong>Q</strong> with <strong>sukoon</strong>{' '}
-						<span className="arapski">(قْ)</span> is followed by the letter{' '}
-						<strong>K</strong> <span className="arapski">(ك)</span> with{' '}
+						<span className="arapski-lekcija">(قْ)</span> is followed by the letter{' '}
+						<strong>K</strong> <span className="arapski-lekcija">(ك)</span> with{' '}
 						<strong>a short vowel/haraka</strong>:
 					</Col>
 				</Row>
@@ -158,8 +158,8 @@ const TXT = {
 				<Row>
 					<Col className="opisLekcije ">
 						2. When the letter <strong>L</strong> with <strong>sukoon</strong>{' '}
-						<span className="arapski">(لْ)</span> is followed by the letter{' '}
-						<strong>R</strong> <span className="arapski">(ر)</span> with{' '}
+						<span className="arapski-lekcija">(لْ)</span> is followed by the letter{' '}
+						<strong>R</strong> <span className="arapski-lekcija">(ر)</span> with{' '}
 						<strong>a short vowel/haraka</strong>:
 					</Col>
 				</Row>
@@ -195,9 +195,9 @@ const TXT = {
 				<Row>
 					<Col className="opisLekcije ">
 						1. When the letter <strong>Q</strong> with{' '}
-						<strong>sukoon</strong> <span className="arapski">(قْ)</span> is
+						<strong>sukoon</strong> <span className="arapski-lekcija">(قْ)</span> is
 						followed by the letter <strong>K</strong>{' '}
-						<span className="arapski">(ك)</span> with{' '}
+						<span className="arapski-lekcija">(ك)</span> with{' '}
 						<strong>a short vowel/haraka</strong>:
 					</Col>
 				</Row>
@@ -209,9 +209,9 @@ const TXT = {
 				<Row>
 					<Col className="opisLekcije ">
 						2. When the letter <strong>L</strong> with{' '}
-						<strong>sukoon</strong> <span className="arapski">(لْ)</span> is
+						<strong>sukoon</strong> <span className="arapski-lekcija">(لْ)</span> is
 						followed by the letter <strong>R</strong>{' '}
-						<span className="arapski">(ر)</span> with{' '}
+						<span className="arapski-lekcija">(ر)</span> with{' '}
 						<strong>a short vowel/haraka</strong>:
 					</Col>
 				</Row>
@@ -256,8 +256,8 @@ const TXT = {
 				<Row>
 					<Col className="opisLekcije ">
 						1. Wenn nach dem Buchstaben <strong>Q</strong> mit <strong>sukun</strong>{' '}
-						<span className="arapski">(قْ)</span> der Buchstabe <strong>K</strong>{' '}
-						<span className="arapski">(ك)</span> mit <strong>Vokal</strong> folgt:
+						<span className="arapski-lekcija">(قْ)</span> der Buchstabe <strong>K</strong>{' '}
+						<span className="arapski-lekcija">(ك)</span> mit <strong>Vokal</strong> folgt:
 					</Col>
 				</Row>
 
@@ -268,8 +268,8 @@ const TXT = {
 				<Row>
 					<Col className="opisLekcije ">
 						2. Wenn nach dem Buchstaben <strong>L</strong> mit <strong>sukun</strong>{' '}
-						<span className="arapski">(لْ)</span> der Buchstabe <strong>R</strong>{' '}
-						<span className="arapski">(ر)</span> mit <strong>Vokal</strong> folgt:
+						<span className="arapski-lekcija">(لْ)</span> der Buchstabe <strong>R</strong>{' '}
+						<span className="arapski-lekcija">(ر)</span> mit <strong>Vokal</strong> folgt:
 					</Col>
 				</Row>
 
@@ -303,8 +303,8 @@ const TXT = {
 				<Row>
 					<Col className="opisLekcije my-3">
 						1. Wenn nach dem Buchstaben <strong>Q</strong> mit <strong>sukun</strong>{' '}
-						<span className="arapski">(قْ)</span> der Buchstabe <strong>K</strong>{' '}
-						<span className="arapski">(ك)</span> mit <strong>Vokal</strong> folgt:
+						<span className="arapski-lekcija">(قْ)</span> der Buchstabe <strong>K</strong>{' '}
+						<span className="arapski-lekcija">(ك)</span> mit <strong>Vokal</strong> folgt:
 					</Col>
 				</Row>
 
@@ -315,8 +315,8 @@ const TXT = {
 				<Row>
 					<Col className="opisLekcije my-3">
 						2. Wenn nach dem Buchstaben <strong>L</strong> mit <strong>sukun</strong>{' '}
-						<span className="arapski">(لْ)</span> der Buchstabe <strong>R</strong>{' '}
-						<span className="arapski">(ر)</span> mit <strong>Vokal</strong> folgt:
+						<span className="arapski-lekcija">(لْ)</span> der Buchstabe <strong>R</strong>{' '}
+						<span className="arapski-lekcija">(ر)</span> mit <strong>Vokal</strong> folgt:
 					</Col>
 				</Row>
 
