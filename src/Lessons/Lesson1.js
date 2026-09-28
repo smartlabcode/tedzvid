@@ -173,7 +173,7 @@ const TXT = {
 					<tbody>
 						<tr>
 							<td>
-								<A> سكتة ؛ س</A>
+								<A> سكتة&nbsp;؛&nbsp;س</A>
 								<br />
 								Pauzira se bez prekidanja daha.
 							</td>
@@ -372,7 +372,7 @@ const TXT = {
 					<tbody>
 						<tr>
 							<td>
-								<A> سكتة ؛ س</A>
+								<A> سكتة&nbsp;؛&nbsp;س</A>
 								<br />
 								Pause without taking a new breath when reciting.
 							</td>
@@ -548,7 +548,7 @@ const TXT = {
 					<tbody>
 						<tr>
 							<td>
-								<A> سكتة ؛ س</A>
+								<A> سكتة&nbsp;؛&nbsp;س</A>
 								<br />
 								Atempause.
 							</td>

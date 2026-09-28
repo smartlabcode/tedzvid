@@ -143,8 +143,7 @@ const TXT = {
 							{/*dodo sam "alt+0160" nevidljivi znak umjesto space-a kako bi sastavilo shaddah i arapski znak, kako bi uvijek bili u istom redu */}
 						</strong>
 						, al-madd al-lazim occurs. The reciter must extend the word for 6
-						counts, as in:<br></br>
-						{P('row1')}
+						counts, as in: {P('row1')}
 					</Col>
 				</Row>
 
@@ -190,8 +189,7 @@ const TXT = {
 							{/*dodo sam "alt+0160" nevidljivi znak umjesto space-a kako bi sastavilo shaddah i arapski znak, kako bi uvijek bili u istom redu */}
 						</strong>
 						, al-madd al-lazim occurs. The reciter must extend the word for
-						6 counts, as in:<br></br>
-						{P('row1')}
+						6 counts, as in: {P('row1')}
 					</Col>
 				</Row>
 
@@ -238,9 +236,7 @@ const TXT = {
 						<span className="arapski-lekcija">ـــُــ و</span> ein Buchstabe mit <strong>dauerhaftem sukun</strong>{' '}
 						<span className="arapski-lekcija"> ـــْــ </span> (sichtbar oder verborgen) oder <strong>Schadda</strong>
 						<span className="arapski-lekcija"> ـــّــ</span> folgt, nennt man das <strong>Medd Lāzim</strong>. Die
-						Länge der Aussprache ist verpflichtend 6 kurze Vokale. Zum Beispiel:
-						<br />
-						{P('row1')}
+						Länge der Aussprache ist verpflichtend 6 kurze Vokale. Zum Beispiel: {P('row1')}
 					</Col>
 				</Row>
 
@@ -277,9 +273,7 @@ const TXT = {
 						<span className="arapski-lekcija">ـــُــ و</span> ein Buchstabe mit <strong>dauerhaftem sukun</strong>{' '}
 						<span className="arapski-lekcija"> ـــْــ </span> (sichtbar oder verborgen) oder <strong>Schadda</strong>
 						<span className="arapski-lekcija"> ـــّــ</span> folgt, nennt man das <strong>Medd Lāzim</strong>. Die
-						Länge der Aussprache ist verpflichtend 6 kurze Vokale. Zum Beispiel:
-						<br />
-						{P('row1')}
+						Länge der Aussprache ist verpflichtend 6 kurze Vokale. Zum Beispiel: {P('row1')}
 					</Col>
 				</Row>
 
