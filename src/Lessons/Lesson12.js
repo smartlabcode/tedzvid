@@ -282,12 +282,6 @@ function L12() {
 					</Col>
 				</Row>
 
-				<Row>
-					<Col>
-						<br />
-					</Col>
-				</Row>
-
 				<IconContext.Provider value={{ size: '30px', style: { float: 'right' } }}>
 					<MdZoomOutMap className="zoomIcon" onClick={handleShowL} />
 				</IconContext.Provider>
