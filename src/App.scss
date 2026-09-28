@@ -444,6 +444,12 @@ span.arap-red {
   color: #c8322b;
 }
 
+/* primjer od više riječi usred rečenice opisa: prelama se kao cjelina, inače se riječi
+   razdvoje u dva reda i u lijevo-desno tekstu izgledaju obrnutim redoslijedom (L20 bs) */
+.primjer-u-tekstu {
+  display: inline-block;
+}
+
 /* arapski u opisu lekcije: uvijek boja teksta ili crvena (.arap-red), i kad je unutar <strong>
    (inače naslijedi tamnoplavu podebljanog teksta, npr. L8 „M (م)“ na bs/de, ali ne na en) */
 .opisLekcije strong .arapski-lekcija:not(.arap-red) {
