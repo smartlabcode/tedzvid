@@ -83,63 +83,6 @@ const TXT = {
 
 			</React.Fragment>
 		),
-		lekcijaModal: (P, V) => (
-			<React.Fragment>
-				<Row>
-					<Col className="opisLekcije">
-						Kada dođu jedan do drugog <u>srodni</u> harfovi od kojih je prvi sa{' '}
-						<strong>sukunom</strong>, a drugi sa <strong>hareketom</strong>, onda se prvi uklapa u
-						drugi iz <u>iste grupe</u>:
-					</Col>
-				</Row>
-
-				<Row>
-					<Col className="opisLekcije text-left">
-						<strong className="">1.</strong>
-						<span className="arapski-lekcija"> ط د ت </span> npr.: {P('row1')}
-					</Col>
-				</Row>
-
-				<Row className="text-center  rtl">
-					<Col className="opisLekcije text-center">{P('row2')}</Col>
-				</Row>
-
-				<Row>
-					<Col className="opisLekcije text-left">
-						<strong>2.</strong> <span className="arapski-lekcija"> ظ ذ ث </span> npr.:{' '}
-						{P('row3')}
-					</Col>
-				</Row>
-
-				<Row className="text-center  rtl">
-					<Col className="opisLekcije text-center">{P('row4')}</Col>
-				</Row>
-
-				<Row>
-					<Col className="opisLekcije text-left">
-						<strong>3.</strong> <span className="arapski-lekcija"> ب م </span> npr.:{' '}
-						{P('row5')}
-					</Col>
-				</Row>
-
-				<Row>
-					<Col className="opisLekcije text-center">{P('row6')}</Col>
-				</Row>
-
-				<Row>
-					<Col>
-						<br />
-					</Col>
-				</Row>
-
-				<Row>
-					<Col>
-						<br />
-					</Col>
-				</Row>
-
-			</React.Fragment>
-		)
 	},
 
 	en: {
@@ -208,66 +151,6 @@ const TXT = {
 				</Row>
 			</React.Fragment>
 		),
-		lekcijaModal: (P, V) => (
-			<React.Fragment>
-				<Row>
-					<Col className="opisLekcije">
-						When letters of the same origin stand next to each other, and
-						the first letter has <strong>sukoon</strong> while the second
-						has <strong>a short vowel/haraka</strong>, then the former
-						assimilates into the latter one from the same group: <u></u>:
-					</Col>
-				</Row>
-
-				<Row>
-					<Col className="opisLekcije text-left">
-						<strong className="">1.</strong>
-						<span className="arapski-lekcija"> ط د ت </span> as in:{' '}
-						{P('row1')}
-					</Col>
-				</Row>
-
-				<Row className="text-center  rtl">
-					<Col className="opisLekcije text-center">{P('row2')}</Col>
-				</Row>
-
-				<Row>
-					<Col className="opisLekcije text-left">
-						<strong>2.</strong>{' '}
-						<span className="arapski-lekcija"> ظ ذ ث </span> as in:{' '}
-						{P('row3')}
-					</Col>
-				</Row>
-
-				<Row className="text-center  rtl">
-					<Col className="opisLekcije text-center">{P('row4')}</Col>
-				</Row>
-
-				<Row>
-					<Col className="opisLekcije text-left">
-						<strong>3.</strong>{' '}
-						<span className="arapski-lekcija"> ب م </span> as in:{' '}
-						{P('row5')}
-					</Col>
-				</Row>
-
-				<Row>
-					<Col className="opisLekcije text-center">{P('row6')}</Col>
-				</Row>
-
-				<Row>
-					<Col>
-						<br />
-					</Col>
-				</Row>
-
-				<Row>
-					<Col>
-						<br />
-					</Col>
-				</Row>
-			</React.Fragment>
-		)
 	},
 
 	de: {
@@ -333,61 +216,6 @@ const TXT = {
 				</Row>
 			</React.Fragment>
 		),
-		lekcijaModal: (P, V) => (
-			<React.Fragment>
-				<Row>
-					<Col className="opisLekcije">
-						Wenn zwei verwandte Buchstaben hintereinander vorkommen, der Erste mit <strong>sukun</strong> und der
-						Folgende mit einem der Vokale E, I, U, werden beide ineinander vollständig assimiliert.
-					</Col>
-				</Row>
-
-				<Row>
-					<Col className="opisLekcije text-left">
-						<strong className="">1.</strong>
-						<span className="arapski-lekcija"> ط د ت </span> Zum Beispiel: {P('row1')}
-					</Col>
-				</Row>
-
-				<Row className="text-center  rtl">
-					<Col className="opisLekcije text-center">{P('row2')}</Col>
-				</Row>
-
-				<Row>
-					<Col className="opisLekcije text-left">
-						<strong>2.</strong> <span className="arapski-lekcija"> ظ ذ ث </span> Zum Beispiel:{' '}
-						{P('row3')}
-					</Col>
-				</Row>
-
-				<Row className="text-center  rtl">
-					<Col className="opisLekcije text-center">{P('row4')}</Col>
-				</Row>
-
-				<Row>
-					<Col className="opisLekcije text-left">
-						<strong>3.</strong> <span className="arapski-lekcija"> ب م </span> Zum Beispiel:{' '}
-						{P('row5')}
-					</Col>
-				</Row>
-
-				<Row>
-					<Col className="opisLekcije text-center">{P('row6')}</Col>
-				</Row>
-
-				<Row>
-					<Col>
-						<br />
-					</Col>
-				</Row>
-
-				<Row>
-					<Col>
-						<br />
-					</Col>
-				</Row>
-			</React.Fragment>
-		)
 	}
 };
 
@@ -424,6 +252,42 @@ function L15() {
 	React.useEffect(() => {
 		scrollToHash();
 	}, []);
+	/* ista vježba na stranici i u pop-upu (uvećani prikaz) */
+	const vjezba = (
+		<React.Fragment>
+			<Row className="text-center">
+				<Col className="mobile-row">
+					<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj13')}&nbsp;۞</span>
+					<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj12')}&nbsp;۞</span>
+				</Col>
+			</Row>
+
+			<Row className="text-center">
+				<Col className="mobile-row">
+					<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj14')}&nbsp;۞</span>
+				</Col>
+			</Row>
+
+			<Row className="text-center">
+				<Col className="mobile-row">
+					<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj16')}&nbsp;۞</span>
+					<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj15')}&nbsp;۞</span>
+				</Col>
+			</Row>
+
+			<Row className="text-center">
+				<Col className="mobile-row">
+					<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj17')}&nbsp;۞</span>
+				</Col>
+			</Row>
+			<Row className="text-center">
+				<Col className="mobile-row">
+					<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj18')}&nbsp;۞</span>
+				</Col>
+			</Row>
+		</React.Fragment>
+	);
+
 	return (
 		<React.Fragment>
 			<LekcijaMenu broj="15" naziv={t.naziv} />
@@ -450,7 +314,7 @@ function L15() {
 					<Modal.Header closeButton>
 						<Modal.Title>{ui.lekcija}</Modal.Title>
 					</Modal.Header>
-					<Modal.Body className="custom-modal">{t.lekcijaModal(R, W)}</Modal.Body>
+					<Modal.Body className="custom-modal custom-modal--lekcija">{t.lekcija(R, W)}</Modal.Body>
 					<Modal.Footer>
 						<Button variant="secondary" onClick={handleCloseL}>
 							{ui.zatvori}
@@ -473,73 +337,14 @@ function L15() {
 				<IconContext.Provider value={{ size: '30px', style: { float: 'right' } }}>
 					<MdZoomOutMap className="zoomIcon" onClick={handleShow} />
 				</IconContext.Provider>
-				<Row className="text-center">
-					<Col className="mobile-row">
-						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj13')}&nbsp;۞</span>
-						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj12')}&nbsp;۞</span>
-					</Col>
-				</Row>
 
-				<Row className="text-center">
-					<Col className="mobile-row">
-						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj14')}&nbsp;۞</span>
-					</Col>
-				</Row>
-
-				<Row className="text-center">
-					<Col className="mobile-row">
-						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj16')}&nbsp;۞</span>
-						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj15')}&nbsp;۞</span>
-					</Col>
-				</Row>
-
-				<Row className="text-center">
-					<Col className="mobile-row">
-						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj17')}&nbsp;۞</span>
-					</Col>
-				</Row>
-				<Row className="text-center">
-					<Col className="mobile-row">
-						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj18')}&nbsp;۞</span>
-					</Col>
-				</Row>
+				{vjezba}
 				</section>
 				<Modal show={show} onHide={handleClose} backdrop="static" keyboard={false}>
 					<Modal.Header closeButton>
 						<Modal.Title>{ui.vjezba}</Modal.Title>
 					</Modal.Header>
-					<Modal.Body className="custom-modal">
-						<Row className="text-center">
-							<Col className="mobile-row">
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj13')}&nbsp;۞</span>
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj12')}&nbsp;۞</span>
-							</Col>
-						</Row>
-
-						<Row className="text-center">
-							<Col>
-								<span className="tacka">۞{VjezbeRow(data, 'vjezba', 'broj14')} </span>
-							</Col>
-						</Row>
-
-						<Row className="text-center">
-							<Col className="mobile-row">
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj16')}&nbsp;۞</span>
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj15')}&nbsp;۞</span>
-							</Col>
-						</Row>
-
-						<Row className="text-center">
-							<Col className="mobile-row">
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj17')}&nbsp;۞</span>
-							</Col>
-						</Row>
-						<Row className="text-center">
-							<Col className="mobile-row">
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj18')}&nbsp;۞</span>
-							</Col>
-						</Row>
-					</Modal.Body>
+					<Modal.Body className="custom-modal custom-modal--vjezba">{vjezba}</Modal.Body>
 					<Modal.Footer>
 						<Button variant="secondary" onClick={handleClose}>
 							{ui.zatvori}

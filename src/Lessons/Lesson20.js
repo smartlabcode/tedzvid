@@ -71,50 +71,6 @@ const TXT = {
 
 			</React.Fragment>
 		),
-		lekcijaModal: (P, V) => (
-			<React.Fragment>
-				<Row>
-					<Col className="opisLekcije">
-						Kada poslije <strong>dugog vokala</strong> A{' '}
-						<span className="arapski-lekcija">ـــَــ ا</span> , I
-						<span className="arapski-lekcija"> ـــِـ ى </span>, U{' '}
-						<span className="arapski-lekcija">ـــُــ و</span> dođe harf sa{' '}
-						<strong>
-							stalnim sukunom <span className="arapski-lekcija"> ـــْــ </span>
-						</strong>{' '}
-						<strong>
-							ili tešdidom <span className="arapski-lekcija"> ـــّــ </span>
-						</strong>
-						, bit će medd lazim. Traje obavezno 6 hareketa, npr.:{' '}
-						<span className="primjer-u-tekstu">{P('row1')}</span>
-					</Col>
-				</Row>
-
-				<Row className="text-center  reorder">
-					<Col className="wrap-reverse-mobitel">{P('row2')}</Col>
-				</Row>
-				<Row className="text-center  reorder-basic-display-after rtl">
-					<Col>{P('row3')}</Col>
-				</Row>
-
-				<Row className="text-center  ">
-					<Col>{P('row4')}</Col>
-				</Row>
-
-				<Row>
-					<Col>
-						<br />
-					</Col>
-				</Row>
-
-				<Row>
-					<Col>
-						<br />
-					</Col>
-				</Row>
-
-			</React.Fragment>
-		)
 	},
 
 	en: {
@@ -171,52 +127,6 @@ const TXT = {
 				</Row>
 			</React.Fragment>
 		),
-		lekcijaModal: (P, V) => (
-			<React.Fragment>
-				<Row>
-					<Col className="opisLekcije">
-						When the <strong>long vowel</strong> A{' '}
-						<span className="arapski-lekcija">ـــَــ ا</span> , I
-						<span className="arapski-lekcija"> ـــِـ ى </span>, or U{' '}
-						<span className="arapski-lekcija">ـــُــ و</span> is followed by{' '}
-						<strong>
-							a permanent sukoon{' '}
-							<span className="arapski-lekcija"> ـــْــ </span>
-						</strong>{' '}
-						or{' '}
-						<strong>
-							shaddah <span className="arapski-lekcija">ـــّــ </span>{' '}
-							{/*dodo sam "alt+0160" nevidljivi znak umjesto space-a kako bi sastavilo shaddah i arapski znak, kako bi uvijek bili u istom redu */}
-						</strong>
-						, al-madd al-lazim occurs. The reciter must extend the word for
-						6 counts, as in: <span className="primjer-u-tekstu">{P('row1')}</span>
-					</Col>
-				</Row>
-
-				<Row className="text-center  reorder">
-					<Col className="wrap-reverse-mobitel">{P('row2')}</Col>
-				</Row>
-				<Row className="text-center  reorder-basic-display-after rtl">
-					<Col>{P('row3')}</Col>
-				</Row>
-
-				<Row className="text-center  ">
-					<Col>{P('row4')}</Col>
-				</Row>
-
-				<Row>
-					<Col>
-						<br />
-					</Col>
-				</Row>
-
-				<Row>
-					<Col>
-						<br />
-					</Col>
-				</Row>
-			</React.Fragment>
-		)
 	},
 
 	de: {
@@ -264,43 +174,6 @@ const TXT = {
 				</Row>
 			</React.Fragment>
 		),
-		lekcijaModal: (P, V) => (
-			<React.Fragment>
-				<Row>
-					<Col className="opisLekcije">
-						Wenn nach <strong>einem langen Vokal</strong> A <span className="arapski-lekcija">ـــَــ ا</span> , I
-						<span className="arapski-lekcija"> ـــِـ ى </span>, oder U{' '}
-						<span className="arapski-lekcija">ـــُــ و</span> ein Buchstabe mit <strong>dauerhaftem sukun</strong>{' '}
-						<span className="arapski-lekcija"> ـــْــ </span> (sichtbar oder verborgen) oder <strong>Schadda</strong>
-						<span className="arapski-lekcija"> ـــّــ</span> folgt, nennt man das <strong>Medd Lāzim</strong>. Die
-						Länge der Aussprache ist verpflichtend 6 kurze Vokale. Zum Beispiel: <span className="primjer-u-tekstu">{P('row1')}</span>
-					</Col>
-				</Row>
-
-				<Row className="text-center  reorder">
-					<Col className="wrap-reverse-mobitel">{P('row2')}</Col>
-				</Row>
-				<Row className="text-center  reorder-basic-display-after rtl">
-					<Col>{P('row3')}</Col>
-				</Row>
-
-				<Row className="text-center  ">
-					<Col>{P('row4')}</Col>
-				</Row>
-
-				<Row>
-					<Col>
-						<br />
-					</Col>
-				</Row>
-
-				<Row>
-					<Col>
-						<br />
-					</Col>
-				</Row>
-			</React.Fragment>
-		)
 	}
 };
 
@@ -337,6 +210,42 @@ function L20() {
 	React.useEffect(() => {
 		scrollToHash();
 	}, []);
+	/* ista vježba na stranici i u pop-upu (uvećani prikaz) */
+	const vjezba = (
+		<React.Fragment>
+			<Row className="text-center">
+				<Col className="mobile-row rtl">
+					<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj9')}&nbsp;۞</span>
+					<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj10')}&nbsp;۞</span>
+				</Col>
+			</Row>
+			<Row className="text-center">
+				<Col className="mobile-row rtl">
+					<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj11')}&nbsp;۞</span>
+					<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj12')}&nbsp;۞</span>
+					<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj13')}&nbsp;۞</span>
+				</Col>
+			</Row>
+			<Row className="text-center">
+				<Col className="mobile-row rtl">
+					<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj14')}&nbsp;۞</span>
+					<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj15')}&nbsp;۞</span>
+				</Col>
+			</Row>
+
+			<Row className="text-center">
+				<Col className="mobile-row rtl">
+					<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj16')}&nbsp;۞</span>
+					<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj17')}&nbsp;۞</span>
+					<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj18')}&nbsp;۞</span>
+				</Col>
+			</Row>
+			<Row className="text-center">
+				<Col />
+			</Row>
+		</React.Fragment>
+	);
+
 	return (
 		<React.Fragment>
 			<LekcijaMenu broj="20" naziv={t.naziv} />
@@ -363,7 +272,7 @@ function L20() {
 					<Modal.Header closeButton>
 						<Modal.Title>{ui.lekcija}</Modal.Title>
 					</Modal.Header>
-					<Modal.Body className="custom-modal">{t.lekcijaModal(R, W)}</Modal.Body>
+					<Modal.Body className="custom-modal custom-modal--lekcija">{t.lekcija(R, W)}</Modal.Body>
 					<Modal.Footer>
 						<Button variant="secondary" onClick={handleCloseL}>
 							{ui.zatvori}
@@ -385,73 +294,14 @@ function L20() {
 				<IconContext.Provider value={{ size: '30px', style: { float: 'right' } }}>
 					<MdZoomOutMap className="zoomIcon" onClick={handleShow} />
 				</IconContext.Provider>
-				<Row className="text-center">
-					<Col className="mobile-row rtl">
-						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj9')}&nbsp;۞</span>
-						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj10')}&nbsp;۞</span>
-					</Col>
-				</Row>
-				<Row className="text-center">
-					<Col className="mobile-row rtl">
-						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj11')}&nbsp;۞</span>
-						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj12')}&nbsp;۞</span>
-						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj13')}&nbsp;۞</span>
-					</Col>
-				</Row>
-				<Row className="text-center">
-					<Col className="mobile-row rtl">
-						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj14')}&nbsp;۞</span>
-						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj15')}&nbsp;۞</span>
-					</Col>
-				</Row>
 
-				<Row className="text-center">
-					<Col className="mobile-row rtl">
-						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj16')}&nbsp;۞</span>
-						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj17')}&nbsp;۞</span>
-						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj18')}&nbsp;۞</span>
-					</Col>
-				</Row>
-				<Row className="text-center">
-					<Col />
-				</Row>
+				{vjezba}
 				</section>
 				<Modal show={show} onHide={handleClose} backdrop="static" keyboard={false}>
 					<Modal.Header closeButton>
 						<Modal.Title>{ui.vjezba}</Modal.Title>
 					</Modal.Header>
-					<Modal.Body className="custom-modal">
-						<Row className="text-center">
-							<Col className="mobile-row rtl">
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj9')}&nbsp;۞</span>
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj10')}&nbsp;۞</span>
-							</Col>
-						</Row>
-						<Row className="text-center">
-							<Col className="mobile-row rtl">
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj11')}&nbsp;۞</span>
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj12')}&nbsp;۞</span>
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj13')}&nbsp;۞</span>
-							</Col>
-						</Row>
-						<Row className="text-center">
-							<Col className="mobile-row rtl">
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj14')}&nbsp;۞</span>
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj15')}&nbsp;۞</span>
-							</Col>
-						</Row>
-
-						<Row className="text-center">
-							<Col className="mobile-row rtl">
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj16')}&nbsp;۞</span>
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj17')}&nbsp;۞</span>
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj18')}&nbsp;۞</span>
-							</Col>
-						</Row>
-						<Row className="text-center">
-							<Col />
-						</Row>
-					</Modal.Body>
+					<Modal.Body className="custom-modal custom-modal--vjezba">{vjezba}</Modal.Body>
 					<Modal.Footer>
 						<Button variant="secondary" onClick={handleClose}>
 							{ui.zatvori}

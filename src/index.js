@@ -9,6 +9,7 @@ import './App.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { oznaciPlatformu, pokreniNativno } from './native';
+import { pratiUvecaniPrikaz } from './Helpers/UvecaniPrikaz';
 
 /* mobilna aplikacija (Capacitor): klasa na <html> prije prvog iscrtavanja */
 oznaciPlatformu();
@@ -18,6 +19,7 @@ oznaciPlatformu();
 function Aplikacija() {
 	useEffect(() => {
 		pokreniNativno();
+		pratiUvecaniPrikaz();
 	}, []);
 
 	return <App />;

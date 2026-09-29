@@ -90,68 +90,6 @@ const TXT = {
 
 			</React.Fragment>
 		),
-		lekcijaModal: (P, V, r3) => (
-			<React.Fragment>
-				<Row>
-					<Col className="opisLekcije">
-						Kada poslije harfa <strong>N</strong> sa <strong>sukunom</strong> (
-						<span className="arapski-lekcija">نْ</span>) ili <strong>tenvina</strong> EN{' '}
-						<span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
-						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
-						<span className="arapski-lekcija">ــٌــ</span> dođe jedan od četiri harfa:{' '}
-						<span
-							className="arapski-lekcija arap-red"
-							style={{ whiteSpace: 'nowrap' }}
-						>
-							و ن م ي
-						</span>{' '}
-						(sadržana u riječi <strong>jemnu</strong> –
-						<span className="arapski-lekcija">يَمْنُو</span>), dolazi do uklapanja harfa{' '}
-						<strong>N</strong> (
-						<span className="arapski-lekcija">ن</span>) u jedan od spomenuta četiri harfa,
-						propuštajući zrak kroz nos u trajanju od 2 hareketa, npr.:
-					</Col>
-				</Row>
-
-				<Row>
-					<Col>
-						<br />
-					</Col>
-				</Row>
-
-				<Row className="text-center reorder">
-					<Col>{P('row1')}</Col>
-				</Row>
-
-				<Row className="text-center reorder-basic rtl">
-					<Col>{P('row2')}</Col>
-				</Row>
-
-				<Row className="text-center ">
-					<Col>
-						<span key={'key' + data.row3[2].id}>
-							<Player url={data.row3[2].url} note={data.row3[2].napomena} key={'p' + data.row3[2].id}>
-								{r3}
-							</Player>
-						</span>{' '}
-						{data.row3[0].after}
-					</Col>
-				</Row>
-
-				<Row>
-					<Col>
-						<br />
-					</Col>
-				</Row>
-
-				<Row>
-					<Col>
-						<br />
-					</Col>
-				</Row>
-
-			</React.Fragment>
-		)
 	},
 
 	en: {
@@ -225,69 +163,6 @@ const TXT = {
 				</Row>
 			</React.Fragment>
 		),
-		lekcijaModal: (P, V, r3) => (
-			<React.Fragment>
-				<Row>
-					<Col className="opisLekcije">
-						When the letter <strong>N</strong> with <strong>sukoon</strong>{' '}
-						(<span className="arapski-lekcija">نْ</span>) or nunation/{' '}
-						<strong>tanwin</strong> EN{' '}
-						<span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
-						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
-						<span className="arapski-lekcija">ــٌــ</span> is followed by
-						one of the four letters: &nbsp;
-						<span
-							className="arapski-lekcija arap-red"
-							style={{ whiteSpace: 'nowrap' }}
-						>
-							و ن م ي
-						</span>{' '}
-						(contained in the word <strong>jemnu</strong> –
-						<span className="arapski-lekcija">يَمْنُو</span>), the letter{' '}
-						<strong>N</strong>(<span className="arapski-lekcija">ن</span>)
-						assimilates into one of the aforementioned letters, with the
-						airflow through the nose lasting 2 counts, for example:
-					</Col>
-				</Row>
-
-				<Row>
-					<Col>
-						<br />
-					</Col>
-				</Row>
-
-				<Row className="text-center reorder">
-					<Col>{P('row1')}</Col>
-				</Row>
-
-				<Row className="text-center reorder-basic rtl">
-					<Col>{P('row2')}</Col>
-				</Row>
-
-				<Row className="text-center ">
-					<Col>
-						<span key={'key' + data.row3[2].id}>
-							<Player url={data.row3[2].url} note={data.row3[2].napomena} key={'p' + data.row3[2].id}>
-								{r3}
-							</Player>
-						</span>{' '}
-						{data.row3[0].after}
-					</Col>
-				</Row>
-
-				<Row>
-					<Col>
-						<br />
-					</Col>
-				</Row>
-
-				<Row>
-					<Col>
-						<br />
-					</Col>
-				</Row>
-			</React.Fragment>
-		)
 	},
 
 	de: {
@@ -358,66 +233,6 @@ const TXT = {
 				</Row>
 			</React.Fragment>
 		),
-		lekcijaModal: (P, V, r3) => (
-			<React.Fragment>
-				<Row>
-					<Col className="opisLekcije">
-						Wenn nach dem <strong>N</strong> mit <strong>sukun</strong> (
-						<span className="arapski-lekcija">نْ</span>) oder <strong>tanwin</strong> EN{' '}
-						<span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
-						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
-						<span className="arapski-lekcija">ــٌــ</span> einer der vier idgam Buchstaben:&nbsp;
-						<span
-							className="arapski-lekcija arap-red"
-							style={{ whiteSpace: 'nowrap' }}
-						>
-							و ن م ي
-						</span>{' '}
-						(unmittelbar danach folgt <strong>jemnu</strong> –
-						<span className="arapski-lekcija">يَمْنُو</span>), wird nun <strong>N</strong> (
-						<span className="arapski-lekcija">ن</span>) oder tanwin partiell in einen der zuvor genannten
-						Buchstaben assimiliert und nasal ausgesprochen. Zum Beispiel:
-					</Col>
-				</Row>
-
-				<Row>
-					<Col>
-						<br />
-					</Col>
-				</Row>
-
-				<Row className="text-center reorder">
-					<Col>{P('row1')}</Col>
-				</Row>
-
-				<Row className="text-center reorder-basic rtl">
-					<Col>{P('row2')}</Col>
-				</Row>
-
-				<Row className="text-center ">
-					<Col>
-						<span key={'key' + data.row3[2].id}>
-							<Player url={data.row3[2].url} note={data.row3[2].napomena} key={'p' + data.row3[2].id}>
-								{r3}
-							</Player>
-						</span>{' '}
-						{data.row3[0].after}
-					</Col>
-				</Row>
-
-				<Row>
-					<Col>
-						<br />
-					</Col>
-				</Row>
-
-				<Row>
-					<Col>
-						<br />
-					</Col>
-				</Row>
-			</React.Fragment>
-		)
 	}
 };
 
@@ -489,6 +304,41 @@ function L6() {
 		);
 	});
 
+	/* ista vježba na stranici i u pop-upu (uvećani prikaz) */
+	const vjezba = (
+		<React.Fragment>
+			<Row className="text-center ">
+				<Col className="mobile-row">
+					<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj8')}&nbsp;۞ </span>
+				</Col>
+			</Row>
+			<Row className="text-center">
+				<Col className="mobile-row">
+					<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj9')}&nbsp;۞</span>
+				</Col>
+			</Row>
+			<Row className="text-center">
+				<Col className="mobile-row">
+					<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj10')}&nbsp;۞</span>
+				</Col>
+			</Row>
+
+			<Row className="text-center">
+				<Col className="mobile-row">
+					<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj11')}&nbsp;۞</span>
+					<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj12')}&nbsp;۞</span>
+				</Col>
+			</Row>
+
+			<Row className="text-center">
+				<Col className="mobile-row">
+					<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj14')}&nbsp;۞</span>
+					<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj13')}&nbsp;۞</span>
+				</Col>
+			</Row>
+		</React.Fragment>
+	);
+
 	return (
 		<React.Fragment>
 			<LekcijaMenu broj="6" naziv={t.naziv} />
@@ -515,7 +365,7 @@ function L6() {
 					<Modal.Header closeButton>
 						<Modal.Title>{ui.lekcija}</Modal.Title>
 					</Modal.Header>
-					<Modal.Body className="custom-modal">{t.lekcijaModal(R, W, r3)}</Modal.Body>
+					<Modal.Body className="custom-modal custom-modal--lekcija">{t.lekcija(R, W, r3)}</Modal.Body>
 					<Modal.Footer>
 						<Button variant="secondary" onClick={handleCloseL}>
 							{ui.zatvori}
@@ -538,71 +388,13 @@ function L6() {
 					<MdZoomOutMap className="zoomIcon" onClick={handleShow} />
 				</IconContext.Provider>
 
-				<Row className="text-center ">
-					<Col className="mobile-row">
-						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj8')}&nbsp;۞ </span>
-					</Col>
-				</Row>
-				<Row className="text-center">
-					<Col className="mobile-row">
-						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj9')}&nbsp;۞</span>
-					</Col>
-				</Row>
-				<Row className="text-center">
-					<Col className="mobile-row">
-						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj10')}&nbsp;۞</span>
-					</Col>
-				</Row>
-
-				<Row className="text-center">
-					<Col className="mobile-row">
-						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj11')}&nbsp;۞</span>
-						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj12')}&nbsp;۞</span>
-					</Col>
-				</Row>
-
-				<Row className="text-center">
-					<Col className="mobile-row">
-						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj14')}&nbsp;۞</span>
-						<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj13')}&nbsp;۞</span>
-					</Col>
-				</Row>
+				{vjezba}
 				</section>
 				<Modal show={show} onHide={handleClose} backdrop="static" keyboard={false}>
 					<Modal.Header closeButton>
 						<Modal.Title>{ui.vjezba}</Modal.Title>
 					</Modal.Header>
-					<Modal.Body className="custom-modal">
-						<Row className="text-center">
-							<Col className="mobile-row">
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj8')}&nbsp;۞</span>
-							</Col>
-						</Row>
-						<Row className="text-center">
-							<Col className="mobile-row">
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj9')}&nbsp;۞</span>
-							</Col>
-						</Row>
-						<Row className="text-center">
-							<Col className="mobile-row">
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj10')}&nbsp;۞</span>
-							</Col>
-						</Row>
-
-						<Row className="text-center">
-							<Col className="mobile-row">
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj11')}&nbsp;۞ </span>
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj12')}&nbsp;۞ </span>
-							</Col>
-						</Row>
-
-						<Row className="text-center">
-							<Col className="mobile-row">
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj14')}&nbsp;۞</span>
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'broj13')}&nbsp;۞</span>
-							</Col>
-						</Row>
-					</Modal.Body>
+					<Modal.Body className="custom-modal custom-modal--vjezba">{vjezba}</Modal.Body>
 					<Modal.Footer>
 						<Button variant="secondary" onClick={handleClose}>
 							{ui.zatvori}

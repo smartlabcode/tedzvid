@@ -410,7 +410,7 @@ span.arapski {
 }
 
 /* vježba (redovi .mobile-row) – veličine kao na starom tedzvid.ba, da u red stanu po dva ajeta */
-.lekcija-page .mobile-row {
+:is(.lekcija-page, .custom-modal) .mobile-row {
   span.arapski,
   span.oznaceno {
     font-size: 2.5rem;
@@ -586,10 +586,27 @@ span.arap-red {
   }
 }
 
+/* uvećani prikaz: zoom ovdje je samo početna vrijednost – Helpers/UvecaniPrikaz.js ga
+   preračuna tako da pop-up ima istu širinu reda kao stranica (isti prelomi, samo veće) */
 .custom-modal {
   zoom: 140%;
   font-size: 1.25rem;
   line-height: 1.7;
+  color: var(--ink);
+
+  u {
+    text-decoration-color: var(--gold);
+    text-decoration-thickness: 2px;
+  }
+
+  /* na stranici ikona za uvećanje (.zoomIcon, 36px, float: right) stoji na vrhu teksta lekcije
+     i skraćuje prve redove – isto nevidljivo mjesto u pop-upu daje iste prelome */
+  &.custom-modal--lekcija::before {
+    content: '';
+    float: right;
+    width: 36px;
+    height: 36px;
+  }
 
   h3 {
     color: var(--navy);
@@ -644,6 +661,12 @@ span.arap-red {
     float: none;
   }
 
+
+}
+
+/* sadržaj vježbe – isto na stranici i u pop-upu vježbe (uvećani prikaz) */
+.vjezba-panel,
+.custom-modal--vjezba {
   .row {
     margin-left: 0;
     margin-right: 0;
@@ -825,7 +848,7 @@ span.arap-red {
   }
 
   span.arapski,
-  .lekcija-page .mobile-row span.arapski {
+  :is(.lekcija-page, .custom-modal) .mobile-row span.arapski {
     line-height: 3.9rem;
   }
 }
@@ -897,11 +920,11 @@ span.arap-red {
   }
 
   span.arapski,
-  .lekcija-page .mobile-row span.arapski {
+  :is(.lekcija-page, .custom-modal) .mobile-row span.arapski {
     line-height: 3.3rem;
   }
 
-  .lekcija-page .mobile-row span.tacka {
+  :is(.lekcija-page, .custom-modal) .mobile-row span.tacka {
     font-size: 1.3rem;
   }
 

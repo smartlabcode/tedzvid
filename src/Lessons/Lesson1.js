@@ -618,6 +618,66 @@ function L1() {
 	/* isti sadržaj lekcije se prikazuje na stranici i u uvećanom prikazu */
 	const lekcija = t.lekcija((row) => PlayerRow(data, row), (main, row) => VjezbeRow(data, main, row));
 
+	/* ista vježba na stranici i u pop-upu (uvećani prikaz) */
+	const vjezba = (
+		<React.Fragment>
+				<Row>
+					<Col>
+						<br />
+					</Col>
+				</Row>
+				<Row id="vjezba" className="text-center">
+					<Col className="mobile-row rtl">
+						<span style={{ marginLeft: '25px' }}> {VjezbeRow(data, 'vjezba', 'red18')}{' '}</span>
+						<span>{VjezbeRow(data, 'vjezba', 'red19')}{' '}</span>
+					</Col>
+				</Row>
+				<Row className="text-center">
+					<Col className="mobile-row">
+						<span>
+							<span className="tacka">{VjezbeRow(data, 'vjezba', 'red20')}&nbsp;۞</span>
+						</span>
+						<span>
+							<span className="tacka">{VjezbeRow(data, 'vjezba', 'red21')}&nbsp;۞</span>
+						</span>
+					</Col>
+				</Row>
+				<Row className="text-center">
+					<Col className="mobile-row">
+						<span className="mobile-row">
+							<span className="tacka">{VjezbeRow(data, 'vjezba', 'red22')}&nbsp;۞</span>
+						</span>
+						<span className="mobile-row">{VjezbeRow(data, 'vjezba', 'red23')}{' '}</span>
+						<span>
+							<span className="tacka">{VjezbeRow(data, 'vjezba', 'red24')}&nbsp;۞</span>
+						</span>
+					</Col>
+				</Row>
+				<Row className="text-center">
+					<Col className="mobile-row">
+						<span>
+							<span className="tacka">{VjezbeRow(data, 'vjezba', 'red25')}&nbsp;۞</span>
+						</span>
+						<span>
+							<span className="tacka">{VjezbeRow(data, 'vjezba', 'red26')}&nbsp;۞</span>
+						</span>
+					</Col>
+				</Row>
+				<Row className="text-center">
+					<Col className="mobile-row">
+						<span>
+							<span className="tacka">{VjezbeRow(data, 'vjezba', 'red28')}&nbsp;۞</span>
+						</span>
+						<span>
+							<span className="tacka">{VjezbeRow(data, 'vjezba', 'red29')}&nbsp;۞</span>
+						</span>
+						<span className="tacka">{VjezbeRow(data, 'vjezba', 'red30')}&nbsp;۞</span>
+						<span className="tacka">{VjezbeRow(data, 'vjezba', 'red31')}&nbsp;۞</span>
+					</Col>
+				</Row>
+		</React.Fragment>
+	);
+
 	return (
 		<React.Fragment>
 			<LekcijaMenu broj="1" naziv={t.naziv} />
@@ -696,7 +756,7 @@ function L1() {
 					<Modal.Header closeButton>
 						<Modal.Title>{ui.lekcija}</Modal.Title>
 					</Modal.Header>
-					<Modal.Body className="custom-modal">{lekcija}</Modal.Body>
+					<Modal.Body className="custom-modal custom-modal--lekcija">{lekcija}</Modal.Body>
 					<Modal.Footer>
 						<Button variant="secondary" onClick={handleCloseL}>
 							{ui.zatvori}
@@ -712,121 +772,14 @@ function L1() {
 					<IconContext.Provider value={{ size: '30px', style: { float: 'right' } }}>
 						<MdZoomOutMap className="zoomIcon" onClick={handleShow} />
 					</IconContext.Provider>
-					<Row>
-						<Col>
-							<br />
-						</Col>
-					</Row>
-					<Row id="vjezba" className="text-center">
-						<Col className="mobile-row rtl">
-							<span style={{ marginLeft: '25px' }}> {VjezbeRow(data, 'vjezba', 'red18')}{' '}</span>
-							<span>{VjezbeRow(data, 'vjezba', 'red19')}{' '}</span>
-						</Col>
-					</Row>
-					<Row className="text-center">
-						<Col className="mobile-row">
-							<span>
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'red20')}&nbsp;۞</span>
-							</span>
-							<span>
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'red21')}&nbsp;۞</span>
-							</span>
-						</Col>
-					</Row>
-					<Row className="text-center">
-						<Col className="mobile-row">
-							<span className="mobile-row">
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'red22')}&nbsp;۞</span>
-							</span>
-							<span className="mobile-row">{VjezbeRow(data, 'vjezba', 'red23')}{' '}</span>
-							<span>
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'red24')}&nbsp;۞</span>
-							</span>
-						</Col>
-					</Row>
-					<Row className="text-center">
-						<Col className="mobile-row">
-							<span>
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'red25')}&nbsp;۞</span>
-							</span>
-							<span>
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'red26')}&nbsp;۞</span>
-							</span>
-						</Col>
-					</Row>
-					<Row className="text-center">
-						<Col className="mobile-row">
-							<span>
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'red28')}&nbsp;۞</span>
-							</span>
-							<span>
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'red29')}&nbsp;۞</span>
-							</span>
-							<span className="tacka">{VjezbeRow(data, 'vjezba', 'red30')}&nbsp;۞</span>
-							<span className="tacka">{VjezbeRow(data, 'vjezba', 'red31')}&nbsp;۞</span>
-						</Col>
-					</Row>
+
+				{vjezba}
 				</section>
 				<Modal show={show} onHide={handleClose} backdrop="static" keyboard={false}>
 					<Modal.Header closeButton>
 						<Modal.Title>{ui.vjezba}</Modal.Title>
 					</Modal.Header>
-					<Modal.Body className="custom-modal">
-						<Row>
-							<Col>
-								<br />
-							</Col>
-						</Row>
-						<Row id="vjezba" className="text-center">
-							<Col className="mobile-row rtl">
-								<span style={{ marginLeft: '50px' }}> {VjezbeRow(data, 'vjezba', 'red18')}{' '}</span>
-								<span>{VjezbeRow(data, 'vjezba', 'red19')}{' '}</span>
-							</Col>
-						</Row>
-						<Row className="text-center">
-							<Col className="mobile-row">
-								<span>
-									<span className="tacka">{VjezbeRow(data, 'vjezba', 'red20')}&nbsp;۞</span>
-								</span>
-								<span>
-									<span className="tacka">{VjezbeRow(data, 'vjezba', 'red21')}&nbsp;۞</span>
-								</span>
-							</Col>
-						</Row>
-						<Row className="text-center">
-							<Col className="mobile-row">
-								<span className="mobile-row">
-									<span className="tacka">{VjezbeRow(data, 'vjezba', 'red22')}&nbsp;۞</span>
-								</span>
-								<span className="mobile-row">{VjezbeRow(data, 'vjezba', 'red23')}{' '}</span>
-								<span>
-									<span className="tacka">{VjezbeRow(data, 'vjezba', 'red24')}&nbsp;۞</span>
-								</span>
-							</Col>
-						</Row>
-						<Row className="text-center">
-							<Col className="mobile-row">
-								<span>
-									<span className="tacka">{VjezbeRow(data, 'vjezba', 'red25')}&nbsp;۞</span>
-								</span>
-								<span>
-									<span className="tacka">{VjezbeRow(data, 'vjezba', 'red26')}&nbsp;۞</span>
-								</span>
-							</Col>
-						</Row>
-						<Row className="text-center">
-							<Col className="mobile-row">
-								<span>
-									<span className="tacka">{VjezbeRow(data, 'vjezba', 'red28')}&nbsp;۞</span>
-								</span>
-								<span>
-									<span className="tacka">{VjezbeRow(data, 'vjezba', 'red29')}&nbsp;۞</span>
-								</span>
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'red30')}&nbsp;۞</span>
-								<span className="tacka">{VjezbeRow(data, 'vjezba', 'red31')}&nbsp;۞</span>
-							</Col>
-						</Row>
-					</Modal.Body>
+					<Modal.Body className="custom-modal custom-modal--vjezba">{vjezba}</Modal.Body>
 					<Modal.Footer>
 						<Button variant="secondary" onClick={handleClose}>
 							{ui.zatvori}
