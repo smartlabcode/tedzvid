@@ -149,10 +149,10 @@ const TXT = {
 								<A>م</A>
 							</td>
 							<td>
-								<A> قف ؛ قلي ؛ ج ؛ ط</A>
+								<span className="arapski-lekcija lista-znakova">قف&nbsp;؛ قلي&nbsp;؛ ج&nbsp;؛ ط</span>
 							</td>
 							<td>
-								<A> صلي ؛ ق ؛ ص ؛ ز</A>
+								<span className="arapski-lekcija lista-znakova">صلي&nbsp;؛ ق&nbsp;؛ ص&nbsp;؛ ز</span>
 							</td>
 							<td>
 								<A> لا</A>
@@ -350,10 +350,10 @@ const TXT = {
 								<A>م</A>
 							</td>
 							<td>
-								<A> قف ؛ قلي ؛ ج ؛ ط</A>
+								<span className="arapski-lekcija lista-znakova">قف&nbsp;؛ قلي&nbsp;؛ ج&nbsp;؛ ط</span>
 							</td>
 							<td>
-								<A> صلي ؛ ق ؛ ص ؛ ز</A>
+								<span className="arapski-lekcija lista-znakova">صلي&nbsp;؛ ق&nbsp;؛ ص&nbsp;؛ ز</span>
 							</td>
 							<td>
 								<A> لا</A>
@@ -524,10 +524,10 @@ const TXT = {
 								<A>م</A>
 							</td>
 							<td>
-								<A> قف ؛ قلي ؛ ج ؛ ط</A>
+								<span className="arapski-lekcija lista-znakova">قف&nbsp;؛ قلي&nbsp;؛ ج&nbsp;؛ ط</span>
 							</td>
 							<td>
-								<A> صلي ؛ ق ؛ ص ؛ ز</A>
+								<span className="arapski-lekcija lista-znakova">صلي&nbsp;؛ ق&nbsp;؛ ص&nbsp;؛ ز</span>
 							</td>
 							<td>
 								<A> لا</A>

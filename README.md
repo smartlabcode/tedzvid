@@ -65,6 +65,14 @@ primjera i njihov zvuk, vježba i oba pop-upa. Tekst se poklapa, uz ove **namjer
 
 Njemački nema uzor na tedzvid.ba; uzor mu je grana `feature/deutch-lang` (ručno preveden tekst lekcija), a ostalo se provjerava uz `src/i18n/njemacki-rjecnik.md`.
 
+#### Arapski u opisu lekcije se ne prelama usred niza
+
+`.opisLekcije .arapski-lekcija` ima `white-space: nowrap` (`App.scss`), da se par vokal + harf
+(„ـــَــ ا“, L2, L17–L21), „ــَـ ــْـ رْ“ (L14) ili kratka lista harfova (L13) ne raspadne u dva reda.
+Duže liste imaju klasu `lista-znakova` i smiju u novi red, ali samo na predviđenom mjestu: L11 (15
+harfova) u sredini, između dva `.harfovi-dio` (8 + 7); L1 tabela iza „؛“, jer je ispred njega `&nbsp;`.
+Novu dužu arapsku listu u opisu označiti isto, inače na telefonu probije širinu reda.
+
 #### Vježba: ۞ i veličina teksta
 
 Iza svakog ajeta u vježbi ide **`&nbsp;۞`**, a `src/Helpers/VjezbeHelper.js` u redovima vježbe

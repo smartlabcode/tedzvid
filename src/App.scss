@@ -450,8 +450,20 @@ span.arap-red {
   display: inline-block;
 }
 
-/* L11: lista 15 harfova u rečenici prelama se samo u sredini (8 + 7), nikad jedan harf sam u redu;
-   obični spanovi, ne inline-block, da cijela lista ostane jedan zdesna-nalijevo niz */
+/* arapski u opisu lekcije se ne prelama usred niza: inače se par vokal + harf („ـــَــ ا“, L2, L17–L21),
+   „ــَـ ــْـ رْ“ (L14) ili kratka lista harfova (L13) raspadne u dva reda. Duže liste (.lista-znakova)
+   smiju u novi red, ali samo na predviđenom mjestu: */
+.opisLekcije .arapski-lekcija {
+  white-space: nowrap;
+}
+
+.opisLekcije .arapski-lekcija.lista-znakova {
+  white-space: normal;
+}
+
+/* – L11: 15 harfova lomi se samo u sredini (8 + 7), nikad jedan harf sam u redu; obični spanovi,
+     ne inline-block, da cijela lista ostane jedan zdesna-nalijevo niz;
+   – L1 tabela: znakovi za stajanje lome se samo iza „؛“ (ispred njega je &nbsp;) */
 .harfovi-dio {
   white-space: nowrap;
 }

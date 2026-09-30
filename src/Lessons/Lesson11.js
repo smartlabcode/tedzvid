@@ -36,7 +36,7 @@ const TXT = {
 						<span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
 						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
 						<span className="arapski-lekcija">ــٌــ</span> dođe jedan od 15 harfova:{' '}
-						<span lang="ar" className="arapski-lekcija arap-red">
+						<span lang="ar" className="arapski-lekcija arap-red lista-znakova">
 							<span className="harfovi-dio">ك ت ث ج د ذ ز س</span> <span className="harfovi-dio">ش ص ض ط ظ ف ق</span>
 						</span> ,{' '}
 						onda se harf <strong>N</strong> (
@@ -100,7 +100,7 @@ const TXT = {
 						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
 						<span className="arapski-lekcija">ــٌــ</span> is following by one
 						of the 15 letters:{' '}
-						<span lang="ar" className="arapski-lekcija arap-red">
+						<span lang="ar" className="arapski-lekcija arap-red lista-znakova">
 							<span className="harfovi-dio">ك ت ث ج د ذ ز س</span> <span className="harfovi-dio">ش ص ض ط ظ ف ق</span>
 						</span> ,{' '}
 						then a two-beat <strong>N</strong> (
@@ -162,7 +162,7 @@ const TXT = {
 						<span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
 						<span className="arapski-lekcija">ـــٍــ</span> , oder UN{' '}
 						<span className="arapski-lekcija">ــٌــ</span> einer der 15 Buchstaben folgt:{' '}
-						<span lang="ar" className="arapski-lekcija arap-red">
+						<span lang="ar" className="arapski-lekcija arap-red lista-znakova">
 							<span className="harfovi-dio">ك ت ث ج د ذ ز س</span> <span className="harfovi-dio">ش ص ض ط ظ ف ق</span>
 						</span> ,{' '}
 						dann wird <strong>N</strong> (<span className="arapski-lekcija">ن</span>) oder <strong>tanwin</strong>{' '}
