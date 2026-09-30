@@ -11,20 +11,20 @@ export const DEFAULT_LANG = 'bs';
    pa bi stari posjetioci ostali na engleskom; s novim ključem svi kreću od bosanskog */
 const STORAGE_KEY = 'tedzvid-lang-v2';
 
-/* Naslov i opis stranice (<title>, meta description) po jeziku */
+/* Naslov i opis stranice (<title>, meta description) po jeziku; naslov taba je kratak kao na tedzvid.ba („Tedžvid“), preveden */
 const META = {
 	bs: {
-		title: 'Tedžvid.ba – Uči tedžvid jednostavno, interaktivno, korak po korak',
+		title: 'Tedžvid',
 		description:
 			'Tedzvid.ba – interaktivni priručnik za učenje tedžvidskih pravila. Jednostavno, interaktivno, korak po korak – za djecu i odrasle, početnike i naprednije učače.'
 	},
 	en: {
-		title: 'Tedzvid.ba – Learn tajweed simply, interactively, step by step',
+		title: 'Tajweed',
 		description:
 			'Tedzvid.ba – an interactive handbook for learning the rules of tajweed. Simple, interactive, step by step – for children and adults, beginners and advanced reciters.'
 	},
 	de: {
-		title: 'Tedzvid.ba – Tejwid lernen: einfach, interaktiv, Schritt für Schritt',
+		title: 'Tejwid',
 		description:
 			'Tedzvid.ba – interaktives Handbuch zum Lernen der Tejwid-Regeln. Einfach, interaktiv, Schritt für Schritt – für Kinder und Erwachsene, Anfänger und Fortgeschrittene.'
 	}

@@ -14,6 +14,7 @@ import Logo from './Logo';
 import LangSwitch from './LangSwitch';
 import { useAuth } from '../auth/AuthContext';
 import { useUI } from '../i18n/ui';
+import { SUFARA_URL } from './SiteFooter';
 
 /**
  * Zajednička navigacija za sve stranice.
@@ -64,16 +65,23 @@ export default function SiteNav({ active, cta }) {
 	const action = cta || { to: '/lekcije', label: ui.navLekcije };
 	const ime = user ? user.ime.split(' ')[0] : null;
 
-	/* u mobilnom meniju mualim i administrator dobivaju i svoje stavke (u traci su to ikone) */
-	const dodatni = [];
+	/* u mobilnom meniju mualim i administrator dobivaju i svoje stavke (u traci su to ikone);
+	   Sufara.ba je samo u mobilnom meniju – u gornjoj traci nema mjesta */
+	const dodatni = [ { key: 'sufara', href: SUFARA_URL, label: 'Sufara.ba' } ];
 	if (jeMualim) dodatni.push({ key: 'mualim', to: '/mualim', label: ui.navMualim });
 	if (jeAdmin) dodatni.push({ key: 'admin', to: '/admin', label: ui.navAdmin });
 	const renderLinks = (mobile) =>
 		LINKS.concat(mobile ? dodatni : []).map((l) => (
 			<li key={l.key}>
-				<Link to={l.to} className={active === l.key ? 'is-active' : ''}>
-					{l.label}
-				</Link>
+				{l.href ? (
+					<a href={l.href} target="_blank" rel="noopener noreferrer">
+						{l.label}
+					</a>
+				) : (
+					<Link to={l.to} className={active === l.key ? 'is-active' : ''}>
+						{l.label}
+					</Link>
+				)}
 			</li>
 		));
 

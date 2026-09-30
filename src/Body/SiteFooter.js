@@ -9,6 +9,9 @@ export const APP_LINKS = {
 	ios: 'https://apps.apple.com/rs/app/tedzvid-ba/id1561588495'
 };
 
+/* sestrinski projekat – u footeru, u mobilnom meniju i u sekciji „O nama“ (gornja traka je puna) */
+export const SUFARA_URL = 'https://sufara.ba/';
+
 export default function SiteFooter() {
 	const ui = useUI();
 	const year = new Date().getFullYear();
@@ -61,6 +64,11 @@ export default function SiteFooter() {
 							</li>
 							<li>
 								<Link to="/#kontakt">{ui.navKontakt}</Link>
+							</li>
+							<li>
+								<a href={SUFARA_URL} target="_blank" rel="noopener noreferrer">
+									Sufara.ba
+								</a>
 							</li>
 						</ul>
 					</div>

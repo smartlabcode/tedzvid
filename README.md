@@ -57,7 +57,11 @@ primjera i njihov zvuk, vježba i oba pop-upa. Tekst se poklapa, uz ove **namjer
   podacima – zato ti redovi ovdje i ne postoje;
 - stari trikovi za raspored se ne koriste (vodeća „. “ ispred reda, `mobile-row`,
   `reorder-basic-display-after`, razmaci preko `<span className="tacka">`) – novi raspored to radi sam;
-- L1 tabela: „Boje preći“ (tipfeler na tedzvid.ba) je ovdje „Bolje preći“.
+- L1 tabela: „Boje preći“ (tipfeler na tedzvid.ba) je ovdje „Bolje preći“;
+- link **Sufara.ba** nije u gornjoj traci kao na tedzvid.ba (traka je već puna), nego u mobilnom meniju,
+  u footeru i u sekciji „O nama“ na početnoj (`aboutSufara` u `ui.js`);
+- naziv taba je preveden: „Tedžvid“ / „Tajweed“ / „Tejwid“ (`LanguageContext.js`); na tedzvid.ba je
+  uvijek „Tedžvid“.
 
 Njemački nema uzor na tedzvid.ba; uzor mu je grana `feature/deutch-lang` (ručno preveden tekst lekcija), a ostalo se provjerava uz `src/i18n/njemacki-rjecnik.md`.
 

@@ -82,6 +82,12 @@ const UI = {
 				mektebu tako i odraslima nakon završetka sufare.
 			</React.Fragment>
 		),
+		/* poziv na sestrinski projekat; link dolazi iz LandingPage */
+		aboutSufara: (link) => (
+			<React.Fragment>
+				Tek počinjete s arapskim pismom? Harfove možete savladati na {link} – interaktivnoj sufari.
+			</React.Fragment>
+		),
 		quoteText: '„Najbolji među vama su oni koji uče Kur’an i podučavaju ga.“',
 		quoteCite: 'Buharija',
 		benefits: [
@@ -677,8 +683,9 @@ const UI = {
 		heroSub: 'Simple, interactive, step by step',
 		heroLead: (
 			<React.Fragment>
-				<strong>Tedzvid.ba</strong> is a modern, interactive, electronic edition of the tajweed handbook by Sejid
-				Strika, M.A. – created to help beginners, maktab students, mu'allims and everyone who loves the Qur'an.
+				<strong>Tedzvid.ba</strong> is a modern, interactive, electronic edition of the tajweed handbook by imam Sejid
+				Strika, MA – created to help beginners, students attending the maktab (Islamic school for children),
+				Islamic educators (mu'allims) and everyone who loves the Qur'an.
 			</React.Fragment>
 		),
 		heroCtaStart: 'Start learning',
@@ -710,7 +717,8 @@ const UI = {
 		aboutP1: (
 			<React.Fragment>
 				<strong>Tedzvid.ba</strong> is the electronic, interactive edition of the printed tajweed handbook by
-				Sejid ef. Strika, M.A. Its aim is to help new reciters of the Qur'an – maktab students and adults alike –
+				imam Sejid Strika, MA. Its aim is to help new reciters of the Qur'an – students attending the maktab
+				(Islamic school for children) as well as adults –
 				to master the basic rules of tajweed more easily.
 			</React.Fragment>
 		),
@@ -719,8 +727,15 @@ const UI = {
 		aboutP3: (
 			<React.Fragment>
 				The special feature of this site are the <strong>interactive examples</strong>, whose audio recording you
-				can play by clicking on a word. We hope tedzvid.ba will help mu'allims explain the rules of tajweed, both
-				to children in the maktab and to adults who have finished the sufara.
+				can play by clicking on a word. We hope tedzvid.ba will help Islamic educators (mu'allims) explain the rules of
+				tajweed, both to children in the maktab and to adults who have mastered the Arabic alphabet (sufara).
+			</React.Fragment>
+		),
+		/* poziv na sestrinski projekat; link dolazi iz LandingPage */
+		aboutSufara: (link) => (
+			<React.Fragment>
+				Just starting with the Arabic alphabet? You can master the letters on {link} – an interactive sufara
+				(Arabic alphabet primer).
 			</React.Fragment>
 		),
 		quoteText: '“The best among you are those who learn the Qur’an and teach it.”',
@@ -742,7 +757,7 @@ const UI = {
 		printAlt: 'Printed edition of the tajweed handbook',
 		printText:
 			'Tajweed – a handbook for the correct recitation of the Qur’an, with exercises, is also available in print. You can get information about the printed edition from the author:',
-		author: 'Sejid ef. Strika, M.A.',
+		author: 'mr. Sejid ef. Strika',
 
 		/* ----- home: contact ----- */
 		contactEyebrow: 'Contact',
@@ -769,7 +784,7 @@ const UI = {
 			'An interactive handbook for learning the rules of tajweed – simple, step by step, for children and adults, beginners and advanced reciters.',
 		footNav: 'Navigation',
 		footPartners: 'Friends of the project',
-		footAuthor: 'Author: Sejid ef. Strika, M.A.',
+		footAuthor: 'Author: mr. Sejid ef. Strika',
 
 		/* ----- lessons overview ----- */
 		lessonsEyebrow: 'Interactive handbook',
@@ -1361,6 +1376,13 @@ const UI = {
 				Tejwid-Regel, die Sie erlernen möchten, leichter zu verstehen. Wir hoffen, dass tedzvid.ba Lehrern bei der
 				Erklärung von Tejwid-Regeln helfen wird, sowohl für Kinder in der Koranschule als auch für Erwachsene nach
 				Abschluss der Sufara (der Fibel des arabischen Alphabets).
+			</React.Fragment>
+		),
+		/* poziv na sestrinski projekat; link dolazi iz LandingPage */
+		aboutSufara: (link) => (
+			<React.Fragment>
+				Sie fangen gerade erst mit dem arabischen Alphabet an? Die Buchstaben lernen Sie auf {link} – der
+				interaktiven Sufara (Fibel des arabischen Alphabets).
 			</React.Fragment>
 		),
 		quoteText: '„Die Besten unter euch sind die, die den Koran lernen und ihn lehren.“',

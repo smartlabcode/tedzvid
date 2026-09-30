@@ -24,7 +24,7 @@ import SiteFooter from './SiteFooter';
 import { Ornament, LOGO_SRC } from './Logo';
 import { VideoEmbed } from './LessonVideo';
 import videos from '../Data/videos.json';
-import { APP_LINKS } from './SiteFooter';
+import { APP_LINKS, SUFARA_URL } from './SiteFooter';
 import { useUI } from '../i18n/ui';
 
 /* Ikone i boje su iste za sve jezike; naslovi i opisi dolaze iz i18n/ui.js */
@@ -214,6 +214,13 @@ function LandingPage() {
 							<p>{ui.aboutP1}</p>
 							<p>{ui.aboutP2}</p>
 							<p>{ui.aboutP3}</p>
+							<p className="about__sufara">
+								{ui.aboutSufara(
+									<a href={SUFARA_URL} target="_blank" rel="noopener noreferrer">
+										Sufara.ba
+									</a>
+								)}
+							</p>
 							<blockquote className="quote">
 								<p>{ui.quoteText}</p>
 								<cite>{ui.quoteCite}</cite>

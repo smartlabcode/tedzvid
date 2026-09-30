@@ -1062,6 +1062,24 @@ img {
   }
 }
 
+.about__sufara {
+  margin-top: 26px;
+  padding: 16px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: var(--radius);
+
+  a {
+    color: var(--gold-200);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
 .quote {
   margin: 34px 0 0;
   padding: 24px 28px;
