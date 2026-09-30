@@ -57,6 +57,21 @@ function HomeFirst() {
 	const { loading, progress } = useAuth();
 	const lekcije = data['lekcije'].reduce((acc, curr) => acc.concat(curr), []);
 
+	/* Lekcija, vježba i video – zajednička dugmad svake kartice */
+	const osnovnaDugmad = (base) => (
+		<React.Fragment>
+			<Link to={base + '#lekcija'} className="btn-t btn-t--navy btn-t--sm">
+				<FaBookOpen /> {ui.cardLekcija}
+			</Link>
+			<Link to={base + '#vjezba'} className="btn-t btn-t--ghost btn-t--sm">
+				<FaPencilAlt /> {ui.cardVjezba}
+			</Link>
+			<Link to={base + '#video'} className="btn-t btn-t--ghost btn-t--sm">
+				<FaPlayCircle /> {ui.cardVideo}
+			</Link>
+		</React.Fragment>
+	);
+
 	const kartica = (number) => {
 		const lekcija = lekcije[number - 1];
 		if (!lekcija) return null;
@@ -85,16 +100,25 @@ function HomeFirst() {
 							</span>
 						</div>
 					)}
+					{number === 14 ? (
+						<React.Fragment>
+							<div className="lesson-card__dio">
+								<span className="lesson-card__dio-oznaka">{ui.cardKrupno}</span>
+								<div className="lesson-card__actions">{osnovnaDugmad(base)}</div>
+							</div>
+							<div className="lesson-card__dio">
+								<span className="lesson-card__dio-oznaka">{ui.cardTanko}</span>
+								<div className="lesson-card__actions">
+									{osnovnaDugmad('/lekcija14_2')}
+									<Link to={putanjaKviza(number)} className="btn-t btn-t--ghost btn-t--sm">
+										<FaClipboardCheck /> {ui.cardKviz}
+									</Link>
+								</div>
+							</div>
+						</React.Fragment>
+					) : (
 					<div className="lesson-card__actions">
-						<Link to={base + '#lekcija'} className="btn-t btn-t--navy btn-t--sm">
-							<FaBookOpen /> {ui.cardLekcija}
-						</Link>
-						<Link to={base + '#vjezba'} className="btn-t btn-t--ghost btn-t--sm">
-							<FaPencilAlt /> {ui.cardVjezba}
-						</Link>
-						<Link to={base + '#video'} className="btn-t btn-t--ghost btn-t--sm">
-							<FaPlayCircle /> {ui.cardVideo}
-						</Link>
+						{osnovnaDugmad(base)}
 						{number === 1 && (
 							<Link to={base + '#tabela'} className="btn-t btn-t--ghost btn-t--sm">
 								<FaTable /> {ui.cardTabela}
@@ -109,6 +133,7 @@ function HomeFirst() {
 							<FaClipboardCheck /> {ui.cardKviz}
 						</Link>
 					</div>
+					)}
 				</div>
 			</article>
 		);

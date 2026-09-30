@@ -1782,6 +1782,21 @@ textarea.field {
     flex-wrap: wrap;
     gap: 8px;
   }
+
+  /* lekcija 14: dio „krupno“ i dio „tanko“, svaki u svom redu */
+  &__dio + &__dio {
+    margin-top: 12px;
+  }
+
+  &__dio-oznaka {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gold-600);
+  }
 }
 
 .hide {

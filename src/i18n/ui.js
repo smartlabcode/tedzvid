@@ -140,6 +140,9 @@ const UI = {
 		cardVideo: 'Video',
 		cardTabela: 'Tabela',
 		cardZnakovi: 'Znakovi',
+		/* lekcija 14 ima dva dijela – kartica ima red dugmadi za svaki */
+		cardKrupno: 'Izgovor krupno',
+		cardTanko: 'Izgovor tanko',
 
 		/* ----- grupe lekcija i grupni kvizovi ----- */
 		grupaEyebrow: (b) => `Grupa ${b}`,
@@ -778,6 +781,9 @@ const UI = {
 		cardVideo: 'Video',
 		cardTabela: 'Table',
 		cardZnakovi: 'Signs',
+		/* lekcija 14 ima dva dijela – kartica ima red dugmadi za svaki */
+		cardKrupno: 'Emphatic R',
+		cardTanko: 'Non-emphatic R',
 
 		/* ----- lesson groups and group quizzes ----- */
 		grupaEyebrow: (b) => `Group ${b}`,
@@ -1415,6 +1421,9 @@ const UI = {
 		cardVideo: 'Video',
 		cardTabela: 'Tabelle',
 		cardZnakovi: 'Zeichen',
+		/* lekcija 14 ima dva dijela – kartica ima red dugmadi za svaki */
+		cardKrupno: 'Kraftvolles R',
+		cardTanko: 'Nicht emphatisches R',
 
 		/* ----- Lektionsgruppen und Gruppenquiz ----- */
 		grupaEyebrow: (b) => `Gruppe ${b}`,

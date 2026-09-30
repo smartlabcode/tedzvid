@@ -69,7 +69,7 @@
             }
         ],
         [{
-                "title": { "bs": "IZHAR HALLKIJ", "en": "IZHAAR HALQIJJ", "de": "IZHAAR HALQIJJ" },
+                "title": { "bs": "IZHAR HALKIJJ", "en": "IZHAAR HALQIJJ", "de": "IZHAAR HALQIJJ" },
                 "subtitle": {
                     "bs": "Čisto izgovaranje harfa N (ن) ili tenvina",
                     "en": "Clear pronunciation of the letter N (ن) or nunation/tanwin",
@@ -94,7 +94,7 @@
                 }
             },
             {
-                "title": { "bs": "IHFA SEVIJJ", "en": "IKHFAA’ SHAFAWI", "de": "IKHFAA' SHAFAWI" },
+                "title": { "bs": "IHFA ŠEFEVIJJ", "en": "IKHFAA’ SHAFAWI", "de": "IKHFAA' SHAFAWI" },
                 "subtitle": {
                     "bs": "Skrivanje harfa M (م)",
                     "en": "Concealment of M (م)",
@@ -137,7 +137,7 @@
             }
         ],
         [{
-                "title": { "bs": "MEDD TABI'IJJ", "en": "AL-MADD AL-TABEE’EE", "de": "AL-MADD AL-TABEE'EE" },
+                "title": { "bs": "MEDD TABIJJ", "en": "AL-MADD AL-TABEE’EE", "de": "AL-MADD AL-TABEE'EE" },
                 "subtitle": {
                     "bs": "Obična dužina",
                     "en": "Normal extension",
@@ -179,7 +179,7 @@
                 }
             },
             {
-                "title": { "bs": "MED LIN", "en": "MADDU AL-LEEN", "de": "MADDU AL-LEEN" },
+                "title": { "bs": "MEDD LIN", "en": "MADDU AL-LEEN", "de": "MADDU AL-LEEN" },
                 "subtitle": {
                     "bs": "poluvokalna dužina",
                     "en": "Semi-vocal length",
