@@ -232,7 +232,7 @@
                 "id": 201,
                 "url": "./assets/audio/l1/20.mp3",
                 "napomena": [
-                    {"tip": "napomena", "bs": "U riječi أُو۬لُوا harf و iza أُ se ne uči, nego se odmah prelazi na لُ, pa se ta riječ uči uluu.", "en": "In أُو۬لُوا the letter و after أُ is not recited, one goes straight on to لُ, so the word is read ulū.", "de": "In أُو۬لُوا wird der Buchstabe و nach أُ nicht gelesen, man geht gleich zu لُ weiter, das Wort wird also ulu gelesen."},
+                    {"tip": "napomena", "bs": "U riječi أُو۬لُوا harf و iza أُ se ne uči, nego se odmah prelazi na لُ, pa se ta riječ uči ulu.", "en": "In أُو۬لُوا the letter و after أُ is not recited, one goes straight on to لُ, so the word is read ulu.", "de": "In أُو۬لُوا wird der Buchstabe و nach أُ nicht gelesen, man geht gleich zu لُ weiter, das Wort wird also ulu gelesen."},
                     {"tip": "stajanje", "bs": "Ajet završava kratkim vokalom I (بِ), zato se staje kao da je na njemu sukun: ulul elbaab.", "en": "The verse ends in the short vowel I (بِ), so we stop as if it carried a sukūn: ulul albāb.", "de": "Der Vers endet auf dem kurzen Vokal I (بِ), deshalb hält man an, als stünde ein Sukun darauf: ulul albab."}
                 ],
                 "highlight": "بِ ۜ ",
@@ -281,7 +281,7 @@
                 "id": 261,
                 "url": "./assets/audio/l1/27.mp3",
                 "napomena": [
-                    {"tip": "stajanje", "bs": "Riječ مَرْقَدِنَاۢ završava dugim vokalom A (نَا), zato se pri stajanju uči bez ikakve promjene: merkadinaa.", "en": "The word مَرْقَدِنَاۢ ends in the long vowel A (نَا), so when stopping it is recited with no change at all: marqadinā.", "de": "Das Wort مَرْقَدِنَاۢ endet auf dem langen Vokal A (نَا), deshalb wird es beim Anhalten ganz ohne Änderung gelesen: marqadina."},
+                    {"tip": "stajanje", "bs": "Riječ مَرْقَدِنَاۢ završava dugim vokalom A (نَا), zato se pri učenju zastane bez ikakve promjene i bez uzimanja daha: merkadinaa.", "en": "The word مَرْقَدِنَاۢ ends in the long vowel A (نَا), so in recitation one pauses on it with no change at all and without taking a breath: marqadinā.", "de": "Das Wort مَرْقَدِنَاۢ endet auf dem langen Vokal A (نَا), deshalb hält man beim Lesen ganz ohne Änderung und ohne Atem zu holen kurz an: marqadina."},
                     {"tip": "stajanje", "bs": "Riječ الرَّحْمٰنُ završava kratkim vokalom U (نُ), zato se staje kao da je na njoj sukun: errahmaan.", "en": "The word الرَّحْمٰنُ ends in the short vowel U (نُ), so we stop as if it carried a sukūn: arrahmān.", "de": "Das Wort الرَّحْمٰنُ endet auf dem kurzen Vokal U (نُ), deshalb hält man an, als stünde ein Sukun darauf: arrahman."}
                 ],
                 "highlight": "نُ",
@@ -339,7 +339,7 @@
             "id": 31,
             "url": "./assets/audio/l1/31.mp3",
             "napomena": [
-                {"tip": "stajanje", "bs": "Riječ هُوَ završava kratkim vokalom E (وَ), zato se staje kao da je na njoj sukun: huv.", "en": "The word هُوَ ends in the short vowel A (وَ), so we stop as if it carried a sukūn: huw.", "de": "Das Wort هُوَ endet auf dem kurzen Vokal E (وَ), deshalb hält man an, als stünde ein Sukun darauf: huw."}
+                {"tip": "stajanje", "bs": "Riječ هُوَ završava kratkim vokalom E (وَ); prilikom stajanja na harfu vav se pojavi sukun (وْ), što dalje uzrokuje dugi vokal U (هُو), pa se izgovara huu.", "en": "The word هُوَ ends in the short vowel A (وَ); when stopping, the letter waw gets a sukūn (وْ), which in turn makes a long vowel U (هُو), so it is pronounced hū.", "de": "Das Wort هُوَ endet auf dem kurzen Vokal E (وَ); beim Anhalten bekommt der Buchstabe Waw ein Sukun (وْ), wodurch ein langes U (هُو) entsteht, man spricht also huu."}
             ],
             "highlight": "وَ",
             "word": "اَللّٰهُ لَٓا إِلٰهَ إِلَّا هُوَ ",

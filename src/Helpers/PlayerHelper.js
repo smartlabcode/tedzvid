@@ -10,14 +10,16 @@ function PRow(data, rowname) {
 
 	const PlayerRow = (datarr, rowname) => {
 		var specialCharacters = [ '؛', ';', '-' ];
-		const row = datarr[rowname].map((dat) => {
+		const uParu = (i) => i + 1 < datarr[rowname].length && typeof datarr[rowname][i].after === 'string' && datarr[rowname][i].after.trim().endsWith(':');
+		const row = datarr[rowname].map((dat, i) => {
 			let myClassName = '';
 			if (!!dat.after && specialCharacters.includes(dat.after.trim())) {
 				myClassName = 'after';
 			}
+			/* u paru "X čita se: Y" objašnjenje ima samo Y (desno); lijeva riječ svira bez oblačića */
 			return (
 				<span key={'key' + dat.id} onClick={toggle}>
-					<Player url={dat.url} note={dat.napomena} key={'p' + dat.id} playr={playing ? true : false}>
+					<Player url={dat.url} note={uParu(i) ? undefined : dat.napomena} key={'p' + dat.id} playr={playing ? true : false}>
 						<Arabic arabic={dat.highlight} key={'a' + dat.id}>
 							{dat.word}
 						</Arabic>
@@ -33,7 +35,7 @@ function PRow(data, rowname) {
 		const grupisano = [];
 		for (let i = 0; i < row.length; i++) {
 			const dat = datarr[rowname][i];
-			if (i + 1 < row.length && typeof dat.after === 'string' && dat.after.trim().endsWith(':')) {
+			if (uParu(i)) {
 				grupisano.push(
 					<span className={'par-primjera' + (dugVeznik ? ' par-dug' : '')} key={'par' + dat.id}>
 						{row[i]}

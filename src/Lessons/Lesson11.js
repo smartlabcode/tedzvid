@@ -36,7 +36,9 @@ const TXT = {
 						<span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
 						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
 						<span className="arapski-lekcija">ــٌــ</span> dođe jedan od 15 harfova:{' '}
-						<span lang="ar" className="arapski-lekcija arap-red">ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق</span> ,{' '}
+						<span lang="ar" className="arapski-lekcija arap-red">
+							<span className="harfovi-dio">ك ت ث ج د ذ ز س</span> <span className="harfovi-dio">ش ص ض ط ظ ف ق</span>
+						</span> ,{' '}
 						onda se harf <strong>N</strong> (
 						<span className="arapski-lekcija">ن</span>) uči kroz nos u trajanju od 2 hareketa, s tim da
 						jezik ne dotakne nepce, npr.:
@@ -98,7 +100,9 @@ const TXT = {
 						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
 						<span className="arapski-lekcija">ــٌــ</span> is following by one
 						of the 15 letters:{' '}
-						<span lang="ar" className="arapski-lekcija arap-red">ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق</span> ,{' '}
+						<span lang="ar" className="arapski-lekcija arap-red">
+							<span className="harfovi-dio">ك ت ث ج د ذ ز س</span> <span className="harfovi-dio">ش ص ض ط ظ ف ق</span>
+						</span> ,{' '}
 						then a two-beat <strong>N</strong> (
 						<span className="arapski-lekcija">ن</span>) is pronounced{' '}
 						<u>through nose</u>, without the tongue touching the palate, for
@@ -158,7 +162,9 @@ const TXT = {
 						<span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
 						<span className="arapski-lekcija">ـــٍــ</span> , oder UN{' '}
 						<span className="arapski-lekcija">ــٌــ</span> einer der 15 Buchstaben folgt:{' '}
-						<span lang="ar" className="arapski-lekcija arap-red">ك ت ث ج د ذ ز س ش ص ض ط ظ ف ق</span> ,{' '}
+						<span lang="ar" className="arapski-lekcija arap-red">
+							<span className="harfovi-dio">ك ت ث ج د ذ ز س</span> <span className="harfovi-dio">ش ص ض ط ظ ف ق</span>
+						</span> ,{' '}
 						dann wird <strong>N</strong> (<span className="arapski-lekcija">ن</span>) oder <strong>tanwin</strong>{' '}
 						EN <span className="arapski-lekcija">ـــًـــ</span> , in oder un nasal ausgesprochen. Zum Beispiel:
 					</Col>

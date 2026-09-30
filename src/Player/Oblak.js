@@ -15,8 +15,10 @@ import { useUI } from '../i18n/ui';
  * Napomena: [{ tip: 'dugo' | 'kratko' | 'napomena', bs: '...', en: '...' }]
  */
 
-/* arapske dionice u tekstu napomene dobiju mushaf font; sadržaj zagrada, npr. "(دَ)", ostaje u jednom redu */
-const AR_RUN = /([؀-ۿ‍]+)/;
+/* arapske dionice u tekstu napomene dobiju mushaf font; sadržaj zagrada, npr. "(دَ)", ostaje u jednom redu.
+   Više arapskih riječi zaredom (npr. "قُلْ لِمَنِ") je jedna dionica: da je svaka riječ svoj rtl span,
+   u lijevo-desnom tekstu bi se poredale slijeva nadesno, tj. obrnutim redom (L4, L12, L15, L16, L19, L20...) */
+const AR_RUN = /([؀-ۿ‍]+(?: +[؀-ۿ‍]+)*)/;
 const ZAGRADA = /(\([^()]*\))/;
 const arRun = (text, key) =>
 	String(text)
