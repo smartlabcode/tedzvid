@@ -57,3 +57,5 @@ node_modules
 
 # keš preuzetih kur'anskih izvora za bonus lekcije (skripta ih ponovo preuzme)
 /scripts/sure/.cache
+.vercel
+.env*
