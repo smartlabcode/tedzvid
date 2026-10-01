@@ -69,6 +69,17 @@ const LEKCIJE = {
 	'22': L22
 };
 
+/* SPA ne vraća skrol na vrh pri promjeni stranice, pa bi nova lekcija ostala
+   na visini prethodne. Sa #sidrom skrolu se bavi sama lekcija (njen efekat
+   se izvrši prije ovog). */
+function NaVrhLekcije() {
+	useEffect(() => {
+		/* 'instant' jer html ima scroll-behavior: smooth */
+		if (!window.location.hash) window.scrollTo({ top: 0, behavior: 'instant' });
+	}, []);
+	return null;
+}
+
 function ListRoutes() {
 	let history = useHistory();
 	const { lang } = useLang();
@@ -122,6 +133,7 @@ function ListRoutes() {
 						render={() => (
 							/* lekcije su otvorene svima – zaključavaju se samo kvizovi grupa */
 							<div className="lekcija-page">
+								<NaVrhLekcije />
 								<Lekcija />
 								<NowPlayingBar />
 							</div>

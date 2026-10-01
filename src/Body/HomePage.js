@@ -10,7 +10,7 @@ import { useUI } from '../i18n/ui';
 function Home() {
 	const ui = useUI();
 	useEffect(() => {
-		window.scrollTo(0, 0);
+		window.scrollTo({ top: 0, behavior: 'instant' });
 	}, []);
 
 	return (
