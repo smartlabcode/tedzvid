@@ -70,12 +70,17 @@ const LEKCIJE = {
 };
 
 /* SPA ne vraća skrol na vrh pri promjeni stranice, pa bi nova lekcija ostala
-   na visini prethodne. Sa #sidrom skrolu se bavi sama lekcija (njen efekat
-   se izvrši prije ovog). */
+   na visini prethodne (npr. kartice na /lekcije vode na #lekcija, #vjezba, #video).
+   Odmah skoči na sidro ili na vrh; 'instant' jer html ima scroll-behavior: smooth,
+   pa bi glatki skrol krenuo s visine prethodne stranice. Efekat lekcije se izvrši
+   prije ovog, pa ovaj ima zadnju riječ. */
 function NaVrhLekcije() {
 	useEffect(() => {
-		/* 'instant' jer html ima scroll-behavior: smooth */
-		if (!window.location.hash) window.scrollTo({ top: 0, behavior: 'instant' });
+		const id = decodeURIComponent(window.location.hash.slice(1));
+		const sidro = id && document.getElementById(id);
+		/* #lekcija je u većini lekcija u sakrivenom .mobileTop – tada na vrh */
+		if (sidro && sidro.getClientRects().length) sidro.scrollIntoView({ behavior: 'instant', block: 'start' });
+		else window.scrollTo({ top: 0, behavior: 'instant' });
 	}, []);
 	return null;
 }
