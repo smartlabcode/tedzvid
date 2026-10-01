@@ -1338,7 +1338,7 @@ const UI = {
 		),
 		heroCtaStart: 'Mit dem Lernen beginnen',
 		heroCtaMore: 'Mehr erfahren',
-		storeIntro: 'Die Anwendung ist verfügbar auf:',
+		storeIntro: 'Erhältlich bei:',
 		storeGet: 'Jetzt bei',
 		mockTitle: 'Tejwid',
 		mockSubtitle: 'Interaktives Handbuch',
