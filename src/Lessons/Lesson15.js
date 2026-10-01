@@ -158,7 +158,7 @@ const TXT = {
 		naslov: '15 IDGHAM MUTAJAANISAYN',
 		podnaslov: (
 			<React.Fragment>
-				<strong>Vollständige Assimilation</strong>
+				<strong>Vollständige Assimilation verwandter Buchstaben</strong>
 			</React.Fragment>
 		),
 		lekcija: (P, V) => (
@@ -166,7 +166,8 @@ const TXT = {
 				<Row>
 					<Col className="opisLekcije">
 						Wenn zwei verwandte Buchstaben hintereinander vorkommen, der Erste mit <strong>sukun</strong> und der
-						Folgende mit einem der Vokale E, I, U, werden beide ineinander vollständig assimiliert.
+						Folgende mit einem der Vokale E, I, U, wird der Erste in den Folgenden aus <u>derselben Gruppe</u>{' '}
+						vollständig assimiliert:
 					</Col>
 				</Row>
 

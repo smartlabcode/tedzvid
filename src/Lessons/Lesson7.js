@@ -144,7 +144,8 @@ const TXT = {
 						<span className="arapski-lekcija">(ل) </span>und <strong>R</strong>{' '}
 						<span className="arapski-lekcija">(ر)</span>, unmittelbar danach folgt, wird <strong>N </strong>
 						<span className="arapski-lekcija"> (ن)</span> oder tanwin vollständig in die zuvor genannten
-						Buchstaben <strong>ohne</strong> Nasalisierung assimiliert. Zum Beispiel:
+						Buchstaben <strong>ohne</strong> Nasalisierung assimiliert, d. h. <strong>N</strong> (
+						<span className="arapski-lekcija">ن</span>) wird überhaupt nicht ausgesprochen. Zum Beispiel:
 					</Col>
 				</Row>
 				<Row>

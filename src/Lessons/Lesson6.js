@@ -191,7 +191,7 @@ const TXT = {
 						(unmittelbar danach folgt <strong>jemnu</strong> –
 						<span className="arapski-lekcija">يَمْنُو</span>), wird nun <strong>N</strong> (
 						<span className="arapski-lekcija">ن</span>) oder tanwin partiell in einen der zuvor genannten
-						Buchstaben assimiliert und nasal ausgesprochen. Zum Beispiel:
+						Buchstaben assimiliert und 2 Harakat lang nasal ausgesprochen. Zum Beispiel:
 					</Col>
 				</Row>
 

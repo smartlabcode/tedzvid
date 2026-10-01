@@ -131,7 +131,7 @@ const TXT = {
 		naslov: '8 IKLAB',
 		podnaslov: (
 			<React.Fragment>
-				<strong>Partielle Verwandlung von N (ن) und tanwin in den Buchstaben M (م) mit Nasalisierung</strong>
+				<strong>Verwandlung von N (ن) und tanwin in den Buchstaben M (م) mit Nasalisierung</strong>
 			</React.Fragment>
 		),
 		lekcija: (P, V) => (
@@ -144,11 +144,11 @@ const TXT = {
 						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
 						<span className="arapski-lekcija">ــٌــ</span> der Buchstabe <strong>B</strong> (
 						<span className="arapski-lekcija">ب</span>) folgt, wird nun mit sukun <strong>N</strong> (
-						<span className="arapski-lekcija">ن</span>) oder tanwin <u>partiell zu mim</u>{' '}
+						<span className="arapski-lekcija">ن</span>) oder tanwin <u>zu mim</u>{' '}
 						<strong>
 							M (<span className="arapski-lekcija">م</span>){' '}
 						</strong>
-						verwandelt. Zum Beispiel:
+						verwandelt und 2 Harakat lang ausgesprochen. Zum Beispiel:
 					</Col>
 				</Row>
 				<Row>

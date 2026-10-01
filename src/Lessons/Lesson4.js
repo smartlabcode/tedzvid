@@ -122,8 +122,8 @@ const TXT = {
 						<strong>
 							sukun <span className="arapski-lekcija">ـــْــ</span>
 						</strong>{' '}
-						und der zweite mit <strong>Vokal</strong>, werden beide vollständig ineinander assimiliert und mit
-						teschdid ausgesprochen. Zum Beispiel:
+						und der zweite mit <strong>Vokal</strong>, werden sie vollständig assimiliert: der erste Buchstabe
+						wird nicht ausgesprochen, der zweite wird mit teschdid ausgesprochen. Zum Beispiel:
 					</Col>
 				</Row>
 

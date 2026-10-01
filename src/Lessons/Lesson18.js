@@ -131,7 +131,7 @@ const TXT = {
 						Wenn nach <strong>den langen Vokalen</strong> A <span className="arapski-lekcija">ـــَــ ا</span> , I{' '}
 						<span className="arapski-lekcija">ـــِـ ى </span>, oder U{' '}
 						<span className="arapski-lekcija">ـــُــ و</span> <strong>hamze</strong> im <u>gleichen</u> Wort
-						vorkommt, dann ist es medd muttesil. Die Länge der Aussprache beträgt 4-5 kurze Vokale. Zum
+						vorkommt, dann ist es medd muttesil. Die Länge der Aussprache beträgt verpflichtend 4-5 kurze Vokale. Zum
 						Beispiel: {P('row1')}
 					</Col>
 				</Row>

@@ -134,8 +134,8 @@ const TXT = {
 			<React.Fragment>
 				<Row>
 					<Col className="opisLekcije">
-						Wenn der Buchstabe <strong>M</strong> <span className="arapski-lekcija">(م)</span> mit{' '}
-						<strong>sukoon</strong> auf den Buchstaben <strong>M</strong>
+						Wenn nach dem Buchstaben <strong>M</strong> <span className="arapski-lekcija">(م)</span> mit{' '}
+						<strong>sukoon</strong> der Buchstabe <strong>M</strong>
 						<span className="arapski-lekcija"> (م) </span>mit einer <strong>haraka</strong> folgt, wird der
 						Buchstabe <strong>M</strong>
 						<span className="arapski-lekcija"> (م)</span> mit <strong>sukoon</strong> mit dem Buchstaben{' '}

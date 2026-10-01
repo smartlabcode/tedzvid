@@ -64,7 +64,7 @@
                 "subtitle": {
                     "bs": "Pretvaranje harfa N (ن) u harf M (م)",
                     "en": "Converting the letter N (ن) into M (م)",
-                    "de": "Partielle Verwandlung von N (ن) und tanwin in den Buchstaben M (م) mit Nasalisierung"
+                    "de": "Verwandlung von N (ن) und tanwin in den Buchstaben M (م) mit Nasalisierung"
                 }
             }
         ],
@@ -124,7 +124,7 @@
                 "subtitle": {
                     "bs": "Uklapanje srodnih harfova",
                     "en": "Assimilation of letters of the same origin",
-                    "de": "Vollständige Assimilation"
+                    "de": "Vollständige Assimilation verwandter Buchstaben"
                 }
             },
             {

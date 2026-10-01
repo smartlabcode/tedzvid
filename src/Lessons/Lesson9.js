@@ -231,7 +231,7 @@ const TXT = {
 						<span className="arapski-lekcija">نْ</span>) oder <strong>tanwin</strong> EN{' '}
 						<span className="arapski-lekcija">ـــًـــ</span> , IN{' '}
 						<span className="arapski-lekcija">ـــٍــ</span> , UN{' '}
-						<span className="arapski-lekcija">ــٌــ</span> einer der IZHAR Buchstaben:<pre style={{ display: 'inline' }}> </pre>
+						<span className="arapski-lekcija">ــٌــ</span> einer der sechs Kehlbuchstaben:<pre style={{ display: 'inline' }}> </pre>
 						<span className="arapski-lekcija arap-red">
 							{' '}
 							خ
@@ -261,7 +261,7 @@ const TXT = {
 							{' '}
 							أ{' '}
 						</span>
-						folgt, dann liest man <u>diesen klar</u> und deutlich ohne Assimilation. Zum Beispiel:
+						folgt, dann liest man <strong>N</strong> <u>klar</u> und deutlich ohne Assimilation. Zum Beispiel:
 					</Col>
 				</Row>
 

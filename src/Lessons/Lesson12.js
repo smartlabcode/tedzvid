@@ -115,7 +115,8 @@ const TXT = {
 					<Col className="opisLekcije">
 						Wenn nach dem Buchstaben <strong>M</strong> mit <strong>sukun</strong> (
 						<span className="arapski-lekcija">مْ</span>) der Buchstabe <strong>B</strong> (
-						<span className="arapski-lekcija">ب</span>) folgt, wird M nasal ausgesprochen. Zum Beispiel:
+						<span className="arapski-lekcija">ب</span>) folgt, wird <strong>M</strong> (
+						<span className="arapski-lekcija">م</span>) 2 Harakat lang nasal ausgesprochen. Zum Beispiel:
 					</Col>
 				</Row>
 

@@ -412,7 +412,8 @@ const TXT = {
 				</Row>
 				<Row>
 					<Col className="opisLekcije my-3">
-						<strong>1.</strong> Wenn das Wort, bei dem er anhält, mit E <A> ــــَـــ</A> , I <A> ــــِــ</A> , U{' '}
+						<strong>1.</strong> Wenn das Wort, bei dem er anhält, mit dem <strong>kurzen Vokal</strong> E{' '}
+						<A> ــــَـــ</A> , I <A> ــــِــ</A> , U{' '}
 						<A> ــــُـــ </A>oder <strong>tanwin</strong> IN <A> ــــٍــ </A> , UN <A> ـــٌـــ</A> endet, dann
 						liest er das Wort mit <strong>sukun</strong> <A> ــــْـــ</A> , zum Beispiel:
 					</Col>
@@ -480,7 +481,7 @@ const TXT = {
 							EN <A> ـــًــ</A>
 						</td>
 						<td>
-							als wäre es ein A <A> ــَــ ا</A>
+							als wäre es ein langes A <A> ــَــ ا</A>
 						</td>
 					</tr>
 					<tr>
@@ -556,7 +557,7 @@ const TXT = {
 								<A> رَيْبَۚۛ ف۪يهِۚۛ </A>
 								<br />
 								Anhalten an einem der zwei Wörter mit den drei Punkten ∴ und verpflichtendes Weiterlesen
-								beim zweiten.
+								beim zweiten, und umgekehrt.
 							</td>
 						</tr>
 					</tbody>

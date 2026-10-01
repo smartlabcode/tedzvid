@@ -166,7 +166,8 @@ const TXT = {
 							<span className="harfovi-dio">ك ت ث ج د ذ ز س</span> <span className="harfovi-dio">ش ص ض ط ظ ف ق</span>
 						</span> ,{' '}
 						dann wird <strong>N</strong> (<span className="arapski-lekcija">ن</span>) oder <strong>tanwin</strong>{' '}
-						EN <span className="arapski-lekcija">ـــًـــ</span> , in oder un nasal ausgesprochen. Zum Beispiel:
+						EN <span className="arapski-lekcija">ـــًـــ</span> , in oder un 2 Harakat lang nasal ausgesprochen, wobei die
+						Zunge den Gaumen nicht berührt. Zum Beispiel:
 					</Col>
 				</Row>
 
