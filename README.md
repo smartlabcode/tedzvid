@@ -114,7 +114,7 @@ Njemački tekst lekcija je ručno preveden i provjeren na grani `feature/deutch-
 
 - Registracija (`/registracija`: ime, korisničko ime, email, lozinka), prijava (`/prijava`, email ili korisničko ime), pregled napretka (`/profil`). Korisničko ime (3–20 znakova, jedinstveno) prikazuje se na rang listi.
 - **Sve lekcije su otvorene svima, bez prijave.** Zaključavaju se samo kvizovi grupa i završni kviz (provjera i na klijentu i na serveru).
-- Nakon svake lekcije je kviz od 10 pitanja (`src/Data/Quiz/L{n}.json`, bs + en) – vježba koja ništa ne otključava. Lekcija 14 ima dva dijela; kviz je na kraju drugog dijela (`/lekcija14_2`).
+- Nakon svake lekcije je kviz od 10 pitanja (`src/Data/Quiz/L{n}.json`, bs + en) – vježba koja ništa ne otključava. Kviz lekcije može raditi i gost (bez prijave), ali mu se rezultat ne sprema; kvizovi grupa, završni i mualimov kviz traže prijavu. Lekcija 14 ima dva dijela; kviz je na kraju drugog dijela (`/lekcija14_2`).
 - Lekcije su podijeljene u pet grupa – **4 + 4 + 4 + 4 + 6** (`VELICINE_GRUPA` u `src/auth/progress.js`, `BROJ_GRUPA` u `server/index.js`) – i iza svake grupe stoji kviz grupe (`/kviz-grupa1` … `/kviz-grupa5`, ključ napretka `g1`…`g5`): 20 pitanja nasumično izvučenih iz bazena cijele grupe, prolaz 14/20. Bazen jedne lekcije je njen kviz + njen dio završnog kviza (`src/Data/Quiz/bazen.js`), pa je svaki pokušaj drugačiji. Kviz grupe N+1 otključava se položenim kvizom grupe N; prvi je otvoren svima (napredak se čuva samo prijavljenima).
 - Uz svaki klikabilni primjer (riječ ili ajet) u lekcijama i vježbama stoji objašnjenje koje se dok zapis svira prikazuje kao oblačić uz istaknuti harf. Tekstovi žive u `src/Data/L{n}Data.json`, u polju `napomena` onog zapisa koji ima `url`:
 

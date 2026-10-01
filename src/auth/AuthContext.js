@@ -9,9 +9,9 @@ import { ZAVRSNI, brojGrupe, jeKljucGrupe, jeOtkljucanaGrupa, jeOtkljucanZavrsni
  *   progress  – { '1': { najbolje, zadnje, pokusaji, polozeno, datum }, ... }
  *   isAdmin   – korisnik s ulogom 'admin'
  *   isMualim  – mualim (i admin): njemu su svi kvizovi otključani i može praviti vlastite kvizove
- *   isUnlocked(key) – pita se samo za kvizove. Lekcije su otvorene svima, ali za svaki kviz
- *                     je potrebna prijava; uz to grupni kviz traži položen prethodni,
- *                     a završni sve grupne.
+ *   isUnlocked(key) – pita se samo za kvizove grupa i završni (kviz lekcije je otvoren i gostu,
+ *                     vidi LessonQuiz). Za njih je potrebna prijava; uz to grupni kviz traži
+ *                     položen prethodni, a završni sve grupne.
  */
 const EMPTY = {};
 

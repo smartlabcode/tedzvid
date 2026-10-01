@@ -102,6 +102,7 @@ function zapamti(kljuc, stanje) {
 /*
  * Kviz: uvod → pitanja (jedno po jedno, s povratnom informacijom) → rezultat.
  * props.broj – "1"…"22" (kviz lekcije, za vježbu), "g1"…"g5" (grupni kviz) ili "zavrsni".
+ * Kviz lekcije je otvoren i gostu (rezultat mu se ne sprema); svi ostali kvizovi traže prijavu.
  * props.pitanja/props.koliko – mualimov kviz od proizvoljne kombinacije lekcija (rezultat se ne sprema).
  * Položen grupni kviz prijavljenom korisniku otključava sljedeći grupni kviz, a posljednji završni.
  */
@@ -201,7 +202,7 @@ export default function LessonQuiz({ broj, pitanja: vlastitiBazen, koliko, naslo
 		} else {
 			setFaza('rezultat');
 			zapamti(storageKey, null);
-			if (kljuc) spremi(tacnih);
+			if (kljuc && user) spremi(tacnih);
 		}
 		uVidnoPolje();
 	};
@@ -218,8 +219,8 @@ export default function LessonQuiz({ broj, pitanja: vlastitiBazen, koliko, naslo
 	const p = izabrana[idx];
 	const naslovKviza = naslov || (jeZavrsni ? ui.zavrsniTitle : jeGrupni ? ui.grupaKvizNaslov(g) : ui.kviz);
 
-	/* svaki kviz traži prijavu – gostu se umjesto pitanja nudi prijava/registracija */
-	if (!user) {
+	/* kviz lekcije je otvoren svima; ostali kvizovi traže prijavu – gostu se umjesto pitanja nudi prijava/registracija */
+	if (!user && !n) {
 		return (
 			<section className="kviz" id="kviz" ref={ref}>
 				<h2 className="text-center">
@@ -415,6 +416,17 @@ export default function LessonQuiz({ broj, pitanja: vlastitiBazen, koliko, naslo
 									))}
 								</div>
 							</div>
+						)}
+
+						{n &&
+						!user &&
+						!loading && (
+							<p className="kviz__save">
+								{ui.kvizGuestNote}{' '}
+								<Link to={{ pathname: '/prijava', state: { from } }}>{ui.navPrijava}</Link>
+								{' · '}
+								<Link to={{ pathname: '/registracija', state: { from } }}>{ui.navRegistracija}</Link>
+							</p>
 						)}
 
 						{kljuc &&

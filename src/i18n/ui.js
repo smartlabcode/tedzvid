@@ -36,7 +36,7 @@ const UI = {
 		heroLead: (
 			<React.Fragment>
 				<strong>Tedzvid.ba</strong> je moderna, interaktivna i elektronska verzija tedžvida autora mr. Sejida
-				Strike – stvorena da pomogne početnicima, polaznicima mektepske nastave, mu'allimima i svim ljubiteljima
+				Strike – kreirana da pomogne početnicima, polaznicima mektepske nastave, mu'allimima i svim ljubiteljima
 				Kur'ana.
 			</React.Fragment>
 		),
@@ -165,12 +165,12 @@ const UI = {
 		grupaLockedTitle: 'Kviz grupe je zaključan',
 		grupaLockedUser: (b) => `Prvo položi kviz grupe ${b}, pa se otključava sljedeći.`,
 		grupaLockedGuest:
-			'Za sve kvizove je potrebna prijava. Prijavi se ili napravi besplatan račun – kvizovi grupa se onda otključavaju redom.',
+			'Za kvizove grupa je potrebna prijava. Prijavi se ili napravi besplatan račun – kvizovi grupa se onda otključavaju redom.',
 		grupaUnlocked: (b) => `Otključan je kviz grupe ${b}.`,
 		grupaAllDone: 'Sve grupe su položene – slijedi završni kviz iz cijelog tedžvida.',
 		grupaAlreadyPassed: 'Kviz je već položen i sljedeći je otključan – vježbaj koliko želiš.',
 		grupaHint:
-			'Sve lekcije su otvorene svima; za kvizove je potrebna prijava. Kviz na kraju lekcije je vježba, a kviz grupe je prava provjera.',
+			'Sve lekcije i kvizovi lekcija su otvoreni svima; za kvizove grupa je potrebna prijava. Kviz na kraju lekcije je vježba, a kviz grupe je prava provjera.',
 
 		/* ----- mualim: kviz od kombinacije lekcija ----- */
 		navMualim: 'Mualim',
@@ -322,7 +322,8 @@ const UI = {
 		kvizRetrySave: 'Pokušaj sačuvati ponovo',
 		kvizLoginTitle: 'Za kviz je potrebna prijava',
 		kvizLoginText:
-			'Lekcije su otvorene svima, ali svi kvizovi traže prijavu – tako se rezultat sačuva, prati se napredak i računa se na rang listi. Račun je besplatan.',
+			'Lekcije i kvizovi lekcija su otvoreni svima, ali kvizovi grupa i završni kviz traže prijavu – tako se rezultat sačuva, prati se napredak i računa se na rang listi. Račun je besplatan.',
+		kvizGuestNote: 'Rezultat nije sačuvan – prijavi se da pratiš napredak i budeš na rang listi.',
 		kvizBest: (b, n) => `Najbolji rezultat: ${b} od ${n}`,
 		kvizCorrectCount: (t, n) => `Tačnih: ${t} · Netačnih: ${n - t}`,
 
@@ -340,7 +341,7 @@ const UI = {
 		zavrsniLockedTitle: 'Završni kviz je zaključan',
 		zavrsniLockedUser: (b) => `Završni kviz se otključava kad položiš svih pet kvizova grupa. Trenutno si na grupi ${b}.`,
 		zavrsniLockedGuest:
-			'Za sve kvizove je potrebna prijava, a završni se otključava kad se polože kvizovi svih pet grupa. Prijavi se ili napravi besplatan račun.',
+			'Za završni kviz je potrebna prijava, a otključava se kad se polože kvizovi svih pet grupa. Prijavi se ili napravi besplatan račun.',
 		zavrsniPassed: 'Bravo, završni kviz je položen!',
 		zavrsniPassedText: 'Cijeli tedžvid je pređen i provjeren – svaka čast!',
 		zavrsniFailed: (prolaz) =>
@@ -815,12 +816,12 @@ const UI = {
 		grupaLockedTitle: 'This group quiz is locked',
 		grupaLockedUser: (b) => `Pass the group ${b} quiz first and the next one unlocks.`,
 		grupaLockedGuest:
-			'All quizzes require an account. Log in or create a free one – group quizzes then unlock in order.',
+			'Group quizzes require an account. Log in or create a free one – they then unlock in order.',
 		grupaUnlocked: (b) => `The group ${b} quiz is now unlocked.`,
 		grupaAllDone: 'Every group is passed – next up is the final quiz on the whole handbook.',
 		grupaAlreadyPassed: 'You have already passed this quiz and the next one is unlocked – practise as often as you like.',
 		grupaHint:
-			'Every lesson is open to everyone; quizzes require an account. The quiz at the end of a lesson is practice; the group quiz is the real test.',
+			'Lessons and lesson quizzes are open to everyone; group quizzes require an account. The quiz at the end of a lesson is practice; the group quiz is the real test.',
 
 		/* ----- teacher: a quiz from a combination of lessons ----- */
 		navMualim: 'Teacher',
@@ -971,7 +972,8 @@ const UI = {
 		kvizRetrySave: 'Try saving again',
 		kvizLoginTitle: 'Log in to take the quiz',
 		kvizLoginText:
-			'Every lesson is open to everyone, but all quizzes require an account – that is how your result is saved, your progress is tracked and your score counts on the leaderboard. An account is free.',
+			'Lessons and lesson quizzes are open to everyone, but the group quizzes and the final quiz require an account – that is how your result is saved, your progress is tracked and your score counts on the leaderboard. An account is free.',
+		kvizGuestNote: 'Your result was not saved – log in to track your progress and appear on the leaderboard.',
 		kvizBest: (b, n) => `Best result: ${b} of ${n}`,
 		kvizCorrectCount: (t, n) => `Correct: ${t} · Wrong: ${n - t}`,
 
@@ -990,7 +992,7 @@ const UI = {
 		zavrsniLockedUser: (b) =>
 			`The final quiz unlocks once you have passed all five group quizzes. You are currently on group ${b}.`,
 		zavrsniLockedGuest:
-			'All quizzes require an account, and the final one unlocks once all five group quizzes are passed. Log in or create a free account.',
+			'The final quiz requires an account and unlocks once all five group quizzes are passed. Log in or create a free account.',
 		zavrsniPassed: 'Well done, you passed the final quiz!',
 		zavrsniPassedText: 'You have gone through and tested the whole handbook – well done!',
 		zavrsniFailed: (prolaz) =>
@@ -1462,12 +1464,12 @@ const UI = {
 		grupaLockedTitle: 'Dieses Gruppenquiz ist gesperrt',
 		grupaLockedUser: (b) => `Bestehen Sie zuerst das Gruppenquiz ${b}, dann wird das nächste freigeschaltet.`,
 		grupaLockedGuest:
-			'Für alle Quiz brauchen Sie ein Konto. Melden Sie sich an oder erstellen Sie ein kostenloses Konto – die Gruppenquiz werden dann der Reihe nach freigeschaltet.',
+			'Für die Gruppenquiz brauchen Sie ein Konto. Melden Sie sich an oder erstellen Sie ein kostenloses Konto – die Gruppenquiz werden dann der Reihe nach freigeschaltet.',
 		grupaUnlocked: (b) => `Das Gruppenquiz ${b} ist jetzt freigeschaltet.`,
 		grupaAllDone: 'Alle Gruppen sind bestanden – jetzt kommt das Abschlussquiz über den ganzen Tejwid.',
 		grupaAlreadyPassed: 'Das Quiz ist schon bestanden und das nächste ist freigeschaltet – üben Sie, so oft Sie wollen.',
 		grupaHint:
-			'Alle Lektionen sind für alle offen; für die Quiz brauchen Sie ein Konto. Das Quiz am Ende einer Lektion ist eine Übung, das Gruppenquiz ist der richtige Test.',
+			'Alle Lektionen und Lektionsquiz sind für alle offen; für die Gruppenquiz brauchen Sie ein Konto. Das Quiz am Ende einer Lektion ist eine Übung, das Gruppenquiz ist der richtige Test.',
 
 		/* ----- Lehrer: Quiz aus mehreren Lektionen ----- */
 		navMualim: 'Lehrer',
@@ -1619,7 +1621,8 @@ const UI = {
 		kvizRetrySave: 'Noch einmal speichern',
 		kvizLoginTitle: 'Für das Quiz müssen Sie sich anmelden',
 		kvizLoginText:
-			'Alle Lektionen sind für alle offen, aber für jedes Quiz müssen Sie sich anmelden – so wird Ihr Ergebnis gespeichert, Ihr Fortschritt verfolgt und Ihre Punkte zählen in der Bestenliste. Das Konto ist kostenlos.',
+			'Alle Lektionen und Lektionsquiz sind für alle offen, aber für die Gruppenquiz und das Abschlussquiz müssen Sie sich anmelden – so wird Ihr Ergebnis gespeichert, Ihr Fortschritt verfolgt und Ihre Punkte zählen in der Bestenliste. Das Konto ist kostenlos.',
+		kvizGuestNote: 'Ihr Ergebnis wurde nicht gespeichert – melden Sie sich an, um Ihren Fortschritt zu verfolgen und in der Bestenliste zu erscheinen.',
 		kvizBest: (b, n) => `Bestes Ergebnis: ${b} von ${n}`,
 		kvizCorrectCount: (t, n) => `Richtig: ${t} · Falsch: ${n - t}`,
 
@@ -1637,7 +1640,7 @@ const UI = {
 		zavrsniLockedTitle: 'Das Abschlussquiz ist gesperrt',
 		zavrsniLockedUser: (b) => `Das Abschlussquiz wird freigeschaltet, wenn Sie alle fünf Gruppenquiz bestanden haben. Gerade sind Sie bei Gruppe ${b}.`,
 		zavrsniLockedGuest:
-			'Für jedes Quiz müssen Sie sich anmelden, und das Abschlussquiz wird freigeschaltet, wenn alle fünf Gruppenquiz bestanden sind. Melden Sie sich an oder erstellen Sie ein kostenloses Konto.',
+			'Für das Abschlussquiz müssen Sie sich anmelden, und es wird freigeschaltet, wenn alle fünf Gruppenquiz bestanden sind. Melden Sie sich an oder erstellen Sie ein kostenloses Konto.',
 		zavrsniPassed: 'Sehr gut, das Abschlussquiz ist bestanden!',
 		zavrsniPassedText: 'Der ganze Tejwid ist durchgearbeitet und geprüft – sehr gut gemacht!',
 		zavrsniFailed: (prolaz) =>
