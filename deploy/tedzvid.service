@@ -1,0 +1,25 @@
+[Unit]
+Description=tedzvid API (server/index.js)
+After=network.target
+
+[Service]
+Type=simple
+User=tedzvid
+Group=tedzvid
+WorkingDirectory=/opt/tedzvid
+ExecStart=/usr/bin/node /opt/tedzvid/server/index.js
+Environment=NODE_ENV=production
+Environment=HOST=127.0.0.1
+Environment=PORT=3002
+Environment=DATA_DIR=/var/lib/tedzvid
+EnvironmentFile=/etc/tedzvid.env
+Restart=on-failure
+RestartSec=3
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/tedzvid
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

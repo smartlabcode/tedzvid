@@ -4,6 +4,7 @@
  *
  * Okruženje:
  *   PORT            – port (Railway ga postavlja sam; lokalno 3002)
+ *   HOST            – adresa na kojoj server sluša (podrazumijevano sve; iza nginxa 127.0.0.1)
  *   DATA_DIR        – mapa za users.json i tajni ključ (podrazumijevano ./data)
  *   SESSION_SECRET  – ključ za potpisivanje tokena (ako nije zadan, generiše se i čuva u DATA_DIR/secret)
  *   BUILD_DIR       – mapa s buildom (podrazumijevano ./build)
@@ -39,6 +40,7 @@ const zlib = require('zlib');
 
 const ROOT = path.join(__dirname, '..');
 const PORT = parseInt(process.env.PORT, 10) || 3002;
+const HOST = process.env.HOST || undefined;
 const BUILD_DIR = path.resolve(process.env.BUILD_DIR || path.join(ROOT, 'build'));
 const DATA_DIR = path.resolve(process.env.DATA_DIR || path.join(ROOT, 'data'));
 const USERS_FILE = path.join(DATA_DIR, 'users.json');
@@ -767,8 +769,8 @@ const server = http.createServer((req, res) => {
 
 seedRacuni();
 
-server.listen(PORT, () => {
-	console.log('tedzvid server na http://localhost:' + PORT);
+server.listen(PORT, HOST, () => {
+	console.log('tedzvid server na http://' + (HOST || 'localhost') + ':' + PORT);
 	console.log('  build: ' + BUILD_DIR + (fs.existsSync(path.join(BUILD_DIR, 'index.html')) ? '' : ' (nema builda – samo API)'));
 	console.log('  data:  ' + DATA_DIR + ' (' + users.length + ' korisnika)');
 });

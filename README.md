@@ -140,6 +140,7 @@ Okruženje:
 | varijabla        | značenje                                              | podrazumijevano |
 | ---------------- | ----------------------------------------------------- | --------------- |
 | `PORT`           | port servera                                          | `3002`          |
+| `HOST`           | adresa na kojoj server sluša (iza nginxa `127.0.0.1`)  | sve adrese      |
 | `DATA_DIR`       | mapa s `users.json` i tajnim ključem                  | `./data`        |
 | `SESSION_SECRET` | ključ za potpisivanje tokena (inače se generiše i čuva u `DATA_DIR/secret`) | – |
 | `BUILD_DIR`      | mapa s buildom                                        | `./build`       |
