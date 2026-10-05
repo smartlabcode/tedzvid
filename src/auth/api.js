@@ -61,3 +61,5 @@ api.leaderboard = (period) => request('GET', '/api/leaderboard?period=' + encode
 api.adminUsers = () => request('GET', '/api/admin/users');
 /* admin postavlja korisnika za mualima ('mualim') ili ga vraća u obične korisnike ('korisnik') */
 api.adminUloga = (id, uloga) => request('POST', '/api/admin/uloga', { id, uloga });
+/* admin odobrava ('odobri') ili odbija ('odbij') zahtjev za mualima iz registracije */
+api.adminZahtjev = (id, odluka) => request('POST', '/api/admin/zahtjev', { id, odluka });

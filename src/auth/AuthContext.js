@@ -61,8 +61,9 @@ export function AuthProvider({ children }) {
 		return d.user;
 	}, []);
 
-	const register = useCallback(async (ime, email, lozinka, korisnicko) => {
-		const d = await api.register({ ime, korisnicko, email, lozinka });
+	/* mualim: true → zahtjev za ulogu mualima (do odobrenja je običan korisnik) */
+	const register = useCallback(async (ime, email, lozinka, korisnicko, mualim) => {
+		const d = await api.register({ ime, korisnicko, email, lozinka, mualim: !!mualim });
 		setToken(d.token);
 		setUser(d.user);
 		return d.user;

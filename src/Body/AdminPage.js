@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Redirect } from 'react-router-dom';
-import { FaLock, FaUsers, FaBolt, FaGraduationCap, FaLayerGroup, FaClipboardCheck, FaChalkboardTeacher, FaUser } from 'react-icons/fa';
+import { FaLock, FaUsers, FaBolt, FaGraduationCap, FaLayerGroup, FaClipboardCheck, FaChalkboardTeacher, FaUser, FaCheck, FaTimes } from 'react-icons/fa';
 import SiteNav from './SiteNav';
 import SiteFooter from './SiteFooter';
 import PageBand from './PageBand';
@@ -72,6 +72,51 @@ export default function AdminPage() {
 		);
 	};
 
+	/* zahtjev za mualima iz registracije: odobri → mualim, odbij → ostaje korisnik */
+	const odluci = (k, odluka) => {
+		setMijenjam(k.id);
+		setGreska('');
+		api.adminZahtjev(k.id, odluka).then(
+			(d) => {
+				setData(d);
+				setMijenjam(null);
+			},
+			() => {
+				setGreska(k.id);
+				setMijenjam(null);
+			}
+		);
+	};
+
+	const akcijeZahtjeva = (k) => (
+		<div className="admin__uloga-akcije">
+			<button
+				type="button"
+				className="btn-t btn-t--sm btn-t--navy"
+				disabled={mijenjam === k.id}
+				onClick={(e) => {
+					e.stopPropagation();
+					odluci(k, 'odobri');
+				}}
+			>
+				<FaCheck /> {ui.adminZahtjevOdobri}
+			</button>
+			<button
+				type="button"
+				className="btn-t btn-t--sm btn-t--ghost"
+				disabled={mijenjam === k.id}
+				onClick={(e) => {
+					e.stopPropagation();
+					odluci(k, 'odbij');
+				}}
+			>
+				<FaTimes /> {ui.adminZahtjevOdbij}
+			</button>
+			{mijenjam === k.id && <span className="admin__uloga-info">{ui.adminRoleSaving}</span>}
+			{greska === k.id && <span className="admin__uloga-info is-err">{ui.adminRoleError}</span>}
+		</div>
+	);
+
 	const datum = (iso) => (iso ? formatDatum(iso, lang) : '–');
 	const datumVrijeme = (iso) => (iso ? formatDatumVrijeme(iso, lang) : ui.adminNever);
 
@@ -85,6 +130,8 @@ export default function AdminPage() {
 					(k.korisnicko && k.korisnicko.includes(q))
 			)
 		: [];
+
+	const zahtjevi = data ? data.korisnici.filter((k) => k.mualimZahtjev === 'ceka') : [];
 
 	const statusCelije = (p, ukupno) => (!p ? 'none' : p.polozeno ? 'ok' : 'partial');
 
@@ -136,6 +183,28 @@ export default function AdminPage() {
 									</span>
 								</div>
 							</div>
+
+							{zahtjevi.length > 0 && (
+								<section className="admin__zahtjevi">
+									<h6>
+										<FaChalkboardTeacher /> {ui.adminZahtjeviTitle(zahtjevi.length)}
+									</h6>
+									<ul>
+										{zahtjevi.map((k) => (
+											<li key={k.id}>
+												<span className="admin__zahtjev-ko">
+													<b>{k.ime}</b>
+													<small>
+														{k.korisnicko && '@' + k.korisnicko + ' · '}
+														{k.email} · {datum(k.createdAt)}
+													</small>
+												</span>
+												{akcijeZahtjeva(k)}
+											</li>
+										))}
+									</ul>
+								</section>
+							)}
 
 							<div className="admin__toolbar">
 								<input
@@ -189,6 +258,9 @@ export default function AdminPage() {
 															<span className={'status-pill status-pill--' + (k.uloga === 'admin' ? 'ok' : k.uloga === 'demo' ? 'partial' : 'open')}>
 																{ui.adminRole[k.uloga] || k.uloga}
 															</span>
+															{k.mualimZahtjev && k.mualimZahtjev !== 'odobren' && (
+																<small>{ui.adminZahtjevStatus[k.mualimZahtjev]}</small>
+															)}
 														</td>
 														<td>{datum(k.createdAt)}</td>
 														<td>{datumVrijeme(k.zadnjaAktivnost)}</td>
@@ -256,7 +328,15 @@ export default function AdminPage() {
 																<div className="admin__uloga">
 																	<h6>{ui.adminRoleTitle}</h6>
 																	<p>{smijeMijenjati(k) ? ui.adminRoleText : ui.adminRoleLocked}</p>
-																	{smijeMijenjati(k) && (
+																	{smijeMijenjati(k) && k.mualimZahtjev === 'ceka' && (
+																		<React.Fragment>
+																			<p>
+																				<b>{ui.adminZahtjevStatus.ceka}</b>
+																			</p>
+																			{akcijeZahtjeva(k)}
+																		</React.Fragment>
+																	)}
+																	{smijeMijenjati(k) && k.mualimZahtjev !== 'ceka' && (
 																		<div className="admin__uloga-akcije">
 																			<button
 																				type="button"

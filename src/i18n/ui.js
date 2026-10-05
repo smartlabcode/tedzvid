@@ -252,6 +252,9 @@ const UI = {
 		registerTitle: 'Registracija',
 		registerText:
 			'Napravi besplatan račun: napredak se čuva, a položen kviz grupe otključava sljedeći.',
+		registerMualim: 'Ja sam mualim (učitelj)',
+		registerMualimHint:
+			'Šalje se zahtjev administratoru. Dok ga ne odobri, račun radi kao obični; ako ga odbije, ostaješ obični korisnik.',
 		fieldPassword: 'Lozinka',
 		fieldPassword2: 'Ponovi lozinku',
 		passwordHint: 'Najmanje 6 znakova.',
@@ -348,6 +351,8 @@ const UI = {
 			`Za prolaz treba najmanje ${prolaz} tačnih odgovora. Ponovi lekcije u kojima je bilo grešaka i pokušaj ponovo.`,
 		zavrsniReview: 'Preporuka za ponavljanje:',
 		zavrsniMistakes: (n) => (n === 1 ? '1 greška' : n < 5 ? `${n} greške` : `${n} grešaka`),
+		profilZahtjevCeka: 'Tvoj zahtjev za ulogu mualima čeka odobrenje administratora. Do tada imaš običan račun.',
+		profilZahtjevOdbijen: 'Zahtjev za ulogu mualima nije odobren. Račun ostaje običan.',
 		profilEverything: 'Sve lekcije i završni kviz su položeni – svaka čast!',
 		fieldLogin: 'Email ili korisničko ime',
 		fieldUsername: 'Korisničko ime',
@@ -541,6 +546,10 @@ const UI = {
 			p ? `Kviz grupe ${b}: najbolje ${p.najbolje}/20, pokušaja: ${p.pokusaji}` : `Kviz grupe ${b}: nije rješavan`,
 		adminCellFinal: (p) => (p ? `Završni kviz: najbolje ${p.najbolje}/100, pokušaja: ${p.pokusaji}` : 'Završni kviz: nije rješavan'),
 		adminLegend: { ok: 'položeno', partial: 'nije položeno', none: 'nije rješavano' },
+		adminZahtjeviTitle: (n) => `Zahtjevi za mualima (${n})`,
+		adminZahtjevOdobri: 'Odobri',
+		adminZahtjevOdbij: 'Odbij',
+		adminZahtjevStatus: { ceka: 'Traži ulogu mualima', odobren: 'Zahtjev odobren', odbijen: 'Zahtjev za mualima odbijen' },
 
 		/* ----- bonus lekcija: sura Jasin ----- */
 		jasinEyebrow: 'Bonus lekcija',
@@ -902,6 +911,9 @@ const UI = {
 		loginText: 'Log in so your progress is saved and the next quizzes unlock.',
 		registerTitle: 'Create an account',
 		registerText: 'Create a free account: your progress is saved and a passed group quiz unlocks the next one.',
+		registerMualim: 'I am a teacher (mualim)',
+		registerMualimHint:
+			'A request is sent to the administrator. Until it is approved the account works as a regular one; if it is declined, you stay a regular user.',
 		fieldPassword: 'Password',
 		fieldPassword2: 'Repeat password',
 		passwordHint: 'At least 6 characters.',
@@ -999,6 +1011,8 @@ const UI = {
 			`You need at least ${prolaz} correct answers to pass. Revise the lessons where you made mistakes and try again.`,
 		zavrsniReview: 'Recommended for revision:',
 		zavrsniMistakes: (n) => (n === 1 ? '1 mistake' : `${n} mistakes`),
+		profilZahtjevCeka: 'Your request for the teacher role is waiting for the administrator’s approval. Until then your account is a regular one.',
+		profilZahtjevOdbijen: 'Your request for the teacher role was not approved. The account stays a regular one.',
 		profilEverything: 'All lessons and the final quiz passed – well done!',
 		fieldLogin: 'Email or username',
 		fieldUsername: 'Username',
@@ -1187,6 +1201,10 @@ const UI = {
 			p ? `Group ${b} quiz: best ${p.najbolje}/20, attempts: ${p.pokusaji}` : `Group ${b} quiz: not taken`,
 		adminCellFinal: (p) => (p ? `Final quiz: best ${p.najbolje}/100, attempts: ${p.pokusaji}` : 'Final quiz: not taken'),
 		adminLegend: { ok: 'passed', partial: 'not passed', none: 'not taken' },
+		adminZahtjeviTitle: (n) => `Teacher requests (${n})`,
+		adminZahtjevOdobri: 'Approve',
+		adminZahtjevOdbij: 'Decline',
+		adminZahtjevStatus: { ceka: 'Requests the teacher role', odobren: 'Request approved', odbijen: 'Teacher request declined' },
 
 		/* ----- bonus lesson: Surah Ya-Sin ----- */
 		jasinEyebrow: 'Bonus lesson',
@@ -1551,6 +1569,9 @@ const UI = {
 		registerTitle: 'Konto erstellen',
 		registerText:
 			'Erstellen Sie ein kostenloses Konto: Ihr Fortschritt wird gespeichert, und ein bestandenes Gruppenquiz schaltet das nächste frei.',
+		registerMualim: 'Ich bin Lehrer (Muallim)',
+		registerMualimHint:
+			'Die Anfrage geht an den Administrator. Bis zur Freigabe funktioniert das Konto wie ein normales; wird sie abgelehnt, bleiben Sie normaler Benutzer.',
 		fieldPassword: 'Passwort',
 		fieldPassword2: 'Passwort wiederholen',
 		passwordHint: 'Mindestens 6 Zeichen.',
@@ -1647,6 +1668,8 @@ const UI = {
 			`Zum Bestehen brauchen Sie mindestens ${prolaz} richtige Antworten. Wiederholen Sie die Lektionen mit Fehlern und versuchen Sie es erneut.`,
 		zavrsniReview: 'Empfehlung zum Wiederholen:',
 		zavrsniMistakes: (n) => (n === 1 ? '1 Fehler' : `${n} Fehler`),
+		profilZahtjevCeka: 'Ihre Anfrage für die Lehrerrolle wartet auf die Freigabe durch den Administrator. Bis dahin ist Ihr Konto ein normales.',
+		profilZahtjevOdbijen: 'Ihre Anfrage für die Lehrerrolle wurde nicht freigegeben. Das Konto bleibt ein normales.',
 		profilEverything: 'Alle Lektionen und das Abschlussquiz sind bestanden – sehr gut gemacht!',
 		fieldLogin: 'E-Mail-Adresse oder Benutzername',
 		fieldUsername: 'Benutzername',
@@ -1840,6 +1863,10 @@ const UI = {
 			p ? `Gruppenquiz ${b}: bestes Ergebnis ${p.najbolje}/20, Versuche: ${p.pokusaji}` : `Gruppenquiz ${b}: nicht bearbeitet`,
 		adminCellFinal: (p) => (p ? `Abschlussquiz: bestes Ergebnis ${p.najbolje}/100, Versuche: ${p.pokusaji}` : 'Abschlussquiz: nicht bearbeitet'),
 		adminLegend: { ok: 'bestanden', partial: 'nicht bestanden', none: 'nicht bearbeitet' },
+		adminZahtjeviTitle: (n) => `Lehrer-Anfragen (${n})`,
+		adminZahtjevOdobri: 'Freigeben',
+		adminZahtjevOdbij: 'Ablehnen',
+		adminZahtjevStatus: { ceka: 'Möchte Lehrer werden', odobren: 'Anfrage freigegeben', odbijen: 'Lehrer-Anfrage abgelehnt' },
 
 		/* ----- Bonuslektion: Sure Ya-Sin ----- */
 		jasinEyebrow: 'Bonuslektion',

@@ -2069,6 +2069,41 @@ textarea.field {
     }
   }
 
+  /* registracija: zahtjev za ulogu mualima */
+  &__check {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 0;
+    padding: 12px 14px;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    cursor: pointer;
+
+    input {
+      flex: none;
+      width: 18px;
+      height: 18px;
+      margin: 2px 0 0;
+      accent-color: var(--navy);
+    }
+
+    > span {
+      display: grid;
+      gap: 2px;
+    }
+
+    b {
+      font-size: 0.92rem;
+      color: var(--navy);
+    }
+
+    small {
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
+  }
+
   &__switch {
     margin: 24px 0 0;
     text-align: center;
@@ -2757,6 +2792,51 @@ textarea.field {
     gap: 10px;
   }
 
+  /* zahtjevi za mualima iz registracije */
+  &__zahtjevi {
+    margin-bottom: 20px;
+    padding: 18px 20px;
+    background: var(--gold-100);
+    border-radius: 16px;
+
+    h6 {
+      margin: 0 0 10px;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--navy);
+    }
+
+    ul {
+      display: grid;
+      gap: 8px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    li {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px 14px;
+      padding: 10px 14px;
+      background: #fff;
+      border-radius: 12px;
+    }
+  }
+
+  &__zahtjev-ko {
+    flex: 1 1 220px;
+    display: grid;
+
+    small {
+      color: var(--muted);
+      font-size: 0.78rem;
+    }
+  }
+
   &__uloga-info {
     font-size: 0.78rem;
     color: var(--muted);
@@ -2823,6 +2903,18 @@ textarea.field {
 
   .admin__toolbar {
     flex-wrap: wrap;
+  }
+}
+
+/* profil: zahtjev za ulogu mualima čeka odobrenje ili je odbijen */
+.profil__zahtjev {
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  background: var(--gold-100);
+  color: var(--navy);
+
+  svg {
+    vertical-align: -2px;
   }
 }
 

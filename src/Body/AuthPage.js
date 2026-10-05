@@ -23,6 +23,7 @@ export default function AuthPage({ mode }) {
 	const [ email, setEmail ] = useState('');
 	const [ lozinka, setLozinka ] = useState('');
 	const [ lozinka2, setLozinka2 ] = useState('');
+	const [ mualim, setMualim ] = useState(false);
 	const [ err, setErr ] = useState(null);
 	const [ busy, setBusy ] = useState(false);
 
@@ -50,7 +51,7 @@ export default function AuthPage({ mode }) {
 		setBusy(true);
 		try {
 			if (isLogin) await login(email, lozinka);
-			else await register(ime, email, lozinka, korisnicko.trim().toLowerCase());
+			else await register(ime, email, lozinka, korisnicko.trim().toLowerCase(), mualim);
 			/* uspjeh: gornji <Redirect> preuzima čim se korisnik postavi */
 		} catch (ex) {
 			setErr(ex.code || 'server');
@@ -139,6 +140,15 @@ export default function AuthPage({ mode }) {
 										onChange={(e) => setLozinka2(e.target.value)}
 										required
 									/>
+								</label>
+							)}
+							{!isLogin && (
+								<label className="auth__check">
+									<input type="checkbox" name="mualim" checked={mualim} onChange={(e) => setMualim(e.target.checked)} />
+									<span>
+										<b>{ui.registerMualim}</b>
+										<small>{ui.registerMualimHint}</small>
+									</span>
 								</label>
 							)}
 							{err && (

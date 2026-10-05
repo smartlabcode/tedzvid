@@ -111,6 +111,15 @@ export default function ProfilePage() {
 				<div className="wrap">
 					{user && (
 						<React.Fragment>
+							{/* zahtjev za mualima iz registracije: dok ga admin ne odobri, račun je običan */}
+							{!isMualim && (user.mualimZahtjev === 'ceka' || user.mualimZahtjev === 'odbijen') && (
+								<div className="notice profil__zahtjev" role="status">
+									<span>
+										<FaChalkboardTeacher />{' '}
+										{user.mualimZahtjev === 'ceka' ? ui.profilZahtjevCeka : ui.profilZahtjevOdbijen}
+									</span>
+								</div>
+							)}
 							<div className="profil__summary">
 								<div className="profil__stat">
 									<b>

@@ -12,7 +12,8 @@
  *                     s capacitor://localhost i https://localhost je već dozvoljena)
  *
  * API (JSON):
- *   POST /api/register  { ime, korisnicko, email, lozinka } → { token, user }
+ *   POST /api/register  { ime, korisnicko, email, lozinka, mualim } → { token, user }
+ *                       mualim: true → zahtjev za ulogu mualima; korisnik ostaje običan dok ga admin ne odobri
  *   POST /api/login     { email, lozinka }       → { token, user }   (email ili korisničko ime)
  *   GET  /api/me        (Authorization: Bearer)  → { user }
  *   POST /api/progress  { lekcija, tacno }       → { user }   (lekcija: 1–22, 'g1'–'g5' ili 'zavrsni')
@@ -20,6 +21,8 @@
  *   GET  /api/admin/users (samo admin)          → { sazetak, korisnici }
  *   POST /api/admin/uloga { id, uloga } (samo admin) → { sazetak, korisnici }
  *                       uloga: 'korisnik' ili 'mualim' (ugrađeni računi i drugi admini se ne mijenjaju)
+ *   POST /api/admin/zahtjev { id, odluka } (samo admin) → { sazetak, korisnici }
+ *                       odluka: 'odobri' (postaje mualim) ili 'odbij' (ostaje običan korisnik)
  *
  * Ugrađeni računi (prijava korisničkim imenom umjesto emaila):
  *   admin  – ADMIN_USER / ADMIN_PASSWORD (podrazumijevano admin / admin123! – promijeniti u produkciji);
@@ -102,9 +105,14 @@ function publicUser(u) {
 		korisnicko: u.korisnicko || null,
 		email: u.email,
 		uloga: u.uloga || 'korisnik',
+		mualimZahtjev: statusZahtjeva(u),
 		progress: u.progress || {}
 	};
 }
+
+/* zahtjev za ulogu mualima iz registracije: null | 'ceka' | 'odobren' | 'odbijen' */
+const ZAHTJEV_CEKA = 'ceka';
+const statusZahtjeva = (u) => (u.mualimZahtjev && u.mualimZahtjev.status) || null;
 
 /* ---------- tajni ključ i tokeni (HMAC-SHA256) ---------- */
 function loadSecret() {
@@ -454,6 +462,8 @@ async function handleApi(req, res, url) {
 				createdAt: new Date().toISOString(),
 				progress: {}
 			};
+			/* mualim se ne postaje registracijom – samo se bilježi zahtjev koji admin odobri ili odbije */
+			if (body.mualim === true) user.mualimZahtjev = { status: ZAHTJEV_CEKA, datum: user.createdAt };
 			users.push(user);
 			saveUsers();
 			return json(res, 201, { token: izdajToken(user), user: publicUser(user) });
@@ -498,8 +508,37 @@ async function handleApi(req, res, url) {
 		}
 		if ((cilj.uloga || 'korisnik') !== uloga) {
 			cilj.uloga = uloga;
+			/* ručno postavljanje za mualima rješava i zahtjev na čekanju */
+			if (uloga === 'mualim' && statusZahtjeva(cilj) === ZAHTJEV_CEKA) zakljuciZahtjev(cilj, 'odobren');
 			saveUsers();
 		}
+		return json(res, 200, pregledKorisnika());
+	}
+
+	/* admin odobrava ili odbija zahtjev za mualima iz registracije */
+	if (route === 'POST /api/admin/zahtjev') {
+		if (!user) return json(res, 401, { error: 'unauthorized' });
+		if (user.uloga !== 'admin') return json(res, 403, { error: 'forbidden' });
+		let body;
+		try {
+			body = await readBody(req);
+		} catch (e) {
+			return json(res, 400, { error: 'bad_request' });
+		}
+		const odluka = String(body.odluka || '');
+		if (odluka !== 'odobri' && odluka !== 'odbij') return json(res, 400, { error: 'bad_decision' });
+		const cilj = findById(String(body.id || ''));
+		if (!cilj) return json(res, 404, { error: 'not_found' });
+		if (statusZahtjeva(cilj) !== ZAHTJEV_CEKA) return json(res, 409, { error: 'no_request' });
+		if (cilj.uloga === 'admin' || jeUgradjeniRacun(cilj)) return json(res, 403, { error: 'role_locked' });
+		if (odluka === 'odobri') {
+			cilj.uloga = 'mualim';
+			zakljuciZahtjev(cilj, 'odobren');
+		} else {
+			/* odbijen ostaje običan korisnik */
+			zakljuciZahtjev(cilj, 'odbijen');
+		}
+		saveUsers();
 		return json(res, 200, pregledKorisnika());
 	}
 
@@ -654,6 +693,10 @@ function serveStatic(req, res, url) {
 	});
 }
 
+function zakljuciZahtjev(u, status) {
+	u.mualimZahtjev = Object.assign({}, u.mualimZahtjev, { status, odluka: new Date().toISOString() });
+}
+
 /* ---------- admin: pregled svih korisnika ---------- */
 function pregledKorisnika() {
 	const sedmica = pocetakPerioda('sedmica', new Date());
@@ -675,6 +718,7 @@ function pregledKorisnika() {
 				korisnicko: u.korisnicko || null,
 				email: u.email,
 				uloga: u.uloga || 'korisnik',
+				mualimZahtjev: statusZahtjeva(u),
 				createdAt: u.createdAt,
 				zadnjaAktivnost: zadnja ? new Date(zadnja).toISOString() : null,
 				pokusaji: dog.length,
@@ -684,15 +728,18 @@ function pregledKorisnika() {
 				progress
 			};
 		})
+		/* zahtjevi za mualima na čekanju idu na vrh, ostalo po zadnjoj aktivnosti */
 		.sort(
 			(a, b) =>
+				(b.mualimZahtjev === ZAHTJEV_CEKA) - (a.mualimZahtjev === ZAHTJEV_CEKA) ||
 				(Date.parse(b.zadnjaAktivnost || b.createdAt) || 0) - (Date.parse(a.zadnjaAktivnost || a.createdAt) || 0)
 		);
 	const sazetak = {
 		ukupno: users.length,
 		aktivniSedmica: korisnici.filter((k) => k.zadnjaAktivnost && Date.parse(k.zadnjaAktivnost) >= sedmica).length,
 		polozenZavrsni: korisnici.filter((k) => k.zavrsni && k.zavrsni.polozeno).length,
-		pokusaji: korisnici.reduce((sum, k) => sum + k.pokusaji, 0)
+		pokusaji: korisnici.reduce((sum, k) => sum + k.pokusaji, 0),
+		zahtjevi: korisnici.filter((k) => k.mualimZahtjev === ZAHTJEV_CEKA).length
 	};
 	return { sazetak, korisnici };
 }
