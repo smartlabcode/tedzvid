@@ -254,7 +254,7 @@ const UI = {
 			'Napravi besplatan račun: napredak se čuva, a položen kviz grupe otključava sljedeći.',
 		registerMualim: 'Ja sam mualim (učitelj)',
 		registerMualimHint:
-			'Šalje se zahtjev administratoru. Dok ga ne odobri, račun radi kao obični; ako ga odbije, ostaješ obični korisnik.',
+			'Zahtjev pregleda administrator. Do odobrenja koristiš standardni korisnički račun.',
 		fieldPassword: 'Lozinka',
 		fieldPassword2: 'Ponovi lozinku',
 		passwordHint: 'Najmanje 6 znakova.',
@@ -913,7 +913,7 @@ const UI = {
 		registerText: 'Create a free account: your progress is saved and a passed group quiz unlocks the next one.',
 		registerMualim: 'I am a teacher (mualim)',
 		registerMualimHint:
-			'A request is sent to the administrator. Until it is approved the account works as a regular one; if it is declined, you stay a regular user.',
+			'Your request will be reviewed by an administrator. Until it is approved, you will use a standard account.',
 		fieldPassword: 'Password',
 		fieldPassword2: 'Repeat password',
 		passwordHint: 'At least 6 characters.',
@@ -1571,7 +1571,7 @@ const UI = {
 			'Erstellen Sie ein kostenloses Konto: Ihr Fortschritt wird gespeichert, und ein bestandenes Gruppenquiz schaltet das nächste frei.',
 		registerMualim: 'Ich bin Lehrer (Muallim)',
 		registerMualimHint:
-			'Die Anfrage geht an den Administrator. Bis zur Freigabe funktioniert das Konto wie ein normales; wird sie abgelehnt, bleiben Sie normaler Benutzer.',
+			'Ihre Anfrage wird von einem Administrator geprüft. Bis zur Freigabe nutzen Sie ein Standardkonto.',
 		fieldPassword: 'Passwort',
 		fieldPassword2: 'Passwort wiederholen',
 		passwordHint: 'Mindestens 6 Zeichen.',
