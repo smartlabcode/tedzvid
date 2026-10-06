@@ -61,9 +61,9 @@ export function AuthProvider({ children }) {
 		return d.user;
 	}, []);
 
-	/* mualim: true → zahtjev za ulogu mualima (do odobrenja je običan korisnik) */
-	const register = useCallback(async (ime, email, lozinka, korisnicko, mualim) => {
-		const d = await api.register({ ime, korisnicko, email, lozinka, mualim: !!mualim });
+	/* mualim: true → zahtjev za ulogu mualima (do odobrenja je običan korisnik); dzemat: gdje je mualim */
+	const register = useCallback(async (ime, email, lozinka, korisnicko, mualim, dzemat) => {
+		const d = await api.register({ ime, korisnicko, email, lozinka, mualim: !!mualim, dzemat: mualim ? dzemat : '' });
 		setToken(d.token);
 		setUser(d.user);
 		return d.user;

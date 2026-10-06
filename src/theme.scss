@@ -2069,15 +2069,33 @@ textarea.field {
     }
   }
 
-  /* registracija: zahtjev za ulogu mualima */
+  /* registracija: zahtjev za ulogu mualima; označen okvir se otvara u polje za džemat */
+  &__mualim {
+    display: grid;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    transition: background 0.18s ease, border-color 0.18s ease;
+
+    &.is-on {
+      background: var(--gold-100);
+      border-color: var(--gold-200);
+    }
+  }
+
+  &__dzemat {
+    padding: 0 14px 14px 42px;
+
+    .field {
+      background: #fff;
+    }
+  }
+
   &__check {
     display: flex;
     align-items: flex-start;
     gap: 10px;
     margin: 0;
     padding: 12px 14px;
-    border: 1px solid var(--line);
-    border-radius: 12px;
     cursor: pointer;
 
     input {
@@ -2834,6 +2852,39 @@ textarea.field {
     small {
       color: var(--muted);
       font-size: 0.78rem;
+    }
+  }
+
+  /* filter iznad tabele: svi korisnici / samo mualimi (izgled kao kartice rang liste) */
+  &__tabs {
+    max-width: 440px;
+    margin: 0 0 14px;
+
+    button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+  }
+
+  /* .admin ispred: jače od `.admin__table td small` */
+  .admin &__dzemat {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--navy);
+    font-size: 0.8rem;
+
+    svg {
+      flex: none;
+      color: var(--gold-600);
+      font-size: 0.72rem;
+    }
+
+    &.is-none {
+      color: var(--muted);
+      font-style: italic;
     }
   }
 

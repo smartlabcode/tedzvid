@@ -12,10 +12,11 @@
  *                     s capacitor://localhost i https://localhost je već dozvoljena)
  *
  * API (JSON):
- *   POST /api/register  { ime, korisnicko, email, lozinka, mualim } → { token, user }
+ *   POST /api/register  { ime, korisnicko, email, lozinka, mualim, dzemat } → { token, user }
  *                       mualim: true → zahtjev za ulogu mualima; korisnik ostaje običan dok ga admin ne odobri
+ *                       dzemat: džemat, mjesto ili ustanova u kojoj je mualim (obavezno uz mualim: true)
  *   POST /api/login     { email, lozinka }       → { token, user }   (email ili korisničko ime)
- *   GET  /api/me        (Authorization: Bearer)  → { user }
+ *   GET  /api/me        (Authorization: Bearer)  → { user }   (bilježi i zadnji pristup za admin panel)
  *   POST /api/progress  { lekcija, tacno }       → { user }   (lekcija: 1–22, 'g1'–'g5' ili 'zavrsni')
  *   GET  /api/leaderboard?period=sedmica|mjesec|sve → { period, od, lista, moj }
  *   GET  /api/admin/users (samo admin)          → { sazetak, korisnici }
@@ -278,6 +279,7 @@ const USERNAME_RE = /^[a-z0-9][a-z0-9._-]{2,19}$/;
 const normKorisnicko = (v) => String(v || '').trim().toLowerCase();
 const normEmail = (v) => String(v || '').trim().toLowerCase();
 const normIme = (v) => String(v || '').trim().replace(/\s+/g, ' ');
+const DZEMAT_MAX = 120;
 
 function jePolozena(user, key) {
 	const p = user.progress && user.progress[String(key)];
@@ -449,6 +451,9 @@ async function handleApi(req, res, url) {
 			if (!USERNAME_RE.test(korisnicko)) return json(res, 400, { error: 'bad_username' });
 			if (!EMAIL_RE.test(email) || email.length > 120) return json(res, 400, { error: 'bad_email' });
 			if (lozinka.length < 6 || lozinka.length > 200) return json(res, 400, { error: 'bad_password' });
+			/* džemat je slobodan tekst – provjerava se samo da nije prazan kad se traži uloga mualima */
+			const dzemat = normIme(body.dzemat).slice(0, DZEMAT_MAX);
+			if (body.mualim === true && !dzemat) return json(res, 400, { error: 'bad_dzemat' });
 			if (findByEmail(email)) return json(res, 409, { error: 'email_exists' });
 			if (findByLogin(korisnicko)) return json(res, 409, { error: 'username_exists' });
 			const salt = crypto.randomBytes(16).toString('hex');
@@ -460,10 +465,14 @@ async function handleApi(req, res, url) {
 				salt,
 				hash: hashLozinke(lozinka, salt),
 				createdAt: new Date().toISOString(),
+				zadnjiPristup: new Date().toISOString(),
 				progress: {}
 			};
 			/* mualim se ne postaje registracijom – samo se bilježi zahtjev koji admin odobri ili odbije */
-			if (body.mualim === true) user.mualimZahtjev = { status: ZAHTJEV_CEKA, datum: user.createdAt };
+			if (body.mualim === true) {
+				user.mualimZahtjev = { status: ZAHTJEV_CEKA, datum: user.createdAt };
+				user.dzemat = dzemat;
+			}
 			users.push(user);
 			saveUsers();
 			return json(res, 201, { token: izdajToken(user), user: publicUser(user) });
@@ -471,6 +480,7 @@ async function handleApi(req, res, url) {
 
 		const user = findByLogin(email);
 		if (!user || !provjeriLozinku(lozinka, user)) return json(res, 401, { error: 'bad_credentials' });
+		zabiljeziPristup(user, true);
 		return json(res, 200, { token: izdajToken(user), user: publicUser(user) });
 	}
 
@@ -544,6 +554,7 @@ async function handleApi(req, res, url) {
 
 	if (route === 'GET /api/me') {
 		if (!user) return json(res, 401, { error: 'unauthorized' });
+		zabiljeziPristup(user, false);
 		return json(res, 200, { user: publicUser(user) });
 	}
 
@@ -693,6 +704,16 @@ function serveStatic(req, res, url) {
 	});
 }
 
+/* zadnji pristup (prijava ili otvaranje aplikacije s važećim tokenom) za admin panel;
+   kod /api/me se upisuje najviše jednom na sat da se users.json ne piše pri svakom učitavanju */
+const PRISTUP_RAZMAK = 60 * 60 * 1000;
+function zabiljeziPristup(u, odmah) {
+	const sada = Date.now();
+	if (!odmah && sada - (Date.parse(u.zadnjiPristup) || 0) < PRISTUP_RAZMAK) return;
+	u.zadnjiPristup = new Date(sada).toISOString();
+	saveUsers();
+}
+
 function zakljuciZahtjev(u, status) {
 	u.mualimZahtjev = Object.assign({}, u.mualimZahtjev, { status, odluka: new Date().toISOString() });
 }
@@ -703,7 +724,7 @@ function pregledKorisnika() {
 	const korisnici = users
 		.map((u) => {
 			const dog = dogadjajiKorisnika(u);
-			let zadnja = 0;
+			let zadnja = Date.parse(u.zadnjiPristup) || 0;
 			for (const e of dog) {
 				const t = Date.parse(e.d);
 				if (t > zadnja) zadnja = t;
@@ -719,6 +740,7 @@ function pregledKorisnika() {
 				email: u.email,
 				uloga: u.uloga || 'korisnik',
 				mualimZahtjev: statusZahtjeva(u),
+				dzemat: u.dzemat || null,
 				createdAt: u.createdAt,
 				zadnjaAktivnost: zadnja ? new Date(zadnja).toISOString() : null,
 				pokusaji: dog.length,
@@ -739,7 +761,8 @@ function pregledKorisnika() {
 		aktivniSedmica: korisnici.filter((k) => k.zadnjaAktivnost && Date.parse(k.zadnjaAktivnost) >= sedmica).length,
 		polozenZavrsni: korisnici.filter((k) => k.zavrsni && k.zavrsni.polozeno).length,
 		pokusaji: korisnici.reduce((sum, k) => sum + k.pokusaji, 0),
-		zahtjevi: korisnici.filter((k) => k.mualimZahtjev === ZAHTJEV_CEKA).length
+		zahtjevi: korisnici.filter((k) => k.mualimZahtjev === ZAHTJEV_CEKA).length,
+		mualimi: korisnici.filter((k) => k.uloga === 'mualim').length
 	};
 	return { sazetak, korisnici };
 }

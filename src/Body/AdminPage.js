@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Redirect } from 'react-router-dom';
-import { FaLock, FaUsers, FaBolt, FaGraduationCap, FaLayerGroup, FaClipboardCheck, FaChalkboardTeacher, FaUser, FaCheck, FaTimes } from 'react-icons/fa';
+import { FaLock, FaUsers, FaBolt, FaGraduationCap, FaLayerGroup, FaClipboardCheck, FaChalkboardTeacher, FaUser, FaCheck, FaTimes, FaMapMarkerAlt } from 'react-icons/fa';
 import SiteNav from './SiteNav';
 import SiteFooter from './SiteFooter';
 import PageBand from './PageBand';
@@ -22,6 +22,7 @@ export default function AdminPage() {
 	const [ data, setData ] = useState(null);
 	const [ stanje, setStanje ] = useState('loading'); /* loading | ok | error | forbidden */
 	const [ trazi, setTrazi ] = useState('');
+	const [ filter, setFilter ] = useState('svi'); /* svi | mualimi */
 	const [ otvoren, setOtvoren ] = useState(null);
 	const [ mijenjam, setMijenjam ] = useState(null); /* id korisnika kojem se upravo mijenja uloga */
 	const [ greska, setGreska ] = useState('');
@@ -121,15 +122,27 @@ export default function AdminPage() {
 	const datumVrijeme = (iso) => (iso ? formatDatumVrijeme(iso, lang) : ui.adminNever);
 
 	const q = trazi.trim().toLowerCase();
+	const jeMualim = (k) => k.uloga === 'mualim';
 	const korisnici = data
 		? data.korisnici.filter(
 				(k) =>
-					!q ||
-					k.ime.toLowerCase().includes(q) ||
-					k.email.toLowerCase().includes(q) ||
-					(k.korisnicko && k.korisnicko.includes(q))
+					(filter !== 'mualimi' || jeMualim(k)) &&
+					(!q ||
+						k.ime.toLowerCase().includes(q) ||
+						k.email.toLowerCase().includes(q) ||
+						(k.korisnicko && k.korisnicko.includes(q)) ||
+						(k.dzemat && k.dzemat.toLowerCase().includes(q)))
 			)
 		: [];
+	const brojFiltera = data ? { svi: data.korisnici.length, mualimi: data.korisnici.filter(jeMualim).length } : {};
+
+	/* džemat se prikazuje mualimima i onima koji su ga upisali uz zahtjev */
+	const dzematOznaka = (k) =>
+		k.dzemat || jeMualim(k) ? (
+			<small className={'admin__dzemat' + (k.dzemat ? '' : ' is-none')}>
+				<FaMapMarkerAlt /> {k.dzemat || ui.adminDzematNone}
+			</small>
+		) : null;
 
 	const zahtjevi = data ? data.korisnici.filter((k) => k.mualimZahtjev === 'ceka') : [];
 
@@ -194,6 +207,7 @@ export default function AdminPage() {
 											<li key={k.id}>
 												<span className="admin__zahtjev-ko">
 													<b>{k.ime}</b>
+													{dzematOznaka(k)}
 													<small>
 														{k.korisnicko && '@' + k.korisnicko + ' · '}
 														{k.email} · {datum(k.createdAt)}
@@ -206,6 +220,21 @@ export default function AdminPage() {
 								</section>
 							)}
 
+							<div className="rang__tabs admin__tabs" role="tablist">
+								{[ 'svi', 'mualimi' ].map((f) => (
+									<button
+										key={f}
+										type="button"
+										role="tab"
+										aria-selected={f === filter}
+										className={f === filter ? 'is-active' : ''}
+										onClick={() => setFilter(f)}
+									>
+										{f === 'mualimi' ? <FaChalkboardTeacher /> : <FaUsers />} {ui.adminFilter[f]} ({brojFiltera[f]})
+									</button>
+								))}
+							</div>
+
 							<div className="admin__toolbar">
 								<input
 									className="field"
@@ -214,7 +243,7 @@ export default function AdminPage() {
 									value={trazi}
 									onChange={(e) => setTrazi(e.target.value)}
 								/>
-								<span className="admin__count">{ui.adminShown(korisnici.length, data.korisnici.length)}</span>
+								<span className="admin__count">{ui.adminShown(korisnici.length, brojFiltera[filter])}</span>
 							</div>
 							<p className="admin__hint">{ui.adminDetailHint}</p>
 
@@ -261,6 +290,7 @@ export default function AdminPage() {
 															{k.mualimZahtjev && k.mualimZahtjev !== 'odobren' && (
 																<small>{ui.adminZahtjevStatus[k.mualimZahtjev]}</small>
 															)}
+															{dzematOznaka(k)}
 														</td>
 														<td>{datum(k.createdAt)}</td>
 														<td>{datumVrijeme(k.zadnjaAktivnost)}</td>
@@ -328,6 +358,11 @@ export default function AdminPage() {
 																<div className="admin__uloga">
 																	<h6>{ui.adminRoleTitle}</h6>
 																	<p>{smijeMijenjati(k) ? ui.adminRoleText : ui.adminRoleLocked}</p>
+																	{(k.dzemat || jeMualim(k)) && (
+																		<p>
+																			{ui.adminDzemat}: <b>{k.dzemat || ui.adminDzematNone}</b>
+																		</p>
+																	)}
 																	{smijeMijenjati(k) && k.mualimZahtjev === 'ceka' && (
 																		<React.Fragment>
 																			<p>

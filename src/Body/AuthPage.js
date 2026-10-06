@@ -24,6 +24,7 @@ export default function AuthPage({ mode }) {
 	const [ lozinka, setLozinka ] = useState('');
 	const [ lozinka2, setLozinka2 ] = useState('');
 	const [ mualim, setMualim ] = useState(false);
+	const [ dzemat, setDzemat ] = useState('');
 	const [ err, setErr ] = useState(null);
 	const [ busy, setBusy ] = useState(false);
 
@@ -48,10 +49,11 @@ export default function AuthPage({ mode }) {
 		if (isLogin ? !email.trim() : !EMAIL_RE.test(email.trim())) return setErr('bad_email');
 		if (lozinka.length < 6) return setErr('bad_password');
 		if (!isLogin && lozinka !== lozinka2) return setErr('passwords_differ');
+		if (!isLogin && mualim && !dzemat.trim()) return setErr('bad_dzemat');
 		setBusy(true);
 		try {
 			if (isLogin) await login(email, lozinka);
-			else await register(ime, email, lozinka, korisnicko.trim().toLowerCase(), mualim);
+			else await register(ime, email, lozinka, korisnicko.trim().toLowerCase(), mualim, dzemat.trim());
 			/* uspjeh: gornji <Redirect> preuzima čim se korisnik postavi */
 		} catch (ex) {
 			setErr(ex.code || 'server');
@@ -142,14 +144,46 @@ export default function AuthPage({ mode }) {
 									/>
 								</label>
 							)}
+							{/* mualim: označavanjem se otvara polje za džemat (obavezno samo tada) */}
 							{!isLogin && (
-								<label className="auth__check">
-									<input type="checkbox" name="mualim" checked={mualim} onChange={(e) => setMualim(e.target.checked)} />
-									<span>
-										<b>{ui.registerMualim}</b>
-										<small>{ui.registerMualimHint}</small>
-									</span>
-								</label>
+								<div className={'auth__mualim' + (mualim ? ' is-on' : '')}>
+									<label className="auth__check">
+										<input
+											type="checkbox"
+											name="mualim"
+											checked={mualim}
+											aria-expanded={mualim}
+											aria-controls="auth-dzemat"
+											onChange={(e) => {
+												setMualim(e.target.checked);
+												if (err === 'bad_dzemat') setErr(null);
+											}}
+										/>
+										<span>
+											<b>{ui.registerMualim}</b>
+											<small>{ui.registerMualimHint}</small>
+										</span>
+									</label>
+									{mualim && (
+										<label className="auth__label auth__dzemat" id="auth-dzemat">
+											<span>{ui.fieldDzemat}</span>
+											<input
+												className="field"
+												type="text"
+												name="dzemat"
+												autoComplete="organization"
+												maxLength={120}
+												placeholder={ui.dzematPlaceholder}
+												value={dzemat}
+												onChange={(e) => setDzemat(e.target.value)}
+												aria-invalid={err === 'bad_dzemat'}
+												autoFocus
+												required
+											/>
+											<small>{ui.dzematHint}</small>
+										</label>
+									)}
+								</div>
 							)}
 							{err && (
 								<div className="notice notice--err" role="alert">
