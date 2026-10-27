@@ -59,7 +59,56 @@ const NASLOV_GRUPE = {
 	}
 };
 /* pravila koja se ponavljaju u gotovo svakoj riječi – u pogledu „manje boja” su isključena */
-const CESTA = [ 'medd-tabii', 'medd-arid', 'hukmurra', 'izhar-sefevijj', 'damir', 'ne-uci-se' ];
+const SVA_PRAVILA = KATALOG.map((p) => p.id);
+
+/*
+ * Koja se pravila označavaju u tekstu: `sva`, `izbor` (samo izabrana) ili `nista`.
+ * Pamti se u pregledniku, pa muallim izabrana pravila ne bira ponovo na svakoj stranici
+ * i u svakoj suri. `iskljucena` su pravila koja se NE označavaju.
+ */
+const SPREMLJENO = 'tedzvid.pravila';
+const NACINI = [ 'sva', 'izbor', 'nista' ];
+
+function ucitajPravila() {
+	try {
+		const s = JSON.parse(window.localStorage.getItem(SPREMLJENO));
+		if (s && NACINI.indexOf(s.nacin) >= 0 && Array.isArray(s.iskljucena)) {
+			if (s.nacin === 'sva') return { nacin: 'sva', iskljucena: [] };
+			if (s.nacin === 'nista') return { nacin: 'nista', iskljucena: SVA_PRAVILA };
+			return { nacin: 'izbor', iskljucena: s.iskljucena.filter((id) => PRAVILO[id]) };
+		}
+	} catch (e) {
+		/* bez spremljenog izbora označavaju se sva pravila */
+	}
+	return { nacin: 'sva', iskljucena: [] };
+}
+
+function usePravila() {
+	const [ stanje, setStanje ] = React.useState(ucitajPravila);
+	React.useEffect(
+		() => {
+			try {
+				window.localStorage.setItem(SPREMLJENO, JSON.stringify(stanje));
+			} catch (e) {
+				/* privatni prozor ili blokirana pohrana: izbor traje do zatvaranja stranice */
+			}
+		},
+		[ stanje ]
+	);
+	return {
+		nacin: stanje.nacin,
+		iskljucena: stanje.iskljucena,
+		sva: () => setStanje({ nacin: 'sva', iskljucena: [] }),
+		nista: () => setStanje({ nacin: 'nista', iskljucena: SVA_PRAVILA }),
+		/* „Izaberi pravila” kreće od praznog izbora; ako je izbor već započet, ostaje kakav jeste */
+		izaberi: () => setStanje((s) => (s.nacin === 'izbor' ? s : { nacin: 'izbor', iskljucena: SVA_PRAVILA })),
+		prebaci: (id) =>
+			setStanje((s) => ({
+				nacin: 'izbor',
+				iskljucena: s.iskljucena.indexOf(id) >= 0 ? s.iskljucena.filter((x) => x !== id) : s.iskljucena.concat(id)
+			}))
+	};
+}
 
 /* oznaka zapisa za zajednički plejer: sura i redni broj ajeta u jednom broju */
 const oznakaZapisa = (sura, n) => 100000 + sura * 1000 + n;
@@ -68,10 +117,12 @@ const arapskiBroj = (n) => String(n).replace(/[0-9]/g, (c) => '٠١٢٣٤٥٦٧�
 const naziv = (p, lang) => p[lang] || p[DEFAULT_LANG];
 
 /* ---------- legenda (podrazumijevano skupljena, klik na naslov je otvara) ---------- */
-function Legenda({ brojevi, iskljucena, prebaci, postavi, odjeljak, nema }) {
+function Legenda({ brojevi, pravila, odjeljak, nema }) {
 	const { lang } = useLang();
 	const ui = useUI();
 	const [ otvorena, setOtvorena ] = React.useState(false);
+	const { nacin, iskljucena, prebaci } = pravila;
+	const izabrano = SVA_PRAVILA.length - iskljucena.length;
 	return (
 		<section className={'sura-legenda' + (otvorena ? ' je-otvorena' : '')}>
 			<div className="sura-legenda__vrh">
@@ -90,17 +141,38 @@ function Legenda({ brojevi, iskljucena, prebaci, postavi, odjeljak, nema }) {
 					</button>
 				</h2>
 				<div className="sura-legenda__gumbi">
-					<button type="button" className="btn-t btn-t--ghost btn-t--sm" onClick={() => postavi([])}>
+					<button
+						type="button"
+						className={'btn-t btn-t--ghost btn-t--sm' + (nacin === 'sva' ? ' is-aktivan' : '')}
+						aria-pressed={nacin === 'sva'}
+						onClick={pravila.sva}
+					>
 						{ui.suraSve}
 					</button>
-					<button type="button" className="btn-t btn-t--ghost btn-t--sm" onClick={() => postavi(CESTA)}>
-						{ui.suraManje}
+					<button
+						type="button"
+						className={'btn-t btn-t--ghost btn-t--sm' + (nacin === 'izbor' ? ' is-aktivan' : '')}
+						aria-pressed={nacin === 'izbor'}
+						onClick={() => {
+							pravila.izaberi();
+							setOtvorena(true);
+						}}
+					>
+						{ui.suraIzaberi}
 					</button>
-					<button type="button" className="btn-t btn-t--ghost btn-t--sm" onClick={() => postavi(KATALOG.map((p) => p.id))}>
+					<button
+						type="button"
+						className={'btn-t btn-t--ghost btn-t--sm' + (nacin === 'nista' ? ' is-aktivan' : '')}
+						aria-pressed={nacin === 'nista'}
+						onClick={pravila.nista}
+					>
 						{ui.suraNista}
 					</button>
 				</div>
 			</div>
+			<p className="sura-legenda__uputa" id="sura-legenda-sadrzaj">
+				{nacin === 'izbor' && otvorena ? ui.suraUputaIzbor(izabrano, SVA_PRAVILA.length) : ui.suraUputa}
+			</p>
 			{otvorena &&
 				GRUPE.map((g) => (
 					<div className="sura-legenda__grupa" key={g}>
@@ -117,7 +189,6 @@ function Legenda({ brojevi, iskljucena, prebaci, postavi, odjeljak, nema }) {
 											style={{ '--boja': p.boja }}
 											onClick={() => prebaci(p.id)}
 											aria-pressed={!off}
-											disabled={!n}
 										>
 											<span className="sura-cip__tacka" />
 											<span className="sura-cip__ime">{naziv(p, lang)}</span>
@@ -310,7 +381,8 @@ export default function SuraTekst({ data, vrsta }) {
 	const poStr = !!T.poStranicama; /* odjeljak je stranica mushafa, a ne cijela sura */
 	const jedanOdjeljak = data.odjeljci.length === 1;
 	const [ izabran, setIzabran ] = React.useState(0);
-	const [ iskljucena, setIskljucena ] = React.useState([]);
+	const pravila = usePravila();
+	const iskljucena = pravila.iskljucena;
 	const [ svaOtvorena, setSvaOtvorena ] = React.useState(false);
 	const [ prati, setPrati ] = React.useState(true);
 	const [ zvuk, setZvuk ] = React.useState(audioBus.getState());
@@ -392,10 +464,7 @@ export default function SuraTekst({ data, vrsta }) {
 						brojevi={brojevi}
 						odjeljak={poStr ? ui.jasinStranica(odjeljak.stranica) : naslovOdjeljka(odjeljak)}
 						nema={T.nema}
-						iskljucena={iskljucena}
-						prebaci={(id) =>
-							setIskljucena((p) => (p.indexOf(id) >= 0 ? p.filter((x) => x !== id) : p.concat(id)))}
-						postavi={setIskljucena}
+							pravila={pravila}
 					/>
 
 					{!jedanOdjeljak && (

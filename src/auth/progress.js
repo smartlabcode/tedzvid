@@ -71,6 +71,7 @@ export const putanjaAmmeDzuza = '/amme-dzuz';
 export const putanjaFatihe = '/fatiha';
 export const putanjaKursija = '/ajetul-kursij';
 export const putanjaMulka = '/mulk';
+export const putanjaBekare = '/bekara';
 
 /* ----- mualim: kviz od proizvoljne kombinacije lekcija ----- */
 export const putanjaMualima = '/mualim';

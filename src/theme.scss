@@ -3665,6 +3665,19 @@ textarea.field {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
+
+    /* trenutni način označavanja */
+    .is-aktivan {
+      background: var(--navy);
+      border-color: var(--navy);
+      color: #fff;
+    }
+  }
+
+  &__uputa {
+    margin: 10px 0 0;
+    font-size: 0.86rem;
+    color: var(--muted);
   }
 
   &__grupa {

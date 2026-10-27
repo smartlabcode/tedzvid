@@ -28,6 +28,7 @@ function Home() {
 					<BonusKartica vrsta="mulk" />
 					<BonusKartica vrsta="jasin" />
 					<BonusKartica vrsta="amme" />
+					<BonusKartica vrsta="bekara" />
 				</div>
 			</main>
 			<SiteFooter />

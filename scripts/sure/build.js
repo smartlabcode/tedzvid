@@ -25,6 +25,7 @@ const IZLAZ_AMME = path.join(DATA, 'AmmeDzuzData.json');
 const IZLAZ_FATIHA = path.join(DATA, 'FatihaData.json');
 const IZLAZ_KURSIJ = path.join(DATA, 'KursijData.json');
 const IZLAZ_MULK = path.join(DATA, 'MulkData.json');
+const IZLAZ_BEKARA = path.join(DATA, 'BekaraData.json');
 const KATALOG_IZLAZ = path.join(DATA, 'SurePravila.json');
 
 /* trideseti džuz (Amme džuz): od sure En-Nebe' do En-Nas; značenja prate prijevod B. Korkuta */
@@ -737,7 +738,7 @@ function zapisi(putanja, sadrzaj, brojac, naslov) {
 }
 
 /* ---------- duga sura: odjeljak je stranica mushafa (Jasin, Mulk) ---------- */
-async function gradiPoStranicama(sura, izlaz, vrsta, naslov) {
+async function gradiPoStranicama(sura, izlaz, vrsta, naslov, opseg) {
 	const taj = await dohvati(tajweedUrl(sura), 'tajweed-' + sura + '.json');
 	const cist = await dohvati(uthmaniUrl(sura), 'uthmani-' + sura + '.json');
 	const cloud = await dohvati('https://api.alquran.cloud/v1/surah/' + sura + '/quran-uthmani', 'stranice-' + sura + '.json');
@@ -750,9 +751,11 @@ async function gradiPoStranicama(sura, izlaz, vrsta, naslov) {
 	const odjeljci = [];
 	taj.verses.forEach((v, idx) => {
 		const n = idx + 1;
+		const str = stranicaAjeta[n];
+		/* opseg ograničava suru na dio stranica (Bekara: prvih 20 stranica) */
+		if (opseg && (str < opseg[0] || str > opseg[1])) return;
 		const a = ajet(v.text_uthmani_tajweed, sura, n, rj, brojac, cist.verses[idx].text_uthmani, vremena[n]);
 		provjeri(sura + ':' + n, a, cist.verses[idx].text_uthmani);
-		const str = stranicaAjeta[n];
 		let o = odjeljci.find((x) => x.stranica === str);
 		if (!o) odjeljci.push((o = { kljuc: 's' + str, sura, stranica: str, ajeti: [] }));
 		o.ajeti.push(a);
@@ -767,7 +770,7 @@ async function gradiPoStranicama(sura, izlaz, vrsta, naslov) {
 		{
 			vrsta,
 			sura,
-			brojAjeta: taj.verses.length,
+			brojAjeta: odjeljci.reduce((z, o) => z + o.ajeti.length, 0),
 			audio: AUDIO,
 			objasnjenja: { bs: rj.bs, en: rj.en },
 			odjeljci
@@ -777,6 +780,7 @@ async function gradiPoStranicama(sura, izlaz, vrsta, naslov) {
 	);
 }
 
+const gradiBekaru = () => gradiPoStranicama(2, IZLAZ_BEKARA, 'bekara', 'Sura El-Bekare (str. 2–21)', [ 2, 21 ]);
 const gradiJasin = () => gradiPoStranicama(36, IZLAZ_JASIN, 'jasin', 'Sura Jasin');
 const gradiMulk = () => gradiPoStranicama(67, IZLAZ_MULK, 'mulk', 'Sura El-Mulk');
 
@@ -900,11 +904,17 @@ async function gradiAmme() {
 }
 
 async function main() {
+	/* `node scripts/sure/build.js bekara` gradi samo El-Bekaru */
+	if (process.argv[2] === 'bekara') {
+		await gradiBekaru();
+		return;
+	}
 	await gradiFatihu();
 	await gradiKursij();
 	await gradiMulk();
 	await gradiJasin();
 	await gradiAmme();
+	await gradiBekaru();
 	fs.writeFileSync(KATALOG_IZLAZ, JSON.stringify(KATALOG, null, '\t'));
 	console.log('\nProvjera teksta prema čistom uthmani zapisu: ' + (razlike.length ? razlike.length + ' RAZLIKA' : 'sve se poklapa'));
 	razlike.slice(0, 10).forEach((r) => console.log('  ' + r));

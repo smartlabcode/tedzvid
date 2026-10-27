@@ -5,6 +5,7 @@ import {
 	putanjaFatihe,
 	putanjaKursija,
 	putanjaMulka,
+	putanjaBekare,
 	putanjaBonusa,
 	putanjaAmmeDzuza
 } from '../auth/progress';
@@ -16,6 +17,7 @@ const VRSTE = {
 	fatiha: { putanja: putanjaFatihe, Ikona: FaMosque },
 	kursij: { putanja: putanjaKursija, Ikona: FaStar },
 	mulk: { putanja: putanjaMulka, Ikona: FaScroll },
+	bekara: { putanja: putanjaBekare, Ikona: FaBookOpen },
 	jasin: { putanja: putanjaBonusa, Ikona: FaBookOpen },
 	amme: { putanja: putanjaAmmeDzuza, Ikona: FaQuran }
 };

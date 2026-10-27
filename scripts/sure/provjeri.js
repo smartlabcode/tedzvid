@@ -130,7 +130,7 @@ function provjeriVrijeme(ime) {
 
 let ukupno = provjeri('YasinData.json') + provjeri('AmmeDzuzData.json');
 console.log('\nVrijeme riječi uz zvučni zapis');
-ukupno += [ 'FatihaData.json', 'KursijData.json', 'MulkData.json', 'YasinData.json', 'AmmeDzuzData.json' ]
+ukupno += [ 'FatihaData.json', 'KursijData.json', 'MulkData.json', 'BekaraData.json', 'YasinData.json', 'AmmeDzuzData.json' ]
 	.map(provjeriVrijeme)
 	.reduce((a, b) => a + b, 0);
 console.log('\n' + (ukupno ? 'UKUPNO GREŠAKA: ' + ukupno : 'Sve provjere prošle.'));

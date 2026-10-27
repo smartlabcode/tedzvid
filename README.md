@@ -157,7 +157,10 @@ Na Railwayu je disk privremen: da korisnici prežive novi deploy, montirati Volu
 Bonus lekcije s kur'anskim tekstom otvorene su svima, kao i ostale lekcije:
 
 * `/jasin` – cijela sura Jasin, razložena po stranicama mushafa (440–445),
-* `/amme-dzuz` – trideseti (Amme) džuz: 37 sura (En-Nebe’ … En-Nas), sura po sura, svaka s besmelom.
+* `/amme-dzuz` – trideseti (Amme) džuz: 37 sura (En-Nebe’ … En-Nas), sura po sura, svaka s Bismillahom.
+* `/bekara` – prvih 20 stranica sure El-Bekare (stranice mushafa 2–21, ajeti 1–141); `node scripts/sure/build.js bekara` gradi samo nju.
+
+Označavanje pravila u tekstu (Sva pravila / Izaberi pravila / Ne označavaj pravila) pamti se u pregledniku (`tedzvid.pravila`) i vrijedi za sve bonus lekcije.
 
 U oba slučaja svaki obojeni dio teksta nosi jedno tedžvidsko pravilo iz lekcija 1–22, s
 objašnjenjem zašto se baš tu primjenjuje. Prikaz je zajednički (`src/Lessons/SuraTekst.js`),

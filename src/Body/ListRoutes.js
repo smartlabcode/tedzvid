@@ -115,6 +115,7 @@ function ListRoutes() {
 			<Route path="/fatiha" exact render={() => <BonusPage vrsta="fatiha" />} />
 			<Route path="/ajetul-kursij" exact render={() => <BonusPage vrsta="kursij" />} />
 			<Route path="/mulk" exact render={() => <BonusPage vrsta="mulk" />} />
+			<Route path="/bekara" exact render={() => <BonusPage vrsta="bekara" />} />
 			<Route path="/jasin" exact render={() => <BonusPage vrsta="jasin" />} />
 			<Route path="/amme-dzuz" exact render={() => <BonusPage vrsta="amme" />} />
 			<Route path="/igra" exact render={() => <IgraPage />} />

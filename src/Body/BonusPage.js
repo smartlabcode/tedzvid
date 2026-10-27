@@ -10,6 +10,7 @@ const LEKCIJE = {
 	fatiha: React.lazy(() => import('../Lessons/Fatiha')),
 	kursij: React.lazy(() => import('../Lessons/Kursij')),
 	mulk: React.lazy(() => import('../Lessons/Mulk')),
+	bekara: React.lazy(() => import('../Lessons/Bekara')),
 	jasin: React.lazy(() => import('../Lessons/Yasin')),
 	amme: React.lazy(() => import('../Lessons/AmmeDzuz'))
 };

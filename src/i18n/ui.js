@@ -571,10 +571,12 @@ const UI = {
 		jasinStranicaMushafa: (n) => `Stranica ${n} mushafa`,
 		jasinNemaNaStranici: 'nema na ovoj stranici',
 		jasinAjeti: (a, b) => `ajeti ${a}–${b}`,
-		suraLegenda: 'Boje pravila',
-		suraSve: 'Sve boje',
-		suraManje: 'Manje boja',
-		suraNista: 'Bez boja',
+		suraLegenda: 'Označavanje pravila',
+		suraSve: 'Sva pravila',
+		suraIzaberi: 'Izaberi pravila',
+		suraNista: 'Ne označavaj pravila',
+		suraUputa: 'Odaberi kako želiš da pravila tedžvida budu označena u tekstu Kur’ana.',
+		suraUputaIzbor: (n, m) => `Dodirni pravila koja želiš vidjeti označena u tekstu (izabrano ${n} od ${m}).`,
 		suraPuta: (n) => `${n}×`,
 		suraLekcijaKratko: (n) => `lekcija ${n}`,
 		suraBezLekcije: 'obrađeno uz 5. i 6. lekciju',
@@ -596,20 +598,20 @@ const UI = {
 		ammeNaslov: 'Amme džuz',
 		ammePodnaslov: 'Trideseti džuz Kur’ana – sure koje se najčešće uče napamet – s bojama i objašnjenjima svih tedžvidskih pravila.',
 		ammeUvod:
-			'Sura se bira iz spiska, a uz svaku ide i besmela. Svaka boja u tekstu je jedno pravilo: klikni na obojeni harf i pročitaj zašto se tu primjenjuje, ili otvori spisak pravila ispod ajeta. Boje u legendi broje se za suru koja je otvorena.',
+			'Sura se bira iz spiska, a uz svaku ide i Bismillah. Svaka boja u tekstu je jedno pravilo: klikni na obojeni harf i pročitaj zašto se tu primjenjuje, ili otvori spisak pravila ispod ajeta. Boje u legendi broje se za suru koja je otvorena.',
 		ammeODzuzu: (n, a, b) =>
 			`Amme džuz je trideseti i posljednji džuz Kur’ana: ${n} sura, od ${a}. sure En-Nebe’ do ${b}. sure En-Nas. Iste su boje i ista objašnjenja kao u bonus lekciji sa surom Jasin.`,
 		ammeNemaUSuri: 'nema u ovoj suri',
 		ammeAjeta: (n) => (n === 1 ? '1 ajet' : n < 5 ? `${n} ajeta` : `${n} ajeta`),
 		ammeMekkanska: 'mekkanska',
 		ammeMedinska: 'medinska',
-		ammeBesmela: 'Besmela',
-		ammeBesmelaOznaka: 'Besmela',
+		ammeBesmela: 'Bismillah',
+		ammeBesmelaOznaka: 'Bismillah',
 		ammePustiSuru: 'Pusti cijelu suru',
 		ammePrethodna: 'Prethodna sura',
 		ammeSljedeca: 'Sljedeća sura',
 		ammeOznaka: (naziv, n) => `${naziv}, ${n}. ajet`,
-		ammeKarticaTekst: 'Trideseti džuz Kur’ana, sura po sura, s besmelom, bojama i objašnjenjima svih pravila koja si prešao.',
+		ammeKarticaTekst: 'Trideseti džuz Kur’ana, sura po sura, s Bismillahom, bojama i objašnjenjima svih pravila koja si prešao.',
 		ammeOtvori: 'Otvori Amme džuz',
 
 		/* ----- bonus lekcije s kraćim cjelinama (El-Fatiha, Ajetul-kursij, El-Mulk) ----- */
@@ -667,6 +669,23 @@ const UI = {
 				oznaka: (n) => `El-Mulk, ${n}. ajet`,
 				karticaTekst: 'Cijela sura El-Mulk s bojama i objašnjenjima svih pravila koja si prešao.',
 				otvori: 'Otvori suru El-Mulk'
+			},
+			bekara: {
+				poStranicama: true,
+				eyebrow: 'Bonus lekcija',
+				naslov: 'Sura El-Bekare',
+				podnaslov:
+					'Prvih 20 stranica sure, stranicu po stranicu, s bojama i objašnjenjima za sva tedžvidska pravila iz 22 lekcije.',
+				uvod:
+					'Svaka boja u tekstu je jedno pravilo. Klikni na obojeni harf i pročitaj zašto se tu primjenjuje to pravilo, ili otvori spisak svih pravila ispod ajeta. Zvučni zapis uči Mahmud Halil el-Husari.',
+				osuri: d => `Sura El-Bekare je druga sura u Kur’anu, objavljena u Medini. Ovdje su prve stranice mushafa ${d.odjeljci[0].stranica}–${d.odjeljci[d.odjeljci.length - 1].stranica} (ajeti 1–${d.odjeljci[d.odjeljci.length - 1].do}), podijeljene upravo tako.`,
+				pusti: 'Pusti cijelu stranicu',
+				prethodna: 'Prethodna stranica',
+				sljedeca: 'Sljedeća stranica',
+				nema: 'nema na ovoj stranici',
+				oznaka: (n) => `El-Bekare, ${n}. ajet`,
+				karticaTekst: 'Prvih 20 stranica sure El-Bekare s bojama i objašnjenjima svih pravila koja si prešao.',
+				otvori: 'Otvori suru El-Bekare'
 			}
 		}
 	},
@@ -1233,10 +1252,12 @@ const UI = {
 		jasinStranicaMushafa: (n) => `Mushaf page ${n}`,
 		jasinNemaNaStranici: 'not on this page',
 		jasinAjeti: (a, b) => `verses ${a}–${b}`,
-		suraLegenda: 'Rule colours',
-		suraSve: 'All colours',
-		suraManje: 'Fewer colours',
-		suraNista: 'No colours',
+		suraLegenda: 'Highlighting rules',
+		suraSve: 'All rules',
+		suraIzaberi: 'Choose rules',
+		suraNista: 'Don’t highlight rules',
+		suraUputa: 'Choose how you want the tajweed rules to be highlighted in the text of the Qur’an.',
+		suraUputaIzbor: (n, m) => `Tap the rules you want highlighted in the text (${n} of ${m} chosen).`,
 		suraPuta: (n) => `${n}×`,
 		suraLekcijaKratko: (n) => `lesson ${n}`,
 		suraBezLekcije: 'covered in lessons 5 and 6',
@@ -1330,6 +1351,23 @@ const UI = {
 				oznaka: (n) => `Al-Mulk, verse ${n}`,
 				karticaTekst: 'The whole of Surah Al-Mulk, colour-coded and explained with every rule you have learned.',
 				otvori: 'Open Surah Al-Mulk'
+			},
+			bekara: {
+				poStranicama: true,
+				eyebrow: 'Bonus lesson',
+				naslov: 'Surah Al-Baqarah',
+				podnaslov:
+					'The first 20 pages of the surah, page by page, colour-coded and explained with every tajweed rule from the 22 lessons.',
+				uvod:
+					'Every colour in the text is one rule. Tap a coloured letter to read why the rule applies there, or open the list of all rules under a verse. The recitation is by Mahmoud Khalil Al-Husary.',
+				osuri: d => `Surah Al-Baqarah is the second surah of the Qur’an, revealed in Medina. Here are its first mushaf pages ${d.odjeljci[0].stranica}–${d.odjeljci[d.odjeljci.length - 1].stranica} (verses 1–${d.odjeljci[d.odjeljci.length - 1].do}), divided in exactly the same way.`,
+				pusti: 'Play the whole page',
+				prethodna: 'Previous page',
+				sljedeca: 'Next page',
+				nema: 'not on this page',
+				oznaka: (n) => `Al-Baqarah, verse ${n}`,
+				karticaTekst: 'The first 20 pages of Surah Al-Baqarah, colour-coded and explained with every rule you have learned.',
+				otvori: 'Open Surah Al-Baqarah'
 			}
 		}
 	},
@@ -1902,10 +1940,12 @@ const UI = {
 		jasinStranicaMushafa: (n) => `Mus-haf-Seite ${n}`,
 		jasinNemaNaStranici: 'nicht auf dieser Seite',
 		jasinAjeti: (a, b) => `Verse ${a}–${b}`,
-		suraLegenda: 'Regelfarben',
-		suraSve: 'Alle Farben',
-		suraManje: 'Weniger Farben',
-		suraNista: 'Ohne Farben',
+		suraLegenda: 'Regeln markieren',
+		suraSve: 'Alle Regeln',
+		suraIzaberi: 'Regeln auswählen',
+		suraNista: 'Keine Regeln markieren',
+		suraUputa: 'Wählen Sie, wie die Tejwid-Regeln im Text des Korans markiert werden sollen.',
+		suraUputaIzbor: (n, m) => `Tippen Sie auf die Regeln, die im Text markiert werden sollen (${n} von ${m} gewählt).`,
 		suraPuta: (n) => `${n}×`,
 		suraLekcijaKratko: (n) => `Lektion ${n}`,
 		suraBezLekcije: 'behandelt in Lektion 5 und 6',
@@ -1998,6 +2038,23 @@ const UI = {
 				oznaka: (n) => `Al-Mulk, Vers ${n}`,
 				karticaTekst: 'Die ganze Sure Al-Mulk mit Farben und Erklärungen zu allen Regeln, die Sie gelernt haben.',
 				otvori: 'Sure Al-Mulk öffnen'
+			},
+			bekara: {
+				poStranicama: true,
+				eyebrow: 'Bonuslektion',
+				naslov: 'Sure Al-Baqara',
+				podnaslov:
+					'Die ersten 20 Seiten der Sure, Seite für Seite, mit Farben und Erklärungen zu allen Tejwid-Regeln aus den 22 Lektionen.',
+				uvod:
+					'Jede Farbe im Text ist eine Regel. Klicken Sie auf einen farbigen Buchstaben und lesen Sie, warum die Regel dort gilt, oder öffnen Sie die Liste aller Regeln unter dem Vers. Gelesen von Mahmud Chalil al-Husari.',
+				osuri: d => `Die Sure Al-Baqara ist die zweite Sure des Korans, in Medina offenbart. Hier sind ihre ersten Mus-haf-Seiten ${d.odjeljci[0].stranica}–${d.odjeljci[d.odjeljci.length - 1].stranica} (Verse 1–${d.odjeljci[d.odjeljci.length - 1].do}), genau so aufgeteilt.`,
+				pusti: 'Ganze Seite abspielen',
+				prethodna: 'Vorherige Seite',
+				sljedeca: 'Nächste Seite',
+				nema: 'nicht auf dieser Seite',
+				oznaka: (n) => `Al-Baqara, Vers ${n}`,
+				karticaTekst: 'Die ersten 20 Seiten der Sure Al-Baqara mit Farben und Erklärungen zu allen Regeln, die Sie gelernt haben.',
+				otvori: 'Sure Al-Baqara öffnen'
 			}
 		}
 	}
