@@ -216,12 +216,12 @@ async function posaljiEmail(to, subject, text) {
 
 const MAIL_PRIVREMENA = {
 	bs: (ime, lozinka) => ({
-		subject: 'Tedžvid.ba – privremena lozinka',
+		subject: 'Tedžvid.ba – privremena šifra',
 		text:
 			'Selam, ' + ime + '!\n\n' +
-			'Tvoja privremena lozinka je: ' + lozinka + '\n\n' +
-			'Važi 1 sat. Nakon prijave postavi svoju lozinku u Profilu.\n' +
-			'Ako nisi tražio/la novu lozinku, zanemari ovaj email – tvoja stara lozinka i dalje radi.\n\n' +
+			'Tvoja privremena šifra je: ' + lozinka + '\n\n' +
+			'Važi 1 sat. Nakon prijave postavi svoju šifru u Profilu.\n' +
+			'Ako nisi tražio/la novu šifru, zanemari ovaj email – tvoja stara šifra i dalje radi.\n\n' +
 			'Tedžvid.ba'
 	}),
 	en: (ime, lozinka) => ({
