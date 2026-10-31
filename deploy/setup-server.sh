@@ -37,6 +37,9 @@ ADMIN_PASSWORD=$ADMIN_PASS
 MUALIM_USER=mualim
 MUALIM_PASSWORD=$MUALIM_PASS
 DEMO_USER=0
+# „Zaboravljena lozinka“: ključ iz Breva (bez njega se privremena lozinka samo ispiše u log);
+# pošiljalac je tedzvidba@gmail.com, osim ako se ne postavi MAIL_FROM
+BREVO_API_KEY=
 EOF
 	echo "Napravljen $ENV_FILE. Zapiši lozinke (vide se i u tom fajlu):"
 	echo "  admin  / $ADMIN_PASS"

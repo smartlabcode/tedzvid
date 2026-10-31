@@ -1,21 +1,26 @@
 import React, { useEffect, useState } from 'react';
 import { Link, Redirect, useLocation } from 'react-router-dom';
-import { FaSignInAlt, FaUserPlus } from 'react-icons/fa';
+import { FaEnvelope, FaSignInAlt, FaUserPlus } from 'react-icons/fa';
 import SiteNav from './SiteNav';
 import SiteFooter from './SiteFooter';
 import PageBand from './PageBand';
 import { useAuth } from '../auth/AuthContext';
 import { useUI } from '../i18n/ui';
+import { useLang } from '../i18n/LanguageContext';
+import { api } from '../auth/api';
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 /* isto pravilo kao na serveru: 3–20 znakova, mala slova, brojevi, . _ - */
 const USERNAME_RE = /^[a-z0-9][a-z0-9._-]{2,19}$/;
 
-/* Prijava (mode="login") i registracija (mode="register") – ista stranica, različita polja */
+/* Prijava (mode="login"), registracija (mode="register") i zaboravljena lozinka (mode="zaboravljena") –
+   ista stranica, različita polja */
 export default function AuthPage({ mode }) {
 	const isLogin = mode === 'login';
-	const { user, loading, login, register } = useAuth();
+	const isForgot = mode === 'zaboravljena';
+	const { user, loading, login, register, mijenjajLozinku } = useAuth();
 	const ui = useUI();
+	const { lang } = useLang();
 	const location = useLocation();
 
 	const [ ime, setIme ] = useState('');
@@ -27,6 +32,7 @@ export default function AuthPage({ mode }) {
 	const [ dzemat, setDzemat ] = useState('');
 	const [ err, setErr ] = useState(null);
 	const [ busy, setBusy ] = useState(false);
+	const [ poslano, setPoslano ] = useState(false);
 
 	/* kuda nakon uspjeha: stranica s koje je korisnik došao (zaključana lekcija, kviz) ili pregled lekcija */
 	const from = (location.state && location.state.from) || '/lekcije';
@@ -35,11 +41,27 @@ export default function AuthPage({ mode }) {
 		() => {
 			window.scrollTo(0, 0);
 			setErr(null);
+			setPoslano(false);
 		},
 		[ mode ]
 	);
 
-	if (!loading && user) return <Redirect to={from} />;
+	if (!loading && user) return <Redirect to={mijenjajLozinku ? { pathname: '/profil', hash: '#lozinka' } : from} />;
+
+	/* zaboravljena lozinka: odgovor je uvijek isti, da se ne otkriva ko ima račun */
+	const posaljiPrivremenu = async (e) => {
+		e.preventDefault();
+		setErr(null);
+		if (!email.trim()) return setErr('bad_email');
+		setBusy(true);
+		try {
+			await api.zaboravljenaLozinka(email.trim(), lang);
+			setPoslano(true);
+		} catch (ex) {
+			setErr(ex.code || 'server');
+		}
+		setBusy(false);
+	};
 
 	const submit = async (e) => {
 		e.preventDefault();
@@ -72,131 +94,172 @@ export default function AuthPage({ mode }) {
 			<main className="auth">
 				<div className="wrap">
 					<div className="auth__card">
-						<form className="auth__form" onSubmit={submit} noValidate>
-							{!isLogin && (
+						{isForgot ? (
+							<form className="auth__form" onSubmit={posaljiPrivremenu} noValidate>
 								<label className="auth__label">
-									<span>{ui.fieldName}</span>
+									<span>{ui.fieldLogin}</span>
 									<input
 										className="field"
 										type="text"
-										name="ime"
-										autoComplete="name"
-										value={ime}
-										onChange={(e) => setIme(e.target.value)}
-										required
-									/>
-								</label>
-							)}
-							{!isLogin && (
-								<label className="auth__label">
-									<span>{ui.fieldUsername}</span>
-									<input
-										className="field"
-										type="text"
-										name="korisnicko"
+										name="email"
 										autoComplete="username"
 										autoCapitalize="none"
 										spellCheck={false}
-										maxLength={20}
-										value={korisnicko}
-										onChange={(e) => setKorisnicko(e.target.value)}
+										value={email}
+										onChange={(e) => {
+											setEmail(e.target.value);
+											setPoslano(false);
+										}}
 										required
 									/>
-									<small>{ui.usernameHint}</small>
 								</label>
-							)}
-							<label className="auth__label">
-								<span>{isLogin ? ui.fieldLogin : ui.fieldEmail}</span>
-								<input
-									className="field"
-									type={isLogin ? 'text' : 'email'}
-									name="email"
-									autoComplete={isLogin ? 'username' : 'email'}
-									value={email}
-									onChange={(e) => setEmail(e.target.value)}
-									required
-								/>
-							</label>
-							<label className="auth__label">
-								<span>{ui.fieldPassword}</span>
-								<input
-									className="field"
-									type="password"
-									name="lozinka"
-									autoComplete={isLogin ? 'current-password' : 'new-password'}
-									value={lozinka}
-									onChange={(e) => setLozinka(e.target.value)}
-									required
-								/>
-								{!isLogin && <small>{ui.passwordHint}</small>}
-							</label>
-							{!isLogin && (
+								{poslano && (
+									<div className="notice notice--ok" role="status">
+										<span>{ui.forgotSent}</span>
+									</div>
+								)}
+								{err && (
+									<div className="notice notice--err" role="alert">
+										<span>{ui.authErrors[err] || ui.authErrors.server}</span>
+									</div>
+								)}
+								<button type="submit" className="btn-t btn-t--gold" disabled={busy}>
+									<FaEnvelope />
+									{busy ? ui.btnWorking : ui.btnSendTemp}
+								</button>
+							</form>
+						) : (
+							<form className="auth__form" onSubmit={submit} noValidate>
+								{!isLogin && (
+									<label className="auth__label">
+										<span>{ui.fieldName}</span>
+										<input
+											className="field"
+											type="text"
+											name="ime"
+											autoComplete="name"
+											value={ime}
+											onChange={(e) => setIme(e.target.value)}
+											required
+										/>
+									</label>
+								)}
+								{!isLogin && (
+									<label className="auth__label">
+										<span>{ui.fieldUsername}</span>
+										<input
+											className="field"
+											type="text"
+											name="korisnicko"
+											autoComplete="username"
+											autoCapitalize="none"
+											spellCheck={false}
+											maxLength={20}
+											value={korisnicko}
+											onChange={(e) => setKorisnicko(e.target.value)}
+											required
+										/>
+										<small>{ui.usernameHint}</small>
+									</label>
+								)}
 								<label className="auth__label">
-									<span>{ui.fieldPassword2}</span>
+									<span>{isLogin ? ui.fieldLogin : ui.fieldEmail}</span>
+									<input
+										className="field"
+										type={isLogin ? 'text' : 'email'}
+										name="email"
+										autoComplete={isLogin ? 'username' : 'email'}
+										value={email}
+										onChange={(e) => setEmail(e.target.value)}
+										required
+									/>
+								</label>
+								<label className="auth__label">
+									<span>{ui.fieldPassword}</span>
 									<input
 										className="field"
 										type="password"
-										name="lozinka2"
-										autoComplete="new-password"
-										value={lozinka2}
-										onChange={(e) => setLozinka2(e.target.value)}
+										name="lozinka"
+										autoComplete={isLogin ? 'current-password' : 'new-password'}
+										value={lozinka}
+										onChange={(e) => setLozinka(e.target.value)}
 										required
 									/>
-								</label>
-							)}
-							{/* mualim: označavanjem se otvara polje za džemat (obavezno samo tada) */}
-							{!isLogin && (
-								<div className={'auth__mualim' + (mualim ? ' is-on' : '')}>
-									<label className="auth__check">
-										<input
-											type="checkbox"
-											name="mualim"
-											checked={mualim}
-											aria-expanded={mualim}
-											aria-controls="auth-dzemat"
-											onChange={(e) => {
-												setMualim(e.target.checked);
-												if (err === 'bad_dzemat') setErr(null);
-											}}
-										/>
-										<span>
-											<b>{ui.registerMualim}</b>
-											<small>{ui.registerMualimHint}</small>
-										</span>
-									</label>
-									{mualim && (
-										<label className="auth__label auth__dzemat" id="auth-dzemat">
-											<span>{ui.fieldDzemat}</span>
-											<input
-												className="field"
-												type="text"
-												name="dzemat"
-												autoComplete="organization"
-												maxLength={120}
-												placeholder={ui.dzematPlaceholder}
-												value={dzemat}
-												onChange={(e) => setDzemat(e.target.value)}
-												aria-invalid={err === 'bad_dzemat'}
-												autoFocus
-												required
-											/>
-											<small>{ui.dzematHint}</small>
-										</label>
+									{!isLogin && <small>{ui.passwordHint}</small>}
+									{isLogin && (
+										<Link to="/zaboravljena-lozinka" className="auth__forgot">
+											{ui.forgotLink}
+										</Link>
 									)}
-								</div>
-							)}
-							{err && (
-								<div className="notice notice--err" role="alert">
-									<span>{ui.authErrors[err] || ui.authErrors.server}</span>
-								</div>
-							)}
-							<button type="submit" className="btn-t btn-t--gold" disabled={busy}>
-								{isLogin ? <FaSignInAlt /> : <FaUserPlus />}
-								{busy ? ui.btnWorking : isLogin ? ui.btnLogin : ui.btnRegister}
-							</button>
-						</form>
+								</label>
+								{!isLogin && (
+									<label className="auth__label">
+										<span>{ui.fieldPassword2}</span>
+										<input
+											className="field"
+											type="password"
+											name="lozinka2"
+											autoComplete="new-password"
+											value={lozinka2}
+											onChange={(e) => setLozinka2(e.target.value)}
+											required
+										/>
+									</label>
+								)}
+								{/* mualim: označavanjem se otvara polje za džemat (obavezno samo tada) */}
+								{!isLogin && (
+									<div className={'auth__mualim' + (mualim ? ' is-on' : '')}>
+										<label className="auth__check">
+											<input
+												type="checkbox"
+												name="mualim"
+												checked={mualim}
+												aria-expanded={mualim}
+												aria-controls="auth-dzemat"
+												onChange={(e) => {
+													setMualim(e.target.checked);
+													if (err === 'bad_dzemat') setErr(null);
+												}}
+											/>
+											<span>
+												<b>{ui.registerMualim}</b>
+												<small>{ui.registerMualimHint}</small>
+											</span>
+										</label>
+										{mualim && (
+											<label className="auth__label auth__dzemat" id="auth-dzemat">
+												<span>{ui.fieldDzemat}</span>
+												<input
+													className="field"
+													type="text"
+													name="dzemat"
+													autoComplete="organization"
+													maxLength={120}
+													placeholder={ui.dzematPlaceholder}
+													value={dzemat}
+													onChange={(e) => setDzemat(e.target.value)}
+													aria-invalid={err === 'bad_dzemat'}
+													autoFocus
+													required
+												/>
+												<small>{ui.dzematHint}</small>
+											</label>
+										)}
+									</div>
+								)}
+								{err && (
+									<div className="notice notice--err" role="alert">
+										<span>{ui.authErrors[err] || ui.authErrors.server}</span>
+									</div>
+								)}
+								<button type="submit" className="btn-t btn-t--gold" disabled={busy}>
+									{isLogin ? <FaSignInAlt /> : <FaUserPlus />}
+									{busy ? ui.btnWorking : isLogin ? ui.btnLogin : ui.btnRegister}
+								</button>
+							</form>
+						)}
 						<p className="auth__switch">
-							{isLogin ? ui.switchToRegister : ui.switchToLogin}{' '}
+							{isForgot ? ui.forgotBack : isLogin ? ui.switchToRegister : ui.switchToLogin}{' '}
 							<Link to={{ pathname: isLogin ? '/registracija' : '/prijava', state: location.state }}>
 								{isLogin ? ui.navRegistracija : ui.navPrijava}
 							</Link>

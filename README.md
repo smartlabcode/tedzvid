@@ -149,8 +149,27 @@ Okruženje:
 | `MUALIM_USER`    | korisničko ime mualima                                | `mualim`        |
 | `MUALIM_PASSWORD`| lozinka mualima (obavezno postaviti u produkciji)      | `mualim123!`    |
 | `DEMO_USER`      | `0` isključuje demo korisnika user / user123!          | uključen        |
+| `BREVO_API_KEY`  | ključ za slanje emaila (privremena lozinka)            | – (lozinka ide u log) |
+| `MAIL_FROM`      | adresa pošiljaoca potvrđena u Brevu                    | `tedzvidba@gmail.com` |
+| `MAIL_FROM_NAME` | ime pošiljaoca                                         | `Tedžvid.ba`    |
 
 Na Railwayu je disk privremen: da korisnici prežive novi deploy, montirati Volume i postaviti `DATA_DIR` na tu putanju (npr. `/data`), a `SESSION_SECRET` postaviti kao varijablu.
+
+#### Zaboravljena lozinka (email preko Breva)
+
+Na `/zaboravljena-lozinka` korisnik upiše email ili korisničko ime, a server mu pošalje privremenu lozinku koja važi 1 sat.
+Stara lozinka i dalje radi, pa niko ne može drugome zaključati račun. Nakon prijave privremenom lozinkom korisnik
+se vodi na `/profil#lozinka` da postavi svoju. Ugrađeni računi (admin, mualim, demo) ne koriste ovu opciju.
+
+Email ide preko Brevo HTTP API-ja (Railway na jeftinijim planovima blokira SMTP), bez dodatnih paketa:
+
+1. Napraviti besplatan račun na brevo.com (300 mailova dnevno) i u *Senders* potvrditi `tedzvidba@gmail.com`
+   (podrazumijevani pošiljalac; druga adresa se postavlja kroz `MAIL_FROM`).
+2. U *SMTP & API → API keys* napraviti ključ i postaviti `BREVO_API_KEY`.
+3. Ako mailovi s Gmail adrese budu završavali u spamu: u Brevu autentificirati `tedzvid.ba` (DKIM/SPF zapisi
+   u DNS-u) i postaviti npr. `MAIL_FROM=noreply@tedzvid.ba`.
+
+Bez ključa (lokalni razvoj) mail se ne šalje, a privremena lozinka se ispiše u log servera.
 
 ### Bonus lekcije: sura Jasin i Amme džuz
 

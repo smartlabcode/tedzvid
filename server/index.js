@@ -10,12 +10,19 @@
  *   BUILD_DIR       – mapa s buildom (podrazumijevano ./build)
  *   CORS_ORIGINS    – dodatni izvori za CORS, odvojeni zarezom (mobilna aplikacija
  *                     s capacitor://localhost i https://localhost je već dozvoljena)
+ *   BREVO_API_KEY   – ključ za slanje emaila (privremena lozinka); bez njega se lozinka samo ispiše u log
+ *   MAIL_FROM       – adresa pošiljaoca potvrđena u Brevu (podrazumijevano tedzvidba@gmail.com)
+ *   MAIL_FROM_NAME  – ime pošiljaoca (podrazumijevano Tedžvid.ba)
  *
  * API (JSON):
  *   POST /api/register  { ime, korisnicko, email, lozinka, mualim, dzemat } → { token, user }
  *                       mualim: true → zahtjev za ulogu mualima; korisnik ostaje običan dok ga admin ne odobri
  *                       dzemat: džemat, mjesto ili ustanova u kojoj je mualim (obavezno uz mualim: true)
- *   POST /api/login     { email, lozinka }       → { token, user }   (email ili korisničko ime)
+ *   POST /api/login     { email, lozinka }       → { token, user, mijenjajLozinku? }   (email ili korisničko ime)
+ *                       mijenjajLozinku: true kad je prijava bila privremenom lozinkom
+ *   POST /api/zaboravljena-lozinka { email, lang } → { ok: true }   (uvijek, da se ne otkriva ko ima račun)
+ *                       šalje privremenu lozinku koja važi 1 sat; stara lozinka i dalje radi
+ *   POST /api/lozinka   { stara, nova } (Authorization: Bearer) → { ok: true }
  *   GET  /api/me        (Authorization: Bearer)  → { user }   (bilježi i zadnji pristup za admin panel)
  *   POST /api/progress  { lekcija, tacno }       → { user }   (lekcija: 1–22, 'g1'–'g5' ili 'zavrsni')
  *   GET  /api/leaderboard?period=sedmica|mjesec|sve → { period, od, lista, moj }
@@ -69,6 +76,11 @@ const MUALIM_PASSWORD = process.env.MUALIM_PASSWORD || 'mualim123!';
 const DEMO_USER = 'user';
 const DEMO_PASSWORD = 'user123!';
 const SEED_DEMO = process.env.DEMO_USER !== '0';
+const BREVO_API_KEY = process.env.BREVO_API_KEY || '';
+const MAIL_FROM = process.env.MAIL_FROM || 'tedzvidba@gmail.com';
+const MAIL_FROM_NAME = process.env.MAIL_FROM_NAME || 'Tedžvid.ba';
+const PRIVREMENA_TRAJANJE = 60 * 60 * 1000; /* 1 sat */
+const PRIVREMENA_RAZMAK = 5 * 60 * 1000; /* najviše jedan mail po računu u 5 minuta */
 
 /* ---------- pohrana korisnika (JSON datoteka) ---------- */
 function ensureDataDir() {
@@ -107,6 +119,8 @@ function publicUser(u) {
 		email: u.email,
 		uloga: u.uloga || 'korisnik',
 		mualimZahtjev: statusZahtjeva(u),
+		/* ugrađenim računima lozinka dolazi iz okruženja – ne mijenja se kroz profil */
+		ugradjeni: jeUgradjeniRacun(u),
 		progress: u.progress || {}
 	};
 }
@@ -162,6 +176,73 @@ function provjeriLozinku(lozinka, user) {
 	const b = Buffer.from(user.hash, 'hex');
 	return a.length === b.length && crypto.timingSafeEqual(a, b);
 }
+
+function postaviLozinku(user, lozinka) {
+	user.salt = crypto.randomBytes(16).toString('hex');
+	user.hash = hashLozinke(lozinka, user.salt);
+}
+
+/* privremena lozinka iz „Zaboravljena lozinka“ – čuva se pored stalne dok ne istekne */
+function provjeriPrivremenu(lozinka, user) {
+	const p = user.privremena;
+	if (!p || !p.hash || !(p.istice > Date.now())) return false;
+	return provjeriLozinku(lozinka, p);
+}
+
+/* bez znakova koji se lako zamijene (0/O, 1/l/I) */
+const PRIVREMENA_ZNAKOVI = 'abcdefghijkmnpqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+function novaPrivremena() {
+	return Array.from(crypto.randomBytes(10), (b) => PRIVREMENA_ZNAKOVI[b % PRIVREMENA_ZNAKOVI.length]).join('');
+}
+
+/* ---------- email (Brevo HTTP API; Railway blokira SMTP) ---------- */
+async function posaljiEmail(to, subject, text) {
+	if (!BREVO_API_KEY) {
+		console.log('[email nije podešen] ' + to + ' – ' + subject + '\n' + text);
+		return;
+	}
+	const res = await fetch('https://api.brevo.com/v3/smtp/email', {
+		method: 'POST',
+		headers: { 'api-key': BREVO_API_KEY, 'Content-Type': 'application/json', Accept: 'application/json' },
+		body: JSON.stringify({
+			sender: { email: MAIL_FROM, name: MAIL_FROM_NAME },
+			to: [ { email: to } ],
+			subject,
+			textContent: text
+		})
+	});
+	if (!res.ok) throw new Error('brevo ' + res.status + ': ' + (await res.text()).slice(0, 300));
+}
+
+const MAIL_PRIVREMENA = {
+	bs: (ime, lozinka) => ({
+		subject: 'Tedžvid.ba – privremena lozinka',
+		text:
+			'Selam, ' + ime + '!\n\n' +
+			'Tvoja privremena lozinka je: ' + lozinka + '\n\n' +
+			'Važi 1 sat. Nakon prijave postavi svoju lozinku u Profilu.\n' +
+			'Ako nisi tražio/la novu lozinku, zanemari ovaj email – tvoja stara lozinka i dalje radi.\n\n' +
+			'Tedžvid.ba'
+	}),
+	en: (ime, lozinka) => ({
+		subject: 'Tedžvid.ba – temporary password',
+		text:
+			'Hello, ' + ime + '!\n\n' +
+			'Your temporary password is: ' + lozinka + '\n\n' +
+			'It is valid for 1 hour. After logging in, set your own password in your Profile.\n' +
+			'If you did not request a new password, ignore this email – your old password still works.\n\n' +
+			'Tedžvid.ba'
+	}),
+	de: (ime, lozinka) => ({
+		subject: 'Tedžvid.ba – vorläufiges Passwort',
+		text:
+			'Hallo, ' + ime + '!\n\n' +
+			'Ihr vorläufiges Passwort lautet: ' + lozinka + '\n\n' +
+			'Es ist 1 Stunde gültig. Legen Sie nach der Anmeldung im Profil Ihr eigenes Passwort fest.\n' +
+			'Wenn Sie kein neues Passwort angefordert haben, ignorieren Sie diese E-Mail – Ihr altes Passwort funktioniert weiterhin.\n\n' +
+			'Tedžvid.ba'
+	})
+};
 
 /* ---------- ograničenje pokušaja prijave/registracije po IP adresi ---------- */
 const pokusaji = new Map();
@@ -479,9 +560,50 @@ async function handleApi(req, res, url) {
 		}
 
 		const user = findByLogin(email);
-		if (!user || !provjeriLozinku(lozinka, user)) return json(res, 401, { error: 'bad_credentials' });
+		if (!user) return json(res, 401, { error: 'bad_credentials' });
+		let mijenjajLozinku = false;
+		if (provjeriLozinku(lozinka, user)) {
+			/* sjetio se stare lozinke – neiskorištena privremena više ne treba */
+			if (user.privremena) delete user.privremena;
+		} else if (provjeriPrivremenu(lozinka, user)) {
+			/* privremena postaje stalna dok korisnik ne postavi svoju */
+			user.salt = user.privremena.salt;
+			user.hash = user.privremena.hash;
+			delete user.privremena;
+			mijenjajLozinku = true;
+		} else {
+			return json(res, 401, { error: 'bad_credentials' });
+		}
 		zabiljeziPristup(user, true);
-		return json(res, 200, { token: izdajToken(user), user: publicUser(user) });
+		const odgovor = { token: izdajToken(user), user: publicUser(user) };
+		if (mijenjajLozinku) odgovor.mijenjajLozinku = true;
+		return json(res, 200, odgovor);
+	}
+
+	if (route === 'POST /api/zaboravljena-lozinka') {
+		if (prekoracenLimit(clientIp(req))) return json(res, 429, { error: 'too_many' });
+		let body;
+		try {
+			body = await readBody(req);
+		} catch (e) {
+			return json(res, 400, { error: 'bad_request' });
+		}
+		const cilj = findByLogin(normEmail(body.email));
+		/* ugrađenim računima lozinka dolazi iz okruženja; isti odgovor u svakom slučaju */
+		if (!cilj || jeUgradjeniRacun(cilj) || !EMAIL_RE.test(cilj.email)) return json(res, 200, { ok: true });
+		const sada = Date.now();
+		if (cilj.privremena && sada - (cilj.privremena.datum || 0) < PRIVREMENA_RAZMAK) return json(res, 200, { ok: true });
+		const lozinka = novaPrivremena();
+		const salt = crypto.randomBytes(16).toString('hex');
+		cilj.privremena = { salt, hash: hashLozinke(lozinka, salt), istice: sada + PRIVREMENA_TRAJANJE, datum: sada };
+		saveUsers();
+		const mail = (MAIL_PRIVREMENA[body.lang] || MAIL_PRIVREMENA.bs)(cilj.ime, lozinka);
+		try {
+			await posaljiEmail(cilj.email, mail.subject, mail.text);
+		} catch (e) {
+			console.error('Slanje privremene lozinke nije uspjelo (' + cilj.email + '):', e.message);
+		}
+		return json(res, 200, { ok: true });
 	}
 
 	const user = korisnikIzZahtjeva(req);
@@ -550,6 +672,26 @@ async function handleApi(req, res, url) {
 		}
 		saveUsers();
 		return json(res, 200, pregledKorisnika());
+	}
+
+	if (route === 'POST /api/lozinka') {
+		if (!user) return json(res, 401, { error: 'unauthorized' });
+		if (jeUgradjeniRacun(user)) return json(res, 403, { error: 'password_locked' });
+		if (prekoracenLimit(clientIp(req))) return json(res, 429, { error: 'too_many' });
+		let body;
+		try {
+			body = await readBody(req);
+		} catch (e) {
+			return json(res, 400, { error: 'bad_request' });
+		}
+		const stara = typeof body.stara === 'string' ? body.stara : '';
+		const nova = typeof body.nova === 'string' ? body.nova : '';
+		if (!provjeriLozinku(stara, user)) return json(res, 400, { error: 'wrong_password' });
+		if (nova.length < 6 || nova.length > 200) return json(res, 400, { error: 'bad_password' });
+		postaviLozinku(user, nova);
+		delete user.privremena;
+		saveUsers();
+		return json(res, 200, { ok: true });
 	}
 
 	if (route === 'GET /api/me') {
@@ -797,8 +939,7 @@ function osigurajRacun(email, ime, lozinka, uloga, azurirajLozinku) {
 	}
 	/* lozinka iz okruženja ima prednost nad sačuvanom */
 	if (azurirajLozinku && !provjeriLozinku(lozinka, u)) {
-		u.salt = crypto.randomBytes(16).toString('hex');
-		u.hash = hashLozinke(lozinka, u.salt);
+		postaviLozinku(u, lozinka);
 		changed = true;
 	}
 	return changed;

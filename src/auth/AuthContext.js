@@ -24,6 +24,8 @@ const AuthContext = createContext({
 	isUnlocked: () => true,
 	login: async () => null,
 	register: async () => null,
+	mijenjajLozinku: false,
+	promijeniLozinku: async () => null,
 	logout: () => {},
 	saveResult: async () => null
 });
@@ -31,6 +33,8 @@ const AuthContext = createContext({
 export function AuthProvider({ children }) {
 	const [ user, setUser ] = useState(null);
 	const [ loading, setLoading ] = useState(() => !!getToken());
+	/* prijava privremenom lozinkom → korisnika vodimo na profil da postavi svoju */
+	const [ mijenjajLozinku, setMijenjajLozinku ] = useState(false);
 
 	/* uz sačuvani token dohvati korisnika; istekao token se briše */
 	useEffect(() => {
@@ -57,6 +61,7 @@ export function AuthProvider({ children }) {
 	const login = useCallback(async (email, lozinka) => {
 		const d = await api.login({ email, lozinka });
 		setToken(d.token);
+		setMijenjajLozinku(!!d.mijenjajLozinku);
 		setUser(d.user);
 		return d.user;
 	}, []);
@@ -69,8 +74,14 @@ export function AuthProvider({ children }) {
 		return d.user;
 	}, []);
 
+	const promijeniLozinku = useCallback(async (stara, nova) => {
+		await api.promijeniLozinku(stara, nova);
+		setMijenjajLozinku(false);
+	}, []);
+
 	const logout = useCallback(() => {
 		setToken(null);
+		setMijenjajLozinku(false);
 		setUser(null);
 	}, []);
 
@@ -110,10 +121,12 @@ export function AuthProvider({ children }) {
 			},
 			login,
 			register,
+			mijenjajLozinku,
+			promijeniLozinku,
 			logout,
 			saveResult
 		}),
-		[ user, loading, progress, isAdmin, isMualim, login, register, logout, saveResult ]
+		[ user, loading, progress, isAdmin, isMualim, login, register, mijenjajLozinku, promijeniLozinku, logout, saveResult ]
 	);
 
 	return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;

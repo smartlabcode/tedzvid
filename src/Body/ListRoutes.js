@@ -109,6 +109,7 @@ function ListRoutes() {
 			<Route path="/lekcije" exact component={Home} />
 			<Route path="/prijava" exact render={() => <AuthPage mode="login" />} />
 			<Route path="/registracija" exact render={() => <AuthPage mode="register" />} />
+			<Route path="/zaboravljena-lozinka" exact render={() => <AuthPage mode="zaboravljena" />} />
 			<Route path="/profil" exact component={ProfilePage} />
 			<Route path="/zavrsni-kviz" exact component={FinalQuizPage} />
 			<Route path="/rang-lista" exact component={LeaderboardPage} />

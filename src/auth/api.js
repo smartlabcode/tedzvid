@@ -63,3 +63,6 @@ api.adminUsers = () => request('GET', '/api/admin/users');
 api.adminUloga = (id, uloga) => request('POST', '/api/admin/uloga', { id, uloga });
 /* admin odobrava ('odobri') ili odbija ('odbij') zahtjev za mualima iz registracije */
 api.adminZahtjev = (id, odluka) => request('POST', '/api/admin/zahtjev', { id, odluka });
+/* zaboravljena lozinka: server šalje privremenu lozinku na email (odgovor je uvijek { ok: true }) */
+api.zaboravljenaLozinka = (email, lang) => request('POST', '/api/zaboravljena-lozinka', { email, lang });
+api.promijeniLozinku = (stara, nova) => request('POST', '/api/lozinka', { stara, nova });

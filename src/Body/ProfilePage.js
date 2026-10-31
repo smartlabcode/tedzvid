@@ -1,7 +1,8 @@
-import React, { useEffect } from 'react';
-import { Link, Redirect, useHistory } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { Link, Redirect, useHistory, useLocation } from 'react-router-dom';
 import {
 	FaCheck,
+	FaKey,
 	FaLock,
 	FaLockOpen,
 	FaRedo,
@@ -44,14 +45,33 @@ const pick = (field, lang) => (typeof field === 'string' ? field : field[lang] |
 
 /* Moj napredak: sažetak + status lekcija, kvizova grupa i završnog kviza + odjava */
 export default function ProfilePage() {
-	const { user, loading, progress, isAdmin, isMualim, isUnlocked, logout } = useAuth();
+	const { user, loading, progress, isAdmin, isMualim, isUnlocked, logout, mijenjajLozinku, promijeniLozinku } = useAuth();
 	const { lang } = useLang();
 	const ui = useUI();
 	const history = useHistory();
+	const location = useLocation();
+
+	/* promjena lozinke */
+	const [ stara, setStara ] = useState('');
+	const [ nova, setNova ] = useState('');
+	const [ nova2, setNova2 ] = useState('');
+	const [ pwErr, setPwErr ] = useState(null);
+	const [ pwOk, setPwOk ] = useState(false);
+	const [ pwBusy, setPwBusy ] = useState(false);
 
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
+
+	/* nakon prijave privremenom lozinkom (/profil#lozinka) odmah pokaži formu za novu lozinku */
+	useEffect(
+		() => {
+			if (!user || location.hash !== '#lozinka') return;
+			const el = document.getElementById('lozinka');
+			if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+		},
+		[ user, location.hash ]
+	);
 
 	if (!loading && !user) return <Redirect to={{ pathname: '/prijava', state: { from: '/profil' } }} />;
 
@@ -75,6 +95,25 @@ export default function ProfilePage() {
 	const odjava = () => {
 		logout();
 		history.push('/');
+	};
+
+	const promijeni = async (e) => {
+		e.preventDefault();
+		setPwErr(null);
+		setPwOk(false);
+		if (nova.length < 6) return setPwErr('bad_password');
+		if (nova !== nova2) return setPwErr('passwords_differ');
+		setPwBusy(true);
+		try {
+			await promijeniLozinku(stara, nova);
+			setStara('');
+			setNova('');
+			setNova2('');
+			setPwOk(true);
+		} catch (ex) {
+			setPwErr(ex.code || 'server');
+		}
+		setPwBusy(false);
 	};
 
 	const renderRow = (key, broj, naslov, podnaslov, status, p, ukupno, kvizPutanja, Broj) => {
@@ -195,6 +234,70 @@ export default function ProfilePage() {
 									<FaGraduationCap />
 								)}
 							</ol>
+
+							{/* ugrađenim računima (admin, mualim, demo) lozinka dolazi iz postavki servera */}
+							{!user.ugradjeni && (
+								<form className="profil__lozinka auth__form" id="lozinka" onSubmit={promijeni} noValidate>
+									<h2>
+										<FaKey /> {ui.changePwTitle}
+									</h2>
+									{mijenjajLozinku && (
+										<div className="notice profil__zahtjev" role="status">
+											<span>{ui.tempPwNotice}</span>
+										</div>
+									)}
+									<label className="auth__label">
+										<span>{ui.fieldPwOld}</span>
+										<input
+											className="field"
+											type="password"
+											name="stara"
+											autoComplete="current-password"
+											value={stara}
+											onChange={(e) => setStara(e.target.value)}
+											required
+										/>
+									</label>
+									<label className="auth__label">
+										<span>{ui.fieldPwNew}</span>
+										<input
+											className="field"
+											type="password"
+											name="nova"
+											autoComplete="new-password"
+											value={nova}
+											onChange={(e) => setNova(e.target.value)}
+											required
+										/>
+										<small>{ui.passwordHint}</small>
+									</label>
+									<label className="auth__label">
+										<span>{ui.fieldPassword2}</span>
+										<input
+											className="field"
+											type="password"
+											name="nova2"
+											autoComplete="new-password"
+											value={nova2}
+											onChange={(e) => setNova2(e.target.value)}
+											required
+										/>
+									</label>
+									{pwOk && (
+										<div className="notice notice--ok" role="status">
+											<span>{ui.pwChanged}</span>
+										</div>
+									)}
+									{pwErr && (
+										<div className="notice notice--err" role="alert">
+											<span>{ui.authErrors[pwErr] || ui.authErrors.server}</span>
+										</div>
+									)}
+									<button type="submit" className="btn-t btn-t--navy" disabled={pwBusy}>
+										<FaKey /> {pwBusy ? ui.btnWorking : ui.btnChangePw}
+									</button>
+								</form>
+							)}
 
 							<div className="profil__foot">
 								<Link to="/rang-lista" className="btn-t btn-t--gold">

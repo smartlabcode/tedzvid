@@ -2122,6 +2122,13 @@ textarea.field {
     }
   }
 
+  &__forgot {
+    justify-self: end;
+    margin-top: 2px;
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+
   &__switch {
     margin: 24px 0 0;
     text-align: center;
@@ -3275,6 +3282,34 @@ textarea.field {
     gap: 12px;
     margin-top: 28px;
   }
+
+  /* promjena lozinke (i nakon prijave privremenom lozinkom) */
+  &__lozinka {
+    max-width: 520px;
+    margin: 28px auto 0;
+    padding: 28px 32px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    box-shadow: var(--shadow-sm);
+    scroll-margin-top: 90px;
+
+    h2 {
+      margin: 0;
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      color: var(--navy);
+
+      svg {
+        font-size: 1.1rem;
+        vertical-align: 1px;
+      }
+    }
+
+    .profil__zahtjev {
+      margin-bottom: 0;
+    }
+  }
 }
 
 @media (max-width: 900px) {
@@ -3289,7 +3324,8 @@ textarea.field {
 
 @media (max-width: 600px) {
   .auth__card,
-  .gate__card {
+  .gate__card,
+  .profil__lozinka {
     padding: 30px 22px 32px;
   }
 

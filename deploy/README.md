@@ -47,5 +47,7 @@ korisnici su u `/var/lib/tedzvid/users.json`, tajne u `/etc/tedzvid.env`.
 
 - logovi: `journalctl -u tedzvid -f`
 - promjena lozinke admina/mualima: urediti `/etc/tedzvid.env`, pa `systemctl restart tedzvid`
+- „Zaboravljena lozinka“: u `/etc/tedzvid.env` upisati `BREVO_API_KEY` (vidi README, sekcija o emailu),
+  pa `systemctl restart tedzvid`. Bez njih se privremena lozinka samo ispiše u `journalctl -u tedzvid`.
 - backup: `cp /var/lib/tedzvid/users.json /root/backup/users-$(date +%F).json` (npr. dnevni cron)
 - `SESSION_SECRET` ne mijenjati bez potrebe – promjena odjavljuje sve korisnike
