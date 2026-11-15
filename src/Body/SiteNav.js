@@ -15,6 +15,7 @@ import LangSwitch from './LangSwitch';
 import { useAuth } from '../auth/AuthContext';
 import { useUI } from '../i18n/ui';
 import { SUFARA_URL } from './SiteFooter';
+import { putanjaSura } from '../auth/progress';
 
 /**
  * Zajednička navigacija za sve stranice.
@@ -30,6 +31,8 @@ export default function SiteNav({ active, cta }) {
 	const LINKS = [
 		{ key: 'home', to: '/', label: ui.navHome },
 		{ key: 'lekcije', to: '/lekcije', label: ui.navLekcije },
+		/* prečica do bonus lekcija na dnu pregleda lekcija; samo u mobilnom meniju – u gornjoj traci nema mjesta */
+		{ key: 'sure', to: putanjaSura, label: ui.navSure, mobile: true },
 		{ key: 'igra', to: '/igra', label: ui.navIgra },
 		{ key: 'rang', to: '/rang-lista', label: ui.navRang },
 		{ key: 'o-nama', to: '/#o-nama', label: ui.navONama },
@@ -71,7 +74,7 @@ export default function SiteNav({ active, cta }) {
 	if (jeMualim) dodatni.push({ key: 'mualim', to: '/mualim', label: ui.navMualim });
 	if (jeAdmin) dodatni.push({ key: 'admin', to: '/admin', label: ui.navAdmin });
 	const renderLinks = (mobile) =>
-		LINKS.concat(mobile ? dodatni : []).map((l) => (
+		LINKS.filter((l) => mobile || !l.mobile).concat(mobile ? dodatni : []).map((l) => (
 			<li key={l.key}>
 				{l.href ? (
 					<a href={l.href} target="_blank" rel="noopener noreferrer">

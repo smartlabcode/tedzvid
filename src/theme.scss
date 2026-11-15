@@ -4193,6 +4193,11 @@ textarea.field {
   }
 }
 
+/* kur'anske sure na dnu pregleda lekcija: skok iz menija ne smije završiti pod ljepljivom navigacijom */
+.lessons__sure {
+  scroll-margin-top: 96px;
+}
+
 /* kartica bonusa u pregledu lekcija */
 .lessons__final--bonus {
   background: var(--navy-700);

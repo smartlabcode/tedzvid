@@ -8,12 +8,13 @@ import {
 	FaPlayCircle,
 	FaCheck,
 	FaRedo,
-	FaClipboardCheck
+	FaClipboardCheck,
+	FaQuran
 } from 'react-icons/fa';
 import GroupQuizCard from './GroupQuizCard';
 import data from '../Data/lessons.json';
 import { useAuth } from '../auth/AuthContext';
-import { GRUPE, UKUPNO, putanjaKviza, jePolozenaGrupa } from '../auth/progress';
+import { GRUPE, UKUPNO, putanjaKviza, jePolozenaGrupa, SIDRO_SURA } from '../auth/progress';
 import { useLang, DEFAULT_LANG } from '../i18n/LanguageContext';
 import { useUI } from '../i18n/ui';
 
@@ -46,6 +47,13 @@ export function GrupeNav() {
 					<span className="grupe-nav__lekcije">{ui.grupaNaslov(g.od, g.do)}</span>
 				</a>
 			))}
+			{/* prečica do kur'anskih sura na dnu stranice */}
+			<a className="grupe-nav__item" href={'#' + SIDRO_SURA}>
+				<span className="grupa-broj">
+					<FaQuran />
+				</span>
+				<span className="grupe-nav__oznaka">{ui.navSure}</span>
+			</a>
 		</nav>
 	);
 }

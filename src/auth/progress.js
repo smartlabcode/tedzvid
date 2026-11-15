@@ -66,6 +66,9 @@ export const jeOtkljucanZavrsni = (progress) =>
 export const jePolozenZavrsni = (progress) => jePolozena(progress, ZAVRSNI);
 
 /* ----- bonus lekcije s kur'anskim tekstom: otvorene su svima, kao i ostale lekcije ----- */
+/* sidro dijela s kur'anskim surama na pregledu lekcija (meni i traka grupa skaču na njega) */
+export const SIDRO_SURA = 'kuranske-sure';
+export const putanjaSura = '/lekcije#' + SIDRO_SURA;
 export const putanjaBonusa = '/jasin';
 export const putanjaAmmeDzuza = '/amme-dzuz';
 export const putanjaFatihe = '/fatiha';
