@@ -17,7 +17,8 @@ import {
 	FaPaperPlane,
 	FaPlayCircle,
 	FaGooglePlay,
-	FaApple
+	FaApple,
+	FaQuran
 } from 'react-icons/fa';
 import SiteNav from './SiteNav';
 import SiteFooter from './SiteFooter';
@@ -25,6 +26,7 @@ import { Ornament, LOGO_SRC } from './Logo';
 import { VideoEmbed } from './LessonVideo';
 import videos from '../Data/videos.json';
 import { APP_LINKS, SUFARA_URL } from './SiteFooter';
+import { putanjaSura } from '../auth/progress';
 import { useUI } from '../i18n/ui';
 
 /* Ikone i boje su iste za sve jezike; naslovi i opisi dolaze iz i18n/ui.js */
@@ -176,6 +178,10 @@ function LandingPage() {
 									</Link>
 									<Link to="/lekcija1#vjezba" className="mock__tile">
 										<FaPencilAlt /> {ui.mockVjezbe}
+									</Link>
+									{/* prečica za mualime: kur'anske sure na dnu pregleda lekcija */}
+									<Link to={putanjaSura} className="mock__tile mock__tile--wide">
+										<FaQuran /> {ui.navSure}
 									</Link>
 								</div>
 							</div>

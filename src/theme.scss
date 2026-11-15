@@ -966,6 +966,15 @@ img {
       color: var(--navy);
       text-decoration: none;
     }
+
+    /* široka pločica ispod mreže (Kur'anske sure): ikona i natpis u jednom redu */
+    &--wide {
+      grid-column: 1 / -1;
+      flex-direction: row;
+      justify-content: center;
+      gap: 12px;
+      padding: 14px 12px;
+    }
   }
 }
 
